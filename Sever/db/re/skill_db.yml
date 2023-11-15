@@ -5333,6 +5333,7 @@ Body:
     # Flags:
     #   IsQuest:
     Hit: Single
+    GiveAp: 200
     HitCount: 1
     Requires:
       SpCost: 3
