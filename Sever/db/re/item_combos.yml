@@ -32024,7 +32024,28 @@ Body:
       bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",.@r*10;
       bonus2 bSkillAtk,"MG_COLDBOLT",.@r*10;
       if(.@r >= 13){bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",5,70,BF_WEAPON,1;}
-      
+  - Combos: # 超越斗靴LT套
+      - Combo:
+          - Temporal_Boots_LT_TW    # 470183
+          - Temporal_Cape_TW_LT    # 480312
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT)+getequiprefinerycnt(EQI_SHOES);
+      bonus bMdef,5;
+      bonus bFixedCast,-200;
+      if (.@r>=25) {
+         if (readparam(bStr)>=108)
+             bonus bBaseAtk,120;
+         if (readparam(bAgi)>=108)
+             bonus bAspd,1;
+         if (readparam(bVit)>=108)
+             bonus bDelayrate,-8;
+         if (readparam(bInt)>=108)
+             bonus bMatk,120;
+         if (readparam(bDex)>=108)
+             bonus bLongAtkRate,15;
+         if (readparam(bLuk)>=108)
+             bonus bCritAtkRate,20;
+      }
       
 
       
