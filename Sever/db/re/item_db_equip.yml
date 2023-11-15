@@ -182768,8 +182768,6 @@ Body:
     Gradable: true
     EquipLevelMin: 190
     Script: |
-Script: |
-    Script: |
       .@g = getenchantgrade();
       .@r = getrefine();
       bonus bAllStats,2;
