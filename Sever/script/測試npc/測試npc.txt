@@ -1,0 +1,7 @@
+uttycty,96,100,5	script	測試npc	4_M_ORIENT02,{
+mes "test";
+mes EQI_HEAD_TOP;
+mes getequipname(EQI_HEAD_TOP);
+mes getequiprefinerycnt(EQI_HAND_R);
+close;
+}
