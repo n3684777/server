@@ -182694,30 +182694,28 @@ Body:
     Script: |
       bonus bMatk,30;.@r = getrefine();bonus2 bMagicAddRace,6,.@r/3*4;bonus2 bMagicAddRace,1,.@r/3*4;bonus2 bMagicAddRace,8,.@r/3*4;if(.@r>=9){bonus bFixedCast,-500;}if(.@r>=11){bonus2 bSkillCooldown,2211,-1000;bonus2 bSkillCooldown,2212,-2000;}if(.@r>=12){bonus2 bSkillAtk,2212,30;bonus2 bSkillAtk,2213,30;bonus2 bSkillAtk,2216,30;}
   - Id: 480312
-    AegisName: Unknown_Item_480312
+    AegisName: Temporal_Cape_TW_LT
     Name: 時光超越者斗篷-LT
     Type: Armor
-    Buy: 20
-    Weight: 10
+    Weight: 100
+    Defense: 40
     Slots: 1
-    Defense: 25
     Locations:
       Garment: true
     ArmorLevel: 2
-    Refineable: true
-    Gradable: true
     EquipLevelMin: 190
+    Refineable: true
     Script: |
-      .@g = getenchantgrade();
       .@r = getrefine();
+      .@g = getenchantgrade();
       bonus bMdef,10;
-      bonus bMatk,15+(.@r/2);
-      bonus bBaseAtk,15+(.@r/2);
-      bonus bAtkRate,15*(.@r/3);
-      bonus bMatkRate,15*(.@r/3);
-      bonus bCritical,3+(.@r/3);
-      bonus bShortAtkRate,5*(.@r/4);
+      bonus bBaseAtk,15*(.@r/2);
+      bonus bMatk,15*(.@r/2);
+      bonus bAtkRate,4*(.@r/3);
+      bonus bMatkRate,4*(.@r/3);
+      bonus bCritical,3*(.@r/3);
       bonus bLongAtkRate,5*(.@r/4);
+      bonus bShortAtkRate,5*(.@r/4);
       bonus2 bMagicAtkEle,Ele_All,5*(.@r/4);
       bonus bMaxHPrate,5*(.@r/4);
       bonus bAspdRate,5*(.@r/4);
@@ -182726,31 +182724,31 @@ Body:
       if (.@r>=7) {
          bonus bAtkRate,7;
          bonus bMatkRate,7;
-         if (.@r>=9) {
-            bonus2 bAddSize,Size_All,15;
-            bonus2 bMagicAddSize,Size_All,15;
-            if (.@r>=12) {
-               bonus2 bAddEle,Ele_All,15;
-               bonus2 bMagicAddEle,Ele_All,15;
-            }
-         }
       }
-      if (.@g >= ENCHANTGRADE_D) {
+      if (.@r>=9) {
+         bonus2 bAddRace,RC_All,15;
+         bonus2 bMagicAddRace,RC_All,15;
+      }
+      if (.@r>=12) {
+         bonus2 bAddEle,Ele_All,15;
+         bonus2 bMagicAddEle,Ele_All,15;
+      }
+      if (.@g>=ENCHANTGRADE_D) {
          bonus bAtkRate,5;
          bonus bMatkRate,5;
-         if (.@g >= ENCHANTGRADE_C) {
-            bonus bPow,5;
-            bonus bspl,2;
-            if (.@g >= ENCHANTGRADE_B) {
-               bonus bPAtk,7;
-               bonus bSMatk,7;
-               if (.@g >= ENCHANTGRADE_A) {
-                  if (.@r>=13) {
-                  bonus2 bAddRace,Class_All,15;
-                  bonus2 bMagicAddRace,Class_All,15;
-                  }
-               }
-            }
+      }
+      if (.@g>=ENCHANTGRADE_C) {
+         bonus bPow,5;
+         bonus bSpl,5;
+      }
+      if (.@g>=ENCHANTGRADE_B) {
+         bonus bPAtk,7;
+         bonus bSMatk,7;
+      }
+      if (.@g>=ENCHANTGRADE_A) {
+         if (.@r>=13) {
+             bonus2 bAddRace,RC_All,15;
+             bonus2 bMagicAddRace,RC_All,15;
          }
       }
   - Id: 470183
