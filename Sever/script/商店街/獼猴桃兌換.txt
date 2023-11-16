@@ -10,7 +10,7 @@ OnInit:
 	sellitem(6417,500000,-1);
     // 強化石I箱子
     sellitem(100465, 0, -1);	
-	sellitemcurrency(6417,1);
+	sellitemcurrency(6417,3);
     endsellitem();
 	sellitem(100496, 0, -1);	
 	sellitemcurrency(6417,1);
@@ -19,15 +19,15 @@ OnInit:
 	sellitemcurrency(6417,1);
     endsellitem();
     sellitem(100500, 0, -1);	
-	sellitemcurrency(6417,3);
+	sellitemcurrency(6417,1);
     endsellitem();
     // end
     // 強化石II箱子
     sellitem(100501, 0, -1);	
-	sellitemcurrency(6417,3);
+	sellitemcurrency(6417,1);
     endsellitem();
     sellitem(100499, 0, -1);	
-	sellitemcurrency(6417,3);
+	sellitemcurrency(6417,1);
     endsellitem();
     sellitem(100497, 0, -1);	
 	sellitemcurrency(6417,1);
@@ -48,6 +48,14 @@ OnInit:
     // 時間套裝箱
 	sellitem(100054, 0, -1);	
 	sellitemcurrency(6417,10);
+    endsellitem();
+    // 波士尼亞入場卷
+    sellitem(7227, 0, -1);	
+	sellitemcurrency(6417,2);
+    endsellitem();
+    // 副本冷卻卷
+    sellitem(7227, 200000, -1);	
+	sellitemcurrency(99999,1);
     endsellitem();
 
 OnBuyItem:
