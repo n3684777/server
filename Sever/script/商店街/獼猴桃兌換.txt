@@ -3,18 +3,52 @@ uttycty,100,167,4	script	稀有裝備購買	112,{
 	end;
 OnInit:
 	setnpcicon getnpcid(0),1026,"台特/特別裝";
-	waitingroom "★ 特別裝備 ★ ",0;
+	waitingroom "★ 獼猴桃購買/兌換 ★ ",0;
 	
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(6417,500000,-1);
-    sellitem(25648, 10000, -1);	
-	sellitemcurrency(25644, 5);
-	sellitemcurrency(25645, 5);	
-	sellitemcurrency(25646, 5);	
-	sellitemcurrency(25647, 5);	
-	endsellitem();
-	
+    // 強化石I箱子
+    sellitem(100465, 0, -1);	
+	sellitemcurrency(6417,1);
+    endsellitem();
+	sellitem(100496, 0, -1);	
+	sellitemcurrency(6417,1);
+    endsellitem();
+    sellitem(100498, 0, -1);	
+	sellitemcurrency(6417,1);
+    endsellitem();
+    sellitem(100500, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
+    // end
+    // 強化石II箱子
+    sellitem(100501, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
+    sellitem(100499, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
+    sellitem(100497, 0, -1);	
+	sellitemcurrency(6417,1);
+    endsellitem();
+    sellitem(100495, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
+    // 影子2.0 (隨機)
+    sellitem(100198, 0, -1);	
+	sellitemcurrency(6417,2);
+    endsellitem();
+    //
+    // 影子套裝箱 (隨機)
+    sellitem(22827, 0, -1);	
+	sellitemcurrency(6417,1);
+    endsellitem();
+    //
+    // 時間套裝箱
+	sellitem(100054, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
 
 OnBuyItem:
 end;
