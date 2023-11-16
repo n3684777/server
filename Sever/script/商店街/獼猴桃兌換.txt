@@ -7,8 +7,14 @@ OnInit:
 	
 	tradertype(NST_EXPANDED_BARTER);
 	
-	sellitem(6417,500000,1);
-	sellitem(6417,5000,-1);
+	sellitem(6417,500000,-1);
+    sellitem(25648, 10000, -1);	
+	sellitemcurrency(25644, 5);
+	sellitemcurrency(25645, 5);	
+	sellitemcurrency(25646, 5);	
+	sellitemcurrency(25647, 5);	
+	endsellitem();
+	
 
 OnBuyItem:
 end;
