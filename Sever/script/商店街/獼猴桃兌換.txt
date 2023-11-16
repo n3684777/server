@@ -1,0 +1,17 @@
+uttycty,100,167,4	script	稀有裝備購買	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"台特/特別裝";
+	waitingroom "★ 特別裝備 ★ ",0;
+	
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(6417,500000,-1);
+	sellitem(450135,0,-1,6417,0,1);
+	sellitem(450179,50000000,-1);	
+	sellitem(15374,50000000,-1);
+
+OnBuyItem:
+end;
+}
