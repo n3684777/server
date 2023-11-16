@@ -54,8 +54,8 @@ OnInit:
 	sellitemcurrency(6417,2);
     endsellitem();
     // 副本冷卻卷
-    sellitem(7227, 200000, -1);	
-	sellitemcurrency(99999,1);
+    sellitem(99999, 250000, -1);	
+	sellitemcurrency(6417,1);
     endsellitem();
 
 OnBuyItem:
