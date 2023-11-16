@@ -49871,7 +49871,7 @@ Body:
     Script: |
       callfunc "F_Gashapon", 22654;
   - Id: 101061
-    AegisName: Select_Example1
+    AegisName: level1_suit_box
     Name: 1µ¥¯Å®M¸Ë½c
     Type: DelayConsume
     Flags:
