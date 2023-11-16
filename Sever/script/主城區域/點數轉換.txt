@@ -1,9 +1,4 @@
-uttycty,99,129,4	script	主城商城點數購買	805,{
-Oninit:
-OnTimer2000:
-showscript "★ 購買點數 ★ ";
-	setnpcicon getnpcid(0),1027,"小護士";
-initnpctimer;	callfunc "BuyCash";	}
+uttycty,99,129,4	script	主城商城點數購買	805,{	callfunc "BuyCash";	}
 prontera,168,201,4	script	Prontera商城點數購買	805,{	callfunc "BuyCash";	}
 morocc,149,110,4	script	Morocc商城點數購買	805,{	callfunc "BuyCash";	}
 geffen,116,75,4	script	Geffen商城點數購買	805,{	callfunc "BuyCash";	}
