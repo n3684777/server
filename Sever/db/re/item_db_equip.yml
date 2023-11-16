@@ -4272,6 +4272,7 @@ Body:
     Name: 刺殺拳刃
     Type: Weapon
     SubType: Katar
+    Sell: 55000
     Buy: 57000
     Weight: 1500
     Attack: 140
@@ -4310,6 +4311,7 @@ Body:
   - Id: 1263
     AegisName: Unholy_Touch
     Name: 邪惡拳刃
+    Sell: 55000
     Type: Weapon
     SubType: Katar
     Buy: 20
@@ -14481,6 +14483,7 @@ Body:
     Name: 奇妙狐尾草手杖
     Type: Weapon
     SubType: Staff
+    Sell: 55000
     Buy: 50000
     Weight: 500
     Attack: 100
@@ -14593,6 +14596,7 @@ Body:
   - Id: 1695
     AegisName: Detail_Model_Foxtail
     Name: 精美狐尾草模型
+    Sell: 55000
     Type: Weapon
     SubType: Staff
     Buy: 50000
@@ -30486,6 +30490,7 @@ Body:
     Name: 敏捷別針
     Type: Armor
     Buy: 30000
+    Sell: 55000
     Weight: 100
     Jobs:
       All: true
@@ -30524,6 +30529,7 @@ Body:
     AegisName: Rosary
     Name: 幸運珠鏈
     Type: Armor
+    Sell: 55000
     Buy: 15000
     Weight: 100
     Jobs:
@@ -34731,6 +34737,7 @@ Body:
     Name: 赤火焰靈球
     Type: Armor
     Buy: 20
+    Sell: 55000
     Weight: 200
     Defense: 2
     Jobs:
@@ -95797,6 +95804,7 @@ Body:
     AegisName: Doram_Only_Cape
     Name: 喵族專屬斗篷
     Type: Armor
+    Sell: 55000
     Buy: 20
     Weight: 300
     Defense: 20
@@ -100937,6 +100945,7 @@ Body:
     AegisName: Doram_Only_Shoes
     Name: 喵族專屬鞋子
     Type: Armor
+    Sell: 55000
     Buy: 20
     Weight: 500
     Defense: 25

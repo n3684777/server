@@ -1,8 +1,8 @@
-uttycty,100,167,4	script	稀有裝備購買	112,{
+uttycty,100,167,4	script	獼猴桃兌換商	112,{
 	disable_items;
 	end;
 OnInit:
-	setnpcicon getnpcid(0),1026,"台特/特別裝";
+	setnpcicon getnpcid(0),1026,"獼猴桃兌換商";
 	waitingroom "★ 獼猴桃購買/兌換 ★ ",0;
 	
 	tradertype(NST_EXPANDED_BARTER);
