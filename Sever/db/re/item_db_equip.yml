@@ -27,7 +27,7 @@
 #   Name                    Name in English for displaying as output.
 #   Type                    Item type. (Default: Etc)
 #   SubType                 Weapon, Ammo or Card type. (Default: 0)
-#   Buy                     Buying price. When not specified, becomes double the sell price. (Default: 0)
+#   Buy                 Buying price. When not specified, becomes double the sell price. (Default: 0)
 #   Sell                    Selling price. When not specified, becomes half the buy price. (Default: 0)
 #   Weight                  Item weight. Each 10 is 1 weight. (Default: 0)
 #   Attack                  Weapon's attack. (Default: 0)
@@ -4272,8 +4272,7 @@ Body:
     Name: 刺殺拳刃
     Type: Weapon
     SubType: Katar
-    Sell: 55000
-    Buy: 57000
+    Buy: 110000
     Weight: 1500
     Attack: 140
     Range: 1
@@ -4311,10 +4310,9 @@ Body:
   - Id: 1263
     AegisName: Unholy_Touch
     Name: 邪惡拳刃
-    Sell: 55000
     Type: Weapon
     SubType: Katar
-    Buy: 20
+    Buy: 110000
     Weight: 1250
     Attack: 151
     Range: 1
@@ -14483,8 +14481,7 @@ Body:
     Name: 奇妙狐尾草手杖
     Type: Weapon
     SubType: Staff
-    Sell: 55000
-    Buy: 50000
+    Buy: 110000
     Weight: 500
     Attack: 100
     MagicAttack: 240
@@ -14596,10 +14593,9 @@ Body:
   - Id: 1695
     AegisName: Detail_Model_Foxtail
     Name: 精美狐尾草模型
-    Sell: 55000
     Type: Weapon
     SubType: Staff
-    Buy: 50000
+    Buy: 110000
     Weight: 300
     Attack: 195
     Range: 1
@@ -21413,7 +21409,7 @@ Body:
     AegisName: Stone_Buckler
     Name: 石製圓盾
     Type: Armor
-    Buy: 30000
+    Buy: 110000
     Weight: 1500
     Defense: 45
     Slots: 1
@@ -30489,8 +30485,7 @@ Body:
     AegisName: Brooch
     Name: 敏捷別針
     Type: Armor
-    Buy: 30000
-    Sell: 55000
+    Buy: 110000
     Weight: 100
     Jobs:
       All: true
@@ -30529,8 +30524,7 @@ Body:
     AegisName: Rosary
     Name: 幸運珠鏈
     Type: Armor
-    Sell: 55000
-    Buy: 15000
+    Buy: 110000
     Weight: 100
     Jobs:
       All: true
@@ -34736,8 +34730,7 @@ Body:
     AegisName: Crimson_Orb
     Name: 赤火焰靈球
     Type: Armor
-    Buy: 20
-    Sell: 55000
+    Buy: 110000
     Weight: 200
     Defense: 2
     Jobs:
@@ -95804,8 +95797,7 @@ Body:
     AegisName: Doram_Only_Cape
     Name: 喵族專屬斗篷
     Type: Armor
-    Sell: 55000
-    Buy: 20
+    Buy: 110000
     Weight: 300
     Defense: 20
     Slots: 1
@@ -100945,8 +100937,7 @@ Body:
     AegisName: Doram_Only_Shoes
     Name: 喵族專屬鞋子
     Type: Armor
-    Sell: 55000
-    Buy: 20
+    Buy: 110000
     Weight: 500
     Defense: 25
     Slots: 1
