@@ -3,7 +3,7 @@
 
 uttycty,105,106,3	script	¥@¬É¶Ç°e	1447,{
 	disable_items;
-	callfunc("send_map");
+	callfunc(send_map);
 	end;
 Oninit:
 OnTimer2000:
