@@ -3,5 +3,7 @@ mes "test";
 mes EQI_HEAD_TOP;
 mes getequipname(EQI_HEAD_TOP);
 mes getequiprefinerycnt(EQI_HAND_R);
+next();
+callshop	"道具商店",2;end;
 close;
 }
