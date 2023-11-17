@@ -33,8 +33,11 @@ function	script	membervip2	{
 	mes "^0088FF期效：^FF0000"+.@dayleft+" ^0088FF天^FF0000 "+.@hourleft+" ^0088FF小時^FF0000 "+.@minleft+" ^0088FF分鐘^FF0000 "+.@secleft+" 秒^000000";
 	mes "^0AA770=================================^000000";
 	next;
-	switch(select("^FF0000(1).^5599FF狀態BUFF","^FF0000(2).^5599FF掉寶加倍","^FF0000(3).^5599FF隨地廣播","^FF0000(4).^5599FF隨地修理裝備","^FF0000(5).^5599FF領取尊榮VIP積分^000000","")) {
+	switch(select("^FF0000(1).^5599FF販賣物品","^FF0000(2).^5599FF狀態BUFF","^FF0000(2).^5599FF狀態BUFF","^FF0000(3).^5599FF掉寶加倍","^FF0000(4).^5599FF隨地廣播","^FF0000(5).^5599FF隨地修理裝備","^FF0000(6).^5599FF領取尊榮VIP積分^000000","")) {
 		case 1:
+			callshop	"道具商店",2;
+			end;
+		case 2:
 			if (#zhuangtaiVIP2 >= 40 ) {
 			mes "^0AA770==========^000000 ^FF99FF尊 榮 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF今日使用次數已滿^000000";
@@ -73,7 +76,7 @@ function	script	membervip2	{
 				set #zhuangtaiVIP2, #zhuangtaiVIP2+1;
 			}
 			break;
-		case 2:
+		case 3:
 			if (#zhuangtai22 >= 20 ) {
 			mes "^0AA770========== ^FF99FF尊 榮 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF今日使用次數已滿^000000";
@@ -89,17 +92,17 @@ function	script	membervip2	{
 				set #zhuangtai22, #zhuangtai22+1;
 			}
 			break;
-		case 3:
+		case 4:
 			callfunc "Megaphone_announcevip";
 			close;
-		case 4:			
+		case 5:			
 			mes "^0AA770========== ^FF99FF尊 榮 V I P ^0AA770==========^000000";
 			mes "　        ^5599FF已成功修復裝備^000000";
 			mes "^0AA770=================================^000000";
 			atcommand "@repairall";
 			close;
 
-		case 5:
+		case 6:
 			mes "^0AA770========== ^FF99FF尊 榮 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF尊榮VIP積分領取^000000";
 			mes "^0AA770=================================^000000";
@@ -115,7 +118,7 @@ function	script	membervip2	{
 			mes "^0AA770=================================^000000";
 			}
 			break;
-		case 6:
+		case 7:
 			close;
 	}
 	close;
