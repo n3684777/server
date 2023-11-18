@@ -8,6 +8,12 @@
 
 uttycty,96,100,5	script	裝備回收	4_STEELBOX,{
 
+	for(.@i = 0 ; .@i < getarraysize(@inventorylist_equip;i++)
+	{
+		mes @inventorylist_equip[.@i],"";
+	}
+	close;
+
 	/*	deletearray @sold_nameid[0],getarraysize(@sold_nameid);
 		callshop "card_shop1",2;
 		npcshopattach "card_shop1";
