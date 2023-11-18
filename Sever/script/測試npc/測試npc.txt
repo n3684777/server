@@ -7,8 +7,8 @@
 
 
 uttycty,96,100,5	script	裝備回收	4_STEELBOX,{
-
-	for(.@i = 0 ; .@i < getarraysize(@inventorylist_equip;i++)
+	
+	for(.@i = 0 ; .@i < getarraysize(@inventorylist_equip);i++)
 	{
 		mes @inventorylist_equip[.@i];
 	}
