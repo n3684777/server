@@ -12213,6 +12213,7 @@ Body:
           - Item: Guarantee_Weapon_6Up
           - Item: 120LVUP
           - Item: ragnarok_weapon_box
+          - Item: Booster_W_Up_1
   - Group: LEVEL_UP_BOX120
     SubGroups:
       - SubGroup: 0

@@ -7,7 +7,13 @@ OnInit:
 	
 	tradertype(NST_EXPANDED_BARTER);
 	
-	sellitem(6417,500000,-1);
+    sellitem(6417,500000,-1);
+	sellitem(100340,0,-1);  //仙境遊玩+13武器精煉箱
+    sellitemcurrency(6417,2);
+    endsellitem();
+    sellitem(100465, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
     // 強化石I箱子
     sellitem(100465, 0, -1);	
 	sellitemcurrency(6417,3);
@@ -47,7 +53,7 @@ OnInit:
     //
     // 時間套裝箱
 	sellitem(100054, 0, -1);	
-	sellitemcurrency(6417,10);
+	sellitemcurrency(6417,15);
     endsellitem();
     // 波士尼亞入場卷
     sellitem(7227, 250000, -1);	
