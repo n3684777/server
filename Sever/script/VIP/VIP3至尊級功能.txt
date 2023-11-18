@@ -31,11 +31,8 @@ function	script	membervip3	{
 	mes "^0088FF期效：^FF0000"+.@dayleft+" ^0088FF天^FF0000 "+.@hourleft+" ^0088FF小時^FF0000 "+.@minleft+" ^0088FF分鐘^FF0000 "+.@secleft+" 秒^000000";
 	mes "^0AA770=================================^000000";
 	next;
-	switch(select("^FF0000(1).^5599FF販賣物品","^FF0000(2).^5599FF狀態BUFF","^FF0000(3).^5599FF掉寶加倍","^FF0000(4).^5599FF隨地廣播","^FF0000(5).^5599FF隨地修理裝備","^FF0000(6).^5599FF更換ID顏色","^FF0000(7).^5599FF領取至尊VIP積分^000000","")) {
+	switch(select("^FF0000(1).^5599FF輔助BUFF","^FF0000(2).^5599FF販售物品","^FF0000(3).^5599FF掉寶加倍","^FF0000(4).^5599FF隨地廣播","^FF0000(5).^5599FF隨地修理裝備","^FF0000(6).^5599FF更換ID顏色","^FF0000(7).^5599FF領取至尊VIP積分^000000","")) {
 		case 1:
-			callshop	"道具商店",2;
-			end;
-		case 2:
 			if (#zhuangtaiVIP3 >= 1000000 ) {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF今日使用次數已滿^000000";
@@ -77,6 +74,9 @@ function	script	membervip3	{
 				set #zhuangtaiVIP3, #zhuangtaiVIP3+1;
 			}
 			break;
+		case 2:
+			callshop	"道具商店",2;
+			end;
 		case 3:
 			if (#zhuangtai33 >= 1000000 ) {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
