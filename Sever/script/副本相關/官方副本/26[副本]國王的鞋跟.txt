@@ -17,7 +17,7 @@
 1@mcd	mapflag	novending
 1@mcd	mapflag	nochat
 
-amatsu,108,153,5	script	[副本]國王的鞋跟	870,{
+amatsu,108,153,5	script	[副本]查理斯頓工廠	870,{
 	// 展示資訊
 	F_instanceinfo(strnpcinfo(1),.ins_name$,.ins_MinLv,.ins_MaxLv,.ins_Minplayer,.ins_Maxplayer,.ins_time,.ins_cooldown,.ins_collnum);
 	// 創建選單
@@ -50,7 +50,7 @@ amatsu,108,153,5	script	[副本]國王的鞋跟	870,{
 	end;
 OnInit:
 	// 副本名稱
-	.ins_name$ = "國王的鞋跟";
+	.ins_name$ = "查理斯頓工廠";
 	// 最小挑戰等級
 	.ins_MinLv = 1;
 	// 最大挑戰等級
@@ -67,8 +67,8 @@ OnInit:
 	.ins_collnum = 26;
 
 //
-	waitingroom "[副本]國王的鞋跟",0;
-	setnpcicon getnpcid(0),22,"[副本]國王的鞋跟";
+	waitingroom "[副本]查理斯頓工廠",0;
+	setnpcicon getnpcid(0),22,"[副本]查理斯頓工廠";
 	end;
 }
 
