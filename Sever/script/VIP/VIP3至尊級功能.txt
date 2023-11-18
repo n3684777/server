@@ -47,31 +47,31 @@ function	script	membervip3	{
 				next;
 				menu " ^5599FF使用狀態BUFF^000000",-;
 				sc_end all;
-				sc_start SC_INCREASEAGI,1800000,10; 		//天使之賜福
-				sc_start SC_BLESSING,1800000,10; 		//加速術
-				sc_start SC_CONCENTRATE,1200000,10; 		//心神凝聚
-				sc_start SC_ANGELUS,1200000,10; 			//天使之障壁
-				sc_start SC_IMPOSITIO,1200000,5; 		//神威祈福
-				sc_start SC_SUFFRAGIUM,1200000,3; 		//犧牲祈福
-				sc_start SC_MAGNIFICAT,1200000,5; 		//聖母之頌歌
-				sc_start SC_GLORIA,1200000,5; 			//幸運之歌
-				sc_start SC_WEAPONPERFECTION,1200000,5; //無視體型攻擊
-				sc_start SC_MAXIMIZEPOWER,1200000,5; 	//武器值最大化
-				sc_start SC_LOUD,1200000,1; 				//大聲?喊
+				sc_start SC_INCREASEAGI,1800000,10; 		//天使之賜福 1
+				sc_start SC_BLESSING,1800000,10; 		//加速術 1
+				sc_start SC_CONCENTRATE,1200000,10; 		//心神凝聚 1
+				sc_start SC_ANGELUS,1200000,10; 			//天使之障壁 1
+				sc_start SC_IMPOSITIO,1200000,5; 		//神威祈福 1
+				sc_start SC_SUFFRAGIUM,1200000,3; 		//犧牲祈福 1
+				sc_start SC_MAGNIFICAT,1200000,5; 		//聖母之頌歌 1
+				sc_start SC_GLORIA,1200000,5; 			//幸運之歌 1
+				sc_start SC_WEAPONPERFECTION,1200000,5; //無視體型攻擊 1
+				sc_start SC_MAXIMIZEPOWER,1200000,5; 	//武器值最大化 1
+				sc_start SC_LOUD,1200000,1; 				//大聲?喊 1
 				sc_start SC_ASPDPOTION2,1800000,10; 		//菠色克藥水
-				sc_start SC_ATKPOTION,1200000,30; 		//增加ATK   10分鐘
-				sc_start SC_MATKPOTION,1200000,30; 		//增加MATK  10分鐘
-				sc_start SC_CP_WEAPON,1200000,5; 		//化學武器保護
-				sc_start SC_CP_SHIELD,1200000,5; 		//化學盾牌保護
-				sc_start SC_CP_ARMOR,1200000,5; 			//化學鎧甲保護
-				sc_start SC_CP_HELM,1200000,5; 			//化學頭盔保護
-				sc_start SC_ASSUMPTIO,900000,5; 		//聖母之祈福
-				sc_start SC_ADRENALINE2,900000,1; 		//所有速度激發
-				sc_start SC_KAIZEL,1200000,7; 			//凱易哲
-				sc_start SC_KAUPE,1200000,3; 			//凱誣僕
-				sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20
-				sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
-				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增
+				sc_start SC_ATKPOTION,1200000,30; 		//增加ATK   10分鐘 1
+				sc_start SC_MATKPOTION,1200000,30; 		//增加MATK  10分鐘 1
+				sc_start SC_CP_WEAPON,1200000,5; 		//化學武器保護 1
+				sc_start SC_CP_SHIELD,1200000,5; 		//化學盾牌保護 1
+				sc_start SC_CP_ARMOR,1200000,5; 			//化學鎧甲保護 1
+				sc_start SC_CP_HELM,1200000,5; 			//化學頭盔保護 1
+				sc_start SC_ASSUMPTIO,900000,5; 		//聖母之祈福 1
+				sc_start SC_ADRENALINE2,900000,1; 		//所有速度激發 1
+				sc_start SC_KAIZEL,1200000,7; 			//凱易哲 1
+				sc_start SC_KAUPE,1200000,3; 			//凱誣僕 1
+				//sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20
+				//sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
+				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增 1
 				sc_start SC_SPEEDUP1,3600000,1;
 				atcommand "@speed 50";
 				set #zhuangtaiVIP3, #zhuangtaiVIP3+1;

@@ -18,7 +18,7 @@
 1@gl_prq	mapflag	novending
 1@gl_prq	mapflag	nochat
 
-amatsu,108,108,5	script	[副本]淨化古城副本	655,{
+amatsu,108,108,5	script	[副本]施密特國王	655,{
 	// 展示資訊
 	F_instanceinfo(strnpcinfo(1),.ins_name$,.ins_MinLv,.ins_MaxLv,.ins_Minplayer,.ins_Maxplayer,.ins_time,.ins_cooldown,.ins_collnum);
 	// 創建選單
@@ -51,7 +51,7 @@ amatsu,108,108,5	script	[副本]淨化古城副本	655,{
 	end;
 OnInit:
 	// 副本名稱
-	.ins_name$ = "淨化古城副本";
+	.ins_name$ = "施密特國王副本";
 	// 最小挑戰等級
 	.ins_MinLv = 1;
 	// 最大挑戰等級
@@ -68,8 +68,8 @@ OnInit:
 	.ins_collnum = 35;
 
 //
-	waitingroom "[副本]淨化古城副本",0;
-	setnpcicon getnpcid(0),22,"[副本]淨化古城副本";
+	waitingroom "[副本]施密特國王副本",0;
+	setnpcicon getnpcid(0),22,"[副本]施密特國王副本";
 	end;
 }
 

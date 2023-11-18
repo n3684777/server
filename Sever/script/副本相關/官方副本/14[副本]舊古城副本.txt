@@ -1214,6 +1214,31 @@ OnTalk6:
 }
 
 1@gl_k,156,258,3	script	霸肋門德#ghinstance3	654,{	
+	if (checkquest(12336,HUNTING) == 2) {
+		erasequest 12336;
+		if (checkquest(12337,HUNTING) == -1) {
+			mes "[霸肋門德]";
+			mes "這個東西帶有一種非比尋常的氣息…若有一天遇到能夠使用它的人，也許它會發揮重要的作用也說不定。";
+			cutin "gl_barmund1",2;
+			getitem 6607,1;// Temporal_Crystal
+			getitem 6755,1;// Coagulated_Spell
+			setquest 12337;
+			close2;
+			cutin "gl_barmund1",255;
+			end;
+		}
+		if (isbegin_quest(12338) == 0) {
+			setquest 12338;// Time Traveler
+			completequest 12338;
+			getexp 500000,500000;
+		}
+	}
+
+	mes "[霸肋門德]";
+	mes "結果還是走到這局面了，難道就沒有辦法阻擋時間超越者的意志嗎？";
+	cutin "gl_barmund1",2;
+	close2;
+	cutin "gl_barmund2",255;
 end;
 OnInstanceInit:
 OnDisable:
@@ -1265,7 +1290,7 @@ OnTalk5:
 
 2@gl_k,151,71,7	script	霸肋門德#ghinstance4	654,{
 	mes "[霸肋門德]";
-	mes "我到底…重複做了這件事多少次啊…好像在夢中見過這個地方數十次了…這個感覺…";
+	mes "我到底…重複做了這件事多少次啊…好像在夢中見過這個地方數十次了…這個感覺…";
 	cutin "gl_barmund1",2;
 	close2;
 	cutin "gl_barmund1",255;
