@@ -36,13 +36,13 @@ function	script	membervip3	{
 			callshop	"道具商店",2;
 			end;
 		case 2:
-			if (#zhuangtaiVIP3 >= 60 ) {
+			if (#zhuangtaiVIP3 >= 1000000 ) {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF今日使用次數已滿^000000";
 			mes "^0AA770=================================^000000";
 			} else {
 				mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
-				mes "　   ^5599FF狀態BUFF剩餘使用次數 ^FF0000"+(60-#zhuangtaiVIP3)+"^000000 ^5599FF次^000000";
+				mes "　   ^5599FF狀態BUFF剩餘使用次數 ^FF0000"+(1000000-#zhuangtaiVIP3)+"^000000 ^5599FF次^000000";
 				mes "^0AA770=================================";
 				next;
 				menu " ^5599FF使用狀態BUFF^000000",-;
@@ -70,6 +70,7 @@ function	script	membervip3	{
 				sc_start SC_KAIZEL,1200000,7; 			//凱易哲
 				sc_start SC_KAUPE,1200000,3; 			//凱誣僕
 				sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20
+				sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
 				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增
 				sc_start SC_SPEEDUP1,3600000,1;
 				atcommand "@speed 50";
@@ -77,13 +78,13 @@ function	script	membervip3	{
 			}
 			break;
 		case 3:
-			if (#zhuangtai33 >= 30 ) {
+			if (#zhuangtai33 >= 1000000 ) {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF今日使用次數已滿^000000";
 			mes "^0AA770=================================^000000";
 			} else {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
-			mes "　   ^5599FF掉寶率加倍剩餘使用次數 ^FF0000"+(30-#zhuangtai33)+"^000000 ^5599FF次^000000";
+			mes "　   ^5599FF掉寶率加倍剩餘使用次數 ^FF0000"+(1000000-#zhuangtai33)+"^000000 ^5599FF次^000000";
 			mes "^0AA770=================================^000000";
 				next;
 				menu " ^5599FF使用掉寶率加倍^000000",-;
