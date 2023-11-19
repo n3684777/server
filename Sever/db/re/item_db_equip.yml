@@ -4374,7 +4374,7 @@ Body:
     Name: 刺殺拳刃
     Type: Weapon
     SubType: Katar
-    Buy: 57000
+    Buy: 110000
     Weight: 1500
     Attack: 140
     Range: 1
@@ -30796,7 +30796,7 @@ Body:
     AegisName: Rosary_
     Name: 幸運珠鏈
     Type: Armor
-    Buy: 15000
+    Buy: 110000
     Weight: 200
     Slots: 1
     Jobs:

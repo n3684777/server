@@ -63,7 +63,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 25;
 
@@ -424,7 +424,7 @@ OnDisable:
 			donpcevent instance_npcname("莎拉#snf3")+"::OnTalk2";
 			sleep2 3000;
 			donpcevent instance_npcname("#cutinc")+"::OnFen2";
-			npctalk "芬裡爾：難道是...十二祭司嗎...";
+			npctalk "芬裡爾：難道是...十二祭司嗎...";
 			sleep2 3000;
 			donpcevent instance_npcname("#cutinc")+"::OnSara1";
 			donpcevent instance_npcname("莎拉#snf3")+"::OnTalk3";
@@ -469,7 +469,7 @@ OnTalk3:
 	npctalk "莎拉：反正你就要死在這了，告訴你也無妨。";
 	end;
 OnTalk4:
-	npctalk "莎拉：我叫莎拉 艾琳，女神芙蕾亞的十二祭司之一。";
+	npctalk "莎拉：我叫莎拉 艾琳，女神芙蕾亞的十二祭司之一。";
 	end;
 OnTalk5:
 	npctalk "莎拉：為了達成芙蕾亞大人的心願，這把劍我就收下了。";

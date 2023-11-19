@@ -73,7 +73,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 3;
 
@@ -669,7 +669,7 @@ OnInstanceInit:
 OnEnable:
 	set .@map$, instance_mapname("2@orcs");
 	monster .@map$,67,64,"獸人狙擊手",1982,1,instance_npcname("#Mobs Control")+"::OnMyMobDead2";
-	mapannounce .@map$, "獸人狙擊手：哈！你能到這裡來十分令我敬佩，但你愚蠢的旅程即將到這裡結束...",bc_map,"0xff8888";
+	mapannounce .@map$, "獸人狙擊手：哈！你能到這裡來十分令我敬佩，但你愚蠢的旅程即將到這裡結束...",bc_map,"0xff8888";
 	end;
 
 OnContinue:

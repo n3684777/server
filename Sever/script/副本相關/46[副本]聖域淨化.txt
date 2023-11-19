@@ -73,7 +73,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 46;
 
@@ -211,7 +211,7 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer3000:
-	callfunc ("StPDiag","守衛隊長","#StP1",0, "首先！冒險者，十分感謝您參加了我們這場大掃除的行動。");
+	callfunc ("StPDiag","守衛隊長","#StP1",0, "首先！冒險者，十分感謝您參加了我們這場大掃除的行動。");
 	sleep 1500;
 	callfunc ("StPDiag","守衛隊長","#StP1",0, "那麼...各位你們有動力嗎?");
 	sleep 1500;
@@ -606,7 +606,7 @@ OnEnable:
 		hideonnpc instance_npcname(sprintf("守衛#StP3_%d", .@i));
 	}
 	sleep 1500;
-	callfunc ("StPDiag","守衛隊長","#StP3",0, "冒險家，十分感謝您參加我們的討伐任務。");
+	callfunc ("StPDiag","守衛隊長","#StP3",0, "冒險家，十分感謝您參加我們的討伐任務。");
 	sleep 1500;
 	callfunc ("StPDiag","守衛隊長","#StP3",0, "我們將為隊長提供管理權限，請隊長為保全安全設施設置一個新的安全號碼。");
 	sleep 1500;

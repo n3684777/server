@@ -53,7 +53,7 @@ OnInit:
     //
     // 時間套裝箱
 	sellitem(100054, 0, -1);	
-	sellitemcurrency(6417,15);
+	sellitemcurrency(6417,10);
     endsellitem();
     // 波士尼亞入場卷
     sellitem(7227, 250000, -1);	
