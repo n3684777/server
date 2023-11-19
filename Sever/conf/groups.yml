@@ -229,14 +229,14 @@ Body:
       can_party: true
       command_enable: true
       all_skill: true
-      all_equipment: false
-      skill_unconditional: false
+      all_equipment: true
+      skill_unconditional: true
       use_check: true
       use_changemaptype: true
       all_commands: true
       channel_admin: true
       can_trade_bounded: true
-      item_unconditional: false
+      item_unconditional: true
       bypass_stat_onclone: true
       bypass_max_stat: true
       macro_register: true
