@@ -97712,7 +97712,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 3
+        Rate: 1500
       - Item: Bloody_Rune
         Rate: 800
   - Id: 20350
@@ -97881,7 +97881,7 @@ Body:
       - Item: Elunium
         Rate: 12
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: EP17_1_EVT02
         Rate: 2500
       - Item: Explosive_Powder
@@ -97927,7 +97927,7 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 10
+        Rate: 1500
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
@@ -98019,7 +98019,7 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 10
+        Rate: 1500
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
@@ -98067,7 +98067,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98111,7 +98111,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Mutant_Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98153,7 +98153,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Bloody_Rune
         Rate: 800
       - Item: Dolor_Card
@@ -98197,7 +98197,7 @@ Body:
       - Item: Wooden_Block
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Bloody_Rune
         Rate: 1600
       - Item: Mt_Dolor_Card
@@ -98245,7 +98245,7 @@ Body:
       - Item: Elunium
         Rate: 10
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98291,7 +98291,7 @@ Body:
       - Item: Elunium
         Rate: 20
       - Item: EP17_1_EVT39
-        Rate: 10
+        Rate: 1500
       - Item: Mt_Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98335,7 +98335,7 @@ Body:
       - Item: Tendon
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 1500
       - Item: Caput_Card
         Rate: 1
         StealProtected: true
@@ -98379,7 +98379,7 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 10
+        Rate: 1500
       - Item: Mt_Caput_Card
         Rate: 1
         StealProtected: true
