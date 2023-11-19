@@ -90,6 +90,12 @@ Body:
       go: true
       breakguild: true
       channel: true
+      # 自己新增
+      allskill: true
+      mi: true
+      whodrops: true
+      whereis: true
+      at: true
       # langtype: true
     Permissions:
       attendance: false
