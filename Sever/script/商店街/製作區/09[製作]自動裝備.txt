@@ -48,7 +48,7 @@ OnInit:
 	endsellitem();
 	sellitem(100163, 50000, -1, 0);	
 	sellitemcurrency(1000103, 20);
-	endsellitem()
+	endsellitem();
 
 OnBuyItem:
 end;
