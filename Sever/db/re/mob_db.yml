@@ -82893,7 +82893,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Eremes_Card
@@ -82942,7 +82942,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Magaleta_Card
@@ -82991,7 +82991,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Katrinn_Card
@@ -83042,7 +83042,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Shecil_Card
@@ -83093,7 +83093,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Harword_Card
@@ -83142,7 +83142,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Seyren_Card
@@ -83697,7 +83697,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Randel_Card
@@ -83748,7 +83748,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Flamel_Card
@@ -83799,7 +83799,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Ceila_Card
@@ -83850,7 +83850,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Chen_Card
@@ -83901,7 +83901,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Gertie_Card
@@ -83952,7 +83952,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Alphoccio_Card
@@ -84003,7 +84003,7 @@ Body:
       - Item: Pieces_Of_Grudge
         Rate: 400
       - Item: Pieces_Of_Grudge
-        Rate: 200
+        Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Trentini_Card
@@ -97699,7 +97699,7 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 3
+        Rate: 15
   - Id: 20349
     AegisName: MD_A013_DOLOR
     Name: A013 - Dolor
@@ -98137,7 +98137,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 10
+        Rate: 15
       - Item: Mutant_Plaga_Card
         Rate: 1
         StealProtected: true
@@ -100394,6 +100394,8 @@ Body:
         Rate: 6000
       - Item: Chaos_Goring_Card
         Rate: 1
+      - Item: 1000228
+        Rate: 15
         StealProtected: true
   - Id: 20530
     AegisName: ILL_KILLER_MANTIS
@@ -100501,6 +100503,8 @@ Body:
         Rate: 150
       - Item: Chaos_Stem_W_Card
         Rate: 1
+      - Item: TokenOfHero
+        Rate: 75
         StealProtected: true
 #  - Id: 20533
 #    AegisName: G_ILL_BAPHOMET_J
@@ -103517,8 +103521,8 @@ Body:
         Rate: 3
       - Item: Iron
         Rate: 500
-      - Item: BarMealTicket
-        Rate: 1500
+      - Item: EP17_1_EVT02
+        Rate: 25
       - Item: Sturdy_Iron_Piece
         Rate: 2000
       - Item: Beta_Cleaner_Card
@@ -103564,8 +103568,8 @@ Body:
         Rate: 300
       - Item: Sturdy_Iron_Piece
         Rate: 2000
-      - Item: BarMealTicket
-        Rate: 1500
+      - Item: EP17_1_EVT02
+        Rate: 25
       - Item: Burnt_Parts
         Rate: 2000
       - Item: Beta_Cleaner_Card
@@ -103631,7 +103635,7 @@ Body:
       CanAttack: true
     Drops:
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 75
       - Item: Iron
         Rate: 1000
       - Item: Broken_Steel_Piece
@@ -103782,7 +103786,7 @@ Body:
       Detector: true
     Drops:
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 75
   - Id: 20641
     AegisName: EP17_2_OMEGA_CLEANER_NG
     Name: Broken Omega Cleaner
@@ -103915,7 +103919,7 @@ Body:
       - Item: Sharp_Scale
         Rate: 1500
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 75
       - Item: Fin
         Rate: 3000
       - Item: Skyblue_Jewel
@@ -103966,7 +103970,7 @@ Body:
         Rate: 2000
       - Item: Meat
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 75
         Rate: 5000
       - Item: EP17_2_Marc_Card
         Rate: 1
@@ -104011,7 +104015,7 @@ Body:
       - Item: Fin
         Rate: 2000
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 75
       - Item: Gill
         Rate: 5000
       - Item: EP17_2_Sword_Fish_Card
@@ -104052,8 +104056,8 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
-      - Item: BarMealTicket
-        Rate: 1500
+      - Item:  BarMealTicket
+        Rate: 75
       - Item: Tooth_Of_Ancient_Fish
         Rate: 500
       - Item: Lip_Of_Ancient_Fish
@@ -106567,15 +106571,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300271
         Rate: 1
         StealProtected: true
@@ -106731,16 +106735,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300278
         Rate: 1
@@ -106777,16 +106781,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300279
         Rate: 1
@@ -106823,16 +106827,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300269
         Rate: 1
@@ -106869,16 +106873,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300268
         Rate: 1
@@ -106915,16 +106919,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300267
         Rate: 1
@@ -107107,16 +107111,16 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300270
         Rate: 1
@@ -107153,15 +107157,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
   - Id: 20789
     AegisName: MD_RETRIBUTION
     Name: MD_RETRIBUTION
@@ -107194,15 +107198,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
   - Id: 20790
     AegisName: MD_SHELTER
     Name: MD_SHELTER
@@ -107235,15 +107239,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
   - Id: 20791
     AegisName: MD_SOLACE
     Name: MD_SOLACE
@@ -107276,15 +107280,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
   - Id: 20792
     AegisName: MD_THA_ANGER
     Name: MD_THA_ANGER
@@ -107316,16 +107320,16 @@ Body:
     Class: Boss
     Drops:
       - Item: Sin_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_B
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: Sin_Shard_A
-        Rate: 3000
+        Rate: 15
         StealProtected: true
       - Item: 300274
         Rate: 1
@@ -107361,15 +107365,15 @@ Body:
     Class: Boss
     Drops:
       - Item: Sin_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300275
         Rate: 1
         StealProtected: true
@@ -107404,15 +107408,15 @@ Body:
     Class: Boss
     Drops:
       - Item: Sin_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300277
         Rate: 1
         StealProtected: true
@@ -107447,15 +107451,15 @@ Body:
     Class: Boss
     Drops:
       - Item: Sin_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Sin_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300276
         Rate: 1
         StealProtected: true
@@ -108402,15 +108406,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300272
         Rate: 1
         StealProtected: true
@@ -108446,15 +108450,15 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_C
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_A
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_B
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_D
-        Rate: 3000
+        Rate: 15
       - Item: Fate_Shard_E
-        Rate: 3000
+        Rate: 15
       - Item: 300273
         Rate: 1
         StealProtected: true

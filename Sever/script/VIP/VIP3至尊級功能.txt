@@ -66,8 +66,8 @@ function	script	membervip3	{
 				sc_start SC_ADRENALINE2,900000,1; 		//所有速度激發 1
 				sc_start SC_KAIZEL,1200000,7; 			//凱易哲 1
 				sc_start SC_KAUPE,1200000,3; 			//凱誣僕 1
-				//sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20
-				//sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
+				//sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20 (有石化bug)
+				sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
 				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增 1
 				sc_start SC_SPEEDUP1,3600000,1;
 				atcommand "@speed 50";
