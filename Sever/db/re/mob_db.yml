@@ -82891,8 +82891,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -82939,8 +82937,6 @@ Body:
         Rate: 50
       - Item: Pieces_Of_Sentiment
         Rate: 600
-      - Item: Pieces_Of_Grudge
-        Rate: 400
       - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
@@ -82989,8 +82985,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -83037,8 +83031,6 @@ Body:
         Rate: 50
       - Item: C_Sniper_Google
         Rate: 50
-      - Item: Pieces_Of_Grudge
-        Rate: 400
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
@@ -83091,8 +83083,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -83137,8 +83127,6 @@ Body:
         Rate: 500
       - Item: C_Rune_Circlet
         Rate: 50
-      - Item: Pieces_Of_Grudge
-        Rate: 400
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
@@ -83694,8 +83682,7 @@ Body:
         Rate: 50
       - Item: Pieces_Of_Sentiment
         Rate: 600
-      - Item: Pieces_Of_Grudge
-        Rate: 400
+
       - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
@@ -83745,8 +83732,7 @@ Body:
         Rate: 10
       - Item: Pieces_Of_Sentiment
         Rate: 600
-      - Item: Pieces_Of_Grudge
-        Rate: 400
+
       - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
@@ -83797,8 +83783,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -83847,8 +83831,6 @@ Body:
         Rate: 10
       - Item: Pieces_Of_Sentiment
         Rate: 600
-      - Item: Pieces_Of_Grudge
-        Rate: 400
       - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
@@ -83899,8 +83881,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -83950,8 +83930,6 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 400
-      - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
         Rate: 1000
@@ -84000,8 +83978,6 @@ Body:
         Rate: 10
       - Item: Pieces_Of_Sentiment
         Rate: 600
-      - Item: Pieces_Of_Grudge
-        Rate: 400
       - Item: Pieces_Of_Grudge
         Rate: 75
       - Item: Fallen_Energy_Particle
