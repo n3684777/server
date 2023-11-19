@@ -103519,6 +103519,8 @@ Body:
         Rate: 500
       - Item: Sturdy_Iron_Piece
         Rate: 2000
+      - Item: BarMealTicket
+        Rate: 5
       - Item: Beta_Cleaner_Card
         Rate: 1
         StealProtected: true
@@ -103564,6 +103566,8 @@ Body:
         Rate: 2000
       - Item: Burnt_Parts
         Rate: 2000
+      - Item: BarMealTicket
+        Rate: 5
       - Item: Beta_Cleaner_Card
         Rate: 1
         StealProtected: true
@@ -103630,6 +103634,8 @@ Body:
         Rate: 1000
       - Item: Broken_Steel_Piece
         Rate: 500
+      - Item: BarMealTicket
+        Rate: 5
   - Id: 20637
     AegisName: EP17_2_BETA_ITEMKEEPER
     Name: Broken Warehouse Manager
@@ -103774,6 +103780,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops:
+      - Item: BarMealTicket
+        Rate: 5
   - Id: 20641
     AegisName: EP17_2_OMEGA_CLEANER_NG
     Name: Broken Omega Cleaner
@@ -103909,6 +103918,8 @@ Body:
         Rate: 3000
       - Item: Skyblue_Jewel
         Rate: 300
+      - Item: BarMealTicket
+        Rate: 5
       - Item: EP17_2_Phen_Card
         Rate: 1
         StealProtected: true
@@ -103955,6 +103966,8 @@ Body:
         Rate: 2000
       - Item: Meat
         Rate: 5000
+      - Item: BarMealTicket
+        Rate: 5
       - Item: EP17_2_Marc_Card
         Rate: 1
         StealProtected: true
@@ -103999,6 +104012,8 @@ Body:
         Rate: 2000
       - Item: Gill
         Rate: 5000
+      - Item: BarMealTicket
+        Rate: 5
       - Item: EP17_2_Sword_Fish_Card
         Rate: 1
         StealProtected: true
@@ -104045,6 +104060,8 @@ Body:
         Rate: 9000
       - Item: Fin
         Rate: 2000
+      - Item: BarMealTicket
+        Rate: 5
       - Item: EP17_2_Piranha_Card
         Rate: 1
         StealProtected: true
