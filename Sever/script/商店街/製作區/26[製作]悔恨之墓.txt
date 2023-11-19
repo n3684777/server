@@ -31,6 +31,14 @@ OnInit:
 	sellitemcurrency(1000367, 700);
 	endsellitem();
 
+	sellitem(610016, 10, -1); //Äb®¬®±¤b
+	sellitemcurrency(1000367, 700);
+	endsellitem();
+
+	sellitem(510027, 10, -1); // Äb®¬Ä±¿ô¤Ñ¼C
+	sellitemcurrency(1000367, 700);
+	endsellitem();
+
 	sellitem(620006, 10, -1);
 	sellitemcurrency(1000367, 700);
 	endsellitem();
