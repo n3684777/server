@@ -82305,9 +82305,9 @@ Body:
     DamageMotion: 600
     Ai: 04
     Class: Boss
-    # Modes:
-    #   IgnoreMelee: true
-    #   IgnoreRanged: true
+    Modes:
+      IgnoreMelee: true
+      IgnoreRanged: true
     Drops:
       - Item: Robe_Of_Sarah
         Rate: 100
@@ -82343,8 +82343,8 @@ Body:
     DamageMotion: 600
     Ai: 04
     Class: Boss
-    # Modes:
-    #   IgnoreMagic: true
+    Modes:
+      IgnoreMagic: true
     Drops:
       - Item: Robe_Of_Sarah
         Rate: 100
@@ -82413,9 +82413,9 @@ Body:
     DamageMotion: 500
     Ai: 04
     Class: Boss
-    # Modes:
-    #   IgnoreMelee: true
-    #   IgnoreRanged: true
+    Modes:
+      IgnoreMelee: true
+      IgnoreRanged: true
     Drops:
       - Item: Gigantes_Card
         Rate: 1
@@ -82449,8 +82449,8 @@ Body:
     DamageMotion: 500
     Ai: 04
     Class: Boss
-    # Modes:
-    #   IgnoreMagic: true
+    Modes:
+      IgnoreMagic: true
     Drops:
       - Item: Gigantes_Card
         Rate: 1
@@ -97783,7 +97783,7 @@ Body:
       - Item: Explosive_Powder
         Rate: 30
       - Item: EP17_1_EVT02
-        Rate: 7
+        Rate: 25
   - Id: 20351
     AegisName: MD_MANHOLE2
     Name: Manhole   #!todo check english name
@@ -97907,9 +97907,9 @@ Body:
       - Item: Elunium
         Rate: 12
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: EP17_1_EVT02
-        Rate: 10
+        Rate: 25
       - Item: Explosive_Powder
         Rate: 30
       - Item: Bellare_Card
@@ -97957,7 +97957,7 @@ Body:
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 30
+        Rate: 25
       - Item: High_Bellare_Card
         Rate: 1
         StealProtected: true
@@ -98001,7 +98001,7 @@ Body:
       - Item: Oridecon
         Rate: 12
       - Item: EP17_1_EVT02
-        Rate: 10
+        Rate: 25
       - Item: Explosive_Powder
         Rate: 30
       - Item: Sanare_Card
@@ -98049,7 +98049,7 @@ Body:
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 30
+        Rate: 25
       - Item: High_Sanare_Card
         Rate: 1
         StealProtected: true
@@ -98093,7 +98093,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98179,7 +98179,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: Bloody_Rune
         Rate: 800
       - Item: Dolor_Card
@@ -98223,7 +98223,7 @@ Body:
       - Item: Wooden_Block
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: Bloody_Rune
         Rate: 1600
       - Item: Mt_Dolor_Card
@@ -98271,7 +98271,7 @@ Body:
       - Item: Elunium
         Rate: 10
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98361,7 +98361,7 @@ Body:
       - Item: Tendon
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 5
+        Rate: 15
       - Item: Caput_Card
         Rate: 1
         StealProtected: true
@@ -103517,10 +103517,10 @@ Body:
         Rate: 3
       - Item: Iron
         Rate: 500
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Sturdy_Iron_Piece
         Rate: 2000
-      - Item: BarMealTicket
-        Rate: 5
       - Item: Beta_Cleaner_Card
         Rate: 1
         StealProtected: true
@@ -103564,10 +103564,10 @@ Body:
         Rate: 300
       - Item: Sturdy_Iron_Piece
         Rate: 2000
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Burnt_Parts
         Rate: 2000
-      - Item: BarMealTicket
-        Rate: 5
       - Item: Beta_Cleaner_Card
         Rate: 1
         StealProtected: true
@@ -103630,12 +103630,12 @@ Body:
       CastSensorIdle: true
       CanAttack: true
     Drops:
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Iron
         Rate: 1000
       - Item: Broken_Steel_Piece
         Rate: 500
-      - Item: BarMealTicket
-        Rate: 5
   - Id: 20637
     AegisName: EP17_2_BETA_ITEMKEEPER
     Name: Broken Warehouse Manager
@@ -103782,7 +103782,7 @@ Body:
       Detector: true
     Drops:
       - Item: BarMealTicket
-        Rate: 5
+        Rate: 1500
   - Id: 20641
     AegisName: EP17_2_OMEGA_CLEANER_NG
     Name: Broken Omega Cleaner
@@ -103914,12 +103914,12 @@ Body:
         Rate: 1800
       - Item: Sharp_Scale
         Rate: 1500
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Fin
         Rate: 3000
       - Item: Skyblue_Jewel
         Rate: 300
-      - Item: BarMealTicket
-        Rate: 5
       - Item: EP17_2_Phen_Card
         Rate: 1
         StealProtected: true
@@ -103965,9 +103965,9 @@ Body:
       - Item: Sharp_Scale
         Rate: 2000
       - Item: Meat
-        Rate: 5000
       - Item: BarMealTicket
-        Rate: 5
+        Rate: 1500
+        Rate: 5000
       - Item: EP17_2_Marc_Card
         Rate: 1
         StealProtected: true
@@ -104010,10 +104010,10 @@ Body:
         Rate: 3000
       - Item: Fin
         Rate: 2000
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Gill
         Rate: 5000
-      - Item: BarMealTicket
-        Rate: 5
       - Item: EP17_2_Sword_Fish_Card
         Rate: 1
         StealProtected: true
@@ -104052,6 +104052,8 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: BarMealTicket
+        Rate: 1500
       - Item: Tooth_Of_Ancient_Fish
         Rate: 500
       - Item: Lip_Of_Ancient_Fish
@@ -104060,8 +104062,6 @@ Body:
         Rate: 9000
       - Item: Fin
         Rate: 2000
-      - Item: BarMealTicket
-        Rate: 5
       - Item: EP17_2_Piranha_Card
         Rate: 1
         StealProtected: true
