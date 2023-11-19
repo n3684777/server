@@ -453,7 +453,7 @@ OnInstanceInit:
 		getmapxy(.@m$,'passx,'passy,BL_PC);
 		donpcevent instance_npcname("Â÷¶}°Æ¥»#1@herbs")+"::OnEnable";
 		'ClearInatance = 1;
-		
+		end;
 	}
 	end;
 
