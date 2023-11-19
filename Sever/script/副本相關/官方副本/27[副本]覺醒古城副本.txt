@@ -74,7 +74,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 27;
 
@@ -1291,7 +1291,7 @@ OnTalk5:
 
 2@gl_kh,151,71,7	script	霸肋門德#n_ghinstance4	654,{
 	mes "[霸肋門德]";
-	mes "我到底…重複做了這件事多少次啊…好像在夢中見過這個地方數十次了…這個感覺…";
+	mes "我到底…重複做了這件事多少次啊…好像在夢中見過這個地方數十次了…這個感覺…";
 	cutin "gl_barmund1",2;
 	close2;
 	cutin "gl_barmund1",255;

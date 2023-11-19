@@ -63,7 +63,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 40;
 
@@ -358,7 +358,7 @@ OnTimer6000:
 		initnpctimer;
 		'Guardian = 1;
 		mapannounce 'map$,"SYSTEM : "+rid2name('REDPERRER)+"正在消耗守護者零件作為自身能量的材料",bc_all;
-		mapannounce 'map$,"SYSTEM : 守護者零件因受到影響所以能對其造成的傷害十分有限",bc_all;
+		mapannounce 'map$,"SYSTEM : 守護者零件因受到影響所以能對其造成的傷害十分有限",bc_all;
 		getunitdata 'REDPERRER, 'mob_data;
 		setunitdata 'REDPERRER, UMOB_ATKMIN, 'mob_data[UMOB_ATKMIN]*3;
 		setunitdata 'REDPERRER, UMOB_ATKMAX, 'mob_data[UMOB_ATKMAX]*3;
@@ -384,7 +384,7 @@ OnTimer6000:
 	else if(unitexists('REDPERRER))
 	{
 		mapannounce 'map$,"SYSTEM : "+rid2name('REDPERRER)+"正在消耗守護者零件作為自身能量的材料",bc_all;
-		mapannounce 'map$,"SYSTEM : 守護者零件因受到影響所以能對其造成的傷害十分有限",bc_all;
+		mapannounce 'map$,"SYSTEM : 守護者零件因受到影響所以能對其造成的傷害十分有限",bc_all;
 	}
 	end;
 

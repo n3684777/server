@@ -63,7 +63,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 28;
 
@@ -279,7 +279,7 @@ OnTimer2000:
 	
 	2hex('LABNUM);
 	set .@test,atoi(implode('LABCTRL$));
-	npctalk "此次驗證碼: "+.@test+" 答案公布 十進位是 "+'LABNUM+" 轉二進位 答案是"+'abc+"";
+	npctalk "此次驗證碼: "+.@test+" 答案公布 十進位是 "+'LABNUM+" 轉二進位 答案是"+'abc+"";
 
 	mes "黑洞洞的槍口正指著你。";
 	mes "要進行什麼操作麼？";

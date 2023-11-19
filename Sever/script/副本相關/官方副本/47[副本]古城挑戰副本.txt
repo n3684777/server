@@ -63,7 +63,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 7200;
+	.ins_cooldown = 300;
 	// 冷卻編號
 	.ins_collnum = 47;
 
@@ -512,7 +512,7 @@ OnTimer5000:
 		}
 		sleep 1000;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 1000;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
