@@ -82891,7 +82891,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Eremes_Card
@@ -82938,7 +82938,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Magaleta_Card
@@ -82985,7 +82985,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Katrinn_Card
@@ -83034,7 +83034,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Shecil_Card
@@ -83083,7 +83083,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Harword_Card
@@ -83130,7 +83130,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Seyren_Card
@@ -83359,7 +83359,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 3000
+        Rate: 1500
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83412,7 +83412,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 3000
+        Rate: 1500
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83465,7 +83465,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 3000
+        Rate: 1500
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83683,7 +83683,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Randel_Card
@@ -83732,7 +83732,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Flamel_Card
@@ -83781,7 +83781,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Ceila_Card
@@ -83830,7 +83830,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Chen_Card
@@ -83879,7 +83879,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Gertie_Card
@@ -83928,7 +83928,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Alphoccio_Card
@@ -83977,7 +83977,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 7500
+        Rate: 1500
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Trentini_Card
@@ -97367,7 +97367,7 @@ Body:
       - Item: Old_Steel_Plate
         Rate: 3500
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: EP17_1_EVT01
         Rate: 100
       - Item: EP17_1_EVT39
@@ -97411,7 +97411,7 @@ Body:
       - Item: Needle_Pouch
         Rate: 1250
       - Item: EP17_1_EVT02
-        Rate: 1000
+        Rate: 500
       - Item: Scarlet_Dyestuffs
         Rate: 30
       - Item: E_EA1L_Card
@@ -97453,7 +97453,7 @@ Body:
       - Item: Burnt_Parts
         Rate: 1000
       - Item: EP17_1_EVT02
-        Rate: 1000
+        Rate: 5000
       - Item: E_EA2S_Card
         Rate: 1
         StealProtected: true
@@ -97596,7 +97596,7 @@ Body:
       - Item: Tiger's_Skin
         Rate: 3000
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: EP17_1_EVT01
         Rate: 100
       - Item: EP17_1_EVT39
@@ -97712,7 +97712,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Bloody_Rune
         Rate: 800
   - Id: 20350
@@ -97757,7 +97757,7 @@ Body:
       - Item: Explosive_Powder
         Rate: 30
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
   - Id: 20351
     AegisName: MD_MANHOLE2
     Name: Manhole   #!todo check english name
@@ -97881,9 +97881,9 @@ Body:
       - Item: Elunium
         Rate: 12
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: Explosive_Powder
         Rate: 30
       - Item: Bellare_Card
@@ -97927,11 +97927,11 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: High_Bellare_Card
         Rate: 1
         StealProtected: true
@@ -97975,7 +97975,7 @@ Body:
       - Item: Oridecon
         Rate: 12
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: Explosive_Powder
         Rate: 30
       - Item: Sanare_Card
@@ -98019,11 +98019,11 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 2500
+        Rate: 500
       - Item: High_Sanare_Card
         Rate: 1
         StealProtected: true
@@ -98067,7 +98067,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98111,7 +98111,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Mutant_Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98153,7 +98153,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Bloody_Rune
         Rate: 800
       - Item: Dolor_Card
@@ -98197,7 +98197,7 @@ Body:
       - Item: Wooden_Block
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Bloody_Rune
         Rate: 1600
       - Item: Mt_Dolor_Card
@@ -98245,7 +98245,7 @@ Body:
       - Item: Elunium
         Rate: 10
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98291,7 +98291,7 @@ Body:
       - Item: Elunium
         Rate: 20
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Mt_Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98335,7 +98335,7 @@ Body:
       - Item: Tendon
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Caput_Card
         Rate: 1
         StealProtected: true
@@ -98379,7 +98379,7 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 1500
+        Rate: 300
       - Item: Mt_Caput_Card
         Rate: 1
         StealProtected: true
@@ -103543,7 +103543,7 @@ Body:
       - Item: Sturdy_Iron_Piece
         Rate: 2000
       - Item: BarMealTicket
-        Rate: 7500
+        Rate: 1500
       - Item: Burnt_Parts
         Rate: 2000
       - Item: Beta_Cleaner_Card
@@ -103609,7 +103609,7 @@ Body:
       CanAttack: true
     Drops:
       - Item: BarMealTicket
-        Rate: 7500
+        Rate: 1500
       - Item: Iron
         Rate: 1000
       - Item: Broken_Steel_Piece
@@ -103760,7 +103760,7 @@ Body:
       Detector: true
     Drops:
       - Item: BarMealTicket
-        Rate: 7500
+        Rate: 1500
   - Id: 20641
     AegisName: EP17_2_OMEGA_CLEANER_NG
     Name: Broken Omega Cleaner
@@ -103893,7 +103893,7 @@ Body:
       - Item: Sharp_Scale
         Rate: 1500
       - Item: BarMealTicket
-        Rate: 7500
+        Rate: 1500
       - Item: Fin
         Rate: 3000
       - Item: Skyblue_Jewel
@@ -103944,8 +103944,7 @@ Body:
         Rate: 2000
       - Item: Meat
       - Item: BarMealTicket
-        Rate: 7500
-        Rate: 5000
+        Rate: 1500
       - Item: EP17_2_Marc_Card
         Rate: 1
         StealProtected: true
@@ -103989,7 +103988,7 @@ Body:
       - Item: Fin
         Rate: 2000
       - Item: BarMealTicket
-        Rate: 7500
+        Rate: 1500
       - Item: Gill
         Rate: 5000
       - Item: EP17_2_Sword_Fish_Card
@@ -104031,7 +104030,7 @@ Body:
       Detector: true
     Drops:
       - Item:  BarMealTicket
-        Rate: 7500
+        Rate: 1500
       - Item: Tooth_Of_Ancient_Fish
         Rate: 500
       - Item: Lip_Of_Ancient_Fish
