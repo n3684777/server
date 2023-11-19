@@ -103895,7 +103895,7 @@ Body:
       - Item: Sharp_Scale
         Rate: 1500
       - Item: BarMealTicket
-        Rate: 75
+        Rate: 7500
       - Item: Fin
         Rate: 3000
       - Item: Skyblue_Jewel
