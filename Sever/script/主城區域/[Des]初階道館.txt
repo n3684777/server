@@ -141,7 +141,7 @@ OnMobDead:
 		announce   "道館裁判 : 還剩下 ["+.@mobcount+"] 隻怪物",17; end;
 	}
 	if ('Checkpoint ==  getarraysize('mobknum)-1){
-		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '中階道館' 成功",0;
+		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '初階道館' 成功",0;
 		sleep2 2000;
 		set 'win,1;
 		enablenpc  instance_npcname("道館裁判#rank2_1");
