@@ -315,7 +315,7 @@ uttycty,150,103,4	script	婚姻申辦	71,{
 			else { set zeny,zeny-1200000; delitem 2338,1; }
 			delitem 2613,1; //Diamond_Ring
 			set wedding_sign,1;
-			goto L_End;
+			next;
 		}
 		mes "[黃臉婆]";
 		mes "祝你有一個幸福的一天...!";
