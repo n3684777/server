@@ -53,8 +53,8 @@ function	script	Job_Main	{
 
 function	script	Job_Check	{
 
-	//初心者 寶寶初心者
-	if ( Class == 0 || Class == 4001 || Class == 4023 ) {
+	//初心者
+	if ( Class == 0 || Class == 4001 ) {
 		if ( JobLevel < 10 ) {
 			mes "[職業服務員]";
 			mes "需要達到職業等級^FF000010級^000000才能進行轉職!";
@@ -72,7 +72,7 @@ function	script	Job_Check	{
 	}
 
 	//一轉職、進階一轉職及跆拳家
-	if (( Class >= 1 && Class <= 6 ) || ( Class >= 4002 && Class <= 4007 ) || ( Class >= 4024 && Class <= 4029 ) || ( Class == 4046 )) {
+	if (( Class >= 1 && Class <= 6 ) || ( Class >= 4002 && Class <= 4007 ) || ( Class == 4046 )) {
 		if ( JobLevel < 40 ) {
 			mes "[職業服務員]";
 			mes "需要達到職業等級^FF000040級^000000或以上才能進行轉職!";
@@ -89,8 +89,8 @@ function	script	Job_Check	{
 		end;	
 	}
 	
-	//二轉職 寶寶二轉職
-	if (( Class >= 7 && Class <= 12 ) || ( Class >= 14 && Class <= 20 ) || ( Class >= 4030 && Class <= 4035 ) || ( Class >= 4037 && Class <= 4043 )) {
+	//二轉職
+	if (( Class >= 7 && Class <= 12 ) || ( Class >= 14 && Class <= 20 )) {
 		if ( BaseLevel < 99 ) {
 			mes "[職業服務員]";
 			mes "需要達到基本等級^FF000099級^000000才能進行轉職!";
@@ -134,9 +134,7 @@ function	script	Job_Check	{
 		callfunc "Job3_Change";
 		end;
 	}
-
-	//三轉和寶寶三轉職
-	if (( Class >= 4060 && Class <= 4065 ) || ( Class >= 4073 && Class <= 4079 ) || ( Class >= 4096 && Class <= 4101 ) || ( Class >= 4102 && Class <= 4108 )) {
+	if (( Class >= 4060 && Class <= 4065 ) || ( Class >= 4073 && Class <= 4079 )) {
 	if ( BaseLevel < 200 ) {
 		mes "[職業服務員]";
 		mes "需要達到指定等級才能進行等級擴充!";
@@ -158,7 +156,7 @@ function	script	Job_Check	{
 	end;
 	}
 	//超級初心者
-	if ( Class == 23 || Class == 4045 ) {
+	if ( Class == 23 ) {
 		if ( BaseLevel < 99 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -181,7 +179,7 @@ function	script	Job_Check	{
 	}
 	
 		//超級初心者三轉
-	if ( Class == 4190 || Class == 4191) {
+	if ( Class == 4190 ) {
 		if ( BaseLevel < 200 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -205,7 +203,7 @@ function	script	Job_Check	{
 
 
 		//超級貓族三轉
-	if ( Class == 4218 || Class == 4220) {
+	if ( Class == 4218 ) {
 		if ( BaseLevel < 200 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -228,7 +226,7 @@ function	script	Job_Check	{
 	}
 
 	//槍手及忍者
-	if ( Class == 24 || Class == 25 || Class == 4228 || Class == 4222 ) {
+	if ( Class == 24 || Class == 25 ) {
 		if ( BaseLevel < 99 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -249,8 +247,8 @@ function	script	Job_Check	{
 		callfunc "ExJob_Change";
 		end;	
 	}
-	//影狼隴反叛擴充三轉
-	if ( Class == 4211 || Class == 4212 || Class == 4215 || Class == 4223 || Class == 4224 || Class == 4229  ) {
+	//影狼隴擴充三轉
+	if ( Class == 4211 || Class == 4212 || Class == 4215  ) {
 		if ( BaseLevel < 200 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -272,7 +270,7 @@ function	script	Job_Check	{
 		end;	
 	}
 	//拳聖及悟靈
-	if ( Class == 4047 || Class == 4049 || Class == 4226 || Class == 4227 ) {
+	if ( Class == 4047 || Class == 4049 ) {
 		if ( BaseLevel < 99 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -294,7 +292,7 @@ function	script	Job_Check	{
 		end;	
 	}
 	//拳聖及悟靈擴充三轉
-	if ( Class == 4239 || Class == 4240 || Class == 4241 || Class == 4242) {
+	if ( Class == 4239 || Class == 4240 ) {
 		if ( BaseLevel < 200 ) {
 			mes "[職業服務員]";
 			mes "需要達到指定等級才能進行等級擴充!";
@@ -473,7 +471,7 @@ function	script	Job2_Change	{
 		mes "提示:^FF0000轉生後將不能轉職成其他職業^000000";
 		
 		if ( Job1_History == 1 ) {
-			switch(select("騎士","十字軍")) {
+			switch(select("騎士","十字軍")) {
 				case 1:
 					jobchange 7;
 					set Job2_History,1;
@@ -577,7 +575,7 @@ function	script	Job2_Change	{
 			jobchange 4008;
 			goto Job2_Done;
 		}
-		if (( Job1_History == 1 ) && ( Job2_History == 2 )) {	//聖殿十字軍
+		if (( Job1_History == 1 ) && ( Job2_History == 2 )) {	//聖殿十字軍
 			jobchange 4015;
 			goto Job2_Done;
 		}
@@ -618,7 +616,7 @@ function	script	Job2_Change	{
 			jobchange 4019;
 			goto Job2_Done;
 		}
-		if (( Job1_History == 6 ) && ( Job2_History == 1 )) {	//十字刺客
+		if (( Job1_History == 6 ) && ( Job2_History == 1 )) {	//十字刺客
 			jobchange 4013;
 			goto Job2_Done;
 		}
@@ -896,7 +894,7 @@ function	script	BbJob_Change	{
 		mes "請選擇想要轉職的職業:";
 		
 		if ( Job1_History == 1 ) {
-			switch(select("寶寶騎士","寶寶十字軍")) {
+			switch(select("寶寶騎士","寶寶十字軍")) {
 				case 1:
 					jobchange 4030;
 					set Job2_History,1;
@@ -1388,7 +1386,7 @@ function	script	Job_Skill	{
 		skill 1001,1,0;
 		goto Skill_Done;
 	}
-	//十字軍
+	//十字軍
 	if ( Class == 14 || Class == 4015 || Class == 4066 || Class == 4073 || Class == 4037 || Class == 4102 || Class == 4258 ) {
 		skill 144,1,0;
 		skill 145,1,0;
