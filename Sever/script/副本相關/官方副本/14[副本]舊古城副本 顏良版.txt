@@ -61,7 +61,7 @@ amatsu,103,123,5	script	[副本]舊古城副本	863,{
 	end;
 OnInit:
 	// 副本名稱
-	.ins_name$ = "舊古城副本";
+	.ins_name$ = "斬真假顏良";
 	// 最小挑戰等級
 	.ins_MinLv = 1;
 	// 最大挑戰等級
@@ -78,57 +78,57 @@ OnInit:
 	.ins_collnum = 14;
 
 //
-	waitingroom "[副本]舊古城副本",0;
-	setnpcicon getnpcid(0),22,"[副本]舊古城副本";
+	waitingroom "[副本]斬真假顏良",0;
+	setnpcicon getnpcid(0),22,"[副本]斬真假顏良";
 	end;
 }
 
 // Floor 1
 //============================================================
-1@gl_k,149,41,6	script	霸肋門德#ghinstance1	654,{
+1@gl_k,149,41,6	script	顏良收割機關羽#ghinstance1	654,{
 	if (getcharid(0) == getpartyleader(getcharid(1),2)) {
-		mes "^0000ff海力克^000000派來幫助我的人就是你嗎？";
-		npctalk "霸肋門德：海力克派來幫助我的人就是你嗎？";
+		mes "^0000ff喜未亡人曹操^000000派來幫助我的人就是你嗎？";
+		npctalk "顏良收割機關羽：喜未亡人曹操派來幫助我的人就是你嗎？";
 		cutin "gl_barmund1",2;
 		next;
 		select("喔，好…");
 		mes "["+strcharinfo(0)+"]";
-		mes "喔！是的，哈哈哈，海力克要我來見賢者霸肋門德呢。";
-		unittalk getcharid(3),strcharinfo(0)+"：喔！是的，哈哈哈，海力克要我來見賢者霸肋門德呢。";
+		mes "喔！是的，哈哈哈，喜未亡人曹操要我來見賢者顏良收割機關羽呢。";
+		unittalk getcharid(3),strcharinfo(0)+"：喔！是的，哈哈哈，喜未亡人曹操要我來見賢者顏良收割機關羽呢。";
 		next;
-		mes "[霸肋門德]";
-		mes "沒時間了。必須要將希梅爾茲侵略的事情告訴哈因理希。";
-		npctalk "霸肋門德：沒時間了。必須要將希梅爾茲侵略的事情告訴哈因理希。";
+		mes "[顏良收割機關羽]";
+		mes "沒時間了。必須要將萬夫莫敵袁紹侵略的事情告訴吃席販女之徒劉備。";
+		npctalk "顏良收割機關羽：沒時間了。必須要將萬夫莫敵袁紹侵略的事情告訴吃席販女之徒劉備。";
 		cutin "gl_barmund2",2;
 		next;
-		select("希梅爾茲…");
+		select("萬夫莫敵袁紹…");
 		mes "["+strcharinfo(0)+"]";
-		mes "希梅爾茲是誰？";
-		unittalk getcharid(3),strcharinfo(0)+"：希梅爾茲是誰？";
+		mes "萬夫莫敵袁紹是誰？";
+		unittalk getcharid(3),strcharinfo(0)+"：萬夫莫敵袁紹是誰？";
 		next;
-		mes "[霸肋門德]";
-		mes "難道海力克連一點基本常識都沒告訴你？";
-		npctalk "霸肋門德：難道海力克連一點基本常識都沒告訴你？";
+		mes "[顏良收割機關羽]";
+		mes "難道喜未亡人曹操連一點基本常識都沒告訴你？";
+		npctalk "顏良收割機關羽：難道喜未亡人曹操連一點基本常識都沒告訴你？";
 		cutin "gl_barmund3",2;
 		next;
-		mes "[霸肋門德]";
+		mes "[顏良收割機關羽]";
 		mes "她統治死者，是亡者的巴基力。她現在想要奪取藏在這裡的伊美樂的心臟。";
-		npctalk "霸肋門德：她統治死者，是亡者的巴基力。她現在想要奪取藏在這裡的伊美樂的心臟。";
+		npctalk "顏良收割機關羽：她統治死者，是亡者的巴基力。她現在想要奪取藏在這裡的伊美樂的心臟。";
 		cutin "gl_barmund2",2;
 		next;
-		mes "[霸肋門德]";
+		mes "[顏良收割機關羽]";
 		mes "為了達到目的，她可能會不惜將整個城夷為平地。";
-		npctalk "霸肋門德：為了達到目的，她可能會不惜將整個城夷為平地。";
+		npctalk "顏良收割機關羽：為了達到目的，她可能會不惜將整個城夷為平地。";
 		next;
-		mes "[霸肋門德]";
-		mes "快點！趕快將希梅爾茲的事情告訴哈因理希！而我會先察看這裡的結界！";
-		npctalk "霸肋門德：快點！趕快將希梅爾茲的事情告訴哈因理希！而我會先察看這裡的結界！";
+		mes "[顏良收割機關羽]";
+		mes "快點！趕快將萬夫莫敵袁紹的事情告訴吃席販女之徒劉備！而我會先察看這裡的結界！";
+		npctalk "顏良收割機關羽：快點！趕快將萬夫莫敵袁紹的事情告訴吃席販女之徒劉備！而我會先察看這裡的結界！";
 		close2;
 		cutin "gl_barmund2",255;
-		donpcevent instance_npcname("霸肋門德#ghinstance1")+"::OnDisable2";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance1")+"::OnDisable2";
 		end;
 	} else {
-		mes "[霸肋門德]";
+		mes "[顏良收割機關羽]";
 		mes "他在哪? 我們需要他的幫助.";
 		cutin "gl_barmund2",2;
 		close2;
@@ -136,32 +136,32 @@ OnInit:
 		end;
 	}
 OnInstanceInit:
-	donpcevent instance_npcname("霸肋門德#ghinstance1")+"::OnEnable";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance1")+"::OnEnable";
 	end;
 OnDisable:
-	hideonnpc instance_npcname("霸肋門德#ghinstance1");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance1");
 	end;
 OnDisable2:
-	hideonnpc instance_npcname("霸肋門德#ghinstance1");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance1");
 
 	for(set .@i,1; .@i<=20; set .@i,.@i+4) {
-		hideoffnpc instance_npcname("卡利斯格騎士#"+.@i);
-		hideoffnpc instance_npcname("卡利斯格騎士#"+(.@i+1));
-		hideoffnpc instance_npcname("白衣騎士#"+(.@i+2));
-		hideoffnpc instance_npcname("白衣騎士#"+(.@i+3));
+		hideoffnpc instance_npcname("中型顏良#"+.@i);
+		hideoffnpc instance_npcname("中型顏良#"+(.@i+1));
+		hideoffnpc instance_npcname("畸形顏良#"+(.@i+2));
+		hideoffnpc instance_npcname("畸形顏良#"+(.@i+3));
 	}
-	hideoffnpc instance_npcname("卡利斯格騎士#21");
-	hideoffnpc instance_npcname("卡利斯格騎士#22");
+	hideoffnpc instance_npcname("中型顏良#21");
+	hideoffnpc instance_npcname("中型顏良#22");
 
-	hideoffnpc instance_npcname("哈因理希#ghinstance1");
-	hideoffnpc instance_npcname("霸肋門德#ghinstance2");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance1");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance2");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("霸肋門德#ghinstance1");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance1");
 	end;
 }
 
-1@gl_k,145,54,6	script	卡利斯格騎士#1	655,{
+1@gl_k,145,54,6	script	中型顏良#1	655,{
 	mes "["+strnpcinfo(1)+"]";
 	switch((atoi(strnpcinfo(2)) + 1) / 2) {
 		case 1: mes "我有被招募嗎?"; break;
@@ -169,11 +169,11 @@ OnEnable:
 		case 3: mes "..."; break;
 		case 4: mes "我不喜歡在工作中閒聊."; break;
 		case 5: mes "難道你不覺得城堡內的這個區域已經被改變了嗎? 剛剛好像在我眼前出現了什麼東西似的."; break;
-		case 6: mes "我對霸肋門德司令官是做什麼的感到好奇. 我聽到人們正在逃跑..."; break;
+		case 6: mes "我對顏良收割機關羽司令官是做什麼的感到好奇. 我聽到人們正在逃跑..."; break;
 		case 7: mes "安靜一點好嗎."; break;
 		case 8: mes "在附近似乎有動靜."; break;
 		case 9: mes "昨晚的一個夢真的令我很困擾. 我的母親經常告訴我說那些夢可能會成真..."; break;
-		case 10: mes "霸肋門德要跟你一起去嗎? 司令官正在等你哦."; break;
+		case 10: mes "顏良收割機關羽要跟你一起去嗎? 司令官正在等你哦."; break;
 		case 11: mes "換班的時間快到了. 我很好奇那些騎士們發生了什麼事."; break;
 	}
 	close;
@@ -185,62 +185,62 @@ OnEnable:
 	hideoffnpc instance_npcname(strnpcinfo(0));
 	end;
 }
-1@gl_k,154,54,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#2	655
-1@gl_k,145,59,6	duplicate(卡利斯格騎士#1)	白衣騎士#3	657
-1@gl_k,154,59,3	duplicate(卡利斯格騎士#1)	白衣騎士#4	657
-1@gl_k,145,64,6	duplicate(卡利斯格騎士#1)	卡利斯格騎士#5	655
-1@gl_k,154,64,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#6	655
-1@gl_k,145,69,6	duplicate(卡利斯格騎士#1)	白衣騎士#7	657
-1@gl_k,154,69,3	duplicate(卡利斯格騎士#1)	白衣騎士#8	657
-1@gl_k,145,74,6	duplicate(卡利斯格騎士#1)	卡利斯格騎士#9	655
-1@gl_k,154,74,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#10	655
-1@gl_k,145,79,6	duplicate(卡利斯格騎士#1)	白衣騎士#11	657
-1@gl_k,154,79,3	duplicate(卡利斯格騎士#1)	白衣騎士#12	657
-1@gl_k,145,84,6	duplicate(卡利斯格騎士#1)	卡利斯格騎士#13	655
-1@gl_k,154,84,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#14	655
-1@gl_k,145,89,6	duplicate(卡利斯格騎士#1)	白衣騎士#15	657
-1@gl_k,154,89,3	duplicate(卡利斯格騎士#1)	白衣騎士#16	657
-1@gl_k,145,94,6	duplicate(卡利斯格騎士#1)	卡利斯格騎士#17	655
-1@gl_k,154,94,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#18	655
-1@gl_k,145,99,6	duplicate(卡利斯格騎士#1)	白衣騎士#19	657
-1@gl_k,154,99,3	duplicate(卡利斯格騎士#1)	白衣騎士#20	657
-1@gl_k,145,104,6	duplicate(卡利斯格騎士#1)	卡利斯格騎士#21	655
-1@gl_k,154,104,3	duplicate(卡利斯格騎士#1)	卡利斯格騎士#22	655
+1@gl_k,154,54,3	duplicate(中型顏良#1)	中型顏良#2	655
+1@gl_k,145,59,6	duplicate(中型顏良#1)	畸形顏良#3	657
+1@gl_k,154,59,3	duplicate(中型顏良#1)	畸形顏良#4	657
+1@gl_k,145,64,6	duplicate(中型顏良#1)	中型顏良#5	655
+1@gl_k,154,64,3	duplicate(中型顏良#1)	中型顏良#6	655
+1@gl_k,145,69,6	duplicate(中型顏良#1)	畸形顏良#7	657
+1@gl_k,154,69,3	duplicate(中型顏良#1)	畸形顏良#8	657
+1@gl_k,145,74,6	duplicate(中型顏良#1)	中型顏良#9	655
+1@gl_k,154,74,3	duplicate(中型顏良#1)	中型顏良#10	655
+1@gl_k,145,79,6	duplicate(中型顏良#1)	畸形顏良#11	657
+1@gl_k,154,79,3	duplicate(中型顏良#1)	畸形顏良#12	657
+1@gl_k,145,84,6	duplicate(中型顏良#1)	中型顏良#13	655
+1@gl_k,154,84,3	duplicate(中型顏良#1)	中型顏良#14	655
+1@gl_k,145,89,6	duplicate(中型顏良#1)	畸形顏良#15	657
+1@gl_k,154,89,3	duplicate(中型顏良#1)	畸形顏良#16	657
+1@gl_k,145,94,6	duplicate(中型顏良#1)	中型顏良#17	655
+1@gl_k,154,94,3	duplicate(中型顏良#1)	中型顏良#18	655
+1@gl_k,145,99,6	duplicate(中型顏良#1)	畸形顏良#19	657
+1@gl_k,154,99,3	duplicate(中型顏良#1)	畸形顏良#20	657
+1@gl_k,145,104,6	duplicate(中型顏良#1)	中型顏良#21	655
+1@gl_k,154,104,3	duplicate(中型顏良#1)	中型顏良#22	655
 
-1@gl_k,149,100,6	script	哈因理希#ghinstance1	652,{
+1@gl_k,149,100,6	script	吃席販女之徒劉備#ghinstance1	652,{
 	if (getcharid(0) == getpartyleader(getcharid(1),2)) {
 		cutin "gl_heinrich2",2;
-		select("哈因理希現在在城裡面…");
+		select("吃席販女之徒劉備現在在城裡面…");
 		mes "["+strcharinfo(0)+"]";
-		mes "哈因理希知道現在城裡發生什麼事了嗎？";
-		unittalk getcharid(3),strcharinfo(0)+"：哈因理希知道現在城裡發生什麼事了嗎？";
+		mes "吃席販女之徒劉備知道現在城裡發生什麼事了嗎？";
+		unittalk getcharid(3),strcharinfo(0)+"：吃席販女之徒劉備知道現在城裡發生什麼事了嗎？";
 		next;
-		mes "[哈因理希]";
-		mes "你不是和霸肋門德一起來的冒險家嗎？";
-		npctalk "哈因理希：你不是和霸肋門德一起來的冒險家嗎？";
+		mes "[吃席販女之徒劉備]";
+		mes "你不是和顏良收割機關羽一起來的冒險家嗎？";
+		npctalk "吃席販女之徒劉備：你不是和顏良收割機關羽一起來的冒險家嗎？";
 		next;
-		mes "[哈因理希]";
+		mes "[吃席販女之徒劉備]";
 		mes "有什麼事情嗎？這座城裡面究竟發生什麼事了？";
-		npctalk "哈因理希：有什麼事情嗎？這座城裡面究竟發生什麼事了？";
+		npctalk "吃席販女之徒劉備：有什麼事情嗎？這座城裡面究竟發生什麼事了？";
 		next;
-		select("希梅爾茲想要伊美樂的…");
+		select("萬夫莫敵袁紹想要伊美樂的…");
 		mes "["+strcharinfo(0)+"]";
-		mes "亡者的巴基力，希梅爾茲覬覦著藏在城中的伊美樂的心臟！";
-		unittalk getcharid(3),strcharinfo(0)+"：亡者的巴基力，希梅爾茲覬覦著藏在城中的伊美樂的心臟！";
+		mes "亡者的巴基力，萬夫莫敵袁紹覬覦著藏在城中的伊美樂的心臟！";
+		unittalk getcharid(3),strcharinfo(0)+"：亡者的巴基力，萬夫莫敵袁紹覬覦著藏在城中的伊美樂的心臟！";
 		next;
-		mes "[哈因理希]";
+		mes "[吃席販女之徒劉備]";
 		mes "哈哈，你真是愛說笑啊！那種東西怎麼有可能在這裡呢…";
-		npctalk "哈因理希：哈哈，你真是愛說笑啊！那種東西怎麼有可能在這裡呢…";
+		npctalk "吃席販女之徒劉備：哈哈，你真是愛說笑啊！那種東西怎麼有可能在這裡呢…";
 		cutin "gl_heinrich1",2;
 		next;
-		mes "[霸肋門德]";
-		mes "哈因理希！我沒有在開玩笑的。如果我的判斷沒有錯的話，現在她馬上就要找到這裡來了。";
-		donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk1";
+		mes "[顏良收割機關羽]";
+		mes "吃席販女之徒劉備！我沒有在開玩笑的。如果我的判斷沒有錯的話，現在她馬上就要找到這裡來了。";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk1";
 		cutin "gl_barmund2",2;
 		next;
-		mes "[霸肋門德]";
-		mes "你也可以相信跟我來的這個人。在希梅爾茲奪取這裡的伊美樂心臟碎片前，快將它藏到安全的地方！";
-		donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk2";
+		mes "[顏良收割機關羽]";
+		mes "你也可以相信跟我來的這個人。在萬夫莫敵袁紹奪取這裡的伊美樂心臟碎片前，快將它藏到安全的地方！";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk2";
 		next;
 		select("就算司令不相信…");
 		mes "["+strcharinfo(0)+"]";
@@ -248,24 +248,24 @@ OnEnable:
 		unittalk getcharid(3),strcharinfo(0)+"：就算司令您不相信也沒辦法，已經沒時間了！";
 		cutin "gl_barmund2",255;
 		next;
-		mes "[哈因理希]";
+		mes "[吃席販女之徒劉備]";
 		mes "感謝兩位的好意，但是現在我們的國王去了很遠的地方。";
-		npctalk "哈因理希：感謝兩位的好意，但是現在我們的國王去了很遠的地方。";
+		npctalk "吃席販女之徒劉備：感謝兩位的好意，但是現在我們的國王去了很遠的地方。";
 		cutin "gl_heinrich1",2;
 		next;
-		mes "[哈因理希]";
+		mes "[吃席販女之徒劉備]";
 		mes "不能只憑推測，就隨便下令處置如此重要的事件。";
-		npctalk "哈因理希：不能只憑推測，就隨便下令處置如此重要的事件。";
-		donpcevent instance_npcname("哈因理希#ghinstance1")+"::OnDisable";
-		donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnEnable";
-		donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnEnable";
+		npctalk "吃席販女之徒劉備：不能只憑推測，就隨便下令處置如此重要的事件。";
+		donpcevent instance_npcname("吃席販女之徒劉備#ghinstance1")+"::OnDisable";
+		donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnEnable";
+		donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnEnable";
 		donpcevent instance_npcname("#talkinstance1")+"::OnEnable";
 		mapannounce instance_mapname("1@gl_k"), "？？？的嘶吼：啊哈哈哈哈哈哈~！",bc_map,"0xFFFF00";
 		close2;
 		cutin "gl_heinrich1",255;
 		end;
 	} else {
-		mes "[哈因理希]";
+		mes "[吃席販女之徒劉備]";
 		mes "請問你們的代表在哪?";
 		mes "我需要跟他對話.";
 		cutin "gl_heinrich2",2;
@@ -275,153 +275,153 @@ OnEnable:
 	}
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance1");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance1");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance1");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance1");
 	end;
 }
 
-1@gl_k,152,97,3	script	霸肋門德#ghinstance2	654,{
+1@gl_k,152,97,3	script	顏良收割機關羽#ghinstance2	654,{
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("霸肋門德#ghinstance2");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance2");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("霸肋門德#ghinstance2");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance2");
 	end;
 OnTalk1:
-	npctalk "霸肋門德：哈因理希！我沒有在開玩笑的。如果我的判斷沒有錯的話，現在她馬上就要找到這裡來了。";
+	npctalk "顏良收割機關羽：吃席販女之徒劉備！我沒有在開玩笑的。如果我的判斷沒有錯的話，現在她馬上就要找到這裡來了。";
 	end;
 OnTalk2:
-	npctalk "霸肋門德：你也可以相信跟我來的這個人。在希梅爾茲奪取這裡的伊美樂心臟碎片前，快將它藏到安全的地方！";
+	npctalk "顏良收割機關羽：你也可以相信跟我來的這個人。在萬夫莫敵袁紹奪取這裡的伊美樂心臟碎片前，快將它藏到安全的地方！";
 	end;
 OnTalk3:
-	npctalk "霸肋門德：希梅爾茲！！你什麼時候！";
+	npctalk "顏良收割機關羽：萬夫莫敵袁紹！！你什麼時候！";
 	end;
 OnTalk4:
-	npctalk "霸肋門德：哈因理希，他們已經變成魔物了。快點讓他們安息吧！";
+	npctalk "顏良收割機關羽：吃席販女之徒劉備，他們已經變成魔物了。快點讓他們安息吧！";
 	end;
 OnTalk5:
-	npctalk "霸肋門德：哈因理希！你需要快點決定！";
+	npctalk "顏良收割機關羽：吃席販女之徒劉備！你需要快點決定！";
 	end;
 OnTalk6:
-	npctalk "霸肋門德：現在追上去還可以阻止她！";
+	npctalk "顏良收割機關羽：現在追上去還可以阻止她！";
 	end;
 OnTalk7:
-	npctalk "霸肋門德：現在非常需要你們的幫助，拜託你們盡量幫忙！";
+	npctalk "顏良收割機關羽：現在非常需要你們的幫助，拜託你們盡量幫忙！";
 	end;
 }
 
-1@gl_k,149,97,6	script	哈因理希#ghinstance2	652,{
+1@gl_k,149,97,6	script	吃席販女之徒劉備#ghinstance2	652,{
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance2");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance2");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance2");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance2");
 	end;
 OnTalk1:
-	npctalk "哈因理希：是誰！";
+	npctalk "吃席販女之徒劉備：是誰！";
 	end;
 OnTalk2:
-	npctalk "哈因理希：你說你統治死者？你看起來還真是優雅啊。不過很可惜，我們這裡其實不太懂得迎接淑女呢…";
+	npctalk "吃席販女之徒劉備：你說你統治死者？你看起來還真是優雅啊。不過很可惜，我們這裡其實不太懂得迎接淑女呢…";
 	end;
 OnTalk3:
-	npctalk "哈因理希：你說什麼？";
+	npctalk "吃席販女之徒劉備：你說什麼？";
 	end;
 OnTalk4:
-	npctalk "哈因理希：我們的國王只是應邀前去盧恩 米德加茲王國，現在還沒回到國內而已。";
+	npctalk "吃席販女之徒劉備：我們的國王只是應邀前去盧恩 米德加茲王國，現在還沒回到國內而已。";
 	end;
 OnTalk5:
-	npctalk "哈因理希：不過，你剛剛說的話又是什麼意思？國王發生什麼事了嗎！";
+	npctalk "吃席販女之徒劉備：不過，你剛剛說的話又是什麼意思？國王發生什麼事了嗎！";
 	end;
 OnTalk6:
-	npctalk "哈因理希：怎麼會！她已經看穿藏有伊美樂的心臟碎片位置了！";
+	npctalk "吃席販女之徒劉備：怎麼會！她已經看穿藏有伊美樂的心臟碎片位置了！";
 	end;
 OnTalk7:
-	npctalk "哈因理希：卡利斯格騎士團和白衣騎士團現在馬上跟我一起…";
+	npctalk "吃席販女之徒劉備：中型顏良團和畸形顏良團現在馬上跟我一起…";
 	end;
 OnTalk8:
-	npctalk "哈因理希：怎麼會…我的部下們…怎麼可能會有這種事！";
+	npctalk "吃席販女之徒劉備：怎麼會…我的部下們…怎麼可能會有這種事！";
 	end;
 OnTalk9:
-	npctalk "哈因理希：對不起…";
+	npctalk "吃席販女之徒劉備：對不起…";
 	end;
 OnTalk10:
-	npctalk "哈因理希：對不起…我的部下們！你們永遠不要原諒我！";
+	npctalk "吃席販女之徒劉備：對不起…我的部下們！你們永遠不要原諒我！";
 	end;
 }
 
-1@gl_k,149,100,6	script	哈因理希#ghinstance3	652,{
+1@gl_k,149,100,6	script	吃席販女之徒劉備#ghinstance3	652,{
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance3");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance3");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance3");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance3");
 	end;
 OnTalk1:
-	npctalk "哈因理希：竟然是我親手送我的部下走上絕路…";
+	npctalk "吃席販女之徒劉備：竟然是我親手送我的部下走上絕路…";
 	end;
 OnTalk2:
-	npctalk "哈因理希：霸肋門德的話是對的，現在不是傷心的時候！";
+	npctalk "吃席販女之徒劉備：顏良收割機關羽的話是對的，現在不是傷心的時候！";
 	end;
 OnTalk3:
-	npctalk "哈因理希：我有話要拜託一下那些跟隨我的人。";
+	npctalk "吃席販女之徒劉備：我有話要拜託一下那些跟隨我的人。";
 	end;
 OnTalk4:
-	npctalk "哈因理希：希梅爾茲擁有將活人變為魔物的力量。";
+	npctalk "吃席販女之徒劉備：萬夫莫敵袁紹擁有將活人變為魔物的力量。";
 	end;
 OnTalk5:
-	npctalk "哈因理希：但是說不定現在附近還有生還者。";
+	npctalk "吃席販女之徒劉備：但是說不定現在附近還有生還者。";
 	end;
 OnTalk6:
-	npctalk "哈因理希：請大家在消滅魔物的同時，若發現生還者，也請救他們一命。";
+	npctalk "吃席販女之徒劉備：請大家在消滅魔物的同時，若發現生還者，也請救他們一命。";
 	end;
 OnTalk7:
-	npctalk "哈因理希：而我跟霸肋門德會一起去追希梅爾茲！";
+	npctalk "吃席販女之徒劉備：而我跟顏良收割機關羽會一起去追萬夫莫敵袁紹！";
 	end;
 OnTalk8:
-	npctalk "哈因理希：那麼霸肋門德，我們快點追上希梅爾茲吧。";
+	npctalk "吃席販女之徒劉備：那麼顏良收割機關羽，我們快點追上萬夫莫敵袁紹吧。";
 	end;
 }
 
-1@gl_k,149,89,1	script	希梅爾茲#ghinstance1	650,{
+1@gl_k,149,89,1	script	萬夫莫敵袁紹#ghinstance1	650,{
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("希梅爾茲#ghinstance1");
+	hideonnpc instance_npcname("萬夫莫敵袁紹#ghinstance1");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("希梅爾茲#ghinstance1");
+	hideoffnpc instance_npcname("萬夫莫敵袁紹#ghinstance1");
 	end;
 OnTalk1:
-	npctalk "希梅爾茲：唉唷~我妨礙你們說話了嗎？客人都來好一陣子了還沒有人發現，這讓我覺得有點心酸嘛…";
+	npctalk "萬夫莫敵袁紹：唉唷~我妨礙你們說話了嗎？客人都來好一陣子了還沒有人發現，這讓我覺得有點心酸嘛…";
 	end;
 OnTalk2:
-	npctalk "希梅爾茲：我的名字是莉莎坎希梅爾茲。無顱武士的主人，亡者的巴基力，噢~大家都是這麼叫我的。";
+	npctalk "萬夫莫敵袁紹：我的名字是莉莎坎萬夫莫敵袁紹。無顱武士的主人，亡者的巴基力，噢~大家都是這麼叫我的。";
 	end;
 OnTalk3:
-	npctalk "希梅爾茲：你可以不用裝的這麼若無其事。我可以保證要是你知道你們國王現在在哪裡，你肯定無法再虛張聲勢了。";
+	npctalk "萬夫莫敵袁紹：你可以不用裝的這麼若無其事。我可以保證要是你知道你們國王現在在哪裡，你肯定無法再虛張聲勢了。";
 	end;
 OnTalk4:
-	npctalk "希梅爾茲：呵呵呵，看來你終於要開始緊張啦？你還真是個奇妙的男人啊。";
+	npctalk "萬夫莫敵袁紹：呵呵呵，看來你終於要開始緊張啦？你還真是個奇妙的男人啊。";
 	end;
 OnTalk5:
-	npctalk "希梅爾茲：雖說你是個不貪圖空下的王位，只一心等待國王歸還的愚蠢男人，但我倒是挺欣賞你的這份純真呢。";
+	npctalk "萬夫莫敵袁紹：雖說你是個不貪圖空下的王位，只一心等待國王歸還的愚蠢男人，但我倒是挺欣賞你的這份純真呢。";
 	end;
 Ontalk6:
-	npctalk "希梅爾茲：如果我們不是在這種情況下見面的話該有多好啊。真可惜~";
+	npctalk "萬夫莫敵袁紹：如果我們不是在這種情況下見面的話該有多好啊。真可惜~";
 	end;
 Ontalk7:
-	npctalk "希梅爾茲：這個嘛~雖然我很想仔細的說給你聽，但我今天不是為了這件事而來的耶~";
+	npctalk "萬夫莫敵袁紹：這個嘛~雖然我很想仔細的說給你聽，但我今天不是為了這件事而來的耶~";
 	end;
 OnTalk8:
-	npctalk "希梅爾茲：我看我還是要先去做我該做的事。這段時間我看你就先跟你的新部下好好相處吧？呵呵呵	";
+	npctalk "萬夫莫敵袁紹：我看我還是要先去做我該做的事。這段時間我看你就先跟你的新部下好好相處吧？呵呵呵	";
 	end;
 }
 
@@ -437,63 +437,63 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk1";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk1";
 	end;
 OnTimer1000:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk1";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk1";
 	end;
 OnTimer1500:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk3";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk3";
 	end;
 OnTimer2000:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk2";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk2";
 	end;
 OnTimer2500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk2";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk2";
 	end;
 OnTimer3000:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk3";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk3";
 	end;
 OnTimer3500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk3";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk3";
 	end;
 OnTimer4500:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk4";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk4";
 	end;	
 OnTimer5000:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk5";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk5";
 	end;
 OnTimer5500:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk6";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk6";
 	end;
 OnTimer6000:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk4";
 	end;
 OnTimer6500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk5";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk5";
 	end;
 OnTimer7000:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk7";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk7";
 	end;
 OnTimer7500:
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnTalk8";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnTalk8";
 	end;
 OnTimer8000:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk6";
-	donpcevent instance_npcname("希梅爾茲#ghinstance1")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk6";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance1")+"::OnDisable";
 	end;
 OnTimer8500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk7";
-	hideonnpc instance_npcname("霸肋門德#ghinstance1");
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk7";
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance1");
 
 	for(set .@i,1; .@i<=20; set .@i,.@i+4) {
-		hideonnpc instance_npcname("卡利斯格騎士#"+.@i);
-		hideonnpc instance_npcname("卡利斯格騎士#"+(.@i+1));
-		hideonnpc instance_npcname("白衣騎士#"+(.@i+2));
-		hideonnpc instance_npcname("白衣騎士#"+(.@i+3));
+		hideonnpc instance_npcname("中型顏良#"+.@i);
+		hideonnpc instance_npcname("中型顏良#"+(.@i+1));
+		hideonnpc instance_npcname("畸形顏良#"+(.@i+2));
+		hideonnpc instance_npcname("畸形顏良#"+(.@i+3));
 	}
-	hideonnpc instance_npcname("卡利斯格騎士#21");
-	hideonnpc instance_npcname("卡利斯格騎士#22");
+	hideonnpc instance_npcname("中型顏良#21");
+	hideonnpc instance_npcname("中型顏良#22");
 
 	set .@map$, instance_mapname("1@gl_k");
 	set .@label$, instance_npcname("#talkinstance1")+"::OnMyMobDead"; 
@@ -525,7 +525,7 @@ OnTimer8500:
 	donpcevent instance_npcname(".#ghinstance1")+"::OnTalkK";
 	end;
 OnTimer8800:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk8";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk8";
 
 	for(set .@i,1; .@i<=20; set .@i,.@i+4) {
 		hideonnpc instance_npcname(".#ghinstance"+.@i);
@@ -552,17 +552,17 @@ OnTimer8800:
 	monster .@map$,154,104,"--ja--",2471,1,.@label$;
 	end;
 OnTimer9300:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk4";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk4";
 	end;
 OnTimer9700:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk9";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk9";
 	end;
 OnTimer10500:
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnTalk10";
-	mapannounce instance_mapname("1@gl_k"), "哈因理希的嘶吼：死去的人必須要前往死者該去的地方！",bc_map,"0xFFFF00";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnTalk10";
+	mapannounce instance_mapname("1@gl_k"), "吃席販女之徒劉備的嘶吼：死去的人必須要前往死者該去的地方！",bc_map,"0xFFFF00";
 	end;
 OnTimer10700:
-	mapannounce instance_mapname("1@gl_k"), "哈因理希的嘶吼：全部都回去吧！",bc_map,"0xFFFF00";
+	mapannounce instance_mapname("1@gl_k"), "吃席販女之徒劉備的嘶吼：全部都回去吧！",bc_map,"0xFFFF00";
 	end;
 OnTimer11000:
 	donpcevent instance_npcname(".#ghinstance22")+"::OnEffect1";
@@ -627,49 +627,49 @@ OnTimer11475: //custom time
 	disablenpc instance_npcname(".#ghinstance20");
 	end;
 OnTimer11500:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnEnable";
-	donpcevent instance_npcname("哈因理希#ghinstance2")+"::OnDisable";
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk1";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnEnable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance2")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk1";
 	donpcevent instance_npcname(".#ghinstance2")+"::OnEffect1";
 	donpcevent instance_npcname(".#ghinstance1")+"::OnEffect1";
 	killmonster instance_mapname("1@gl_k"),instance_npcname("#talkinstance1")+"::OnMyMobDead";
 	end;
 OnTimer12000:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk5";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk5";
 	end;
 OnTimer12500:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk6";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk6";
 	end;
 OnTimer13000:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk2";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk2";
 	end;
 OnTimer13500:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk3";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk3";
 	end;
 OnTimer14000:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk4";
 	end;
 OnTimer14500:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk5";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk5";
 	end;
 OnTimer15000:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk6";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk6";
 	end;
 OnTimer15500:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk7";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk7";
 	end;
 OnTimer16000:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnTalk7";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnTalk7";
 	end;
 OnTimer16500:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnTalk8";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnTalk8";
 	end;
 OnTimer16700:
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnDisable";
 	end;
 OnTimer16800:
-	donpcevent instance_npcname("霸肋門德#ghinstance2")+"::OnDisable";
-	donpcevent instance_npcname("哈因理希#ghinstance3")+"::OnDisable";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance2")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance3")+"::OnDisable";
 	stopnpctimer;
 	donpcevent instance_npcname("#ghinstancewarp1")+"::OnEnable";
 	donpcevent instance_npcname("#ghinstancewarp2")+"::OnEnable";
@@ -700,7 +700,7 @@ OnTalkK:
 		case 2: npctalk "媽..."; break;
 		case 5: npctalk "救救我."; break;
 		case 6: npctalk "我的胃好痛..."; break;
-		case 9: npctalk "哈因理希先生, 救命!"; break;
+		case 9: npctalk "吃席販女之徒劉備先生, 救命!"; break;
 		case 10: npctalk "咳... 痾."; break;
 		case 13: npctalk "我好渴阿."; break;
 		case 14: npctalk "噢... 不... 我不能死..."; break;
@@ -809,9 +809,9 @@ OnEnable:
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_k");
 	set .@label$, instance_npcname("#ghmemorialmob01")+"::OnMyMobDead";
-	set .@mob_dead_num, 56 - mobcount(.@map$,.@label$);
+	set .@mob_dead_num, 56mobcount(.@map$,.@label$);
 	if (.@mob_dead_num > 35) {
-		mapannounce .@map$, "就像是從希梅爾茲的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
+		mapannounce .@map$, "就像是從萬夫莫敵袁紹的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
 		killmonster .@map$,.@label$;
 		donpcevent instance_npcname("候補服事道文")+"::OnEnable";
 		donpcevent instance_npcname("#ghmemorialmob01")+"::OnDisable";
@@ -945,9 +945,9 @@ OnEnable:
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_k");
 	set .@label$, instance_npcname("#ghmemorialmob02")+"::OnMyMobDead";
-	set .@mob_dead_num, 48 - mobcount(.@map$,.@label$);
+	set .@mob_dead_num, 48mobcount(.@map$,.@label$);
 	if (.@mob_dead_num > 28) {
-		mapannounce .@map$, "就像是從希梅爾茲的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
+		mapannounce .@map$, "就像是從萬夫莫敵袁紹的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
 		killmonster .@map$,.@label$;
 		donpcevent instance_npcname("忽克連毀滅者")+"::OnEnable";
 		donpcevent instance_npcname("#ghmemorialmob02")+"::OnDisable";
@@ -1039,14 +1039,14 @@ OnEnable:
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_k");
 	set .@label$, instance_npcname("#ghmemorialmob03")+"::OnMyMobDead";
-	set .@mob_dead_num, 100 - mobcount(.@map$,.@label$);
+	set .@mob_dead_num, 100mobcount(.@map$,.@label$);
 	if (.@mob_dead_num > 85) {
-		mapannounce .@map$,"希梅爾茲 : 還滿有兩下子的嘛，我還以為你們會死在亡者的圍繞下呢~",bc_map,"0xFFFFFF";
+		mapannounce .@map$,"萬夫莫敵袁紹 : 還滿有兩下子的嘛，我還以為你們會死在亡者的圍繞下呢~",bc_map,"0xFFFFFF";
 		killmonster .@map$,.@label$;
 		donpcevent instance_npcname("#GHMclear3")+"::OnEnable";
-		donpcevent instance_npcname("哈因理希#ghinstance4")+"::OnEnable";
-		donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnEnable";
-		donpcevent instance_npcname("霸肋門德#ghinstance3")+"::OnEnable";
+		donpcevent instance_npcname("吃席販女之徒劉備#ghinstance4")+"::OnEnable";
+		donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnEnable";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance3")+"::OnEnable";
 		donpcevent instance_npcname("#ghmemorialmob03")+"::OnDisable";
 	}
 	end;
@@ -1061,7 +1061,7 @@ OnDisable:
 	end;
 OnEnable:
 	enablenpc instance_npcname("#ghmemorialmob04");
-	monster instance_mapname("1@gl_k"),150,258,"墮落根莖",2475,1,instance_npcname("#ghmemorialmob04")+"::OnMyMobDead";
+	monster instance_mapname("1@gl_k"),150,258,"多頭顏良",2475,1,instance_npcname("#ghmemorialmob04")+"::OnMyMobDead";
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_k");
@@ -1069,10 +1069,10 @@ OnMyMobDead:
 		mapannounce .@map$, "12點鐘方向，通往騎士團2樓的出口已經開啟。",bc_map,"0xFFFF00";
 		donpcevent instance_npcname("#ghinstancewarp7")+"::OnEnable";
 		donpcevent instance_npcname("#ghinstancewarp13")+"::OnEnable";
-		donpcevent instance_npcname("霸肋門德#ghinstance3")+"::OnTalk2";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance3")+"::OnTalk2";
 		donpcevent instance_npcname("#effectGH01")+"::OnEnable";
-		donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnEnable";
-		donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnEnable";
+		donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnEnable";
+		donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnEnable";
 		donpcevent instance_npcname("#ghmemorialmob04")+"::OnDisable";
 	}
 	end;
@@ -1094,7 +1094,7 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer2000:
-	mapannounce instance_mapname("1@gl_k"), "希梅爾茲 : 要想抓我的話，就到通往2樓的入口來吧。我倒要看看你們的運氣能有多好。",bc_map,"0xFFFFFF";
+	mapannounce instance_mapname("1@gl_k"), "萬夫莫敵袁紹 : 要想抓我的話，就到通往2樓的入口來吧。我倒要看看你們的運氣能有多好。",bc_map,"0xFFFFFF";
 	stopnpctimer;
 	end;
 }
@@ -1109,40 +1109,40 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer300:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk1";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk1";
 	end;
 OnTimer600:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk2";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk2";
 	end;
 OnTimer900:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk3";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk3";
 	end;
 OnTimer1200:
-	donpcevent instance_npcname("哈因理希#ghinstance4")+"::OnTalk1";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance4")+"::OnTalk1";
 	end;
 OnTimer1500:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk4";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk4";
 	end;
 OnTimer1800:
-	donpcevent instance_npcname("霸肋門德#ghinstance3")+"::OnTalk1";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance3")+"::OnTalk1";
 	end;
 OnTimer2100:
-	donpcevent instance_npcname("哈因理希#ghinstance4")+"::OnTalk2";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance4")+"::OnTalk2";
 	end;
 OnTimer2400:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk5";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk5";
 	end;
 OnTimer2700:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnTalk6";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnTalk6";
 	end;
 OnTimer2800:
-	donpcevent instance_npcname("希梅爾茲#ghinstance2")+"::OnDisable";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance2")+"::OnDisable";
 	end;
 OnTimer3100:
-	donpcevent instance_npcname("哈因理希#ghinstance4")+"::OnTalk3";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance4")+"::OnTalk3";
 	end;
 OnTimer3200:
-	donpcevent instance_npcname("哈因理希#ghinstance4")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance4")+"::OnDisable";
 	end;
 OnTimer3500:
 	mapannounce instance_mapname("1@gl_k"), "有個聽起來很不舒服的迴音從騎士團的深處發出來，正在靠近這裡。",bc_map,"0xFFFFFF";
@@ -1154,33 +1154,33 @@ OnTimer3800:
 	end;
 }
 
-1@gl_k,144,258,6	script	哈因理希#ghinstance4	652,{
-	mes "[哈因理希]";
-	mes "希梅爾茲... 我不會忘記你害我的人被殺了.";
+1@gl_k,144,258,6	script	吃席販女之徒劉備#ghinstance4	652,{
+	mes "[吃席販女之徒劉備]";
+	mes "萬夫莫敵袁紹... 我不會忘記你害我的人被殺了.";
 	cutin "gl_heinrich1",2;
 	close2;
 	cutin "gl_heinrich1",255;
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance4");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance4");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance4");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance4");
 	end;
 OnTalk1:
-	npctalk "哈因理希：希梅爾茲！我會讓你在這裡動彈不得！";
+	npctalk "吃席販女之徒劉備：萬夫莫敵袁紹！我會讓你在這裡動彈不得！";
 	end;
 OnTalk2:
-	npctalk "哈因理希：這…這是！";
+	npctalk "吃席販女之徒劉備：這…這是！";
 	end;
 OnTalk3:
-	npctalk "哈因理希：霸肋門德！去幫助冒險家吧！我去追希梅爾茲！";
+	npctalk "吃席販女之徒劉備：顏良收割機關羽！去幫助冒險家吧！我去追萬夫莫敵袁紹！";
 	end;
 }
 
-1@gl_k,150,257,3	script	希梅爾茲#ghinstance2	650,{
-	mes "[希梅爾茲]";
+1@gl_k,150,257,3	script	萬夫莫敵袁紹#ghinstance2	650,{
+	mes "[萬夫莫敵袁紹]";
 	mes "不需要用這麼危險的眼神盯著我看嘛. 他們很快的就可以解脫了...";
 	cutin "gl_himel2",2;
 	close2;
@@ -1188,36 +1188,36 @@ OnTalk3:
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("希梅爾茲#ghinstance2");
+	hideonnpc instance_npcname("萬夫莫敵袁紹#ghinstance2");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("希梅爾茲#ghinstance2");
+	hideoffnpc instance_npcname("萬夫莫敵袁紹#ghinstance2");
 	end;
 OnTalk1:
-	npctalk "希梅爾茲：能找到這裡來，要嘛就是你的運氣非常好，要嘛就是你非常的有能力。";
+	npctalk "萬夫莫敵袁紹：能找到這裡來，要嘛就是你的運氣非常好，要嘛就是你非常的有能力。";
 	end;
 OnTalk2:
-	npctalk "希梅爾茲：不過這都沒差。";
+	npctalk "萬夫莫敵袁紹：不過這都沒差。";
 	end;
 OnTalk3:
-	npctalk "希梅爾茲：因為現在你們全部都會死在這裡。";
+	npctalk "萬夫莫敵袁紹：因為現在你們全部都會死在這裡。";
 	end;
 OnTalk4:
-	npctalk "希梅爾茲：哈哈哈，我看是你們會動彈不得吧~你們以為我只有自己一個人嗎？";
+	npctalk "萬夫莫敵袁紹：哈哈哈，我看是你們會動彈不得吧~你們以為我只有自己一個人嗎？";
 	end;
 OnTalk5:
-	npctalk "希梅爾茲：讓我的新玩具絆住你們的腳，讓我可以盡情的玩耍。";
+	npctalk "萬夫莫敵袁紹：讓我的新玩具絆住你們的腳，讓我可以盡情的玩耍。";
 	end;
 OnTalk6:
-	npctalk "希梅爾茲：還真是抱歉啊~，要是有機會的話，我還真想再見你~哈因理希 一面呢。";
+	npctalk "萬夫莫敵袁紹：還真是抱歉啊~，要是有機會的話，我還真想再見你~吃席販女之徒劉備 一面呢。";
 	end;
 }
 
-1@gl_k,156,258,3	script	霸肋門德#ghinstance3	654,{	
+1@gl_k,156,258,3	script	顏良收割機關羽#ghinstance3	654,{	
 	if (checkquest(12336,HUNTING) == 2) {
 		erasequest 12336;
 		if (checkquest(12337,HUNTING) == -1) {
-			mes "[霸肋門德]";
+			mes "[顏良收割機關羽]";
 			mes "這個東西帶有一種非比尋常的氣息…若有一天遇到能夠使用它的人，也許它會發揮重要的作用也說不定。";
 			cutin "gl_barmund1",2;
 			getitem 6607,1;// Temporal_Crystal
@@ -1234,7 +1234,7 @@ OnTalk6:
 		}
 	}
 
-	mes "[霸肋門德]";
+	mes "[顏良收割機關羽]";
 	mes "結果還是走到這局面了，難道就沒有辦法阻擋時間超越者的意志嗎？";
 	cutin "gl_barmund1",2;
 	close2;
@@ -1242,54 +1242,54 @@ OnTalk6:
 end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("霸肋門德#ghinstance3");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance3");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("霸肋門德#ghinstance3");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance3");
 	end;
 OnTalk1:
-	npctalk "霸肋門德：哈因理希！有個未知的強力氣息正在靠近！";
+	npctalk "顏良收割機關羽：吃席販女之徒劉備！有個未知的強力氣息正在靠近！";
 	end;
 OnTalk2:
-	npctalk "霸肋門德：我把那傢伙身上掉落的物品撿起來了。想要的人來找我拿吧。";
+	npctalk "顏良收割機關羽：我把那傢伙身上掉落的物品撿起來了。想要的人來找我拿吧。";
 	end;
 }
 
 // Floor 2
 //============================================================
-2@gl_k,148,67,1	script	哈因理希#ghinstance5	652,{
-	mes "[哈因理希]";
-	mes "四周都被希梅爾茲的結界給擋住了呀…";
+2@gl_k,148,67,1	script	吃席販女之徒劉備#ghinstance5	652,{
+	mes "[吃席販女之徒劉備]";
+	mes "四周都被萬夫莫敵袁紹的結界給擋住了呀…";
 	cutin "gl_heinrich1",2;
 	close2;
 	cutin "gl_heinrich1",255;
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance5");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance5");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance5");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance5");
 	end;
 OnTalk1:
-	npctalk "哈因理希：這是城裡面從沒有過的東西！";
+	npctalk "吃席販女之徒劉備：這是城裡面從沒有過的東西！";
 	end;
 OnTalk2:
-	npctalk "哈因理希：雖然試著用力破壞，但是刀對它完全無效。";
+	npctalk "吃席販女之徒劉備：雖然試著用力破壞，但是刀對它完全無效。";
 	end;
 OnTalk3:
-	npctalk "哈因理希：這真是天理不容啊。";
+	npctalk "吃席販女之徒劉備：這真是天理不容啊。";
 	end;
 OnTalk4:
-	npctalk "哈因理希：已經殺掉了很多以前的部下…以後還要再殺死多少…";
+	npctalk "吃席販女之徒劉備：已經殺掉了很多以前的部下…以後還要再殺死多少…";
 	end;
 OnTalk5:
-	npctalk "哈因理希：…";
+	npctalk "吃席販女之徒劉備：…";
 	end;
 }
 
-2@gl_k,151,71,7	script	霸肋門德#ghinstance4	654,{
-	mes "[霸肋門德]";
+2@gl_k,151,71,7	script	顏良收割機關羽#ghinstance4	654,{
+	mes "[顏良收割機關羽]";
 	mes "我到底…重複做了這件事多少次啊…好像在夢中見過這個地方數十次了…這個感覺…";
 	cutin "gl_barmund1",2;
 	close2;
@@ -1297,61 +1297,61 @@ OnTalk5:
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("霸肋門德#ghinstance4");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance4");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("霸肋門德#ghinstance4");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance4");
 	end;
 OnTalk2:
-	npctalk "霸肋門德：是希梅爾茲的結界，將通路和各區域完全封鎖住了。";
+	npctalk "顏良收割機關羽：是萬夫莫敵袁紹的結界，將通路和各區域完全封鎖住了。";
 	end;
 OnTalk3:
-	npctalk "霸肋門德：先讓開一下，我用魔力來試試看…";
+	npctalk "顏良收割機關羽：先讓開一下，我用魔力來試試看…";
 	end;
 OnEffect:
 	specialeffect 90;
 	end;
 OnTalk4:
-	npctalk "霸肋門德：似乎有一邊的結界已經被破壞了。";
+	npctalk "顏良收割機關羽：似乎有一邊的結界已經被破壞了。";
 	end;
 OnTalk5:
-	npctalk "霸肋門德：我曾經看過這種結界。";
+	npctalk "顏良收割機關羽：我曾經看過這種結界。";
 	end;
 OnTalk6:
-	npctalk "霸肋門德：希梅爾茲會將結界石放進變成不死之人的身體裡。";
+	npctalk "顏良收割機關羽：萬夫莫敵袁紹會將結界石放進變成不死之人的身體裡。";
 	end;
 OnTalk7:
-	npctalk "霸肋門德：我想這個結界應該也是用那種方式來維持的。";
+	npctalk "顏良收割機關羽：我想這個結界應該也是用那種方式來維持的。";
 	end;
 OnTalk8:
-	npctalk "霸肋門德：要想打破結界，就必須殺死將持有結界石的人。";
+	npctalk "顏良收割機關羽：要想打破結界，就必須殺死將持有結界石的人。";
 	end;
 OnTalk9:
-	npctalk "霸肋門德：但是我們是分不出來的，只能隨機淨化了。";
+	npctalk "顏良收割機關羽：但是我們是分不出來的，只能隨機淨化了。";
 	end;
 OnTalk10:
-	npctalk "霸肋門德：司令官…";
+	npctalk "顏良收割機關羽：司令官…";
 	end;
 OnTalk11:
-	npctalk "霸肋門德：司令官你太軟弱了。";
+	npctalk "顏良收割機關羽：司令官你太軟弱了。";
 	end;
 OnTalk12:
-	npctalk "霸肋門德：我們對付的已經不是人類了。";
+	npctalk "顏良收割機關羽：我們對付的已經不是人類了。";
 	end;
 OnTalk13:
-	npctalk "霸肋門德：就算你不承認，他們也不會再變成人類了。";
+	npctalk "顏良收割機關羽：就算你不承認，他們也不會再變成人類了。";
 	end;
 OnTalk14:
-	npctalk "霸肋門德：我們還是…走吧。";
+	npctalk "顏良收割機關羽：我們還是…走吧。";
 	end;
 OnTalk15:
-	npctalk "霸肋門德：還有，你們的戰力聚集完以後，就跟著我們吧。";
+	npctalk "顏良收割機關羽：還有，你們的戰力聚集完以後，就跟著我們吧。";
 	end;
 OnTalk16:
-	npctalk "霸肋門德：也許會是一場極為艱難的戰鬥，做好覺悟吧。";
+	npctalk "顏良收割機關羽：也許會是一場極為艱難的戰鬥，做好覺悟吧。";
 	end;
 OnTalk17:
-	npctalk "霸肋門德：來吧，出發的時間到了！哈因理希。";
+	npctalk "顏良收割機關羽：來吧，出發的時間到了！吃席販女之徒劉備。";
 	end;
 }
 
@@ -1388,79 +1388,79 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer300:
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnTalk1";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnTalk1";
 	donpcevent instance_npcname("#ghmemorialmob05")+"::OnEnable";
 	end;
 OnTimer600:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk2";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk2";
 	end;
 OnTimer900:
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnTalk2";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnTalk2";
 	end;
 OnTimer1200:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk3";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk3";
 	end;
 OnTimer1500:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnEffect";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnEffect";
 	end;
 OnTimer1800:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk4";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk4";
 	end;
 OnTimer2100:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk5";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk5";
 	end;
 OnTimer2400:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk6";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk6";
 	end;
 OnTimer2700:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk7";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk7";
 	end;
 OnTimer3000:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk8";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk8";
 	end;
 OnTimer3300:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk9";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk9";
 	end;
 OnTimer3600:
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnTalk3";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnTalk3";
 	end;
 OnTimer3900:
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnTalk4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnTalk4";
 	end;
 OnTimer4200:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk10";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk10";
 	end;
 OnTimer4500:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk11";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk11";
 	end;
 OnTimer4800:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk12";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk12";
 	end;
 OnTimer5100:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk13";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk13";
 	end;
 OnTimer5400:
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnTalk5";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnTalk5";
 	end;
 OnTimer5700:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk14";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk14";
 	end;
 OnTimer6000:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk15";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk15";
 	end;
 OnTimer6300:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk16";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk16";
 	end;
 OnTimer6600:
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnTalk17";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnTalk17";
 	end;
 OnTimer6900:
 	mapannounce instance_mapname("2@gl_k"), "9點鐘方向，通往1區的出口已經打開了，現在可以前往中央道路。",bc_map,"0xFFFF00";
 	donpcevent instance_npcname("#ghinstancewarp8")+"::OnEnable";
 	donpcevent instance_npcname("#ghinstancewarp9")+"::OnEnable";
 	//donpcevent instance_npcname("#ghmemorialmob06")+"::OnEnable";
-	donpcevent instance_npcname("霸肋門德#ghinstance4")+"::OnDisable";
-	donpcevent instance_npcname("哈因理希#ghinstance5")+"::OnDisable";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance4")+"::OnDisable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance5")+"::OnDisable";
 	end;
 OnTimer7000:
 	stopnpctimer;
@@ -1613,8 +1613,8 @@ OnDisable:
 	end;
 OnEnable:
 	enablenpc instance_npcname("#ghmemorialmob10");
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnDisable";
-	monster instance_mapname("2@gl_k"),158,255,"闇答萊屍",2476,1,instance_npcname("#ghmemorialmob10")+"::OnMyMobDead";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnDisable";
+	monster instance_mapname("2@gl_k"),158,255,"真魔化無首顏良",2476,1,instance_npcname("#ghmemorialmob10")+"::OnMyMobDead";
 	end;
 OnMyMobDead:
 	if (mobcount(instance_mapname("2@gl_k"),instance_npcname("#ghmemorialmob10")+"::OnMyMobDead") < 1) {
@@ -1624,39 +1624,39 @@ OnMyMobDead:
 	end;
 }
 
-2@gl_k,155,250,7	script	哈因理希#ghinstance6	652,{
-	mes "[哈因理希]";
-	mes "你又想做什麼壞事啊？希梅爾茲。";
+2@gl_k,155,250,7	script	吃席販女之徒劉備#ghinstance6	652,{
+	mes "[吃席販女之徒劉備]";
+	mes "你又想做什麼壞事啊？萬夫莫敵袁紹。";
 	close;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("哈因理希#ghinstance6");
+	hideonnpc instance_npcname("吃席販女之徒劉備#ghinstance6");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("哈因理希#ghinstance6");
+	hideoffnpc instance_npcname("吃席販女之徒劉備#ghinstance6");
 	end;
 OnTalk1:
-	npctalk "哈因理希：凱勒哈特！";
+	npctalk "吃席販女之徒劉備：真無頭勇將顏良！";
 	end;
 OnTalk2:
-	npctalk "哈因理希：你對我的部下做了什麼啊希梅爾茲！";
+	npctalk "吃席販女之徒劉備：你對我的部下做了什麼啊萬夫莫敵袁紹！";
 	end;
 OnTalk3:
-	npctalk "哈因理希：希梅爾茲！既然你已經達成目的了，就沒必要製造多餘的犧牲！";
+	npctalk "吃席販女之徒劉備：萬夫莫敵袁紹！既然你已經達成目的了，就沒必要製造多餘的犧牲！";
 	end;
 OnTalk4:
-	npctalk "哈因理希：放了他吧! 我不想要再看到有任何人犧牲了!";
+	npctalk "吃席販女之徒劉備：放了他吧! 我不想要再看到有任何人犧牲了!";
 	end;
 OnTalk5:
-	npctalk "哈因理希：我永遠不會原諒你的！";
+	npctalk "吃席販女之徒劉備：我永遠不會原諒你的！";
 	end;
 OnTalk6:
-	npctalk "哈因理希：你覺得我會讓你逃走嗎？希梅爾茲！";
+	npctalk "吃席販女之徒劉備：你覺得我會讓你逃走嗎？萬夫莫敵袁紹！";
 	end;
 }
 
-2@gl_k,162,250,1	script	霸肋門德#ghinstance5	654,{
-	mes "[霸肋門德]";
+2@gl_k,162,250,1	script	顏良收割機關羽#ghinstance5	654,{
+	mes "[顏良收割機關羽]";
 	mes "難道永遠都逃不出這個束縛嗎…";
 	cutin "gl_barmund2",2;
 	close2;
@@ -1664,59 +1664,59 @@ OnTalk6:
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("霸肋門德#ghinstance5");
+	hideonnpc instance_npcname("顏良收割機關羽#ghinstance5");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("霸肋門德#ghinstance5");
+	hideoffnpc instance_npcname("顏良收割機關羽#ghinstance5");
 	end;
 OnTalk1:
-	npctalk "霸肋門德：那就，沒辦法了。必須用我們僅剩的力量來阻擋闇答萊屍！";
+	npctalk "顏良收割機關羽：那就，沒辦法了。必須用我們僅剩的力量來阻擋真魔化無首顏良！";
 	end;
 }
 
-2@gl_k,158,252,3	script	希梅爾茲#ghinstance4	650,4,4,{
-	mes "[希梅爾茲]";
+2@gl_k,158,252,3	script	萬夫莫敵袁紹#ghinstance4	650,4,4,{
+	mes "[萬夫莫敵袁紹]";
 	mes "真是了不起~竟然能來到這裡。這然這樣我也應該要表現一點誠意才對吧？";
 	close;	
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("希梅爾茲#ghinstance4");
+	hideonnpc instance_npcname("萬夫莫敵袁紹#ghinstance4");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("希梅爾茲#ghinstance4");
+	hideoffnpc instance_npcname("萬夫莫敵袁紹#ghinstance4");
 	end;
 OnTalk1:
-	npctalk "希梅爾茲：真是厲害~我還以為連這附近都到不了呢…";
+	npctalk "萬夫莫敵袁紹：真是厲害~我還以為連這附近都到不了呢…";
 	end;
 OnTalk2:
-	npctalk "希梅爾茲：呵呵，哈因理希，伊美樂的心臟碎片已經找到了。";
+	npctalk "萬夫莫敵袁紹：呵呵，吃席販女之徒劉備，伊美樂的心臟碎片已經找到了。";
 	end;
 OnTalk3:
-	npctalk "希梅爾茲：如果沒有那小子的妨礙，事情還能進行的更快呢。";
+	npctalk "萬夫莫敵袁紹：如果沒有那小子的妨礙，事情還能進行的更快呢。";
 	end;
 OnTalk4:
-	npctalk "希梅爾茲：是這樣嗎？就算你說了大話也是一樣的，不管是國王還是士兵，全部會變成這裡的人啊…";
+	npctalk "萬夫莫敵袁紹：是這樣嗎？就算你說了大話也是一樣的，不管是國王還是士兵，全部會變成這裡的人啊…";
 	end;
 OnTalk5:
-	npctalk "希梅爾茲：為什麼？";
+	npctalk "萬夫莫敵袁紹：為什麼？";
 	end;
 OnTalk6:
-	npctalk "希梅爾茲：反正這傢伙是你哈因理希僅剩的部下了。";
+	npctalk "萬夫莫敵袁紹：反正這傢伙是你吃席販女之徒劉備僅剩的部下了。";
 	end;
 OnTalk7:
-	npctalk "希梅爾茲：他用來阻止我的那股力量還真不簡單啊";
+	npctalk "萬夫莫敵袁紹：他用來阻止我的那股力量還真不簡單啊";
 	end;
 OnTalk8:
-	npctalk "希梅爾茲：拿來作為我的新闇答萊屍是再適合不過的了…";
+	npctalk "萬夫莫敵袁紹：拿來作為我的新真魔化無首顏良是再適合不過的了…";
 	end;
 OnTalk9:
-	npctalk "希梅爾茲：天啊~我好怕怕喔！";
+	npctalk "萬夫莫敵袁紹：天啊~我好怕怕喔！";
 	end;
 OnTalk10:
-	npctalk "希梅爾茲：反正我們之間的事情也還沒結束，下次還有機會見面的。";
+	npctalk "萬夫莫敵袁紹：反正我們之間的事情也還沒結束，下次還有機會見面的。";
 	end;
 OnTalk11:
-	npctalk "希梅爾茲：那麼，現在就和你的新部下聊聊天吧。";
+	npctalk "萬夫莫敵袁紹：那麼，現在就和你的新部下聊聊天吧。";
 	end;
 }
 
@@ -1725,10 +1725,10 @@ OnTalk11:
 OnTouch:
 	mapannounce instance_mapname("2@gl_k"), "???: 不要過來! 這裡到處都是陷阱... 啊!!!!",bc_map,"0xFF0000";
 	specialeffect EF_BASH;
-	donpcevent instance_npcname("希梅爾茲#ghinstance3")+"::OnEnable";
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnEnable";
-	donpcevent instance_npcname("霸肋門德#ghinstance5")+"::OnEnable";
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEnable";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance3")+"::OnEnable";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnEnable";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance5")+"::OnEnable";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEnable";
 	donpcevent instance_npcname("#controlGH6")+"::OnDisable";
 	end;
 OnInstanceInit:
@@ -1740,40 +1740,40 @@ OnEnable:
 	end;
 }
 
-2@gl_k,158,252,1	script	希梅爾茲#ghinstance3	650,7,7,{
+2@gl_k,158,252,1	script	萬夫莫敵袁紹#ghinstance3	650,7,7,{
 	end;
 OnTouch:
 	specialeffect EF_BASH;
 	donpcevent instance_npcname("#controlGH5")+"::OnEnable";
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnEnable";
-	donpcevent instance_npcname("希梅爾茲#ghinstance3")+"::OnDisable";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnEnable";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance3")+"::OnDisable";
 	end;
 OnInstanceInit:
 OnDisable:
-	disablenpc instance_npcname("希梅爾茲#ghinstance3");
+	disablenpc instance_npcname("萬夫莫敵袁紹#ghinstance3");
 	end;
 OnEnable:
-	enablenpc instance_npcname("希梅爾茲#ghinstance3");
+	enablenpc instance_npcname("萬夫莫敵袁紹#ghinstance3");
 	end;
 }
 
-2@gl_k,158,255,3	script	凱勒哈特#ghinstance1	651,{
+2@gl_k,158,255,3	script	真無頭勇將顏良#ghinstance1	651,{
 	end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("凱勒哈特#ghinstance1");
+	hideonnpc instance_npcname("真無頭勇將顏良#ghinstance1");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("凱勒哈特#ghinstance1");
+	hideoffnpc instance_npcname("真無頭勇將顏良#ghinstance1");
 	end;
 OnTalk1:
-	npctalk "凱勒哈特：呃啊啊！請快逃走吧！我再也撐不下去了！";
+	npctalk "真無頭勇將顏良：呃啊啊！請快逃走吧！我再也撐不下去了！";
 	end;
 OnTalk2:
-	npctalk "凱勒哈特：司令官…大人…您必須快點逃出…這裡才行…呃…";
+	npctalk "真無頭勇將顏良：司令官…大人…您必須快點逃出…這裡才行…呃…";
 	end;
 OnTalk3:
-	npctalk "凱勒哈特：就算你可以折磨我的身體，但你是帶不走我的靈魂的！希梅爾茲！";
+	npctalk "真無頭勇將顏良：就算你可以折磨我的身體，但你是帶不走我的靈魂的！萬夫莫敵袁紹！";
 	end;
 OnEffect1:
 	misceffect EF_BARRIER;
@@ -1802,89 +1802,89 @@ OnEnable:
 	initnpctimer;
 	end;
 OnTimer300:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk1";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk1";
 	end;
 OnTimer600:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnTalk1";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnTalk1";
 	end;
 OnTimer900:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk1";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk1";
 	end;
 OnTimer1200:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnTalk2";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnTalk2";
 	end;
 OnTimer1500:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk2";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk2";
 	end;
 OnTimer1800:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk2";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk2";
 	end;
 OnTimer2100:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk3";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk3";
 	end;
 OnTimer2400:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnTalk3";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnTalk3";
 	end;
 OnTimer2700:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk4";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk4";
 	end;
 OnTimer3000:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk3";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk3";
 	end;
 OnTimer3300:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk4";
 	end;
 OnTimer3600:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk5";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk5";
 	end;
 OnTimer3900:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk6";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk6";
 	end;
 OnTimer4200:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk7";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk7";
 	end;
 OnTimer4500:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk8";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk8";
 	end;
 OnTimer4800:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk5";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk5";
 	end;
 OnTimer5100:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk9";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk9";
 	end;
 OnTimer5400:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk10";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk10";
 	end;
 OnTimer5700:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnTalk11";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnTalk11";
 	end;
 OnTimer6000:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect1";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect1";
 	end;
 OnTimer6300:
-	donpcevent instance_npcname("希梅爾茲#ghinstance4")+"::OnDisable";
+	donpcevent instance_npcname("萬夫莫敵袁紹#ghinstance4")+"::OnDisable";
 	end;
 OnTimer6500:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect3";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect3";
 	end;
 OnTimer6600:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect2";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect2";
 	end;
 OnTimer6700:
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnTalk6";
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnTalk6";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect4";
 	end;
 OnTimer7000:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect3";
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect4";
-	donpcevent instance_npcname("哈因理希#ghinstance6")+"::OnDisable";
-	donpcevent instance_npcname("霸肋門德#ghinstance5")+"::OnTalk1";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect3";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect4";
+	donpcevent instance_npcname("吃席販女之徒劉備#ghinstance6")+"::OnDisable";
+	donpcevent instance_npcname("顏良收割機關羽#ghinstance5")+"::OnTalk1";
 	end;
 OnTimer7300:
-	mapannounce instance_mapname("2@gl_k"), "搜索'凱勒哈特'的屍體.",bc_map,"0xFFFFFF";
+	mapannounce instance_mapname("2@gl_k"), "搜索'真無頭勇將顏良'的屍體.",bc_map,"0xFFFFFF";
 	end;
 OnTimer7600:
-	donpcevent instance_npcname("凱勒哈特#ghinstance1")+"::OnEffect5";
+	donpcevent instance_npcname("真無頭勇將顏良#ghinstance1")+"::OnEffect5";
 	end;
 OnTimer8000:
 	donpcevent instance_npcname("#ghmemorialmob10")+"::OnEnable";
