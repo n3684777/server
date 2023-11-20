@@ -15,7 +15,7 @@ uttycty,99,133,4	script	造型師	878,{
             opendressroom(0);
 			end;
         case 2:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
@@ -51,7 +51,7 @@ uttycty,99,133,4	script	造型師	878,{
 			  }
 					
         case 3:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
@@ -87,7 +87,7 @@ uttycty,99,133,4	script	造型師	878,{
 			  }
 				
         case 4:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
