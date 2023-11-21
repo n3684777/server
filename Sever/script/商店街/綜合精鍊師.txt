@@ -121,41 +121,29 @@ BackMenu:
 		{
 			// [0]道具,[1]成功機率,[2]爆裝(0:否 1:是),[3]精鍊度-N(0:否 N:-N),[4]直接+幾(0:往上+1 N:+N)
 			
-			case 1:	// 神之金屬/鋁
-				setarray .@array,(.@weapon)&&.@wlv>2?984:(.@weapon)&&.@wlv==1?1010:(.@weapon)&&.@wlv==2?1011:985,refine_percent(.@part),1,0,0;
-				break;
-			case 2:	// 鈽鐳礦石/鈣礦石
-				setarray .@array,(.@weapon)?6224:6223,refine_percent(.@part),0,3,0;
-				break;
-			case 3:	// 濃縮神之金屬/濃縮鋁
-				setarray .@array,(.@weapon)?7620:7619,refine_percent(.@part)+20,1,0,0;
-				break;
-			case 4:	// 高濃縮神之金屬/高濃縮鋁
-				setarray .@array,(.@weapon)?6240:6241,refine_percent(.@part)+20,0,1,0;
-				break;
-			case 5:	// +5券
+			case 1:	// +5券
 				setarray .@array,(.@weapon)?6456:6457,100,0,0,5;
 				break;
-			case 6:	// +7券
+			case 2:	// +7券
 				setarray .@array,(.@weapon)?6230:6234,100,0,0,7;
 				break;
-			case 7:	// +8券
+			case 3:	// +8券
 				setarray .@array,(.@weapon)?6229:6233,100,0,0,8;
 				break;
-			case 8:	// +9券
+			case 4:	// +9券
 				setarray .@array,(.@weapon)?6228:6232,100,0,0,9;
 				break;
-			case 9:	// 受祝福的武器礦石/受祝福的防具礦石
+			case 5:	// 受祝福的武器礦石/受祝福的防具礦石
 				setarray .@array,(.@weapon)?6438:6439,refine_percent(.@part),0,0,0;
 				break;
-			case 10:	// 高密度鈽鐳礦石/高密度鈣礦石
+			case 6:	// 高密度鈽鐳礦石/高密度鈣礦石
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,1,0;
 				break;
-			case 11:	// 鐵匠的神乎其技 +12 ~ +13
+			case 7:	// 鐵匠的神乎其技 +12 ~ +13
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,1;
 				break;
-			case 12:	// 鐵匠的神乎其技 +13 ~ +14
+			case 8:	// 鐵匠的神乎其技 +13 ~ +14
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,2;
 				break;
