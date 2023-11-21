@@ -28,13 +28,6 @@
 uttycty,149,157,4	script	波士尼亞入口	796,{
 
 	.@md_name$="波士尼亞";
-	mes "[副本] 波士尼亞";
-	mes "副本名稱 : 波士尼亞";
-	mes "等級限制 : 無限制";
-	mes "組隊人數 : 無限制";
-	mes "挑戰時間 : 2 小 時";
-	mes "冷卻時間 : 無";
-	next;
 
 	if ( Zeny < 5000) {
 		mes "[李思]";
@@ -43,9 +36,12 @@ uttycty,149,157,4	script	波士尼亞入口	796,{
 		close;
 		}
 		
-			mes "[李思]";
-			mes "那麼請你多注意安全，";
-			mes "不可以埋怨我喔";
+			mes "[副本] 波士尼亞";
+			mes "副本名稱 : 波士尼亞";
+			mes "等級限制 : 無限制";
+			mes "組隊人數 : 無限制";
+			mes "挑戰時間 : 2 小 時";
+			mes "冷卻時間 : 無";
 			next;
 	switch(select((getpartyleader(getcharid(1),2) == getcharid(0))?"申請^007fd4"+.@md_name$+"^000000資格":"","進入^007fd4"+.@md_name$+"^000000",(getpartyleader(getcharid(1),2) == getcharid(0))?"銷毀資格":"")){
 
