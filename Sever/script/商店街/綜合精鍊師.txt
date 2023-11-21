@@ -108,10 +108,7 @@ BackMenu:
 	else 
 	{
 		// 一般裝備精鍊
-		switch(select(.@lv<=9?ckitem((.@weapon)&&.@wlv>2?984:(.@weapon)&&.@wlv==1?1010:(.@weapon)&&.@wlv==2?1011:985):"",
-						.@lv>=10&&.@lv<=20?ckitem((.@weapon)?6224:6223):"",
-						.@lv>=0&&.@lv<10?ckitem((.@weapon)?7620:7619):"",
-						.@lv>6&&.@lv<10?ckitem((.@weapon)?6240:6241):"",
+		switch(select(
 						.@lv>=0&&.@lv<=4?ckitem((.@weapon)?6456:6457):"",
 						.@lv>=0&&.@lv<=6?ckitem((.@weapon)?6230:6234):"",
 						.@lv>=0&&.@lv<=7?ckitem((.@weapon)?6229:6233):"",
