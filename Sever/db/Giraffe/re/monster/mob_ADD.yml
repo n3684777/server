@@ -87,8 +87,8 @@ Body:
     JapaneseName: 腐爛樹木
     Level: 236
     Hp: 17421722
-    BaseExp: 280335
-    JobExp: 193287
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 12347
     Attack2: 4542
     Defense: 300
@@ -129,8 +129,8 @@ Body:
     JapaneseName: 融化波利
     Level: 230
     Hp: 13275524
-    BaseExp: 274550
-    JobExp: 182144
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 9872
     Attack2: 2841
     Defense: 288
@@ -165,8 +165,8 @@ Body:
     JapaneseName: 墳墓蠕蟲
     Level: 238
     Hp: 18797121
-    BaseExp: 284018
-    JobExp: 194596
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 9872
     Attack2: 2841
     Defense: 288
@@ -201,8 +201,8 @@ Body:
     JapaneseName: 吸腦蟲
     Level: 235
     Hp: 16734022
-    BaseExp: 279566
-    JobExp: 186455
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 12444
     Attack2: 3584
     Defense: 237
@@ -237,8 +237,8 @@ Body:
     JapaneseName: 蚊子
     Level: 233
     Hp: 15358623
-    BaseExp: 277940
-    JobExp: 186854
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 11254
     Attack2: 3541
     Defense: 231
@@ -271,10 +271,10 @@ Body:
     AegisName: MD_Airboat_Boss
     Name: MD_Airboat_Boss
     JapaneseName: 未知生物
-    Level: 240
-    Hp: 1843970467
-    BaseExp: 3860254
-    JobExp: 2671730
+    Level: 255
+    Hp: 88754928
+    BaseExp: 100000
+    JobExp: 100000
     MvpExp: 80000
     Attack: 15348
     Attack2: 5841
@@ -345,10 +345,10 @@ Body:
     AegisName: MD_Airboat_Boss2
     Name: MD_Airboat_Boss2
     JapaneseName: 未確認生物
-    Level: 240
-    Hp: 1843970467
-    BaseExp: 3860254
-    JobExp: 2671730
+    Level: 264
+    Hp: 118754928
+    BaseExp: 100000
+    JobExp: 100000
     MvpExp: 80000
     Attack: 19348
     Attack2: 6841
@@ -419,8 +419,8 @@ Body:
     JapaneseName: 魔劍士薩克萊
     Level: 240
     Hp: 1835856994
-    BaseExp: 6119523
-    JobExp: 4283666
+    BaseExp: 3000000
+    JobExp: 3000000
     Attack: 13000
     Attack2: 5000
     Defense: 800
@@ -472,8 +472,8 @@ Body:
     JapaneseName: 失控的公主提亞拉
     Level: 240
     Hp: 1262852763
-    BaseExp: 4370221
-    JobExp: 3059155
+    BaseExp: 3000000
+    JobExp: 3000000
     Attack: 11000
     Attack2: 3500
     Defense: 320
@@ -529,8 +529,8 @@ Body:
     JapaneseName: 懺悔的騎士
     Level: 200
     Hp: 10000000
-    BaseExp: 35000
-    JobExp: 35000
+    BaseExp: 50000
+    JobExp: 50000
     Attack: 8500
     Attack2: 3000
     Defense: 350
@@ -962,7 +962,7 @@ Body:
     Name: EP19_ICE_STRAW
     JapaneseName: 冰園鰻
     Level: 200
-    Hp: 4980352
+    Hp: 3000000
     BaseExp: 367512
     JobExp: 257259
     Attack: 7480
@@ -1021,7 +1021,7 @@ Body:
     Name: EP19_SHINING_SEAWEED
     JapaneseName: 發光海草
     Level: 200
-    Hp: 4980352
+    Hp: 3000000
     BaseExp: 367512
     JobExp: 257259
     Attack: 7480
@@ -1402,7 +1402,7 @@ Body:
     Name: EP19_LIMACINA_BOSS
     JapaneseName: 超級海天使
     Level: 245
-    Hp: 80811000
+    Hp: 398844882
     BaseExp: 3675120
     JobExp: 2572590
     Attack: 13890
@@ -1601,8 +1601,8 @@ Body:
     JapaneseName: 邪心獵人_AT    
     Level: 210
     Hp: 4807050
-    BaseExp: 367512
-    JobExp: 257259
+    BaseExp: 11
+    JobExp: 13
     Attack: 5189
     Attack2: 5688
     Defense: 216
@@ -2113,8 +2113,8 @@ Body:
     JapaneseName: 糾纏的中級蠕管
     Level: 252
     Hp: 8621258
-    BaseExp: 367512
-    JobExp: 257259
+    BaseExp: 11
+    JobExp: 13
     Attack: 5189
     Attack2: 7688
     Defense: 316
@@ -2182,7 +2182,9 @@ Body:
     Name: EP19_MD_AQUILA_B
     JapaneseName: 天鷹座-阿奎拉
     Level: 215
-    Hp: 299990000
+    Hp: 1500000000
+    BaseExp: 11
+    JobExp: 13
     Attack: 9900
     Attack2: 6000
     Defense: 456
@@ -2325,8 +2327,8 @@ Body:
     JapaneseName: 蛇姬
     Level: 234
     Hp: 80811000
-    BaseExp: 367512
-    JobExp: 257259
+    BaseExp: 11
+    JobExp: 13
     Attack: 8800
     Attack2: 3600
     Defense: 200
@@ -2392,6 +2394,8 @@ Body:
     JapaneseName: 邪心獵人_AT
     Level: 210
     Hp: 4807050
+    BaseExp: 11
+    JobExp: 13
     Attack: 5189
     Attack2: 5688
     Defense: 216
@@ -2453,7 +2457,7 @@ Body:
     Name: 朱希婭
     JapaneseName: 朱希婭
     Level: 215
-    Hp: 224220147
+    Hp: 824240147
     BaseExp: 8000000
     JobExp: 4000000
     Attack: 12000
@@ -2516,10 +2520,10 @@ Body:
     AegisName: ECO_CORNUS
     Name: ECO_CORNUS_21548
     JapaneseName: 草原的獨角飛馬
-    Level: 254
+    Level: 240
     Hp: 4537500
-    BaseExp: 129643
-    JobExp: 86429
+    BaseExp: 1624000
+    JobExp: 1400400
     Attack: 3625
     Attack2: 5237
     Defense: 366
@@ -2541,7 +2545,7 @@ Body:
     AttackDelay: 517
     AttackMotion: 231
     DamageMotion: 367
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2577,10 +2581,10 @@ Body:
     AegisName: ECO_PINGUICULA
     Name: ECO_PINGUICULA_21549
     JapaneseName: 草原的捕捉蟲
-    Level: 252
-    Hp: 3652050
-    BaseExp: 104344
-    JobExp: 69563
+    Level: 241
+    Hp: 4537500
+    BaseExp: 36520
+    JobExp: 12221
     Attack: 4786
     Attack2: 6970
     Defense: 346
@@ -2602,7 +2606,7 @@ Body:
     AttackDelay: 517
     AttackMotion: 231
     DamageMotion: 367
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2640,10 +2644,10 @@ Body:
     AegisName: ECO_HUNTER_FLY
     Name: ECO_HUNTER_FLY_21550
     JapaneseName: 草原的紅蒼蠅
-    Level: 255
+    Level: 240
     Hp: 3361500
-    BaseExp: 96043
-    JobExp: 64029
+    BaseExp: 16040
+    JobExp: 16810
     Attack: 2189
     Attack2: 3093
     Defense: 346
@@ -2665,7 +2669,7 @@ Body:
     AttackDelay: 517
     AttackMotion: 231
     DamageMotion: 367
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2703,10 +2707,10 @@ Body:
     AegisName: ECO_ROCKER
     Name: ECO_ROCKER_21551
     JapaneseName: 草原的蝗蟲
-    Level: 253
+    Level: 245
     Hp: 4520250
-    BaseExp: 129150
-    JobExp: 86100
+    BaseExp: 15990
+    JobExp: 15740
     Attack: 1877
     Attack2: 2637
     Defense: 316
@@ -2728,7 +2732,7 @@ Body:
     AttackDelay: 517
     AttackMotion: 231
     DamageMotion: 367
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2766,10 +2770,10 @@ Body:
     AegisName: ECO_SAVAGE
     Name: ECO_SAVAGE_21552
     JapaneseName: 草原的野豬
-    Level: 252
-    Hp: 5261100
-    BaseExp: 150317
-    JobExp: 100211
+    Level: 245
+    Hp: 4520250
+    BaseExp: 15730
+    JobExp: 16440
     Attack: 1851
     Attack2: 2575
     Defense: 426
@@ -2791,7 +2795,7 @@ Body:
     AttackDelay: 517
     AttackMotion: 231
     DamageMotion: 367
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2827,10 +2831,10 @@ Body:
     AegisName: ECO_FLORA
     Name: ECO_FLORA_21553
     JapaneseName: 草原的噬人花
-    Level: 254
-    Hp: 3352800
-    BaseExp: 95794
-    JobExp: 63863
+    Level: 245
+    Hp: 5261100
+    BaseExp: 15310
+    JobExp: 15970
     Attack: 1851
     Attack2: 2575
     Defense: 399
@@ -2852,7 +2856,7 @@ Body:
     AttackDelay: 711
     AttackMotion: 215
     DamageMotion: 258
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2888,10 +2892,10 @@ Body:
     AegisName: ECO_HILL_WIND
     Name: ECO_HILL_WIND_21554
     JapaneseName: 草原的希爾士兵
-    Level: 252
+    Level: 245
     Hp: 3375000
-    BaseExp: 96429
-    JobExp: 64286
+    BaseExp: 13400
+    JobExp: 13400
     Attack: 2965
     Attack2: 4421
     Defense: 309
@@ -2913,7 +2917,7 @@ Body:
     AttackDelay: 188
     AttackMotion: 250
     DamageMotion: 200
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -2949,10 +2953,10 @@ Body:
     AegisName: ECO_MISTRESS
     Name: ECO_MISTRESS_21555
     JapaneseName: 草原的蜂后
-    Level: 260
-    Hp: 21255000
-    BaseExp: 607286
-    JobExp: 404857
+    Level: 255
+    Hp: 378000000
+    BaseExp: 36828
+    JobExp: 30132
     Attack: 8416
     Attack2: 12356
     Defense: 487
@@ -3027,10 +3031,10 @@ Body:
     AegisName: ECO_EXPLOSION
     Name: ECO_EXPLOSION_21556
     JapaneseName: 炙烈的爆炎蝙蝠
-    Level: 252
+    Level: 244
     Hp: 4628250
-    BaseExp: 132236
-    JobExp: 88157
+    BaseExp: 15900
+    JobExp: 15425
     Attack: 2246
     Attack2: 4451
     Defense: 412
@@ -3052,7 +3056,7 @@ Body:
     AttackDelay: 645
     AttackMotion: 450
     DamageMotion: 336
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3088,10 +3092,10 @@ Body:
     AegisName: ECO_DELETER
     Name: ECO_DELETER_21557
     JapaneseName: 炙烈的七彩飛龍
-    Level: 252
+    Level: 244
     Hp: 3689700
-    BaseExp: 105420
-    JobExp: 70280
+    BaseExp: 16099
+    JobExp: 15574
     Attack: 4080
     Attack2: 5284
     Defense: 411
@@ -3113,7 +3117,7 @@ Body:
     AttackDelay: 645
     AttackMotion: 450
     DamageMotion: 336
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3149,10 +3153,10 @@ Body:
     AegisName: ECO_JAKK
     Name: ECO_JAKK_21558
     JapaneseName: 炙烈的南瓜先生
-    Level: 252
+    Level: 244
     Hp: 3528000
-    BaseExp: 100800
-    JobExp: 67200
+    BaseExp: 16320
+    JobExp: 17100
     Attack: 3322
     Attack2: 4411
     Defense: 390
@@ -3174,7 +3178,7 @@ Body:
     AttackDelay: 521
     AttackMotion: 220
     DamageMotion: 337
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3210,10 +3214,10 @@ Body:
     AegisName: ECO_LAVA_GOLEM
     Name: ECO_LAVA_GOLEM_21559
     JapaneseName: 炙烈的熔岩巨石
-    Level: 254
+    Level: 244
     Hp: 5715000
-    BaseExp: 163286
-    JobExp: 108857
+    BaseExp: 17232
+    JobExp: 16674
     Attack: 5200
     Attack2: 6400
     Defense: 599
@@ -3235,7 +3239,7 @@ Body:
     AttackDelay: 990
     AttackMotion: 990
     DamageMotion: 336
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3271,10 +3275,10 @@ Body:
     AegisName: ECO_MAJORUROS
     Name: ECO_MAJORUROS_21560
     JapaneseName: 炙烈的米洛斯
-    Level: 253
+    Level: 244
     Hp: 5199150
-    BaseExp: 148547
-    JobExp: 99031
+    BaseExp: 16090
+    JobExp: 15200
     Attack: 5200
     Attack2: 6400
     Defense: 411
@@ -3296,7 +3300,7 @@ Body:
     AttackDelay: 550
     AttackMotion: 550
     DamageMotion: 422
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3332,10 +3336,10 @@ Body:
     AegisName: ECO_HYDRO
     Name: ECO_HYDRO_21561
     JapaneseName: 炙烈的三頭龍
-    Level: 255
+    Level: 244
     Hp: 5622750
-    BaseExp: 160650
-    JobExp: 107100
+    BaseExp: 16285
+    JobExp: 14463
     Attack: 4526
     Attack2: 5821
     Defense: 390
@@ -3357,7 +3361,7 @@ Body:
     AttackDelay: 330
     AttackMotion: 330
     DamageMotion: 241
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3393,10 +3397,10 @@ Body:
     AegisName: ECO_ACIDUS
     Name: ECO_ACIDUS_21562
     JapaneseName: 炙烈的希托斯
-    Level: 254
+    Level: 244
     Hp: 4425696
-    BaseExp: 126448
-    JobExp: 84299
+    BaseExp: 16520
+    JobExp: 15389
     Attack: 4526
     Attack2: 5821
     Defense: 390
@@ -3418,7 +3422,7 @@ Body:
     AttackDelay: 168
     AttackMotion: 500
     DamageMotion: 300
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3454,10 +3458,10 @@ Body:
     AegisName: ECO_DETALE
     Name: ECO_DETALE_21563
     JapaneseName: 炙烈的迪塔勒泰晤勒斯
-    Level: 260
-    Hp: 40950000
-    BaseExp: 1170000
-    JobExp: 780000
+    Level: 255
+    Hp: 60050000
+    BaseExp: 43200
+    JobExp: 34200
     Attack: 11470
     Attack2: 16893
     Defense: 664
@@ -3530,10 +3534,10 @@ Body:
     AegisName: ECO_ICE_TITAN
     Name: ECO_ICE_TITAN_21564
     JapaneseName: 酷寒的冰巨人
-    Level: 252
+    Level: 244
     Hp: 6350400
-    BaseExp: 181440
-    JobExp: 120960
+    BaseExp: 17724
+    JobExp: 16644
     Attack: 4526
     Attack2: 6590
     Defense: 644
@@ -3555,7 +3559,7 @@ Body:
     AttackDelay: 861
     AttackMotion: 330
     DamageMotion: 150
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3591,10 +3595,10 @@ Body:
     AegisName: ECO_SIROMA
     Name: ECO_SIROMA_21565
     JapaneseName: 酷寒的小雪獸
-    Level: 252
+    Level: 244
     Hp: 4593300
-    BaseExp: 131237
-    JobExp: 87491
+    BaseExp: 15182
+    JobExp: 15136
     Attack: 3200
     Attack2: 4500
     Defense: 364
@@ -3616,7 +3620,7 @@ Body:
     AttackDelay: 432
     AttackMotion: 648
     DamageMotion: 240
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3652,10 +3656,10 @@ Body:
     AegisName: ECO_SNOWIER
     Name: ECO_SNOWIER_21566
     JapaneseName: 酷寒的雪獸
-    Level: 254
+    Level: 244
     Hp: 5415750
-    BaseExp: 154736
-    JobExp: 103157
+    BaseExp: 16194
+    JobExp: 16145
     Attack: 3500
     Attack2: 6000
     Defense: 421
@@ -3677,7 +3681,7 @@ Body:
     AttackDelay: 936
     AttackMotion: 544
     DamageMotion: 225
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3715,10 +3719,10 @@ Body:
     AegisName: ECO_CENTIPEDE
     Name: ECO_CENTIPEDE_21567
     JapaneseName: 酷寒的蜈蚣
-    Level: 252
-    Hp: 3969000
-    BaseExp: 113400
-    JobExp: 75600
+    Level: 244
+    Hp: 4969000
+    BaseExp: 15320
+    JobExp: 15271
     Attack: 3600
     Attack2: 5100
     Defense: 443
@@ -3740,7 +3744,7 @@ Body:
     AttackDelay: 500
     AttackMotion: 367
     DamageMotion: 336
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3778,10 +3782,10 @@ Body:
     AegisName: ECO_AQUA_ELEMENTAL
     Name: ECO_AQUA_ELEMENTAL_21568
     JapaneseName: 酷寒的水精靈
-    Level: 253
+    Level: 244
     Hp: 3816150
-    BaseExp: 109033
-    JobExp: 72689
+    BaseExp: 15415
+    JobExp: 15415
     Attack: 4000
     Attack2: 6000
     Defense: 323
@@ -3803,7 +3807,7 @@ Body:
     AttackDelay: 300
     AttackMotion: 660
     DamageMotion: 471
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3841,10 +3845,10 @@ Body:
     AegisName: ECO_ANGELGOLT
     Name: ECO_ANGELGOLT_21569
     JapaneseName: 酷寒的方體惡魔
-    Level: 254
+    Level: 244
     Hp: 4991100
-    BaseExp: 142603
-    JobExp: 95069
+    BaseExp: 15552
+    JobExp: 14419
     Attack: 5800
     Attack2: 8600
     Defense: 546
@@ -3866,7 +3870,7 @@ Body:
     AttackDelay: 252
     AttackMotion: 442
     DamageMotion: 271
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3902,10 +3906,10 @@ Body:
     AegisName: ECO_RHYNCHO
     Name: ECO_RHYNCHO_21570
     JapaneseName: 酷寒的靈克
-    Level: 255
+    Level: 244
     Hp: 5250000
-    BaseExp: 150000
-    JobExp: 100000
+    BaseExp: 16107
+    JobExp: 14579
     Attack: 4300
     Attack2: 6500
     Defense: 368
@@ -3927,7 +3931,7 @@ Body:
     AttackDelay: 250
     AttackMotion: 330
     DamageMotion: 300
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -3966,9 +3970,9 @@ Body:
     Name: ECO_KTULLANUX_21571
     JapaneseName: 酷寒的寒冰龍
     Level: 255
-    Hp: 39000000
-    BaseExp: 1114286
-    JobExp: 742857
+    Hp: 78780000
+    BaseExp: 62580
+    JobExp: 62580
     Attack: 11000
     Attack2: 16000
     Defense: 429
@@ -4041,10 +4045,10 @@ Body:
     AegisName: ECO_ANCIENT_MUMMY
     Name: ECO_ANCIENT_MUMMY_21572
     JapaneseName: 死亡的的木乃伊
-    Level: 253
-    Hp: 5950000
-    BaseExp: 141429
-    JobExp: 94286
+    Level: 244
+    Hp: 895000
+    BaseExp: 15410
+    JobExp: 15319
     Attack: 6000
     Attack2: 8000
     Defense: 393
@@ -4066,7 +4070,7 @@ Body:
     AttackDelay: 1772
     AttackMotion: 120
     DamageMotion: 384
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4104,10 +4108,10 @@ Body:
     AegisName: ECO_LUDE
     Name: ECO_LUDE_21573
     JapaneseName: 死亡的的警衛
-    Level: 252
-    Hp: 3652050
-    BaseExp: 104344
-    JobExp: 69563
+    Level: 244
+    Hp: 1195000
+    BaseExp: 15169
+    JobExp: 15126
     Attack: 6000
     Attack2: 8000
     Defense: 390
@@ -4129,7 +4133,7 @@ Body:
     AttackDelay: 440
     AttackMotion: 500
     DamageMotion: 320
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4167,10 +4171,10 @@ Body:
     AegisName: ECO_RAGGED_ZOMBIE
     Name: ECO_RAGGED_ZOMBIE_21574
     JapaneseName: 死亡的腐屍
-    Level: 252
-    Hp: 4407300
-    BaseExp: 125923
-    JobExp: 83949
+    Level: 244
+    Hp: 1385000
+    BaseExp: 15351
+    JobExp: 15351
     Attack: 6000
     Attack2: 8000
     Defense: 385
@@ -4192,7 +4196,7 @@ Body:
     AttackDelay: 400
     AttackMotion: 250
     DamageMotion: 370
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4228,10 +4232,10 @@ Body:
     AegisName: ECO_WRAITH
     Name: ECO_WRAITH_21575
     JapaneseName: 死亡的惡靈
-    Level: 254
-    Hp: 3711750
-    BaseExp: 106050
-    JobExp: 70700
+    Level: 244
+    Hp: 1585000
+    BaseExp: 16351
+    JobExp: 16351
     Attack: 6000
     Attack2: 8000
     Defense: 385
@@ -4253,7 +4257,7 @@ Body:
     AttackDelay: 650
     AttackMotion: 250
     DamageMotion: 240
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4289,10 +4293,10 @@ Body:
     AegisName: ECO_FLAME_SKULL
     Name: ECO_FLAME_SKULL_21576
     JapaneseName: 死亡的骷髏頭
-    Level: 252
-    Hp: 3667950
-    BaseExp: 104799
-    JobExp: 69866
+    Level: 244
+    Hp: 1385000
+    BaseExp: 14351
+    JobExp: 14351
     Attack: 6500
     Attack2: 8500
     Defense: 377
@@ -4314,7 +4318,7 @@ Body:
     AttackDelay: 322
     AttackMotion: 352
     DamageMotion: 288
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4350,10 +4354,10 @@ Body:
     AegisName: ECO_BANSHEE
     Name: ECO_BANSHEE_21577
     JapaneseName: 死亡的惡耗女妖
-    Level: 254
-    Hp: 4724400
-    BaseExp: 134983
-    JobExp: 89989
+    Level: 244
+    Hp: 1585000
+    BaseExp: 18351
+    JobExp: 18351
     Attack: 7500
     Attack2: 8800
     Defense: 404
@@ -4375,7 +4379,7 @@ Body:
     AttackDelay: 323
     AttackMotion: 250
     DamageMotion: 250
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4411,10 +4415,10 @@ Body:
     AegisName: ECO_KNIGHT_OF_ABYSS
     Name: 21578_KNIGHT_OF_ABYSS
     JapaneseName: 死亡的深淵騎士
-    Level: 255
-    Hp: 5625000
-    BaseExp: 160714
-    JobExp: 107143
+    Level: 250
+    Hp: 2085000
+    BaseExp: 19351
+    JobExp: 19351
     Attack: 7800
     Attack2: 9000
     Defense: 428
@@ -4436,7 +4440,7 @@ Body:
     AttackDelay: 500
     AttackMotion: 250
     DamageMotion: 350
-    DamageTaken: 1000
+    DamageTaken: 4000
     Modes:
       CanMove: true
       Aggressive: true
@@ -4471,9 +4475,9 @@ Body:
     Name: ECO_LORD_OF_DEATH_21579
     JapaneseName: 死亡的怨靈騎士
     Level: 255
-    Hp: 34905000
-    BaseExp: 997286
-    JobExp: 664857
+    Hp: 603883000
+    BaseExp: 43712
+    JobExp: 34525
     Attack: 12000
     Attack2: 16000
     Defense: 636
