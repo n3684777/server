@@ -113,6 +113,7 @@ BackMenu:
 						.@lv>=0&&.@lv<=6?ckitem((.@weapon)?6230:6234):"",
 						.@lv>=0&&.@lv<=7?ckitem((.@weapon)?6229:6233):"",
 						.@lv>=0&&.@lv<=8?ckitem((.@weapon)?6228:6232):"",
+						.@lv>=0&&.@lv<=18?ckitem((.@weapon)?6864:6865):"", // +19
 						.@lv>=6&&.@lv<=12?ckitem((.@weapon)?6438:6439):"",
 						.@lv>=10?ckitem((.@weapon)?6226:6225):"",
 						.@lv==12?((.@weapon)?ckitem2(7650,1,6226,1):ckitem2(7650,1,6225,1)):"",
@@ -133,17 +134,20 @@ BackMenu:
 			case 4:	// +9券
 				setarray .@array,(.@weapon)?6228:6232,100,0,0,9;
 				break;
-			case 5:	// 受祝福的武器礦石/受祝福的防具礦石
+			case 5:	// +19券
+				setarray .@array,(.@weapon)?6864:6865,100,0,0,9;
+				break;
+			case 6:	// 受祝福的武器礦石/受祝福的防具礦石
 				setarray .@array,(.@weapon)?6438:6439,refine_percent(.@part),0,0,0;
 				break;
-			case 6:	// 高密度鈽鐳礦石/高密度鈣礦石
+			case 7:	// 高密度鈽鐳礦石/高密度鈣礦石
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,1,0;
 				break;
-			case 7:	// 鐵匠的神乎其技 +12 ~ +13
+			case 8:	// 鐵匠的神乎其技 +12 ~ +13
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,1;
 				break;
-			case 8:	// 鐵匠的神乎其技 +13 ~ +14
+			case 9:	// 鐵匠的神乎其技 +13 ~ +14
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,2;
 				break;
