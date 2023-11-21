@@ -96645,8 +96645,8 @@ Body:
     JapaneseName: 勞碌礦工魔
     Level: 154
     Hp: 305605
-    BaseExp: 1409
-    JobExp: 1586
+    BaseExp: 14090
+    JobExp: 15860
     Attack: 2494
     Attack2: 3606
     Defense: 351
@@ -96862,8 +96862,8 @@ Body:
     JapaneseName: 古代鐘乳巨石怪
     Level: 167
     Hp: 725400
-    BaseExp: 158428
-    JobExp: 118820
+    BaseExp: 79214
+    JobExp: 59410
     Attack: 3947
     Attack2: 5739
     Defense: 412
@@ -96910,8 +96910,8 @@ Body:
     JapaneseName: 古代邪惡摩艾
     Level: 166
     Hp: 708500
-    BaseExp: 154736
-    JobExp: 116052
+    BaseExp: 77368
+    JobExp: 58026
     Attack: 4091
     Attack2: 5969
     Defense: 188
@@ -96956,8 +96956,8 @@ Body:
     JapaneseName: 古代塔奧群卡
     Level: 169
     Hp: 19280000
-    BaseExp: 9003504
-    JobExp: 6002628
+    BaseExp: 4001752
+    JobExp: 3001314
     MvpExp: 450000
     Attack: 6081
     Attack2: 8915
@@ -96980,6 +96980,7 @@ Body:
     AttackDelay: 1020
     AttackMotion: 288
     DamageMotion: 144
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Modes:
@@ -97159,8 +97160,8 @@ Body:
     JapaneseName: 古代伍坦長者
     Level: 169
     Hp: 20154000
-    BaseExp: 8003104
-    JobExp: 6002328
+    BaseExp: 4001552
+    JobExp: 3001164
     MvpExp: 200000
     Attack: 6225
     Attack2: 9143
@@ -97183,6 +97184,7 @@ Body:
     AttackDelay: 712
     AttackMotion: 1144
     DamageMotion: 480
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Modes:
@@ -100060,8 +100062,6 @@ Body:
     Name: 混沌服事  安德烈
     Level: 177
     Hp: 1057541
-    BaseExp: 0
-    JobExp: 0
     Attack: 335
     Attack2: 396
     Defense: 330
@@ -100093,8 +100093,6 @@ Body:
     Name: 混沌服事 安涅斯
     Level: 177
     Hp: 1057444
-    BaseExp: 0
-    JobExp: 0
     Attack: 335
     Attack2: 396
     Defense: 327
@@ -100126,8 +100124,6 @@ Body:
     Name: 混沌服事 希瓦諾
     Level: 177
     Hp: 1057650
-    BaseExp: 0
-    JobExp: 0
     Attack: 335
     Attack2: 396
     Defense: 333
@@ -100159,8 +100155,6 @@ Body:
     Name: 混沌服事  辛西亞
     Level: 177
     Hp: 1056411
-    BaseExp: 0
-    JobExp: 0
     Attack: 335
     Attack2: 396
     Defense: 297
@@ -102395,7 +102389,7 @@ Body:
     Hp: 79249813
     BaseExp: 5700403
     JobExp: 3990282
-    MvpExp: 5700403
+    MvpExp: 2800000
     Attack: 10218
     Attack2: 14233
     Defense: 506
@@ -102438,7 +102432,7 @@ Body:
     Hp: 75393148
     BaseExp: 5700403
     JobExp: 3990282
-    MvpExp: 5684138
+    MvpExp: 2800000
     Attack: 9418
     Attack2: 13210
     Defense: 374
@@ -102859,9 +102853,9 @@ Body:
     JapaneseName: 紅椒
     Level: 135
     Hp: 9500000
-    BaseExp: 23400000
-    JobExp: 3931200
-    MvpExp: 11700000
+    BaseExp: 1000000
+    JobExp: 600000
+    MvpExp: 500000
     Attack: 1783
     Attack2: 3365
     Defense: 345
@@ -102921,8 +102915,8 @@ Body:
     JapaneseName: 夢魘紅椒
     Level: 185
     Hp: 300000000
-    BaseExp: 23400000
-    JobExp: 3931200
+    BaseExp: 3000000
+    JobExp: 2600000
     MvpExp: 11700000
     Attack: 3967
     Attack2: 7414
@@ -102983,8 +102977,8 @@ Body:
     JapaneseName: 研究助理機器人
     Level: 137
     Hp: 238512
-    BaseExp: 6839158
-    JobExp: 7659857
+    BaseExp: 21683
+    JobExp: 15178
     Attack: 1481
     Attack2: 1856
     Defense: 365
@@ -103032,8 +103026,8 @@ Body:
     JapaneseName: 研究助理機器人
     Level: 189
     Hp: 2398802
-    BaseExp: 6839158
-    JobExp: 7659857
+    BaseExp: 171343
+    JobExp: 119940
     Attack: 2176
     Attack2: 3232
     Defense: 505
@@ -103081,8 +103075,8 @@ Body:
     JapaneseName: 乾扁草精
     Level: 140
     Hp: 248245
-    BaseExp: 8101132
-    JobExp: 1360990
+    BaseExp: 22568
+    JobExp: 15797
     Attack: 766
     Attack2: 1332
     Defense: 200
@@ -103128,8 +103122,8 @@ Body:
     JapaneseName: 夢魘乾扁草精
     Level: 190
     Hp: 2908909
-    BaseExp: 8101132
-    JobExp: 1360990
+    BaseExp: 207779
+    JobExp: 145445
     Attack: 1884
     Attack2: 2986
     Defense: 292
@@ -103174,9 +103168,9 @@ Body:
     Name: Special Alnoldi
     JapaneseName: 特殊泰坦魔芋花
     Level: 143
-    Hp: 7121315
-    BaseExp: 7975873
-    JobExp: 1339947
+    Hp: 255483
+    BaseExp: 23226
+    JobExp: 16258
     Attack: 1262
     Attack2: 1453
     Defense: 272
@@ -103224,8 +103218,8 @@ Body:
     JapaneseName: 夢魘特殊泰坦魔芋花
     Level: 193
     Hp: 2954324
-    BaseExp: 7975873
-    JobExp: 1339947
+    BaseExp: 211023
+    JobExp: 147716
     Attack: 1633
     Attack2: 2421
     Defense: 272
@@ -103273,11 +103267,14 @@ Body:
     AegisName: EP17_2_ALPHA_MASTER
     Name: Manager Alpha
     JapaneseName: 研究助理機器人
-    Level: 1
-    Attack: 1
-    Attack2: 1
-    Defense: 1
-    MagicDefense: 1
+    Level: 180
+    Hp: 1847205
+    BaseExp: 131943
+    JobExp: 92360
+    Attack: 3125
+    Attack2: 4520
+    Defense: 498
+    MagicDefense: 106
     AttackRange: 1
     SkillRange: 10
     ChaseRange: 12
@@ -103299,11 +103296,14 @@ Body:
     AegisName: EP17_2_BETA_BASIC
     Name: Manager Beta
     JapaneseName: 研究助理機器人
-    Level: 1
-    Attack: 1
-    Attack2: 1
-    Defense: 1
-    MagicDefense: 1
+    Level: 165
+    Hp: 662430
+    BaseExp: 55203
+    JobExp: 38642
+    Attack: 2299
+    Attack2: 3306
+    Defense: 429
+    MagicDefense: 93
     AttackRange: 1
     SkillRange: 10
     ChaseRange: 12
@@ -103327,8 +103327,8 @@ Body:
     JapaneseName: 故障的B
     Level: 145
     Hp: 261170
-    BaseExp: 626808
-    JobExp: 94021
+    BaseExp: 23743
+    JobExp: 16620
     Attack: 1241
     Attack2: 1892
     Defense: 349
@@ -103369,8 +103369,8 @@ Body:
     JapaneseName: 故障的園丁
     Level: 135
     Hp: 234017
-    BaseExp: 5936900
-    JobExp: 997399
+    BaseExp: 21274
+    JobExp: 14892
     Attack: 1336
     Attack2: 1870
     Defense: 311
@@ -103414,8 +103414,8 @@ Body:
     JapaneseName: 夢魘故障的園丁
     Level: 185
     Hp: 2379158
-    BaseExp: 5936900
-    JobExp: 997399
+    BaseExp: 169940
+    JobExp: 118958
     Attack: 1763
     Attack2: 2899
     Defense: 620
@@ -103457,8 +103457,10 @@ Body:
     AegisName: EP17_2_BETA_CLEANER_A
     Name: Broken Cleaner
     JapaneseName: 故障的搓澡師
-    Level: 135
+    Level: 143
     Hp: 147134
+    BaseExp: 13376
+    JobExp: 9363
     Attack: 1261
     Attack2: 1896
     Defense: 344
@@ -103506,8 +103508,10 @@ Body:
     AegisName: EP17_2_BETA_CLEANER_B
     Name: Broken Cleaner
     JapaneseName: 故障的搓澡師
-    Level: 135
+    Level: 144
     Hp: 150304
+    BaseExp: 13386
+    JobExp: 9371
     Attack: 1462
     Attack2: 1976
     Defense: 288
@@ -103553,11 +103557,14 @@ Body:
     AegisName: EP17_2_BETA_BATHS_A
     Name: Cleaning Robot
     JapaneseName: 桑拿經理
-    Level: 1
-    Attack: 1
-    Attack2: 1
-    Defense: 1
-    MagicDefense: 1
+    Level: 145
+    Hp: 150690
+    BaseExp: 13699
+    JobExp: 9589
+    Attack: 2020
+    Attack2: 2897
+    Defense: 439
+    MagicDefense: 84
     AttackRange: 1
     SkillRange: 10
     ChaseRange: 12
@@ -103585,11 +103592,14 @@ Body:
     AegisName: EP17_2_BETA_BATHS_B
     Name: Cleaning Robot
     JapaneseName: 掃地機器人
-    Level: 1
-    Attack: 1
-    Attack2: 1
-    Defense: 1
-    MagicDefense: 1
+    Level: 145
+    Hp: 150304
+    BaseExp: 13699
+    JobExp: 9589
+    Attack: 1958
+    Attack2: 2807
+    Defense: 415
+    MagicDefense: 84
     AttackRange: 1
     SkillRange: 10
     ChaseRange: 12
@@ -103608,18 +103618,19 @@ Body:
       CastSensorIdle: true
       CanAttack: true
     Drops:
-      - Item: BarMealTicket
-        Rate: 1500
       - Item: Iron
         Rate: 1000
-      - Item: Broken_Steel_Piece
-        Rate: 500
+      - Item: Beta_Baths_A_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20637
     AegisName: EP17_2_BETA_ITEMKEEPER
     Name: Broken Warehouse Manager
     JapaneseName: 故障的倉管
-    Level: 1
+    Level: 185
     Hp: 1900983
+    BaseExp: 135785
+    JobExp: 95049
     Attack: 1855
     Attack2: 2561
     Defense: 553
@@ -103658,11 +103669,13 @@ Body:
     AegisName: EP17_2_BETA_GUARDS
     Name: Beta Guards
     JapaneseName: 研究助理機器人
-    Level: 1
-    Attack: 1
-    Attack2: 1
-    Defense: 1
-    MagicDefense: 1
+    Level: 140
+    BaseExp: 23384
+    JobExp: 16369
+    Attack: 1640
+    Attack2: 2340
+    Defense: 530
+    MagicDefense: 80
     AttackRange: 1
     SkillRange: 10
     ChaseRange: 12
@@ -103684,8 +103697,10 @@ Body:
     AegisName: EP17_2_BETA_GUARDS_NG
     Name: Broken Beta Guards
     JapaneseName: 故障的警衛型機器人
-    Level: 1
+    Level: 186
     Hp: 1909523
+    BaseExp: 136395
+    JobExp: 95476
     Attack: 1956
     Attack2: 2860
     Defense: 522
@@ -103727,11 +103742,11 @@ Body:
     Name: Omega Cleaner
     JapaneseName: 掃地機器人
     Level: 130
-    Hp: 365934
-    BaseExp: 439121
-    JobExp: 65868
-    Attack: 572
-    Attack2: 1573
+    Hp: 182967
+    BaseExp: 16633
+    JobExp: 11643
+    Attack: 1110
+    Attack2: 760
     Defense: 424
     MagicDefense: 73
     Str: 120
@@ -103767,8 +103782,8 @@ Body:
     JapaneseName: 故障的掃地機器人
     Level: 175
     Hp: 1200685
-    BaseExp: 439121
-    JobExp: 65868
+    BaseExp: 100057
+    JobExp: 70040
     Attack: 1240
     Attack2: 2731
     Defense: 475
@@ -103809,9 +103824,9 @@ Body:
     JapaneseName: 斯威蒂
     Level: 139
     Hp: 5011304
-    BaseExp: 31200000
-    JobExp: 5241600
-    MvpExp: 15600000
+    BaseExp: 455573
+    JobExp: 913901
+    MvpExp: 455573
     Attack: 1255
     Attack2: 2478
     Str: 141
@@ -103857,6 +103872,8 @@ Body:
     JapaneseName: 熱池劍魚
     Level: 139
     Hp: 133096
+    BaseExp: 12100
+    JobExp: 8470
     Attack: 943
     Attack2: 1376
     Defense: 240
@@ -103907,6 +103924,8 @@ Body:
     JapaneseName: 熱池馬克
     Level: 137
     Hp: 132060
+    BaseExp: 12005
+    JobExp: 8404
     Attack: 996
     Attack2: 1466
     Defense: 408
@@ -103954,6 +103973,8 @@ Body:
     JapaneseName: 熱池異變魚
     Level: 138
     Hp: 133151
+    BaseExp: 12105
+    JobExp: 8473
     Attack: 749
     Attack2: 1421
     Defense: 255
@@ -104000,6 +104021,8 @@ Body:
     JapaneseName: 熱池食人魚
     Level: 138
     Hp: 133024
+    BaseExp: 12093
+    JobExp: 8465
     Attack: 851
     Attack2: 1441
     Defense: 332
@@ -104047,7 +104070,9 @@ Body:
     Name: Elder of Chung-Geum
     JapaneseName: 青琴公主
     Level: 141
-    Hp: 1108897
+    Hp: 1823441
+    BaseExp: 121563
+    JobExp: 85094
     Attack: 1981
     Attack2: 2676
     Defense: 393
@@ -104101,10 +104126,10 @@ Body:
     Name: Boss Pitaya
     JapaneseName: 大王喵喵
     Level: 168
-    Hp: 19037292
-    BaseExp: 40656489
-    JobExp: 40459542
-    MvpExp: 20328244
+    Hp: 19298694
+    BaseExp: 1608224
+    JobExp: 1125757
+    MvpExp: 800000
     Attack: 1945
     Attack2: 3856
     Defense: 462
@@ -104154,6 +104179,8 @@ Body:
     JapaneseName: 紅肉食人火龍果
     Level: 162
     Hp: 648023
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1567
     Attack2: 1974
     Defense: 351
@@ -104200,6 +104227,8 @@ Body:
     JapaneseName: 黃肉食人火龍果
     Level: 164
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1617
     Attack2: 1921
     Defense: 434
@@ -104246,6 +104275,8 @@ Body:
     JapaneseName: 藍肉食人火龍果
     Level: 165
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1534
     Attack2: 1954
     Defense: 444
@@ -104292,6 +104323,8 @@ Body:
     JapaneseName: 紫肉食人火龍果
     Level: 165
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1543
     Attack2: 1986
     Defense: 525
@@ -104338,6 +104371,8 @@ Body:
     JapaneseName: 綠肉食人火龍果
     Level: 166
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1438
     Attack2: 1988
     Defense: 269
@@ -104384,6 +104419,8 @@ Body:
     JapaneseName: 紅肉食人火龍果
     Level: 162
     Hp: 648023
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1567
     Attack2: 1974
     Defense: 351
@@ -104418,6 +104455,8 @@ Body:
     JapaneseName: 黃肉食人火龍果
     Level: 164
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1617
     Attack2: 1921
     Defense: 434
@@ -104452,6 +104491,8 @@ Body:
     JapaneseName: 藍肉食人火龍果
     Level: 165
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1534
     Attack2: 1954
     Defense: 444
@@ -104486,6 +104527,8 @@ Body:
     JapaneseName: 紫肉食人火龍果
     Level: 165
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1543
     Attack2: 1986
     Defense: 525
@@ -104520,6 +104563,8 @@ Body:
     JapaneseName: 綠肉食人火龍果
     Level: 166
     Hp: 603341
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1438
     Attack2: 1988
     Defense: 269
@@ -104554,9 +104599,9 @@ Body:
     JapaneseName: 大王喵喵
     Level: 168
     Hp: 19037292
-    BaseExp: 40656489
-    JobExp: 40459542
-    MvpExp: 20328244
+    BaseExp: 1608224
+    JobExp: 1125757
+    MvpExp: 800000
     Attack: 1945
     Attack2: 3856
     Defense: 462
@@ -104606,8 +104651,8 @@ Body:
     JapaneseName: 紅肉食人火龍果
     Level: 162
     Hp: 648023
-    BaseExp: 13014407
-    JobExp: 13010085
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1567
     Attack2: 1974
     Defense: 351
@@ -104654,8 +104699,8 @@ Body:
     JapaneseName: 黃肉食人火龍果
     Level: 164
     Hp: 603341
-    BaseExp: 13014782
-    JobExp: 13010347
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1617
     Attack2: 1921
     Defense: 434
@@ -104702,8 +104747,8 @@ Body:
     JapaneseName: 藍肉食人火龍果
     Level: 165
     Hp: 603341
-    BaseExp: 13014878
-    JobExp: 13010414
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1534
     Attack2: 1954
     Defense: 444
@@ -104750,8 +104795,8 @@ Body:
     JapaneseName: 紫肉食人火龍果
     Level: 165
     Hp: 603341
-    BaseExp: 13015028
-    JobExp: 13010520
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1543
     Attack2: 1986
     Defense: 525
@@ -104798,8 +104843,8 @@ Body:
     JapaneseName: 綠肉食人火龍果
     Level: 166
     Hp: 603341
-    BaseExp: 13015010
-    JobExp: 13010507
+    BaseExp: 54002
+    JobExp: 37801
     Attack: 1438
     Attack2: 1988
     Defense: 269
@@ -104846,8 +104891,8 @@ Body:
     JapaneseName: 韋爾波泰
     Level: 136
     Hp: 239037
-    BaseExp: 9950885
-    JobExp: 1671749
+    BaseExp: 21731
+    JobExp: 15211
     Attack: 881
     Attack2: 1243
     Defense: 424
@@ -104894,8 +104939,8 @@ Body:
     JapaneseName: 貝爾福特
     Level: 186
     Hp: 2390934
-    BaseExp: 9725342
-    JobExp: 1633858
+    BaseExp: 170781
+    JobExp: 119547
     Attack: 2168
     Attack2: 3264
     Defense: 600
@@ -104942,8 +104987,8 @@ Body:
     JapaneseName: 席瓦帕皮利亞
     Level: 145
     Hp: 7347707
-    BaseExp: 37500000
-    JobExp: 6300000
+    BaseExp: 670456
+    JobExp: 469319
     Attack: 2864
     Attack2: 4236
     Defense: 241
@@ -104996,8 +105041,8 @@ Body:
     JapaneseName: 格蘭帕皮利亞
     Level: 195
     Hp: 74730723
-    BaseExp: 37500000
-    JobExp: 6300000
+    BaseExp: 5337909
+    JobExp: 3736536
     Attack: 3794
     Attack2: 5124
     Defense: 384
@@ -105050,8 +105095,8 @@ Body:
     JapaneseName: 帕皮拉
     Level: 138
     Hp: 240713
-    BaseExp: 7248516
-    JobExp: 1217750
+    BaseExp: 21883
+    JobExp: 15318
     Attack: 1241
     Attack2: 1564
     Defense: 378
@@ -105100,8 +105145,8 @@ Body:
     JapaneseName: 夢魘帕皮拉
     Level: 188
     Hp: 2409593
-    BaseExp: 7248516
-    JobExp: 1217750
+    BaseExp: 172114
+    JobExp: 120480
     Attack: 1564
     Attack2: 2321
     Defense: 467
@@ -105152,8 +105197,8 @@ Body:
     JapaneseName: 帕皮拉盧巴
     Level: 139
     Hp: 240713
-    BaseExp: 7167094
-    JobExp: 1204072
+    BaseExp: 21883
+    JobExp: 15318
     Attack: 1241
     Attack2: 1564
     Defense: 346
@@ -105201,9 +105246,9 @@ Body:
     Name: Senior Papila Ruba
     JapaneseName: 夢魘帕皮拉盧巴
     Level: 190
-    Hp: 2409593
-    BaseExp: 7167094
-    JobExp: 1204072
+    Hp: 3656403
+    BaseExp: 261172
+    JobExp: 182820
     Attack: 1564
     Attack2: 2321
     Defense: 676
@@ -105252,8 +105297,6 @@ Body:
     JapaneseName: 帕皮拉盧巴
     Level: 150
     Hp: 300
-    BaseExp: 7167094
-    JobExp: 1204072
     Attack: 1
     Attack2: 1
     Defense: 1
@@ -105283,10 +105326,10 @@ Body:
     AegisName: MD_PAPILA_CAE
     Name: Papila Cae
     JapaneseName: 帕皮拉凱依
-    Level: 138
+    Level: 137
     Hp: 237484
-    BaseExp: 7513587
-    JobExp: 1262282
+    BaseExp: 21589
+    JobExp: 15113
     Attack: 1241
     Attack2: 1564
     Defense: 378
@@ -105335,8 +105378,8 @@ Body:
     JapaneseName: 夢魘帕皮拉凱依
     Level: 188
     Hp: 2405191
-    BaseExp: 7513587
-    JobExp: 1262282
+    BaseExp: 171799
+    JobExp: 120260
     Attack: 1564
     Attack2: 2321
     Defense: 467
@@ -105385,8 +105428,6 @@ Body:
     JapaneseName: 帕皮拉凱依
     Level: 150
     Hp: 300
-    BaseExp: 7513587
-    JobExp: 1262282
     Attack: 1
     Attack2: 1
     Defense: 1
@@ -105416,10 +105457,10 @@ Body:
     AegisName: MD_ARIES
     Name: Aries
     JapaneseName: 艾里厄斯
-    Level: 175
+    Level: 140
     Hp: 360702
-    BaseExp: 9305739
-    JobExp: 1563364
+    BaseExp: 32791
+    JobExp: 22954
     Attack: 1241
     Attack2: 1861
     Defense: 356
@@ -105460,10 +105501,10 @@ Body:
     AegisName: MD_ARIES_H
     Name: Senior Aries
     JapaneseName: 夢魘艾里厄斯
-    Level: 175
-    Hp: 603341
-    BaseExp: 8825543
-    JobExp: 1482691
+    Level: 190
+    Hp: 3656403
+    BaseExp: 261172
+    JobExp: 182820
     Attack: 2164
     Attack2: 3521
     Defense: 269
@@ -105535,8 +105576,8 @@ Body:
     JapaneseName: 邪心獵人偵察兵
     Level: 130
     Hp: 180367
-    BaseExp: 509314
-    JobExp: 85565
+    BaseExp: 16397
+    JobExp: 11478
     Attack: 867
     Attack2: 1521
     Defense: 334
@@ -105610,6 +105651,8 @@ Body:
     JapaneseName: 邪心獵人偵察兵
     Level: 176
     Hp: 1208485
+    BaseExp: 100707
+    JobExp: 70495
     Attack: 1867
     Attack2: 2564
     Defense: 404
@@ -105649,8 +105692,8 @@ Body:
     JapaneseName: 書蟲
     Level: 141
     Hp: 250264
-    BaseExp: 951003
-    JobExp: 475502
+    BaseExp: 22751
+    JobExp: 15926
     Attack: 1764
     Attack2: 1941
     Defense: 210
@@ -105698,9 +105741,9 @@ Body:
     Name: Roaming Spellbook
     JapaneseName: 流浪魔法書
     Level: 144
-    Hp: 603341
-    BaseExp: 976026
-    JobExp: 488013
+    Hp: 256849
+    BaseExp: 23350
+    JobExp: 16345
     Attack: 1274
     Attack2: 1477
     Defense: 258
@@ -105745,8 +105788,8 @@ Body:
     JapaneseName: 水道貝納姆
     Level: 142
     Hp: 290128
-    BaseExp: 696307
-    JobExp: 104446
+    BaseExp: 19342
+    JobExp: 13539
     Attack: 1451
     Attack2: 1897
     Defense: 277
@@ -105789,10 +105832,10 @@ Body:
     AegisName: EP17_2_CRAMP
     Name: Sewage Cramp
     JapaneseName: 下水道藍鼠
-    Level: 175
+    Level: 140
     Hp: 285388
-    BaseExp: 684931
-    JobExp: 102740
+    BaseExp: 19026
+    JobExp: 13318
     Attack: 981
     Attack2: 1541
     Defense: 254
@@ -105836,8 +105879,8 @@ Body:
     JapaneseName: 下水道瀑布
     Level: 141
     Hp: 287987
-    BaseExp: 690953
-    JobExp: 103643
+    BaseExp: 19193
+    JobExp: 13435
     Attack: 1241
     Attack2: 1687
     Defense: 270
@@ -105882,8 +105925,8 @@ Body:
     JapaneseName: 菁英貝拉雷
     Level: 143
     Hp: 295508
-    BaseExp: 3617462
-    JobExp: 607734
+    BaseExp: 19701
+    JobExp: 13790
     Attack: 1276
     Attack2: 1536
     Defense: 383
@@ -105927,9 +105970,9 @@ Body:
     Name: Spell Addicted Dolor
     JapaneseName: 魔癮朵洛爾
     Level: 145
-    Hp: 603341
-    BaseExp: 718440
-    JobExp: 107766
+    Hp: 299350
+    BaseExp: 19957
+    JobExp: 13970
     Attack: 1326
     Attack2: 1841
     Defense: 376
@@ -105974,8 +106017,8 @@ Body:
     JapaneseName: 釋放魔力
     Level: 144
     Hp: 291046
-    BaseExp: 698510
-    JobExp: 104777
+    BaseExp: 19403
+    JobExp: 13582
     Attack: 1244
     Attack2: 1876
     Defense: 445
@@ -106020,6 +106063,8 @@ Body:
     JapaneseName: 魔癮普拉加
     Level: 192
     Hp: 2946697
+    BaseExp: 196446
+    JobExp: 137513
     Attack: 2451
     Attack2: 3544
     Defense: 462
@@ -106063,7 +106108,9 @@ Body:
     Name: Spell Addicted Sanare
     JapaneseName: 魔癮薩納雷
     Level: 194
-    Hp: 603341
+    Hp: 2979073
+    BaseExp: 198605
+    JobExp: 139023
     Attack: 2046
     Attack2: 2546
     Defense: 269
@@ -106109,7 +106156,9 @@ Body:
     Name: Powerful Spell
     JapaneseName: 強大魔力
     Level: 193
-    Hp: 603341
+    Hp: 2961272
+    BaseExp: 197418
+    JobExp: 138193
     Attack: 1755
     Attack2: 3055
     Defense: 421
@@ -106153,7 +106202,9 @@ Body:
     Name: Sharp Spell
     JapaneseName: 尖銳魔力
     Level: 193
-    Hp: 603341
+    Hp: 2960243
+    BaseExp: 197350
+    JobExp: 138145
     Attack: 1755
     Attack2: 3055
     Defense: 421
@@ -106483,11 +106534,11 @@ Body:
   - Id: 20773
     AegisName: EMPATHIZER
     Name: EMPATHIZER
-    JapaneseName: 同情者
+    JapaneseName: 體諒墮天使
     Level: 200
     Hp: 3788426
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9776
     Attack2: 3053
     Defense: 296
@@ -106509,17 +106560,32 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
-    Ai: 20
-    Modes:
-      NoRandomWalk: true
+    Ai: 21
+    Drops:
+      - Item: 7440
+        Rate: 100
+      - Item: 7442
+        Rate: 50
+      - Item: 12040
+        Rate: 5
+      - Item: 722
+        Rate: 100
+      - Item: 7005
+        Rate: 500
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
+      - Item: 300270
+        Rate: 1       
   - Id: 20774
     AegisName: HAPPY_GIVER
     Name: HAPPY_GIVER
-    JapaneseName: 幸福贈與者
+    JapaneseName: 幸福墮天使
     Level: 202
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 255188
+    JobExp: 176793
     Attack: 9740
     Attack2: 2997
     Defense: 328
@@ -106543,27 +106609,30 @@ Body:
     DamageMotion: 360
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_E
-        Rate: 300
+      - Item: 7441
+        Rate: 250
+      - Item: 7442
+        Rate: 50
+      - Item: 728
+        Rate: 500
+      - Item: 12040
+        Rate: 5
+      - Item: 7435
+        Rate: 50
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
       - Item: 300271
-        Rate: 1
-        StealProtected: true
+        Rate: 1     
   - Id: 20775
     AegisName: THA_ANGER
     Name: THA_ANGER
     JapaneseName: 達納托斯的憤怒
     Level: 203
     Hp: 3845405
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9841
     Attack2: 3144
     Defense: 302
@@ -106586,14 +106655,31 @@ Body:
     AttackMotion: 288
     DamageMotion: 420
     Ai: 21
+    Drops:
+      - Item: 7054
+        Rate: 500
+      - Item: 731
+        Rate: 250
+      - Item: 732
+        Rate: 50
+      - Item: 7438
+        Rate: 3000
+      - Item: 25728
+        Rate: 150
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
+      - Item: 300274
+        Rate: 1    
   - Id: 20776
     AegisName: THA_HORROR
     Name: THA_HORROR
     JapaneseName: 達納托斯的恐懼
     Level: 201
     Hp: 3807368
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9780
     Attack2: 3060
     Defense: 297
@@ -106616,14 +106702,31 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 21
+    Drops:
+      - Item: 7054
+        Rate: 500
+      - Item: 731
+        Rate: 50
+      - Item: 732
+        Rate: 10
+      - Item: 7436
+        Rate: 2000
+      - Item: 25730
+        Rate: 150
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
+      - Item: 300275
+        Rate: 1    
   - Id: 20777
     AegisName: THA_RESENT
     Name: THA_RESENT
     JapaneseName: 達納托斯的怨恨
     Level: 201
     Hp: 3883906
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9830
     Attack2: 3133
     Defense: 316
@@ -106646,14 +106749,31 @@ Body:
     AttackMotion: 480
     DamageMotion: 360
     Ai: 21
+    Drops:
+      - Item: 7054
+        Rate: 500
+      - Item: 731
+        Rate: 50
+      - Item: 732
+        Rate: 10
+      - Item: 7437
+        Rate: 2000
+      - Item: 25728
+        Rate: 150
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
+      - Item: 300277
+        Rate: 1 
   - Id: 20778
     AegisName: THA_REGRET
     Name: THA_REGRET
     JapaneseName: 達納托斯的後悔
     Level: 202
     Hp: 3831613
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9829
     Attack2: 3124
     Defense: 403
@@ -106676,14 +106796,31 @@ Body:
     AttackMotion: 528
     DamageMotion: 360
     Ai: 21
+    Drops:
+      - Item: 7054
+        Rate: 500
+      - Item: 731
+        Rate: 50
+      - Item: 732
+        Rate: 10
+      - Item: 7439
+        Rate: 2000
+      - Item: 25730
+        Rate: 150
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
+      - Item: 300276
+        Rate: 1 
   - Id: 20779
     AegisName: VOID_MIMIC
     Name: VOID_MIMIC
-    JapaneseName: 虛無邪惡箱
+    JapaneseName: 惡靈邪惡箱
     Level: 203
     Hp: 3842817
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9781
     Attack2: 3055
     Defense: 251
@@ -106707,29 +106844,30 @@ Body:
     DamageMotion: 360
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-        StealProtected: true
-      - Item: Fate_Shard_A
+      - Item: 7938
         Rate: 1500
-        StealProtected: true
+      - Item: 617
+        Rate: 1
+      - Item: 644
+        Rate: 25
+      - Item: 7444
+        Rate: 1
+      - Item: 7940
+        Rate: 500
+      - Item: 603
+        Rate: 10
+      - Item: 25731
+        Rate: 6
       - Item: 300278
         Rate: 1
-        StealProtected: true
   - Id: 20780
     AegisName: BOOK_OF_DEATH
     Name: BOOK_OF_DEATH
-    JapaneseName: 死亡之書
+    JapaneseName: 亡靈之書
     Level: 204
     Hp: 3864501
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 9681
     Attack2: 2920
     Defense: 306
@@ -106753,29 +106891,30 @@ Body:
     DamageMotion: 300
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
+      - Item: 1097
+        Rate: 2000
+      - Item: 7015
         Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-        StealProtected: true
-      - Item: Fate_Shard_A
-        Rate: 15
-        StealProtected: true
+      - Item: 7449
+        Rate: 750
+      - Item: 25728
+        Rate: 150
+      - Item: 25730
+        Rate: 150
+      - Item: 25729
+        Rate: 6
+      - Item: 25731
+        Rate: 6
       - Item: 300279
         Rate: 1
-        StealProtected: true
   - Id: 20781
     AegisName: ELDEST
     Name: ELDEST
-    JapaneseName: 長老魔導士
+    JapaneseName: 千年老妖
     Level: 205
     Hp: 3882829
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 10406
     Attack2: 2981
     Defense: 295
@@ -106799,29 +106938,30 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-        StealProtected: true
-      - Item: Fate_Shard_A
-        Rate: 15
-        StealProtected: true
+      - Item: 7099
+        Rate: 2000
+      - Item: 7117
+        Rate: 750
+      - Item: 7939
+        Rate: 500
+      - Item: 1006
+        Rate: 50
+      - Item: 25728
+        Rate: 150
+      - Item: 25730
+        Rate: 150
+      - Item: 25729
+        Rate: 6
       - Item: 300269
         Rate: 1
-        StealProtected: true
   - Id: 20782
     AegisName: CROW_DUKE
     Name: CROW_DUKE
-    JapaneseName: 烏鴉公爵
+    JapaneseName: 鴉魔首領
     Level: 205
     Hp: 3894053
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 11742
     Attack2: 3491
     Defense: 514
@@ -106845,29 +106985,30 @@ Body:
     DamageMotion: 440
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-        StealProtected: true
-      - Item: Fate_Shard_A
-        Rate: 15
-        StealProtected: true
+      - Item: 7071
+        Rate: 2500
+      - Item: 7063
+        Rate: 500
+      - Item: 747
+        Rate: 1
+      - Item: 5045
+        Rate: 1
+      - Item: 25728
+        Rate: 150
+      - Item: 25730
+        Rate: 150
+      - Item: 25729
+        Rate: 6
       - Item: 300268
         Rate: 1
-        StealProtected: true
   - Id: 20783
     AegisName: CROW_BARON
     Name: CROW_BARON
-    JapaneseName: 烏鴉男爵
+    JapaneseName: 鴉魔男爵
     Level: 205
     Hp: 3893746
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 252562
+    JobExp: 176793
     Attack: 11781
     Attack2: 3536
     Defense: 508
@@ -106891,30 +107032,28 @@ Body:
     DamageMotion: 440
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-        StealProtected: true
-      - Item: Fate_Shard_A
-        Rate: 15
-        StealProtected: true
+      - Item: 7071
+        Rate: 2500
+      - Item: 7063
+        Rate: 500
+      - Item: 747
+        Rate: 1
+      - Item: 5045
+        Rate: 1
+      - Item: 25728
+        Rate: 150
+      - Item: 25730
+        Rate: 150
+      - Item: 25731
+        Rate: 6
       - Item: 300267
         Rate: 1
-        StealProtected: true
   - Id: 20784
     AegisName: MD_THANATOS
     Name: MD_THANATOS
     JapaneseName: 魔劍士 達納托斯的記憶
     Level: 210
     Hp: 442473041
-    BaseExp: 2000000
-    JobExp: 3000000
-    MvpExp: 1833000
     Attack: 12956
     Attack2: 5671
     Defense: 390
@@ -106974,12 +107113,9 @@ Body:
   - Id: 20785
     AegisName: MD_BROKEN_THANATOS
     Name: MD_BROKEN_THANATOS
-    JapaneseName: 達納托斯的破損記憶
+    JapaneseName: 破壞的達納托斯的記憶
     Level: 210
     Hp: 442473041
-    BaseExp: 2000000
-    JobExp: 3000000
-    MvpExp: 1833000
     Attack: 12956
     Attack2: 5671
     Defense: 390
@@ -107055,11 +107191,9 @@ Body:
   - Id: 20787
     AegisName: MD_EMPATHIZER
     Name: EMPATHIZER
-    JapaneseName: 同情者
+    JapaneseName: 體諒墮天使
     Level: 200
     Hp: 3788426
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9776
     Attack2: 3053
     Defense: 296
@@ -107081,6 +107215,7 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
@@ -107091,21 +107226,26 @@ Body:
         Rate: 300
       - Item: Fate_Shard_B
         Rate: 300
-        StealProtected: true
       - Item: Fate_Shard_A
-        Rate: 15
-        StealProtected: true
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
       - Item: 300270
         Rate: 1
-        StealProtected: true
   - Id: 20788
     AegisName: MD_HAPPY_GIVER
     Name: HAPPY_GIVER
-    JapaneseName: 幸福贈與者
+    JapaneseName: 帶來幸福者
     Level: 202
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9740
     Attack2: 2997
     Defense: 328
@@ -107127,17 +107267,28 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
+      - Item: Fate_Shard_E
         Rate: 300
       - Item: Fate_Shard_D
         Rate: 300
-      - Item: Fate_Shard_E
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
         Rate: 300
   - Id: 20789
     AegisName: MD_RETRIBUTION
@@ -107145,8 +107296,6 @@ Body:
     JapaneseName: 代行刑者
     Level: 202
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9871
     Attack2: 3190
     Defense: 328
@@ -107168,17 +107317,28 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
+      - Item: Fate_Shard_E
         Rate: 300
       - Item: Fate_Shard_D
         Rate: 300
-      - Item: Fate_Shard_E
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
         Rate: 300
   - Id: 20790
     AegisName: MD_SHELTER
@@ -107186,8 +107346,6 @@ Body:
     JapaneseName: 安息者
     Level: 202
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9871
     Attack2: 3190
     Defense: 328
@@ -107209,17 +107367,30 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
+      - Item: Fate_Shard_E
         Rate: 300
       - Item: Fate_Shard_D
         Rate: 300
-      - Item: Fate_Shard_E
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
         Rate: 300
   - Id: 20791
     AegisName: MD_SOLACE
@@ -107227,8 +107398,6 @@ Body:
     JapaneseName: 慰勞者
     Level: 202
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9871
     Attack2: 3190
     Defense: 328
@@ -107250,17 +107419,28 @@ Body:
     AttackDelay: 576
     AttackMotion: 420
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
+      - Item: Fate_Shard_E
         Rate: 300
       - Item: Fate_Shard_D
         Rate: 300
-      - Item: Fate_Shard_E
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
         Rate: 300
   - Id: 20792
     AegisName: MD_THA_ANGER
@@ -107289,24 +107469,30 @@ Body:
     AttackDelay: 432
     AttackMotion: 288
     DamageMotion: 420
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Drops:
-      - Item: Sin_Shard_E
+      - Item: Fate_Shard_E
         Rate: 300
-      - Item: Sin_Shard_D
+      - Item: Fate_Shard_D
         Rate: 300
-      - Item: Sin_Shard_C
+      - Item: Fate_Shard_C
         Rate: 300
-      - Item: Sin_Shard_B
+      - Item: Fate_Shard_B
         Rate: 300
-        StealProtected: true
+      - Item: Fate_Shard_A
+        Rate: 300
       - Item: Sin_Shard_A
         Rate: 300
-        StealProtected: true
-      - Item: 300274
-        Rate: 1
-        StealProtected: true
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20793
     AegisName: MD_THA_HORROR
     Name: MD_THA_HORROR
@@ -107334,22 +107520,30 @@ Body:
     AttackDelay: 160
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Drops:
-      - Item: Sin_Shard_B
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
         Rate: 300
       - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_C
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_D
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_E
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: 300275
-        Rate: 1
-        StealProtected: true
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20794
     AegisName: MD_THA_RESENT
     Name: MD_THA_RESENT
@@ -107377,22 +107571,30 @@ Body:
     AttackDelay: 160
     AttackMotion: 480
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Drops:
-      - Item: Sin_Shard_B
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
         Rate: 300
       - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_C
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_D
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_E
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: 300277
-        Rate: 1
-        StealProtected: true
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20795
     AegisName: MD_THA_REGRET
     Name: MD_THA_REGRET
@@ -107420,22 +107622,30 @@ Body:
     AttackDelay: 160
     AttackMotion: 528
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
     Drops:
-      - Item: Sin_Shard_B
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
         Rate: 300
       - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_C
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_D
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: Sin_Shard_E
+      - Item: Sin_Shard_A
         Rate: 300
-      - Item: 300276
-        Rate: 1
-        StealProtected: true
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20796
     AegisName: MD_THA_ODIUM
     Name: MD_THA_ODIUM
@@ -107463,8 +107673,30 @@ Body:
     AttackDelay: 432
     AttackMotion: 288
     DamageMotion: 420
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
+    Drops:
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20797
     AegisName: MD_THA_DESPERO
     Name: MD_THA_DESPERO
@@ -107492,8 +107724,29 @@ Body:
     AttackDelay: 160
     AttackMotion: 528
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20798
     AegisName: MD_THA_MAERO
     Name: MD_THA_MAERO
@@ -107521,8 +107774,29 @@ Body:
     AttackDelay: 160
     AttackMotion: 480
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
     Class: Boss
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20799
     AegisName: MD_THA_DOLOR
     Name: MD_THA_DOLOR
@@ -107550,15 +107824,34 @@ Body:
     AttackDelay: 160
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1000
     Ai: 21
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20800
     AegisName: MD_OBSERVATION
     Name: MD_OBSERVATION
     JapaneseName: 監視者
     Level: 203
     Hp: 3827826
-    BaseExp: 90000
-    JobExp: 90000
     Attack: 9871
     Attack2: 3190
     Defense: 328
@@ -107580,11 +107873,32 @@ Body:
     AttackDelay: 360
     AttackMotion: 360
     DamageMotion: 360
+    DamageTaken: 1000
     Ai: 21
+      - Item: Fate_Shard_E
+        Rate: 300
+      - Item: Fate_Shard_D
+        Rate: 300
+      - Item: Fate_Shard_C
+        Rate: 300
+      - Item: Fate_Shard_B
+        Rate: 300
+      - Item: Fate_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
+      - Item: Sin_Shard_A
+        Rate: 300
   - Id: 20801
     AegisName: ILL_SROPHO
     Name: Deep Sea Sropho
-    JapaneseName: 深海的深海電鰻
+    JapaneseName: 幻影深海電鰻
     Level: 147
     Hp: 336823
     BaseExp: 30314
@@ -107630,7 +107944,7 @@ Body:
   - Id: 20802
     AegisName: ILL_OBEAUNE
     Name: Deep Sea Obeaune
-    JapaneseName: 深海的人魚
+    JapaneseName: 深海人魚
     Level: 149
     Hp: 340238
     BaseExp: 30621
@@ -107676,7 +107990,7 @@ Body:
   - Id: 20803
     AegisName: ILL_DEVIACE
     Name: Deep Sea Deviace
-    JapaneseName: 深海的狄奧斯
+    JapaneseName: 深海狄奧斯
     Level: 150
     Hp: 348355
     BaseExp: 31352
@@ -107722,7 +108036,7 @@ Body:
   - Id: 20804
     AegisName: ILL_MARSE
     Name: Deep Sea Marse
-    JapaneseName: 深海的烏賊
+    JapaneseName: 深海烏賊
     Level: 149
     Hp: 335141
     BaseExp: 30163
@@ -107770,7 +108084,7 @@ Body:
   - Id: 20805
     AegisName: ILL_MERMAN
     Name: Deep Sea Merman
-    JapaneseName: 深海的人魚士兵
+    JapaneseName: 深海人魚士兵
     Level: 148
     Hp: 337534
     BaseExp: 30378
@@ -107816,7 +108130,7 @@ Body:
   - Id: 20806
     AegisName: ILL_SEDORA
     Name: Deep Sea Sedora
-    JapaneseName: 深海的賽杜拉
+    JapaneseName: 深海賽杜拉
     Level: 199
     Hp: 2875143
     BaseExp: 191676
@@ -107864,7 +108178,7 @@ Body:
   - Id: 20807
     AegisName: ILL_SWORD_FISH
     Name: Deep Sea Swordfish
-    JapaneseName: 深海的異變魚
+    JapaneseName: 深海異變魚
     Level: 199
     Hp: 2997411
     BaseExp: 199827
@@ -107912,7 +108226,7 @@ Body:
   - Id: 20808
     AegisName: ILL_STROUF
     Name: Deep Sea Strouf
-    JapaneseName: 深海的海神
+    JapaneseName: 深海海神
     Level: 201
     Hp: 2967419
     BaseExp: 197828
@@ -107960,7 +108274,7 @@ Body:
   - Id: 20809
     AegisName: ILL_PHEN
     Name: Deep Sea Phen
-    JapaneseName: 深海的劍魚
+    JapaneseName: 深海劍魚
     Level: 199
     Hp: 2897158
     BaseExp: 193144
@@ -108008,7 +108322,7 @@ Body:
   - Id: 20810
     AegisName: ILL_KING_DRAMOH
     Name: Deep Sea King Dramoh
-    JapaneseName: 深海的大腳龍蝦
+    JapaneseName: 深海大腳龍蝦
     Level: 205
     Hp: 3115698
     BaseExp: 207713
@@ -108350,11 +108664,11 @@ Body:
   - Id: 20844
     AegisName: PRAY_GIVER
     Name: PRAY_GIVER
-    JapaneseName: 祈禱贈與者
+    JapaneseName: 祈願墮天使
     Level: 203
     Hp: 3845709
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 256381
+    JobExp: 179466
     Attack: 9740
     Attack2: 2997
     Defense: 308
@@ -108394,11 +108708,11 @@ Body:
   - Id: 20845
     AegisName: SMILE_GIVER
     Name: SMILE_GIVER
-    JapaneseName: 笑容贈與者
+    JapaneseName: 歡笑墮天使
     Level: 201
     Hp: 3808424
-    BaseExp: 90000
-    JobExp: 90000
+    BaseExp: 256381
+    JobExp: 179466
     Attack: 9740
     Attack2: 2997
     Defense: 318
@@ -108568,6 +108882,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108604,6 +108919,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108640,6 +108956,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108676,6 +108993,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108712,6 +109030,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108748,6 +109067,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108784,6 +109104,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108820,6 +109141,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108856,6 +109178,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108892,6 +109215,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108928,6 +109252,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -108964,6 +109289,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -109000,6 +109326,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -109036,6 +109363,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 432
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -109072,6 +109400,7 @@ Body:
     AttackDelay: 576
     AttackMotion: 384
     DamageMotion: 288
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -109107,6 +109436,7 @@ Body:
     AttackDelay: 1608
     AttackMotion: 816
     DamageMotion: 396
+    DamageTaken: 1000
     Modes:
       CanMove: true
       Aggressive: true
@@ -109143,7 +109473,7 @@ Body:
     AttackDelay: 900
     AttackMotion: 864
     DamageMotion: 480
-    DamageTaken: 3500
+    DamageTaken: 1000
     Class: Boss
     Modes:
       CanMove: true
@@ -109721,7 +110051,7 @@ Body:
     Name: Giant Caput
     JapaneseName: 巨人卡夫特
     Level: 213
-    Hp: 12405430
+    Hp: 4439942
     BaseExp: 262421
     JobExp: 183695
     Attack: 7135
@@ -109771,7 +110101,7 @@ Body:
     Name: Dolorian
     JapaneseName: 多洛里安
     Level: 214
-    Hp: 11763310
+    Hp: 4660787
     BaseExp: 267459
     JobExp: 187221
     Attack: 7230
@@ -109821,7 +110151,7 @@ Body:
     Name: Plagarion
     JapaneseName: 飛拉加里安
     Level: 215
-    Hp: 13189560
+    Hp: 4881632
     BaseExp: 264854
     JobExp: 185398
     Attack: 7800
@@ -109871,7 +110201,7 @@ Body:
     Name: Deadre
     JapaneseName: 戴德雷
     Level: 214
-    Hp: 12435400
+    Hp: 4460787
     BaseExp: 263484
     JobExp: 184439
     Attack: 7415
@@ -109919,7 +110249,7 @@ Body:
     Name: Venedi
     JapaneseName: 貝內迪
     Level: 213
-    Hp: 11790680
+    Hp: 4439942
     BaseExp: 261478
     JobExp: 183035
     Attack: 7122
@@ -111670,11 +112000,11 @@ Body:
   - Id: 21295
     AegisName: EP18_ASH_TOAD
     Name: EP18_ASH_TOAD
-    JapaneseName: 石灰蟾蜍
+    JapaneseName: 灰燼蟾蜍
     Level: 179
     Hp: 1530687
-    BaseExp: 1391220
-    JobExp: 963850
+    BaseExp: 109122
+    JobExp: 76385
     Attack: 3000
     Attack2: 3000
     Defense: 329
@@ -111714,11 +112044,11 @@ Body:
   - Id: 21296
     AegisName: EP18_RAKEHAND
     Name: EP18_RAKEHAND
-    JapaneseName: 撲臉怪
+    JapaneseName: 爪手
     Level: 177
     Hp: 1514469
-    BaseExp: 1514610
-    JobExp: 1060230
+    BaseExp: 108187
+    JobExp: 75731
     Attack: 3507
     Attack2: 1658
     Defense: 408
@@ -111760,9 +112090,9 @@ Body:
     Name: EP18_SPARK
     JapaneseName: 火花
     Level: 181
-    Hp: 4413388
-    BaseExp: 1391220
-    JobExp: 963850
+    Hp: 2313388
+    BaseExp: 154226
+    JobExp: 107958
     Attack: 3562
     Attack2: 1409
     Defense: 10
@@ -111801,10 +112131,11 @@ Body:
   - Id: 21298
     AegisName: EP18_HOT_MOLAR
     Name: EP18_HOT_MOLAR
-    JapaneseName: 火焰狼
+    JapaneseName: 火爪狼牙
     Level: 212
-    BaseExp: 1991220
-    JobExp: 1063850
+    Hp: 4925041
+    BaseExp: 289708
+    JobExp: 202796
     Attack: 7116
     Attack2: 1508
     Defense: 10
@@ -111843,11 +112174,11 @@ Body:
   - Id: 21299
     AegisName: EP18_VOLCARING
     Name: EP18_VOLCARING
-    JapaneseName: 熔岩怪
+    JapaneseName: 熔岩波利
     Level: 185
     Hp: 2361429
     BaseExp: 157429
-    JobExp: 157429
+    JobExp: 110200
     Attack: 5586
     Attack2: 1476
     Defense: 275
@@ -111889,8 +112220,8 @@ Body:
     JapaneseName: 熔岩蟾蜍
     Level: 211
     Hp: 4902338
-    BaseExp: 1991220
-    JobExp: 1463850
+    BaseExp: 288373
+    JobExp: 201861
     Attack: 6399
     Attack2: 2238
     Defense: 301
@@ -111931,11 +112262,11 @@ Body:
   - Id: 21301
     AegisName: EP18_BURNING_FANG
     Name: EP18_BURNING_FANG
-    JapaneseName: 炙熱炎狼
+    JapaneseName: 火焰狼牙
     Level: 212
-    Hp: 100000
-    BaseExp: 33408000
-    JobExp: 33408000
+    Hp: 98158095
+    BaseExp: 6581326
+    JobExp: 4606928
     MvpExp: 10
     Attack: 7871
     Attack2: 3991
@@ -111983,11 +112314,11 @@ Body:
   - Id: 21302
     AegisName: EP18_ASHHOPPER
     Name: EP18_ASHHOPPER
-    JapaneseName: 灰斗蝗蟲
+    JapaneseName: 灰燼蝗蟲
     Level: 185
     Hp: 2361429
-    BaseExp: 30000
-    JobExp: 30000
+    BaseExp: 157531
+    JobExp: 110272
     MvpExp: 10
     Attack: 3000
     Attack2: 5000
@@ -112029,10 +112360,11 @@ Body:
   - Id: 21303
     AegisName: EP18_ASHRING
     Name: EP18_ASHRING
-    JapaneseName: 灰燼
+    JapaneseName: 灰燼波利
     Level: 185
     Hp: 2364513
-    MvpExp: 10
+    BaseExp: 157531
+    JobExp: 110272
     Attack: 3000
     Attack2: 5000
     Defense: 10
@@ -112073,7 +112405,8 @@ Body:
     JapaneseName: 灰狼
     Level: 187
     Hp: 2399581
-    MvpExp: 10
+    BaseExp: 157531
+    JobExp: 110272
     Attack: 3000
     Attack2: 3000
     Defense: 10
@@ -112111,10 +112444,11 @@ Body:
   - Id: 21305
     AegisName: EP18_TUMBLE_RING
     Name: EP18_TUMBLE_RING
-    JapaneseName: 滾球
+    JapaneseName: 風滾草波利
     Level: 185
     Hp: 2361738
-    MvpExp: 10
+    BaseExp: 157531
+    JobExp: 110272
     Attack: 3000
     Attack2: 3000
     Defense: 100
@@ -112157,10 +112491,11 @@ Body:
   - Id: 21306
     AegisName: EP18_FIREWIND_KITE
     Name: EP18_FIREWIND_KITE
-    JapaneseName: 火風獵鷹
+    JapaneseName: 風火老鷹
     Level: 188
     Hp: 2407556
-    MvpExp: 10
+    BaseExp: 157531
+    JobExp: 110272
     Attack: 5000
     Attack2: 3000
     Defense: 10
@@ -112198,10 +112533,11 @@ Body:
   - Id: 21307
     AegisName: EP18_PHANTOM_WOLF
     Name: EP18_PHANTOM_WOLF
-    JapaneseName: 幽靈之狼
+    JapaneseName: 幽靈灰狼
     Level: 186
     Hp: 2383494
-    MvpExp: 10
+    BaseExp: 157531
+    JobExp: 110272
     Attack: 5000
     Attack2: 5000
     Defense: 10
@@ -112243,9 +112579,8 @@ Body:
     AegisName: EP18_MD_HEARTHUNTER_A
     Name: EP18_MD_HEARTHUNTER_A
     JapaneseName: 心臟獵手
-    Level: 150
-    Hp: 100000
-    MvpExp: 10
+    Level: 178
+    Hp: 1522432
     Attack: 1000
     Attack2: 1000
     Defense: 10
@@ -112266,7 +112601,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
-    DamageTaken: 10
+    DamageTaken: 5000
     Ai: 17
     Modes:
       Aggressive: true
@@ -112275,9 +112610,8 @@ Body:
     AegisName: EP18_MD_THOR_GUARD
     Name: EP18_MD_THOR_GUARD
     JapaneseName: 心臟獵手
-    Level: 150
-    Hp: 100000
-    MvpExp: 10
+    Level: 178
+    Hp: 1522432
     Attack: 1000
     Attack2: 1000
     Defense: 10
@@ -112298,6 +112632,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
+    DamageTaken: 5000
     Ai: 17
     Modes:
       Aggressive: true
@@ -112306,11 +112641,9 @@ Body:
     AegisName: EP18_MD_GUARD_A
     Name: EP18_MD_GUARD_A
     JapaneseName: 聖域守衛
-    Level: 150
-    Hp: 962975
-    BaseExp: 1188375
-    JobExp: 891270
-    Attack: 1000
+    Level: 179
+    Hp: 1831096
+    Attack: 3333
     Attack2: 3353
     Defense: 1500
     MagicDefense: 88
@@ -112330,6 +112663,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
+    DamageTaken: 5000
     Ai: 21
     Modes:
       Aggressive: true
@@ -112339,9 +112673,7 @@ Body:
     Name: EP18_MD_GUARD_B
     JapaneseName: 聖域守衛
     Level: 150
-    Hp: 1212975
-    BaseExp: 1188375
-    JobExp: 891270
+    Hp: 2325107
     Attack: 3353
     Attack2: 1500
     Defense: 10
@@ -112362,6 +112694,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
+    DamageTaken: 5000
     Ai: 21
     Modes:
       Aggressive: true
@@ -112371,10 +112704,9 @@ Body:
     Name: EP18_MD_HEARTHUNTER_R
     JapaneseName: 聖域的獵人
     Level: 150
-    Hp: 100000
-    MvpExp: 10
-    Attack: 1000
-    Attack2: 1000
+    Hp: 2325107
+    Attack: 3353
+    Attack2: 1500
     Defense: 10
     MagicDefense: 10
     Str: 100
@@ -112393,6 +112725,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
+    DamageTaken: 5000
     Ai: 17
     Modes:
       Aggressive: true
@@ -112402,10 +112735,9 @@ Body:
     Name: EP18_MD_HEARTHUNTER_F
     JapaneseName: 聖域的獵手
     Level: 150
-    Hp: 100000
-    MvpExp: 10
-    Attack: 1000
-    Attack2: 1000
+    Hp: 2325107
+    Attack: 3353
+    Attack2: 1500
     Defense: 10
     MagicDefense: 10
     Str: 100
@@ -112424,6 +112756,7 @@ Body:
     WalkSpeed: 200
     AttackDelay: 300
     AttackMotion: 200
+    DamageTaken: 5000
     Ai: 17
     Modes:
       Aggressive: true
@@ -112503,7 +112836,6 @@ Body:
     JapaneseName: 舒朗
     Level: 205
     Hp: 300000000
-    MvpExp: 10
     Attack: 9000
     Attack2: 10000
     Defense: 350
@@ -112603,7 +112935,7 @@ Body:
   - Id: 21318
     AegisName: EP18_MD_SANARE_R
     Name: EP18_MD_SANARE_R
-    JapaneseName: 偽女神守護者
+    JapaneseName: 偽薩奈爾
     Level: 220
     Hp: 5000000
     MvpExp: 10
@@ -112927,9 +113259,6 @@ Body:
     JapaneseName: 舒朗
     Level: 205
     Hp: 120000000
-    BaseExp: 12000000
-    JobExp: 12000000
-    MvpExp: 10
     Attack: 4500
     Attack2: 1500
     Defense: 350
@@ -113035,7 +113364,7 @@ Body:
   - Id: 21377
     AegisName: EP18_MD_SANARE_L
     Name: EP18_MD_SANARE_L
-    JapaneseName: 偽女神守護者
+    JapaneseName: 偽薩奈爾
     Level: 220
     Hp: 10000000
     MvpExp: 10
@@ -113147,7 +113476,7 @@ Body:
   - Id: 21386
     AegisName: ILL_ANDRE
     Name: Diligent Andre
-    JapaneseName: 勤勉白蟻
+    JapaneseName: 勤奮的白蟻
     Level: 167
     Hp: 839882
     BaseExp: 80476
@@ -113195,7 +113524,7 @@ Body:
   - Id: 21387
     AegisName: ILL_SOLDIER_ANDR
     Name: Diligent Soldier Andre
-    JapaneseName: 勤勉戰蟻
+    JapaneseName: 勤奮的士兵白蟻
     Level: 169
     Hp: 943547
     BaseExp: 83348
@@ -113243,7 +113572,7 @@ Body:
   - Id: 21388
     AegisName: ILL_ANDRE_LARVA
     Name: Diligent Andre Larva
-    JapaneseName: 勤勉白蟻幼蟲
+    JapaneseName: 勤奮的白蟻幼蟲
     Level: 164
     Hp: 819978
     BaseExp: 64798
@@ -113287,7 +113616,7 @@ Body:
   - Id: 21389
     AegisName: ILL_DENIRO
     Name: Diligent Deniro
-    JapaneseName: 勤勉兵蟻
+    JapaneseName: 勤奮的兵蟻
     Level: 167
     Hp: 819978
     BaseExp: 81114
@@ -113335,7 +113664,7 @@ Body:
   - Id: 21390
     AegisName: ILL_PIERE
     Name: Diligent Piere
-    JapaneseName: 勤勉工蟻
+    JapaneseName: 勤奮的工蟻
     Level: 167
     Hp: 825541
     BaseExp: 82688
@@ -113381,7 +113710,7 @@ Body:
   - Id: 21391
     AegisName: ILL_ANT_EGG
     Name: Mushy Ant Egg
-    JapaneseName: 綿軟蟻蛋
+    JapaneseName: 黏稠的白蟻幼蟲
     Level: 164
     Hp: 659810
     BaseExp: 34992
@@ -113422,7 +113751,7 @@ Body:
   - Id: 21392
     AegisName: ILL_GIEARTH
     Name: Gutsy Giearth
-    JapaneseName: 剛強基爾瑟
+    JapaneseName: 膽大的基爾瑟
     Level: 168
     Hp: 864988
     BaseExp: 81566
@@ -113470,7 +113799,7 @@ Body:
   - Id: 21393
     AegisName: ILL_FARMILIAR
     Name: Gutsy Familiar
-    JapaneseName: 剛強吸血蝙蝠
+    JapaneseName: 膽大的吸血蝙蝠
     Level: 166
     Hp: 761002
     BaseExp: 79844
@@ -113516,7 +113845,7 @@ Body:
   - Id: 21394
     AegisName: ILL_VITATA
     Name: Diligent Vitata
-    JapaneseName: 勤勉黑蟻
+    JapaneseName: 勤奮的黑蟻
     Level: 169
     Hp: 879511
     BaseExp: 83348
@@ -113564,7 +113893,7 @@ Body:
   - Id: 21395
     AegisName: ILL_MAYA
     Name: Silent Maya
-    JapaneseName: 無言的蟻后
+    JapaneseName: 寡言的蟻后
     Level: 175
     Hp: 24512365
     BaseExp: 4401752
