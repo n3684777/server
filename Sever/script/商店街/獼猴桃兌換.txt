@@ -59,6 +59,14 @@ OnInit:
     sellitem(7227, 250000, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
+    // 武卷+19
+    sellitem(6864, 0, -1);	
+	sellitemcurrency(6909,100);
+    endsellitem();
+    // 武卷+19
+    sellitem(6865, 0, -1);	
+	sellitemcurrency(6909,100);
+    endsellitem();
     // 副本冷卻卷
     sellitem(99999, 2000000000, -1);	
 	sellitemcurrency(6417,100);
