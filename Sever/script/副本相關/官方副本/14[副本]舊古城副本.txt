@@ -61,7 +61,7 @@ amatsu,103,123,5	script	[副本]斬顏良大戰	863,{
 	end;
 OnInit:
 	// 副本名稱
-	.ins_name$ = "斬顏良大戰";
+	.ins_name$ = "舊古城副本";
 	// 最小挑戰等級
 	.ins_MinLv = 1;
 	// 最大挑戰等級
