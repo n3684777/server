@@ -135,7 +135,7 @@ BackMenu:
 				setarray .@array,(.@weapon)?6228:6232,100,0,0,9;
 				break;
 			case 5:	// +19券
-				setarray .@array,(.@weapon)?6864:6865,100,0,0,9;
+				setarray .@array,(.@weapon)?6864:6865,100,0,0,19;
 				break;
 			case 6:	// 受祝福的武器礦石/受祝福的防具礦石
 				setarray .@array,(.@weapon)?6438:6439,refine_percent(.@part),0,0,0;
