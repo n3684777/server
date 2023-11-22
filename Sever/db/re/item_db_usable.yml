@@ -2164,7 +2164,7 @@ Body:
     Weight: 1
     Script: |
       laphine_upgrade();
-  - Id: 9551
+  - Id: 9552
     AegisName: Time_Unseal_Key
     Name: ®É¥ú«Ê¦LÆ_°Í
     Type: Delayconsume
