@@ -110,7 +110,7 @@ Body:
       - Item: Overwhelm_Agi_Armor
       - Item: Overwhelm_Luk_Armor
   - Item: Time_Unseal_Key
-    RandomOptionGroup: TIME_UNSEAL_KEY
+    RandomOptionGroup: TIME_UNSEAL_KEY # TIME_UNSEAL_KEY
     TargetItems:
       - Item: Temporal_M_Str
       - Item: Temporal_M_Agi
@@ -119,7 +119,6 @@ Body:
       - Item: Temporal_M_Dex
       - Item: Temporal_M_Luk
       - Item: Temporal_Cape_TW
-      - Item: Unknown_Item_480312
   - Item: Frozen_Box_IL
     ResultRefineMinimum: 7
     ResultRefineMaximum: 10
