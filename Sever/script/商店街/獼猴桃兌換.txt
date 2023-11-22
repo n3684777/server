@@ -51,6 +51,11 @@ OnInit:
 	sellitemcurrency(6417,1);
     endsellitem();
     //
+    // 古代武器箱
+    sellitem(23806, 0, -1);	
+	sellitemcurrency(6417,2);
+    endsellitem();
+    //
     // 時間套裝箱
 	sellitem(100054, 0, -1);	
 	sellitemcurrency(6417,10);
