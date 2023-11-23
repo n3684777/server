@@ -91,7 +91,7 @@ Body:
       # channel: true
       # langtype: true
       # 
-      # mobinfo: true
+      mobinfo: true
       whereis: true
       whodrops: true
       autoloot: true
@@ -138,8 +138,8 @@ Body:
       any_warp: true
   - Id: 4
     Name: Event Manager
-    Inherit:
-      Support: true
+    # Inherit:
+    #   Support: true
     Level: 1
     Commands:
       monster: true
