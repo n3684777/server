@@ -62,40 +62,41 @@ Body:
     Level: 0
     Commands:
       # Informational commands
-      commands: true
-      charcommands: true
-      help: true
-      rates: true
-      uptime: true
-      showdelay: true
-      exp: true
-      mobinfo: true
-      iteminfo: true
-      whodrops: true
-      time: true
-      jailtime: true
-      hominfo: true
-      homstats: true
-      showexp: true
-      showzeny: true
+      # commands: true
+      # charcommands: true
+      # help: true
+      # rates: true
+      # uptime: true
+      # showdelay: true
+      # exp: true
+      # mobinfo: true
+      # iteminfo: true
+      # whodrops: true
+      # time: true
+      # jailtime: true
+      # hominfo: true
+      # homstats: true
+      # showexp: true
+      # showzeny: true
       whereis: true
       # Feature commands
-      refresh: true
-      noask: true
-      noks: true
-      alootid: true
-      autoloottype: true
-      autotrade: true
-      request: true
-      go: true
-      breakguild: true
-      channel: true
+      # refresh: true
+      # noask: true
+      # noks: true
+      # alootid: true
+      # autoloottype: true
+      # autotrade: true
+      # request: true
+      # go: true
+      # breakguild: true
+      # channel: true
       # langtype: true
-      mobinfo: true
-      whereis: true
-      whodrops: true
-      autoloot: true
-      all_skill: true
+      # 
+      # mobinfo: true
+      # whereis: true
+      # whodrops: true
+      # autoloot: true
+      # all_skill: true
     Permissions:
       attendance: false
   - Id: 2
