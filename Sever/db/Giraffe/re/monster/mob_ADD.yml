@@ -118,8 +118,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: MD_Airboat_Ore
-        Rate: 50
+        Rate: 5
       - Item: 300170
         Rate: 1
         StealProtected: true
@@ -154,8 +156,10 @@ Body:
     DamageTaken: 3500
     Ai: 21
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: MD_Airboat_Ore
-        Rate: 50
+        Rate: 5
       - Item: 300174
         Rate: 1
         StealProtected: true
@@ -190,8 +194,10 @@ Body:
     DamageTaken: 3500
     Ai: 21
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: MD_Airboat_Ore
-        Rate: 50
+        Rate: 5
       - Item: 300171
         Rate: 1
         StealProtected: true
@@ -226,8 +232,10 @@ Body:
     DamageTaken: 3500
     Ai: 21
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: MD_Airboat_Ore
-        Rate: 50
+        Rate: 5
       - Item: 300172
         Rate: 1
         StealProtected: true
@@ -262,8 +270,10 @@ Body:
     DamageTaken: 3500
     Ai: 21
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: MD_Airboat_Ore
-        Rate: 50
+        Rate: 5
       - Item: 300173
         Rate: 1
         StealProtected: true
@@ -315,6 +325,8 @@ Body:
       - Item: MD_Airboat_Random
         Rate: 2000
     Drops:
+      - Item: 1000322
+        Rate: 50
       - Item: MD_Airboat_Ore
         Rate: 5000
       - Item: MD_Airboat_Random
@@ -389,6 +401,8 @@ Body:
       - Item: MD_Airboat_Random
         Rate: 2000
     Drops:
+      - Item: 1000322
+        Rate: 50
       - Item: MD_Airboat_Tokken
         Rate: 5000
       - Item: MD_Airboat_Boots
@@ -558,7 +572,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20895
     AegisName: MD_UNDEAD_SOLDIER
@@ -595,7 +609,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20896
     AegisName: MD_UNDEAD_ARCHER
@@ -632,7 +646,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20897
     AegisName: MD_UNDEAD_WIZARD
@@ -669,7 +683,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20898
     AegisName: MD_UNDEAD_MAGICIAN
@@ -706,7 +720,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20899
     AegisName: MD_UNDEAD_NOBLE
@@ -743,7 +757,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 20900
     AegisName: MD_UNDEAD_SERVANT
@@ -780,7 +794,7 @@ Body:
       Detector: true
     Drops:
       - Item: 1000367
-        Rate: 20
+        Rate: 5
         StealProtected: true
   - Id: 21070
     AegisName: HIDDEN_MOB8
@@ -999,6 +1013,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000608
         Rate: 3
         StealProtected: true
@@ -1058,6 +1074,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000608
         Rate: 5
         StealProtected: true 
@@ -1068,7 +1086,7 @@ Body:
       - Item: 1000831
         Rate: 100
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300360
         Rate: 1
@@ -1115,11 +1133,13 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000608
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300359
         Rate: 1
@@ -1166,11 +1186,13 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000608
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 8
+        Rate: 5
         StealProtected: true
       - Item: 7326
         Rate: 2000
@@ -1223,12 +1245,14 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000829
         Rate: 100
       - Item: 936
         Rate: 3000
       - Item: 1000322
-        Rate: 1
+        Rate: 5
         StealProtected: true
       - Item: 300362
         Rate: 1
@@ -1275,6 +1299,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000608
         Rate: 5
         StealProtected: true 
@@ -1285,7 +1311,7 @@ Body:
       - Item: 7193
         Rate: 3000
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300364
         Rate: 1
@@ -1332,6 +1358,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000822
         Rate: 100
       - Item: 1000823
@@ -1388,6 +1416,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 101639
         Rate: 5
         StealProtected: true
@@ -1451,13 +1481,13 @@ Body:
         Rate: 2000
     Drops:
       - Item: 1000811
-        Rate: 20
+        Rate: 50
         StealProtected: true
       - Item: 1000812
-        Rate: 30
+        Rate: 10
         StealProtected: true
       - Item: 1000322
-        Rate: 5000
+        Rate: 50
         StealProtected: true
       - Item: 6635
         Rate: 15
@@ -1524,7 +1554,7 @@ Body:
         Rate: 10
         StealProtected: true
       - Item: 1000811
-        Rate: 1
+        Rate: 5
         StealProtected: true
       - Item: 1000707
         Rate: 1
@@ -1587,10 +1617,10 @@ Body:
         Rate: 12
         StealProtected: true
       - Item: 1000811
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300368
         Rate: 1
@@ -1637,6 +1667,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 7110
         Rate: 1000
       - Item: 25159
@@ -1692,6 +1724,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000822
         Rate: 100
       - Item: 1000823
@@ -1700,7 +1734,7 @@ Body:
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300369
         Rate: 1
@@ -1747,19 +1781,19 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 7565
         Rate: 2000
       - Item: 7326
         Rate: 2000
       - Item: 1000825
         Rate: 100
-      - Item: 1000812
-        Rate: 5
       - Item: 101639
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300371
         Rate: 1
@@ -1806,6 +1840,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 1000825
         Rate: 100
       - Item: 7365
@@ -1816,10 +1852,8 @@ Body:
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
-        StealProtected: true
-      - Item: 1000812
         Rate: 5
+        StealProtected: true
         StealProtected: true
       - Item: 300372
         Rate: 1
@@ -1866,6 +1900,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 7565
         Rate: 1000
       - Item: 1000826
@@ -1875,7 +1911,7 @@ Body:
       - Item: 101639
         Rate: 5
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300373
         Rate: 1
@@ -1922,13 +1958,15 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 930
         Rate: 3000
       - Item: 101639
         Rate: 5
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300370
         Rate: 1
@@ -1982,10 +2020,10 @@ Body:
       - Item: 101639
         Rate: 5
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 1000811
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300374
         Rate: 1
@@ -2032,6 +2070,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 7125
         Rate: 3000
       - Item: 960
@@ -2043,7 +2083,7 @@ Body:
       - Item: 101639
         Rate: 5
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300375
         Rate: 1
@@ -2090,6 +2130,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 101639
         Rate: 5
         StealProtected: true
@@ -2102,7 +2144,7 @@ Body:
       - Item: EP19_Thin_Nipper
         Rate: 10
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 300376
         Rate: 1
@@ -2149,6 +2191,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5	
       - Item: 101639
         Rate: 5
         StealProtected: true
@@ -2157,19 +2201,13 @@ Body:
       - Item: 1000822
         Rate: 100
       - Item: 25728
-        Rate: 5
-        StealProtected: true
-      - Item: 25731
-        Rate: 1
-        StealProtected: true
-      - Item: 25729
-        Rate: 1
+        Rate: 50
         StealProtected: true
       - Item: 25730
-        Rate: 5
+        Rate: 50
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true
       - Item: 1000608
         Rate: 15
@@ -2315,7 +2353,11 @@ Body:
       ChangeChase: true
       ChangeTargetMelee: true
       ChangeTargetChase: true
-    Drops:      
+    Drops:
+      - Item: 1000811
+        Rate: 5
+      - Item: 1000322
+        Rate: 5
       - Item: 1000608
         Rate: 10
         StealProtected: true
@@ -2361,6 +2403,8 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5
       - Item: 1000823
         Rate: 100		
       - Item: 1000822
@@ -2369,19 +2413,13 @@ Body:
         Rate: 5
         StealProtected: true
       - Item: 25728
-        Rate: 5
-        StealProtected: true
-      - Item: 25731
-        Rate: 1
-        StealProtected: true
-      - Item: 25729
-        Rate: 1
+        Rate: 50
         StealProtected: true
       - Item: 25730
-        Rate: 5
+        Rate: 50
         StealProtected: true
       - Item: 1000322
-        Rate: 3
+        Rate: 5
         StealProtected: true        
       - Item: 300379
         Rate: 1
@@ -2426,21 +2464,17 @@ Body:
       ChangeTargetMelee: true
       ChangeTargetChase: true
     Drops:
+      - Item: 1000811
+        Rate: 5
       - Item: 7110
         Rate: 1000
       - Item: 25159
         Rate: 1000
       - Item: 25728
-        Rate: 5
-        StealProtected: true
-      - Item: 25731
-        Rate: 1
-        StealProtected: true
-      - Item: 25729
-        Rate: 1
+        Rate: 50
         StealProtected: true
       - Item: 25730
-        Rate: 5
+        Rate: 50
         StealProtected: true
       - Item: 1000322
         Rate: 5
@@ -2479,7 +2513,7 @@ Body:
     AttackDelay: 144
     AttackMotion: 121
     DamageMotion: 137
-    DamageTaken: 500
+    DamageTaken: 1000
     Class: Boss
     Modes:
       Detector: true
@@ -2555,21 +2589,21 @@ Body:
       - Item: 7063
         Rate: 9000
       - Item: 1000322
-        Rate: 200
+        Rate: 5
       - Item: 6224
         Rate: 200
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000636
-        Rate: 200
+        Rate: 5
       - Item: 480144
         Rate: 1
         StealProtected: true
@@ -2618,15 +2652,15 @@ Body:
       - Item: 7063
         Rate: 80
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 1000636
@@ -2681,15 +2715,15 @@ Body:
       - Item: 943
         Rate: 50
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 1000636
@@ -2744,15 +2778,15 @@ Body:
       - Item: 752
         Rate: 3
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 1000636
@@ -2805,15 +2839,15 @@ Body:
       - Item: 1028
         Rate: 80    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -2866,15 +2900,15 @@ Body:
       - Item: 1032
         Rate: 80    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -2927,15 +2961,15 @@ Body:
       - Item: 7054
         Rate: 70    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3005,15 +3039,15 @@ Body:
       - Item: 6635
         Rate: 5        
       - Item: 1000431
-        Rate: 1
+        Rate: 10
       - Item: 1000435
-        Rate: 1
+        Rate: 10
       - Item: 1000439
-        Rate: 1
+        Rate: 10
       - Item: 25729
-        Rate: 1
+        Rate: 10
       - Item: 25731
-        Rate: 1
+        Rate: 10
       - Item: 450201
         Rate: 100
         StealProtected: true
@@ -3066,15 +3100,15 @@ Body:
       - Item: 7097
         Rate: 70    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3127,15 +3161,15 @@ Body:
       - Item: 1036
         Rate: 100    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3188,15 +3222,15 @@ Body:
       - Item: 1062
         Rate: 100    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3249,15 +3283,15 @@ Body:
       - Item: 7096
         Rate: 100    
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3310,15 +3344,15 @@ Body:
       - Item: Nose_Ring
         Rate: 2207   
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3371,15 +3405,15 @@ Body:
       - Item: Dragon's_Skin
         Rate: 2000  
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3432,15 +3466,15 @@ Body:
       - Item: Light_Granule
         Rate: 250  
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3510,15 +3544,15 @@ Body:
       - Item: 6635
         Rate: 5        
       - Item: 1000431
-        Rate: 1
+        Rate: 10
       - Item: 1000435
-        Rate: 1
+        Rate: 10
       - Item: 1000439
-        Rate: 1
+        Rate: 10
       - Item: 25729
-        Rate: 1
+        Rate: 10
       - Item: 25731
-        Rate: 1
+        Rate: 10
       - Item: 450200
         Rate: 1
       - Item: 480146
@@ -3569,15 +3603,15 @@ Body:
       - Item: Ice_Heart
         Rate: 2500 
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3630,15 +3664,15 @@ Body:
       - Item: Ice_Piece
         Rate: 750
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3693,15 +3727,15 @@ Body:
       - Item: Ice_Piece
         Rate: 500
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3756,15 +3790,15 @@ Body:
       - Item: Black_Cat
         Rate: 10
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3819,15 +3853,15 @@ Body:
       - Item: Fluorescent_Liquid
         Rate: 2500
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3880,15 +3914,15 @@ Body:
       - Item: Soft_Feather
         Rate: 350
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -3943,15 +3977,15 @@ Body:
       - Item: Karvodailnirol
         Rate: 3
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4021,15 +4055,15 @@ Body:
       - Item: 6635
         Rate: 5        
       - Item: 1000431
-        Rate: 1
+        Rate: 10
       - Item: 1000435
-        Rate: 1
+        Rate: 10
       - Item: 1000439
-        Rate: 1
+        Rate: 10
       - Item: 25729
-        Rate: 1
+        Rate: 10
       - Item: 25731
-        Rate: 1
+        Rate: 10
       - Item: 450203
         Rate: 1
       - Item: 480148
@@ -4082,15 +4116,15 @@ Body:
       - Item: Mementos
         Rate: 900
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4145,15 +4179,15 @@ Body:
       - Item: Ectoplasm
         Rate: 2862
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4206,15 +4240,15 @@ Body:
       - Item: Clattering_Skull
         Rate: 1500
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4267,15 +4301,15 @@ Body:
       - Item: Transparent_Cloth
         Rate: 2910
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4328,15 +4362,15 @@ Body:
       - Item: Skull
         Rate: 2500
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4389,15 +4423,15 @@ Body:
       - Item: Old_White_Cloth
         Rate: 1500
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4448,15 +4482,15 @@ Body:
       ChangeTargetChase: true
     Drops:
       - Item: 1000430
-        Rate: 3
-      - Item: 1000434
-        Rate: 3
-      - Item: 1000438
-        Rate: 3
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
+      - Item: 1000430
+        Rate: 1
       - Item: 25728
-        Rate: 3
+        Rate: 50
       - Item: 25730
-        Rate: 3
+        Rate: 50
       - Item: 1000322
         Rate: 5
       - Item: 6224
@@ -4526,15 +4560,15 @@ Body:
       - Item: 6635
         Rate: 5        
       - Item: 1000431
-        Rate: 1
+        Rate: 10
       - Item: 1000435
-        Rate: 1
+        Rate: 10
       - Item: 1000439
-        Rate: 1
+        Rate: 10
       - Item: 25729
-        Rate: 1
+        Rate: 10
       - Item: 25731
-        Rate: 1
+        Rate: 10
       - Item: 450202
         Rate: 1
       - Item: 480147

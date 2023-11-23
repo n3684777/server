@@ -82891,7 +82891,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Eremes_Card
@@ -82938,7 +82938,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Magaleta_Card
@@ -82985,7 +82985,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Katrinn_Card
@@ -83034,7 +83034,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Shecil_Card
@@ -83083,7 +83083,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Harword_Card
@@ -83130,7 +83130,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Seyren_Card
@@ -83359,7 +83359,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83412,7 +83412,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83465,7 +83465,7 @@ Body:
       Mvp: true
     Drops:
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Manteau_Of_Fallen
         Rate: 150
       - Item: Manteau_Of_Fallen
@@ -83683,7 +83683,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Randel_Card
@@ -83732,7 +83732,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Flamel_Card
@@ -83781,7 +83781,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Ceila_Card
@@ -83830,7 +83830,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Chen_Card
@@ -83879,7 +83879,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Gertie_Card
@@ -83928,7 +83928,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Alphoccio_Card
@@ -83977,7 +83977,7 @@ Body:
       - Item: Pieces_Of_Sentiment
         Rate: 600
       - Item: Pieces_Of_Grudge
-        Rate: 1500
+        Rate: 15
       - Item: Fallen_Energy_Particle
         Rate: 1000
       - Item: Real_Trentini_Card
@@ -93667,6 +93667,8 @@ Body:
     DamageMotion: 384
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Carnium
         Rate: 5000
       - Item: Tooth_Of_Bat
@@ -93713,6 +93715,8 @@ Body:
     DamageMotion: 288
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Dried_Leaf_Of_Ygg
         Rate: 2000
       - Item: Cardinal_Jewel_
@@ -93761,6 +93765,8 @@ Body:
     DamageMotion: 288
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Dried_Leaf_Of_Ygg
         Rate: 1500
       - Item: Cardinal_Jewel_
@@ -93805,6 +93811,8 @@ Body:
     DamageMotion: 504
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Dried_Leaf_Of_Ygg
         Rate: 2000
       - Item: Bradium
@@ -93857,6 +93865,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Horseshoe
         Rate: 5000
       - Item: Blue_Potion
@@ -93895,6 +93905,8 @@ Body:
     WalkSpeed: 1000
     AttackMotion: 1
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Alchol
         Rate: 50
       - Item: Detrimindexta
@@ -93946,6 +93958,8 @@ Body:
       IgnoreMisc: true
       KnockBackImmune: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Dark_Red_Jewel
         Rate: 2000
       - Item: Vampire's_Servant
@@ -94003,7 +94017,7 @@ Body:
       - Item: Old_Violet_Box
         Rate: 5000
       - Item: IllusionStone
-        Rate: 500
+        Rate: 5000
     Drops:
       - Item: Yggdrasilberry
         Rate: 5000
@@ -94062,7 +94076,7 @@ Body:
       - Item: Yggdrasilberry
         Rate: 2000
       - Item: IllusionStone
-        Rate: 500
+        Rate: 5000
     Drops:
       - Item: Bradium
         Rate: 5000
@@ -94110,6 +94124,8 @@ Body:
     DamageMotion: 480
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Fox_Tail
         Rate: 3000
       - Item: Glass_Bead
@@ -94156,6 +94172,8 @@ Body:
     DamageMotion: 288
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: HazyMooncake
         Rate: 1000
       - Item: Munak_Turban
@@ -94202,6 +94220,8 @@ Body:
     DamageMotion: 420
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: HazyMooncake
         Rate: 1750
       - Item: Old_Portrait
@@ -94248,6 +94268,8 @@ Body:
     DamageMotion: 576
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Bloody_Love_Letter
         Rate: 2000
       - Item: Skirt_Of_Virgin
@@ -94296,6 +94318,8 @@ Body:
     DamageMotion: 576
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Broken_Arrow
         Rate: 2000
       - Item: Carnium
@@ -94344,6 +94368,8 @@ Body:
     DamageMotion: 288
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Red_Gemstone
         Rate: 3000
       - Item: Yellow_Gemstone
@@ -94392,6 +94418,8 @@ Body:
     DamageMotion: 288
     Ai: 19
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Recruitment_Leaflet
         Rate: 2000
       - Item: Light_Granule
@@ -94611,6 +94639,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Frozen_Stone_Fragment
         Rate: 1000
       - Item: Bradium
@@ -94655,6 +94685,8 @@ Body:
     DamageMotion: 420
     Ai: 04
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Snowball
         Rate: 1000
       - Item: Ice_Heart
@@ -94698,6 +94730,8 @@ Body:
     AttackMotion: 660
     DamageMotion: 144
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: SpritJewel
         Rate: 1000
       - Item: Ice_Piece
@@ -94894,6 +94928,8 @@ Body:
     DamageMotion: 504
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: OldShell
         Rate: 1000
       - Item: Piece_of_Black_Horn
@@ -94942,6 +94978,8 @@ Body:
     DamageMotion: 528
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: OldShell
         Rate: 1000
       - Item: Piece_of_Black_Horn
@@ -94990,6 +95028,8 @@ Body:
     DamageMotion: 672
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: OldShell
         Rate: 1000
       - Item: Piece_of_Black_Horn
@@ -95038,6 +95078,8 @@ Body:
     DamageMotion: 528
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: OldShell
         Rate: 1000
       - Item: Piece_of_Black_Horn
@@ -95086,6 +95128,8 @@ Body:
     DamageMotion: 528
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: OldShell
         Rate: 1000
       - Item: Piece_of_Black_Horn
@@ -95138,6 +95182,8 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: ShipsLog
         Rate: 4000
       - Item: Iron_Driver
@@ -96394,7 +96440,7 @@ Body:
       - Item: Iron
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Colorful_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96440,7 +96486,7 @@ Body:
       - Item: NasariansSoulstone
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Colorful_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96488,7 +96534,7 @@ Body:
       - Item: NasariansSoulstone
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Colorful_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96534,7 +96580,7 @@ Body:
       - Item: NasariansSoulstone
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Colorful_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96582,7 +96628,7 @@ Body:
       - Item: NasariansSoulstone
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Colorful_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96635,7 +96681,7 @@ Body:
       - Item: Clay_Doll
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Shiny_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
@@ -96681,7 +96727,7 @@ Body:
       - Item: Old_Pick
         Rate: 100
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Hardworking_Pitman_Card
         Rate: 1
         StealProtected: true
@@ -96727,7 +96773,7 @@ Body:
       - Item: Gothic_China_Doll
         Rate: 10
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Fragment_Of_Soul_Card
         Rate: 1
         StealProtected: true
@@ -96771,7 +96817,7 @@ Body:
       - Item: Dark_Crystal_Fragment
         Rate: 1
       - Item: IllusionStone
-        Rate: 2
+        Rate: 5
       - Item: Haunted_Obsidian_Card
         Rate: 1
         StealProtected: true
@@ -96839,6 +96885,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Cyfar
         Rate: 100
       - Item: Solid_Shell
@@ -96887,6 +96935,8 @@ Body:
     DamageMotion: 288
     Ai: 17
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Tablet
         Rate: 1
       - Item: Brigan
@@ -96935,6 +96985,8 @@ Body:
     DamageMotion: 672
     Ai: 10
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Zargon
         Rate: 100
       - Item: Stone
@@ -96993,6 +97045,8 @@ Body:
       - Item: Blue_Potion
         Rate: 6000
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: Gemstone
         Rate: 4850
       - Item: Goibne's_Armor
@@ -97041,6 +97095,8 @@ Body:
     DamageMotion: 768
     Ai: 04
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Solid_Twig
         Rate: 5000
       - Item: Log
@@ -97089,6 +97145,8 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Air_Rifle
         Rate: 4500
       - Item: Flexible_String
@@ -97137,6 +97195,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Banana
         Rate: 300
       - Item: Shoulder_Protection
@@ -97190,6 +97250,8 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Goibne's_Combat_Boots
         Rate: 1
       - Item: Shoulder_Protection
@@ -97369,9 +97431,9 @@ Body:
       - Item: Old_Steel_Plate
         Rate: 3500
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: EP17_1_EVT01
-        Rate: 100
+        Rate: 2
       - Item: EP17_1_EVT39
         Rate: 1000
       - Item: Crushed_Can_Iron_Plate
@@ -97413,7 +97475,7 @@ Body:
       - Item: Needle_Pouch
         Rate: 1250
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: Scarlet_Dyestuffs
         Rate: 30
       - Item: E_EA1L_Card
@@ -97455,7 +97517,7 @@ Body:
       - Item: Burnt_Parts
         Rate: 1000
       - Item: EP17_1_EVT02
-        Rate: 5000
+        Rate: 5
       - Item: E_EA2S_Card
         Rate: 1
         StealProtected: true
@@ -97501,7 +97563,7 @@ Body:
       - Item: Elunium
         Rate: 20
       - Item: EP17_1_EVT39
-        Rate: 3
+        Rate: 5
   - Id: 20344
     AegisName: MD_VENOM_BUG
     Name: Chemical Poison
@@ -97600,7 +97662,7 @@ Body:
       - Item: EP17_1_EVT02
         Rate: 500
       - Item: EP17_1_EVT01
-        Rate: 100
+        Rate: 2
       - Item: EP17_1_EVT39
         Rate: 1000
       - Item: Miguel_Card
@@ -97675,7 +97737,7 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 15
+        Rate: 5
   - Id: 20349
     AegisName: MD_A013_DOLOR
     Name: A013 - Dolor
@@ -97714,7 +97776,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Bloody_Rune
         Rate: 800
   - Id: 20350
@@ -97759,7 +97821,7 @@ Body:
       - Item: Explosive_Powder
         Rate: 30
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
   - Id: 20351
     AegisName: MD_MANHOLE2
     Name: Manhole   #!todo check english name
@@ -97883,9 +97945,9 @@ Body:
       - Item: Elunium
         Rate: 12
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: Explosive_Powder
         Rate: 30
       - Item: Bellare_Card
@@ -97929,11 +97991,11 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: High_Bellare_Card
         Rate: 1
         StealProtected: true
@@ -97977,7 +98039,7 @@ Body:
       - Item: Oridecon
         Rate: 12
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: Explosive_Powder
         Rate: 30
       - Item: Sanare_Card
@@ -98021,11 +98083,11 @@ Body:
       - Item: Elunium
         Rate: 24
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Explosive_Powder
         Rate: 60
       - Item: EP17_1_EVT02
-        Rate: 500
+        Rate: 5
       - Item: High_Sanare_Card
         Rate: 1
         StealProtected: true
@@ -98069,7 +98131,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98113,7 +98175,7 @@ Body:
       - Item: Azure_Jewel
         Rate: 50
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Mutant_Plaga_Card
         Rate: 1
         StealProtected: true
@@ -98155,7 +98217,7 @@ Body:
       - Item: Wooden_Block
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Bloody_Rune
         Rate: 800
       - Item: Dolor_Card
@@ -98199,7 +98261,7 @@ Body:
       - Item: Wooden_Block
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Bloody_Rune
         Rate: 1600
       - Item: Mt_Dolor_Card
@@ -98247,7 +98309,7 @@ Body:
       - Item: Elunium
         Rate: 10
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98293,7 +98355,7 @@ Body:
       - Item: Elunium
         Rate: 20
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Mt_Venenum_Card
         Rate: 1
         StealProtected: true
@@ -98337,7 +98399,7 @@ Body:
       - Item: Tendon
         Rate: 1000
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Caput_Card
         Rate: 1
         StealProtected: true
@@ -98381,7 +98443,7 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: EP17_1_EVT39
-        Rate: 300
+        Rate: 5
       - Item: Mt_Caput_Card
         Rate: 1
         StealProtected: true
@@ -98421,11 +98483,11 @@ Body:
       - Item: Elunium_Stone
         Rate: 35
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: T_Lance_Of_Kingdom
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Polluted_Raydric_Card
         Rate: 1
         StealProtected: true
@@ -98465,9 +98527,9 @@ Body:
       - Item: Brigan
         Rate: 3774
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Polluted_Ray_A_Card
         Rate: 1
         StealProtected: true
@@ -98513,9 +98575,9 @@ Body:
       - Item: Crystal_Blue
         Rate: 2
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Frozen_Gargoyle_Card
         Rate: 1
         StealProtected: true
@@ -98559,9 +98621,9 @@ Body:
       - Item: Silk_Ribbon
         Rate: 13
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Polluted_Sting_Card
         Rate: 1
         StealProtected: true
@@ -98603,11 +98665,11 @@ Body:
       - Item: Elunium
         Rate: 10
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Prisoner_Dairy
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Prison_Breaker_Card
         Rate: 1
         StealProtected: true
@@ -98649,7 +98711,7 @@ Body:
       - Item: White_Herb
         Rate: 700
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Suit
         Rate: 50
       - Item: Lava_Leather_Shoes
@@ -98697,13 +98759,13 @@ Body:
       - Item: Blue_Herb
         Rate: 25
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Manteau
         Rate: 50
       - Item: Magma_Essence
         Rate: 5
       - Item: Zelunium_Ore
-        Rate: 80
+        Rate: 50
       - Item: Rigid_Nightmare_Terror_Card
         Rate: 1
         StealProtected: true
@@ -98745,13 +98807,13 @@ Body:
       - Item: Dragon_Train
         Rate: 920
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Robe
         Rate: 50
       - Item: Magma_Essence
         Rate: 5
       - Item: Zelunium_Ore
-        Rate: 80
+        Rate: 50
       - Item: Rigid_Sky_Deleter_Card
         Rate: 1
         StealProtected: true
@@ -98793,13 +98855,13 @@ Body:
       - Item: Dragon_Train
         Rate: 820
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Armor
         Rate: 50
       - Item: Magma_Essence
         Rate: 5
       - Item: Zelunium_Ore
-        Rate: 80
+        Rate: 50
       - Item: Rigid_Earth_Deleter_Card
         Rate: 1
         StealProtected: true
@@ -98841,13 +98903,13 @@ Body:
       - Item: Hot_Hair
         Rate: 750
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Sandals
         Rate: 50
       - Item: Magma_Essence
         Rate: 5
       - Item: Zelunium_Ore
-        Rate: 80
+        Rate: 50
       - Item: Rigid_Explosion_Card
         Rate: 1
         StealProtected: true
@@ -98893,7 +98955,7 @@ Body:
       - Item: Magma_Essence
         Rate: 5
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Hood
         Rate: 50
       - Item: Rigid_Kaho_Card
@@ -98902,7 +98964,7 @@ Body:
   - Id: 20378
     AegisName: LAVA_GOLEM_H
     Name: Rigid Lava Golem
-    JapaneseName: 堅硬熔岩巨
+    JapaneseName: 堅硬熔岩巨石
     Level: 177
     Hp: 1223728
     BaseExp: 111248
@@ -98935,7 +98997,7 @@ Body:
       - Item: White_Herb
         Rate: 625
       - Item: Shadowdecon_Ore
-        Rate: 80
+        Rate: 50
       - Item: Lava_Leather_Muffler
         Rate: 50
       - Item: Lava_Leather_Boots
@@ -98943,7 +99005,7 @@ Body:
       - Item: Magma_Essence
         Rate: 5
       - Item: Zelunium_Ore
-        Rate: 80
+        Rate: 50
       - Item: Rigid_Lava_Golem_Card
         Rate: 1
         StealProtected: true
@@ -98985,12 +99047,12 @@ Body:
       - Item: Skull
         Rate: 250
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Wand_Of_Ice
         Rate: 50
         RandomOptionGroup: AGM1
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Ice_Ghost_Card
         Rate: 1
         StealProtected: true
@@ -99032,12 +99094,12 @@ Body:
       - Item: Skull
         Rate: 250
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: Wand_Of_Flame
         Rate: 50
         RandomOptionGroup: AGM1
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Flame_Ghost_Card
         Rate: 1
         StealProtected: true
@@ -99087,7 +99149,7 @@ Body:
       - Item: EP17_1_EVT02
         Rate: 5000
       - Item: Zelunium
-        Rate: 5000
+        Rate: 12
       - Item: R48_85_Bestia_Card
         Rate: 1
         StealProtected: true
@@ -99538,13 +99600,13 @@ Body:
       Mvp: true
     Drops:
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: Old_Violet_Box
         Rate: 3500
       - Item: Yggdrasilberry
         Rate: 3500
       - Item: Zelunium
-        Rate: 50
+        Rate: 12
       - Item: Lava_Leather_Suit
         Rate: 100
       - Item: Lava_Leather_Robe
@@ -99592,11 +99654,11 @@ Body:
       - Item: Oridecon
         Rate: 57
       - Item: Zelunium_Ore
-        Rate: 120
+        Rate: 50
       - Item: T_Sword_Of_Kingdom
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 120
+        Rate: 50
       - Item: Polluted_W_Man_Card
         Rate: 1
         StealProtected: true
@@ -99652,13 +99714,13 @@ Body:
         Rate: 5000
     Drops:
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: Old_Violet_Box
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
       - Item: Zelunium
-        Rate: 50
+        Rate: 12
       - Item: Spiderweb
         Rate: 5000
       - Item: Staff_Of_Blue_Flame
@@ -99719,11 +99781,11 @@ Body:
         Rate: 6000
     Drops:
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: Skull
         Rate: 5000
       - Item: Zelunium
-        Rate: 50
+        Rate: 12
       - Item: Yggdrasilberry
         Rate: 2500
       - Item: Polluted_Dark_L_Card
@@ -100051,6 +100113,8 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: Essence_Of_Demon
         Rate: 6000
         StealProtected: true
@@ -100085,6 +100149,8 @@ Body:
     DamageMotion: 240
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Chaos_Acolyte_Card
         Rate: 1
         StealProtected: true
@@ -100116,6 +100182,8 @@ Body:
     DamageMotion: 240
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Chaos_Acolyte_Card
         Rate: 1
         StealProtected: true
@@ -100147,6 +100215,8 @@ Body:
     DamageMotion: 240
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Chaos_Acolyte_Card
         Rate: 1
         StealProtected: true
@@ -100178,6 +100248,8 @@ Body:
     DamageMotion: 240
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Chaos_Acolyte_Card
         Rate: 1
         StealProtected: true
@@ -100213,6 +100285,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Short_Rope
         Rate: 150
       - Item: Chaos_Ba_Jr_Card
@@ -100248,6 +100322,8 @@ Body:
     DamageMotion: 576
     Ai: 09
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Snake_Deadly_Poison
         Rate: 150
       - Item: Chaos_S_Winder_Card
@@ -100285,12 +100361,14 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Delicious_Juice
         Rate: 150
       - Item: Chaos_H_Fly_Card
         Rate: 1
       - Item: 1000228
-        Rate: 300
+        Rate: 3
         StealProtected: true
   - Id: 20528
     AegisName: ILL_MANTIS
@@ -100324,6 +100402,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Mantis_Flower
         Rate: 150
       - Item: Chaos_Mantis_Card
@@ -100360,6 +100440,8 @@ Body:
     Ai: 21
     Class: Boss
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Soft_Scarf
         Rate: 6000
       - Item: Chaos_Goring_Card
@@ -100397,6 +100479,8 @@ Body:
     Modes:
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Purple_Solid_Shell
         Rate: 150
       - Item: Chaos_K_Mantis_Card
@@ -100432,6 +100516,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Brilliant_Jelly
         Rate: 150
       - Item: Chaos_Poporing_Card
@@ -100467,12 +100553,14 @@ Body:
     DamageMotion: 528
     Ai: 09
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Suspicious_Sap
         Rate: 150
       - Item: Chaos_Stem_W_Card
         Rate: 1
       - Item: TokenOfHero
-        Rate: 1500
+        Rate: 15
         StealProtected: true
 #  - Id: 20533
 #    AegisName: G_ILL_BAPHOMET_J
@@ -100997,7 +101085,7 @@ Body:
         Rate: 900
         StealProtected: true
       - Item: Fragment_Of_Time
-        Rate: 8
+        Rate: 5
         StealProtected: true
       - Item: C_Himel_Card
         Rate: 1
@@ -101099,7 +101187,7 @@ Body:
       - Item: Glast_Decayed_Nail
         Rate: 200
       - Item: Fragment_Of_Time
-        Rate: 10
+        Rate: 5
   - Id: 20575
     AegisName: MD_C_CORRUPTION_ROOT
     Name: MD_C_CORRUPTION_ROOT
@@ -101221,7 +101309,7 @@ Body:
         Rate: 600
         StealProtected: true
       - Item: Fragment_Of_Time
-        Rate: 8
+        Rate: 5
         StealProtected: true
       - Item: C_Raydric_Card
         Rate: 1
@@ -101266,7 +101354,7 @@ Body:
         Rate: 600
         StealProtected: true
       - Item: Fragment_Of_Time
-        Rate: 8
+        Rate: 5
         StealProtected: true
       - Item: C_Raydric_Archer_Card
         Rate: 1
@@ -101587,7 +101675,7 @@ Body:
       - Item: Spawns
         Rate: 1500
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Old_Violet_Box
         Rate: 1
       - Item: Poisonous_Card
@@ -101635,7 +101723,7 @@ Body:
       - Item: Fluorescent_Liquid
         Rate: 15
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Poison_Powder
         Rate: 50
       - Item: Toxious_Card
@@ -101679,7 +101767,7 @@ Body:
       - Item: Ein_EYEROCK
         Rate: 150
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Oridecon
         Rate: 40
       - Item: Emveretarcon
@@ -101727,7 +101815,7 @@ Body:
       - Item: Ein_EYEROCK
         Rate: 150
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Oridecon
         Rate: 40
       - Item: Emveretarcon
@@ -101775,7 +101863,7 @@ Body:
       - Item: Ein_EYEROCK
         Rate: 150
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Oridecon
         Rate: 40
       - Item: Emveretarcon
@@ -101823,7 +101911,7 @@ Body:
       - Item: Ein_EYEROCK
         Rate: 150
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Oridecon
         Rate: 40
       - Item: Emveretarcon
@@ -101875,7 +101963,7 @@ Body:
       - Item: Fluorescent_Liquid
         Rate: 1250
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Ein_UNDIUM
         Rate: 300
       - Item: Jeweliant_Card
@@ -101945,7 +102033,7 @@ Body:
       - Item: Ein_DYNITE
         Rate: 100
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Ein_REDIUM
         Rate: 300
       - Item: Ein_RINDIUM
@@ -101999,9 +102087,9 @@ Body:
       - Item: Jaws_Of_Ant
         Rate: 1750
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: Zelunium
-        Rate: 50
+        Rate: 12
       - Item: Ein_UNDIUM
         Rate: 7500
       - Item: Ein_UNDIUM
@@ -102051,7 +102139,7 @@ Body:
       - Item: Fluorescent_Liquid
         Rate: 15
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Ein_ODIUM
         Rate: 150
       - Item: Solid_Shell
@@ -102093,7 +102181,7 @@ Body:
       - Item: Old_Pick
         Rate: 1500
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Ein_RUSTHELM
         Rate: 150
       - Item: Ein_ODIUM
@@ -102145,11 +102233,11 @@ Body:
     Ai: 21
     Drops:
       - Item: Angel_Dream
-        Rate: 1500
+        Rate: 5
       - Item: Rune_Of_Darkness
         Rate: 3000
       - Item: Odin_itembox
-        Rate: 5
+        Rate: 2
       - Item: Stone_Of_Intelligence_
         Rate: 100
       - Item: Soft_Feather
@@ -102189,9 +102277,9 @@ Body:
     Ai: 21
     Drops:
       - Item: Angel_Dream
-        Rate: 1500 
-      - Item: Odin_itembox
         Rate: 5
+      - Item: Odin_itembox
+        Rate: 2
       - Item: Rune_Of_Darkness
         Rate: 3000
       - Item: Soft_Feather
@@ -102231,11 +102319,11 @@ Body:
     Ai: 20
     Drops:
       - Item: Angel_Dream
-        Rate: 350
+        Rate: 5
       - Item: Rune_Of_Darkness
         Rate: 5000
       - Item: Odin_itembox
-        Rate: 5
+        Rate: 2
       - Item: Soft_Feather
         Rate: 7000
       - Item: Brigan
@@ -102279,9 +102367,9 @@ Body:
       - Item: Brigan
         Rate: 10000
       - Item: Angel_Dream
-        Rate: 1500
-      - Item: Odin_itembox
         Rate: 5
+      - Item: Odin_itembox
+        Rate: 2
       - Item: Soft_Feather
         Rate: 2000
       - Item: Shard_Blue
@@ -102331,7 +102419,7 @@ Body:
       - Item: Crystal_Jewel_
         Rate: 1000
       - Item: Odin_itembox
-        Rate: 5
+        Rate: 2
       - Item: Plasma_Arch_Card
         Rate: 1
         StealProtected: true
@@ -102377,7 +102465,7 @@ Body:
       - Item: Crystal_Jewel_
         Rate: 1000
       - Item: Odin_itembox
-        Rate: 5
+        Rate: 2
       - Item: Plasma_Spt_Card
         Rate: 1
         StealProtected: true
@@ -102558,7 +102646,7 @@ Body:
       - Item: Gold_Ring
         Rate: 100
       - Item: Zelunium_Ore
-        Rate: 1
+        Rate: 50
   - Id: 20614
     AegisName: ACIDUS_B
     Name: Black Acidus
@@ -103006,7 +103094,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Screw
         Rate: 1500
       - Item: Iron
@@ -103055,7 +103145,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Screw
         Rate: 1500
       - Item: Iron
@@ -103104,7 +103196,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Great_Leaf
         Rate: 3000
       - Item: Browny_Root
@@ -103151,7 +103245,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Singing_Plant
         Rate: 7500
       - Item: Sharp_Leaf
@@ -103198,7 +103294,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Sharp_Leaf
         Rate: 1000
       - Item: Browny_Root
@@ -103249,7 +103347,9 @@ Body:
       CanAttack: true
     Modes:
       CastSensorIdle: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Sharp_Leaf
         Rate: 1000
       - Item: Browny_Root
@@ -103292,6 +103392,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
+    Drops:
+      - Item: BarMealTicket
+        Rate: 10
   - Id: 20629
     AegisName: EP17_2_BETA_BASIC
     Name: Manager Beta
@@ -103321,6 +103424,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
+    Drops:
+      - Item: BarMealTicket
+        Rate: 10
   - Id: 20630
     AegisName: EP17_2_BETA_BASIC_NG
     Name: Broken Beta
@@ -103357,6 +103463,8 @@ Body:
       CastSensorIdle: true
       CanAttack: true
     Drops:
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 500
       - Item: Mystery_Piece
@@ -103398,7 +103506,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 500
       - Item: Mystery_Piece
@@ -103443,7 +103553,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 500
       - Item: Mystery_Piece
@@ -103498,7 +103610,7 @@ Body:
       - Item: Iron
         Rate: 500
       - Item: BarMealTicket
-        Rate: 2500
+        Rate: 10
       - Item: Sturdy_Iron_Piece
         Rate: 2000
       - Item: Beta_Cleaner_Card
@@ -103547,7 +103659,7 @@ Body:
       - Item: Sturdy_Iron_Piece
         Rate: 2000
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 10
       - Item: Burnt_Parts
         Rate: 2000
       - Item: Beta_Cleaner_Card
@@ -103582,7 +103694,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 1000
       - Item: Beta_Baths_A_Card
@@ -103617,7 +103731,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 1000
       - Item: Beta_Baths_A_Card
@@ -103658,7 +103774,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 1000
       - Item: Broken_Steel_Piece
@@ -103693,6 +103811,9 @@ Body:
       Assist: true
       CastSensorIdle: true
       CanAttack: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
   - Id: 20639
     AegisName: EP17_2_BETA_GUARDS_NG
     Name: Broken Beta Guards
@@ -103729,7 +103850,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Iron
         Rate: 1500
       - Item: Broken_Steel_Piece
@@ -103775,7 +103898,7 @@ Body:
       Detector: true
     Drops:
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 10
   - Id: 20641
     AegisName: EP17_2_OMEGA_CLEANER_NG
     Name: Broken Omega Cleaner
@@ -103812,7 +103935,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Steel
         Rate: 500
       - Item: Omega_Cleaner_Card
@@ -103910,7 +104035,7 @@ Body:
       - Item: Sharp_Scale
         Rate: 1500
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 10
       - Item: Fin
         Rate: 3000
       - Item: Skyblue_Jewel
@@ -103963,7 +104088,7 @@ Body:
         Rate: 2000
       - Item: Meat
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 10
       - Item: EP17_2_Marc_Card
         Rate: 1
         StealProtected: true
@@ -104009,7 +104134,7 @@ Body:
       - Item: Fin
         Rate: 2000
       - Item: BarMealTicket
-        Rate: 1500
+        Rate: 10
       - Item: Gill
         Rate: 5000
       - Item: EP17_2_Sword_Fish_Card
@@ -104053,7 +104178,7 @@ Body:
       Detector: true
     Drops:
       - Item:  BarMealTicket
-        Rate: 1500
+        Rate: 10
       - Item: Tooth_Of_Ancient_Fish
         Rate: 500
       - Item: Lip_Of_Ancient_Fish
@@ -104109,7 +104234,9 @@ Body:
         Rate: 5000
       - Item: Old_Violet_Box
         Rate: 5000
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Heart_Of_Mermaid
         Rate: 5000
       - Item: Sharp_Scale
@@ -104209,7 +104336,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Reptile_Tongue
         Rate: 1500
       - Item: Jubilee
@@ -104257,7 +104386,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Reptile_Tongue
         Rate: 1500
       - Item: Jubilee
@@ -104305,7 +104436,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Fruit_Basket
         Rate: 3000
       - Item: Jubilee
@@ -104353,7 +104486,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Reptile_Tongue
         Rate: 1500
       - Item: Jubilee
@@ -104401,7 +104536,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Reptile_Tongue
         Rate: 1500
       - Item: Fruit_Basket
@@ -104449,6 +104586,20 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
+      - Item: Reptile_Tongue
+        Rate: 1500
+      - Item: Fruit_Basket
+        Rate: 3000
+      - Item: Jubilee
+        Rate: 500
+      - Item: Melon
+        Rate: 500
+      - Item: Pitaya_G_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20655
     AegisName: G_PITAYA_Y
     Name: Yellow Pitaya
@@ -104485,6 +104636,20 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
+      - Item: Reptile_Tongue
+        Rate: 1500
+      - Item: Fruit_Basket
+        Rate: 3000
+      - Item: Jubilee
+        Rate: 500
+      - Item: Melon
+        Rate: 500
+      - Item: Pitaya_G_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20656
     AegisName: G_PITAYA_B
     Name: Blue Pitaya
@@ -104521,6 +104686,20 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
+      - Item: Reptile_Tongue
+        Rate: 1500
+      - Item: Fruit_Basket
+        Rate: 3000
+      - Item: Jubilee
+        Rate: 500
+      - Item: Melon
+        Rate: 500
+      - Item: Pitaya_G_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20657
     AegisName: G_PITAYA_V
     Name: Violet Pitaya
@@ -104557,6 +104736,20 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
+      - Item: Reptile_Tongue
+        Rate: 1500
+      - Item: Fruit_Basket
+        Rate: 3000
+      - Item: Jubilee
+        Rate: 500
+      - Item: Melon
+        Rate: 500
+      - Item: Pitaya_G_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20658
     AegisName: G_PITAYA_G
     Name: Green Pitaya
@@ -104593,6 +104786,20 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
+      - Item: Reptile_Tongue
+        Rate: 1500
+      - Item: Fruit_Basket
+        Rate: 3000
+      - Item: Jubilee
+        Rate: 500
+      - Item: Melon
+        Rate: 500
+      - Item: Pitaya_G_Card
+        Rate: 1
+        StealProtected: true
   - Id: 20659
     AegisName: MD_PITAYA_BOSS
     Name: Boss Pitaya
@@ -104681,7 +104888,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Strawberry
         Rate: 500
       - Item: Reptile_Tongue
@@ -104729,7 +104938,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Banana
         Rate: 500
       - Item: Reptile_Tongue
@@ -104777,7 +104988,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Prickly_Fruit
         Rate: 500
       - Item: Reptile_Tongue
@@ -104825,7 +105038,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Grape
         Rate: 500
       - Item: Reptile_Tongue
@@ -104873,7 +105088,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Reptile_Tongue
         Rate: 1500
       - Item: Melon
@@ -105125,7 +105342,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Fancy_Fairy_Wing
         Rate: 2000
       - Item: Sharp_Feeler
@@ -105175,7 +105394,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Flower
         Rate: 500
       - Item: Powder_Of_Butterfly
@@ -105227,7 +105448,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Flower
         Rate: 500
       - Item: Powder_Of_Butterfly
@@ -105277,7 +105500,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Flower
         Rate: 500
       - Item: Powder_Of_Butterfly
@@ -105358,7 +105583,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Flower
         Rate: 500
       - Item: Powder_Of_Butterfly
@@ -105408,7 +105635,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Flower
         Rate: 500
       - Item: Powder_Of_Butterfly
@@ -105489,7 +105718,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Great_Wing
         Rate: 2000
       - Item: Fancy_Fairy_Wing
@@ -105533,7 +105764,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Great_Wing
         Rate: 2000
       - Item: Fancy_Fairy_Wing
@@ -105722,7 +105955,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Long_Limb
         Rate: 1000
       - Item: Colorful_Shell
@@ -105772,7 +106007,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Dustball
         Rate: 300
       - Item: Worn_Out_Page
@@ -105818,7 +106055,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Sticky_Mucus
         Rate: 1500
       - Item: Elunium_Stone
@@ -105863,7 +106102,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Claw_Of_Rat
         Rate: 300
       - Item: Lemon
@@ -105909,7 +106150,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Mud_Lump
         Rate: 700
       - Item: Sticky_Poison
@@ -105955,7 +106198,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Heart_Hunter_Seal
         Rate: 2000
       - Item: Elunium_Stone
@@ -106001,7 +106246,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Tough_Scalelike_Stem
         Rate: 600
       - Item: Wooden_Block
@@ -106047,7 +106294,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Yellow_Gemstone
         Rate: 300
       - Item: Scell
@@ -106093,7 +106342,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Dragon's_Skin
         Rate: 800
       - Item: Fluorescent_Liquid
@@ -106139,7 +106390,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: GAMJammingChip
         Rate: 2500
       - Item: Heart_Hunter_Seal
@@ -106187,7 +106440,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Blue_Gemstone
         Rate: 300
       - Item: Scell
@@ -106233,7 +106488,9 @@ Body:
       CastSensorIdle: true
       CanAttack: true
       Detector: true
-    Drops:
+    Drops: 
+      - Item: BarMealTicket
+        Rate: 10
       - Item: Light_Granule
         Rate: 100
       - Item: Scell
@@ -106572,10 +106829,6 @@ Body:
         Rate: 100
       - Item: 7005
         Rate: 500
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
       - Item: 300270
         Rate: 1       
   - Id: 20774
@@ -106619,10 +106872,6 @@ Body:
         Rate: 5
       - Item: 7435
         Rate: 50
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
       - Item: 300271
         Rate: 1     
   - Id: 20775
@@ -106665,11 +106914,7 @@ Body:
       - Item: 7438
         Rate: 3000
       - Item: 25728
-        Rate: 150
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300274
         Rate: 1    
   - Id: 20776
@@ -106712,11 +106957,7 @@ Body:
       - Item: 7436
         Rate: 2000
       - Item: 25730
-        Rate: 150
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300275
         Rate: 1    
   - Id: 20777
@@ -106759,11 +107000,7 @@ Body:
       - Item: 7437
         Rate: 2000
       - Item: 25728
-        Rate: 150
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300277
         Rate: 1 
   - Id: 20778
@@ -106806,11 +107043,7 @@ Body:
       - Item: 7439
         Rate: 2000
       - Item: 25730
-        Rate: 150
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300276
         Rate: 1 
   - Id: 20779
@@ -106856,8 +107089,6 @@ Body:
         Rate: 500
       - Item: 603
         Rate: 10
-      - Item: 25731
-        Rate: 6
       - Item: 300278
         Rate: 1
   - Id: 20780
@@ -106898,13 +107129,9 @@ Body:
       - Item: 7449
         Rate: 750
       - Item: 25728
-        Rate: 150
+        Rate: 50
       - Item: 25730
-        Rate: 150
-      - Item: 25729
-        Rate: 6
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300279
         Rate: 1
   - Id: 20781
@@ -106947,11 +107174,9 @@ Body:
       - Item: 1006
         Rate: 50
       - Item: 25728
-        Rate: 150
+        Rate: 50
       - Item: 25730
-        Rate: 150
-      - Item: 25729
-        Rate: 6
+        Rate: 50
       - Item: 300269
         Rate: 1
   - Id: 20782
@@ -106994,11 +107219,9 @@ Body:
       - Item: 5045
         Rate: 1
       - Item: 25728
-        Rate: 150
+        Rate: 50
       - Item: 25730
-        Rate: 150
-      - Item: 25729
-        Rate: 6
+        Rate: 50
       - Item: 300268
         Rate: 1
   - Id: 20783
@@ -107041,11 +107264,9 @@ Body:
       - Item: 5045
         Rate: 1
       - Item: 25728
-        Rate: 150
+        Rate: 50
       - Item: 25730
-        Rate: 150
-      - Item: 25731
-        Rate: 6
+        Rate: 50
       - Item: 300267
         Rate: 1
   - Id: 20784
@@ -107218,28 +107439,10 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
       - Item: Fate_Shard_A
-        Rate: 300
+        Rate: 15
       - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: 300270
-        Rate: 1
+        Rate: 15
   - Id: 20788
     AegisName: MD_HAPPY_GIVER
     Name: HAPPY_GIVER
@@ -107270,26 +107473,10 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
       - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
+        Rate: 15
+      - Item: Sin_Shard_B
+        Rate: 15
   - Id: 20789
     AegisName: MD_RETRIBUTION
     Name: MD_RETRIBUTION
@@ -107320,26 +107507,10 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
       - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
+        Rate: 15
+      - Item: Sin_Shard_C
+        Rate: 15
   - Id: 20790
     AegisName: MD_SHELTER
     Name: MD_SHELTER
@@ -107370,28 +107541,10 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
       - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
+        Rate: 15
+      - Item: Sin_Shard_D
+        Rate: 15
   - Id: 20791
     AegisName: MD_SOLACE
     Name: MD_SOLACE
@@ -107423,25 +107576,9 @@ Body:
     Ai: 21
     Drops:
       - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
+        Rate: 15
+      - Item: Sin_Shard_E
+        Rate: 15
   - Id: 20792
     AegisName: MD_THA_ANGER
     Name: MD_THA_ANGER
@@ -107472,27 +107609,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20793
     AegisName: MD_THA_HORROR
     Name: MD_THA_HORROR
@@ -107523,27 +107639,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20794
     AegisName: MD_THA_RESENT
     Name: MD_THA_RESENT
@@ -107574,27 +107669,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20795
     AegisName: MD_THA_REGRET
     Name: MD_THA_REGRET
@@ -107625,27 +107699,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20796
     AegisName: MD_THA_ODIUM
     Name: MD_THA_ODIUM
@@ -107676,27 +107729,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20797
     AegisName: MD_THA_DESPERO
     Name: MD_THA_DESPERO
@@ -107727,27 +107759,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20798
     AegisName: MD_THA_MAERO
     Name: MD_THA_MAERO
@@ -107778,27 +107789,6 @@ Body:
     DamageTaken: 1000
     Ai: 21
     Class: Boss
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20799
     AegisName: MD_THA_DOLOR
     Name: MD_THA_DOLOR
@@ -107828,27 +107818,6 @@ Body:
     DamageMotion: 480
     DamageTaken: 1000
     Ai: 21
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20800
     AegisName: MD_OBSERVATION
     Name: MD_OBSERVATION
@@ -107878,27 +107847,6 @@ Body:
     DamageMotion: 360
     DamageTaken: 1000
     Ai: 21
-    Drops:
-      - Item: Fate_Shard_E
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
-      - Item: Sin_Shard_A
-        Rate: 300
   - Id: 20801
     AegisName: ILL_SROPHO
     Name: Deep Sea Sropho
@@ -107930,6 +107878,8 @@ Body:
     DamageMotion: 576
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Fin
         Rate: 2500
       - Item: Blue_Herb
@@ -107976,6 +107926,8 @@ Body:
     DamageMotion: 672
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Heart_Of_Mermaid
         Rate: 2500
       - Item: Fin
@@ -108022,6 +107974,8 @@ Body:
     DamageMotion: 770
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Mistic_Frozen
         Rate: 10
       - Item: Tooth_Of_Ancient_Fish
@@ -108068,6 +108022,8 @@ Body:
     DamageMotion: 485
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Chinese_Ink
         Rate: 2500
       - Item: Tentacle
@@ -108116,6 +108072,8 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Lip_Of_Ancient_Fish
         Rate: 1000
       - Item: Mistic_Frozen
@@ -108162,6 +108120,8 @@ Body:
     DamageMotion: 578
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Tentacle
         Rate: 2000
       - Item: Chinese_Ink
@@ -108210,6 +108170,8 @@ Body:
     DamageMotion: 384
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sharp_Scale
         Rate: 2000
       - Item: Gill
@@ -108258,6 +108220,8 @@ Body:
     DamageMotion: 384
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Fin
         Rate: 2000
       - Item: Skyblue_Jewel
@@ -108306,6 +108270,8 @@ Body:
     DamageMotion: 865
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sharp_Scale
         Rate: 2000
       - Item: Fin
@@ -108365,6 +108331,8 @@ Body:
       ChangeTargetChase: true
       Detector: true
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Nipper
         Rate: 1500
       - Item: Solid_Shell
@@ -108430,12 +108398,14 @@ Body:
       - Item: Old_Card_Album
         Rate: 4000
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: Tentacle
         Rate: 3000
       - Item: Mistic_Frozen
         Rate: 500
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: IL_Kraken_Leg
         Rate: 3000
       - Item: Morrigane's_Manteau
@@ -108650,6 +108620,8 @@ Body:
       - Item: Old_Card_Album
         Rate: 4000
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: Crown_Of_Witch
         Rate: 3000
       - Item: Mistic_Frozen
@@ -108659,7 +108631,7 @@ Body:
       - Item: Morrigane's_Belt
         Rate: 50
       - Item: Shadowdecon
-        Rate: 50
+        Rate: 12
       - Item: E_Abyss1
         Rate: 1000
       - Item: ILL_Abysmal_Witch_Card
@@ -108696,16 +108668,16 @@ Body:
     DamageMotion: 360
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
+      - Item: 7441
+        Rate: 100
+      - Item: 7442
+        Rate: 50
+      - Item: 7938
+        Rate: 250
+      - Item: 7063
         Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_E
-        Rate: 300
+      - Item: 12040
+        Rate: 5
       - Item: 300272
         Rate: 1
         StealProtected: true
@@ -108740,15 +108712,15 @@ Body:
     DamageMotion: 360
     Ai: 21
     Drops:
-      - Item: Fate_Shard_C
-        Rate: 300
-      - Item: Fate_Shard_A
-        Rate: 300
-      - Item: Fate_Shard_B
-        Rate: 300
-      - Item: Fate_Shard_D
-        Rate: 300
-      - Item: Fate_Shard_E
+      - Item: 7441
+        Rate: 250
+      - Item: 7442
+        Rate: 50
+      - Item: 12040
+        Rate: 5
+      - Item: 7938
+        Rate: 250
+      - Item: 7063
         Rate: 300
       - Item: 300273
         Rate: 1
@@ -109633,6 +109605,8 @@ Body:
     DamageMotion: 300
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Boody_Red
         Rate: 300
       - Item: Cold_Magma
@@ -109642,11 +109616,7 @@ Body:
       - Item: Black_Powder
         Rate: 250
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 20
-      - Item: Shadowdecon
-        Rate: 20
+        Rate: 50
       - Item: Lava_Eater_Card
         Rate: 1
         StealProtected: true
@@ -109683,6 +109653,8 @@ Body:
     DamageMotion: 432
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Horn
         Rate: 2100
       - Item: Animal's_Skin
@@ -109692,11 +109664,9 @@ Body:
       - Item: Mistic_Frozen
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 20
+        Rate: 50
       - Item: Fulgor_Card
         Rate: 1
         StealProtected: true
@@ -109733,20 +109703,20 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Insect_Feeler
         Rate: 2000
       - Item: Transparent_Cloth
         Rate: 1600
-      - Item: Shadowdecon
-        Rate: 20
       - Item: Wind_Of_Verdure
         Rate: 300
       - Item: Rough_Wind
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Napeo_Card
         Rate: 1
         StealProtected: true
@@ -109783,6 +109753,8 @@ Body:
     DamageMotion: 432
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Fluff
         Rate: 2400
       - Item: Animal's_Skin
@@ -109792,11 +109764,9 @@ Body:
       - Item: Great_Nature
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 20
+        Rate: 50
       - Item: Galensis_Card
         Rate: 1
         StealProtected: true
@@ -109833,6 +109803,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Feather
         Rate: 2400
       - Item: Animal's_Skin
@@ -109840,13 +109812,9 @@ Body:
       - Item: Shoot
         Rate: 300
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 15
-      - Item: Zelunium
-        Rate: 15
+        Rate: 50
       - Item: Amitera_Card
         Rate: 1
         StealProtected: true
@@ -109883,6 +109851,8 @@ Body:
     DamageMotion: 768
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Soft_Leaf
         Rate: 2400
       - Item: Stone_Piece
@@ -109890,13 +109860,9 @@ Body:
       - Item: Transparent_Cloth
         Rate: 1000
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 15
-      - Item: Zelunium
-        Rate: 15
+        Rate: 50
       - Item: Litus_Card
         Rate: 1
         StealProtected: true
@@ -109933,6 +109899,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Feather_Of_Birds
         Rate: 2500
       - Item: Boody_Red
@@ -109940,13 +109908,9 @@ Body:
       - Item: Burning_Heart
         Rate: 300
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 15
-      - Item: Zelunium
-        Rate: 15
+        Rate: 50
       - Item: Fillia_Card
         Rate: 1
         StealProtected: true
@@ -109983,18 +109947,16 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Crystal_Blue
         Rate: 300
       - Item: Sticky_Mucus
         Rate: 2400
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 15
-      - Item: Zelunium
-        Rate: 15
+        Rate: 50
       - Item: Vanilaqus_Card
         Rate: 1
         StealProtected: true
@@ -110035,6 +109997,8 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Rough_Wind
         Rate: 1000
       - Item: Great_Nature
@@ -110044,9 +110008,9 @@ Body:
       - Item: Flame_Heart
         Rate: 1000
       - Item: Shadowdecon
-        Rate: 1000
+        Rate: 12
       - Item: Zelunium
-        Rate: 1000
+        Rate: 12
       - Item: The_One_Card
         Rate: 1
         StealProtected: true
@@ -110083,6 +110047,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Tooth_Of_
         Rate: 1600
       - Item: Tendon
@@ -110092,11 +110058,9 @@ Body:
       - Item: Piece_Of_Darkness
         Rate: 2000
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
+        Rate: 50
       - Item: Giant_Caput_Card
         Rate: 1
         StealProtected: true
@@ -110133,6 +110097,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Tough_Scalelike_Stem
         Rate: 2500
       - Item: Sticky_Poison
@@ -110140,13 +110106,9 @@ Body:
       - Item: Tendon
         Rate: 2000
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 12
-      - Item: Shadowdecon
-        Rate: 12
+        Rate: 50
       - Item: Dolorian_Card
         Rate: 1
         StealProtected: true
@@ -110183,6 +110145,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Dragon's_Skin
         Rate: 2000
       - Item: Dragon_Canine
@@ -110190,13 +110154,9 @@ Body:
       - Item: Dragon_Train
         Rate: 2000
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 12
-      - Item: Shadowdecon
-        Rate: 12
+        Rate: 50
       - Item: Plagarion_Card
         Rate: 1
         StealProtected: true
@@ -110233,18 +110193,16 @@ Body:
     DamageMotion: 720
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Heart_Hunter_Seal
         Rate: 1500
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
+        Rate: 50
       - Item: Long_Hair
         Rate: 1500
-      - Item: Zelunium
-        Rate: 12
-      - Item: Shadowdecon
-        Rate: 12
       - Item: Deadre_Card
         Rate: 1
         StealProtected: true
@@ -110281,18 +110239,16 @@ Body:
     DamageMotion: 960
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Sticky_Poison
         Rate: 2400
       - Item: Sticky_Mucus
         Rate: 2400
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
-      - Item: Zelunium
-        Rate: 12
+        Rate: 50
       - Item: Venedi_Card
         Rate: 1
         StealProtected: true
@@ -110333,14 +110289,16 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Piece_Of_Bone_Armor
         Rate: 4000
       - Item: Old_Violet_Box
         Rate: 4000
       - Item: Shadowdecon
-        Rate: 4000
+        Rate: 12
       - Item: Zelunium
-        Rate: 4000
+        Rate: 12
       - Item: R001_Bestia_Card
         Rate: 1
         StealProtected: true
@@ -110377,18 +110335,16 @@ Body:
     DamageMotion: 360
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Broken_Armor_Piece
         Rate: 2400
       - Item: Broken_Steel_Piece
         Rate: 1600
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
-      - Item: Zelunium
-        Rate: 12
+        Rate: 50
       - Item: Gan_Ceann_Card
         Rate: 1
         StealProtected: true
@@ -110425,6 +110381,8 @@ Body:
     DamageMotion: 384
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Red_Scarf
         Rate: 2500
       - Item: Tangled_Chain
@@ -110432,13 +110390,9 @@ Body:
       - Item: White_Powder
         Rate: 50
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 25
-      - Item: Shadowdecon
-        Rate: 25
+        Rate: 50
       - Item: Disguiser_Card
         Rate: 1
         StealProtected: true
@@ -110475,6 +110429,8 @@ Body:
     DamageMotion: 288
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Old_Manteau
         Rate: 2400
       - Item: Rusty_Cleaver
@@ -110482,13 +110438,9 @@ Body:
       - Item: Mr_Scream
         Rate: 20
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
-      - Item: Zelunium
-        Rate: 12
+        Rate: 50
       - Item: Brutal_Murderer_Card
         Rate: 1
         StealProtected: true
@@ -110525,6 +110477,8 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Piece_Of_Black_Cloth
         Rate: 2400
       - Item: Ectoplasm
@@ -110532,13 +110486,9 @@ Body:
       - Item: Black_Powder
         Rate: 250
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
-      - Item: Zelunium
-        Rate: 12
+        Rate: 50
       - Item: Ghost_Cube_Card
         Rate: 1
         StealProtected: true
@@ -110575,6 +110525,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Pumpkin_Bucket
         Rate: 2500
       - Item: Ectoplasm
@@ -110582,13 +110534,9 @@ Body:
       - Item: Transparent_Cloth
         Rate: 500
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 12
-      - Item: Zelunium
-        Rate: 12
+        Rate: 50
       - Item: Lude_Gal_Card
         Rate: 1
         StealProtected: true
@@ -110625,6 +110573,8 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Black_Kitty_Doll
         Rate: 500
       - Item: Striped_Socks
@@ -110634,11 +110584,9 @@ Body:
       - Item: Loki's_Whispers
         Rate: 2
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Shadowdecon
-        Rate: 25
+        Rate: 50
       - Item: Bluemoon_Loli_Ruri_Card
         Rate: 1
         StealProtected: true
@@ -110675,6 +110623,8 @@ Body:
     DamageMotion: 576
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Hanging_Doll
         Rate: 1000
       - Item: Rotten_Rope
@@ -110685,10 +110635,10 @@ Body:
         Rate: 5
       - Item: Bloody_Dead_Branch
         Rate: 2
-      - Item: Shadowdecon
-        Rate: 25
-      - Item: Zelunium
-        Rate: 25
+      - Item: Shadowdecon_Ore
+        Rate: 50
+      - Item: Zelunium_Ore
+        Rate: 50
       - Item: Grote_Card
         Rate: 1
         StealProtected: true
@@ -110725,6 +110675,8 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Broken_Needle
         Rate: 2400
       - Item: Needle_Pouch
@@ -110734,11 +110686,9 @@ Body:
       - Item: Ectoplasm
         Rate: 150
       - Item: Shadowdecon_Ore
-        Rate: 150
+        Rate: 50
       - Item: Zelunium_Ore
-        Rate: 150
-      - Item: Zelunium
-        Rate: 25
+        Rate: 50
       - Item: Pierrotzoist_Card
         Rate: 1
         StealProtected: true
@@ -110779,6 +110729,8 @@ Body:
     Modes:
       Mvp: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Ectoplasm
         Rate: 200
       - Item: Yggdrasilberry
@@ -110788,9 +110740,9 @@ Body:
       - Item: Leaf_Of_Yggdrasil
         Rate: 1500
       - Item: Shadowdecon
-        Rate: 1000
+        Rate: 12
       - Item: Zelunium
-        Rate: 1000
+        Rate: 12
       - Item: Death_Witch_Card
         Rate: 1
         StealProtected: true
@@ -112039,8 +111991,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
         StealProtected: true
       - Item: 300211
         Rate: 1
@@ -112083,8 +112037,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
         StealProtected: true
       - Item: 300212
         Rate: 1
@@ -112127,8 +112083,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300213
         Rate: 1
         StealProtected: true
@@ -112170,8 +112128,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300214
         Rate: 1
         StealProtected: true
@@ -112213,8 +112173,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300215
         Rate: 1
         StealProtected: true
@@ -112256,8 +112218,10 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: Burning_Heart
         Rate: 3000
       - Item: 300216
@@ -112306,6 +112270,8 @@ Body:
       StatusImmune: true
       Mvp: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 25731
         Rate: 100
         StealProtected: true
@@ -112354,10 +112320,12 @@ Body:
       CanAttack: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Grasshopper's_Leg
         Rate: 100
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300218
         Rate: 1
         StealProtected: true
@@ -112396,10 +112364,12 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Sticky_Mucus
         Rate: 3000
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: EP18_Ashring_Card
         Rate: 1
         StealProtected: true
@@ -112438,10 +112408,12 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Claw_Of_Wolves
         Rate: 3000
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300220
         Rate: 1
         StealProtected: true
@@ -112480,6 +112452,8 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: Shoot
         Rate: 3000
       - Item: Sticky_Mucus
@@ -112487,7 +112461,7 @@ Body:
       - Item: Root_Of_Maneater
         Rate: 3000
       - Item: 1000405
-        Rate: 50
+        Rate: 5
         StealProtected: true
       - Item: 300221
         Rate: 1
@@ -112527,10 +112501,12 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: BurningFeather
         Rate: 10
       - Item: 1000405
-        Rate: 50
+        Rate: 5
       - Item: 300222
         Rate: 1
         StealProtected: true
@@ -112569,8 +112545,10 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
+      - Item: 1000322
+        Rate: 5
       - Item: 1000405
-        Rate: 50
+        Rate: 5
         StealProtected: true
       - Item: Steel
         Rate: 300
@@ -112860,7 +112838,7 @@ Body:
     WalkSpeed: 300
     AttackDelay: 300
     AttackMotion: 300
-    DamageTaken: 800
+    DamageTaken: 100
     Class: Boss
     Modes:
       CanMove: true
@@ -112913,7 +112891,7 @@ Body:
     AttackDelay: 350
     AttackMotion: 320
     DamageMotion: 480
-    DamageTaken: 800
+    DamageTaken: 100
     Ai: 27
     Modes:
       CanMove: true
@@ -113005,7 +112983,7 @@ Body:
     AttackDelay: 300
     AttackMotion: 250
     DamageMotion: 250
-    DamageTaken: 3500
+    DamageTaken: 1000
     Ai: 21
     Modes:
       CanMove: true
@@ -113186,7 +113164,7 @@ Body:
       - Item: 528
         Rate: 120
       - Item: 1000405
-        Rate: 50
+        Rate: 5
 #  - Id: 21325
 #    AegisName: MD_T_MASTERING
 #  - Id: 21326
@@ -113393,7 +113371,7 @@ Body:
     AttackDelay: 300
     AttackMotion: 200
     DamageMotion: 250
-    DamageTaken: 3500
+    DamageTaken: 100
     Ai: 10
     Modes:
       CanMove: true
@@ -113442,7 +113420,7 @@ Body:
     AttackDelay: 300
     AttackMotion: 250
     DamageMotion: 250
-    DamageTaken: 3500
+    DamageTaken: 100
     Ai: 10
     Modes:
       CanMove: true
@@ -113556,6 +113534,8 @@ Body:
     DamageMotion: 384
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Doom_Slayer
         Rate: 5
       - Item: IL_Twins_Jaw
@@ -113604,6 +113584,8 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sprint_Glove
         Rate: 5
       - Item: Guard
@@ -113648,6 +113630,8 @@ Body:
     DamageMotion: 576
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sprint_Mail
         Rate: 5
       - Item: IL_Twins_Feeler
@@ -113696,6 +113680,8 @@ Body:
     DamageMotion: 576
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Gelerdria
         Rate: 5
       - Item: IL_Twins_Jaw
@@ -113735,6 +113721,8 @@ Body:
     DamageMotion: 1
     Ai: 06
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sprint_Shoes
         Rate: 5
       - Item: Siver_Guard
@@ -113783,6 +113771,8 @@ Body:
     DamageMotion: 432
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Thorn_Staff
         Rate: 5
       - Item: IL_Twins_Hat
@@ -113831,6 +113821,8 @@ Body:
     DamageMotion: 384
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Ancient_Dagger
         Rate: 5
       - Item: IL_Twins_Fang
@@ -113877,6 +113869,8 @@ Body:
     DamageMotion: 384
     Ai: 21
     Drops:
+      - Item: IllusionStone
+        Rate: 5
       - Item: Sprint_Ring
         Rate: 5
       - Item: IL_Twins_Acid
@@ -113945,6 +113939,8 @@ Body:
       - Item: Old_Card_Album
         Rate: 4000
     Drops:
+      - Item: IllusionStone
+        Rate: 50
       - Item: Dea_Staff
         Rate: 300
       - Item: IL_Twins_Acid
@@ -113954,7 +113950,7 @@ Body:
       - Item: IL_Twins_Leg
         Rate: 10000
       - Item: Shadowdecon
-        Rate: 100
+        Rate: 12
       - Item: Shell_Of_Cognition
         Rate: 2000
       - Item: Mother's_Nightmare
