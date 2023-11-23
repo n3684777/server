@@ -3323,6 +3323,7 @@ Body:
       - Item: MV_B_Whip
   - Item: Booster_W_Up_3
     ResultRefine: 13
+    MaximumRefine: 12
     CardsAllowed: true
     TargetItems:
       - Item: IW_B_T_Sword
@@ -3363,6 +3364,8 @@ Body:
       - Item: EC_B_Staff
       - Item: SP_B_Saber
       - Item: SI_B_Saber
+      - Item: SN_B_Wand
+      - Item: SN_B_Dagger
   - Item: E_ILL_Up
     ResultRefine: 10
     MaximumRefine: 9
