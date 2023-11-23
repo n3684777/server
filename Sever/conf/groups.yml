@@ -53,7 +53,6 @@ Body:
       can_trade: true
       can_party: true
       attendance: true
-      # at
   - Id: 1
     Name: Super Player
     # Can do everything Players can and more
@@ -62,46 +61,42 @@ Body:
     Level: 0
     Commands:
       # Informational commands
-      # commands: true
-      # charcommands: true
-      # help: true
-      # rates: true
-      # uptime: true
-      # showdelay: true
-      # exp: true
-      # mobinfo: true
-      # iteminfo: true
-      # whodrops: true
-      # time: true
-      # jailtime: true
-      # hominfo: true
-      # homstats: true
-      # showexp: true
-      # showzeny: true
-      # Feature commands
-      # refresh: true
-      # noask: true
-      # noks: true
-      # alootid: true
-      # autoloottype: true
-      # autotrade: true
-      # request: true
-      # go: true
-      # breakguild: true
-      # channel: true
-      # langtype: true
-      # 
+      commands: true
+      charcommands: true
+      help: true
+      rates: true
+      uptime: true
+      showdelay: true
+      exp: true
       mobinfo: true
-      whereis: true
+      iteminfo: true
       whodrops: true
+      time: true
+      jailtime: true
+      hominfo: true
+      homstats: true
+      showexp: true
+      showzeny: true
+      whereis: true
+      # Feature commands
+      refresh: true
+      noask: true
+      noks: true
       autoloot: true
-      all_skill: true
+      alootid: true
+      autoloottype: true
+      autotrade: true
+      request: true
+      go: true
+      breakguild: true
+      channel: true
+      # langtype: true
     Permissions:
       attendance: false
   - Id: 2
     Name: Support
-    # Inherit:
-    #   Super Player: true
+    Inherit:
+      Super Player: true
     Level: 1
     Commands:
       version: true
@@ -122,8 +117,8 @@ Body:
       view_equipment: true
   - Id: 3
     Name: Script Manager
-    # Inherit:
-    #   Support: true
+    Inherit:
+      Support: true
     Level: 1
     Commands:
       tonpc: true
@@ -138,8 +133,8 @@ Body:
       any_warp: true
   - Id: 4
     Name: Event Manager
-    # Inherit:
-    #   Support: true
+    Inherit:
+      Support: true
     Level: 1
     Commands:
       monster: true
@@ -181,16 +176,16 @@ Body:
   - Id: 5
     Name: VIP
     # Can do everything Players can
-    # Inherit:
-    #   Player: true
+    Inherit:
+      Player: true
     Level: 0
     Commands:
       rates: true
       who: true
   - Id: 10
     Name: Law Enforcement
-    # Inherit:
-    #   Support: true
+    Inherit:
+      Support: true
     Level: 2
     Commands:
       hide: true
