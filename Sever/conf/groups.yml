@@ -78,7 +78,6 @@ Body:
       # homstats: true
       # showexp: true
       # showzeny: true
-      whereis: true
       # Feature commands
       # refresh: true
       # noask: true
@@ -92,11 +91,11 @@ Body:
       # channel: true
       # langtype: true
       # 
-      # mobinfo: true
-      # whereis: true
-      # whodrops: true
-      # autoloot: true
-      # all_skill: true
+      mobinfo: true
+      whereis: true
+      whodrops: true
+      autoloot: true
+      all_skill: true
     Permissions:
       attendance: false
   - Id: 2
