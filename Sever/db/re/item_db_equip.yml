@@ -183068,8 +183068,6 @@ Body:
     Locations:
       Both_Accessory: true
     EquipLevelMin: 1
-    Script: |
-      bonus bStr,2;
     EquipLevelMin: 1 # + getequiprefinerycnt()
     Script: |
       .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(QI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
