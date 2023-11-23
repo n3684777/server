@@ -53,6 +53,13 @@ Body:
       can_trade: true
       can_party: true
       attendance: true
+      autoloot: true
+      mobinfo: true
+      whereis: true
+      autoloot: true
+      whodrops: true
+      all_skill: true
+      # at
   - Id: 1
     Name: Super Player
     # Can do everything Players can and more
