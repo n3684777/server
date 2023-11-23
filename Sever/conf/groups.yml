@@ -48,12 +48,6 @@ Body:
     Commands:
       changedress: true
       resurrect: true
-      autoloot: true
-      mobinfo: true
-      whereis: true
-      autoloot: true
-      whodrops: true
-      all_skill: true
     Permissions:
       # without this basic permissions regular players could not trade or party
       can_trade: true
@@ -98,7 +92,11 @@ Body:
       breakguild: true
       channel: true
       # langtype: true
+      mobinfo: true
+      whereis: true
       autoloot: true
+      whodrops: true
+      all_skill: true
     Permissions:
       attendance: false
   - Id: 2
