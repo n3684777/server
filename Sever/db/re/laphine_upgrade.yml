@@ -3275,7 +3275,7 @@ Body:
       - Item: AC_B_Club
       - Item: HS_T_Sword
       - Item: RC_B_Katar
-      - Item: CA_B_Dagger
+      - Item: CA_B_Katar
       - Item: TB_B_Bow
       - Item: MF_B_Dagger
       - Item: CS_B_Staff
@@ -3288,9 +3288,24 @@ Body:
       - Item: CP_B_Knuckle
       - Item: AS_B_Bow
       - Item: SB_B_Bow
-      - Item: RS_B_Bow
+      - Item: RS_B_Violin
+      - Item: RS_B_Whip
       - Item: MV_B_Violin
       - Item: MV_B_Whip
+      - Item: SP_B_Fox
+      - Item: GB_B_Fox
+      - Item: ML_B_Book
+      - Item: SS_B_Book
+      - Item: FCH_B_Huuma
+      - Item: SN_B_Huuma
+      - Item: DF_B_Revolver
+      - Item: FR_B_Gatling
+      - Item: ES_B_Staff
+      - Item: EC_B_Staff
+      - Item: SP_B_Saber
+      - Item: SI_B_Saber
+      - Item: SN_B_Wand
+      - Item: SN_B_Dagger
   - Item: Booster_W_Up_2
     ResultRefine: 11
     MaximumRefine: 10
@@ -3305,7 +3320,7 @@ Body:
       - Item: AC_B_Club
       - Item: HS_T_Sword
       - Item: RC_B_Katar
-      - Item: CA_B_Dagger
+      - Item: CA_B_Katar
       - Item: TB_B_Bow
       - Item: MF_B_Dagger
       - Item: CS_B_Staff
@@ -3318,9 +3333,24 @@ Body:
       - Item: CP_B_Knuckle
       - Item: AS_B_Bow
       - Item: SB_B_Bow
-      - Item: RS_B_Bow
+      - Item: RS_B_Violin
+      - Item: RS_B_Whip
       - Item: MV_B_Violin
       - Item: MV_B_Whip
+      - Item: SP_B_Fox
+      - Item: GB_B_Fox
+      - Item: ML_B_Book
+      - Item: SS_B_Book
+      - Item: FCH_B_Huuma
+      - Item: SN_B_Huuma
+      - Item: DF_B_Revolver
+      - Item: FR_B_Gatling
+      - Item: ES_B_Staff
+      - Item: EC_B_Staff
+      - Item: SP_B_Saber
+      - Item: SI_B_Saber
+      - Item: SN_B_Wand
+      - Item: SN_B_Dagger
   - Item: Booster_W_Up_3
     ResultRefine: 13
     MaximumRefine: 12
