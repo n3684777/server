@@ -183056,3 +183056,72 @@ Body:
     Refineable: true
     Script: |
       bonus bStr,2; bonus bDex,2; if(BaseLevel>98) { bonus bStr,-5; bonus bDex,-5; }
+  - Id: 900000
+    AegisName: Boyboy_Accessory
+    Name: B大的象徵
+    Buy: 0
+    Weight: 5
+    Defense: 5
+    Slots: 1
+    Type: Armor
+    Weight: 5
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bStr,2;
+    EquipLevelMin: 1 # + getequiprefinerycnt()
+    Script: |
+      .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(QI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
+      .@ra = 5;
+      .@va = 5;
+      .@ms = 500;
+      if(.@allrefine < 55){
+      bonus bAllStats,.@va;
+      bonus bAllTraitStats,.@va;
+      bonus bMaxHPrate,.@ra;
+      bonus bMaxSPrate,.@ra;
+      bonus bWeaponAtkRate,.@ra;
+      bonus bMatkRate,.@ra;
+      bonus bHitRate,.@ra;
+      bonus bCriticalRate,.@ra;
+      bonus bFleeRate,.@ra;
+      bonus bFlee2Rate,.@ra;  	
+      bonus bAspdRate,.@ra;
+      bonus bPAtkRate,.@ra; 
+      bonus bSMatkRate,.@ra;
+      bonus bResRate,.@ra;
+      bonus bMResRate,.@ra;  
+      bonus bHPlusRate,@ra;
+      bonus bCRateRate,.@ra;
+      bonus bShortAtkRate,.@ra;
+      bonus bLongAtkRate,.@ra;
+      bonus bCritAtkRate,.@ra;
+      bonus bNearAtkDef,.@ra;
+      bonus bLongAtkDef,.@ra;
+      bonus bMagicAtkDef,.@ra;
+      bonus bNoWeaponDamage,.@ra;
+      bonus bFixedCast,-(.@ms);
+      bonus bVariableCast,-(.@ms);
+      bonus bDelayrate,.@ra;
+      bonus2 bAddEle,Ele_All,.@ra;
+      bonus2 bSubEle,Ele_All,.@ra;
+      bonus2 bAddRace,RC_All,.@ra;
+      bonus2 bMagicAddRace,RC_All,.@ra;
+      bonus2 bSubRace,RC_All,.@ra;
+      bonus2 bAddClass,Class_All,.@ra;
+      bonus2 bMagicAddClass,Class_All,.@ra;
+      bonus2 bSubClass,Class_All,.@ra;
+      bonus2 bAddSize,Size_All,.@ra;
+      bonus2 bMagicAddSize,Size_All,.@ra;
+      bonus2 bSubSize,Size_All,.@ra;
+      bonus2 bMagicAtkEle,Ele_All,.@ra;
+      bonus2 bIgnoreDefRaceRate,RC_All,.@ra;
+      bonus2 bIgnoreMdefRaceRate,RC_All,.@ra;
+      bonus2 bExpAddRace,RC_All,.@ra;
+      bonus2 bHPDrainRate,.@ra*10,.@ra;
+      bonus2 bSPDrainRate,.@ra*10,.@ra;
+      bonus bShortWeaponDamageReturn,.@ra;
+      bonus bLongWeaponDamageReturn,.@ra;
+      }
+
