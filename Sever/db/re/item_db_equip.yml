@@ -152875,37 +152875,6 @@ Body:
       if(.@r >= 9){bonus5 bAutoSpell,"WL_HELLINFERNO",3,50,BF_WEAPON,1;bonus5 bAutoSpell,"SO_DIAMONDDUST",3,50,BF_WEAPON,1;}
       if(.@r >= 11){bonus5 bAutoSpell,"WL_CHAINLIGHTNING",3,50,BF_WEAPON,1;bonus5 bAutoSpell,"SO_EARTHGRAVE",3,50,BF_WEAPON,1;} 
       }
-      bonus bMatkRate,40;
-      bonus3 bAutoSpell,"MG_FIREBOLT",10,700;
-      bonus3 bAutoSpell,"MG_COLDBOLT",10,700;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",10,700;
-      bonus3 bAutoSpell,"MG_SOULSTRIKE",10,700;
-      bonus3 bAutoSpell,"MG_FIREBALL",10,700;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",10,700;
-      bonus3 bAutoSpell,"MG_THUNDERSTORM",10,700;
-      bonus3 bAutoSpell,"PR_MAGNUS",10,700;
-      bonus3 bAutoSpell,"MG_FROSTDIVER",10,700;
-      bonus3 bAutoSpell,"WZ_METEOR",10,700;
-      bonus3 bAutoSpell,"WZ_WATERBALL",10,700;
-      bonus3 bAutoSpell,"HW_GRAVITATION",10,700;
-      bonus3 bAutoSpell,"HW_NAPALMVULCAN",10,700;
-      bonus3 bAutoSpell,"WZ_VERMILION",10,700;
-      bonus3 bAutoSpell,"AB_ADORAMUS",10,700;
-      bonus3 bAutoSpell,"CD_PETITIO",10,700;
-      bonus3 bAutoSpell,"SO_PSYCHIC_WAVE",5,700;
-      bonus3 bAutoSpell,"SO_VARETYR_SPEAR",10,700;
-      bonus3 bAutoSpell,"SO_EARTHGRAVE",10,700;
-      bonus3 bAutoSpell,"SO_CLOUD_KILL",10,700;
-      bonus3 bAutoSpell,"WL_CHAINLIGHTNING",10,700;
-      bonus3 bAutoSpell,"WL_JACKFROST",10,700;
-      bonus3 bAutoSpell,"WL_EARTHSTRAIN",10,700;
-      bonus3 bAutoSpell,"EM_DIAMOND_STORM",10,700;
-      bonus3 bAutoSpell,"EM_LIGHTNING_LAND",10,700;
-      bonus3 bAutoSpell,"EM_CONFLAGRATION",10,700;
-      bonus3 bAutoSpell,"EM_TERRA_DRIVE",10,700;
-      bonus3 bAutoSpell,"EM_VENOM_SWAMP",10,700;
-      bonus3 bAutoSpell,"AB_VITUPERATUMP",10,700;
-      bonus3 bAutoSpell,"NPC_WIDEWEB",10,700;
   - Id: 480177
     AegisName: C_Clutch_Bouquet
     Name: (服飾)文藝花束
@@ -153518,6 +153487,34 @@ Body:
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
       if(.@r >= 11){bonus bDelayrate,12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
+  - Id: 480291
+    AegisName: Manteau_Of_Guardsman
+    Name: 英雄恩惠斗篷
+    Type: Armor
+    Weight: 20
+    Defense: 0
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+     bonus bMaxHP,3000;
+     bonus bMaxSP,200;
+     if(BaseLevel >= 200)
+     {
+     bonus bSMatk,1+(BaseLevel/10)/200; # 帶修正
+     bonus bRes,7+(BaseLevel/10)/200*5;
+     bonus bMRes,7+(BaseLevel/10)/200*5;
+     bonus bMatk,(.@r/2)*10;
+     bonus bMatkRate,(.@r/3)*2;
+     if(.@r >= 7){bonus bVariableCastrate,-10;}
+     if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
+     if(.@r >= 11){bonus bDelayrate,10;}
+     if(.@r >= 13){bonus2 bMagicAddRace,RC_All,15;}
+     }
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
@@ -183165,8 +183162,8 @@ Body:
       bonus2 bIgnoreDefRaceRate,RC_All,2*.@ra;
       bonus2 bIgnoreMdefRaceRate,RC_All,2*.@ra;
       bonus2 bExpAddRace,RC_All,2*.@ra;
-      bonus2 bHPDrainRate,.@ra*10,2*.@ra;
-      bonus2 bSPDrainRate,.@ra*10,2*.@ra;
+      bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
+      bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
       bonus bShortWeaponDamageReturn,2*.@ra;
       bonus bLongWeaponDamageReturn,2*.@ra;
       }

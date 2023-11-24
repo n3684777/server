@@ -32046,6 +32046,25 @@ Body:
          if (readparam(bLuk)>=108)
              bonus bCritAtkRate,20;
       }
+  - Combos: # 英雄恩惠斗篷
+      - Combo:
+          - Manteau_Of_Guardsman    # 480291
+          - Great_Hero_Boots    # 22238
+    Script: |
+      bonus bFixedCast,-200;
+      bonus bMatk,60;
+  - Combos: # 
+      - Combo:
+          - Manteau_Of_Guardsman    # 480291
+          - Hero_Boots_LT    # 470094
+    Script: |
+      if(getequiprefinerycnt(EQI_SHOES) >= 13){
+      bonus bFixedCast,-200;
+      bonus bMatk,150;
+      bonus bMatkRate,18;
+      bonus bSMatkRate,8;
+      }
+
       
 
       

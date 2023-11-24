@@ -350,8 +350,8 @@ bonus3 bSubEle,e,x,bf;               受到 e 屬性攻擊時, 在 bf 條件下�
 bonus2 bSubDefEle,e,x;               受到 e 屬性的單位攻擊時, 減少物理防禦 x% 的傷害 
 bonus2 bMagicSubDefEle,e,x;		     受到 e 屬性的單位攻擊時, 減少魔法防禦 x% 的傷害
 
-bonus2 bAddRace,r,x;                 物理攻擊 r 種族的單位時, 增加 x% 的傷害 (物理傷害)
-bonus2 bMagicAddRace,r,x;            魔法攻擊 r 種族的單位時, 增加 x% 的傷害 (魔法傷害)
+bonus2 bAddRace,r,x;                 物理攻擊 r 種族的單位時, 增加 x% 的傷害 (種族物理傷害/物理種族傷害) 
+bonus2 bMagicAddRace,r,x;            魔法攻擊 r 種族的單位時, 增加 x% 的傷害 (種族魔法傷害/魔法種族傷害)
 bonus2 bSubRace,r,x;                 受到 r 種族的單位攻擊時, 減少 x% 的傷害
 bonus3 bSubRace,r,x,bf;              受到來自 r 種族的 bf 攻擊條件減少 x% 的傷害, 例：破壞的達納托斯的記憶卡片(#300280)
 
@@ -618,6 +618,17 @@ EQI_ACC_L (7)     - [飾品左]
 EQI_ACC_R (8)     - [飾品右]
 EQI_HEAD_MID (9)  - [頭中]
 EQI_HEAD_LOW (10) - [頭下]
+
+getequiprefinerycnt(EQI_HEAD_TOP) (頭上精煉)
+getequiprefinerycnt(EQI_ARMO)  (鎧甲精煉)
+getequiprefinerycnt(EQI_HAND_L)  (左手精煉)
+getequiprefinerycnt(EQI_HAND_R)	 (右手精煉)
+getequiprefinerycnt(EQI_GARMENT)  (斗篷精煉)
+getequiprefinerycnt(EQI_SHOES)  (鞋子精煉)
+getequiprefinerycnt(EQI_ACC_L)  (飾品左精煉)
+getequiprefinerycnt(EQI_ACC_R)	(飾品右精煉)
+getequiprefinerycnt(EQI_HEAD_MID)  (頭中精煉)
+getequiprefinerycnt(EQI_HEAD_LOW)	(頭下精煉)
 
 skill sk,n; 可使用sk技能n等級
 
