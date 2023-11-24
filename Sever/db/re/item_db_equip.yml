@@ -142790,10 +142790,6 @@ Body:
       bonus bCastrate,-8;
       bonus bDelayrate,-5;
       bonus bFixedCast,-100;
-    EquipScript: |
-      hateffect(HAT_EF_Ghost_Fire,true);
-    UnEquipScript: |
-      hateffect(HAT_EF_Ghost_Fire,false);
   - Id: 430005
     AegisName: C_White_Tiger_Glass
     Name: (服飾)白虎眼鏡
@@ -153140,7 +153136,7 @@ Body:
     ArmorLevel: 1
     View: 131
   - Id: 480192
-    AegisName: 2022RTC_V_Coat4
+    AegisName: 2022RTC_V_Coat_new
     Name: 2022RTC紀念勝利大衣
     Type: Armor
     Weight: 800
