@@ -1,20 +1,20 @@
-uttycty,100,167,4	script	ç¼çŒ´æ¡ƒå…Œæ›å•†	112,{
+uttycty,100,167,4	script	¡¹ ônµU®çÁÊ¶R/§I´« ¡¹	112,{
 	disable_items;
 	end;
 OnInit:
-	setnpcicon getnpcid(0),1026,"ç¼çŒ´æ¡ƒå…Œæ›å•†";
-	waitingroom "â˜… ç¼çŒ´æ¡ƒè³¼è²·/å…Œæ› â˜… ",0;
-	.@r = 5000000;
+	setnpcicon getnpcid(0),1026,"ônµU®ç§I´«ÁÊ¶R°Ó";
+	waitingroom "¡¹ ônµU®çÁÊ¶R/§I´« ¡¹",0;
+
 	tradertype(NST_EXPANDED_BARTER);
 	
-    sellitem(6417,.@r,-1);
-	sellitem(100340,0,-1);  //ä»™å¢ƒéŠç©+13æ­¦å™¨ç²¾ç…‰ç®±
+    sellitem(6417,500000,-1);
+	sellitem(100340,0,-1);  //
     sellitemcurrency(6417,2);
     endsellitem();
     sellitem(100465, 0, -1);	
 	sellitemcurrency(6417,3);
     endsellitem();
-    // å¼·åŒ–çŸ³Iç®±å­
+    // (ªA¹¢)±j¤Æ¥Û½c¤l(©ÜªÓ)
     sellitem(100465, 0, -1);	
 	sellitemcurrency(6417,3);
     endsellitem();
@@ -28,7 +28,7 @@ OnInit:
 	sellitemcurrency(6417,1);
     endsellitem();
     // end
-    // å¼·åŒ–çŸ³IIç®±å­
+    // å¼(ªA¹¢)±j¤Æ¥Û½c¤lII(ÀY¤U)
     sellitem(100501, 0, -1);	
 	sellitemcurrency(6417,1);
     endsellitem();
@@ -41,39 +41,39 @@ OnInit:
     sellitem(100495, 0, -1);	
 	sellitemcurrency(6417,3);
     endsellitem();
-    // å½±å­2.0 (éš¨æ©Ÿ)
+    // ¼v¤l§Ş¯à®M¸Ë½c
     sellitem(100198, 0, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
     //
-    // å½±å­å¥—è£ç®± (éš¨æ©Ÿ)
+    // ¼v¤l®M¸Ë½c
     sellitem(22827, 0, -1);	
 	sellitemcurrency(6417,1);
     endsellitem();
     //
-    // å¤ä»£æ­¦å™¨ç®±
+    // ¥j¥NªZ¾¹½c
     sellitem(23806, 0, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
     //
-    // æ™‚é–“å¥—è£ç®±
+    // ¼v¤l®É¶¡®M¸Ë½c
 	sellitem(100054, 0, -1);	
 	sellitemcurrency(6417,10);
     endsellitem();
-    // æ³¢å£«å°¼äºå…¥å ´å·
+    // ªi4¥§¨È¤J³õ±²
     sellitem(7227, 250000, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
-    // æ­¦å·+19
+    // ªZ±²+19
     sellitem(6864, 0, -1);	
 	sellitemcurrency(6909,100);
     endsellitem();
-    // æ­¦å·+19
+    // ¨¾±²+19
     sellitem(6865, 0, -1);	
 	sellitemcurrency(6909,100);
     endsellitem();
 
-    // å‰¯æœ¬å†·å»å·
+    // °Æ¥»§N«o®ø°£±²
     sellitem(99999, 2000000000, -1);	
 	sellitemcurrency(6417,100);
     endsellitem();

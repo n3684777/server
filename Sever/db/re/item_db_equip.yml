@@ -150960,6 +150960,29 @@ Body:
             }
          }
       }
+  - Id: 470177
+    AegisName: Walk_Of_DarkVoid
+    Name: 虛空陰暗長靴
+    Type: Armor
+    Weight: 10
+    Defense: 10
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bAllStats,2;
+      skill TF_HIDING,1;
+      bonus2 bSubRace,RC_All,2; 
+      bonus bAspdRate,(.@r/3)*3;
+      if(.@r >= 7){bonus bMaxHP,5;bonus bMaxSP,5;}
+      if(.@r >= 10){bonus2 bSubSize,Size_All,10;}
+      if(.@r >= 12){skill RG_RAID,1;bonus2 bSkillCooldown,RG_RAID,(eaclass()&EAJL_THIRD && BaseJob == Job_Rogue?0:60000);}
+      if(.@r >= 13){bonus2 bSubRace,RC_All,3;}
   - Id: 470178
     AegisName: aegis_470178
     Name: Level 1 Sandals    # !todo check english name
@@ -151007,6 +151030,29 @@ Body:
          bonus bAtkRate,25;
          bonus bMatkRate,25;
       }
+  - Id: 470187
+    AegisName: Leo_Shoes_J
+    Name: 猛獸領地戰靴
+    Type: Armor
+    Weight: 20
+    Defense: 0
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,(.@r/2)*10;
+      bonus2 bAddRace,RC_Angel,(.@r/3)*4;
+      bonus2 bAddRace,RC_Demon,(.@r/3)*4;
+      bonus2 bAddRace,RC_Dragon,(.@r/3)*4;
+      bonus bAtkRate,(.@r >= 7?10:0);
+      bonus bFixedCast,(.@r >= 9?-500:0);
+      if(.@r >= 11){bonus bShortAtkRate,10;bonus bLongAtkRate,10;}
+
+      if(.@r >= 13){}
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -183348,6 +183394,7 @@ Body:
     Defense: 5
     Slots: 1
     Type: Armor
+    ArmorLevel: 1
     Weight: 5
     Locations:
       Both_Accessory: true

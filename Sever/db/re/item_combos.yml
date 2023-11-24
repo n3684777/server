@@ -31914,7 +31914,7 @@ Body:
     Script: |
       .@r = getrefine();
       if(.@r>=7){bonus bMaxHPRate,70;bonus2 bAddSize,Size_All,25; bonus2 bMagicAddSize,Size_All,25;bonus2 bSubSize,Size_Medium,15;bonus2 bSubSize,Size_Large,15;bonus2 bResEff,Eff_Freeze,10000;}
-  - Combos: #   席琳衣
+  - Combos: #   席�?�衣
       - Combo:
           - Celin_Cloth # 450135
           - XM_Celine_Kimi_Card # 31023
@@ -31949,7 +31949,7 @@ Body:
       bonus bMatk,30;
       .@r = getequiprefinerycnt(EQI_HAND_L);
       if(.@r >=12){bonus2 bSkillCooldown,AB_ADORAMUS,500;bonus2 bIgnoreMdefRaceRate,RC_Demon,15;bonus2 bIgnoreMdefRaceRate,RC_Undead,15;}
-  - Combos: # 鬥氣纏身
+  - Combos: # 鬥氣�?�?
       - Combo:
           - Phoenix_Muffler # 480149
           - Old_Blazing_Soul # 18979
@@ -31959,7 +31959,7 @@ Body:
       bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",.@ht*2;
       bonus2 bSkillCooldown,"SR_EARTHSHAKER",(.@ht/2)*100; 
       bonus2 bSkillCooldown,"SR_RAMPAGEBLASTER",(.@ht/2)*100; 
-  - Combos: # 鬥氣纏身
+  - Combos: # 鬥氣�?�?
       - Combo:
           - Phoenix_Muffler2 # 480149
           - Ifrit_Card # 4430
@@ -31971,8 +31971,8 @@ Body:
       bonus2 bSubEle,Ele_Fire,50;
       bonus2 bSubEle,Ele_Water,-30;
       skill "MO_EXPLOSIONSPIRITS",5;
-    #   *autobonus <bonus script>,1000,10000{,<flag>,{<other script>}}; 10秒爆氣150atk 未實裝
-  - Combos: # 魔鬼惡火斗篷
+    #   *autobonus <bonus script>,1000,10000{,<flag>,{<other script>}}; 10�????�?150atk ??�實�?
+  - Combos: # �?鬼�?��?��??�?
       - Combo:
           - Devil_Flame_Manteau_TW # 480154
           - Rutilus_Stick_OS # 26151
@@ -31985,7 +31985,7 @@ Body:
       bonus2 bSkillCooldown,"WL_HELLINFERNO",1000;
       bonus2 bSkillCooldown,"WL_CRIMSONROCK",1000;
       }
-  - Combos: # 念動風神斗篷
+  - Combos: # 念�??風�?????�?
       - Combo:
           - MD_Set2_Hood # 480242
           - Ceila_Card # 4568
@@ -31993,7 +31993,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_GARMENT);
       bonus2 bMagicAtkEle,Ele_Wind,10+(.@r/2)*3;
       if(.@r >= 12){bonus5 bAutoSpell,"SA_VIOLENTGALE",3,50,BF_MAGIC,0;}
-  - Combos: # 念動風神斗篷
+  - Combos: # 念�??風�?????�?
       - Combo:
           - MD_Set2_Hood # 480242
           - Katrinn_Card # 4366
@@ -32001,7 +32001,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus2 bMagicAtkEle,Ele_Ghost,10+(.@r/2)*3;
       if(.@r >= 12){bonus2 bMagicAddSize,Size_All,15;}
-  - Combos: # 曼妙自然之力斗篷
+  - Combos: # ??��????��?��????????�?
       - Combo:
           - Pisces_Manteau_J # 480242
           - Ep172_Bh_Staff # 640005
@@ -32012,7 +32012,7 @@ Body:
       bonus2 bSkillAtk,"WL_EARTHSTRAIN",(.@r/2)*10;
       bonus2 bSkillAtk,"WL_JACKFROST",(.@r/2)*10;
       if(.@r >= 13){bonus2 bSkillCooldown,"WL_EARTHSTRAIN",3000;bonus2 bSkillCooldown,"WL_JACKFROST",3000;}      
-  - Combos: # 曼妙自然之力斗篷
+  - Combos: # ??��????��?��????????�?
       - Combo:
           - Pisces_Manteau_J # 480242
           - Ep172_1h_Book2 # 540005
@@ -32024,7 +32024,7 @@ Body:
       bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",.@r*10;
       bonus2 bSkillAtk,"MG_COLDBOLT",.@r*10;
       if(.@r >= 13){bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",5,70,BF_WEAPON,1;}
-  - Combos: # 超越斗靴LT套
+  - Combos: # �?�??????�LT�?
       - Combo:
           - Temporal_Boots_LT_TW    # 470183
           - Temporal_Cape_TW_LT    # 480312
@@ -32046,7 +32046,7 @@ Body:
          if (readparam(bLuk)>=108)
              bonus bCritAtkRate,20;
       }
-  - Combos: # 英雄恩惠斗篷
+  - Combos: # ??��????��?????�?
       - Combo:
           - Manteau_Of_Guardsman2    # 480291
           - Great_Hero_Boots    # 22238
@@ -32066,15 +32066,15 @@ Body:
       }
   - Combos:
       - Combo:
-          - Zombie_Slaughter_Card   # 4435      屠殺腐屍卡片
-          - Corruption_Boots        # 470129    墮落的呻吟魔靴
+          - Zombie_Slaughter_Card   # 4435      �?殺�??�???��??
+          - Corruption_Boots        # 470129    墮�?��????��??�????
     Script: |
       bonus bMatkRate,5;
       bonus2 bMagicAddEle,Ele_All,5;
   - Combos:
       - Combo:
-          - Fallen_Bishop_Card      # 4441      墮落大神官卡片
-          - Corruption_Boots        # 470129    墮落的呻吟魔靴
+          - Fallen_Bishop_Card      # 4441      墮�?�大�?�???��??
+          - Corruption_Boots        # 470129    墮�?��????��??�????
     Script: |
       bonus bSMatk,10;
       bonus2 bMagicAddEle,Ele_All,10;
@@ -32082,24 +32082,24 @@ Body:
       bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
   - Combos:
       - Combo:
-          - Emerald_Ring            # 28573     翡翠戒指
-          - EC_Boots_TW             # 470098    翡翠玉結晶戰靴
+          - Emerald_Ring            # 28573     翡�????????
+          - EC_Boots_TW             # 470098    翡�?????�???��?��??
     Script: |
       bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-1000;
       bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
       bonus2 bSkillAtk,"RA_ARROWSTORM",40;
   - Combos:
       - Combo:
-          - Emerald_Earring_TW      # 28536     翡翠耳環
-          - EC_Boots_TW             # 470098    翡翠玉結晶戰靴
+          - Emerald_Earring_TW      # 28536     翡�????��??
+          - EC_Boots_TW             # 470098    翡�?????�???��?��??
     Script: |
       bonus2 bSkillCooldown,"CG_ARROWVULCAN",-700;
       bonus2 bSkillAtk,"CG_ARROWVULCAN",20;
       bonus bBaseAtk,20*getskilllv("CG_ARROWVULCAN");
   - Combos:
       - Combo:
-          - CannonConverter_TW      # 32259     加農改造器
-          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+          - CannonConverter_TW      # 32259     ???農�?��?????
+          - Scrap_Remodel_Shoes_TW  # 470120    �?械�??????????��?????
     Script: |
       bonus bDelayrate,-8;
       bonus2 bSkillAtk,"NC_ARMSCANNON",20;
@@ -32108,8 +32108,8 @@ Body:
       autobonus3 "{ bonus bLongAtkRate,30; }",30,10000,"GN_CARTCANNON";
   - Combos:
       - Combo:
-          - Waste_Stove_Card        # 4332      廢鐵暖爐卡片
-          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+          - Waste_Stove_Card        # 4332      廢�?��???????��??
+          - Scrap_Remodel_Shoes_TW  # 470120    �?械�??????????��?????
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus bBaseAtk,50;
@@ -32121,8 +32121,8 @@ Body:
          bonus bBaseAtk,80;
   - Combos:
       - Combo:
-          - Rsx_0806_Card           # 4342      RSX-0806卡片
-          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+          - Rsx_0806_Card           # 4342      RSX-0806??��??
+          - Scrap_Remodel_Shoes_TW  # 470120    �?械�??????????��?????
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus bBaseAtk,100;
@@ -32134,8 +32134,8 @@ Body:
          bonus bBaseAtk,120;
   - Combos:
       - Combo:
-          - Fake_Alloy_Pot          # 460030    仿生鋁合金花盆
-          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+          - Fake_Alloy_Pot          # 460030    仿�?????????????��??
+          - Scrap_Remodel_Shoes_TW  # 470120    �?械�??????????��?????
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_L)+getequiprefinerycnt(EQI_SHOES);
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist) {
@@ -32151,8 +32151,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Lapine_Shield           # 2198      守護精靈神盾
-          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+          - Lapine_Shield           # 2198      �?護精???�????
+          - Lapine_Pray_Shoes       # 470086    �?護精???�?禱�?????
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
       bonus bDelayrate,-3;
@@ -32160,31 +32160,31 @@ Body:
       bonus bFixedCast,-100*(.@r/2);
   - Combos:
       - Combo:
-          - KarduiEar               # 5966      柯杜威之耳
-          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+          - KarduiEar               # 5966      ??��??�?�????
+          - Lapine_Pray_Shoes       # 470086    �?護精???�?禱�?????
     Script: |
       bonus bMatk,30;
       bonus2 bSkillCooldown,"WL_COMET",-20000;
   - Combos:
       - Combo:
-          - Tree_Of_Sprout_JP       # 19299     神木嫩葉
-          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+          - Tree_Of_Sprout_JP       # 19299     �???�嫩???
+          - Lapine_Pray_Shoes       # 470086    �?護精???�?禱�?????
     Script: |  
       autobonus "{ bonus bInt,150; bonus2 bSPLossRate,100,1000; }",10,1000,BF_MAGIC;
   - Combos:
       - Combo:
-          - Nidhogg_Shadow_Card     # 4456      尼德霍格幻影卡
-          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+          - Nidhogg_Shadow_Card     # 4456      尼德?????�幻影�??
+          - Lapine_Pray_Shoes       # 470086    �?護精???�?禱�?????
     Script: |
       bonus2 bMagicAddClass,Class_Boss,40;
       bonus2 bSubEle,Ele_All,20;
   - Combos:
       - Combo:
-          - New_Wave_Sunglasses     # 18813     新浪潮眼鏡
-          - Ghost_Fire              # 420199    幽魅火球
+          - New_Wave_Sunglasses     # 18813     ??�浪潮�?��??
+          - Ghost_Fire              # 420199    幽�????��??
       - Combo:
-          - New_Wave_Sunglasses_    # 19181     新浪潮眼鏡[1]
-          - Ghost_Fire              # 420199    幽魅火球
+          - New_Wave_Sunglasses_    # 19181     ??�浪潮�?��?�[1]
+          - Ghost_Fire              # 420199    幽�????��??
     Script: |
       .@pow = readparam(bPow);
       .@sta = readparam(bSta);
@@ -32202,11 +32202,11 @@ Body:
       bonus bFixedCast, -50*(.@crt/18);
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
-          - Rutilus_Stick_OS        # 26151     紅魔鬼法杖-OS
+          - Devil_Flame_Manteau_LT  # 480399    �?鬼�?��?��??�?-LT
+          - Rutilus_Stick_OS        # 26151     �?�?鬼�?????-OS
       - Combo:
-          - Rutilus_Stick_AD        # 550075    紅魔鬼法杖-OSAD
-          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
+          - Rutilus_Stick_AD        # 550075    �?�?鬼�?????-OSAD
+          - Devil_Flame_Manteau_LT  # 480399    �?鬼�?��?��??�?-LT
     Script: |
       .@r = getrefine();
       .@r_weapon = getequiprefinerycnt(EQI_HAND_R);
@@ -32220,14 +32220,14 @@ Body:
       }
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_TW  # 480154    魔鬼惡火斗篷
-          - Evil_Purgatory_Ring     # 490472    惡火煉獄戒
+          - Devil_Flame_Manteau_TW  # 480154    �?鬼�?��?��??�?
+          - Evil_Purgatory_Ring     # 490472    ??��?��????????
     Script: |
       bonus2 bMagicAtkEle,ELE_ALL,8;
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
-          - Evil_Purgatory_Ring     # 490472    惡火煉獄戒
+          - Devil_Flame_Manteau_LT  # 480399    �?鬼�?��?��??�?-LT
+          - Evil_Purgatory_Ring     # 490472    ??��?��????????
     Script: |
       .@g = getenchantgrade();
       bonus2 bMagicAtkEle,ELE_ALL,8;
@@ -32238,3 +32238,20 @@ Body:
       		bonus2 bSkillAtk,AG_FLORAL_FLARE_ROAD,15;
       	}
       }
+  - Combos:
+      - Combo:
+          - Leo_Shoes_J  # 470187
+          - Phoenix_Muffler2     # 480149
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      bonus2 bAddClass,Class_Boss,12;
+      bonus2 bSkillCooldown,SR_HOWLINGOFLION,-3000+(.@r >= 12?-5000:0);
+      bonus2 bSkillAtk,SR_HOWLINGOFLION,(.@r/2)*20;
+  - Combos:
+      - Combo:
+          - Leo_Shoes_J  # 470187
+          - Eddga_Card     # 4123
+    Script: |
+      bonus2 bAddClass,Class_Boss,30;
+      bonus2 bSkillCooldown,SR_TIGERCANNON,-500;
+      
