@@ -153505,7 +153505,7 @@ Body:
       bonus bMaxSP,200;
       if(BaseLevel >= 200)
       {
-      bonus bSMatk,1+(BaseLevel/10)/200; # 帶修正
+      bonus bSMatk,1+(BaseLevel/10)/200;
       bonus bRes,7+(BaseLevel/10)/200*5;
       bonus bMRes,7+(BaseLevel/10)/200*5;
       bonus bMatk,(.@r/2)*10;
