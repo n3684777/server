@@ -32064,7 +32064,177 @@ Body:
       bonus bMatkRate,18;
       bonus bSMatkRate,8;
       }
-
-      
-
-      
+  - Combos:
+      - Combo:
+          - Zombie_Slaughter_Card   # 4435      屠殺腐屍卡片
+          - Corruption_Boots        # 470129    墮落的呻吟魔靴
+    Script: |
+      bonus bMatkRate,5;
+      bonus2 bMagicAddEle,Ele_All,5;
+  - Combos:
+      - Combo:
+          - Fallen_Bishop_Card      # 4441      墮落大神官卡片
+          - Corruption_Boots        # 470129    墮落的呻吟魔靴
+    Script: |
+      bonus bSMatk,10;
+      bonus2 bMagicAddEle,Ele_All,10;
+      bonus2 bSkillAtk,"CD_FRAMEN",15;
+      bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
+  - Combos:
+      - Combo:
+          - Emerald_Ring            # 28573     翡翠戒指
+          - EC_Boots_TW             # 470098    翡翠玉結晶戰靴
+    Script: |
+      bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-1000;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
+      bonus2 bSkillAtk,"RA_ARROWSTORM",40;
+  - Combos:
+      - Combo:
+          - Emerald_Earring_TW      # 28536     翡翠耳環
+          - EC_Boots_TW             # 470098    翡翠玉結晶戰靴
+    Script: |
+      bonus2 bSkillCooldown,"CG_ARROWVULCAN",-700;
+      bonus2 bSkillAtk,"CG_ARROWVULCAN",20;
+      bonus bBaseAtk,20*getskilllv("CG_ARROWVULCAN");
+  - Combos:
+      - Combo:
+          - CannonConverter_TW      # 32259     加農改造器
+          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+    Script: |
+      bonus bDelayrate,-8;
+      bonus2 bSkillAtk,"NC_ARMSCANNON",20;
+      bonus2 bSkillAtk,"GN_CARTCANNON",20;
+      autobonus3 "{ bonus bLongAtkRate,30; }",30,10000,"NC_ARMSCANNON";
+      autobonus3 "{ bonus bLongAtkRate,30; }",30,10000,"GN_CARTCANNON";
+  - Combos:
+      - Combo:
+          - Waste_Stove_Card        # 4332      廢鐵暖爐卡片
+          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus bBaseAtk,50;
+      bonus2 bSubSize,Size_Medium,8;
+      bonus2 bSubSize,Size_Large,8;
+      bonus bLongAtkRate,4*(.@r/3);
+      bonus bShortAtkRate,4*(.@r/3);
+      if (BaseJob == Job_Merchant)
+         bonus bBaseAtk,80;
+  - Combos:
+      - Combo:
+          - Rsx_0806_Card           # 4342      RSX-0806卡片
+          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus bBaseAtk,100;
+      bonus2 bSubSize,Size_Medium,10;
+      bonus2 bSubSize,Size_Large,10;
+      bonus bLongAtkRate,4*(.@r/2);
+      bonus bShortAtkRate,4*(.@r/2);
+      if (BaseJob == Job_Merchant)
+         bonus bBaseAtk,120;
+  - Combos:
+      - Combo:
+          - Fake_Alloy_Pot          # 460030    仿生鋁合金花盆
+          - Scrap_Remodel_Shoes_TW  # 470120    機械鋁合金改造靴
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_L)+getequiprefinerycnt(EQI_SHOES);
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist) {
+         bonus2 bAddSize,Size_All,3*(.@r/4);
+         bonus bLongAtkRate,5*(.@r/6);
+         bonus bShortAtkRate,5*(.@r/6);
+         if (.@r>=23) {
+             bonus bNoWalkDelay;
+             bonus bMaxHPrate,-15;
+             bonus3 bAutoSpellWhenHit,"CR_ACIDDEMONSTRATION",max(getskilllv("CR_ACIDDEMONSTRATION"),1),400;
+             bonus3 bAutoSpellWhenHit,"GN_SPORE_EXPLOSION",max(getskilllv("GN_SPORE_EXPLOSION"),1),300;
+         }
+      }
+  - Combos:
+      - Combo:
+          - Lapine_Shield           # 2198      守護精靈神盾
+          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHOES);
+      bonus bDelayrate,-3;
+      bonus bAspdRate,10;
+      bonus bFixedCast,-100*(.@r/2);
+  - Combos:
+      - Combo:
+          - KarduiEar               # 5966      柯杜威之耳
+          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+    Script: |
+      bonus bMatk,30;
+      bonus2 bSkillCooldown,"WL_COMET",-20000;
+  - Combos:
+      - Combo:
+          - Tree_Of_Sprout_JP       # 19299     神木嫩葉
+          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+    Script: |  
+      autobonus "{ bonus bInt,150; bonus2 bSPLossRate,100,1000; }",10,1000,BF_MAGIC;
+  - Combos:
+      - Combo:
+          - Nidhogg_Shadow_Card     # 4456      尼德霍格幻影卡
+          - Lapine_Pray_Shoes       # 470086    守護精靈祈禱之靴
+    Script: |
+      bonus2 bMagicAddClass,Class_Boss,40;
+      bonus2 bSubEle,Ele_All,20;
+  - Combos:
+      - Combo:
+          - New_Wave_Sunglasses     # 18813     新浪潮眼鏡
+          - Ghost_Fire              # 420199    幽魅火球
+      - Combo:
+          - New_Wave_Sunglasses_    # 19181     新浪潮眼鏡[1]
+          - Ghost_Fire              # 420199    幽魅火球
+    Script: |
+      .@pow = readparam(bPow);
+      .@sta = readparam(bSta);
+      .@wis = readparam(bWis);
+      .@spl = readparam(bSpl);
+      .@con = readparam(bCon);
+      .@crt = readparam(bCrt);
+      bonus2 bAddRace,RC_ALL, 7*(.@pow/18);
+      bonus bBaseAtk, 60*(.@sta/18);
+      bonus bMatk, 60*( .@wis/18 );
+      bonus2 bMagicAddRace,RC_ALL, 7*(.@spl/18);
+      bonus bAtkRate, 4*(.@con/18);
+      bonus bMatkRate, 4*(.@con/18);
+      bonus bCritAtkRate, 7*(.@crt/18);
+      bonus bFixedCast, -50*(.@crt/18);
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
+          - Rutilus_Stick_OS        # 26151     紅魔鬼法杖-OS
+      - Combo:
+          - Rutilus_Stick_AD        # 550075    紅魔鬼法杖-OSAD
+          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
+    Script: |
+      .@r = getrefine();
+      .@r_weapon = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bMagicAtkEle,ELE_FIRE,15;
+      bonus2 bMagicAtkEle,ELE_DARK,15;
+      bonus2 bSkillAtk,WL_HELLINFERNO,20*(.@r_weapon/3);
+      bonus2 bSkillAtk,WL_CRIMSONROCK,20*(.@r_weapon/3);
+      if (.@r_weapon >= 13){
+      	bonus2 bSkillCooldown,WL_HELLINFERNO,-2000;
+      	bonus2 bSkillCooldown,WL_CRIMSONROCK,-2000;
+      }
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_TW  # 480154    魔鬼惡火斗篷
+          - Evil_Purgatory_Ring     # 490472    惡火煉獄戒
+    Script: |
+      bonus2 bMagicAtkEle,ELE_ALL,8;
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_LT  # 480399    魔鬼惡火斗篷-LT
+          - Evil_Purgatory_Ring     # 490472    惡火煉獄戒
+    Script: |
+      .@g = getenchantgrade();
+      bonus2 bMagicAtkEle,ELE_ALL,8;
+      if (.@g >= ENCHANTGRADE_B) {
+      	bonus2 bMagicAddSize,Size_All,15;
+      	if (.@g >= ENCHANTGRADE_A) {
+      		bonus2 bSkillAtk,EM_CONFLAGRATION,15;
+      		bonus2 bSkillAtk,AG_FLORAL_FLARE_ROAD,15;
+      	}
+      }
