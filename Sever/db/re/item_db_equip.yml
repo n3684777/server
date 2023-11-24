@@ -153135,8 +153135,8 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 131
-  - Id: 4801920
-    AegisName: 2022RTC_V_Coat_new
+  - Id: 480192
+    AegisName: RTC_V_Coat4
     Name: 2022RTC紀念勝利大衣
     Type: Armor
     Weight: 800
