@@ -153488,7 +153488,7 @@ Body:
       if(.@r >= 11){bonus bDelayrate,12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
   - Id: 480291
-    AegisName: Manteau_Of_Guardsman
+    AegisName: Manteau_Of_Guardsman2
     Name: 英雄恩惠斗篷
     Type: Armor
     Weight: 20
