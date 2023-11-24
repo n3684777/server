@@ -32212,8 +32212,8 @@ Body:
       .@r_weapon = getequiprefinerycnt(EQI_HAND_R);
       bonus2 bMagicAtkEle,ELE_FIRE,15;
       bonus2 bMagicAtkEle,ELE_DARK,15;
-      bonus2 bSkillAtk,WL_HELLINFERNO,20*(.@r_weapon/3);
-      bonus2 bSkillAtk,WL_CRIMSONROCK,20*(.@r_weapon/3);
+      bonus2 bSkillAtk,"WL_HELLINFERNO",20*(.@r_weapon/3);
+      bonus2 bSkillAtk,"WL_CRIMSONROCK",20*(.@r_weapon/3);
       if (.@r_weapon >= 13){
       	bonus2 bSkillCooldown,WL_HELLINFERNO,-2000;
       	bonus2 bSkillCooldown,WL_CRIMSONROCK,-2000;
@@ -32234,8 +32234,8 @@ Body:
       if (.@g >= ENCHANTGRADE_B) {
       	bonus2 bMagicAddSize,Size_All,15;
       	if (.@g >= ENCHANTGRADE_A) {
-      		bonus2 bSkillAtk,EM_CONFLAGRATION,15;
-      		bonus2 bSkillAtk,AG_FLORAL_FLARE_ROAD,15;
+      		bonus2 bSkillAtk,"EM_CONFLAGRATION",15;
+      		bonus2 bSkillAtk,"AG_FLORAL_FLARE_ROAD",15;
       	}
       }
   - Combos:
@@ -32245,13 +32245,13 @@ Body:
     Script: |
       .@r = getequiprefinerycnt(EQI_GARMENT);
       bonus2 bAddClass,Class_Boss,12;
-      bonus2 bSkillCooldown,SR_HOWLINGOFLION,-3000+(.@r >= 12?-5000:0);
-      bonus2 bSkillAtk,SR_HOWLINGOFLION,(.@r/2)*20;
+      bonus2 bSkillCooldown,"SR_HOWLINGOFLION",-3000+(.@r >= 12?-5000:0);
+      bonus2 bSkillAtk,"SR_HOWLINGOFLION",(.@r/2)*20;
   - Combos:
       - Combo:
           - Leo_Shoes_J  # 470187
           - Eddga_Card     # 4123
     Script: |
       bonus2 bAddClass,Class_Boss,30;
-      bonus2 bSkillCooldown,SR_TIGERCANNON,-500;
+      bonus2 bSkillCooldown,"SR_TIGERCANNON",-500;
       

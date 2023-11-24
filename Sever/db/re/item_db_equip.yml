@@ -150981,7 +150981,7 @@ Body:
       bonus bAspdRate,(.@r/3)*3;
       if(.@r >= 7){bonus bMaxHP,5;bonus bMaxSP,5;}
       if(.@r >= 10){bonus2 bSubSize,Size_All,10;}
-      if(.@r >= 12){skill RG_RAID,1;bonus2 bSkillCooldown,RG_RAID,(eaclass()&EAJL_THIRD && BaseJob == Job_Rogue?0:60000);}
+      if(.@r >= 12){skill "RG_RAID",1;bonus2 bSkillCooldown,"RG_RAID",(eaclass()&EAJL_THIRD && BaseJob == Job_Rogue?0:60000);}
       if(.@r >= 13){bonus2 bSubRace,RC_All,3;}
   - Id: 470178
     AegisName: aegis_470178
