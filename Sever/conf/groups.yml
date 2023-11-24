@@ -228,7 +228,7 @@ Body:
       can_trade: true
       can_party: true
       command_enable: true
-      # all_skill: true
+      all_skill: true
       all_equipment: true
       skill_unconditional: true
       use_check: true

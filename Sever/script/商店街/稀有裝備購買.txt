@@ -83,7 +83,7 @@ OnInit:
 	sellitem(480189,.@p,-1);
 	//sellitem(480192,.@p,-1); //rtc2022披肩有顯示問題
 	sellitem(420199,.@p,-1);
-	sellitem(480399,.@p,-1);
+	//sellitem(480399,.@p,-1); // lt惡火披
 	sellitem(490472,.@p,-1);
 	
 
