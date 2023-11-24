@@ -4,10 +4,10 @@ uttycty,100,167,4	script	獼猴桃兌換商	112,{
 OnInit:
 	setnpcicon getnpcid(0),1026,"獼猴桃兌換商";
 	waitingroom "★ 獼猴桃購買/兌換 ★ ",0;
-	
+	.@r = 5000000;
 	tradertype(NST_EXPANDED_BARTER);
 	
-    sellitem(6417,500000,-1);
+    sellitem(6417,.@r,-1);
 	sellitem(100340,0,-1);  //仙境遊玩+13武器精煉箱
     sellitemcurrency(6417,2);
     endsellitem();
