@@ -153501,20 +153501,20 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-     bonus bMaxHP,3000;
-     bonus bMaxSP,200;
-     if(BaseLevel >= 200)
-     {
-     bonus bSMatk,1+(BaseLevel/10)/200; # 帶修正
-     bonus bRes,7+(BaseLevel/10)/200*5;
-     bonus bMRes,7+(BaseLevel/10)/200*5;
-     bonus bMatk,(.@r/2)*10;
-     bonus bMatkRate,(.@r/3)*2;
-     if(.@r >= 7){bonus bVariableCastrate,-10;}
-     if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
-     if(.@r >= 11){bonus bDelayrate,10;}
-     if(.@r >= 13){bonus2 bMagicAddRace,RC_All,15;}
-     }
+      bonus bMaxHP,3000;
+      bonus bMaxSP,200;
+      if(BaseLevel >= 200)
+      {
+      bonus bSMatk,1+(BaseLevel/10)/200; # 帶修正
+      bonus bRes,7+(BaseLevel/10)/200*5;
+      bonus bMRes,7+(BaseLevel/10)/200*5;
+      bonus bMatk,(.@r/2)*10;
+      bonus bMatkRate,(.@r/3)*2;
+      if(.@r >= 7){bonus bVariableCastrate,-10;}
+      if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
+      if(.@r >= 11){bonus bDelayrate,10;}
+      if(.@r >= 13){bonus2 bMagicAddRace,RC_All,15;}
+      }
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
