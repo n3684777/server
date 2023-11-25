@@ -32833,3 +32833,32 @@ Body:
       bonus bPAtk,5;
       bonus bSMatk,5;
       bonus2 bExpAddRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Oro_Shoes
+          - Orleans_Necklace
+    Script: |
+      bonus bVariableCastrate,-10;
+      bonus bFixedCast,-100;
+  - Combos:
+      - Combo:
+          - Oro_Shoes
+          - Orleans_Server
+    Script: |
+      bonus
+      bonus bFixedCast,-100;
+      bonus2 bSubEle,Ele_All,10;
+  - Combos:
+      - Combo:
+          - Oro_Shoes
+          - Orleans_Gown
+    Script: |
+      bonus bFixedCast,-200;
+      bonus bMatk,100;
+  - Combos:
+      - Combo:
+          - Oro_Shoes
+          - Orleans_Glove
+    Script: |
+      bonus bFixedCast,-100;
+      bonus bVariableCastrate,-10;

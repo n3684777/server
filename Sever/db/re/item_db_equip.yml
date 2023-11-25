@@ -149010,6 +149010,25 @@ Body:
          bonus bMaxHPrate,10;
          bonus bMaxSPrate,10;
       }
+  - Id: 470029
+    AegisName: Oro_Shoes
+    Name: 歐羅萊昂的廚靴
+    Type: Armor
+    Weight: 300
+    Defense: 25
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bDex,3+(.@r/3)*2;
+      bonus bFixedCastrate,-100+(.@r*(-100))/3;
+      bonus2 bSubEle,Ele_All,10;
+      bonus bVariableCastrate,(.@r/3)*(-5); 
   - Id: 470030
     AegisName: Discord_Particles_Shoes
     Name: (JRO)不和諧的思念體長靴
