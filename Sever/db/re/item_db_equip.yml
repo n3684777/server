@@ -150693,6 +150693,35 @@ Body:
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,7;
       }
+  - Id: 470127
+    AegisName: Shoes_Of_Judex
+    Name: 深紅魔術之靴
+    Type: Armor
+    Weight: 300
+    Defense: 10
+    Slots: 1
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Trade:
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,15;
+      bonus bAtkRate,5+(.@r/2);
+      bonus bMatkRate,5+(.@r/2);
+      bonus bLongAtkDef,5;
+      bonus2 bSubEle,Ele_Neutral,5;
+      if(.@r >= 11){
+      bonus2 bSubEle,Ele_Water,10;
+      bonus2 bSubEle,Ele_Wind,10;
+      bonus2 bSubEle,Ele_Earth,10;
+      bonus2 bSubEle,Ele_Fire,10;
+      }
+      if(.@r >= 13){
+      bonus bFixedCastRate,-600;
+      bonus bDelayrate,6;}
   - Id: 470129
     AegisName: Corruption_Boots
     Name: 墮落的呻吟魔靴
@@ -153223,7 +153252,7 @@ Body:
     ArmorLevel: 1
     View: 131
   - Id: 480192
-    AegisName: RTC_V_Coat4
+    AegisName: 2022RTC_V_Coat4
     Name: 2022RTC紀念勝利大衣
     Type: Armor
     Weight: 800
@@ -155008,6 +155037,24 @@ Body:
          bonus2 bSkillUseSP,"SP_CURSEEXPLOSION",25;
          bonus2 bSkillCooldown,"SP_CURSEEXPLOSION",-500;
       }
+  - Id: 490103
+    AegisName: Garnet_Pendant_TW
+    Name: 深紅寶石結晶之墜
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Defense: 10
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bMdef,15;
+      bonus2 bSubEle,Ele_Neutral,5; 
+      bonus bLongAtkDef,5;
+      if(eaclass()&EAJL_THIRD && BaseJob != Job_Wizard){skill "WL_RECOGNIZEDSPELL",1;}
+      bonus2 bSkillCooldown,"WL_RECOGNIZEDSPELL",(eaclass()&EAJL_THIRD && BaseJob == Job_Wizard?0:120000);
+      bonus2 bSkillUseSP,"WL_RECOGNIZEDSPELL",(eaclass()&EAJL_THIRD && BaseJob == Job_Wizard?0:100);
   - Id: 490104
     AegisName: Ring_Of_Phoenix
     Name: Ring of Phoenix
@@ -156135,6 +156182,23 @@ Body:
       bonus bMatkRate,10;
       bonus bAtkRate,10;
       bonus bVariableCastrate,-10;
+  - Id: 490189
+    AegisName: Cassock_Str
+    Name: 深紅寶石胸針
+    Type: Armor
+    Weight: 100
+    Defense: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Script: |
+      bonus bMdef,15;
+      bonus bDelayrate,5;
+      bonus bAtkRate,5+(readparam(bStr)/16);
+      bonus bMatkRate,5+(readparam(bInt)/16);
+      bonus2 bSubEle,Ele_All,5;
   - Id: 490191
     AegisName: Record_Thief2_TW
     Name: 思念體忿恨因子研究錄(盜賊篇)
@@ -183158,8 +183222,8 @@ Body:
       if (.@r >= 7)
         bonus bMatkRate,15;
       if (.@r >= 9){
-        bonus2 bSkillAtk,EM_CONFLAGRATION,20;
-        bonus2 bSkillAtk,AG_MYSTERY_ILLUSION,20;
+        bonus2 bSkillAtk,"EM_CONFLAGRATION",20;
+        bonus2 bSkillAtk,"AG_MYSTERY_ILLUSION",20;
       }
       if (.@r >= 11)
         bonus bDelayrate,-12;
@@ -183569,4 +183633,546 @@ Body:
       bonus bShortWeaponDamageReturn,2*.@ra;
       bonus bLongWeaponDamageReturn,2*.@ra;
       }
-
+  - Id: 400440
+    AegisName: Remorse_C_Crown
+    Name: 懺悔魔咒冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 725
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bMatk,15*(.@r/2);
+      bonus bMatk,5*(.@r/3);
+      bonus2 bMagicAtkEle,ELE_ALL,5*(.@r/4);
+      if ( .@r >= 9 )
+        bonus bDelayrate,-10;
+      if ( .@r >= 11 )
+        bonus2 bMagicAtkEle,ELE_ALL,15;
+      if ( .@r >= 13 ) {
+        bonus2 bMagicAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 400447
+    AegisName: Poenetentia_B_Crown
+    Name: 懺悔勇氣冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2393
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bBaseAtk,15*(.@r/2);
+      bonus bAtkRate,5*(.@2/3);
+      bonus2 bAddEle,ELE_ALL,3*(.@r/4);
+      bonus2 bMagicAtkEle,ELE_ALL,3*(.@r/4);
+      if ( .@r >= 9)
+        bonus bAspdRate,10;
+      if ( .@r >= 11)
+        bonus2 bAddSize,Size_All,15;
+      if ( .@r >= 13) {
+        bonus2 bAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 400457
+    AegisName: Poenetentia_V_Crown
+    Name: 懺悔霸氣冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2394
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bBaseAtk,15*(.@r/2);
+      bonus bCritAtkRate,5*(.@r/3);
+      bonus bShortAtkRate,4*(.@r/4);
+      if ( .@r >= 9)
+        bonus bCritical,8;
+      if ( .@r >= 11)
+        bonus2 bAddSize,Size_All,15;
+      if ( .@r >= 13) {
+        bonus2 bAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 400469
+    AegisName: Poenetentia_D_Crown
+    Name: 懺悔精巧冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2402
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bBaseAtk,15*(.@r/2);
+      bonus bAtkRate,5*(.@r/3);
+      bonus bLongAtkRate,4*(.@r/4);
+      if ( .@r >= 9 )
+        bonus bAspdRate,10;
+      if ( .@r >= 11)
+        bonus2 bAddSize,Size_All,15;
+      if ( .@r >= 13) {
+        bonus2 bAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 400474
+    AegisName: Remorse_Crown
+    Name: 懺悔造物冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2408
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bBaseAtk,15*(.@r/2);
+      bonus bAtkRate,5*(.@r/3);
+      bonus bLongAtkRate,4*(.@r/4);
+      if ( .@r >= 9 )
+        bonus bDelayrate,-8;
+      if ( .@r >= 11)
+        bonus2 bAddSize,Size_All,15;
+      if ( .@r >= 13) {
+        bonus2 bAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 400482
+    AegisName: Poenetentia_H_Crown
+    Name: 懺悔榮耀冠冕
+    Type: Armor
+    Weight: 10
+    Defense: 40
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 200
+    Refineable: true
+    View: 2416
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      bonus bMatk,15*(.@r/2);
+      bonus bMatkRate,5*(.@r/3);
+      bonus2 bMagicAtkEle,ELE_ALL,5*(.@r/4);
+      if ( .@r >= 9 )
+        bonus bCastrate,-10;
+      if ( .@r >= 11 )
+        bonus2 bMagicAtkEle,ELE_ALL,15;
+      if ( .@r >= 13 ) {
+        bonus2 bMagicAddRace,RC_ALL,20;
+        bonus bFixedCast,-500;
+      }
+  - Id: 410254
+    AegisName: Old_Moroc_Acc
+    Name: 古代夢羅克貴族首飾
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 335
+    Script: |
+      .@str = readparam(bStr);
+      .@agi = readparam(bAgi);
+      .@vit = readparam(bVit);
+      .@int = readparam(bInt);
+      .@dex = readparam(bDex);
+      .@luk = readparam(bLuk);
+      bonus bBaseAtk,5*(.@str/8);
+      bonus bBaseAtk,3*(.@agi/8);
+      bonus bBaseAtk,2*(.@vit/8);
+      bonus bMatk,2*(.@vit/8);
+      bonus bMatk,5*(.@int/8);
+      bonus bBaseAtk,2*(.@dex/8);
+      bonus bMatk,2*(.@dex/8);
+      bonus bMatk,3*(.@luk/8);
+  - Id: 420236
+    AegisName: Moroc_Slave_TW
+    Name: 魔王夢羅克的忠誠僕人
+    Type: Armor
+    Weight: 10
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 1440
+    Script: |
+      bonus bPAtk,5;
+      bonus bSMatk,5;
+      bonus2 bAddRace,RC_DEMIHUMAN,5;
+      bonus2 bAddRace,RC_PLAYER_HUMAN,5;
+      bonus2 bAddRace,RC_ANGEL,5;
+      bonus2 bSubRace,RC_DEMIHUMAN,3;
+      bonus2 bSubRace,RC_PLAYER_HUMAN,3;
+      bonus2 bSubRace,RC_ANGEL,3;
+  - Id: 400401
+    AegisName: Yggdrasil_Faith
+    Name: 天地樹的信仰
+    Type: Armor
+    Weight: 70
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    View: 2198
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,20*(.@r/2);
+      bonus2 bMagicAtkEle,ELE_ALL,7*(.@r/3);
+      if ( .@r >= 7 )
+        bonus bMatkRate,10;
+      if ( .@r >= 9 )
+        bonus bDelayrate,-10;
+      if ( .@r >= 11 )
+        bonus2 bMagicAddRace,RC_ALL,15;
+      if ( .@r >= 12 )
+        bonus2 bMagicAddEle,ELE_ALL,15;
+      if ( .@r >= 13 )
+        bonus bFixedCast,-500;
+  - Id: 410183
+    AegisName: Shine_Circlet
+    Name: 聖光寶石庇佑髮飾
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 2287
+    Script: |
+      bonus bAtkRate,2;
+      bonus bMatkRate,2;
+  - Id: 410184
+    AegisName: Sin_Circlet
+    Name: 撒旦寶石詛咒髮飾
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 2288
+    Script: |
+      bonus bAtkRate,2;
+      bonus bMatkRate,2;
+  - Id: 410213
+    AegisName: Ear_OF_Bloody
+    Name: 血腥之耳
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2318
+    Script: |
+      .@a = (readparam(bDex)+readparam(bLuk))/15;
+      .@b = (readparam(bDex)+readparam(bLuk))/30;
+      .@c = (readparam(bDex)+readparam(bLuk))/250;
+      bonus bCon,.@a;
+      bonus bLongAtkRate,.@b+(15*.@c);
+  - Id: 410215
+    AegisName: Ear_OF_Spirit
+    Name: 怨靈之耳
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2212
+    Script: |
+      .@a = (readparam(bStr)+readparam(bVit))/15;
+      .@b = (readparam(bStr)+readparam(bVit))/30;
+      .@c = (readparam(bStr)+readparam(bVit))/250;
+      bonus bPow,.@a;
+      bonus bShortAtkRate,.@b+(15*.@c);
+  - Id: 410216
+    AegisName: Ear_OF_Abyss
+    Name: 深淵之耳
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2322
+    Script: |
+      .@a = (readparam(bAgi)+readparam(bInt))/15;
+      .@b = (readparam(bAgi)+readparam(bInt))/30;
+      .@c = (readparam(bAgi)+readparam(bInt))/250;
+      bonus bSpl,.@a;
+      bonus bMatkRate,.@b+(15*.@c);
+  - Id: 410235
+    AegisName: Handiness_Telescope
+    Name: 輕便望遠鏡
+    Type: Armor
+    Weight: 10
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 2375
+    Script: |
+      .@str = readparam(bStr)/20;
+      .@agi = readparam(bAgi)/20;
+      .@vit = readparam(bVit)/20;
+      .@int = readparam(bInt)/20;
+      .@dex = readparam(bDex)/20;
+      .@luk = readparam(bLuk)/20;
+      .@allstats = (readparam(bStr)+readparam(bAgi)+readparam(bVit)+readparam(bInt)+readparam(bDex)+readparam(bLuk));
+      bonus2 bAddRace,RC_FORMLESS,.@str;
+      bonus2 bAddRace,RC_FORMLESS,.@str;
+      bonus2 bAddRace,RC_BRUTE,.@agi;
+      bonus2 bAddRace,RC_PLANT,.@agi;
+      bonus2 bAddRace,RC_INSECT,.@vit;
+      bonus2 bAddRace,RC_FISH,.@vit;
+      bonus2 bAddRace,RC_DEMON,.@int;
+      bonus2 bAddRace,RC_DEMIHUMAN,.@int;
+      bonus2 bAddRace,RC_ANGEL,.@dex;
+      bonus2 bAddRace,RC_DRAGON,.@dex;
+      bonus2 bAddRace,RC_PLAYER_DORAM,.@luk;
+      bonus2 bAddRace,RC_PLAYER_HUMAN,.@luk;
+      if ( .@allstats >= 600 ) {
+        bonus2 bAddRace,RC_ALL,10;
+        bonus bHit,10;
+      }
+  - Id: 420194
+    AegisName: Rescue_whistle
+    Name: 求生哨
+    Type: Armor
+    Weight: 10
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 952
+    Script: |
+      .@str = readparam(bStr)/20;
+      .@agi = readparam(bAgi)/20;
+      .@vit = readparam(bVit)/20;
+      .@int = readparam(bInt)/20;
+      .@dex = readparam(bDex)/20;
+      .@luk = readparam(bLuk)/20;
+      .@allstats = (readparam(bStr)+readparam(bAgi)+readparam(bVit)+readparam(bInt)+readparam(bDex)+readparam(bLuk));
+      bonus2 bAddEle,ELE_ALL,.@str;
+      bonus2 bAddEle,ELE_NEUTRAL,.@agi;
+      bonus2 bAddEle,ELE_WATER,.@vit;
+      bonus2 bAddEle,Ele_EARTH,.@int;
+      bonus2 bAddEle,ELE_FIRE,.@dex;
+      bonus2 bAddEle,ELE_WIND,.@luk;
+      if ( .@allstats >= 600 ) {
+        bonus2 bAddEle,ELE_ALL,10;
+        bonus bFlee,10;
+      }
+  - Id: 420065
+    AegisName: Angeling_Balloon_TW
+    Name: 永恆波利氣球
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1435
+    Script: |
+      bonus2 bSubRace,RC_All,2;
+  - Id: 420087
+    AegisName: Magic_Circle_TW
+    Name: 魔力星陣
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bFixedCast,-200;
+      hateffect(HAT_EF_Magic_Circle_TW,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_Magic_Circle_TW,false);
+  - Id: 32243
+    AegisName: Star_Force_Ring_TW
+    Name: 魔力星環
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bVariableCastrate,-20;
+      bonus bAspd,1;
+      bonus5 bAutoSpell,"WL_RECOGNIZEDSPELL",1,10,BF_MAGIC,0;
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,30;
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,30;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,30;
+  - Id: 420239
+    AegisName: Adventure_Clover
+    Name: 冒險幸運草
+    Type: Armor
+    Weight: 10
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 571
+    Script: |
+      bonus2 bExpAddRace,RC_ALL,8;
+  - Id: 410090
+    AegisName: Love_Cheek_TW
+    Name: 愛情紅暈
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 90
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    View: 1318
+  - Id: 400018
+    AegisName: NettyHeart_Gum_TW
+    Name: 愛心泡泡糖
+    Type: Armor
+    View: 720
+    Weight: 300
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bHPDrainRate,10,1;
+  - Id: 410197
+    AegisName: Promise_aglow
+    Name: 約定紅暈
+    Type: Armor
+    Weight: 10
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1494
+    Script: |
+      bonus bDelayrate,-5;
+      autobonus "{ bonus bDelayrate,-15; }",50,5000,BF_WEAPON|BF_MAGIC;
+  - Id: 420064
+    AegisName: Noble_Hankie_TW
+    Name: 貴族手帕
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    View: 818
+    Script: |
+      bonus2 bMagicAtkEle,Ele_All,2;
+      bonus3 bAutoSpell,"WL_CHAINLIGHTNING",2,20;
+      bonus2 bSubRace,RC_Player_Human,2;
+      bonus2 bSubRace,RC_Player_Doram,2;
+      skill "WL_MARSHOFABYSS",1;
+      hateffect(HAT_EF_LEVEL99_WHITE,true);
+  - Id: 400368
+    AegisName: 20th_Anniversary_Hat_TW
+    Name: RO二十週年限定帽
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2284
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,2000;
+      bonus bMaxSP,200;
+      bonus bBaseAtk,20*(.@r/2);
+      bonus bMatk,20*(.@r/2);
+      bonus bAtkRate,3*(.@r/3);
+      bonus bMatkRate,3*(.@r/3);
+      if (.@r>=7)
+         bonus bAspdRate,10;
+      if (.@r>=9) {
+         bonus bShortAtkRate,10;
+         bonus bLongAtkRate,10;
+         bonus2 bMagicAtkEle,Ele_All,10;
+      }
+      if (.@r>=11) {
+         bonus2 bAddEle,Ele_All,15;
+         bonus2 bMagicAddEle,Ele_All,15;
+      }
+      if (.@r>=12)
+         bonus bFixedCast,-15*(.@r-11);
+  - Id: 420186
+    AegisName: 20th_Anniversary_TW
+    Name: 20週年慶生氣球
+    Type: Armor
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2005
+    Script: |
+      bonus bPAtk,2;
+      bonus bSMatk,2;
+      bonus bFixedCast,-100;

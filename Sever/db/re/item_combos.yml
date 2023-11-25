@@ -32255,4 +32255,581 @@ Body:
       bonus2 bAddClass,Class_Boss,30;
       bonus2 bSkillCooldown,"SR_TIGERCANNON",-500;
       autobonus "{ bonus bStr,30; bonus bAtkRate,20; }",3,10000,BF_WEAPON;
-      
+  - Combos:
+      - Combo:
+          - Leo_Shoes_J  # 470127
+          - Garnet_Pendant_TW    # 490103
+          - Cassock_Str    # 490189
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHOES);
+      bonus2 bSubEle,Ele_Neutral,(.@r/3)*3;
+  - Combos:
+      - Combo:
+          - Garnet_Pendant_TW    # 490103
+          - Cassock_Str    # 490189
+    Script: |
+      bonus2 bSubEle,Ele_All,5;
+      if(BaseJob == Job_Super_Novice){
+      skill "MG_ENERGYCOAT",1;
+      bonus bShortAtkRate,((readparam(bStr)+readparam(bLuk))/24);
+      bonus bLongAtkRate,((readparam(bStr)+readparam(bLuk))/24);
+      bonus2 bMagicAtkEle,Ele_All,((readparam(bInt)+readparam(bDex))/24*2);
+      }
+  - Combos:
+      - Combo:
+          - New_Wave_Sunglasses
+          - Ghost_Fire
+      - Combo:
+          - New_Wave_Sunglasses_
+          - Ghost_Fire
+    Script: |
+      .@pow = readparam(bPow);
+      .@sta = readparam(bSta);
+      .@wis = readparam(bWis);
+      .@spl = readparam(bSpl);
+      .@con = readparam(bCon);
+      .@crt = readparam(bCrt);
+      bonus2 bAddRace,RC_ALL, 7*(.@pow/18);
+      bonus bBaseAtk, 60*(.@sta/18);
+      bonus bMatk, 60*( .@wis/18 );
+      bonus2 bMagicAddRace,RC_ALL, 7*(.@spl/18);
+      bonus bAtkRate, 4*(.@con/18);
+      bonus bMatkRate, 4*(.@con/18);
+      bonus bCritAtkRate, 7*(.@crt/18);
+      bonus bFixedCast, -50*(.@crt/18);
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_LT
+          - Rutilus_Stick_OS
+      - Combo:
+          - Rutilus_Stick_AD
+          - Devil_Flame_Manteau_LT
+    Script: |
+      .@r = getrefine();
+      .@r_weapon = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bMagicAtkEle,ELE_FIRE,15;
+      bonus2 bMagicAtkEle,ELE_DARK,15;
+      bonus2 bSkillAtk,"WL_HELLINFERNO",20*(.@r_weapon/3);
+      bonus2 bSkillAtk,"WL_CRIMSONROCK",20*(.@r_weapon/3);
+      if (.@r_weapon >= 13){
+      	bonus2 bSkillCooldown,"WL_HELLINFERNO",-2000;
+      	bonus2 bSkillCooldown,"WL_CRIMSONROCK",-2000;
+      }
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_TW
+          - Evil_Purgatory_Ring
+    Script: |
+      bonus2 bMagicAtkEle,ELE_ALL,8;
+  - Combos:
+      - Combo:
+          - Devil_Flame_Manteau_LT
+          - Evil_Purgatory_Ring
+    Script: |
+      .@g = getenchantgrade();
+      bonus2 bMagicAtkEle,ELE_ALL,8;
+      if (.@g >= ENCHANTGRADE_B) {
+      	bonus2 bMagicAddSize,Size_All,15;
+      	if (.@g >= ENCHANTGRADE_A) {
+      		bonus2 bSkillAtk,"EM_CONFLAGRATION",15;
+      		bonus2 bSkillAtk,"AG_FLORAL_FLARE_ROAD",15;
+      	}
+      }
+  - Combos:
+      - Combo:
+          - Remorse_C_Crown
+          - Poenitentia_Termes
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bSMatk,10;
+      bonus2 bSkillAtk,"AG_RAIN_OF_CRYSTAL",10*(.@r/2);
+      bonus2 bSkillAtk,"AG_CRIMSON_ARROW",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_C_Crown
+          - Poenitentia_Virga
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bSMatk,10;
+      bonus2 bSkillAtk,"AG_STRANTUM_TREMOR",10*(.@r/2);
+      bonus2 bSkillAtk,"AG_STORM_CANNON",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_C_Crown
+          - Poenitentia_Scipio
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillCooldown,"SO_VARETYR_SPEAR",-1000;
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",8*(.@r/2);
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_C_Crown
+          - Poenitentia_Codex
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bMagicAtkEle,ELE_WATER,15;
+      bonus2 bMagicAtkEle,ELE_EARTH,15;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",8*(.@r/2);
+      bonus2 bSkillAtk,"EM_TERRA_DRIVE",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_B_Crown
+          - Poenitentia_Ensis
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bShortAtkRate,15;
+      bonus2 bSkillAtk,"RK_STORMBLAST",8*(.@r/2);
+      bonus2 bSkillAtk,"DK_STORMSLASH",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_B_Crown
+          - Poenitentia_Catapulta
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"RK_HUNDREDSPEAR",10*(.@r/2);
+      bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_B_Crown
+          - Poenitentia_Hasta
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bShortAtkRate,15;
+      bonus2 bSkillAtk,"LG_OVERBRAND",10*(.@r/2);
+      bonus2 bSkillAtk,"IG_OVERSLASH",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_V_Crown
+          - Poenitentia_Manus
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",10*(.@r/2);
+      bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_V_Crown
+          - Poenitentia_Mucro
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bCritAtkRate,20;
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",10*(.@r/2);
+      bonus2 bSkillAtk,"SHC_SHADOW_STAB",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_V_Crown
+          - Poenetentia_Dilacero
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"SC_FATALMENACE",10*(.@r/2);
+      bonus2 bSkillAtk,"ABC_DEFT_STAB",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_V_Crown
+          - Poenitentia_Caestus
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bShortAtkRate,15;
+      bonus2 bSkillAtk,"SR_TIGERCANNON",8*(.@r/2);
+      bonus2 bSkillAtk,"IQ_SECOND_FAITH",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_V_Crown
+          - Poenitentia_Ungula
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",8*(.@r/2);
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_D_Crown
+          - Poenitentia_Tenon
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"SC_TRIANGLESHOT",8*(.@r/2);
+      bonus2 bSkillAtk,"ABC_FRENZY_SHOT",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_D_Crown
+          - Poenitentia_Nervus
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",8*(.@r/2);
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_D_Crown
+          - Poenetentia_Attendo
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"RA_ARROWSTORM",8*(.@r/2);
+      bonus2 bSkillAtk,"WH_GALESTORM",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_D_Crown
+          - Poenetentia_Vatia
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bLongAtkRate,15;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10*(.@r/2);
+      bonus2 bSkillAtk,"TR_RHYTHMSHOOTING",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_Crown
+          - Poenitentia_Clava
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"NC_VULCANARM",12*(.@r/2);
+      bonus2 bSkillAtk,"NC_ARMSCANNON",12*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_Crown
+          - Poenitentia_Pendulus
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"GN_CART_TORNADO",12*(.@r/2);
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WATER",8*(.@r/2);
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_GROUND",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_Crown
+          - Poenitentia_Ligula
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"GN_CARTCANNON",12*(.@r/2);
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WIND",8*(.@r/2);
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_FIRE",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Remorse_Crown
+          - Poenitentia_Ascia
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,10;
+      bonus2 bSkillAtk,"NC_AXETORNADO",12*(.@r/2);
+      bonus2 bSkillAtk,"MT_AXE_STOMP",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_H_Crown
+          - Poenitentia_Gladius
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillCooldown,"LG_RAYOFGENESIS",-1000;
+      bonus2 bSkillAtk,"LG_RAYOFGENESIS",10*(.@r/2);
+      bonus2 bSkillAtk,"IG_CROSS_RAIN",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_H_Crown
+          - Poenitentia_Crystallum
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillCooldown,"AB_ADORAMUS",-1000;
+      bonus2 bSkillAtk,"AB_ADORAMUS",10*(.@r/2);
+      bonus2 bSkillAtk,"CD_FRAMEN",8*(.@r/2);
+  - Combos:
+      - Combo:
+          - Poenetentia_H_Crown
+          - Poenitentia_Chorda
+      - Combo:
+          - Poenetentia_H_Crown
+          - Poenitentia_Flagellum
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bSMatk,10;
+      bonus2 bSkillAtk,"WM_REVERBERATION",10*(.@r/2);
+      bonus2 bSkillAtk,"TR_METALIC_FURY",10*(.@r/2);
+  - Combos:
+      - Combo:
+          - Old_Moroc_Acc
+          - Marduk_Card
+    Script: |
+      bonus bDelayrate,-8;
+      bonus2 bAddEle,ELE_ALL,12;
+      bonus2 bMagicAddEle,ELE_ALL,12;
+  - Combos:
+      - Combo:
+          - Old_Moroc_Acc
+          - Pharaoh_Card
+    Script: |
+      bonus bIntravision;
+      bonus bDelayrate,-5;
+      bonus2 bAddEle,ELE_ALL,25;
+      bonus2 bMagicAddEle,ELE_ALL,25;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Force3
+    Script: |
+      bonus bShortAtkRate,20;
+      bonus2 bSubRace,RC_ALL,-15;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Intellect3
+    Script: |
+      bonus2 bMagicAtkEle,ELE_ALL,20;
+      bonus2 bSubRace,RC_ALL,-15;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Swiftness3
+    Script: |
+      bonus bDelayrate,-10;
+      bonus bMaxHPrate,-20;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Artful3
+    Script: |
+      bonus bLongAtkRate,20;
+      bonus2 bSubRace,RC_ALL,-15;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Tough3
+    Script: |
+      bonus bMaxHPrate,30;
+      bonus bAspdRate,-50;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Fortune3
+    Script: |
+      bonus bCritAtkRate,20;
+      bonus bHealPower,20;
+      bonus bDelayrate,10;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Shnaim_Card
+    Script: |
+      bonus2 bAddRace,RC_ALL,15;
+      bonus2 bMagicAddRace,RC_ALL,15;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - Ahat_Card
+    Script: |
+      bonus2 bAddSize,Size_All,15;
+      bonus2 bMagicAddSize,Size_All,15;
+  - Combos:
+      - Combo:
+          - Moroc_Slave_TW
+          - DespairGodMorocc_Card
+    Script: |
+      bonus2 bAddRace,RC_ALL,40;
+      bonus bMaxHPrate,50;
+  - Combos:
+      - Combo:
+          - Yggdrasil_Faith
+          - Fenrir_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus bFixedCast,-200;
+      bonus bSMatk,20;
+      bonus2 bSkillAtk,"WL_COMET",7*(.@r/2);
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
+      skill "WL_COMET",3;
+      bonus bUseSPrate,30;
+      }
+      if (eaclass()&EAJL_THIRD && BaseJob == Wizard) {
+      bonus2 bSkillCooldown,"WL_COMET",-20000;
+      }
+  - Combos:
+      - Combo:
+          - Shine_Circlet
+          - Shine_Ring_R
+          - Shine_Necklace_R
+      - Combo:
+          - Shine_Circlet
+          - Shine_Ring_A
+          - Shine_Necklace_A
+      - Combo:
+          - Shine_Circlet
+          - Shine_Ring_E
+          - Shine_Necklace_E
+      - Combo:
+          - Shine_Circlet
+          - Shine_Ring_Z
+          - Shine_Necklace_Z
+      - Combo:
+          - Shine_Circlet
+          - Shine_Ring_S
+          - Shine_Necklace_S
+      - Combo:
+          - Shine_Ring_AQ
+          - Shine_Necklace_AQ
+          - Shine_Circlet
+    Script: |
+      bonus bBaseAtk,50;
+      bonus bMatk,50;
+      bonus2 bAddClass,CLASS_BOSS,8;
+      bonus2 bMagicAddClass,CLASS_BOSS,8;
+      bonus2 bAddEle,ELE_DARK,10;
+      bonus2 bAddEle,ELE_UNDEAD,10;
+      bonus2 bMagicAddEle,ELE_DARK,10;
+      bonus2 bMagicAddEle,ELE_UNDEAD,10;
+  - Combos:
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_R
+          - Sin_Necklace_R
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_E
+          - Sin_Necklace_E
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_T
+          - Sin_Necklace_T
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_A
+          - Sin_Necklace_A
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_S
+          - Sin_Necklace_S
+      - Combo:
+          - Sin_Circlet
+          - Sin_Ring_O
+          - Sin_Necklace_O
+    Script: |
+      bonus bBaseAtk,50;
+      bonus bMatk,50;
+      bonus2 bAddClass,CLASS_BOSS,8;
+      bonus2 bMagicAddClass,CLASS_BOSS,8;
+      bonus2 bAddEle,ELE_NEUTRAL,10;
+      bonus2 bAddEle,ELE_HOLY,10;
+      bonus2 bMagicAddEle,ELE_NEUTRAL,10;
+      bonus2 bMagicAddEle,ELE_HOLY,10;
+  - Combos:
+      - Combo:
+          - Handiness_Telescope
+          - Rescue_whistle
+    Script: |
+      bonus bDelayrate,-10;
+      bonus bFixedCast,-200;
+      bonus2 bSkillCooldown,"NV_FIRSTAID",5000;
+      bonus5 bAutoSpellOnSkill,"NV_FIRSTAID","MG_SAFETYWALL",5,1000,1;
+  - Combos:
+      - Combo:
+          - Archangel_Wing
+          - Angeling_Balloon_TW
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      .@a = readparam(bStr);
+      .@b = readparam(bAgi);
+      .@c = readparam(bVit);
+      .@d = readparam(bInt);
+      .@e = readparam(bDex);
+      .@f = readparam(bLuk);
+      bonus2 bExpAddRace,RC_All,8;
+      if (.@r>=8) {
+         bonus bShortAtkRate,3*(.@a/20);
+         bonus bCritAtkRate,4*(.@b/20);
+         bonus2 bSubEle,Ele_Neutral,2*(.@c/20);
+         bonus bMaxHPrate,(.@c/20);
+         bonus2 bMagicAtkEle,Ele_All,(.@d/20);
+         bonus bDelayrate,-3*(.@e/20);
+         bonus bBaseAtk,5*(.@f/20);
+         bonus bMatk,5*(.@f/20);
+         bonus bCritical,2*(.@f/20);
+      }
+  - Combos:
+      - Combo:
+          - Magic_Star_TW
+          - Magic_Circle_TW
+    Script: |
+      bonus bMatkRate,readparam(bStr)/20;
+      bonus bDelayrate,-(readparam(bAgi)/20);
+      bonus2 bMagicAddRace,RC_All,readparam(bVit)/20;
+      bonus2 bMagicAddClass,Class_All,readparam(bInt)/20;
+      bonus2 bMagicAddSize,Size_All,readparam(bDex)/20;
+      bonus2 bMagicAddEle,Ele_All,readparam(bLuk)/20;
+  - Combos:
+      - Combo:
+          - Star_Force_Ring_TW
+          - Magic_Circle_TW
+    Script: |
+      bonus bVariableCastrate,-20;
+  - Combos:
+      - Combo:
+          - Magic_Star_TW
+          - Star_Force_Ring_TW
+    Script: |
+      bonus bBaseAtk,30;
+      bonus bMatk,30;
+      bonus bVariableCastrate,-5;
+      bonus bFixedCast,-200;
+      bonus2 bMagicAddClass,Class_Boss,20;
+  - Combos:
+      - Combo:
+          - Adventure_Clover
+          - Illusion_Armor_A
+      - Combo:
+          - Adventure_Clover
+          - Illusion_Armor_B
+    Script: |
+      bonus2 bAddRace,RC_ALL,20;
+      bonus2 bMagicAddRace,RC_ALL,20;
+      bonus2 bExpAddRace,RC_ALL,2;
+  - Combos:
+      - Combo:
+          - Adventure_Clover
+          - Auto_Armor_A
+      - Combo:
+          - Adventure_Clover
+          - Auto_Armor_B
+    Script: |
+      bonus2 bAddRace,RC_ALL,20;
+      bonus2 bMagicAddRace,RC_ALL,20;
+      bonus2 bExpAddRace,RC_ALL,3;
+  - Combos:
+      - Combo:
+          - Adventure_Clover
+          - Gray_W_Suits
+      - Combo:
+          - Adventure_Clover
+          - Gray_W_Robe
+    Script: |
+      bonus2 bAddRace,RC_ALL,20;
+      bonus2 bMagicAddRace,RC_ALL,20;
+      bonus2 bExpAddRace,RC_ALL,4;
+  - Combos:
+      - Combo:
+          - NettyHeart_Gum_TW
+          - Love_Cheek_TW
+      - Combo:
+          - Love_Cheek_TW
+          - Love_Feeling_TW
+    Script: |
+      .@a = (readparam(bStr)+readparam(bLuk))/120;
+      .@b = (readparam(bAgi)+readparam(bVit))/120;
+      .@c = (readparam(bInt)+readparam(bDex))/120;
+      bonus bAtkRate,.@a;
+      bonus bCritical,5*.@a;
+      bonus bCritAtkRate,2*.@a;
+      bonus bMaxHPrate,2*.@b;
+      bonus bAspdRate,2*.@b;
+      bonus bMatk,15*.@c;
+      bonus bFixedCastrate,-5*.@c;
+      bonus bHealPower,10*.@c;
+  - Combos:
+      - Combo:
+          - 20th_Anniversary_Hat_TW
+          - 20th_Anniversary_TW
+    Script: |
+      bonus bPAtk,5;
+      bonus bSMatk,5;
+      bonus2 bExpAddRace,RC_All,10;
