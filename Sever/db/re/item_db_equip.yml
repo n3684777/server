@@ -153252,7 +153252,7 @@ Body:
     ArmorLevel: 1
     View: 131
   - Id: 480192
-    AegisName: 2022RTC_V_Coat4
+    AegisName: RTC_V_Coat4
     Name: 2022RTC紀念勝利大衣
     Type: Armor
     Weight: 800
@@ -153808,8 +153808,8 @@ Body:
       if(.@r >= 11){bonus bDelayrate,12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
   - Id: 480278
-    AegisName: Pisces_Manteau_J
-    Name: 曼妙自然之力斗篷
+    AegisName: Huse_Luk_R_Wing
+    Name: 強運緞帶羽翼
     Type: Armor
     Weight: 10
     Defense: 10
