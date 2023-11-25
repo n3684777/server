@@ -32259,14 +32259,14 @@ Body:
       - Combo:
           - Leo_Shoes_J  # 470127
           - Garnet_Pendant_TW    # 490103
-          - Cassock_Str    # 490189
+          - Cassock_Str_hey    # 490189
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
       bonus2 bSubEle,Ele_Neutral,(.@r/3)*3;
   - Combos:
       - Combo:
           - Garnet_Pendant_TW    # 490103
-          - Cassock_Str    # 490189
+          - Cassock_Str_hey    # 490189
     Script: |
       bonus2 bSubEle,Ele_All,5;
       if(BaseJob == Job_Super_Novice){

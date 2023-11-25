@@ -148321,7 +148321,7 @@ Body:
       bonus bFlee2,(readparam(bDex) >= 108?20:0);
       }
       if(.@r >= 12){
-      bMaxHPrate,10;bMaxSPrate,10;bonus2 bSubEle,Ele_All,5;}
+      bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus2 bSubEle,Ele_All,5;}
   - Id: 460030
     AegisName: Fake_Alloy_Pot
     Name: 仿生鋁合金花盆
@@ -155049,7 +155049,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 100
     Script: |
-      bMdef,15;
+      bonus bMdef,15;
       bonus2 bSubEle,Ele_Neutral,5; 
       bonus bLongAtkDef,5;
       if(eaclass()&EAJL_THIRD && BaseJob != Job_Wizard){skill "WL_RECOGNIZEDSPELL",1;}
@@ -156183,7 +156183,7 @@ Body:
       bonus bAtkRate,10;
       bonus bVariableCastrate,-10;
   - Id: 490189
-    AegisName: Cassock_Str
+    AegisName: Cassock_Str_hey
     Name: 深紅寶石胸針
     Type: Armor
     Weight: 100

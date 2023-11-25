@@ -292,9 +292,9 @@ bonus bCriticalDef,n;			減少 n% 被暴擊的機率
 bonus2 bWeaponAtk,w,n;			裝備 w 型別武器時增加 n 攻擊力
 bonus2 bWeaponDamageRate,w,n;	裝備 w 型別武器時增加 n% 攻擊力
 
-bonus bNearAtkDef,n;			被近距離物理攻擊受到的傷害減少 n%
-bonus bLongAtkDef,n;			被遠距離物理攻擊受到的傷害減少 n%
-bonus bMagicAtkDef,n;			被魔法攻擊受到的傷害減少 n%
+bonus bNearAtkDef,n;			被近距離物理攻擊受到的傷害減少 n% //近距離減傷 近距離減少傷害 近傷減少
+bonus bLongAtkDef,n;			被遠距離物理攻擊受到的傷害減少 n% //遠距離減傷 遠距離減少傷害 遠傷減少
+bonus bMagicAtkDef,n;			被魔法攻擊受到的傷害減少 n% //魔法減傷 魔法減少傷害
 bonus bMiscAtkDef,n;			被其他特殊攻擊受到的傷害減少 n% (陷阱, 獵鷹, ...)
 
 bonus bNoWeaponDamage,n;		受到物理攻擊的傷害減少 n%
