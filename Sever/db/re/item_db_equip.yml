@@ -153811,7 +153811,7 @@ Body:
     AegisName: Huse_Luk_R_Wing
     Name: 強運緞帶羽翼
     Type: Armor
-    view: 160
+    View: 160
     Weight: 10
     Defense: 10
     Slots: 1
