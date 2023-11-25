@@ -32254,4 +32254,5 @@ Body:
     Script: |
       bonus2 bAddClass,Class_Boss,30;
       bonus2 bSkillCooldown,"SR_TIGERCANNON",-500;
+      autobonus "{ bonus bStr,30; bonus bAtkRate,20; }",3,10000,BF_WEAPON;
       

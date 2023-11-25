@@ -85,6 +85,8 @@ OnInit:
 	sellitem(420199,.@p,-1);
 	//sellitem(480399,.@p,-1); // lt´c¤õ©Ü
 	sellitem(490472,.@p,-1);
+	sellitem(19181,35000000,-1); //·s®ö¼é[1]
+
 	
 
 	

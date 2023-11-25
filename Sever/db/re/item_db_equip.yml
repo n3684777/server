@@ -95338,6 +95338,21 @@ Body:
       bonus2 bSubEle,Ele_Water,-10;
       bonus bShortWeaponDamageReturn,10+(getrefine()*2);
       bonus bUnbreakableGarment;
+  - Id: 20736
+    AegisName: Infine_Garment
+    Name: 無敵斗篷
+    Type: Armor
+    Weight: 50
+    Defense: 30
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bSubEle,Ele_Neutral,25+(.@r >= 6?(.@r-6):0);
   - Id: 20737
     AegisName: C_Kirin_Wing
     Name: (服飾)麒麟之翼
@@ -148281,6 +148296,32 @@ Body:
       bonus bMres,3;
       bonus bShortWeaponDamageReturn,.@r;
       bonus2 bIgnoreDefClassRate,Class_Normal,5+(.@r/2);
+  - Id: 460027
+    AegisName: Titan_Shield_TW
+    Name: 泰坦神盾
+    Type: Armor
+    Weight: 250
+    Defense: 100
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 2
+    EquipLevelMin: 210
+    Refineable: true
+    View: 2
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,10;
+      if(.@r >= 9){
+      bonus2 bSubEle,Ele_Wind,(readparam(bStr) >= 108?20:0);
+      bonus2 bSubEle,Ele_Water,(readparam(bAgi) >= 108?20:0);
+      bonus2 bSubEle,Ele_Neutral,(readparam(bVit) >= 108?20:0);
+      bonus2 bSubEle,Ele_Earth,(readparam(bInt) >= 108?20:0);
+      bonus2 bSubEle,Ele_Fire,(readparam(bDex) >= 108?20:0);
+      bonus bFlee2,(readparam(bDex) >= 108?20:0);
+      }
+      if(.@r >= 12){
+      bMaxHPrate,10;bMaxSPrate,10;bonus2 bSubEle,Ele_All,5;}
   - Id: 460030
     AegisName: Fake_Alloy_Pot
     Name: 仿生鋁合金花盆
@@ -151052,7 +151093,7 @@ Body:
       bonus bFixedCast,(.@r >= 9?-500:0);
       if(.@r >= 11){bonus bShortAtkRate,10;bonus bLongAtkRate,10;}
 
-      if(.@r >= 13){}
+      if(.@r >= 13){autobonus "{ bonus bPow,10; bonus bAtkRate,15; }",3,10000,BF_WEAPON;}
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
@@ -153737,6 +153778,33 @@ Body:
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
       if(.@r >= 11){bonus bDelayrate,12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
+  - Id: 480278
+    AegisName: Pisces_Manteau_J
+    Name: 曼妙自然之力斗篷
+    Type: Armor
+    Weight: 10
+    Defense: 10
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,(.@r/2)*8;
+      bonus bMatk,(.@r/2)*8;
+      bonus2 bExpAddRace,RC_All,(.@r/4)*3;
+      if(.@r >= 7){bonus bAtkRate,4;bonus bMatkRate,4;}
+      if(.@r >= 9){bonus bShortAtkRate,7;bonus bLongAtkRate,7;bonus2 bMagicAtkEle,Ele_All,7;}
+      if(.@r >= 13){bonus2 bIgnoreDefClassRate,Class_Normal,10;bonus2 bIgnoreMdefClassRate,Class_normal,10;}
+      if(BaseJob == Job_Dancer || BaseJob == Job_Monk || BaseJob == Job_Rogue || BaseJob == Job_Assassin){
+      bonus bBaseAtk,(.@r/2)*8;
+      bonus bMatk,(.@r/2)*8;
+      bonus2 bExpAddRace,RC_All,(.@r/4)*3;
+      if(.@r >= 7){bonus bAtkRate,4;bonus bMatkRate,4;}
+      if(.@r >= 9){bonus bShortAtkRate,7;bonus bLongAtkRate,7;bonus2 bMagicAtkEle,Ele_All,7;}
+      if(.@r >= 13){bonus2 bIgnoreDefClassRate,Class_Normal,10;bonus2 bIgnoreMdefClassRate,Class_normal,10;}}
   - Id: 480291
     AegisName: Manteau_Of_Guardsman2
     Name: 英雄恩惠斗篷
@@ -153755,9 +153823,9 @@ Body:
       bonus bMaxSP,200;
       if(BaseLevel >= 200)
       {
-      bonus bSMatk,1+(BaseLevel/10)/200;
-      bonus bRes,7+(BaseLevel/10)/200*5;
-      bonus bMRes,7+(BaseLevel/10)/200*5;
+      bonus bSMatk,1+(BaseLevel-200)/10;
+      bonus bRes,7+(BaseLevel-200)/10*5;
+      bonus bMRes,7+(BaseLevel-200)/10*5;
       bonus bMatk,(.@r/2)*10;
       bonus bMatkRate,(.@r/3)*2;
       if(.@r >= 7){bonus bVariableCastrate,-10;}
