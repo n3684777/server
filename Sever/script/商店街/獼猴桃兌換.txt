@@ -66,11 +66,14 @@ OnInit:
     endsellitem();
     // 武捲+19
     sellitem(6864, 0, -1);	
-	sellitemcurrency(6909,200);
+	sellitemcurrency(6909,175);
     endsellitem();
     // 防捲+19
     sellitem(6865, 0, -1);	
-	sellitemcurrency(6909,200);
+	sellitemcurrency(6909,175);
+    endsellitem();
+    sellitem(900000, 0, -1);	//B大
+	sellitemcurrency(6909,300);
     endsellitem();
 
     // 副本冷卻消除捲
