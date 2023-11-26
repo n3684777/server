@@ -29313,6 +29313,20 @@ Body:
           - Item: Up_Freezing_Rod
             RefineMinimum: 7
             RefineMaximum: 7
+  - Group: FREEDOM_STICK_CUBE
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Up_Freedom_Stick
+            RefineMinimum: 7
+            RefineMaximum: 7
+  - Group: BLESSED_KNIFE_CUBE
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Up_Blessed_Knife
+            RefineMinimum: 7
+            RefineMaximum: 7
   - Group: IRON_NAIL_K_CUBE
     SubGroups:
       - SubGroup: 0
