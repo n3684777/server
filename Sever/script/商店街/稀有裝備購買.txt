@@ -64,7 +64,7 @@ OnInit:
 	sellitem(15137,.@p,-1);
 	sellitem(480210,.@p,-1);
 	sellitem(480269,.@p,-1);
-	sellitem(480238,.@p,-1);
+	sellitem(480328,.@p,-1);
 	sellitem(2383,.@p,-1);
 	sellitem(2541,.@p,-1);
 	sellitem(2181,.@p,-1);

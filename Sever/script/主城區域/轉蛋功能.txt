@@ -15,6 +15,7 @@
 // 使用方法：callfunc "F_Gashapon", item_id;
 // 使用範例：14296,Angel_Scroll,天使轉蛋,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_Gashapon", 14296; },{},{}
 //
+14296,Angel_Scroll,天使轉蛋,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_Gashapon", 14296; },{},{};
 function	script	F_Gashapon	{
 	// .@DEBUG_FLAG 	: 如果設為 1，則 map-server 視窗會輸出轉蛋的機率及對應物品列表，
 	// 						用於設計完一個新轉蛋後做檢查確認用。
