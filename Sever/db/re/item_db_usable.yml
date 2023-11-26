@@ -22720,7 +22720,7 @@ Body:
     Trade:
       NoDrop: true
     Script: |
-      getgroupitem(IG_Angel_Scroll);
+      14296,Angel_Scroll,天使轉蛋,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_Gashapon", 14296; },{},{};
   - Id: 14297
     AegisName: Devil_Scroll
     Name: 惡魔轉蛋
