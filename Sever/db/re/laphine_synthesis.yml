@@ -2984,16 +2984,6 @@ Body:
     MinimumRefine: 9
     Requirements:
       - Item: Freezing_Rod
-  - Item: Freedom_Stick_Cube
-    RewardGroup: FREEDOM_STICK_CUBE
-    MinimumRefine: 9
-    Requirements:
-      - Item: Freedom_Stick
-  - Item: Blessed_Knife_Cube
-    RewardGroup: BLESSED_KNIFE_CUBE
-    MinimumRefine: 9
-    Requirements:
-      - Item: Blessed_Knife
   - Item: 3Lv_9Refine_Weapon_7Gu
     RewardGroup: 3LV_9REFINE_WEAPON_7GU
     MinimumRefine: 9
