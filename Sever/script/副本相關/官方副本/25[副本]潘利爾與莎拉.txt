@@ -1478,6 +1478,7 @@ get422:
 	Instance_PassAnnounce;
 	getitem 607,10;// Yggdrasilberry
 	getitem 608,15;// Seed_Of_Yggdrasil
+	getitem 6909,1;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:

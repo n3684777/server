@@ -880,6 +880,7 @@ OnInstanceInit:
 		if(select("Â÷¶}.","¯d¤U¨Ó³}³}.") == 2) close;
 		'Instance_reward[getarraysize('Instance_reward)] = getcharid(3);
 		getitem 1000103,.@tatol > 20 ? 6 : 3;
+		getitem 6909,1;
 		warp "Save",0,0;
 		end;
 	}

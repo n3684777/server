@@ -1373,6 +1373,7 @@ OnEnable:
 
 OnTouch_:
 	getitem 6000,1; //Dark_Ashes
+	getitem 6909,1;
 	warp instance_mapname("5@tower"),101,72;
 	end;
 

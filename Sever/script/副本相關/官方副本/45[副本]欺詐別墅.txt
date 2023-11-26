@@ -1537,6 +1537,7 @@ get42:
 	end;
 get422:
 	Instance_PassAnnounce;
+	getitem 6909,1;
 	getitem 1000405,150;
 	warp "SavePoint",0,0;
 	end;

@@ -741,6 +741,7 @@ get422:
 	Instance_PassAnnounce;	
 	getitem    25739,5;
 	getitem    25740,5;
+	getitem 6909,5;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:

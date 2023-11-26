@@ -729,7 +729,7 @@ OnTouch:
 	mes "你想出去了嗎?";
 	next;
 	if(select("是的!:不，在稍後") == 1)
-	if(checkquest(9222) == 2) {getitem 6499,3;}
+	if(checkquest(9222) == 2) {getitem 6499,3;getitem 6909,1;}
 	erasequest 9222;
 	warp "Save",0,0;
 	close;

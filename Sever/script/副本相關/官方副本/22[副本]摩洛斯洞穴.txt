@@ -836,6 +836,7 @@ get42:
 	end;
 get422:
 	Instance_PassAnnounce;
+	getitem 6909,1;
 	getitem 22537,1;
 	getitem 6684,1;
 	getexp 1537172,1260000;
