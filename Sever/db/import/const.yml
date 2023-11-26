@@ -33,3 +33,8 @@
 Header:
   Type: CONSTANT_DB
   Version: 1
+Body:
+  - Name: IG_Blessed_Knife_Cube
+    Value: 10001
+  - Name: IG_Freedom_Stick_Cube
+    Value: 10002
