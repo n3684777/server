@@ -153860,7 +153860,7 @@ Body:
       bonus bAtkRate,(.@r >= 7?10:0);
       bonus bDelayrate,(.@r >= 9?8:0);
       bonus bShortAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0);
-      bonus bLongAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0;
+      bonus bLongAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0);
       bonus2 bAddEle,Ele_Neutral,(.@r >= 12?12:0);
   - Id: 480276
     AegisName: Pisces_Manteau_J
