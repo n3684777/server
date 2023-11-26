@@ -32642,7 +32642,7 @@ Body:
       skill "WL_COMET",3;
       bonus bUseSPrate,30;
       }
-      if (eaclass()&EAJL_THIRD && BaseJob == Wizard) {
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
       bonus2 bSkillCooldown,"WL_COMET",-20000;
       }
   - Combos:
