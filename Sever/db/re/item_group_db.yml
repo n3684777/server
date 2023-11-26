@@ -29308,11 +29308,18 @@ Body:
           - Item: Up_Shadow_Staff_K
             RefineMinimum: 7
             RefineMaximum: 7
-  - Group: FREEZING_ROD_CUBE
+  - Group: FREEDOM_STICK_CUBE
     SubGroups:
       - SubGroup: 0
         List:
-          - Item: Up_Freezing_Rod
+          - Item: Up_Freedom_Stick
+            RefineMinimum: 7
+            RefineMaximum: 7
+  - Group: BLESSED_KNIFE_CUBE
+    SubGroups:
+      - SubGroup: 0  #######################
+        List:
+          - Item: Up_Blessed_Knife
             RefineMinimum: 7
             RefineMaximum: 7
   - Group: IRON_NAIL_K_CUBE
@@ -29432,6 +29439,13 @@ Body:
       - SubGroup: 0
         List:
           - Item: Up_The_Black_Gatling
+            RefineMinimum: 7
+            RefineMaximum: 7
+  - Group: DEMON_SLAYER_SHOT_CUBE
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Up_Demon_S_Shot
             RefineMinimum: 7
             RefineMaximum: 7
   - Group: DEMON_SLAYER_SHOT_CUBE
