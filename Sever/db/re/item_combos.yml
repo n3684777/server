@@ -32845,7 +32845,6 @@ Body:
           - Oro_Shoes
           - Orleans_Server
     Script: |
-      bonus
       bonus bFixedCast,-100;
       bonus2 bSubEle,Ele_All,10;
   - Combos:

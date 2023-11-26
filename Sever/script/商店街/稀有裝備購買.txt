@@ -87,33 +87,33 @@ OnInit:
 	sellitem(490472,.@p,-1);
 	sellitem(19181,35000000,-1); //·s®ö¼é[1]
 
-	sellitem(400440,35000000,-1)
-	sellitem(400447,35000000,-1)
-	sellitem(400457,35000000,-1)
-	sellitem(400469,35000000,-1)
-	sellitem(400474,35000000,-1)
-	sellitem(400482,35000000,-1)
-	sellitem(410254,35000000,-1)
-	sellitem(420236,35000000,-1)
-	sellitem(400401,35000000,-1)
-	sellitem(410183,35000000,-1)
-	sellitem(410184,35000000,-1)
-	sellitem(410213,35000000,-1)
-	sellitem(410215,35000000,-1)
-	sellitem(410216,35000000,-1)
-	sellitem(410235,35000000,-1)
-	sellitem(420194,35000000,-1)
-	sellitem(420065,35000000,-1)
-	sellitem(420087,35000000,-1)
-	sellitem(32243,35000000,-1)
-	sellitem(420239,35000000,-1)
-	sellitem(19437,35000000,-1)
-	sellitem(410091,35000000,-1)
-	sellitem(410090,35000000,-1)
-	sellitem(410197,35000000,-1)
-	sellitem(420064,35000000,-1)
-	sellitem(400368,35000000,-1)
-	sellitem(420186,35000000,-1)
+	sellitem(400440,.@p,-1);
+	sellitem(400447,.@p,-1);
+	sellitem(400457,.@p,-1);
+	sellitem(400469,.@p,-1);
+	sellitem(400474,.@p,-1);
+	sellitem(400482,.@p,-1);
+	sellitem(410254,.@p,-1);
+	sellitem(420236,.@p,-1);
+	sellitem(400401,.@p,-1);
+	sellitem(410183,.@p,-1);
+	sellitem(410184,.@p,-1);
+	sellitem(410213,.@p,-1);
+	sellitem(410215,.@p,-1);
+	sellitem(410216,.@p,-1);
+	sellitem(410235,.@p,-1);
+	sellitem(420194,.@p,-1);
+	sellitem(420065,.@p,-1);
+	sellitem(420087,.@p,-1);
+	sellitem(32243,.@p,-1);
+	sellitem(420239,.@p,-1);
+	sellitem(19437,.@p,-1);
+	sellitem(410091,.@p,-1);
+	sellitem(410090,.@p,-1);
+	sellitem(410197,.@p,-1);
+	sellitem(420064,.@p,-1);
+	sellitem(400368,.@p,-1);
+	sellitem(420186,.@p,-1);
 	
 
 	
