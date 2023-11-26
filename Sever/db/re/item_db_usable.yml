@@ -22720,7 +22720,7 @@ Body:
     Trade:
       NoDrop: true
     Script: |
-      14296,Angel_Scroll,天使轉蛋,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_Gashapon", 14296; },{},{};
+      getgroupitem(IG_Angel_Scroll);
   - Id: 14297
     AegisName: Devil_Scroll
     Name: 惡魔轉蛋
@@ -49223,6 +49223,15 @@ Body:
       Container: true
     Script: |
       getgroupitem(IG_Enchant_Stone_Box29);
+  - Id: 101877
+    AegisName: Double_Stone_Box
+    Name: 服飾強化石箱子(雙重)
+    Type: Usable
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getgroupitem(IG_Double_Stone_Box);
   - Id: 200003
     AegisName: LI_HD_Oridecon_Box2
     Name: (Limited) HD Oridecon Box(Blacksmith)(30)
