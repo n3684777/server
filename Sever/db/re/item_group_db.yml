@@ -48903,3 +48903,35 @@ Body:
           - Item: Giant_Fly_Wing
           - Item: E_Giant_Fly_Wing
           - Item: F_Giant_Fly_Wing
+  - Group: Double_Stone_Box
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: ASPDStone_Robe_D
+            Rate: 71
+          - Item: MinorCastStone_Robe_D
+            Rate: 71
+          - Item: CastStone_Robe_D
+            Rate: 71
+          - Item: Range_Stone_Robe_D
+            Rate: 71
+          - Item: Melee_Stone_Robe_D
+            Rate: 71
+          - Item: SPdrainStone_Robe_D
+            Rate: 71
+          - Item: HPdrainStone_Robe_D
+            Rate: 71
+          - Item: Magic_Stone_Robe_D
+            Rate: 71
+          - Item: CrtStone_Robe_D
+            Rate: 71
+          - Item: CriticalStone_Robe_D
+            Rate: 71
+          - Item: ConStone_Robe_D
+            Rate: 71
+          - Item: SplStone_Robe_D
+            Rate: 71
+          - Item: POWStone_Robe_D
+            Rate: 71
+          - Item: StaminaWISStone_Robe_D
+            Rate: 71
