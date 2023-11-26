@@ -183722,7 +183722,7 @@ Body:
       bonus bMagicAtkDef,2*.@ra;
       bonus bNoWeaponDamage,2*.@ra;
       bonus bFixedCast,-(2*.@ms);
-      bonus bVariableCast,-(2*.@ms);
+      bonus bVariableCastrate,-(2*.@var);
       bonus bDelayrate,2*.@ra;
       bonus2 bAddEle,Ele_All,2*.@ra;
       bonus2 bSubEle,Ele_All,2*.@ra;
