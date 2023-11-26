@@ -4273,7 +4273,7 @@ Body:
     Type: Weapon
     SubType: Katar
     Buy: 110000
-    Weight: 1500
+    Weight: 1
     Attack: 140
     Range: 1
     Jobs:
@@ -4313,7 +4313,7 @@ Body:
     Type: Weapon
     SubType: Katar
     Buy: 110000
-    Weight: 1250
+    Weight: 1
     Attack: 151
     Range: 1
     Jobs:
@@ -4375,7 +4375,7 @@ Body:
     Type: Weapon
     SubType: Katar
     Buy: 110000
-    Weight: 1500
+    Weight: 1
     Attack: 140
     Range: 1
     Slots: 1
@@ -14482,7 +14482,7 @@ Body:
     Type: Weapon
     SubType: Staff
     Buy: 110000
-    Weight: 500
+    Weight: 1
     Attack: 100
     MagicAttack: 240
     Range: 1
@@ -14596,7 +14596,7 @@ Body:
     Type: Weapon
     SubType: Staff
     Buy: 110000
-    Weight: 300
+    Weight: 1
     Attack: 195
     Range: 1
     Slots: 2
@@ -21410,7 +21410,7 @@ Body:
     Name: 石製圓盾
     Type: Armor
     Buy: 110000
-    Weight: 1500
+    Weight: 1
     Defense: 45
     Slots: 1
     Jobs:
@@ -30486,7 +30486,7 @@ Body:
     Name: 敏捷別針
     Type: Armor
     Buy: 110000
-    Weight: 100
+    Weight: 1
     Jobs:
       All: true
       Novice: false
@@ -30525,7 +30525,7 @@ Body:
     Name: 幸運珠鏈
     Type: Armor
     Buy: 110000
-    Weight: 100
+    Weight: 1
     Jobs:
       All: true
       Novice: false
@@ -30797,7 +30797,7 @@ Body:
     Name: 幸運珠鏈
     Type: Armor
     Buy: 110000
-    Weight: 200
+    Weight: 1
     Slots: 1
     Jobs:
       All: true
@@ -34731,7 +34731,7 @@ Body:
     Name: 赤火焰靈球
     Type: Armor
     Buy: 110000
-    Weight: 200
+    Weight: 1
     Defense: 2
     Jobs:
       Wizard: true
@@ -57773,7 +57773,7 @@ Body:
     Type: Weapon
     SubType: Grenade
     Buy: 110000
-    Weight: 1200
+    Weight: 1
     Attack: 220
     Range: 9
     Jobs:
@@ -57792,7 +57792,7 @@ Body:
     Type: Weapon
     SubType: Grenade
     Buy: 110000
-    Weight: 1200
+    Weight: 1
     Attack: 220
     Range: 9
     Slots: 1
@@ -95813,7 +95813,7 @@ Body:
     Name: 喵族專屬斗篷
     Type: Armor
     Buy: 110000
-    Weight: 300
+    Weight: 1
     Defense: 20
     Slots: 1
     Jobs:
@@ -100953,7 +100953,7 @@ Body:
     Name: 喵族專屬鞋子
     Type: Armor
     Buy: 110000
-    Weight: 500
+    Weight: 1
     Defense: 25
     Slots: 1
     Jobs:
