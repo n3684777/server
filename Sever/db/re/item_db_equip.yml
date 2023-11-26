@@ -183643,10 +183643,11 @@ Body:
     EquipLevelMin: 1
     EquipLevelMin: 1 # + getequiprefinerycnt()
     Script: |
-      .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(QI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
+      .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
       .@ra = 5;
       .@va = 5;
       .@ms = 500;
+      .@var = 25;
       if(.@allrefine < 55){
       bonus bAllStats,.@va;
       bonus bAllTraitStats,.@va;
@@ -183673,7 +183674,7 @@ Body:
       bonus bMagicAtkDef,.@ra;
       bonus bNoWeaponDamage,.@ra;
       bonus bFixedCast,-(.@ms);
-      bonus bVariableCast,-(.@ms);
+      bonus bVariableCastrate,-(.@var);
       bonus bDelayrate,.@ra;
       bonus2 bAddEle,Ele_All,.@ra;
       bonus2 bSubEle,Ele_All,.@ra;

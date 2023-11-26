@@ -1,0 +1,166 @@
+uttycty,106,163,4	script	★ 裝備改良/改造 ★	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"裝備改良/改造購買商";
+	waitingroom "★ 裝備改良/改造購買 ★",0;
+
+	tradertype(NST_EXPANDED_BARTER);
+	
+    sellitem(23773,100000,-1); //幻象
+    sellitem(23774,100000,-1);
+    sellitem(23775,500000,-1);
+    sellitem(100601,100000, -1);	
+
+    
+
+    sellitem(100160,150000,-1);//自動
+    sellitem(100161,150000,-1);
+	sellitemcurrency(6417,2);
+    endsellitem();
+    sellitem(100162,150000,-1);
+    sellitem(100163,150000,-1);
+    sellitem(100602,200000, -1);
+
+    sellitem(100273, 0, -1);	//古代戰靴改良箱
+	sellitemcurrency(6417,3);
+    endsellitem();
+
+    sellitem(100274, 0, -1);	//改良神話武
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100275, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100276, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100277, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100327, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100328, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100329, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100330, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100331, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100360, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100361, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100362, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100363, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100376, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100377, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100378, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100379, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100388, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100390, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100393, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100394, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100395, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100396, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100397, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100398, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100399, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100400, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100401, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100402, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100403, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100404, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100405, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100406, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100407, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100408, 0, -1);	
+	sellitemcurrency(6417,10);
+    endsellitem();
+    sellitem(100437, 0, -1);	//古代隨機升英雄武器箱
+	sellitemcurrency(6417,3);
+    endsellitem();
+    
+    
+    sellitem(100819, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    sellitem(100820, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    sellitem(100834, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    sellitem(100918, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    sellitem(100939, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    sellitem(101190, 0, -1);	 //神話武器升級lt 
+	sellitemcurrency(6417,20);
+    endsellitem();    
+    
+    // (服飾)強化石箱子(披肩)
+    sellitem(100465, 0, -1);	
+	sellitemcurrency(6417,3);
+    endsellitem();
+
+
+OnBuyItem:
+end;
+}
