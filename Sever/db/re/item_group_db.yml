@@ -12212,8 +12212,6 @@ Body:
         List:
           - Item: Guarantee_Weapon_6Up
           - Item: 120LVUP
-          - Item: ragnarok_weapon_box
-          - Item: Booster_W_Up_1
   - Group: LEVEL_UP_BOX120
     SubGroups:
       - SubGroup: 0
@@ -29308,18 +29306,11 @@ Body:
           - Item: Up_Shadow_Staff_K
             RefineMinimum: 7
             RefineMaximum: 7
-  - Group: FREEDOM_STICK_CUBE
+  - Group: FREEZING_ROD_CUBE
     SubGroups:
       - SubGroup: 0
         List:
-          - Item: Up_Freedom_Stick
-            RefineMinimum: 7
-            RefineMaximum: 7
-  - Group: BLESSED_KNIFE_CUBE
-    SubGroups:
-      - SubGroup: 0
-        List:
-          - Item: Up_Blessed_Knife
+          - Item: Up_Freezing_Rod
             RefineMinimum: 7
             RefineMaximum: 7
   - Group: IRON_NAIL_K_CUBE
@@ -29439,13 +29430,6 @@ Body:
       - SubGroup: 0
         List:
           - Item: Up_The_Black_Gatling
-            RefineMinimum: 7
-            RefineMaximum: 7
-  - Group: DEMON_SLAYER_SHOT_CUBE
-    SubGroups:
-      - SubGroup: 0
-        List:
-          - Item: Up_Demon_S_Shot
             RefineMinimum: 7
             RefineMaximum: 7
   - Group: DEMON_SLAYER_SHOT_CUBE
@@ -41811,82 +41795,77 @@ Body:
       - SubGroup: 1
         List:
           - Item: Iron_Nail_K
-            Rate: 274
+            Rate: 278
           - Item: Iron_Staff
-            Rate: 274
+            Rate: 278
           - Item: Humma_Clear
-            Rate: 274
+            Rate: 278
           - Item: Sword_Of_Bluefire
-            Rate: 274
+            Rate: 278
           - Item: Royal_Bow_K
-            Rate: 274
+            Rate: 278
           - Item: Narcis_Bow
-            Rate: 274
+            Rate: 278
           - Item: Oriental_Sword
-            Rate: 274
+            Rate: 278
           - Item: Shadow_Staff_K
-            Rate: 274
+            Rate: 278
           - Item: SoulWeight
-            Rate: 274
+            Rate: 278
           - Item: MeawFoxtail
-            Rate: 274
+            Rate: 278
           - Item: Shiver_Katar_K
-            Rate: 274
+            Rate: 278
           - Item: Avenger
-            Rate: 274
+            Rate: 278
           - Item: Master_Soul_Rifle
-            Rate: 274
+            Rate: 278
           - Item: Demon_S_Shot
-            Rate: 274
+            Rate: 278
           - Item: Golden_L_Launcher
-            Rate: 274
+            Rate: 278
           - Item: The_Black_Gatling
-            Rate: 274
+            Rate: 278
           - Item: Demon_Hunting_Bible_K
-            Rate: 274
+            Rate: 278
           - Item: OneSkyOneSun
-            Rate: 274
+            Rate: 278
           - Item: Magic_Sword
-            Rate: 274
+            Rate: 278
           - Item: Sharp_Wind_Sword
-            Rate: 274
+            Rate: 278
           - Item: Fog_Dew_Sword
-            Rate: 274
+            Rate: 278
           - Item: Undine_Spear_K
-            Rate: 274
+            Rate: 278
           - Item: Crimson_Rose
-            Rate: 274
+            Rate: 278
           - Item: Light_Blade
-            Rate: 274
+            Rate: 278
           - Item: Slate_Sword
-            Rate: 274
+            Rate: 278
           - Item: Fatalist
-            Rate: 274
+            Rate: 278
           - Item: Freezing_Rod
-            Rate: 274
+            Rate: 278
           - Item: Ray_Knuckle
-            Rate: 274
+            Rate: 278
           - Item: Trumpet_Shell_K
-            Rate: 274
+            Rate: 278
           - Item: Barb_Wire_K
-            Rate: 274
+            Rate: 278
           - Item: Meteor_Striker
-            Rate: 274
+            Rate: 278
           - Item: Saint_Hall
-            Rate: 274
+            Rate: 278
           - Item: Dragonic_Slayer
-            Rate: 274
+            Rate: 278
           - Item: Blade_Katar
-            Rate: 274
+            Rate: 278
           - Item: Blue_Crystal_Staff
-            Rate: 274
+            Rate: 278
           - Item: Scalet_Dragon_L_Bow
-            Rate: 274
-          - Item: Freedom_Stick
-            Rate: 274
-          - Item: Blessed_Knife
-            Rate: 274
-          
+            Rate: 278
   - Group: STARSOUL_SCROLL
     SubGroups:
       - SubGroup: 1
@@ -48922,35 +48901,3 @@ Body:
           - Item: Giant_Fly_Wing
           - Item: E_Giant_Fly_Wing
           - Item: F_Giant_Fly_Wing
-  - Group: Double_Stone_Box
-    SubGroups:
-      - SubGroup: 1
-        List:
-          - Item: ASPDStone_Robe_D
-            Rate: 71
-          - Item: MinorCastStone_Robe_D
-            Rate: 71
-          - Item: CastStone_Robe_D
-            Rate: 71
-          - Item: Range_Stone_Robe_D
-            Rate: 71
-          - Item: Melee_Stone_Robe_D
-            Rate: 71
-          - Item: SPdrainStone_Robe_D
-            Rate: 71
-          - Item: HPdrainStone_Robe_D
-            Rate: 71
-          - Item: Magic_Stone_Robe_D
-            Rate: 71
-          - Item: CrtStone_Robe_D
-            Rate: 71
-          - Item: CriticalStone_Robe_D
-            Rate: 71
-          - Item: ConStone_Robe_D
-            Rate: 71
-          - Item: SplStone_Robe_D
-            Rate: 71
-          - Item: POWStone_Robe_D
-            Rate: 71
-          - Item: StaminaWISStone_Robe_D
-            Rate: 71
