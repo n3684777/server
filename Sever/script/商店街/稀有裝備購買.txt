@@ -106,6 +106,7 @@ OnInit:
 	sellitem(420065,.@p,-1);
 	sellitem(420087,.@p,-1);
 	sellitem(32243,.@p,-1);
+	sellitem(19393,.@p,-1);
 	sellitem(420239,.@p,-1);
 	sellitem(19437,.@p,-1);
 	sellitem(410091,.@p,-1);
