@@ -183281,6 +183281,7 @@ Body:
     Name: 2023ROS決戰spark斗篷
     Type: Armor
     Weight: 200
+    View: 184
     Defense: 20
     Slots: 1
     Locations:
