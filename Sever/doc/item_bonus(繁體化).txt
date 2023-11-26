@@ -619,16 +619,16 @@ EQI_ACC_R (8)     - [飾品右]
 EQI_HEAD_MID (9)  - [頭中]
 EQI_HEAD_LOW (10) - [頭下]
 
-getequiprefinerycnt(EQI_HEAD_TOP) (頭上精煉)
-getequiprefinerycnt(EQI_ARMO)  (鎧甲精煉)
-getequiprefinerycnt(EQI_HAND_L)  (左手精煉)
-getequiprefinerycnt(EQI_HAND_R)	 (右手精煉)
-getequiprefinerycnt(EQI_GARMENT)  (斗篷精煉)
-getequiprefinerycnt(EQI_SHOES)  (鞋子精煉)
-getequiprefinerycnt(EQI_ACC_L)  (飾品左精煉)
-getequiprefinerycnt(EQI_ACC_R)	(飾品右精煉)
-getequiprefinerycnt(EQI_HEAD_MID)  (頭中精煉)
-getequiprefinerycnt(EQI_HEAD_LOW)	(頭下精煉)
+getequiprefinerycnt(EQI_HEAD_TOP); (頭上精煉)
+getequiprefinerycnt(EQI_ARMO);  (鎧甲精煉)
+getequiprefinerycnt(EQI_HAND_L);  (左手/盾牌精煉)
+getequiprefinerycnt(EQI_HAND_R);	 (右手/武器精煉)
+getequiprefinerycnt(EQI_GARMENT);  (斗篷精煉)
+getequiprefinerycnt(EQI_SHOES);  (鞋子精煉)
+getequiprefinerycnt(EQI_ACC_L);  (飾品左精煉)
+getequiprefinerycnt(EQI_ACC_R);	(飾品右精煉)
+getequiprefinerycnt(EQI_HEAD_MID);  (頭中精煉)
+getequiprefinerycnt(EQI_HEAD_LOW);	(頭下精煉)
 
 skill sk,n; 可使用sk技能n等級
 

@@ -32862,3 +32862,17 @@ Body:
     Script: |
       bonus bFixedCast,-100;
       bonus bVariableCastrate,-10;
+  - Combos:
+      - Combo:
+          - Nob_Lib_Shield
+          - Noble_Hankie_TW
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_L);
+      bonus2 bSubRace,RC_Player_Human,1+(.@r >= 13?3:0)*(eaclass()&EAJL_THIRD && BaseJob == Job_Priest?3:0);
+  - Combos:
+      - Combo:
+          - Nob_Lib_Shield
+          - Noble_Hankie_TW
+          - Walk_Of_DarkVoid
+    Script: |
+      bonus2 bSubRace,RC_Player_Human,-5;
