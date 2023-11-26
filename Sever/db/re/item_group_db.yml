@@ -29317,7 +29317,7 @@ Body:
             RefineMaximum: 7
   - Group: BLESSED_KNIFE_CUBE
     SubGroups:
-      - SubGroup: 0  #######################
+      - SubGroup: 0
         List:
           - Item: Up_Blessed_Knife
             RefineMinimum: 7
