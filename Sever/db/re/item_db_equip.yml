@@ -153839,6 +153839,29 @@ Body:
     View: 157
     Trade:
       NoDrop: true
+  - Id: 480269
+    AegisName: Day_of_the_Dead
+    Name: 夜勝魔復仇斗篷
+    Type: Armor
+    Weight: 200
+    Defense: 0
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,(.@r/2)*10;
+      bonus2 bSubRace,RC_Dragon,(.@r/3)*4;
+      bonus2 bAddRace,RC_DemiHuman,(.@r/4)*8;
+      bonus2 bAddRace,RC_Dragon,(.@r/4)*8;
+      bonus bAtkRate,(.@r >= 7?10:0);
+      bonus bDelayrate,(.@r >= 9?8:0);
+      bonus bShortAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0);
+      bonus bLongAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0;
+      bonus2 bAddEle,Ele_Neutral,(.@r >= 12?12:0);
   - Id: 480276
     AegisName: Pisces_Manteau_J
     Name: 曼妙自然之力斗篷
@@ -183252,6 +183275,38 @@ Body:
              bonus2 bAddRace,RC_All,15;
              bonus2 bMagicAddRace,RC_All,15;
          }
+      }
+  - Id: 480328
+    AegisName: RTC_V_Coat4_2023
+    Name: 2023ROS決戰spark斗篷
+    Type: Armor
+    Weight: 200
+    Defense: 20
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,(.@r/2)*1500;
+      bonus bAtkRate,(.@r/3)*5;
+      bonus bMatkRate,(.@r/3)*5;
+      if(.@r >= 7){
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+      }
+      bonus2 bWeaponSubSize,Slze_All,(.@r >= 9?7:0);
+      if(.@r >= 11){
+      bonus2 bAddSize,Size_All,15;
+      bonus2 bMagicAddSize,Size_All,15;
+      }
+      if(.@r >= 13){
+      bonus2 bSubRace,RC_DemiHuman,8;
+      bonus2 bSubRace,RC_Player_Human,8;
+      bonus2 bSubRace,RC_Player_Doram,8;
       }
   - Id: 480399
     AegisName: Devil_Flame_Manteau_LT
