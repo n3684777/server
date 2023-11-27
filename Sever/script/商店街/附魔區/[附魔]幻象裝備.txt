@@ -1,12 +1,12 @@
-uttycty,29,161,6	script	全自動裝備附魔人員	805,{
-	mes "[全自動裝備附魔人員]";
+uttycty,42,161,6	script	幻象裝備附魔人員	805,{
+	mes "[幻象裝備附魔人員]";
 	mes "" + strcharinfo(0) + ",";
 	mes "附魔裝備要穿戴才能附魔唷~";
 	mes "有甚麼事嗎?";
 	next;
-	switch( select( "沒事", "附魔 " + getitemname(450127), "附魔 " + getitemname(450128), "附魔 " + getitemname(480020), "附魔 " + getitemname(480021), "附魔 " + getitemname(470022), "附魔 " + getitemname(470023), "附魔 " + getitemname(490024), "附魔 " + getitemname(490025), "附魔 " + getitemname(490026), "附魔 " + getitemname(490027) ) ) {
+	switch( select( "沒事", "附魔 " + getitemname(15376), "附魔 " + getitemname(15377), "附魔 " + getitemname(20933), "附魔 " + getitemname(20934), "附魔 " + getitemname(22196), "附魔 " + getitemname(22197), "附魔 " + getitemname(32207), "附魔 " + getitemname(32208), "附魔 " + getitemname(32209), "附魔 " + getitemname(32210) ) ) {
 	case 1:
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "掰掰~";
 		close;
 	case 2:
@@ -194,7 +194,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 		else
 			.@menu5$ += sprintf( "%s:", getitemname(.@epc2[.@i]) );
 	}
-	mes "[全自動裝備附魔人員]";
+	mes "[幻象裝備附魔人員]";
 	mes "" + strcharinfo(0) + ",";
 	mes "請選擇你要附魔的模組等級";
 	next;
@@ -218,7 +218,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	else if (.@part == EQI_ACC_L)
 		.@max_num_enchant = .@norm[.@s+6];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
@@ -229,7 +229,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 		close;
 	.@s *= 8;
 	.@item_req = .@rare[.@s];
-	.@item_enchant_id = .@rare[.@s+1];
+	.@item_enchant_id = .@rare[.@s+1];		
 	.@first_slot_only = .@rare[.@s+7];
 	if (.@part == EQI_ARMOR)
 		.@max_num_enchant = .@rare[.@s+2];
@@ -242,7 +242,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	else if (.@part == EQI_ACC_L)
 		.@max_num_enchant = .@rare[.@s+6];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
@@ -266,7 +266,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	else if (.@part == EQI_ACC_L)
 		.@max_num_enchant = .@unq[.@s+6];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
@@ -282,7 +282,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	if (.@part == EQI_SHOES)
 		.@max_num_enchant = .@lgd[.@s+4];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
@@ -298,7 +298,7 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	if (.@part == EQI_ARMOR)
 		.@max_num_enchant = .@epc[.@s+2];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
@@ -314,14 +314,14 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	if (.@part == EQI_ARMOR)
 		.@max_num_enchant = .@epc2[.@s+2];
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "錯誤";
 		close;
 	}
 	break;
 }
 	if (.@s < 0) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "So far.";
 		close;
 	}
@@ -330,14 +330,14 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	setarray .@card[0], getequipcardid(.@part,0), getequipcardid(.@part,1), getequipcardid(.@part,2), getequipcardid(.@part,3);
 
 	if (countitem(.@item_req) < 1) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "So far.";
 		close;
 	}
 
 		// anti-hack
 	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine)) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "你有沒有卸下你的裝備?";
 		close;
 	}
@@ -348,58 +348,58 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	if (.@card[3] > 0 && .@item_enchant_id == .@card[3]) { .@slot_sum++; }
 
 	if (.@max_num_enchant < 1) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "你選擇的模組無法套用在你的裝備上";
 		close;
 	}
 	if (.@first_slot_only > 0 && .@card[3] != 0) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "此模組只能第一次強化使用，但設備有其他模組，請使用其他模組強化！";
 		close;
 	}
 	if (.@slot_sum >= .@max_num_enchant) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "你選擇的模組做多只能強化" + .@max_num_enchant + "次，已到達上限";
 		close;
 	}
 	if (.@card[1] != 0) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "你的裝備已經沒有強化的空間";
 		close;
 	}
 
 	// anti-hack
 	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine)) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "裝備將被拆除";
 		close;
 	}
 
 	switch( .@equip_id ) {
-	case 450127:	// Excelion_Wing
-	case 450128:	// Excelion_Suit
-	case 480020:	// Excelion_Wing
-	case 480021:	// Excelion_Suit
-	case 470022:	// Excelion_Wing
-	case 470023:	// Excelion_Suit
-	case 490024:	// Excelion_Wing
-	case 490025:	// Excelion_Suit
-	case 490026:	// Excelion_Wing
-	case 490027:	// Excelion_Suit
+	case 15376:	// Excelion_Wing
+	case 15377:	// Excelion_Suit
+	case 20933:	// Excelion_Wing
+	case 20934:	// Excelion_Suit
+	case 22196:	// Excelion_Wing
+	case 22197:	// Excelion_Suit
+	case 32207:	// Excelion_Wing
+	case 32208:	// Excelion_Suit
+	case 32209:	// Excelion_Wing
+	case 32210:	// Excelion_Suit
 		break;
 	default:
-		mes "[全自動裝備附魔人員]";
-		mes "強化只能適用在17.2全自動相關裝備";
+		mes "[幻象裝備附魔人員]";
+		mes "強化只能適用在17.2幻象相關裝備";
 		mes "請先穿戴相關裝備才能附魔~";
 		close;
 	}
-	mes "[全自動裝備附魔人員]";
+	mes "[幻象裝備附魔人員]";
 	mes "選擇" + getequipname(.@part) + " + " + getitemname(.@item_req) + ",";
 	mes "^000000------------------";
 	mes "你選擇的裝備可以強化 ^0000ff" + .@max_num_enchant + " 次, ^000000目前已經 ^0000ff" + .@slot_sum + " 次^000000, 您要繼續嗎?";
 	next;
 	if (select( "不", "繼續" ) == 1) {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "掰掰";
 		close;
 	}
@@ -421,12 +421,12 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 		.@card[1] = .@item_enchant_id;
 	}
 	else {
-		mes "[全自動裝備附魔人員]";
+		mes "[幻象裝備附魔人員]";
 		mes "強化次數已達上限";
 		close;
 	}
 	specialeffect2 EF_REPAIRWEAPON;
-	mes "[全自動裝備附魔人員]";
+	mes "[幻象裝備附魔人員]";
 	if (.@enchant_count < 5)
 		mes "第一個裝備升級了 ^990000" + .@enchant_count + " 次^000000.";
 	else
@@ -437,6 +437,6 @@ uttycty,29,161,6	script	全自動裝備附魔人員	805,{
 	getitem2 .@equip_id,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
 	close;
 OnInit:
-	setnpcicon getnpcid(0),1015,"[附魔]全自動裝備";
-	waitingroom "[附魔]全自動裝備",0;
+	setnpcicon getnpcid(0),1015,"[附魔]幻象裝備";
+	waitingroom "[附魔]幻象裝備",0;
 }

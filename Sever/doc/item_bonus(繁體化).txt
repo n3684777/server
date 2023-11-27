@@ -618,6 +618,19 @@ EQI_ACC_L (7)     - [飾品左]
 EQI_ACC_R (8)     - [飾品右]
 EQI_HEAD_MID (9)  - [頭中]
 EQI_HEAD_LOW (10) - [頭下]
+EQI_COSTUME_HEAD_TOP - [服飾頭上]
+EQI_COSTUME_HEAD_MID - [服飾頭中]
+EQI_COSTUME_HEAD_LOW - [服飾頭下]
+EQI_COSTUME_HEAD_GARMENT - [服飾披肩]
+EQI_SHADOW_ARMOR - [影子鎧甲]
+EQI_SHADOW_WEAPON - [影子手套]
+EQI_SHADOW_SHIELD - [影子盾牌]
+EQI_SHADOW_SHOES - [影子鞋子]
+EQI_SHADOW_ACC_R - [影子飾品右]
+EQI_SHADOW_ACC_L - [影子飾品左]
+
+
+
 
 getequiprefinerycnt(EQI_HEAD_TOP); (頭上精煉)
 getequiprefinerycnt(EQI_ARMO);  (鎧甲精煉)
