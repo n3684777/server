@@ -1,12 +1,17 @@
+
 uttycty,42,161,6	script	幻象裝備附魔人員	805,{
-	mes "[幻象裝備附魔人員]";
+	setarray .@equipid$[0],getequipname(2),getequipname(5),getequipname(6),getequipname(7),getequipname(8);
+		//setarray .@equip[0],getequipid(EQI_ARMOR) == 15376,getequipid(EQI_ARMOR) == 15377,getequipid(EQI_ARMOR) == 20933,getequipid(EQI_ARMOR) == 20934,getequipid(EQI_SHOES) == 22196,getequipid(EQI_SHOES) == 22197,getequipid(EQI_ACC_R) == 32207,getequipid(EQI_ACC_R) == 32209,getequipid(EQI_ACC_L) == 32208,getequipid(EQI_ACC_L) == 32210;
+	setarray .@equip[0],15376,15377,20933,20934,22196,22197,32207,32208,32209,32210;
+	setarray .@loc,2,2,5,5,6,6,8,7,8,7;	
+	mes "[全自動裝備附魔人員]";
 	mes "" + strcharinfo(0) + ",";
 	mes "附魔裝備要穿戴才能附魔唷~";
 	mes "有甚麼事嗎?";
 	next;
-	switch( select( "沒事", "附魔 " + getitemname(15376), "附魔 " + getitemname(15377), "附魔 " + getitemname(20933), "附魔 " + getitemname(20934), "附魔 " + getitemname(22196), "附魔 " + getitemname(22197), "附魔 " + getitemname(32207), "附魔 " + getitemname(32208), "附魔 " + getitemname(32209), "附魔 " + getitemname(32210) ) ) {
+	switch( select( "沒事", "附魔 " + getitemname(450127), "附魔 " + getitemname(450128), "附魔 " + getitemname(480020), "附魔 " + getitemname(480021), "附魔 " + getitemname(470022), "附魔 " + getitemname(470023), "附魔 " + getitemname(490024), "附魔 " + getitemname(490025), "附魔 " + getitemname(490026), "附魔 " + getitemname(490027) ) ) {
 	case 1:
-		mes "[幻象裝備附魔人員]";
+		mes "[全自動裝備附魔人員]";
 		mes "掰掰~";
 		close;
 	case 2:
@@ -158,51 +163,39 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 		1000202, 310177, 2, 0, 0, 0, 0, 0;
 	.@size6 = getarraysize(.@epc2);
 	
-	for ( .@i = 0; .@i < .@size1; .@i += 8 ) {
-		if (countitem(.@norm[.@i]) < 1)
-			.@menu$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@norm[.@i]) );
-		else
+    for ( .@i = 0; .@i < .@size1; .@i += 8 ) {
+		if (countitem(.@norm[.@i]) > 0)
 			.@menu$ += sprintf( "%s:", getitemname(.@norm[.@i]) );
 	}
 	for ( .@i = 0; .@i < .@size2; .@i += 8 ) {
-		if (countitem(.@rare[.@i]) < 1)
-			.@menu1$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@rare[.@i]) );
-		else
+		if (countitem(.@rare[.@i]) > 0)
 			.@menu1$ += sprintf( "%s:", getitemname(.@rare[.@i]) );
 	}
 	for ( .@i = 0; .@i < .@size3; .@i += 8 ) {
-		if (countitem(.@unq[.@i]) < 1)
-			.@menu2$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@unq[.@i]) );
-		else
+		if (countitem(.@unq[.@i]) > 0)
 			.@menu2$ += sprintf( "%s:", getitemname(.@unq[.@i]) );
 	}
 	for ( .@i = 0; .@i < .@size4; .@i += 8 ) {
-		if (countitem(.@lgd[.@i]) < 1)
-			.@menu3$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@lgd[.@i]) );
-		else
+		if (countitem(.@lgd[.@i]) > 0)
 			.@menu3$ += sprintf( "%s:", getitemname(.@lgd[.@i]) );
 	}
 	for ( .@i = 0; .@i < .@size5; .@i += 8 ) {
-		if (countitem(.@epc[.@i]) < 1)
-			.@menu4$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@epc[.@i]) );
-		else
+		if (countitem(.@epc[.@i]) > 0)
 			.@menu4$ += sprintf( "%s:", getitemname(.@epc[.@i]) );
 	}
 	for ( .@i = 0; .@i < .@size6; .@i += 8 ) {
-		if (countitem(.@epc2[.@i]) < 1)
-			.@menu5$ += sprintf( "^aaaaaa%s (未持有)^000000:", getitemname(.@epc2[.@i]) );
-		else
+		if (countitem(.@epc2[.@i]) > 0)
 			.@menu5$ += sprintf( "%s:", getitemname(.@epc2[.@i]) );
 	}
 	mes "[幻象裝備附魔人員]";
 	mes "" + strcharinfo(0) + ",";
 	mes "請選擇你要附魔的模組等級";
 	next;
-	switch(select("- 普通:- 少見:- 稀有:- 特殊:- 技能1:- 技能2")) {
+	front:switch(select("- 普通:- 少見:- 稀有:- 特殊:- 技能1:- 技能2")) {
 	case 1:
-	.@s = select("離開:" + .@menu$) - 2;
+	.@s = select("上一頁:" + .@menu$) - 2;
 	if (.@s == -1)
-		close;
+		goto front;
 	.@s *= 8;
 	.@item_req = .@norm[.@s];
 	.@item_enchant_id = .@norm[.@s+1];
@@ -224,9 +217,9 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	}
 	break;
 	case 2:
-	.@s = select("離開:" + .@menu1$) - 2;
+	.@s = select("上一頁:" + .@menu1$) - 2;
 	if (.@s == -1)
-		close;
+			goto front;
 	.@s *= 8;
 	.@item_req = .@rare[.@s];
 	.@item_enchant_id = .@rare[.@s+1];		
@@ -248,9 +241,9 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	}
 	break;
 	case 3:
-	.@s = select("離開:" + .@menu2$) - 2;
+	.@s = select("上一頁:" + .@menu2$) - 2;
 	if (.@s == -1)
-		close;
+		goto front;
 	.@s *= 8;
 	.@item_req = .@unq[.@s];
 	.@item_enchant_id = .@unq[.@s+1];
@@ -272,9 +265,9 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	}
 	break;
 	case 4:
-	.@s = select("離開:" + .@menu3$) - 2;
+	.@s = select("上一頁:" + .@menu3$) - 2;
 	if (.@s == -1)
-		close;
+		goto front;
 	.@s *= 8;
 	.@item_req = .@lgd[.@s];
 	.@item_enchant_id = .@lgd[.@s+1];
@@ -288,9 +281,9 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	}
 	break;
 	case 5:
-	.@s = select("離開:" + .@menu4$) - 2;
+	.@s = select("上一頁:" + .@menu4$) - 2;
 	if (.@s == -1)
-		close;
+		goto front;
 	.@s *= 8;
 	.@item_req = .@epc[.@s];
 	.@item_enchant_id = .@epc[.@s+1];
@@ -304,9 +297,9 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	}
 	break;
 	case 6:
-	.@s = select("離開:" + .@menu5$) - 2;
+	.@s = select("上一頁:" + .@menu5$) - 2;
 	if (.@s == -1)
-		close;
+		goto front;
 	.@s *= 8;
 	.@item_req = .@epc2[.@s];
 	.@item_enchant_id = .@epc2[.@s+1];
