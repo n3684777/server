@@ -10,6 +10,7 @@ menu "- 我要領取新手獎品",LGET,"- 退出",LCLOSE;
 LGET:
         if (g==2) goto OREADY;
         set g,2;
+	set Zeny,Zeny + 100000;
 	rentitem 62008,259200;	//覺醒伊甸園圓帽Ⅱ(新手)
 	rentitem 62009,259200;	//覺醒伊甸園制服Ⅴ(新手)
 	rentitem 62010,259200;	//覺醒伊甸園斗篷Ⅲ(新手)
