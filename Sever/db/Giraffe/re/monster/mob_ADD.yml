@@ -498,9 +498,9 @@ Body:
     Int: 320
     Dex: 300
     Luk: 120
-    AttackRange: 12
+    AttackRange: 10
     SkillRange: 10
-    ChaseRange: 12
+    ChaseRange: 10
     Size: Medium
     Race: Demihuman
     Element: Holy
