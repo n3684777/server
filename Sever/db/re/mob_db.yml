@@ -17342,6 +17342,8 @@ Body:
         Rate: 1
       - Item: Nightmare_Terror_Card
         Rate: 1
+      - Item: Gold
+        Rate: 2500
         StealProtected: true
   - Id: 1380
     AegisName: DRILLER
