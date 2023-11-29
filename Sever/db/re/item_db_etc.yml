@@ -44919,6 +44919,8 @@ Body:
     Type: Card
     Weight: 10
     Locations:
+      Head_Low: true
+      Head_Mid: true
       Head_Top: true
     Flags:
       BuyingStore: true
@@ -66297,3 +66299,228 @@ Body:
       DropEffect: CLIENT
     Script: |
       skill "PA_PRESSURE",4;
+  - Id: 900071
+    AegisName: AwakenKtullanux_Card_
+    Name: 甦醒水晶龍卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Water,(30+(10*getrefine()));
+  - Id: 900072
+    AegisName: Timeholder_Card_
+    Name: 時間支配者卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatkRate,40;
+      bonus3 bAutoSpell,"MG_FIREBOLT",10,700;
+      bonus3 bAutoSpell,"MG_COLDBOLT",10,700;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",10,700;
+      bonus3 bAutoSpell,"MG_SOULSTRIKE",10,700;
+      bonus3 bAutoSpell,"MG_FIREBALL",10,700;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",10,700;
+      bonus3 bAutoSpell,"MG_THUNDERSTORM",10,700;
+      bonus3 bAutoSpell,"PR_MAGNUS",10,700;
+      bonus3 bAutoSpell,"MG_FROSTDIVER",10,700;
+      bonus3 bAutoSpell,"WZ_METEOR",10,700;
+      bonus3 bAutoSpell,"WZ_WATERBALL",10,700;
+      bonus3 bAutoSpell,"HW_GRAVITATION",10,700;
+      bonus3 bAutoSpell,"HW_NAPALMVULCAN",10,700;
+      bonus3 bAutoSpell,"WZ_VERMILION",10,700;
+      bonus3 bAutoSpell,"AB_ADORAMUS",10,700;
+      bonus3 bAutoSpell,"CD_PETITIO",10,700;
+      bonus3 bAutoSpell,"SO_PSYCHIC_WAVE",5,700;
+      bonus3 bAutoSpell,"SO_VARETYR_SPEAR",10,700;
+      bonus3 bAutoSpell,"SO_EARTHGRAVE",10,700;
+      bonus3 bAutoSpell,"SO_CLOUD_KILL",10,700;
+      bonus3 bAutoSpell,"WL_CHAINLIGHTNING",10,700;
+      bonus3 bAutoSpell,"WL_JACKFROST",10,700;
+      bonus3 bAutoSpell,"WL_EARTHSTRAIN",10,700;
+      bonus3 bAutoSpell,"EM_DIAMOND_STORM",10,700;
+      bonus3 bAutoSpell,"EM_LIGHTNING_LAND",10,700;
+      bonus3 bAutoSpell,"EM_CONFLAGRATION",10,700;
+      bonus3 bAutoSpell,"EM_TERRA_DRIVE",10,700;
+      bonus3 bAutoSpell,"EM_VENOM_SWAMP",10,700;
+      bonus3 bAutoSpell,"AB_VITUPERATUMP",10,700;
+      bonus3 bAutoSpell,"NPC_WIDEWEB",10,700;
+  - Id: 900073
+    AegisName: Cruel_Coelacanth_Card_
+    Name: 暴力腔棘魚卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddClass,Class_All,10+((.@r/2)*5);
+      bonus3 bAutoSpell,"SA_ABRACADABRA",10,300;
+  - Id: 900074
+    AegisName: As_Ragged_Golem_Card_
+    Name: 歐內斯特 斯特凡˙傑克卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus5 bAutoSpellWhenHit,"SO_FIREWALK",5,35,BF_WEAPON,0;
+      bonus5 bAutoSpellWhenHit,"SO_ELECTRICWALK",5,80,BF_MAGIC,0;
+      autobonus "{ bonus bFlee,400; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_TEIHIT1; }";
+      autobonus "{ bonus bSpeedRate,25; }",25,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
+  - Id: 900075
+    AegisName: Lord_Of_Death_Card_
+    Name: 死靈騎士卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus3 bAddEff,Eff_Stun,500,ATF_SHORT;
+      bonus3 bAddEff,Eff_Curse,500,ATF_SHORT;
+      bonus3 bAddEff,Eff_Silence,500,ATF_SHORT;
+      bonus3 bAddEff,Eff_Poison,500,ATF_SHORT;
+      bonus3 bAddEff,Eff_Bleeding,500,ATF_SHORT;
+      bonus2 bComaClass,Class_Normal,500;
+  - Id: 900076
+    AegisName: Ktullanux_Card_
+    Name: 水晶龍卡片=改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddEle,Ele_Fire,80;
+      bonus5 bAutoSpellWhenHit,"WZ_FROSTNOVA",10,20,BF_WEAPON|BF_MAGIC,0;
+  - Id: 900077
+    AegisName: Polluted_Spi_Q_Card_
+    Name: 汙染蜘蛛女王卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Earth,100;
+      bonus2 bMagicAtkEle,Ele_Water,100;
+  - Id: 900078
+    AegisName: Polluted_Dark_L_Card_
+    Name: 汙染黑暗之王卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bAspd,5;
+  - Id: 900079
+    AegisName: Boitata_Card_
+    Name: 波伊塔塔卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddEle,Ele_Wind,40;
+      bonus2 bAddEle,Ele_Earth,40;
+      bonus2 bAddRace,RC_Brute,40;
+      bonus2 bAddRace,RC_Insect,40;
+      bonus2 bAddClass,Class_All,20;
+  - Id: 900080
+    AegisName: Pyuriel_Card_
+    Name: 淘汰者傅立葉卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bCritAtkRate,50;
+  - Id: 900081
+    AegisName: ILL_Kraken_Card_
+    Name: 深海魔鬼大烏賊卡片-改
+    Type: Card
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bLongAtkRate,40;
+      bonus bPerfectHitRate,10;
+  - Id: 900082
+    AegisName: Chaos_Baphomet_Card_
+    Name: 混沌巴風特卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bAtkRate,50;
+  - Id: 900082
+    AegisName: Turtle_General_Card_
+    Name: 烏龜將軍卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddClass,Class_All,40;
+      bonus3 bAutoSpell,"AB_VITUPERATUM",5,1000;
+  - Id: 900083
+    AegisName: Orc_Load_Card_
+    Name: 獸人酋長卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bShortWeaponDamageReturn,100;
