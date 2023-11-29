@@ -29685,6 +29685,7 @@ Body:
           Amount: 32
         - Level: 5
           Amount: 36
+      SpiritSphereCost: 5
       Ammo:
         Bullet: true
       AmmoAmount: 1

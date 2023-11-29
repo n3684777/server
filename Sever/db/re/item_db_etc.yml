@@ -65454,7 +65454,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMaxHPrate,(readparam(bInt)>=110)?30:10;
+      bonus bMaxHPrate,(readparam(bInt)>=110)?40:30;
       bonus5 bAutoSpellWhenHit,"CR_GRANDCROSS",10,500,BF_WEAPON,0;
       bonus5 bAutoSpellWhenHit,"IG_GUARDIAN_SHIELD",5,500,BF_WEAPON,0;
   - Id: 900016
@@ -65512,7 +65512,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bCritical,(readparam(bStr)>=110)?20:20;
+      bonus bCritical,(readparam(bStr)>=110)?40:20;
       bonus5 bAutoSpellWhenHit,"AM_ACIDTERROR",5,100,BF_WEAPON,1;
       bonus bLongAtkRate,10;
   - Id: 900020
