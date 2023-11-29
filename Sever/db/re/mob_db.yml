@@ -17617,7 +17617,6 @@ Body:
       - Item: Doram_Only_Shoes
       - Item: Gold
         Rate: 1
-        Rate: 20
       - Item: Deleter_Card
         Rate: 1
         StealProtected: true
