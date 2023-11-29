@@ -319,7 +319,7 @@ Body:
       Critical: true
     Range: -9
     Hit: Multi_Hit
-    HitCount: -6
+    HitCount: 6
     Element: Weapon
     GiveAp: 1
     AfterCastActDelay: 1000

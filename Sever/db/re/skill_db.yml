@@ -19449,7 +19449,7 @@ Body:
     Hit: Multi_Hit
     HitCount: -10
     SplashArea: 6
-    Knockback: 2
+    Knockback: 0
     CopyFlags:
       Skill:
         Reproduce: true

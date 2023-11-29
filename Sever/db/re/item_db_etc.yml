@@ -66205,3 +66205,95 @@ Body:
       bonus bUnbreakableArmor;
       bonus bAtkRate,60;
       bonus bMaxHPrate,-5;
+  - Id: 900064
+    AegisName: C_Himel_Card_
+    Name: 希梅爾茲幻影卡片-改
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Neutral,100;
+      bonus2 bMagicAtkEle,Ele_Holy,100;
+  - Id: 900065
+    AegisName: XM_Celine_Kimi_Card_
+    Name: 席琳基米卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatkRate,20;
+      bonus5 bAutoSpell,"NPC_CRITICALWOUND",3,(50*(getrefine())),BF_MAGIC,1;
+  - Id: 900066
+    AegisName: Silva_Papilia_Card_
+    Name: 席瓦帕皮利亞卡片-改
+    Type: Card
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubClass,Class_Normal,40;
+      bonus bHealPower2,20;
+  - Id: 900067
+    AegisName: Gloom_Under_Night_Card_
+    Name: 幽暗夢魘卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddEle,Ele_Holy,40;
+      bonus2 bAddEle,Ele_Dark,40;
+      bonus2 bAddRace,RC_Angel,40;
+      bonus2 bAddRace,RC_Demon,40;
+      bonus2 bAddClass,Class_All,20;
+  - Id: 900068
+    AegisName: Dracula_Card_
+    Name: 德古拉伯爵卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSPDrainRate,200,40;
+  - Id: 900069
+    AegisName: Ill_Dracula_Card_
+    Name: 憤怒德古拉伯爵卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      skill "PF_HPCONVERSION",1;
+  - Id: 900070
+    AegisName: AngerMoonlight_Card_
+    Name: 憤怒月夜貓卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      skill "PA_PRESSURE",4;
