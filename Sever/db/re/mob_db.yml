@@ -17330,10 +17330,6 @@ Body:
     Drops:
       - Item: Burning_Horse_Shoe
         Rate: 1200
-      - Item: Rosary_
-        Rate: 1
-      - Item: Rosary
-        Rate: 15
       - Item: Blue_Potion
         Rate: 25
       - Item: Blue_Herb
