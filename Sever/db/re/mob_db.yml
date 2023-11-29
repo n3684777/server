@@ -79882,7 +79882,7 @@ Body:
     Ai: 10
     Class: Boss
     Drops:
-      - Item: M_Morocc_Card
+      - Item: DespairGodMorocc_Card
         Rate: 1
         StealProtected: true
   - Id: 3098
