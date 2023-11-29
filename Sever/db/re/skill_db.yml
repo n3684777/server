@@ -29688,7 +29688,7 @@ Body:
       Ammo:
         Bullet: true
       AmmoAmount: 1
-      SpiritSphereCost: 10
+      SpiritSphereCost: -1
       Equipment:
         Silver_Bullet: true
         Sanctified_Bullet: true

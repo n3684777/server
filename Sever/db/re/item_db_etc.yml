@@ -66524,3 +66524,76 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bShortWeaponDamageReturn,100;
+  - Id: 900083
+    AegisName: Jungoliant_Card_
+    Name: 珠寶溫古力安特卡片-改
+    Type: Card
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddEle,Ele_Fire,40;
+      bonus2 bAddEle,Ele_Water,40;
+      bonus2 bAddRace,RC_Formless,40;
+      bonus2 bAddRace,RC_Plant,40;
+      bonus2 bAddClass,Class_All,20;
+  - Id: 900084
+    AegisName: Bijou_Card_
+    Name: 畢尤卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bAddClass,Class_All,20;
+      bonus bMatkRate,20;
+  - Id: 900085
+    AegisName: Bacsojin_Card+
+    Name: 白素貞卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bHealPower,100;
+  - Id: 900086
+    AegisName: Miguel_Card_
+    Name: 米古爾卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bCritAtkRate,400;
+  - Id: 900087
+    AegisName: Randgris_Card_
+    Name: 巴基力 蘭特克力斯卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bUnbreakableWeapon;
+      bonus2 bAddClass,Class_All,20;
+      bonus3 bAutoSpell,"SA_DISPELL",1,10000;
