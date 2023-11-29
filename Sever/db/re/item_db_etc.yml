@@ -65146,3 +65146,304 @@ Body:
     EquipLevelMin: 1
     Script: |
       bonus bAtkEle,Ele_Holy;
+  - Id: 900001
+    AegisName: RuneKnight_Card_
+    Name: 闇●盧恩騎士 賽依連卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Knight) {
+         bonus bAspd,2;
+         bonus bMaxHPrate,50;
+         bonus2 bAddRace,RC_All,50;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900002
+    AegisName: RoyalGuard_Card_
+    Name: 闇●皇家禁衛隊 蘭達卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Crusader) {
+         bonus2 bAddRace,RC_All,10;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900003
+    AegisName: Mechanic_Card_
+    Name: 闇●機械工匠 哈沃得卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Blacksmith) {
+         bonus bHit,20;
+         bonus2 bAddRace,RC_All,50;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900004
+    AegisName: Mechanic_Card_
+    Name: 闇●機械工匠 哈沃得卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Blacksmith) {
+         bonus bHit,20;
+         bonus2 bAddRace,RC_All,50;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900005
+    AegisName: Genetic_Card_
+    Name: 闇●基因學者 普拉梅姆卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist) {
+         bonus bFlee,20;
+         bonus bLongAtkRate,30;
+         bonus2 bAddRace,RC_All,15;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900006
+    AegisName: GuillotineCross_Card_
+    Name: 闇●十字斬首者 艾勒梅斯卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Assassin) {
+         bonus bFlee2,10;
+         bonus2 bSkillCooldown,"GC_DARKCROW",-500000;
+         bonus bCritAtkRate,50;
+         bonus2 bAddRace,RC_All,15;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900007
+    AegisName: ShadowChaser_Card_
+    Name: 闇●魅影追蹤者 科迪卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue) {
+         bonus bMatkRate,15;
+         bonus2 bAddRace,RC_All,5;
+         bonus2 bRegenPercentSP,30,1000;
+         bonus bNoMagicDamage,100;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900008
+    AegisName: Archbishop_Card_
+    Name: 闇●大主教 瑪嘉雷特卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Priest) {
+         bonus bMaxHPrate,10;
+         bonus bHealPower,100;
+         bonus bWis,30;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900009
+    AegisName: Sura_Card_
+    Name: 闇●修羅 陳理歐卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Monk) {
+         bonus bMaxHPrate,10;
+         bonus2 bAddRace,RC_All,10;
+         bonus2 bRegenPercentSP,100,1000;
+         bonus2 bSkillAtk,"MO_EXTREMITYFIST",1000;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900010
+    AegisName: Warlock_Card_
+    Name: 闇●咒術士 凱特莉娜卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
+         bonus bMdef,80;
+         bonus bMatkRate,15;
+         bonus2 bMagicAtkEle,Ele_All,50;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900011
+    AegisName: Sorcerer_Card_
+    Name: 闇●妖術師 西里亞卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
+         bonus bMaxHPrate,10;
+         bonus bMatkRate,10;
+         bonus2 bSkillAtk,"SO_SPELLFIST",500;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900012
+    AegisName: Wanderer_Card_
+    Name: 闇●浪姬舞者 特蘭提尼卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Dancer) {
+         bonus bMaxHPrate,10;
+         bonus bMaxSPrate,15;
+         bonus2 bSPDrainRate,500,50;
+         bonus2 bHPDrainRate,500,50;
+         bonus bSpl,15;
+         bonus bWis,15;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900014
+    AegisName: Minstrel_Card_
+    Name: 闇●宮廷樂師 雅歐帕奇爾卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Bard) {
+         bonus bMaxHPrate,15;
+         bonus bMaxSPrate,10;
+         bonus2 bSPDrainRate,500,50;
+         bonus2 bHPDrainRate,500,50;
+         bonus bSpl,15;
+         bonus bWis,15;
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
+  - Id: 900015
+    AegisName: Ranger_Card_
+    Name: 闇●遊俠 迪文卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Hunter) {
+         bonus bCritical,20;
+         bonus bLongAtkRate,40;
+         bonus bCritAtkRate,25;
+         bonus2 bSkillCooldown,"RA_UNLIMIT",-36000;
+
+      }
+      if (BaseLevel>174)
+         bonus bAllStats,10;
+      if (getrefine()>9)
+         bonus bAllStats,10;
