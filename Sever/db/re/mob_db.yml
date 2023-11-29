@@ -17340,8 +17340,6 @@ Body:
         Rate: 75
       - Item: Ghost_Scroll_1_5
         Rate: 50
-      - Item: Infiltrator
-        Rate: 1
       - Item: Nightmare_Terror_Card
         Rate: 1
       - Item: Gold
@@ -17466,16 +17464,10 @@ Body:
         Rate: 1450
       - Item: Petite_DiablOfs_Wing
         Rate: 1200
-      - Item: Brooch
-        Rate: 2
       - Item: Gold
         Rate: 75
       - Item: Oridecon
         Rate: 10
-      - Item: Unholy_Touch
-        Rate: 5
-      - Item: Crimson_Orb
-        Rate: 1
       - Item: Diabolic_Card
         Rate: 1
         StealProtected: true
@@ -17564,10 +17556,6 @@ Body:
         Rate: 1000
       - Item: Dragon_Scale
         Rate: 1000
-      - Item: Strange_Foxtail
-        Rate: 20
-      - Item: Doram_Only_Cape
-        Rate: 20
       - Item: Flying_Deleter_Card
         Rate: 1
         StealProtected: true
@@ -17610,11 +17598,6 @@ Body:
         Rate: 1000
       - Item: Dragon_Scale
         Rate: 1000
-      - Item: Stone_Buckler
-        Rate: 5
-      - Item: Detail_Model_Foxtail
-        Rate: 20
-      - Item: Doram_Only_Shoes
       - Item: Gold
         Rate: 75
       - Item: Deleter_Card
@@ -66857,8 +66840,6 @@ Body:
         Rate: 375
       - Item: Ghost_Scroll_1_5
         Rate: 250
-      - Item: Infiltrator
-        Rate: 5
       - Item: Nightmare_Terror_Card
         Rate: 1
         StealProtected: true
