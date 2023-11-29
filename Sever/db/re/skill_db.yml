@@ -29685,11 +29685,10 @@ Body:
           Amount: 32
         - Level: 5
           Amount: 36
-      SpiritSphereCost: 5
       Ammo:
         Bullet: true
       AmmoAmount: 1
-      SpiritSphereCost: -1
+      SpiritSphereCost: 10
       Equipment:
         Silver_Bullet: true
         Sanctified_Bullet: true
