@@ -65207,26 +65207,6 @@ Body:
       if (getrefine()>9)
          bonus bAllStats,10;
   - Id: 900004
-    AegisName: Mechanic_Card_
-    Name: 闇●機械工匠 哈沃得卡片-改
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Garment: true
-    Flags:
-      BuyingStore: true
-      DropEffect: CLIENT
-    Script: |
-      if (eaclass()&EAJL_THIRD && BaseJob == Job_Blacksmith) {
-         bonus bHit,20;
-         bonus2 bAddRace,RC_All,50;
-      }
-      if (BaseLevel>174)
-         bonus bAllStats,10;
-      if (getrefine()>9)
-         bonus bAllStats,10;
-  - Id: 900005
     AegisName: Genetic_Card_
     Name: 闇●基因學者 普拉梅姆卡片-改
     Type: Card
@@ -65247,7 +65227,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900006
+  - Id: 900005
     AegisName: GuillotineCross_Card_
     Name: 闇●十字斬首者 艾勒梅斯卡片-改
     Type: Card
@@ -65269,7 +65249,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900007
+  - Id: 900006
     AegisName: ShadowChaser_Card_
     Name: 闇●魅影追蹤者 科迪卡片-改
     Type: Card
@@ -65291,7 +65271,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900008
+  - Id: 900007
     AegisName: Archbishop_Card_
     Name: 闇●大主教 瑪嘉雷特卡片-改
     Type: Card
@@ -65312,7 +65292,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900009
+  - Id: 900008
     AegisName: Sura_Card_
     Name: 闇●修羅 陳理歐卡片-改
     Type: Card
@@ -65334,7 +65314,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900010
+  - Id: 900009
     AegisName: Warlock_Card_
     Name: 闇●咒術士 凱特莉娜卡片-改
     Type: Card
@@ -65355,7 +65335,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900011
+  - Id: 900010
     AegisName: Sorcerer_Card_
     Name: 闇●妖術師 西里亞卡片-改
     Type: Card
@@ -65376,7 +65356,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900012
+  - Id: 900011
     AegisName: Wanderer_Card_
     Name: 闇●浪姬舞者 特蘭提尼卡片-改
     Type: Card
@@ -65400,7 +65380,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900014
+  - Id: 900012
     AegisName: Minstrel_Card_
     Name: 闇●宮廷樂師 雅歐帕奇爾卡片-改
     Type: Card
@@ -65424,7 +65404,7 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
-  - Id: 900015
+  - Id: 900013
     AegisName: Ranger_Card_
     Name: 闇●遊俠 迪文卡片-改
     Type: Card
@@ -65447,3 +65427,210 @@ Body:
          bonus bAllStats,10;
       if (getrefine()>9)
          bonus bAllStats,10;
+  - Id: 900014
+    AegisName: B_Seyren_Card_
+    Name: 闇●騎士領主 賽依連卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "LK_BERSERK",1;
+  - Id: 900015
+    AegisName: Paladin_Card_
+    Name: 闇●十字軍 蘭達卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMaxHPrate,(readparam(bInt)>=110)?30:10;
+      bonus5 bAutoSpellWhenHit,"CR_GRANDCROSS",10,500,BF_WEAPON,0;
+      bonus5 bAutoSpellWhenHit,"IG_GUARDIAN_SHIELD",5,500,BF_WEAPON,0;
+  - Id: 900016
+    AegisName: B_Eremes_Card_
+    Name: 闇●十字刺客 艾勒梅斯卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "GC_CLOAKINGEXCEED",5;
+    UnEquipScript: |
+      sc_end SC_CLOAKING;
+  - Id: 900017
+    AegisName: Stalker_Card_
+    Name: 闇●神行太保 科迪卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bHit,(readparam(bLuk)>=110)?40:20;
+      bonus5 bAutoSpell,"ST_FULLSTRIP",1,8000,BF_SHORT,1;
+  - Id: 900018
+    AegisName: B_Harword_Card_
+    Name: 闇●神工匠 哈沃得卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBreakWeaponRate,1000;
+      bonus bBreakArmorRate,1000;
+  - Id: 900019
+    AegisName: Creator_Card_
+    Name: 闇●創造者 普拉梅姆卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bCritical,(readparam(bStr)>=110)?20:20;
+      bonus5 bAutoSpellWhenHit,"AM_ACIDTERROR",5,100,BF_WEAPON,1;
+      bonus bLongAtkRate,10;
+  - Id: 900020
+    AegisName: B_Magaleta_Card_
+    Name: 闇●神官 瑪嘉雷特卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus5 bAutoSpellWhenHit,"MG_SAFETYWALL",10,800,BF_WEAPON|BF_MAGIC,0;
+  - Id: 900021
+    AegisName: Champion_Card_
+    Name: 闇●武術宗師 陳理歐卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddClass,Class_All,(readparam(bAgi)>=110)?15:7;
+      bonus5 bAutoSpellWhenHit,"MO_INVESTIGATE",5,500,BF_WEAPON,1;
+  - Id: 900022
+    AegisName: B_Katrinn_Card_
+    Name: 闇●超魔導師 凱特莉娜卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus bVariableCastrate,100;
+    UnEquipScript: |
+      heal 0,-2000;
+  - Id: 900023
+    AegisName: Professor_Card_
+    Name: 闇●智者 西里亞卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus bMatkRate,(readparam(bDex)>=110)?14:7;
+      bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,500,BF_MAGIC,0;
+  - Id: 900024
+    AegisName: B_Shecil_Card_
+    Name: 闇●神射手 迪文卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bHPDrainRate,50,20;
+      bonus bLongAtkRate,10;
+      bonus bNoRegen,1;
+  - Id: 900025
+    AegisName: Clown_Card_
+    Name: 闇●搞笑藝人 雅歐帕奇爾卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "BA_POEMBRAGI",10;
+      bonus bFlee,(readparam(bVit)>=110)?40:20;
+  - Id: 900026
+    AegisName: Gypsy_Card_
+    Name: 闇●冷豔舞姬 特蘭提尼卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "DC_FORTUNEKISS",10;
+      bonus bFlee,(readparam(bVit)>=110)?40:20;
+  - Id: 900027
+    AegisName: B_Ygnizem_Card_
+    Name: 闇●劍士 賽尼亞卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus2 bRegenPercentHP,10,5000;
+      bonus2 bRegenPercentSP,10,5000;
