@@ -16755,7 +16755,7 @@ Body:
       - Item: Burning_Heart
         Rate: 1200
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Live_Coal
         Rate: 850
       - Item: White_Herb
@@ -17345,7 +17345,7 @@ Body:
       - Item: Nightmare_Terror_Card
         Rate: 1
       - Item: Gold
-        Rate: 1
+        Rate: 15
         StealProtected: true
   - Id: 1380
     AegisName: DRILLER
@@ -17469,7 +17469,7 @@ Body:
       - Item: Brooch
         Rate: 2
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Oridecon
         Rate: 10
       - Item: Unholy_Touch
@@ -17557,7 +17557,7 @@ Body:
       - Item: Dragon's_Skin
         Rate: 1000
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Dragon_Canine
         Rate: 1300
       - Item: Dragon_Train
@@ -17616,7 +17616,7 @@ Body:
         Rate: 20
       - Item: Doram_Only_Shoes
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Deleter_Card
         Rate: 1
         StealProtected: true
@@ -17703,7 +17703,7 @@ Body:
       - Item: Scropion's_Nipper
         Rate: 1000
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Scorpion's_Tail
         Rate: 1300
       - Item: Red_Gemstone
@@ -66850,7 +66850,7 @@ Body:
       - Item: Rosary
         Rate: 75
       - Item: Gold
-        Rate: 1
+        Rate: 15
       - Item: Blue_Potion
         Rate: 125
       - Item: Blue_Herb
