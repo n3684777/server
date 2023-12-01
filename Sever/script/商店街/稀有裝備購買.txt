@@ -223,6 +223,9 @@ OnInit:
 	sellitem(5966,.@p,-1);
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(19299,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 	sellitem(490269,.@p,-1);
 	sellitemcurrency(6909,.@meow); //樞機之光 490269
     endsellitem();
@@ -349,11 +352,39 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	
+// 頭飾品
 
 	
-
-	
-
+	sellitem(19138,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19246,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5918,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19306,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(28502,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2202,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(18652,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420003,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19101,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19111,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 
 	
 	
