@@ -408,5 +408,76 @@ function	script	C_ench2	{
 	mes "服飾 ^0000ff"+getequipname(13)+"^000000!!!你還真有眼光耶!";
 	mes "很好!! 這樣我也很有幹勁了!!";
 	next;
-	switch(select("a:b")){case 1: mes "a";break;case 2: mes "b";}
+	for(.@i =0;.@i < 38; .@i++)set .@effect$,.@effect$+"持有^0000ff"+getitemname(.@garment[.@i])+"^000000("+countitem(.@garment[.@i])+")個:";
+	switch(select(""+.@effect$+"")){
+		case 1:	set .@e,0;break;
+		case 2:	set .@e,1;break;
+		case 3:	set .@e,2;break;
+		case 4:	set .@e,3;break;
+		case 5:	set .@e,4;break;
+		case 6:	set .@e,5;break;
+		case 7:	set .@e,6;break;
+		case 8:	set .@e,7;break;
+		case 9:	set .@e,8;break;
+		case 10: set .@e,9;break;
+		case 11: set .@e,10;break;
+		case 12: set .@e,11;break;
+		case 13: set .@e,12;break;
+		case 14: set .@e,13;break;
+		case 15: set .@e,14;break;
+		case 16: set .@e,15;break;
+		case 17: set .@e,16;break;
+		case 18: set .@e,17;break;
+		case 19: set .@e,18;break;
+		case 20: set .@e,19;break;
+		case 21: set .@e,20;break;
+		case 22: set .@e,21;break;
+		case 23: set .@e,22;break;
+		case 24: set .@e,23;break;
+		case 25: set .@e,24;break;
+		case 26: set .@e,25;break;
+		case 27: set .@e,26;break;
+		case 28: set .@e,27;break;
+		case 29: set .@e,28;break;
+		case 30: set .@e,29;break;
+		case 31: set .@e,30;break;
+		case 32: set .@e,31;break;
+		case 33: set .@e,32;break;
+		case 34: set .@e,33;break;
+		case 35: set .@e,34;break;
+		case 36: set .@e,35;break;
+		case 37: set .@e,36;break;
+		case 38: set .@e,37;break;
+		}
+	mes "^ff0000※注意事項※^000000";
+	mes "^ff0000該作業會存在失敗的機率，另外，當裝備有額外能力值時，裝備會重置，且^000000";
+	mes "^0000ff"+.@message$[.@e]+"。^000000";
+	mes "^ff0000確定是你要附魔的裝備和能力值嗎?^000000";
+	next;
+	if(select("是","不是")==2){close;}
+	if (countitem(.@garment[.@e]) < 1){
+		mes "[雷斯 查德]";
+		mes "道具不足。";
+		close;}
+	set .@randp,rand(100);
+	if(.@randp >= 50){
+	mes "[雷斯 查德]";
+	mes "好漂亮!!";
+	mes "這樣的作品居然是從我手裡誕生的!!!!";
+	specialeffect 90;
+	sleep2 200;
+	getitem2 getequipid(13),1,1,0,0,.@garmenteff[.@e],0,0,0;
+	delequip 13;
+	delitem .@garment[.@e],1;
+	close;
+	}else{		
+	mes "[雷斯 查德]";
+	mes "不行不行!";
+	mes "(敲碎聲)!!!!!這樣的失敗品沒臉拿出來!!!";
+	specialeffect 155;
+	getitem2 getequipid(13),1,1,0,0,0,0,0,0;
+	delequip 13;
+	delitem .@garment[.@e],1;	
+	close;
+		}
 	}
