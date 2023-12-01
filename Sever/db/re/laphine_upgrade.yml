@@ -111,6 +111,7 @@ Body:
       - Item: Overwhelm_Luk_Armor
   - Item: Time_Unseal_Key
     RandomOptionGroup: TIME_UNSEAL_KEY # TIME_UNSEAL_KEY
+    CardsAllowed: true
     TargetItems:
       - Item: Temporal_M_Str
       - Item: Temporal_M_Agi
