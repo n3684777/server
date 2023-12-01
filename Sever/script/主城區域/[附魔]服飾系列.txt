@@ -285,7 +285,7 @@ OnTimer1000:
 }
 
 // Costume enchant (garment)
-uttycty,24,86,6	script	雷斯查德#cos_ect	4_FROG,{
+uttycty,24,86,6	script	披肩幻化#cos_ect	4_FROG,{
 	disable_items;
 	mes "[雷斯查德]";
 	mes "歡迎光臨，時尚魔石!!";
@@ -409,7 +409,7 @@ uttycty,24,86,6	script	雷斯查德#cos_ect	4_FROG,{
 		mes "[雷斯查德]";
 		mes "漂亮l!!";
 		mes "我真的是自己做的！！";
-		.@card[3] = .@enchant;
+		.@card[0] = .@enchant; //幻化結果要改為3 
 	}
 	else {
 		mes "[雷斯查德]";
