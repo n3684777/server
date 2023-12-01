@@ -65,7 +65,7 @@ OnInit:
 	// 挑戰時間
 	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 300;
+	.ins_cooldown = 7200;
 	// 冷卻編號
 	.ins_collnum = 1;
 
@@ -809,19 +809,18 @@ OnInstanceInit:
 	end;
 }
 
-1@mir,0,0,0	script	離開副本#1@mir	obj_a2,{
-	mes "^33CC33【離開副本】^000000";
-	mes "你要離開副本了嗎？";
+1@mir,0,0,0	script	副本寶箱#1@mir	obj_a2,{
+	mes "^33CC33【副本寶箱】^000000";
+	mes "你要領取獎勵了嗎？";
 	next;
 	menu
 	"^008000◆先不要◆^000000",get42,
-	"^008000◆離開◆^000000",get422;
+	"^008000◆領取◆^000000",get422;
 get42:
 	end;
 get422:
 	Instance_PassAnnounce;
 	getitem    6919,10;
-	getitem    6909,1;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:
