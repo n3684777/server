@@ -83903,7 +83903,7 @@ Body:
 #    AegisName: PAD_M_LIGHT_KNIGHT
 #  - Id: 3327
 #    AegisName: PAD_M_DARK_KNIGHT
-- Id: 3328
+  - Id: 3328
     AegisName: PAD_C_D_DRAGON
     Name: BoyBoy_Devil
     JapaneseName: B大的化身
@@ -83934,8 +83934,6 @@ Body:
     DamageMotion: 288
     DamageTaken: 900
     Ai: 21
-    Modes:
-      Mvp: true
 #  - Id: 3329
 #    AegisName: PAD_ECHIDNA
 #  - Id: 3330
