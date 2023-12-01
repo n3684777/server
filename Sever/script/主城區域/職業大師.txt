@@ -471,7 +471,7 @@ function	script	Job2_Change	{
 		mes "提示:^FF0000轉生後將不能轉職成其他職業^000000";
 		
 		if ( Job1_History == 1 ) {
-			switch(select("騎士","十字軍")) {
+			switch(select("騎士","十字軍")) {
 				case 1:
 					jobchange 7;
 					set Job2_History,1;
@@ -575,7 +575,7 @@ function	script	Job2_Change	{
 			jobchange 4008;
 			goto Job2_Done;
 		}
-		if (( Job1_History == 1 ) && ( Job2_History == 2 )) {	//聖殿十字軍
+		if (( Job1_History == 1 ) && ( Job2_History == 2 )) {	//聖殿十字軍
 			jobchange 4015;
 			goto Job2_Done;
 		}
@@ -616,7 +616,7 @@ function	script	Job2_Change	{
 			jobchange 4019;
 			goto Job2_Done;
 		}
-		if (( Job1_History == 6 ) && ( Job2_History == 1 )) {	//十字刺客
+		if (( Job1_History == 6 ) && ( Job2_History == 1 )) {	//十字刺客
 			jobchange 4013;
 			goto Job2_Done;
 		}
@@ -894,7 +894,7 @@ function	script	BbJob_Change	{
 		mes "請選擇想要轉職的職業:";
 		
 		if ( Job1_History == 1 ) {
-			switch(select("寶寶騎士","寶寶十字軍")) {
+			switch(select("寶寶騎士","寶寶十字軍")) {
 				case 1:
 					jobchange 4030;
 					set Job2_History,1;
@@ -1258,19 +1258,8 @@ function	script	Job_Rent	{
 			if ( checkcart() ) {
 				goto Rent_Fail;
 			} else {
-				if ( Class == 5 || Class == 4006 || Class == 4028 || Class == 10 || Class == 4011 || Class == 4058 ||
-					Class == 4064 || Class == 4033 || Class == 4100 || Class == 18 || Class == 4019 || Class == 4071 ||
-					Class == 4078 || Class == 4041 || Class == 4107 || Class == 4253  || Class == 4307 || Class == 4259 || Class == 23 || Class == 4190 ) {
-					if ( !getskilllv(39) ) {
-						mes "[職業服務員]";
-						mes "很抱歉，需要習得^FF0000手推車使用^000000才能租借手推車!";
-						close;
-					} else {
-						setcart;
-						goto Rent_Done;
-					}
-				}
-				goto Rent_Fail2;
+				setcart;
+				goto Rent_Done;
 			}
 	}
 
@@ -1386,7 +1375,7 @@ function	script	Job_Skill	{
 		skill 1001,1,0;
 		goto Skill_Done;
 	}
-	//十字軍
+	//十字軍
 	if ( Class == 14 || Class == 4015 || Class == 4066 || Class == 4073 || Class == 4037 || Class == 4102 || Class == 4258 ) {
 		skill 144,1,0;
 		skill 145,1,0;
