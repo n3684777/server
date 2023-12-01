@@ -59,6 +59,15 @@ OnInit:
 	sellitem(450175,.@p,-1);      //¶W¶V¥Ò
 	sellitemcurrency(6909,.@meow);
     endsellitem();
+	sellitem(490030,.@p,-1);      //¶W¶V§Ù
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
+	sellitem(490097,.@p,-1);      //¶W¶V¤âÄ²
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
+	sellitem(420106,.@p*3,-1);      //¶W¶V¾ð­]
+	sellitemcurrency(6909,.@meow*3);
+    endsellitem();
 	sellitem(470095,.@p,-1);
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
