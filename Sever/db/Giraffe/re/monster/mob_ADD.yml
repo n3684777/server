@@ -124,7 +124,6 @@ Body:
         Rate: 5
       - Item: 300170
         Rate: 1
-        StealProtected: true
   - Id: 20887
     AegisName: MD_Airboat_Poring
     Name: MD_Airboat_Poring
@@ -162,7 +161,6 @@ Body:
         Rate: 5
       - Item: 300174
         Rate: 1
-        StealProtected: true
   - Id: 20888
     AegisName: MD_Airboat_Worm
     Name: MD_Airboat_Worm
@@ -200,7 +198,6 @@ Body:
         Rate: 5
       - Item: 300171
         Rate: 1
-        StealProtected: true
   - Id: 20889
     AegisName: MD_Airboat_LEECH
     Name: MD_Airboat_LEECH
@@ -238,7 +235,6 @@ Body:
         Rate: 5
       - Item: 300172
         Rate: 1
-        StealProtected: true
   - Id: 20890
     AegisName: MD_Airboat_Mos
     Name: MD_Airboat_Mos
@@ -276,7 +272,6 @@ Body:
         Rate: 5
       - Item: 300173
         Rate: 1
-        StealProtected: true
   - Id: 20891
     AegisName: MD_Airboat_Boss
     Name: MD_Airboat_Boss
@@ -331,28 +326,20 @@ Body:
         Rate: 5000
       - Item: MD_Airboat_Random
         Rate: 100
-        StealProtected: true
       - Item: MD_Airboat_Boots
         Rate: 30
-        StealProtected: true
       - Item: MD_Airboat_Boots2
         Rate: 30
-        StealProtected: true
       - Item: MD_Airboat_Boots3
         Rate: 30
-        StealProtected: true
       - Item: MD_Airboat_Boots4
         Rate: 30
-        StealProtected: true
       - Item: MD_Airboat_Boots5
         Rate: 30
-        StealProtected: true
       - Item: MD_Airboat_Boots6
         Rate: 30
-        StealProtected: true
       - Item: 300175
         Rate: 1
-        StealProtected: true
   - Id: 21062
     AegisName: MD_Airboat_Boss2
     Name: MD_Airboat_Boss2
@@ -407,25 +394,18 @@ Body:
         Rate: 5000
       - Item: MD_Airboat_Boots
         Rate: 70
-        StealProtected: true
       - Item: MD_Airboat_Boots2
         Rate: 70
-        StealProtected: true
       - Item: MD_Airboat_Boots3
         Rate: 70
-        StealProtected: true
       - Item: MD_Airboat_Boots4
         Rate: 70
-        StealProtected: true
       - Item: MD_Airboat_Boots5
         Rate: 70
-        StealProtected: true
       - Item: MD_Airboat_Boots6
         Rate: 70
-        StealProtected: true
       - Item: 300176
         Rate: 1
-        StealProtected: true
 #悔恨之墓
   - Id: 20892
     AegisName: MD_SAKRAY
@@ -479,7 +459,6 @@ Body:
         Rate: 5000
       - Item: 300192
         Rate: 1
-        StealProtected: true
   - Id: 20893
     AegisName: MD_TIARA
     Name: TIARA
@@ -498,7 +477,7 @@ Body:
     Int: 320
     Dex: 300
     Luk: 120
-    AttackRange: 9
+    AttackRange: 12
     SkillRange: 10
     ChaseRange: 12
     Size: Medium
@@ -533,10 +512,8 @@ Body:
         Rate: 5000
       - Item: 25731
         Rate: 5000
-        StealProtected: true
       - Item: 300193
         Rate: 1
-        StealProtected: true
   - Id: 20894
     AegisName: MD_UNDEAD_KNIGHT
     Name: UNDEAD_KNIGHT
@@ -573,7 +550,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20895
     AegisName: MD_UNDEAD_SOLDIER
     Name: UNDEAD_SOLDIER
@@ -610,7 +586,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20896
     AegisName: MD_UNDEAD_ARCHER
     Name: UNDEAD_ARCHER
@@ -647,7 +622,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20897
     AegisName: MD_UNDEAD_WIZARD
     Name: UNDEAD_WIZARD
@@ -684,7 +658,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20898
     AegisName: MD_UNDEAD_MAGICIAN
     Name: UNDEAD_MAGICIAN
@@ -721,7 +694,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20899
     AegisName: MD_UNDEAD_NOBLE
     Name: UNDEAD_NOBLE
@@ -758,7 +730,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 20900
     AegisName: MD_UNDEAD_SERVANT
     Name: UNDEAD_SERVANT
@@ -795,7 +766,6 @@ Body:
     Drops:
       - Item: 1000367
         Rate: 5
-        StealProtected: true
   - Id: 21070
     AegisName: HIDDEN_MOB8
     Name: 悔恨之柱外觀
@@ -874,7 +844,6 @@ Body:
     Drops:
       - Item: Betelgeuse_Soul
         Rate: 1000
-        StealProtected: true
   - Id: 20995
     AegisName: MD_G_DEADSOUL
     Name: DEADSOUL
@@ -966,10 +935,8 @@ Body:
         Rate: 9000
       - Item: Nahtzigger_Card
         Rate: 1
-        StealProtected: true
       - Item: Naght_Sieger_Soul
         Rate: 1000
-        StealProtected: true
 #EP19
   - Id: 21523
     AegisName: EP19_ICE_STRAW
@@ -1017,7 +984,6 @@ Body:
         Rate: 5	
       - Item: 1000608
         Rate: 3
-        StealProtected: true
       - Item: 7561
         Rate: 3000
       - Item: 7066
@@ -1028,10 +994,8 @@ Body:
         Rate: 300
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300361
         Rate: 1
-        StealProtected: true
   - Id: 21524
     AegisName: EP19_SHINING_SEAWEED
     Name: EP19_SHINING_SEAWEED
@@ -1078,7 +1042,6 @@ Body:
         Rate: 5	
       - Item: 1000608
         Rate: 5
-        StealProtected: true 
       - Item: 7067
         Rate: 3000
       - Item: 7013
@@ -1087,10 +1050,8 @@ Body:
         Rate: 100
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300360
         Rate: 1
-        StealProtected: true
   - Id: 21525
     AegisName: EP19_ICE_GANGU
     Name: EP19_ICE_GANGU
@@ -1137,13 +1098,10 @@ Body:
         Rate: 5	
       - Item: 1000608
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300359
         Rate: 1
-        StealProtected: true
   - Id: 21520
     AegisName: EP19_LIMACINA
     Name: EP19_LIMACINA
@@ -1190,10 +1148,8 @@ Body:
         Rate: 5	
       - Item: 1000608
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 7326
         Rate: 2000
       - Item: 7066
@@ -1202,7 +1158,6 @@ Body:
         Rate: 200
       - Item: 300363
         Rate: 1
-        StealProtected: true
   - Id: 21521
     AegisName: EP19_UNFROST_FLOWER
     Name: 不凍花
@@ -1253,10 +1208,8 @@ Body:
         Rate: 3000
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300362
         Rate: 1
-        StealProtected: true
   - Id: 21522
     AegisName: EP19_CALMARING
     Name: 卡拉馬波利
@@ -1303,7 +1256,6 @@ Body:
         Rate: 5	
       - Item: 1000608
         Rate: 5
-        StealProtected: true 
       - Item: 1000824
         Rate: 100
       - Item: 7565
@@ -1312,10 +1264,8 @@ Body:
         Rate: 3000
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300364
         Rate: 1
-        StealProtected: true
   - Id: 21526
     AegisName: EP19_RGAN_A
     Name: 原始蠕管
@@ -1368,13 +1318,10 @@ Body:
         Rate: 100
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true        
       - Item: 300365
         Rate: 1
-        StealProtected: true
   - Id: 21527
     AegisName: EP19_RGAN_B
     Name: 最下級蠕管
@@ -1420,13 +1367,10 @@ Body:
         Rate: 5	
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true    
       - Item: 300366
         Rate: 1
-        StealProtected: true
   - Id: 21537
     AegisName: EP19_LIMACINA_BOSS
     Name: EP19_LIMACINA_BOSS
@@ -1482,22 +1426,16 @@ Body:
     Drops:
       - Item: 1000811
         Rate: 50
-        StealProtected: true
       - Item: 1000812
         Rate: 10
-        StealProtected: true
       - Item: 1000322
         Rate: 50
-        StealProtected: true
       - Item: 6635
         Rate: 15
-        StealProtected: true
       - Item: 1000337
         Rate: 15
-        StealProtected: true        
       - Item: 300377
         Rate: 1
-        StealProtected: true
   - Id: 21528
     AegisName: EP19_RGAN_C
     Name: 下級蠕管
@@ -1542,26 +1480,20 @@ Body:
     Drops:
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000822
         Rate: 3000
       - Item: 1000823
         Rate: 100
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 1000608
         Rate: 10
-        StealProtected: true
       - Item: 1000811
         Rate: 5
-        StealProtected: true
       - Item: 1000707
         Rate: 1
-        StealProtected: true
       - Item: 300367
         Rate: 1
-        StealProtected: true
   - Id: 21529
     AegisName: EP19_RGAN_D
     Name: 中級蠕管
@@ -1606,7 +1538,6 @@ Body:
     Drops:
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000823
         Rate: 100
       - Item: 1000707
@@ -1615,16 +1546,12 @@ Body:
         Rate: 100        
       - Item: 1000608
         Rate: 12
-        StealProtected: true
       - Item: 1000811
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300368
         Rate: 1
-        StealProtected: true
   - Id: 21599
     AegisName: EP19_HEARTHUNTER_AT
     Name: 邪心獵人_AT
@@ -1675,13 +1602,10 @@ Body:
         Rate: 1000
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300381
         Rate: 1
-        StealProtected: true
   - Id: 21538
     AegisName: EP19_WASTED_RGAN_A
     Name: EP19_WASTED_RGAN_A
@@ -1732,13 +1656,10 @@ Body:
         Rate: 100
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300369
         Rate: 1
-        StealProtected: true
   - Id: 21540
     AegisName: EP19_CAVE_CALMARING
     Name: EP19_CAVE_CALMARING
@@ -1791,13 +1712,10 @@ Body:
         Rate: 100
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300371
         Rate: 1
-        StealProtected: true
   - Id: 21541
     AegisName: EP19_CAVE_FLOWER
     Name: EP19_CAVE_FLOWER
@@ -1850,14 +1768,10 @@ Body:
         Rate: 3000
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
-        StealProtected: true
       - Item: 300372
         Rate: 1
-        StealProtected: true
   - Id: 21543
     AegisName: EP19_HALLUCIGENIA_BABY
     Name: EP19_HALLUCIGENIA_BABY
@@ -1912,10 +1826,8 @@ Body:
         Rate: 5
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300373
         Rate: 1
-        StealProtected: true
   - Id: 21539
     AegisName: EP19_WASTED_RGAN_C
     Name: EP19_WASTED_RGAN_C
@@ -1964,13 +1876,10 @@ Body:
         Rate: 3000
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300370
         Rate: 1
-        StealProtected: true
   - Id: 21542
     AegisName: EP19_HALLUCIGENIA
     Name: EP19_HALLUCIGENIA
@@ -2021,13 +1930,10 @@ Body:
         Rate: 5
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 1000811
         Rate: 5
-        StealProtected: true
       - Item: 300374
         Rate: 1
-        StealProtected: true
   - Id: 21544
     AegisName: EP19_ONE_EYE_DOLLOCARIS
     Name: EP19_ONE_EYE_DOLLOCARIS
@@ -2084,10 +1990,8 @@ Body:
         Rate: 5
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300375
         Rate: 1
-        StealProtected: true
   - Id: 21545
     AegisName: EP19_DOLLOCARIS
     Name: EP19_DOLLOCARIS
@@ -2134,7 +2038,6 @@ Body:
         Rate: 5	
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 960
         Rate: 3000
       - Item: 943
@@ -2145,10 +2048,8 @@ Body:
         Rate: 10
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300376
         Rate: 1
-        StealProtected: true
   - Id: 21601
     AegisName: EP19_ET_RGAN_D
     Name: EP19_ET_RGAN_D
@@ -2195,26 +2096,20 @@ Body:
         Rate: 5	
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 1000823
         Rate: 100		
       - Item: 1000822
         Rate: 100
       - Item: 25728
         Rate: 50
-        StealProtected: true
       - Item: 25730
         Rate: 50
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 1000608
         Rate: 15
-        StealProtected: true
       - Item: 300380
         Rate: 1
-        StealProtected: true
   - Id: 21588
     AegisName: EP19_MD_AQUILA_B
     Name: EP19_MD_AQUILA_B
@@ -2263,7 +2158,6 @@ Body:
     Drops:
       - Item: 300382
         Rate: 1
-        StealProtected: true
   - Id: 21530
     AegisName: EP19_RGAN_E
     Name: 高級蠕管
@@ -2306,14 +2200,12 @@ Body:
     Drops:
       - Item: 1000608
         Rate: 10
-        StealProtected: true
       - Item: EP19_Shell_Of_Rgan
         Rate: 10
       - Item: EP19_Unknown_Cell
         Rate: 10
       - Item: 300379
         Rate: 1
-        StealProtected: true
   - Id: 21534
     AegisName: EP19_MD_RGAN_E
     Name: EP19_MD_RGAN_E
@@ -2360,7 +2252,6 @@ Body:
         Rate: 5
       - Item: 1000608
         Rate: 10
-        StealProtected: true
   - Id: 21600
     AegisName: EP19_RE_RGAN_E
     Name: EP19_RE_RGAN_E
@@ -2411,19 +2302,14 @@ Body:
         Rate: 100
       - Item: 101639
         Rate: 5
-        StealProtected: true
       - Item: 25728
         Rate: 50
-        StealProtected: true
       - Item: 25730
         Rate: 50
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true        
       - Item: 300379
         Rate: 1
-        StealProtected: true
   - Id: 21536
     AegisName: EP19_MD_HEARTHUNTER_AT
     Name: EP19_MD_HEARTHUNTER_AT
@@ -2472,16 +2358,12 @@ Body:
         Rate: 1000
       - Item: 25728
         Rate: 50
-        StealProtected: true
       - Item: 25730
         Rate: 50
-        StealProtected: true
       - Item: 1000322
         Rate: 5
-        StealProtected: true
       - Item: 300381
         Rate: 1
-        StealProtected: true
   - Id: 21533
     AegisName: EP19_MD_JUNCEA_S
     Name: 朱希婭
@@ -2537,13 +2419,10 @@ Body:
     Drops:
       - Item: Snow_F_Stone1
         Rate: 1000
-        StealProtected: true
       - Item: Snow_F_Stone2
         Rate: 100
-        StealProtected: true
       - Item: 300378
         Rate: 1
-        StealProtected: true
 #生態圈
 #霸肋門德的生物圈
   - Id: 21548
@@ -2606,7 +2485,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21549
     AegisName: ECO_PINGUICULA
     Name: ECO_PINGUICULA_21549
@@ -2669,7 +2547,6 @@ Body:
         Rate: 15
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21550
     AegisName: ECO_HUNTER_FLY
     Name: ECO_HUNTER_FLY_21550
@@ -2732,7 +2609,6 @@ Body:
         Rate: 15
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21551
     AegisName: ECO_ROCKER
     Name: ECO_ROCKER_21551
@@ -2795,7 +2671,6 @@ Body:
         Rate: 15
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21552
     AegisName: ECO_SAVAGE
     Name: ECO_SAVAGE_21552
@@ -2856,7 +2731,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21553
     AegisName: ECO_FLORA
     Name: ECO_FLORA_21553
@@ -2917,7 +2791,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21554
     AegisName: ECO_HILL_WIND
     Name: ECO_HILL_WIND_21554
@@ -2978,7 +2851,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21555
     AegisName: ECO_MISTRESS
     Name: ECO_MISTRESS_21555
@@ -3050,13 +2922,10 @@ Body:
         Rate: 10
       - Item: 450201
         Rate: 100
-        StealProtected: true
       - Item: 480145
         Rate: 100
-        StealProtected: true
       - Item: 470108
         Rate: 100
-        StealProtected: true
   - Id: 21556
     AegisName: ECO_EXPLOSION
     Name: ECO_EXPLOSION_21556
@@ -3117,7 +2986,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21557
     AegisName: ECO_DELETER
     Name: ECO_DELETER_21557
@@ -3178,7 +3046,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21558
     AegisName: ECO_JAKK
     Name: ECO_JAKK_21558
@@ -3239,7 +3106,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21559
     AegisName: ECO_LAVA_GOLEM
     Name: ECO_LAVA_GOLEM_21559
@@ -3300,7 +3166,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21560
     AegisName: ECO_MAJORUROS
     Name: ECO_MAJORUROS_21560
@@ -3361,7 +3226,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21561
     AegisName: ECO_HYDRO
     Name: ECO_HYDRO_21561
@@ -3422,7 +3286,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21562
     AegisName: ECO_ACIDUS
     Name: ECO_ACIDUS_21562
@@ -3483,7 +3346,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21563
     AegisName: ECO_DETALE
     Name: ECO_DETALE_21563
@@ -3559,7 +3421,6 @@ Body:
         Rate: 1
       - Item: 470109
         Rate: 1
-        StealProtected: true
   - Id: 21564
     AegisName: ECO_ICE_TITAN
     Name: ECO_ICE_TITAN_21564
@@ -3620,7 +3481,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21565
     AegisName: ECO_SIROMA
     Name: ECO_SIROMA_21565
@@ -3681,7 +3541,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21566
     AegisName: ECO_SNOWIER
     Name: ECO_SNOWIER_21566
@@ -3744,7 +3603,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21567
     AegisName: ECO_CENTIPEDE
     Name: ECO_CENTIPEDE_21567
@@ -3807,7 +3665,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21568
     AegisName: ECO_AQUA_ELEMENTAL
     Name: ECO_AQUA_ELEMENTAL_21568
@@ -3870,7 +3727,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21569
     AegisName: ECO_ANGELGOLT
     Name: ECO_ANGELGOLT_21569
@@ -3931,7 +3787,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21570
     AegisName: ECO_RHYNCHO
     Name: ECO_RHYNCHO_21570
@@ -3994,7 +3849,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21571
     AegisName: ECO_KTULLANUX
     Name: ECO_KTULLANUX_21571
@@ -4070,7 +3924,6 @@ Body:
         Rate: 1
       - Item: 470111
         Rate: 1
-        StealProtected: true
   - Id: 21572
     AegisName: ECO_ANCIENT_MUMMY
     Name: ECO_ANCIENT_MUMMY_21572
@@ -4133,7 +3986,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21573
     AegisName: ECO_LUDE
     Name: ECO_LUDE_21573
@@ -4196,7 +4048,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21574
     AegisName: ECO_RAGGED_ZOMBIE
     Name: ECO_RAGGED_ZOMBIE_21574
@@ -4257,7 +4108,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21575
     AegisName: ECO_WRAITH
     Name: ECO_WRAITH_21575
@@ -4318,7 +4168,6 @@ Body:
         Rate: 5
       - Item: 470107
         Rate: 1
-        StealProtected: true
   - Id: 21576
     AegisName: ECO_FLAME_SKULL
     Name: ECO_FLAME_SKULL_21576
@@ -4379,7 +4228,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21577
     AegisName: ECO_BANSHEE
     Name: ECO_BANSHEE_21577
@@ -4440,7 +4288,6 @@ Body:
         Rate: 5
       - Item: 450199
         Rate: 1
-        StealProtected: true
   - Id: 21578
     AegisName: ECO_KNIGHT_OF_ABYSS
     Name: 21578_KNIGHT_OF_ABYSS
@@ -4499,7 +4346,6 @@ Body:
         Rate: 5
       - Item: 480144
         Rate: 1
-        StealProtected: true
   - Id: 21579
     AegisName: ECO_LORD_OF_DEATH
     Name: ECO_LORD_OF_DEATH_21579
@@ -4575,4 +4421,3 @@ Body:
         Rate: 1
       - Item: 470110
         Rate: 1
-        StealProtected: true
