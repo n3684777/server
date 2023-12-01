@@ -698,9 +698,11 @@ OnEnable:
 	"^008000◆先不要◆^000000",get42,
 	"^008000◆領取◆^000000",get422;
 get42:
+
 	end;
 get422:
 	Instance_PassAnnounce;	
+	getitem 6909,15;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:
