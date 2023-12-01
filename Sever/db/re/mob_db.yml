@@ -83903,37 +83903,39 @@ Body:
 #    AegisName: PAD_M_LIGHT_KNIGHT
 #  - Id: 3327
 #    AegisName: PAD_M_DARK_KNIGHT
-  - Id: 3328
+- Id: 3328
     AegisName: PAD_C_D_DRAGON
     Name: BoyBoy_Devil
     JapaneseName: B大的化身
-    Level: 1
-    Hp: 2100000000
-    BaseExp: 150
-    JobExp: 40
-    Attack: 8
-    Attack2: 1
-    Defense: 2
-    MagicDefense: 5
-    Str: 6
-    Dex: 6
-    Luk: 5
-    AttackRange: 9
+    Level: 240
+    Hp: 1835856994
+    BaseExp: 6119523
+    JobExp: 4283666
+    Attack: 13000
+    Attack2: 5000
+    Defense: 800
+    MagicDefense: 400
+    Str: 340
+    Agi: 200
+    Vit: 400
+    Int: 100
+    Dex: 400
+    Luk: 120
+    AttackRange: 3
     SkillRange: 10
     ChaseRange: 12
     Size: Medium
-    Race: Plant
-    Element: Water
-    ElementLevel: 1
-    WalkSpeed: 400
-    AttackDelay: 1872
-    AttackMotion: 672
-    DamageMotion: 480
+    Race: Demon
+    Element: Fire
+    ElementLevel: 4
+    WalkSpeed: 100
+    AttackDelay: 76
+    AttackMotion: 384
+    DamageMotion: 288
+    DamageTaken: 900
+    Ai: 21
     Modes:
-      IgnoreMagic: true
-      IgnoreMelee: true
-      IgnoreMisc: true
-      IgnoreRanged: true
+      Mvp: true
 #  - Id: 3329
 #    AegisName: PAD_ECHIDNA
 #  - Id: 3330
@@ -99377,7 +99379,8 @@ Body:
     Ai: 21
     Drops:
       - Item: 300264
-        Rate: 1 
+        Rate: 1
+ 
   - Id: 20542
     AegisName: MD_ED_LGTGUARD
     Name: 雷根貝勒 守衛
@@ -99439,7 +99442,8 @@ Body:
     Ai: 21
     Drops:
       - Item: 300265
-        Rate: 1 
+        Rate: 1
+ 
 #  - Id: 20544
 #    AegisName: MINERAL_R_MJ
 #  - Id: 20545
