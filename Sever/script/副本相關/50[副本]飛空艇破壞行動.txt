@@ -581,6 +581,7 @@ OnTouch:
 		{
 			if(rand(100)<.@item_rate0[.@i])
 			makeitem .@item_id_0[.@i],.@item_co0[.@i],strnpcinfo(4),159+rand(-5,5),160+rand(-5,5);
+			break;
 		}
 	}
 	//(商務艙)
@@ -600,6 +601,7 @@ OnTouch:
 		{
 			if(rand(100)<.@item_rate1[.@i])
 			makeitem .@item_id_1[.@i],.@item_co1[.@i],strnpcinfo(4),159+rand(-5,5),160+rand(-5,5);
+			break;
 		}
 	}	
 	//(頭等艙)
@@ -619,6 +621,7 @@ OnTouch:
 		{
 			if(rand(100)<.@item_rate2[.@i])
 			makeitem .@item_id_2[.@i],.@item_co2[.@i],strnpcinfo(4),159+rand(-5,5),160+rand(-5,5);
+			break;
 		}
 	}
 	getmapxy(.@m$,'passx,'passy,BL_PC);

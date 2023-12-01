@@ -1237,7 +1237,7 @@ OnStart:
 	if ('bossf3 == 1){
 	}
 	else{
-		setunitdata 'BossID,UMOB_DAMAGETAKEN,100;
+		setunitdata 'BossID,UMOB_DAMAGETAKEN,900;
 		mapannounce 'map$, "悔恨的侯爵：悔恨之石的力量解除了！！。",bc_map,"0xFFFF00";
 		set 'OrganEnd,1;
 	}
