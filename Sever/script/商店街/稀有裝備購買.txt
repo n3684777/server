@@ -68,12 +68,12 @@ OnInit:
 	sellitem(420106,.@p*3,-1);      //超越樹苗
 	sellitemcurrency(6909,.@meow*3);
     endsellitem();
-	sellitem(420106,.@p*3,-1);      //心臟
+	sellitem(1001174,.@p*3,-1);      //心臟
 	sellitemcurrency(6909,30);
 	sellitemcurrency(6417,100);
 	sellitemcurrency(4610,1);
     endsellitem();
-	sellitem(420106,.@p*3,-1);      //能量石
+	sellitem(100620.@p*3,-1);      //能量石
 	sellitemcurrency(4602,1);
     endsellitem();
 	sellitem(470095,.@p,-1);
