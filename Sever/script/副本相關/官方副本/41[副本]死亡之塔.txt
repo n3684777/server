@@ -993,8 +993,8 @@ OnTimer22000:
 	
 OnKillMob:
 	Callfunc ("QuestWinLog",22441);
-	donpcevent instance_npcname("ÅS¦è#LUCILE01");
-	hideoffnpc instance_npcname("#BossSkill")+"::Onstoptime";
+	hideoffnpc instance_npcname("ÅS¦è#LUCILE01");
+	donpcevent instance_npcname("#BossSkill")+"::Onstoptime";
 	'bossf2 = 1;
 	set 'Bosskill,1;
 donpcevent instance_npcname("#Barrier01")+"::OnStoptime";
