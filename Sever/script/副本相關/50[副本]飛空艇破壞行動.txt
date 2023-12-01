@@ -558,11 +558,7 @@ OnTouch:
 	//設定一一對應掉落的機率 範圍 :1-100
 	setArray .@item_rate,100,100,'mode*30,'mode*20,'mode==2?'mode*10:0;	
 
-	for(.@i =0;.@i<getarraysize(.@item_id_r) ;.@i++)
-	{
-		if(rand(100)<.@item_rate[.@i])
-			makeitem .@item_id_r[.@i],.@item_co[.@i],strnpcinfo(4),159+rand(-5,5),160+rand(-5,5);
-	}
+
 	
 	//(經濟艙)
 	if ('mode == 0)
