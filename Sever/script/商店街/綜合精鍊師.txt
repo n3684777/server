@@ -109,10 +109,18 @@ BackMenu:
 	{
 		// 一般裝備精鍊
 		switch(select(
-						.@lv>=0&&.@lv<=4?ckitem((.@weapon)?6456:6457):"",
 						.@lv>=0&&.@lv<=6?ckitem((.@weapon)?6230:6234):"",
 						.@lv>=0&&.@lv<=7?ckitem((.@weapon)?6229:6233):"",
 						.@lv>=0&&.@lv<=8?ckitem((.@weapon)?6228:6232):"",
+						.@lv>=0&&.@lv<=9?ckitem((.@weapon)?6993:6994):"",
+						.@lv>=0&&.@lv<=10?ckitem((.@weapon)?6238:6239):"",
+						.@lv>=0&&.@lv<=11?ckitem((.@weapon)?6584:6585):"",
+						.@lv>=0&&.@lv<=12?ckitem((.@weapon)?6870:6876):"",
+						.@lv>=0&&.@lv<=13?ckitem((.@weapon)?6871:6877):"",
+						.@lv>=0&&.@lv<=14?ckitem((.@weapon)?6872:6878):"",
+						.@lv>=0&&.@lv<=15?ckitem((.@weapon)?6873:6879):"",
+						.@lv>=0&&.@lv<=16?ckitem((.@weapon)?6874:6880):"",
+						.@lv>=0&&.@lv<=17?ckitem((.@weapon)?6875:6881):"",
 						.@lv>=0&&.@lv<=18?ckitem((.@weapon)?6864:6865):"", // +19
 						.@lv>=6&&.@lv<=12?ckitem((.@weapon)?6438:6439):"",
 						.@lv>=10?ckitem((.@weapon)?6226:6225):"",
@@ -122,32 +130,56 @@ BackMenu:
 		{
 			// [0]道具,[1]成功機率,[2]爆裝(0:否 1:是),[3]精鍊度-N(0:否 N:-N),[4]直接+幾(0:往上+1 N:+N)
 			
-			case 1:	// +5券
-				setarray .@array,(.@weapon)?6456:6457,100,0,0,5;
-				break;
-			case 2:	// +7券
+			case 1:	// +7券
 				setarray .@array,(.@weapon)?6230:6234,100,0,0,7;
 				break;
-			case 3:	// +8券
+			case 2:	// +8券
 				setarray .@array,(.@weapon)?6229:6233,100,0,0,8;
 				break;
-			case 4:	// +9券
+			case 3:	// +9券
 				setarray .@array,(.@weapon)?6228:6232,100,0,0,9;
 				break;
-			case 5:	// +19券
+			case 4:	// +10券
+				setarray .@array,(.@weapon)?6993:6994,100,0,0,10;
+				break;
+			case 5:	// +11券
+				setarray .@array,(.@weapon)?6238:6239,100,0,0,11;
+				break;
+			case 6:	// +12券
+				setarray .@array,(.@weapon)?6584:6585,100,0,0,12;
+				break;
+			case 7:	// +13券
+				setarray .@array,(.@weapon)?6870:6876,100,0,0,13;
+				break;
+			case 8:	// +14券
+				setarray .@array,(.@weapon)?6871:6877,100,0,0,14;
+				break;
+			case 9:	// +15券
+				setarray .@array,(.@weapon)?6872:6878,100,0,0,15;
+				break;
+			case 10:	// +16券
+				setarray .@array,(.@weapon)?6873:6879,100,0,0,16;
+				break;
+			case 11:	// +17券
+				setarray .@array,(.@weapon)?6874:6880,100,0,0,17;
+				break;
+			case 12:	// +18券
+				setarray .@array,(.@weapon)?6875:6881,100,0,0,18;
+				break;
+			case 13:	// +19券
 				setarray .@array,(.@weapon)?6864:6865,100,0,0,19;
 				break;
-			case 6:	// 受祝福的武器礦石/受祝福的防具礦石
+			case 14:	// 受祝福的武器礦石/受祝福的防具礦石
 				setarray .@array,(.@weapon)?6438:6439,refine_percent(.@part),0,0,0;
 				break;
-			case 7:	// 高密度鈽鐳礦石/高密度鈣礦石
+			case 15:	// 高密度鈽鐳礦石/高密度鈣礦石
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,1,0;
 				break;
-			case 8:	// 鐵匠的神乎其技 +12 ~ +13
+			case 16:	// 鐵匠的神乎其技 +12 ~ +13
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,1;
 				break;
-			case 9:	// 鐵匠的神乎其技 +13 ~ +14
+			case 17:	// 鐵匠的神乎其技 +13 ~ +14
 				setarray .@array,(.@weapon)?6226:6225,refine_percent(.@part),0,0,0;
 				setarray .@stone,7650,2;
 				break;
