@@ -246,6 +246,10 @@ Body:
            - Index: 1
              Item: Etel_Dust
              Amount: 3
+       - Index: 22
+         Item: Blacksmith_Blessing
+         Stock: 0
+         Zeny: 200000
    - Name: Ä_¥Ûºë»s
      Items:
        - Index: 0

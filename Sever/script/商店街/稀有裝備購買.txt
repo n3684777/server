@@ -116,9 +116,12 @@ OnInit:
 	sellitem(20967,.@p,-1);
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(20968,.@p,-1);
+	sellitem(20968,.@p,-1);      //幸運斗
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(480076,.@p,-1);      //超越斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
 	sellitem(480124,.@p,-1);
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
@@ -203,7 +206,9 @@ OnInit:
 	sellitem(5966,.@p,-1);
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-
+	sellitem(490269,.@p,-1);
+	sellitemcurrency(6909,.@meow); //樞機之光 490269
+    endsellitem();
 	// cc贈與
 	sellitem(470129,.@p,-1);
 	sellitemcurrency(6909,.@meow);
