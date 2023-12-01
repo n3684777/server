@@ -99572,6 +99572,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bShortAtkRate,15;
       bonus bLongAtkDef,7;
@@ -118042,6 +118043,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 28200
     AegisName: END_OF_HORIZON
     Name: 生死一瞬間榴彈器
@@ -137279,6 +137281,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 1361
     Script: |
       .@r = getrefine();
@@ -137320,6 +137323,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 1361
     Script: |
       .@r = getrefine();
@@ -137362,6 +137366,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2149
     Script: |
       .@r = getrefine();
@@ -137403,6 +137408,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2149
     Script: |
       .@r = getrefine();
@@ -137468,6 +137474,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2158
     Script: |
       .@r = getrefine();
@@ -137510,6 +137517,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2158
     Script: |
       .@r = getrefine();
@@ -137552,6 +137560,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2159
     Script: |
       .@r = getrefine();
@@ -137593,6 +137602,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2159
     Script: |
       .@r = getrefine();
@@ -137650,6 +137660,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2174
     Script: |
       .@r = getrefine();
@@ -137691,6 +137702,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2174
     Script: |
       .@r = getrefine();
@@ -137732,6 +137744,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2173
     Script: |
       .@r = getrefine();
@@ -137774,6 +137787,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2173
     Script: |
       .@r = getrefine();
@@ -137864,6 +137878,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2202
     Script: |
       .@r = getrefine();
@@ -137905,6 +137920,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2202
     Script: |
       .@r = getrefine();
@@ -137946,6 +137962,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2203
     Script: |
       .@r = getrefine();
@@ -137988,6 +138005,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2203
     Script: |
       .@r = getrefine();
@@ -138040,6 +138058,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2207
     Script: |
       .@r = getrefine();
@@ -138082,6 +138101,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2207
     Script: |
       .@r = getrefine();
@@ -138123,6 +138143,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2208
     Script: |
       .@r = getrefine();
@@ -138164,6 +138185,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2208
     Script: |
       .@r = getrefine();
@@ -138205,6 +138227,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2209
     Script: |
       .@r = getrefine();
@@ -138247,6 +138270,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2209
     Script: |
       .@r = getrefine();
@@ -138296,6 +138320,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2210
     Script: |
       .@r = getrefine();
@@ -138337,6 +138362,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2210
     Script: |
       .@r = getrefine();
@@ -138375,6 +138401,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2217
     Script: |
       .@r = getrefine();
@@ -138413,6 +138440,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2217
     Script: |
       .@r = getrefine();
@@ -138451,6 +138479,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2218
     Script: |
       .@r = getrefine();
@@ -138491,6 +138520,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2218
     Script: |
       .@r = getrefine();
@@ -138530,6 +138560,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2219
     Script: |
       .@r = getrefine();
@@ -138569,6 +138600,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2219
     Script: |
       .@r = getrefine();
@@ -138607,6 +138639,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2220
     Script: |
       .@r = getrefine();
@@ -138646,6 +138679,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2220
     Script: |
       .@r = getrefine();
@@ -138685,6 +138719,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2221
     Script: |
       .@r = getrefine();
@@ -138725,6 +138760,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 180
     Refineable: true
+    Gradable: true
     View: 2221
     Script: |
       .@r = getrefine();
@@ -138902,6 +138938,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 618
     Script: |
       .@r = getrefine();
@@ -138928,6 +138965,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 606
     Script: |
       .@r = getrefine();
@@ -138954,6 +138992,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 1811
     Script: |
       .@r = getrefine();
@@ -138980,6 +139019,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 1728
     Script: |
       .@r = getrefine();
@@ -139006,6 +139046,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 1899
     Script: |
       .@r = getrefine();
@@ -139032,6 +139073,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 803
     Script: |
       .@r = getrefine();
@@ -139058,6 +139100,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     View: 1777
     Script: |
       .@r = getrefine();
@@ -139189,6 +139232,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 40
     Script: |
       bonus bMdef,2;
@@ -139209,6 +139253,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 72
     Script: |
       bonus bMdef,5;
@@ -139229,6 +139274,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 112
     Script: |
       bonus bMdef,10;
@@ -139250,6 +139296,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 226
     Script: |
       bonus bMdef,8;
@@ -139276,6 +139323,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 11
     Script: |
       bonus bMdef,7;
@@ -139305,6 +139353,7 @@ Body:
       Head_Top: true
     ArmorLevel: 2
     Refineable: true
+    Gradable: true
     View: 16
   - Id: 400365
     AegisName: C_Larva_Red
@@ -148089,6 +148138,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       .@r = getrefine();
@@ -148115,6 +148165,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       .@r = getrefine();
@@ -148266,6 +148317,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     View: 4
     Script: |
       .@r = getrefine();
@@ -148290,6 +148342,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     View: 2
     Script: |
       .@r = getrefine();
@@ -148308,6 +148361,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     View: 2
     Script: |
       .@r = getrefine();
@@ -148368,6 +148422,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       bonus bMdef,10;
@@ -148384,6 +148439,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       bonus bMdef,10;
@@ -148400,6 +148456,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       bonus bMdef,5;
@@ -148418,6 +148475,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 1
     Script: |
       bonus bMdef,5;
@@ -148470,6 +148528,7 @@ Body:
       Left_Hand: true
     ArmorLevel: 2
     Refineable: true
+    Gradable: true
     View: 1
   - Id: 460050
     AegisName: aegis_460050
@@ -150552,6 +150611,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHPrate,8;
@@ -150575,6 +150635,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHPrate,6;
@@ -150817,6 +150878,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus bAspdRate,8;
@@ -150832,6 +150894,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus bAspdRate,-10;
@@ -150847,6 +150910,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus bFixedCast,1000;
@@ -150862,6 +150926,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus bFixedCast,-500;
@@ -150877,6 +150942,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus bDelayrate,-8;
@@ -151725,6 +151791,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,1500;
@@ -151748,6 +151815,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,1500;
@@ -151772,6 +151840,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,1200;
@@ -151795,6 +151864,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 230
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,2000;
@@ -152654,6 +152724,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bVit,10;
       bonus bCon,3;
@@ -152940,6 +153011,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,2500+200*(.@r/2);
@@ -152962,6 +153034,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,2000+150*(.@r/2);
@@ -153282,6 +153355,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     View: 132
     Script: |
       .@r = getrefine();
@@ -153420,6 +153494,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,5;
       bonus2 bSubRace,RC_Player_Doram,5;
@@ -153472,6 +153547,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,2;
       bonus2 bSubRace,RC_Player_Human,4;
@@ -153491,6 +153567,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,3;
       bonus2 bSubRace,RC_Player_Human,4;
@@ -153510,6 +153587,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,8;
       bonus2 bSubRace,RC_Player_Human,4;
@@ -153529,6 +153607,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bMdef,5;
       bonus2 bSubRace,RC_Player_Human,10;
@@ -157538,6 +157617,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WIND",5*(.@r/2);
@@ -158544,6 +158624,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus3 bAutoSpell,"MG_FIREBOLT",min(.@r,10),1;
@@ -158648,6 +158729,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Holy,10;
       bonus bLongAtkDef,5;
@@ -158669,6 +158751,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Player_Doram,10;
@@ -158694,6 +158777,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bShortAtkRate,10;
       bonus bLongAtkDef,5;
@@ -158715,6 +158799,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,5;
       bonus bShortAtkRate,10;
@@ -159075,6 +159160,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 500072
     AegisName: Devil_Guardian_Sword
     Name: Devil Guardian Sword
@@ -159482,6 +159568,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 510022
     AegisName: Up_Fog_Dew_Sword
     Name: 神話霧露劍
@@ -159521,6 +159608,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"ABC_ABYSS_SQUARE",5*(.@r/2);
@@ -160369,6 +160457,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"SS_SEKIENHOU",4*(.@r/2);
@@ -160392,6 +160481,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"HN_DOUBLEBOWLINGBASH",5*(.@r/2);
@@ -160414,6 +160504,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"SS_KAGENOMAI",4*(.@r/2);
@@ -160608,6 +160699,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bMagicAddEle,Ele_Undead,7;
@@ -160835,6 +160927,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bLongAtkDef,5;
       bonus bHealPower,10;
@@ -160915,6 +161008,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_All,-5;
       bonus bShortAtkRate,10;
@@ -160936,6 +161030,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Neutral,10;
       bonus bShortAtkRate,-5;
@@ -160956,6 +161051,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,-10;
       bonus2 bSubRace,RC_Player_Doram,-10;
@@ -161298,6 +161394,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 520000
     AegisName: Boost_Axe
     Name: Booster Axe
@@ -161597,6 +161694,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 520021
@@ -161641,6 +161739,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bShortAtkRate,10;
@@ -161762,6 +161861,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 530000
     AegisName: Boost_Spear
     Name: Booster Spear
@@ -161930,6 +162030,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",5*(.@r/2);
@@ -162374,6 +162475,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAspdRate,5;
@@ -162427,6 +162529,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,5;
       bonus bLongAtkRate,10;
@@ -162532,6 +162635,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 530045
     AegisName: Holy_Raise_Spear
     Name: Holy Light Spear
@@ -162856,6 +162960,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -163834,6 +163939,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bShortAtkRate,3*(getrefine()/4);
@@ -164060,6 +164166,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 540051
@@ -164080,6 +164187,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -164440,6 +164548,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Wind,-5;
       bonus2 bMagicAtkEle,Ele_Water,-5+10;
@@ -164463,6 +164572,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Wind,-5+10;
       bonus2 bMagicAtkEle,Ele_Water,-5;
@@ -164485,6 +164595,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,5;
       bonus bShortAtkRate,10;
@@ -164505,6 +164616,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bShortAtkRate,10;
       bonus bLongAtkDef,-5;
@@ -164525,6 +164637,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,-5;
       bonus2 bSubRace,RC_Player_Doram,-5;
@@ -164546,6 +164659,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bShortAtkRate,10;
       bonus bLongAtkDef,-5;
@@ -164636,6 +164750,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 550001
     AegisName: Boost_Soul_Rod
     Name: Booster Rod
@@ -166430,6 +166545,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -166455,6 +166571,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -166481,6 +166598,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -167000,6 +167118,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 550070
@@ -167019,6 +167138,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 550075
@@ -167046,6 +167166,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -167077,6 +167198,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -167529,6 +167651,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_Ghost,-5;
@@ -167553,6 +167676,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubRace,RC_Player_Human,10;
@@ -167576,6 +167700,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_All,-5;
@@ -167598,6 +167723,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubRace,RC_Player_Human,-5;
@@ -167621,6 +167747,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubEle,Ele_Dark,-5;
@@ -167643,6 +167770,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bNearAtkDef,-5;
@@ -167665,6 +167793,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubEle,Ele_Neutral,-5;
@@ -167687,6 +167816,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubRace,RC_Player_Human,-5;
@@ -167710,6 +167840,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubEle,Ele_Neutral,-5;
@@ -167731,6 +167862,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bCritAtkRate,5;
@@ -167754,6 +167886,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_Wind,-5;
@@ -167779,6 +167912,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_Wind,-5+10;
@@ -167902,6 +168036,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 550115
     AegisName: Darkness_Foxtail_Model
     Name: Darkness Foxtail Model
@@ -168272,6 +168407,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"IQ_SECOND_FAITH",5*(.@r/2);
@@ -168903,6 +169039,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 560034
     AegisName: Burning_Knuckle_AD
     Name: 燃燒指虎-OSAD
@@ -168922,6 +169059,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -169027,6 +169165,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bShortAtkRate,10;
       bonus bLongAtkDef,5;
@@ -169047,6 +169186,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,5;
       bonus bLongAtkRate,10;
@@ -169132,6 +169272,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 570000
     AegisName: Boost_Guitar
     Name: Booster Guitar
@@ -169376,6 +169517,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",5*(.@r/2);
@@ -169938,6 +170080,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 570032
     AegisName: D_Glacier_Violin
     Name: 黯淡冰川小提琴
@@ -169978,6 +170121,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Player_Doram,10;
@@ -170002,6 +170146,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Neutral,10;
       bonus bLongAtkRate,-5;
@@ -170197,6 +170342,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 580000
     AegisName: Boost_Whip
     Name: Booster Whip
@@ -170441,6 +170587,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"TR_ROSEBLOSSOM_ATK",5*(.@r/2);
@@ -171003,6 +171150,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 580033
     AegisName: D_Glacier_Whip
     Name: 黯淡冰川鞭子
@@ -171046,6 +171194,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Player_Doram,10;
@@ -171073,6 +171222,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bMagicAtkEle,Ele_Neutral,10;
       bonus bLongAtkRate,-5;
@@ -171283,6 +171433,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 590000
     AegisName: Boost_Hall
     Name: Booster Mace
@@ -171636,6 +171787,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_All,2*(getrefine()/4);
@@ -172326,6 +172478,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 590039
@@ -172347,6 +172500,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 590043
@@ -172368,6 +172522,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -172402,6 +172557,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -172568,6 +172724,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bLongAtkRate,10;
@@ -172589,6 +172746,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bLongAtkRate,10;
@@ -172610,6 +172768,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bSubRace,RC_Player_Human,10;
@@ -172743,6 +172902,7 @@ Body:
       Right_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 600000
     AegisName: IDTest_bothhand
     Name: IDTest bothhand
@@ -172994,6 +173154,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"DK_STORMSLASH",5*(.@r/2);
@@ -173424,6 +173585,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 600028
     AegisName: Beam_Claymore_AD
     Name: 綠光巨劍-OSAD
@@ -173445,6 +173607,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -173495,6 +173658,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,15;
       bonus bShortAtkRate,-7;
@@ -173600,6 +173764,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 600041
     AegisName: Execution_Great_Sword
     Name: Execution Great Sword
@@ -173903,6 +174068,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"SHC_IMPACT_CRATER",5*(.@r/2);
@@ -174561,6 +174727,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 610039
     AegisName: Meuchler_AD
     Name: 綠光拳刃-OSAD
@@ -174577,6 +174744,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -174630,6 +174798,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,15;
       bonus bShortAtkRate,-7;
@@ -174816,6 +174985,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 620003
     AegisName: PT_B_Axe
     Name: 機械工匠揮斧重擊颶風斧
@@ -174908,6 +175078,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -175252,6 +175423,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 620018
@@ -175273,6 +175445,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -175330,6 +175503,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bCritAtkRate,7;
@@ -175859,6 +176033,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 630019
     AegisName: D_Glacier_Lance
     Name: 黯淡冰川雙手矛
@@ -175894,6 +176069,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,7;
       bonus bLongAtkRate,15;
@@ -175999,6 +176175,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 630027
     AegisName: Luppiter_Spear
     Name: Jupiter Spear
@@ -176338,6 +176515,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -177054,6 +177232,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 640034
@@ -177212,6 +177391,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_Wind,-7;
@@ -177236,6 +177416,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus2 bMagicAtkEle,Ele_Wind,-7+15;
@@ -177334,6 +177515,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 650003
     AegisName: Ep172_Bh_Huuma
     Name: 雷士大齒輪飛鏢
@@ -177761,6 +177943,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bUnbreakableWeapon;
@@ -177940,6 +178123,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
   - Id: 650028
@@ -177981,6 +178165,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bUnbreakableWeapon;
       bonus bLongAtkRate,15;
@@ -178178,6 +178363,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 700000
     AegisName: IDTest_bow
     Name: IDTest bow
@@ -178633,6 +178819,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"WH_GALESTORM",5*(.@r/2);
@@ -179595,6 +179782,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 700054
     AegisName: Virtual_Bow_AD
     Name: 虛幻天弓-OSAD
@@ -179614,6 +179802,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -179648,6 +179837,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -179680,6 +179870,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bLongAtkRate,7;
@@ -179730,6 +179921,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,5;
       bonus bLongAtkRate,10;
@@ -179750,6 +179942,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,15;
       bonus bLongAtkDef,7;
@@ -179770,6 +179963,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,7;
       bonus bLongAtkRate,15;
@@ -179790,6 +179984,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus2 bSubRace,RC_Player_Human,-7;
       bonus2 bSubRace,RC_Player_Doram,-7;
@@ -180019,6 +180214,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 800000
     AegisName: IDTest_gun
     Name: IDTest gun
@@ -180302,6 +180498,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"NW_ONLY_ONE_BULLET",6*(.@r/2);
@@ -180472,6 +180669,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 800015
     AegisName: D_Glacier_Revolver
     Name: 黯淡冰川左輪手槍
@@ -180508,6 +180706,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,7;
       bonus bLongAtkRate,15;
@@ -180699,6 +180898,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 810000
     AegisName: Ep172_1h_Rifle
     Name: 羅斯特來福槍
@@ -180907,6 +181107,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",6*(.@r/2);
@@ -181081,6 +181282,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 810013
     AegisName: HR_S55_AD
     Name: HR-S55-OSAD
@@ -181098,6 +181300,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bAtkRate,5;
@@ -181147,6 +181350,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bCritAtkRate,7;
       bonus bLongAtkRate,15;
@@ -181338,6 +181542,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 820000
     AegisName: Ep172_1h_Shotgun
     Name: 羅斯特霰彈槍
@@ -181525,6 +181730,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bLongAtkRate,3*(getrefine()/4);
   - Id: 820006
@@ -181648,6 +181854,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
     Script: |
       bonus bSplashRange,1;
   - Id: 820011
@@ -181688,6 +181895,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bSplashRange,1;
       bonus bLongAtkRate,15;
@@ -181882,6 +182090,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 830000
     AegisName: Boost_Gatling
     Name: Booster Gatling
@@ -182162,6 +182371,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"NW_MAGAZINE_FOR_ONE",6*(.@r/2);
@@ -182331,6 +182541,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 830015
     AegisName: D_Glacier_Gatling
     Name: 黯淡冰川格林機槍
@@ -182367,6 +182578,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bLongAtkRate,15;
       bonus bNearAtkDef,-7;
@@ -182558,6 +182770,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 840000
     AegisName: Ep172_1h_Grenade
     Name: 羅斯特榴彈槍
@@ -182741,6 +182954,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus2 bSkillAtk,"NW_WILD_FIRE",6*(.@r/2);
@@ -182912,6 +183126,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+    Gradable: true
   - Id: 840010
     AegisName: D_Glacier_Launcher
     Name: 黯淡冰川榴彈發射器
@@ -182948,6 +183163,7 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
+    Gradable: true
     Script: |
       bonus bLongAtkRate,15;
       bonus bNearAtkDef,-7;
@@ -183139,6 +183355,7 @@ Body:
       Both_Hand: true
     WeaponLevel: 5
     Refineable: true
+    Gradable: true
   - Id: 420106
     AegisName: Temporal_Sprout_TW
     Name: 時光超越天地樹苗
@@ -183230,6 +183447,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 190
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       .@g = getenchantgrade();
@@ -183289,6 +183507,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 150
     Refineable: true
+    Gradable: true
     Script: |
       .@r = getrefine();
       bonus bMaxHP,(.@r/2)*1500;
@@ -183365,9 +183584,9 @@ Body:
     Locations:
       Shoes: true
     ArmorLevel: 2
+    EquipLevelMin: 190
     Refineable: true
     Gradable: true
-    EquipLevelMin: 190
     Script: |
       .@g = getenchantgrade();
       .@r = getrefine();
