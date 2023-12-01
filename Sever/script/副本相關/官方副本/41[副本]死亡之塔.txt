@@ -1,8 +1,3 @@
-
-
-
-//===== Description: ==============================
-//
 //*************************************************
 //===================請保留以上資訊================
 
@@ -998,8 +993,8 @@ OnTimer22000:
 	
 OnKillMob:
 	Callfunc ("QuestWinLog",22441);
-	hideoffnpc instance_npcname("露西#LUCILE01");
-	donpcevent instance_npcname("#BossSkill")+"::Onstoptime";
+	donpcevent instance_npcname("露西#LUCILE01");
+	hideoffnpc instance_npcname("#BossSkill")+"::Onstoptime";
 	'bossf2 = 1;
 	set 'Bosskill,1;
 donpcevent instance_npcname("#Barrier01")+"::OnStoptime";
@@ -1095,7 +1090,7 @@ OnTimer5000:
 		}
 		sleep 1000;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 1000;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
@@ -1527,7 +1522,6 @@ get42:
 get422:
 	Instance_PassAnnounce;
 	getitem 1000257,10;	
-	getitem 6909,5;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:
