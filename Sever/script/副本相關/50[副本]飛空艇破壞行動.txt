@@ -551,7 +551,18 @@ OnTouch:
 		end;
 	}
 
+	//設定玩家獲得的獎勵
+	setArray .@item_id_r,1000608,1000811,1000812,1000813,1000814;
+	//設定一一對應獎勵數量
+	setArray .@item_co,rand(1,10),rand(1,5),rand(1,3),rand(1,2),1;
+	//設定一一對應掉落的機率 範圍 :1-100
+	setArray .@item_rate,100,100,'mode*30,'mode*20,'mode==2?'mode*10:0;	
 
+	for(.@i =0;.@i<getarraysize(.@item_id_r) ;.@i++)
+	{
+		if(rand(100)<.@item_rate[.@i])
+			makeitem .@item_id_r[.@i],.@item_co[.@i],strnpcinfo(4),159+rand(-5,5),160+rand(-5,5);
+	}
 	
 	//(經濟艙)
 	if ('mode == 0)
