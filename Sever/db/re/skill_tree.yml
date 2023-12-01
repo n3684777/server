@@ -52,6 +52,8 @@ Body:
         Exclude: true
       - Name: WE_CALLBABY
         MaxLevel: 1
+      - Name: MC_PUSHCART
+        MaxLevel: 10
   - Job: Swordman
     Inherit:
       Novice: true
