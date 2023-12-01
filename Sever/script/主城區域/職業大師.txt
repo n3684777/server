@@ -1258,7 +1258,7 @@ function	script	Job_Rent	{
 			if ( checkcart() ) {
 				goto Rent_Fail;
 			} else {
-				skill "MC_PUSHCART",10,0;
+				skill "MC_PUSHCART",10,2;
 				setcart;
 				goto Rent_Done;
 			}
