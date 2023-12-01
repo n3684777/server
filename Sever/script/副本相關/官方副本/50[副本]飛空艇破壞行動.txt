@@ -18,7 +18,7 @@
 1@whl	mapflag	novending			//無法開露天商店
 1@whl	mapflag	nochat				//無法開聊天室
 
-amatsu,127,121,3	script	[副本]飛空艇破壞行動	20637,{
+amatsu,127,121,5	script	[副本]飛空艇破壞行動	20637,{
 	// 展示資訊
 	F_instanceinfo(strnpcinfo(1),.ins_name$,.ins_MinLv,.ins_MaxLv,.ins_Minplayer,.ins_Maxplayer,.ins_time,.ins_cooldown,.ins_collnum);
 	// 創建選單
@@ -632,13 +632,13 @@ OnInstanceInit:
 
 }
 
-1@whl,0,0,0	script	離開副本#1@whl	obj_a2,{
-	mes "^33CC33【離開副本】^000000";
-	mes "你要離開副本了嗎？";
+1@whl,0,0,0	script	副本寶箱#1@whl	obj_a2,{
+	mes "^33CC33【副本寶箱】^000000";
+	mes "你要領取獎勵了嗎？";
 	next;
 	menu
 	"^008000◆先不要◆^000000",get42,
-	"^008000◆離開◆^000000",get422;
+	"^008000◆領取◆^000000",get422;
 get42:
 	end;
 get422:
