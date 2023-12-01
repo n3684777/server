@@ -9,7 +9,7 @@ uttycty,42,161,6	script	幻象裝備附魔人員	805,{
 	mes "附魔裝備要穿戴才能附魔唷~";
 	mes "有甚麼事嗎?";
 	next;
-	switch( select( "沒事", "附魔 " + getitemname(450127), "附魔 " + getitemname(450128), "附魔 " + getitemname(480020), "附魔 " + getitemname(480021), "附魔 " + getitemname(470022), "附魔 " + getitemname(470023), "附魔 " + getitemname(490024), "附魔 " + getitemname(490025), "附魔 " + getitemname(490026), "附魔 " + getitemname(490027) ) ) {
+	switch( select( "沒事", "附魔 " + getitemname(15376), "附魔 " + getitemname(15377), "附魔 " + getitemname(20933), "附魔 " + getitemname(20934), "附魔 " + getitemname(22196), "附魔 " + getitemname(22197), "附魔 " + getitemname(32207), "附魔 " + getitemname(32208), "附魔 " + getitemname(32209), "附魔 " + getitemname(32210) ) ) {
 	case 1:
 		mes "[全自動裝備附魔人員]";
 		mes "掰掰~";
