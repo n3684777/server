@@ -67804,7 +67804,7 @@ Body:
       changebase 4040;
     UnEquipScript: |
       changebase Class;
-  - Id: 9100377
+  - Id: 910077
     AegisName: Cat_Stone
     Name: 召喚師幻化石(披肩)
     Type: Card
@@ -68195,7 +68195,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910116
-    AegisName: BMer3_Stone
+    AegisName: BMer23_Stone
     Name: 基因學者寶寶幻化石(披肩)
     Type: Card
     Buy: 20
