@@ -67232,7 +67232,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 20;
+      if(!sex){changebase 20;}
     UnEquipScript: |
       changebase Class;
   - Id: 910020
@@ -67422,7 +67422,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4020;
+      if(sex){changebase 4020;}
     UnEquipScript: |
       changebase Class;
   - Id: 910039
@@ -67522,7 +67522,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4075;
+      if(sex){changebase 4075;}
     UnEquipScript: |
       changebase Class;
   - Id: 910049
@@ -67532,7 +67532,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4076;
+      if(!sex){changebase 4076;}
     UnEquipScript: |
       changebase Class;
   - Id: 910050
@@ -68072,7 +68072,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4042;
+      if(sex){changebase 4042;}
     UnEquipScript: |
       changebase Class;
   - Id: 910104
@@ -68082,7 +68082,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4043;
+      if(!sex){changebase 4043;}
     UnEquipScript: |
       changebase Class;
   - Id: 910105
@@ -68172,7 +68172,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4104;
+      if(sex){changebase 4104;}
     UnEquipScript: |
       changebase Class;
   - Id: 910114
