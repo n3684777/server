@@ -152954,10 +152954,6 @@ Body:
     EquipLevelMin: 100
     Refineable: true
     Script: |
-      bonus bPerfectHitAddRate,25;
-      bonus bPerfectHitAddRate,(.@r/4)*4;
-      bonus2 bSkillCooldown,"LG_RAYOFGENESIS",-((.@r/4)*500);
-      bonus2 bSkillCooldown,"LG_SHIELDPRESS",-((.@r/4)*300);
       .@r = getrefine();
       bonus bPerfectHitAddRate,3;
       bonus bCritical,(.@r/3)*2;
