@@ -583,6 +583,8 @@ uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 	.@enchant = atoi(.@data$[.@s+1]);
 	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
 		mes "[雷斯查德]";
+		mes getequipid(.@part);
+		mes countitem(.id);
 		mes "您必須同時擁有服裝和能力石才能進行附魔。";
 		close;
 	}
