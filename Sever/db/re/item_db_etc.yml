@@ -67045,7 +67045,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910001
-    AegisName: Nov_Stone
+    AegisName: Swo_Stone
     Name: ¼C¤h¤Û¤Æ¥Û(©ÜªÓ)
     Type: Card
     Buy: 20
