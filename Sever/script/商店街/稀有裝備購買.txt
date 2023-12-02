@@ -401,6 +401,20 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 
+	//¶ð¿Õ´µÀY
+	sellitem(400134,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400141,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400146,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400150,.@p,-1);
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	
 	
 	
 OnBuyItem:
