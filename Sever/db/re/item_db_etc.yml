@@ -67545,7 +67545,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910051
-    AegisName: HMer_Stone
+    AegisName: Mer222_Stone
     Name: 基因學者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67575,7 +67575,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910054
-    AegisName: HMer_Stone
+    AegisName: Mer3_Stone
     Name: 機械神匠幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67605,7 +67605,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910057
-    AegisName: HMer_Stone
+    AegisName: Arch3_Stone
     Name: 樞機主教幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67615,7 +67615,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910058
-    AegisName: HMer_Stone
+    AegisName: WS_Stone
     Name: 風鷹狩獵者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67625,7 +67625,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910059
-    AegisName: HMer_Stone
+    AegisName: GE_Stone
     Name: 帝國聖衛軍 幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67635,7 +67635,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910060
-    AegisName: HMer_Stone
+    AegisName: MER23_Stone
     Name: 生命締造者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67645,7 +67645,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910061
-    AegisName: HMer_Stone
+    AegisName: Shadow3_Stone
     Name: 深淵追跡者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67655,7 +67655,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910062
-    AegisName: HMer_Stone
+    AegisName: EM_Stone
     Name: 元素支配者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67665,7 +67665,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910063
-    AegisName: HMer_Stone
+    AegisName: Monk3_Stone
     Name: 聖裁者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67675,7 +67675,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910064
-    AegisName: HMer_Stone
+    AegisName: Bar3_Stone
     Name: 天籟頌者幻化石(披肩)
     Type: Card
     Buy: 20
@@ -67685,7 +67685,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910065
-    AegisName: HMer_Stone
+    AegisName: Dancer3_Stone
     Name: 樂之舞靈幻化石(披肩)
     Type: Card
     Buy: 20
