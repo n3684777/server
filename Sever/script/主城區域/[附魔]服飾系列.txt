@@ -566,7 +566,7 @@ uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 	.@size = getarraysize(.@data$);
 	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
 		.@id = atoi(.@data$[.@i]);
-		.@j+1;
+		.@j = .@j+1;
 		if(countitem(.@id)){
 				.@menu$ += sprintf( "%d. %s (%d) 個:", .@j, getitemname(.@id), countitem(.@id) );
 				
