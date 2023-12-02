@@ -335,7 +335,7 @@ uttycty,24,86,6	script	披肩幻化#cos_ect	4_FROG,{
 		910004, 910004, "",	// MinorCastingStone_Robe	FixedCasting03
 		910005, 910005, "",	// DoubleAttack_Stone	DoubleAttack
 		910006, 910006, "",	// Critical_Stone_Robe	Fatal_Robe
-		910007, 910007 "",	// CastStone_Robe	Casting_Robe		 
+		910007, 910007, "",	// CastStone_Robe	Casting_Robe		 
 		910008, 910008, "",	// 修羅	Casting_Robe
 		910009, 910009, "",	// 遊俠石(披肩)	Casting_Robe
 		910010, 910010, "",	// 妖術師石(披肩)	Casting_Robe
