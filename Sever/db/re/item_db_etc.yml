@@ -68125,7 +68125,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910109
-    AegisName: BMer2_Stone
+    AegisName: BMer3_Stone
     Name: ¾÷±ñ¤u¦KÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
     Type: Card
     Buy: 20
@@ -68155,7 +68155,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910112
-    AegisName: BMag2_Stone
+    AegisName: BMag23_Stone
     Name: §¯³N®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
     Type: Card
     Buy: 20
@@ -68305,7 +68305,7 @@ Body:
     UnEquipScript: |
       changebase Class;
   - Id: 910127
-    AegisName: BSou2_Stone
+    AegisName: B504_Stone
     Name: ®©ÆF¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
     Type: Card
     Buy: 20
