@@ -454,7 +454,7 @@ OnTimer1000:
 
 
 // Costume enchant (garment)
-uttycty,28,80,6	script	披肩幻化21#cos_ect	4_FROG,{
+uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 	disable_items;
 	mes "[雷斯查德]";
 	mes "歡迎光臨，時尚魔石!!";
@@ -566,7 +566,10 @@ uttycty,28,80,6	script	披肩幻化21#cos_ect	4_FROG,{
 	.@size = getarraysize(.@data$);
 	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
 		.@id = atoi(.@data$[.@i]);
-		.@menu$ += sprintf( "%d. %s (%d) 個:", (.@j+1), getitemname(.@id), countitem(.@id) );
+		if(countitem(.@id){
+				.@menu$ += sprintf( "%d. %s (%d) 個:", (.@j+1), getitemname(.@id), countitem(.@id) );
+		}
+
 		.@j++;
 	}
 	.@menu$ += "結束";
