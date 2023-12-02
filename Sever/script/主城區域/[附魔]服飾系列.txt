@@ -454,7 +454,7 @@ OnTimer1000:
 
 
 // Costume enchant (garment)
-uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
+uttycty,28,80,6	script	披肩幻化21#cos_ect	4_FROG,{
 	disable_items;
 	mes "[雷斯查德]";
 	mes "歡迎光臨，時尚魔石!!";
@@ -566,12 +566,7 @@ uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 	.@size = getarraysize(.@data$);
 	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
 		.@id = atoi(.@data$[.@i]);
-		.@j = .@j+1;
-		if(countitem(.@id)){
-				.@menu$ += sprintf( "%d. %s (%d) 個:", .@j, getitemname(.@id), countitem(.@id) );
-				
-		}
-
+		.@menu$ += sprintf( "%d. %s (%d) 個:", (.@j+1), getitemname(.@id), countitem(.@id) );
 		.@j++;
 	}
 	.@menu$ += "結束";
@@ -585,9 +580,6 @@ uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 	.@enchant = atoi(.@data$[.@s+1]);
 	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
 		mes "[雷斯查德]";
-		mes .@s;
-		mes getequipid(.@part);
-		mes countitem(.id);
 		mes "您必須同時擁有服裝和能力石才能進行附魔。";
 		close;
 	}
