@@ -4,9 +4,9 @@ OnInit:
 	waitingroom "★ 服飾強化石箱購買 ★",0;
 
 	switch(select("測試1","測試2")){
-	tradertype(NST_EXPANDED_BARTER);
 	.@amount = 1;
 case 1:
+	tradertype(NST_EXPANDED_BARTER);
     sellitem(14681,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -54,6 +54,7 @@ case 1:
     sellitemcurrency(6417,.@amount);
     endsellitem();
 case 2:
+	tradertype(NST_EXPANDED_BARTER);
     sellitem(100019,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
