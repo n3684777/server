@@ -66961,76 +66961,807 @@ Body:
     AegisName: OminousTurtleG_Card_
     Name: 不祥烏龜將軍卡片-改
     Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      DropEffect: CLIENT
-    Script: |
-      bonus bDef,60;
-      bonus bMdef,30;
-      bonus2 bSubSize,Size_All,20;
-  - Id: 900102
-    AegisName: Lich_Lord_Card_
-    Name: 亡者君主卡片-改
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Both_Accessory: true
-    Flags:
-      DropEffect: CLIENT
-    Script: |
-      bonus bDef,30;
-      bonus bMdef,10;
-      bonus2 bAddEff,Eff_Silence,9000;
-      /* TODO: Confirm Mob ID to transform */
-      autobonus "{ bonus bIgnoreDefClass,Class_All; bonus bIgnoreMdefRace,RC_All; }",20,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1875,7000; }";
-  - Id: 900103
-    AegisName: Kades_Card_
-    Name: 亡靈的守護者卡德斯卡片-改
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Garment: true
-    Flags:
-      BuyingStore: true
-      DropEffect: CLIENT
-    Script: |
-      bonus2 bSubEle,Ele_Water,75;
-      bonus2 bSubEle,Ele_Earth,75;
-      bonus2 bSubEle,Ele_Fire,75;
-      bonus2 bSubEle,Ele_Wind,75;
-      bonus2 bSubEle,Ele_Dark,75;
-      bonus2 bSubEle,Ele_Undead,75;
-      bonus2 bSubEle,Ele_Holy,50;
-      bonus2 bSubEle,Ele_Ghost,50;
-  - Id: 900104
-    AegisName: Death_Witch_Card_
-    Name: 死亡女巫卡片-改
-    Type: Card
-    Weight: 10
-    Locations:
-      Shoes: true
-    Flags:
-      DropEffect: CLIENT
-    Script: |
-      bonus bMatkRate,30;
-      bonus2 bMagicAddRace,RC_Demon,75;
-      bonus2 bMagicAddRace,RC_Formless,75;
-  - Id: 900105
-    AegisName: Bakonawa_Card_
-    Name: 食月暴龍卡片-改
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Armor: true
-    Flags:
-      BuyingStore: true
-      DropEffect: CLIENT
-    Script: |
-      bonus bStr,40;
-      bonus5 bAutoSpellWhenHit,"NPC_WIDEBLEEDING",4,500,BF_WEAPON,0;
+      Buy: 20
+      Weight: 10
+      Locations:
+        Left_Hand: true
+      Flags:
+        DropEffect: CLIENT
+      Script: |
+        bonus bDef,60;
+        bonus bMdef,30;
+        bonus2 bSubSize,Size_All,20;
+    - Id: 900102
+      AegisName: Lich_Lord_Card_
+      Name: 亡者君主卡片-改
+      Type: Card
+      Buy: 20
+      Weight: 10
+      Locations:
+        Both_Accessory: true
+      Flags:
+        DropEffect: CLIENT
+      Script: |
+        bonus bDef,30;
+        bonus bMdef,10;
+        bonus2 bAddEff,Eff_Silence,9000;
+        /* TODO: Confirm Mob ID to transform */
+        autobonus "{ bonus bIgnoreDefClass,Class_All; bonus bIgnoreMdefRace,RC_All; }",20,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1875,7000; }";
+    - Id: 900103
+      AegisName: Kades_Card_
+      Name: 亡靈的守護者卡德斯卡片-改
+      Type: Card
+      Buy: 20
+      Weight: 10
+      Locations:
+        Garment: true
+      Flags:
+        BuyingStore: true
+        DropEffect: CLIENT
+      Script: |
+        bonus2 bSubEle,Ele_Water,75;
+        bonus2 bSubEle,Ele_Earth,75;
+        bonus2 bSubEle,Ele_Fire,75;
+        bonus2 bSubEle,Ele_Wind,75;
+        bonus2 bSubEle,Ele_Dark,75;
+        bonus2 bSubEle,Ele_Undead,75;
+        bonus2 bSubEle,Ele_Holy,50;
+        bonus2 bSubEle,Ele_Ghost,50;
+    - Id: 900104
+      AegisName: Death_Witch_Card_
+      Name: 死亡女巫卡片-改
+      Type: Card
+      Weight: 10
+      Locations:
+        Shoes: true
+      Flags:
+        DropEffect: CLIENT
+      Script: |
+        bonus bMatkRate,30;
+        bonus2 bMagicAddRace,RC_Demon,75;
+        bonus2 bMagicAddRace,RC_Formless,75;
+    - Id: 900105
+      AegisName: Bakonawa_Card_
+      Name: 食月暴龍卡片-改
+      Type: Card
+      Buy: 20
+      Weight: 10
+      Locations:
+        Armor: true
+      Flags:
+        BuyingStore: true
+        DropEffect: CLIENT
+      Script: |
+        bonus bStr,40;
+        bonus5 bAutoSpellWhenHit,"NPC_WIDEBLEEDING",4,500,BF_WEAPON,0;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910001
+      AegisName: Nov_Stone
+      Name: 劍士幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 1;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910002
+      AegisName: Mag_Stone
+      Name: 魔法師幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 2;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910003
+      AegisName: Arc_Stone
+      Name: 弓箭手幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 3;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910004
+      AegisName: Aco_Stone
+      Name: 服事幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910005
+      AegisName:  Mer_Stone
+      Name: 商人幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 5;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910006
+      AegisName: Thief_Stone
+      Name: 盜賊幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 6;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910007
+      AegisName: Kni_Stone
+      Name: 騎士幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 7;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910008
+      AegisName: Pri_Stone
+      Name: 祭司幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 8;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910009
+      AegisName: Wiz_Stone
+      Name: 巫師幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 9;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910010
+      AegisName: Smi_Stone
+      Name: 鐵匠幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 10;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910011
+      AegisName: Hun_Stone
+      Name: 獵人幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 11;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910012
+      AegisName: Ass_Stone
+      Name: 刺客幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 12;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910013
+      AegisName: S2_Stone
+      Name: 十字軍幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 14;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910014
+      AegisName: Mon_Stone
+      Name: 武僧幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 15;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910015
+      AegisName: M2_Stone
+      Name: 賢者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 16;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910016
+      AegisName: T2_Stone
+      Name: 流氓幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 17;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910017
+      AegisName: Mer2_Stone
+      Name: 煉金術師幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 18;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910018
+      AegisName: Bar_Stone
+      Name: 詩人幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 19;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910019
+      AegisName: Dance_Stone
+      Name: 舞孃幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 20;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910020
+      AegisName: HN_Stone
+      Name: 進階初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4001;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910021
+      AegisName: HS_Stone
+      Name: 進階劍士幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4002;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910022
+      AegisName: HM_Stone
+      Name: 進階魔法師幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4003;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910023
+      AegisName: HA_Stone
+      Name: 進階弓箭手幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4004;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910024
+      AegisName: HAc_Stone
+      Name: 進階服事幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4005;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910025
+      AegisName: HMe_Stone
+      Name: 進階商人幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4006;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910026
+      AegisName: HTe_Stone
+      Name: 進階盜賊幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4007;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910027
+      AegisName: HKn_Stone
+      Name: 騎士領主幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4008;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910028
+      AegisName: HPr_Stone
+      Name: 神官幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4009;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910029
+      AegisName: HWi_Stone
+      Name: 超魔導師幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4010;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910030
+      AegisName: HMer_Stone
+      Name: 神工匠幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 4011;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    - Id: 910000
+      AegisName: Nov_Stone
+      Name: 初心者幻化石(披肩)
+      Type: Card
+      Buy: 20
+      Weight: 100
+      Script: |
+        changebase 0;
+      UnEquipScript: |
+        changebase Class;
+    
