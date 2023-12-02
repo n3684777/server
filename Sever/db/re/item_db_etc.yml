@@ -66961,16 +66961,16 @@ Body:
     AegisName: OminousTurtleG_Card_
     Name: 不祥烏龜將軍卡片-改
     Type: Card
-      Buy: 20
-      Weight: 10
-      Locations:
-        Left_Hand: true
-      Flags:
-        DropEffect: CLIENT
-      Script: |
-        bonus bDef,60;
-        bonus bMdef,30;
-        bonus2 bSubSize,Size_All,20;
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bDef,60;
+      bonus bMdef,30;
+      bonus2 bSubSize,Size_All,20;
   - Id: 900102
     AegisName: Lich_Lord_Card_
     Name: 亡者君主卡片-改
@@ -66990,23 +66990,23 @@ Body:
   - Id: 900103
     AegisName: Kades_Card_
     Name: 亡靈的守護者卡德斯卡片-改
-      Type: Card
-      Buy: 20
-      Weight: 10
-      Locations:
-        Garment: true
-      Flags:
-        BuyingStore: true
-        DropEffect: CLIENT
-      Script: |
-        bonus2 bSubEle,Ele_Water,75;
-        bonus2 bSubEle,Ele_Earth,75;
-        bonus2 bSubEle,Ele_Fire,75;
-        bonus2 bSubEle,Ele_Wind,75;
-        bonus2 bSubEle,Ele_Dark,75;
-        bonus2 bSubEle,Ele_Undead,75;
-        bonus2 bSubEle,Ele_Holy,50;
-        bonus2 bSubEle,Ele_Ghost,50;
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubEle,Ele_Water,75;
+      bonus2 bSubEle,Ele_Earth,75;
+      bonus2 bSubEle,Ele_Fire,75;
+      bonus2 bSubEle,Ele_Wind,75;
+      bonus2 bSubEle,Ele_Dark,75;
+      bonus2 bSubEle,Ele_Undead,75;
+      bonus2 bSubEle,Ele_Holy,50;
+      bonus2 bSubEle,Ele_Ghost,50;
   - Id: 900104
     AegisName: Death_Witch_Card_
     Name: 死亡女巫卡片-改
