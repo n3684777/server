@@ -67344,3 +67344,1013 @@ Body:
       changebase 4011;
     UnEquipScript: |
       changebase Class;
+  - Id: 910031
+    AegisName: HSni_Stone
+    Name: ¯«®g¤â¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4012;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910032
+    AegisName: HCAss_Stone
+    Name: ¢Ì¦r¨ë«È¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4013;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910033
+    AegisName: HSwo2_Stone
+    Name: ¸t·µ¢Ì¦r­x¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4015;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910034
+    AegisName: HMon_Stone
+    Name: ªZ³N©v®v¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4016;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910035
+    AegisName: HMag2_Stone
+    Name: ´¼ªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4017;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910036
+    AegisName: HThi2_Stone
+    Name: ¯«¦æ¤Ó«O¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4018;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910037
+    AegisName: HMer2_Stone
+    Name: ³Ð³yªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4019;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910038
+    AegisName: HBar2_Stone
+    Name: ·d¯ºÃÀ¤H¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4020;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910039
+    AegisName: HDan_Stone
+    Name: §NÆv»R®V¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4021;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910040
+    AegisName: RK_Stone
+    Name: ¿c®¦ÃM¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4060;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910041
+    AegisName: WL_Stone
+    Name: ©G³N¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4061;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910042
+    AegisName: TArc2_Stone
+    Name: ¹C«L¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4062;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910043
+    AegisName: AB_Stone
+    Name: ¤j¥D±Ð¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4063;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910044
+    AegisName: TMer_Stone
+    Name: ¾÷±ñ¤u¦K¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4064;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910045
+    AegisName: CA_Stone
+    Name: ¢Ì¦r±Ù­ºªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4065;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910046
+    AegisName: TS2_Stone
+    Name: ¬Ó®a¸T½Ã­x¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4073;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910047
+    AegisName: TM2_Stone
+    Name: §¯³N®v¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4074;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910048
+    AegisName: TBar_Stone
+    Name: ®c§Ê¼Ö®v¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4075;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910049
+    AegisName: TDan_Stone
+    Name: ®ö¸ñ»RªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4076;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910050
+    AegisName: TMon_Stone
+    Name: ­×Ã¹¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4077;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910051
+    AegisName: HMer_Stone
+    Name: °ò¦]¾ÇªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4078;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910052
+    AegisName: TThi2_Stone
+    Name: ¾y¼v°lÂÜªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4079;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910053
+    AegisName: RD_Stone
+    Name: ¿c®¦ÀsÀï¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4252;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910054
+    AegisName: HMer_Stone
+    Name: ¾÷±ñ¯«¦K¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4253;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910055
+    AegisName: CS_Stone
+    Name: ¢Ì¦r¼vªZ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4254;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910056
+    AegisName: War2_Stone
+    Name: ¸T©GÅ]¾É¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4255;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910057
+    AegisName: HMer_Stone
+    Name: ¼Ï¾÷¥D±Ð¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4256;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910058
+    AegisName: HMer_Stone
+    Name: ­·ÆN¬¼ÂyªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4057;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910059
+    AegisName: HMer_Stone
+    Name: «Ò°ê¸t½Ã­x ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4258;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910060
+    AegisName: HMer_Stone
+    Name: ¥Í©R½l³yªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4259;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910061
+    AegisName: HMer_Stone
+    Name: ²`²W°l¸ñªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4260;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910062
+    AegisName: HMer_Stone
+    Name: ¤¸¯À¤ä°tªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4261;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910063
+    AegisName: HMer_Stone
+    Name: ¸tµôªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4262;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910064
+    AegisName: HMer_Stone
+    Name: ¤ÑÅ£¹|ªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4263;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910065
+    AegisName: HMer_Stone
+    Name: ¼Ö¤§»RÆF¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4064;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910066
+    AegisName: SN_Stone
+    Name: ¶W¯Åªì¾ÇªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 23;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910067
+    AegisName: GG_Stone
+    Name: ¯«ºj¤â¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 24;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910068
+    AegisName: Nin_Stone
+    Name: §ÔªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 25;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910069
+    AegisName: PU_Stone
+    Name: ¶`®±¤Ö¦~¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4046;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910070
+    AegisName: PU2_Stone
+    Name: ®±¸t¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4047;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910071
+    AegisName: SP_Stone
+    Name: ®©ÆF¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4049;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910072
+    AegisName: Swolf_Stone
+    Name: ¼v¯T¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4211;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910073
+    AegisName: Dra_Stone
+    Name: Äg¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4212;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910074
+    AegisName: GG2_Stone
+    Name: ¤Ï«qªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4215;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910075
+    AegisName: PE_Stone
+    Name: ®±¬Ó¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4039;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910076
+    AegisName: Sou2_Stone
+    Name: ÂyÆF¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4040;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 9100377
+    AegisName: Cat_Stone
+    Name: ¥l³ê®v¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4218;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910078
+    AegisName: SE2_Stone
+    Name: ¤Ñ«Ò¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4302;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910079
+    AegisName: Sou3_Stone
+    Name: ÆF¾É¤h¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4303;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910080
+    AegisName: GG3_Stone
+    Name: ¸Â®ð¼Ó¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4304;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910081
+    AegisName: NKF_Stone
+    Name: ¤£ª¾¤õ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4305;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910082
+    AegisName: N_Stone
+    Name: ©]½Ã¶¤¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4306;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910083
+    AegisName: TN_Stone
+    Name: ³»¯Åªì¾ÇªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4307;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910084
+    AegisName: Cat2_Stone
+    Name: »îÆF®v¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4308;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910085
+    AegisName: BN_Stone
+    Name: ªì¾ÇªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4023;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910086
+    AegisName: BSwo_Stone
+    Name: ¼C¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4024;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910087
+    AegisName: BMag_Stone
+    Name: Å]ªk®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4025;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910088
+    AegisName: BArch_Stone
+    Name: ¤}½b¤âÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4026;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910089
+    AegisName: BAco_Stone
+    Name: ªA¨ÆÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4027;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910090
+    AegisName: BMer_Stone
+    Name: °Ó¤HÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4028;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910091
+    AegisName: BThi_Stone
+    Name: µs¸éÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4029;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910092
+    AegisName: BKnig_Stone
+    Name: ÃM¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4030;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910093
+    AegisName: BPri_Stone
+    Name: ²½¥qÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4031;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910094
+    AegisName: BWiz_Stone
+    Name: §Å®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4032;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910095
+    AegisName: BSmit_Stone
+    Name: ÅK¦KÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4033;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910096
+    AegisName: BHunt_Stone
+    Name: Ây¤HÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4034;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910097
+    AegisName: BAss_Stone
+    Name: ¨ë«ÈÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4035;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910098
+    AegisName: BSwo2_Stone
+    Name: ¢Ì¦r­xÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4037;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910099
+    AegisName: BMonk_Stone
+    Name: ªZ³N©v®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4038;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910100
+    AegisName: BMag2_Stone
+    Name: ½åªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4039;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910101
+    AegisName: BThief2_Stone
+    Name: ¬yª]Ä_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4040;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910102
+    AegisName: BMer2_Stone
+    Name: ·Òª÷³N®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4041;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910103
+    AegisName: BBar_Stone
+    Name: §u¹C¸Ö¤HÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4042;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910104
+    AegisName: BDan_Stone
+    Name: »RÄ]Ä_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4043;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910105
+    AegisName: BRK_Stone
+    Name: ¿c®¦ÃM¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4096;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910106
+    AegisName: BWar_Stone
+    Name: ©G³N¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4097;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910107
+    AegisName: BArch3_Stone
+    Name: ¹C«LÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4098;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910108
+    AegisName: BArchB_Stone
+    Name: ¤j¥D±ÐÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4099;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910109
+    AegisName: BMer2_Stone
+    Name: ¾÷±ñ¤u¦KÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4100;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910110
+    AegisName: BCS_Stone
+    Name: ¢Ì¦r±Ù­ºªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4101;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910111
+    AegisName: BE_Stone
+    Name: ¬Ó®a¸T½Ã¶¤Ä_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4102;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910112
+    AegisName: BMag2_Stone
+    Name: §¯³N®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4103;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910113
+    AegisName: BBar33_Stone
+    Name: ®c§Ê¼Ö®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4104;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910114
+    AegisName: BDan3_Stone
+    Name: ®ö®V»RªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4105;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910115
+    AegisName: BMonk3_Stone
+    Name: ­×Ã¹Ä_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4106;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910116
+    AegisName: BMer3_Stone
+    Name: °ò¦]¾ÇªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4107;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910117
+    AegisName: BShad_Stone
+    Name: ¾y¼v°lÂÜªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4108;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910118
+    AegisName: BSN_Stone
+    Name: ¶W¯Åªì¾ÇªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4045;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910119
+    AegisName: HN22_Stone
+    Name: ¶i¶¥¶W¯Åªì¾ÇªÌ¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4190;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910120
+    AegisName: BHN2_Stone
+    Name: ¶i¶¥¶W¯Åªì¾ÇªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4091;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910121
+    AegisName: BCat_Stone
+    Name: ¥l³ê®vÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4220;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910122
+    AegisName: BNin_Stone
+    Name: §ÔªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4222;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910123
+    AegisName: BSWolf_Stone
+    Name: ¼v¯TÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4223;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910124
+    AegisName: BDrag_Stone
+    Name: ÄgÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4224;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910125
+    AegisName: BPP_Stone
+    Name: ¶`®±¤Ö¦~Ä_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4225;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910126
+    AegisName: BP2_Stone
+    Name: ®±¸tÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4226;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910127
+    AegisName: BSou2_Stone
+    Name: ®©ÆF¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4227;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910128
+    AegisName: BGGG_Stone
+    Name: ¯«ºj¤âÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4228;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910129
+    AegisName: BGG2_Stone
+    Name: ¤Ï«qªÌÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4229;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910130
+    AegisName: BPE2_Stone
+    Name: ®±¬ÓÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4241;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 910131
+    AegisName: BSou2_Stone
+    Name: ÂyÆF¤hÄ_Ä_¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4142;
+    UnEquipScript: |
+      changebase Class;
