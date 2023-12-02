@@ -152965,14 +152965,14 @@ Body:
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Crusader){
       bonus bPerfectHitAddRate,25;
       bonus bPerfectHitAddRate,(.@r/4)*4;
-      bonus2 bSkillCooldown,"LG_RAYOFGENESIS",(.@r/4)*500;
-      bonus2 bSkillCooldown,"LG_SHIELDPRESS",(.@r/4)*300;
+      bonus2 bSkillCooldown,"LG_RAYOFGENESIS",(.@r/4)*-500;
+      bonus2 bSkillCooldown,"LG_SHIELDPRESS",(.@r/4)*-300;
       if(.@r >= 12){bonus bAllStats,10;bonus bShortAtkRate,15;bonus2 bMagicAtkEle,Ele_Holy,15;}
       }
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist){
       bonus bPerfectHitAddRate,25;
       bonus bPerfectHitAddRate,(.@r/4)*4;
-      bonus2 bSkillCooldown,"GN_CART_TORNADO",(.@r/4)*500;
+      bonus2 bSkillCooldown,"GN_CART_TORNADO",(.@r/4)*-500;
       if(.@r >= 12){bonus bAllStats,10;bonus bShortAtkRate,15;}
       }  
   - Id: 480154
