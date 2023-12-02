@@ -67221,11 +67221,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      if(sex){
-      changebase 19;
-      }else{sex = 1;
-      changebase 19;
-      }
+      if(sex){changebase 19;}
       
     UnEquipScript: |
       changebase Class;
