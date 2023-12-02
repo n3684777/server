@@ -82296,9 +82296,6 @@ Body:
     DamageMotion: 600
     Ai: 04
     Class: Boss
-    Modes:
-      IgnoreMelee: true
-      IgnoreRanged: true
     Drops:
       - Item: Robe_Of_Sarah
         Rate: 100
@@ -82334,8 +82331,6 @@ Body:
     DamageMotion: 600
     Ai: 04
     Class: Boss
-    Modes:
-      IgnoreMagic: true
     Drops:
       - Item: Robe_Of_Sarah
         Rate: 100
@@ -82404,9 +82399,6 @@ Body:
     DamageMotion: 500
     Ai: 04
     Class: Boss
-    Modes:
-      IgnoreMelee: true
-      IgnoreRanged: true
     Drops:
       - Item: Gigantes_Card
         Rate: 1
@@ -82440,8 +82432,6 @@ Body:
     DamageMotion: 500
     Ai: 04
     Class: Boss
-    Modes:
-      IgnoreMagic: true
     Drops:
       - Item: Gigantes_Card
         Rate: 1

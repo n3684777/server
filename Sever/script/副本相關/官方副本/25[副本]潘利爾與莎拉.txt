@@ -94,15 +94,15 @@ OnTouch:
 	cutin "",255;
 	specialeffect EF_LOCKON, AREA, 'fenrir_1$;
 	.@label$ = instance_npcname("#glast_event_1") + "::OnMobDead";
-	monster 'map_glast$,355,300, "Mutant Galion",3198,1, .@label$;	// MM_M_GALION
-	monster 'map_glast$,358,300, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,361,300, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,355,289, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,358,289, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,364,294, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,364,297, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,364,291, "Mutant Galion",3198,1, .@label$;
-	monster 'map_glast$,353,290, "Mutant Galion",3198,1, .@label$;
+	monster 'map_glast$,355,300, "變種迦利",3198,1, .@label$;	// MM_M_GALION
+	monster 'map_glast$,358,300, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,361,300, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,355,289, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,358,289, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,364,294, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,364,297, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,364,291, "變種迦利",3198,1, .@label$;
+	monster 'map_glast$,353,290, "變種迦利",3198,1, .@label$;
 	unittalk getcharid(3), "" + strcharinfo(0) + " : 這些到底是什麼呢?";
 	npctalk "潘麗絲 潘利爾： 詠唱魔法的時候，幫忙爭取點時間!我來處理!", 'fenrir_1$;
 	donpcevent instance_npcname("#glast_event_1") + "::OnBar";
@@ -379,8 +379,8 @@ OnTouch:
 	npctalk "潘麗絲 潘利爾﹕算了...現在只要用微風神劍之力來找尋巴德爾之劍的行蹤就...", 'fenrir_4$;
 	sleep2 250;
 	enablenpc 'sarah_10$;
-	enablenpc instance_npcname("巨人#semi1");
-	enablenpc instance_npcname("巨人#semi2");
+	enablenpc instance_npcname("古代中型基勘特斯");
+	enablenpc instance_npcname("古代的基勘特斯");
 	sleep2 250;
 	cutin "sarah_hero3.bmp",0;
 	npctalk "莎拉 艾琳﹕呼呼..果真如此!跟預料的一樣..", 'sarah_10$;
@@ -404,11 +404,11 @@ OnTouch:
 	cutin "fenrir_b.bmp",255;
 	sleep2 250;
 	disablenpc 'sarah_10$;
-	disablenpc instance_npcname("巨人#semi1");
-	disablenpc instance_npcname("巨人#semi2");
+	disablenpc instance_npcname("古代中型基勘特斯");
+	disablenpc instance_npcname("古代的基勘特斯");
 	enablenpc instance_npcname("#fenrir_left_final_1");
-	monster 'map_glast$,49,363, "巨人#semi1", 3191,1, instance_npcname("#fenrir_left_final_1") + "::OnMobDead";// MM_M_GIGAN1
-	monster 'map_glast$,41,363, "巨人#semi2", 3192,1, instance_npcname("#fenrir_left_final_1") + "::OnMobDead";// MM_M_GIGAN2
+	monster 'map_glast$,49,363, "古代中型基勘特斯", 3191,1, instance_npcname("#fenrir_left_final_1") + "::OnMobDead";// MM_M_GIGAN1
+	monster 'map_glast$,41,363, "古代的基勘特斯", 3192,1, instance_npcname("#fenrir_left_final_1") + "::OnMobDead";// MM_M_GIGAN2
 	donpcevent instance_npcname("#glast_event_9") + "::OnEvent";
 	setpcblock PCBLOCK_NPC, false;
 	end;
@@ -598,8 +598,8 @@ OnMobDead:
 }
 
 1@glast,44,357,8	duplicate(#effect_glast_event01_1)	潘麗絲 潘利爾#glast_04	4_F_FENRIR
-1@glast,49,363,4	duplicate(#effect_glast_event01_1)	巨人#semi1	4_GIGANTES_SMALL
-1@glast,41,363,4	duplicate(#effect_glast_event01_1)	巨人#semi2	4_GIGANTES_SMALL
+1@glast,49,363,4	duplicate(#effect_glast_event01_1)	古代中型基勘特斯	4_GIGANTES_SMALL
+1@glast,41,363,4	duplicate(#effect_glast_event01_1)	古代的基勘特斯	4_GIGANTES_SMALL
 1@glast,46,364,4	duplicate(#effect_glast_event01_1)	莎拉 艾琳#glast_10	4_F_SARAH
 
 1@glast,52,345,4	duplicate(#effect_glast_event01_1)	#effect_glast_event02_1	CLEAR_NPC
@@ -801,8 +801,8 @@ OnEvent:
 	initnpctimer;
 	specialeffect EF_PRIMECHARGE4, AREA, 'fenrir_7$;
 	npctalk "潘麗絲 潘利爾﹕致命毒藥、暗雲，現在就出現在我面前，將帶給你最痛苦的死亡!", 'fenrir_7$;
-	monster 'map_glast$,190,341, "Large 巨人#a1", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,214,331, "Large 巨人#b2", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,190,341, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,214,331, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
 	progressbar_npc "000000",3, 'fenrir_7$;
 	end;
 OnTimer1000:
@@ -904,8 +904,8 @@ OnTimer9000:
 	callsub S_Hit,4;
 	npctalk "潘麗絲 潘利爾﹕去吧!!崩裂術!!!!", 'fenrir_7$;
 	specialeffect EF_HEAVENSDRIVE, AREA, 'sarah_17$;
-	monster 'map_glast$,190,341, "Large 巨人#a1", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,214,331, "Large 巨人#b2", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,190,341, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,214,331, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
 	progressbar_npc "000000",2, 'fenrir_7$;
 	end;
 OnTimer9250:
@@ -966,8 +966,8 @@ OnTimer17000:
 	callsub S_Hit,8;
 	npctalk "潘麗絲 潘利爾﹕就是現在!!!超自然波!!!!", 'fenrir_7$;
 	specialeffect EF_SPR_PLANT10, AREA, 'sarah_17$;
-	monster 'map_glast$,190,341, "Large 巨人#a1", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,214,331, "Large 巨人#b2", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,190,341, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,214,331, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
 	progressbar_npc "000000",2, 'fenrir_7$;
 	end;
 OnTimer17250:
@@ -1025,10 +1025,10 @@ OnTimer23500:
 	specialeffect EF_PRIMECHARGE2, AREA, 'fenrir_7$;
 	end;
 OnTimer23750:
-	monster 'map_glast$,190,341, "Large 巨人#a1", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,185,331, "Large 巨人#a2", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,209,341, "Large 巨人#b1", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
-	monster 'map_glast$,214,331, "Large 巨人#b2", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,190,341, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,185,331, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,209,341, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,214,331, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
 	end;
 OnTimer24000:
 	npctalk "潘麗絲 潘利爾﹕像清晨寂靜的霧氣般靠近後將所有東西凍結吧!!!", 'fenrir_7$;
@@ -1060,10 +1060,10 @@ OnTimer26000:
 	specialeffect EF_BOTTOM_BASILICA2, AREA, 'sarah_17$;
 	end;
 OnTimer26250:
-	monster 'map_glast$,190,341, "Large 巨人#a1", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,185,331, "Large 巨人#a2", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
-	monster 'map_glast$,209,341, "Large 巨人#b1", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
-	monster 'map_glast$,214,331, "Large 巨人#b2", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,190,341, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,185,331, "古代的基勘特斯", 3194,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN1
+	monster 'map_glast$,209,341, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
+	monster 'map_glast$,214,331, "大型基勘特斯", 3195,1, instance_npcname("#fenrir_boss_final_1") + "::OnMobDead";// MM_L_GIGAN2
 	end;
 OnTimer26500:
 	npctalk "潘麗絲 潘利爾﹕掌管生死，可貫通時間、空間的劍!!!!", 'fenrir_7$;
@@ -1342,95 +1342,95 @@ S_Spawn:
 	// inaccurate
 	switch( getarg(0) ) {
 	case 0:
-		monster 'map_glast$,204,52,"Large 巨人#aa1",3194,1;
-		monster 'map_glast$,201,55,"Large 巨人#aa1",3194,1;
-		monster 'map_glast$,196,53,"Large 巨人#aa1",3194,1;
-		monster 'map_glast$,205,80,"Large 巨人#aa2",3195,1;
-		monster 'map_glast$,210,77,"Large 巨人#aa2",3195,1;
-		monster 'map_glast$,205,73,"Large 巨人#aa2",3195,1;
-		monster 'map_glast$,236,96,"Large 巨人#aa5",3194,1;
-		monster 'map_glast$,234,96,"Large 巨人#aa5",3194,1;
-		monster 'map_glast$,234,96,"Large 巨人#aa5",3194,1;
-		monster 'map_glast$,185,79,"Large 巨人#bb3",3194,1;
-		monster 'map_glast$,189,78,"Large 巨人#bb3",3194,1;
-		monster 'map_glast$,194,85,"Large 巨人#bb3",3194,1;
-		monster 'map_glast$,168,113,"Large 巨人#bb4",3195,1;
-		monster 'map_glast$,174,122,"Large 巨人#bb4",3195,1;
+		monster 'map_glast$,204,52,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,201,55,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,196,53,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,205,80,"大型基勘特斯",3195,1;
+		monster 'map_glast$,210,77,"大型基勘特斯",3195,1;
+		monster 'map_glast$,205,73,"大型基勘特斯",3195,1;
+		monster 'map_glast$,236,96,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,234,96,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,234,96,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,185,79,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,189,78,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,194,85,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,168,113,"大型基勘特斯",3195,1;
+		monster 'map_glast$,174,122,"大型基勘特斯",3195,1;
 		break;
 	case 1:
-		monster 'map_glast$,131,182,"Large 巨人#bb11",3194,1;
-		monster 'map_glast$,133,174,"Large 巨人#bb11",3194,1;
-		monster 'map_glast$,134,187,"Large 巨人#bb11",3194,1;
-		monster 'map_glast$,202,196,"Large 巨人#aa9",3194,1;
-		monster 'map_glast$,196,194,"Large 巨人#aa9",3194,1;
-		monster 'map_glast$,199,190,"Large 巨人#aa9",3194,1;
-		monster 'map_glast$,233,198,"Large 巨人#bb8",3195,1;
-		monster 'map_glast$,231,193,"Large 巨人#bb8",3195,1;
-		monster 'map_glast$,232,196,"Large 巨人#bb8",3195,1;
-		monster 'map_glast$,258,196,"Large 巨人#bb7",3194,1;
-		monster 'map_glast$,265,187,"Large 巨人#bb7",3194,1;
-		monster 'map_glast$,263,195,"Large 巨人#bb7",3194,1;
-		monster 'map_glast$,271,106,"Large 巨人#aa6",3195,1;
-		monster 'map_glast$,266,107,"Large 巨人#aa6",3195,1;
-		monster 'map_glast$,272,109,"Large 巨人#aa6",3195,1;
+		monster 'map_glast$,131,182,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,133,174,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,134,187,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,202,196,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,196,194,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,199,190,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,233,198,"大型基勘特斯",3195,1;
+		monster 'map_glast$,231,193,"大型基勘特斯",3195,1;
+		monster 'map_glast$,232,196,"大型基勘特斯",3195,1;
+		monster 'map_glast$,258,196,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,265,187,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,263,195,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,271,106,"大型基勘特斯",3195,1;
+		monster 'map_glast$,266,107,"大型基勘特斯",3195,1;
+		monster 'map_glast$,272,109,"大型基勘特斯",3195,1;
 		break;
 	case 2:
-		monster 'map_glast$,127,204,"Large 巨人#bb12",3195,1;
-		monster 'map_glast$,130,205,"Large 巨人#bb12",3195,1;
-		monster 'map_glast$,130,213,"Large 巨人#bb12",3195,1;
-		monster 'map_glast$,139,243,"Large 巨人#bb19",3194,1;
-		monster 'map_glast$,143,241,"Large 巨人#bb19",3194,1;
-		monster 'map_glast$,146,234,"Large 巨人#bb19",3194,1;
-		monster 'map_glast$,199,218,"Large 巨人#aa14",3195,1;
-		monster 'map_glast$,201,219,"Large 巨人#aa14",3195,1;
-		monster 'map_glast$,193,212,"Large 巨人#aa14",3195,1;
-		monster 'map_glast$,261,251,"Large 巨人#aa18",3195,1;
-		monster 'map_glast$,257,254,"Large 巨人#aa18",3195,1;
-		monster 'map_glast$,257,250,"Large 巨人#aa18",3195,1;
-		monster 'map_glast$,146,45,"Large 巨人#bb35",3194,1;
-		monster 'map_glast$,145,49,"Large 巨人#bb35",3194,1;
-		monster 'map_glast$,144,44,"Large 巨人#bb35",3194,1;
+		monster 'map_glast$,127,204,"大型基勘特斯",3195,1;
+		monster 'map_glast$,130,205,"大型基勘特斯",3195,1;
+		monster 'map_glast$,130,213,"大型基勘特斯",3195,1;
+		monster 'map_glast$,139,243,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,143,241,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,146,234,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,199,218,"古代的基勘特斯4",3195,1;
+		monster 'map_glast$,201,219,"古代的基勘特斯4",3195,1;
+		monster 'map_glast$,193,212,"古代的基勘特斯4",3195,1;
+		monster 'map_glast$,261,251,"古代的基勘特斯8",3195,1;
+		monster 'map_glast$,257,254,"古代的基勘特斯8",3195,1;
+		monster 'map_glast$,257,250,"古代的基勘特斯8",3195,1;
+		monster 'map_glast$,146,45,"古代的基勘特斯5",3194,1;
+		monster 'map_glast$,145,49,"古代的基勘特斯5",3194,1;
+		monster 'map_glast$,144,44,"古代的基勘特斯5",3194,1;
 		break;
 	case 3:
-		monster 'map_glast$,67,259,"Large 巨人#aa29",3194,1;
-		monster 'map_glast$,68,261,"Large 巨人#aa29",3194,1;
-		monster 'map_glast$,61,260,"Large 巨人#aa29",3194,1;
-		monster 'map_glast$,64,208,"Large 巨人#aa30",3195,1;
-		monster 'map_glast$,67,210,"Large 巨人#aa30",3195,1;
-		monster 'map_glast$,63,204,"Large 巨人#aa30",3195,1;
-		monster 'map_glast$,87,57,"Large 巨人#aa33",3194,1;
-		monster 'map_glast$,81,64,"Large 巨人#aa33",3194,1;
-		monster 'map_glast$,83,58,"Large 巨人#aa33",3194,1;
-		monster 'map_glast$,107,47,"Large 巨人#aa34",3195,1;
-		monster 'map_glast$,105,45,"Large 巨人#aa34",3195,1;
-		monster 'map_glast$,102,48,"Large 巨人#aa34",3195,1;
-		monster 'map_glast$,80,152,"Large 巨人#bb31",3194,1;
-		monster 'map_glast$,82,149,"Large 巨人#bb31",3194,1;
-		monster 'map_glast$,75,156,"Large 巨人#bb31",3194,1;
-		monster 'map_glast$,85,106,"Large 巨人#bb32",3195,1;
-		monster 'map_glast$,82,111,"Large 巨人#bb32",3195,1;
-		monster 'map_glast$,78,112,"Large 巨人#bb32",3195,1;
-		monster 'map_glast$,55,149,"Large 巨人#bb36",3195,1;
-		monster 'map_glast$,56,143,"Large 巨人#bb36",3195,1;
-		monster 'map_glast$,49,142,"Large 巨人#bb36",3195,1;
+		monster 'map_glast$,67,259,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,68,261,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,61,260,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,64,208,"大型基勘特斯",3195,1;
+		monster 'map_glast$,67,210,"大型基勘特斯",3195,1;
+		monster 'map_glast$,63,204,"大型基勘特斯",3195,1;
+		monster 'map_glast$,87,57,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,81,64,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,83,58,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,107,47,"大型基勘特斯",3195,1;
+		monster 'map_glast$,105,45,"大型基勘特斯",3195,1;
+		monster 'map_glast$,102,48,"大型基勘特斯",3195,1;
+		monster 'map_glast$,80,152,"古代的基勘特斯1",3194,1;
+		monster 'map_glast$,82,149,"古代的基勘特斯1",3194,1;
+		monster 'map_glast$,75,156,"古代的基勘特斯1",3194,1;
+		monster 'map_glast$,85,106,"古代的基勘特斯2",3195,1;
+		monster 'map_glast$,82,111,"古代的基勘特斯2",3195,1;
+		monster 'map_glast$,78,112,"古代的基勘特斯2",3195,1;
+		monster 'map_glast$,55,149,"古代的基勘特斯6",3195,1;
+		monster 'map_glast$,56,143,"古代的基勘特斯6",3195,1;
+		monster 'map_glast$,49,142,"古代的基勘特斯6",3195,1;
 		break;
 	case 4:
-		monster 'map_glast$,262,215,"Large 巨人#aa17",3194,1;
-		monster 'map_glast$,266,212,"Large 巨人#aa17",3194,1;
-		monster 'map_glast$,260,219,"Large 巨人#aa17",3194,1;
-		monster 'map_glast$,253,47,"Large 巨人#aa26",3195,1;
-		monster 'map_glast$,263,42,"Large 巨人#aa26",3195,1;
-		monster 'map_glast$,255,39,"Large 巨人#aa26",3195,1;
-		monster 'map_glast$,202,219,"Large 巨人#bb15",3194,1;
-		monster 'map_glast$,201,222,"Large 巨人#bb15",3194,1;
-		monster 'map_glast$,201,220,"Large 巨人#bb15",3194,1;
-		monster 'map_glast$,231,210,"Large 巨人#bb16",3195,1;
-		monster 'map_glast$,345,117,"Large 巨人#bb27",3194,1;
-		monster 'map_glast$,341,115,"Large 巨人#bb27",3194,1;
-		monster 'map_glast$,351,121,"Large 巨人#bb27",3194,1;
-		monster 'map_glast$,346,252,"Large 巨人#bb28",3195,1;
-		monster 'map_glast$,351,256,"Large 巨人#bb28",3195,1;
-		monster 'map_glast$,345,254,"Large 巨人#bb28",3195,1;
+		monster 'map_glast$,262,215,"古代的基勘特斯7",3194,1;
+		monster 'map_glast$,266,212,"古代的基勘特斯7",3194,1;
+		monster 'map_glast$,260,219,"古代的基勘特斯7",3194,1;
+		monster 'map_glast$,253,47,"大型基勘特斯",3195,1;
+		monster 'map_glast$,263,42,"大型基勘特斯",3195,1;
+		monster 'map_glast$,255,39,"大型基勘特斯",3195,1;
+		monster 'map_glast$,202,219,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,201,222,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,201,220,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,231,210,"大型基勘特斯",3195,1;
+		monster 'map_glast$,345,117,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,341,115,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,351,121,"古代的基勘特斯",3194,1;
+		monster 'map_glast$,346,252,"大型基勘特斯",3195,1;
+		monster 'map_glast$,351,256,"大型基勘特斯",3195,1;
+		monster 'map_glast$,345,254,"大型基勘特斯",3195,1;
 		break;
 	}
 	end;
@@ -1504,9 +1504,9 @@ OnTouch:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_1");
 	.@label$ = instance_npcname("Ancient 巨人#glast_1") + "::OnMobDead";
-	monster 'map_glast$,290,147, "Ancient 巨人#X1",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,290,146, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,288,147, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,290,147, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,290,146, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,288,147, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_01");
 	enablenpc instance_npcname("Stone Gargoyle#glast_02");
@@ -1524,9 +1524,9 @@ OnMobDead:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_2");
 	.@label$ = instance_npcname("Ancient 巨人#glast_2") + "::OnMobDead";
-	monster 'map_glast$,300,248, "Ancient 巨人#X2",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,299,250, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,302,246, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,300,248, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,299,250, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,302,246, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_07");
 	enablenpc instance_npcname("Stone Gargoyle#glast_08");
@@ -1543,9 +1543,9 @@ OnMobDead:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_3");
 	.@label$ = instance_npcname("Ancient 巨人#glast_3") + "::OnMobDead";
-	monster 'map_glast$,292,344, "Ancient 巨人#X3",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,290,346, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,291,344, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,292,344, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,290,346, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,291,344, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_12");
 	enablenpc instance_npcname("Stone Gargoyle#glast_13");
@@ -1560,9 +1560,9 @@ OnMobDead:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_4");
 	.@label$ = instance_npcname("Ancient 巨人#glast_4") + "::OnMobDead";
-	monster 'map_glast$,107,147, "Ancient 巨人#X4",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,107,145, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,106,148, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,107,147, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,107,145, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,106,148, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_15");
 	enablenpc instance_npcname("Stone Gargoyle#glast_16");
@@ -1580,9 +1580,9 @@ OnMobDead:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_5");
 	.@label$ = instance_npcname("Ancient 巨人#glast_5") + "::OnMobDead";
-	monster 'map_glast$,98,248, "Ancient 巨人#X5",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,96,250, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,98,247, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,98,248, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,96,250, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,98,247, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_21");
 	enablenpc instance_npcname("Stone Gargoyle#glast_22");
@@ -1599,9 +1599,9 @@ OnMobDead:
 OnTouch:
 	disablenpc instance_npcname("Ancient 巨人#glast_6");
 	.@label$ = instance_npcname("Ancient 巨人#glast_6") + "::OnMobDead";
-	monster 'map_glast$,107,344, "Ancient 巨人#X6",3196,1, .@label$;		// MM_L_GIGAN3
-	monster 'map_glast$,107,344, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
-	monster 'map_glast$,109,346, "Ancient Medium 巨人",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,107,344, "古代的基勘特斯",3196,1, .@label$;		// MM_L_GIGAN3
+	monster 'map_glast$,107,344, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
+	monster 'map_glast$,109,346, "準大型基勘特斯",3193,1, .@label$;	// MM_M_GIGAN3
 	unittalk getcharid(3), "" + strcharinfo(0) + " : The Ancient 巨人 that 班哈德博士 spoke of!!";
 	enablenpc instance_npcname("Stone Gargoyle#glast_26");
 	enablenpc instance_npcname("Stone Gargoyle#glast_27");
@@ -1655,170 +1655,170 @@ OnMobDead:
 	end;
 OnSpawn:
 	// Right side
-	monster 'map_glast$,351,259,"Wicked Chimera#bb28",3200,1;
-	monster 'map_glast$,353,250,"Wicked Chimera#bb28",3200,1;
-	monster 'map_glast$,351,243,"Wicked Chimera#bb28",3200,1;
-	monster 'map_glast$,351,246,"Wicked Chimera#bb28",3200,1;
-	monster 'map_glast$,355,248,"Wicked Chimera#bb28",3200,1;
-	monster 'map_glast$,360,245,"Wicked Chimera#bb28",3200,1;
+	monster 'map_glast$,351,259,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,353,250,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,351,243,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,351,246,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,355,248,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,360,245,"邪惡的凱美拉",3200,1;
 
-	monster 'map_glast$,298,209,"Wicked Chimera#aa14",3200,1;
-	monster 'map_glast$,303,199,"Wicked Chimera#aa14",3200,1;
-	monster 'map_glast$,298,198,"Wicked Chimera#aa14",3200,1;
-	monster 'map_glast$,295,211,"Wicked Chimera#aa14",3200,1;
+	monster 'map_glast$,298,209,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,303,199,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,298,198,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,295,211,"邪惡的凱美拉",3200,1;
 
-	monster 'map_glast$,307,163,"Wicked Chimera#bb15",3200,1;
-	monster 'map_glast$,315,158,"Wicked Chimera#bb15",3200,1;
-	monster 'map_glast$,318,163,"Wicked Chimera#bb15",3200,1;
-	monster 'map_glast$,318,169,"Wicked Chimera#bb15",3200,1;
+	monster 'map_glast$,307,163,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,315,158,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,318,163,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,318,169,"邪惡的凱美拉",3200,1;
 
-	monster 'map_glast$,337,119,"Wicked Chimera#bb27",3200,1;
-	monster 'map_glast$,344,115,"Wicked Chimera#bb27",3200,1;
-	monster 'map_glast$,353,117,"Wicked Chimera#bb27",3200,1;
-	monster 'map_glast$,352,121,"Wicked Chimera#bb27",3200,1;
-	monster 'map_glast$,345,114,"Wicked Chimera#bb27",3200,1;
-	monster 'map_glast$,346,115,"Wicked Chimera#bb27",3200,1;
+	monster 'map_glast$,337,119,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,344,115,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,353,117,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,352,121,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,345,114,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,346,115,"邪惡的凱美拉",3200,1;
 
-	monster 'map_glast$,264,36,"Wicked Chimera#aa26",3200,1;
-	monster 'map_glast$,257,46,"Wicked Chimera#aa26",3200,1;
-	monster 'map_glast$,253,44,"Wicked Chimera#aa26",3200,1;
-	monster 'map_glast$,256,39,"Wicked Chimera#aa26",3200,1;
+	monster 'map_glast$,264,36,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,257,46,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,253,44,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,256,39,"邪惡的凱美拉",3200,1;
 
 	// Bottom, left
-	monster 'map_glast$,207,46,"Wicked Chimera#aa1",3200,1;
-	monster 'map_glast$,197,49,"Wicked Chimera#aa1",3200,1;
-	monster 'map_glast$,190,52,"Wicked Chimera#aa1",3200,1;
-	monster 'map_glast$,200,64,"Wicked Chimera#aa1",3200,1;
-	monster 'map_glast$,206,76,"Wicked Chimera#aa2",3200,1;
-	monster 'map_glast$,207,83,"Wicked Chimera#aa2",3200,1;
-	monster 'map_glast$,186,82,"Wicked Chimera#bb3",3200,1;
-	monster 'map_glast$,200,87,"Wicked Chimera#aa2",3200,1;
-	monster 'map_glast$,188,86,"Wicked Chimera#bb3",3200,1;
-	monster 'map_glast$,215,77,"Wicked Chimera#aa2",3200,1;
-	monster 'map_glast$,183,90,"Wicked Chimera#bb3",3200,1;
-	monster 'map_glast$,192,85,"Wicked Chimera#bb3",3200,1;
-	monster 'map_glast$,154,36,"Wicked Chimera#bb35",3200,1;
-	monster 'map_glast$,150,47,"Wicked Chimera#bb35",3200,1;
-	monster 'map_glast$,138,52,"Wicked Chimera#bb35",3200,1;
-	monster 'map_glast$,152,36,"Wicked Chimera#bb35",3200,1;
-	monster 'map_glast$,105,50,"Wicked Chimera#aa34",3200,1;
-	monster 'map_glast$,100,48,"Wicked Chimera#aa34",3200,1;
-	monster 'map_glast$,106,52,"Wicked Chimera#aa34",3200,1;
-	monster 'map_glast$,82,52,"Wicked Chimera#aa33",3200,1;
-	monster 'map_glast$,85,51,"Wicked Chimera#aa33",3200,1;
-	monster 'map_glast$,80,65,"Wicked Chimera#aa33",3200,1;
-	monster 'map_glast$,79,58,"Wicked Chimera#aa33",3200,1;
-	monster 'map_glast$,82,69,"Wicked Chimera#aa33",3200,1;
-	monster 'map_glast$,97,41,"Wicked Chimera#aa34",3200,1;
-	monster 'map_glast$,86,103,"Wicked Chimera#bb32",3200,1;
-	monster 'map_glast$,82,102,"Wicked Chimera#bb32",3200,1;
-	monster 'map_glast$,78,108,"Wicked Chimera#bb32",3200,1;
-	monster 'map_glast$,85,109,"Wicked Chimera#bb32",3200,1;
-	monster 'map_glast$,82,111,"Wicked Chimera#bb32",3200,1;
-	monster 'map_glast$,80,144,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,72,152,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,88,159,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,73,152,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,83,160,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,77,150,"Wicked Chimera#bb31",3200,1;
-	monster 'map_glast$,62,207,"Wicked Chimera#aa30",3200,1;
-	monster 'map_glast$,70,215,"Wicked Chimera#aa30",3200,1;
-	monster 'map_glast$,58,209,"Wicked Chimera#aa30",3200,1;
-	monster 'map_glast$,68,204,"Wicked Chimera#aa30",3200,1;
-	monster 'map_glast$,67,214,"Wicked Chimera#aa30",3200,1;
-	monster 'map_glast$,58,250,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,64,257,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,70,251,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,65,247,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,65,256,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,60,255,"Wicked Chimera#aa29",3200,1;
-	monster 'map_glast$,50,144,"Wicked Chimera#bb36",3200,1;
-	monster 'map_glast$,52,143,"Wicked Chimera#bb36",3200,1;
-	monster 'map_glast$,54,146,"Wicked Chimera#bb36",3200,1;
-	monster 'map_glast$,55,140,"Wicked Chimera#bb36",3200,1;
+	monster 'map_glast$,207,46,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,197,49,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,190,52,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,200,64,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,206,76,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,207,83,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,186,82,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,200,87,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,188,86,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,215,77,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,183,90,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,192,85,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,154,36,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,150,47,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,138,52,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,152,36,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,105,50,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,100,48,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,106,52,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,82,52,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,85,51,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,80,65,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,79,58,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,82,69,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,97,41,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,86,103,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,82,102,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,78,108,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,85,109,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,82,111,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,80,144,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,72,152,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,88,159,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,73,152,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,83,160,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,77,150,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,62,207,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,70,215,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,58,209,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,68,204,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,67,214,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,58,250,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,64,257,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,70,251,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,65,247,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,65,256,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,60,255,"邪惡的凱美拉9",3200,1;
+	monster 'map_glast$,50,144,"邪惡的凱美拉6",3200,1;
+	monster 'map_glast$,52,143,"邪惡的凱美拉6",3200,1;
+	monster 'map_glast$,54,146,"邪惡的凱美拉6",3200,1;
+	monster 'map_glast$,55,140,"邪惡的凱美拉6",3200,1;
 
 	// Left inside
-	monster 'map_glast$,177,88,"Wicked Chimera#bb4",3200,1;
-	monster 'map_glast$,163,108,"Wicked Chimera#bb4",3200,1;
-	monster 'map_glast$,147,113,"Wicked Chimera#bb4",3200,1;
-	monster 'map_glast$,136,179,"Wicked Chimera#bb11",3200,1;
-	monster 'map_glast$,136,181,"Wicked Chimera#bb11",3200,1;
-	monster 'map_glast$,125,190,"Wicked Chimera#bb11",3200,1;
-	monster 'map_glast$,134,200,"Wicked Chimera#bb12",3200,1;
-	monster 'map_glast$,134,190,"Wicked Chimera#bb11",3200,1;
-	monster 'map_glast$,127,203,"Wicked Chimera#bb12",3200,1;
-	monster 'map_glast$,151,206,"Wicked Chimera#aa13",3200,1;
-	monster 'map_glast$,125,209,"Wicked Chimera#bb12",3200,1;
-	monster 'map_glast$,134,204,"Wicked Chimera#bb12",3200,1;
-	monster 'map_glast$,135,244,"Wicked Chimera#bb19",3200,1;
-	monster 'map_glast$,149,250,"Wicked Chimera#bb19",3200,1;
-	monster 'map_glast$,138,249,"Wicked Chimera#bb19",3200,1;
-	monster 'map_glast$,136,251,"Wicked Chimera#bb19",3200,1;
-	monster 'map_glast$,127,291,"Wicked Chimera#bb20",3200,1;
-	monster 'map_glast$,126,288,"Wicked Chimera#bb20",3200,1;
-	monster 'map_glast$,124,291,"Wicked Chimera#bb20",3200,1;
-	monster 'map_glast$,135,309,"Wicked Chimera#aa21",3200,1;
-	monster 'map_glast$,138,316,"Wicked Chimera#aa21",3200,1;
-	monster 'map_glast$,139,324,"Wicked Chimera#aa22",3200,1;
-	monster 'map_glast$,132,331,"Wicked Chimera#aa22",3200,1;
-	monster 'map_glast$,129,315,"Wicked Chimera#aa21",3200,1;
-	monster 'map_glast$,127,338,"Wicked Chimera#aa22",3200,1;
-	monster 'map_glast$,126,327,"Wicked Chimera#aa22",3200,1;
-	monster 'map_glast$,132,288,"Wicked Chimera#bb20",3200,1;
-	monster 'map_glast$,138,309,"Wicked Chimera#aa21",3200,1;
+	monster 'map_glast$,177,88,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,163,108,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,147,113,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,136,179,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,136,181,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,125,190,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,134,200,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,134,190,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,127,203,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,151,206,"邪惡的凱美拉3",3200,1;
+	monster 'map_glast$,125,209,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,134,204,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,135,244,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,149,250,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,138,249,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,136,251,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,127,291,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,126,288,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,124,291,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,135,309,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,138,316,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,139,324,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,132,331,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,129,315,"邪惡的凱美拉1",3200,1;
+	monster 'map_glast$,127,338,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,126,327,"邪惡的凱美拉2",3200,1;
+	monster 'map_glast$,132,288,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,138,309,"邪惡的凱美拉1",3200,1;
 
 	// Center and right side
-	monster 'map_glast$,158,214,"Wicked Chimera#aa13",3200,1;
-	monster 'map_glast$,162,208,"Wicked Chimera#aa13",3200,1;
-	monster 'map_glast$,166,215,"Wicked Chimera#aa13",3200,1;
-	monster 'map_glast$,168,191,"Wicked Chimera#aa10",3200,1;
-	monster 'map_glast$,164,186,"Wicked Chimera#aa10",3200,1;
-	monster 'map_glast$,165,191,"Wicked Chimera#aa10",3200,1;
-	monster 'map_glast$,177,189,"Wicked Chimera#aa10",3200,1;
-	monster 'map_glast$,199,200,"Wicked Chimera#aa9",3200,1;
-	monster 'map_glast$,205,195,"Wicked Chimera#aa9",3200,1;
-	monster 'map_glast$,191,200,"Wicked Chimera#aa9",3200,1;
-	monster 'map_glast$,196,192,"Wicked Chimera#aa9",3200,1;
-	monster 'map_glast$,224,196,"Wicked Chimera#bb8",3200,1;
-	monster 'map_glast$,233,196,"Wicked Chimera#bb8",3200,1;
-	monster 'map_glast$,239,192,"Wicked Chimera#bb8",3200,1;
-	monster 'map_glast$,231,193,"Wicked Chimera#bb8",3200,1;
-	monster 'map_glast$,239,214,"Wicked Chimera#bb16",3200,1;
-	monster 'map_glast$,232,213,"Wicked Chimera#bb16",3200,1;
-	monster 'map_glast$,238,209,"Wicked Chimera#bb16",3200,1;
-	monster 'map_glast$,244,220,"Wicked Chimera#bb16",3200,1;
-	monster 'map_glast$,252,249,"Wicked Chimera#aa18",3200,1;
-	monster 'map_glast$,268,221,"Wicked Chimera#aa17",3200,1;
-	monster 'map_glast$,261,219,"Wicked Chimera#aa17",3200,1;
-	monster 'map_glast$,261,248,"Wicked Chimera#aa18",3200,1;
-	monster 'map_glast$,264,211,"Wicked Chimera#aa17",3200,1;
-	monster 'map_glast$,267,210,"Wicked Chimera#aa17",3200,1;
-	monster 'map_glast$,258,193,"Wicked Chimera#bb7",3200,1;
-	monster 'map_glast$,258,192,"Wicked Chimera#bb7",3200,1;
-	monster 'map_glast$,258,190,"Wicked Chimera#bb7",3200,1;
-	monster 'map_glast$,269,192,"Wicked Chimera#bb7",3200,1;
-	monster 'map_glast$,269,110,"Wicked Chimera#aa6",3200,1;
-	monster 'map_glast$,266,105,"Wicked Chimera#aa6",3200,1;
-	monster 'map_glast$,277,103,"Wicked Chimera#aa6",3200,1;
-	monster 'map_glast$,263,107,"Wicked Chimera#aa6",3200,1;
-	monster 'map_glast$,249,101,"Wicked Chimera#aa5",3200,1;
-	monster 'map_glast$,237,93,"Wicked Chimera#aa5",3200,1;
-	monster 'map_glast$,242,107,"Wicked Chimera#aa5",3200,1;
-	monster 'map_glast$,237,105,"Wicked Chimera#aa5",3200,1;
-	monster 'map_glast$,264,235,"Wicked Chimera#aa18",3200,1;
-	monster 'map_glast$,260,255,"Wicked Chimera#aa18",3200,1;
-	monster 'map_glast$,261,282,"Wicked Chimera#bb23",3200,1;
-	monster 'map_glast$,260,284,"Wicked Chimera#bb23",3200,1;
-	monster 'map_glast$,264,289,"Wicked Chimera#bb23",3200,1;
-	monster 'map_glast$,268,301,"Wicked Chimera#bb24",3200,1;
-	monster 'map_glast$,262,308,"Wicked Chimera#bb24",3200,1;
-	monster 'map_glast$,273,306,"Wicked Chimera#bb24",3200,1;
-	monster 'map_glast$,259,307,"Wicked Chimera#bb24",3200,1;
-	monster 'map_glast$,269,283,"Wicked Chimera#bb23",3200,1;
-	monster 'map_glast$,257,350,"Wicked Chimera#aa25",3200,1;
-	monster 'map_glast$,268,350,"Wicked Chimera#aa25",3200,1;
-	monster 'map_glast$,268,357,"Wicked Chimera#aa25",3200,1;
-	monster 'map_glast$,271,358,"Wicked Chimera#aa25",3200,1;
+	monster 'map_glast$,158,214,"邪惡的凱美拉3",3200,1;
+	monster 'map_glast$,162,208,"邪惡的凱美拉3",3200,1;
+	monster 'map_glast$,166,215,"邪惡的凱美拉3",3200,1;
+	monster 'map_glast$,168,191,"邪惡的凱美拉0",3200,1;
+	monster 'map_glast$,164,186,"邪惡的凱美拉0",3200,1;
+	monster 'map_glast$,165,191,"邪惡的凱美拉0",3200,1;
+	monster 'map_glast$,177,189,"邪惡的凱美拉0",3200,1;
+	monster 'map_glast$,199,200,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,205,195,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,191,200,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,196,192,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,224,196,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,233,196,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,239,192,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,231,193,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,239,214,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,232,213,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,238,209,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,244,220,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,252,249,"邪惡的凱美拉8",3200,1;
+	monster 'map_glast$,268,221,"邪惡的凱美拉7",3200,1;
+	monster 'map_glast$,261,219,"邪惡的凱美拉7",3200,1;
+	monster 'map_glast$,261,248,"邪惡的凱美拉8",3200,1;
+	monster 'map_glast$,264,211,"邪惡的凱美拉7",3200,1;
+	monster 'map_glast$,267,210,"邪惡的凱美拉7",3200,1;
+	monster 'map_glast$,258,193,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,258,192,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,258,190,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,269,192,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,269,110,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,266,105,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,277,103,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,263,107,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,249,101,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,237,93,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,242,107,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,237,105,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,264,235,"邪惡的凱美拉8",3200,1;
+	monster 'map_glast$,260,255,"邪惡的凱美拉8",3200,1;
+	monster 'map_glast$,261,282,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,260,284,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,264,289,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,268,301,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,262,308,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,273,306,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,259,307,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,269,283,"邪惡的凱美拉",3200,1;
+	monster 'map_glast$,257,350,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,268,350,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,268,357,"邪惡的凱美拉5",3200,1;
+	monster 'map_glast$,271,358,"邪惡的凱美拉5",3200,1;
 	end;
 
 OnInstanceInit:
@@ -1858,8 +1858,8 @@ OnInstanceInit:
 	// Fenrir left side, inside
 	disablenpc 'fenrir_4$;
 	disablenpc 'sarah_10$;
-	disablenpc instance_npcname("巨人#semi1");
-	disablenpc instance_npcname("巨人#semi2");
+	disablenpc instance_npcname("古代中型基勘特斯");
+	disablenpc instance_npcname("古代的基勘特斯");
 	disablenpc instance_npcname("#glast_event_9");
 	for ( .@i = 1; .@i < 9; .@i++ )
 		hideonnpc instance_npcname("#effect_glast_event02_" + .@i);
