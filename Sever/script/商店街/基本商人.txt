@@ -119,7 +119,7 @@ case 9:callshop	"道具商店",2;end;
 end;
 }
 
-prontera,150,135,5	script	道具商人	513,{
+uttycty,95,106,5	script	道具商人	513,{
 	disable_items;
 	callfunc("BaseShop");
 	end;

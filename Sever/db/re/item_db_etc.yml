@@ -67432,7 +67432,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4021;
+      if(!sex){changebase 4021;}
     UnEquipScript: |
       changebase Class;
   - Id: 910040
