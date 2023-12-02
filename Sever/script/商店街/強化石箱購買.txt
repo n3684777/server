@@ -1,12 +1,12 @@
 uttycty,95,163,4	script	★ 服飾強化石箱 ★	112,{
+	disable_items;
+	end;
 OnInit:
 	setnpcicon getnpcid(0),1026,"服飾強化石箱購買商";
 	waitingroom "★ 服飾強化石箱購買 ★",0;
 
-	switch(select("測試1","測試2")){
-	.@amount = 1;
-case 1:
 	tradertype(NST_EXPANDED_BARTER);
+	.@amount = 1;
     sellitem(14681,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -53,8 +53,7 @@ case 1:
     sellitem(9510,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
-case 2:
-	tradertype(NST_EXPANDED_BARTER);
+
     sellitem(100019,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -91,7 +90,8 @@ case 2:
 //    sellitem(101876,0,-1);
 //    sellitemcurrency(6417,.@amount);
 //    endsellitem();
-}
-end;
 
+
+OnBuyItem:
+end;
 }
