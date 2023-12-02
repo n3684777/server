@@ -24384,7 +24384,7 @@ Body:
         Time: 5000
       - Level: 10
         Time: 5500
-    AfterCastActDelay: 2000
+    AfterCastActDelay: 0 # 2000
     Duration1: 10000
     Cooldown: 0 # 原本2000
     FixedCastTime: 500
