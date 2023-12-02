@@ -328,46 +328,37 @@ uttycty,24,86,6	script	披肩幻化#cos_ect	4_FROG,{
 	mes "棒!! 我已經為升級做好了充分準備！！!";
 	next;
 	setarray .@data$[0],
-		6908, 4807, "只有ASPD+1",	// ASPDStone_Robe	Atk_Speed1
-		6963, 4992, "吸收1％機率對敵人造成HP傷害",	// HPdrainStone_Robe	HPdrain1
-		6964, 4993, "吸收1％機率對敵人造成SP傷害",	// SPdrainStone_Robe	SPdrain1
-		// unknown text
-		 25067, 29056, "",	// CastingStone_Robe	FixedCasting05
-		 25170, 29154, "",	// MinorCastingStone_Robe	FixedCasting03
-		 25302, 29362, "",	// DoubleAttack_Stone	DoubleAttack
-		 25303, 29361, "",	// Critical_Stone_Robe	Fatal_Robe
-		 25306, 29358, "",	// CastStone_Robe	Casting_Robe
-		 
-		 25412, 29426, "",	// 修羅	Casting_Robe
-		 25416, 29431, "",	// 遊俠石(披肩)	Casting_Robe
-		 25420, 29435, "",	// 妖術師石(披肩)	Casting_Robe
-		 25448, 29463, "",	// 盧恩騎士石(披肩)	Casting_Robe
-		 25449, 29467, "",	// 基因學者石(披肩)	Casting_Robe
-		 25456, 29471, "",	// 咒術士石(披肩)	Casting_Robe
-		 25493, 29480, "",	// 魅影追蹤者石(披肩)	Casting_Robe
-		 25497, 29484, "",	// 機械工匠石(披肩)	Casting_Robe
-		 25501, 29488, "",	// 浪姬舞者/宮廷樂師石(披肩)	Casting_Robe
-		 25709, 29516, "",	// 大主教石(披肩)	Casting_Robe
-		 25713, 29520, "",	// 皇家禁衛隊石(披肩)	Casting_Robe
-		 25717, 29524, "",	// 十字斬首者石(披肩)	Casting_Robe
-		 25797, 29427, "",	// 修羅石II(披肩)	Casting_Robe
-		 25801, 29614, "",	// 妖術師石II(披肩)	Casting_Robe
-		 25805, 29618, "",	// 魅影追蹤者石II(披肩)	Casting_Robe
-		 25842, 29654, "",	// 獵靈士石(披肩)	Casting_Robe
-		 25849, 29658, "",	// 拳皇石(披肩)	Casting_Robe
-		 25853, 29662, "",	// 日影忍者石(披肩)	Casting_Robe
-		 25854, 29663, "",	// 月影忍者石(披肩)	Casting_Robe
-		 25858, 29667, "",	// 叛亂者石(披肩)	Casting_Robe
-		 25862, 29671, "",	// 喵族石(披肩) 	Casting_Robe
-		 1000015, 310007, "",	// 機械工匠石II(披肩) 	Casting_Robe
-		 1000011, 310003, "",	// 遊俠石II(披肩)	Casting_Robe
-		1000019, 310011, "",	// 大主教石II(披肩)	Casting_Robe
-		 1000221, 310188, "",	// 十字斬首者石II(披肩)	Casting_Robe
-		 1000213, 310180, "",	// 咒術士石II(披肩)	Casting_Robe
-		1000217, 310184, "",	// 皇家禁衛隊石II(披肩)	Casting_Robe
-		1000304,310265, "",     // 浪跡披肩II
-		1000296,310257,"",       // 盧恩騎士披肩II
-		1000300,310261, "";     // 基因II
+		910000, 910000, "只有ASPD+1",	// ASPDStone_Robe	Atk_Speed1
+		910001, 910001, "吸收1％機率對敵人造成HP傷害",	// HPdrainStone_Robe	HPdrain1
+		910002, 910002, "吸收1％機率對敵人造成SP傷害",	// SPdrainStone_Robe	SPdrain1
+		910003, 910003, "",	// CastingStone_Robe	FixedCasting05
+		910004, 910004, "",	// MinorCastingStone_Robe	FixedCasting03
+		910005, 910005, "",	// DoubleAttack_Stone	DoubleAttack
+		910006, 910006, "",	// Critical_Stone_Robe	Fatal_Robe
+		910007, 910007 "",	// CastStone_Robe	Casting_Robe		 
+		910008, 910008, "",	// 修羅	Casting_Robe
+		910009, 910009, "",	// 遊俠石(披肩)	Casting_Robe
+		910010, 910010, "",	// 妖術師石(披肩)	Casting_Robe
+		910011, 910011, "",	// 盧恩騎士石(披肩)	Casting_Robe
+		910012, 910012, "",	// 基因學者石(披肩)	Casting_Robe
+		910013, 910013, "",	// 咒術士石(披肩)	Casting_Robe
+		910014, 910014, "",	// 魅影追蹤者石(披肩)	Casting_Robe
+		910015, 910015, "",	// 機械工匠石(披肩)	Casting_Robe
+		910016, 910016, "",	// 浪姬舞者/宮廷樂師石(披肩)	Casting_Robe
+		910017, 910017, "",	// 大主教石(披肩)	Casting_Robe
+		910018, 910018, "",	// 皇家禁衛隊石(披肩)	Casting_Robe
+		910019, 910019, "",	// 十字斬首者石(披肩)	Casting_Robe
+		910020, 910020, "",	// 修羅石II(披肩)	Casting_Robe
+		910021, 910021, "",	// 妖術師石II(披肩)	Casting_Robe
+		910022, 910022, "",	// 魅影追蹤者石II(披肩)	Casting_Robe
+		910023, 910023, "",	// 獵靈士石(披肩)	Casting_Robe
+		910024, 910024, "",	// 拳皇石(披肩)	Casting_Robe
+		910025, 910025, "",	// 日影忍者石(披肩)	Casting_Robe
+		910026, 910026, "",	// 月影忍者石(披肩)	Casting_Robe
+		910027, 910027, "",	// 叛亂者石(披肩)	Casting_Robe
+		910028, 910028, "",	// 喵族石(披肩) 	Casting_Robe
+		910029, 910029, "",	// 機械工匠石II(披肩) 	Casting_Robe
+		910030, 910030, "";     // 基因II
 	.@size = getarraysize(.@data$);
 	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
 		.@id = atoi(.@data$[.@i]);
