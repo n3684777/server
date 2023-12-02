@@ -579,7 +579,7 @@ uttycty,28,80,6	script	披肩幻化2#cos_ect	4_FROG,{
 		mes "是？你想看更多?";
 		close;
 	}
-	.@id = atoi(.@data$[.@s]);
+	//.@id = atoi(.@data$[.@s]);
 	.@enchant = atoi(.@data$[.@s+1]);
 	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
 		mes "[雷斯查德]";
