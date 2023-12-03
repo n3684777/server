@@ -68390,9 +68390,3 @@ Body:
       changebase 4142;
     UnEquipScript: |
       changebase Class;
-  - Id: 910132
-    AegisName: Money_1E
-    Name: 1E¤ä²¼
-    Type: Etc
-    Buy: 200000000
-    Weight: 0

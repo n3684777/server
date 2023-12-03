@@ -49898,3 +49898,11 @@ Body:
     Weight: 1
     Script: |
       callfunc "F_Gashapon", 22654;
+  - Id: 910132
+    AegisName: Money_1E
+    Name: 1E¤ä²¼
+    Type: Usable
+    Buy: 0
+    Weight: 0
+    Script: |
+      Zeny += 100000000;
