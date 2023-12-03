@@ -101075,21 +101075,21 @@ Body:
     AegisName: MD_C_AMDARAIS
     Name: MD_C_AMDARAIS
     JapaneseName: 闇答萊屍的幻影
-    Level: 192
-    Hp: 450000000000000000000000000000000
+    Level: 250
+    Hp: 2000000000
     BaseExp: 2291324
     JobExp: 2416730
     MvpExp: 472831
     Attack: 8899000
-    Attack2: 13131
-    Defense: 446
+    Attack2: 131310000
+    Defense: 446000000
     MagicDefense: 82
     Str: 2550000
-    Agi: 39
-    Vit: 900000
+    Agi: 3900000
+    Vit: 9000000
     Int: 1690000
     Dex: 1660000
-    Luk: 20
+    Luk: 2000000
     AttackRange: 3
     SkillRange: 10
     ChaseRange: 12
