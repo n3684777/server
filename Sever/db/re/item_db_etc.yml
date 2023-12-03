@@ -65551,7 +65551,7 @@ Body:
       bonus5 bAutoSpellWhenHit,"MO_INVESTIGATE",5,500,BF_WEAPON,1;
   - Id: 900022
     AegisName: B_Katrinn_Card_
-    Name: 闇●超魔導師 凱特莉娜卡片
+    Name: 闇●超魔導師 凱特莉娜卡片-改
     Type: Card
     Buy: 20
     Weight: 10
@@ -66503,7 +66503,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bAtkRate,50;
-  - Id: 900082
+  - Id: 900083
     AegisName: Turtle_General_Card_
     Name: 烏龜將軍卡片-改
     Type: Card
@@ -66517,7 +66517,7 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,40;
       bonus3 bAutoSpell,"AB_VITUPERATUM",5,1000;
-  - Id: 900083
+  - Id: 900084
     AegisName: Orc_Load_Card_
     Name: 獸人酋長卡片-改
     Type: Card
@@ -66530,7 +66530,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bShortWeaponDamageReturn,100;
-  - Id: 900083
+  - Id: 900085
     AegisName: Jungoliant_Card_
     Name: 珠寶溫古力安特卡片-改
     Type: Card
@@ -66546,7 +66546,7 @@ Body:
       bonus2 bAddRace,RC_Formless,40;
       bonus2 bAddRace,RC_Plant,40;
       bonus2 bAddClass,Class_All,20;
-  - Id: 900084
+  - Id: 900086
     AegisName: Bijou_Card_
     Name: 畢尤卡片-改
     Type: Card
@@ -66561,7 +66561,7 @@ Body:
       bonus2 bResEff,Eff_Freeze,10000;
       bonus2 bAddClass,Class_All,20;
       bonus bMatkRate,20;
-  - Id: 900085
+  - Id: 900087
     AegisName: Bacsojin_Card+
     Name: 白素貞卡片-改
     Type: Card
@@ -66576,7 +66576,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bHealPower,100;
-  - Id: 900086
+  - Id: 900088
     AegisName: Miguel_Card_
     Name: 米古爾卡片-改
     Type: Card
@@ -66588,7 +66588,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bCritAtkRate,400;
-  - Id: 900087
+  - Id: 900089
     AegisName: Randgris_Card_
     Name: 巴基力 蘭特克力斯卡片-改
     Type: Card
@@ -66603,7 +66603,7 @@ Body:
       bonus bUnbreakableWeapon;
       bonus2 bAddClass,Class_All,20;
       bonus3 bAutoSpell,"SA_DISPELL",1,10000;
-  - Id: 900088
+  - Id: 900090
     AegisName: Mechaspider_Card_
     Name: 蜘蛛戰車卡片-改
     Type: Card
@@ -66616,7 +66616,7 @@ Body:
     Script: |
       bonus bBreakWeaponRate,1000;
       bonus bBreakArmorRate,1000;
-  - Id: 900089
+  - Id: 900091
     AegisName: CorruptionRootH_Card_
     Name: 覺醒墮落根莖卡片-改
     Type: Card
@@ -66633,7 +66633,7 @@ Body:
       bonus5 bAutoSpell,"NPC_WIDESLEEP",2,200,BF_SHORT,0;
       bonus5 bAutoSpell,"NPC_WIDECURSE",2,200,BF_SHORT,0;
       bonus5 bAutoSpell,"NPC_WIDEWEB",1,200,BF_SHORT,0;
-  - Id: 900090
+  - Id: 900092
     AegisName: AmdaraisH_Card_
     Name: 覺醒闇答萊屍卡片-改
     Type: Card
@@ -66649,7 +66649,7 @@ Body:
       bonus bMatkRate,30;
     UnEquipScript: |
       heal -6666,-666;
-  - Id: 900091
+  - Id: 900093
     AegisName: Schmidt_Card_
     Name: 詛咒施密特國王卡片-改
     Type: Card
@@ -66660,7 +66660,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddEle,Ele_Fire,80;
-  - Id: 900092
+  - Id: 900094
     AegisName: Berzebub_Card_
     Name: 貝雷傑卡片-改
     Type: Card
@@ -66675,7 +66675,7 @@ Body:
       bonus bVariableCastrate,-50;
       bonus bDex,50;
       bonus bInt,30;
-  - Id: 900093
+  - Id: 900095
     AegisName: Mutant_Coelacanth_Card_
     Name: 變種腔棘魚卡片-改
     Type: Card
@@ -66691,7 +66691,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bMatkRate,10+(.@r*5);
-  - Id: 900094
+  - Id: 900096
     AegisName: Leak_Card_
     Name: 讓特卡片-改
     Type: Card
@@ -66706,7 +66706,7 @@ Body:
       bonus bStr,30;
       bonus3 bAddEffWhenHit,Eff_Confusion,100,ATF_WEAPON|ATF_MAGIC;
       bonus3 bAddEffWhenHit,Eff_Fear,100,ATF_WEAPON|ATF_MAGIC;
-  - Id: 900095
+  - Id: 900097
     AegisName: Apocalips_H_Card_
     Name: 貝思波卡片-改
     Type: Card
@@ -66723,7 +66723,7 @@ Body:
       bonus bDex,20;
       bonus2 bIgnoreMdefClassRate,Class_Boss,100;
       bonus2 bMagicAddClass,Class_All,40;
-  - Id: 900096
+  - Id: 900098
     AegisName: DespairGodMorocc_Card_
     Name: 絕望之神夢羅克卡片-改
     Type: Card
@@ -66740,7 +66740,7 @@ Body:
       bonus2 bAddRace,RC_Angel,30;
       autobonus3 "{ }",1000,5000,"NV_FIRSTAID","{ active_transform 3097,5000; }";
       /* unknown transformation rates */
-  - Id: 900097
+  - Id: 900099
     AegisName: Detale_Card_
     Name: 迪塔勒泰晤勒斯卡片-改
     Type: Card
@@ -66755,7 +66755,7 @@ Body:
       bonus bMdef,30;
       bonus2 bResEff,Eff_Freeze,10000;
       bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",1,10000,BF_MAGIC,0;
-  - Id: 900098
+  - Id: 900100
     AegisName: Giant_Octopus_Card_
     Name: 章魚大王卡片-改
     Type: Card
@@ -66769,7 +66769,7 @@ Body:
     Script: |
       bonus bMaxHPrate,20;
       skill "WZ_WATERBALL",5;
-  - Id: 900099
+  - Id: 900101
     AegisName: Evil_Card_
     Name: 邪心獵人伊芙卡片-改
     Type: Card
@@ -66782,7 +66782,7 @@ Body:
     Script: |
       bonus2 bAddEffWhenHit,Eff_Freeze,3000 + (readparam(bInt) >= 110 ? 4000 : 0);
       bonus bMdef,5;
-  - Id: 990099
+  - Id: 990102
     AegisName: Atroce_Card_
     Name: 阿特羅斯卡片-改
     Type: Card
@@ -66796,7 +66796,7 @@ Body:
     Script: |
       bonus bBaseAtk,50;
       autobonus "{ bonus bAspdRate,100; }",5,10000,0,"{ specialeffect2 EF_POTION_BERSERK; }";
-  - Id: 990100
+  - Id: 990103
     AegisName: Gopinich_Card_
     Name: 青冠龍卡片-改
     Type: Card
@@ -66810,7 +66810,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bSPDrainValue,30;
-  - Id: 900101
+  - Id: 900104
     AegisName: Faceworm_Q_Card_
     Name: 驚駭森靈皇后卡片-改
     Type: Card
@@ -66824,7 +66824,23 @@ Body:
       .@r = getrefine();
       bonus bCritical,30 + .@r;
       bonus bCritAtkRate,.@r*10;
-  - Id: 900102
+  - Id: 900105
+    AegisName: Bone_Detale_Card_
+    Name: 骷髏迪塔勒泰晤勒斯卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddRace,RC_DRAGON,40;
+      bonus2 bAddRace,RC_UNDEAD,40;
+      bonus2 bAddEle,ELE_UNDEAD,40;
+      bonus2 bAddEle,ELE_GHOST,40;
+      bonus2 bAddClass,CLASS_ALL,20;
+  - Id: 900106
     AegisName: Thanatos_Card_
     Name: 魔劍士 達納托斯的記憶卡片-改
     Type: Card
@@ -66840,7 +66856,7 @@ Body:
       bonus bSPDrainValue,-1;
       bonus bDef,-30;
       bonus bFlee,-30;
-  - Id: 900103
+  - Id: 900107
     AegisName: Kraken_Card_
     Name: 魔鬼大烏賊卡片-改
     Type: Card
@@ -66858,7 +66874,7 @@ Body:
       bonus5 bAutoSpellOnSkill,"RG_RAID","NPC_WIDEBLEEDING",1,250,1;
     UnEquipScript: |
       sc_end SC_HIDING;
-  - Id: 900104
+  - Id: 900108
     AegisName: Black_Coelacanth_Card_
     Name: 黑暗腔棘魚卡片-改
     Type: Card
@@ -66872,7 +66888,7 @@ Body:
     Script: |
       bonus bMaxHPrate,87;
       bonus bDef,87;
-  - Id: 900105
+  - Id: 900109
     AegisName: Kiel_Card_
     Name: 齊爾-D-01卡片-改
     Type: Card
@@ -66894,7 +66910,7 @@ Body:
       bonus2 bSkillAtk,"GN_CART_TORNADO",100;
       bonus2 bSkillAtk,"SN_SHARPSHOOTING",100;
       bonus2 bSkillAtk,"SR_TIGERCANNON",100;
-  - Id: 900106
+  - Id: 900110
     AegisName: EL_A17T_Card_
     Name: EL-A17T卡片-改
     Type: Card
@@ -66906,7 +66922,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus4 bAutoSpell,"WL_HELLINFERNO",5,700,1;
-  - Id: 900107
+  - Id: 900111
     AegisName: R001_Bestia_Card_
     Name: R001貝斯帝亞卡片-改
     Type: Card
@@ -66920,7 +66936,7 @@ Body:
       bonus bMatkRate,10;
       bonus2 bMagicAddRace,RC_Fish,50;
       bonus2 bMagicAddRace,RC_Insect,50;
-  - Id: 900108
+  - Id: 900112
     AegisName: R48_85_Bestia_Card_
     Name: R48-85-BESTIA卡片-改
     Type: Card
@@ -66932,7 +66948,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddEle,Ele_Poison,40;
-  - Id: 900109
+  - Id: 900113
     AegisName: Rsx_0806_Card_
     Name: RSX-0806卡片-改
     Type: Card
@@ -66947,7 +66963,7 @@ Body:
       bonus bVit,3;
       bonus bUnbreakableArmor;
       bonus bNoKnockback;
-  - Id: 900100
+  - Id: 900114
     AegisName: T_W_O_Card_
     Name: TWO卡片-改
     Type: Card
@@ -66960,7 +66976,7 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,10;
       bonus3 bAutoSpell,"NPC_WIDESOULDRAIN",2,5+((getrefine()/3)*10);
-  - Id: 900101
+  - Id: 900115
     AegisName: OminousTurtleG_Card_
     Name: 不祥烏龜將軍卡片-改
     Type: Card
@@ -66974,7 +66990,7 @@ Body:
       bonus bDef,60;
       bonus bMdef,30;
       bonus2 bSubSize,Size_All,20;
-  - Id: 900102
+  - Id: 900116
     AegisName: Lich_Lord_Card_
     Name: 亡者君主卡片-改
     Type: Card
@@ -66990,7 +67006,7 @@ Body:
       bonus2 bAddEff,Eff_Silence,9000;
       /* TODO: Confirm Mob ID to transform */
       autobonus "{ bonus bIgnoreDefClass,Class_All; bonus bIgnoreMdefRace,RC_All; }",20,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1875,7000; }";
-  - Id: 900103
+  - Id: 900117
     AegisName: Kades_Card_
     Name: 亡靈的守護者卡德斯卡片-改
     Type: Card
@@ -67010,7 +67026,23 @@ Body:
       bonus2 bSubEle,Ele_Undead,75;
       bonus2 bSubEle,Ele_Holy,50;
       bonus2 bSubEle,Ele_Ghost,50;
-  - Id: 900104
+  - Id: 900118
+    AegisName: Broken_Thanatos_Card_
+    Name: 破壞的達納托斯的記憶卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddRace,RC_DEMIHUMAN,40;
+      bonus2 bAddRace,RC_DEMON,40;
+      bonus2 bSubRace,RC_DEMIHUMAN,30;
+      bonus2 bSubRace,RC_DEMON,30;
+  - Id: 900119
     AegisName: Death_Witch_Card_
     Name: 死亡女巫卡片-改
     Type: Card
@@ -67023,7 +67055,7 @@ Body:
       bonus bMatkRate,30;
       bonus2 bMagicAddRace,RC_Demon,75;
       bonus2 bMagicAddRace,RC_Formless,75;
-  - Id: 900105
+  - Id: 900120
     AegisName: Bakonawa_Card_
     Name: 食月暴龍卡片-改
     Type: Card
