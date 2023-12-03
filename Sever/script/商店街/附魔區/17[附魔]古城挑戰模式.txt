@@ -310,6 +310,7 @@ OnCheck:
 			set .@reqId,.@reqId3;
 			}else{
 			mes "[挑戰古城附魔]";
+			mes "需求物品：<ITEM>超時空魔力<INFO>25866</INFO></ITEM> x 10";
 			mes "可選擇以下道具。";
 			mes "<ITEM>霸氣 Lv. 1<INFO>29061</INFO></ITEM>";
 			mes "<ITEM>魔精 Lv. 1<INFO>29071</INFO></ITEM>";
@@ -321,64 +322,64 @@ OnCheck:
 			switch(select("霸氣 Lv. 1","魔精 Lv. 1","銳氣 Lv. 1","精弓 Lv. 1","金剛 Lv. 1","博愛 Lv. 1","不屈 Lv. 1")){
 			next;
 			case 1:
-				if(countitem(.@randstone2[16]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[16];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 2:
-				if(countitem(.@randstone2[17]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[17];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 3:
-				if(countitem(.@randstone2[18]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[18];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 4:
-				if(countitem(.@randstone2[19]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[19];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 5:
-				if(countitem(.@randstone2[20]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[20];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 6:
-				if(countitem(.@randstone2[21]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[21];
 				goto OnEnchantPerfect;
 				}else{goto ItemStoneNo;}
 			case 7:
-				if(countitem(.@randstone2[22]) >= 1){
+				if(countitem(.@reqId3) >= 10){
 				set .@success_rate,.@success_array[0];
 				set .@remove_rate,.@remove_array[0];
-				set .@useamount,1;
+				set .@useamount,10;
 				set .@reqId,.@reqId3;
 				.@randstone2 = .@randstone2[22];
 				goto OnEnchantPerfect;
