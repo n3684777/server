@@ -123,7 +123,7 @@ OnInit:
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
-	sellitem(5966,.@p*5,-1);	//超越樹苗
+	sellitem(420106,.@p*5,-1);	//超越樹苗
 	sellitemcurrency(6909,.@meow*20);
     endsellitem(); 
 	sellitem(5966,.@p,-1);	//柯耳
@@ -484,6 +484,105 @@ OnInit:
     endsellitem();
 	sellitem(300426,.@c,-1);	//克魯斯卡
     endsellitem();
+	
+end;
+}
+
+uttycty,133,141,4	script	稀有裝備改卡	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備改卡";
+	waitingroom "★ 王卡改卡 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@h = 15 //高級指定原卡需求數量
+	.@m = 10 //中級指定原卡需求數量
+	.@l = 5 //初級指定原卡需求數量
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(900001,.@p,-1);	//闇●盧恩騎士 賽依連卡片-改
+	sellitemcurrency(4679,.@h);
+    endsellitem(); 
+	sellitem(900002,.@p,-1);	//闇●皇家禁衛隊 蘭達卡片-改
+	sellitemcurrency(4680,.@h);
+    endsellitem(); 
+	sellitem(900003,.@p,-1);	//闇●機械工匠 哈沃得卡片-改
+	sellitemcurrency(4677,.@h);
+    endsellitem(); 
+	sellitem(900004,.@p,-1);	//闇●基因學者 普拉梅姆卡片-改
+	sellitemcurrency(4681,.@h);
+    endsellitem(); 
+	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
+	sellitemcurrency(4674,.@h);
+    endsellitem(); 
+	sellitem(900006,.@p,-1);	//闇●魅影追蹤者 科迪卡片-改
+	sellitemcurrency(4682,.@h);
+    endsellitem(); 
+	sellitem(900007,.@p,-1);	//闇●大主教 瑪嘉雷特卡片-改
+	sellitemcurrency(4675,.@h);
+    endsellitem(); 
+	sellitem(900008,.@p,-1);	//闇●修羅 陳理歐卡片-改
+	sellitemcurrency(4672,.@h);
+    endsellitem(); 
+	sellitem(900009,.@p,-1);	//闇●咒術士 凱特莉娜卡片-改
+	sellitemcurrency(4678,.@h);
+    endsellitem(); 
+	sellitem(900010,.@p,-1);	//闇●妖術師 西里亞卡片-改
+	sellitemcurrency(4671,.@h);
+    endsellitem(); 
+	sellitem(900011,.@p,-1);	//闇●浪姬舞者 特蘭提尼卡片-改
+	sellitemcurrency(4683,.@h);
+    endsellitem(); 
+	sellitem(900012,.@p,-1);	//闇●宮廷樂師 雅歐帕奇爾卡片-改
+	sellitemcurrency(4673,.@h);
+    endsellitem(); 
+	sellitem(900013,.@p,-1);	//闇●遊俠 迪文卡片-改
+	sellitemcurrency(4676,.@h);
+    endsellitem(); 
+	sellitem(900014,.@p,-1);	//闇●騎士領主 賽依連卡片-改
+	sellitemcurrency(4357,.@h);
+    endsellitem(); 
+	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
+	sellitemcurrency(4565,.@h*5);
+    endsellitem(); 
+	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
+	sellitemcurrency(4359,.@h);
+    endsellitem(); 
+	sellitem(900017,.@p,-1);	//闇●神行太保 科迪卡片-改
+	sellitemcurrency(4564,.@h);
+    endsellitem(); 
+	sellitem(900018,.@p,-1);	//闇●神工匠 哈沃得卡片-改
+	sellitemcurrency(4563,.@h);
+    endsellitem(); 
+	sellitem(900019,.@p,-1);	//闇闇●創造者 普拉梅姆卡片-改
+	sellitemcurrency(4679,.@h);
+    endsellitem(); 
+	sellitem(900020,.@p,-1);	//闇●神官 瑪嘉雷特卡片-改
+	sellitemcurrency(4363,.@h);
+    endsellitem(); 
+	sellitem(900021,.@p,-1);	//闇●武術宗師 陳理歐卡片-改
+	sellitemcurrency(4562,.@h);
+    endsellitem(); 
+	sellitem(900022,.@p,-1);	//闇●超魔導師 凱特莉娜卡片-改
+	sellitemcurrency(4365,.@h);
+    endsellitem(); 
+	sellitem(900023,.@p,-1);	//闇●智者 西里亞卡片-改
+	sellitemcurrency(4367,.@h);
+    endsellitem(); 
+	sellitem(900024,.@p,-1);	//闇●神射手 迪文卡片-改
+	sellitemcurrency(4679,.@h);
+    endsellitem(); 
+	sellitem(900025,.@p,-1);	//闇●搞笑藝人 雅歐帕奇爾卡片-改
+	sellitemcurrency(4560,.@l);
+    endsellitem(); 
+	sellitem(900026,.@p,-1);	//闇●冷豔舞姬 特蘭提尼卡片-改
+	sellitemcurrency(4566,.@l);
+    endsellitem(); 
+	sellitem(900001,.@p,-1);	//闇●劍士 賽尼亞卡片-改
+	sellitemcurrency(4352,.@l);
+    endsellitem(); 
 	
 end;
 }

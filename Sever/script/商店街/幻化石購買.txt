@@ -1,4 +1,4 @@
-uttycty,24,89,4	script	稀有材料購買商	112,{
+uttycty,24,89,4	script	幻化石1購買商	112,{
 	disable_items;
 	end;
 OnInit:
