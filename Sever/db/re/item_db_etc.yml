@@ -42299,6 +42299,9 @@ Body:
     Weight: 10
     Locations:
       Right_Hand: true
+    Script: |
+      bonus2 bAddRace,RC_Plant,15;
+      bonus2 bMagicAddRace,RC_Plant,15;
   - Id: 300131
     AegisName: Card_Of_Justice_R
     Name: The Justice Reversed
