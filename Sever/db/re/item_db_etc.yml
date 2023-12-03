@@ -18109,8 +18109,6 @@ Body:
     Name: 獼猴桃果實
     Type: Etc
     Buy: 20
-    Trade:
-      NoDrop: true
   - Id: 6418
     AegisName: Agrade_Coin
     Name: A級代幣
@@ -20754,8 +20752,6 @@ Body:
     Name: 喵楊桃果實
     Type: Etc
     Buy: 10
-    Trade:
-      NoDrop: true
   - Id: 6910
     AegisName: LI_HD_Oridecon
     Name: (限量)高濃縮神之金屬
