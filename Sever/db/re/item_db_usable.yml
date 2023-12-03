@@ -49905,4 +49905,9 @@ Body:
     Buy: 0
     Weight: 0
     Script: |
-      Zeny += 100000000;
+      .@z = Zeny;
+
+      if(.@z > 2047483647){
+      getitem 910132,1;
+      }else{
+      Zeny += Zeny;}
