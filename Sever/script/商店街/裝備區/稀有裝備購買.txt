@@ -3,13 +3,16 @@ uttycty,118,150,4	script	稀有裝備鎧甲	112,{
 	end;
 OnInit:
 	setnpcicon getnpcid(0),1026,"稀有裝備鎧甲";
-	waitingroom "★ 稀有裝備鎧甲 ★",0;
+	waitingroom "★ 稀有鎧甲 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(480136,.@p,-1);	//席琳衣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(15137,.@p,-1);	//泰甲
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(450179,.@p,-1);	//基米衣
@@ -50,8 +53,8 @@ uttycty,123,150,4	script	稀有裝備鞋子	112,{
 	disable_items;
 	end;
 OnInit:
-	setnpcicon getnpcid(0),1026,"稀有裝備鎧甲";
-	waitingroom "★ 稀有裝備鎧甲 ★",0;
+	setnpcicon getnpcid(0),1026,"稀有裝備鞋子";
+	waitingroom "★ 稀有鞋子 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
@@ -106,5 +109,338 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem();  
 OnBuyItem:
+end;
+}
+
+uttycty,128,150,4	script	稀有裝備頭飾	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備頭飾";
+	waitingroom "★ 稀有頭飾 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(5966,.@p*5,-1);	//超越樹苗
+	sellitemcurrency(6909,.@meow*20);
+    endsellitem(); 
+	sellitem(5966,.@p,-1);	//柯耳
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19299,.@p,-1);	//神木嫩葉
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420199,.@p,-1);	//幽魅火球
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5966,.@p,-1);	//柯耳
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19181,.@p,-1);	//新浪潮墨鏡
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5966,.@p,-1);	//柯耳
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400440,.@p,-1);	//懺悔魔咒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400447,.@p,-1);	//懺悔勇氣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400457,.@p,-1);	//懺悔霸氣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400469,.@p,-1);	//懺悔精巧
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400474,.@p,-1);	//懺悔造物
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400482,.@p,-1);	//懺悔榮耀
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410254,.@p,-1);	//古代夢羅克貴族首飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420236,.@p,-1);	//魔王夢羅克忠誠僕人
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410254,.@p,-1);	//古代夢羅克貴族首飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400401,.@p,-1);	//天地樹的信仰
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410183,.@p,-1);	//聖光寶石庇佑髮飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410184,.@p,-1);	//撒旦寶石詛咒髮飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410254,.@p,-1);	//古代夢羅克貴族首飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410235,.@p,-1);	//輕便望遠鏡
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420194,.@p,-1);	//求生哨
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420065,.@p,-1);	//永恆波利氣球
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420087,.@p,-1);	//魔力星陣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19393,.@p,-1);	//魔力之星
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(410254,.@p,-1);	//古代孟羅克貴族首飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420239,.@p,-1);	//冒險幸運草
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19138,.@p,-1);	//熾天使花冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19327,.@p,-1);	//熾天使羽毛
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19246,.@p,-1);	//衛士頸鍊
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(18823,.@p,-1);	//帝國髮飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5918,.@p,-1);	//賭徒印
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19306,.@p,-1);	//紅心王牌
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(28502,.@p,-1);	//暴徒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2202,.@c,-1);	//太陽眼鏡
+    endsellitem(); 
+	sellitem(400134,.@p,-1);	//塔諾斯近戰頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400134,.@p,-1);	//塔諾斯近戰頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400141,.@p,-1);	//塔諾斯遠程頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400134,.@p,-1);	//塔諾斯近戰頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400141,.@p,-1);	//塔諾斯魔法頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400150,.@p,-1);	//塔諾斯暴力頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	
+
+	sellitem(410213,.@c,-1);	//血腥之耳
+    endsellitem(); 
+	sellitem(410215,.@c,-1);	//怨靈之耳
+    endsellitem(); 
+	sellitem(410216,.@c,-1);	//深淵之耳
+    endsellitem();
+	sellitem(19437,.@c,-1);	//花園髮圈
+    endsellitem(); 
+	sellitem(410091,.@c,-1);	//柯爾核心推助器
+    endsellitem(); 
+	sellitem(410090,.@c,-1);	//愛情紅暈
+    endsellitem(); 
+	sellitem(410197,.@c,-1);	//約定紅暈
+    endsellitem(); 
+	sellitem(420064,.@c,-1);	//貴族手帕
+    endsellitem(); 
+	sellitem(400368,.@c,-1);	//RO二十周年限定帽
+    endsellitem(); 
+	sellitem(18652,.@c,-1);	//武神之盔
+    endsellitem(); 
+	sellitem(420003,.@c,-1);	//自動光碟
+    endsellitem(); 
+	sellitem(19101,.@c*2,-1);	//夢魘古城旁觀者
+    endsellitem(); 
+	sellitem(19111,.@c,-1);	//鷹之激光
+    endsellitem(); 
+OnBuyItem:
+end;
+}
+
+uttycty,118,146,4	script	稀有裝備斗篷	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備斗篷";
+	waitingroom "★ 稀有斗篷 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(480088,.@p,-1);	//烏爾斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480088,.@p,-1);	//烏爾斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480136,.@p,-1);	//魔劍
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480149,.@p,-1);	//鬥氣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480153,.@p,-1);	//豔陽斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480154,.@p,-1);	//惡火斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480175,.@p,-1);	//莫測斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480149,.@p,-1);	//鬥氣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480242,.@p,-1);	//風神斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480276,.@p,-1);	//曼妙自然之力斗篷
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480291,.@p,-1);	//英雄恩惠斗篷
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480076,.@p,-1);	//超越斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20963,.@p,-1);	//力斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20964,.@p,-1);	//敏斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20965,.@p,-1);	//體斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20966,.@p,-1);	//智斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20967,.@p,-1);	//靈巧斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(20968,.@p,-1);	//幸運斗
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480269,.@p,-1);	//夜勝魔復仇斗篷
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2541,.@p,-1);	//阿斯富力咖
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2541,.@p,-1);	//阿斯富力咖
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	
+
+	sellitem(480124,.@c,-1);	//超高頻物理推進
+    endsellitem(); 
+	sellitem(480125,.@c,-1);	//超高頻魔法推進
+    endsellitem(); 
+	sellitem(480197,.@c,-1);	//超高頻強運推進
+    endsellitem(); 
+	sellitem(20736,.@c,-1);	//無敵斗
+    endsellitem(); 
+	sellitem(480278,.@c,-1);	//強運緞帶
+    endsellitem(); 
+	sellitem(480192,.@c,-1);	//2022勝利大衣
+    endsellitem(); 
+	sellitem(480192,.@c,-1);	//勝利大衣
+    endsellitem(); 
+	sellitem(480328,.@c,-1);	/2023ROS決戰spark斗篷
+    endsellitem(); 
+	
+end;
+}
+
+uttycty,123,146,4	script	稀有裝備飾品	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備飾品";
+	waitingroom "★ 稀有飾品 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(490030,.@p,-1);	//時光超越戒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490097,.@p,-1);	//超越者手觸
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490269,.@p,-1);	//樞機之光
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490472,.@p,-1);	//惡火煉獄戒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(32243,.@p,-1);	//魔力星環
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+
+end;
+}
+
+uttycty,128,146,4	script	稀有裝備盾牌	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備盾牌";
+	waitingroom "★ 稀有盾牌 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(460027,.@p,-1);	//泰坦神盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2193,.@p,-1);	//墮落天使神盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(460003,.@p,-1);	//聖之羽翼神盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2198,.@p,-1);	//守護精靈神盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 		
+	sellitem(460038,.@p,-1);	//貴族天秤之盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(28902,.@p,-1);	//兔寶寶
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2181,.@p,-1);	//海爾伯樂神盾
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(460030,.@p,-1);	//仿生鋁合金花盆
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	
+	sellitem(28901,.@c,-1);	//被詛咒兔寶寶
+    endsellitem(); 
+
 end;
 }
