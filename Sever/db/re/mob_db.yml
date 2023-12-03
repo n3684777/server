@@ -79791,7 +79791,7 @@ Body:
     Level: 160
     Hp: 10000
     Attack: 8000
-    Attack2: 4000
+    Attack2: 40000
     Defense: 200
     MagicDefense: 10
     Str: 200
