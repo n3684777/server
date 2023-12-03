@@ -1,4 +1,4 @@
-uttycty,106,163,4	script	★ 裝備改良/改造 ★	112,{
+uttycty,104,163,4	script	★ 裝備改良/改造 ★	112,{
 	disable_items;
 	end;
 OnInit:
