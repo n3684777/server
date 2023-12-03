@@ -79794,11 +79794,11 @@ Body:
     Attack2: 4000000
     Defense: 200
     MagicDefense: 10
-    Str: 200
+    Str: 2000000
     Agi: 200
     Vit: 200
-    Int: 200
-    Dex: 200
+    Int: 2000000
+    Dex: 200000
     Luk: 200
     AttackRange: 1
     SkillRange: 10
@@ -101084,11 +101084,11 @@ Body:
     Attack2: 13131
     Defense: 446
     MagicDefense: 82
-    Str: 255
+    Str: 2550000
     Agi: 39
     Vit: 90
-    Int: 169
-    Dex: 166
+    Int: 1690000
+    Dex: 1660000
     Luk: 20
     AttackRange: 3
     SkillRange: 10
