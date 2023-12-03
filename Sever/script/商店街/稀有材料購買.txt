@@ -7,10 +7,8 @@ OnInit:
 	.@p = 300000000;
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
-
-	sellitem(910132,100000000,-1);      //1Eや布
-	endsellitem();		
-	sellitem(910132,100000000,-1);      //1Eや布 (鬾礥传)
+	
+	sellitem(910132,0,-1);      //1Eや布 (鬾礥传)
 	sellitemcurrency(6417,200);
     endsellitem();	
 	sellitem(1001174,.@p*3,-1);      //み纽
