@@ -21016,3 +21016,248 @@ Body:
                 Amount: 250
               - Material: Enchant_Ticket
                 Amount: 3
+  - Id: 68
+    TargetItems:
+      S_Circlet_Of_Time_GN: true
+      S_Circlet_Of_Time_GC: true
+      S_Circlet_Of_Time_SC: true
+      S_Circlet_Of_Time_AB: true
+      S_Circlet_Of_Time_SR: true
+      S_Circlet_Of_Time_WL: true
+      S_Circlet_Of_Time_SO: true
+      S_Circlet_Of_Time_RA: true
+      S_Circlet_Of_Time_WM: true
+      S_Circlet_Of_Time_SJ: true
+      S_Circlet_Of_Time_SP: true
+      S_Circlet_Of_Time_RL: true
+      S_Circlet_Of_Time_OB: true
+      S_Circlet_Of_Time_KG: true
+      S_Circlet_Of_Time_NV: true
+      S_Circlet_Of_Time_SU: true
+    Reset:
+      Chance: 100000
+      Price: 500000
+    Order:
+      - Slot: 3
+      - Slot: 2
+      - Slot: 1
+    Slots:
+      - Slot: 3
+        Price: 100000
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Strength1
+                Chance: 12460
+              - Item: Inteligence1
+                Chance: 12470
+              - Item: Agility1
+                Chance: 12470
+              - Item: Vitality1
+                Chance: 12470
+              - Item: Luck1
+                Chance: 12460
+              - Item: Dexterity1
+                Chance: 12470
+              - Item: Strength2
+                Chance: 3500
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Agility2
+                Chance: 3500
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Luck2
+                Chance: 3500
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Strength3
+                Chance: 700
+              - Item: Inteligence3
+                Chance: 700
+              - Item: Agility3
+                Chance: 700
+              - Item: Vitality3
+                Chance: 700
+              - Item: Luck3
+                Chance: 700
+              - Item: Dexterity3
+                Chance: 700
+        Upgrades:
+          - Enchant: Strength1
+            Upgrade: Strength2
+            Price: 500000
+          - Enchant: Strength2
+            Upgrade: Strength3
+            Price: 1000000
+          - Enchant: Inteligence1
+            Upgrade: Inteligence2
+            Price: 500000
+          - Enchant: Inteligence2
+            Upgrade: Inteligence3
+            Price: 1000000
+          - Enchant: Agility1
+            Upgrade: Agility2
+            Price: 500000
+          - Enchant: Agility2
+            Upgrade: Agility3
+            Price: 1000000
+          - Enchant: Vitality1
+            Upgrade: Vitality2
+            Price: 500000
+          - Enchant: Vitality2
+            Upgrade: Vitality3
+            Price: 1000000
+          - Enchant: Luck1
+            Upgrade: Luck2
+            Price: 500000
+          - Enchant: Luck2
+            Upgrade: Luck3
+            Price: 1000000
+          - Enchant: Dexterity1
+            Upgrade: Dexterity2
+            Price: 500000
+          - Enchant: Dexterity2
+            Upgrade: Dexterity3
+            Price: 1000000
+      - Slot: 2
+        Materials:
+          - Material: Enchant_Ticket
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Attack_Delay_1
+                Chance: 5000
+              - Item: Spell1
+                Chance: 5000
+              - Item: ATK_1Lv
+                Chance: 20000
+              - Item: MATK_1Lv
+                Chance: 20000
+              - Item: MHP_1Lv
+                Chance: 20000
+              - Item: MSP_1Lv
+                Chance: 20000
+              - Item: Attack_Delay_2
+                Chance: 800
+              - Item: Spell2
+                Chance: 800
+              - Item: ATK_2Lv
+                Chance: 2100
+              - Item: MATK_2Lv
+                Chance: 2100
+              - Item: MHP_2Lv
+                Chance: 2100
+              - Item: MSP_2Lv
+                Chance: 2100
+        Upgrades:
+          - Enchant: Attack_Delay_1
+            Upgrade: Attack_Delay_2
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: Spell1
+            Upgrade: Spell2
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: ATK_1Lv
+            Upgrade: ATK_2Lv
+            Price: 5000000
+          - Enchant: MATK_1Lv
+            Upgrade: MATK_2Lv
+            Price: 5000000
+          - Enchant: MHP_1Lv
+            Upgrade: MHP_2Lv
+            Price: 5000000
+          - Enchant: MSP_1Lv
+            Upgrade: MSP_2Lv
+            Price: 5000000
+      - Slot: 1
+        Materials:
+          - Material: Enchant_Ticket
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: POW_1Lv
+                Chance: 9500
+              - Item: POW_2Lv
+                Chance: 500
+              - Item: WIS_1Lv
+                Chance: 9500
+              - Item: WIS_2Lv
+                Chance: 500
+              - Item: SPL_1Lv
+                Chance: 9500
+              - Item: SPL_2Lv
+                Chance: 500
+              - Item: STA_1Lv
+                Chance: 9500
+              - Item: STA_2Lv
+                Chance: 500
+              - Item: CRT_1Lv
+                Chance: 9500
+              - Item: CRT_2Lv
+                Chance: 500
+              - Item: CON_1Lv
+                Chance: 9500
+              - Item: CON_2Lv
+                Chance: 500
+              - Item: HPLUS_Lv1
+                Chance: 9500
+              - Item: HPLUS_Lv2
+                Chance: 500
+              - Item: CRATE_Lv1
+                Chance: 9500
+              - Item: CRATE_Lv2
+                Chance: 500
+              - Item: PATK_1Lv
+                Chance: 9500
+              - Item: PATK_2Lv
+                Chance: 500
+              - Item: SMATK_1Lv
+                Chance: 9500
+              - Item: SMATK_2Lv
+                Chance: 500
+        Upgrades:
+          - Enchant: POW_1Lv
+            Upgrade: POW_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: WIS_1Lv
+            Upgrade: WIS_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: SPL_1Lv
+            Upgrade: SPL_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: STA_1Lv
+            Upgrade: STA_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: CRT_1Lv
+            Upgrade: CRT_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: CON_1Lv
+            Upgrade: CON_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: HPLUS_Lv1
+            Upgrade: HPLUS_Lv2
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: CRATE_Lv1
+            Upgrade: CRATE_Lv2
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: PATK_1Lv
+            Upgrade: PATK_2Lv
+            Materials:
+              - Material: Enchant_Ticket
+          - Enchant: SMATK_1Lv
+            Upgrade: SMATK_2Lv
+            Materials:
+              - Material: Enchant_Ticket
