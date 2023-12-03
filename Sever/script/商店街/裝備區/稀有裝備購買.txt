@@ -580,7 +580,7 @@ OnInit:
 	sellitem(900026,.@p,-1);	//闇●冷豔舞姬 特蘭提尼卡片-改
 	sellitemcurrency(4566,.@l);
     endsellitem(); 
-	sellitem(900001,.@p,-1);	//闇●劍士 賽尼亞卡片-改
+	sellitem(900027,.@p,-1);	//闇●劍士 賽尼亞卡片-改
 	sellitemcurrency(4352,.@l);
     endsellitem(); 
 	
