@@ -49910,4 +49910,4 @@ Body:
       if(.@z > 2047483647){
       getitem 910132,1;
       }else{
-      Zeny += Zeny;}
+      Zeny += 100000000;}
