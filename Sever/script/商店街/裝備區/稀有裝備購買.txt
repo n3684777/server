@@ -1,0 +1,110 @@
+uttycty,118,150,4	script	稀有裝備鎧甲	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備鎧甲";
+	waitingroom "★ 稀有裝備鎧甲 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(480136,.@p,-1);	//席琳衣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(450179,.@p,-1);	//基米衣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480136,.@p,-1);	//席琳衣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(15374,.@p,-1);	//月袍
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480136,.@p,-1);	//席琳衣
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(450175,.@p,-1);	//布林喜德
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2383,.@p,-1);	//超越甲
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(15278,.@c,-1);	//時光力甲
+    endsellitem(); 
+	sellitem(15279,.@c,-1);	//時光智慧甲
+    endsellitem(); 
+	sellitem(15347,.@c,-1);	//時光體力甲
+    endsellitem(); 
+	sellitem(15354,.@c,-1);	//時光靈巧甲
+    endsellitem(); 
+	sellitem(15353,.@c,-1);	//時光敏捷甲
+    endsellitem(); 
+	sellitem(15346,.@c,-1);	//時光幸運甲
+    endsellitem(); 
+OnBuyItem:
+end;
+}
+
+uttycty,123,150,4	script	稀有裝備鞋子	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備鎧甲";
+	waitingroom "★ 稀有裝備鎧甲 ★",0;
+	.@p = 300000000;
+	.@c = 10000000; // 便宜貨
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(22202,.@p,-1);	//超越靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470095,.@p,-1);	//滅世靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470129,.@p,-1);	//墮落靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470177,.@p,-1);	//虛空陰暗長靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470187,.@p,-1);	//猛獸靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470098,.@p,-1);	//翡翠靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470120,.@p,-1);	//鋁合金靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470127,.@p,-1);	//深紅魔力之靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(22222,.@p,-1);	//審判決議長靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470029,.@p,-1);	//歐羅萊昂廚靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(22071,.@p,-1);	//尼羅河鞋
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(22167,.@p,-1);	//阿斯靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470086,.@p,-1);	//守護精靈鞋
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(470033,.@p,-1);	//四大元素魔靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(2410,.@p,-1);	//史靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(22202,.@p,-1);	//超越靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem();  
+OnBuyItem:
+end;
+}
