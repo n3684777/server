@@ -22,7 +22,7 @@ uttycty,42,141,4	script	[附魔]挑戰古城	4_ragfes_15_m,{
 	mes "但相對的由於它的能力太強大，所以每個職業的能力也是不相同的。";
 	mes "那麼...你也想來試試看嗎？";
 	next;
-	set .@typeChoice, select("我想體驗附魔", "我想把附魔初始化", "我想想看...");
+	set .@typeChoice, select("我想體驗附魔", "我想升階附魔", "我想把附魔初始化", "我想想看...");
 	//檢查左右手武器
 	switch(.@typeChoice) {
 	case 1:
@@ -38,6 +38,18 @@ uttycty,42,141,4	script	[附魔]挑戰古城	4_ragfes_15_m,{
 		}
 		break;
 	case 2:
+		setarray .@items[0],19474,19475,19476,19477,19478,19479,19480,19481,19482,19483,19484,19485,19486,19487,19488,19489,19490,19491,19492;
+		.@menu$ = "";
+		for(.@i = 0; .@i<getarraysize(.@items); ++.@i)
+		{
+			if(getequipid(EQI_HEAD_TOP) == .@items[.@i] || getequipid(EQI_HEAD_TOP) == .@items[.@i])
+			{
+				set .@realItems[getarraysize(.@realItems)], .@items[.@i];
+				.@menu$ += getitemname(.@items[.@i])+":";
+			}
+		}
+		break;
+	case 3:
 		set .DeletreqId, 6417;
 		set .reqCountDeletion, 2;
 		set .breakRateDeletion, 70;
@@ -52,7 +64,7 @@ uttycty,42,141,4	script	[附魔]挑戰古城	4_ragfes_15_m,{
 		goto S_Disenchant;
 		close3;
 		
-	case 3:
+	case 4:
 		mes "[挑戰古城附魔]";
 		mes "等你想好再跟我說吧！。";
 		close3;
@@ -189,7 +201,7 @@ S_EnchantArmor:
 	next;
 	mes "[挑戰古城附魔]";
 	mes "首先，你必須知道附魔後";
-	mes "^ff5555裝備及卡片會有機率失敗，但裝備和卡片不會消失。^000000";
+	mes "^ff5555裝備及卡片會有機率失敗，但裝備不會消失不見^000000";
 	mes "你仍然想繼續附魔嗎？";
 	next;
 	if(select("痾…讓我考慮一下", "開始吧") == 1) {
@@ -251,7 +263,7 @@ OnCheck:
 	set .@reqId3, 25866;//時間的魔力
 	//!!
 	setarray .@success_array[0],100,60,80,80;//成功機率依序為4洞、3洞一般模式、3洞高級模式、2洞一般模式
-	setarray .@remove_array[0],0,0,0,0;//裝備消失機率依序為4洞、3洞一般模式、3洞高級模式、2洞一般模式
+	setarray .@remove_array[0],0,80,30,30;//裝備消失機率依序為4洞、3洞一般模式、3洞高級模式、2洞一般模式
 	setarray .@useamount_array[0],10,20,2,2;//物品數量需求依序為4洞、3洞一般模式、3洞高級模式、2洞一般模式
 	//--特殊附魔(各別等級個別設定機率)
 	setarray .@success_special[0],100,80,70,50,20,20,20,20,20,10;//成功機率

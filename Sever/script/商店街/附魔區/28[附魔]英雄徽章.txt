@@ -10,7 +10,7 @@
 
 uttycty,42,103,4	script	[ªþÅ]]­^¶¯À²³¹	4_m_shadowchaser,{
 	disable_items;
-	item_enchant(20);
+	item_enchant(21);
 	end;
 OnInit:
 	setnpcicon getnpcid(0),1015,"[ªþÅ]]­^¶¯À²³¹";
