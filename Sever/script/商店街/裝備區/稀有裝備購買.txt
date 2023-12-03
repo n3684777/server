@@ -367,7 +367,7 @@ OnInit:
     endsellitem(); 
 	sellitem(480192,.@c,-1);	//勝利大衣
     endsellitem(); 
-	sellitem(480328,.@c,-1);	/2023ROS決戰spark斗篷
+	sellitem(480328,.@c,-1);	//2023ROS決戰spark斗篷
     endsellitem(); 
 	
 end;
