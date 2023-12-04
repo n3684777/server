@@ -594,7 +594,7 @@ OnInit:
 	sellitemcurrency(4168,.@h);
     endsellitem(); 
 	sellitem(900031,.@p,-1);	//俄塞里斯卡片-改
-	sellitemcurrency(4144,.@jh);
+	sellitemcurrency(4144,.@h);
     endsellitem(); 
 	sellitem(900032,.@p,-1);	//蜂后卡片-改
 	sellitemcurrency(4132,.@h);
