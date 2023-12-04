@@ -1213,7 +1213,7 @@ function BOSSWALL {
 	setarray .@waepon[0],21051,21052,32023,32350,32024,32025,1333,16092,28138,32351,16093,16094,28765,28766,28044,28042,28767,28768,18184,26158,2055,2056,28633,26159,26160,26161,2057,16095,1865,1866,16096,18185,18186,18187,18188,32107,32108,26212,26213;
 	makeitem .@waepon[rand(38)],1,.@m$,'passx+rand(-2,2),'passy+rand(-2,2);
 	'ClearInatance = 1;
-	hideonnpc strnpcinfo(0);
+	hideonnpc instance_npcname("Ä_½c#ghinstanceBEND");
 	donpcevent instance_npcname("°Æ¥»Ä_½c#1@gol2")+"::OnEnable";
 	end;
 }
