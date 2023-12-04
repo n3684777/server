@@ -126,6 +126,37 @@ uttycty,149,157,4	script	波士尼亞入口	796,{
 bossnia_04,0,0,0	script	#bsnaControl	-1,{
 
 OnInstanceInit:
+		monster strnpcinfo(4),0,0,"--ja--",1646,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業進2轉王
+		monster strnpcinfo(4),0,0,"--ja--",1647,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1648,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1649,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1650,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1651,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2237,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2238,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2239,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2240,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2241,	,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		
+		2237
+
+		monster strnpcinfo(4),0,0,"--ja--",1651,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 賽尼亞
+
+		onster strnpcinfo(4),0,0,"--ja--",3220,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業三轉王
+		onster strnpcinfo(4),0,0,"--ja--",3221,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3222,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3223,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; //
+		onster strnpcinfo(4),0,0,"--ja--",3224,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3225,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3240,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3241,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3242,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3243,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3244,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3245,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		onster strnpcinfo(4),0,0,"--ja--",3246,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		
+
 		monster strnpcinfo(4),193,199,"--ja--",1252,5,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",1768,2,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",1272,3,instance_npcname(strnpcinfo(0))+"::OnBossDead";
