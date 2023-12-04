@@ -1125,13 +1125,10 @@ Body:
     AegisName: Yggdrasilberry
     Name: 天地樹果實
     Type: Healing
-    Buy: 5000
-    Weight: 300
+    Buy: 0
+    Weight: 0
     Flags:
       BuyingStore: true
-    Delay:
-      Duration: 5000
-      Status: Reuse_Limit_F
     Script: |
       percentheal 100,100;
   - Id: 608

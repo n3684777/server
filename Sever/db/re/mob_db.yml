@@ -79791,14 +79791,14 @@ Body:
     Level: 160
     Hp: 10000
     Attack: 8000
-    Attack2: 4000000
+    Attack2: 4000
     Defense: 200
     MagicDefense: 10
-    Str: 2000000
+    Str: 200
     Agi: 200
     Vit: 200
-    Int: 2000000
-    Dex: 200000
+    Int: 200
+    Dex: 200
     Luk: 200
     AttackRange: 1
     SkillRange: 10
@@ -101076,20 +101076,20 @@ Body:
     Name: MD_C_AMDARAIS
     JapaneseName: 闇答萊屍的幻影
     Level: 250
-    Hp: 2000000000
+    Hp: 450000000
     BaseExp: 2291324
     JobExp: 2416730
     MvpExp: 472831
-    Attack: 8899000
-    Attack2: 131310000
-    Defense: 446000000
+    Attack: 8899
+    Attack2: 13131
+    Defense: 446
     MagicDefense: 82
     Str: 2550000
-    Agi: 3900000
-    Vit: 9000000
-    Int: 1690000
-    Dex: 1660000
-    Luk: 2000000
+    Agi: 39
+    Vit: 90
+    Int: 169
+    Dex: 166
+    Luk: 20
     AttackRange: 3
     SkillRange: 10
     ChaseRange: 12
