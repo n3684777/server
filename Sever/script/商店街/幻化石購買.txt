@@ -86,7 +86,7 @@ end;
 OnInit:
 	setnpcicon getnpcid(0),1026,"§€§∆•€2¡ ∂R";
 	waitingroom "°π §€§∆•€2 °π",0;
-	.@p = 300000000;
+	.@p = 5000000;
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
