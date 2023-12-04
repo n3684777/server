@@ -447,12 +447,12 @@ OnStart:
 	setarray .@bossatkmax[0],7780,8620,10020,11980,14500,17580,21220,25420,90540,106500;
 	setarray .@bossmatkmin[0],2955,3420,4195,5280,6675,8380,10395,12720,30710,36600;
 	setarray .@bossmatkmax[0],2955,3420,4195,5280,6675,8380,10395,12720,30710,36600;
-	setunitdata 'BossID,3,.@bosshp[.selectdiff -1];
-	setunitdata 'BossID,25,.@bossagi[.selectdiff -1];
-	setunitdata 'BossID,33,.@bossatkmin[.selectdiff -1];
-	setunitdata 'BossID,34,.@bossatkmax[.selectdiff -1];
-	setunitdata 'BossID,35,.@bossmatkmin[.selectdiff -1];
-	setunitdata 'BossID,36,.@bossmatkmax[.selectdiff -1];
+	setunitdata 'BossID,3,.@bosshp['selectdiff -1];
+	setunitdata 'BossID,25,.@bossagi['selectdiff -1];
+	setunitdata 'BossID,33,.@bossatkmin['selectdiff -1];
+	setunitdata 'BossID,34,.@bossatkmax['selectdiff -1];
+	setunitdata 'BossID,35,.@bossmatkmin['selectdiff -1];
+	setunitdata 'BossID,36,.@bossmatkmax['selectdiff -1];
 	end;
 	
 OnKillMob:
@@ -506,8 +506,8 @@ OnTimer5000:
 		.@id[3] = $@mobid[0];
 		for(.@i = 0; .@i < 4; .@i++) {
 			unitskilluseid .@id[.@i], 353, 1;
-			setunitdata .@id[.@i],35,.@bossmatkmin[.selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax[.selectdiff -1];
+			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
+			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
 		}
 		sleep 500;
 		for(.@i = 0; .@i <= 18; .@i=.@i+2){
@@ -537,8 +537,8 @@ OnTimer5000:
 		for(.@i = 0; .@i < 4; .@i++) {
 			setunitdata .@id[.@i], 29, 1;
 			unitskilluseid .@id[.@i], 353, 1;
-			setunitdata .@id[.@i],35,.@bossmatkmin[.selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax[.selectdiff -1];
+			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
+			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
 		}
 		sleep 500;
 			if(unitexists(.@id[0]) == true)
@@ -633,8 +633,8 @@ OnTimer5000:
 		for(.@i = 0; .@i < 4; .@i++) {
 			setunitdata .@id[.@i], 29, 1;
 			unitskilluseid .@id[.@i], 353, 1;
-			setunitdata .@id[.@i],35,.@bossmatkmin[.selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax[.selectdiff -1];
+			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
+			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
 		}
 		sleep 500;
 			if(unitexists(.@id[0]) == true)
@@ -704,8 +704,8 @@ OnTimer5000:
 		for(.@i = 0; .@i < 4; .@i++) {
 			setunitdata .@id[.@i], 29, 1;
 			unitskilluseid .@id[.@i], 353, 1;
-			setunitdata .@id[.@i],35,.@bossmatkmin[.selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax[.selectdiff -1];
+			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
+			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
 		}
 		sleep 500;
 		for(.@i = 0; .@i <= 8; .@i++){
