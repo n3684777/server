@@ -580,8 +580,81 @@ OnInit:
 	sellitem(900026,.@p,-1);	//闇●冷豔舞姬 特蘭提尼卡片-改
 	sellitemcurrency(4566,.@l);
     endsellitem(); 
-	sellitem(900027,.@p,-1);	//闇●劍士 賽尼亞卡片-改
+	sellitem(900028,.@p,-1);	//闇●劍士 賽尼亞卡片-改
 	sellitemcurrency(4352,.@l);
+    endsellitem(); 
+
+	sellitem(900029,.@p,-1);	//巴風特卡片-改
+	sellitemcurrency(4147,.@h);
+    endsellitem(); 
+	sellitem(900030,.@p,-1);	//死靈卡片-改
+	sellitemcurrency(4142,.@h);
+    endsellitem(); 
+	sellitem(900031,.@p,-1);	//黑暗之王卡片-改
+	sellitemcurrency(4168,.@h);
+    endsellitem(); 
+	sellitem(900032,.@p,-1);	//俄塞里斯卡片-改
+	sellitemcurrency(4144,.@jh);
+    endsellitem(); 
+	sellitem(900033,.@p,-1);	//蜂后卡片-改
+	sellitemcurrency(4132,.@h);
+    endsellitem(); 
+	sellitem(900034,.@p,-1);	//黃金蟲卡片-改
+	sellitemcurrency(4128,.@h);
+    endsellitem(); 
+	sellitem(900035,.@p,-1);	//獸人英雄卡片-改
+	sellitemcurrency(4143,.@h);
+    endsellitem(); 
+	sellitem(900036,.@p,-1);	//闇●劍士 賽尼亞卡片-改
+	sellitemcurrency(4143,.@h);
+    endsellitem(); 
+	sellitem(900037,.@p,-1);	//海盜之王卡片-改
+	sellitemcurrency(4137,.@h);
+    endsellitem(); 
+	sellitem(900038,.@p,-1);	//虎王卡片-改
+	sellitemcurrency(4123,.@h);
+    endsellitem(); 
+	sellitem(900039,.@p,-1);	//蟻后卡片-改
+	sellitemcurrency(4146,.@h);
+    endsellitem(); 
+	sellitem(900040,.@p,-1);	//月夜貓卡片-改
+	sellitemcurrency(4131,.@h);
+    endsellitem(); 
+	sellitem(900041,.@p,-1);	//法老王卡片-改
+	sellitemcurrency(4148,.@h);
+    endsellitem(); 
+	sellitem(900042,.@p,-1);	//皮里恩卡片-改
+	sellitemcurrency(4121,.@h);
+    endsellitem(); 
+	sellitem(900043,.@p,-1);	//伊夫利特卡片-改
+	sellitemcurrency(4430,.@h);
+    endsellitem(); 
+	sellitem(900044,.@p,-1);	//元靈武士卡片-改
+	sellitemcurrency(4263,.@h);
+    endsellitem(); 
+	sellitem(900045,.@p,-1);	//光芒泰迪熊卡片-改
+	sellitemcurrency(27287,.@h);
+    endsellitem(); 
+	sellitem(900046,.@p,-1);	//冰暴騎士卡片-改
+	sellitemcurrency(4318,.@h);
+    endsellitem(); 
+	sellitem(900047,.@p,-1);	//劇毒凱美拉卡片-改
+	sellitemcurrency(27150,.@h);
+    endsellitem(); 
+	sellitem(900048,.@p,-1);	//海盜之王卡片-改
+	sellitemcurrency(4137,.@h);
+    endsellitem(); 
+	sellitem(900049,.@p,-1);	//卡崙卡片-改
+	sellitemcurrency(4324,.@h);
+    endsellitem(); 
+	sellitem(900050,.@p,-1);	//古代塔奧群卡卡片-改
+	sellitemcurrency(27294,.@h);
+    endsellitem(); 
+	sellitem(900051,.@p,-1);	//古埃及王卡片-改
+	sellitemcurrency(4236,.@h);
+    endsellitem(); 
+	sellitem(900052,.@p,-1);	//滅絕古埃及王卡片-改
+	sellitemcurrency(4652,.@h);
     endsellitem(); 
 	
 end;
