@@ -136,7 +136,7 @@ OnInstanceInit:
 		monster strnpcinfo(4),0,0,"--ja--",2238,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",2239,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",2240,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2241,	,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2241,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		
 
 
