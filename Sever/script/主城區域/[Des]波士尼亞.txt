@@ -155,7 +155,15 @@ OnInstanceInit:
 		monster strnpcinfo(4),0,0,"--ja--",3244,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
 		monster strnpcinfo(4),0,0,"--ja--",3245,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
 		monster strnpcinfo(4),0,0,"--ja--",3246,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		
+
+		monster strnpcinfo(4),0,0,"--ja--",20611,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ­^®æÄR
+		monster strnpcinfo(4),0,0,"--ja--",300013,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ¹p¦NÄRªÜ
+		monster strnpcinfo(4),0,0,"--ja--",3505,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ¥¨¤j³J¶Àªi§Q
+		monster strnpcinfo(4),0,0,"--ja--",2253,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ±N­x¤j½å
+		monster strnpcinfo(4),0,0,"--ja--",2087,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ¤k¤ý¥ÒÂÎ
+		monster strnpcinfo(4),0,0,"--ja--",2251,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ³ì¥ì¨È
+		monster strnpcinfo(4),0,0,"--ja--",20667,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ®u¥Ë©¬¥Ö§Q¨È
+		monster strnpcinfo(4),0,0,"--ja--",3757,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // ¼««ã¼w¥j©Ô
 
 		monster strnpcinfo(4),193,199,"--ja--",1252,5,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",1768,2,instance_npcname(strnpcinfo(0))+"::OnBossDead";
