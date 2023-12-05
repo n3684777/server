@@ -136748,6 +136748,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
+    Script: |
+      hateffect HAT_EF_BLACK_THUNDER,true;
+    UnEquipScript: |
+      hateffect HAT_EF_BLACK_THUNDER,false;
   - Id: 400150
     AegisName: Thanos_Helm_4
     Name: 塔諾斯暴力頭盔
@@ -153819,6 +153823,14 @@ Body:
             }
          }
       }
+  - Id: 480235
+    AegisName: C_Diabolic_Friend
+    Name: (服飾)麻吉小惡魔
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 148
   - Id: 480236
     AegisName: aegis_480236
     Name: (服飾)巨大魔法書
