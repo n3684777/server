@@ -691,5 +691,180 @@ OnInit:
 	sellitemcurrency(300014,.@h);
     endsellitem(); 
 	
+
+	sellitem(900063,.@p,-1);	//雷吉麗芙卡片-改 x
+	sellitemcurrency(300013,.@h);
+    endsellitem(); 
+	sellitem(900064,.@p,-1);	//希梅爾茲幻影卡片-改 x
+	sellitemcurrency(27381,.@h);
+    endsellitem(); 
+	sellitem(900065,.@p,-1);	//席琳基米卡片-改 x
+	sellitemcurrency(31023,.@h);
+    endsellitem(); 
+	sellitem(900066,.@p,-1);	//席瓦帕皮利亞卡片-改 x
+	sellitemcurrency(300099,.@h);
+    endsellitem(); 
+	sellitem(900067,.@p,-1);	//幽暗夢魘卡片-改 x
+	sellitemcurrency(4408,.@h);
+    endsellitem(); 
+	sellitem(900068,.@p,-1);	//德古拉伯爵卡片-改 x
+	sellitemcurrency(4134,.@h);
+    endsellitem(); 
+	sellitem(900069,.@p,-1);	//憤怒德古拉伯爵卡片-改 x
+	sellitemcurrency(27104,.@h);
+    endsellitem(); 
+	sellitem(900070,.@p,-1);	//憤怒月夜貓卡片-改 x
+	sellitemcurrency(27081,.@h);
+    endsellitem();
+	sellitem(900071,.@p,-1);	//甦醒水晶龍卡片-改 x
+	sellitemcurrency(27113,.@h);
+    endsellitem();
+	sellitem(900072,.@p,-1);	//時間支配者卡片-改 x
+	sellitemcurrency(4625,.@h*30);
+    endsellitem(); 
+	sellitem(900073,.@p,-1);	//暴力腔棘魚卡片-改 x
+	sellitemcurrency(4529,.@h);
+    endsellitem(); 
+	sellitem(900074,.@p,-1);	//歐內斯特 斯特凡˙傑克卡片-改 x
+	sellitemcurrency(31026,.@h);
+    endsellitem(); 
+	sellitem(900075,.@p,-1);	//死靈騎士卡片-改 x
+	sellitemcurrency(4276,.@h);
+    endsellitem(); 
+	sellitem(900076,.@p,-1);	//水晶龍卡片-改 x
+	sellitemcurrency(4419,.@h);
+    endsellitem(); 
+	sellitem(900077,.@p,-1);	//汙染蜘蛛女王卡片-改 x
+	sellitemcurrency(27362,.@h);
+    endsellitem(); 
+	sellitem(900078,.@p,-1);	//汙染黑暗之王卡片-改 x
+	sellitemcurrency(27363,.@h);
+    endsellitem(); 
+	
+	sellitem(900079,.@p,-1);	//波伊塔塔卡片-改 x
+	sellitemcurrency(27126,.@h);
+    endsellitem(); 
+	sellitem(900080,.@p,-1);	//淘汰者傅立葉卡片-改 x
+	sellitemcurrency(4578,.@h);
+    endsellitem(); 
+	sellitem(900081,.@p,-1);	//深海魔鬼大烏賊卡片-改 x
+	sellitemcurrency(300151,.@h);
+    endsellitem(); 
+	sellitem(900082,.@p,-1);	//混沌巴風特卡片-改 x
+	sellitemcurrency(27334,.@h);
+    endsellitem(); 
+	sellitem(900083,.@p,-1);	//烏龜將軍卡片-改 x
+	sellitemcurrency(4305,.@h);
+    endsellitem(); 
+	sellitem(900084,.@p,-1);	//獸人酋長卡片-改 x
+	sellitemcurrency(4135,.@h);
+    endsellitem(); 
+	sellitem(900085,.@p,-1);	//珠寶溫古力安特卡片-改 x
+	sellitemcurrency(300007,.@h);
+    endsellitem(); 
+	sellitem(900086,.@p,-1);	//畢尤卡片-改 x
+	sellitemcurrency(4636,.@h);
+    endsellitem(); 
+	sellitem(900087,.@p,-1);	//白素貞卡片-改 x
+	sellitemcurrency(4372,.@h);
+    endsellitem(); 
+	sellitem(900088,.@p,-1);	//米古爾卡片-改 x
+	sellitemcurrency(27318,.@h);
+    endsellitem(); 
+	sellitem(900089,.@p,-1);	//巴基力 蘭特克力斯卡片-改 x
+	sellitemcurrency(4407,.@h);
+    endsellitem(); 
+	sellitem(900090,.@p,-1);	//蜘蛛戰車卡片-改 x
+	sellitemcurrency(27180,.@h);
+    endsellitem(); 
+	
+	sellitem(900091,.@p,-1);	//覺醒墮落根莖卡片-改 x
+	sellitemcurrency(4604,.@h);
+    endsellitem(); 
+	sellitem(900092,.@p,-1);	//覺醒闇答萊屍卡片-改 x
+	sellitemcurrency(4602,.@h);
+    endsellitem(); 
+	sellitem(900093,.@p,-1);	//詛咒施密特國王卡片-改 x
+	sellitemcurrency(27329,.@h);
+    endsellitem(); 
+	sellitem(900094,.@p,-1);	//變種腔棘魚卡片-改 x
+	sellitemcurrency(4520,.@h);
+    endsellitem(); 
+	sellitem(900095,.@p,-1);	//讓特卡片-改 x
+	sellitemcurrency(27180,.@h);
+    endsellitem(); 
+	sellitem(900096,.@p,-1);	//貝思波卡片-改 x
+	sellitemcurrency(4374,.@h);
+    endsellitem(); 
+	sellitem(900097,.@p,-1);	//絕望之神夢羅克卡片-改 x
+	sellitemcurrency(27321,.@h);
+    endsellitem(); 
+	sellitem(900098,.@p,-1);	//迪塔勒泰晤勒斯卡片-改 x
+	sellitemcurrency(4386,.@h);
+    endsellitem(); 
+	sellitem(900099,.@p,-1);	//章魚大王卡片-改 x
+	sellitemcurrency(4534,.@h);
+    endsellitem(); 
+	sellitem(900101,.@p,-1);	//邪心獵人 伊芙卡片-改 x
+	sellitemcurrency(27151,.@h);
+    endsellitem(); 
+	sellitem(900102,.@p,-1);	//阿特羅斯卡片-改 x
+	sellitemcurrency(4425,.@h);
+    endsellitem(); 
+	sellitem(900103,.@p,-1);	//青冠龍卡片-改 x
+	sellitemcurrency(27162,.@h);
+    endsellitem(); 
+	sellitem(900104,.@p,-1);	//驚駭森靈皇后卡片-改 x
+	sellitemcurrency(27164,.@h);
+    endsellitem(); 
+	sellitem(900105,.@p,-1);	//骷髏迪塔勒泰晤勒斯卡片-改 x
+	sellitemcurrency(300021,.@h);
+    endsellitem(); 
+	sellitem(900106,.@p,-1);	//魔劍士 達納托斯的記憶卡片-改 x
+	sellitemcurrency(4399,.@h);
+    endsellitem(); 
+	sellitem(900107,.@p,-1);	//魔鬼大烏賊卡片-改 x
+	sellitemcurrency(4525,.@h);
+    endsellitem(); 
+	sellitem(900108,.@p,-1);	//黑暗腔棘魚卡片-改 x
+	sellitemcurrency(4527,.@h);
+    endsellitem(); 
+	sellitem(900109,.@p,-1);	//齊爾-D-01卡片-改 x
+	sellitemcurrency(4403,.@h);
+    endsellitem(); 
+	sellitem(900110,.@p,-1);	//EL-A17T卡片-改 x
+	sellitemcurrency(27305,.@h);
+    endsellitem(); 
+	sellitem(900111,.@p,-1);	//R001-Bestia卡片-改 x
+	sellitemcurrency(300281,.@h);
+    endsellitem(); 
+	sellitem(900112,.@p,-1);	//R48-85-BESTIA卡片-改 x
+	sellitemcurrency(27180,.@h);
+    endsellitem(); 
+	sellitem(900113,.@p,-1);	//RSX-0806卡片-改 x
+	sellitemcurrency(4342,.@h);
+    endsellitem(); 
+	sellitem(900114,2000000000,-1);	//T W O卡片-改 x
+	sellitemcurrency(27020,.@h);
+    endsellitem(); 
+	sellitem(900115,.@p,-1);	//不祥烏龜將軍卡片-改 x
+	sellitemcurrency(27119,.@h);
+    endsellitem(); 
+	sellitem(900116,.@p,-1);	//亡者君主卡片-改 x
+	sellitemcurrency(27025,.@h);
+    endsellitem(); 
+	sellitem(900117,.@p,-1);	//亡靈的守護者卡德斯卡片-改 x
+	sellitemcurrency(4580,.@h);
+    endsellitem(); 
+	sellitem(900118,.@p,-1);	//破壞的達納托斯的記憶卡片-改 x
+	sellitemcurrency(300280,.@h);
+    endsellitem(); 
+	sellitem(900119,.@p,-1);	//死亡女巫卡片-改 x
+	sellitemcurrency(300248,.@h);
+    endsellitem(); 
+	sellitem(900120,.@p,-1);	//食月暴龍卡片-改 x
+	sellitemcurrency(4591,.@h);
+    endsellitem(); 
+		
 end;
 }

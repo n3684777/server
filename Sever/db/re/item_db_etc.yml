@@ -66778,7 +66778,7 @@ Body:
     Script: |
       bonus2 bAddEffWhenHit,Eff_Freeze,3000 + (readparam(bInt) >= 110 ? 4000 : 0);
       bonus bMdef,5;
-  - Id: 990102
+  - Id: 900102
     AegisName: Atroce_Card_
     Name: 阿特羅斯卡片-改
     Type: Card
@@ -66792,7 +66792,7 @@ Body:
     Script: |
       bonus bBaseAtk,50;
       autobonus "{ bonus bAspdRate,100; }",5,10000,0,"{ specialeffect2 EF_POTION_BERSERK; }";
-  - Id: 990103
+  - Id: 900103
     AegisName: Gopinich_Card_
     Name: 青冠龍卡片-改
     Type: Card
