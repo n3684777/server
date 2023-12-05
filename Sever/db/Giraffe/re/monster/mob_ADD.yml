@@ -437,6 +437,7 @@ Body:
     AttackMotion: 384
     DamageMotion: 288
     DamageTaken: 900
+    Class: Boss
     Ai: 21
     Modes:
       CastSensorChase: true
