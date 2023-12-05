@@ -4,7 +4,7 @@ OnInit:
 	set $@BaseLevelpaodian,100; //獲得積分的最低等級
 	set $@Checkvending,0;		//掛店狀態是否獲得積分
 	set $@PDCkcartTimer,180000; //掛店狀態多少時間獲得積分（毫秒）
-	set $@PDTimer,60000;		//多少時間獲得積分（毫秒）
+	set $@PDTimer,1000;		//多少時間獲得積分（毫秒）
 	set $@paodian,1;			//玩家每次獲得積分
 	set $@Max,999999;			//人物最大積分數
 	end;
@@ -23,7 +23,7 @@ OnPCLoginEvent:
 -	script	掛機點數	-1,{
 OnGivejife:
 getmapxy(.@map$,.@x,.@y);
-if(.@map$ == "prontera") {
+// if(.@map$ == "uttycty") {
 if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
 if (checkvending()) {
 	dispbottom "掛店或離線掛店期間不會獲得掛機點數。";
@@ -48,7 +48,7 @@ OnPCLogoutEvent:
 	deltimer "掛機點數::OnGivejife";
 	end;
 }else{addtimer 60000,"掛機點數::OnGivejife";}
-}
+// } 
 
 -	shop	PaoDian	-1,512:-1 //生成商店，腳本名稱需要和下面腳本中的名稱叫對應
 //腳本開始
