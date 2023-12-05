@@ -23,10 +23,10 @@ OnPCLoginEvent:
 -	script	掛機點數	-1,{
 OnGivejife:
 getmapxy(.@map$,.@x,.@y);
-//if(.@map$ == "prontera") {
-if(true){
-if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
-if (checkvending()) {
+if(.@map$ == "uttycty") {
+//if(true){
+	if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
+	if (checkvending()) {
 	dispbottom "掛店或離線掛店期間不會獲得掛機點數。";
 	if (paodian==$@Max)
 	{
