@@ -4,7 +4,7 @@ OnInit:
 	set $@BaseLevelpaodian,1; //獲得積分的最低等級
 	set $@Checkvending,0;		//掛店狀態是否獲得積分
 	set $@PDCkcartTimer,180000; //掛店狀態多少時間獲得積分（毫秒）
-	set $@PDTimer,1000;		//多少時間獲得積分（毫秒）
+	set $@PDTimer,600000;		//多少時間獲得積分（毫秒）
 	set $@paodian,1;			//玩家每次獲得積分
 	set $@Max,999999;			//人物最大積分數
 	end;
