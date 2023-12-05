@@ -23,7 +23,8 @@ OnPCLoginEvent:
 -	script	掛機點數	-1,{
 OnGivejife:
 getmapxy(.@map$,.@x,.@y);
-// if(.@map$ == "uttycty") {
+//if(.@map$ == "prontera") {
+if(true){
 if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
 if (checkvending()) {
 	dispbottom "掛店或離線掛店期間不會獲得掛機點數。";
@@ -48,7 +49,7 @@ OnPCLogoutEvent:
 	deltimer "掛機點數::OnGivejife";
 	end;
 }else{addtimer 60000,"掛機點數::OnGivejife";}
-// } 
+}
 
 -	shop	PaoDian	-1,512:-1 //生成商店，腳本名稱需要和下面腳本中的名稱叫對應
 //腳本開始
