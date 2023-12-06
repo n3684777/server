@@ -1,10 +1,10 @@
 -	script	PCLoginEvent	-1,{	
 OnInit:
 // 掛機點數系統設置
-	set $@BaseLevelpaodian,1; //獲得積分的最低等級
+	set $@BaseLevelpaodian,100; //獲得積分的最低等級
 	set $@Checkvending,0;		//掛店狀態是否獲得積分
 	set $@PDCkcartTimer,180000; //掛店狀態多少時間獲得積分（毫秒）
-	set $@PDTimer,600000;		//多少時間獲得積分（毫秒）
+	set $@PDTimer,3600000;		//多少時間獲得積分（毫秒）
 	set $@paodian,1;			//玩家每次獲得積分
 	set $@Max,999999;			//人物最大積分數
 	end;
@@ -25,8 +25,8 @@ OnGivejife:
 getmapxy(.@map$,.@x,.@y);
 //if(.@map$ == "prontera") {
 if(true){
-	if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
-	if (checkvending()) {
+if (BaseLevel <= (($@BaseLevelpaodian)-1)) { end; }
+if (checkvending()) {
 	dispbottom "掛店或離線掛店期間不會獲得掛機點數。";
 	if (paodian==$@Max)
 	{
