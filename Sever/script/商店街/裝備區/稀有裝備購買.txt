@@ -273,6 +273,8 @@ OnInit:
     endsellitem(); 
 	sellitem(19111,.@c,-1);	//鷹之激光
     endsellitem(); 
+	sellitem(420186,.@c,-1);	//20週年慶生氣球
+    endsellitem(); 
 OnBuyItem:
 end;
 }
@@ -842,7 +844,7 @@ OnInit:
 	sellitemcurrency(300281,.@h);
     endsellitem(); 
 	sellitem(900112,.@p,-1);	//R48-85-BESTIA卡片-改 x
-	sellitemcurrency(27180,.@h);
+	sellitemcurrency(27319,.@h);
     endsellitem(); 
 	sellitem(900113,.@p,-1);	//RSX-0806卡片-改 x
 	sellitemcurrency(4342,.@h);
