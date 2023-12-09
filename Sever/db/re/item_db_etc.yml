@@ -66643,8 +66643,6 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,30;
       bonus bMatkRate,30;
-    UnEquipScript: |
-      heal -6666,-666;
   - Id: 900093
     AegisName: Schmidt_Card_
     Name: 詛咒施密特國王卡片-改
@@ -67065,6 +67063,264 @@ Body:
     Script: |
       bonus bStr,40;
       bonus5 bAutoSpellWhenHit,"NPC_WIDEBLEEDING",4,500,BF_WEAPON,0;
+  - Id: 900121
+    AegisName: Bangungot_Card_
+    Name: 噩夢死神卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bInt,40;
+      bonus5 bAutoSpellWhenHit,"NPC_WIDESLEEP",4,700,BF_MAGIC,0;
+  - Id: 900122
+    AegisName: CorruptionRoot_Card_
+    Name: 墮落根莖卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,80;
+      bonus5 bAutoSpell,"NPC_WIDESTONE",1,250,BF_SHORT,0;
+      bonus5 bAutoSpell,"NPC_WIDESLEEP",1,250,BF_SHORT,0;
+      bonus5 bAutoSpell,"NPC_WIDECURSE",1,250,BF_SHORT,0;
+  - Id: 900123
+    AegisName: Nahtzigger_Card_
+    Name: 夜勝魔卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Ghost,100;
+  - Id: 900124
+    AegisName: Buwaya_Card_
+    Name: 寶箱巨鱷卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bVit,40;
+      bonus5 bAutoSpellWhenHit,"NPC_WIDESTONE",4,700,BF_MAGIC,0;
+  - Id: 900125
+    AegisName: Bomi_Card_
+    Name: 波蜜卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      skill "WL_COMET",5;
+  - Id: 900126
+    AegisName: Felock_Card_
+    Name: 船長裴陸卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,60;
+      .@r = getrefine();
+      bonus2 bSkillAtk,"RL_AM_BLAST",.@r >= 10 ? 120 : 60;
+      bonus2 bSkillAtk,"RL_HAMMER_OF_GOD",.@r >= 10 ? 120 : 60;
+  - Id: 900127
+    AegisName: Charleston_Card_
+    Name: 查爾斯頓卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bBreakArmorRate,7000;
+      bonus bMaxSP,-300;
+  - Id: 900128
+    AegisName: Byorgue_Card_
+    Name: 漂流浪人卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (BaseJob == Job_Rogue) {
+         bonus bMatkRate,40;
+         bonus2 bAddClass,Class_All,40;
+      }
+  - Id: 900129
+    AegisName: Fenrir_Card_
+    Name: 潘利爾卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,50+getrefine()*20;
+      bonus bFixedCastrate,-100;
+  - Id: 900130
+    AegisName: Salamander_Card_
+    Name: 火蜥蝪卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSkillAtk,"WZ_FIREPILLAR",500;
+      bonus2 bSkillAtk,"WZ_METEOR",500;
+  - Id: 900131
+    AegisName: Kasa_Card_
+    Name: 火鳥卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus3 bAutoSpell,"MG_FIREBALL",5,300;
+      bonus3 bAutoSpell,"MG_FIREBOLT",5,300;
+  - Id: 900132
+    AegisName: C_CorruptionRoot_Card_
+    Name: 無限墮落根莖卡片-改
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,60;
+      bonus bBaseAtk,60;
+  - Id: 900133
+    AegisName: Dy_Card_
+    Name: 狄瓦伊卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Dark,40;
+      bonus2 bMagicAtkEle,Ele_Neutral,40;
+  - Id: 900134
+    AegisName: Hardrock_Mommos_Card_
+    Name: 硬石猛瑪卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bDef,50;
+      if (.@r>=10) {
+         bonus bDef,50;
+         bonus bMaxHPrate,20;
+      }
+      if (.@r>=12) {
+         bonus bMaxHPrate,40;
+      }
+  - Id: 900135
+    AegisName: Grand_Pere_Card_
+    Name: 覺醒貝爾卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      if (BaseJob == Job_Bard || BaseJob == Job_Dancer) {
+         bonus bMatk,(30*getrefine());
+      }
+  - Id: 900136
+    AegisName: Wild_Rider_Card_
+    Name: 野貓騎士卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bAgi,10;
+      bonus3 bAutoSpell,"AL_INCAGI",10,300;
+  - Id: 900137
+    AegisName: Amdarais_Card_
+    Name: 闇答萊屍卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddClass,Class_All,20;
+      bonus bMatkRate,20;
+  - Id: 900138
+    AegisName: Ant_Buyanne_Card_
+    Name: 骷髏觸角魔卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,350;
   - Id: 910000
     AegisName: Nov_Stone
     Name: 初心者幻化石(披肩)
