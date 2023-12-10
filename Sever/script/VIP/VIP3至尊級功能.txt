@@ -31,7 +31,7 @@ function	script	membervip3	{
 	mes "^0088FF期效：^FF0000"+.@dayleft+" ^0088FF天^FF0000 "+.@hourleft+" ^0088FF小時^FF0000 "+.@minleft+" ^0088FF分鐘^FF0000 "+.@secleft+" 秒^000000";
 	mes "^0AA770=================================^000000";
 	next;
-	switch(select("^FF0000(1).^5599FF輔助BUFF","^FF0000(2).^5599FF販售物品","^FF0000(3).^5599FF掉寶加倍","^FF0000(4).^5599FF隨地廣播","^FF0000(5).^5599FF隨地修理裝備","^FF0000(6).^5599FF更換ID顏色","^FF0000(7).^5599FF領取至尊VIP積分^000000","")) {
+	switch(select("^FF0000(1).^5599FF輔助BUFF/掉寶4倍","^FF0000(2).^5599FF販售物品","^FF0000(4).^5599FF隨地廣播","^FF0000(5).^5599FF隨地修理裝備","^FF0000(6).^5599FF更換ID顏色","^FF0000(7).^5599FF領取至尊VIP積分^000000","")) {
 		case 1:
 			if (#zhuangtaiVIP3 >= 1000000 ) {
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
@@ -69,6 +69,7 @@ function	script	membervip3	{
 				//sc_start SC_2011RWC_SCROLL,1800000,20;	//萬能年糕+20 (有石化bug)
 				//sc_start CD_COMPETENTIA,1800000,5;	//神聖權能
 				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增 1
+				sc_start SC_ITEMBOOST,3600000,400; //400倍掉寶倍增
 				sc_start SC_SPEEDUP1,3600000,1;
 				atcommand "@speed 50";
 				set #zhuangtaiVIP3, #zhuangtaiVIP3+1;
@@ -78,32 +79,16 @@ function	script	membervip3	{
 			callshop	"道具商店",2;
 			end;
 		case 3:
-			if (#zhuangtai33 >= 1000000 ) {
-			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
-			mes "　   　  ^5599FF今日使用次數已滿^000000";
-			mes "^0AA770=================================^000000";
-			} else {
-			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
-			mes "　   ^5599FF掉寶率加倍剩餘使用次數 ^FF0000"+(1000000-#zhuangtai33)+"^000000 ^5599FF次^000000";
-			mes "^0AA770=================================^000000";
-				next;
-				menu " ^5599FF使用掉寶率加倍^000000",-;
-				sc_end all;
-				sc_start SC_ITEMBOOST,1800000,400; //400倍掉寶倍增
-				set #zhuangtai33, #zhuangtai33+1;
-			}
-			break;
-		case 4:
 			callfunc "Megaphone_announcevip";
 			close;
-		case 5:			
+		case 4:			
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
 			mes "　        ^5599FF已成功修復裝備^000000";
 			mes "^0AA770=================================^000000";
 			atcommand "@repairall";
 			close;
 			
-		case 6:
+		case 5:
 		
 			setarray .@color$,"1.(重置顏色)^FFFFFF","2.(黑框粉字)^FF99FF","3.(黑框藍字)^99FFFF","4.(黑框紫字)^9F88FF","5.(黑框綠字)^99FF99","6.(粉框黑字)^FF99FF","7.(藍框黑字)^99FFFF","8.(黃框黑字)^FFFF33","9.(綠框黑字)^99FF99","10.(綠框粉字)^FF99FF";
 			for ( .@i = 0; .@i < getarraysize(.@color$); .@i++ )
@@ -116,7 +101,7 @@ function	script	membervip3	{
 			setfont .@Selection;
 			end;
 
-		case 7:
+		case 6:
 			mes "^0AA770========== ^FF99FF至 尊 V I P ^0AA770==========^000000";
 			mes "　   　  ^5599FF至尊VIP積分領取^000000";
 			mes "^0AA770=================================^000000";
@@ -132,7 +117,7 @@ function	script	membervip3	{
 			mes "^0AA770=================================^000000";
 			}
 			break;
-		case 8:
+		case 7:
 			close;
 	}
 	close;
