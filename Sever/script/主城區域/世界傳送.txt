@@ -49,7 +49,8 @@ Start:
 	"^008000◆   官方打王區　 ◆^000000",MvpBoss,
 	"^008000◆　公會地下密穴　◆^000000",gud,
 	"^008000◆  EP13以上地圖  ◆^000000",ep13atm,
-	"^008000◆    幻影模式    ◆^000000",Illusion;
+	"^008000◆    幻影模式    ◆^000000",Illusion,
+	"^008000◆    搜尋怪物    ◆^000000",Serchmob;
 
 
 //------------ 功能各區 ------------//
@@ -4974,6 +4975,16 @@ Bye:
 	mes "^33CC33【世界傳送員】^000000";
 	mes "有需要的話，歡迎隨時來找我。";
 	close;
+
+//------------ 搜尋怪物 ------------//
+Serchmob:
+	deletearray @spawn_mapname$[0];
+	input .@input;
+		for ( .@i = 0; .@i < getmobspawns(.@input); .@i++0{
+			.@menu$+=@spawn_mapname$[.@i]+":";
+		}
+		.@s = select(.@menu$) -1;
+		warp @spawn_mapname$[.@s],0,0;
 
 
 
