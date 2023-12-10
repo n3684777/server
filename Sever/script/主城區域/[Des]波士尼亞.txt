@@ -126,67 +126,68 @@ uttycty,149,157,4	script	波士尼亞入口	796,{
 bossnia_04,0,0,0	script	#bsnaControl	-1,{
 
 OnInstanceInit:
-		monster strnpcinfo(4),0,0,"--ja--",1646,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業進2轉王
-		monster strnpcinfo(4),0,0,"--ja--",1647,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",1648,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",1649,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",1650,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",1651,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2237,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2238,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2239,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2240,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
-		monster strnpcinfo(4),0,0,"--ja--",2241,1,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		.@a = 2; // 王數量
+		monster strnpcinfo(4),0,0,"--ja--",1646,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業進2轉王
+		monster strnpcinfo(4),0,0,"--ja--",1647,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1648,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1649,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1650,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",1651,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2237,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2238,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2239,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2240,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
+		monster strnpcinfo(4),0,0,"--ja--",2241,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		
 
 
-		monster strnpcinfo(4),0,0,"--ja--",1651,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 賽尼亞
+		monster strnpcinfo(4),0,0,"--ja--",1651,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 賽尼亞
 
-		monster strnpcinfo(4),0,0,"--ja--",3220,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業三轉王
-		monster strnpcinfo(4),0,0,"--ja--",3221,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3222,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3223,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; //
-		monster strnpcinfo(4),0,0,"--ja--",3224,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3225,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3240,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3241,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3242,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3243,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3244,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3245,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
-		monster strnpcinfo(4),0,0,"--ja--",3246,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3220,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 職業三轉王
+		monster strnpcinfo(4),0,0,"--ja--",3221,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3222,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3223,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; //
+		monster strnpcinfo(4),0,0,"--ja--",3224,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3225,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3240,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3241,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3242,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3243,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3244,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3245,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
+		monster strnpcinfo(4),0,0,"--ja--",3246,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 
 
-		monster strnpcinfo(4),0,0,"--ja--",20611,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 英格麗
-		monster strnpcinfo(4),0,0,"--ja--",300013,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 雷吉麗芙
-		monster strnpcinfo(4),0,0,"--ja--",3505,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 巨大蛋黃波利
-		monster strnpcinfo(4),0,0,"--ja--",2253,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 將軍大賢
-		monster strnpcinfo(4),0,0,"--ja--",2087,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 女王甲蟲
-		monster strnpcinfo(4),0,0,"--ja--",2251,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 喬伊亞
-		monster strnpcinfo(4),0,0,"--ja--",20667,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 席瓦帕皮利亞
-		monster strnpcinfo(4),0,0,"--ja--",3757,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 憤怒德古拉
-		monster strnpcinfo(4),0,0,"--ja--",3758,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 憤怒月夜貓
-		monster strnpcinfo(4),0,0,"--ja--",3796,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 甦醒水晶龍
-		monster strnpcinfo(4),0,0,"--ja--",3074,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 時間支配者
-		monster strnpcinfo(4),0,0,"--ja--",3473,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 歐內斯特 斯特凡˙傑克
-		monster strnpcinfo(4),0,0,"--ja--",20421,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 汙染蜘蛛女王
-		monster strnpcinfo(4),0,0,"--ja--",20422,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 汙染黑暗之王
-		monster strnpcinfo(4),0,0,"--ja--",2068,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 波伊塔塔
-		monster strnpcinfo(4),0,0,"--ja--",2249,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 淘汰者傅立葉
-		monster strnpcinfo(4),0,0,"--ja--",20811,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 深海魔鬼大烏賊
-		monster strnpcinfo(4),0,0,"--ja--",20520,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 混沌巴風特
-		monster strnpcinfo(4),0,0,"--ja--",20601,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 珠寶溫古力安特
-		monster strnpcinfo(4),0,0,"--ja--",1765,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 巴基力 蘭特克力斯
-		monster strnpcinfo(4),0,0,"--ja--",3741,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 蜘蛛戰車
-		monster strnpcinfo(4),0,0,"--ja--",2156,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 讓特
-		monster strnpcinfo(4),0,0,"--ja--",1685,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; //貝思波
-		monster strnpcinfo(4),0,0,"--ja--",20618,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 骨骸迪塔勒泰晤勒斯
-		monster strnpcinfo(4),0,0,"--ja--",2194,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 章魚大王
-		monster strnpcinfo(4),0,0,"--ja--",1885,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 青冠龍
-		monster strnpcinfo(4),0,0,"--ja--",2202,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 魔鬼大烏賊
-		monster strnpcinfo(4),0,0,"--ja--",3804,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 不祥烏龜將軍
-		monster strnpcinfo(4),0,0,"--ja--",20943,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 死亡女巫
-		monster strnpcinfo(4),0,0,"--ja--",2322,1,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 食月暴龍
-		.@a = 1; // 王數量
+		monster strnpcinfo(4),0,0,"--ja--",20611,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 英格麗
+		monster strnpcinfo(4),0,0,"--ja--",300013,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 雷吉麗芙
+		monster strnpcinfo(4),0,0,"--ja--",3505,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 巨大蛋黃波利
+		monster strnpcinfo(4),0,0,"--ja--",2253,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 將軍大賢
+		monster strnpcinfo(4),0,0,"--ja--",2087,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 女王甲蟲
+		monster strnpcinfo(4),0,0,"--ja--",2251,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 喬伊亞
+		monster strnpcinfo(4),0,0,"--ja--",20667,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 席瓦帕皮利亞
+		monster strnpcinfo(4),0,0,"--ja--",3757,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 憤怒德古拉
+		monster strnpcinfo(4),0,0,"--ja--",3758,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 憤怒月夜貓
+		monster strnpcinfo(4),0,0,"--ja--",3796,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 甦醒水晶龍
+		monster strnpcinfo(4),0,0,"--ja--",3074,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 時間支配者
+		monster strnpcinfo(4),0,0,"--ja--",3473,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 歐內斯特 斯特凡˙傑克
+		monster strnpcinfo(4),0,0,"--ja--",20421,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 汙染蜘蛛女王
+		monster strnpcinfo(4),0,0,"--ja--",20422,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 汙染黑暗之王
+		monster strnpcinfo(4),0,0,"--ja--",2068,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 波伊塔塔
+		monster strnpcinfo(4),0,0,"--ja--",2249,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 淘汰者傅立葉
+		monster strnpcinfo(4),0,0,"--ja--",20811,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 深海魔鬼大烏賊
+		monster strnpcinfo(4),0,0,"--ja--",20520,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 混沌巴風特
+		monster strnpcinfo(4),0,0,"--ja--",20601,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 珠寶溫古力安特
+		monster strnpcinfo(4),0,0,"--ja--",1765,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 巴基力 蘭特克力斯
+		monster strnpcinfo(4),0,0,"--ja--",3741,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 蜘蛛戰車
+		monster strnpcinfo(4),0,0,"--ja--",2156,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 讓特
+		monster strnpcinfo(4),0,0,"--ja--",1685,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; //貝思波
+		monster strnpcinfo(4),0,0,"--ja--",20618,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 骨骸迪塔勒泰晤勒斯
+		monster strnpcinfo(4),0,0,"--ja--",2194,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 章魚大王
+		monster strnpcinfo(4),0,0,"--ja--",1885,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 青冠龍
+		monster strnpcinfo(4),0,0,"--ja--",2202,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 魔鬼大烏賊
+		monster strnpcinfo(4),0,0,"--ja--",3804,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 不祥烏龜將軍
+		monster strnpcinfo(4),0,0,"--ja--",20943,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 死亡女巫
+		monster strnpcinfo(4),0,0,"--ja--",2322,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead"; // 食月暴龍
+
 		monster strnpcinfo(4),193,199,"--ja--",1252,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",1768,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";
 		monster strnpcinfo(4),0,0,"--ja--",1272,.@a,instance_npcname(strnpcinfo(0))+"::OnBossDead";

@@ -871,5 +871,61 @@ OnInit:
 	sellitemcurrency(4591,.@h);
     endsellitem(); 
 		
+	sellitem(900121,.@p,-1);	//噩夢死神卡片-改 x
+	sellitemcurrency(4590,.@h);
+    endsellitem(); 
+	sellitem(900122,.@p,-1);	//墮落根莖卡片-改 x
+	sellitemcurrency(4603,.@h);
+    endsellitem(); 
+	sellitem(900123,.@p,-1);	//夜勝魔卡片-改 x
+	sellitemcurrency(4457,.@h);
+    endsellitem(); 
+	sellitem(900124,.@p,-1);	//寶箱巨鱷卡片-改 x
+	sellitemcurrency(4592,.@h);
+    endsellitem(); 
+	sellitem(900125,.@p,-1);	//波蜜卡片-改 x
+	sellitemcurrency(27105,.@h);
+    endsellitem(); 
+	sellitem(900126,.@p,-1);	//船長裴陸卡片-改 x
+	sellitemcurrency(27182,.@h);
+    endsellitem(); 
+	sellitem(900127,.@p,-1);	//查爾斯頓卡片-改 x
+	sellitemcurrency(4697,.@h);
+    endsellitem(); 
+	sellitem(900128,.@p,-1);	//漂流浪人-改 x
+	sellitemcurrency(4426,.@h);
+    endsellitem(); 
+	sellitem(900129,.@p,-1);	//潘利爾卡片-改 x
+	sellitemcurrency(4556,.@h);
+    endsellitem(); 
+	sellitem(900130,.@p,-1);	//火蜥蝪卡片-改 x
+	sellitemcurrency(4429,.@h);
+    endsellitem(); 
+	sellitem(900131,.@p,-1);	//火鳥卡片-改 x
+	sellitemcurrency(4431,.@h);
+    endsellitem(); 
+	sellitem(900132,.@p,-1);	//無限墮落根莖卡片-改 x
+	sellitemcurrency(27382,.@h);
+    endsellitem(); 
+	sellitem(900133,.@p,-1);	//狄瓦伊卡片-改 x
+	sellitemcurrency(27262,.@h);
+    endsellitem(); 
+	sellitem(900134,.@p,-1);	//硬石猛瑪卡片-改 x
+	sellitemcurrency(4462,.@h);
+    endsellitem(); 
+	sellitem(900135,.@p,-1);	//覺醒貝爾卡片-改 x
+	sellitemcurrency(27106,.@h);
+    endsellitem(); 
+	sellitem(900136,.@p,-1);	//野貓騎士卡片-改 x
+	sellitemcurrency(4532,.@h);
+    endsellitem(); 
+	sellitem(900137,.@p,-1);	//闇答萊屍卡片-改 x
+	sellitemcurrency(4601,.@h);
+    endsellitem();
+	sellitem(900138,.@p,-1);	//骷髏觸角魔卡片-改 x
+	sellitemcurrency(4451,.@h);
+    endsellitem(); 
+
+	
 end;
 }
