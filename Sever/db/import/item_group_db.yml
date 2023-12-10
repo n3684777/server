@@ -1,5 +1,5 @@
 # This file is a part of rAthena.
-#   Copyright(C) 2021 rAthena Development Team
+#   Copyright(C) 20500 rAthena Development Team
 #   https://rathena.org - https://github.com/rathena
 #
 # This program is free software: you can redistribute it and/or modify
@@ -45,3 +45,21 @@
 Header:
   Type: ITEM_GROUP_DB
   Version: 2
+ 
+Body:
+  - Group: TEMPORAL_BOX_TW
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Temporal_M_Str
+            Rate: 1667
+          - Item: Temporal_M_Agi
+            Rate: 1667
+          - Item: Temporal_M_Vit
+            Rate: 1667
+          - Item: Temporal_M_Int
+            Rate: 1667
+          - Item: Temporal_M_Dex
+            Rate: 1667
+          - Item: Temporal_M_Luk
+            Rate: 1667

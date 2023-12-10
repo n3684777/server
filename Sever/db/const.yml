@@ -45,6 +45,12 @@ Body:
     Value: 4
   - Name: JUMPINGCLAN
     Value: 5
+  - Name: IG_FREEDOM_STICK_CUBE
+    Value: 20001
+  - Name: IG_BLESSED_KNIFE_CUBE
+    Value: 20002
+  - Name: IG_TEMPORAL_BOX_TW
+    Value: 20003
 
 Footer:
   Imports:
