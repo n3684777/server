@@ -136013,7 +136013,6 @@ Body:
          bonus bCritAtkRate,5*.@r;
          bonus bCritical,3*.@r;
       }
-
   - Id: 400083
     AegisName: 2020maypay_01
     Name: 萬物與靈魂的真諦
