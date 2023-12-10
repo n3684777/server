@@ -136014,7 +136014,7 @@ Body:
          bonus bCritical,3*.@r;
       }
   - Id: 400083
-    AegisName: 2020maypay_01
+    AegisName: maypay_01
     Name: 萬物與靈魂的真諦
     Type: Armor
     Weight: 100
@@ -136072,7 +136072,7 @@ Body:
           }
       }
   - Id: 400084
-    AegisName: 2020maypay_02
+    AegisName: maypay_02
     Name: 元靈繼承者
     Type: Armor
     Weight: 200
@@ -136111,7 +136111,7 @@ Body:
              autobonus3 "{ bonus bMatk,100; }",1000,40000,"KO_IZAYOI";
       }
   - Id: 400085
-    AegisName: 2020maypay_03
+    AegisName: maypay_03
     Name: 精銳部隊帽
     Type: Armor
     Weight: 200
@@ -136138,7 +136138,7 @@ Body:
       if (.@r>=11)
          bonus2 bSkillCooldown,"RL_FIRE_RAIN",-1500;
   - Id: 400086
-    AegisName: 2020maypay_04
+    AegisName: maypay_04
     Name: 喵族的薪火相傳
     Type: Armor
     Weight: 200
@@ -136178,7 +136178,7 @@ Body:
              skill "CR_REFLECTSHIELD",5;
       }
   - Id: 400087
-    AegisName: 2020maypay_05
+    AegisName: maypay_05
     Name: 潛能激發冒險帽
     Type: Armor
     Weight: 200
@@ -136219,7 +136219,7 @@ Body:
          bonus bDelayrate,-20;
       }
   - Id: 400088
-    AegisName: 2020RTC_01
+    AegisName: RTC_01
     Name: 2020RTC金牌頑皮鬼
     Type: Armor
     Weight: 100
@@ -136256,7 +136256,7 @@ Body:
     UnEquipScript: |
       hateffect HAT_EF_2020RTC_01,false;
   - Id: 400089
-    AegisName: 2020RTC_02
+    AegisName: RTC_02
     Name: 2020RTC銀牌頑皮鬼
     Type: Armor
     Weight: 100
@@ -136294,7 +136294,7 @@ Body:
     UnEquipScript: |
       hateffect HAT_EF_2020RTC_02,false;
   - Id: 400090
-    AegisName: 2020RTC_03
+    AegisName: RTC_03
     Name: 2020RTC銅牌頑皮鬼
     Type: Armor
     Weight: 100
