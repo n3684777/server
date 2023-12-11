@@ -1,4 +1,4 @@
--   script    Mobmapdrop    -1,{
+-   script    RandomItem    -1,{
 OnNPCKillEvent:
     .@m = killedrid;
     addmonsterdrop .@m,910135,10000;
