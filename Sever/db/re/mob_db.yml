@@ -100661,12 +100661,6 @@ Body:
       - Item: 19439
         Rate: 1
         StealProtected: true
-      - Item: 22171
-        Rate: 10
-        StealProtected: true
-      - Item: 22238
-        Rate: 3
-        StealProtected: true
       - Item: 23992
         Rate: 100
         StealProtected: true
