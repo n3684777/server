@@ -213,7 +213,7 @@ if (.@slot == 3){set .@slotcheck,4;}
 			mes "需求物品：^888888"+getitemname(.@reqId)+" x "+.@useamount+"^000000 ";
 			mes "成功機率：^888888"+.@success_rate+"%^000000";
 			mes "選擇的洞數位置：^FF0000第"+.@slotcheck+"洞^000000";
-			mes "選擇的腹膜屬性：^FF8800"+.@randnewstone$[.@i]+"^000000";
+			mes "選擇的附魔屬性：^FF8800"+.@randnewstone$[.@i]+"^000000";
 			next;
 				if(select("確定:取消")==2) close3;
 			close3;

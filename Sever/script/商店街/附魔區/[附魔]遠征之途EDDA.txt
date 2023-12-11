@@ -243,7 +243,7 @@ uttycty,29,165,4	script	EDDA武器附魔#JCv2	4_F_JOB_BLACKSMITH,{
 		close;
 	}
 OnInit:
-	setnpcicon getnpcid(0),1015,"[附魔]幻象裝備";
-	waitingroom "[附魔]幻象裝備",0;
+	setnpcicon getnpcid(0),1015,"[附魔]EDDA武器附魔";
+	waitingroom "[附魔]EDDA武器附魔",0;
 
 }
