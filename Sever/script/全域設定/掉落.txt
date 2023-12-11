@@ -1,9 +1,5 @@
--	script	RandomItem	-1,{
+-   script    Mobmapdrop    -1,{
 OnNPCKillEvent:
-	if (rand(99) > 9 || strnpcinfo(3) != "prt_fild01") end; // 10% chance of success, only works on prt_fild01
-
-	setarray .@Items,4005,2236;  		// Item array
-	set .@rand,rand(1,getarraysize(.@items);
-	getitem .@Items[.@rand],1; 
-	end;
+    .@m = killedrid;
+    addmonsterdrop .@m,910135,10000;
 }
