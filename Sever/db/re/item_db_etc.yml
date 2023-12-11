@@ -65268,7 +65268,6 @@ Body:
          bonus bMatkRate,15;
          bonus2 bAddRace,RC_All,5;
          bonus2 bRegenPercentSP,30,1000;
-         bonus bNoMagicDamage,100;
       }
       if (BaseLevel>174)
          bonus bAllStats,10;
@@ -65840,8 +65839,6 @@ Body:
     Script: |
       bonus bBaseAtk,(JobLeve*5);
       bonus bCritical,(JobLevel*5);
-      bonus bCon,(JobLevel*1);
-      bonus bPow,(JobLevel*1);
       bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,500;
       bonus3 bAutoSpellWhenHit,"CR_AUTOGUARD",10,500;
   - Id: 900042

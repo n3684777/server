@@ -4846,7 +4846,7 @@ Body:
     Name: ¦å¸ñ¾ðªK
     Type: Usable
     Buy: 10000
-    Weight: 200
+    Weight: 0
     Flags:
       BuyingStore: true
       DeadBranch: true
@@ -8084,7 +8084,7 @@ Body:
     AegisName: Savage_BBQ
     Name: ¯N³¥½Þ
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -8093,7 +8093,7 @@ Body:
     AegisName: Wug_Blood_Cocktail
     Name: ¯T¦åÂû§À°s
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -8102,7 +8102,7 @@ Body:
     AegisName: Minor_Brisket
     Name: ¦Ì¬¥´µ¿N¦×
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -8111,7 +8111,7 @@ Body:
     AegisName: Siroma_Icetea
     Name: ¤p³·Ã~¦B¯ù
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -8120,7 +8120,7 @@ Body:
     AegisName: Drocera_Herb_Stew
     Name: ®·ÂÎ¯óÃÄ¯ó·Î
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -8129,7 +8129,7 @@ Body:
     AegisName: Petti_Tail_Noodle
     Name: ²¦«Ò¯SÀs§ÀÄÑ
     Type: Usable
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
