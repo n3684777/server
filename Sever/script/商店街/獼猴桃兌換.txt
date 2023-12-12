@@ -64,6 +64,12 @@ OnInit:
     sellitem(7227, 250000, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
+    sellitem(6230, 0, -1);	    // 7ªZ±²
+	sellitemcurrency(6417,30);
+    endsellitem();
+    sellitem(6234, 0, -1);	    // 7¨¾±²
+	sellitemcurrency(6417,30); 
+    endsellitem();
     // ªZ±²+19
     sellitem(6864, 0, -1);	
 	sellitemcurrency(6909,175);
