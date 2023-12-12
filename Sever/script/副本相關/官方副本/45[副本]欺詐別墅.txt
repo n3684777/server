@@ -146,31 +146,31 @@ OnEnableMob0:
 
 	callfunc "F_cheat_mob",
 		87,11,160,68,
-		"--ja--",('mode == 0)?21377:21318,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		87,11,160,68,
-		"--ja--",('mode == 0)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
 		
 	callfunc "F_cheat_mob",
 		68,92,184,99,
-		"--ja--",('mode == 0)?21377:21318,10,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		68,92,184,99,
-		"--ja--",('mode == 0)?21378:21319,10,1,0,0,0,0;			
+		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;			
 
 	callfunc "F_cheat_mob",
 		174,102,184,182,
-		"--ja--",('mode == 0)?21377:21318,10,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		174,102,184,182,
-		"--ja--",('mode == 0)?21378:21319,10,1,0,0,0,0;
+		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;
 
 	callfunc "F_cheat_mob",
 		63,90,72,182,
-		"--ja--",('mode == 0)?21377:21318,10,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		63,90,72,182,
-		"--ja--",('mode == 0)?21378:21319,10,1,0,0,0,0;
+		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;
 	
 
 		end;
@@ -178,10 +178,10 @@ OnEnableMob0:
 OnEnableMob1:
 	callfunc "F_cheat_mob",
 		76,104,170,179,
-		"--ja--",('mode == 0)?21377:21318,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		76,104,170,179,
-		"--ja--",('mode == 0)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
 		end;
 
 	
@@ -189,10 +189,10 @@ OnEnableMob1:
 OnEnableMob2:
 	callfunc "F_cheat_mob",
 		109,220,138,248,
-		"--ja--",('mode == 0)?21377:21318,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
 	callfunc "F_cheat_mob",
 		109,220,138,248,
-		"--ja--",('mode == 0)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
 		end;	
 
 		
@@ -253,7 +253,7 @@ OnTalk:
 	donpcevent instance_npcname("#minibosstalk")+"::OnTalk";
 	sleep2 1000;
 	hideonnpc instance_npcname(strnpcinfo(0));	
-	monster 'map$,124,294,"--ja--",('mode == 0)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
+	monster 'map$,124,294,"--ja--",('mode == 1)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
 	.@mobgid = $@mobid[0];
 	if('mode==0)
 	{
@@ -716,10 +716,10 @@ OnTouch:
 	sleep2 1000;
 	setunitdata getnpcid(0),UNPC_AURA,0;
 	hideonnpc  instance_npcname(strnpcinfo(0));
-	monster 'map$,124,338,"--ja--",('mode == 0)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
+	monster 'map$,124,338,"--ja--",('mode == 1)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
 			.@mobgid = $@mobid[0];
 
-	monster 'map$, 124,338,"--ja--", ('mode == 0)?21361:21317, 1, instance_npcname(strnpcinfo(0))+ "::OnBossDead";
+	monster 'map$, 124,338,"--ja--", ('mode == 1)?21361:21317, 1, instance_npcname(strnpcinfo(0))+ "::OnBossDead";
 	'Cheat_FinalBoss = $@mobid[0];	
 
 	initnpctimer instance_npcname("#cheat_Skill");
