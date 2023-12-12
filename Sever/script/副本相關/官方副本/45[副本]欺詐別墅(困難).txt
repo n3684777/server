@@ -1,5 +1,8 @@
 function	script	欺詐別墅難度#Choose(困難)	{
-
+		'mode = 1;
+		'mode1name$ = "困難難度";
+		 messagecolor "您選擇的是 "+'mode1name$+" !","F9F900",bc_self;
+		 disablenpc instance_npcname("欺詐別墅難度#Choose");
 		donpcevent instance_npcname("#欺詐別墅設置總控制(困難)")+"::OnStart";
 		end;
 	

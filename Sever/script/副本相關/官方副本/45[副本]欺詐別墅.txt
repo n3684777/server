@@ -102,10 +102,7 @@ OnInit:
 	else 
 	{
 		callfunc "欺詐別墅難度#Choose(困難)";
-		'mode = 1;
-		'mode1name$ = "困難難度";
-		 messagecolor "您選擇的是 "+'mode1name$+" !","F9F900",bc_self;
-		 disablenpc instance_npcname("欺詐別墅難度#Choose");
+		end;
 	}
 OnInstanceInit:
 	end;
@@ -1111,7 +1108,7 @@ function	script	unitskilluseid3(普通)	{
 			}
 			break;
 			
-		// 崩裂術(十字)
+		// 崩裂術(十字)
 		case 3:
 			.@range = 5;
 			for(.@i=1; .@i<9; .@i++)
