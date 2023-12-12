@@ -90,12 +90,12 @@ S_EnchantArmor:
 	next;
 	mes "[遠征之途附魔]";
 	mes "首先，你必須知道附魔後";
-	mes "^ff5555裝備及卡片會有機率一起消失不見^000000";
+	mes "^ff5555裝備及卡片不會消失^000000";
 	mes "你仍然想繼續附魔嗎？";
 	next;
 	if(select("痾…讓我考慮一下", "開始吧") == 1) {
 		mes "[遠征之途附魔]";
-		mes "好吧，這我也不能怪你，安全第一！你說是吧？";
+		mes "好吧，這我也不能怪你，省錢第一！你說是吧？";
 		mes "祝你有美好的一天！";
 		close3;
 	}
@@ -179,10 +179,10 @@ OnCheck:
 		set .@success_rate,100;
 	}else if(.@useamount == 500 ) {
 		set .@success_rate,80;//成功機率
-		set .@remove_rate,50;//裝備消失機率
+		set .@remove_rate,0;//裝備消失機率
 	}else{//50個物品的設定
-		set .@success_rate,20;//成功機率
-		set .@remove_rate,50;//裝備消失機率
+		set .@success_rate,100;//成功機率
+		set .@remove_rate,0;//裝備消失機率
 	}
 	setarray .@randstone[0],4832,4833,4834,4808,4820,4821,4818,4817,4816,4815,4814,4813,4863,4864,4865;
 	setarray .@randnewstone[0],29594,29595,29596,29598,29599,29600,29601,29602,29603,29604,29605,29606,29607;
