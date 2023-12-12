@@ -65906,6 +65906,32 @@ Body:
          bonus2 bAddEle,Ele_Earth,10;
          bonus2 bAddEle,Ele_Wind,10;
       }
+  - Id: 15361
+    AegisName: Jupiter_Armor_TW
+    Name: 朱比特輕甲
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Wizard: true
+      Sage: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bInt,(.@r/4)*3;
+      bonus bMatkRate,(.@r/4)*3;
+      if(.@r >= 10){bonus2 bCastrate,"MG_ENERGYCOAT",-40;}
+      if(.@r >= 12){
+      bonus bDelayrate,getskilllv("WL_RADIUS")*2;
+      bonus2 bSkillDelay,"SO_DIAMONDDUST",-(getskilllv("SA_ADVANCEDBOOK")*100);
+      }
   - Id: 15362
     AegisName: Apollo_Armor_TW
     Name: 阿波羅盔甲
@@ -65960,6 +65986,32 @@ Body:
          bonus2 bSkillCooldown,"GC_DARKCROW",-5000;
          bonus2 bSkillAtk,"SC_TRIANGLESHOT",2*(getskilllv("AC_DOUBLE"));
       }
+  - Id: 15364
+    AegisName: Ceres_Armor_TW
+    Name: 刻瑞斯皮甲
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      BardDancer: true
+      Hunter: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bLongAtkRate,10;
+      bonus bAgi,(.@r/4)*3;
+      bonus bDex,(.@r/4)*3;
+      if(.@r >= 12){
+      bonus2 bSkillAtk,"RA_WUGSTRIKE",30;
+      bonus2 bSkillAtk,"WM_METALICSOUND",30;
+      }
   - Id: 15365
     AegisName: Vinus_Armor_TW
     Name: 維納斯羽甲
@@ -65988,6 +66040,32 @@ Body:
          bonus2 bSkillCooldown,"AB_CLEARANCE",-5000;
          bonus2 bSkillCooldown,"AB_SILENTIUM",-5000;
          bonus2 bSkillCooldown,"SR_CRESCENTELBOW",-3000;
+      }
+  - Id: 15366
+    AegisName: Vulcan_Armor_TW
+    Name: 武爾坎努斯機甲
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      bonus bAtkRate,getskilllv("MC_MAMMONITE");
+      bonus bStr,(.@r/4)*3;
+      bonus bVit,(.@r/4)*3;
+      bonus bBaseAtk,(.@r/4)*20;
+      if(.@r >= 12){
+      bonus2 bSkillAtk,"GN_CRAZYWEED",80;
+      bonus2 bSkillAtk,"NC_POWERSWING",80;
       }
   - Id: 15367
     AegisName: Astraea_Armor

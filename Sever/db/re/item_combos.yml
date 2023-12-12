@@ -20007,6 +20007,60 @@ Body:
       }
   - Combos:
       - Combo:
+          - Vulcan_Armor_TW
+          - Porcellio_W_Card
+    Script: |
+      bonus bIgnoreDefClass,20;
+      bonus2 bIgnoreDefClassRate,RC_Player_Human,20;
+      bonus2 bIgnoreDefClassRate,RC_Player_Doram,20;
+  - Combos:
+      - Combo:
+          - Vulcan_Armor_TW
+          - Gloom_Under_Night_Card
+    Script: |
+      bonus bIgnoreDefClass,20;
+      bonus2 bIgnoreDefClassRate,RC_Player_Human,20;
+      bonus2 bIgnoreDefClassRate,RC_Player_Doram,20;
+      bonus2 bAddSize,Size_All,25;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW
+          - Ancient_Mimic_Card
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW
+          - Clown_Card
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW
+          - Gypsy_Card
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Jupiter_Armor_TW
+          - Grave_Verit_Card
+    Script: |
+      bonus bMatk,30;
+      bonus bMdef,10;
+      bonus2 bMagicAddRace,RC_All,3;
+  - Combos:
+      - Combo:
+          - Jupiter_Armor_TW
+          - Fallen_Bishop_Card
+    Script: |
+      bonus bMatk,60;
+      bonus bMdef,20;
+      bonus2 bMagicAddRace,RC_All,5;
+  - Combos:
+      - Combo:
           - Apollo_Armor_TW
           - Eddga_Card
     Script: |
