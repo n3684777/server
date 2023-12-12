@@ -31793,8 +31793,8 @@ Body:
       autobonus "{ bonus bMatkRate,20; bonus bInt,30;; }",3,10000,BF_MAGIC,"{ }";
   - Combos:
       - Combo:
-          - Unknown_Item_480312
-          - Unknown_Item_470183
+          - Temporal_Cape_TW_LT
+          - Temporal_Boots_TW_LT
     Script: |
       bonus bMdef,5;
       bonus bFixedCast,-200;
@@ -31821,7 +31821,7 @@ Body:
          }
   - Combos:
       - Combo:
-          - Unknown_Item_480312
+          - Temporal_Cape_TW_LT
           - Temporal_Armor_TW
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT);
@@ -31832,7 +31832,7 @@ Body:
       }
   - Combos:
       - Combo:
-          - Unknown_Item_470183
+          - Temporal_Boots_TW_LT
           - Temporal_Armor_TW
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_SHOES);
@@ -31846,21 +31846,21 @@ Body:
       }
   - Combos:
       - Combo:
-          - Unknown_Item_480312
+          - Temporal_Cape_TW_LT
           - Temporal_Sprout_TW
     Script: |
       bonus bDelayrate,-3;
       bonus bAspdRate,10;
   - Combos:
       - Combo:
-          - Unknown_Item_470183
+          - Temporal_Boots_TW_LT
           - Temporal_Sprout_TW
     Script: |
       bonus2 bAddRace,RC_All,10;
       bonus2 bMagicAddRace,RC_All,10;
   - Combos:
       - Combo:
-          - Unknown_Item_480312
+          - Temporal_Cape_TW_LT
           - Temporal_Armor_TW
           - Temporal_Sprout_TW
     Script: |
@@ -31879,8 +31879,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Unknown_Item_470183
-          - Unknown_Item_480312
+          - Temporal_Boots_TW_LT
+          - Temporal_Cape_TW_LT
           - Temporal_Armor_TW
           - Temporal_Sprout_TW
     Script: |
@@ -31949,7 +31949,7 @@ Body:
       bonus bMatk,30;
       .@r = getequiprefinerycnt(EQI_HAND_L);
       if(.@r >=12){bonus2 bSkillCooldown,AB_ADORAMUS,500;bonus2 bIgnoreMdefRaceRate,RC_Demon,15;bonus2 bIgnoreMdefRaceRate,RC_Undead,15;}
-  - Combos: # é¬¥æ°£ï¿½?ï¿½?
+  - Combos: # é¬¥æ°£ï¿??ï¿??
       - Combo:
           - Phoenix_Muffler # 480149
           - Old_Blazing_Soul # 18979
@@ -31959,7 +31959,7 @@ Body:
       bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",.@ht*2;
       bonus2 bSkillCooldown,"SR_EARTHSHAKER",(.@ht/2)*100; 
       bonus2 bSkillCooldown,"SR_RAMPAGEBLASTER",(.@ht/2)*100; 
-  - Combos: # é¬¥æ°£ï¿½?ï¿½?
+  - Combos: # é¬¥æ°£ï¿??ï¿??
       - Combo:
           - Phoenix_Muffler2 # 480149
           - Ifrit_Card # 4430
@@ -31971,8 +31971,8 @@ Body:
       bonus2 bSubEle,Ele_Fire,50;
       bonus2 bSubEle,Ele_Water,-30;
       skill "MO_EXPLOSIONSPIRITS",5;
-    #   *autobonus <bonus script>,1000,10000{,<flag>,{<other script>}}; 10ï¿½????ï¿½?150atk ??ï¿½å¯¦ï¿½?
-  - Combos: # ï¿½?é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½?
+    #   *autobonus <bonus script>,1000,10000{,<flag>,{<other script>}}; 10ï¿?????ï¿??150atk ??ï¿½å¯¦ï¿??
+  - Combos: # ï¿??é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿??
       - Combo:
           - Devil_Flame_Manteau_TW # 480154
           - Rutilus_Stick_OS # 26151
@@ -31985,7 +31985,7 @@ Body:
       bonus2 bSkillCooldown,"WL_HELLINFERNO",1000;
       bonus2 bSkillCooldown,"WL_CRIMSONROCK",1000;
       }
-  - Combos: # å¿µï¿½??é¢¨ï¿½?????ï¿½?
+  - Combos: # å¿µï¿½??é¢¨ï¿½?????ï¿??
       - Combo:
           - MD_Set2_Hood # 480242
           - Ceila_Card # 4568
@@ -31993,7 +31993,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_GARMENT);
       bonus2 bMagicAtkEle,Ele_Wind,10+(.@r/2)*3;
       if(.@r >= 12){bonus5 bAutoSpell,"SA_VIOLENTGALE",3,50,BF_MAGIC,0;}
-  - Combos: # å¿µï¿½??é¢¨ï¿½?????ï¿½?
+  - Combos: # å¿µï¿½??é¢¨ï¿½?????ï¿??
       - Combo:
           - MD_Set2_Hood # 480242
           - Katrinn_Card # 4366
@@ -32001,7 +32001,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus2 bMagicAtkEle,Ele_Ghost,10+(.@r/2)*3;
       if(.@r >= 12){bonus2 bMagicAddSize,Size_All,15;}
-  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?ï¿½ï¿½????????ï¿½?
+  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?ï¿½ï¿½????????ï¿??
       - Combo:
           - Pisces_Manteau_J # 480242
           - Ep172_Bh_Staff # 640005
@@ -32012,7 +32012,7 @@ Body:
       bonus2 bSkillAtk,"WL_EARTHSTRAIN",(.@r/2)*10;
       bonus2 bSkillAtk,"WL_JACKFROST",(.@r/2)*10;
       if(.@r >= 13){bonus2 bSkillCooldown,"WL_EARTHSTRAIN",3000;bonus2 bSkillCooldown,"WL_JACKFROST",3000;}      
-  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?ï¿½ï¿½????????ï¿½?
+  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?ï¿½ï¿½????????ï¿??
       - Combo:
           - Pisces_Manteau_J # 480242
           - Ep172_1h_Book2 # 540005
@@ -32024,9 +32024,9 @@ Body:
       bonus2 bSkillAtk,"MG_LIGHTNINGBOLT",.@r*10;
       bonus2 bSkillAtk,"MG_COLDBOLT",.@r*10;
       if(.@r >= 13){bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",5,70,BF_WEAPON,1;}
-  - Combos: # ï¿½?ï¿½??????ï¿½LTï¿½?
+  - Combos: # ï¿??ï¿???????ï¿½LTï¿??
       - Combo:
-          - Temporal_Boots_LT_TW    # 470183
+          - Temporal_Boots_TW_LT    # 470183
           - Temporal_Cape_TW_LT    # 480312
     Script: |
       .@r = getequiprefinerycnt(EQI_GARMENT)+getequiprefinerycnt(EQI_SHOES);
@@ -32046,7 +32046,7 @@ Body:
          if (readparam(bLuk)>=108)
              bonus bCritAtkRate,20;
       }
-  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?????ï¿½?
+  - Combos: # ??ï¿½ï¿½????ï¿½ï¿½?????ï¿??
       - Combo:
           - Manteau_Of_Guardsman2    # 480291
           - Great_Hero_Boots    # 22238
@@ -32066,15 +32066,15 @@ Body:
       }
   - Combos:
       - Combo:
-          - Zombie_Slaughter_Card   # 4435      ï¿½?æ®ºï¿½??ï¿½???ï¿½ï¿½??
-          - Corruption_Boots        # 470129    å¢®ï¿½?ï¿½ï¿½????ï¿½ï¿½??ï¿½????
+          - Zombie_Slaughter_Card   # 4435      ï¿??æ®ºï¿½??ï¿????ï¿½ï¿½??
+          - Corruption_Boots        # 470129    å¢®ï¿½?ï¿½ï¿½????ï¿½ï¿½??ï¿?????
     Script: |
       bonus bMatkRate,5;
       bonus2 bMagicAddEle,Ele_All,5;
   - Combos:
       - Combo:
-          - Fallen_Bishop_Card      # 4441      å¢®ï¿½?ï¿½å¤§ï¿½?ï¿½???ï¿½ï¿½??
-          - Corruption_Boots        # 470129    å¢®ï¿½?ï¿½ï¿½????ï¿½ï¿½??ï¿½????
+          - Fallen_Bishop_Card      # 4441      å¢®ï¿½?ï¿½å¤§ï¿??ï¿????ï¿½ï¿½??
+          - Corruption_Boots        # 470129    å¢®ï¿½?ï¿½ï¿½????ï¿½ï¿½??ï¿?????
     Script: |
       bonus bSMatk,10;
       bonus2 bMagicAddEle,Ele_All,10;
@@ -32083,7 +32083,7 @@ Body:
   - Combos:
       - Combo:
           - Emerald_Ring            # 28573     ç¿¡ï¿½????????
-          - EC_Boots_TW             # 470098    ç¿¡ï¿½?????ï¿½???ï¿½ï¿½?ï¿½ï¿½??
+          - EC_Boots_TW             # 470098    ç¿¡ï¿½?????ï¿????ï¿½ï¿½?ï¿½ï¿½??
     Script: |
       bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-1000;
       bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
@@ -32091,7 +32091,7 @@ Body:
   - Combos:
       - Combo:
           - Emerald_Earring_TW      # 28536     ç¿¡ï¿½????ï¿½ï¿½??
-          - EC_Boots_TW             # 470098    ç¿¡ï¿½?????ï¿½???ï¿½ï¿½?ï¿½ï¿½??
+          - EC_Boots_TW             # 470098    ç¿¡ï¿½?????ï¿????ï¿½ï¿½?ï¿½ï¿½??
     Script: |
       bonus2 bSkillCooldown,"CG_ARROWVULCAN",-700;
       bonus2 bSkillAtk,"CG_ARROWVULCAN",20;
@@ -32099,7 +32099,7 @@ Body:
   - Combos:
       - Combo:
           - CannonConverter_TW      # 32259     ???è¾²ï¿½?ï¿½ï¿½?????
-          - Scrap_Remodel_Shoes_TW  # 470120    ï¿½?æ¢°ï¿½??????????ï¿½ï¿½?????
+          - Scrap_Remodel_Shoes_TW  # 470120    ï¿??æ¢°ï¿½??????????ï¿½ï¿½?????
     Script: |
       bonus bDelayrate,-8;
       bonus2 bSkillAtk,"NC_ARMSCANNON",20;
@@ -32109,7 +32109,7 @@ Body:
   - Combos:
       - Combo:
           - Waste_Stove_Card        # 4332      å»¢ï¿½?ï¿½ï¿½???????ï¿½ï¿½??
-          - Scrap_Remodel_Shoes_TW  # 470120    ï¿½?æ¢°ï¿½??????????ï¿½ï¿½?????
+          - Scrap_Remodel_Shoes_TW  # 470120    ï¿??æ¢°ï¿½??????????ï¿½ï¿½?????
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus bBaseAtk,50;
@@ -32122,7 +32122,7 @@ Body:
   - Combos:
       - Combo:
           - Rsx_0806_Card           # 4342      RSX-0806??ï¿½ï¿½??
-          - Scrap_Remodel_Shoes_TW  # 470120    ï¿½?æ¢°ï¿½??????????ï¿½ï¿½?????
+          - Scrap_Remodel_Shoes_TW  # 470120    ï¿??æ¢°ï¿½??????????ï¿½ï¿½?????
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus bBaseAtk,100;
@@ -32135,7 +32135,7 @@ Body:
   - Combos:
       - Combo:
           - Fake_Alloy_Pot          # 460030    ä»¿ï¿½?????????????ï¿½ï¿½??
-          - Scrap_Remodel_Shoes_TW  # 470120    ï¿½?æ¢°ï¿½??????????ï¿½ï¿½?????
+          - Scrap_Remodel_Shoes_TW  # 470120    ï¿??æ¢°ï¿½??????????ï¿½ï¿½?????
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_L)+getequiprefinerycnt(EQI_SHOES);
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist) {
@@ -32151,8 +32151,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Lapine_Shield           # 2198      ï¿½?è­·ç²¾???ï¿½????
-          - Lapine_Pray_Shoes       # 470086    ï¿½?è­·ç²¾???ï¿½?ç¦±ï¿½?????
+          - Lapine_Shield           # 2198      ï¿??è­·ç²¾???ï¿?????
+          - Lapine_Pray_Shoes       # 470086    ï¿??è­·ç²¾???ï¿??ç¦±ï¿½?????
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
       bonus bDelayrate,-3;
@@ -32160,21 +32160,21 @@ Body:
       bonus bFixedCast,-100*(.@r/2);
   - Combos:
       - Combo:
-          - KarduiEar               # 5966      ??ï¿½ï¿½??ï¿½?ï¿½????
-          - Lapine_Pray_Shoes       # 470086    ï¿½?è­·ç²¾???ï¿½?ç¦±ï¿½?????
+          - KarduiEar               # 5966      ??ï¿½ï¿½??ï¿??ï¿?????
+          - Lapine_Pray_Shoes       # 470086    ï¿??è­·ç²¾???ï¿??ç¦±ï¿½?????
     Script: |
       bonus bMatk,30;
       bonus2 bSkillCooldown,"WL_COMET",-20000;
   - Combos:
       - Combo:
-          - Tree_Of_Sprout_JP       # 19299     ï¿½???ï¿½å«©???
-          - Lapine_Pray_Shoes       # 470086    ï¿½?è­·ç²¾???ï¿½?ç¦±ï¿½?????
+          - Tree_Of_Sprout_JP       # 19299     ï¿????ï¿½å«©???
+          - Lapine_Pray_Shoes       # 470086    ï¿??è­·ç²¾???ï¿??ç¦±ï¿½?????
     Script: |  
       autobonus "{ bonus bInt,150; bonus2 bSPLossRate,100,1000; }",10,1000,BF_MAGIC;
   - Combos:
       - Combo:
           - Nidhogg_Shadow_Card     # 4456      å°¼å¾·?????ï¿½å¹»å½±ï¿½??
-          - Lapine_Pray_Shoes       # 470086    ï¿½?è­·ç²¾???ï¿½?ç¦±ï¿½?????
+          - Lapine_Pray_Shoes       # 470086    ï¿??è­·ç²¾???ï¿??ç¦±ï¿½?????
     Script: |
       bonus2 bMagicAddClass,Class_Boss,40;
       bonus2 bSubEle,Ele_All,20;
@@ -32202,11 +32202,11 @@ Body:
       bonus bFixedCast, -50*(.@crt/18);
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_LT  # 480399    ï¿½?é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½?-LT
-          - Rutilus_Stick_OS        # 26151     ï¿½?ï¿½?é¬¼ï¿½?????-OS
+          - Devil_Flame_Manteau_LT  # 480399    ï¿??é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿??-LT
+          - Rutilus_Stick_OS        # 26151     ï¿??ï¿??é¬¼ï¿½?????-OS
       - Combo:
-          - Rutilus_Stick_AD        # 550075    ï¿½?ï¿½?é¬¼ï¿½?????-OSAD
-          - Devil_Flame_Manteau_LT  # 480399    ï¿½?é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½?-LT
+          - Rutilus_Stick_AD        # 550075    ï¿??ï¿??é¬¼ï¿½?????-OSAD
+          - Devil_Flame_Manteau_LT  # 480399    ï¿??é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿??-LT
     Script: |
       .@r = getrefine();
       .@r_weapon = getequiprefinerycnt(EQI_HAND_R);
@@ -32220,13 +32220,13 @@ Body:
       }
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_TW  # 480154    ï¿½?é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½?
+          - Devil_Flame_Manteau_TW  # 480154    ï¿??é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿??
           - Evil_Purgatory_Ring     # 490472    ??ï¿½ï¿½?ï¿½ï¿½????????
     Script: |
       bonus2 bMagicAtkEle,ELE_ALL,8;
   - Combos:
       - Combo:
-          - Devil_Flame_Manteau_LT  # 480399    ï¿½?é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½?-LT
+          - Devil_Flame_Manteau_LT  # 480399    ï¿??é¬¼ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿??-LT
           - Evil_Purgatory_Ring     # 490472    ??ï¿½ï¿½?ï¿½ï¿½????????
     Script: |
       .@g = getenchantgrade();
