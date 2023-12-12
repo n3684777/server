@@ -4368,8 +4368,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bNoMagicDamage,100;
-      bonus bUseSPrate,100;
+      bonus bMdef,100;
   - Id: 4129
     AegisName: Baphomet__Card
     Name: 小巴風特卡片
