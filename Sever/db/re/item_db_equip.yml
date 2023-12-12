@@ -184273,7 +184273,7 @@ Body:
       bonus bStr,2; bonus bDex,2; if(BaseLevel>98) { bonus bStr,-5; bonus bDex,-5; }
   - Id: 900000
     AegisName: Boyboy_Accessory
-    Name: B大的象徵
+    Name: 傳奇的B大
     Buy: 0
     Weight: 5
     Defense: 5
@@ -184290,8 +184290,12 @@ Body:
       .@ra = 5;
       .@va = 5;
       .@ms = 500;
+      .@magicgain = 555;
       .@var = 25;
+      bonus bNoCastCancel2; 
       if(.@allrefine < 55){
+      bonus bMagicHPGainValue,.@magicgain;
+      bonus bMagicSPGainValue,.@magicgain;
       bonus bAllStats,.@va;
       bonus bAllTraitStats,.@va;
       bonus bMaxHPrate,.@ra;
@@ -184340,6 +184344,8 @@ Body:
       bonus bLongWeaponDamageReturn,.@ra;
       }
       if(.@allrefine >= 55){
+      bonus bMagicHPGainValue,.@magicgain*2;
+      bonus bMagicSPGainValue,.@magicgain*2;
       bonus bAllStats,2*.@va;
       bonus bAllTraitStats,2*.@va;
       bonus bMaxHPrate,2*.@ra;
