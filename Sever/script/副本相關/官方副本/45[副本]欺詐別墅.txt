@@ -207,8 +207,8 @@ Onkill_dead:
 			mapannounce 'map$, "右邊通道處傳來一陣微弱呼聲: .靈魂禁錮...無法解脫....",bc_map,"0x00ff99";		
 			sleep 3000;
 			mapannounce 'map$, "[ 提示 ] 請同時解放左右兩個通道盡頭的[ 被禁錮的一半靈魂 ]",bc_map,"0x00ff99";			
-			enablenpc instance_npcname("禁錮的一半靈魂#1(普通)");
-			enablenpc instance_npcname("禁錮的一半靈魂#2(普通)");
+			enablenpc instance_npcname("禁錮的一半靈魂(普通)#1");
+			enablenpc instance_npcname("禁錮的一半靈魂(普通)#2");
 				break;
 			case 1:
 				mapannounce 'map$, "前方通道已打開",bc_map,"0x00ff99";
@@ -278,7 +278,7 @@ OnMiniboss:
 	}	
 		'minibossskill = 1;
 		enablenpc instance_npcname("#Fraudwarp4(普通)");
-		enablenpc instance_npcname("扭曲之神菲依婭#1(普通)");
+		enablenpc instance_npcname("扭曲之神菲依婭(普通)#1");
 		end;
 
 OnTimer3000:
@@ -412,7 +412,7 @@ OnInstanceInit:
 	end;	
 }
 
-1@advs,87,121,0	script	餐桌#1(普通)	844,{
+1@advs,87,121,0	script	餐桌(普通)#1	844,{
 	progressbar "ffff00",3;
 		.@count = atoi(strnpcinfo(2));	
 	if(getd("'eating"+.@count) == 1) end;
@@ -473,13 +473,13 @@ OnInstanceInit:
 	end;
 }
 
-1@advs,100,121,0	duplicate(餐桌#1(普通))	餐桌#2(普通)	844
-1@advs,147,121,0	duplicate(餐桌#1(普通))	餐桌#3(普通)	844
-1@advs,161,121,0	duplicate(餐桌#1(普通))	餐桌#4(普通)	844
-1@advs,87,162,0	duplicate(餐桌#1(普通))	餐桌#5(普通)	844
-1@advs,100,162,0	duplicate(餐桌#1(普通))	餐桌#6(普通)	844
-1@advs,147,162,0	duplicate(餐桌#1(普通))	餐桌#7(普通)	844
-1@advs,161,162,0	duplicate(餐桌#1(普通))	餐桌#8(普通)	844
+1@advs,100,121,0	duplicate(餐桌(普通)#1)	餐桌(普通)#2	844
+1@advs,147,121,0	duplicate(餐桌(普通)#1)	餐桌(普通)#3	844
+1@advs,161,121,0	duplicate(餐桌(普通)#1)	餐桌(普通)#4	844
+1@advs,87,162,0	duplicate(餐桌(普通)#1)	餐桌(普通)#5	844
+1@advs,100,162,0	duplicate(餐桌(普通)#1)	餐桌(普通)#6	844
+1@advs,147,162,0	duplicate(餐桌(普通)#1)	餐桌(普通)#7	844
+1@advs,161,162,0	duplicate(餐桌(普通)#1)	餐桌(普通)#8	844
 
 1@advs,124,234,0	script	#死神0(普通)	844,3,3,{
 end;
@@ -503,17 +503,17 @@ OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;			
 }
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神1(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神2(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神3(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神4(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神5(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神6(普通)	844,3,3
-1@advs,124,234,0	duplicate(#死神0(普通))	#死神7(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)1	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)2	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)3	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)4	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)5	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)6	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神(普通)7	844,3,3
 
 
 
-1@advs,68,182,0	script	禁錮的一半靈魂#1(普通)	4_NFWISP,{
+1@advs,68,182,0	script	禁錮的一半靈魂(普通)#1	4_NFWISP,{
 	mes "[禁錮的一半靈魂]";
 	mes "我的一半靈魂在另外一邊.需要同時共鳴感應.我們才能解除禁錮";
 	next;
@@ -535,10 +535,10 @@ OnTimer3000:
 		enablenpc instance_npcname("#Fraudwarp1(普通)");
 		donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob1";	
 				
-				enablenpc instance_npcname("餐桌#2(普通)");
-				enablenpc instance_npcname("餐桌#3(普通)");
-				enablenpc instance_npcname("餐桌#6(普通)");
-				enablenpc instance_npcname("餐桌#7(普通)");
+				enablenpc instance_npcname("餐桌(普通)#2");
+				enablenpc instance_npcname("餐桌(普通)#3");
+				enablenpc instance_npcname("餐桌(普通)#6");
+				enablenpc instance_npcname("餐桌(普通)#7");
 
 		stopnpctimer;
 		end;
@@ -557,7 +557,7 @@ OnInstanceInit:
 	end;
 }
 
-1@advs,180,182,0	script	禁錮的一半靈魂#2(普通)	4_NFWISP,{
+1@advs,180,182,0	script	禁錮的一半靈魂(普通)#2	4_NFWISP,{
 	mes "[禁錮的一半靈魂]";
 	mes "我的一半靈魂在另外一邊.需要同時共鳴感應.我們才能解除禁錮";
 	next;
@@ -578,14 +578,14 @@ OnTimer3000:
 		mapannounce 'map$,"[禁錮靈魂] :感謝你們.我已為你們打開通往前方的路!",bc_map;
 		enablenpc instance_npcname("#Fraudwarp1(普通)");
 		donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob1";	
-				enablenpc instance_npcname("餐桌#1(普通)");
-				enablenpc instance_npcname("餐桌#2(普通)");
-				enablenpc instance_npcname("餐桌#3(普通)");
-				enablenpc instance_npcname("餐桌#4(普通)");
-				enablenpc instance_npcname("餐桌#5(普通)");
-				enablenpc instance_npcname("餐桌#6(普通)");
-				enablenpc instance_npcname("餐桌#7(普通)");
-				enablenpc instance_npcname("餐桌#8(普通)");
+				enablenpc instance_npcname("餐桌(普通)#1");
+				enablenpc instance_npcname("餐桌(普通)#2");
+				enablenpc instance_npcname("餐桌(普通)#3");
+				enablenpc instance_npcname("餐桌(普通)#4");
+				enablenpc instance_npcname("餐桌(普通)#5");
+				enablenpc instance_npcname("餐桌(普通)#6");
+				enablenpc instance_npcname("餐桌(普通)#7");
+				enablenpc instance_npcname("餐桌(普通)#8");
 		stopnpctimer;
 		end;
 		}
@@ -678,10 +678,10 @@ OnTouch:
 }
 
 
-1@advs,80,101,4	duplicate(#死亡陷阱0)	#死亡陷阱(普通)1	3029,2,2
-1@advs,85,101,4	duplicate(#死亡陷阱0)	#死亡陷阱(普通)2	3029,2,2
-1@advs,90,101,4	duplicate(#死亡陷阱0)	#死亡陷阱(普通)3	3029,2,2
-1@advs,95,101,4	duplicate(#死亡陷阱0)	#死亡陷阱(普通)4	3029,2,2
+1@advs,80,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)1	3029,2,2
+1@advs,85,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)2	3029,2,2
+1@advs,90,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)3	3029,2,2
+1@advs,95,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)4	3029,2,2
 1@advs,100,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)5	3029,2,2
 1@advs,105,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)6	3029,2,2
 1@advs,110,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)7	3029,2,2
@@ -698,7 +698,7 @@ OnTouch:
 1@advs,165,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)18	3029,2,2
 1@advs,170,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱(普通)19	3029,2,2
 
-1@advs,124,354,3	script	扭曲之神菲依婭#1(普通)	21315,{
+1@advs,124,354,3	script	扭曲之神菲依婭(普通)#1	21315,{
 	if('start_boss)end;
 	'start_boss = 1;
 	setunitdata getnpcid(0), UNPC_CLASS, 21315;
