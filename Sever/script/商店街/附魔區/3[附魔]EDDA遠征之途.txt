@@ -246,7 +246,7 @@ if (.@slot == 3){set .@slotcheck,4;}
 				mes "^ff0000"+getitemname(.@reqId1)+"或"+getitemname(.@reqId2)+"不足…^000000";
 				close3;
 			}else{
-				close3;
+				//close3;
 				message strcharinfo(0),"(裝備附魔中)～移動視為取消！";
 				specialeffect2 EF_MAPPILLAR;
 				progressbar "ffff00",5;
