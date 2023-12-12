@@ -93,7 +93,7 @@ S_EnchantArmor:
 	mes "^ff5555裝備及卡片不會消失^000000";
 	mes "你仍然想繼續附魔嗎？";
 	next;
-	if(select("痾…讓我考慮一下", "開始吧") == 1) {
+	if(select("開始吧","痾…讓我考慮一下") == 2) {
 		mes "[遠征之途附魔]";
 		mes "好吧，這我也不能怪你，省錢第一！你說是吧？";
 		mes "祝你有美好的一天！";
@@ -216,10 +216,10 @@ if (.@slot == 3){set .@slotcheck,4;}
 			mes "選擇的附魔屬性：^FF8800"+.@randnewstone$[.@i]+"^000000";
 			next;
 				if(select("確定:取消")==2) close3;
-			close3;
-			message strcharinfo(0),"(裝備附魔中)～移動視為取消！";
+			//close3;
+			//message strcharinfo(0),"(裝備附魔中)～移動視為取消！";
 			specialeffect2 EF_MAPPILLAR;
-			progressbar "ffff00",5;
+			//progressbar "ffff00",5;
 			delitem .@reqId,.@useamount;
 			
 				specialeffect2 EF_PHARMACY_OK;
@@ -247,9 +247,9 @@ if (.@slot == 3){set .@slotcheck,4;}
 				close3;
 			}else{
 				//close3;
-				message strcharinfo(0),"(裝備附魔中)～移動視為取消！";
+				//message strcharinfo(0),"(裝備附魔中)～移動視為取消！";
 				specialeffect2 EF_MAPPILLAR;
-				progressbar "ffff00",5;
+				//progressbar "ffff00",5;
 				delitem .@reqId1,.@useamount;
 				delitem .@reqId2,.@useamount;
 				
