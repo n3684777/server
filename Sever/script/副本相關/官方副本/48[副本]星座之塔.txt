@@ -477,10 +477,12 @@ OnTimer1000:
 					instance_warpall instance_mapname("2@ch_t"),101,72;
 					if(!'start_game)'start_game = 1;
 					end;
-				}
 				case 4:
 					instance_warpall instance_mapname("3@ch_t"),31,16;
 					end;
+				}
+				
+
 			}
 			else 
 				mes "Åý¶¤ªø¿ï¾Ü";
