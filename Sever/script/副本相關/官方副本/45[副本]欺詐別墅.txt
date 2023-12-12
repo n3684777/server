@@ -102,14 +102,14 @@ OnInit:
 		'mode1name$ = "困難難度";
 		 messagecolor "您選擇的是 "+'mode1name$+" !","F9F900",bc_self;
 	}
-	disablenpc instance_npcname("欺詐別墅難度#Choose");
-	donpcevent instance_npcname("#欺詐別墅設置總控制")+"::OnStart";
+	disablenpc instance_npcname("欺詐別墅難度#Choose(普通)");
+	donpcevent instance_npcname("#欺詐別墅設置總控制(普通)")+"::OnStart";
 	end;
 OnInstanceInit:
 	end;
 }
 
-function	script	F_cheat_mob	{
+function	script	F_cheat_mob(普通)	{
 		for(.@i=0;.@i<getarg(6);.@i++){
 			areamonster 'map$,getarg(0),getarg(1),getarg(2),getarg(3),getarg(4),getarg(5),1,instance_npcname(strnpcinfo(0))+"::Onkill_dead";
 			.@mobgid = $@mobid[0];
@@ -118,10 +118,10 @@ function	script	F_cheat_mob	{
 
 }	
 
-1@advs,123,101,0	warp	#Fraudwarp1	2,2,1@advs,123,108
+1@advs,123,101,0	warp	#Fraudwarp1(普通)	2,2,1@advs,123,108
 
 
-1@advs,123,208,0	script	#Fraudwarp2	45,2,2,{
+1@advs,123,208,0	script	#Fraudwarp2(普通)	45,2,2,{
 end;
 OnTouch:
 	switch(rand(2)){
@@ -134,65 +134,65 @@ OnTouch:
 
 
 
-1@advs,123,266,0	warp	#Fraudwarp3	2,2,1@advs,123,272
-1@advs,124,308,0	warp	#Fraudwarp4	2,2,1@advs,124,312
+1@advs,123,266,0	warp	#Fraudwarp3(普通)	2,2,1@advs,123,272
+1@advs,124,308,0	warp	#Fraudwarp4(普通)	2,2,1@advs,124,312
 
 
 //關鍵魔物事件總控臺
-1@advs,0,0,0	script	#cheat_monster_crt	-1,{
+1@advs,0,0,0	script	#cheat_monster_crt(普通)	-1,{
 	end;
 	
 OnEnableMob0:
 
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		87,11,160,68,
-		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+		"--ja--",21318,20,1,0,0,0,0;	
+	callfunc "F_cheat_mob(普通)",
 		87,11,160,68,
-		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",21319,20,1,0,0,0,0;	
 		
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		68,92,184,99,
-		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+		"--ja--",21318,10,1,0,0,0,0;	
+	callfunc "F_cheat_mob(普通)",
 		68,92,184,99,
-		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;			
+		"--ja--",21319,10,1,0,0,0,0;			
 
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		174,102,184,182,
-		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+		"--ja--",21318,10,1,0,0,0,0;	
+	callfunc "F_cheat_mob(普通)",
 		174,102,184,182,
-		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;
+		"--ja--",21319,10,1,0,0,0,0;
 
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		63,90,72,182,
-		"--ja--",('mode == 1)?21377:21318,10,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+		"--ja--",21318,10,1,0,0,0,0;	
+	callfunc "F_cheat_mob(普通)",
 		63,90,72,182,
-		"--ja--",('mode == 1)?21378:21319,10,1,0,0,0,0;
+		"--ja--",21319,10,1,0,0,0,0;
 	
 
 		end;
 	
 OnEnableMob1:
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		76,104,170,179,
 		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		76,104,170,179,
-		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",21319,20,1,0,0,0,0;	
 		end;
 
 	
 
 OnEnableMob2:
-	callfunc "F_cheat_mob",
+	callfunc "F_cheat_mob(普通)",
 		109,220,138,248,
-		"--ja--",('mode == 1)?21377:21318,20,1,0,0,0,0;	
-	callfunc "F_cheat_mob",
+		"--ja--",21318,20,1,0,0,0,0;	
+	callfunc "F_cheat_mob(普通)",
 		109,220,138,248,
-		"--ja--",('mode == 1)?21378:21319,20,1,0,0,0,0;	
+		"--ja--",21319,20,1,0,0,0,0;	
 		end;	
 
 		
@@ -207,24 +207,24 @@ Onkill_dead:
 			mapannounce 'map$, "右邊通道處傳來一陣微弱呼聲: .靈魂禁錮...無法解脫....",bc_map,"0x00ff99";		
 			sleep 3000;
 			mapannounce 'map$, "[ 提示 ] 請同時解放左右兩個通道盡頭的[ 被禁錮的一半靈魂 ]",bc_map,"0x00ff99";			
-			enablenpc instance_npcname("禁錮的一半靈魂#1");
-			enablenpc instance_npcname("禁錮的一半靈魂#2");
+			enablenpc instance_npcname("禁錮的一半靈魂#1(普通)");
+			enablenpc instance_npcname("禁錮的一半靈魂#2(普通)");
 				break;
 			case 1:
 				mapannounce 'map$, "前方通道已打開",bc_map,"0x00ff99";
-				enablenpc instance_npcname("#Fraudwarp2");
-				donpcevent instance_npcname("#cheat_monster_crt")+"::OnEnableMob2";	
+				enablenpc instance_npcname("#Fraudwarp2(普通)");
+				donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob2";	
 				
 				for(.@i = 0 ; .@i<8-'eat_succ ;.@i++){
-					enablenpc instance_npcname("#死神"+.@i);
-					donpcevent instance_npcname("#死神"+.@i)+"::OnEnable";	
+					enablenpc instance_npcname("#死神(普通)"+.@i);
+					donpcevent instance_npcname("#死神(普通)"+.@i)+"::OnEnable";	
 				}
 				
 				
 				break;
 			case 2:
-				enablenpc instance_npcname("#Fraudwarp3");
-				enablenpc instance_npcname("舒朗#cheat");
+				enablenpc instance_npcname("#Fraudwarp3(普通)");
+				enablenpc instance_npcname("舒朗#cheat(普通)");
 				break;					
 		}
 
@@ -236,24 +236,24 @@ end;
 
 }
 
-1@advs,0,0,0	script	#minibosstalk	-1,{
+1@advs,0,0,0	script	#minibosstalk(普通)	-1,{
 end;
 OnTalk:
-	npctalk "舒朗: 不會讓你們向前了。",instance_npcname("舒朗#cheat");
+	npctalk "舒朗: 不會讓你們向前了。",instance_npcname("舒朗#cheat(普通)");
 	end;
 
 }
 
-1@advs,124,294,3	script	舒朗#cheat	21360,{
+1@advs,124,294,3	script	舒朗#cheat(普通)	21360,{
 	if(getcharid(0)!= getpartyleader(getcharid(1),2)){
 		end;
 	}
 	if('start_miniboss)end;
 	'start_miniboss = 1;
-	donpcevent instance_npcname("#minibosstalk")+"::OnTalk";
+	donpcevent instance_npcname("#minibosstalk(普通)")+"::OnTalk";
 	sleep2 1000;
 	hideonnpc instance_npcname(strnpcinfo(0));	
-	monster 'map$,124,294,"--ja--",('mode == 1)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
+	monster 'map$,124,294,"--ja--",21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
 	.@mobgid = $@mobid[0];
 	if('mode==0)
 	{
@@ -277,8 +277,8 @@ OnMiniboss:
 	
 	}	
 		'minibossskill = 1;
-		enablenpc instance_npcname("#Fraudwarp4");
-		enablenpc instance_npcname("扭曲之神菲依婭#1");
+		enablenpc instance_npcname("#Fraudwarp4(普通)");
+		enablenpc instance_npcname("扭曲之神菲依婭#1(普通)");
 		end;
 
 OnTimer3000:
@@ -412,7 +412,7 @@ OnInstanceInit:
 	end;	
 }
 
-1@advs,87,121,0	script	餐桌#1	844,{
+1@advs,87,121,0	script	餐桌#1(普通)	844,{
 	progressbar "ffff00",3;
 		.@count = atoi(strnpcinfo(2));	
 	if(getd("'eating"+.@count) == 1) end;
@@ -473,15 +473,15 @@ OnInstanceInit:
 	end;
 }
 
-1@advs,100,121,0	duplicate(餐桌#1)	餐桌#2	844
-1@advs,147,121,0	duplicate(餐桌#1)	餐桌#3	844
-1@advs,161,121,0	duplicate(餐桌#1)	餐桌#4	844
-1@advs,87,162,0	duplicate(餐桌#1)	餐桌#5	844
-1@advs,100,162,0	duplicate(餐桌#1)	餐桌#6	844
-1@advs,147,162,0	duplicate(餐桌#1)	餐桌#7	844
-1@advs,161,162,0	duplicate(餐桌#1)	餐桌#8	844
+1@advs,100,121,0	duplicate(餐桌#1(普通))	餐桌#2(普通)	844
+1@advs,147,121,0	duplicate(餐桌#1(普通))	餐桌#3(普通)	844
+1@advs,161,121,0	duplicate(餐桌#1(普通))	餐桌#4(普通)	844
+1@advs,87,162,0	duplicate(餐桌#1(普通))	餐桌#5(普通)	844
+1@advs,100,162,0	duplicate(餐桌#1(普通))	餐桌#6(普通)	844
+1@advs,147,162,0	duplicate(餐桌#1(普通))	餐桌#7(普通)	844
+1@advs,161,162,0	duplicate(餐桌#1(普通))	餐桌#8(普通)	844
 
-1@advs,124,234,0	script	#死神0	844,3,3,{
+1@advs,124,234,0	script	#死神0(普通)	844,3,3,{
 end;
 OnTouch:
 		if(!getstatus(SC_CURSE)){
@@ -503,17 +503,17 @@ OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;			
 }
-1@advs,124,234,0	duplicate(#死神0)	#死神1	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神2	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神3	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神4	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神5	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神6	844,3,3
-1@advs,124,234,0	duplicate(#死神0)	#死神7	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神1(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神2(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神3(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神4(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神5(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神6(普通)	844,3,3
+1@advs,124,234,0	duplicate(#死神0(普通))	#死神7(普通)	844,3,3
 
 
 
-1@advs,68,182,0	script	禁錮的一半靈魂#1	4_NFWISP,{
+1@advs,68,182,0	script	禁錮的一半靈魂#1(普通)	4_NFWISP,{
 	mes "[禁錮的一半靈魂]";
 	mes "我的一半靈魂在另外一邊.需要同時共鳴感應.我們才能解除禁錮";
 	next;
@@ -532,13 +532,13 @@ OnTimer3000:
 		if('soul1 == 1 && 'soul2 == 1){
 		'mapann = 1;
 		mapannounce 'map$,"[禁錮靈魂] :感謝你們.我已為你們打開通往前方的路!",bc_map;
-		enablenpc instance_npcname("#Fraudwarp1");
-		donpcevent instance_npcname("#cheat_monster_crt")+"::OnEnableMob1";	
+		enablenpc instance_npcname("#Fraudwarp1(普通)");
+		donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob1";	
 				
-				enablenpc instance_npcname("餐桌#2");
-				enablenpc instance_npcname("餐桌#3");
-				enablenpc instance_npcname("餐桌#6");
-				enablenpc instance_npcname("餐桌#7");
+				enablenpc instance_npcname("餐桌#2(普通)");
+				enablenpc instance_npcname("餐桌#3(普通)");
+				enablenpc instance_npcname("餐桌#6(普通)");
+				enablenpc instance_npcname("餐桌#7(普通)");
 
 		stopnpctimer;
 		end;
@@ -557,7 +557,7 @@ OnInstanceInit:
 	end;
 }
 
-1@advs,180,182,0	script	禁錮的一半靈魂#2	4_NFWISP,{
+1@advs,180,182,0	script	禁錮的一半靈魂#2(普通)	4_NFWISP,{
 	mes "[禁錮的一半靈魂]";
 	mes "我的一半靈魂在另外一邊.需要同時共鳴感應.我們才能解除禁錮";
 	next;
@@ -576,16 +576,16 @@ OnTimer3000:
 		if('soul1 == 1 && 'soul2 == 1){
 		'mapann = 1;
 		mapannounce 'map$,"[禁錮靈魂] :感謝你們.我已為你們打開通往前方的路!",bc_map;
-		enablenpc instance_npcname("#Fraudwarp1");
-		donpcevent instance_npcname("#cheat_monster_crt")+"::OnEnableMob1";	
-				enablenpc instance_npcname("餐桌#1");
-				enablenpc instance_npcname("餐桌#2");
-				enablenpc instance_npcname("餐桌#3");
-				enablenpc instance_npcname("餐桌#4");
-				enablenpc instance_npcname("餐桌#5");
-				enablenpc instance_npcname("餐桌#6");
-				enablenpc instance_npcname("餐桌#7");
-				enablenpc instance_npcname("餐桌#8");
+		enablenpc instance_npcname("#Fraudwarp1(普通)");
+		donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob1";	
+				enablenpc instance_npcname("餐桌#1(普通)");
+				enablenpc instance_npcname("餐桌#2(普通)");
+				enablenpc instance_npcname("餐桌#3(普通)");
+				enablenpc instance_npcname("餐桌#4(普通)");
+				enablenpc instance_npcname("餐桌#5(普通)");
+				enablenpc instance_npcname("餐桌#6(普通)");
+				enablenpc instance_npcname("餐桌#7(普通)");
+				enablenpc instance_npcname("餐桌#8(普通)");
 		stopnpctimer;
 		end;
 		}
@@ -606,18 +606,18 @@ OnInstanceInit:
 
 
 
-1@advs,75,101,4	script	#死亡陷阱0	3029,2,2,{
+1@advs,75,101,4	script	#死亡陷阱0(普通)	3029,2,2,{
 end;
 OnEnable:
 		setunitdata getnpcid(0), UNPC_CLASS, 3029;
 OnWalkenevt1:
 		npcspeed rand(100,150);
-		.@Bubbles=atoi(replacestr(strnpcinfo(0),"#死亡陷阱",""));
+		.@Bubbles=atoi(replacestr(strnpcinfo(0),"#死亡陷阱(普通)",""));
 		monsterwalk getnpcid(0),75+5*(.@Bubbles),89,instance_npcname(strnpcinfo(0))+"::OnWalkenevt2";	
 		end;
 OnWalkenevt2:
 		npcspeed rand(100,150);
-		.@Bubbles=atoi(replacestr(strnpcinfo(0),"#死亡陷阱",""));
+		.@Bubbles=atoi(replacestr(strnpcinfo(0),"#死亡陷阱(普通)",""));
 		monsterwalk getnpcid(0),75+5*(.@Bubbles),101,instance_npcname(strnpcinfo(0))+"::OnWalkenevt1";	
 		end;
 OnTouch:
@@ -678,27 +678,27 @@ OnTouch:
 }
 
 
-1@advs,80,101,4	duplicate(#死亡陷阱0)	#死亡陷阱1	3029,2,2
-1@advs,85,101,4	duplicate(#死亡陷阱0)	#死亡陷阱2	3029,2,2
-1@advs,90,101,4	duplicate(#死亡陷阱0)	#死亡陷阱3	3029,2,2
-1@advs,95,101,4	duplicate(#死亡陷阱0)	#死亡陷阱4	3029,2,2
-1@advs,100,101,4	duplicate(#死亡陷阱0)	#死亡陷阱5	3029,2,2
-1@advs,105,101,4	duplicate(#死亡陷阱0)	#死亡陷阱6	3029,2,2
-1@advs,110,101,4	duplicate(#死亡陷阱0)	#死亡陷阱7	3029,2,2
-1@advs,115,101,4	duplicate(#死亡陷阱0)	#死亡陷阱8	3029,2,2
-1@advs,120,101,4	duplicate(#死亡陷阱0)	#死亡陷阱9	139
-1@advs,125,101,4	duplicate(#死亡陷阱0)	#死亡陷阱10	139
-1@advs,130,101,3	duplicate(#死亡陷阱0)	#死亡陷阱11	3029,2,2
-1@advs,135,101,3	duplicate(#死亡陷阱0)	#死亡陷阱12	3029,2,2
-1@advs,140,101,3	duplicate(#死亡陷阱0)	#死亡陷阱13	3029,2,2
-1@advs,145,101,3	duplicate(#死亡陷阱0)	#死亡陷阱14	3029,2,2
-1@advs,150,101,3	duplicate(#死亡陷阱0)	#死亡陷阱15	3029,2,2
-1@advs,155,101,3	duplicate(#死亡陷阱0)	#死亡陷阱16	3029,2,2
-1@advs,160,101,3	duplicate(#死亡陷阱0)	#死亡陷阱17	3029,2,2
-1@advs,165,101,3	duplicate(#死亡陷阱0)	#死亡陷阱18	3029,2,2
-1@advs,170,101,3	duplicate(#死亡陷阱0)	#死亡陷阱19	3029,2,2
+1@advs,80,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱1(普通)	3029,2,2
+1@advs,85,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱2(普通)	3029,2,2
+1@advs,90,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱3(普通)	3029,2,2
+1@advs,95,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱4(普通)	3029,2,2
+1@advs,100,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱5(普通)	3029,2,2
+1@advs,105,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱6(普通)	3029,2,2
+1@advs,110,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱7(普通)	3029,2,2
+1@advs,115,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱8(普通)	3029,2,2
+1@advs,120,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱9(普通)	139
+1@advs,125,101,4	duplicate(#死亡陷阱0(普通))	#死亡陷阱10(普通)	139
+1@advs,130,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱11(普通)	3029,2,2
+1@advs,135,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱12(普通)	3029,2,2
+1@advs,140,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱13(普通)	3029,2,2
+1@advs,145,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱14(普通)	3029,2,2
+1@advs,150,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱15(普通)	3029,2,2
+1@advs,155,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱16(普通)	3029,2,2
+1@advs,160,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱17(普通)	3029,2,2
+1@advs,165,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱18(普通)	3029,2,2
+1@advs,170,101,3	duplicate(#死亡陷阱0(普通))	#死亡陷阱19(普通)	3029,2,2
 
-1@advs,124,354,3	script	扭曲之神菲依婭#1	21315,{
+1@advs,124,354,3	script	扭曲之神菲依婭#1(普通)	21315,{
 	if('start_boss)end;
 	'start_boss = 1;
 	setunitdata getnpcid(0), UNPC_CLASS, 21315;
@@ -716,19 +716,19 @@ OnTouch:
 	sleep2 1000;
 	setunitdata getnpcid(0),UNPC_AURA,0;
 	hideonnpc  instance_npcname(strnpcinfo(0));
-	monster 'map$,124,338,"--ja--",('mode == 1)?21360:21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
+	monster 'map$,124,338,"--ja--",21316,1,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
 			.@mobgid = $@mobid[0];
 
-	monster 'map$, 124,338,"--ja--", ('mode == 1)?21361:21317, 1, instance_npcname(strnpcinfo(0))+ "::OnBossDead";
+	monster 'map$, 124,338,"--ja--",21317, 1, instance_npcname(strnpcinfo(0))+ "::OnBossDead";
 	'Cheat_FinalBoss = $@mobid[0];	
 
-	initnpctimer instance_npcname("#cheat_Skill");
+	initnpctimer instance_npcname("#cheat_Skill(普通)");
 	setunitdata 'Cheat_FinalBoss,UMOB_AURA,1068;
 	'movewarp = 1; 
-	enablenpc instance_npcname("#移動陷阱1");
-	enablenpc instance_npcname("#移動陷阱2");
-	donpcevent instance_npcname("#移動陷阱1")+"::OnEnable";
-	donpcevent instance_npcname("#移動陷阱2")+"::OnEnable";
+	enablenpc instance_npcname("#移動陷阱1(普通)");
+	enablenpc instance_npcname("#移動陷阱2(普通)");
+	donpcevent instance_npcname("#移動陷阱1(普通)")+"::OnEnable";
+	donpcevent instance_npcname("#移動陷阱2(普通)")+"::OnEnable";
 	end;
 OnMiniboss:
 	end;
@@ -736,8 +736,8 @@ OnBossDead:
 	killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnMiniboss";
 	'movewarp = 0;
 	'Win = 1;
-	disablenpc instance_npcname("#移動陷阱1");
-	disablenpc instance_npcname("#移動陷阱2");
+	disablenpc instance_npcname("#移動陷阱1(普通)");
+	disablenpc instance_npcname("#移動陷阱2(普通)");
 	hideoffnpc  instance_npcname(strnpcinfo(0));
 	npctalk "菲依婭: 我是不會消失的~~啊~這..不可能!我可是扭曲之神菲依婭";
 	sleep 5000;
@@ -756,14 +756,14 @@ OnBossDead:
 	
 	}	
 	hideonnpc  instance_npcname(strnpcinfo(0));
-	enablenpc instance_npcname("出口#leave");	
+	enablenpc instance_npcname("出口#leave(普通)");	
 	end;
 OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;	
 }
 
-1@advs,124,338,3	script	#移動陷阱1	20562,3,3,{
+1@advs,124,338,3	script	#移動陷阱1(普通)	20562,3,3,{
 end;
 OnEnable:
 	if(!'movewarp)end;
@@ -827,7 +827,7 @@ OnInstanceInit:
 }
 
 
-1@advs,124,338,3	script	#移動陷阱2	20562,3,3,{
+1@advs,124,338,3	script	#移動陷阱2(普通)	20562,3,3,{
 end;
 OnEnable:
 	if(!'movewarp)end;
@@ -892,7 +892,7 @@ OnInstanceInit:
 }
 
 
-1@advs,0,0,0	script	#cheat_Skill	-1,{
+1@advs,0,0,0	script	#cheat_Skill(普通)	-1,{
 	end;
 	
 OnTimer5000:
@@ -916,7 +916,7 @@ OnTimer5000:
 }
 
 
-function	script	unitskilluseid3	{
+function	script	unitskilluseid3(普通)	{
 	if(!unitexists(getarg(0))) return;
 	.@gid = getarg(0);
 	.@type = getarg(1);
@@ -1392,7 +1392,7 @@ function	script	unitskilluseid3	{
 		}
 					break;
 		case 9:
-		donpcevent instance_npcname("#死亡投射_qz")+"::OnEnable";
+		donpcevent instance_npcname("#死亡投射_qz(普通)")+"::OnEnable";
 break;
 					
 			
@@ -1446,7 +1446,7 @@ break;
 	
 }
 
-1@advs,124,338,3	script	#死亡投射_qz	139,{
+1@advs,124,338,3	script	#死亡投射_qz(普通)	139,{
 end;
 OnEnable:
 		getunitdata 'Cheat_FinalBoss, .@mob_data;
@@ -1463,7 +1463,7 @@ OnEnable:
 end;
 }
 
-1@advs,0,0,0	script	#欺詐別墅設置總控制	-1,{
+1@advs,0,0,0	script	#欺詐別墅設置總控制(普通)	-1,{
 	end;
 OnStart:
 	'map$ = instance_mapname("1@advs");
@@ -1477,23 +1477,23 @@ OnStart:
 	'minibossskill = 0;
 	'mode = 2;
 	
-	disablenpc instance_npcname("#Fraudwarp1");
-	disablenpc instance_npcname("#Fraudwarp2");
-	disablenpc instance_npcname("#Fraudwarp3");
-	disablenpc instance_npcname("#Fraudwarp4");
+	disablenpc instance_npcname("#Fraudwarp1(普通)");
+	disablenpc instance_npcname("#Fraudwarp2(普通)");
+	disablenpc instance_npcname("#Fraudwarp3(普通)");
+	disablenpc instance_npcname("#Fraudwarp4(普通)");
 	
 	
 	for(.@i = 0; .@i < 20 ; .@i++){
 		if(.@i == 9 || .@i == 10 ) continue;
-		donpcevent instance_npcname("#死亡陷阱"+.@i)+"::OnEnable";
+		donpcevent instance_npcname("#死亡陷阱(普通)"+.@i)+"::OnEnable";
 	}
 	sleep 2000;
-		donpcevent instance_npcname("#cheat_monster_crt")+"::OnEnableMob0";	
+		donpcevent instance_npcname("#cheat_monster_crt(普通)")+"::OnEnableMob0";	
 	end;
 }
 
 
-1@advs,119,332,3	script	出口#leave	obj_a2,{
+1@advs,119,332,3	script	出口#leave(普通)	obj_a2,{
 	getmapxy(.@m$,'passx,'passy,BL_PC);
 	if (getpartyleader(getcharid(1),2) != getcharid(0)) {
 		npctalk "請由隊長領取~";
@@ -1518,15 +1518,15 @@ OnStart:
 	makeitem 1000405,rand(100,300),instance_mapname("1@advs"),119+rand(-5,5),332+rand(-5,5);	
 
 	'ClearInatance = 1;
-	donpcevent instance_npcname("副本寶箱#1@advs")+"::OnEnable";
-	disablenpc instance_npcname("出口#leave");
+	donpcevent instance_npcname("副本寶箱#1@advs(普通)")+"::OnEnable";
+	disablenpc instance_npcname("出口#leave(普通)");
 	end;
 OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 }
 
-1@advs,0,0,0	script	副本寶箱#1@advs	obj_a2,{
+1@advs,0,0,0	script	副本寶箱#1@advs(普通)	obj_a2,{
 	mes "^33CC33【副本寶箱】^000000";
 	mes "你要領取獎勵了嗎？";
 	next;
@@ -1536,19 +1536,11 @@ OnInstanceInit:
 get42:
 	end;
 get422:
-if('mode==0){
 	Instance_PassAnnounce;
 	getitem 6909,5;
 	getitem 1000405,150;
 	warp "SavePoint",0,0;
 	end;
-	}else{
-	Instance_PassAnnounce;
-	getitem 6909,15;
-	getitem 1000405,350;
-	warp "SavePoint",0,0;
-	end;
-	}
 OnEnable:
 	enablenpc instance_npcname(strnpcinfo(0));
 	movenpc instance_npcname(strnpcinfo(0)),'passx,'passy;
