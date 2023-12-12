@@ -67,17 +67,17 @@ uttycty,42,128,3	script	[ªşÅ]]ÅQ¦Øªù¼w	4_m_thaiongbak,{
 			
 		case 450202:
 			disable_items;
-			item_enchant(18);
+			item_enchant(19);
 			end;
 
 		case 470110:
 			disable_items;
-			item_enchant(18);
+			item_enchant(19);
 			end;
 
 		case 480147:
 			disable_items;
-			item_enchant(18);
+			item_enchant(19);
 			end;
 	}
 end;

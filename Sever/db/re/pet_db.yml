@@ -1957,7 +1957,7 @@ Body:
         bonus bMaxSPrate,1;
         bonus2 bResEff,Eff_Sleep,10000;
       } else if (.@i >= PET_INTIMATE_NEUTRAL) {
-        bonus bInt,3;
+        bonus bInt,2;
       } else {
         bonus bInt,1;
       }
@@ -2212,22 +2212,20 @@ Body:
     SpecialPerformance: false   # unknown
     AllowAutoFeed: true
     Script: >
-      .@intimate = getpetinfo(PETINFO_INTIMATE);
-      if (.@intimate == PET_INTIMATE_AWKWARD || .@intimate == PET_INTIMATE_SHY) {
-         bonus bHit,6;
-      }
-      if (.@intimate == PET_INTIMATE_NEUTRAL) {
-         bonus bHit,10;
-         bonus bPerfectHitRate,5;
-      }
-      if (.@intimate == PET_INTIMATE_CORDIAL) {
-         bonus bHit,14;
-         bonus bPerfectHitRate,10;
-      }
-      if (.@intimate == PET_INTIMATE_LOYAL) {
+      .@i = getpetinfo(PETINFO_INTIMATE);
+      if (.@i >= PET_INTIMATE_LOYAL) {
          bonus bHit,18;
          bonus bPerfectHitRate,15;
+      } else if (.@i >= PET_INTIMATE_CORDIAL) {
+         bonus bHit,14;
+         bonus bPerfectHitRate,10;
+      } else if (.@i >= PET_INTIMATE_NEUTRAL) {
+         bonus bHit,10;
+         bonus bPerfectHitRate,5;
+      } else {
+        bonus bHit,6;
       }
+
   - Mob: GLOOMUNDERNIGHT2
     EggItem: Gloom_Under_Egg
     FoodItem: Pet_Food
@@ -2238,23 +2236,21 @@ Body:
     SpecialPerformance: false   # unknown
     AllowAutoFeed: true
     Script: >
-      .@intimate = getpetinfo(PETINFO_INTIMATE);
-      if (.@intimate == PET_INTIMATE_AWKWARD || .@intimate == PET_INTIMATE_SHY) {
+      .@i = getpetinfo(PETINFO_INTIMATE);
+      if (.@i >= PET_INTIMATE_LOYAL) {
          bonus bMatk,40;
+         bonus2 bMagicAddEle,Ele_Ghost,7;
          bonus2 bMagicAddEle,Ele_Fire,7;
          bonus2 bAddEle,Ele_Holy,10;
          bonus2 bAddEle,Ele_Dark,10;
          bonus2 bAddRace,RC_Angel,10;
          bonus2 bAddRace,RC_Demon,10;
-      }
-      if (.@intimate == PET_INTIMATE_NEUTRAL) {
-         bonus bHit,10;
+      }else if (.@i >= PET_INTIMATE_NEUTRAL) {
          bonus bMatk,30;
          bonus2 bMagicAddEle,Ele_Fire,5;
-      }
-      if (.@intimate == PET_INTIMATE_CORDIAL) {
+         bonus2 bMagicAddEle,Ele_Ghost,5;
+      }else if (.@i >= PET_INTIMATE_CORDIAL) {
          bonus bMatk,20;
-      }
-      if (.@intimate == PET_INTIMATE_LOYAL) {
+      }else {
          bonus bMatk,10;
       }

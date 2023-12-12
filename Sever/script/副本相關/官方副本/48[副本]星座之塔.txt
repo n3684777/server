@@ -316,7 +316,7 @@ function	script	better_Monster	{
 	setunitdata .@mob_UID,UMOB_DEF,.@DEF+($@C_DEF_mob+.@level*15);
 	setunitdata .@mob_UID,UMOB_MDEF,.@MDEF+($@C_MDEF_mob+.@level*15);
 	setunitdata .@mob_UID,UMOB_HIT,.@HIT+($@C_HIT_mob+.@level*15);
-	setunitdata .@mob_UID,UMOB_DAMAGETAKEN,(10000-(.@level/10)*1000);
+	setunitdata .@mob_UID,UMOB_DAMAGETAKEN,1000;
 		
 	return;
 }
@@ -400,7 +400,7 @@ OnTimer1000:
 		case 0:
 			if (getcharid(0) == getpartyleader(getcharid(1),2)){
 				mes "[樓層跳躍裝置]";
-				switch(select("下一層","使用^ff0000隕石的粉末*"+.@floorcount+"個^000000進行跳躍",(.@floorcount==50)?"挑戰^ff0000夜勝魔^000000":"")){
+				switch(select("下一層","使用^ff0000隕石的粉末*"+.@floorcount+"個^000000進行跳躍",(.@floorcount==25)?"挑戰^ff0000夜勝魔^000000":"")){
 				case 1:
 					setd "'use_warpselect"+replacestr(strnpcinfo(0),"跳躍裝置",""),1;
 					setd "'warpselect"+replacestr(strnpcinfo(0),"跳躍裝置",""),1;
@@ -477,7 +477,6 @@ OnTimer1000:
 					instance_warpall instance_mapname("2@ch_t"),101,72;
 					if(!'start_game)'start_game = 1;
 					end;
-				
 				}
 			}
 			else 
@@ -879,7 +878,7 @@ OnTimer1000:
 			sleep 1000;
 			break;
 		case 2:
-			//十字地震術
+			//十字地震術
 			sleep 1000;
 			monster .@map$,.@x+3,.@y+3,"--ja--",3095,1,.@label$;
 			.@id[0] = $@mobid[0];
@@ -1424,7 +1423,7 @@ OnInstanceInit:
 }
 
 
-function	script	last_boss	{
+function	script	last_boss1	{
 	.@mvp_UID = getarg(0);
 	
 	.@hp_ctr= getarg(1);
@@ -1450,7 +1449,67 @@ function	script	last_boss	{
 	setunitdata .@mvp_UID,UMOB_MATKMAX,.@MATKMAX+($@B_MATKMAX_mvpmob*.@matk_ctr)+.@boss_level*8000;
 	setunitdata .@mvp_UID,UMOB_DEF,.@DEF+($@B_DEF_mvpmob*.@DEF_ctr)+.@boss_level*100;
 	setunitdata .@mvp_UID,UMOB_MDEF,.@MDEF+($@B_MDEF_mvpmob*.@MDEF_ctr)+.@boss_level*100;
-	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,800;
+	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,1000;
+	return;
+}
+
+function	script	last_boss2	{
+	.@mvp_UID = getarg(0);
+	
+	.@hp_ctr= getarg(1);
+	.@atk_ctr= getarg(2);
+	.@matk_ctr= getarg(2);	
+	.@DEF_ctr= getarg(3);	
+	
+	.@boss_level=getarg(4);
+	
+	getunitdata .@mvp_UID,.@por_arr;
+	.@MAXHP=.@por_arr[3];
+	.@ATKMIN=.@por_arr[33];
+	.@ATKMAX=.@por_arr[34];
+	.@MATKMIN=.@por_arr[35];
+	.@MATKMAX=.@por_arr[36];
+	.@DEF=.@por_arr[37];
+	.@MDEF=.@por_arr[38];
+	
+	setunitdata .@mvp_UID,UMOB_MAXHP,.@MAXHP+($@B_HP_mvpmob*.@hp_ctr)+.@boss_level*200000000;
+	setunitdata .@mvp_UID,UMOB_ATKMIN,.@ATKMIN+($@B_ATKMIN_mvpmob*.@atk_ctr)+.@boss_level*12000;
+	setunitdata .@mvp_UID,UMOB_ATKMAX,.@ATKMAX+($@B_ATKMAX_mvpmob*.@atk_ctr)+.@boss_level*12000;
+	setunitdata .@mvp_UID,UMOB_MATKMIN,.@MATKMIN+($@B_MATKMIN_mvpmob*.@matk_ctr)+.@boss_level*8000;
+	setunitdata .@mvp_UID,UMOB_MATKMAX,.@MATKMAX+($@B_MATKMAX_mvpmob*.@matk_ctr)+.@boss_level*8000;
+	setunitdata .@mvp_UID,UMOB_DEF,.@DEF+($@B_DEF_mvpmob*.@DEF_ctr)+.@boss_level*100;
+	setunitdata .@mvp_UID,UMOB_MDEF,.@MDEF+($@B_MDEF_mvpmob*.@MDEF_ctr)+.@boss_level*100;
+	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,500;
+	return;
+}
+
+function	script	last_boss3	{
+	.@mvp_UID = getarg(0);
+	
+	.@hp_ctr= getarg(1);
+	.@atk_ctr= getarg(2);
+	.@matk_ctr= getarg(2);	
+	.@DEF_ctr= getarg(3);	
+	
+	.@boss_level=getarg(4);
+	
+	getunitdata .@mvp_UID,.@por_arr;
+	.@MAXHP=.@por_arr[3];
+	.@ATKMIN=.@por_arr[33];
+	.@ATKMAX=.@por_arr[34];
+	.@MATKMIN=.@por_arr[35];
+	.@MATKMAX=.@por_arr[36];
+	.@DEF=.@por_arr[37];
+	.@MDEF=.@por_arr[38];
+	
+	setunitdata .@mvp_UID,UMOB_MAXHP,.@MAXHP+($@B_HP_mvpmob*.@hp_ctr)+.@boss_level*200000000;
+	setunitdata .@mvp_UID,UMOB_ATKMIN,.@ATKMIN+($@B_ATKMIN_mvpmob*.@atk_ctr)+.@boss_level*12000;
+	setunitdata .@mvp_UID,UMOB_ATKMAX,.@ATKMAX+($@B_ATKMAX_mvpmob*.@atk_ctr)+.@boss_level*12000;
+	setunitdata .@mvp_UID,UMOB_MATKMIN,.@MATKMIN+($@B_MATKMIN_mvpmob*.@matk_ctr)+.@boss_level*8000;
+	setunitdata .@mvp_UID,UMOB_MATKMAX,.@MATKMAX+($@B_MATKMAX_mvpmob*.@matk_ctr)+.@boss_level*8000;
+	setunitdata .@mvp_UID,UMOB_DEF,.@DEF+($@B_DEF_mvpmob*.@DEF_ctr)+.@boss_level*100;
+	setunitdata .@mvp_UID,UMOB_MDEF,.@MDEF+($@B_MDEF_mvpmob*.@MDEF_ctr)+.@boss_level*100;
+	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,100;
 	return;
 }
 
@@ -1512,7 +1571,7 @@ OnStart1:
 	monster .@map$,157,88,"--ja--",20994,1,.@killboss$;
 	'BossID = $@mobid[0];
 	setunitdata 'BossID,UMOB_AURA,1078;
-	callfunc "last_boss",'BossID,
+	callfunc "last_boss1",'BossID,
 	'boss_state_1,
 	'boss_state_2,
 	'boss_state_3,
@@ -1535,7 +1594,7 @@ OnStart2:
 	
 	'BossID = $@mobid[0];
 	setunitdata 'BossID,UMOB_AURA,1078;
-	callfunc "last_boss",'BossID,
+	callfunc "last_boss2",'BossID,
 	'boss_state_1,
 	'boss_state_2,
 	'boss_state_3,
@@ -1554,7 +1613,7 @@ OnStart3:
 	monster .@map$,157,88,"--ja--",20994,1,.@killboss$;
 	'BossID = $@mobid[0];
 	setunitdata 'BossID,UMOB_AURA,1078;
-	callfunc "last_boss",'BossID,
+	callfunc "last_boss3",'BossID,
 	
 
 	'boss_state_1,
