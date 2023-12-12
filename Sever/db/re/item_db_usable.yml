@@ -42683,7 +42683,7 @@ Body:
     AegisName: Hero_Weapon_Box
     Name: ¥j¥N­^¶¯ªZ¾¹²°
     Type: Usable
-    Weight: 2000
+    Weight: 0
     Flags:
       BuyingStore: true
       Container: true
