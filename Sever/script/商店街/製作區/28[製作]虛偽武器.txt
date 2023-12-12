@@ -81,7 +81,7 @@ OnInit:
 	endsellitem();
 	startsellitem(820002, 100000000, -1);
 	endsellitem();
-	startsellitem(820003, 100000000, -1);
+	startsellitem(830003, 100000000, -1);
 	endsellitem();
 	startsellitem(840002, 100000000, -1);
 	endsellitem();
