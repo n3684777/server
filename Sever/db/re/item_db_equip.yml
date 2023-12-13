@@ -66909,7 +66909,7 @@ Body:
       if(.@r >= 12){
       bonus2 bSkillCooldown,"SU_PURRING",-20000;
       autobonus "{bonus bDex,80;}",50,10000,BF_WEAPON;
-      autobonus3 {bonus bMatk,100;},1000,3000,"SU_SV_ROOTTWIST";
+      autobonus3 "{bonus bMatk,100;}",1000,3000,"SU_SV_ROOTTWIST";
       }
   - Id: 15431
     AegisName: Mercury_Suits
