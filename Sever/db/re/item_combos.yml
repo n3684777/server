@@ -20007,6 +20007,55 @@ Body:
       }
   - Combos:
       - Combo:
+          - Mercury_Suits
+          - Faceworm_L_Card
+    Script: |
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",30;
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Gioia_Card
+    Script: |
+      bonus2 bSkillAtk,"NJ_HUUJIN",30;
+      bonus2 bSubRace,RC_All,40;
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Assulter_Card
+    Script: |
+      bonus bLongAtkRate,8;
+      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Incant_Samurai_Card
+    Script: |
+      bonus bLongAtkRate,10;
+      bonus bDelayrate,20;
+      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
+          - Diana_Suits
+          - Matyr_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      if(.@r >= 10){
+      bonus bAspdRate,10;
+      bonus2 bSkillCooldown,"SU_STOOP",-3000;
+      }
+  - Combos:
+      - Combo:
+          - Diana_Suits
+          - Cutie_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      if(.@r >= 10){
+      bonus bAspdRate,10;
+      bonus2 bSkillCooldown,"SU_STOOP",-3000;
+      bonus2 bMagicAddRace,RC_All,40;
+      }
+  - Combos:
+      - Combo:
           - Vulcan_Armor_TW
           - Porcellio_W_Card
     Script: |

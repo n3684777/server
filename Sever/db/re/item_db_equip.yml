@@ -66885,6 +66885,56 @@ Body:
          bonus2 bAddRace,RC_All,10;
       if (.@r>=9)
          bonus2 bAddRace,RC_All,10;
+  - Id: 15430
+    AegisName: Diana_Suits
+    Name: 狄安娜外套
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Summoner: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,(.@r/4)*3;
+      bonus bMaxHPrate,(.@r/4)*3;
+      bonus2 bSkillCooldown,"SU_LOPE",-((.@r/4)*100);
+      if(.@r >= 12){
+      bonus2 bSkillCooldown,"SU_PURRING",-20000;
+      autobonus "{bonus bDex,80;}",50,10000,BF_WEAPON;
+      autobonus3 {bonus bMatk,100;},1000,3000,"SU_SV_ROOTTWIST";
+      }
+  - Id: 15431
+    AegisName: Mercury_Suits
+    Name: 墨丘利夜行衣
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Ninja: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bSkillCooldown,"KO_MEIKYOUSISUI",50000;
+      autobonus3 "{bonus bDef,300;bonus bMdef,100;}",1000,50000,"KO_MEIKYOUSISUI";
+      bonus bAllStats,(.@r/4)*2;
+      if(.@r >= 12){
+      bonus bDelayrate,10;
+      }
   - Id: 15841
     AegisName: C_Hat_of_Goggle
     Name: (服飾)防風鏡帽
