@@ -148824,8 +148824,8 @@ Body:
     Slots: 1
     Locations:
       Left_Hand: true
-    ArmorLevel: 2
-    EquipLevelMin: 210
+    ArmorLevel: 1
+    EquipLevelMin: 1
     Refineable: true
     Gradable: true
     View: 2
