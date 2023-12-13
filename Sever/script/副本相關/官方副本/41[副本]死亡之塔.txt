@@ -1,3 +1,8 @@
+
+
+
+//===== Description: ==============================
+//
 //*************************************************
 //===================請保留以上資訊================
 
@@ -992,7 +997,6 @@ OnTimer22000:
 	end;
 	
 OnKillMob:
-	Callfunc ("QuestWinLog",22441);
 	hideoffnpc instance_npcname("露西#LUCILE01");
 	donpcevent instance_npcname("#BossSkill")+"::Onstoptime";
 	'bossf2 = 1;
@@ -1522,6 +1526,7 @@ get42:
 get422:
 	Instance_PassAnnounce;
 	getitem 1000257,10;	
+	getitem 6909,5;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:
