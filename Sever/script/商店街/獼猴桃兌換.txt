@@ -78,7 +78,10 @@ OnInit:
     sellitem(6865, 0, -1);	
 	sellitemcurrency(6909,175);
     endsellitem();
-    sellitem(900000, 0, -1);	//B¤j
+    sellitem(920003, 0, -1);	//B¤j¥ª
+	sellitemcurrency(6909,300);
+    endsellitem();
+    sellitem(920004, 0, -1);	//B¤j¥k
 	sellitemcurrency(6909,300);
     endsellitem();
 
