@@ -1484,7 +1484,7 @@ function	script	last_boss2	{
 	setunitdata .@mvp_UID,UMOB_MATKMAX,.@MATKMAX+($@B_MATKMAX_mvpmob*.@matk_ctr)+.@boss_level*8000;
 	setunitdata .@mvp_UID,UMOB_DEF,.@DEF+($@B_DEF_mvpmob*.@DEF_ctr)+.@boss_level*100;
 	setunitdata .@mvp_UID,UMOB_MDEF,.@MDEF+($@B_MDEF_mvpmob*.@MDEF_ctr)+.@boss_level*100;
-	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,500;
+	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,800;
 	return;
 }
 
@@ -1514,7 +1514,7 @@ function	script	last_boss3	{
 	setunitdata .@mvp_UID,UMOB_MATKMAX,.@MATKMAX+($@B_MATKMAX_mvpmob*.@matk_ctr)+.@boss_level*8000;
 	setunitdata .@mvp_UID,UMOB_DEF,.@DEF+($@B_DEF_mvpmob*.@DEF_ctr)+.@boss_level*100;
 	setunitdata .@mvp_UID,UMOB_MDEF,.@MDEF+($@B_MDEF_mvpmob*.@MDEF_ctr)+.@boss_level*100;
-	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,100;
+	setunitdata .@mvp_UID,UMOB_DAMAGETAKEN,500;
 	return;
 }
 
