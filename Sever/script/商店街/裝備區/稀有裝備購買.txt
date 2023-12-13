@@ -245,6 +245,147 @@ OnInit:
 	sellitem(400150,.@p,-1);	//塔諾斯暴力頭盔
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(400078,.@p,-1);	//活體牡羊研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400079,.@p,-1);	//活體天秤研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400094,.@p,-1);	//活體寶瓶研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400095,.@p,-1);	//活體水瓶研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400098,.@p,-1);	//活體金牛研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400099,.@p,-1);	//活體公牛研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400116,.@p,-1);	//活體處女研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400117,.@p,-1);	//活體天平研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400118,.@p,-1);	//活體巨蟹研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400119,.@p,-1);	//活體獅子研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400120,.@p,-1);	//活體魔羯研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400121,.@p,-1);	//活體雙子研究頭冠
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400178,.@p,-1);	//信仰之盔(咒術士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400179,.@p,-1);	//信仰之盔 II(咒術士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400180,.@p,-1);	//信仰之盔(修羅)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400181,.@p,-1);	//信仰之盔 II(修羅)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400189,.@p,-1);	//信仰之盔(大主教)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400190,.@p,-1);	//信仰之盔 II(大主教)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400191,.@p,-1);	//信仰之盔(魅影追蹤者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400192,.@p,-1);	//信仰之盔 II(魅影追蹤者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400198,.@p,-1);	//信仰之盔(遊俠)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400199,.@p,-1);	//信仰之盔 II(遊俠)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400200,.@p,-1);	//(皇家禁衛隊)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400201,.@p,-1);	//信仰之盔 II(皇家禁衛隊)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400216,.@p,-1);	//信仰之盔(十字斬首者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400217,.@p,-1);	//信仰之盔 II(十字斬首者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400218,.@p,-1);	//信仰之盔(妖術師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400219,.@p,-1);	//信仰之盔 II(妖術師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400226,.@p,-1);	//信仰之盔(盧恩騎士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400227,.@p,-1);	//信仰之盔 II(盧恩騎士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400228,.@p,-1);	//信仰之盔(宮廷樂師與冷豔舞者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400229,.@p,-1);	//信仰之盔 II(宮廷樂師與冷豔舞者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400230,.@p,-1);	//信仰之盔(機械工匠)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400231,.@p,-1);	//信仰之盔 II(機械工匠)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400233,.@p,-1);	//信仰之盔(基因學者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400234,.@p,-1);	//信仰之盔 II(基因學者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400235,.@p,-1);	//信仰之盔(影狼&朧)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400236,.@p,-1);	//信仰之盔 II(影狼&朧)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400237,.@p,-1);	//信仰之盔(叛亂者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400238,.@p,-1);	//信仰之盔 II(叛亂者)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400239,.@p,-1);	//信仰之盔(獵靈士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400240,.@p,-1);	//信仰之盔 II(獵靈士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400241,.@p,-1);	//信仰之盔(拳皇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400242,.@p,-1);	//信仰之盔 II(拳皇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400178,.@p,-1);	//信仰之盔(召喚師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400243,.@p,-1);	//信仰之盔 II(召喚師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400087,.@p,-1);	//潛能激發冒險帽
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 	
 
 	sellitem(410213,.@c,-1);	//血腥之耳
@@ -263,7 +404,7 @@ OnInit:
     endsellitem(); 
 	sellitem(420064,.@c,-1);	//貴族手帕
     endsellitem(); 
-	sellitem(400368,.@c,-1);	//RO二十周年限定帽
+	sellitem(400368,.@c,-1);	//RO二十周年限定帽
     endsellitem(); 
 	sellitem(18652,.@c,-1);	//武神之盔
     endsellitem(); 
@@ -275,6 +416,7 @@ OnInit:
     endsellitem(); 
 	sellitem(420186,.@c,-1);	//20週年慶生氣球
     endsellitem(); 
+	
 OnBuyItem:
 end;
 }
@@ -401,6 +543,42 @@ OnInit:
 	sellitem(32243,.@p,-1);	//魔力星環
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(490094,.@p,-1);	//思念體破壞因子研究錄(劍士篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(32288,.@p,-1);	//思念體破壞因子研究錄(服事篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(32285,.@p,-1);	//思念體破壞因子研究錄(法師篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(32287,.@p,-1);	//思念體破壞因子研究錄(盜賊篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(32286,.@p,-1);	//思念體破壞因子研究錄(商人篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490095,.@p,-1);	//思念體破壞因子研究錄(弓箭手篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490173,.@p,-1);	//思念體忿恨因子研究錄(劍士篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem();          
+	sellitem(490192,.@p,-1);	//思念體忿恨因子研究錄(服事篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem();          
+	sellitem(490170,.@p,-1);	//思念體忿恨因子研究錄(法師篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem();          
+	sellitem(490191,.@p,-1);	//思念體忿恨因子研究錄(盜賊篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem();          
+	sellitem(490175,.@p,-1);	//思念體忿恨因子研究錄(商人篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem();          
+	sellitem(490198,.@p,-1);	//思念體忿恨因子研究錄(弓箭手篇)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 
 end;
 }
@@ -516,7 +694,7 @@ OnInit:
 	sellitem(900004,.@p,-1);	//闇●基因學者 普拉梅姆卡片-改
 	sellitemcurrency(4681,.@h);
     endsellitem(); 
-	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
+	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
 	sellitemcurrency(4674,.@h);
     endsellitem(); 
 	sellitem(900006,.@p,-1);	//闇●魅影追蹤者 科迪卡片-改
@@ -546,10 +724,10 @@ OnInit:
 	sellitem(900014,.@p,-1);	//闇●騎士領主 賽依連卡片-改
 	sellitemcurrency(4357,.@h);
     endsellitem(); 
-	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
+	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
 	sellitemcurrency(4565,.@h*5);
     endsellitem(); 
-	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
+	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
 	sellitemcurrency(4359,.@h);
     endsellitem(); 
 	sellitem(900017,.@p,-1);	//闇●神行太保 科迪卡片-改
