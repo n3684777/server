@@ -13,7 +13,7 @@ OnMobDropItemExpress:
 	if ($@mobdrop_mapname$ != .@map$){
 		for ( .@i = 0; .@i<getarraysize(.@mvpcard); .@i++){
 			if ( $@mobdrop_itemid == .@mvpcard[.@i]) {
-					announce "'"+strcharinfo(0)+"' 擊殺了 "+strmobinfo(2, $@mobdrop_mobid)+" 獲得 "+getitemname($@mobdrop_itemid)+" (機率為: "+($@mobdrop_rate)/100+"."+($@mobdrop_rate-($@mobdrop_rate)/100*100)+"%)",bc_all;
+					announce ""+$@mobdrop_mapname$+"'"+strcharinfo(0)+"' 擊殺了 "+strmobinfo(2, $@mobdrop_mobid)+" 獲得 "+getitemname($@mobdrop_itemid)+" (機率為: "+($@mobdrop_rate)/100+"."+($@mobdrop_rate-($@mobdrop_rate)/100*100)+"%)",bc_all;
 			}
 		}
 	}
