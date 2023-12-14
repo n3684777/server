@@ -6900,4 +6900,4 @@ Body:
          - Material: Bio_Test_Fragment
            Amount: 100
         ResultItem: Jupiter_Armor_TW_LT
-        ChangeRefine: 1
+        ChangeRefine: -9

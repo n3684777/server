@@ -1,5 +1,7 @@
 -	script	#mvp廣播	-1,{
 OnMobDropItemExpress:
+	attachrid $@mobdrop_killerrid;
+	getmapxy(.@map$,.@x,.@y);
 	setarray .@mvpcard[0],4399,4403,4576,27119,27294,4408,4441,4374,4652,4580,27287,27362,4302,27113,4263,300151,4682,4672,4671,4680,4678,4677,
 							4675,4683,4673,4681,4679,4676,4674,4566,4560,4564,4562,4561,4563,4565,4365,4367,4363,4361,4359,4357,4625,4128,4305,
 							4342,4376,4148,4135,4146,4143,4407,4324,300145,4574,4578,27180,4145,27298,27319,4137,4525,27081,4425,27150,4123,4330,
@@ -10,8 +12,7 @@ OnMobDropItemExpress:
 							300099,300100,300078,300079,300080;
 	for ( .@i = 0; .@i<getarraysize(.@mvpcard); .@i++){
 		if ( $@mobdrop_itemid == .@mvpcard[.@i]) {
-			if ( $@mobdrop_mapname$ != "bossnia_04" ) {
-				attachrid $@mobdrop_killerrid;
+			if ( .@map$ != "bossnia_04") {
 				announce "'"+strcharinfo(0)+"' 擊殺了 "+strmobinfo(2, $@mobdrop_mobid)+" 獲得 "+getitemname($@mobdrop_itemid)+" (機率為: "+($@mobdrop_rate)/100+"."+($@mobdrop_rate-($@mobdrop_rate)/100*100)+"%)",bc_all;
 			}
 		}
