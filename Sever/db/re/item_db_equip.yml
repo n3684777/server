@@ -148633,19 +148633,87 @@ Body:
     Type: Armor
     Weight: 300
     Slots: 1
-    Jobs:
-      Wizard: true
-      Sage: true
-    Classes:
-      All_Third: true
-      Fourth: true
     Locations:
       Armor: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
+    ArmorLevel: 2
+    Gradable: true
+    EquipLevelMin: 150
     Refineable: true
     Script: |
       .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMatk,150+(.@r/2)*15;
+      bonus2 bSkillAtk,"WL_SOULEXPANSION",(.@r/3)*20;
+      bonus2 bSkillAtk,"WL_HELLINFERNO",(.@r/3)*20;
+      bonus2 bSkillAtk,"SO_DIAMONDDUST",(.@r/3)*20;
+      bonus2 bSkillAtk,"SO_EARTHGRAVE",(.@r/3)*20;
+      if(.@r >= 9){bonus bMatkRate,15;}
+      if(.@r >= 11){bonus2 bMagicAddRace,RC_All,15;}
+      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bMatk,(.@r/2)*8;
+      bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-((.@r/3)*7000);
+        bonus2 bSkillCooldown,"SO_DIAMONDDUST",-((.@r/3)*-200);
+          if(.@r >= ENCHANTGRADE_B){
+          bonus bSMatk,.@r/2;
+          bonus2 bMagicAddSize,Size_All,(.@r/3)*5;
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bSkillAtk,"AG_SOUL_VC_STRIKE",(.@r/3)*7;
+            bonus2 bSkillAtk,"EM_DIAMOND_STORM",(.@r/3)*7;
+              if(.@r >= 13){
+              bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-30000;
+              bonus2 bSkillCooldown,"SO_DIAMONDDUST",-1000;
+              }
+            }
+          }
+        }
+      }
+  - Id: 450295
+    AegisName: Apollo_Armor_TW_LT
+    Name: 阿波羅盔甲-LT
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    Gradable: true
+    EquipLevelMin: 150
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMaxHPrate,20;
+      bonus bMaxHP,(.@r/2)*500+((.@r >= 9)?5000:0);
+      bonus bVit,(.@r/2)*8;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",(.@r/3)*20;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",(.@r/3)*20;
+      bonus2 bSkillAtk,"LG_EARTHDRIVE",(.@r/3)*20;
+      bonus2 bSkillAtk,"LG_SHIELDPRESS",(.@r/3)*20;
+      if(.@r >= 11){bonus2 bWeaponSubSize,Size_All,10;}
+      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@g >= ENCHANTGRADE_D){
+        bonus bVit,(.@r/2)*3;
+        bonus bShortAtkRate,(.@r/3)*3;
+        bonus bLongAtkRate,(.@r/3)*3;
+          if(.@g >= ENCHANTGRADE_C){
+          bonus bMaxHPrate,(.@r/3)*3;
+            if(.@g >= ENCHANTGRADE_B){
+            bonus bVit,(.@r/2)*5;
+            bonus bShortAtkRate,(.@r/3)*5;
+            bonus bLongAtkRate,(.@r/3)*5;
+              if(.@g >= ENCHANTGRADE_A){
+              bonus bMaxHPrate,(.@r/3)*5;
+                if(.@r >= 13)
+                {
+                  bonus2 bWeaponSubSize,Size_All,10;
+                }
+              }
+            }
+          }
+      }
   - Id: 460003
     AegisName: Feather_Shield
     Name: 聖之羽翼神盾

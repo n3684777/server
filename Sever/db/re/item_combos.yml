@@ -20007,6 +20007,25 @@ Body:
       }
   - Combos:
       - Combo:
+          - Apollo_Armor_TW_LT
+          - Ferus__Card
+    Script: |
+      bonus bDelayrate,8;
+      bonus bShortAtkRate,15;
+      bonus bLongAtkRate,15;
+  - Combos:
+      - Combo:
+          - Apollo_Armor_TW_LT
+          - Eddga_Card
+    Script: |
+      bonus bDelayrate,8;
+      bonus bShortAtkRate,30;
+      bonus bLongAtkRate,30;
+      bonus3 bAddEffWhenHit,Eff_Freeze,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Bleeding,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Stone,5000,ATF_MAGIC;
+  - Combos:
+      - Combo:
           - Neptune_Uniform
           - Khaliz_Knightage_Card
     Script: |

@@ -652,3 +652,9 @@ script 腳本(變身或其他設定)
 *autobonus3 <bonus script>,<rate>,<duration>,"<skill name>",{<other script>};
 
 eaclass()&EAJL_THIRD && BaseJob == "Job_基本職業" 判別基本職業三轉 (base基本職業)
+
+getenchantgrade(); 防具階級
+ENCHANTGRADE_D 階級D
+ENCHANTGRADE_C 階級C
+ENCHANTGRADE_B 階級B
+ENCHANTGRADE_A 階級A
