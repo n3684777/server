@@ -20007,6 +20007,78 @@ Body:
       }
   - Combos:
       - Combo:
+          - Vinus_Armor_TW_LT
+          - Antique_Firelock_Card
+    Script: |
+      bonus bBaseAtk,100;
+      bonus2 bSubRace,RC_All,5;
+      bonus2 bAddClass,Class_Boss,10;
+  - Combos:
+      - Combo:
+          - Vinus_Armor_TW_LT
+          - Lady_Tanee_Card
+    Script: |
+      bonus bMaxHPrate,50;
+      bonus2 bSubRace,RC_All,5;
+      bonus bBaseAtk,100;
+      bonus2 bAddClass,Class_Boss,30;
+  - Combos:
+      - Combo:
+          - Vulcan_Armor_TW_LT  # 450298 ªZº¸§¢§V´µ¾÷¥Ò-LT
+          - Porcellio_Card      # 4337 ¤T¸­ÅK¥ÒÂÎ¥d¤ù
+    Script: |
+      bonus bBaseAtk,100;
+      bonus2 bAddSize,Size_All,15;
+      bonus2 bIgnoreDefClassRate,CLASS_NORMAL,20;
+  - Combos:
+      - Combo:
+          - Vulcan_Armor_TW_LT  # 450298 ªZº¸§¢§V´µ¾÷¥Ò-LT
+          - Gloom_Under_Night_Card # 4408 «Õ·t¹ÚÆL¥d¤ù
+    Script: |
+      bonus bBaseAtk,100;
+      bonus2 bAddSize,Size_All,30;
+      bonus2 bIgnoreDefClassRate,CLASS_NORMAL,20;
+  - Combos:
+      - Combo:
+          - Vulcan_Armor_TW_LT  # 450298 ªZº¸§¢§V´µ¾÷¥Ò-LT
+          - Gloom_Under_Night_Card_ # 900067 «Õ·t¹ÚÆL¥d¤ù-§ï
+    Script: |
+      bonus bBaseAtk,100;
+      bonus2 bAddSize,Size_All,30;
+      bonus2 bIgnoreDefClassRate,CLASS_NORMAL,20;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW_LT
+          - Ancient_Mimic_Card
+    Script: |
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bLongAtkRate,20;
+      bonus2 bMagicAtkEle,Ele_All,20;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW_LT
+          - Clown_Card
+    Script: |
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bLongAtkRate,25;
+      bonus2 bMagicAtkEle,Ele_All,25;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW_LT
+          - Gypsy_Card
+    Script: |
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bLongAtkRate,25;
+      bonus2 bMagicAtkEle,Ele_All,25;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
           - Mars_Armor_TW_LT
           - Whisper_Boss_Card
     Script: |
