@@ -148734,8 +148734,8 @@ Body:
       bonus2 bSkillAtk,"GC_ROLLINGCUTTER",(.@r/3)*20;
       bonus2 bSkillAtk,"SC_TRIANGLESHOT",(.@r/3)*20;
       bonus2 bSkillAtk,"SC_FATALMENACE",(.@r/3)*20;
-      bonus bShortAtkRate,((.@r >= 9?)10:0);
-      bonus bLongAtkRate,((.@r >= 9?)10:0);
+      bonus bShortAtkRate,((.@r >= 9)?10:0);
+      bonus bLongAtkRate,((.@r >= 9)?10:0);
       if(.@r >= 11){bonus2 bAddRace,RC_All,15;}
       if(.@r >= 13){bonus bDelayrate,15;}
       if(.@g >= ENCHANTGRADE_D){
