@@ -6933,6 +6933,9 @@ Body:
       - BaseItem: Jupiter_Armor_TW
         MinimumRefine: 7
         CardsAllowed: true
+        Materials:
+         - Material: Bio_Test_Fragment
+           Amount: 100
         ResultItem: Jupiter_Armor_TW_LT
         ChangeRefine: -7
       - BaseItem: Apollo_Armor_TW
@@ -6960,4 +6963,3 @@ Body:
         CardsAllowed: true
         ResultItem: Vulcan_Armor_TW_LT
         ChangeRefine: -7
-      
