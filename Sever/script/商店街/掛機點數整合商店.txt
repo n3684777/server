@@ -6,7 +6,7 @@ OnInit:
 	set $@PDCkcartTimer,180000; //掛店狀態多少時間獲得積分（毫秒）
 	set $@PDTimer,60000;		//多少時間獲得積分（毫秒）
 	set $@paodian,1;			//玩家每次獲得積分
-	set $@Max,999999;			//人物最大積分數
+	set $@Max,99999;			//人物最大積分數
 	end;
 OnPCLoginEvent:
 // 上線提示
