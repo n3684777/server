@@ -6890,3 +6890,14 @@ Body:
 #           Amount: 100
 #        ResultItem: Unknown_Item_480312
 #        ChangeRefine: -5
+  - Item: SR_Heart_TW
+    BaseItems:
+      - BaseItem: Jupiter_Armor_TW
+        MinimumRefine: 9
+        MaximumRefine: 19
+        CardsAllowed: true
+        Materials:
+         - Material: Bio_Test_Fragment
+           Amount: 100
+        ResultItem: Jupiter_Armor_TW_LT
+        ChangeRefine: 1

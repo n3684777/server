@@ -49904,3 +49904,9 @@ Body:
       getitem 910132,1;
       }else{
       Zeny += 100000000;}
+  - Id: 1001413
+    AegisName: SR_Heart_TW
+    Name: ÀÆ¥ú¤§¤ß
+    Type: DelayConsume
+    Script: |
+      item_reform();
