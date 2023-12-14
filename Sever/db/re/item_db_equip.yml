@@ -66935,6 +66935,59 @@ Body:
       if(.@r >= 12){
       bonus bDelayrate,10;
       }
+  - Id: 15432
+    AegisName: Bacchus_Armor
+    Name: 巴克斯裝甲
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Gunslinger: true
+      Rebellion: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,(.@r/4)*3;
+      bonus bAgi,(.@r/4)*3;
+      if(.@r >= 12){
+      skill "SN_SIGHT",10;
+      bonus2 bSkillCooldown,"RL_R_TRIP",-500;
+      bonus2 bIgnoreDefClassRate,Class_Normal,getskilllv("GS_SINGLEACTION");
+      }
+  - Id: 15433
+    AegisName: Neptune_Uniform
+    Name: 涅普頓道服
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      StarGladiator: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,getskilllv("TK_RUN")/2;
+      bonus bMatkRate,getskilllv("TK_RUN")/2;
+      bonus bMaxHPrate,(getskilllv("TK_RUN")/2)*2;
+      bonus bonus bAllStats,(.@r/4)*2;
+      if(.@r >= 12){
+      bonus bNoCastCancel2;
+      bonus2 bSkillCooldown,"SP_SOULREAPER",-60000;
+      bonus2 bFixedCastrate,"SG_HATE",-50;
+      }
   - Id: 15841
     AegisName: C_Hat_of_Goggle
     Name: (服飾)防風鏡帽

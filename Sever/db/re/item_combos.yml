@@ -20007,6 +20007,35 @@ Body:
       }
   - Combos:
       - Combo:
+          - Neptune_Uniform
+          - Khaliz_Knightage_Card
+    Script: |
+      bonus2 bSkillAtk,"SP_SWHOO",20;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",20;
+  - Combos:
+      - Combo:
+          - Neptune_Uniform
+          - Maya_Card
+    Script: |
+      bonus2 bSubSize,Size_All,30;
+      bonus2 bSkillAtk,"SP_SWHOO",40;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",40;
+  - Combos:
+      - Combo:
+          - Bacchus_Armor
+          - Heart_Hunter_Card
+    Script: |
+      bonus2 bSkillAtk,"RL_FIREDANCE",30;
+      autobonus3 "{ bonus bFlee,100; }",1000,3000,"RL_FALLEN_ANGEL";
+  - Combos:
+      - Combo:
+          - Bacchus_Armor
+          - Felock_Card
+    Script: |
+      bonus2 bSkillAtk,"RL_D_TAIL",50;
+      bonus2 bSkillCooldown,"RL_D_TAIL",-2000;
+  - Combos:
+      - Combo:
           - Mercury_Suits
           - Faceworm_L_Card
     Script: |
