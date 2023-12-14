@@ -6893,44 +6893,6 @@ Body:
   - Item: SR_Heart_TW
     BaseItems:
       - BaseItem: Jupiter_Armor_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Jupiter_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Apollo_Armor_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Apollo_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Mars_Armor_TW_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Mars_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Ceres_Armor_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Ceres_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Vinus_Armor_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Vinus_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Vulcan_Armor_TW
-        MinimumRefine: 9
-        MaximumRefine: 19
-        CardsAllowed: true
-        ResultItem: Vulcan_Armor_TW_LT
-        ChangeRefine: -9
-  - Item: SR_Heart_TW
-    BaseItems:
-      - BaseItem: Jupiter_Armor_TW
         MinimumRefine: 7
         CardsAllowed: true
         Materials:
