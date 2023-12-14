@@ -22525,4 +22525,11 @@ Body:
     Buy: 60
     Script: |
       callfunc "F_Gashapon2",920002;
+  - Id: 920005
+    AegisName: item_920005
+    Name: 天使轉蛋
+    Type: Usable
+    Buy: 60
+    Script: |
+      callfunc "F_Gashapon2",920005;
 
