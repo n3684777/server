@@ -148889,10 +148889,10 @@ Body:
       .@r = getrefine();
       .@g = getenchantgrade();
       bonus bBaseAtk,150+15*(.@r/2);
-      bonus2 bSkillAtk,"NC_ARMSCANNON",20*(.@r/3));
-      bonus2 bSkillAtk,"NC_AXETORNADO",20*(.@r/3));
-      bonus2 bSkillAtk,"GN_CRAZYWEED",20*(.@r/3));
-      bonus2 bSkillAtk,"GN_CART_TORNADO",20*(.@r/3));
+      bonus2 bSkillAtk,"NC_ARMSCANNON",20*(.@r/3);
+      bonus2 bSkillAtk,"NC_AXETORNADO",20*(.@r/3);
+      bonus2 bSkillAtk,"GN_CRAZYWEED",20*(.@r/3);
+      bonus2 bSkillAtk,"GN_CART_TORNADO",20*(.@r/3);
       if (.@r >= 9 ) {
         bonus bShortAtkRate,10;
         bonus bLongAtkRate,10;
