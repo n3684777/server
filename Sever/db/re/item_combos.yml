@@ -20007,6 +20007,22 @@ Body:
       }
   - Combos:
       - Combo:
+          - Mars_Armor_TW_LT
+          - Whisper_Boss_Card
+    Script: |
+      bonus bFlee,30;
+      bonus bBaseAtk,100;
+  - Combos:
+      - Combo:
+          - Mars_Armor_TW_LT
+          - Kades_Card
+    Script: |
+      bonus bFlee,50;
+      bonus bBaseAtk,150;
+      bonus2 bSubEle,Ele_Holy,20;
+      bonus2 bSubEle,Ele_Ghost,20;
+  - Combos:
+      - Combo:
           - Apollo_Armor_TW_LT
           - Ferus__Card
     Script: |

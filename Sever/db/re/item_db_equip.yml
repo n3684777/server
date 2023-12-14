@@ -148714,6 +148714,51 @@ Body:
             }
           }
       }
+  - Id: 450296
+    AegisName: Mars_Armor_TW_LT
+    Name: 馬爾斯戰甲-LT
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 2
+    Gradable: true
+    EquipLevelMin: 150
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bBaseAtk,150+(.@r/2)*15;
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",(.@r/3)*20;
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",(.@r/3)*20;
+      bonus2 bSkillAtk,"SC_TRIANGLESHOT",(.@r/3)*20;
+      bonus2 bSkillAtk,"SC_FATALMENACE",(.@r/3)*20;
+      bonus bShortAtkRate,((.@r >= 9?)10:0);
+      bonus bLongAtkRate,((.@r >= 9?)10:0);
+      if(.@r >= 11){bonus2 bAddRace,RC_All,15;}
+      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@g >= ENCHANTGRADE_D){
+      bonus2 bSkillCooldown,"GC_DARKCROW",-5000;
+      bonus2 bSkillCooldown,"SC_GROOMY",-1000;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",(.@r/3)*5;
+        bonus2 bSkillAtk,"ABC_FRENZY_SHOT",(.@r/3)*5;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bPAtk,(.@r/2); 
+          bonus2 bAddSize,Size_All,(.@r/3)*5; 
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",(.@r/3)*8;
+            bonus2 bSkillAtk,"ABC_FRENZY_SHOT",(.@r/3)*8;
+              if(.@r >= 13){
+              bonus2 bSkillCooldown,"GC_DARKCROW",-5000;
+              bonus2 bSkillCooldown,"SC_IGNORANCE",-1000;
+              }
+            }
+          }
+        }
+      }
   - Id: 460003
     AegisName: Feather_Shield
     Name: 聖之羽翼神盾
