@@ -148627,6 +148627,25 @@ Body:
          bonus bWeaponAtkRate,10;
       if (.@r>=7)
          bonus bWeaponAtkRate,10;
+  - Id: 450294
+    AegisName: Jupiter_Armor_TW_LT
+    Name: 朱比特輕甲-LT
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Wizard: true
+      Sage: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
   - Id: 460003
     AegisName: Feather_Shield
     Name: 聖之羽翼神盾
