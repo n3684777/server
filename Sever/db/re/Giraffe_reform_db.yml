@@ -4092,14 +4092,6 @@ Body:
          - Material: Armor_Stone_2
            Amount: 100
         ResultItem: Baksojin_Hat_LT
-        ChangeRefine: -9
-      - BaseItem: Jupiter_Armor_TW
-        MinimumRefine: 9
-        CardsAllowed: false
-        Materials:
-         - Material: Bio_Test_Fragment
-           Amount: 100
-        ResultItem: Jupiter_Armor_TW_LT
         ChangeRefine: -1
   - Item: Barmund_Hammer
     BaseItems:
@@ -6898,3 +6890,12 @@ Body:
 #           Amount: 100
 #        ResultItem: Unknown_Item_480312
 #        ChangeRefine: -5
+  - Item: SR_Heart_TW
+    - BaseItem: Jupiter_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: false
+        Materials:
+         - Material: Bio_Test_Fragment
+           Amount: 100
+        ResultItem: Jupiter_Armor_TW_LT
+        ChangeRefine: -1
