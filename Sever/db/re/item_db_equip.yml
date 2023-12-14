@@ -66982,7 +66982,7 @@ Body:
       bonus bAtkRate,getskilllv("TK_RUN")/2;
       bonus bMatkRate,getskilllv("TK_RUN")/2;
       bonus bMaxHPrate,(getskilllv("TK_RUN")/2)*2;
-      bonus bonus bAllStats,(.@r/4)*2;
+      bonus bAllStats,(.@r/4)*2;
       if(.@r >= 12){
       bonus bNoCastCancel2;
       bonus2 bSkillCooldown,"SP_SOULREAPER",-60000;
