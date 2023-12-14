@@ -49908,5 +49908,6 @@ Body:
     AegisName: SR_Heart_TW
     Name: ÀÆ¥ú¤§¤ß
     Type: DelayConsume
+    Weight: 0
     Script: |
       item_reform();

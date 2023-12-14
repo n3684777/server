@@ -6891,11 +6891,35 @@ Body:
 #        ResultItem: Unknown_Item_480312
 #        ChangeRefine: -5
   - Item: SR_Heart_TW
-    - BaseItem: Jupiter_Armor_TW
+    BaseItems:
+      - BaseItem: Jupiter_Armor_TW
         MinimumRefine: 9
-        CardsAllowed: false
-        Materials:
-         - Material: Bio_Test_Fragment
-           Amount: 100
+        CardsAllowed: true
         ResultItem: Jupiter_Armor_TW_LT
-        ChangeRefine: -1
+        ChangeRefine: -9
+      - BaseItem: Apollo_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        ResultItem: Apollo_Armor_TW_LT
+        ChangeRefine: -9
+      - BaseItem: Mars_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        ResultItem: Mars_Armor_TW_LT
+        ChangeRefine: -9
+      - BaseItem: Ceres_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        ResultItem: Ceres_Armor_TW_LT
+        ChangeRefine: -9
+      - BaseItem: Vinus_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        ResultItem: Vinus_Armor_TW_LT
+        ChangeRefine: -9
+      - BaseItem: Vulcan_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        ResultItem: Vulcan_Armor_TW_LT
+        ChangeRefine: -9
+      
