@@ -317,10 +317,10 @@ OnInit:
 	sellitem(400201,.@p,-1);	//信仰之盔 II(皇家禁衛隊)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400216,.@p,-1);	//信仰之盔(十字斬首者)
+	sellitem(400216,.@p,-1);	//信仰之盔(十字斬首者)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400217,.@p,-1);	//信仰之盔 II(十字斬首者)
+	sellitem(400217,.@p,-1);	//信仰之盔 II(十字斬首者)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400218,.@p,-1);	//信仰之盔(妖術師)
@@ -404,7 +404,7 @@ OnInit:
     endsellitem(); 
 	sellitem(420064,.@c,-1);	//貴族手帕
     endsellitem(); 
-	sellitem(400368,.@c,-1);	//RO二十周年限定帽
+	sellitem(400368,.@c,-1);	//RO二十周年限定帽
     endsellitem(); 
 	sellitem(18652,.@c,-1);	//武神之盔
     endsellitem(); 
@@ -535,6 +535,22 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(490269,.@p,-1);	//樞機之光
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490211,.@p,-1);	//不和諧破音pick
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490281,.@p,-1);	//裝甲驅動齒輪
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+               
+	sellitem(490219,.@p,-1);	//雙頭龍紋指環 
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490208,.@p,-1);	//王城魔戒 
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490168,.@p,-1);	//風妖靈戒
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(490472,.@p,-1);	//惡火煉獄戒
@@ -694,7 +710,7 @@ OnInit:
 	sellitem(900004,.@p,-1);	//闇●基因學者 普拉梅姆卡片-改
 	sellitemcurrency(4681,.@h);
     endsellitem(); 
-	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
+	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
 	sellitemcurrency(4674,.@h);
     endsellitem(); 
 	sellitem(900006,.@p,-1);	//闇●魅影追蹤者 科迪卡片-改
@@ -724,10 +740,10 @@ OnInit:
 	sellitem(900014,.@p,-1);	//闇●騎士領主 賽依連卡片-改
 	sellitemcurrency(4357,.@h);
     endsellitem(); 
-	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
+	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
 	sellitemcurrency(4565,.@h*5);
     endsellitem(); 
-	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
+	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
 	sellitemcurrency(4359,.@h);
     endsellitem(); 
 	sellitem(900017,.@p,-1);	//闇●神行太保 科迪卡片-改

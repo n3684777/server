@@ -21016,248 +21016,813 @@ Body:
                 Amount: 250
               - Material: Enchant_Ticket
                 Amount: 3
-  - Id: 68
+  - Id: 10002
     TargetItems:
-      S_Circlet_Of_Time_GN: true
-      S_Circlet_Of_Time_GC: true
-      S_Circlet_Of_Time_SC: true
-      S_Circlet_Of_Time_AB: true
-      S_Circlet_Of_Time_SR: true
-      S_Circlet_Of_Time_WL: true
-      S_Circlet_Of_Time_SO: true
-      S_Circlet_Of_Time_RA: true
-      S_Circlet_Of_Time_WM: true
-      S_Circlet_Of_Time_SJ: true
-      S_Circlet_Of_Time_SP: true
-      S_Circlet_Of_Time_RL: true
-      S_Circlet_Of_Time_OB: true
-      S_Circlet_Of_Time_KG: true
-      S_Circlet_Of_Time_NV: true
-      S_Circlet_Of_Time_SU: true
+      Ceres_Armor_TW_LT: true
+      Jupiter_Armor_TW_LT: true
+      Apollo_Armor_TW_LT: true
+      Mars_Armor_TW_LT: true
+      Vinus_Armor_TW_LT: true
+      Vulcan_Armor_TW_LT: true
     Reset:
-      Chance: 100000
-      Price: 500000
+      Chance: 80000
+      Materials:
+        - Material: Silvervine
+          Amount: 3
     Order:
       - Slot: 3
       - Slot: 2
       - Slot: 1
     Slots:
       - Slot: 3
-        Price: 100000
+        Materials:
+          - Material: Silvervine
+            Amount: 2
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: Strength1
-                Chance: 12460
-              - Item: Inteligence1
-                Chance: 12470
-              - Item: Agility1
-                Chance: 12470
-              - Item: Vitality1
-                Chance: 12470
-              - Item: Luck1
-                Chance: 12460
-              - Item: Dexterity1
-                Chance: 12470
-              - Item: Strength2
-                Chance: 3500
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Agility2
-                Chance: 3500
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Luck2
-                Chance: 3500
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Strength3
-                Chance: 700
-              - Item: Inteligence3
-                Chance: 700
-              - Item: Agility3
-                Chance: 700
-              - Item: Vitality3
-                Chance: 700
+              - Item: Inteligence5
+                Chance: 2000
+              - Item: Agility5
+                Chance: 2000
+              - Item: Strength5
+                Chance: 2000
+              - Item: Vitality5
+                Chance: 2000
+              - Item: Dexterity5
+                Chance: 2000
+              - Item: Luck5
+                Chance: 2000
+              - Item: Inteligence4
+                Chance: 3000
+              - Item: Agility4
+                Chance: 3000
+              - Item: Strength4
+                Chance: 3000
+              - Item: Vitality4
+                Chance: 3000
+              - Item: Dexterity4
+                Chance: 3000
               - Item: Luck3
-                Chance: 700
+                Chance: 4000
+              - Item: Inteligence3
+                Chance: 4000
+              - Item: Agility3
+                Chance: 4000
+              - Item: Strength3
+                Chance: 4000
+              - Item: Vitality3
+                Chance: 4000
               - Item: Dexterity3
+                Chance: 4000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Inteligence2
+                Chance: 5000
+              - Item: Agility2
+                Chance: 5000
+              - Item: Strength2
+                Chance: 5000
+              - Item: Vitality2
+                Chance: 5000
+              - Item: Dexterity2
+                Chance: 5000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Neev_STR_1
+                Chance: 1400
+              - Item: Neev_STR_2
                 Chance: 700
-        Upgrades:
-          - Enchant: Strength1
-            Upgrade: Strength2
-            Price: 500000
-          - Enchant: Strength2
-            Upgrade: Strength3
-            Price: 1000000
-          - Enchant: Inteligence1
-            Upgrade: Inteligence2
-            Price: 500000
-          - Enchant: Inteligence2
-            Upgrade: Inteligence3
-            Price: 1000000
-          - Enchant: Agility1
-            Upgrade: Agility2
-            Price: 500000
-          - Enchant: Agility2
-            Upgrade: Agility3
-            Price: 1000000
-          - Enchant: Vitality1
-            Upgrade: Vitality2
-            Price: 500000
-          - Enchant: Vitality2
-            Upgrade: Vitality3
-            Price: 1000000
-          - Enchant: Luck1
-            Upgrade: Luck2
-            Price: 500000
-          - Enchant: Luck2
-            Upgrade: Luck3
-            Price: 1000000
-          - Enchant: Dexterity1
-            Upgrade: Dexterity2
-            Price: 500000
-          - Enchant: Dexterity2
-            Upgrade: Dexterity3
-            Price: 1000000
+              - Item: Neev_STR_3
+                Chance: 500
+              - Item: Neev_AGI_1
+                Chance: 1300
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 600
+              - Item: Neev_VIT_1
+                Chance: 1200
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 600
+              - Item: Neev_INT_1
+                Chance: 1300
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 600
+              - Item: Neev_DEX_1
+                Chance: 1300
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 600
+              - Item: Neev_LUK_1
+                Chance: 1300
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 600
+          - Enchantgrade: 1
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+              - Item: Agility5
+                Chance: 2000
+              - Item: Strength5
+                Chance: 2000
+              - Item: Vitality5
+                Chance: 2000
+              - Item: Dexterity5
+                Chance: 2000
+              - Item: Luck5
+                Chance: 2000
+              - Item: Inteligence4
+                Chance: 3000
+              - Item: Agility4
+                Chance: 3000
+              - Item: Strength4
+                Chance: 3000
+              - Item: Vitality4
+                Chance: 3000
+              - Item: Dexterity4
+                Chance: 3000
+              - Item: Luck3
+                Chance: 4000
+              - Item: Inteligence3
+                Chance: 4000
+              - Item: Agility3
+                Chance: 4000
+              - Item: Strength3
+                Chance: 4000
+              - Item: Vitality3
+                Chance: 4000
+              - Item: Dexterity3
+                Chance: 4000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Inteligence2
+                Chance: 5000
+              - Item: Agility2
+                Chance: 5000
+              - Item: Strength2
+                Chance: 5000
+              - Item: Vitality2
+                Chance: 5000
+              - Item: Dexterity2
+                Chance: 5000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Neev_STR_1
+                Chance: 1400
+              - Item: Neev_STR_2
+                Chance: 700
+              - Item: Neev_STR_3
+                Chance: 500
+              - Item: Neev_AGI_1
+                Chance: 1300
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 600
+              - Item: Neev_VIT_1
+                Chance: 1200
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 600
+              - Item: Neev_INT_1
+                Chance: 1300
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 600
+              - Item: Neev_DEX_1
+                Chance: 1300
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 600
+              - Item: Neev_LUK_1
+                Chance: 1300
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 600
+          - Enchantgrade: 2
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+              - Item: Agility5
+                Chance: 2000
+              - Item: Strength5
+                Chance: 2000
+              - Item: Vitality5
+                Chance: 2000
+              - Item: Dexterity5
+                Chance: 2000
+              - Item: Luck5
+                Chance: 2000
+              - Item: Inteligence4
+                Chance: 3000
+              - Item: Agility4
+                Chance: 3000
+              - Item: Strength4
+                Chance: 3000
+              - Item: Vitality4
+                Chance: 3000
+              - Item: Dexterity4
+                Chance: 3000
+              - Item: Luck3
+                Chance: 4000
+              - Item: Inteligence3
+                Chance: 4000
+              - Item: Agility3
+                Chance: 4000
+              - Item: Strength3
+                Chance: 4000
+              - Item: Vitality3
+                Chance: 4000
+              - Item: Dexterity3
+                Chance: 4000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Inteligence2
+                Chance: 5000
+              - Item: Agility2
+                Chance: 5000
+              - Item: Strength2
+                Chance: 5000
+              - Item: Vitality2
+                Chance: 5000
+              - Item: Dexterity2
+                Chance: 5000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Neev_STR_1
+                Chance: 1400
+              - Item: Neev_STR_2
+                Chance: 700
+              - Item: Neev_STR_3
+                Chance: 500
+              - Item: Neev_AGI_1
+                Chance: 1300
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 600
+              - Item: Neev_VIT_1
+                Chance: 1200
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 600
+              - Item: Neev_INT_1
+                Chance: 1300
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 600
+              - Item: Neev_DEX_1
+                Chance: 1300
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 600
+              - Item: Neev_LUK_1
+                Chance: 1300
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 600
+          - Enchantgrade: 3
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+              - Item: Agility5
+                Chance: 2000
+              - Item: Strength5
+                Chance: 2000
+              - Item: Vitality5
+                Chance: 2000
+              - Item: Dexterity5
+                Chance: 2000
+              - Item: Luck5
+                Chance: 2000
+              - Item: Inteligence4
+                Chance: 3000
+              - Item: Agility4
+                Chance: 3000
+              - Item: Strength4
+                Chance: 3000
+              - Item: Vitality4
+                Chance: 3000
+              - Item: Dexterity4
+                Chance: 3000
+              - Item: Luck3
+                Chance: 4000
+              - Item: Inteligence3
+                Chance: 4000
+              - Item: Agility3
+                Chance: 4000
+              - Item: Strength3
+                Chance: 4000
+              - Item: Vitality3
+                Chance: 4000
+              - Item: Dexterity3
+                Chance: 4000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Inteligence2
+                Chance: 5000
+              - Item: Agility2
+                Chance: 5000
+              - Item: Strength2
+                Chance: 5000
+              - Item: Vitality2
+                Chance: 5000
+              - Item: Dexterity2
+                Chance: 5000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Neev_STR_1
+                Chance: 1400
+              - Item: Neev_STR_2
+                Chance: 700
+              - Item: Neev_STR_3
+                Chance: 500
+              - Item: Neev_AGI_1
+                Chance: 1300
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 600
+              - Item: Neev_VIT_1
+                Chance: 1200
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 600
+              - Item: Neev_INT_1
+                Chance: 1300
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 600
+              - Item: Neev_DEX_1
+                Chance: 1300
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 600
+              - Item: Neev_LUK_1
+                Chance: 1300
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 600
+          - Enchantgrade: 4
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+              - Item: Agility5
+                Chance: 2000
+              - Item: Strength5
+                Chance: 2000
+              - Item: Vitality5
+                Chance: 2000
+              - Item: Dexterity5
+                Chance: 2000
+              - Item: Luck5
+                Chance: 2000
+              - Item: Inteligence4
+                Chance: 3000
+              - Item: Agility4
+                Chance: 3000
+              - Item: Strength4
+                Chance: 3000
+              - Item: Vitality4
+                Chance: 3000
+              - Item: Dexterity4
+                Chance: 3000
+              - Item: Luck3
+                Chance: 4000
+              - Item: Inteligence3
+                Chance: 4000
+              - Item: Agility3
+                Chance: 4000
+              - Item: Strength3
+                Chance: 4000
+              - Item: Vitality3
+                Chance: 4000
+              - Item: Dexterity3
+                Chance: 4000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Inteligence2
+                Chance: 5000
+              - Item: Agility2
+                Chance: 5000
+              - Item: Strength2
+                Chance: 5000
+              - Item: Vitality2
+                Chance: 5000
+              - Item: Dexterity2
+                Chance: 5000
+              - Item: Luck2
+                Chance: 5000
+              - Item: Neev_STR_1
+                Chance: 1400
+              - Item: Neev_STR_2
+                Chance: 700
+              - Item: Neev_STR_3
+                Chance: 500
+              - Item: Neev_AGI_1
+                Chance: 1300
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 600
+              - Item: Neev_VIT_1
+                Chance: 1200
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 600
+              - Item: Neev_INT_1
+                Chance: 1300
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 600
+              - Item: Neev_DEX_1
+                Chance: 1300
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 600
+              - Item: Neev_LUK_1
+                Chance: 1300
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 600
       - Slot: 2
         Materials:
-          - Material: Enchant_Ticket
+          - Material: Pow_Meteorite_Dust
+            Amount: 4
+          - Material: Sta_Meteorite_Dust
+            Amount: 4
+          - Material: Con_Meteorite_Dust
+            Amount: 4
+          - Material: Crt_Meteorite_Dust
+            Amount: 4
+          - Material: Spl_Meteorite_Dust
+            Amount: 4
+          - Material: Wis_Meteorite_Dust
+            Amount: 4
+          - Material: Silvervine
+            Amount: 5
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: Attack_Delay_1
-                Chance: 5000
-              - Item: Spell1
-                Chance: 5000
-              - Item: ATK_1Lv
-                Chance: 20000
-              - Item: MATK_1Lv
-                Chance: 20000
-              - Item: MHP_1Lv
-                Chance: 20000
-              - Item: MSP_1Lv
-                Chance: 20000
-              - Item: Attack_Delay_2
-                Chance: 800
-              - Item: Spell2
-                Chance: 800
-              - Item: ATK_2Lv
-                Chance: 2100
-              - Item: MATK_2Lv
-                Chance: 2100
-              - Item: MHP_2Lv
-                Chance: 2100
-              - Item: MSP_2Lv
-                Chance: 2100
-        Upgrades:
-          - Enchant: Attack_Delay_1
-            Upgrade: Attack_Delay_2
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: Spell1
-            Upgrade: Spell2
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: ATK_1Lv
-            Upgrade: ATK_2Lv
-            Price: 5000000
-          - Enchant: MATK_1Lv
-            Upgrade: MATK_2Lv
-            Price: 5000000
-          - Enchant: MHP_1Lv
-            Upgrade: MHP_2Lv
-            Price: 5000000
-          - Enchant: MSP_1Lv
-            Upgrade: MSP_2Lv
-            Price: 5000000
+              - Item: Nebula_Of_FS1
+                Chance: 10500
+              - Item: Nebula_Of_EA1
+                Chance: 10500
+              - Item: Nebula_Of_SH1
+                Chance: 10500
+              - Item: Nebula_Of_SP1
+                Chance: 10500
+              - Item: Nebula_Of_HL1
+                Chance: 10500
+              - Item: Nebula_Of_HP1
+                Chance: 10500
+              - Item: Nebula_Of_FS2
+                Chance: 4600
+              - Item: Nebula_Of_EA2
+                Chance: 4600
+              - Item: Nebula_Of_SH2
+                Chance: 4600
+              - Item: Nebula_Of_SP2
+                Chance: 4600
+              - Item: Nebula_Of_HL2
+                Chance: 4600
+              - Item: Nebula_Of_HP2
+                Chance: 4600
+              - Item: Nebula_Of_FS3
+                Chance: 1570
+              - Item: Nebula_Of_EA3
+                Chance: 1570
+              - Item: Nebula_Of_SH3
+                Chance: 1570
+              - Item: Nebula_Of_SP3
+                Chance: 1570
+              - Item: Nebula_Of_HL3
+                Chance: 1560
+              - Item: Nebula_Of_HP3
+                Chance: 1570
+          - Enchantgrade: 1
+            Items:
+              - Item: Nebula_Of_FS1
+                Chance: 10500
+              - Item: Nebula_Of_EA1
+                Chance: 10500
+              - Item: Nebula_Of_SH1
+                Chance: 10500
+              - Item: Nebula_Of_SP1
+                Chance: 10500
+              - Item: Nebula_Of_HL1
+                Chance: 10500
+              - Item: Nebula_Of_HP1
+                Chance: 10500
+              - Item: Nebula_Of_FS2
+                Chance: 4600
+              - Item: Nebula_Of_EA2
+                Chance: 4600
+              - Item: Nebula_Of_SH2
+                Chance: 4600
+              - Item: Nebula_Of_SP2
+                Chance: 4600
+              - Item: Nebula_Of_HL2
+                Chance: 4600
+              - Item: Nebula_Of_HP2
+                Chance: 4600
+              - Item: Nebula_Of_FS3
+                Chance: 1570
+              - Item: Nebula_Of_EA3
+                Chance: 1570
+              - Item: Nebula_Of_SH3
+                Chance: 1570
+              - Item: Nebula_Of_SP3
+                Chance: 1570
+              - Item: Nebula_Of_HL3
+                Chance: 1560
+              - Item: Nebula_Of_HP3
+                Chance: 1570
+          - Enchantgrade: 2
+            Items:
+              - Item: Nebula_Of_FS1
+                Chance: 10500
+              - Item: Nebula_Of_EA1
+                Chance: 10500
+              - Item: Nebula_Of_SH1
+                Chance: 10500
+              - Item: Nebula_Of_SP1
+                Chance: 10500
+              - Item: Nebula_Of_HL1
+                Chance: 10500
+              - Item: Nebula_Of_HP1
+                Chance: 10500
+              - Item: Nebula_Of_FS2
+                Chance: 4600
+              - Item: Nebula_Of_EA2
+                Chance: 4600
+              - Item: Nebula_Of_SH2
+                Chance: 4600
+              - Item: Nebula_Of_SP2
+                Chance: 4600
+              - Item: Nebula_Of_HL2
+                Chance: 4600
+              - Item: Nebula_Of_HP2
+                Chance: 4600
+              - Item: Nebula_Of_FS3
+                Chance: 1570
+              - Item: Nebula_Of_EA3
+                Chance: 1570
+              - Item: Nebula_Of_SH3
+                Chance: 1570
+              - Item: Nebula_Of_SP3
+                Chance: 1570
+              - Item: Nebula_Of_HL3
+                Chance: 1560
+              - Item: Nebula_Of_HP3
+                Chance: 1570
+          - Enchantgrade: 3
+            Items:
+              - Item: Nebula_Of_FS1
+                Chance: 10500
+              - Item: Nebula_Of_EA1
+                Chance: 10500
+              - Item: Nebula_Of_SH1
+                Chance: 10500
+              - Item: Nebula_Of_SP1
+                Chance: 10500
+              - Item: Nebula_Of_HL1
+                Chance: 10500
+              - Item: Nebula_Of_HP1
+                Chance: 10500
+              - Item: Nebula_Of_FS2
+                Chance: 4600
+              - Item: Nebula_Of_EA2
+                Chance: 4600
+              - Item: Nebula_Of_SH2
+                Chance: 4600
+              - Item: Nebula_Of_SP2
+                Chance: 4600
+              - Item: Nebula_Of_HL2
+                Chance: 4600
+              - Item: Nebula_Of_HP2
+                Chance: 4600
+              - Item: Nebula_Of_FS3
+                Chance: 1570
+              - Item: Nebula_Of_EA3
+                Chance: 1570
+              - Item: Nebula_Of_SH3
+                Chance: 1570
+              - Item: Nebula_Of_SP3
+                Chance: 1570
+              - Item: Nebula_Of_HL3
+                Chance: 1560
+              - Item: Nebula_Of_HP3
+                Chance: 1570
+          - Enchantgrade: 4
+            Items:
+              - Item: Nebula_Of_FS1
+                Chance: 10500
+              - Item: Nebula_Of_EA1
+                Chance: 10500
+              - Item: Nebula_Of_SH1
+                Chance: 10500
+              - Item: Nebula_Of_SP1
+                Chance: 10500
+              - Item: Nebula_Of_HL1
+                Chance: 10500
+              - Item: Nebula_Of_HP1
+                Chance: 10500
+              - Item: Nebula_Of_FS2
+                Chance: 4600
+              - Item: Nebula_Of_EA2
+                Chance: 4600
+              - Item: Nebula_Of_SH2
+                Chance: 4600
+              - Item: Nebula_Of_SP2
+                Chance: 4600
+              - Item: Nebula_Of_HL2
+                Chance: 4600
+              - Item: Nebula_Of_HP2
+                Chance: 4600
+              - Item: Nebula_Of_FS3
+                Chance: 1570
+              - Item: Nebula_Of_EA3
+                Chance: 1570
+              - Item: Nebula_Of_SH3
+                Chance: 1570
+              - Item: Nebula_Of_SP3
+                Chance: 1570
+              - Item: Nebula_Of_HL3
+                Chance: 1560
+              - Item: Nebula_Of_HP3
+                Chance: 1570
       - Slot: 1
         Materials:
-          - Material: Enchant_Ticket
+          - Material: Pow_Meteorite_Fragment
+            Amount: 4
+          - Material: Sta_Meteorite_Fragment
+            Amount: 4
+          - Material: Con_Meteorite_Fragment
+            Amount: 4
+          - Material: Crt_Meteorite_Fragment
+            Amount: 4
+          - Material: Spl_Meteorite_Fragment
+            Amount: 4
+          - Material: Wis_Meteorite_Fragment
+            Amount: 4
+          - Material: Silvervine
+            Amount: 10
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: POW_1Lv
-                Chance: 9500
-              - Item: POW_2Lv
-                Chance: 500
-              - Item: WIS_1Lv
-                Chance: 9500
-              - Item: WIS_2Lv
-                Chance: 500
-              - Item: SPL_1Lv
-                Chance: 9500
-              - Item: SPL_2Lv
-                Chance: 500
-              - Item: STA_1Lv
-                Chance: 9500
-              - Item: STA_2Lv
-                Chance: 500
-              - Item: CRT_1Lv
-                Chance: 9500
-              - Item: CRT_2Lv
-                Chance: 500
-              - Item: CON_1Lv
-                Chance: 9500
-              - Item: CON_2Lv
-                Chance: 500
-              - Item: HPLUS_Lv1
-                Chance: 9500
-              - Item: HPLUS_Lv2
-                Chance: 500
-              - Item: CRATE_Lv1
-                Chance: 9500
-              - Item: CRATE_Lv2
-                Chance: 500
-              - Item: PATK_1Lv
-                Chance: 9500
-              - Item: PATK_2Lv
-                Chance: 500
-              - Item: SMATK_1Lv
-                Chance: 9500
-              - Item: SMATK_2Lv
-                Chance: 500
-        Upgrades:
-          - Enchant: POW_1Lv
-            Upgrade: POW_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: WIS_1Lv
-            Upgrade: WIS_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: SPL_1Lv
-            Upgrade: SPL_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: STA_1Lv
-            Upgrade: STA_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: CRT_1Lv
-            Upgrade: CRT_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: CON_1Lv
-            Upgrade: CON_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: HPLUS_Lv1
-            Upgrade: HPLUS_Lv2
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: CRATE_Lv1
-            Upgrade: CRATE_Lv2
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: PATK_1Lv
-            Upgrade: PATK_2Lv
-            Materials:
-              - Material: Enchant_Ticket
-          - Enchant: SMATK_1Lv
-            Upgrade: SMATK_2Lv
-            Materials:
-              - Material: Enchant_Ticket
+              - Item: Star_Cluster_Of_Pow1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Sta1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Con1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Crt1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Spl1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Wis1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Pow2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Sta2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Con2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Crt2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Spl2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Wis2
+                Chance: 1850
+          - Enchantgrade: 1
+            Items:
+              - Item: Star_Cluster_Of_Pow1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Sta1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Con1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Crt1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Spl1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Wis1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Pow2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Sta2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Con2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Crt2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Spl2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Wis2
+                Chance: 1850
+          - Enchantgrade: 2
+            Items:
+              - Item: Star_Cluster_Of_Pow1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Sta1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Con1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Crt1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Spl1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Wis1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Pow2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Sta2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Con2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Crt2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Spl2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Wis2
+                Chance: 1850
+          - Enchantgrade: 3
+            Items:
+              - Item: Star_Cluster_Of_Pow1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Sta1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Con1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Crt1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Spl1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Wis1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Pow2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Sta2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Con2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Crt2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Spl2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Wis2
+                Chance: 1850
+          - Enchantgrade: 4
+            Items:
+              - Item: Star_Cluster_Of_Pow1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Sta1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Con1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Crt1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Spl1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Wis1
+                Chance: 14800
+              - Item: Star_Cluster_Of_Pow2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Sta2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Con2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Crt2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Spl2
+                Chance: 1870
+              - Item: Star_Cluster_Of_Wis2
+                Chance: 1850

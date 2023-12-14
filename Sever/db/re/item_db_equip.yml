@@ -184701,6 +184701,8 @@ Body:
     Slots: 1
     Type: Armor
     ArmorLevel: 1
+    Trade:
+      NoStorage: true
     Weight: 5
     Locations:
       Both_Accessory: true
@@ -185389,6 +185391,8 @@ Body:
     Type: Armor
     ArmorLevel: 1
     Weight: 5
+    Trade:
+      NoStorage: true
     Locations:
       Left_Accessory: true
     EquipLevelMin: 1
@@ -185511,6 +185515,8 @@ Body:
     Type: Armor
     ArmorLevel: 1
     Weight: 5
+    Trade:
+      NoStorage: true
     Locations:
       Right_Accessory: true
     EquipLevelMin: 1
