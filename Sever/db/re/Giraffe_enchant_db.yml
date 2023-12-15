@@ -21027,7 +21027,7 @@ Body:
     Reset:
       Chance: 80000
       Materials:
-        - Material: Silvervine
+        - Material: Nyangvine_Fruit
           Amount: 3
     Order:
       - Slot: 3
@@ -21036,7 +21036,7 @@ Body:
     Slots:
       - Slot: 3
         Materials:
-          - Material: Silvervine
+          - Material: Nyangvine_Fruit
             Amount: 2
         Chance: 100000
         Enchants:
@@ -21064,7 +21064,7 @@ Body:
                 Chance: 3000
               - Item: Dexterity4
                 Chance: 3000
-              - Item: Luck3
+              - Item: Luck4
                 Chance: 4000
               - Item: Inteligence3
                 Chance: 4000
@@ -21076,7 +21076,7 @@ Body:
                 Chance: 4000
               - Item: Dexterity3
                 Chance: 4000
-              - Item: Luck2
+              - Item: Luck3
                 Chance: 5000
               - Item: Inteligence2
                 Chance: 5000
@@ -21150,7 +21150,7 @@ Body:
                 Chance: 3000
               - Item: Dexterity4
                 Chance: 3000
-              - Item: Luck3
+              - Item: Luck4
                 Chance: 4000
               - Item: Inteligence3
                 Chance: 4000
@@ -21162,7 +21162,7 @@ Body:
                 Chance: 4000
               - Item: Dexterity3
                 Chance: 4000
-              - Item: Luck2
+              - Item: Luck3
                 Chance: 5000
               - Item: Inteligence2
                 Chance: 5000
@@ -21236,7 +21236,7 @@ Body:
                 Chance: 3000
               - Item: Dexterity4
                 Chance: 3000
-              - Item: Luck3
+              - Item: Luck4
                 Chance: 4000
               - Item: Inteligence3
                 Chance: 4000
@@ -21248,7 +21248,7 @@ Body:
                 Chance: 4000
               - Item: Dexterity3
                 Chance: 4000
-              - Item: Luck2
+              - Item: Luck3
                 Chance: 5000
               - Item: Inteligence2
                 Chance: 5000
@@ -21322,7 +21322,7 @@ Body:
                 Chance: 3000
               - Item: Dexterity4
                 Chance: 3000
-              - Item: Luck3
+              - Item: Luck4
                 Chance: 4000
               - Item: Inteligence3
                 Chance: 4000
@@ -21334,7 +21334,7 @@ Body:
                 Chance: 4000
               - Item: Dexterity3
                 Chance: 4000
-              - Item: Luck2
+              - Item: Luck3
                 Chance: 5000
               - Item: Inteligence2
                 Chance: 5000
@@ -21408,7 +21408,7 @@ Body:
                 Chance: 3000
               - Item: Dexterity4
                 Chance: 3000
-              - Item: Luck3
+              - Item: Luck4
                 Chance: 4000
               - Item: Inteligence3
                 Chance: 4000
@@ -21420,7 +21420,7 @@ Body:
                 Chance: 4000
               - Item: Dexterity3
                 Chance: 4000
-              - Item: Luck2
+              - Item: Luck3
                 Chance: 5000
               - Item: Inteligence2
                 Chance: 5000
@@ -21484,8 +21484,8 @@ Body:
             Amount: 4
           - Material: Wis_Meteorite_Dust
             Amount: 4
-          - Material: Silvervine
-            Amount: 5
+          - Material: Nyangvine_Fruit
+            Amount: 3
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -21525,7 +21525,7 @@ Body:
               - Item: Nebula_Of_HL3
                 Chance: 1560
               - Item: Nebula_Of_HP3
-                Chance: 1570
+                Chance: 1560
           - Enchantgrade: 1
             Items:
               - Item: Nebula_Of_FS1
@@ -21563,7 +21563,7 @@ Body:
               - Item: Nebula_Of_HL3
                 Chance: 1560
               - Item: Nebula_Of_HP3
-                Chance: 1570
+                Chance: 1560
           - Enchantgrade: 2
             Items:
               - Item: Nebula_Of_FS1
@@ -21601,7 +21601,7 @@ Body:
               - Item: Nebula_Of_HL3
                 Chance: 1560
               - Item: Nebula_Of_HP3
-                Chance: 1570
+                Chance: 1560
           - Enchantgrade: 3
             Items:
               - Item: Nebula_Of_FS1
@@ -21639,7 +21639,7 @@ Body:
               - Item: Nebula_Of_HL3
                 Chance: 1560
               - Item: Nebula_Of_HP3
-                Chance: 1570
+                Chance: 1560
           - Enchantgrade: 4
             Items:
               - Item: Nebula_Of_FS1
@@ -21677,7 +21677,7 @@ Body:
               - Item: Nebula_Of_HL3
                 Chance: 1560
               - Item: Nebula_Of_HP3
-                Chance: 1570
+                Chance: 1560
       - Slot: 1
         Materials:
           - Material: Pow_Meteorite_Fragment
@@ -21692,8 +21692,8 @@ Body:
             Amount: 4
           - Material: Wis_Meteorite_Fragment
             Amount: 4
-          - Material: Silvervine
-            Amount: 10
+          - Material: Nyangvine_Fruit
+            Amount: 4
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
