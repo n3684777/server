@@ -307,7 +307,7 @@ Body:
       X: 335
       Y: 34
   - Id: 35
-    Name: 淨化古城副本
+    Name: 施密特國王副本
     Enter:
       Map: 1@gl_prq
       X: 14
