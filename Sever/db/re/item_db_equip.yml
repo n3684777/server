@@ -184702,7 +184702,7 @@ Body:
     Type: Armor
     ArmorLevel: 1
     Trade:
-      NoStorage: true
+      NoSell: true
     Weight: 5
     Locations:
       Both_Accessory: true
@@ -185392,7 +185392,7 @@ Body:
     ArmorLevel: 1
     Weight: 5
     Trade:
-      NoStorage: true
+      NoSell: true
     Locations:
       Left_Accessory: true
     EquipLevelMin: 1
@@ -185514,9 +185514,265 @@ Body:
     Slots: 1
     Type: Armor
     ArmorLevel: 1
-    Weight: 5
     Trade:
+      NoSell: true
+    Weight: 5
+    Locations:
+      Right_Accessory: true
+    EquipLevelMin: 1
+    EquipLevelMin: 1 # + getequiprefinerycnt()
+    Script: |
+      .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
+      .@ra = 5;
+      .@va = 5;
+      .@ms = 500;
+      .@magicgain = 555;
+      .@var = 25;
+      bonus bNoCastCancel2; 
+      if(.@allrefine < 55){
+      bonus bMagicHPGainValue,.@magicgain;
+      bonus bMagicSPGainValue,.@magicgain;
+      bonus bAllStats,.@va;
+      bonus bAllTraitStats,.@va;
+      bonus bMaxHPrate,.@ra;
+      bonus bMaxSPrate,.@ra;
+      bonus bWeaponAtkRate,.@ra;
+      bonus bMatkRate,.@ra;
+      bonus bHitRate,.@ra;
+      bonus bCriticalRate,.@ra;
+      bonus bFleeRate,.@ra;
+      bonus bFlee2Rate,.@ra;  	
+      bonus bAspdRate,.@ra;
+      bonus bPAtkRate,.@ra; 
+      bonus bSMatkRate,.@ra;
+      bonus bResRate,.@ra;
+      bonus bMResRate,.@ra;  
+      bonus bHPlusRate,.@ra;
+      bonus bCRateRate,.@ra;
+      bonus bShortAtkRate,.@ra;
+      bonus bLongAtkRate,.@ra;
+      bonus bCritAtkRate,.@ra;
+      bonus bNearAtkDef,.@ra;
+      bonus bLongAtkDef,.@ra;
+      bonus bMagicAtkDef,.@ra;
+      bonus bNoWeaponDamage,.@ra;
+      bonus bFixedCast,-(.@ms);
+      bonus bVariableCastrate,-(.@var);
+      bonus bDelayrate,.@ra;
+      bonus2 bAddEle,Ele_All,.@ra;
+      bonus2 bSubEle,Ele_All,.@ra;
+      bonus2 bAddRace,RC_All,.@ra;
+      bonus2 bMagicAddRace,RC_All,.@ra;
+      bonus2 bSubRace,RC_All,.@ra;
+      bonus2 bAddClass,Class_All,.@ra;
+      bonus2 bMagicAddClass,Class_All,.@ra;
+      bonus2 bSubClass,Class_All,.@ra;
+      bonus2 bAddSize,Size_All,.@ra;
+      bonus2 bMagicAddSize,Size_All,.@ra;
+      bonus2 bSubSize,Size_All,.@ra;
+      bonus2 bMagicAtkEle,Ele_All,.@ra;
+      bonus2 bIgnoreDefRaceRate,RC_All,.@ra;
+      bonus2 bIgnoreMdefRaceRate,RC_All,.@ra;
+      bonus2 bExpAddRace,RC_All,.@ra;
+      bonus2 bHPDrainRate,.@ra*10,.@ra;
+      bonus2 bSPDrainRate,.@ra*10,.@ra;
+      bonus bShortWeaponDamageReturn,.@ra;
+      bonus bLongWeaponDamageReturn,.@ra;
+      }
+      if(.@allrefine >= 55){
+      bonus bMagicHPGainValue,.@magicgain*2;
+      bonus bMagicSPGainValue,.@magicgain*2;
+      bonus bAllStats,2*.@va;
+      bonus bAllTraitStats,2*.@va;
+      bonus bMaxHPrate,2*.@ra;
+      bonus bMaxSPrate,2*.@ra;
+      bonus bWeaponAtkRate,2*.@ra;
+      bonus bMatkRate,2*.@ra;
+      bonus bHitRate,2*.@ra;
+      bonus bCriticalRate,2*.@ra;
+      bonus bFleeRate,2*.@ra;
+      bonus bFlee2Rate,2*.@ra;  	
+      bonus bAspdRate,2*.@ra;
+      bonus bPAtkRate,2*.@ra; 
+      bonus bSMatkRate,2*.@ra;
+      bonus bResRate,2*.@ra;
+      bonus bMResRate,2*.@ra;  
+      bonus bHPlusRate,2*.@ra;
+      bonus bCRateRate,2*.@ra;
+      bonus bShortAtkRate,2*.@ra;
+      bonus bLongAtkRate,2*.@ra;
+      bonus bCritAtkRate,2*.@ra;
+      bonus bNearAtkDef,2*.@ra;
+      bonus bLongAtkDef,2*.@ra;
+      bonus bMagicAtkDef,2*.@ra;
+      bonus bNoWeaponDamage,2*.@ra;
+      bonus bFixedCast,-(2*.@ms);
+      bonus bVariableCastrate,-(2*.@var);
+      bonus bDelayrate,2*.@ra;
+      bonus2 bAddEle,Ele_All,2*.@ra;
+      bonus2 bSubEle,Ele_All,2*.@ra;
+      bonus2 bAddRace,RC_All,2*.@ra;
+      bonus2 bMagicAddRace,RC_All,2*.@ra;
+      bonus2 bSubRace,RC_All,2*.@ra;
+      bonus2 bAddClass,Class_All,2*.@ra;
+      bonus2 bMagicAddClass,Class_All,2*.@ra;
+      bonus2 bSubClass,Class_All,2*.@ra;
+      bonus2 bAddSize,Size_All,2*.@ra;
+      bonus2 bMagicAddSize,Size_All,2*.@ra;
+      bonus2 bSubSize,Size_All,2*.@ra;
+      bonus2 bMagicAtkEle,Ele_All,2*.@ra;
+      bonus2 bIgnoreDefRaceRate,RC_All,2*.@ra;
+      bonus2 bIgnoreMdefRaceRate,RC_All,2*.@ra;
+      bonus2 bExpAddRace,RC_All,2*.@ra;
+      bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
+      bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
+      bonus bShortWeaponDamageReturn,2*.@ra;
+      bonus bLongWeaponDamageReturn,2*.@ra;
+      }
+  - Id: 920005
+    AegisName: Boyboy_Accessory_Left_
+    Name: 傳奇的B大(左)-租賃
+    Buy: 0
+    Weight: 5
+    Defense: 5
+    Slots: 1
+    Type: Armor
+    ArmorLevel: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
       NoStorage: true
+      NoGuildStorage: true
+      NoMail: true      
+    Weight: 5
+    Locations:
+      Left_Accessory: true
+    EquipLevelMin: 1
+    EquipLevelMin: 1 # + getequiprefinerycnt()
+    Script: |
+      .@allrefine = getequiprefinerycnt(EQI_HEAD_TOP) + getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_HAND_R) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES);
+      .@ra = 5;
+      .@va = 5;
+      .@ms = 500;
+      .@magicgain = 555;
+      .@var = 25;
+      bonus bNoCastCancel2; 
+      if(.@allrefine < 55){
+      bonus bMagicHPGainValue,.@magicgain;
+      bonus bMagicSPGainValue,.@magicgain;
+      bonus bAllStats,.@va;
+      bonus bAllTraitStats,.@va;
+      bonus bMaxHPrate,.@ra;
+      bonus bMaxSPrate,.@ra;
+      bonus bWeaponAtkRate,.@ra;
+      bonus bMatkRate,.@ra;
+      bonus bHitRate,.@ra;
+      bonus bCriticalRate,.@ra;
+      bonus bFleeRate,.@ra;
+      bonus bFlee2Rate,.@ra;  	
+      bonus bAspdRate,.@ra;
+      bonus bPAtkRate,.@ra; 
+      bonus bSMatkRate,.@ra;
+      bonus bResRate,.@ra;
+      bonus bMResRate,.@ra;  
+      bonus bHPlusRate,.@ra;
+      bonus bCRateRate,.@ra;
+      bonus bShortAtkRate,.@ra;
+      bonus bLongAtkRate,.@ra;
+      bonus bCritAtkRate,.@ra;
+      bonus bNearAtkDef,.@ra;
+      bonus bLongAtkDef,.@ra;
+      bonus bMagicAtkDef,.@ra;
+      bonus bNoWeaponDamage,.@ra;
+      bonus bFixedCast,-(.@ms);
+      bonus bVariableCastrate,-(.@var);
+      bonus bDelayrate,.@ra;
+      bonus2 bAddEle,Ele_All,.@ra;
+      bonus2 bSubEle,Ele_All,.@ra;
+      bonus2 bAddRace,RC_All,.@ra;
+      bonus2 bMagicAddRace,RC_All,.@ra;
+      bonus2 bSubRace,RC_All,.@ra;
+      bonus2 bAddClass,Class_All,.@ra;
+      bonus2 bMagicAddClass,Class_All,.@ra;
+      bonus2 bSubClass,Class_All,.@ra;
+      bonus2 bAddSize,Size_All,.@ra;
+      bonus2 bMagicAddSize,Size_All,.@ra;
+      bonus2 bSubSize,Size_All,.@ra;
+      bonus2 bMagicAtkEle,Ele_All,.@ra;
+      bonus2 bIgnoreDefRaceRate,RC_All,.@ra;
+      bonus2 bIgnoreMdefRaceRate,RC_All,.@ra;
+      bonus2 bExpAddRace,RC_All,.@ra;
+      bonus2 bHPDrainRate,.@ra*10,.@ra;
+      bonus2 bSPDrainRate,.@ra*10,.@ra;
+      bonus bShortWeaponDamageReturn,.@ra;
+      bonus bLongWeaponDamageReturn,.@ra;
+      }
+      if(.@allrefine >= 55){
+      bonus bMagicHPGainValue,.@magicgain*2;
+      bonus bMagicSPGainValue,.@magicgain*2;
+      bonus bAllStats,2*.@va;
+      bonus bAllTraitStats,2*.@va;
+      bonus bMaxHPrate,2*.@ra;
+      bonus bMaxSPrate,2*.@ra;
+      bonus bWeaponAtkRate,2*.@ra;
+      bonus bMatkRate,2*.@ra;
+      bonus bHitRate,2*.@ra;
+      bonus bCriticalRate,2*.@ra;
+      bonus bFleeRate,2*.@ra;
+      bonus bFlee2Rate,2*.@ra;  	
+      bonus bAspdRate,2*.@ra;
+      bonus bPAtkRate,2*.@ra; 
+      bonus bSMatkRate,2*.@ra;
+      bonus bResRate,2*.@ra;
+      bonus bMResRate,2*.@ra;  
+      bonus bHPlusRate,2*.@ra;
+      bonus bCRateRate,2*.@ra;
+      bonus bShortAtkRate,2*.@ra;
+      bonus bLongAtkRate,2*.@ra;
+      bonus bCritAtkRate,2*.@ra;
+      bonus bNearAtkDef,2*.@ra;
+      bonus bLongAtkDef,2*.@ra;
+      bonus bMagicAtkDef,2*.@ra;
+      bonus bNoWeaponDamage,2*.@ra;
+      bonus bFixedCast,-(2*.@ms);
+      bonus bVariableCastrate,-(2*.@var);
+      bonus bDelayrate,2*.@ra;
+      bonus2 bAddEle,Ele_All,2*.@ra;
+      bonus2 bSubEle,Ele_All,2*.@ra;
+      bonus2 bAddRace,RC_All,2*.@ra;
+      bonus2 bMagicAddRace,RC_All,2*.@ra;
+      bonus2 bSubRace,RC_All,2*.@ra;
+      bonus2 bAddClass,Class_All,2*.@ra;
+      bonus2 bMagicAddClass,Class_All,2*.@ra;
+      bonus2 bSubClass,Class_All,2*.@ra;
+      bonus2 bAddSize,Size_All,2*.@ra;
+      bonus2 bMagicAddSize,Size_All,2*.@ra;
+      bonus2 bSubSize,Size_All,2*.@ra;
+      bonus2 bMagicAtkEle,Ele_All,2*.@ra;
+      bonus2 bIgnoreDefRaceRate,RC_All,2*.@ra;
+      bonus2 bIgnoreMdefRaceRate,RC_All,2*.@ra;
+      bonus2 bExpAddRace,RC_All,2*.@ra;
+      bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
+      bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
+      bonus bShortWeaponDamageReturn,2*.@ra;
+      bonus bLongWeaponDamageReturn,2*.@ra;
+      }
+    - Id: 920006
+    AegisName: Boyboy_Accessory_Right_
+    Name: 傳奇的B大(右)-租賃
+    Buy: 0
+    Weight: 5
+    Defense: 5
+    Slots: 1
+    Type: Armor
+    ArmorLevel: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true      
+    Weight: 5
     Locations:
       Right_Accessory: true
     EquipLevelMin: 1

@@ -68638,3 +68638,12 @@ Body:
       changebase 4142;
     UnEquipScript: |
       changebase Class;
+  - Id: 930000
+    AegisName: item_930000
+    Name: °Æ¥»ÂI¼Æ
+    Type: Etc
+    Weight: 0
+    Trade:
+      NoDrop: true
+      NoSell: true
+      NoTrade: true
