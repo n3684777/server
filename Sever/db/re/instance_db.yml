@@ -242,7 +242,7 @@ Body:
       X: 367
       Y: 304
   - Id: 26
-    Name: 國王的鞋跟
+    Name: 查理斯頓工廠
     IdleTimeOut: 150
     Enter:
       Map: 1@mcd
