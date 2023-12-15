@@ -1,4 +1,4 @@
-uttycty,118,150,4	script	副本點數購買	112,{
+uttycty,110,79,4	script	副本點數購買	910,{
 	disable_items;
 	end;
 OnInit:
