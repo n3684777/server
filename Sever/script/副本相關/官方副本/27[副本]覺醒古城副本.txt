@@ -146,13 +146,13 @@ OnDisable2:
 	hideonnpc instance_npcname("關羽#n_ghinstance1");
 
 	for(set .@i,1; .@i<=20; set .@i,.@i+4) {
-		hideoffnpc instance_npcname("卡利斯格騎士#n_"+.@i);
-		hideoffnpc instance_npcname("卡利斯格騎士#n_"+(.@i+1));
-		hideoffnpc instance_npcname("白衣騎士#n_"+(.@i+2));
-		hideoffnpc instance_npcname("白衣騎士#n_"+(.@i+3));
+		hideoffnpc instance_npcname("劉備軍衛兵#n_"+.@i);
+		hideoffnpc instance_npcname("劉備軍衛兵#n_"+(.@i+1));
+		hideoffnpc instance_npcname("劉備軍士兵#n_"+(.@i+2));
+		hideoffnpc instance_npcname("劉備軍士兵#n_"+(.@i+3));
 	}
-	hideoffnpc instance_npcname("卡利斯格騎士#n_21");
-	hideoffnpc instance_npcname("卡利斯格騎士#n_22");
+	hideoffnpc instance_npcname("劉備軍衛兵#n_21");
+	hideoffnpc instance_npcname("劉備軍衛兵#n_22");
 
 	hideoffnpc instance_npcname("劉備#n_ghinstance1");
 	hideoffnpc instance_npcname("關羽#n_ghinstance2");
@@ -162,7 +162,7 @@ OnEnable:
 	end;
 }
 
-1@gl_kh,145,54,6	script	卡利斯格騎士#n_1	655,{
+1@gl_kh,145,54,6	script	劉備軍衛兵#n_1	655,{
 	mes "["+strnpcinfo(1)+"]";
 	switch((atoi(strnpcinfo(2)) + 1) / 2) {
 		case 1: mes "我有被招募嗎?"; break;
@@ -186,27 +186,27 @@ OnEnable:
 	hideoffnpc instance_npcname(strnpcinfo(0));
 	end;
 }
-1@gl_kh,154,54,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_2	655
-1@gl_kh,145,59,6	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_3	657
-1@gl_kh,154,59,3	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_4	657
-1@gl_kh,145,64,6	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_5	655
-1@gl_kh,154,64,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_6	655
-1@gl_kh,145,69,6	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_7	657
-1@gl_kh,154,69,3	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_8	657
-1@gl_kh,145,74,6	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_9	655
-1@gl_kh,154,74,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_10	655
-1@gl_kh,145,79,6	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_11	657
-1@gl_kh,154,79,3	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_12	657
-1@gl_kh,145,84,6	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_13	655
-1@gl_kh,154,84,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_14	655
-1@gl_kh,145,89,6	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_15	657
-1@gl_kh,154,89,3	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_16	657
-1@gl_kh,145,94,6	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_17	655
-1@gl_kh,154,94,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_18	655
-1@gl_kh,145,99,6	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_19	657
-1@gl_kh,154,99,3	duplicate(卡利斯格騎士#n_1)	白衣騎士#n_20	657
-1@gl_kh,145,104,6	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_21	655
-1@gl_kh,154,104,3	duplicate(卡利斯格騎士#n_1)	卡利斯格騎士#n_22	655
+1@gl_kh,154,54,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_2	655
+1@gl_kh,145,59,6	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_3	657
+1@gl_kh,154,59,3	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_4	657
+1@gl_kh,145,64,6	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_5	655
+1@gl_kh,154,64,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_6	655
+1@gl_kh,145,69,6	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_7	657
+1@gl_kh,154,69,3	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_8	657
+1@gl_kh,145,74,6	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_9	655
+1@gl_kh,154,74,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_10	655
+1@gl_kh,145,79,6	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_11	657
+1@gl_kh,154,79,3	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_12	657
+1@gl_kh,145,84,6	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_13	655
+1@gl_kh,154,84,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_14	655
+1@gl_kh,145,89,6	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_15	657
+1@gl_kh,154,89,3	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_16	657
+1@gl_kh,145,94,6	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_17	655
+1@gl_kh,154,94,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_18	655
+1@gl_kh,145,99,6	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_19	657
+1@gl_kh,154,99,3	duplicate(劉備軍衛兵#n_1)	劉備軍士兵#n_20	657
+1@gl_kh,145,104,6	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_21	655
+1@gl_kh,154,104,3	duplicate(劉備軍衛兵#n_1)	劉備軍衛兵#n_22	655
 
 1@gl_kh,149,100,6	script	劉備#n_ghinstance1	652,{
 	if (getcharid(0) == getpartyleader(getcharid(1),2)) {
@@ -343,7 +343,7 @@ OnTalk6:
 	npctalk "劉備：怎麼會！她已經看穿藏有伊美樂的心臟碎片位置了！";
 	end;
 OnTalk7:
-	npctalk "劉備：卡利斯格騎士團和白衣騎士團現在馬上跟我一起…";
+	npctalk "劉備：劉備軍衛兵團和劉備軍士兵團現在馬上跟我一起…";
 	end;
 OnTalk8:
 	npctalk "劉備：怎麼會…我的部下們…怎麼可能會有這種事！";
@@ -488,13 +488,13 @@ OnTimer8500:
 	hideonnpc instance_npcname("關羽#n_ghinstance1");
 
 	for(set .@i,1; .@i<=20; set .@i,.@i+4) {
-		hideonnpc instance_npcname("卡利斯格騎士#n_"+.@i);
-		hideonnpc instance_npcname("卡利斯格騎士#n_"+(.@i+1));
-		hideonnpc instance_npcname("白衣騎士#n_"+(.@i+2));
-		hideonnpc instance_npcname("白衣騎士#n_"+(.@i+3));
+		hideonnpc instance_npcname("劉備軍衛兵#n_"+.@i);
+		hideonnpc instance_npcname("劉備軍衛兵#n_"+(.@i+1));
+		hideonnpc instance_npcname("劉備軍士兵#n_"+(.@i+2));
+		hideonnpc instance_npcname("劉備軍士兵#n_"+(.@i+3));
 	}
-	hideonnpc instance_npcname("卡利斯格騎士#n_21");
-	hideonnpc instance_npcname("卡利斯格騎士#n_22");
+	hideonnpc instance_npcname("劉備軍衛兵#n_21");
+	hideonnpc instance_npcname("劉備軍衛兵#n_22");
 
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_talkinstance1")+"::OnMyMobDead"; 
