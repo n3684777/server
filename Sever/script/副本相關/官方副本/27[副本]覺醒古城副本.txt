@@ -814,15 +814,15 @@ OnMyMobDead:
 	if (.@mob_dead_num > 35) {
 		mapannounce .@map$, "就像是從曹操的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
 		killmonster .@map$,.@label$;
-		donpcevent instance_npcname("候補服事道文#gl_kh")+"::OnEnable";
+		donpcevent instance_npcname("袁紹#gl_kh")+"::OnEnable";
 		donpcevent instance_npcname("#n_ghmemorialmob01")+"::OnDisable";
 	}
 	end;
 }
 
-1@gl_kh,17,51,3	script	候補服事道文#gl_kh	706,{
+1@gl_kh,17,51,3	script	袁紹#gl_kh	706,{
 	if (getcharid(0) == getpartyleader(getcharid(1),2)) {
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "救命啊！救救我啊！";
 		next;
 		select("喂！你醒醒啊！只有你一個生還者嗎？");
@@ -830,56 +830,56 @@ OnMyMobDead:
 		mes "喂！你醒醒啊！只有你一個生還者嗎？";
 		unittalk getcharid(3),strcharinfo(0)+"：喂！你醒醒啊！只有你一個生還者嗎？";
 		next;
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "侍衛長還有…修道士…全都變成怪物了，而我什麼都沒辦法做…";
-		npctalk "候補服事道文：侍衛長還有…修道士…全都變成怪物了，而我什麼都沒辦法做…";
+		npctalk "袁紹：侍衛長還有…修道士…全都變成怪物了，而我什麼都沒辦法做…";
 		next;
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "除了躲在這裡…我什麼都…什麼都，什麼都幫不上忙…";
-		npctalk "候補服事道文：除了躲在這裡…我什麼都…什麼都，什麼都幫不上忙…";
+		npctalk "袁紹：除了躲在這裡…我什麼都…什麼都，什麼都幫不上忙…";
 		next;
 		select("快打起精神！");
 		mes "["+strcharinfo(0)+"]";
 		mes "快打起精神來呀你這傢伙！從東邊出去，再走中央道路到外面！那條路是安全的！！";
 		unittalk getcharid(3),strcharinfo(0)+"：快打起精神來呀你這傢伙！從東邊出去，再走中央道路到外面！那條路是安全的！！";
 		next;
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "從東邊那條路？我自己？自己嗎？";
-		npctalk "候補服事道文：從東邊那條路？我自己？自己嗎？";
+		npctalk "袁紹：從東邊那條路？我自己？自己嗎？";
 		next;
 		select("我會把我多出來的鈍器給你.");
 		mes "["+strcharinfo(0)+"]";
 		mes "我會把我多出來的鈍器給你，應該會有幫助的。如果真的不行的話，就把眼睛一閉心一橫，殺出去就對了。";
 		unittalk getcharid(3),strcharinfo(0)+"：我會把我多出來的鈍器給你，應該會有幫助的。如果真的不行的話，就把眼睛一閉心一橫，殺出去就對了。";
 		next;
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "我知道了…我會試試看的。";
-		npctalk "候補服事道文：我知道了…我會試試看的。";
-		donpcevent instance_npcname("候補服事道文#gl_kh")+"::OnDisable";
+		npctalk "袁紹：我知道了…我會試試看的。";
+		donpcevent instance_npcname("袁紹#gl_kh")+"::OnDisable";
 		donpcevent instance_npcname("#n_ghmemorialmob02")+"::OnEnable";
 		close;
 	} else {
-		mes "[候補服事道文]";
+		mes "[袁紹]";
 		mes "誰快來幫幫我, 救救我阿, 拜託.";
 		close;
 	}
 close;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("候補服事道文#gl_kh");
+	hideonnpc instance_npcname("袁紹#gl_kh");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("候補服事道文#gl_kh");
+	hideoffnpc instance_npcname("袁紹#gl_kh");
 	end;
 }
 
 // Sector 2 Mobs
 //============================================================
-1@gl_kh,291,145,3	script	忽克連毀滅者#gl_kh	726,{
+1@gl_kh,291,145,3	script	張角#gl_kh	726,{
 	if (getcharid(0) == getpartyleader(getcharid(1),2)) {
-		mes "[忽克連毀滅者]";
+		mes "[張角]";
 		mes "呀啊啊！！殺啊啊！！";
-		npctalk "忽克連毀滅者：呀啊啊！！殺啊啊！！";
+		npctalk "張角：呀啊啊！！殺啊啊！！";
 		specialeffect EF_CRASHEARTH;
 		next;
 		select("你好啊！");
@@ -887,42 +887,42 @@ OnEnable:
 		mes "你好啊！我是人類。你自己一個人嗎？沒有別的生還者嗎？";
 		unittalk getcharid(3),strcharinfo(0)+"：你好啊！我是人類。你自己一個人嗎？沒有別的生還者嗎？";
 		next;
-		mes "[忽克連毀滅者]";
+		mes "[張角]";
 		mes "只有我一個人活下來";
-		npctalk "忽克連毀滅者：只有我一個人活下來";
+		npctalk "張角：只有我一個人活下來";
 		next;
 		select("這裡很危險.");
 		mes "["+strcharinfo(0)+"]";
 		mes "這裡很危險。妳應該知道通往中央道路的路吧？妳好像懷有身孕耶…妳能走嗎？";
 		unittalk getcharid(3),strcharinfo(0)+"：這裡很危險。妳應該知道通往中央道路的路吧？妳好像懷有身孕耶…妳能走嗎？";
 		next;
-		mes "[忽克連毀滅者]";
+		mes "[張角]";
 		mes "嗯，我可以走的。我必須要走才行，為了我的孩子。";
-		npctalk "忽克連毀滅者：嗯，我可以走的。我必須要走才行，為了我的孩子。";
+		npctalk "張角：嗯，我可以走的。我必須要走才行，為了我的孩子。";
 		next;
 		select("希望你一定要活下來…");
 		mes "["+strcharinfo(0)+"]";
 		mes "我會幫你祈禱的，希望妳跟腹中的胎兒都可以平安無事。沒能陪妳一起離開，我很抱歉。";
 		unittalk getcharid(3),strcharinfo(0)+"：我會幫你祈禱的，希望妳跟腹中的胎兒都可以平安無事。沒能陪妳一起離開，我很抱歉。";
 		next;
-		mes "[忽克連毀滅者]";
+		mes "[張角]";
 		mes "不會的，非常感激你救了我，我可以自己過去的。我也會幫你祈禱的。";
-		npctalk "忽克連毀滅者：不會的，非常感激你救了我，我可以自己過去的。我也會幫你祈禱的。";
-		donpcevent instance_npcname("忽克連毀滅者#gl_kh")+"::OnDisable";
+		npctalk "張角：不會的，非常感激你救了我，我可以自己過去的。我也會幫你祈禱的。";
+		donpcevent instance_npcname("張角#gl_kh")+"::OnDisable";
 		donpcevent instance_npcname("#n_ghmemorialmob03")+"::OnEnable";
 		close;
 	} else {
-		mes "[忽克連毀滅者]";
+		mes "[張角]";
 		mes "誰快來幫幫我, 救救我阿, 拜託.";
 		close;
 	}
 end;
 OnInstanceInit:
 OnDisable:
-	hideonnpc instance_npcname("忽克連毀滅者#gl_kh");
+	hideonnpc instance_npcname("張角#gl_kh");
 	end;
 OnEnable:
-	hideoffnpc instance_npcname("忽克連毀滅者#gl_kh");
+	hideoffnpc instance_npcname("張角#gl_kh");
 	end;
 }
 
@@ -950,7 +950,7 @@ OnMyMobDead:
 	if (.@mob_dead_num > 28) {
 		mapannounce .@map$, "就像是從曹操的魔力中逃脫一樣，死者們灰飛煙滅。",bc_map,"0xFFFFFF";
 		killmonster .@map$,.@label$;
-		donpcevent instance_npcname("忽克連毀滅者#gl_kh")+"::OnEnable";
+		donpcevent instance_npcname("張角#gl_kh")+"::OnEnable";
 		donpcevent instance_npcname("#n_ghmemorialmob02")+"::OnDisable";
 	}
 	end;
