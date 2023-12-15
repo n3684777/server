@@ -45341,58 +45341,84 @@ Body:
     SubGroups:
       - SubGroup: 1
         List:
+          - Item: Conse_F_Humma
+            Rate: 257
+          - Item: Conse_F_C_Humma
+            Rate: 257
+          - Item: Conse_F_Revolver
+            Rate: 257
+          - Item: Conse_F_Shotgun
+            Rate: 257
+          - Item: Conse_F_Rifle
+            Rate: 257
+          - Item: Conse_F_Gatling
+            Rate: 257
+          - Item: Conse_F_Launcher
+            Rate: 257
+          - Item: Conse_F_Moon_B
+            Rate: 257
+          - Item: Conse_F_Star_B
+            Rate: 257
+          - Item: Conse_F_S_Stick
+            Rate: 257
+          - Item: Conse_F_D_Wand
+            Rate: 257
+          - Item: Conse_F_F_Wand
+            Rate: 257
+          - Item: Conse_F_F_model
+            Rate: 257
           - Item: Conse_F_T_Sword
-            Rate: 385
+            Rate: 257
           - Item: Conse_F_Lance
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_G_Sword
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_G_Spear
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Axe
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Mace
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Lapier
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Hall
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Cakram
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Katar
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Dagger
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_C_Bow
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_T_Staff
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Rod
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_M_Book
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_P_Book
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Bible
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Wand
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Knuckle
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Claw
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Ballista
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_A_Bow
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Violin
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_C_Rope
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Harp
-            Rate: 385
+            Rate: 256
           - Item: Conse_F_Ribbon
-            Rate: 385
+            Rate: 256
   - Group: MATERIAL_SHADOW_CUBEII
     SubGroups:
       - SubGroup: 1

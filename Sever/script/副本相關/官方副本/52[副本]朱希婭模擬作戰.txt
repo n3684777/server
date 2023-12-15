@@ -61,11 +61,11 @@ OnInit:
 	// 最大組隊人數
 	.ins_Maxplayer = 12;
 	// 挑戰時間
-//	.ins_time = 3600;
+ 	.ins_time = 3600;
 	// 冷卻時間
-//	.ins_cooldown = 300;
+	.ins_cooldown = 300;
 	// 冷卻編號
-//	.ins_collnum = 52;
+	.ins_collnum = 52;
 
 //
 	waitingroom "[副本]朱希婭模擬作戰",0;

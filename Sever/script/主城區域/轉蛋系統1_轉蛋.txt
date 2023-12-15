@@ -166,7 +166,11 @@ SrollStart:
 			
 		}
 				if ( .@open_times < 151 ){
-				dispbottom "[系統]當前幸運值為: "+.@open_times+"　(幸運值達到150時，下次必定SSS)",0xFF0000;}
+				//dispbottom "[系統]當前幸運值為: "+.@open_times+"　(幸運值達到150時，下次必定SSS)",0xFF0000;
+				}
+				if ( .@open_times == 150 ){
+				dispbottom "[系統]當前幸運值為: "+.@open_times+"　(下次必定SSS)",0xFF0000;
+				}
 	}
 		
 	if(.@announce_rate && .@rate[.@k] <= .@announce_rate){
