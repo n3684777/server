@@ -185757,7 +185757,7 @@ Body:
       bonus bShortWeaponDamageReturn,2*.@ra;
       bonus bLongWeaponDamageReturn,2*.@ra;
       }
-    - Id: 920007
+  - Id: 920007
     AegisName: Boyboy_Accessory_Right_R
     Name: 傳奇的B大(右)-租賃
     Buy: 0
