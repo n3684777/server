@@ -1936,6 +1936,7 @@ OnInstanceInit:
 get42:
 	end;
 get422:
+	getitem 930000,5;
 	getitem 607,10;// Yggdrasilberry
 	getitem 608,15;// Seed_Of_Yggdrasil
 	getitem 6909,1;

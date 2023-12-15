@@ -1109,7 +1109,7 @@ function	script	unitskilluseid3	{
 			}
 			break;
 			
-		// ±Yµõ³N(¤Q¦r)
+		// ±Yµõ³N(¢Ì¦r)
 		case 3:
 			.@range = 5;
 			for(.@i=1; .@i<9; .@i++)
@@ -1537,12 +1537,14 @@ get42:
 get422:
 if('mode==0){
 	Instance_PassAnnounce;
+	getitem 930000,5;
 	getitem 6909,5;
 	getitem 1000405,150;
 	warp "SavePoint",0,0;
 	end;
 	}else{
 	Instance_PassAnnounce;
+	getitem 930000,5;
 	getitem 6909,15;
 	getitem 1000405,350;
 	warp "SavePoint",0,0;

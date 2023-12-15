@@ -940,7 +940,9 @@ OnTimer10000:
 get42:
 	end;
 get422:
-	Instance_PassAnnounce;	
+	Instance_PassAnnounce;
+	getitem 6909,1;
+	getitem 930000,5;	
 	warp "SavePoint",0,0;
 	end;
 OnEnable:

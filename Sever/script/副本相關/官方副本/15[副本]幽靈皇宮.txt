@@ -833,6 +833,7 @@ get422:
 	getexp 900000,500000;
 	getitem 6672,30;// ¶À¤gÅè¤ù¼úÀy
 	getitem    6909,1;
+	getitem 930000,5;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:

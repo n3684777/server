@@ -688,6 +688,8 @@ OnMyMobDead:
 get42:
 	end;
 get422:
+	getitem 6909,1;
+	getitem 930000,5;
 	Instance_PassAnnounce;
 	warp "SavePoint",0,0;
 	end;

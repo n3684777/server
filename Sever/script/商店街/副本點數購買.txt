@@ -4,7 +4,7 @@ uttycty,110,79,4	script	副本點數購買	910,{
 OnInit:
 	setnpcicon getnpcid(0),1026,"副本點數購買";
 	waitingroom "★ 副本點數購買 ★",0;
-	.@p = 300000000;
+	.@p = 0;
 	.@c = 10000000; // 便宜貨
     .@cash = 930000; //副本點數id
 	.@meow = 15;

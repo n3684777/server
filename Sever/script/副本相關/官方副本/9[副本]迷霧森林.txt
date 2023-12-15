@@ -1045,6 +1045,7 @@ mora,48,152,3	script	有著銳利眼神的人	512,{
 		mes "或許世界之樹會保佑你...";
 		set ep14_1_mistwoods,10;
 		completequest 7213;
+	getitem 930000,5;
 		getitem 6909,1;
 		getitem 2568,1; //Muffler_Of_Roki
 		getitem 2858,1; //Pendant_Of_Guardian

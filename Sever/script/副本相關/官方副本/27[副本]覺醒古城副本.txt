@@ -1922,6 +1922,7 @@ get422:
 	getitem 6755,5;
 	getitem 6607,50;
 	getitem 6909,5;
+	getitem 930000,5;
 	getexp 700000,700000;
 	warp "SavePoint",0,0;
 	end;

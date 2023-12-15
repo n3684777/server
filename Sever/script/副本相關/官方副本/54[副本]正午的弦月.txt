@@ -3233,6 +3233,8 @@ OnEnable:
 	if(countitem(25087))
 		delitem 25087,1;
 	getexp 350000,0; //job exp?
+	getitem 6909,1;
+	getitem 930000,5;
 	getitem 25088,2;
 	donpcevent instance_npcname("БаЌг#3hmoon06")+"::OnDisable";
 	donpcevent instance_npcname("#3hmoond01")+"::OnEnable";

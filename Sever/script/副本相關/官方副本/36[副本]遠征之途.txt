@@ -1230,6 +1230,7 @@ function BOSSWALL {
 get42:
 	end;
 get422:
+	getitem 930000,5;
 	getitem 6909,5;
 	getitem 25786,50; // ¨÷©v
 	getitem 25787,5;  // ¹s¥ó

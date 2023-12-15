@@ -1936,6 +1936,7 @@ OnEnable:
 			mes "[夏洛茜]";
 			mes "我要去別的地方尋找更多的聲音和故事。";
 			//warp "verus04",107,124;
+			getitem 930000,5;
 			getitem 6752,3;
 			getitem 6909,1;
 			warp "Save",0,0;
