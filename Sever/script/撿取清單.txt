@@ -1,4 +1,5 @@
 uttycty,109,106,4	script	撿取清單	1582,{
+
 Page1:
 	clear;
      	mes "　　　　　　　^5599FF設置指定清單^000000";
@@ -122,6 +123,14 @@ Page1:
 			end;
 	}
 	end;
+
+Oninit:
+OnTimer2000:
+showscript "★ 補血++ ★ ";
+	setnpcicon getnpcid(0),1028,"小護士";
+initnpctimer;
+end;
+
 OnPCLoginEvent:
 	if( #alootswitch == 1){
 		for( .@i = 0 ; .@i < 10 ; .@i++){
