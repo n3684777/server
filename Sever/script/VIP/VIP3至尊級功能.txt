@@ -76,8 +76,43 @@ function	script	membervip3	{
 			}
 			break;
 		case 2:
-			callshop	"道具商店",2;
-			end;
+		  next;
+		  mes "^0000FF[自動賣雜物]^000000";
+		  mes "這邊可以設定你要自動賣出的物品";
+		  mes "一次可以讓你順利賣出物品的最大數量";
+		  mes "請先去商店選項賣出該物品的1個";
+		  mes "就可以自動被記錄";
+		  mes "下次要批量賣點擊第一選項即可";
+		  mes "注意 這無法使用技能高賣低買哦";
+		  next;
+			if(select("賣出所有您設定的物品:設定販賣物品")==1){
+	    mes "將會賣出以下物品^FF0000最大數量^000000";
+	    mes "並且高價賣出^FF0000無效^000000";
+	    for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) 
+		  mes "^5599FF"+getitemname(@sold_nameid[.@a])+"^000000";
+	    if(select("取消:確定")==1)close;
+	    for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) {
+		  set .@sellnum,countitem(@sold_nameid[.@a]);
+		  
+		  set .@sprice,.@sellnum*getiteminfo(@sold_nameid[.@a],1);
+		  if((Zeny+.@sprice) >= 2108298148){next;goto maxZeny;}else{delitem @sold_nameid[.@a],.@sellnum;set Zeny,Zeny+.@sprice;}
+		  
+		  mes "賣出^FF0000"+getitemname(@sold_nameid[.@a])+"^000000 [^0000FF"+.@sellnum+"^000000] 個 ^5599FF"+.@sprice+"^000000z";
+		  set .@asprice,.@asprice+.@sprice;
+	    }
+	    mes "共^5599FF"+.@asprice+"Zeny";
+	    close;
+	    }
+	    callshop "ashop1", 2;
+	    npcshopattach "ashop1";
+	    end;	
+      OnSellItem:
+	    mes "紀錄拍賣物品";
+	    for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) {
+		  mes "^5599FF"+getitemname(@sold_nameid[.@a])+"^000000";
+	    }
+	    close;
+
 		case 3:
 			callfunc "Megaphone_announcevip";
 			close;
@@ -119,6 +154,12 @@ function	script	membervip3	{
 			break;
 		case 7:
 			close;
+			
 	}
 	close;
+
+			maxZeny:
+			mes "你目前賣的東西總價格已達到上限！";
+			mes "建議分批販賣，謝謝。";		
+			close;
 }
