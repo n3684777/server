@@ -126,8 +126,8 @@ Page1:
 
 Oninit:
 OnTimer2000:
-showscript "★ 補血++ ★ ";
-	setnpcicon getnpcid(0),1028,"小護士";
+showscript "★ 自動撿物設定 ★ ";
+	setnpcicon getnpcid(0),1028,"自動撿物";
 initnpctimer;
 end;
 
