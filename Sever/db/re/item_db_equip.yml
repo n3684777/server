@@ -152056,8 +152056,8 @@ Body:
       bonus bPow,.@r;
       bonus bCon,.@r;
       if(.@r >= 7){
-      bAtkRate,7;
-      bMatkRate,7;
+      bonus bAtkRate,7;
+      bonus bMatkRate,7;
       }
       if(.@r >= 9){bonus bFixedCast,-300;}
       if(.@r >= 11){
@@ -152066,8 +152066,8 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,10;
       }
       if (.@g >= ENCHANTGRADE_D) {
-         bRes,50;
-         bMRes,50;
+         bonus bRes,50;
+         bonus bMRes,50;
          if (.@g >= ENCHANTGRADE_C) {
          bonus2 bAddEle,Ele_All,8;
          bonus2 bMagicAddEle,Ele_All,8;
