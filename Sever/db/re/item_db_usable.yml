@@ -49911,3 +49911,14 @@ Body:
     Weight: 0
     Script: |
       item_reform();
+  - Id: 100001
+    AegisName: hatbox1400
+    Name: ªA¹¢¤jÂøÀí
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getrandgroupitem(IG_hatbox1400,1);
