@@ -6890,36 +6890,77 @@ Body:
 #           Amount: 100
 #        ResultItem: Unknown_Item_480312
 #        ChangeRefine: -5
-  - Item: SR_Heart_TW
+- Item: SR_Heart_TW
     BaseItems:
-      - BaseItem: Jupiter_Armor_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        ResultItem: Jupiter_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Apollo_Armor_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        ResultItem: Apollo_Armor_TW_LT
-        ChangeRefine: -9
-      - BaseItem: Mars_Armor_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        ResultItem: Mars_Armor_TW_LT
-        ChangeRefine: -9
       - BaseItem: Ceres_Armor_TW
         MinimumRefine: 9
         CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
         ResultItem: Ceres_Armor_TW_LT
-        ChangeRefine: -9
+        ChangeRefine: -5
+      - BaseItem: Jupiter_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
+        ResultItem: Jupiter_Armor_TW_LT
+        ChangeRefine: -5
+      - BaseItem: Apollo_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
+        ResultItem: Apollo_Armor_TW_LT
+        ChangeRefine: -5
+      - BaseItem: Mars_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
+        ResultItem: Mars_Armor_TW_LT
+        ChangeRefine: -5
       - BaseItem: Vinus_Armor_TW
         MinimumRefine: 9
         CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
         ResultItem: Vinus_Armor_TW_LT
-        ChangeRefine: -9
+        ChangeRefine: -5
       - BaseItem: Vulcan_Armor_TW
         MinimumRefine: 9
         CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Soul_Of_Archer
+           Amount: 50
+         - Material: Kavac_Card
+           Amount: 5
         ResultItem: Vulcan_Armor_TW_LT
-        ChangeRefine: -9
-      
+        ChangeRefine: -5
