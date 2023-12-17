@@ -33153,3 +33153,16 @@ Body:
       if(getequiprefinerycnt(EQI_SHOES) >= 13){
       autobonus "{ bonus bStr,200;bonus bInt,200;bonus bDex,200; }",50,10000;
       }
+  - Combos:
+      - Combo:
+          - Magic_Circle_TW_LT
+          - Magic_Star_TW_LT
+    Script: |
+      .@re = readparam(bPow) + readparam(bSta) + readparam(bWis) + readparam(bSpl) + readparam(bCon) + readparam(bCrt);
+      bonus bMatk,(readparam(bStr)/12);
+      bonus bDelayrate,(readparam(bAgi)/12); 
+      bonus2 bMagicAddRace,RC_All,readparam(bVit)/12;
+      bonus2 bMagicAddClass,Class_All,(readparam(bInt)/12);
+      bonus2 bMagicAddSize,Size_All,(readparam(bDex)/12);
+      bonus2 bMagicAddEle,Ele_All,(readparam(bLuk)/12);
+      if(.@re >= 160){bonus bMatk,100;}

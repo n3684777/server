@@ -6890,7 +6890,7 @@ Body:
 #           Amount: 100
 #        ResultItem: Unknown_Item_480312
 #        ChangeRefine: -5
-- Item: SR_Heart_TW
+  - Item: SR_Heart_TW
     BaseItems:
       - BaseItem: Ceres_Armor_TW
         MinimumRefine: 9
@@ -6910,9 +6910,9 @@ Body:
         Materials:
          - Material: Armor_Stone_1
            Amount: 150
-         - Material: Soul_Of_Archer
+         - Material: Soul_Of_Magicion
            Amount: 50
-         - Material: Kavac_Card
+         - Material: Rawrel_Card
            Amount: 5
         ResultItem: Jupiter_Armor_TW_LT
         ChangeRefine: -5
@@ -6922,9 +6922,9 @@ Body:
         Materials:
          - Material: Armor_Stone_1
            Amount: 150
-         - Material: Soul_Of_Archer
+         - Material: Soul_Of_Swordman
            Amount: 50
-         - Material: Kavac_Card
+         - Material: Ygnizem_Card
            Amount: 5
         ResultItem: Apollo_Armor_TW_LT
         ChangeRefine: -5
@@ -6934,9 +6934,9 @@ Body:
         Materials:
          - Material: Armor_Stone_1
            Amount: 150
-         - Material: Soul_Of_Archer
+         - Material: Soul_Of_Thief
            Amount: 50
-         - Material: Kavac_Card
+         - Material: Whikebain_Card
            Amount: 5
         ResultItem: Mars_Armor_TW_LT
         ChangeRefine: -5
@@ -6946,9 +6946,9 @@ Body:
         Materials:
          - Material: Armor_Stone_1
            Amount: 150
-         - Material: Soul_Of_Archer
+         - Material: Soul_Of_Acolyte
            Amount: 50
-         - Material: Kavac_Card
+         - Material: Erend_Card
            Amount: 5
         ResultItem: Vinus_Armor_TW_LT
         ChangeRefine: -5
@@ -6958,9 +6958,9 @@ Body:
         Materials:
          - Material: Armor_Stone_1
            Amount: 150
-         - Material: Soul_Of_Archer
+         - Material: Soul_Of_Merchant
            Amount: 50
-         - Material: Kavac_Card
+         - Material: Armaia_Card
            Amount: 5
         ResultItem: Vulcan_Armor_TW_LT
         ChangeRefine: -5

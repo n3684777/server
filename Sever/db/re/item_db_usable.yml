@@ -1564,7 +1564,7 @@ Body:
     Name: 覺醒藥水
     Type: Usable
     Buy: 2200
-    Weight: 150
+    Weight: 0
     Jobs:
       Alchemist: true
       Archer: true
@@ -1601,7 +1601,7 @@ Body:
     Name: 菠色克藥水
     Type: Usable
     Buy: 4500
-    Weight: 200
+    Weight: 0
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -36799,7 +36799,7 @@ Body:
     AegisName: Center_Potion_B
     Name: 集中藥水
     Type: Usable
-    Weight: 100
+    Weight: 0
     Trade:
       NoDrop: true
     Script: |
