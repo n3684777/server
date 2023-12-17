@@ -108,6 +108,9 @@ OnInit:
 	sellitem(22202,.@p,-1);	//∂W∂Vπu
 	sellitemcurrency(6909,.@meow);
     endsellitem();  
+	sellitem(470247,.@p,-1);	//¶Ãºw√M§hæ‘πu
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 OnBuyItem:
 end;
 }

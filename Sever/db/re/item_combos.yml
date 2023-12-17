@@ -33123,3 +33123,33 @@ Body:
       bonus2 bAddClass,Class_Boss,20;
       autobonus "{}",2,10000,BF_WEAPON;
       autobonus "{ bonus2 bAddClass,Class_Boss,20;bonus2 bAddDamageClass,20994,40; }",20,10000,BF_WEAPON,"{ active_transform 1956,10000; }";
+  - Combos:
+      - Combo:
+          - HalfBloodPrincess_Shoes
+          - Bloody_Knight_Shield_
+    Script: |
+      bonus2 bAddClass,Class_Boss,15;
+      bonus2 bMagicAddClass,Class_Boss,15;
+      if(getequiprefinerycnt(EQI_SHOES) >= 13){
+      autobonus "{ bonus bStr,150;bonus bInt,150;bonus bDex,150; }",50,10000;
+      }
+  - Combos:
+      - Combo:
+          - HalfBloodPrincess_Shoes
+          - Bloody_Knight_Shield
+    Script: |
+      bonus2 bAddClass,Class_Boss,15;
+      bonus2 bMagicAddClass,Class_Boss,15;
+      if(getequiprefinerycnt(EQI_SHOES) >= 13){
+      autobonus "{ bonus bStr,150;bonus bInt,150;bonus bDex,150; }",50,10000;
+      }
+  - Combos:
+      - Combo:
+          - HalfBloodPrincess_Shoes
+          - Bloody_Knight_Shield__
+    Script: |
+      bonus2 bAddClass,Class_Boss,30;
+      bonus2 bMagicAddClass,Class_Boss,30;
+      if(getequiprefinerycnt(EQI_SHOES) >= 13){
+      autobonus "{ bonus bStr,200;bonus bInt,200;bonus bDex,200; }",50,10000;
+      }

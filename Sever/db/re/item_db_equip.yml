@@ -97004,9 +97004,6 @@ Body:
     Weight: 200
     Defense: 30
     Slots: 1
-    Classes:
-      All_Third: true
-      Fourth: true
     Locations:
       Garment: true
     ArmorLevel: 1
@@ -97034,9 +97031,6 @@ Body:
     Weight: 200
     Defense: 30
     Slots: 1
-    Classes:
-      All_Third: true
-      Fourth: true
     Locations:
       Garment: true
     ArmorLevel: 1
@@ -97064,9 +97058,6 @@ Body:
     Weight: 200
     Defense: 30
     Slots: 1
-    Classes:
-      All_Third: true
-      Fourth: true
     Locations:
       Garment: true
     ArmorLevel: 1
@@ -100941,7 +100932,7 @@ Body:
     Locations:
       Shoes: true
     ArmorLevel: 1
-    EquipLevelMin: 99
+    EquipLevelMin: 1
     Refineable: true
     Script: |
       bonus bMdef,10;
@@ -124543,7 +124534,7 @@ Body:
          bonus bDelayrate,-3;
       }
   - Id: 28946
-    AegisName: Bloody_Knight_Shield__
+    AegisName: Bloody_Knight_Shield_f_
     Name: 神聖騎士盾牌
     Type: Armor
     Weight: 800
@@ -152045,6 +152036,50 @@ Body:
       if(.@r >= 11){bonus bShortAtkRate,10;bonus bLongAtkRate,10;}
 
       if(.@r >= 13){autobonus "{ bonus bPow,10; bonus bAtkRate,15; }",3,10000,BF_WEAPON;}
+  - Id: 470247
+    AegisName: HalfBloodPrincess_Shoes
+    Name: 米德加茲王國騎士戰靴
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Shoes: true
+    EquipLevelMin: 130
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getrefine();
+      bonus bBaseAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus bSpl,.@r;
+      bonus bPow,.@r;
+      bonus bCon,.@r;
+      if(.@r >= 7){
+      bAtkRate,7;
+      bMatkRate,7;
+      }
+      if(.@r >= 9){bonus bFixedCast,-300;}
+      if(.@r >= 11){
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+      }
+      if (.@g >= ENCHANTGRADE_D) {
+         bRes,50;
+         bMRes,50;
+         if (.@g >= ENCHANTGRADE_C) {
+         bonus2 bAddEle,Ele_All,8;
+         bonus2 bMagicAddEle,Ele_All,8;
+            if (.@g >= ENCHANTGRADE_B) {
+               bonus bPAtk,7;
+               bonus bSMatk,7;
+               if (.@g >= ENCHANTGRADE_A) {
+                  if(.@r >= 13){bonus bFixedCast,-700;}
+               }
+            }
+         }
+      }
   - Id: 480000
     AegisName: Atker_Manteau
     Name: Attacker Booster Manteau
