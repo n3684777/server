@@ -89,7 +89,7 @@ function	script	membervip3	{
 	    mes "並且高價賣出^FF0000無效^000000";
 	    for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) 
 		  mes "^5599FF"+getitemname(@sold_nameid[.@a])+"^000000";
-	    if(select("取消:確定")==2)close;
+	    if(select("確定:取消")==2)close;
 	    for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) {
 		  set .@sellnum,countitem(@sold_nameid[.@a]);
 		  
