@@ -344,7 +344,7 @@ Body:
         Requires:
           - Name: SM_TWOHAND
             Level: 1
-      - Name: MS_BOWLINGBASH # KN_BOWLINGBASH нь
+      - Name: KN_BOWLINGBASH
         MaxLevel: 10
         Requires:
           - Name: SM_BASH
