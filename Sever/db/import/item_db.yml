@@ -22534,7 +22534,7 @@ Body:
     Buy: 60
     Script: |
       callfunc "F_Gashapon2",920005;
-  - Id: 920006
+  - Id: 920010
     AegisName: item_920006
     Name: ¬PÄ@Âà³J
     Type: Usable
@@ -22543,4 +22543,4 @@ Body:
     Flags:
       Container: true
     Script: |
-      callfunc "F_Gashapon2",920006;
+      callfunc "F_Gashapon2",920010;
