@@ -69,27 +69,27 @@ OnInit:
     sellitem(100502,0,-1);
     sellitemcurrency(6417,.@amount);
     endsellitem();
-//    sellitem(100721,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(100920,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(101103,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(101271,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(101416,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(101675,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
-//    sellitem(101876,0,-1);
-//    sellitemcurrency(6417,.@amount);
-//    endsellitem();
+    sellitem(100721,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(100920,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(101103,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(101271,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(101416,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(101675,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(101876,0,-1);
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
 
 
 OnBuyItem:
