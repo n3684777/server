@@ -2059,7 +2059,7 @@ OnInstanceInit:
 	end;
 }
 
-3@ch_t,0,0,0	script	離開副本#3@ch_t	obj_a2,{
+3@ch_t,0,0,0	script	副本寶箱#3@ch_t	obj_a2,{
 	mes "^33CC33【離開副本】^000000";
 	mes "你要離開副本了嗎？";
 	next;
