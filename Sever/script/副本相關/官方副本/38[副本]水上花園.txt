@@ -91,6 +91,22 @@ OnInit:
 	'mode = #mode;
 	if(getd("'talk_"+atoi(strnpcinfo(2))) == 0 && is_party_leader() == true)
 	{
+	
+		if ( !is_party_leader() ) end;
+		mes "請選擇難度";
+		.@i = select("水上花園(普通)","水上花園(困難)");
+		if(select("確定","取消") == 2) {end;}
+		if ( .@i == 1 )
+		{
+		'mode = 0;
+		'mode0name$ = "普通難度";
+		 messagecolor "您選擇的是 "+'mode0name$+" !","F9F900",bc_self;
+		}else 
+		{
+			'mode = 1;
+			'mode1name$ = "困難難度";
+			messagecolor "您選擇的是 "+'mode1name$+" !","F9F900",bc_self;
+		}
 		mes "["+strnpcinfo(1)+"]";
 		mes "歡迎來到水上花園。請問您想要去參觀花園內部嗎？只不過帕皮拉最近一直在花園內搗亂，令人非常頭疼…";
 		npctalk strnpcinfo(1)+": 歡迎來到水上花園。請問您想要去參觀花園內部嗎？只不過帕皮拉最近一直在花園內搗亂，令人非常頭疼…",instance_npcname(strnpcinfo(0));
@@ -564,8 +580,6 @@ OnPAPILIADead:
 get42:
 	end;
 get422:
-	getitem 6909,1;
-	getitem 930000,5;
 	Instance_PassAnnounce;	
 	warp "SavePoint",0,0;
 	end;
