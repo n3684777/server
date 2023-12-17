@@ -185040,6 +185040,29 @@ Body:
       bonus bBaseAtk,2*(.@dex/8);
       bonus bMatk,2*(.@dex/8);
       bonus bMatk,3*(.@luk/8);
+  - Id: 410256
+    AegisName: Magic_Star_TW_LT
+    Name: 魔力之星-LT
+    Type: Armor
+    Weight: 100
+    Defense: 0
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Script: |
+      .@stat = readparam(bStr) + readparam(bAgi) + readparam(bVit) + readparam(bDex) + readparam(bInt) + readparam(bLuk);
+      .@re = readparam(bPow) + readparam(bSta) + readparam(bWis) + readparam(bSpl) + readparam(bCon) + readparam(bCrt);
+      bonus bCastrate,-10;
+      bonus2 bMagicAtkEle,Ele_Neutral,2*(readparam(bStr)/12)*2;
+      bonus2 bMagicAtkEle,Ele_Wind,2*(readparam(bAgi)/12)*2;
+      bonus2 bMagicAtkEle,Ele_Water,2*(readparam(bVit)/12)*2;
+      bonus2 bMagicAtkEle,Ele_Fire,2*(readparam(bInt)/12)*2;
+      bonus2 bMagicAtkEle,Ele_Earth,2*(readparam(bDex)/12)*2;
+      bonus2 bMagicAtkEle,Ele_Holy,2*(readparam(bLuk)/12)*2;
+      if(.@stat >= 600){bonus bAspd,1;bonus2 bMagicAddEle,Ele_All,10;}
+      if(.@re >= 160){bonus bSpl,5;bonus bSMatk,5;}
+      hateffect(HAT_EF_Magic_Star_TW,true);
   - Id: 420236
     AegisName: Moroc_Slave_TW
     Name: 魔王夢羅克的忠誠僕人
