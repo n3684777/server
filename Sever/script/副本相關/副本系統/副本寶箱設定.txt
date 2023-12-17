@@ -118,5 +118,6 @@ function	script	Get_Instance_Prize	{
 function	script	Instance_PassAnnounce	{
 	disable_items;
 	messagecolor "["+'ins_name$+"] 由 [ "+'partymnl$[0]+" ] 帶領的隊伍 [ "+getpartyname('party_id)+" ] 通關成功 。","95CACA",bc_all;
+	getitem 950000,1;
 	return;
 }

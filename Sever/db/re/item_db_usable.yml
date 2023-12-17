@@ -49904,6 +49904,17 @@ Body:
       getitem 910132,1;
       }else{
       Zeny += 100000000;}
+  - Id: 950000
+    AegisName: Hat_Box
+    Name: 服飾大雜燴
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getrandgroupitem(IG_HATBOX_1400,1);
   - Id: 1001413
     AegisName: SR_Heart_TW
     Name: 曙光之心
