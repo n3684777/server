@@ -22526,4 +22526,21 @@ Body:
     Type: Usable
     Buy: 60
     Script: |
+      callfunc "F_Gashapon2",920002;
+  - Id: 920005
+    AegisName: item_920005
+    Name: ¤ýµPÂà³J
+    Type: Usable
+    Buy: 60
+    Script: |
       callfunc "F_Gashapon2",920005;
+  - Id: 920006
+    AegisName: item_920006
+    Name: ¬PÄ@Âà³J
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      callfunc "F_Gashapon2",920006;
