@@ -70,7 +70,7 @@ bl_death,0,0,0,0	monster	"--ja--"		21576,25,30000,0,0
 bl_death,0,0,0,0	monster	"--ja--"		21577,25,30000,0,0
 bl_death,0,0,0,0	monster	"--ja--"		21578,25,30000,0,0
 
-bl_grass	boss_monster	"--ja--"	21555,1,3600000,600000,1
-bl_lava	boss_monster	"--ja--"	21563,1,3600000,600000,1
-bl_ice	boss_monster	"--ja--"	21571,1,3600000,600000,1
-bl_death	boss_monster	"--ja--"	21579,1,3600000,600000,1
+bl_grass	boss_monster	"--ja--"	21555,1,1,1,1
+bl_lava	boss_monster	"--ja--"	21563,1,1,1,1
+bl_ice	boss_monster	"--ja--"	21571,1,1,1,1
+bl_death	boss_monster	"--ja--"	21579,1,1,1,1
