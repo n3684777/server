@@ -2039,7 +2039,7 @@ end;
 OnTalk30:
 	npctalk "參宿四：快滾吧!!!";
 	getmapxy(.@m$,'passx,'passy,BL_NPC);
-	donpcevent instance_npcname("副本寶箱#3@ch_t")+"::OnEnable";
+	donpcevent instance_npcname("離開副本#3@ch_t")+"::OnEnable";
 	'ClearInatance = 1;
 	disablenpc instance_npcname("參宿四#102");
 	end;
