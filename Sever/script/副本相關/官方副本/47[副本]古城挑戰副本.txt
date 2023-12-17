@@ -245,12 +245,13 @@ OnEnd:
 	if('checkkillcheck){
 	}else{
 		set .@map$, instance_mapname("1@gl_he");
+		monster .@map$,150,rand(71,162),"無限墮落根莖",20575,1;
 		disablenpc instance_npcname("midLeftWarps#face");
 		disablenpc instance_npcname("midRightWarps#face");
 		mapannounce .@map$, "奧斯卡：淨化完成，通往中間區域的傳送點已經開啟了。",bc_map,"0xFFFF00";
 		mapannounce .@map$, "奧斯卡：到達後請前往12點鐘方向移動並找到我。",bc_map,"0xFFFF00";
 		hideoffnpc instance_npcname("奧斯卡#oscar_2");
-		monster "1@gl_he",150,rand(71,162),"無限墮落根莖",20575,1;
+		
 	}
 	end;
 }
@@ -307,8 +308,8 @@ OnTimer3000:
 	}
 	close;
 	
-	OnTimer1000:
-	npcspeed 200;
+OnTimer500:
+	npcspeed 100;
 	npcwalkto 150,162;
 	end;
 	OnTimer2000:
@@ -327,15 +328,15 @@ OnEnable:
 	initnpctimer;
 	setnpcdisplay strnpcinfo(3), "奧斯卡", 1713;
 	end;
-OnTimer3000:
-	npcspeed 200;
+OnTimer1500:
+	npcspeed 100;
 	npcwalkto 150,199;
 	end;
-OnTimer9000:
-	npcspeed 200;
+OnTimer4500:
+	npcspeed 100;
 	npcwalkto 157,229;
 	end;
-OnTimer15500:
+OnTimer7750:
 	specialeffect 215;
 	stopnpctimer;
 	hideonnpc instance_npcname("奧斯卡#oscar_3");
@@ -343,6 +344,57 @@ OnTimer15500:
 	donpcevent instance_npcname("#bosseffect")+"::OnEnable";
 	end;
 }
+1@gl_he,140,238,1	script	#mapeffect0	139,{
+OnStrat:
+	initnpctimer;
+	specialeffect 934;
+	end;
+OnTimer100:
+	stopnpctimer;
+	end;
+}
+1@gl_he,157,240,1	duplicate(#mapeffect0)	#mapeffect1	139
+1@gl_he,162,240,1	duplicate(#mapeffect0)	#mapeffect2	139
+1@gl_he,167,240,1	duplicate(#mapeffect0)	#mapeffect3	139
+1@gl_he,172,240,1	duplicate(#mapeffect0)	#mapeffect4	139
+1@gl_he,157,245,1	duplicate(#mapeffect0)	#mapeffect5	139
+1@gl_he,162,245,1	duplicate(#mapeffect0)	#mapeffect6	139
+1@gl_he,167,245,1	duplicate(#mapeffect0)	#mapeffect7	139
+1@gl_he,172,245,1	duplicate(#mapeffect0)	#mapeffect8	139
+1@gl_he,157,250,1	duplicate(#mapeffect0)	#mapeffect9	139
+1@gl_he,162,250,1	duplicate(#mapeffect0)	#mapeffect10	139
+1@gl_he,167,250,1	duplicate(#mapeffect0)	#mapeffect11	139
+1@gl_he,172,250,1	duplicate(#mapeffect0)	#mapeffect12	139
+1@gl_he,152,235,1	duplicate(#mapeffect0)	#mapeffect13	139
+1@gl_he,147,235,1	duplicate(#mapeffect0)	#mapeffect14	139
+1@gl_he,142,235,1	duplicate(#mapeffect0)	#mapeffect15	139
+1@gl_he,152,230,1	duplicate(#mapeffect0)	#mapeffect16	139
+1@gl_he,147,230,1	duplicate(#mapeffect0)	#mapeffect17	139
+1@gl_he,142,230,1	duplicate(#mapeffect0)	#mapeffect18	139
+1@gl_he,152,225,1	duplicate(#mapeffect0)	#mapeffect19	139
+1@gl_he,147,225,1	duplicate(#mapeffect0)	#mapeffect20	139
+1@gl_he,142,225,1	duplicate(#mapeffect0)	#mapeffect21	139
+1@gl_he,157,235,1	duplicate(#mapeffect0)	#mapeffect22	139
+1@gl_he,162,235,1	duplicate(#mapeffect0)	#mapeffect23	139
+1@gl_he,167,235,1	duplicate(#mapeffect0)	#mapeffect24	139
+1@gl_he,172,235,1	duplicate(#mapeffect0)	#mapeffect25	139
+1@gl_he,157,230,1	duplicate(#mapeffect0)	#mapeffect26	139
+1@gl_he,162,230,1	duplicate(#mapeffect0)	#mapeffect27	139
+1@gl_he,167,230,1	duplicate(#mapeffect0)	#mapeffect28	139
+1@gl_he,172,230,1	duplicate(#mapeffect0)	#mapeffect29	139
+1@gl_he,157,225,1	duplicate(#mapeffect0)	#mapeffect30	139
+1@gl_he,162,225,1	duplicate(#mapeffect0)	#mapeffect31	139
+1@gl_he,167,225,1	duplicate(#mapeffect0)	#mapeffect32	139
+1@gl_he,172,225,1	duplicate(#mapeffect0)	#mapeffect33	139
+1@gl_he,152,240,1	duplicate(#mapeffect0)	#mapeffect34	139
+1@gl_he,147,240,1	duplicate(#mapeffect0)	#mapeffect35	139
+1@gl_he,142,240,1	duplicate(#mapeffect0)	#mapeffect36	139
+1@gl_he,152,245,1	duplicate(#mapeffect0)	#mapeffect37	139
+1@gl_he,147,245,1	duplicate(#mapeffect0)	#mapeffect38	139
+1@gl_he,142,245,1	duplicate(#mapeffect0)	#mapeffect39	139
+1@gl_he,152,250,1	duplicate(#mapeffect0)	#mapeffect40	139
+1@gl_he,147,250,1	duplicate(#mapeffect0)	#mapeffect41	139
+1@gl_he,142,250,1	duplicate(#mapeffect0)	#mapeffect42	139
 
 1@gl_he,157,240,1	script	#bosseffect	139,{
 end;
@@ -483,21 +535,20 @@ Onstarttime:
 	initnpctimer;
 	end;
 
-
-OnTimer5000:
+OnTimer3000:
 	if ('bossf2 != 1){
 	getunitdata 'BossID,'amdaraisdata;
-	setarray .@bossmatkmin[0],2955,3420,4195,5280,6675,8380,10395,12720,30710,36600;
-	setarray .@bossmatkmax[0],2955,3420,4195,5280,6675,8380,10395,12720,30710,36600;
 	.@label$ = instance_npcname("#CGH_BOSS") + "::OnSkillunit";
 	.@x = 'amdaraisdata[6];
 	.@y = 'amdaraisdata[7];
-	.@skill = rand(1,6);
+	.@matkmin = 'amdaraisdata[35];
+	.@matkmax = 'amdaraisdata[36];
+	.@skill = rand(1,7);
 	set .@map$,instance_mapname("1@gl_he");
 	switch(.@skill) {
 	case 1:  //廣範圍
-		unittalk 'BossID, "廣範圍詛咒";
-		sleep 1000;
+		unittalk 'BossID, "！！";
+		sleep 50;
 		monster .@map$,.@x+4,.@y-4,"--ja--",3095,1,.@label$;		
 		.@id[0] = $@mobid[0];
 		monster .@map$,.@x+8,.@y-4,"--ja--",3095,1,.@label$;
@@ -507,11 +558,11 @@ OnTimer5000:
 		monster .@map$,.@x+8,.@y+4,"--ja--",3095,1,.@label$;
 		.@id[3] = $@mobid[0];
 		for(.@i = 0; .@i < 4; .@i++) {
-			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
+			setunitdata .@id[.@i],35,.@matkmin;
+			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
 		}
-		sleep 500;
+		sleep 50;
 		for(.@i = 0; .@i <= 18; .@i=.@i+2){
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],83,5,.@x+.@i,.@y+.@i,-10;
@@ -521,13 +572,13 @@ OnTimer5000:
 				unitskillusepos .@id[2],83,5,.@x-.@i,.@y-.@i,-10;
 			if(unitexists(.@id[3]) == true)
 				unitskillusepos .@id[3],83,5,.@x-.@i,.@y+.@i,-10;
-			sleep 500;
+			sleep 50;
 		}
-		sleep 1000;
+		sleep 50;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
-		sleep 1000;
+		sleep 50;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
 		.@id[0] = $@mobid[0];
 		monster .@map$,.@x-9,.@y-3,"--ja--",3095,1,.@label$;
@@ -536,13 +587,16 @@ OnTimer5000:
 		.@id[2] = $@mobid[0];
 		monster .@map$,.@x+3,.@y-9,"--ja--",3095,1,.@label$;
 		.@id[3] = $@mobid[0];
+		
 		for(.@i = 0; .@i < 4; .@i++) {
-			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
-			setunitdata .@id[.@i], 29, 1;
+			setunitdata .@id[.@i],35,.@matkmin;
+			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
 		}
-		sleep 500;
+		sleep 50;
+		for(.@i = 0; .@i < 43 ; .@i++){
+				donpcevent instance_npcname("#mapeffect"+.@i)+"::OnStrat";
+		}
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],91,5,.@x+2,.@y,-5;
 			if(unitexists(.@id[1]) == true)
@@ -619,11 +673,11 @@ OnTimer5000:
 				unitskillusepos .@id[2],91,5,.@x-13,.@y+13,-5;
 			if(unitexists(.@id[3]) == true)                  
 				unitskillusepos .@id[3],91,5,.@x+13,.@y-13,-5;
-		sleep 1000;
+		sleep 50;
 		break;
 	case 3: //擴散地震
-		unittalk 'BossID, "怒爆！！";
-		sleep 500;
+		unittalk 'BossID, "！！";
+		sleep 50;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
 		.@id[0] = $@mobid[0];
 		monster .@map$,.@x-9,.@y-3,"--ja--",3095,1,.@label$;
@@ -633,12 +687,14 @@ OnTimer5000:
 		monster .@map$,.@x+3,.@y-9,"--ja--",3095,1,.@label$;
 		.@id[3] = $@mobid[0];
 		for(.@i = 0; .@i < 4; .@i++) {
-			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
-			setunitdata .@id[.@i], 29, 1;
+			setunitdata .@id[.@i],35,.@matkmin;
+			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
 		}
-		sleep 500;
+		sleep 50;
+		for(.@i = 0; .@i < 43 ; .@i++){
+				donpcevent instance_npcname("#mapeffect"+.@i)+"::OnStrat";
+		}
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],91,5,.@x+2,.@y,-5;
 			if(unitexists(.@id[1]) == true)              
@@ -690,11 +746,11 @@ OnTimer5000:
 				unitskillusepos .@id[2],91,5,.@x+4,.@y-6,-5;
 			if(unitexists(.@id[3]) == true)                
 				unitskillusepos .@id[3],91,5,.@x-4,.@y-6,-5;
-		sleep 1000;
+		sleep 50;
 		break;
 	case 4: //交叉火牆
-		unittalk 'BossID, "!！";
-		sleep 1000;
+		unittalk 'BossID, "！！";
+		sleep 50;
 		monster .@map$,.@x+1,.@y+1,"--ja--",3095,1,.@label$;
 		.@id[0] = $@mobid[0];
 		monster .@map$,.@x-1,.@y-1,"--ja--",3095,1,.@label$;
@@ -704,13 +760,12 @@ OnTimer5000:
 		monster .@map$,.@x+1,.@y-1,"--ja--",3095,1,.@label$;
 		.@id[3] = $@mobid[0];
 		for(.@i = 0; .@i < 4; .@i++) {
-			setunitdata .@id[.@i],35,.@bossmatkmin['selectdiff -1];
-			setunitdata .@id[.@i],36,.@bossmatkmax['selectdiff -1];
-			setunitdata .@id[.@i], 29, 1;
+			setunitdata .@id[.@i],35,.@matkmin;
+			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
 		}
-		sleep 500;
-		for(.@i = 0; .@i <= 8; .@i++){
+		sleep 50;
+		for(.@i = 0; .@i <= 12; .@i++){
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],18,5,.@x+.@i,.@y+.@i,-5;
 			if(unitexists(.@id[1]) == true)                    
@@ -722,20 +777,68 @@ OnTimer5000:
 			sleep 10;
 		}
 		break;
-	case 5: //隨機傳送
+	case 5:
+		unittalk 'BossID, "！！";
+		sleep 50;
+		for(.@i = 0 ;.@i<=9 ; .@i++){
+			monster .@map$,141,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[0] = $@mobid[0];
+			monster .@map$,145,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[1] = $@mobid[0];
+			monster .@map$,149,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[2] = $@mobid[0];
+			monster .@map$,153,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[3] = $@mobid[0];
+			monster .@map$,157,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[4] = $@mobid[0];
+			monster .@map$,161,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[5] = $@mobid[0];
+			monster .@map$,165,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[6] = $@mobid[0];
+			monster .@map$,169,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[7] = $@mobid[0];
+			monster .@map$,173,226+.@i*3,"--ja--",3095,1,.@label$;
+			.@id[8] = $@mobid[0];
+			
+			for(.@j = 0 ;.@j<9 ; .@j++){
+			setunitdata .@id[.@j],35,.@matkmin;
+			setunitdata .@id[.@j],36,.@matkmax;
+			unitskilluseid .@id[.@j], 353, 1;
+			}
+
+		if(unitexists(.@id[0]) == true)
+			unitskillusepos .@id[0],21,5,141,226+.@i*3,-5;
+		if(unitexists(.@id[1]) == true)
+			unitskillusepos .@id[1],21,5,145,226+.@i*3,-5;
+		if(unitexists(.@id[2]) == true)
+			unitskillusepos .@id[2],21,5,149,226+.@i*3,-5;
+		if(unitexists(.@id[3]) == true)
+			unitskillusepos .@id[3],21,5,153,226+.@i*3,-5;
+		if(unitexists(.@id[4]) == true)
+			unitskillusepos .@id[4],21,5,157,226+.@i*3,-5;
+		if(unitexists(.@id[5]) == true)
+			unitskillusepos .@id[5],21,5,161,226+.@i*3,-5;
+		if(unitexists(.@id[6]) == true)
+			unitskillusepos .@id[6],21,5,165,226+.@i*3,-5;
+		if(unitexists(.@id[7]) == true)
+			unitskillusepos .@id[7],21,5,169,226+.@i*3,-5;
+		if(unitexists(.@id[8]) == true)
+			unitskillusepos .@id[8],21,5,173,226+.@i*3,-5;
+		sleep 50;
+				}
+			break;
+	case 6: //隨機傳送
 		if(rand(100) > 60){
 			donpcevent instance_npcname("#CGH_BOSS")+"::Onrandwarp";//呼叫隨機傳送事件
 		}
 		break;
 	
-	case 6: //闇審判事件
-		unittalk 'BossID, "！！";
+	case 7: //闇審判事件
+		unittalk 'BossID, "闇審判事件！！";
 		donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnEnable";//呼叫審判事件
-		set 'bossf2 , 1;
 		break;
 	}
-	sleep 1000;
-	killmonster .@map$,.@label$;
+	sleep 200;
 	if(!'bossf2)
 		initnpctimer;
 	end;
@@ -805,12 +908,13 @@ OnStart:
 		set  'gid[.@k], bg_monster(0,.@map$,144,.@i,"受汙染的骨頭荊棘",20581,.@labelG$);
 		set  'gid[.@k+1], bg_monster(0,.@map$,153,.@i,"受汙染的骨頭荊棘",20581,.@labelG$);
 		set  'gid[.@k+2], bg_monster(0,.@map$,162,.@i,"受汙染的骨頭荊棘",20581,.@labelG$);
-		set  'gid[.@k+3], bg_monster(0,.@map$,171,.@i,"受汙染的骨頭荊棘",20581,.@labelG$);
-		set .@k,.@k+4;
+		set  'gid[.@k+3], bg_monster(0,.@map$,171,.@i,"受汙染的骨頭荊棘",20581,.@labelG$);		
+		set .@k,.@k+4;		
 	}
 
 	initnpctimer;
 	end;
+
 
 OnKillGRANDCROSS:
 	end;
@@ -822,31 +926,32 @@ OnGRANDCROSS:
 			setunitdata 'gid[.@i], 2, 50;
 			getunitdata 'gid[.@i],'mobGRANDCROSS;
 			.@x = 'mobGRANDCROSS[6];
-			.@y = 'mobGRANDCROSS[7];
-			unitskillusepos 'gid[.@i],339,5,.@x,.@y,1;
+			.@y = 'mobGRANDCROSS[7];			
+			unitskilluseid 'gid[.@i], 353, 1;
+			unitskillusepos 'gid[.@i],339,5,.@x,.@y,-5;
 		}
 	}
 	end;
 
-OnTimer15000:
+OnTimer2000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer17000:
+OnTimer4000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer18000:
+OnTimer6000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer20000:
+OnTimer8000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer22000:
+OnTimer10000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer24000:
+OnTimer12000:
 	donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnGRANDCROSS";
 	end;
-OnTimer26500:
+OnTimer14500:
 	for(.@i = 0; .@i <= 15; .@i++){
 		if(unitexists('gid[.@i]) == true){
 			unitkill 'gid[.@i];
