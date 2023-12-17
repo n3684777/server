@@ -49921,4 +49921,4 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_hatbox1400,1);
+      getrandgroupitem(IG_Hatbox,1);
