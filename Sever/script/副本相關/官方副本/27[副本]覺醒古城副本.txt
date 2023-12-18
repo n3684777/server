@@ -958,7 +958,7 @@ OnMyMobDead:
 
 // Tramp Mobs
 //============================================================
-1@gl_kh,221,82,3	script	㊣螟#n_GHtramp1	849,4,4,{
+1@gl_kh,221,82,3	script	安肅▆#n_GHtramp1	849,4,4,{
 	end;
 OnTouch:
 	set .@i, rand(1,10);
@@ -969,7 +969,7 @@ OnTouch:
 	else set .@mobs,7;
 	getmapxy(.@map$,.@x,.@y,BL_NPC);
 	specialeffect EF_VENOMDUST;
-	monster .@map$,.@x,.@y,"矷",3142,.@mobs,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+	monster .@map$,.@x,.@y,"砆獻籯安肅▆",3142,.@mobs,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 OnMyMobDead:
@@ -982,37 +982,37 @@ OnDisable:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 }
-1@gl_kh,213,63,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp2	849,4,4
-1@gl_kh,230,50,2	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp3	849,4,4
-1@gl_kh,222,39,2	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp4	849,4,4
-1@gl_kh,214,27,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp5	849,4,4
-1@gl_kh,223,17,2	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp6	849,4,4
-1@gl_kh,235,16,4	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp7	849,4,4
-1@gl_kh,251,20,5	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp8	849,4,4
-1@gl_kh,240,43,5	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp9	849,4,4
-1@gl_kh,271,19,1	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp10	849,4,4
-1@gl_kh,246,62,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp11	849,4,4
-1@gl_kh,282,48,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp12	849,4,4
-1@gl_kh,285,81,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp13	849,4,4
-1@gl_kh,241,86,5	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp14	849,4,4
-1@gl_kh,249,101,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp15	849,4,4
-1@gl_kh,276,106,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp16	849,4,4
-1@gl_kh,252,120,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp17	849,4,4
-1@gl_kh,258,150,1	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp18	849,4,4
-1@gl_kh,255,157,6	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp19	849,4,4
-1@gl_kh,261,164,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp20	849,4,4
-1@gl_kh,269,173,7	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp21	849,4,4
-1@gl_kh,280,167,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp22	849,4,4
-1@gl_kh,293,161,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp23	849,4,4
-1@gl_kh,226,96,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp24	849,4,4
-1@gl_kh,222,119,5	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp25	849,4,4
-1@gl_kh,233,123,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp26	849,4,4
-2@gl_kh,147,203,5	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp27	849,4,4
-2@gl_kh,141,222,1	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp28	849,4,4
-2@gl_kh,167,225,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp29	849,4,4
-2@gl_kh,145,236,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp30	849,4,4
-2@gl_kh,143,260,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp31	849,4,4
-2@gl_kh,173,258,3	duplicate(㊣螟#n_GHtramp1)	㊣螟#n_GHtramp32	849,4,4
+1@gl_kh,213,63,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp2	849,4,4
+1@gl_kh,230,50,2	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp3	849,4,4
+1@gl_kh,222,39,2	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp4	849,4,4
+1@gl_kh,214,27,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp5	849,4,4
+1@gl_kh,223,17,2	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp6	849,4,4
+1@gl_kh,235,16,4	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp7	849,4,4
+1@gl_kh,251,20,5	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp8	849,4,4
+1@gl_kh,240,43,5	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp9	849,4,4
+1@gl_kh,271,19,1	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp10	849,4,4
+1@gl_kh,246,62,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp11	849,4,4
+1@gl_kh,282,48,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp12	849,4,4
+1@gl_kh,285,81,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp13	849,4,4
+1@gl_kh,241,86,5	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp14	849,4,4
+1@gl_kh,249,101,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp15	849,4,4
+1@gl_kh,276,106,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp16	849,4,4
+1@gl_kh,252,120,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp17	849,4,4
+1@gl_kh,258,150,1	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp18	849,4,4
+1@gl_kh,255,157,6	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp19	849,4,4
+1@gl_kh,261,164,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp20	849,4,4
+1@gl_kh,269,173,7	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp21	849,4,4
+1@gl_kh,280,167,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp22	849,4,4
+1@gl_kh,293,161,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp23	849,4,4
+1@gl_kh,226,96,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp24	849,4,4
+1@gl_kh,222,119,5	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp25	849,4,4
+1@gl_kh,233,123,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp26	849,4,4
+2@gl_kh,147,203,5	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp27	849,4,4
+2@gl_kh,141,222,1	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp28	849,4,4
+2@gl_kh,167,225,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp29	849,4,4
+2@gl_kh,145,236,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp30	849,4,4
+2@gl_kh,143,260,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp31	849,4,4
+2@gl_kh,173,258,3	duplicate(安肅▆#n_GHtramp1)	安肅▆#n_GHtramp32	849,4,4
 
 // Sector 3 Mobs
 //============================================================
