@@ -587,7 +587,7 @@ OnTimer5000:
 		}
 		sleep 10;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 10;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
@@ -1043,7 +1043,7 @@ OnTimer500:
 		}
 		sleep 10;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 10;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
@@ -1946,7 +1946,7 @@ OnInstanceInit:
 get42:
 	end;
 get422:
-	announce "太狂啦 -  '" + strcharinfo(0) + "' 成功古城挑戰噁心的模式成為噁心的人！", bc_all;
+	announce "太狂啦 -  '" + strcharinfo(0) + "' 通關古城挑戰噁心的模式成為灰常噁心的人！", bc_all;
 	getitem 25864,5;
 	getitem 6909,8;
 	warp "SavePoint",0,0;
