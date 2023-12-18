@@ -1087,23 +1087,23 @@ OnTimer500:
 				donpcevent instance_npcname("#mapeffect"+.@i)+"::OnStrat";
 		}
 			if(unitexists(.@id[4]) == true)
-				unitskillusepos .@id[4],5495,10,144,226,-5;
+				unitskillusepos .@id[4],5495,1,144,226,-5;
 			if(unitexists(.@id[5]) == true)
-				unitskillusepos .@id[5],5495,10,157,226,-5;
+				unitskillusepos .@id[5],5495,1,157,226,-5;
 			if(unitexists(.@id[6]) == true)
-				unitskillusepos .@id[6],5495,5,169,226,-5;
+				unitskillusepos .@id[6],5495,1,169,226,-5;
 			if(unitexists(.@id[7]) == true)
-				unitskillusepos .@id[7],5495,5,144,239,-5;
+				unitskillusepos .@id[7],5495,1,144,239,-5;
 			if(unitexists(.@id[8]) == true)
-				unitskillusepos .@id[8],5495,5,157,239,-5;
+				unitskillusepos .@id[8],5495,1,157,239,-5;
 			if(unitexists(.@id[9]) == true)
-				unitskillusepos .@id[9],5495,5,169,239,-5;
+				unitskillusepos .@id[9],5495,1,169,239,-5;
 			if(unitexists(.@id[10]) == true)
-				unitskillusepos .@id[10],5495,5,144,252,-5;
+				unitskillusepos .@id[10],5495,1,144,252,-5;
 			if(unitexists(.@id[11]) == true)
-				unitskillusepos .@id[11],5495,5,157,252,-5;
+				unitskillusepos .@id[11],5495,1,157,252,-5;
 			if(unitexists(.@id[12]) == true)
-				unitskillusepos .@id[12],5495,5,169,252,-5;
+				unitskillusepos .@id[12],5495,1,169,252,-5;
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],91,5,.@x+2,.@y,-5;
 			if(unitexists(.@id[1]) == true)
