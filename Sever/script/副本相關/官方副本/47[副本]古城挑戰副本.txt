@@ -161,7 +161,9 @@ OnInstanceInit:
 	hideonnpc instance_npcname("奧斯卡#oscar_2");
 	hideonnpc instance_npcname("奧斯卡#oscar_3");
 	hideonnpc instance_npcname("寶箱#chatnmtop");
+	hideonnpc instance_npcname("寶箱#chatnmtop_2");
 	hideonnpc instance_npcname("奧斯卡#oscar_5");
+	hideonnpc instance_npcname("奧斯卡#oscar_6");
 	hideonnpc instance_npcname("奧斯卡#oscar_4");
 	disablenpc instance_npcname("LeftWarps#face");
 	disablenpc instance_npcname("RightWarps#face");
@@ -432,7 +434,7 @@ OnTimer3000:
 		mes "[奧斯卡]";
 		mes "如果準備好了，請讓我知道.";
 		next;
-		switch(select("等等！", "我們準備好了","^FF0000狂爆模式！！請勿輕易嘗試^000000")) {
+		switch(select("等等！", "我們準備好了","^FF0000狂暴模式！！請勿輕易嘗試^000000")) {
 		case 1:
 			mes "[奧斯卡]";
 			mes "好了再跟我說一下。";
@@ -442,6 +444,7 @@ OnTimer3000:
 			cutin "gl_heinrich1",255;
 			close2;
 			npctalk "汗染等級"+'selectdiff+"的幻影即將出現了，我需要牠在中間的魔法陣裡才能將他淨化，請想辦法將他困在中間區域。";
+		
 			donpcevent instance_npcname("#bosseffect")+"::OnStrat";
 			initnpctimer;
 			progressbar_npc "ffff00",5;
@@ -452,10 +455,12 @@ OnTimer3000:
 			cutin "gl_heinrich1",255;
 			close2;
 			npctalk "汗染等級"+'selectdiff+"的幻影即將出現了，我需要牠在中間的魔法陣裡才能將他淨化，請想辦法將他困在中間區域。";
+			announce "有瘋子 -  '" + strcharinfo(0) + "' 去侵略古城挑戰噁心的模式！", bc_all;
 			donpcevent instance_npcname("#bosseffect")+"::OnStrat";
 			initnpctimer;
 			progressbar_npc "ffff00",5;
-			donpcevent instance_npcname("#CGH_BOSS(Crazy)")+"::OnEnable";
+			donpcevent instance_npcname("#CGH_BOSS_2")+"::OnEnable";
+			donpcevent instance_npcname("#bossarea_2")+"::OnEnable";
 			end;
 	}
 	
@@ -517,13 +522,11 @@ OnKillMob:
 	if ('fail == 0){
 	set .@map$,instance_mapname("1@gl_he");
 	mapannounce .@map$, "奧斯卡：闇答萊屍的幻影已經淨化完成",bc_map,"0xFFFF00";
-	killmonster .@map$,.@label$;
 	donpcevent instance_npcname("#CGH_BOSS")+"::Onstoptime";
-	donpcevent instance_npcname("#CGH_BOSS(Crazy)")+"::Onstoptime";
 	donpcevent instance_npcname("#bossarea")+"::Onstoptime";
 	hideoffnpc instance_npcname("寶箱#chatnmtop");
 	hideoffnpc instance_npcname("奧斯卡#oscar_5");
-	'bossf2 = 2;
+	'bossf2 = 1;
 	}
 	end;
 	
@@ -544,7 +547,7 @@ Onstarttime:
 	end;
 
 OnTimer5000:
-	if ('bossf2 != 2){
+	if ('bossf2 != 1){
 	getunitdata 'BossID,'amdaraisdata;
 	.@label$ = instance_npcname("#CGH_BOSS") + "::OnSkillunit";
 	.@x = 'amdaraisdata[6];
@@ -886,10 +889,10 @@ OnTimer5000:
 		break;
 	
 	case 7: //闇審判事件
-		if ('bossf2 != 1){
+		if ('bossf2 != 2){
 		unittalk 'BossID, "闇審判事件！！";
 		donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnEnable";//呼叫審判事件
-		set 'bossf2,1;
+		set 'bossf2,2;
 		}
 		break;
 	}
@@ -899,16 +902,16 @@ OnTimer5000:
 	}
 }
 
-1@gl_he,2,3,4	script	#CGH_BOSS(Crazy)	-1,{
+1@gl_he,2,3,4	script	#CGH_BOSS_2	-1,{
 
 OnEnable:
-	enablenpc instance_npcname("#CGH_BOSS(Crazy)");
-	donpcevent instance_npcname("#CGH_BOSS(Crazy)")+"::OnStart";
+	enablenpc instance_npcname("#CGH_BOSS_2");
+	donpcevent instance_npcname("#CGH_BOSS_2")+"::OnStart";
 	end;
 
 OnStart:
 	set .@map$,instance_mapname("1@gl_he");
-	set .@killboss$, instance_npcname("#CGH_BOSS(Crazy)")+"::OnKillMob";
+	set .@killboss$, instance_npcname("#CGH_BOSS_2")+"::OnKillMob";
 	if (Rand(1,100) >5){
 		monster .@map$,157,239,"闇答萊屍",20573,1,.@killboss$;
 	}
@@ -944,23 +947,13 @@ OnKillMob:
 	if ('fail == 0){
 	set .@map$,instance_mapname("1@gl_he");
 	mapannounce .@map$, "奧斯卡：闇答萊屍的幻影已經淨化完成",bc_map,"0xFFFF00";
-	killmonster .@map$,.@label$;
-	donpcevent instance_npcname("#CGH_BOSS(Crazy)")+"::Onstoptime";
-	donpcevent instance_npcname("#CGH_BOSS")+"::Onstoptime";
-	donpcevent instance_npcname("#bossarea")+"::Onstoptime";
-	hideoffnpc instance_npcname("寶箱#chatnmtop");
-	hideoffnpc instance_npcname("奧斯卡#oscar_5");
-	'bossf2 = 2;
+	donpcevent instance_npcname("#CGH_BOSS_2")+"::Onstoptime";
+	donpcevent instance_npcname("#bossarea_2")+"::Onstoptime";
+	hideoffnpc instance_npcname("寶箱#chatnmtop_2");
+	hideoffnpc instance_npcname("奧斯卡#oscar_6");
+	'bossf2 = 1;
 	}
 	end;
-	
-Onrandwarp:
-	addrid(4,0,30,267,265,18);
-		if(rand(100) > 65){
-		warp instance_mapname("1@gl_he"),0,0;
-		}
-	end;
-
 
 Onstoptime:
 	stopnpctimer;
@@ -971,9 +964,9 @@ Onstarttime:
 	end;
 
 OnTimer500:
-	if ('bossf2 != 2){
+	if ('bossf2 != 1){
 	getunitdata 'BossID,'amdaraisdata;
-	.@label$ = instance_npcname("#CGH_BOSS(Crazy)") + "::OnSkillunit";
+	.@label$ = instance_npcname("#CGH_BOSS_2") + "::OnSkillunit";
 	.@x = 'amdaraisdata[6];
 	.@y = 'amdaraisdata[7];
 	.@matkmin = 'amdaraisdata[35];
@@ -1017,15 +1010,19 @@ OnTimer500:
 		}
 		sleep 10;
 			if(unitexists(.@id[4]) == true)
-				unitskillusepos .@id[4],5319,10,144,226,-5;
+				unitskillusepos .@id[4],5319,5,144,226,-5;
+				unitskillusepos .@id[4],5319,5,150,233,-5;
 			if(unitexists(.@id[5]) == true)
-				unitskillusepos .@id[5],5319,10,157,226,-5;
+				unitskillusepos .@id[5],5319,5,157,226,-5;
+				unitskillusepos .@id[5],5319,5,163,233,-5;
 			if(unitexists(.@id[6]) == true)
 				unitskillusepos .@id[6],5319,5,169,226,-5;
 			if(unitexists(.@id[7]) == true)
 				unitskillusepos .@id[7],5319,5,144,239,-5;
+				unitskillusepos .@id[7],5319,5,150,246,-5;
 			if(unitexists(.@id[8]) == true)
 				unitskillusepos .@id[8],5319,5,157,239,-5;
+				unitskillusepos .@id[8],5319,5,163,246,-5;
 			if(unitexists(.@id[9]) == true)
 				unitskillusepos .@id[9],5319,5,169,239,-5;
 			if(unitexists(.@id[10]) == true)
@@ -1087,23 +1084,27 @@ OnTimer500:
 				donpcevent instance_npcname("#mapeffect"+.@i)+"::OnStrat";
 		}
 			if(unitexists(.@id[4]) == true)
-				unitskillusepos .@id[4],5495,1,144,226,-5;
+				unitskillusepos .@id[4],736,5,144,226,-5;
+				unitskillusepos .@id[4],736,5,150,233,-5;
 			if(unitexists(.@id[5]) == true)
-				unitskillusepos .@id[5],5495,1,157,226,-5;
+				unitskillusepos .@id[5],736,5,157,226,-5;
+				unitskillusepos .@id[5],736,5,163,233,-5;
 			if(unitexists(.@id[6]) == true)
-				unitskillusepos .@id[6],5495,1,169,226,-5;
+				unitskillusepos .@id[6],736,5,169,226,-5;
 			if(unitexists(.@id[7]) == true)
-				unitskillusepos .@id[7],5495,1,144,239,-5;
+				unitskillusepos .@id[7],736,5,144,239,-5;
+				unitskillusepos .@id[7],736,5,150,246,-5;
 			if(unitexists(.@id[8]) == true)
-				unitskillusepos .@id[8],5495,1,157,239,-5;
+				unitskillusepos .@id[8],736,5,157,239,-5;
+				unitskillusepos .@id[8],736,5,163,246,-5;
 			if(unitexists(.@id[9]) == true)
-				unitskillusepos .@id[9],5495,1,169,239,-5;
+				unitskillusepos .@id[9],736,5,169,239,-5;
 			if(unitexists(.@id[10]) == true)
-				unitskillusepos .@id[10],5495,1,144,252,-5;
+				unitskillusepos .@id[10],736,5,144,252,-5;
 			if(unitexists(.@id[11]) == true)
-				unitskillusepos .@id[11],5495,1,157,252,-5;
+				unitskillusepos .@id[11],736,5,157,252,-5;
 			if(unitexists(.@id[12]) == true)
-				unitskillusepos .@id[12],5495,1,169,252,-5;
+				unitskillusepos .@id[12],736,5,169,252,-5;
 			if(unitexists(.@id[0]) == true)
 				unitskillusepos .@id[0],91,5,.@x+2,.@y,-5;
 			if(unitexists(.@id[1]) == true)
@@ -1222,15 +1223,19 @@ OnTimer500:
 				donpcevent instance_npcname("#mapeffect"+.@i)+"::OnStrat";
 		}
 			if(unitexists(.@id[4]) == true)
-				unitskillusepos .@id[4],5319,10,144,226,-5;
+				unitskillusepos .@id[4],5319,5,144,226,-5;
+				unitskillusepos .@id[4],5319,5,150,233,-5;
 			if(unitexists(.@id[5]) == true)
-				unitskillusepos .@id[5],5319,10,157,226,-5;
+				unitskillusepos .@id[5],5319,5,157,226,-5;
+				unitskillusepos .@id[5],5319,5,163,233,-5;
 			if(unitexists(.@id[6]) == true)
 				unitskillusepos .@id[6],5319,5,169,226,-5;
 			if(unitexists(.@id[7]) == true)
 				unitskillusepos .@id[7],5319,5,144,239,-5;
+				unitskillusepos .@id[7],5319,5,150,246,-5;
 			if(unitexists(.@id[8]) == true)
 				unitskillusepos .@id[8],5319,5,157,239,-5;
+				unitskillusepos .@id[8],5319,5,163,246,-5;
 			if(unitexists(.@id[9]) == true)
 				unitskillusepos .@id[9],5319,5,169,239,-5;
 			if(unitexists(.@id[10]) == true)
@@ -1452,14 +1457,14 @@ OnTimer500:
 			break;
 	
 	case 6: //闇審判事件
-		if ('bossf2 != 1){
+		if ('bossf2 != 2){
 		unittalk 'BossID, "闇審判事件！！";
-		donpcevent instance_npcname("#Dc_GRANDCROSS")+"::OnEnable";//呼叫審判事件
-		set 'bossf2,1;
+		donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnEnable";//呼叫審判事件
+		set 'bossf2,2;
 		}
 		break;
 	}
-	sleep 200;
+	sleep 50;
 	initnpctimer;
 	end;
 	}
@@ -1494,9 +1499,54 @@ OnTimer10000://10秒判定一次 離開超過30秒重新打
 	if (.outside >= 3){
 		set 'fail,1;
 		donpcevent instance_npcname("#CGH_BOSS")+"::Onstoptime";
-		set 'bossf2 , 2;
+		set 'bossf2 , 1;
 		donpcevent instance_npcname("#CGH_BOSS")+"::Onstoptime";
 		donpcevent instance_npcname("#bossarea")+"::Onstoptime";
+		hideoffnpc instance_npcname("奧斯卡#oscar_4");
+		unitkill 'BossID;
+		stopnpctimer;
+		detachnpctimer;
+		set .@map$,instance_mapname("1@gl_he");
+		mapannounce .@map$, "間答萊屍的幻影：看來你沒有資格當我的新主人",bc_map,"0xFF3333";
+		
+	}
+	end;
+
+}
+
+1@gl_he,2,2,4	script	#bossarea_2	-1,{
+
+OnEnable:
+	initnpctimer;
+	enablenpc instance_npcname("#bossarea_2");
+	set .outside,0;
+	set 'fail,0;
+	sleep 2000;
+	end;
+
+Onstoptime:
+	stopnpctimer;
+	end;
+
+OnTimer10000://10秒判定一次 離開超過30秒重新打
+	getunitdata 'BossID,'amdaraisdata;
+	.@x = 'amdaraisdata[6];
+	.@y = 'amdaraisdata[7];
+	if (.@x < 150 || .@x > 165 || .@y > 245 || .@y <232){
+		set .outside,.outside + 1;
+		set .@map$,instance_mapname("1@gl_he");
+		mapannounce .@map$, "奧斯卡：間答萊屍的幻影已經離開中間一定時間了，要是讓她離開太久的話這個時空的臨界點將會被突破，我就無法順利完成淨化了.",bc_map,"0xA42D00";
+	}
+	else{
+		set .outside,0;
+	}
+	initnpctimer;
+	if (.outside >= 3){
+		set 'fail,1;
+		donpcevent instance_npcname("#CGH_BOSS_2")+"::Onstoptime";
+		set 'bossf2 , 1;
+		donpcevent instance_npcname("#CGH_BOSS_2")+"::Onstoptime";
+		donpcevent instance_npcname("#bossarea_2")+"::Onstoptime";
 		hideoffnpc instance_npcname("奧斯卡#oscar_4");
 		unitkill 'BossID;
 		stopnpctimer;
@@ -1577,22 +1627,24 @@ OnTimer10000:
 		}
 	
 	}
+	if( 'bossf2 != 1) { 
 	donpcevent instance_npcname("#CGH_BOSS")+"::Onstarttime";
 	set 'bossf2 , 0;
 	end;
+	}
 	
 }
 
-1@gl_he,172,206,4	script	#Dc_GRANDCROSS(Crazy)	-1,{
+1@gl_he,172,206,4	script	#Dc_GRANDCROSS_2	-1,{
 
 OnEnable:
-	enablenpc instance_npcname("#Dc_GRANDCROSS(Crazy)");
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnStart";
-	donpcevent instance_npcname("#CGH_BOSS(Crazy)") + "::Onstarttime";
+	enablenpc instance_npcname("#Dc_GRANDCROSS_2");
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnStart";
+	donpcevent instance_npcname("#CGH_BOSS_2") + "::Onstarttime";
 	end;
 OnStart:
 	set .@map$,instance_mapname("1@gl_he");
-	set .@labelG$, instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnKillGRANDCROSS";
+	set .@labelG$, instance_npcname("#Dc_GRANDCROSS_2")+"::OnKillGRANDCROSS";
 	setarray 'gid[0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0;
 	set .@k,0;
 	for(.@i = 224; .@i <= 251; .@i=.@i+9){
@@ -1624,34 +1676,35 @@ OnGRANDCROSS:
 	end;
 
 OnTimer2000:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
 	end;
-OnTimer3500:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
+OnTimer3000:
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
+	end;
+OnTimer4000:
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
 	end;
 OnTimer5000:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
 	end;
-OnTimer6500:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
+OnTimer6000:
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
+	end;
+OnTimer7000:
+	donpcevent instance_npcname("#Dc_GRANDCROSS_2")+"::OnGRANDCROSS";
 	end;
 OnTimer8000:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
-	end;
-OnTimer9500:
-	donpcevent instance_npcname("#Dc_GRANDCROSS(Crazy)")+"::OnGRANDCROSS";
-	end;
-OnTimer10000:
 	for(.@i = 0; .@i <= 15; .@i++){
 		if(unitexists('gid[.@i]) == true){
 			unitkill 'gid[.@i];
 		}
 	
 	}
-	donpcevent instance_npcname("#CGH_BOSS(Crazy)")+"::Onstarttime";
+	if( 'bossf2 != 1) { 
+	donpcevent instance_npcname("#CGH_BOSS_2")+"::Onstarttime";
 	set 'bossf2 , 0;
 	end;
-	
+	}
 }
 
 //===================================
@@ -1688,6 +1741,43 @@ OnTimer10000:
 	}
 	if ('selectdiff >= 5){
 		for(.@i = 0; .@i <= rand(.@item25866min['selectdiff-4],.@item25866max['selectdiff-4]); .@i++ ){
+			makeitem .@gain[2],1,.@map$,.@x+rand(-4,4),.@y+rand(-4,4);
+		sleep2 50;
+		}
+	}
+	end;
+}
+
+1@gl_he,158,240,3	script	寶箱#chatnmtop_2	10005,{
+	setarray .@gain[0],25864,25865,25866,25867;//獎勵物品設定
+	setarray .@item25864min[1],1,1,2,2,3,3,4,4,5,5;
+	setarray .@item25864max[1],5,6,7,8,9,10,10,10,10,10;
+	setarray .@item25865min[1],1,1,1,1,2,2,2,2;
+	setarray .@item25865max[1],3,4,4,5,5,6,6,7;
+	setarray .@item25866min[1],1,3,5,8,11,14;
+	setarray .@item25866max[1],3,7,11,16,22,28;
+	setarray .@item25867min[1],1,1,1,1,2,2,3,3,4,4;
+	setarray .@item25867max[1],15,20,25,30,30,30,30,30,30,30;
+	getmapxy(.@map$,.@x,.@y,BL_NPC,instance_npcname(strnpcinfo(0)));
+	specialeffect 10;
+	hideonnpc instance_npcname(strnpcinfo(0));
+	
+	for(.@i = 0; .@i <= rand(.@item25864min['selectdiff]*10,.@item25864max['selectdiff]*10); .@i++ ){
+		makeitem .@gain[0],1,.@map$,.@x+rand(-4,4),.@y+rand(-4,4);
+		sleep2 50;
+	}
+	for(.@i = 0; .@i <= rand(.@item25867min['selectdiff]*10,.@item25867max['selectdiff]*10); .@i++ ){
+		makeitem .@gain[3],1,.@map$,.@x+rand(-4,4),.@y+rand(-4,4);
+		sleep2 50;
+	}
+	if ('selectdiff >= 3){
+		for(.@i = 0; .@i <= rand(.@item25865min['selectdiff-2]*10,.@item25865max['selectdiff-2]*10); .@i++ ){
+			makeitem .@gain[1],1,.@map$,.@x+rand(-4,4),.@y+rand(-4,4);
+		sleep2 50;
+		}
+	}
+	if ('selectdiff >= 5){
+		for(.@i = 0; .@i <= rand(.@item25866min['selectdiff-4]*10,.@item25866max['selectdiff-4]*10); .@i++ ){
 			makeitem .@gain[2],1,.@map$,.@x+rand(-4,4),.@y+rand(-4,4);
 		sleep2 50;
 		}
@@ -1734,6 +1824,45 @@ OnTimer10000:
 end;
 }
 
+1@gl_he,158,247,1	script	奧斯卡#oscar_6	4_ED_OSCAR,{
+	if (is_party_leader())
+	{
+		mes "[奧斯卡]";
+		mes "恭喜你完成副本";
+		mes "這是我提供的獎勵你就收下吧！";
+		next;
+		addrid(2,1,'party_id);
+		//---設定難度(目前為一階段打1次才會升一階)
+		set #CGHTYPENUM,#CGHTYPENUM+1;
+		if (#CGHTYPENUM >= 0)
+		{
+			set #CGHTYPE,#CGHTYPE+1;
+			set #CGHTYPENUM,0;
+		}
+		if (#CGHTYPE >= 10)
+		{
+			set #CGHTYPE,10;
+			set #CGHTYPENUM,0;
+		}
+		next;
+		mes "在這裡崩塌之前";
+		mes "我會用盡我的力氣替你傳送出去。";
+		mes "再會了。勇者。";
+		next;
+		'ClearInatance = 1;
+		getmapxy(.@m$,'passx,'passy,BL_PC);
+		donpcevent instance_npcname("副本寶箱2#1@gl_he")+"::OnEnable";
+		disablenpc instance_npcname("奧斯卡#oscar_6");
+		end;
+	}
+	else
+	{
+		showscript "請隊長與我領取獎勵。",getcharid(3),SELF;
+		end;
+	}
+end;
+}
+
 1@gl_he,0,0,0	script	副本寶箱#1@gl_he	obj_a2,{
 	mes "^33CC33【副本寶箱】^000000";
 	mes "你要領取獎勵了嗎？";
@@ -1745,6 +1874,33 @@ get42:
 	end;
 get422:
 	Instance_PassAnnounce;
+	getitem 25864,5;
+	getitem 6909,8;
+	warp "SavePoint",0,0;
+	end;
+OnEnable:
+	enablenpc instance_npcname(strnpcinfo(0));
+	movenpc instance_npcname(strnpcinfo(0)),'passx,'passy;
+	end;
+OnDisable:
+	disablenpc instance_npcname(strnpcinfo(0));
+	end;
+OnInstanceInit:
+	disablenpc instance_npcname(strnpcinfo(0));
+	'map_reward$ = instance_mapname("1@ge_sn");
+	end;
+}
+1@gl_he,0,0,0	script	副本寶箱2#1@gl_he	obj_a2,{
+	mes "^33CC33【副本寶箱】^000000";
+	mes "你要領取獎勵了嗎？";
+	next;
+	menu
+	"^008000◆先不要◆^000000",get42,
+	"^008000◆領取◆^000000",get422;
+get42:
+	end;
+get422:
+	announce "太狂啦 -  '" + strcharinfo(0) + "' 成功古城挑戰噁心的模式成為噁心的人！", bc_all;
 	getitem 25864,5;
 	getitem 6909,8;
 	warp "SavePoint",0,0;
