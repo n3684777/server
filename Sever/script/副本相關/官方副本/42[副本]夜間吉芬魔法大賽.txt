@@ -903,33 +903,92 @@ OnInstanceInit:
 	mes "[夜間吉芬魔法大賽主持人]";
 	mes "那麼，第一回合要開始了嗎？";
 	next;
-		if(select("開始比賽吧！", "等等！") == 2) {
+		switch(select("開始比賽吧！", "等等！","我要打十個！！")) {
+	case 1:	
+			close2;
+			hideonnpc instance_npcname("夜間吉芬魔法大賽主持人#ge01");
+			specialeffect 215;
+			set 'gef_round,1;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：那麼，暗夜吉芬鬥技場，現在開幕！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：即將開始的是A組第一回合的較量。",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：首先是第一次參加魔法大賽的神秘隊伍！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：連名字都不被世人熟知的神秘隊伍！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：然後對手是...戰鬥力4,800,000的",bc_map,"0xFFFF33";
+			sleep2 1000;
+			enablenpc instance_npcname("雅樂西#gef");
+			instance_announce 0, "夜間吉芬魔法大賽主持人：年輕的參賽者，假面的雅樂西！",bc_map,"0xFFFF33";
+			sleep2 3000;
+			hideoffnpc instance_npcname("雅樂西#gef");
+			donpcevent instance_npcname("雅樂西#gef")+"::OnEnable";
+	case 2:
 			mes "[夜間吉芬魔法大賽主持人]";
 			mes "好了再跟我說一下。";
 			set @talk01,1;
 			close;
-		}
-	close2;
-	hideonnpc instance_npcname("夜間吉芬魔法大賽主持人#ge01");
-	specialeffect 215;
-	set 'gef_round,1;
-	instance_announce 0, "夜間吉芬魔法大賽主持人：那麼，暗夜吉芬鬥技場，現在開幕！",bc_map,"0xFFFF33";
-	sleep2 1000;
-	instance_announce 0, "夜間吉芬魔法大賽主持人：即將開始的是A組第一回合的較量。",bc_map,"0xFFFF33";
-	sleep2 1000;
-	instance_announce 0, "夜間吉芬魔法大賽主持人：首先是第一次參加魔法大賽的神秘隊伍！",bc_map,"0xFFFF33";
-	sleep2 1000;
-	instance_announce 0, "夜間吉芬魔法大賽主持人：連名字都不被世人熟知的神秘隊伍！",bc_map,"0xFFFF33";
-	sleep2 1000;
-	instance_announce 0, "夜間吉芬魔法大賽主持人：然後對手是...戰鬥力4,800,000的",bc_map,"0xFFFF33";
-	sleep2 1000;
-	enablenpc instance_npcname("雅樂西#gef");
-	instance_announce 0, "夜間吉芬魔法大賽主持人：年輕的參賽者，假面的雅樂西！",bc_map,"0xFFFF33";
-	sleep2 3000;
-	hideoffnpc instance_npcname("雅樂西#gef");
-	donpcevent instance_npcname("雅樂西#gef")+"::OnEnable";
+	case 3:
+			close2;
+			hideonnpc instance_npcname("夜間吉芬魔法大賽主持人#ge01");
+			specialeffect 215;
+			set 'gef_round,1;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：那麼，暗夜吉芬鬥技場，現在開幕！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：即將開始的是A組第一回合的較量。",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：首先是第一次參加魔法大賽的神秘隊伍！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：連名字都不被世人熟知的神秘隊伍！",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：然後對手是...什麼...居然要一個打十個！？",bc_map,"0xFFFF33";
+			sleep2 1000;
+			instance_announce 0, "夜間吉芬魔法大賽主持人：究竟是匹夫還是英雄呢？",bc_map,"0xFFFF33";
+			sleep2 3000;
+			donpcevent instance_npcname("#打十個")+"::OnEnable";
+			close;
+			}
+			end;
+			}
+1@ge_sn,0,0,0	script	#打十個	-1,{
+OnDisable:
+	disablenpc instance_npcname("#打十個");
+	end;
+OnEnable:
+			set 'map$,instance_mapname("1@ge_sn");
+			set .@label$, instance_npcname("#打十個")+"::OnMyMobDead";
+			areamonster 'map$,100,42,119,55,"--ja--",20856,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20857,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20858,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20859,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20860,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20861,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20862,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20863,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20864,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20865,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20866,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20867,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20868,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20869,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20870,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20871,1,.@label$;
+			areamonster 'map$,100,42,119,55,"--ja--",20872,1,.@label$;
+			set 'MyMobs,18;
+OnMyMobDead:
+	set 'map$,instance_mapname("1@ge_sn");
+	set 'MyMobs, 'MyMobs-1;
+	if ('MyMobs == 0) {
+		instance_announce 0, "恭喜各位順利通關，你們的名聲會散波到各地的。",bc_map,"0xFFFF33";		
+		getmapxy(.@m$,'passx,'passy,BL_PC);
+		donpcevent instance_npcname("副本寶箱#1@ge_sn")+"::OnEnable";	
+		'ClearInatance = 1;
+		end;
+	}
+end;
 }
-
+			
 1@ge_sn,109,62,4	script	夜間吉芬魔法大賽主持人#ge02	853,{
 	if('fail == 1){
 		mes "[夜間吉芬魔法大賽主持人]";
@@ -970,7 +1029,6 @@ get422:
 	getitem    1000317,5;
 	getitem    1000366,3;
 	getitem 6909,6;
-	getitem 930000,5;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:
