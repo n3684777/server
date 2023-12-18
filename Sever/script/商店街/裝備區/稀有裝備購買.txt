@@ -1133,7 +1133,7 @@ uttycty,110,72,4	script	诀	112,{
 OnInit:
 	setnpcicon getnpcid(0),1026,"诀";
 	waitingroom "」 诀 」",0;
-	.@a = 10; //传计秖
+	.@a = 8; //传计秖
 	.@c = 0; //基
 	tradertype(NST_EXPANDED_BARTER);
 	
