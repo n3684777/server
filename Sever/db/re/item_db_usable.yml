@@ -8142,7 +8142,7 @@ Body:
     Name: ºû¥L¤Y500
     Type: Healing
     Buy: 10
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
