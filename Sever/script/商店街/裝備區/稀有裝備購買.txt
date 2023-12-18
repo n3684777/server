@@ -1127,7 +1127,7 @@ OnInit:
 end;
 }
 
-uttycty,110,72,4	script	封印兌卡機	112,{
+uttycty,110,72,4	script	封印兌卡機	910,{
 	disable_items;
 	end;
 OnInit:

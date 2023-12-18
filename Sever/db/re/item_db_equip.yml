@@ -154836,6 +154836,37 @@ Body:
       bonus bShortAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0);
       bonus bLongAtkRate,(.@r >= 11?10:0)+(.@r >= 13?15:0);
       bonus2 bAddEle,Ele_Neutral,(.@r >= 12?12:0);
+  - Id: 480270
+    AegisName: N_Spirit_Cape_TW
+    Name: 夜勝魔意念斗篷
+    Type: Armor
+    Weight: 200
+    Defense: 0
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    Script: |
+      .@r - getrefine();
+      bonus bMatk,(.@r/2)*10;
+      bonus2 bSubRace,RC_Dragon,(.@r/3)*4;
+      bonus2 bMagicAddRace,RC_Dragon,(.@r/4)*8;
+      bonus2 bMagicAddRace,RC_DemiHuman ,(.@r/4)*8; 
+      if(.@r >= 7){bMatkRate,10;}
+      if(.@r >= 9){bonus bDelayrate,8; }
+      if(.@r >= 11){
+      bonus2 bMagicAtkEle,Ele_Fire,10;
+      bonus2 bMagicAtkEle,Ele_Water,10;
+      bonus2 bMagicAtkEle,Ele_Ghost,10;
+      }
+      if(.@r >= 12){bonus2 bMagicAddEle,Ele_Neutral,12;}
+      if(.@r >= 13){
+      bonus2 bMagicAtkEle,Ele_Fire,15;
+      bonus2 bMagicAtkEle,Ele_Water,15;
+      bonus2 bMagicAtkEle,Ele_Ghost,15;
+      }
   - Id: 480276
     AegisName: Pisces_Manteau_J
     Name: 曼妙自然之力斗篷

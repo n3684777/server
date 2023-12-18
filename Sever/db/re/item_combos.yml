@@ -33116,6 +33116,14 @@ Body:
       bonus2 bSubRace,RC_Player_Human,-5;
   - Combos:
       - Combo:
+          - N_Spirit_Cape_TW
+          - Nahtzigger_Card
+    Script: |
+      bonus bSMatk,10;
+      bonus2 bMagicAddClass,Class_Boss,20;
+      autobonus "{}",2,10000,BF_WEAPON;autobonus "{ bonus2 bMagicAddClass,Class_Boss,20;bonus2 bMagicAtkEle,Ele_Fire,30;bonus2 bMagicAtkEle,Ele_Water,30;bonus2 bMagicAtkEle,Ele_Ghost,30; }",20,10000,BF_MAGIC,"{ active_transform 1956,10000; }";
+  - Combos:
+      - Combo:
           - Day_of_the_Dead
           - Nahtzigger_Card
     Script: |

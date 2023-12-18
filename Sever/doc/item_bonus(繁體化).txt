@@ -352,7 +352,7 @@ bonus2 bMagicSubDefEle,e,x;		     受到 e 屬性的單位攻擊時, 減少魔�
 
 bonus2 bAddRace,r,x;                 物理攻擊 r 種族的單位時, 增加 x% 的傷害 (種族物理傷害/物理種族傷害) 
 bonus2 bMagicAddRace,r,x;            魔法攻擊 r 種族的單位時, 增加 x% 的傷害 (種族魔法傷害/魔法種族傷害)
-bonus2 bSubRace,r,x;                 受到 r 種族的單位攻擊時, 減少 x% 的傷害 (種族減少傷害/種族減少傷害)
+bonus2 bSubRace,r,x;                 受到 r 種族的單位攻擊時, 減少 x% 的傷害 (種族減少傷害/種族減少傷害) (增加種族抗性)
 bonus3 bSubRace,r,x,bf;              受到來自 r 種族的 bf 攻擊條件減少 x% 的傷害, 例：破壞的達納托斯的記憶卡片(#300280)
 
 bonus2 bAddClass,c,x;                物理攻擊 c 類別的單位時, 增加 x% 的傷害   (物理階級傷害/魔法階級傷害)
