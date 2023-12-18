@@ -498,16 +498,16 @@ OnTimer8500:
 
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_talkinstance1")+"::OnMyMobDead"; 
-	monster .@map$,145,59,"--ja--",3145,1,.@label$;
-	monster .@map$,154,59,"--ja--",3145,1,.@label$;
-	monster .@map$,145,69,"--ja--",3145,1,.@label$;
-	monster .@map$,154,69,"--ja--",3145,1,.@label$;
-	monster .@map$,145,79,"--ja--",3145,1,.@label$;
-	monster .@map$,154,79,"--ja--",3145,1,.@label$;
-	monster .@map$,145,89,"--ja--",3145,1,.@label$;
-	monster .@map$,154,89,"--ja--",3145,1,.@label$;
-	monster .@map$,145,99,"--ja--",3145,1,.@label$;
-	monster .@map$,154,99,"--ja--",3145,1,.@label$;
+	monster .@map$,145,59,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,154,59,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,145,69,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,154,69,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,145,79,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,154,79,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,145,89,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,154,89,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,145,99,"Τ繷安肅▆",3145,1,.@label$;
+	monster .@map$,154,99,"Τ繷安肅▆",3145,1,.@label$;
 
 	for(set .@i,1; .@i<=22; set .@i,.@i+1)
 		hideoffnpc instance_npcname(".#n_ghinstance"+.@i);
@@ -539,18 +539,18 @@ OnTimer8800:
 
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_talkinstance1")+"::OnMyMobDead"; 
-	monster .@map$,145,54,"--ja--",3146,1,.@label$;
-	monster .@map$,154,54,"--ja--",3146,1,.@label$;
-	monster .@map$,145,64,"--ja--",3146,1,.@label$;
-	monster .@map$,154,64,"--ja--",3146,1,.@label$;
-	monster .@map$,145,74,"--ja--",3146,1,.@label$;
-	monster .@map$,154,74,"--ja--",3146,1,.@label$;
-	monster .@map$,145,84,"--ja--",3146,1,.@label$;
-	monster .@map$,154,84,"--ja--",3146,1,.@label$;
-	monster .@map$,145,94,"--ja--",3146,1,.@label$;
-	monster .@map$,154,94,"--ja--",3146,1,.@label$;
-	monster .@map$,145,104,"--ja--",3146,1,.@label$;
-	monster .@map$,154,104,"--ja--",3146,1,.@label$;
+	monster .@map$,145,54,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,54,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,145,64,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,64,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,145,74,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,74,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,145,84,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,84,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,145,94,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,94,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,145,104,"Τ繷安肅▆",3146,1,.@label$;
+	monster .@map$,154,104,"Τ繷安肅▆",3146,1,.@label$;
 	end;
 OnTimer9300:
 	donpcevent instance_npcname("肅▆Μ澄诀闽π#n_ghinstance2")+"::OnTalk4";
@@ -801,11 +801,11 @@ OnEnable:
 	enablenpc instance_npcname("#n_ghmemorialmob01");
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob01")+"::OnMyMobDead";
-	areamonster .@map$,76,99,87,10,"--ja--",3141,15,.@label$;
-	areamonster .@map$,67,39,12,6,"--ja--",3140,20,.@label$;
-	areamonster .@map$,67,39,12,6,"--ja--",3141,3,.@label$;
-	areamonster .@map$,32,75,51,58,"--ja--",3139,6,.@label$;
-	areamonster .@map$,45,84,6,137,"--ja--",3139,12,.@label$;
+	areamonster .@map$,76,99,87,10,"Τ繷安肅▆",3141,15,.@label$;
+	areamonster .@map$,67,39,12,6,"Τ繷安肅▆",3140,20,.@label$;
+	areamonster .@map$,67,39,12,6,"Τ繷安肅▆",3141,3,.@label$;
+	areamonster .@map$,32,75,51,58,"Τ繷安肅▆",3139,6,.@label$;
+	areamonster .@map$,45,84,6,137,"Τ繷安肅▆",3139,12,.@label$;
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_kh");
@@ -938,10 +938,10 @@ OnEnable:
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob02")+"::OnMyMobDead";
 	mapannounce .@map$,"3翴牧よ硄┕3跋竒秨币",bc_map,"0xFFFF00";
-	areamonster .@map$,241,113,291,19,"--ja--",3141,12,.@label$;
-	areamonster .@map$,241,113,291,19,"--ja--",3139,12,.@label$;
-	areamonster .@map$,227,217,291,135,"--ja--",3141,12,.@label$;
-	areamonster .@map$,227,217,291,135,"--ja--",3139,12,.@label$;
+	areamonster .@map$,241,113,291,19,"Τ繷安肅▆",3141,12,.@label$;
+	areamonster .@map$,241,113,291,19,"Τ繷安肅▆",3139,12,.@label$;
+	areamonster .@map$,227,217,291,135,"Τ繷安肅▆",3141,12,.@label$;
+	areamonster .@map$,227,217,291,135,"Τ繷安肅▆",3139,12,.@label$;
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_kh");
@@ -1028,14 +1028,14 @@ OnEnable:
 	set .@map$, instance_mapname("1@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob03")+"::OnMyMobDead";
 	mapannounce .@map$,"12翴牧よ硄┕4跋竒秨币",bc_map,"0xFFFF00";
-	areamonster .@map$,17,259,53,180,"--ja--",3143,11,.@label$;
-	areamonster .@map$,17,259,53,180,"--ja--",3144,14,.@label$;
-	areamonster .@map$,62,281,73,186,"--ja--",3143,11,.@label$;
-	areamonster .@map$,62,281,73,186,"--ja--",3144,14,.@label$;
-	areamonster .@map$,74,251,109,224,"--ja--",3143,11,.@label$;
-	areamonster .@map$,74,251,109,224,"--ja--",3144,14,.@label$;
-	areamonster .@map$,108,281,231,234,"--ja--",3143,11,.@label$;
-	areamonster .@map$,108,281,231,234,"--ja--",3144,14,.@label$;
+	areamonster .@map$,17,259,53,180,"Τ繷安肅▆",3143,11,.@label$;
+	areamonster .@map$,17,259,53,180,"Τ繷安肅▆",3144,14,.@label$;
+	areamonster .@map$,62,281,73,186,"Τ繷安肅▆",3143,11,.@label$;
+	areamonster .@map$,62,281,73,186,"Τ繷安肅▆",3144,14,.@label$;
+	areamonster .@map$,74,251,109,224,"Τ繷安肅▆",3143,11,.@label$;
+	areamonster .@map$,74,251,109,224,"Τ繷安肅▆",3144,14,.@label$;
+	areamonster .@map$,108,281,231,234,"Τ繷安肅▆",3143,11,.@label$;
+	areamonster .@map$,108,281,231,234,"Τ繷安肅▆",3144,14,.@label$;
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("1@gl_kh");
@@ -1474,88 +1474,88 @@ OnTimer7000:
 	disablenpc instance_npcname("#spawnmonster01");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,119,151,121,153,"--ja--",3143,1,.@label$;
-	areamonster .@map$,119,151,121,153,"--ja--",3144,1,.@label$;
-	areamonster .@map$,119,151,121,153,"--ja--",3145,1,.@label$;
-	areamonster .@map$,119,151,121,153,"--ja--",3146,1,.@label$;
-	areamonster .@map$,119,151,121,153,"--ja--",3147,1,.@label$;
+	areamonster .@map$,119,151,121,153,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,119,151,121,153,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,119,151,121,153,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,119,151,121,153,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,119,151,121,153,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,39,146,1	script	#spawnmonster02	723,{
 	disablenpc instance_npcname("#spawnmonster02");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,38,145,40,147,"--ja--",3143,1,.@label$;
-	areamonster .@map$,38,145,40,147,"--ja--",3144,1,.@label$;
-	areamonster .@map$,38,145,40,147,"--ja--",3145,1,.@label$;
-	areamonster .@map$,38,145,40,147,"--ja--",3146,1,.@label$;
-	areamonster .@map$,38,145,40,147,"--ja--",3147,1,.@label$;
+	areamonster .@map$,38,145,40,147,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,38,145,40,147,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,38,145,40,147,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,38,145,40,147,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,38,145,40,147,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,62,120,1	script	#spawnmonster03	723,{
 	disablenpc instance_npcname("#spawnmonster03");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,61,119,63,121,"--ja--",3143,1,.@label$;
-	areamonster .@map$,61,119,63,121,"--ja--",3144,1,.@label$;
-	areamonster .@map$,61,119,63,121,"--ja--",3145,1,.@label$;
-	areamonster .@map$,61,119,63,121,"--ja--",3146,1,.@label$;
-	areamonster .@map$,61,119,63,121,"--ja--",3147,1,.@label$;
+	areamonster .@map$,61,119,63,121,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,61,119,63,121,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,61,119,63,121,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,61,119,63,121,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,61,119,63,121,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,61,80,1	script	#spawnmonster04	723,{
 	disablenpc instance_npcname("#spawnmonster04");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,60,79,62,81,"--ja--",3143,1,.@label$;
-	areamonster .@map$,60,79,62,81,"--ja--",3144,1,.@label$;
-	areamonster .@map$,60,79,62,81,"--ja--",3145,1,.@label$;
-	areamonster .@map$,60,79,62,81,"--ja--",3146,1,.@label$;
-	areamonster .@map$,60,79,62,81,"--ja--",3147,1,.@label$;
+	areamonster .@map$,60,79,62,81,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,60,79,62,81,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,60,79,62,81,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,60,79,62,81,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,60,79,62,81,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,58,45,1	script	#spawnmonster05	723,{
 	disablenpc instance_npcname("#spawnmonster05");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,57,44,59,46,"--ja--",3143,1,.@label$;
-	areamonster .@map$,57,44,59,46,"--ja--",3144,1,.@label$;
-	areamonster .@map$,57,44,59,46,"--ja--",3145,1,.@label$;
-	areamonster .@map$,57,44,59,46,"--ja--",3146,1,.@label$;
-	areamonster .@map$,57,44,59,46,"--ja--",3147,1,.@label$;
+	areamonster .@map$,57,44,59,46,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,57,44,59,46,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,57,44,59,46,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,57,44,59,46,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,57,44,59,46,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,104,53,1	script	#spawnmonster06	723,{
 	disablenpc instance_npcname("#spawnmonster06");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,103,52,105,54,"--ja--",3143,1,.@label$;
-	areamonster .@map$,103,52,105,54,"--ja--",3144,1,.@label$;
-	areamonster .@map$,103,52,105,54,"--ja--",3145,1,.@label$;
-	areamonster .@map$,103,52,105,54,"--ja--",3146,1,.@label$;
-	areamonster .@map$,103,52,105,54,"--ja--",3147,1,.@label$;
+	areamonster .@map$,103,52,105,54,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,103,52,105,54,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,103,52,105,54,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,103,52,105,54,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,103,52,105,54,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,131,53,1	script	#spawnmonster07	723,{
 	disablenpc instance_npcname("#spawnmonster07");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,130,52,132,54,"--ja--",3143,1,.@label$;
-	areamonster .@map$,130,52,132,54,"--ja--",3144,1,.@label$;
-	areamonster .@map$,130,52,132,54,"--ja--",3145,1,.@label$;
-	areamonster .@map$,130,52,132,54,"--ja--",3146,1,.@label$;
-	areamonster .@map$,130,52,132,54,"--ja--",3147,1,.@label$;
+	areamonster .@map$,130,52,132,54,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,130,52,132,54,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,130,52,132,54,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,130,52,132,54,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,130,52,132,54,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,128,101,1	script	#spawnmonster08	723,{
 	disablenpc instance_npcname("#spawnmonster08");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob05")+"::OnMyMobDead";
-	areamonster .@map$,127,100,129,102,"--ja--",3143,1,.@label$;
-	areamonster .@map$,127,100,129,102,"--ja--",3144,1,.@label$;
-	areamonster .@map$,127,100,129,102,"--ja--",3145,1,.@label$;
-	areamonster .@map$,127,100,129,102,"--ja--",3146,1,.@label$;
-	areamonster .@map$,127,100,129,102,"--ja--",3147,1,.@label$;
+	areamonster .@map$,127,100,129,102,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,127,100,129,102,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,127,100,129,102,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,127,100,129,102,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,127,100,129,102,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,0,0,0	script	#n_ghmemorialmob05	-1,{
@@ -1607,11 +1607,11 @@ OnTimer9000:
 		69,138,80,127,
 		34,143,39,138;
 	for(set .@i,0; .@i<getarraysize(.@c); set .@i,.@i+4) {
-		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"--ja--",3143,2,.@label$;
-		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"--ja--",3144,2,.@label$;
-		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"--ja--",3145,2,.@label$;
-		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"--ja--",3146,2,.@label$;
-		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"--ja--",3147,2,.@label$;
+		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"Τ繷安肅▆",3143,2,.@label$;
+		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"Τ繷安肅▆",3144,2,.@label$;
+		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"Τ繷安肅▆",3145,2,.@label$;
+		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"Τ繷安肅▆",3146,2,.@label$;
+		areamonster .@map$,.@c[.@i],.@c[.@i+1],.@c[.@i+2],.@c[.@i+3],"Τ繷安肅▆",3147,2,.@label$;
 	}
 	set 'MyMobs2time,'MyMobs2time+1;
 	end;
@@ -1631,7 +1631,7 @@ OnDisable:
 	end;
 OnEnable:
 	enablenpc instance_npcname("#n_ghmemorialmob07");
-	areamonster instance_mapname("2@gl_kh"),124,20,31,162,"--ja--",3148,1,instance_npcname("#n_ghmemorialmob07")+"::OnMyMobDead";
+	areamonster instance_mapname("2@gl_kh"),124,20,31,162,"Τ繷安肅▆",3148,1,instance_npcname("#n_ghmemorialmob07")+"::OnMyMobDead";
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("2@gl_kh");
@@ -1649,88 +1649,88 @@ OnMyMobDead:
 	disablenpc instance_npcname("#spawnmonster09");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,190,105,192,107,"--ja--",3143,1,.@label$;
-	areamonster .@map$,190,105,192,107,"--ja--",3144,1,.@label$;
-	areamonster .@map$,190,105,192,107,"--ja--",3145,1,.@label$;
-	areamonster .@map$,190,105,192,107,"--ja--",3146,1,.@label$;
-	areamonster .@map$,190,105,192,107,"--ja--",3147,1,.@label$;
+	areamonster .@map$,190,105,192,107,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,190,105,192,107,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,190,105,192,107,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,190,105,192,107,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,190,105,192,107,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,182,28,1	script	#spawnmonster10	723,{
 	disablenpc instance_npcname("#spawnmonster10");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,181,27,183,29,"--ja--",3143,1,.@label$;
-	areamonster .@map$,181,27,183,29,"--ja--",3144,1,.@label$;
-	areamonster .@map$,181,27,183,29,"--ja--",3145,1,.@label$;
-	areamonster .@map$,181,27,183,29,"--ja--",3146,1,.@label$;
-	areamonster .@map$,181,27,183,29,"--ja--",3147,1,.@label$;
+	areamonster .@map$,181,27,183,29,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,181,27,183,29,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,181,27,183,29,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,181,27,183,29,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,181,27,183,29,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,213,44,1	script	#spawnmonster11	723,{
 	disablenpc instance_npcname("#spawnmonster11");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,212,43,214,45,"--ja--",3143,1,.@label$;
-	areamonster .@map$,212,43,214,45,"--ja--",3144,1,.@label$;
-	areamonster .@map$,212,43,214,45,"--ja--",3145,1,.@label$;
-	areamonster .@map$,212,43,214,45,"--ja--",3146,1,.@label$;
-	areamonster .@map$,212,43,214,45,"--ja--",3147,1,.@label$;
+	areamonster .@map$,212,43,214,45,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,212,43,214,45,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,212,43,214,45,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,212,43,214,45,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,212,43,214,45,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,245,72,1	script	#spawnmonster12	723,{
 	disablenpc instance_npcname("#spawnmonster12");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,244,71,246,73,"--ja--",3143,1,.@label$;
-	areamonster .@map$,244,71,246,73,"--ja--",3144,1,.@label$;
-	areamonster .@map$,244,71,246,73,"--ja--",3145,1,.@label$;
-	areamonster .@map$,244,71,246,73,"--ja--",3146,1,.@label$;
-	areamonster .@map$,244,71,246,73,"--ja--",3147,1,.@label$;
+	areamonster .@map$,244,71,246,73,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,244,71,246,73,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,244,71,246,73,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,244,71,246,73,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,244,71,246,73,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,213,105,1	script	#spawnmonster13	723,{
 	disablenpc instance_npcname("#spawnmonster13");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,212,104,214,106,"--ja--",3143,1,.@label$;
-	areamonster .@map$,212,104,214,106,"--ja--",3144,1,.@label$;
-	areamonster .@map$,212,104,214,106,"--ja--",3145,1,.@label$;
-	areamonster .@map$,212,104,214,106,"--ja--",3146,1,.@label$;
-	areamonster .@map$,212,104,214,106,"--ja--",3147,1,.@label$;
+	areamonster .@map$,212,104,214,106,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,212,104,214,106,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,212,104,214,106,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,212,104,214,106,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,212,104,214,106,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,231,135,1	script	#spawnmonster14	723,{
 	disablenpc instance_npcname("#spawnmonster14");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,230,134,232,136,"--ja--",3143,1,.@label$;
-	areamonster .@map$,230,134,232,136,"--ja--",3144,1,.@label$;
-	areamonster .@map$,230,134,232,136,"--ja--",3145,1,.@label$;
-	areamonster .@map$,230,134,232,136,"--ja--",3146,1,.@label$;
-	areamonster .@map$,230,134,232,136,"--ja--",3147,1,.@label$;
+	areamonster .@map$,230,134,232,136,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,230,134,232,136,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,230,134,232,136,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,230,134,232,136,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,230,134,232,136,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,257,146,1	script	#spawnmonster15	723,{
 	disablenpc instance_npcname("#spawnmonster15");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,256,145,258,147,"--ja--",3143,1,.@label$;
-	areamonster .@map$,256,145,258,147,"--ja--",3144,1,.@label$;
-	areamonster .@map$,256,145,258,147,"--ja--",3145,1,.@label$;
-	areamonster .@map$,256,145,258,147,"--ja--",3146,1,.@label$;
-	areamonster .@map$,256,145,258,147,"--ja--",3147,1,.@label$;
+	areamonster .@map$,256,145,258,147,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,256,145,258,147,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,256,145,258,147,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,256,145,258,147,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,256,145,258,147,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,256,25,1	script	#spawnmonster16	723,{
 	disablenpc instance_npcname("#spawnmonster16");
 	set .@map$, instance_mapname("2@gl_kh");
 	set .@label$, instance_npcname("#n_ghmemorialmob08")+"::OnMyMobDead";
-	areamonster .@map$,255,24,257,26,"--ja--",3143,1,.@label$;
-	areamonster .@map$,255,24,257,26,"--ja--",3144,1,.@label$;
-	areamonster .@map$,255,24,257,26,"--ja--",3145,1,.@label$;
-	areamonster .@map$,255,24,257,26,"--ja--",3146,1,.@label$;
-	areamonster .@map$,255,24,257,26,"--ja--",3147,1,.@label$;
+	areamonster .@map$,255,24,257,26,"Τ繷安肅▆",3143,1,.@label$;
+	areamonster .@map$,255,24,257,26,"Τ繷安肅▆",3144,1,.@label$;
+	areamonster .@map$,255,24,257,26,"Τ繷安肅▆",3145,1,.@label$;
+	areamonster .@map$,255,24,257,26,"Τ繷安肅▆",3146,1,.@label$;
+	areamonster .@map$,255,24,257,26,"Τ繷安肅▆",3147,1,.@label$;
 	end;
 	}
 2@gl_kh,0,0,0	script	#n_ghmemorialmob08	-1,{
@@ -1760,7 +1760,7 @@ OnDisable:
 	end;
 OnEnable:
 	enablenpc instance_npcname("#n_ghmemorialmob09");
-	areamonster instance_mapname("2@gl_kh"),175,163,265,18,"--ja--",3149,1,instance_npcname("#n_ghmemorialmob09")+"::OnMyMobDead";
+	areamonster instance_mapname("2@gl_kh"),175,163,265,18,"Τ繷安肅▆",3149,1,instance_npcname("#n_ghmemorialmob09")+"::OnMyMobDead";
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("2@gl_kh");
