@@ -185061,6 +185061,7 @@ Body:
     Type: Armor
     Weight: 100
     Defense: 0
+    Slots: 1
     Locations:
       Head_Mid: true
     ArmorLevel: 2
