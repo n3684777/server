@@ -1126,3 +1126,170 @@ OnInit:
 	
 end;
 }
+
+uttycty,110,72,4	script	封印兌卡機	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"封印兌卡機";
+	waitingroom "★ 封印兌卡機 ★",0;
+	.@a = 10; //封印兌換數量
+	.@c = 0; //兌卡價格
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(4403,.@c,-1);	// 72
+	sellitemcurrency(4480,.@a);
+    endsellitem(); 
+	sellitem(4419,.@c,-1);	// 水晶龍
+	sellitemcurrency(4481,.@a);
+    endsellitem(); 
+	sellitem(4352,.@c,-1);	// 闇●劍士賽尼亞
+	sellitemcurrency(4482,.@a);
+    endsellitem(); 
+	sellitem(4134,.@c,-1);	// 德古拉伯爵
+	sellitemcurrency(4483,.@a);
+    endsellitem(); 
+	sellitem(4132,.@c,-1);	// 蜂后
+	sellitemcurrency(4484,.@a);
+    endsellitem(); 
+	sellitem(4408,.@c,-1);	// 幽暗夢魘
+	sellitemcurrency(4485,.@a);
+    endsellitem(); 
+	sellitem(4145,.@c,-1);	// 貝雷傑
+	sellitemcurrency(4486,.@a);
+    endsellitem();
+	 sellitem(4430,.@c,-1);	// 伊夫利特
+	sellitemcurrency(4487,.@a);
+    endsellitem();
+	 sellitem(4168,.@c,-1);	// 黑暗之王
+	sellitemcurrency(4488,.@a);
+    endsellitem();
+	 sellitem(4148,.@c,-1);	// 法老王
+	sellitemcurrency(4489,.@a);
+    endsellitem();
+	 sellitem(4131,.@c,-1);	// 月夜貓
+	sellitemcurrency(4490,.@a);
+    endsellitem();
+	 sellitem(4367,.@c,-1);	// 神射手迪文
+	sellitemcurrency(4491,.@a);
+    endsellitem();
+	 sellitem(4143,.@c,-1);	// 獸人英雄
+	sellitemcurrency(4492,.@a);
+    endsellitem();
+	 sellitem(4302,.@c,-1);	// 塔奧群卡
+	sellitemcurrency(4493,.@a);
+    endsellitem();
+	 sellitem(4305,.@c,-1);	// 烏龜將軍
+	sellitemcurrency(4494,.@a);
+    endsellitem();
+	 sellitem(4236,.@c,-1);	// 古埃及王
+	sellitemcurrency(4495,.@a);
+    endsellitem();
+	 sellitem(4318,.@c,-1);	// 冰暴騎士
+	sellitemcurrency(4497,.@a);
+    endsellitem();
+	 sellitem(4376,.@c,-1);	// 嗒妮小姐
+	sellitemcurrency(4498,.@a);
+    endsellitem();
+	 sellitem(4263,.@c,-1);	// 元靈武士
+	sellitemcurrency(4499,.@a);
+    endsellitem();
+	 sellitem(4135,.@c,-1);	// 獸人酋長
+	sellitemcurrency(4500,.@a);
+    endsellitem();
+ 	 sellitem(4363,.@c,-1);	// 神官瑪嘉雷特
+	sellitemcurrency(4501,.@a);
+    endsellitem();
+	 sellitem(4361,.@c,-1);	// 神工匠 哈沃得
+	sellitemcurrency(4502,.@a);
+    endsellitem();
+	 sellitem(4374,.@c,-1);	// 貝思波
+	sellitemcurrency(4503,.@a);
+    endsellitem();
+	 sellitem(4123,.@c,-1);	// 虎王
+	sellitemcurrency(4504,.@a);
+    endsellitem();
+	 sellitem(4407,.@c,-1);	// 蘭特克力斯
+	sellitemcurrency(4535,.@a);
+    endsellitem();
+	 sellitem(4425,.@c,-1);	// 阿特羅斯
+	sellitemcurrency(4536,.@a);
+    endsellitem();
+	 sellitem(4121,.@c,-1);	// 皮里恩
+	sellitemcurrency(4537,.@a);
+    endsellitem();
+	 sellitem(4372,.@c,-1);	// 白素貞
+	sellitemcurrency(4538,.@a);
+    endsellitem();
+	 sellitem(4441,.@c,-1);	// 墮落大神官
+	sellitemcurrency(4539,.@a);
+    endsellitem();
+	 sellitem(4276,.@c,-1);	// 死靈騎士
+	sellitemcurrency(4540,.@a);
+    endsellitem();
+	 sellitem(4365,.@c,-1);	// 超魔導師 凱特莉娜
+	sellitemcurrency(4541,.@a);
+    endsellitem();
+	 sellitem(4386,.@c,-1);	// 迪塔勒泰晤勒斯
+	sellitemcurrency(4542,.@a);
+    endsellitem();
+	 sellitem(4324,.@c,-1);	// 卡崙
+	sellitemcurrency(4543,.@a);
+    endsellitem();
+	 sellitem(4330,.@c,-1);	// 墨蛇君
+	sellitemcurrency(4544,.@a);
+    endsellitem();
+	 sellitem(4507,.@c,-1);	// 女王甲蟲
+	sellitemcurrency(27209,.@a);
+    endsellitem();
+	 sellitem(4147,.@c,-1);	// 巴風特
+	sellitemcurrency(27211,.@a);
+    endsellitem();
+	 sellitem(4146,.@c,-1);	// 蟻后
+	sellitemcurrency(27212,.@a);
+    endsellitem();
+	 sellitem(4560,.@c,-1);	// 搞笑藝人 雅歐帕奇爾
+	sellitemcurrency(27213,.@a);
+    endsellitem();
+	 sellitem(4561,.@c,-1);	// 智者 西里亞
+	sellitemcurrency(27214,.@a);
+    endsellitem();
+	 sellitem(4562,.@c,-1);	// 武術宗師 陳理歐
+	sellitemcurrency(27215,.@a);
+    endsellitem();
+	 sellitem(4563,.@c,-1);	// 創造者 普拉梅姆
+	sellitemcurrency(27216,.@a);
+    endsellitem();
+	 sellitem(4564,.@c,-1);	// 神行太保 科迪
+	sellitemcurrency(27217,.@a);
+    endsellitem();
+	 sellitem(4565,.@c,-1);	// 聖殿十字軍 蘭達
+	sellitemcurrency(27218,.@a);
+    endsellitem();
+	 sellitem(4566,.@c,-1);	// 冷豔舞姬 特蘭提尼
+	sellitemcurrency(27219,.@a);
+    endsellitem();
+	 sellitem(4574,.@c,-1);	// 將軍大賢
+	sellitemcurrency(27220,.@a);
+    endsellitem();
+	 sellitem(4576,.@c,-1);	// 喬伊亞
+	sellitemcurrency(27221,.@a);
+    endsellitem();
+	 sellitem(4578,.@c,-1);	// 淘汰者傅立葉
+	sellitemcurrency(27222,.@a);
+    endsellitem();
+	 sellitem(4580,.@c,-1);	// 守護者卡德斯
+	sellitemcurrency(27224,.@a);
+    endsellitem();
+	 sellitem(4525,.@c,-1);	// 時間支配者
+	sellitemcurrency(27225,.@a);
+    endsellitem();
+	 sellitem(27287,.@c,-1);	// 光芒泰迪熊
+	sellitemcurrency(300207,.@a);
+    endsellitem();
+	 sellitem(4652,.@c,-1);	// 滅絕古埃及王
+	sellitemcurrency(300209,.@a);
+    endsellitem();
+
+end;
+}
