@@ -24,6 +24,7 @@ OnInit:
 	sellitem(410256, 0, -1,19393,1);	 //魔力之星LT
 	sellitemcurrency(1000434, 150);
 	sellitemcurrency(25723, 150); //核心元件
+	sellitemcurrency(25669, 999); //神秘零件
 	sellitemcurrency(27318, 3); //米古爾卡
 	sellitemcurrency(1001174, 1); //心臟
 	endsellitem();
