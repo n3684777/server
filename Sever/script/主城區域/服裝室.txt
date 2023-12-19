@@ -9,14 +9,13 @@ uttycty,99,133,4	script	造型師	878,{
         "預覽造型",
         "髮型服務",
 		"髮色服務",
-		"染色服務",
-		"幻化系統"
+		"染色服務"
     )) {
         case 1:
             opendressroom(0);
 			end;
         case 2:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
@@ -30,7 +29,6 @@ uttycty,99,133,4	script	造型師	878,{
 				)){
 				case 1:
 				HairStyle:
-					opendressroom(0);
 					mes "^000079[造型師]^000000";
 					mes "範圍是 0 ~ 42";
 					switch (select(
@@ -53,7 +51,7 @@ uttycty,99,133,4	script	造型師	878,{
 			  }
 					
         case 3:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
@@ -67,7 +65,6 @@ uttycty,99,133,4	script	造型師	878,{
 				)){
 				case 1:
 				HairColor:
-					opendressroom(0);
 					mes "^000079[造型師]^000000";
 					mes "範圍是 0 ~ 8";
 					switch (select(
@@ -90,7 +87,7 @@ uttycty,99,133,4	script	造型師	878,{
 			  }
 				
         case 4:
-			if (zeny <= 10000){
+			if (zeny < 10000){
 				goto NONO1;
 			} else {
 				mes "^000079[造型師]^000000";
@@ -104,7 +101,6 @@ uttycty,99,133,4	script	造型師	878,{
 				)){
 				case 1:
 				CLOTHES_COLOR:
-					opendressroom(0);
 					mes "^000079[造型師]^000000";
 					mes "範圍是 0 ~ 3";
 					switch (select(
@@ -125,18 +121,6 @@ uttycty,99,133,4	script	造型師	878,{
 				case 2:
 					goto NONO2;
 			  }
-		case 5:
-			mes "^000079[造型師]^000000";
-			mes "幻化之後會有該職業的所有技能圖示";
-			mes "^FF0000所有原生職業技能會移至其他欄位^000000";
-			mes "你確定要進行幻化嗎";
-			next;
-			    if(select("確定:取消") == 1){
-					callfunc "幻化系統";
-					goto Check;
-				}else{
-					goto NONO2;
-				}
     }
 NONO1:
 	mes "^000079[造型師]^000000";
@@ -157,525 +141,4 @@ Check:
     cutin "",255;
     close2;
     end;
-OnPCLoginEvent:
-	if(change==name){
-		changebase x;
-	}
 }
-
-
-function	script	幻化系統	{
-mes "請選擇你要的幻化職業";
-next;
-set change,strcharinfo(0);
-switch(select("1. 一轉外觀","2. 二轉外觀","3. 進階外觀","4. 三轉外觀","5. 日版外觀","6. 擴充職業外觀","7. 恢復原樣")){
-	case 1:
-		switch(select("1. 初學者","2. 劍士","3. 魔法師","4. 弓箭手","5. 服事","6. 商人","7. 盜賊")){
-			case 1:
-				x=0;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 2:
-				x=1;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 3:
-				x=2;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 4:
-				x=3;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 5:
-				x=4;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 6:
-				x=5;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 7:
-				x=6;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-		}
-	case 2:
-		switch(select("1. 騎士","2. 祭司","3. 巫師","4. 鐵匠","5. 獵人","6. 刺客","7. 十字軍","8. 武道家","9. 賢者","10. 流氓","11. 煉金術師","12. 吟遊詩人/舞孃")){
-			case 1:
-				x=7;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 2:
-				x=8;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 3:
-				x=9;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 4:
-				x=10;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 5:
-				x=11;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 6:
-				x=12;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 7:
-				x=14;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 8:
-				x=15;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 9:
-				x=16;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 10:
-				x=17;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 11:
-				x=18;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 12:
-			if(sex == 1){
-				x=19;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			}else{
-				x=20;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			}
-			
-		}
-	case 3:
-		switch(select("1. 騎士領主","2. 神官","3. 超魔導師","4. 神工匠","5. 神射手","6. 十字刺客","7. 聖殿十字軍","8. 武術宗師","9. 智者","10. 神行太保","11. 創造者","12. 搞笑藝人/冷豔舞姬")){
-			case 1:
-				x=4008;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 2:
-				x=4009;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 3:
-				x=4010;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 4:
-				x=4011;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 5:
-				x=4012;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 6:
-				x=4013;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 7:
-				x=4015;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 8:
-				x=4016;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 9:
-				x=4017;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 10:
-				x=4018;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 11:
-				x=4019;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 12:
-			if(sex == 1){
-				x=4020;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			}else{
-				x=4021;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			}
-		}
-	case 4:
-		switch(select("1. 盧恩騎士","2. 咒術士","3. 遊俠","4. 大主教","5. 機械工匠","6. 十字斬首者","7. 皇家禁衛隊","8. 妖術師","9. 宮廷樂師/浪跡舞者","10. 修羅","11. 基因學者","12. 魅影追蹤者")){
-			case 1:
-				x=4060;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 2:
-				x=4061;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 3:
-				x=4062;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 4:
-				x=4063;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 5:
-				x=4064;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 6:
-				x=4065;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 7:
-				x=4073;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 8:
-				x=4074;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 9:
-				if( sex ==1 ){
-					x=4075;
-				setlook LOOK_BODY2,0;
-					changebase x;
-					set name,strcharinfo(0);
-					return;
-				}else{
-					x=4076;
-				setlook LOOK_BODY2,0;
-					changebase x;
-					set name,strcharinfo(0);
-					return;
-				}
-			case 10:
-				x=4077;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 11:
-				x=4078;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			case 12:
-				x=4079;
-				setlook LOOK_BODY2,0;
-				changebase x;
-				set name,strcharinfo(0);
-				return;
-			}
-	case 5:
-		switch(select("1. 盧恩騎士","2. 咒術士","3. 遊俠","4. 大主教","5. 機械工匠","6. 十字斬首者","7. 皇家禁衛隊","8. 妖術師","9. 宮廷樂師/浪跡舞者","10. 修羅","11. 基因學者","12. 魅影追蹤者")){
-			case 1:
-				x=4060;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 2:
-				x=4061;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 3:
-				x=4062;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 4:
-				x=4063;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 5:
-				x=4064;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 6:
-				x=4065;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 7:
-				x=4073;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 8:
-				x=4074;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 9:
-				if( sex ==1 ){
-					x=4075;
-					changebase x;
-					setlook LOOK_BODY2,1;
-					set name,strcharinfo(0);
-					return;
-				}else{
-					x=4076;
-					changebase x;
-					setlook LOOK_BODY2,1;
-					set name,strcharinfo(0);
-					return;
-				}
-			case 10:
-				x=4077;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 11:
-				x=4078;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			case 12:
-				x=4079;
-				changebase x;
-				setlook LOOK_BODY2,1;
-				set name,strcharinfo(0);
-				return;
-			}
-	case 6:
-		switch(select("1. 一轉/二轉外觀","2. 進階外觀","3. 三轉外觀")){
-			case 1:
-				switch(select("1. 超級初學者","2. 神槍手","3. 忍者","4. 跆拳少年","5. 拳聖","6. 悟靈士")){
-					case 1:
-						x=23;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 2:
-						x=24;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 3:
-						x=25;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 4:
-						x=4046;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 5:
-						x=4047;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 6:
-						x=4049;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-				}
-			case 2:
-				switch(select("1. 日影忍者/月影忍者","2. 反叛者","3. 拳皇","4. 獵靈士")){
-					case 1:
-						if( sex == 1 ) {
-							x=4212;
-							setlook LOOK_BODY2,0;
-							changebase x;
-							set name,strcharinfo(0);
-							return;
-						}else{
-							x=4211;
-							setlook LOOK_BODY2,0;
-							changebase x;
-							set name,strcharinfo(0);
-							return;
-						}
-					case 2:
-						x=4215;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 3:
-						x=4239;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 4:
-						x=4240;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-				}
-			case 3:
-				switch(select("1. 流浪忍者","2. 夜行使","3. 天帝","4. 契靈士","5. 終極初學者")){
-					case 1:
-						if ( sex == 1 ) {
-							x=4304;
-							setlook LOOK_BODY2,0;
-							changebase x;
-							set name,strcharinfo(0);
-							return;
-						}else{
-							x=4305;
-							setlook LOOK_BODY2,0;
-							changebase x;
-							set name,strcharinfo(0);
-							return;
-						}
-					case 2:
-						x=4306;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 3:
-						x=4302;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 4:
-						x=4303;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;
-					case 5:
-						x=4307;
-						setlook LOOK_BODY2,0;
-						changebase x;
-						set name,strcharinfo(0);
-						return;		
-				}
-		}
-	case 7:
-			x=class;
-			setlook LOOK_BODY2,0;
-			changebase x;
-			set name,strcharinfo(0);
-			return;
-			
-}
-
-		
-end;
-
-}
-
