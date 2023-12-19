@@ -8,9 +8,8 @@ OnInit:
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
-	sellitem(910132,0,-1);      //1E支票 (獼猴桃兌換)
-	sellitemcurrency(6417,200);
-    endsellitem();	
+	sellitem(910132,100000000,-1);      //1E支票
+	
 	sellitem(1001174,.@p*3,-1);      //心臟
 	sellitemcurrency(6909,30);
 	sellitemcurrency(6417,100);
