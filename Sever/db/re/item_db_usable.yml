@@ -49929,3 +49929,74 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 950002
+    AegisName: Shadow_9_Refine_Hammer_11
+    Name: +11忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950003
+    AegisName: Shadow_9_Refine_Hammer_12
+    Name: +12忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950004
+    AegisName: Shadow_9_Refine_Hammer_13
+    Name: +13忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950005
+    AegisName: Shadow_9_Refine_Hammer_14
+    Name: +14忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950006
+    AegisName: Shadow_9_Refine_Hammer_15
+    Name: +15忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950007
+    AegisName: Shadow_9_Refine_Hammer_16
+    Name: +16忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950008
+    AegisName: Shadow_9_Refine_Hammer_17
+    Name: +17忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950009
+    AegisName: Shadow_9_Refine_Hammer_18
+    Name: +18忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950010
+    AegisName: Shadow_9_Refine_Hammer_19
+    Name: +19忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 950011
+    AegisName: Shadow_9_Refine_Hammer_20
+    Name: +20忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+
