@@ -1260,9 +1260,10 @@ function	script	Job_Rent	{
 			} else {
 				//skill "MC_CARTDECORATE",1,2;
 				//skill "MC_CHANGECART",1,2;
-				skill "MC_PUSHCART",10,2;
-				skill 154,1;
-				skill 2544,1;
+				//skill "MC_PUSHCART",10,2;
+				skill "MC_PUSHCART",10,3;
+				skill "MC_CHANGECART",1,3;
+				skill "MC_CARTDECORATE",1,3;
 				setcart;
 				goto Rent_Done;
 			}
