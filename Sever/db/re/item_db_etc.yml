@@ -68661,3 +68661,17 @@ Body:
     Buy: 10
     Trade:
       NoDrop: true
+  - Id: 950014
+    AegisName: Refine_20_broken_Weapon_Ticket
+    Name: +20¯}¸HªºªZ¾¹´Ý¨÷
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+  - Id: 950015
+    AegisName: Refine_20_broken_Armor_Ticket
+    Name: +20¯}¸Hªº¨¾¨ã´Ý¨÷
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true

@@ -64,20 +64,50 @@ OnInit:
     sellitem(7227, 250000, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
-    sellitem(6230, 0, -1);	    // 7ªZ±²
-	sellitemcurrency(6417,30);
+
+    sellitem(6872, 0, -1);	    // 15ªZ±²
+	sellitemcurrency(6909,150); 
     endsellitem();
-    sellitem(6234, 0, -1);	    // 7¨¾±²
-	sellitemcurrency(6417,30); 
+    sellitem(6878, 0, -1);	    // 15¨¾±²
+	sellitemcurrency(6909,150); 
     endsellitem();
-    // ªZ±²+19
-    sellitem(6864, 0, -1);	
-	sellitemcurrency(6909,175);
+    sellitem(6873, 0, -1);	    // 16ªZ±²
+	sellitemcurrency(6909,300); 
     endsellitem();
-    // ¨¾±²+19
-    sellitem(6865, 0, -1);	
-	sellitemcurrency(6909,175);
+    sellitem(6879, 0, -1);	    // 16¨¾±²
+	sellitemcurrency(6909,300); 
     endsellitem();
+    sellitem(6874, 0, -1);	    // 17ªZ±²
+	sellitemcurrency(6909,450); 
+    endsellitem();
+    sellitem(6880, 0, -1);	    // 17¨¾±²
+	sellitemcurrency(6909,450); 
+    endsellitem();
+    sellitem(6875, 0, -1);	    // 18ªZ±²
+	sellitemcurrency(6909,600); 
+    endsellitem();
+    sellitem(6881, 0, -1);	    // 18¨¾±²
+	sellitemcurrency(6909,600); 
+    endsellitem(); 
+    sellitem(6864, 0, -1);	    // ªZ±²+19
+	sellitemcurrency(6909,850);
+    endsellitem();
+    sellitem(6865, 0, -1);	    // ¨¾±²+19
+	sellitemcurrency(6909,850);
+    endsellitem();
+    sellitem(950012, 0, -1);	    // ªZ±²+20
+	sellitemcurrency(6909,1000);
+	sellitemcurrency(950014,75);
+    endsellitem();
+    sellitem(950013, 0, -1);	    // ¨¾±²+20
+	sellitemcurrency(6909,1000);
+	sellitemcurrency(950015,75);
+    endsellitem();
+
+
+
+
+
     sellitem(920003, 0, -1);	//B¤j¥ª
 	sellitemcurrency(6909,300);
     endsellitem();
