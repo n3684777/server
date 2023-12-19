@@ -68647,3 +68647,17 @@ Body:
       NoDrop: true
       NoSell: true
       NoTrade: true
+  - Id: 950012
+    AegisName: Guarantee_Weapon_20Up
+    Name: 武器精煉能力+20券
+    Type: Etc
+    Buy: 10
+    Trade:
+      NoDrop: true
+  - Id: 950013
+    AegisName: Guarantee_Armor_20Up
+    Name: 防具精煉能力+20券
+    Type: Etc
+    Buy: 10
+    Trade:
+      NoDrop: true
