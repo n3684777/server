@@ -7966,7 +7966,7 @@ Body:
     Name: ´§À»ÃÄ¤ô
     Type: Usable
     Buy: 100
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -7977,7 +7977,7 @@ Body:
     Name: Å]¤OÃÄ¤ô
     Type: Usable
     Buy: 100
-    Weight: 50
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
