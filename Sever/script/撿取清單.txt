@@ -1,4 +1,4 @@
-uttycty,319,316,4	script	撿取清單	1582,{
+uttycty,109,106,4	script	撿取清單	1582,{
 
 Page1:
 	clear;
