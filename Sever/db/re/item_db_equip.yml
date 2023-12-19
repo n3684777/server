@@ -154854,7 +154854,7 @@ Body:
       bonus2 bSubRace,RC_Dragon,(.@r/3)*4;
       bonus2 bMagicAddRace,RC_Dragon,(.@r/4)*8;
       bonus2 bMagicAddRace,RC_DemiHuman ,(.@r/4)*8; 
-      if(.@r >= 7){bMatkRate,10;}
+      if(.@r >= 7){bonus bMatkRate,10;}
       if(.@r >= 9){bonus bDelayrate,8; }
       if(.@r >= 11){
       bonus2 bMagicAtkEle,Ele_Fire,10;
