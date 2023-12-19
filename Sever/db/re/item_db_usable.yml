@@ -25143,7 +25143,7 @@ Body:
     Name: º¡º~¥þ®u
     Type: Usable
     Buy: 20000
-    Weight: 1200
+    Weight: 0
     Script: |
       sc_start SC_INCALLSTATUS,3600000,6;
   - Id: 14609
