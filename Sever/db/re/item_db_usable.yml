@@ -49811,7 +49811,7 @@ Body:
     Name: 至尊VIP積分
     Type: Healing
     Buy: 50
-    Weight: 10
+    Weight: 0
     Script: |
       set #VIPLV3, #VIPLV3+1; dispbottom "您的 至尊 V I P 積分 增加 1 目前已累計： " + #VIPLV3 + " 分。";
   - Id: 60745
