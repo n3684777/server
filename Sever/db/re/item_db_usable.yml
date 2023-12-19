@@ -49922,3 +49922,10 @@ Body:
     Weight: 0
     Script: |
       item_reform();
+  - Id: 950001
+    AegisName: Shadow_9_Refine_Hammer_10
+    Name: 忽克連超高級影子精煉鎚
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
