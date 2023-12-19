@@ -154849,7 +154849,7 @@ Body:
     EquipLevelMin: 130
     Refineable: true
     Script: |
-      .@r - getrefine();
+      .@r = getrefine();
       bonus bMatk,(.@r/2)*10;
       bonus2 bSubRace,RC_Dragon,(.@r/3)*4;
       bonus2 bMagicAddRace,RC_Dragon,(.@r/4)*8;
