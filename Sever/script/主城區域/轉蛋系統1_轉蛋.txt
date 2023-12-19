@@ -21,7 +21,7 @@ function	script	F_Gashapon2	{
 	// .@announce_rate 	: 開到的物品，若低於設定機率，則會進行全伺服器廣播，採用萬分表(10000=100%)
 	//						若不要有廣播設定，請將此設為 0 
 	.@DEBUG_FLAG = 1;
-	.@announce_rate = 1900;
+	.@announce_rate = 100;
 	
 	.@egg_item = getarg(0);
 	switch(.@egg_item) {

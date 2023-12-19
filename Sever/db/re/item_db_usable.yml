@@ -1134,7 +1134,7 @@ Body:
     Name: ¤Ñ¦a¾ðªÞ
     Type: Healing
     Buy: 5000
-    Weight: 300
+    Weight: 0
     Flags:
       BuyingStore: true
     Delay:
