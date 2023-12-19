@@ -587,7 +587,7 @@ OnTimer5000:
 		}
 		sleep 10;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 10;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
@@ -1002,7 +1002,7 @@ OnTimer500:
 		.@id[11] = $@mobid[0];
 		monster .@map$,.@x+12,.@y+13,"--ja--",3095,1,.@label$;
 		.@id[12] = $@mobid[0];
-		for(.@i = 0; .@i < 4; .@i++) {
+		for(.@i = 0; .@i < 13; .@i++) {
 			setunitdata .@id[.@i],35,.@matkmin;
 			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
@@ -1043,7 +1043,7 @@ OnTimer500:
 		}
 		sleep 10;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 10;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;
@@ -1073,7 +1073,7 @@ OnTimer500:
 		monster .@map$,.@x+12,.@y+13,"--ja--",3095,1,.@label$;
 		.@id[12] = $@mobid[0];
 		
-		for(.@i = 0; .@i < 4; .@i++) {
+		for(.@i = 0; .@i < 13; .@i++) {
 			setunitdata .@id[.@i],35,.@matkmin;
 			setunitdata .@id[.@i],36,.@matkmax;
 			unitskilluseid .@id[.@i], 353, 1;
@@ -1946,7 +1946,7 @@ OnInstanceInit:
 get42:
 	end;
 get422:
-	announce "太狂啦 -  '" + strcharinfo(0) + "' 通關古城挑戰噁心的模式成為灰常噁心的人！", bc_all;
+	announce "太狂啦 -  '" + strcharinfo(0) + "' 成功古城挑戰噁心的模式成為噁心的人！", bc_all;
 	getitem 25864,5;
 	getitem 6909,8;
 	warp "SavePoint",0,0;
