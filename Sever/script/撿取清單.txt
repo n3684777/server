@@ -13,7 +13,7 @@ Page1:
 			clear;
 			mes "^0AA770請輸入物品ID或名稱^000000";
 			mes "^FF0000輸入0退出^000000";
-			for( .@i = 0 ; .@i < 31 ; .@i++){
+			for( .@i = 0 ; .@i < 30 ; .@i++){
 				input .@itemname$;
 				if(.@itemname$ == "0"){
 					mes "結束設定";
@@ -35,17 +35,17 @@ Page1:
 			}
 			end;*/
 		case 1:
-			for( .@i = 0 ; .@i < 31 ; .@i++){
+			for( .@i = 0 ; .@i < 30 ; .@i++){
 				clear;
-				mes "^0AA770請輸入要修改的項目^5599FF1~31^000000";
-				mes "^FF0000輸入小於1或大於31的數字則結束^000000";
-				for( .@j = 0 ; .@j < 31 ; .@j++){
+				mes "^0AA770請輸入要修改的項目^5599FF1~30^000000";
+				mes "^FF0000輸入小於1或大於30的數字則結束^000000";
+				for( .@j = 0 ; .@j < 30 ; .@j++){
 					.@temp$ = #autolootid$[.@j];
 					mes (.@j+1) + "."+ .@temp$;
 					
 				}
 				input .@item;
-				if( .@item == 0 || .@item > 31){
+				if( .@item == 0 || .@item > 30){
 					mes "結束設定";
 					if(select("^0000FF返回:^FF0000結束") == 1){
 						goto Page1;
@@ -55,7 +55,7 @@ Page1:
 				clear;
 				mes "^0AA770請輸入要修改成的物品ID或名稱";
 				mes "^FF0000輸入0則清除^000000";
-				for( .@j = 0 ; .@j < 31 ; .@j++){
+				for( .@j = 0 ; .@j < 30 ; .@j++){
 					.@temp$ = #autolootid$[.@j];
 					if(.@j == .@item-1){
 						mes "^FF0000"+(.@j+1) + "."+ .@temp$+"^000000";
@@ -87,7 +87,7 @@ Page1:
 			clear;
 			mes "^0AA770啟動清單如下:^000000";
 			atcommand "@alootid reset";
-			for( .@i = 0 ; .@i < 31 ; .@i++){
+			for( .@i = 0 ; .@i < 30 ; .@i++){
 				.@temp$ = #autolootid$[.@i];
 				if(.@temp$ != "0" && .@temp$ != ""){
 					mes (.@i+1) + "."+ .@temp$;
@@ -103,7 +103,7 @@ Page1:
 		case 3:
 			clear;
 			mes "^0AA770清單已重置^000000";
-			for( .@i = 0 ; .@i < 31 ; .@i++){
+			for( .@i = 0 ; .@i < 30 ; .@i++){
 				#autolootid$[.@i] = "";
 			}
 			atcommand "@alootid reset";
@@ -127,13 +127,13 @@ Page1:
 Oninit:
 OnTimer2000:
 showscript "★ 自動撿物設定 ★ ";
-	setnpcicon getnpcid(0),3128,"自動撿物";
+	setnpcicon getnpcid(0),1028,"自動撿物";
 initnpctimer;
 end;
 
 OnPCLoginEvent:
 	if( #alootswitch == 1){
-		for( .@i = 0 ; .@i < 31 ; .@i++){
+		for( .@i = 0 ; .@i < 30 ; .@i++){
 			.@temp$ = #autolootid$[.@i];
 			if(.@temp$ != "0" && .@temp$ != ""){
 				atcommand "@alootid +" + .@temp$;
