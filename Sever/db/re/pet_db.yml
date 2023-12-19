@@ -2254,3 +2254,65 @@ Body:
       }else {
          bonus bMatk,10;
       }
+  - Mob: HOSANGTO_PET
+    CaptureRate : 1000
+    EggItem: Hosangto_Pet_Egg
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    Script: >
+      .@i = getpetinfo(PETINFO_INTIMATE);      
+      if (.@i >= PET_INTIMATE_LOYAL) {
+        bonus bMdef,5;
+        bonus2 bSubRace,RC_PLAYER_DORAM,2;
+        bonus2 bSubRace,RC_PLAYER_HUMAN,2;
+            if (getequipid( EQI_ACC_L) == 490089 ){
+                bonus2 bSubRace,RC_PLAYER_DORAM,-2;
+                bonus2 bSubRace,RC_PLAYER_HUMAN,-2;
+            }
+      } else if (.@i >= PET_INTIMATE_CORDIAL) {
+        bonus bMdef,5;
+        bonus2 bSubRace,RC_PLAYER_DORAM,1;
+        bonus2 bSubRace,RC_PLAYER_HUMAN,1;
+      } else if (.@i >= PET_INTIMATE_NEUTRAL) {
+        bonus bMdef,4;
+      } else {
+        bonus bMdef,3;
+      }
+  - Mob: Usagi_PET
+    CaptureRate : 1000
+    EggItem: Usagi_PET_Egg
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    Script: >
+      .@i = getpetinfo(PETINFO_INTIMATE);      
+      if (.@i >= PET_INTIMATE_LOYAL) {
+        bonus bFlee2,10;
+      } else if (.@i >= PET_INTIMATE_CORDIAL) {
+        bonus bFlee2,7;
+      } else if (.@i >= PET_INTIMATE_NEUTRAL) {
+        bonus bFlee2,5;
+      } else {
+        bonus bFlee2,3;
+      }
+  - Mob: Piske_PET
+    CaptureRate : 1000
+    EggItem: Piske_PET_Egg
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    Script: >
+      .@i = getpetinfo(PETINFO_INTIMATE);      
+      if (.@i >= PET_INTIMATE_LOYAL) {
+        bonus bPerfectHitAddRate,10;
+      } else if (.@i >= PET_INTIMATE_CORDIAL) {
+        bonus bPerfectHitAddRate,7;
+      } else if (.@i >= PET_INTIMATE_NEUTRAL) {
+        bonus bPerfectHitAddRate,5;
+      } else {
+        bonus bPerfectHitAddRate,3;
+      }

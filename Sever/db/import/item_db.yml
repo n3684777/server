@@ -22544,3 +22544,158 @@ Body:
       Container: true
     Script: |
       callfunc "F_Gashapon2",920010;
+
+  - Id: 9150
+    AegisName: Hosangto_Pet_Egg
+    Name: 好想兔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 490089
+    AegisName: Alice_Hug_Pillow_TW
+    Name: 愛麗絲女僕抱枕
+    Type: Armor
+    Weight: 20
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bMdef,10;
+      bonus bAllStats,2;
+      bonus bMaxHPrate,5;
+      bonus2 bSubSize,Size_Medium,5;
+      bonus2 bSubRace,RC_PLAYER_HUMAN,3;
+      bonus2 bSubRace,RC_DEMIHUMAN,3;
+      if ( getpetinfo(PETINFO_EGGID) == 9027 || getpetinfo(PETINFO_EGGID) == 9030 ) {
+        bonus2 bSubRace,RC_PLAYER_HUMAN,-2;
+        bonus2 bSubRace,RC_DEMIHUMAN,-2;
+      }
+  - Id: 300484
+    AegisName: Unknown_Item_300484
+    Name: 好想兔卡片
+    Type: Card
+    SubType: Normal
+    Weight: 1
+    Locations:
+      Right_Accessory: true
+      Left_Accessory: true
+    Script: |
+      bonus bMaxHPrate,15;
+  - Id: 300485
+    AegisName: Unknown_Item_300485
+    Name: 小賤狗卡片
+    Type: Card
+    SubType: Normal
+    Weight: 1
+    Locations:
+      Shadow_Right_Accessory: true
+      Shadow_Left_Accessory: true
+    Script: |
+      bonus bMaxHPrate,15;
+  - Id: 400503
+    AegisName: Unknown_Item_400503
+    Name: (服飾)好想兔耳帽
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2422
+  - Id: 410266
+    AegisName: Unknown_Item_410266
+    Name: (服飾)好想兔與小賤狗
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2423
+  - Id: 480363
+    AegisName: Unknown_Item_480363
+    Name: (服飾)超大好想兔
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 193
+  - Id: 9151
+    AegisName: Usagi_PET_Egg
+    Name: 粉紅兔兔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 9152
+    AegisName: Piske_PET_Egg
+    Name: P助寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 400571
+    AegisName: Unknown_Item_400571
+    Name: (服飾)卡娜赫拉的小動物
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2479
+    Script: |
+      bonus bVariableCast,-200;
+      bonus2 bExpAddClass,CLASS_ALL,10;
+  - Id: 410288
+    AegisName: Unknown_Item_410288
+    Name: (服飾)P助與粉紅兔兔
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2480
+  - Id: 480394
+    AegisName: Unknown_Item_480394
+    Name: (服飾)超大粉紅兔兔
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 200
+  - Id: 480395
+    AegisName: Unknown_Item_480395
+    Name: (服飾)超大P助
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 201
+  - Id: 300500
+    AegisName: Unknown_Item_300500
+    Name: 粉紅兔兔卡片
+    Type: Card
+    SubType: Normal
+    Locations:
+      Garment: true
+    Script: |
+      .@r = getrefine();
+      bonus bShortAtkRate,5+4*(.@r/2);
+      bonus bLongAtkRate,5+4*(.@r/2);
+      if ( .@r >= 12 ) {
+        bonus bShortAtkRate,7;
+        bonus bLongAtkRate,7;
+      }
+  - Id: 300501
+    AegisName: Unknown_Item_300501
+    Name: P助卡片
+    Type: Card
+    SubType: Normal
+    Locations:
+      Garment: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bMagicAtkEle,ELE_ALL,5+5*(.@r/2);
+      if ( .@r >= 12 ) {
+        bonus2 bMagicAtkEle,ELE_ALL,7;
+      }
+
+
+

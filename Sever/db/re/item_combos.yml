@@ -33174,3 +33174,19 @@ Body:
       bonus2 bMagicAddSize,Size_All,(readparam(bDex)/12);
       bonus2 bMagicAddEle,Ele_All,(readparam(bLuk)/12);
       if(.@re >= 160){bonus bMatk,100;}
+  - Combos:
+      - Combo:
+          - Alice_Hug_Pillow_TW     # 490089    愛麗絲女僕抱枕
+          - Wild_Rose_Card          #4257       狂暴野貓卡片
+    Script: |
+      bonus bAllStats,8;
+      bonus bMaxHPrate,5;
+      bonus bFlee2,8;
+  - Combos:
+      - Combo:
+          - Unknown_Item_300484     #300484     好想兔卡片
+          - Unknown_Item_300485     #300485     小賤狗卡片
+    Script: |
+      bonus bMaxHPrate,5;
+      bonus bMaxSPrate,5;
+      bonus2 bExpAddClass,CLASS_ALL,10;
