@@ -61,11 +61,11 @@ OnInit:
 	// 最大組隊人數
 	.ins_Maxplayer = 12;
 	// 挑戰時間
- 	.ins_time = 3600;
+//	.ins_time = 3600;
 	// 冷卻時間
-	.ins_cooldown = 300;
+//	.ins_cooldown = 300;
 	// 冷卻編號
-	.ins_collnum = 52;
+//	.ins_collnum = 52;
 
 //
 	waitingroom "[副本]朱希婭模擬作戰",0;
@@ -117,11 +117,11 @@ OnMvpDead:
 	{
 		//第一組獎勵	
 		//設定玩家獲得的獎勵
-		setArray .@item_id_r,1000608,1000811,1000812,1000813,1000814;
+		setArray .@item_id_r,1000608,1000811,1000812,1000813,1000814,1001034,1001035,1001036,1001037;
 		//設定一一對應獎勵數量
-		setArray .@item_co,rand(20,30),rand(3,5),rand(3,5),rand(3,5),rand(3,5);
+		setArray .@item_co,rand(5,15),rand(5,10),5,5,5,rand(5,15),rand(5,10),5,rand(5,10);
 		//設定一一對應掉落的機率 範圍 :1-100
-		setArray .@item_rate,100,80,60,40,30;
+		setArray .@item_rate,100,100,50,25,10,100,50,10,75;
 		for(.@i =0;.@i<getarraysize(.@item_id_r) ;.@i++)
 		{
 			if(rand(100)<.@item_rate[.@i])
@@ -352,7 +352,7 @@ function	script	monskilluseid_jorlab	{
 			}
 			break;
 			
-		// 崩裂術(十字)
+		// 崩裂術(十字)
 		case 3:
 			.@range = 5;
 			for(.@i=1; .@i<9; .@i++)
@@ -698,10 +698,10 @@ OnEnable:
 	"^008000◆先不要◆^000000",get42,
 	"^008000◆領取◆^000000",get422;
 get42:
-
 	end;
 get422:
 	Instance_PassAnnounce;
+	getitem 950000,1;
 	getitem 930000,5;
 	getitem 6909,2;
 	warp "SavePoint",0,0;
