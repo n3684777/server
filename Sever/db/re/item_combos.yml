@@ -26542,7 +26542,7 @@ Body:
   - Combos:
       - Combo:
           - aegis_400101    # 400101
-          - Fenrir_Card_    # 4556
+          - Fenrir_Card_N   # 4556
     Script: |
       bonus bInt,30;
       bonus bDex,30;
@@ -27628,7 +27628,7 @@ Body:
   - Combos:
       - Combo:
           - Heros_TriumphantSong    # 311074
-          - Fenrir_Card_    # 4556
+          - Fenrir_Card_N    # 4556
     Script: |
       bonus bFixedCastrate,-80;
   - Combos:
@@ -33685,7 +33685,7 @@ Body:
   - Combos:
       - Combo:
           - Yggdrasil_Faith
-          - Fenrir_Card_
+          - Fenrir_Card_N
     Script: |
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bFixedCast,-200;
