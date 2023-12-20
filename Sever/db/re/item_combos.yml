@@ -171,6 +171,14 @@ Body:
       autobonus3 "{ bonus bFlee2,100; }",1,3000,"ASC_BREAKER";
   - Combos:
       - Combo:
+          - God's_Sword
+          - Incant_Samurai_Card_
+    Script: |
+      bonus bAspdRate,10;
+      bonus2 bAddClass,Class_All,20;
+      autobonus3 "{ bonus bFlee2,100; }",1,3000,"ASC_BREAKER";
+  - Combos:
+      - Combo:
           - Sword_Of_Bluefire
           - Ancient_Hero_Boots
     Script: |
@@ -20359,6 +20367,14 @@ Body:
       autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
   - Combos:
       - Combo:
+          - Mercury_Suits
+          - Incant_Samurai_Card_
+    Script: |
+      bonus bLongAtkRate,10;
+      bonus bDelayrate,20;
+      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
           - Diana_Suits
           - Matyr_Card
     Script: |
@@ -26220,6 +26236,13 @@ Body:
   - Combos:
       - Combo:
           - Arabian_Manteau     # 480023
+          - Ifrit_Card_     # 4430
+    Script: |
+      bonus2 bSubEle,Ele_Fire,100;
+      bonus2 bSubSkill,"NPC_CRITICALSLASH",100;
+  - Combos:
+      - Combo:
+          - Arabian_Manteau     # 480023
           - Sealed_Ifrit_Card_J     # 300331
     Script: |
       bonus2 bSubEle,Ele_Fire,30;
@@ -26535,6 +26558,15 @@ Body:
       - Combo:
           - Goddess_of_Abundance    # 311073
           - Ifrit_Card    # 4430
+    Script: |
+      bonus bBaseAtk,JobLevel;
+      bonus bCritical,JobLevel;
+      bonus bHit,JobLevel;
+      bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",6,10;
+  - Combos:
+      - Combo:
+          - Goddess_of_Abundance    # 311073
+          - Ifrit_Card_    # 4430
     Script: |
       bonus bBaseAtk,JobLevel;
       bonus bCritical,JobLevel;
@@ -28940,6 +28972,13 @@ Body:
   - Combos:
       - Combo:
           - Incant_Samurai_Card    # 4263
+          - aegis_311439    # 311439
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,35;
+      bonus2 bAddRace,RC_Player_Doram,35;
+  - Combos:
+      - Combo:
+          - Incant_Samurai_Card_    # 4263
           - aegis_311439    # 311439
     Script: |
       bonus2 bAddRace,RC_DemiHuman,35;
@@ -32922,6 +32961,19 @@ Body:
       - Combo:
           - Phoenix_Muffler2 # 480149
           - Ifrit_Card # 4430
+    Script: |
+      bonus2 bAddRace,RC_Player_Human,30; 
+      bonus2 bAddRace,RC_DemiHuman,30;
+      bonus2 bAddRace,RC_Demon,40;
+      bonus2 bAddRace,RC_Angel,40;
+      bonus2 bSubEle,Ele_Fire,50;
+      bonus2 bSubEle,Ele_Water,-30;
+      skill "MO_EXPLOSIONSPIRITS",5;
+    #   *autobonus <bonus script>,1000,10000{,<flag>,{<other script>}}; 10ï¿?????ï¿??150atk ??ï¿½å¯¦ï¿??
+  - Combos: # é¬¥æ°£ï¿??ï¿??
+      - Combo:
+          - Phoenix_Muffler2 # 480149
+          - Ifrit_Card_ # 4430
     Script: |
       bonus2 bAddRace,RC_Player_Human,30; 
       bonus2 bAddRace,RC_DemiHuman,30;

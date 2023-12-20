@@ -152060,6 +152060,7 @@ Body:
     Locations:
       Shoes: true
     EquipLevelMin: 130
+    ArmorLevel: 2
     Refineable: true
     Gradable: true
     Script: |
