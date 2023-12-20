@@ -355,7 +355,7 @@ Body:
     Name: 魔物飼料
     Type: Healing
     Buy: 60
-    Weight: 150
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
@@ -446,7 +446,7 @@ Body:
     Name: 寵物飼料
     Type: Healing
     Buy: 1000
-    Weight: 10
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
