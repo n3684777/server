@@ -8797,7 +8797,7 @@ Body:
           - Sitting_Pope_Casual
           - Kiel_Card
     Script: |
-      bonus bDelayrate,30;
+      bonus bDelayrate,-30;
   - Combos:
       - Combo:
           - Racing_Cap_MC
@@ -20275,7 +20275,7 @@ Body:
           - Apollo_Armor_TW_LT
           - Ferus__Card
     Script: |
-      bonus bDelayrate,8;
+      bonus bDelayrate,-8;
       bonus bShortAtkRate,15;
       bonus bLongAtkRate,15;
   - Combos:
@@ -20283,7 +20283,7 @@ Body:
           - Apollo_Armor_TW_LT
           - Eddga_Card
     Script: |
-      bonus bDelayrate,8;
+      bonus bDelayrate,-8;
       bonus bShortAtkRate,30;
       bonus bLongAtkRate,30;
       bonus3 bAddEffWhenHit,Eff_Freeze,5000,ATF_MAGIC;
@@ -20294,7 +20294,7 @@ Body:
           - Apollo_Armor_TW_LT
           - Eddga_Card_
     Script: |
-      bonus bDelayrate,8;
+      bonus bDelayrate,-8;
       bonus bShortAtkRate,30;
       bonus bLongAtkRate,30;
       bonus3 bAddEffWhenHit,Eff_Freeze,5000,ATF_MAGIC;
@@ -20356,23 +20356,23 @@ Body:
           - Assulter_Card
     Script: |
       bonus bLongAtkRate,8;
-      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
   - Combos:
       - Combo:
           - Mercury_Suits
           - Incant_Samurai_Card
     Script: |
       bonus bLongAtkRate,10;
-      bonus bDelayrate,20;
-      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+      bonus bDelayrate,-20;
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
   - Combos:
       - Combo:
           - Mercury_Suits
           - Incant_Samurai_Card_
     Script: |
       bonus bLongAtkRate,10;
-      bonus bDelayrate,20;
-      autobonus3 "{bonus bDelayrate,20; }",1000,3000,"NJ_ISSEN";
+      bonus bDelayrate,-20;
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
   - Combos:
       - Combo:
           - Diana_Suits
@@ -29559,7 +29559,7 @@ Body:
           - Warlock_Card_J    # 27062
           - Murderous_Grudge    # 29724
     Script: |
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
       bonus2 bSubEle,Ele_Neutral,-50;
   - Combos:
       - Combo:
@@ -29567,7 +29567,7 @@ Body:
           - Warlock_Card_J    # 27062
           - Murderous_Grudge    # 29724
     Script: |
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
       bonus2 bSubEle,Ele_Neutral,-50;
   - Combos:
       - Combo:
@@ -30315,7 +30315,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Wind,15;
       bonus2 bMagicAtkEle,Ele_Fire,15;
       bonus2 bMagicAtkEle,Ele_Water,15;
-      bonus bDelayrate,7;
+      bonus bDelayrate,-7;
       bonus bMaxSPrate,15;
   - Combos:
       - Combo:
@@ -32917,7 +32917,7 @@ Body:
           - Celin_Cloth # 450135
           - XM_Celine_Kimi_Card # 31023
     Script: |
-      autobonus "{ bonus bMatkRate,25;bonus bDelayrate,50;bonus5 bAutoSpell,AB_VITUPERATUM,1,50,BF_MAGIC,1; }",3000,5000,BF_MAGIC,"{ active_transform 2996,5000; }";
+      autobonus "{ bonus bMatkRate,25;bonus bDelayrate,-50;bonus5 bAutoSpell,AB_VITUPERATUM,1,50,BF_MAGIC,1; }",3000,5000,BF_MAGIC,"{ active_transform 2996,5000; }";
   - Combos:
       - Combo:
           - Celin_Cloth # 450135
@@ -33644,7 +33644,7 @@ Body:
     Script: |
       bonus bCritAtkRate,20;
       bonus bHealPower,20;
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
   - Combos:
       - Combo:
           - Moroc_Slave_TW

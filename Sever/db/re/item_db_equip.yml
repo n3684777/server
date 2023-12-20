@@ -66933,7 +66933,7 @@ Body:
       autobonus3 "{bonus bDef,300;bonus bMdef,100;}",1000,50000,"KO_MEIKYOUSISUI";
       bonus bAllStats,(.@r/4)*2;
       if(.@r >= 12){
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
       }
   - Id: 15432
     AegisName: Bacchus_Armor
@@ -148663,7 +148663,7 @@ Body:
       bonus2 bMagicAddRace,RC_All,15;
       }
       if(.@r >= 13){
-      bonus bDelayrate,15;
+      bonus bDelayrate,-15;
       }
       if(.@g >= ENCHANTGRADE_D){
       bonus bBaseAtk,100+(.@r/2)*5;
@@ -148711,7 +148711,7 @@ Body:
       bonus2 bSkillAtk,"SO_EARTHGRAVE",(.@r/3)*20;
       if(.@r >= 9){bonus bMatkRate,15;}
       if(.@r >= 11){bonus2 bMagicAddRace,RC_All,15;}
-      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@r >= 13){bonus bDelayrate,-15;}
       if(.@g >= ENCHANTGRADE_D){
       bonus bMatk,(.@r/2)*8;
       bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
@@ -148755,7 +148755,7 @@ Body:
       bonus2 bSkillAtk,"LG_EARTHDRIVE",(.@r/3)*20;
       bonus2 bSkillAtk,"LG_SHIELDPRESS",(.@r/3)*20;
       if(.@r >= 11){bonus2 bWeaponSubSize,Size_All,10;}
-      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@r >= 13){bonus bDelayrate,-15;}
       if(.@g >= ENCHANTGRADE_D){
         bonus bVit,(.@r/2)*3;
         bonus bShortAtkRate,(.@r/3)*3;
@@ -148799,7 +148799,7 @@ Body:
       bonus bShortAtkRate,((.@r >= 9)?10:0);
       bonus bLongAtkRate,((.@r >= 9)?10:0);
       if(.@r >= 11){bonus2 bAddRace,RC_All,15;}
-      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@r >= 13){bonus bDelayrate,-15;}
       if(.@g >= ENCHANTGRADE_D){
       bonus2 bSkillCooldown,"GC_DARKCROW",-5000;
       bonus2 bSkillCooldown,"SC_GROOMY",-1000;
@@ -148851,7 +148851,7 @@ Body:
       bonus2 bAddRace,RC_All,15;
       bonus2 bMagicAddRace,RA_All,15; 
       }
-      if(.@r >= 13){bonus bDelayrate,15;}
+      if(.@r >= 13){bonus bDelayrate,-15;}
       if(.@g >= ENCHANTGRADE_D){
       bonus2 bSkillCooldown,"AB_CLEARANCE",-5000;
       bonus2 bSkillCooldown,"AB_SILENTIUM",-5000;
@@ -151440,7 +151440,7 @@ Body:
     Script: |
       bonus bMdef,5;
       bonus bMatk,50;
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
       bonus2 bMagicAddEle,Ele_All,getrefine();
   - Id: 470115
     AegisName: Snowflower_Boots
@@ -151644,7 +151644,7 @@ Body:
       }
       if(.@r >= 13){
       bonus bFixedCastRate,-600;
-      bonus bDelayrate,6;}
+      bonus bDelayrate,-6;}
   - Id: 470129
     AegisName: Corruption_Boots
     Name: 墮落的呻吟魔靴
@@ -151773,7 +151773,7 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus bFixedCast,-500;
-      bonus bDelayrate,10;
+      bonus bDelayrate,-10;
   - Id: 470157
     AegisName: aegis_470157
     Name: Heroria Cool Sandals    # !todo check english name
@@ -153079,7 +153079,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Holy,3;
       bonus2 bMagicAtkEle,Ele_Neutral,3;
       if(.@r >= 9){bonus bMatkRate,10;}
-      if(.@r >= 11){bonus bDelayrate,12;}
+      if(.@r >= 11){bonus bDelayrate,-12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
   - Id: 480091
     AegisName: Gray_W_Manteau
@@ -153885,7 +153885,7 @@ Body:
       if(.@r >= 9){
       bonus2 bSkillAtk,"WL_HELLINFERNO",30;
       bonus2 bSkillAtk,"WL_CRIMSONROCK",30;}
-      if(.@r >= 11){bonus bDelayrate,12;}
+      if(.@r >= 11){bonus bDelayrate,-12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}  
   - Id: 480159
     AegisName: Snowflower_Manteau
@@ -154418,7 +154418,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,10;}
       if(.@r >= 11){
       if(readparam(bStr) >= 120){bonus bPow,10;bonus bShortAtkRate,10;}
-      if(readparam(bAgi) >= 120){bonus bSta,10;bonus bDelayrate,10;}
+      if(readparam(bAgi) >= 120){bonus bSta,10;bonus bDelayrate,-10;}
       if(readparam(bVit) >= 120){bonus bWis,10;bonus2 bWeaponSubSize,Size_All,10;}
       if(readparam(bInt) >= 120){bonus bSpl,10;bonus2 bMagicAddClass,Class_All,10;}
       if(readparam(bDex) >= 120){bonus bCon,10;bonus bLongAtkRate,10;}
@@ -154742,7 +154742,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Wind,(.@r/4)*3;    
       if(.@r >= 7){bonus bMatkRate,10;}
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
-      if(.@r >= 11){bonus bDelayrate,12;}
+      if(.@r >= 11){bonus bDelayrate,-12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
   - Id: 480249
     AegisName: aegis_480249
@@ -154856,7 +154856,7 @@ Body:
       bonus2 bMagicAddRace,RC_Dragon,(.@r/4)*8;
       bonus2 bMagicAddRace,RC_DemiHuman ,(.@r/4)*8; 
       if(.@r >= 7){bonus bMatkRate,10;}
-      if(.@r >= 9){bonus bDelayrate,8; }
+      if(.@r >= 9){bonus bDelayrate,-8; }
       if(.@r >= 11){
       bonus2 bMagicAtkEle,Ele_Fire,10;
       bonus2 bMagicAtkEle,Ele_Water,10;
@@ -154887,7 +154887,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Earth,(.@r/4)*3;
       if(.@r >= 7){bonus bMatkRate,10;}
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
-      if(.@r >= 11){bonus bDelayrate,12;}
+      if(.@r >= 11){bonus bDelayrate,-12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
   - Id: 480278
     AegisName: Huse_Luk_R_Wing
@@ -154942,7 +154942,7 @@ Body:
       bonus bMatkRate,(.@r/3)*2;
       if(.@r >= 7){bonus bVariableCastrate,-10;}
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
-      if(.@r >= 11){bonus bDelayrate,10;}
+      if(.@r >= 11){bonus bDelayrate,-10;}
       if(.@r >= 13){bonus2 bMagicAddRace,RC_All,15;}
       }
   - Id: 490004
@@ -157655,7 +157655,7 @@ Body:
     ArmorLevel: 2
     EquipLevelMin: 200
     Script: |
-      bonus bDelayrate,3;
+      bonus bDelayrate,-3;
       bonus bVariableCastrate,-3;
   - Id: 490253
     AegisName: aegis_490253
