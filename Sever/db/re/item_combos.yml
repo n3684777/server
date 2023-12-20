@@ -306,6 +306,13 @@ Body:
       bonus bBreakWeaponRate,900;
   - Combos:
       - Combo:
+          - Hollgrehenn_Hammer
+          - B_Harword_Card_
+    Script: |
+      bonus bBreakArmorRate,900;
+      bonus bBreakWeaponRate,900;
+  - Combos:
+      - Combo:
           - Rite_Robe
           - Bathory_Card
       - Combo:
@@ -2897,6 +2904,13 @@ Body:
       bonus2 bSkillAtk,"WZ_METEOR",15;
   - Combos:
       - Combo:
+          - Polluted_Dark_L_Card_    # 27363
+          - Dark_Lord_Card_    # 4168
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Fire,15;
+      bonus2 bSkillAtk,"WZ_METEOR",15;
+  - Combos:
+      - Combo:
           - Black_Cat
           - Black_Wing
     Script: |
@@ -4316,6 +4330,15 @@ Body:
       bonus2 bResEff,Eff_Curse,10000;
   - Combos:
       - Combo:
+          - Osiris_Card_
+          - Old_Moc_Shawl
+    Script: |
+      bonus bMaxHPrate,15;
+      bonus2 bSubEle,Ele_Dark,100;
+      bonus2 bSubEle,Ele_Fire,50;
+      bonus2 bResEff,Eff_Curse,10000;
+  - Combos:
+      - Combo:
           - Galapago_Card
           - FlyingGalapago
     Script: |
@@ -4362,6 +4385,14 @@ Body:
   - Combos:
       - Combo:
           - Dark_Lord_Card
+          - Dark_Illusion_Card
+    Script: |
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
+      bonus bVariableCastrate,-10;
+  - Combos:
+      - Combo:
+          - Dark_Lord_Card_
           - Dark_Illusion_Card
     Script: |
       bonus bMaxHPrate,20;
@@ -4917,7 +4948,19 @@ Body:
       autobonus "{ bonus bMatk,100; }",30,6000,BF_MAGIC,"{ active_transform 3242,6000; }";
   - Combos:
       - Combo:
+          - Sorcerer_Card_
+          - Real_Ceila_Card
+    Script: |
+      autobonus "{ bonus bMatk,100; }",30,6000,BF_MAGIC,"{ active_transform 3242,6000; }";
+  - Combos:
+      - Combo:
           - Sura_Card
+          - Real_Chen_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3243,6000; }";
+  - Combos:
+      - Combo:
+          - Sura_Card_
           - Real_Chen_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3243,6000; }";
@@ -4929,7 +4972,19 @@ Body:
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3245,6000; }";
   - Combos:
       - Combo:
+          - Minstrel_Card_
+          - Real_Alphoccio_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3245,6000; }";
+  - Combos:
+      - Combo:
           - GuillotineCross_Card
+          - Real_Eremes_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3220,6000; }";
+  - Combos:
+      - Combo:
+          - GuillotineCross_Card_
           - Real_Eremes_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3220,6000; }";
@@ -4947,7 +5002,19 @@ Body:
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3222,6000; }";
   - Combos:
       - Combo:
+          - Ranger_Card_
+          - Real_Shecil_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3222,6000; }";
+  - Combos:
+      - Combo:
           - Mechanic_Card
+          - Real_Harword_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3223,6000; }";
+  - Combos:
+      - Combo:
+          - Mechanic_Card_
           - Real_Harword_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3223,6000; }";
@@ -4959,7 +5026,19 @@ Body:
       autobonus "{ bonus bMatk,100; }",30,6000,BF_MAGIC,"{ active_transform 3224,6000; }";
   - Combos:
       - Combo:
+          - Warlock_Card_
+          - Real_Katrinn_Card
+    Script: |
+      autobonus "{ bonus bMatk,100; }",30,6000,BF_MAGIC,"{ active_transform 3224,6000; }";
+  - Combos:
+      - Combo:
           - RuneKnight_Card
+          - Real_Seyren_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3225,6000; }";
+  - Combos:
+      - Combo:
+          - RuneKnight_Card_
           - Real_Seyren_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3225,6000; }";
@@ -4971,7 +5050,19 @@ Body:
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3240,6000; }";
   - Combos:
       - Combo:
+          - RoyalGuard_Card_
+          - Real_Randel_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3240,6000; }";
+  - Combos:
+      - Combo:
           - Genetic_Card
+          - Real_Flamel_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3241,6000; }";
+  - Combos:
+      - Combo:
+          - Genetic_Card_
           - Real_Flamel_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3241,6000; }";
@@ -4983,7 +5074,19 @@ Body:
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3244,6000; }";
   - Combos:
       - Combo:
+          - ShadowChaser_Card_
+          - Real_Gertie_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3244,6000; }";
+  - Combos:
+      - Combo:
           - Wanderer_Card
+          - Real_Trentini_Card
+    Script: |
+      autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3246,6000; }";
+  - Combos:
+      - Combo:
+          - Wanderer_Card_
           - Real_Trentini_Card
     Script: |
       autobonus "{ bonus bBaseAtk,100; }",30,6000,BF_WEAPON,"{ active_transform 3246,6000; }";
@@ -9099,6 +9202,13 @@ Body:
       - Combo:
           - Garden_of_Eden
           - B_Katrinn_Card
+    Script: |
+      bonus bVariableCastrate,-100;
+      bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
+  - Combos:
+      - Combo:
+          - Garden_of_Eden
+          - B_Katrinn_Card_
     Script: |
       bonus bVariableCastrate,-100;
       bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
@@ -19199,6 +19309,16 @@ Body:
       }
   - Combos:
       - Combo:
+          - Unknown_Swordman_Card
+          - B_Ygnizem_Card_
+    Script: |
+      if (BaseClass == Job_Swordman) {
+         .@sum = getequiprefinerycnt(EQI_SHADOW_ARMOR)+getequiprefinerycnt(EQI_SHADOW_SHOES);
+         bonus bLongAtkRate,10+2*(.@sum/4);
+         bonus bShortAtkRate,10+2*(.@sum/4);
+         bonus bMaxHPrate,2*(.@sum/4);
+  - Combos:
+      - Combo:
           - Crow_Baron_Card
           - Crow_Duke_Card
     Script: |
@@ -20069,7 +20189,29 @@ Body:
   - Combos:
       - Combo:
           - Ceres_Armor_TW_LT
+          - Clown_Card_
+    Script: |
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bLongAtkRate,25;
+      bonus2 bMagicAtkEle,Ele_All,25;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW_LT
           - Gypsy_Card
+    Script: |
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bLongAtkRate,25;
+      bonus2 bMagicAtkEle,Ele_All,25;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW_LT
+          - Gypsy_Card_
     Script: |
       bonus bBaseAtk,100;
       bonus bMatk,100;
@@ -20105,6 +20247,17 @@ Body:
       - Combo:
           - Apollo_Armor_TW_LT
           - Eddga_Card
+    Script: |
+      bonus bDelayrate,8;
+      bonus bShortAtkRate,30;
+      bonus bLongAtkRate,30;
+      bonus3 bAddEffWhenHit,Eff_Freeze,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Bleeding,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Stone,5000,ATF_MAGIC;
+  - Combos:
+      - Combo:
+          - Apollo_Armor_TW_LT
+          - Eddga_Card_
     Script: |
       bonus bDelayrate,8;
       bonus bShortAtkRate,30;
@@ -20224,7 +20377,21 @@ Body:
   - Combos:
       - Combo:
           - Ceres_Armor_TW
+          - Clown_Card_
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW
           - Gypsy_Card
+    Script: |
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus2 bSubRace,RC_All,10;
+  - Combos:
+      - Combo:
+          - Ceres_Armor_TW
+          - Gypsy_Card_
     Script: |
       bonus2 bResEff,Eff_Freeze,10000;
       bonus2 bSubRace,RC_All,10;
@@ -20255,6 +20422,14 @@ Body:
   - Combos:
       - Combo:
           - Apollo_Armor_TW
+          - Eddga_Card_
+    Script: |
+      bonus3 bAddEffWhenHit,Eff_Stun,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Freeze,5000,ATF_MAGIC;
+      bonus3 bAddEffWhenHit,Eff_Stone,5000,ATF_MAGIC;
+  - Combos:
+      - Combo:
+          - Apollo_Armor_TW
           - Ferus__Card
     Script: |
       bonus bDelayrate,-5;
@@ -20270,6 +20445,16 @@ Body:
       - Combo:
           - Astraea_Armor
           - B_Magaleta_Card
+    Script: |
+      .@r = getrefine();
+      if (.@r >= 10) {
+         .@r = min(14,.@r)-5;
+         bonus bMaxHPrate,pow(.@r,2);
+      }
+  - Combos:
+      - Combo:
+          - Astraea_Armor
+          - B_Magaleta_Card_
     Script: |
       .@r = getrefine();
       if (.@r >= 10) {
@@ -20312,6 +20497,16 @@ Body:
       - Combo:
           - Magicstone_Of_Grace
           - Mistress_Card
+    Script: |
+      bonus bMatkRate,10;
+      bonus bUseSPrate,-50;
+      bonus bHealPower,10;
+      bonus2 bAddItemHealRate,526,15;
+      bonus2 bAddItemSPHealRate,526,15;
+  - Combos:
+      - Combo:
+          - Magicstone_Of_Grace
+          - Mistress_Card_
     Script: |
       bonus bMatkRate,10;
       bonus bUseSPrate,-50;
@@ -20489,6 +20684,15 @@ Body:
   - Combos:
       - Combo:
           - Astraea_Ring
+          - B_Magaleta_Card_
+    Script: |
+      bonus bDefEle,Ele_Ghost;
+      bonus5 bAutoSpellWhenHit,"HP_ASSUMPTIO",5,-50,BF_WEAPON|BF_MAGIC,0;
+      bonus2 bAddClass,Class_Boss,20;
+      bonus2 bMagicAddClass,Class_Boss,20;
+  - Combos:
+      - Combo:
+          - Astraea_Ring
           - Astraea_Helm_TW
     Script: |
       bonus bAllStats,3;
@@ -20518,6 +20722,13 @@ Body:
   - Combos:
       - Combo:
           - Orcsuccessionhelm_TW
+          - Orc_Hero_Card_
+    Script: |
+      bonus bMaxHPrate,20;
+      skill "BS_OVERTHRUST",5;
+  - Combos:
+      - Combo:
+          - Orcsuccessionhelm_TW
           - Orc_Lady_Card
     Script: |
       bonus2 bAddRace,RC_DemiHuman,10;
@@ -20537,6 +20748,17 @@ Body:
           - Orc_Warrior_Card
           - Orc_Load_Card
           - Orc_Hero_Card
+          - Orc_Lady_Card
+          - Orc_Archer_Card
+    Script: |
+      skill "CR_DEFENDER",4;
+      bonus bDefRatioAtkClass,Class_All;
+  - Combos:
+      - Combo:
+          - Orcsuccessionhelm_TW
+          - Orc_Warrior_Card
+          - Orc_Load_Card
+          - Orc_Hero_Card_
           - Orc_Lady_Card
           - Orc_Archer_Card
     Script: |
@@ -23832,7 +24054,22 @@ Body:
   - Combos:
       - Combo:
           - RingOfThought_TW     # 32245
+          - B_Seyren_Card_     # 4357
+    Script: |
+      bonus bCritical,15;
+      bonus2 bAddSize,Size_All,6;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
           - B_Eremes_Card     # 4359
+    Script: |
+      bonus bFlee,20;
+      skill "TF_HIDING",1;
+      bonus2 bSkillUseSP,"TF_HIDING",-250;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
+          - B_Eremes_Card_     # 4359
     Script: |
       bonus bFlee,20;
       skill "TF_HIDING",1;
@@ -23847,7 +24084,21 @@ Body:
   - Combos:
       - Combo:
           - RingOfThought_TW     # 32245
+          - B_Harword_Card_     # 4361
+    Script: |
+      bonus bAspd,2;
+      bonus3 bAutoSpell,"RG_STRIPHELM",3,60;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
           - B_Magaleta_Card     # 4363
+    Script: |
+      bonus bDef,20;
+      bonus2 bSubEle,Ele_All,6;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
+          - B_Magaleta_Card_     # 4363
     Script: |
       bonus bDef,20;
       bonus2 bSubEle,Ele_All,6;
@@ -23861,7 +24112,21 @@ Body:
   - Combos:
       - Combo:
           - RingOfThought_TW     # 32245
+          - B_Katrinn_Card_     # 4365
+    Script: |
+      bonus bMdef,20;
+      bonus2 bMagicAtkEle,Ele_All,6;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
           - B_Shecil_Card     # 4367
+    Script: |
+      bonus bHit,20;
+      bonus bSPDrainValue,1;
+  - Combos:
+      - Combo:
+          - RingOfThought_TW     # 32245
+          - B_Shecil_Card_     # 4367
     Script: |
       bonus bHit,20;
       bonus bSPDrainValue,1;
@@ -26481,6 +26746,14 @@ Body:
       bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,-100,BF_MAGIC,0;
   - Combos:
       - Combo:
+          - Jirant_Dress    # 15387
+          - Professor_Card_    # 4561
+    Script: |
+      bonus2 bResEff,Eff_Freeze,100;
+      bonus2 bVariableCastrate,"SO_PSYCHIC_WAVE",-100;
+      bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,-100,BF_MAGIC,0;
+  - Combos:
+      - Combo:
           - Staff_170_J    # 2038
           - Immortal_Dog_Tag    # 32204
     Script: |
@@ -26711,7 +26984,27 @@ Body:
   - Combos:
       - Combo:
           - King_of_Origin    # 311072
+          - Eddga_Card_    # 4123
+    Script: |
+      .@vit = readparam(bVit);
+      bonus bDef,20*(.@vit/10);
+      bonus bMdef,2*(.@vit/10);
+      if (.@vit>=130) {
+         bonus bMaxHPrate,50;
+         bonus bHealPower2,20;
+         bonus bAddItemHealRate,20;
+      }
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
           - Orc_Hero_Card    # 4143
+    Script: |
+      bonus bFlee2,5;
+      bonus2 bSubSkill,"NPC_CRITICALSLASH",100;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
+          - Orc_Hero_Card_    # 4143
     Script: |
       bonus bFlee2,5;
       bonus2 bSubSkill,"NPC_CRITICALSLASH",100;
@@ -26732,7 +27025,20 @@ Body:
   - Combos:
       - Combo:
           - King_of_Origin    # 311072
+          - Osiris_Card_    # 4144
+    Script: |
+      bonus bSPDrainValue,2;
+      skill "WZ_QUAGMIRE",5;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
           - Doppelganger_Card    # 4142
+    Script: |
+      bonus bShortAtkRate,20;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
+          - Doppelganger_Card_    # 4142
     Script: |
       bonus bShortAtkRate,20;
   - Combos:
@@ -26744,7 +27050,20 @@ Body:
   - Combos:
       - Combo:
           - King_of_Origin    # 311072
+          - Drake_Card_    # 4137
+    Script: |
+      bonus2 bAddSize,Size_All,20;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
           - Baphomet_Card    # 4147
+    Script: |
+      autobonus "{ bonus2 bHPDrainRate,1000,1; }",10,5000,BF_WEAPON;
+      /*Unknow Rate*/
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
+          - Baphomet_Card_    # 4147
     Script: |
       autobonus "{ bonus2 bHPDrainRate,1000,1; }",10,5000,BF_WEAPON;
       /*Unknow Rate*/
@@ -26768,6 +27087,13 @@ Body:
       - Combo:
           - King_of_Origin    # 311072
           - Mistress_Card    # 4132
+    Script: |
+      bonus2 bSubEle,Ele_Wind,15;
+      skill "MG_SAFETYWALL",10;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
+          - Mistress_Card_    # 4132
     Script: |
       bonus2 bSubEle,Ele_Wind,15;
       skill "MG_SAFETYWALL",10;
@@ -26912,6 +27238,22 @@ Body:
       - Combo:
           - FullForce_    # 600025
           - Doppelganger_Card    # 4142
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus3 bAutoSpell,"RK_IGNITIONBREAK",5,20;
+      if (BaseLevel >= 100) {
+         bonus bAspdRate,5*.@r;
+         bonus2 bAddRace,RC_All,10*.@r;
+      }
+      else {
+         bonus bAspdRate,2*.@r;
+         bonus2 bAddRace,RC_All,4*.@r;
+      }
+      /*Unknow Rate*/
+  - Combos:
+      - Combo:
+          - FullForce_    # 600025
+          - Doppelganger_Card_    # 4142
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
       bonus3 bAutoSpell,"RK_IGNITIONBREAK",5,20;
@@ -27794,6 +28136,15 @@ Body:
       - Combo:
           - Pirate_Captain_Coat   # 480174
           - Drake_Card   # 4137
+    Script: |
+      bonus bLongAtkRate,15;
+      bonus bShortAtkRate,15;
+      bonus bCRate,10;
+      bonus bCritical,15;
+  - Combos:
+      - Combo:
+          - Pirate_Captain_Coat   # 480174
+          - Drake_Card_   # 4137
     Script: |
       bonus bLongAtkRate,15;
       bonus bShortAtkRate,15;
@@ -28709,7 +29060,24 @@ Body:
       bonus2 bSPRegenRate,100,10000;
   - Combos:
       - Combo:
+          - B_Ygnizem_Card_    # 4352
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
+      bonus2 bHPRegenRate,5000,10000;
+      bonus2 bSPRegenRate,100,10000;
+  - Combos:
+      - Combo:
           - B_Eremes_Card    # 4359
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus2 bSubEle,Ele_Earth,50;
+      bonus2 bSubEle,Ele_Water,50;
+      skill "AS_ENCHANTPOISON",10;
+  - Combos:
+      - Combo:
+          - B_Eremes_Card_    # 4359
           - Murderous_Grudge    # 29724
     Script: |
       bonus2 bSubEle,Ele_Earth,50;
@@ -28724,7 +29092,21 @@ Body:
       skill "HW_GANBANTEIN",1;
   - Combos:
       - Combo:
+          - B_Katrinn_Card_    # 4365
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bMatk,100;
+      skill "HW_GANBANTEIN",1;
+  - Combos:
+      - Combo:
           - B_Seyren_Card    # 4357
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bBaseAtk,100;
+      skill "LK_CONCENTRATION",5;
+  - Combos:
+      - Combo:
+          - B_Seyren_Card_    # 4357
           - Murderous_Grudge    # 29724
     Script: |
       bonus bBaseAtk,100;
@@ -28738,7 +29120,21 @@ Body:
       skill "SN_SIGHT",10;
   - Combos:
       - Combo:
+          - B_Shecil_Card_    # 4367
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus2 bAddClass,Class_Boss,25;
+      skill "SN_SIGHT",10;
+  - Combos:
+      - Combo:
           - B_Harword_Card    # 4361
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus2 bAddClass,Class_Normal,25;
+      skill "WS_MELTDOWN",10;
+  - Combos:
+      - Combo:
+          - B_Harword_Card_    # 4361
           - Murderous_Grudge    # 29724
     Script: |
       bonus2 bAddClass,Class_Normal,25;
@@ -28753,7 +29149,25 @@ Body:
       skill "HP_ASSUMPTIO",5;
   - Combos:
       - Combo:
+          - B_Magaleta_Card_    # 4363
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      skill "HP_ASSUMPTIO",5;
+  - Combos:
+      - Combo:
           - Clown_Card    # 4560
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bFlee,50;
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      if (readparam(bVit)>=110)
+         bonus bFlee,50;
+  - Combos:
+      - Combo:
+          - Clown_Card_    # 4560
           - Murderous_Grudge    # 29724
     Script: |
       bonus bFlee,50;
@@ -28774,7 +29188,22 @@ Body:
          bonus bCritical,50;
   - Combos:
       - Combo:
+          - Creator_Card_    # 4563
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bCritical,50;
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus5 bAutoSpellWhenHit,"AM_ACIDTERROR",5,-100,BF_WEAPON,1;
+      if (readparam(bStr)>=110)
+         bonus bCritical,50;
+  - Combos:
+      - Combo:
           - Stalker_Card    # 4564
+          - Murderous_Grudge    # 29724
+  - Combos:
+      - Combo:
+          - Stalker_Card_    # 4564
           - Murderous_Grudge    # 29724
     Script: |
       bonus bHit,50;
@@ -28796,7 +29225,29 @@ Body:
          bonus bMatkRate,7;
   - Combos:
       - Combo:
+          - Professor_Card_    # 4561
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bMatkRate,7;
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,-100,BF_MAGIC,0;
+      if (readparam(bDex)>=110)
+         bonus bMatkRate,7;
+  - Combos:
+      - Combo:
           - Champion_Card    # 4562
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bAtkRate,7;
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus5 bAutoSpellWhenHit,"MO_INVESTIGATE",5,-100,BF_WEAPON,1;
+      if (readparam(bAgi)>=110)
+         bonus bAtkRate,7;
+  - Combos:
+      - Combo:
+          - Champion_Card_    # 4562
           - Murderous_Grudge    # 29724
     Script: |
       bonus bAtkRate,7;
@@ -28817,7 +29268,27 @@ Body:
          bonus bFlee,50;
   - Combos:
       - Combo:
+          - Gypsy_Card    # 4566
+          - Murderous_Grudge_    # 29724
+    Script: |
+      bonus bFlee,50;
+      bonus bMaxHPrate,50;
+      bonus2 bResEff,Eff_Freeze,10000;
+      if (readparam(bVit)>=110)
+         bonus bFlee,50;
+  - Combos:
+      - Combo:
           - Paladin_Card    # 4565
+          - Murderous_Grudge    # 29724
+    Script: |
+      bonus bMaxHPrate,60;
+      bonus2 bResEff,Eff_Freeze,10000;
+      bonus5 bAutoSpellWhenHit,"CR_GRANDCROSS",10,-100,BF_WEAPON,0;
+      if (readparam(bInt)>=110)
+         bonus bMaxHPrate,10;
+  - Combos:
+      - Combo:
+          - Paladin_Card_    # 4565
           - Murderous_Grudge    # 29724
     Script: |
       bonus bMaxHPrate,60;
@@ -29878,10 +30349,25 @@ Body:
   - Combos:
       - Combo:
           - Record_Acher2_TW   # 490198
+          - B_Shecil_Card_   # 4367
+    Script: |
+      bonus2 bMagicAddClass,Class_All,35;
+  - Combos:
+      - Combo:
+          - Record_Acher2_TW   # 490198
           - Clown_Card   # 4560
       - Combo:
           - Record_Acher2_TW   # 490198
           - Gypsy_Card   # 4566
+    Script: |
+      skill "RA_UNLIMIT",3;
+  - Combos:
+      - Combo:
+          - Record_Acher2_TW   # 490198
+          - Clown_Card_   # 4560
+      - Combo:
+          - Record_Acher2_TW   # 490198
+          - Gypsy_Card_   # 4566
     Script: |
       skill "RA_UNLIMIT",3;
   - Combos:
@@ -30066,7 +30552,19 @@ Body:
   - Combos:
       - Combo:
           - Record_Acolyte2_TW   # 490192
+          - B_Magaleta_Card_   # 4363
+    Script: |
+      bonus bMaxHPrate,40;
+  - Combos:
+      - Combo:
+          - Record_Acolyte2_TW   # 490192
           - Champion_Card   # 4562
+    Script: |
+      bonus2 bAddRace,RC_All,25;
+  - Combos:
+      - Combo:
+          - Record_Acolyte2_TW   # 490192
+          - Champion_Card_   # 4562
     Script: |
       bonus2 bAddRace,RC_All,25;
   - Combos:
@@ -30122,7 +30620,17 @@ Body:
   - Combos:
       - Combo:
           - Record_Thief2_TW   # 490191
+          - B_Eremes_Card_   # 4359
+    Script: |
+      bonus2 bAddClass,Class_Boss,30;
+  - Combos:
+      - Combo:
+          - Record_Thief2_TW   # 490191
           - Stalker_Card   # 4564
+  - Combos:
+      - Combo:
+          - Record_Thief2_TW   # 490191
+          - Stalker_Card_   # 4564
     Script: |
       bonus2 bMagicAddRace,RC_All,30;
   - Combos:
@@ -30185,7 +30693,19 @@ Body:
   - Combos:
       - Combo:
           - Record_Merchant2_TW   # 490175
+          - B_Harword_Card_   # 4361
+    Script: |
+      bonus2 bAddClass,Class_Boss,40;
+  - Combos:
+      - Combo:
+          - Record_Merchant2_TW   # 490175
           - Creator_Card   # 4563
+    Script: |
+      bonus2 bAddRace,RC_All,20;
+  - Combos:
+      - Combo:
+          - Record_Merchant2_TW   # 490175
+          - Creator_Card_   # 4563
     Script: |
       bonus2 bAddRace,RC_All,20;
   - Combos:
@@ -30243,7 +30763,19 @@ Body:
   - Combos:
       - Combo:
           - Record_Sward2_TW   # 490173
+          - B_Seyren_Card_   # 4357
+    Script: |
+      bonus2 bAddClass,Class_Boss,30;
+  - Combos:
+      - Combo:
+          - Record_Sward2_TW   # 490173
           - Paladin_Card   # 4565
+    Script: |
+      bonus2 bMagicAddRace,RC_All,25;
+  - Combos:
+      - Combo:
+          - Record_Sward2_TW   # 490173
+          - Paladin_Card_   # 4565
     Script: |
       bonus2 bMagicAddRace,RC_All,25;
   - Combos:
@@ -30302,7 +30834,19 @@ Body:
   - Combos:
       - Combo:
           - Record_Mage2_TW   # 490170
+          - B_Katrinn_Card_   # 4365
+    Script: |
+      bonus2 bMagicAddClass,Class_Boss,30;
+  - Combos:
+      - Combo:
+          - Record_Mage2_TW   # 490170
           - Professor_Card   # 4561
+    Script: |
+      bonus2 bMagicAtkEle,Ele_All,20;
+  - Combos:
+      - Combo:
+          - Record_Mage2_TW   # 490170
+          - Professor_Card_   # 4561
     Script: |
       bonus2 bMagicAtkEle,Ele_All,20;
   - Combos:
@@ -32490,6 +33034,14 @@ Body:
       - Combo:
           - Leo_Shoes_J  # 470187
           - Eddga_Card     # 4123
+    Script: |
+      bonus2 bAddClass,Class_Boss,30;
+      bonus2 bSkillCooldown,"SR_TIGERCANNON",-500;
+      autobonus "{ bonus bStr,30; bonus bAtkRate,20; }",3,10000,BF_WEAPON;
+  - Combos:
+      - Combo:
+          - Leo_Shoes_J  # 470187
+          - Eddga_Card_     # 4123
     Script: |
       bonus2 bAddClass,Class_Boss,30;
       bonus2 bSkillCooldown,"SR_TIGERCANNON",-500;
