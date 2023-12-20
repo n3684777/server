@@ -4312,6 +4312,12 @@ Body:
       autobonus "{ bonus bFlee2,10; }",70,5000,BF_SHORT;
   - Combos:
       - Combo:
+          - Moonlight_Flower_Card_
+          - AngerMoonlight_Card_
+    Script: |
+      autobonus "{ bonus bFlee2,10; }",70,5000,BF_SHORT;
+  - Combos:
+      - Combo:
           - Joker_Card
           - Thief_Bandana
     Script: |
@@ -7341,6 +7347,19 @@ Body:
   - Combos:
       - Combo:
           - KarduiEar
+          - Lapine_Shield
+          - Fallen_Bishop_Card_
+      - Combo:
+          - KarduiEar
+          - Lapine_Shield
+          - Runaway_Magic
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_L);
+      if (.@r > 7)
+         bonus2 bSkillCooldown,"WL_COMET",+20000+(.@r > 9 ? +20000 : 0);
+  - Combos:
+      - Combo:
+          - KarduiEar
           - Tendrilion_Card
       - Combo:
           - Tree_Of_Sprout_JP
@@ -10036,6 +10055,13 @@ Body:
       - Combo:
           - Phreeoni_Wing
           - Phreeoni_Card
+    Script: |
+      bonus bPerfectHitAddRate,50;
+      bonus2 bResEff,Eff_Stone,10000;
+  - Combos:
+      - Combo:
+          - Phreeoni_Wing
+          - Phreeoni_Card_
     Script: |
       bonus bPerfectHitAddRate,50;
       bonus2 bResEff,Eff_Stone,10000;
@@ -19317,6 +19343,7 @@ Body:
          bonus bLongAtkRate,10+2*(.@sum/4);
          bonus bShortAtkRate,10+2*(.@sum/4);
          bonus bMaxHPrate,2*(.@sum/4);
+      }
   - Combos:
       - Combo:
           - Crow_Baron_Card
@@ -20282,6 +20309,14 @@ Body:
       bonus2 bSkillAtk,"SJ_FALLINGSTAR",40;
   - Combos:
       - Combo:
+          - Neptune_Uniform
+          - Maya_Card_
+    Script: |
+      bonus2 bSubSize,Size_All,30;
+      bonus2 bSkillAtk,"SP_SWHOO",40;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",40;
+  - Combos:
+      - Combo:
           - Bacchus_Armor
           - Heart_Hunter_Card
     Script: |
@@ -20407,6 +20442,14 @@ Body:
       - Combo:
           - Jupiter_Armor_TW
           - Fallen_Bishop_Card
+    Script: |
+      bonus bMatk,60;
+      bonus bMdef,20;
+      bonus2 bMagicAddRace,RC_All,5;
+  - Combos:
+      - Combo:
+          - Jupiter_Armor_TW
+          - Fallen_Bishop_Card_
     Script: |
       bonus bMatk,60;
       bonus bMdef,20;
@@ -20641,6 +20684,22 @@ Body:
       - Combo:
           - Nergal_Shoes_TW
           - Moonlight_Flower_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHOES);
+      .@r_shoes = min(10,getequiprefinerycnt(EQI_SHOES));
+      skill "AL_HEAL",10;
+      if (BaseLevel >= 100) {
+         bonus bMdef,5*.@r_shoes;
+         bonus bMatk,15*.@r;
+      }
+      else {
+         bonus bMdef,3*.@r_shoes;
+         bonus bMatk,5*.@r;
+      }
+  - Combos:
+      - Combo:
+          - Nergal_Shoes_TW
+          - Moonlight_Flower_Card_
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
       .@r_shoes = min(10,getequiprefinerycnt(EQI_SHOES));
@@ -24352,6 +24411,20 @@ Body:
   - Combos:
       - Combo:
           - Awakening_Nergal_Shoes     # 470047
+          - Moonlight_Flower_Card_     # 4131
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHOES);
+      skill "AL_HEAL",10;
+      if (BaseLevel >= 100) {
+         bonus bInt,10*.@r;
+         bonus bMdef,10*.@r;
+      } else {
+         bonus bInt,3*.@r;
+         bonus bMdef,5*.@r;
+      }
+  - Combos:
+      - Combo:
+          - Awakening_Nergal_Shoes     # 470047
           - Sealed_M_Flower_Card_J     # 300139
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
@@ -24367,6 +24440,20 @@ Body:
       - Combo:
           - Nergal_Shoes     # 22132
           - Moonlight_Flower_Card     # 4131
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHOES);
+      skill "AL_HEAL",10;
+      if (BaseLevel >= 100) {
+         bonus bMatk,15*.@r;
+         bonus bMdef,10*.@r;
+      } else {
+         bonus bMatk,5*.@r;
+         bonus bMdef,5*.@r;
+      }
+  - Combos:
+      - Combo:
+          - Nergal_Shoes     # 22132
+          - Moonlight_Flower_Card_     # 4131
     Script: |
       .@r = getequiprefinerycnt(EQI_SHOES);
       skill "AL_HEAL",10;
@@ -26431,6 +26518,14 @@ Body:
       bonus2 bFixedCastrate,"WL_TETRAVORTEX",-100;
   - Combos:
       - Combo:
+          - aegis_400101    # 400101
+          - Fenrir_Card_    # 4556
+    Script: |
+      bonus bInt,30;
+      bonus bDex,30;
+      bonus2 bFixedCastrate,"WL_TETRAVORTEX",-100;
+  - Combos:
+      - Combo:
           - Goddess_of_Abundance    # 311073
           - Atroce_Card    # 4425
     Script: |
@@ -26465,7 +26560,22 @@ Body:
   - Combos:
       - Combo:
           - Goddess_of_Abundance    # 311073
+          - Fallen_Bishop_Card_    # 4441
+    Script: |
+      bonus2 bMagicAddRace,RC_DemiHuman,50;
+      bonus2 bMagicAddRace,RC_Player_Human,50;
+  - Combos:
+      - Combo:
+          - Goddess_of_Abundance    # 311073
           - Fallen_Bishop_Card    # 4441
+          - Runaway_Magic    # 4876
+    Script: |
+      bonus2 bMagicAddRace,RC_DemiHuman,-50;
+      bonus2 bMagicAddRace,RC_Player_Human,-50;
+  - Combos:
+      - Combo:
+          - Goddess_of_Abundance    # 311073
+          - Fallen_Bishop_Card_    # 4441
           - Runaway_Magic    # 4876
     Script: |
       bonus2 bMagicAddRace,RC_DemiHuman,-50;
@@ -26591,7 +26701,22 @@ Body:
       bonus2 bMagicAddRace,RC_DemiHuman,50;
   - Combos:
       - Combo:
+          - Fallen_Bishop_Card_    # 4441
+          - Moaning_of_EvilSpirits    # 470112
+    Script: |
+      bonus bMatkRate,10;
+      bonus2 bMagicAddRace,RC_Angel,50;
+      bonus2 bMagicAddRace,RC_DemiHuman,50;
+  - Combos:
+      - Combo:
           - Fallen_Bishop_Card    # 4441
+          - Moaning_of_EvilSpirits    # 470112
+          - Goddess_of_Abundance    # 311073
+    Script: |
+      bonus2 bMagicAddRace,RC_Player_Human,50;
+  - Combos:
+      - Combo:
+          - Fallen_Bishop_Card_    # 4441
           - Moaning_of_EvilSpirits    # 470112
           - Goddess_of_Abundance    # 311073
     Script: |
@@ -26971,6 +27096,13 @@ Body:
   - Combos:
       - Combo:
           - King_of_Origin    # 311072
+          - Moonlight_Flower_Card_    # 4131
+    Script: |
+      bonus2 bResEff,Eff_Curse,10000;
+      skill "AL_INCAGI",10;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
           - Eddga_Card    # 4123
     Script: |
       .@vit = readparam(bVit);
@@ -27077,7 +27209,23 @@ Body:
   - Combos:
       - Combo:
           - King_of_Origin    # 311072
+          - Phreeoni_Card_    # 4121
+    Script: |
+      bonus bPerfectHitAddRate,50;
+      bonus bSPDrainValue,5;
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
           - Maya_Card    # 4146
+    Script: |
+      bonus2 bSubRace,RC_Player_Human,30;
+      bonus2 bSubRace,RC_Player_Doram,30;
+      autobonus2 "{ bonus2 bRegenPercentHP,25,1000; }",10,2000,BF_MAGIC;
+      /*Unknow Rate*/
+  - Combos:
+      - Combo:
+          - King_of_Origin    # 311072
+          - Maya_Card_    # 4146
     Script: |
       bonus2 bSubRace,RC_Player_Human,30;
       bonus2 bSubRace,RC_Player_Doram,30;
@@ -27443,6 +27591,12 @@ Body:
       - Combo:
           - Heros_TriumphantSong    # 311074
           - Fenrir_Card    # 4556
+    Script: |
+      bonus bFixedCastrate,-80;
+  - Combos:
+      - Combo:
+          - Heros_TriumphantSong    # 311074
+          - Fenrir_Card_    # 4556
     Script: |
       bonus bFixedCastrate,-80;
   - Combos:
@@ -28058,6 +28212,14 @@ Body:
   - Combos:
       - Combo:
           - Phreeoni_Wing_Suits   # 450217
+          - Phreeoni_Card_   # 4121
+    Script: |
+      .@r_armor = getequiprefinerycnt(EQI_ARMOR);
+      bonus bLongAtkRate,3*(.@r_armor/2);
+      bonus2 bAddClass,Class_Boss,8*(.@r_armor/3);
+  - Combos:
+      - Combo:
+          - Phreeoni_Wing_Suits   # 450217
           - Min_Phreeoni_Card   # 4649
     Script: |
       .@r_armor = getequiprefinerycnt(EQI_ARMOR);
@@ -28092,6 +28254,13 @@ Body:
       - Combo:
           - Beast_Leather_Shoes   # 470122
           - Moonlight_Flower_Card   # 4131
+    Script: |
+      bonus bFixedCast,-200;
+      bonus bSMatk,15;
+  - Combos:
+      - Combo:
+          - Beast_Leather_Shoes   # 470122
+          - Moonlight_Flower_Card_   # 4131
     Script: |
       bonus bFixedCast,-200;
       bonus bSMatk,15;
@@ -28707,6 +28876,13 @@ Body:
   - Combos:
       - Combo:
           - Pharaoh_Card    # 4148
+          - aegis_311439    # 311439
+    Script: |
+      bonus2 bSubEle,Ele_Dark,15;
+      skill "PA_PRESSURE",5;
+  - Combos:
+      - Combo:
+          - Pharaoh_Card_    # 4148
           - aegis_311439    # 311439
     Script: |
       bonus2 bSubEle,Ele_Dark,15;
@@ -32865,6 +33041,15 @@ Body:
       bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
   - Combos:
       - Combo:
+          - Fallen_Bishop_Card_      # 4441      å¢®ï¿½?ï¿½å¤§ï¿??ï¿????ï¿½ï¿½??
+          - Corruption_Boots        # 470129    å¢®ï¿½?ï¿½ï¿½????ï¿½ï¿½??ï¿?????
+    Script: |
+      bonus bSMatk,10;
+      bonus2 bMagicAddEle,Ele_All,10;
+      bonus2 bSkillAtk,"CD_FRAMEN",15;
+      bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-120000;
+  - Combos:
+      - Combo:
           - Emerald_Ring            # 28573     ç¿¡ï¿½????????
           - EC_Boots_TW             # 470098    ç¿¡ï¿½?????ï¿????ï¿½ï¿½?ï¿½ï¿½??
     Script: |
@@ -33358,6 +33543,15 @@ Body:
       bonus2 bMagicAddEle,ELE_ALL,25;
   - Combos:
       - Combo:
+          - Old_Moroc_Acc
+          - Pharaoh_Card_
+    Script: |
+      bonus bIntravision;
+      bonus bDelayrate,-5;
+      bonus2 bAddEle,ELE_ALL,25;
+      bonus2 bMagicAddEle,ELE_ALL,25;
+  - Combos:
+      - Combo:
           - Moroc_Slave_TW
           - Force3
     Script: |
@@ -33424,6 +33618,22 @@ Body:
       - Combo:
           - Yggdrasil_Faith
           - Fenrir_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus bFixedCast,-200;
+      bonus bSMatk,20;
+      bonus2 bSkillAtk,"WL_COMET",7*(.@r/2);
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
+      skill "WL_COMET",3;
+      bonus bUseSPrate,30;
+      }
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
+      bonus2 bSkillCooldown,"WL_COMET",-20000;
+      }
+  - Combos:
+      - Combo:
+          - Yggdrasil_Faith
+          - Fenrir_Card_
     Script: |
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bFixedCast,-200;
