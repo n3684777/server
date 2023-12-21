@@ -4085,6 +4085,7 @@ Body:
       - Item: Adulter_F_Mace
       - Item: Adulter_F_Hall
   - Item: Pontifex_Tenacity
+    RandomOptionGroup: EIN_DDBOX #ª«²z
     TargetItems:
       - Item: Vivatus_F_T_Sword
       - Item: Vivatus_F_Cakram
@@ -4126,6 +4127,7 @@ Body:
       - Item: Vivatus_F_C_Humma
       - Item: Vivatus_F_Humma
   - Item: Pontifex_Belief
+    RandomOptionGroup: EIN_DDBOX2
     TargetItems:
       - Item: Vivatus_F_T_Sword
       - Item: Vivatus_F_Cakram

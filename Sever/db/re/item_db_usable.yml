@@ -49909,7 +49909,7 @@ Body:
     Name: ªA¹¢¤jÂøÀí
     Type: Usable
     Buy: 10000
-    Weight: 200
+    Weight: 0
     Flags:
       BuyingStore: true
       Container: true
