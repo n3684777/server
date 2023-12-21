@@ -4003,6 +4003,7 @@ Body:
       - Item: Gray_W_Boots
       - Item: Gray_W_Shoes
   - Item: Pontifex_Courage
+    RandomOptionGroup: EIN_DDBOX # 物理虛假
     TargetItems:
       - Item: Adulter_F_T_Sword
       - Item: Adulter_F_Cakram
@@ -4044,6 +4045,7 @@ Body:
       - Item: Adulter_F_Mace
       - Item: Adulter_F_Hall
   - Item: Pontifex_Wisdom
+    RandomOptionGroup: EIN_DDBOX2 # 魔法信念
     TargetItems:
       - Item: Adulter_F_T_Sword
       - Item: Adulter_F_Cakram
@@ -4085,7 +4087,7 @@ Body:
       - Item: Adulter_F_Mace
       - Item: Adulter_F_Hall
   - Item: Pontifex_Tenacity
-    RandomOptionGroup: PONTI_PHYSICAL #物理
+    RandomOptionGroup: EIN_DDBOX # 物理信念
     TargetItems:
       - Item: Vivatus_F_T_Sword
       - Item: Vivatus_F_Cakram
@@ -4127,7 +4129,7 @@ Body:
       - Item: Vivatus_F_C_Humma
       - Item: Vivatus_F_Humma
   - Item: Pontifex_Belief
-    RandomOptionGroup: EIN_DDBOX2
+    RandomOptionGroup: EIN_DDBOX2 # 魔法信念
     TargetItems:
       - Item: Vivatus_F_T_Sword
       - Item: Vivatus_F_Cakram
