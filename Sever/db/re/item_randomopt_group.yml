@@ -14990,7 +14990,7 @@ Body:
         MaxValue: 10
         Chance: 5000
   - Id: 165
-    Group: EIN_DDBOX #PONTI_PHYSICAL # 物理信念
+    Group: PONTI_PHYSICAL #PONTI_PHYSICAL # 物理信念
     Slots:
       - Slot: 1
         Options:
