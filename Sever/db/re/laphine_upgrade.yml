@@ -4085,7 +4085,7 @@ Body:
       - Item: Adulter_F_Mace
       - Item: Adulter_F_Hall
   - Item: Pontifex_Tenacity
-    RandomOptionGroup: EIN_DDBOX #物理
+    RandomOptionGroup: PONTI_PHYSICAL #物理
     TargetItems:
       - Item: Vivatus_F_T_Sword
       - Item: Vivatus_F_Cakram

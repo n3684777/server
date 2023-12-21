@@ -14990,7 +14990,7 @@ Body:
         MaxValue: 10
         Chance: 5000
   - Id: 165
-    Group: N_DDBOXEI
+    Group: PONTI_PHYSICAL # ª«²z«H©À
     Slots:
       - Slot: 1
         Options:
