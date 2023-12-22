@@ -5,7 +5,7 @@ OnInit:
 	setnpcicon getnpcid(0),1012,"[製作]挑戰古城";
 	waitingroom "[製作]挑戰古城",0;
 	.@p = 0; //購買價格
-	.cash = 930000; //副本點數
+	.@cash = 930000; //副本點數
 	tradertype(NST_EXPANDED_BARTER);
 
 //材料
