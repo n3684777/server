@@ -9,19 +9,29 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 
 //材料
-	sellitem(25867,.@p,-1);	//超時空寶石原石
-	sellitemcurrency(.@cash,25);
+	sellitem(25865,.@p,-1);	//超時空寶石原石
+	sellitemcurrency(.@cash,50);
     endsellitem(); 
 	sellitem(25867,.@p,-1);	//超時空魔力碎片
 	sellitemcurrency(.@cash,25);
     endsellitem(); 
 	sellitem(25866,.@p,-1);	//超時空魔力
-	sellitemcurrency(.@cash,25);
+	sellitemcurrency(.@cash,50);
     endsellitem(); 
 	sellitem(25864,.@p,-1);	//封印超時空頭冠
 	sellitemcurrency(.@cash,25);
     endsellitem(); 
 
+//卡片
+	sellitem(27382,.@p,-1);	//無限墮落根莖卡
+	sellitemcurrency(.@cash,750);
+    endsellitem(); 
+	sellitem(27383,.@p,-1);	//闇達幻影卡
+	sellitemcurrency(.@cash,750);
+    endsellitem();
+	sellitem(27381,.@p,-1);	//希梅幻影卡
+	sellitemcurrency(.@cash,750);
+    endsellitem();
 //頭盔
 	sellitem(19474,0,-1, 25864, 5);
 	sellitem(19475,0,-1, 25864, 5);
