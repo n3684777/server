@@ -1,6 +1,6 @@
 guild_vs5	mapflag	skill_damage	all,BL_MOB,100
 
-uttycty,149,157,3	script	¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]	10295,{
+uttycty,149,161,3	script	¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]	10295,{
 	set .@md_name$,"¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]";
 	set .@Zeny, 8000000; //¬D¾Ôª÷ÃB
 	mes "=========¹DÀ]¬D¾Ô========";
