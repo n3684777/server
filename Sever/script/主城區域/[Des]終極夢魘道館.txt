@@ -195,14 +195,14 @@ OnMobstart:
 		areamonster strnpcinfo(4),31,35,65,70,"--ja--",'mobkid[rand(1,getarraysize('mobkid)-1)],1,instance_npcname(strnpcinfo(0))+"::OnMobDead";
 		'BossID = $@mobid[0];
 		getunitdata 'BossID,'amdaraisdata;
-		setunitdata 'BossID,3,300000000;
+		setunitdata 'BossID,3,250000000;
 		setunitdata 'BossID,25,470;
 		setunitdata 'BossID,27,65535;
 		setunitdata 'BossID,33,65535;
 		setunitdata 'BossID,34,65535;
 		setunitdata 'BossID,35,65535;
 		setunitdata 'BossID,36,65535;
-		setunitdata 'BossID,UMOB_DAMAGETAKEN,600;
+		setunitdata 'BossID,UMOB_DAMAGETAKEN,1000;
 		setunitdata 'BossID,8,70;
 		setunitdata 'BossID,39,5000;
 		if ( rand(100) > 70 ) {
