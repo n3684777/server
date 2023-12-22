@@ -9,11 +9,17 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 
 //材料
-	sellitem(25866,.@p,-1);	//超時空魔力
-	sellitemcurrency(.@cash,50);
+	sellitem(25867,.@p,-1);	//超時空寶石原石
+	sellitemcurrency(.@cash,25);
     endsellitem(); 
-	sellitem(25864,.@p,-1);	//超時空魔力
-	sellitemcurrency(.@cash,50);
+	sellitem(25867,.@p,-1);	//超時空魔力碎片
+	sellitemcurrency(.@cash,25);
+    endsellitem(); 
+	sellitem(25866,.@p,-1);	//超時空魔力
+	sellitemcurrency(.@cash,25);
+    endsellitem(); 
+	sellitem(25864,.@p,-1);	//封印超時空頭冠
+	sellitemcurrency(.@cash,25);
     endsellitem(); 
 
 //頭盔
