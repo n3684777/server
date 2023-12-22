@@ -1,6 +1,6 @@
 guild_vs5	mapflag	skill_damage	all,BL_MOB,100
 
-uttycty,149,161,3	script	¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]	10295,{
+uttycty,149,157,3	script	¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]	10295,{
 	set .@md_name$,"¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]";
 	set .@Zeny, 8000000; //¬D¾Ôª÷ÃB
 	mes "=========¹DÀ]¬D¾Ô========";
@@ -195,6 +195,7 @@ OnMobstart:
 		areamonster strnpcinfo(4),31,35,65,70,"--ja--",'mobkid[rand(1,getarraysize('mobkid)-1)],1,instance_npcname(strnpcinfo(0))+"::OnMobDead";
 		'BossID = $@mobid[0];
 		getunitdata 'BossID,'amdaraisdata;
+		setunitdata 'BossID,3,300000000;
 		setunitdata 'BossID,25,470;
 		setunitdata 'BossID,27,65535;
 		setunitdata 'BossID,33,65535;
