@@ -1,4 +1,6 @@
-uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
+guild_vs5	mapflag	skill_damage	all,BL_MOB,100
+
+uttycty,149,157,3	script	道館挑戰[終極夢魘]	10295,{
 	set .@md_name$,"道館挑戰[終極夢魘]";
 	set .@Zeny, 8000000; //挑戰金額
 	mes "=========道館挑戰========";
@@ -17,58 +19,111 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	next;
 	switch(select("申請道館挑戰[終極夢魘]:查看獎勵")){
 	case 1:
+		deletearray $@partymembercid;
+		deletearray $@partymembercount;
+		getpartymember(getcharid(1),1);
+			if ($@partymembercount==1) {
 				if( zeny< .@Zeny){
-			mes "=========道館挑戰========";
-			mes "- ^C63131Zeny不足^000000";
-			mes "=========================";
-			close;
+					mes "=========道館挑戰========";
+					mes "- ^C63131Zeny不足^000000";
+					mes "=========================";
+					close;
+				}
+				if (instance_check_party(getcharid(1),1,150,260)) {
+					if (getpartyleader(getcharid(1),2) == getcharid(0)) {
+						if (instance_create("道館挑戰[終極夢魘]") < 0) {	
+							mes "=========道館挑戰========";
+							mes "- ^C63131挑戰中無法進入!^000000";
+							mes "=========================";	
+							close;
+						}
+						set Zeny,Zeny-.@Zeny;
+						instance_enter(.@md_name$);
+						warpparty "Leader",50,50,getcharid(1);
+						announce "隊伍 "+getpartyname(getcharid(1))+" 進入 "+.@md_name$+"。",0;
+						close;
+					}
+					mes "=========道館挑戰========";
+					mes "- ^C63131請隊長與我談話^000000";
+					mes "=========================";
+					close;
+				}else{
+					mes "=========道館挑戰========";
+					mes "- ^C63131很抱歉，隊伍中有成員等級不足。^000000";
+					mes "- ^C63131最低挑戰等級為 150^000000";
+					mes "=========================";
+					close;
+				}
+			}else{
+				for(.@i = 0; .@i < getarraysize($@partymembercid); .@i++){
+					for(.@j = .@i+1; .@j < getarraysize($@partymembercid); .@j++){
+						if ( getcharip($@partymembercid[.@i]) != getcharip($@partymembercid[.@j]) ) {
+							if( zeny< .@Zeny){
+								mes "=========道館挑戰========";
+								mes "- ^C63131Zeny不足^000000";
+								mes "=========================";
+								close;
+							}
+							if (instance_check_party(getcharid(1),1,150,260)) {
+								if (getpartyleader(getcharid(1),2) == getcharid(0)) {
+									if (instance_create("道館挑戰[終極夢魘]") < 0)  {	
+										mes "=========道館挑戰========";
+										mes "- ^C63131挑戰中無法進入!^000000";
+										mes "=========================";	
+										close;
+									}
+									set Zeny,Zeny-.@Zeny;
+									instance_enter(.@md_name$);
+									warpparty "Leader",50,50,getcharid(1);
+									announce "隊伍 "+getpartyname(getcharid(1))+" 進入 "+.@md_name$+"。",0;
+									close;
+								}
+								mes "=========道館挑戰========";
+								mes "- ^C63131請隊長與我談話^000000";
+								mes "=========================";
+								close;
+							}else{
+								mes "=========道館挑戰========";
+								mes "- ^C63131很抱歉，隊伍中有成員等級不足。^000000";
+								mes "- ^C63131最低挑戰等級為 150^000000";
+								mes "=========================";
+								close;
+							}
+						}
+						mes "==========道館挑戰==========";
+						mes "- ^C63131終極夢魘道館禁止雙開以上^000000 -";
+						mes "============================";
+						close;
+					}
+				}
 			}
-	if (instance_check_party(getcharid(1),1,150,260)) {
-		if (getpartyleader(getcharid(1),2) == getcharid(0)) {
-		if (instance_create("道館挑戰[終極夢魘]") < 0)  {	
-			mes "=========道館挑戰========";
-			mes "- ^C63131挑戰中無法進入!^000000";
-			mes "=========================";	
-			close;}
-			set Zeny,Zeny-.@Zeny;
-			instance_enter(.@md_name$);
-			warpparty "Leader",50,50,getcharid(1);
-			announce "隊伍 "+getpartyname(getcharid(1))+" 進入 "+.@md_name$+"。",0;
-			close;
-			}
-			mes "=========道館挑戰========";
-			mes "- ^C63131請隊長與我談話^000000";
-			mes "=========================";
-			close;
-		}else{
-			mes "=========道館挑戰========";
-			mes "- ^C63131很抱歉，隊伍中有成員等級不足。^000000";
-			mes "- ^C63131最低挑戰等級為 150^000000";
-			mes "=========================";
-			close;
-		}
-		case 2: 
-		mes "----------------------------";	
-		mes ">> 隨機獲得以下物品";
-		mes "----------------------------";
-		mes "<ITEM>武器精煉能力+14券<INFO>6871</INFO></ITEM>";
-		mes "<ITEM>武器精煉能力+13券<INFO>6870</INFO></ITEM>";
-		mes "<ITEM>防具精煉能力+14券<INFO>6877</INFO></ITEM>";
-		mes "<ITEM>防具精煉能力+13券<INFO>6876</INFO></ITEM>";
-		mes "<ITEM>武器精煉能力+12券<INFO>6584</INFO></ITEM>";
-		mes "<ITEM>防具精煉能力+12券<INFO>6585</INFO></ITEM>";
-		mes "<ITEM>黃金卡冊<INFO>22654</INFO></ITEM>";
-		mes "<ITEM>封印的王卡卡冊<INFO>22829</INFO></ITEM>";
-		mes "<ITEM>鐵匠的祝福<INFO>6635</INFO></ITEM>";
-		mes "<ITEM>高密度鈽鐳礦石x6<INFO>6226</INFO></ITEM>";
-		mes "<ITEM>高密度鈣礦石x6<INFO>6225</INFO></ITEM>";
-		mes "<ITEM>高濃縮神之金屬x6<INFO>6240</INFO></ITEM>";
-		mes "<ITEM>高濃縮鋁x6<INFO>6241</INFO></ITEM>";
-		mes "<ITEM>BOSS雷達x5<INFO>12214</INFO></ITEM>";
-		mes "<ITEM>青澀的天地樹芽x30<INFO>12405</INFO></ITEM>";
-		mes "----------------------------";
-		close;
-	}		
+	break;
+	case 2: 
+	mes "----------------------------";	
+	mes ">> 隨機獲得以下物品";
+	mes "----------------------------";
+	mes "<ITEM>武器精煉能力+14券<INFO>6871</INFO></ITEM>";
+	mes "<ITEM>武器精煉能力+13券<INFO>6870</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+14券<INFO>6877</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+13券<INFO>6876</INFO></ITEM>";
+	mes "<ITEM>武器精煉能力+12券<INFO>6584</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+12券<INFO>6585</INFO></ITEM>";
+	mes "<ITEM>黃金卡冊<INFO>22654</INFO></ITEM>";
+	mes "<ITEM>封印的王卡卡冊<INFO>22829</INFO></ITEM>";
+	mes "<ITEM>鐵匠的祝福<INFO>6635</INFO></ITEM>";
+	mes "<ITEM>高密度鈽鐳礦石x6<INFO>6226</INFO></ITEM>";
+	mes "<ITEM>高密度鈣礦石x6<INFO>6225</INFO></ITEM>";
+	mes "<ITEM>高濃縮神之金屬x6<INFO>6240</INFO></ITEM>";
+	mes "<ITEM>高濃縮鋁x6<INFO>6241</INFO></ITEM>";
+	mes "<ITEM>BOSS雷達x5<INFO>12214</INFO></ITEM>";
+	mes "<ITEM>青澀的天地樹芽x30<INFO>12405</INFO></ITEM>";
+	mes "----------------------------";
+	close;
+					
+							
+	}
+	close;
+
 OnInit:
 OnTimer1000:
 	showscript " [★終極夢魘道館] ";
@@ -78,9 +133,12 @@ OnTimer1000:
 }
 guild_vs5,50,49,5	script	道館裁判#rank5	470,{
 	//====================================================================================
-			setarray 'mobkid[1],3220,3221,3222,3223,3224,3225,3240,3241,3242,3243,3244,3245,3246,1917;
-			setarray 'mobknum[1],3,3,3,3,3,4,4,4,4,5;	//每關幾隻(關卡回合數)
-			setarray 'round[1],5,9;	//幾關可以休息
+			setarray 'mobkid[1],31001,31002,31003,31004,31005,31006,31007,31008,31009,31010,31011,31012,31013,31014,31015,
+								31016,31017,31018,31019,31020,31021,31022,31023,31024,31025,31026,31027,31028,31029,31030,
+								31031,31032,31033,31034,31035,31036,31037,31038,31039,31040;
+			setarray 'mobknum[1],1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+								2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5;//每關幾隻(關卡回合數)
+			setarray 'round[1],50,85;	//幾關可以休息
 	//====================================================================================				
 	if (getcharid(0) != getpartyleader(getcharid(1),2)) {
 		mes "[道館裁判]";
@@ -121,20 +179,37 @@ OnInstanceInit:
 			setquest 55157;
 			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
 			dispbottom "獲得MVP點數 [40]，目前累積MVP點數為 ["+#Mvp_Point+"]。";
-			warp "uttycty",100,86;
+			warp "SavePoint",0,0;
 			end;	
 		}
 	getitem 61005,3;
 	set #Mvp_Point,#Mvp_Point+20;
 	dispbottom "獲得MVP點數 [20]，目前累積MVP點數為 ["+#Mvp_Point+"]。";
-	warp "prontera",160,120;
+	warp "SavePoint",0,0;
 	end;	
 }
 guild_vs5,0,0,0	script	#rankno5	-1,{
 OnMobstart:
 	'Checkpoint++;
 	for(.@n=1;.@n<='mobknum['Checkpoint];.@n++) {
-		areamonster strnpcinfo(4),45,45,55,55,"--ja--",'mobkid[rand(1,getarraysize('mobkid)-1)],1,instance_npcname(strnpcinfo(0))+"::OnMobDead";
+		areamonster strnpcinfo(4),31,35,65,70,"--ja--",'mobkid[rand(1,getarraysize('mobkid)-1)],1,instance_npcname(strnpcinfo(0))+"::OnMobDead";
+		'BossID = $@mobid[0];
+		getunitdata 'BossID,'amdaraisdata;
+		setunitdata 'BossID,25,470;
+		setunitdata 'BossID,27,65535;
+		setunitdata 'BossID,33,65535;
+		setunitdata 'BossID,34,65535;
+		setunitdata 'BossID,35,65535;
+		setunitdata 'BossID,36,65535;
+		setunitdata 'BossID,UMOB_DAMAGETAKEN,600;
+		setunitdata 'BossID,8,70;
+		setunitdata 'BossID,39,5000;
+		if ( rand(100) > 70 ) {
+			addrid(4,0,31,35,65,70);
+				if(Hp>2) {
+					if(!getstatus(SC_DEADLY_DEFEASANCE))
+						sc_start SC_DEADLY_DEFEASANCE,180000,10;}
+		}
 	}
 	end;
 OnMobDead:
@@ -159,7 +234,7 @@ OnMobDead:
 			enablenpc  instance_npcname("道館裁判#rank5"); end;
 		}
 	}
-	addtimer 5000,instance_npcname(strnpcinfo(0))+"::OnMobstart";
+	addtimer 2000,instance_npcname(strnpcinfo(0))+"::OnMobstart";
 	end;
 }
 
@@ -170,3 +245,13 @@ guild_vs5	mapflag	nopenalty
 guild_vs5	mapflag	nomemo
 guild_vs5	mapflag	noloot
 guild_vs5	mapflag	noexp
+
+uttycty,100,41,3	script	#卡娜	10536,{
+	if (rand(1,100) > 50 ) {
+		npctalk "P助：太神啦~~~";
+		}else{
+		npctalk "粉紅兔兔：太神啦~~~";
+		}
+	end;		
+}	
+
