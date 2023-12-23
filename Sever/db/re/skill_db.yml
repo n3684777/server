@@ -10539,7 +10539,7 @@ Body:
     CastTime: 250
     AfterCastActDelay: 1000
     Cooldown: 0
-    FixedCastTime: 250
+    FixedCastTime: 0
     Requires:
       SpCost: 20
   - Id: 380
