@@ -10536,10 +10536,10 @@ Body:
     HitCount: 1
     Element: Weapon
     CastCancel: true
-    CastTime: 250
+    CastTime: 0
     AfterCastActDelay: 1000
     Cooldown: 0
-    FixedCastTime: 0
+    FixedCastTime: 250
     Requires:
       SpCost: 20
   - Id: 380
