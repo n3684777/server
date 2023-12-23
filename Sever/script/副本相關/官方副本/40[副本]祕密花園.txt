@@ -472,6 +472,7 @@ OnInstanceInit:
 get42:
 	end;
 get422:
+	getitem 940040,1;
 	getitem 6909,1;
 	getitem 930000,5;
 	Instance_PassAnnounce;	

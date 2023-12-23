@@ -580,6 +580,7 @@ OnPAPILIADead:
 get42:
 	end;
 get422:
+	getitem 940038,1;
 	Instance_PassAnnounce;	
 	warp "SavePoint",0,0;
 	end;

@@ -731,6 +731,7 @@ OnTouch:
 	if(select("是的!:不，在稍後") == 1)
 	if(checkquest(9222) == 2) {
 	getitem 6499,3
+	getitem 940010,1;
 	;getitem 6909,1;
 	getitem 930000,5;}
 	erasequest 9222;

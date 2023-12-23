@@ -1107,6 +1107,7 @@ get42:
 get422:
 	Instance_PassAnnounce;
 	getitem 930000,5;
+	getitem 940046,1;
 	getitem 6752,5;
 	getitem 6909,15;
 	warp "SavePoint",0,0;

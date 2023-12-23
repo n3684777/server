@@ -1535,8 +1535,10 @@ OnInstanceInit:
 get42:
 	end;
 get422:
+
 if('mode==0){
 	Instance_PassAnnounce;
+	getitem 940045,1;
 	getitem 930000,5;
 	getitem 6909,5;
 	getitem 1000405,150;
@@ -1544,6 +1546,7 @@ if('mode==0){
 	end;
 	}else{
 	Instance_PassAnnounce;
+	getitem 940045,1;
 	getitem 930000,5;
 	getitem 6909,15;
 	getitem 1000405,350;

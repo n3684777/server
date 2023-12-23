@@ -262,6 +262,7 @@ OnInstanceInit:
 	mes "[瑪麗亞久]";
 	mes "你想離開了嗎?";
 	if(select("再待一會...:離開")==1){close;}
+	getitem 940053,1;
 	warp "Save",0,0;
 	end;
 

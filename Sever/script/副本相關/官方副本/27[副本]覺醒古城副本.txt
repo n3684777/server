@@ -2080,6 +2080,7 @@ get42:
 	end;
 get422:
 	Instance_PassAnnounce;	
+	getitem 940027,1;
 	getitem 6755,5;
 	getitem 6607,5;
 	getitem 6909,5;

@@ -4496,6 +4496,7 @@ get42:
 get422:
 	Instance_PassAnnounce;
 	getexp 5000000,2500000; //62222586
+	getitem 940049,1;
 	getitem 6719, 3;
 	getitem 6909,1;
 	getitem 930000,5;
