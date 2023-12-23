@@ -68647,6 +68647,546 @@ Body:
       NoDrop: true
       NoSell: true
       NoTrade: true
+  - Id: 940000
+    AegisName: item_940000
+    Name: 祝福儀式的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940001
+    AegisName: item_940001
+    Name: 儀式之屋的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940002
+    AegisName: item_940002
+    Name: 封印神殿的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940003
+    AegisName: item_940003
+    Name: 獸人記憶的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940004
+    AegisName: item_940004
+    Name: 無限之塔的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940005
+    AegisName: item_940005
+    Name: 無限空間的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940006
+    AegisName: item_940006
+    Name: 尼德霍格的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940007
+    AegisName: item_940007
+    Name: 綿綿島魚刺的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940008
+    AegisName: item_940008
+    Name: 章魚洞穴的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940009
+    AegisName: item_940009
+    Name: 迷霧森林的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940010
+    AegisName: item_940010
+    Name: 惡夢醫院的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940011
+    AegisName: item_940011
+    Name: 寶箱巨鱷的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940012
+    AegisName: item_940012
+    Name: 巴庫暴龍的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940013
+    AegisName: item_940013
+    Name: 保羅協夫實驗室的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940014
+    AegisName: item_940014
+    Name: 普通古城的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940015
+    AegisName: item_940015
+    Name: 幽靈皇宮的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940016
+    AegisName: item_940016
+    Name: 吉芬魔法大賽的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940017
+    AegisName: item_940017
+    Name: 魔神之塔的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940018
+    AegisName: item_940018
+    Name: 沙拉記憶的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940019
+    AegisName: item_940019
+    Name: 驚駭森靈巢穴的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940020
+    AegisName: item_940020
+    Name: 魔神殿的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940021
+    AegisName: item_940021
+    Name: 恐怖玩具工廠的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940022
+    AegisName: item_940022
+    Name: 摩洛斯洞穴的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940023
+    AegisName: item_940023
+    Name: 拜歐斯島的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940024
+    AegisName: item_940024
+    Name: 飛空艇襲擊的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940025
+    AegisName: item_940025
+    Name: 潘利爾與莎拉的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940026
+    AegisName: item_940026
+    Name: 查理斯頓工廠的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940027
+    AegisName: item_940027
+    Name: 覺醒古城的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940028
+    AegisName: item_940028
+    Name: 中央實驗室的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940029
+    AegisName: item_940029
+    Name: 最後房間的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940030
+    AegisName: item_940030
+    Name: 空中要塞的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940031
+    AegisName: item_940031
+    Name: 中樞室的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940032
+    AegisName: item_940032
+    Name: 邪心獵人基地的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940033
+    AegisName: item_940033
+    Name: 柯爾記憶迷宮的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940034
+    AegisName: item_940034
+    Name: 搜查歐斯的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940035
+    AegisName: item_940035
+    Name: 施密特國王的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940036
+    AegisName: item_940036
+    Name: 遠征之途的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940037
+    AegisName: item_940037
+    Name: 被時間遺忘飼養場的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940038
+    AegisName: item_940038
+    Name: 水上花園的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940040
+    AegisName: item_940040
+    Name: 祕密花園的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940041
+    AegisName: item_940041
+    Name: 死亡之塔的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940042
+    AegisName: item_940042
+    Name: 夜間吉芬魔法大賽的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940043
+    AegisName: item_940043
+    Name: 墜落飛空艇的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940044
+    AegisName: item_940044
+    Name: 懺悔之墓的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940045
+    AegisName: item_940045
+    Name: 欺詐別墅的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940046
+    AegisName: item_940046
+    Name: 聖域淨化的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940047
+    AegisName: item_940047
+    Name: 挑戰古城的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940048
+    AegisName: item_940048
+    Name: 星座之塔的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940049
+    AegisName: item_940049
+    Name: 噩夢吉特巴的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940050
+    AegisName: item_940050
+    Name: 破壞飛空艇行動的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940051
+    AegisName: item_940051
+    Name: 亂蛇巢穴的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940052
+    AegisName: item_940052
+    Name: 朱希婭模擬作戰的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940053
+    AegisName: item_940053
+    Name: 週五的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
+  - Id: 940054
+    AegisName: item_940054
+    Name: 正午弦月的證明
+    Type: Etc
+    Buy: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoMail: true
+      NoGuildStorage: true
   - Id: 950012
     AegisName: Guarantee_Weapon_20Up
     Name: 武器精煉能力+20券

@@ -195,7 +195,7 @@ OnMobstart:
 		areamonster strnpcinfo(4),31,35,65,70,"--ja--",'mobkid[rand(1,getarraysize('mobkid)-1)],1,instance_npcname(strnpcinfo(0))+"::OnMobDead";
 		'BossID = $@mobid[0];
 		getunitdata 'BossID,'amdaraisdata;
-		setunitdata 'BossID,3,25000000;
+		setunitdata 'BossID,3,250000000;
 		setunitdata 'BossID,25,470;
 		setunitdata 'BossID,27,65535;
 		setunitdata 'BossID,33,65535;
