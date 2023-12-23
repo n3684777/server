@@ -1780,7 +1780,7 @@ Body:
     Name: ¬rÃÄ²~
     Type: Usable
     Buy: 5000
-    Weight: 100
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |
