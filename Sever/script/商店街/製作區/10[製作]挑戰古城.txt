@@ -24,13 +24,13 @@ OnInit:
 
 //卡片
 	sellitem(27382,.@p,-1);	//無限墮落根莖卡
-	sellitemcurrency(.@cash,500);
+	sellitemcurrency(.@cash,200);
     endsellitem(); 
 	sellitem(27383,.@p,-1);	//闇達幻影卡
-	sellitemcurrency(.@cash,500);
+	sellitemcurrency(.@cash,200);
     endsellitem();
 	sellitem(27381,.@p,-1);	//希梅幻影卡
-	sellitemcurrency(.@cash,999);
+	sellitemcurrency(.@cash,400);
     endsellitem();
 //頭盔
 	sellitem(19474,0,-1, 25864, 5);

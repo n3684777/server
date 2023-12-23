@@ -6,6 +6,47 @@ OnInit:
 	waitingroom "[製作]幻象裝備",0;
 	
 	tradertype(NST_EXPANDED_BARTER);
+
+	.@cash1 = 940032; //邪心基地
+	.@cash2 = 940033; //柯爾記憶
+	.@cash3 = 940034; // 二次搜查
+	.@cash4 = ; 940031// 中樞室
+	.@p = 0; // 價格
+
+//材料
+	sellitem(25669,.@p,-1);	//神秘零件
+	sellitemcurrency(.@cash1,1);
+    endsellitem(); 
+	sellitem(25669,.@p,-1);	//神秘零件
+	sellitemcurrency(.@cash2,1);
+    endsellitem();
+	sellitem(25669,.@p,-1);	//神秘零件
+	sellitemcurrency(.@cash3,1);
+    endsellitem(); 
+
+	sellitem(25723,.@p,-1);	//核心元件
+	sellitemcurrency(.@cash1,5);
+    endsellitem(); 
+	sellitem(25669,.@p,-1);	//核心元件
+	sellitemcurrency(.@cash2,5);
+    endsellitem(); 
+	sellitem(25669,.@p,-1);	//核心元件
+	sellitemcurrency(.@cash3,5);
+    endsellitem(); 
+
+//卡片
+	sellitem(27151,.@p,-1);	//邪心eve卡
+	sellitemcurrency(.@cash1,200);
+	endsellitem();
+	sellitem(27320,.@p,-1);	//E-EA1L卡片
+	sellitemcurrency(.@cash2,200);
+	endsellitem();
+	sellitem(27318,.@p,-1);	//米古爾卡片
+	sellitemcurrency(.@cash3,200);
+	endsellitem();
+	sellitem(27152,.@p,-1);	//小可愛卡片
+	sellitemcurrency(.@cash4,200);
+	endsellitem();
 	
 	sellitem(23773, 10000, -1);
 	sellitemcurrency(25723,5);
