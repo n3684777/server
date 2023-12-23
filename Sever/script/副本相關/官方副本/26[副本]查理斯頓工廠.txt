@@ -1939,7 +1939,7 @@ OnEnable:
 			getitem 930000,5;
 			getitem 6752,3;
 			getitem 6909,1;
-	getitem 940026,1;
+	getitem 940026,10;
 			warp "Save",0,0;
 			if(!getmapusers(strnpcinfo(4)))
 				instance_destroy instance_id();

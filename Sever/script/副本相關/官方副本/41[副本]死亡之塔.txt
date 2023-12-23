@@ -1525,7 +1525,7 @@ get42:
 	end;
 get422:
 	Instance_PassAnnounce;
-	getitem 940041,1;
+	getitem 940041,10;
 	getitem 930000,5;
 	getitem 1000257,10;	
 	getitem 6909,5;

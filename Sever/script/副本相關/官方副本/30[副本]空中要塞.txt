@@ -178,7 +178,7 @@ OnMobDead:
 	'Rewards++;
 	if ( 'Rewards >= 'partymembercount )
 		disablenpc instance_npcname(strnpcinfo(0));
-	getitem 940030,1;
+	getitem 940030,10;
 	warp "SavePoint",0,0;
 	end;
 OnEnable:

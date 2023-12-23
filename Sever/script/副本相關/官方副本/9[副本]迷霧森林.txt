@@ -1049,7 +1049,7 @@ mora,48,152,3	script	有著銳利眼神的人	512,{
 		getitem 6909,1;
 		getitem 2568,1; //Muffler_Of_Roki
 		getitem 2858,1; //Pendant_Of_Guardian
-	getitem 940009,1;
+	getitem 940009,10;
 		getexp 400000,400000;
 		close;
 	} else {

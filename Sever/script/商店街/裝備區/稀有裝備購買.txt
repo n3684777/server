@@ -111,6 +111,9 @@ OnInit:
 	sellitem(470247,.@p,-1);	//米德騎士戰靴
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(470122,.@p,-1);	//野獸皮靴
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 OnBuyItem:
 end;
 }
@@ -493,6 +496,12 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(480270,.@p,-1);	//夜勝魔意念斗篷
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(450217,.@p,-1);	//皮里恩飛行
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(480174,.@p,-1);	//海盜之王外套
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(2541,.@p,-1);	//阿斯富力咖

@@ -6,6 +6,39 @@ OnInit:
 	waitingroom "[製作]自動裝備",0;
 	tradertype(NST_EXPANDED_BARTER);
 
+	.@cash1 = 940039; // 斯威蒂
+	.@cash2 = 940038; //水上花園
+	.@cash3 = 940040; //祕密花園
+	.@cash4 = 940037; //飼養場
+
+//材料
+	sellitem(1000103,.@p,-1);	//餐券
+	sellitemcurrency(.@cash1,5);
+    endsellitem(); 
+	sellitem(1000103,.@p,-1);	//餐券
+	sellitemcurrency(.@cash2,5);
+    endsellitem();
+	sellitem(25867,.@p,-1);	//超時空魔力碎片
+	sellitemcurrency(.@cash,1);
+    endsellitem(); 
+	sellitem(25866,.@p,-1);	//超時空魔力
+	sellitemcurrency(.@cash,10);
+    endsellitem(); 
+	sellitem(25864,.@p,-1);	//封印超時空頭冠
+	sellitemcurrency(.@cash,5);
+    endsellitem(); 
+
+//卡片
+	sellitem(27382,.@p,-1);	//無限墮落根莖卡
+	sellitemcurrency(.@cash,500);
+    endsellitem(); 
+	sellitem(27383,.@p,-1);	//闇達幻影卡
+	sellitemcurrency(.@cash,500);
+    endsellitem();
+	sellitem(27381,.@p,-1);	//希梅幻影卡
+	sellitemcurrency(.@cash,999);
+    endsellitem();
+
 	//
 	sellitem(450127, 1000000, -1, 15376, 1, 9);	
 	sellitemcurrency(1000103, 250);	
