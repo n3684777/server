@@ -39,10 +39,10 @@ OnInit:
 	sellitem(300078,.@p,-1);	//´µ«Â¸¦¥d
 	sellitemcurrency(.@cash3,200);
     endsellitem(); 
-	sellitem(27383,.@p,-1);	//¬õ´Ô¥d
+	sellitem(300079,.@p,-1);	//¬õ´Ô¥d
 	sellitemcurrency(.@cash4,200);
     endsellitem();
-	sellitem(27381,.@p,-1);	//¹ÚÆL¬õ´Ô¥d
+	sellitem(300080,.@p,-1);	//¹ÚÆL¬õ´Ô¥d
 	sellitemcurrency(.@cash4,400);
     endsellitem();
 
