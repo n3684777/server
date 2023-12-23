@@ -65183,6 +65183,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Crusader) {
          bonus2 bAddRace,RC_All,10;
+         bonus2 bMagicAddRace,RC_All,30;
       }
       if (BaseLevel>174)
          bonus bAllStats,10;
