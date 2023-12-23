@@ -10537,7 +10537,7 @@ Body:
     Element: Weapon
     CastCancel: true
     CastTime: 0
-    AfterCastActDelay: 1000
+    AfterCastActDelay: 0 #1000
     Cooldown: 0
     FixedCastTime: 250
     Requires:
