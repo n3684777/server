@@ -27,10 +27,10 @@ OnInit:
 	sellitem(25723,.@p,-1);	//核心元件
 	sellitemcurrency(.@cash1,5);
     endsellitem(); 
-	sellitem(25669,.@p,-1);	//核心元件
+	sellitem(25723,.@p,-1);	//核心元件
 	sellitemcurrency(.@cash2,5);
     endsellitem(); 
-	sellitem(25669,.@p,-1);	//核心元件
+	sellitem(25723,.@p,-1);	//核心元件
 	sellitemcurrency(.@cash3,5);
     endsellitem(); 
 
