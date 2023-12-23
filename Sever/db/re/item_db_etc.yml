@@ -66897,6 +66897,7 @@ Body:
       bonus2 bSkillAtk,"RK_IGNITIONBREAK",100;
       bonus2 bSkillAtk,"AB_ADORAMUS",100;
       bonus2 bSkillAtk,"GC_CROSSIMPACT",100;
+      bonus2 bSkillAtk,"ASC_BREAKER",100;
       bonus2 bSkillAtk,"GN_CART_TORNADO",100;
       bonus2 bSkillAtk,"SN_SHARPSHOOTING",100;
       bonus2 bSkillAtk,"SR_TIGERCANNON",100;
@@ -68709,7 +68710,7 @@ Body:
       NoGuildStorage: true
   - Id: 940006
     AegisName: item_940006
-    Name: 尼德霍格的證明
+    Name: 尼德霍格巢穴的證明
     Type: Etc
     Buy: 0
     Trade:
