@@ -506,7 +506,8 @@ Body:
       Y: 50
   - Id: 999
     Name: ¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]
+    TimeLimit: 7200
     Enter:
       Map: guild_vs5
       X: 50
-      Y: 50  
+      Y: 50
