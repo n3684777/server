@@ -43284,7 +43284,7 @@ Body:
       bonus bShortAtkRate,6;
   - Id: 300227
     AegisName: EP18_Schulang_Card
-    Name: 斯格男爵卡片
+    Name: 舒朗卡片
     Type: Card
     Weight: 10
     Locations:
