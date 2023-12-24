@@ -34,6 +34,67 @@ Header:
   Version: 1
 
 Body:
+  - Start: 20231225
+    End: 20240113
+    Rewards:
+      - Day: 1
+        ItemId: 6909
+        Amount: 5
+      - Day: 2
+        ItemId: 6909
+        Amount: 5
+      - Day: 3
+        ItemId: 6909
+        Amount: 5
+      - Day: 4
+        ItemId: 6909
+        Amount: 5
+      - Day: 5
+        ItemId: 400204
+      - Day: 6
+        ItemId: 6909
+        Amount: 5
+      - Day: 7
+        ItemId: 6909
+        Amount: 5
+      - Day: 8
+        ItemId: 6909
+        Amount: 5
+      - Day: 9
+        ItemId: 6909
+        Amount: 5
+      - Day: 10
+        ItemId: 950000
+        Amount: 5
+      - Day: 11
+        ItemId: 6909
+        Amount: 5
+      - Day: 12
+        ItemId: 6909
+        Amount: 5
+      - Day: 13
+        ItemId: 6909
+        Amount: 5
+      - Day: 14
+        ItemId: 6909
+        Amount: 5
+      - Day: 15
+        ItemId: 20614
+      - Day: 16
+        ItemId: 6909
+        Amount: 5
+      - Day: 17
+        ItemId: 6909
+        Amount: 5
+      - Day: 18
+        ItemId: 6909
+        Amount: 5
+      - Day: 19
+        ItemId: 6909
+        Amount: 5
+      - Day: 20
+        ItemId: 950000
+        Amount: 10
 #  - Start: 20180502
 #    End: 20180529
 #    Rewards:

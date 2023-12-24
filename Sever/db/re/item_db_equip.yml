@@ -94872,6 +94872,10 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 102
+    Script: |
+      hateffect HAT_EF_C_Kyel_hyre_Ulti_TW,true;
+    UnEquipScript: |
+      hateffect HAT_EF_C_Kyel_hyre_Ulti_TW,false;
   - Id: 20615
     AegisName: C_School_Bag_BU
     Name: (服飾)學生書包
