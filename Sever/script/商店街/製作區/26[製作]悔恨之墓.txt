@@ -135,7 +135,11 @@ OnInit:
 	sellitemcurrency(1000367, 700);
 	endsellitem();
 	
-	sellitem(540061, 100000000, -1);
+	sellitem(550060, 100000000, -1);
+	sellitemcurrency(1000367, 700);
+	endsellitem();
+	
+	sellitem(550061, 100000000, -1);
 	sellitemcurrency(1000367, 700);
 	endsellitem();
 	
