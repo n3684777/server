@@ -5915,7 +5915,7 @@ Body:
     Name: ¥¨¤jªº»aÃÇ¯Í»H
     Type: DelayConsume
     Buy: 2
-    Weight: 10
+    Weight: 0
     Trade:
       NoDrop: true
     Script: |
