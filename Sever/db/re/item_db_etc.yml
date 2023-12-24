@@ -32188,7 +32188,7 @@ Body:
     AegisName: Shadowdecon_Ore
     Name: 影子神秘原石
     Type: Etc
-    Weight: 10
+    Weight: 0
     Flags:
       DropEffect: CLIENT
   - Id: 25729
@@ -32202,7 +32202,7 @@ Body:
     AegisName: Zelunium_Ore
     Name: 鍺金原石
     Type: Etc
-    Weight: 10
+    Weight: 0
     Flags:
       DropEffect: CLIENT
   - Id: 25731
@@ -66580,7 +66580,8 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bCritAtkRate,400;
+      bonus bCritAtkRate,100;
+      bonus2 bAddClass,Class_All,5;
   - Id: 900089
     AegisName: Randgris_Card_
     Name: 巴基力 蘭特克力斯卡片-改
