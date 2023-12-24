@@ -49999,4 +49999,10 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
-
+  - Id: 950016
+    AegisName: Shadow_9_Refine_Hammer_7
+    Name: 忽克連高級影子精煉鎚7
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();

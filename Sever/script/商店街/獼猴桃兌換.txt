@@ -64,7 +64,9 @@ OnInit:
     sellitem(7227, 250000, -1);	
 	sellitemcurrency(6417,2);
     endsellitem();
-
+    sellitem(950016, 0, -1);	    // lv7¼v¤lºl
+	sellitemcurrency(6909,15); 
+    endsellitem();
     sellitem(6872, 0, -1);	    // 15ªZ±²
 	sellitemcurrency(6909,150); 
     endsellitem();
