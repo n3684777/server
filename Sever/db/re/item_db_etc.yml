@@ -11318,7 +11318,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Earth,(getrefine()>=9)?10:5;
   - Id: 4601
     AegisName: Amdarais_Card
-    Name: 闇答萊屍卡片
+    Name: 顏良卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -11336,7 +11336,7 @@ Body:
       heal -6666,-666;
   - Id: 4602
     AegisName: AmdaraisH_Card
-    Name: 覺醒闇答萊屍卡片
+    Name: 覺醒顏良卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -11625,7 +11625,7 @@ Body:
       }
   - Id: 4635
     AegisName: P_Amdarais_Card
-    Name: 強化闇答萊屍卡片
+    Name: 強化顏良卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -32838,7 +32838,7 @@ Body:
       bonus5 bAutoSpell,"NPC_CRITICALWOUND",1,10,BF_MAGIC,1;
   - Id: 27008
     AegisName: AmdaraisH_Card_J
-    Name: (JRO)覺醒闇答萊屍卡片
+    Name: (JRO)覺醒顏良卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -36804,7 +36804,7 @@ Body:
       bonus bBaseAtk,30;
   - Id: 27383
     AegisName: C_Amdarais_Card
-    Name: 闇答萊屍幻影卡片
+    Name: 顏良幻影卡片
     Type: Card
     Weight: 10
     Locations:
@@ -66629,7 +66629,7 @@ Body:
       bonus5 bAutoSpell,"NPC_WIDEWEB",1,200,BF_SHORT,0;
   - Id: 900092
     AegisName: AmdaraisH_Card_
-    Name: 覺醒闇答萊屍卡片-改
+    Name: 覺醒顏良卡片-改
     Type: Card
     Buy: 20
     Weight: 10
@@ -67295,7 +67295,7 @@ Body:
       bonus3 bAutoSpell,"AL_INCAGI",10,300;
   - Id: 900137
     AegisName: Amdarais_Card_
-    Name: 闇答萊屍卡片-改
+    Name: 顏良卡片-改
     Type: Card
     Buy: 20
     Weight: 10
