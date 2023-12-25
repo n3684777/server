@@ -69,7 +69,7 @@ uttycty,145,169,3	script	道館挑戰[中階] 	459,{
 	}		
 OnInit:
 OnTimer1000:
-	showscript " [★初階道館] ";
+	showscript " [★中階道館] ";
 	initnpctimer;
 	end;
 
@@ -166,11 +166,11 @@ OnMobDead:
 				dispbottom "獲得道館點數 ["+#Rand_Mvp_Point+"]，目前累積道館點數為 ["+#Mvp_Point+"]。",0xFF0000;
 			}
 	}
-//	for(.@n=1;.@n<getarraysize('round);.@n++){
-//		if ('Checkpoint ==  'round[.@n]){
-//			enablenpc  instance_npcname("道館裁判#rank2"); end;
-//		}
-//	}
+	for(.@n=1;.@n<getarraysize('round);.@n++){
+		if ('Checkpoint ==  'round[.@n]){
+			enablenpc  instance_npcname("道館裁判#rank2"); end;
+		}
+	}
 	addtimer 1500,instance_npcname(strnpcinfo(0))+"::OnMobstart";
 	end;
 }
