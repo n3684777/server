@@ -175,16 +175,16 @@ OnInstanceInit:
 	if (checkquest(55157,PLAYTIME)== 2){erasequest 55157;}
 	if (checkquest(55157,PLAYTIME)== -1){
 			getitem 61005,6;
-			set #Mvp_Point,#Mvp_Point+60;
+			set #Mvp_Point,#Mvp_Point+500;
 			setquest 55157;
-			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
-			dispbottom "獲得MVP點數 [40]，目前累積MVP點數為 ["+#Mvp_Point+"]。";
+//			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
+			dispbottom "獲得道館點數 [500]，目前累積道館點數為 ["+#Mvp_Point+"]。";
 			warp "SavePoint",0,0;
 			end;	
 		}
 	getitem 61005,3;
 	set #Mvp_Point,#Mvp_Point+20;
-	dispbottom "獲得MVP點數 [20]，目前累積MVP點數為 ["+#Mvp_Point+"]。";
+	dispbottom "獲得道館點數 [20]，目前累積道館點數為 ["+#Mvp_Point+"]。";
 	warp "SavePoint",0,0;
 	end;	
 }
@@ -221,7 +221,7 @@ OnMobDead:
 		announce   "道館裁判 : 還剩下 ["+.@mobcount+"] 隻怪物",17; end;
 	}
 	if ('Checkpoint ==  getarraysize('mobknum)-1){
-		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '夢魘道館' 成功",0;
+		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '終極夢魘道館' 成功",0;
 		sleep2 2000;
 		set 'win,1;
 		enablenpc  instance_npcname("道館裁判#rank5_1");
