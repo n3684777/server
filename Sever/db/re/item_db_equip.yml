@@ -114345,7 +114345,7 @@ Body:
       }
   - Id: 24728
     AegisName: S_M_AutoSpell_Armor
-    Name: 影子主要自動詠唱鎧甲
+    Name: 影子嫻熟自動唸咒鎧甲
     Type: ShadowGear
     Locations:
       Shadow_Armor: true
@@ -114362,7 +114362,7 @@ Body:
       }
   - Id: 24729
     AegisName: S_M_AutoSpell_Shoes
-    Name: 影子主要自動詠唱戰靴
+    Name: 影子嫻熟自動唸咒戰靴
     Type: ShadowGear
     Locations:
       Shadow_Shoes: true
@@ -114376,7 +114376,7 @@ Body:
       }
   - Id: 24730
     AegisName: S_M_AutoSpell_Earring
-    Name: 影子主要自動詠唱耳環
+    Name: 影子嫻熟自動唸咒耳環
     Type: ShadowGear
     Locations:
       Shadow_Right_Accessory: true
@@ -114393,7 +114393,7 @@ Body:
       }
   - Id: 24731
     AegisName: S_M_AutoSpell_Pendant
-    Name: 影子主要自動詠唱墜子
+    Name: 影子嫻熟自動唸咒墜子
     Type: ShadowGear
     Locations:
       Shadow_Left_Accessory: true
@@ -114439,7 +114439,7 @@ Body:
          bonus bNoSizeFix;
   - Id: 24734
     AegisName: S_Durable_Weapon
-    Name: 影子持久手套
+    Name: 影子力量天然手套
     Type: ShadowGear
     Locations:
       Shadow_Weapon: true
@@ -114459,7 +114459,7 @@ Body:
       }
   - Id: 24735
     AegisName: S_Durable_Shield
-    Name: 影子持久神盾
+    Name: 影子力量天然神盾
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -114479,7 +114479,7 @@ Body:
       }
   - Id: 24736
     AegisName: S_Clever_Weapon
-    Name: 影子聰明手套
+    Name: 影子智慧魔力手套
     Type: ShadowGear
     Locations:
       Shadow_Weapon: true
@@ -114497,7 +114497,7 @@ Body:
       }
   - Id: 24737
     AegisName: S_Clever_Shield
-    Name: 影子聰明神盾
+    Name: 影子智慧魔力神盾
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -114640,7 +114640,7 @@ Body:
       }
   - Id: 24746
     AegisName: S_S_Reload_Shield
-    Name: 影子分離改良神盾
+    Name: 影子重新裝改良神盾
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -114655,7 +114655,7 @@ Body:
       }
   - Id: 24747
     AegisName: S_SpellCaster_Armor
-    Name: 影子詠唱精工鎧甲
+    Name: 影子精工詠唱鎧甲
     Type: ShadowGear
     Locations:
       Shadow_Armor: true
@@ -114667,7 +114667,7 @@ Body:
       bonus bAtkRate,(.@r/3);
   - Id: 24748
     AegisName: S_SpellCaster_Shoes
-    Name: 影子詠唱精工戰靴
+    Name: 影子精工詠唱戰靴
     Type: ShadowGear
     Locations:
       Shadow_Shoes: true
@@ -114679,7 +114679,7 @@ Body:
       bonus bAtkRate,(.@r/3);
   - Id: 24749
     AegisName: S_SpellCaster_Earring
-    Name: 影子詠唱精工耳環
+    Name: 影子精工詠唱耳環
     Type: ShadowGear
     Locations:
       Shadow_Right_Accessory: true
@@ -114691,7 +114691,7 @@ Body:
       bonus bAtkRate,(.@r/3);
   - Id: 24750
     AegisName: S_SpellCaster_Pendant
-    Name: 影子詠唱精工墜子
+    Name: 影子精工詠唱墜子
     Type: ShadowGear
     Locations:
       Shadow_Left_Accessory: true
@@ -114903,7 +114903,7 @@ Body:
       }
   - Id: 24763
     AegisName: S_R_Bearers_Shoes
-    Name: 影子路面送信者戰靴
+    Name: 影子君主送信者戰靴
     Type: ShadowGear
     Locations:
       Shadow_Shoes: true
@@ -114920,7 +114920,7 @@ Body:
       }
   - Id: 24764
     AegisName: S_R_Bearers_Armor
-    Name: 影子路面送信者鎧甲
+    Name: 影子君主送信者鎧甲
     Type: ShadowGear
     Locations:
       Shadow_Armor: true
@@ -114937,7 +114937,7 @@ Body:
       }
   - Id: 24765
     AegisName: S_R_Bearers_Pendant
-    Name: 影子路面送信者墜子
+    Name: 影子君主送信者墜子
     Type: ShadowGear
     Locations:
       Shadow_Left_Accessory: true
@@ -114954,7 +114954,7 @@ Body:
       }
   - Id: 24766
     AegisName: S_R_Bearers_Earring
-    Name: 影子路面送信者耳環
+    Name: 影子君主送信者耳環
     Type: ShadowGear
     Locations:
       Shadow_Right_Accessory: true
@@ -114971,7 +114971,7 @@ Body:
       }
   - Id: 24767
     AegisName: S_Mega_Blitz_Shield
-    Name: 影子進階突擊神盾
+    Name: 影子優越突擊神盾
     Type: ShadowGear
     Locations:
       Shadow_Shield: true
@@ -114994,7 +114994,7 @@ Body:
       }
   - Id: 24768
     AegisName: S_Mega_Blitz_Weapon
-    Name: 影子進階突擊手套
+    Name: 影子優越突擊手套
     Type: ShadowGear
     Locations:
       Shadow_Weapon: true
@@ -141133,7 +141133,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 2486    
+    View: 2486 
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: (服飾)魔法繼承者

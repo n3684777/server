@@ -3814,6 +3814,7 @@ Body:
       - Item: Egirnion_Manteau
       - Item: Egirnion_Shoes
   - Item: MD_Airboat_Random
+    RandomOptionGroup: MD_AIRBOAT_RANDOM
     TargetItems:
       - Item: MD_Airboat_Boots
       - Item: MD_Airboat_Boots2
@@ -4383,6 +4384,7 @@ Body:
     TargetItems:
       - Item: Deepblue_Sunglasses_
   - Item: FullPenest_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_FullPene_Earring
@@ -4394,10 +4396,12 @@ Body:
       - Item: S_FullTemp_Armor
       - Item: S_FullTemp_Pendant
   - Item: Reload_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_S_Reload_Shield
   - Item: SpellCaster_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_SpellCaster_Armor
@@ -4462,6 +4466,7 @@ Body:
       - Item: Glacier_Sword
       - Item: Glacier_T_Sword
   - Item: R_Bearers_Shadow_Up
+    RandomOptionGroup: R_BEARERS_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_R_Bearers_Armor
@@ -4469,22 +4474,71 @@ Body:
       - Item: S_R_Bearers_Earring
       - Item: S_R_Bearers_Pendant
   - Item: M_Blitz_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_Mega_Blitz_Shield
       - Item: S_Mega_Blitz_Weapon
   - Item: Absorb_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_Absorb_Shield
       - Item: S_Absorb_Weapon
   - Item: Mammoth_Shadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_M_Mammoth_Armor
       - Item: S_M_Mammoth_Shoes
       - Item: S_M_Mammoth_Earring
       - Item: S_M_Mammoth_Pendant
+  - Item: True_GemShadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_TrueGem_Armor
+      - Item: S_TrueGem_Shoes
+      - Item: S_TrueGem_Earring
+      - Item: S_TrueGem_Pendant
+  - Item: MagicalShadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_Clever_Weapon
+      - Item: S_Clever_Shield
+  - Item: PhysicalShadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_Durable_Shield
+      - Item: S_Durable_Weapon
+  - Item: PerfectSize_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_PerfectSize_Armor
+      - Item: S_PerfectSize_Weapon
+  - Item: MajorAutoSpell_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_M_AutoSpell_Armor
+      - Item: S_M_AutoSpell_Shoes
+      - Item: S_M_AutoSpell_Earring
+      - Item: S_M_AutoSpell_Pendant
+  - Item: Hasty_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_Hasty_Weapon
+      - Item: S_Hasty_Shield
+  - Item: InfinityShadow_Up
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
+    MaximumRefine: 10
+    TargetItems:
+      - Item: S_Infinity_Shield
+      - Item: S_Infinity_Weapon
   - Item: SubjectCape_Refine_Cube
     ResultRefine: 12
     MaximumRefine: 11

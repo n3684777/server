@@ -326,18 +326,6 @@ Body:
         Rate: 5000
       - Item: MD_Airboat_Random
         Rate: 100
-      - Item: MD_Airboat_Boots
-        Rate: 30
-      - Item: MD_Airboat_Boots2
-        Rate: 30
-      - Item: MD_Airboat_Boots3
-        Rate: 30
-      - Item: MD_Airboat_Boots4
-        Rate: 30
-      - Item: MD_Airboat_Boots5
-        Rate: 30
-      - Item: MD_Airboat_Boots6
-        Rate: 30
       - Item: 300175
         Rate: 1
   - Id: 21062
@@ -392,18 +380,6 @@ Body:
         Rate: 50
       - Item: MD_Airboat_Tokken
         Rate: 5000
-      - Item: MD_Airboat_Boots
-        Rate: 70
-      - Item: MD_Airboat_Boots2
-        Rate: 70
-      - Item: MD_Airboat_Boots3
-        Rate: 70
-      - Item: MD_Airboat_Boots4
-        Rate: 70
-      - Item: MD_Airboat_Boots5
-        Rate: 70
-      - Item: MD_Airboat_Boots6
-        Rate: 70
       - Item: 300176
         Rate: 1
 #悔恨之墓
@@ -2210,6 +2186,52 @@ Body:
   - Id: 21534
     AegisName: EP19_MD_RGAN_E
     Name: EP19_MD_RGAN_E
+    JapaneseName: 高級蠕管
+    Level: 234
+    Hp: 55966175
+    BaseExp: 367512
+    JobExp: 257259
+    Attack: 5189
+    Attack2: 5688
+    Defense: 121
+    MagicDefense: 36
+    Str: 121
+    Agi: 132
+    Vit: 80
+    Int: 157
+    Dex: 224
+    Luk: 38
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Insect
+    Element: Earth
+    ElementLevel: 2
+    WalkSpeed: 120
+    AttackDelay: 476
+    AttackMotion: 500
+    DamageMotion: 480
+    DamageTaken: 2000
+    Modes:
+      CanMove: true
+      Aggressive: true
+      CastSensorIdle: true
+      CanAttack: true
+      CastSensorChase: true
+      ChangeChase: true
+      ChangeTargetMelee: true
+      ChangeTargetChase: true
+    Drops:
+      - Item: 1000811
+        Rate: 5
+      - Item: 1000322
+        Rate: 5
+      - Item: 1000608
+        Rate: 10
+  - Id: 21590
+    AegisName: EP19_MD_RGAN_ES
+    Name: EP19_MD_RGAN_ES
     JapaneseName: 高級蠕管
     Level: 234
     Hp: 55966175

@@ -117,7 +117,7 @@ OnInstanceInit:
 	set 'Mobamount,300;//每隻的怪物產生數量
 	
 	set 'itemAc4,1000364;//討伐領袖物品設定
-	set 'checkitem1,30;//討伐領袖物品數量設定
+	set 'checkitem1,55;//討伐領袖物品數量設定
 
 	//隱藏NPC
 	hideonnpc instance_npcname("札克#ACBOSS");
@@ -239,7 +239,7 @@ OnInstanceInit:
 	close;
 }
 //-------------------
-1@mjo1,256,158,4	script	昏倒的乘客#AC1	4_F_MD_KATRINN_D,{
+1@mjo1,256,160,4	script	昏倒的乘客#AC1	4_F_MD_KATRINN_D,{
 	mes "-你發現一位受傷的乘客-";
 	mes "-要呼叫救援拯救他嗎？-";
 	next;
@@ -286,7 +286,7 @@ OnInstanceInit:
 		}
 	if(select("好！", "不要！") == 2) {
 		mes "-他看起來快死了-";
-		close;
+		close2;
 		}
 	set .passenger,1;
 	mes "-呼叫救援中-";
@@ -835,6 +835,7 @@ OnKillMob:
 		if(select("復活！", "不要！") == 2) {
 		mes "--你搖了搖頭--";
 		set 'Diff,1;
+		hideonnpc instance_npcname("#AC_Call_BOSS2");
 		hideoffnpc instance_npcname("寶箱#AC01");
 		close;
 		}

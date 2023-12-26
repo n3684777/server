@@ -17394,7 +17394,7 @@ Body:
       getitem 14586,5;
   - Id: 13858
     AegisName: Spark_Candy_Box10
-    Name: 跳跳糖十個箱子
+    Name: 跳跳糖十個箱子
     Type: Cash
     Buy: 20
     Weight: 10
@@ -26713,7 +26713,7 @@ Body:
       getitem 5563,1;
   - Id: 16245
     AegisName: Tw_April_Scroll
-    Name: 雙十轉蛋
+    Name: 雙十轉蛋
     Type: Usable
     Buy: 20
     Weight: 10
@@ -44943,7 +44943,7 @@ Body:
       getgroupitem(IG_RUNEKNIGHT_S_CUBE);
   - Id: 100324
     AegisName: Guillotinecross_S_Cube
-    Name: 十字斬首者影子技能箱
+    Name: 十字斬首者影子技能箱
     Type: Usable
     Weight: 10
     Flags:
@@ -45998,7 +45998,7 @@ Body:
       sc_end SC_HANDICAPSTATE_DEEPSILENCE;
   - Id: 100518
     AegisName: Tonics
-    Name: 十全大補丸
+    Name: 十全大補丸
     Type: Healing
     Buy: 20
     Weight: 50
@@ -48200,7 +48200,7 @@ Body:
       bonus_script " bonus2 bAddItemHealRate,1100006,100; ",120,1,1;
   - Id: 101177
     AegisName: FullPenest_Shadow_Up
-    Name: 影子天衣無縫咒語
+    Name: 影子天衣無縫屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48209,7 +48209,7 @@ Body:
       laphine_upgrade();
   - Id: 101178
     AegisName: Reload_Shadow_Up
-    Name: 影子分離改良咒語
+    Name: 影子重新裝改良屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48218,7 +48218,7 @@ Body:
       laphine_upgrade();
   - Id: 101179
     AegisName: SpellCaster_Shadow_Up
-    Name: 影子詠唱精工咒語
+    Name: 影子精工詠唱屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48236,7 +48236,7 @@ Body:
       laphine_upgrade();
   - Id: 101181
     AegisName: ReloadShadow_Mix
-    Name: 影子分離改良轉換箱
+    Name: 影子重新裝改良轉換箱
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -48245,7 +48245,7 @@ Body:
       laphine_synthesis();
   - Id: 101182
     AegisName: SpellCasterShadow_Mix
-    Name: 影子詠唱精工轉換箱
+    Name: 影子精工詠唱轉換箱
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -48376,7 +48376,7 @@ Body:
       item_reform();
   - Id: 101260
     AegisName: R_Bearers_Shadow_Up
-    Name: 影子路面送信者咒語
+    Name: 影子君主送信者屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48385,7 +48385,7 @@ Body:
       laphine_upgrade();
   - Id: 101261
     AegisName: M_Blitz_Shadow_Up
-    Name: 影子進階突擊咒語
+    Name: 影子優越突擊屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48394,7 +48394,7 @@ Body:
       laphine_upgrade();
   - Id: 101262
     AegisName: Absorb_Shadow_Up
-    Name: 影子吸收咒語
+    Name: 影子全力吸收屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48403,7 +48403,7 @@ Body:
       laphine_upgrade();
   - Id: 101264
     AegisName: Mammoth_Shadow_Up
-    Name: 影子神力猛瑪之力咒語
+    Name: 影子神力猛瑪之力屬性咒語
     Type: Delayconsume
     Weight: 10
     Flags:
@@ -48463,7 +48463,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      laphine_synthesis();
+      laphine_upgrade();
   - Id: 101309
     AegisName: EXPShadow_Up
     Name: 咒語
@@ -48472,25 +48472,25 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      laphine_synthesis();
+      laphine_upgrade();
   - Id: 101310
     AegisName: MagicalShadow_Up
-    Name: 影子聰明咒語
+    Name: 影子智慧魔力屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
       BuyingStore: true
     Script: |
-      laphine_synthesis();
+      laphine_upgrade();
   - Id: 101311
     AegisName: InfinityShadow_Up
-    Name: 影子無極咒語
+    Name: 影子無極屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
       BuyingStore: true
     Script: |
-      laphine_synthesis();
+      laphine_upgrade();
   - Id: 101314
     AegisName: aegis_101314
     Name: Helm of Faith Box
@@ -48623,7 +48623,7 @@ Body:
       item_reform();
   - Id: 101359
     AegisName: MajorAutoSpell_Up
-    Name: 影子主要自動詠唱咒語
+    Name: 影子嫻熟自動唸咒屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -48632,7 +48632,7 @@ Body:
       laphine_upgrade();
   - Id: 101360
     AegisName: Hasty_Up
-    Name: 影子急速咒語
+    Name: 影子急速屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -48641,7 +48641,7 @@ Body:
       laphine_upgrade();
   - Id: 101361
     AegisName: PhysicalShadow_Up
-    Name: 影子持久咒語
+    Name: 影子力量天然屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -48650,7 +48650,7 @@ Body:
       laphine_upgrade();
   - Id: 101362
     AegisName: PerfectSize_Up
-    Name: 影子全然體型咒語
+    Name: 影子全然體型屬性咒語
     Type: DelayConsume
     Weight: 10
     Flags:
@@ -50006,3 +50006,29 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 60501
+    AegisName: Luxurious_Dinner_Low
+    Name: 少一味的料理
+    Type: Usable
+    Buy: 10
+    Weight: 0
+    Script: |
+      sc_start SC_SAVAGE_STEAK,3600000,-20;
+      sc_start SC_COCKTAIL_WARG_BLOOD,3600000,-20;
+      sc_start SC_MINOR_BBQ,3600000,-20;
+      sc_start SC_SIROMA_ICE_TEA,3600000,-20;
+      sc_start SC_DROCERA_HERB_STEAMED,3600000,-20;
+      sc_start SC_PUTTI_TAILS_NOODLES,3600000,-20;
+  - Id: 60502
+    AegisName: Luxurious_Dinner_High
+    Name: 超頂級滿漢全席
+    Type: Usable
+    Buy: 10
+    Weight: 0
+    Script: |
+      sc_start SC_SAVAGE_STEAK,300000,20;
+      sc_start SC_COCKTAIL_WARG_BLOOD,300000,20;
+      sc_start SC_MINOR_BBQ,300000,20;
+      sc_start SC_SIROMA_ICE_TEA,300000,20;
+      sc_start SC_DROCERA_HERB_STEAMED,300000,20;
+      sc_start SC_PUTTI_TAILS_NOODLES,300000,20;

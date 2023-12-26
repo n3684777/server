@@ -265,6 +265,8 @@ end;
 }
 
 1@jorchs,115,22,7	script	蛇人#1	21530,{
+	if ('use == 1){ end; }
+	set 'use, 1;
 	set .@label$, instance_npcname("蛇人#1")+"::OnMyMobDead";
 	if(getcharid(0) != getpartyleader(getcharid(1),2)) 
 	{
@@ -278,6 +280,7 @@ end;
 	monster 'map$,115,22,"--ja--",21530,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	hideonnpc instance_npcname(strnpcinfo(0));
 	end;
+
 OnMyMobDead:
 	'kill_mob_co++;
 	if('kill_mob_co == 2)
@@ -301,6 +304,8 @@ OnInstanceInit:
 
 
 1@jorchs,249,79,3	script	蛇人#2	21530,{
+	if ('use == 2){ end; }
+	set 'use, 2;
 	set .@label$, instance_npcname("蛇人#2")+"::OnMyMobDead";
 	if(getcharid(0) != getpartyleader(getcharid(1),2)) 
 	{
@@ -372,6 +377,8 @@ OnTouch:
 }
 
 1@jorchs,20,96,7	script	蛇人#3	21530,{
+	if ('use == 3){ end; }
+	set 'use, 3;
 	set .@label$, instance_npcname("蛇人#3")+"::OnMyMobDead";
 	if(getcharid(0) != getpartyleader(getcharid(1),2)) {
 		mes "需要隊長來開啟!";
@@ -410,6 +417,8 @@ OnInstanceInit:
 }
 
 1@jorchs,25,56,7	script	蛇人#4	21530,{
+	if ('use == 4){ end; }
+	set 'use, 4;
 	set .@label$, instance_npcname("蛇人#4")+"::OnMyMobDead";
 	if(getcharid(0) != getpartyleader(getcharid(1),2)) 
 	{
@@ -500,6 +509,9 @@ end;}
 	hideonnpc instance_npcname("4_3#snake4");
 	hideonnpc instance_npcname("5_3#snake5");
 	hideonnpc instance_npcname("6_3#snake6");
+	hideonnpc instance_npcname("7_3#snake7");
+	hideonnpc instance_npcname("8_3#snake8");
+	hideonnpc instance_npcname("9_3#snake9");
 	monster 'map$,158,153,"--ja--",21599,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	monster 'map$,157,151,"--ja--",21599,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	monster 'map$,160,150,"--ja--",21599,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
