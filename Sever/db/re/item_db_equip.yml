@@ -141125,6 +141125,15 @@ Body:
             }
          }
       }
+  - Id: 400558
+    AegisName: C_Snow_Head
+    Name: (服飾)雪人DIY
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2486    
   - Id: 410005
     AegisName: C_Magic_Heir_TW
     Name: (服飾)魔法繼承者
