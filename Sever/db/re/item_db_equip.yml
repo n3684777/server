@@ -157717,6 +157717,72 @@ Body:
       bonus2 bSubRace,RC_Player_Human,3;
       bonus2 bSubRace,RC_Player_Doram,3;
       bonus bHealPower2,-3;
+  - Id: 490257
+    AegisName: aegis_490257
+    Name: 妖力結晶指環
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bDelayrate,-5;
+      bonus bMatkRate,5;
+  - Id: 490258
+    AegisName: aegis_490258
+    Name: 時空結晶神偷耳環
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bAspdRate,5;
+      bonus bLongAtkRate,5;
+  - Id: 490259
+    AegisName: aegis_490259
+    Name: 魔力禁咒戒指
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bDelayrate,-5;
+      bonus bMatkRate,5;
+  - Id: 490262
+    AegisName: aegis_490262
+    Name: 堅定信仰魔戒
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bDelayrate,-5;
+      bonus bLongAtkRate,6;
+  - Id: 490263
+    AegisName: aegis_490263
+    Name: 皇軍圖騰戒
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bDelayrate,-5;
+      bonus bAtkRate,6;
+      bonus bMatkRate,6;
   - Id: 490265
     AegisName: aegis_490265
     Name: Inception Ring
@@ -185115,6 +185181,8 @@ Body:
       if(.@stat >= 600){bonus bAspd,1;bonus2 bMagicAddEle,Ele_All,10;}
       if(.@re >= 160){bonus bSpl,5;bonus bSMatk,5;}
       hateffect(HAT_EF_Magic_Star_TW,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_Magic_Star_TW,false);
   - Id: 420236
     AegisName: Moroc_Slave_TW
     Name: 魔王夢羅克的忠誠僕人

@@ -286,7 +286,7 @@ bonus2 bSkillUseSPrate,sk,n;	技能 sk 的 SP 消耗減少 n%
 bonus2 bSkillAtk,sk,n;			技能 sk 的傷害增加(技能傷害增加) n%
 bonus bShortAtkRate,n;			增加 n% 近距離攻擊傷害 (近距離傷害增加/近傷增加)
 bonus bLongAtkRate,n;			增加 n% 遠距離攻擊傷害 (遠距離傷害增加/遠傷增加)
-bonus bCritAtkRate,n;			增加 n% 暴擊傷害
+bonus bCritAtkRate,n;			增加 n% 暴擊傷害 (增加暴傷)
 bonus bCritDefRate,n;			減少 n% 暴擊傷害
 bonus bCriticalDef,n;			減少 n% 被暴擊的機率
 bonus2 bWeaponAtk,w,n;			裝備 w 型別武器時增加 n 攻擊力

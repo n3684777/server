@@ -1073,7 +1073,7 @@ OnTimer700:
 		end;
 	}
 	getmapxy(.@m$,'passx,'passy,BL_PC);
-	donpcevent instance_npcname("°Æ¥»Ä_½c#1@face")+"::OnEnable";
+	donpcevent instance_npcname("Â÷¶}°Æ¥»#1@face")+"::OnEnable";
 	'ClearInatance = 1;
 	end;
 OnInstanceInit:
