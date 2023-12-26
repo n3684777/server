@@ -30440,6 +30440,21 @@ Body:
          bonus bFixedCast,-500;
   - Combos:
       - Combo:
+          - aegis_490260
+          - S_Circlet_Of_Time_GN
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus2 bSkillCooldown,"GN_CART_TORNADO",-((.@r/2)*100);
+      bonus2 bSkillCooldown,"GN_SPORE_EXPLOSION",-((.@r/2)*300);
+      bonus2 bSkillAtk,"GN_CART_TORNADO",(.@r/3)*10;
+      bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",(.@r/3)*10;
+      if(.@r >= 12){
+      bonus bPAtk,5;
+      bonus bPerfectHitAddRate,15;
+      }
+
+  - Combos:
+      - Combo:
           - aegis_490257
           - S_Circlet_Of_Time_SO
     Script: |

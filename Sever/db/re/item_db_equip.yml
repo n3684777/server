@@ -157756,6 +157756,21 @@ Body:
     Script: |
       bonus bDelayrate,-5;
       bonus bMatkRate,5;
+  - Id: 490260
+    AegisName: aegis_490260
+    Name: 陳舊推車造型吊飾
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      .@skill = getskilllv("GN_CART_TORNADO") + getskilllv("GN_REMODELING_CART") + getskilllv("GN_CARTBOOST");
+      bonus bDelayrate,-5;
+      bonus bLongAtkRate,5+(.@skill/4)*3;
+      bonus bShortAtkRate,5+(.@skill/4)*3;
   - Id: 490262
     AegisName: aegis_490262
     Name: 堅定信仰魔戒

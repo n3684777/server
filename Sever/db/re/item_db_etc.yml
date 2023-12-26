@@ -69181,7 +69181,7 @@ Body:
       NoMail: true
       NoGuildStorage: true
   - Id: 940053
-    AegisName: item_940054
+    AegisName: item_940053
     Name: 週五副本的證明
     Type: Etc
     Buy: 0

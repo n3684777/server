@@ -549,6 +549,32 @@ OnInit:
 	sellitem(490097,.@p,-1);	//超越者手觸
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+
+	sellitem(490257,.@p,-1);	//妖力結晶指環
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490258,.@p,-1);	//時空結晶神偷耳環
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490259,.@p,-1);	//魔力禁咒戒指
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490262,.@p,-1);	//堅定信仰魔戒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490263,.@p,-1);	//皇軍圖騰戒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490284,.@p,-1);	//風鷹狙殺戒
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490260,.@p,-1);	//陳舊推車造型吊飾
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
+	sellitem(490238,.@p,-1);	//超時空寶石刀刃鍊
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
+
 	sellitem(490269,.@p,-1);	//樞機之光
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
