@@ -141870,7 +141870,17 @@ Body:
     Locations:
       Costume_Head_Mid: true
     ArmorLevel: 1
-    View: 2118
+  - Id: 410127
+    AegisName: C_Spot_Light
+    Name: (服飾)全場焦點
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipScript: |
+      hateffect(174,true);
+    UnEquipScript: |
+      hateffect(174,false);
   - Id: 410129
     AegisName: aegis_410129
     Name: Phantom Ears
@@ -143322,6 +143332,14 @@ Body:
          bonus2 bSkillCooldown,"RA_UNLIMIT",-60000;
     UnEquipScript: |
       sc_end SC_UNLIMIT;
+  - Id: 420165
+    AegisName: C_Tent
+    Name: (服飾)帳篷
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2279
   - Id: 420174
     AegisName: aegis_420174
     Name: Raging Tempest
@@ -143401,6 +143419,10 @@ Body:
       bonus bCastrate,-8;
       bonus bDelayrate,-5;
       bonus bFixedCast,-100;
+    EquipScript: |
+      hateffect(179,true);
+    UnEquipScript: |
+      hateffect(179,false);
   - Id: 420301
     AegisName: Magic_Circle_TW_LT
     Name: 魔力星陣-LT
@@ -151527,7 +151549,7 @@ Body:
          bonus2 bAddEle,Ele_All,7;
   - Id: 470122
     AegisName: Beast_Leather_Shoes
-    Name: 野獸皮鞋
+    Name: 月夜貓野獸皮靴
     Type: Armor
     Weight: 600
     Defense: 15
@@ -154014,6 +154036,18 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 124
+  - Id: 480168
+    AegisName: C_Melody_Wing
+    Name: (服飾)旋律鋼琴之翼
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 126
+    EquipScript: |
+      hateffect(173,true);
+    UnEquipScript: |
+      hateffect(173,false);
   - Id: 480169
     AegisName: C_Diabolic_Rock_Guitar
     Name: (服飾)魔王搖滾電吉他
@@ -154757,6 +154791,38 @@ Body:
       if(.@r >= 9){bonus2 bMagicAddSize,Size_All,10;}
       if(.@r >= 11){bonus bDelayrate,-12;}
       if(.@r >= 13){bonus2 bIgnoreMdefClassRate,Class_Boss,10;}
+  - Id: 480243
+    AegisName: C_JP_EV16
+    Name: (服飾)大耳狗喜拿背包
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 152
+  - Id: 480244
+    AegisName: C_JP_EV17
+    Name: (服飾)王冠大耳狗喜拿背包
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 153
+  - Id: 480246
+    AegisName: C_Valkyrie_Spear
+    Name: (服飾)巴基利長槍
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 154
+  - Id: 480247
+    AegisName: C_Giant_Angeling
+    Name: (服飾)超大天使波利後背包
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 155
   - Id: 480249
     AegisName: aegis_480249
     Name: Level 1 Hood    # !todo check english name
@@ -154817,6 +154883,14 @@ Body:
          bonus bDef,150;
          bonus bMdef,15;
       }
+  - Id: 480252
+    AegisName: C_Mystical_Wing
+    Name: (服飾)神秘大天使羽翼
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 156
   - Id: 480258
     AegisName: C_Rainbow_Shell
     Name: Costume Rainbow Carapace    # !todo check english name
@@ -154930,6 +155004,14 @@ Body:
       if(.@r >= 7){bonus bAtkRate,4;bonus bMatkRate,4;}
       if(.@r >= 9){bonus bShortAtkRate,7;bonus bLongAtkRate,7;bonus2 bMagicAtkEle,Ele_All,7;}
       if(.@r >= 13){bonus2 bIgnoreDefClassRate,Class_Normal,10;bonus2 bIgnoreMdefClassRate,Class_normal,10;}}
+  - Id: 480280
+    AegisName: C_Big_Ribbon_Cloak_WH
+    Name: (服飾)超大蝴蝶結披風(白)
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 162
   - Id: 480291
     AegisName: Manteau_Of_Guardsman2
     Name: 英雄恩惠斗篷
@@ -154958,6 +155040,58 @@ Body:
       if(.@r >= 11){bonus bDelayrate,-10;}
       if(.@r >= 13){bonus2 bMagicAddRace,RC_All,15;}
       }
+  - Id: 480310
+    AegisName: C_Giant_Mad_Bunny
+    Name: (服飾)瘋狂兔寶寶後背包
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 172
+  - Id: 20621
+    AegisName: C_Dark_Lord_Manteau
+    Name: (服飾)汙染黑暗之王披風
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 175
+    EquipScript: |
+      hateffect(187,true);
+    UnEquipScript: |
+      hateffect(187,false);
+  - Id: 480336
+    AegisName: C_Forest_S_Vacation
+    Name: (服飾)捕蟲網
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 187
+  - Id: 480361
+    AegisName: C_Evil_Double_Edged
+    Name: (服飾)邪魂雙刃
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 191
+  - Id: 480362
+    AegisName: C_Ninetail_Tail_WH
+    Name: (服飾)九尾狐之尾(白)
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 192
+  - Id: 480393
+    AegisName: C_Loli_Ruri_Moon_B
+    Name: (服飾)藍月魔女之新月
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 199
   - Id: 490004
     AegisName: Atker_Ring
     Name: Attacker Booster Ring
@@ -158872,7 +159006,7 @@ Body:
       }
   - Id: 500027
     AegisName: Vivatus_F_G_Sword
-    Name: 淨化信徒守護之劍
+    Name: 活力信念守護之劍
     Type: Weapon
     SubType: 1hSword
     Weight: 2000
@@ -158925,7 +159059,7 @@ Body:
       }
   - Id: 500028
     AegisName: Vivatus_F_Lapier
-    Name: 淨化信徒刺劍
+    Name: 活力信念刺劍
     Type: Weapon
     SubType: 1hSword
     Weight: 2000
@@ -160835,7 +160969,7 @@ Body:
       }
   - Id: 510033
     AegisName: Vivatus_F_Dagger
-    Name: 淨化信徒短劍
+    Name: 活力信念短劍
     Type: Weapon
     SubType: Dagger
     Weight: 1200
@@ -162517,7 +162651,7 @@ Body:
       }
   - Id: 520009
     AegisName: Vivatus_F_Axe
-    Name: 淨化信徒之斧
+    Name: 活力信念之斧
     Type: Weapon
     SubType: 1hAxe
     Weight: 7500
@@ -163187,7 +163321,7 @@ Body:
       }
   - Id: 530014
     AegisName: Vivatus_F_G_Spear
-    Name: 淨化信徒守護之矛
+    Name: 活力信念守護之矛
     Type: Weapon
     SubType: 1hSpear
     Weight: 1800
@@ -164264,7 +164398,7 @@ Body:
       }
   - Id: 540024
     AegisName: Vivatus_F_M_Book
-    Name: 淨化信徒魔法書
+    Name: 活力信念魔法書
     Type: Weapon
     SubType: Book
     Weight: 1200
@@ -164316,7 +164450,7 @@ Body:
       }
   - Id: 540025
     AegisName: Vivatus_F_P_Book
-    Name: 淨化信徒劇毒之書
+    Name: 活力信念劇毒之書
     Type: Weapon
     SubType: Book
     Weight: 1300
@@ -164368,7 +164502,7 @@ Body:
       }
   - Id: 540026
     AegisName: Vivatus_F_Bible
-    Name: 淨化信徒聖經
+    Name: 活力信念聖經
     Type: Weapon
     SubType: Book
     Weight: 1800
@@ -165018,7 +165152,7 @@ Body:
       }
   - Id: 540045
     AegisName: Vivatus_F_Star_B
-    Name: 淨化信徒星塵之書
+    Name: 活力信念星塵書
     Type: Weapon
     SubType: Book
     Weight: 1000
@@ -165069,7 +165203,7 @@ Body:
       }
   - Id: 540046
     AegisName: Vivatus_F_Moon_B
-    Name: 淨化信徒月之書
+    Name: 活力信念滿月書
     Type: Weapon
     SubType: Book
     Weight: 1100
@@ -166554,7 +166688,7 @@ Body:
       }
   - Id: 550029
     AegisName: Vivatus_F_Wand
-    Name: 淨化信徒手杖
+    Name: 活力信念手杖
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -167790,7 +167924,7 @@ Body:
       }
   - Id: 550063
     AegisName: Vivatus_F_D_Wand
-    Name: 淨化信徒黑暗魔杖
+    Name: 活力信念黑暗魔杖
     Type: Weapon
     SubType: Staff
     Weight: 1600
@@ -167843,7 +167977,7 @@ Body:
       }
   - Id: 550064
     AegisName: Vivatus_F_S_Stick
-    Name: 淨化信徒靈魂之杖
+    Name: 活力信念靈魂之杖
     Type: Weapon
     SubType: Staff
     Weight: 1900
@@ -167902,7 +168036,7 @@ Body:
       }
   - Id: 550065
     AegisName: Vivatus_F_F_Wand
-    Name: 淨化信徒狐尾草手杖
+    Name: 活力信念狐尾草手杖
     Type: Weapon
     SubType: Staff
     Weight: 1500
@@ -167956,7 +168090,7 @@ Body:
       }
   - Id: 550066
     AegisName: Vivatus_F_F_model
-    Name: 淨化信徒狐尾草模型
+    Name: 活力信念狐尾草模型
     Type: Weapon
     SubType: Staff
     Weight: 1800
@@ -169645,7 +169779,7 @@ Body:
       }
   - Id: 560020
     AegisName: Vivatus_F_Knuckle
-    Name: 淨化信徒拳套
+    Name: 活力信念拳套
     Type: Weapon
     SubType: Knuckle
     Weight: 1000
@@ -169696,7 +169830,7 @@ Body:
       }
   - Id: 560021
     AegisName: Vivatus_F_Claw
-    Name: 淨化信徒之爪
+    Name: 活力信念之爪
     Type: Weapon
     SubType: Knuckle
     Weight: 900
@@ -170715,7 +170849,7 @@ Body:
       }
   - Id: 570019
     AegisName: Vivatus_F_Violin
-    Name: 淨化信徒小提琴
+    Name: 活力信念小提琴
     Type: Weapon
     SubType: Musical
     Weight: 1200
@@ -170767,7 +170901,7 @@ Body:
       }
   - Id: 570020
     AegisName: Vivatus_F_Harp
-    Name: 淨化信徒豎琴
+    Name: 活力信念豎琴
     Type: Weapon
     SubType: Musical
     Weight: 1000
@@ -171785,7 +171919,7 @@ Body:
       }
   - Id: 580019
     AegisName: Vivatus_F_C_Rope
-    Name: 淨化信徒鎖鏈鞭
+    Name: 活力信念鎖鏈鞭
     Type: Weapon
     SubType: Whip
     Weight: 1200
@@ -171837,7 +171971,7 @@ Body:
       }
   - Id: 580020
     AegisName: Vivatus_F_Ribbon
-    Name: 淨化信徒緞帶
+    Name: 活力信念緞帶
     Type: Weapon
     SubType: Whip
     Weight: 1000
@@ -173037,7 +173171,7 @@ Body:
       }
   - Id: 590023
     AegisName: Vivatus_F_Mace
-    Name: 淨化信徒之錘
+    Name: 活力信念之錘
     Type: Weapon
     SubType: Mace
     Weight: 4000
@@ -173089,7 +173223,7 @@ Body:
       }
   - Id: 590024
     AegisName: Vivatus_F_Hall
-    Name: 淨化信徒權杖
+    Name: 活力信念權杖
     Type: Weapon
     SubType: Mace
     Weight: 3000
@@ -174310,7 +174444,7 @@ Body:
       }
   - Id: 600018
     AegisName: Vivatus_F_T_Sword
-    Name: 淨化信徒雙手劍
+    Name: 活力信念雙手劍
     Type: Weapon
     SubType: 2hSword
     Weight: 4000
@@ -175260,7 +175394,7 @@ Body:
       }
   - Id: 610022
     AegisName: Vivatus_F_Cakram
-    Name: 淨化信徒環刃
+    Name: 活力信念環刃
     Type: Weapon
     SubType: Katar
     Weight: 2000
@@ -175311,7 +175445,7 @@ Body:
       }
   - Id: 610023
     AegisName: Vivatus_F_Katar
-    Name: 淨化信徒拳刃
+    Name: 活力信念拳刃
     Type: Weapon
     SubType: Katar
     Weight: 1700
@@ -176893,7 +177027,7 @@ Body:
       }
   - Id: 630013
     AegisName: Vivatus_F_Lance
-    Name: 淨化信徒長槍
+    Name: 活力信念長槍
     Type: Weapon
     SubType: 2hSpear
     Weight: 3800
@@ -177779,7 +177913,7 @@ Body:
       }
   - Id: 640021
     AegisName: Vivatus_F_T_Staff
-    Name: 淨化信徒雙手杖
+    Name: 活力信念雙手杖
     Type: Weapon
     SubType: 2hStaff
     Weight: 2000
@@ -177832,7 +177966,7 @@ Body:
       }
   - Id: 640022
     AegisName: Vivatus_F_Rod
-    Name: 淨化信徒之杖
+    Name: 活力信念之杖
     Type: Weapon
     SubType: 2hStaff
     Weight: 1900
@@ -178972,7 +179106,7 @@ Body:
       bonus bLongAtkRate,3*(.@r/4);
   - Id: 650021
     AegisName: Vivatus_F_C_Humma
-    Name: 淨化信徒十字風魔飛鏢
+    Name: 活力信念十字風魔飛鏢
     Type: Weapon
     SubType: Huuma
     Weight: 2200
@@ -179024,7 +179158,7 @@ Body:
       }
   - Id: 650022
     AegisName: Vivatus_F_Humma
-    Name: 淨化信徒風魔飛鏢
+    Name: 活力信念風魔飛鏢
     Type: Weapon
     SubType: Huuma
     Weight: 2000
@@ -180182,7 +180316,7 @@ Body:
       }
   - Id: 700033
     AegisName: Vivatus_F_C_Bow
-    Name: 淨化信徒十字弓
+    Name: 活力信念十字弓
     Type: Weapon
     SubType: Bow
     Weight: 1500
@@ -180233,7 +180367,7 @@ Body:
       }
   - Id: 700034
     AegisName: Vivatus_F_Ballista
-    Name: 淨化信徒投射器
+    Name: 活力信念投射器
     Type: Weapon
     SubType: Bow
     Weight: 1700
@@ -180285,7 +180419,7 @@ Body:
       }
   - Id: 700035
     AegisName: Vivatus_F_A_Bow
-    Name: 淨化信徒瞄準弓
+    Name: 活力信念瞄準弓
     Type: Weapon
     SubType: Bow
     Weight: 1500
@@ -181575,7 +181709,7 @@ Body:
       }
   - Id: 800012
     AegisName: Vivatus_F_Revolver
-    Name: 淨化信徒左輪手槍
+    Name: 活力信念左輪手槍
     Type: Weapon
     SubType: Revolver
     Weight: 1200
@@ -182185,7 +182319,7 @@ Body:
       }
   - Id: 810008
     AegisName: Vivatus_F_Rifle
-    Name: 淨化信徒來福槍
+    Name: 活力信念來福槍
     Type: Weapon
     SubType: Rifle
     Weight: 1500
@@ -182756,7 +182890,7 @@ Body:
       bonus bLongAtkRate,3*(getrefine()/4);
   - Id: 820006
     AegisName: Vivatus_F_Shotgun
-    Name: 淨化信徒霰彈槍
+    Name: 活力信念霰彈槍
     Type: Weapon
     SubType: Shotgun
     Weight: 2000
@@ -183448,7 +183582,7 @@ Body:
       }
   - Id: 830011
     AegisName: Vivatus_F_Gatling
-    Name: 淨化信徒格林機關槍
+    Name: 活力信念格林機關槍
     Type: Weapon
     SubType: Gatling
     Weight: 1500
@@ -184032,7 +184166,7 @@ Body:
       }
   - Id: 840007
     AegisName: Vivatus_F_Launcher
-    Name: 淨化信徒榴彈發射器
+    Name: 活力信念榴彈發射器
     Type: Weapon
     SubType: Grenade
     Weight: 3000

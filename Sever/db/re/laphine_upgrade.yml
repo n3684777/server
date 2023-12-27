@@ -4466,7 +4466,7 @@ Body:
       - Item: Glacier_Sword
       - Item: Glacier_T_Sword
   - Item: R_Bearers_Shadow_Up
-    RandomOptionGroup: R_BEARERS_SHADOW_UP
+    RandomOptionGroup: MAMMOTH_SHADOW_UP
     MaximumRefine: 10
     TargetItems:
       - Item: S_R_Bearers_Armor
