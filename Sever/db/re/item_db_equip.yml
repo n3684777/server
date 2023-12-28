@@ -141878,9 +141878,9 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     EquipScript: |
-      hateffect(174,true);
+      hateffect(HAT_EF_C_Spot_Light,true);
     UnEquipScript: |
-      hateffect(174,false);
+      hateffect(HAT_EF_C_Spot_Light,false);
   - Id: 410129
     AegisName: aegis_410129
     Name: Phantom Ears
@@ -143420,9 +143420,9 @@ Body:
       bonus bDelayrate,-5;
       bonus bFixedCast,-100;
     EquipScript: |
-      hateffect(179,true);
+      hateffect(HAT_EF_Ghost_Fire,true);
     UnEquipScript: |
-      hateffect(179,false);
+      hateffect(HAT_EF_Ghost_Fire,false);
   - Id: 420301
     AegisName: Magic_Circle_TW_LT
     Name: 魔力星陣-LT
@@ -155057,9 +155057,9 @@ Body:
     ArmorLevel: 1
     View: 175
     EquipScript: |
-      hateffect(187,true);
+      hateffect(HAT_EF_C_Dark_Lord_Manteau,true);
     UnEquipScript: |
-      hateffect(187,false);
+      hateffect(HAT_EF_C_Dark_Lord_Manteau,false);
   - Id: 480336
     AegisName: C_Forest_S_Vacation
     Name: (服飾)捕蟲網
@@ -184729,7 +184729,7 @@ Body:
           }
       }
   - Id: 470183
-    AegisName: Unknown_Item_470183
+    AegisName: Temporal_Boots_TW_LT
     Name: 時光超越者之靴-LT
     Type: Armor
     Buy: 20

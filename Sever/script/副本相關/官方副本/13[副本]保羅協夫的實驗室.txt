@@ -64,7 +64,7 @@ OnInit:
 	// 冷卻時間
 	.ins_cooldown = 300;
 	// 冷卻編號
-	.ins_collnum = 12;
+	.ins_collnum = 13;
 
 //
 	waitingroom "[副本]保羅協夫研究室",0;

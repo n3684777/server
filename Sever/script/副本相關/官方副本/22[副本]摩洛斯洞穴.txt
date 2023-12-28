@@ -64,7 +64,7 @@ OnInit:
 	// 冷卻時間
 	.ins_cooldown = 300;
 	// 冷卻編號
-	.ins_collnum = 21;
+	.ins_collnum = 22;
 
 //
 	waitingroom "[副本]摩洛斯洞穴",0;

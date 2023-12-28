@@ -77,7 +77,7 @@ OnInit:
 	// 冷卻時間
 	.ins_cooldown = 300;
 	// 冷卻編號
-	.ins_collnum = 1;
+	.ins_collnum = 39;
 
 //
 	waitingroom "[副本]嘿!斯威蒂",0;
