@@ -2330,7 +2330,7 @@ OnInstanceInit:
 	specialeffect 10;
 	makeitem .@gain[rand(6)],1,instance_mapname(.@m$),.@passx+rand(3)-1,.@passy+rand(3)-1;
 	makeitem .@gain[rand(6)],1,instance_mapname(.@m$),.@passx+rand(3)-1,.@passy+rand(3)-1;
-	donpcevent instance_npcname("副本寶箱#1@tnm3")+"::OnEnable";
+	donpcevent instance_npcname("離開副本#1@tnm3")+"::OnEnable";
 	'ClearInatance = 1;
 	disablenpc instance_npcname("魔神之塔通關");
 	end;
