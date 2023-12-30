@@ -64,7 +64,6 @@ FunctionMap:
 	"^227700【測傷區】測試傷害專用^000000",FunMap2,
 	"^2200AA【競技場區域】^000000",FunMap3,
 	"^2200AA【道館區】初階/中階/高階/夢魘^000000",FunMap4,
-	"^227700【附魔區】裝備附魔^000000",FunMap5,
 	"^CC0000【製作區】裝備製作 ^000000",FunMap6;
 
 
@@ -82,10 +81,6 @@ FunMap3:
 
 FunMap4:
 	warp "uttycty",140,162;
-	end;
-
-FunMap5:
-	warp "uttycty",35,157;
 	end;
 
 FunMap6:
