@@ -1,4 +1,4 @@
-uttycty,59,157,5	trader	[製作]生態圈	10292,{
+uttycty,29,103,5	trader	[製作]生態圈	10292,{
 	disable_items;
 	end;
 OnInit:
