@@ -47187,7 +47187,6 @@ Body:
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"WL_COMET",15;
-      changebase 4010;
   - Id: 310181
     AegisName: Warlock_Top2
     Name: 超魔導師石II(頭上)
