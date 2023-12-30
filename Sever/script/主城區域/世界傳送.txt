@@ -89,7 +89,7 @@ FunMap5:
 	end;
 
 FunMap6:
-	warp "uttycty",70,163;
+	warp "uttycty",36,156;
 	end;
 
 FunMap0:
