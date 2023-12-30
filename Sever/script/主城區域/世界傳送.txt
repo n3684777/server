@@ -64,6 +64,7 @@ FunctionMap:
 	"^227700【測傷區】測試傷害專用^000000",FunMap2,
 	"^2200AA【競技場區域】^000000",FunMap3,
 	"^2200AA【道館區】初階/中階/高階/夢魘^000000",FunMap4,
+	"^227700【附魔區】裝備附魔^000000",FunMap5,
 	"^CC0000【製作區】裝備製作 ^000000",FunMap6;
 
 
@@ -83,8 +84,12 @@ FunMap4:
 	warp "uttycty",140,162;
 	end;
 
+FunMap5:
+	warp "uttycty",35,157;
+	end;
+
 FunMap6:
-	warp "uttycty",36,156;
+	warp "uttycty",70,163;
 	end;
 
 FunMap0:
@@ -4072,7 +4077,10 @@ EP28:
 		"草原環境",EP28_0,	
 		"火焰環境",EP28_1,
 		"冰凍環境",EP28_2,
-		"不死環境",EP28_3;		
+		"不死環境",EP28_3,
+		"聖殿環境",EP28_4,
+		"猛毒環境",EP28_5,
+		"靈魂環境",EP28_6;			
 		
 EP28_0:	
 	set .@WarpMap$,"bl_grass";
@@ -4098,6 +4106,27 @@ EP28_2:
 EP28_3:	
 	set .@WarpMap$,"bl_death";
 	set .@tempMFMap$,"不死環境";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+	
+EP28_4:	
+	set .@WarpMap$,"bl_temple";
+	set .@tempMFMap$,"聖殿環境";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+	
+EP28_5:	
+	set .@WarpMap$,"bl_venom";
+	set .@tempMFMap$,"猛毒環境";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+	
+EP28_6:	
+	set .@WarpMap$,"bl_soul";
+	set .@tempMFMap$,"靈魂環境";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;

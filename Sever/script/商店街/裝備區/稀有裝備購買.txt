@@ -30,9 +30,6 @@ OnInit:
 	sellitem(450175,.@p,-1);	//¥¬ªL³ß¼w
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(450217,.@p,-1);	//¥Ö¨½®¦­¸¦æ
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
 	sellitem(2383,.@p,-1);	//¶W¶V¥Ò
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
@@ -472,6 +469,9 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(480291,.@p,-1);	//­^¶¯®¦´f¤æÁO
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(450217,.@p,-1);	//¥Ö¨½®¦­¸¦æ
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(480076,.@p,-1);	//¶W¶V¤æ

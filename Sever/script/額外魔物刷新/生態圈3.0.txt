@@ -1,0 +1,57 @@
+//生物圈環境-聖殿
+bl_temple	mapflag	nosave	SavePoint
+bl_temple	mapflag	nomemo
+bl_temple	mapflag	nobranch
+bl_temple	mapflag	noicewall
+bl_temple	mapflag	restricted	6
+bl_temple	mapflag	novending			//無法開露天商店
+bl_temple	mapflag	nochat				//無法開聊天室
+
+//生物圈環境-猛毒
+bl_venom	mapflag	nosave	SavePoint
+bl_venom	mapflag	nomemo
+bl_venom	mapflag	nobranch
+bl_venom	mapflag	noicewall
+bl_venom	mapflag	restricted	6
+bl_venom	mapflag	novending			//無法開露天商店
+bl_venom	mapflag	nochat				//無法開聊天室
+
+//生物圈環境-靈魂
+bl_soul	mapflag	nosave	SavePoint
+bl_soul	mapflag	nomemo
+bl_soul	mapflag	nobranch
+bl_soul	mapflag	noicewall
+bl_soul	mapflag	restricted	6
+bl_soul	mapflag	novending			//無法開露天商店
+bl_soul	mapflag	nochat				//無法開聊天室
+
+
+//生物圈環境-聖殿
+bl_temple,0,0,0,0	monster	"--ja--"	21923,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21921,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21922,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21923,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21924,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21925,25,30000,0,0
+bl_temple,0,0,0,0	monster	"--ja--"	21926,25,30000,0,0
+bl_temple,0,0,0,0	boss_monster	"--ja--"	21927,1,1,1,1
+
+//生物圈環境-猛毒
+bl_venom,0,0,0,0	monster	"--ja--"	21928,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21929,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21930,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21931,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21932,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21933,25,30000,0,0
+bl_venom,0,0,0,0	monster	"--ja--"	21934,25,30000,0,0
+bl_venom,0,0,0,0	boss_monster	"--ja--"	21935,1,1,1,1
+
+//生物圈環境-猛毒
+bl_soul,0,0,0,0	monster	"--ja--"	21936,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21937,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21938,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21939,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21940,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21941,25,30000,0,0
+bl_soul,0,0,0,0	monster	"--ja--"	21942,25,30000,0,0
+bl_soul,0,0,0,0	boss_monster	"--ja--"	21943,1,1,1,1
