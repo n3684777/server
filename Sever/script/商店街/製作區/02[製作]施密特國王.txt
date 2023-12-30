@@ -1,9 +1,9 @@
-uttycty,75,179,5	trader	[製作]古城殞落	10306,{
+uttycty,29,157,5	trader	[製作]施密特國王	10306,{
 	disable_items;
 	end;
 OnInit:
-	setnpcicon getnpcid(0),2,"[製作]古城殞落";
-	waitingroom "[製作]古城殞落",0;
+	setnpcicon getnpcid(0),2,"[製作]施密特國王";
+	waitingroom "[製作]施密特國王",0;
 	
 	tradertype(NST_EXPANDED_BARTER);
 	
