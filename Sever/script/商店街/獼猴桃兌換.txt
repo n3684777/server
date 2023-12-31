@@ -103,7 +103,7 @@ OnInit:
     endsellitem();
     sellitem(950013, 0, -1);	    // ¨¾±²+20
 	sellitemcurrency(6909,999);
-	sellitemcurrency(950015,75);
+	sellitemcurrency(950015,150);
     endsellitem();
 
 
