@@ -18581,7 +18581,7 @@ Body:
       Skill:
         Reproduce: true
     CastTime: 1000
-    Cooldown: 0 # 2000
+    Cooldown: 2000
     Requires:
       SpCost:
         - Level: 1
