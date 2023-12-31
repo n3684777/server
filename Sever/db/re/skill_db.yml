@@ -18580,8 +18580,8 @@ Body:
     CopyFlags:
       Skill:
         Reproduce: true
-    CastTime: 0 #1000
-    Cooldown: 2000
+    CastTime: 1000
+    Cooldown: 0 # 2000
     Requires:
       SpCost:
         - Level: 1
