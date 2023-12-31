@@ -284,15 +284,7 @@ OnTimer3000:
 		mes "我們剩沒有多少時間了";
 		mes "別忘記我們來的目的.";
 		next;
-		if(select("等等！", "變形") == 1) {
-			mes "[奧斯卡]";
-			mes "好了再跟我說一下。";
-			cutin "gl_heinrich1",255;
-			close;
-		}
-		cutin "gl_heinrich1",255;
-		close2;
-		
+		if(select("變形", "好了！") == 1) {
 		npctalk "(變形中)";
 		donpcevent instance_npcname("#bossdoor")+"::OnEnable";
 		progressbar_npc "ffff00",2;
@@ -301,6 +293,14 @@ OnTimer3000:
 		setnpcdisplay strnpcinfo(3), "奧斯卡", 1713;
 		npctalk "這就是我的真面目";
 		initnpctimer;
+			close;
+		}
+		cutin "gl_heinrich1",255;
+		close2;
+		
+			mes "[奧斯卡]";
+			mes "好了再跟我說一下。";
+			cutin "gl_heinrich1",255;
 
 
 		end;
