@@ -1,14 +1,15 @@
 -	script	RandomItem	-1,{
+        // ±¼Ä_¥[­¿¤­­¿
 OnNPCKillEvent:
     .@m = killedrid;
-    addmonsterdrop .@m,950017,100;
-    // ¤õ2©Ç
-    addmonsterdrop 2732,950017,10;
-    addmonsterdrop 1382,950017,10;
-    addmonsterdrop 1387,950017,10;
-    addmonsterdrop 1367,950017,10;
-    addmonsterdrop 1384,950017,10;
-    addmonsterdrop 1385,950017,10;
-    addmonsterdrop 1379,950017,10;
+    addmonsterdrop .@m,950017,20;
+    // ¤õ2©Ç 
+    addmonsterdrop 2732,950017,2;
+    addmonsterdrop 1382,950017,2;
+    addmonsterdrop 1387,950017,2;
+    addmonsterdrop 1367,950017,2;
+    addmonsterdrop 1384,950017,2;
+    addmonsterdrop 1385,950017,2;
+    addmonsterdrop 1379,950017,2;
    	end;
 }
