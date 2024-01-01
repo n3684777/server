@@ -557,7 +557,7 @@ OnMyMobDead:
 	disablenpc instance_npcname("#GardenHeal_1");
 	disablenpc instance_npcname("#GardenHeal_2");
 	getmapxy(.@m$,'passx,'passy,BL_PC);
-	donpcevent instance_npcname("°Æ¥»Ä_½c#1@ghg")+"::OnEnable";
+	donpcevent instance_npcname("Â÷¶}°Æ¥»#1@ghg")+"::OnEnable";
 	'ClearInatance = 1;	
 	end;
 OnPAPILIADead:
