@@ -99,11 +99,11 @@ OnInit:
     endsellitem();
     sellitem(950012, 0, -1);	    // ªZ±²+20
 	sellitemcurrency(6909,999);
-	sellitemcurrency(950014,150);
+	sellitemcurrency(950014,75);
     endsellitem();
     sellitem(950013, 0, -1);	    // ¨¾±²+20
 	sellitemcurrency(6909,999);
-	sellitemcurrency(950015,150);
+	sellitemcurrency(950015,75);
     endsellitem();
 
 
