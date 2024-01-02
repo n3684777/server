@@ -71,7 +71,7 @@ function	script	membervip3	{
 				sc_start SC_EXPBOOST,3600000,500;		//400%經驗倍增 1
 				sc_start SC_ITEMBOOST,3600000,400; //400倍掉寶倍增
 				sc_start SC_SPEEDUP1,3600000,1;
-      			sc_start SC_SPEEDUP1,3600000,50; // 果凍
+      			sc_start SC_SPEEDUP1,3600000,1; // 果凍
 				set #zhuangtaiVIP3, #zhuangtaiVIP3+1;
 			break;
 		case 2:
