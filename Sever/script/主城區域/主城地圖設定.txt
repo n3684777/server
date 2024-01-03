@@ -68,13 +68,13 @@ OnPCEnterMapExpress:
 	}
 	
 	//如果不是預設加速地圖 - 強制刪除狀態
-	//if (@tomap_name$ != "uttycty" || @tomap_name$ != "amatsu")
-	//{
-	//	sc_end SC_CITY_SPEED;
-	//	sc_end SC_BLESSING;
-	//	sc_end SC_INCREASEAGI;
-	//	end;
-	//}
+//	if (@tomap_name$ != "uttycty" || @tomap_name$ != "amatsu")
+//	{
+//		sc_end SC_CITY_SPEED;
+//		sc_end SC_BLESSING;
+//		sc_end SC_INCREASEAGI;
+//		end;
+//	}
 	
 end;
 }
