@@ -3503,11 +3503,11 @@ Body:
         MinimumRefine: 9
         CardsAllowed: true
         Materials:
-         - Material: item_940048
+         - Material: item_940047
            Amount: 300
-         - Material: item_940043
+         - Material: item_940042
            Amount: 300
-         - Material: item_940045
+         - Material: item_940044
            Amount: 300
          - Material: Angeling_Card
            Amount: 100
