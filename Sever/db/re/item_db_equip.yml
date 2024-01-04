@@ -155059,6 +155059,14 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 192
+  - Id: 480377
+    AegisName: C_Cat_Doll_WH
+    Name: (服飾)白色布偶貓玩偶
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 196
   - Id: 480393
     AegisName: C_Loli_Ruri_Moon_B
     Name: (服飾)藍月魔女之新月
