@@ -151614,6 +151614,7 @@ Body:
       Shoes: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Trade:
       NoDrop: true
     Script: |
