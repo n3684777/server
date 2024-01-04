@@ -155059,14 +155059,6 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
     View: 192
-  - Id: 480377
-    AegisName: C_Cat_Doll_WH
-    Name: (服飾)白色布偶貓玩偶
-    Type: Armor
-    Locations:
-      Costume_Garment: true
-    ArmorLevel: 1
-    View: 196
   - Id: 480393
     AegisName: C_Loli_Ruri_Moon_B
     Name: (服飾)藍月魔女之新月
@@ -187012,9 +187004,10 @@ Body:
         bonus bMaxHPrate,6;
       }
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Alchemist) {
-        bonus2 bSkillAtk,"CR_ACIDDEMONSTRATION",3*(getskilllv("GN_REMODELING_CART")+getskilllv("GN_CARTBOOST"));
-        bonus2 bSkillAtk,"GN_HELLS_PLANT",3*(getskilllv("GN_REMODELING_CART")+getskilllv("GN_CARTBOOST"));
-        bonus2 bSkillAtk,"GN_CARTCANNON",3*getskilllv("GN_CART_TORNADO");
+        bonus2 bSkillAtk,"CR_ACIDDEMONSTRATION",50;
+        bonus2 bSkillAtk,"GN_HELLS_PLANT",50;
+        bonus2 bSkillAtk,"GN_CARTCANNON",50;
+        bonus2 bSkillAtk,"GN_CART_TORNADO",50;
       }
       if (.@g >= ENCHANTGRADE_D) {
         bonus bDelayrate,-5;
@@ -187160,3 +187153,11 @@ Body:
     Script: |
       bonus bAtkRate,7;
       bonus bMatkRate,7;
+  - Id: 480377
+    AegisName: C_Cat_Doll_WH
+    Name: (服飾)白色布偶貓玩偶
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 196
