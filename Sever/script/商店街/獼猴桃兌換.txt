@@ -8,11 +8,13 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 	
     sellitem(6417,500000,-1);
-	sellitem(100340,0,-1);  //
-    sellitemcurrency(6417,2);
-    endsellitem();
+
     sellitem(6909, 0, -1);	    // 喵楊桃
 	sellitemcurrency(910132,1); 
+    endsellitem();
+
+	sellitem(100340,0,-1);  //
+    sellitemcurrency(6417,2);
     endsellitem();
     sellitem(100465, 0, -1);	
 	sellitemcurrency(6417,3);
@@ -106,11 +108,11 @@ OnInit:
     endsellitem();
     sellitem(950012, 0, -1);	    // 武捲+20
 	sellitemcurrency(6909,999);
-	sellitemcurrency(950014,75);
+	sellitemcurrency(950014,150);
     endsellitem();
     sellitem(950013, 0, -1);	    // 防捲+20
 	sellitemcurrency(6909,999);
-	sellitemcurrency(950015,75);
+	sellitemcurrency(950015,150);
     endsellitem();
 
 

@@ -392,6 +392,10 @@ OnInit:
 	sellitem(400087,.@p,-1);	//潛能激發冒險帽
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+
+	sellitem(400006,.@p,-1);	//獸人族的傳承象徵
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 	
 
 	sellitem(410213,.@c,-1);	//血腥之耳
