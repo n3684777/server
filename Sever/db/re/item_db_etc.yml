@@ -32706,7 +32706,7 @@ Body:
     AegisName: S_Circlet_Of_Time
     Name: «Ê¦L¶W®ÉªÅÀY«a
     Type: Etc
-    Weight: 100
+    Weight: 0
     Flags:
       BuyingStore: true
   - Id: 25865
