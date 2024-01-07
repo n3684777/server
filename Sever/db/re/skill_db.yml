@@ -31187,17 +31187,17 @@ Body:
         Time: 180000
       - Level: 5
         Time: 210000
-    Cooldown:
-      - Level: 1
-        Time: 90000
-      - Level: 2
-        Time: 120000
-      - Level: 3
-        Time: 150000
-      - Level: 4
-        Time: 180000
-      - Level: 5
-        Time: 210000
+    # Cooldown:
+    #   - Level: 1
+    #     Time: 90000
+    #   - Level: 2
+    #     Time: 120000
+    #   - Level: 3
+    #     Time: 150000
+    #   - Level: 4
+    #     Time: 180000
+    #   - Level: 5
+    #     Time: 210000
     FixedCastTime: 1000
     Requires:
       SpCost:
