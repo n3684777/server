@@ -38899,7 +38899,7 @@ Body:
       bonus2 bAddRace,RC_All,10*getrefine();
   - Id: 29371
     AegisName: Release_Of_Magic
-    Name: (JRO)真理解放
+    Name: (JRO)真理的解放
     Type: Card
     SubType: Enchant
     Script: |
@@ -44055,7 +44055,7 @@ Body:
       bonus2 bMagicAddRace,RC_Insect,50;
   - Id: 300282
     AegisName: Card_Of_Hermit_R
-    Name: The Hermit Reversed
+    Name: (JRO)隱者卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44077,7 +44077,7 @@ Body:
          bonus2 bSkillAtk,"AB_JUDEX",5;
   - Id: 300283
     AegisName: Card_Of_Fool_R
-    Name: The Fool Reversed
+    Name: (JRO)愚者卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44102,7 +44102,7 @@ Body:
       }
   - Id: 300284
     AegisName: Card_Of_Hierophant_R
-    Name: The Hierophant Reversed
+    Name: (JRO)法王卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44124,7 +44124,7 @@ Body:
          bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",5;
   - Id: 300285
     AegisName: Card_Of_TheHangedM_R
-    Name: The Hanged Man Reversed
+    Name: (JRO)吊人卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44146,7 +44146,7 @@ Body:
          bonus2 bSkillAtk,"RL_HAMMER_OF_GOD",5;
   - Id: 300286
     AegisName: Card_TheHighPriestess
-    Name: The High Priestess
+    Name: (JRO)女教皇卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -44168,7 +44168,7 @@ Body:
          bonus2 bSkillAtk,"SP_SPA",5;
   - Id: 300287
     AegisName: Card_TheHighPriestess_R
-    Name: The High Priestess Reversed
+    Name: (JRO)女教皇卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44190,7 +44190,7 @@ Body:
          bonus2 bSkillAtk,"SP_CURSEEXPLOSION",5;
   - Id: 300288
     AegisName: Card_Of_TheTower
-    Name: The Tower
+    Name: (JRO)塔卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -44212,7 +44212,7 @@ Body:
          bonus2 bSkillAtk,"SJ_BOOKOFCREATINGSTAR",5;
   - Id: 300289
     AegisName: Card_Of_TheTower_R
-    Name: The Tower Reversed
+    Name: (JRO)塔卡片(逆位置)
     Type: Card
     Buy: 20
     Weight: 10
@@ -44370,7 +44370,7 @@ Body:
       bonus bLongAtkRate,4*(.@r/3);
   - Id: 300314
     AegisName: 19th_Pack_enc01
-    Name: Remnants of reason and memory    # !todo check english name
+    Name: (JRO)理性與記憶的殘渣
     Type: Card
     SubType: Enchant
     Script: |
@@ -45709,7 +45709,7 @@ Body:
       bonus2 bSkillAtk,"AB_JUDEX",15;
   - Id: 310012
     AegisName: DesireOfDeath
-    Name: Doom Desire
+    Name: (JRO)死的欲動
     Type: Card
     SubType: Enchant
     Script: |
@@ -47806,7 +47806,7 @@ Body:
       bonus2 bSkillAtk,"DC_THROWARROW",15;
   - Id: 310321
     AegisName: Enchant_Groza
-    Name: Abyssal King
+    Name: (JRO)深淵之王
     Type: Card
     SubType: Enchant
     Script: |
@@ -51815,7 +51815,7 @@ Body:
       }
   - Id: 310760
     AegisName: DivineGrace_of_Kings
-    Name: Heaven's Majesty
+    Name: (JRO)王的神威
     Type: Card
     SubType: Enchant
     Script: |
@@ -53768,7 +53768,7 @@ Body:
       bonus bVariableCastrate,-10;
   - Id: 311072
     AegisName: King_of_Origin
-    Name: King of Origin    # !todo check english name
+    Name: (JRO)起源之王
     Type: Card
     SubType: Enchant
     Script: |
@@ -53776,7 +53776,7 @@ Body:
       bonus bMaxSP,250;
   - Id: 311073
     AegisName: Goddess_of_Abundance
-    Name: Goddess of Abundance    # !todo check english name
+    Name: (JRO)豊穰的女神
     Type: Card
     SubType: Enchant
     Script: |
@@ -53784,14 +53784,14 @@ Body:
       bonus bAddItemHealRate,15;
   - Id: 311074
     AegisName: Heros_TriumphantSong
-    Name: Hero's Triumph    # !todo check english name
+    Name: (JRO)英雄的凱歌
     Type: Card
     SubType: Enchant
     Script: |
       bonus bAspd,1;
   - Id: 311075
     AegisName: Illusion_Box_Garden
-    Name: Demonlord Calamity
+    Name: (JRO)厄災的魔將
     Type: Card
     SubType: Enchant
     Script: |
@@ -57047,7 +57047,7 @@ Body:
       }
   - Id: 311284
     AegisName: Kings_Magic
-    Name: Extreme Magic
+    Name: (JRO)極限的魔力
     Type: Card
     SubType: Enchant
     Script: |
@@ -58007,7 +58007,7 @@ Body:
       bonus bShortAtkRate,1*getskilllv("SC_REPRODUCE");
   - Id: 311365
     AegisName: Royal_Glory
-    Name: Royal Glory
+    Name: (JRO)王家的榮耀
     Type: Card
     SubType: Enchant
     Script: |
