@@ -10619,7 +10619,7 @@ Body:
     Hit: Multi_Hit
     HitCount: 1
     Element: Weapon
-    SplashArea: 2
+    SplashArea: 5
     ActiveInstance: 14
     CastCancel: true
     CastTime: 500
