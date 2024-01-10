@@ -83790,7 +83790,7 @@ Body:
     View: 1830
     Weight: 100
     Locations:
-      Head_Low: true
+      Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 100
     Script: |
