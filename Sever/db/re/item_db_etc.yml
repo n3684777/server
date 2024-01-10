@@ -1120,7 +1120,7 @@ Body:
     Name: 酒精
     Type: Etc
     Buy: 400
-    Weight: 30
+    Weight: 0
     Flags:
       BuyingStore: true
   - Id: 971
@@ -31729,7 +31729,7 @@ Body:
     AegisName: EP17_1_EVT02
     Name: 神秘零件
     Type: Etc
-    Weight: 10
+    Weight: 0
   - Id: 25670
     AegisName: EP17_1_EVT03
     Name: 改造模組(DEF)
@@ -32183,7 +32183,7 @@ Body:
     Name: 核心元件
     Type: Etc
     Buy: 15000
-    Weight: 10
+    Weight: 0
   - Id: 25728
     AegisName: Shadowdecon_Ore
     Name: 影子神秘原石
@@ -32195,7 +32195,7 @@ Body:
     AegisName: Shadowdecon
     Name: 影子神秘金屬
     Type: Etc
-    Weight: 20
+    Weight: 0
     Flags:
       DropEffect: CLIENT
   - Id: 25730
