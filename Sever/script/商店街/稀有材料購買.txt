@@ -9,7 +9,10 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(910132,100000000,-1);      //1E支票
-	
+
+	sellitem(100229,1000000,-1);      //影子職業高級屬性箱
+	sellitem(100441,1000000,-1);      //影子技能高級屬性箱
+
 	sellitem(1001174,.@p*3,-1);      //心臟
 	sellitemcurrency(6909,30);
 	sellitemcurrency(6417,100);
