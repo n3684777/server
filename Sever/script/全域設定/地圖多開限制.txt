@@ -23,7 +23,7 @@ V1.0 2023-2-9
 end;
 OnInit:
 	// 設定地圖多開 add_map("<地圖>",<同IP限制數量>);
-	add_map("mag_dun02",1);
+	add_map("mag_dun02",2);
 end;
 OnPCLoadMapEvent:
 	set .@map$,strcharinfo(3);
