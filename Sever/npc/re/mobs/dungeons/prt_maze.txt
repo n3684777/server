@@ -66,7 +66,7 @@ prt_maze01,168,60,3,3	monster	Red Mushroom	1085,2,180000,90000
 //==================================================
 prt_maze02,0,0	monster	Poporing	1031,32,5000
 prt_maze02,0,0	monster	Bigfoot	1060,6,5000
-prt_maze02,0,0	monster	Sasquatch	1243,50,1,1 //1243,1,900000,40000
+prt_maze02,0,0	monster	Sasquatch	1243,1,900000,40000
 prt_maze02,0,0	monster	Leib Olmai	1306,1,1800000,900000
 
 //==================================================
