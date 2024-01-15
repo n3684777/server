@@ -66962,6 +66962,7 @@ Body:
       bonus2 bSkillAtk,"SR_TIGERCANNON",100;
       bonus2 bSkillAtk,"LG_RAYOFGENESIS",100;
       bonus2 bSkillAtk,"LG_CANNONSPEAR",100;
+      bonus2 bSkillAtk,"WL_CHAINLIGHTNING",100;
   - Id: 900110
     AegisName: EL_A17T_Card_
     Name: EL-A17T¥d¤ù-§ï
