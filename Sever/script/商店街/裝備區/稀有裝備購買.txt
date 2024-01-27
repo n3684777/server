@@ -1097,7 +1097,7 @@ OnInit:
 	sellitem(900113,.@p,-1);	//RSX-0806卡片-改 x
 	sellitemcurrency(4342,.@h);
     endsellitem(); 
-	sellitem(900114,2000000000,-1);	//T W O卡片-改 x
+	sellitem(900114,.@p,-1);	//T W O卡片-改 x
 	sellitemcurrency(27020,.@h);
     endsellitem(); 
 	sellitem(900115,.@p,-1);	//不祥烏龜將軍卡片-改 x
