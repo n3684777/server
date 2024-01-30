@@ -66901,10 +66901,9 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
+      .@r = getrefine();
       bonus bDefRatioAtkClass,Class_All;
-      bonus bSPDrainValue,-1;
-      bonus bDef,-30;
-      bonus bFlee,-30;
+      bonus2 bAddRace,RC_All,.@r*4;
   - Id: 900107
     AegisName: Kraken_Card_
     Name: 魔鬼大烏賊卡片-改
