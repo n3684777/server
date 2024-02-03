@@ -141073,6 +141073,18 @@ Body:
             }
          }
       }
+  - Id: 400604
+    AegisName: C_Ribbon_Beret_B
+    Name: (服飾)黑喵蝴蝶結貝雷帽
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2507
+    Trade:
+      NoDrop: true
   - Id: 400558
     AegisName: C_Snow_Head
     Name: (服飾)雪人DIY
