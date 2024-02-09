@@ -95693,15 +95693,15 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 3
-  # - Id: 20765
-  #   AegisName: C_Archangel_Wing
-  #   Name: (服飾)永恆之翼
-  #   Type: Armor
-  #   Locations:
-  #     Costume_Garment: true
-  #   ArmorLevel: 1
-  #   EquipLevelMin: 1
-  #   View: 49
+  - Id: 20765
+    AegisName: C_Archangel_Wing
+    Name: (服飾)永恆之翼
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 49
   - Id: 20773
     AegisName: Excelion_Wing
     Name: 艾克賽利翁推進翼
