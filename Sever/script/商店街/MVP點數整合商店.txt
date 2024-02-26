@@ -1,3 +1,6 @@
+//.@map$ != "bossnia_04" && .@map$ != "1@ch_t"  && .@map$ != "1@tower" && .@map$ != "izlude" && .@map$ != "guild_vs1" && .@map$ != "guild_vs2" && .@map$ != "guild_vs3" && .@map$ != "guild_vs4" && .@map$ != "guild_vs5"
+
+
 -	script	#MVP點數	-1,{
 OnNPCKillEvent:
 	getmapxy(.@map$,.@x,.@y);
@@ -6,10 +9,6 @@ OnNPCKillEvent:
 						2068,2087,2156,2165,2202,2235,2236,2237,2238,2239,2240,2241,2244,2249,2251,2253,2255,2362,2441,2442,3074,3220,3221,
 						3222,3223,3224,3225,3240,3241,3242,3243,3244,3245,3246,3505,3741,3757,3758,3796,3804,20260,20273,20277,20381,20419,
 						20421,20422,20520,20601,20610,20611,20618,20811,20928,20934,20943,21301,21395,21537;
-
-// .@map$ != "bossnia_04" && .@map$ != "1@ch_t"  && .@map$ != "1@tower" && .@map$ != "izlude" 
-								&& .@map$ != "guild_vs1" && .@map$ != "guild_vs2" && .@map$ != "guild_vs3" && .@map$ != "guild_vs4" && .@map$ != "guild_vs5"
-
 	for( .@i = 0 ; .@i<getarraysize(.@mvp) ; .@i++){
 	if ( true ){
 		if( killedrid == .@mvp[.@i]){
