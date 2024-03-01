@@ -22508,7 +22508,7 @@ Body:
     Script: |
       set #MVPPOINTS, #MVPPOINTS+1; dispbottom "眤 M V P 翴计 糤 1 ヘ玡仓璸 " + #MVPPOINTS + " だ";
   - Id: 910137
-    AegisName: item_910136
+    AegisName: item_910137
     Name: MVP翴计(500翴)
     Type: Usable
     Buy: 50
@@ -22526,7 +22526,7 @@ Body:
     Script: |
       set #MVPPOINTS, #MVPPOINTS+500; dispbottom "眤 M V P 翴计 糤 500 ヘ玡仓璸 " + #MVPPOINTS + " だ";
   - Id: 910138
-    AegisName: item_910136
+    AegisName: item_910138
     Name: MVP翴计(1000翴)
     Type: Usable
     Buy: 50
