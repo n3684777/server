@@ -143418,8 +143418,8 @@ Body:
     Script: |
       bonus bAspdRate,10;
       bonus bAspd,1;
-      bouns bMatkRate,3;
-      bouns bSpl,3;
+      bonus bMatkRate,3;
+      bonus bSpl,3;
       bonus5 bAutoSpell,"ABC_FROM_THE_ABYSS",(getskilllv("ABC_FROM_THE_ABYSS") > 2)?2:getskilllv("ABC_FROM_THE_ABYSS"),1000,BF_LONG|BF_SHORT,0;
       bonus5 bAutoSpell,"ABC_FROM_THE_ABYSS",2,1000,BF_LONG|BF_SHORT,1;
   - Id: 430005
