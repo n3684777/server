@@ -35,6 +35,15 @@ OnInit:
 	sellitemcurrency(910132,999);
 	sellitemcurrency(1001174,999);
     endsellitem();
+	sellitem(910134,0,-1);      //MVP點數(300點)
+	sellitemcurrency(910136,300);
+    endsellitem();
+	sellitem(910137,0,-1);      //MVP點數(500點)
+	sellitemcurrency(910136,500);
+    endsellitem();
+	sellitem(910138,0,-1);      //MVP點數(1000點)
+	sellitemcurrency(910136,1000);
+    endsellitem();
 
 	sellitem(4610,0,-1);      //莎拉卡片
 	sellitemcurrency(940025,200);

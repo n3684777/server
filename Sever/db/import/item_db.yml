@@ -22507,6 +22507,42 @@ Body:
       NoAuction: true
     Script: |
       set #MVPPOINTS, #MVPPOINTS+1; dispbottom "眤 M V P 翴计 糤 1 ヘ玡仓璸 " + #MVPPOINTS + " だ";
+  - Id: 910137
+    AegisName: item_910136
+    Name: MVP翴计(500翴)
+    Type: Usable
+    Buy: 50
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      set #MVPPOINTS, #MVPPOINTS+500; dispbottom "眤 M V P 翴计 糤 500 ヘ玡仓璸 " + #MVPPOINTS + " だ";
+  - Id: 910138
+    AegisName: item_910136
+    Name: MVP翴计(1000翴)
+    Type: Usable
+    Buy: 50
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      TradePartner: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      set #MVPPOINTS, #MVPPOINTS+1000; dispbottom "眤 M V P 翴计 糤 1000 ヘ玡仓璸 " + #MVPPOINTS + " だ";
   - Id: 22654
     AegisName: Golden_Card
     Name: 独
