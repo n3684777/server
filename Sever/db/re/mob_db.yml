@@ -50657,6 +50657,9 @@ Body:
       - Item: Gioia_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 2252
     AegisName: ELVIRA
     Name: 埃維亞
@@ -50762,6 +50765,9 @@ Body:
       - Item: Daehyon_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 2254
     AegisName: SOHEON
     Name: 衛士小賢
@@ -50866,6 +50872,9 @@ Body:
         Rate: 1000
       - Item: Kades_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 2256
     AegisName: RUDO
@@ -54310,6 +54319,9 @@ Body:
       - Item: Grave_Amon_Ra_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 2363
     AegisName: MENBLATT
     Name: 花妖精
@@ -56608,6 +56620,9 @@ Body:
         Rate: 5
       - Item: Tae_Goo_Lyeon
         Rate: 2
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 2442
     AegisName: B_SUPERNOVICE
     Name: 魔鬼孩子王
@@ -56658,6 +56673,9 @@ Body:
         Rate: 100
       - Item: Destruction_Rod
         Rate: 2
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 2443
     AegisName: AIRA
     Name: 艾爾娜
@@ -79551,6 +79569,9 @@ Body:
       - Item: Timeholder_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3075
     AegisName: WA_TREASURE
     Name: 迅捷寶物箱子
@@ -83631,6 +83652,9 @@ Body:
       - Item: GuillotineCross_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3221
     AegisName: V_B_MAGALETA
     Name: 闇●大主教 瑪嘉雷特
@@ -83683,6 +83707,9 @@ Body:
         Rate: 10000
       - Item: Archbishop_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3222
     AegisName: V_B_SHECIL
@@ -83737,6 +83764,9 @@ Body:
       - Item: Ranger_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3223
     AegisName: V_B_HARWORD
     Name: 闇●機械工匠 哈沃德
@@ -83789,6 +83819,9 @@ Body:
         Rate: 10000
       - Item: Mechanic_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3224
     AegisName: V_B_KATRINN
@@ -83843,6 +83876,9 @@ Body:
       - Item: Warlock_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3225
     AegisName: V_B_SEYREN
     Name: 闇●盧恩騎士 賽依連
@@ -83895,6 +83931,9 @@ Body:
         Rate: 10000
       - Item: RuneKnight_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3226
     AegisName: V_RANDEL
@@ -84509,6 +84548,9 @@ Body:
       - Item: RoyalGuard_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3241
     AegisName: V_B_FLAMEL
     Name: 闇●基因學者 普拉梅姆
@@ -84561,6 +84603,9 @@ Body:
         Rate: 10000
       - Item: Genetic_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3242
     AegisName: V_B_CELIA
@@ -84615,6 +84660,9 @@ Body:
       - Item: Sorcerer_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3243
     AegisName: V_B_CHEN
     Name: 闇●修羅 陳理歐
@@ -84667,6 +84715,9 @@ Body:
         Rate: 10000
       - Item: Sura_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3244
     AegisName: V_B_GERTIE
@@ -84721,6 +84772,9 @@ Body:
       - Item: ShadowChaser_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3245
     AegisName: V_B_ALPHOCCIO
     Name: 闇●宮廷樂師 雅歐帕奇爾
@@ -84774,6 +84828,9 @@ Body:
       - Item: Minstrel_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3246
     AegisName: V_B_TRENTINI
     Name: 闇●浪姬舞者 特蘭提尼
@@ -84826,6 +84883,9 @@ Body:
         Rate: 10000
       - Item: Wanderer_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3247
     AegisName: CENERE_G
@@ -90091,6 +90151,9 @@ Body:
       - Item: Big_Eggring_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3506
     AegisName: DR_MANDRAGORA
     Name: 叢林曼陀羅魔花
@@ -93617,6 +93680,9 @@ Body:
       - Item: Mechaspider_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3742
     AegisName: PURPLESTONE
     Name: 紫色礦石
@@ -94301,6 +94367,9 @@ Body:
       - Item: Ill_Dracula_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3758
     AegisName: ILL_MOONLIGHT
     Name: 憤怒的月夜貓
@@ -94357,6 +94426,9 @@ Body:
         Rate: 100
       - Item: AngerMoonlight_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 3759
     AegisName: ILL_NINE_TAIL
@@ -95108,6 +95180,9 @@ Body:
       - Item: AwakenKtullanux_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 3797
     AegisName: ILL_FROZEN_KN
     Name: ILL_FROZEN_KN
@@ -95467,6 +95542,9 @@ Body:
         Rate: 1000
       - Item: OminousTurtleG_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
 #  - Id: 3805
 #    AegisName: E_HAPPY_EGG
@@ -96952,6 +97030,9 @@ Body:
       - Item: Shiny_Teddy_Bear_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20261
     AegisName: ILL_PITMAN
     Name: 勞碌礦工魔
@@ -97332,6 +97413,9 @@ Body:
       - Item: Ancient_Tao_Gunka_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20274
     AegisName: ILL_STONE_SHOOTER
     Name: 古代石砲火樹
@@ -97539,6 +97623,9 @@ Body:
         StealProtected: true
       - Item: Wootan_Fighter_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
 #  - Id: 20278
 #    AegisName: G_ILL_MEGALITH
@@ -99425,6 +99512,9 @@ Body:
       - Item: R48_85_Bestia_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20382
     AegisName: G_TWIN_CAPUT2
     Name: Twin Capute
@@ -99897,6 +99987,9 @@ Body:
       - Item: Firm_Muspell_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20420
     AegisName: WANDER_MAN_H
     Name: 汙染邪骸浪人
@@ -100010,6 +100103,9 @@ Body:
       - Item: Polluted_Spi_Q_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20422
     AegisName: DARK_LORD_H
     Name: 汙染黑暗之王
@@ -100071,6 +100167,9 @@ Body:
         Rate: 2500
       - Item: Polluted_Dark_L_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 20423
     AegisName: BACSOJIN2
@@ -100402,6 +100501,9 @@ Body:
         StealProtected: true
       - Item: Chaos_Baphomet_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 20521
     AegisName: ILL_ANDREA
@@ -102400,6 +102502,9 @@ Body:
       - Item: Jungoliant_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20602
     AegisName: PORCELLIO_W
     Name: 白色三葉鐵甲蟲
@@ -102813,6 +102918,9 @@ Body:
       - Item: Reginleif_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20611
     AegisName: INGRID
     Name: 英格麗
@@ -103203,6 +103311,9 @@ Body:
         Rate: 100
       - Item: Bone_Detale_Card
         Rate: 1
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20619
     AegisName: GLOOMUNDERNIGHT2
     Name: 幽暗夢魘
@@ -108718,6 +108829,9 @@ Body:
       - Item: ILL_Kraken_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
 #  - Id: 20812
 #    AegisName: MD_EVENT_HEMEL
 #  - Id: 20813
@@ -110362,6 +110476,9 @@ Body:
       - Item: The_One_Card
         Rate: 1
         StealProtected: true
+      - Item: 910136
+        Rate: 10000
+        StealProtected: true
   - Id: 20929
     AegisName: GIANT_CAPUT
     Name: 巨人卡夫特
@@ -110649,6 +110766,9 @@ Body:
         Rate: 12
       - Item: R001_Bestia_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 20935
     AegisName: GAN_CEANN
@@ -111093,6 +111213,9 @@ Body:
         Rate: 12
       - Item: Death_Witch_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
 #  - Id: 20944
 #    AegisName: JP_E_MONSTER_151
@@ -112628,6 +112751,9 @@ Body:
         StealProtected: true
       - Item: 300217
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
   - Id: 21302
     AegisName: EP18_ASHHOPPER
@@ -114351,6 +114477,9 @@ Body:
         Rate: 10
       - Item: ILL_Maya_Card
         Rate: 1
+        StealProtected: true
+      - Item: 910136
+        Rate: 10000
         StealProtected: true
 #  - Id: 21396
 #    AegisName: SEASON_MOB_016

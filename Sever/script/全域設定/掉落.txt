@@ -12,9 +12,6 @@ OnNPCKillEvent:
     addmonsterdrop 1385,950017,2;
     addmonsterdrop 1379,950017,2;
 
-  
-
-
 
 
    	end;
