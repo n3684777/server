@@ -22494,7 +22494,7 @@ Body:
     Name: MVP點數(1點)
     Type: Usable
     Buy: 50
-    Weight: 10
+    Weight: 0
     Trade:
       NoDrop: true
       NoTrade: true
@@ -22512,7 +22512,7 @@ Body:
     Name: MVP點數(500點)
     Type: Usable
     Buy: 50
-    Weight: 10
+    Weight: 0
     Trade:
       NoDrop: true
       NoTrade: true
@@ -22530,7 +22530,7 @@ Body:
     Name: MVP點數(1000點)
     Type: Usable
     Buy: 50
-    Weight: 10
+    Weight: 0
     Trade:
       NoDrop: true
       NoTrade: true
