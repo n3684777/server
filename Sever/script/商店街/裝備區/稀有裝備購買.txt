@@ -233,6 +233,15 @@ OnInit:
     endsellitem(); 
 	sellitem(2202,.@c,-1);	//太陽眼鏡
     endsellitem(); 
+
+	sellitem(410211,.@p,-1);	//深淵湖水龍寶寶
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(420323,.@p,-1);	//無處安放的魅力
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
+
+	
 	sellitem(400134,.@p,-1);	//塔諾斯近戰頭盔
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
@@ -432,6 +441,8 @@ OnInit:
     endsellitem(); 
 	sellitem(420186,.@c,-1);	//20週年慶生氣球
     endsellitem(); 
+
+
 	
 OnBuyItem:
 end;
