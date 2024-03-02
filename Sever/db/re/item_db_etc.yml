@@ -65479,7 +65479,7 @@ Body:
          bonus bCritical,20;
          bonus bLongAtkRate,40;
          bonus bCritAtkRate,25;
-         bonus2 bSkillCooldown,"RA_UNLIMIT",-36000;
+         bonus2 bSkillCooldown,"RA_UNLIMIT",-300000;
 
       }
       if (BaseLevel>174)
