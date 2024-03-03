@@ -66816,8 +66816,11 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMaxHPrate,20;
+      bonus bMaxHPrate,25;
       skill "WZ_WATERBALL",5;
+      bonus5 bAutoSpellWhenHit,"WZ_WATERBALL",10,300,BF_WEAPON|BF_MAGIC,1;
+      bonus2 bSkillAtk,"WZ_WATERBALL",2000;
+      bonus2 bMagicAtkEle,Ele_Water,150;
   - Id: 900101
     AegisName: Evil_Card_
     Name: 邪心獵人伊芙卡片-改
