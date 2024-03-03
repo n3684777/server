@@ -661,6 +661,22 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 
+	sellitem(490184,.@p,-1);	//英雄之証(蜃氣樓/不知火)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490185,.@p,-1);	//英雄之証(夜衛隊)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490186,.@p,-1);	//英雄之証(靈導士)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490187,.@p,-1);	//英雄之証(天帝)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(490188,.@p,-1);	//英雄之証(魂靈師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+
 end;
 }
 
