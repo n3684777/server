@@ -68590,7 +68590,7 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
-      changebase 4091;
+      changebase 4191;
     UnEquipScript: |
       changebase Class;
   - Id: 910121
