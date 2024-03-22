@@ -113679,13 +113679,13 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      .@val = .@r/2;
+      .@val = .@r;
       if (BaseLevel<175)
-         .@val += 20;
+         .@val += 40;
       else
-         .@val += 10;
+         .@val += 20;
       if (.@r>=10)
-         .@val += 5;
+         .@val += 40;
       bonus2 bExpAddRace,RC_All,.@val;
   - Id: 24684
     AegisName: S_SNV_Weapon
