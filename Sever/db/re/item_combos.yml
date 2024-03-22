@@ -13479,7 +13479,7 @@ Body:
           - Archbishop_Robe
           - Highpriest_Middle
     Script: |
-      bonus2 bSkillCooldown,"AB_ADORAMUS",-1000;
+      bonus2 bSkillCooldown,"AB_ADORAMUS",-2500;
   - Combos:
       - Combo:
           - Archbishop_Robe
