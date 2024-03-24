@@ -10,8 +10,8 @@ OnInit:
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
-	sellitem(480136,.@p,-1);	//席琳衣
-	sellitemcurrency(.@cash,.@meow);
+	sellitem(24683,.@p,-1);	//影子經驗值倍增神盾
+	sellitemcurrency(.@cash,100);
     endsellitem(); 
 	
 OnBuyItem:
