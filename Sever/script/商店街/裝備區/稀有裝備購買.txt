@@ -1378,7 +1378,7 @@ uttycty,128,141,4	script	稀有裝備影子	112,{
 	end;
 OnInit:
 	setnpcicon getnpcid(0),1026,"稀有裝備影子";
-	waitingroom "★ 稀有鞋影子 ★",0;
+	waitingroom "★ 稀有影裝 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 30;

@@ -113679,7 +113679,7 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      .@val = 1000*.@r;
+      .@val = 500*.@r;
       if (BaseLevel<175)
          .@val += 400;
       else
