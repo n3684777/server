@@ -13,6 +13,9 @@ OnInit:
 	sellitem(24683,.@p,-1);	//影子經驗值倍增神盾
 	sellitemcurrency(.@cash,100);
     endsellitem(); 
+	sellitem(6909,.@p,-1);	//喵楊桃果實
+	sellitemcurrency(.@cash,5);
+    endsellitem(); 
 	
 OnBuyItem:
 end;

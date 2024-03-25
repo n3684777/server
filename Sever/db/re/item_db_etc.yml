@@ -69297,3 +69297,11 @@ Body:
     Buy: 0
     Trade:
       NoDrop: true
+  - Id: 2000000
+    AegisName: 300036
+    Name: ¾Ô»î(¢Ì¦r±Ù­ºªÌ)3Lv
+    Type: Card
+    SubType: Enchant
+    Buy: 10
+    Script: |
+      bonus2 bAddSize,Size_All,10; autobonus3 "{ bonus bBaseAtk,50; bonus bCritical,10; }",10000,60000,"ASC_EDP","{ specialeffect2 EF_SPELLBREAKER; }";
