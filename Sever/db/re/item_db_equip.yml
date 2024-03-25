@@ -114914,6 +114914,19 @@ Body:
             }
          }
       }
+  - Id: 24769
+    AegisName: item_24769
+    Name: 影子潛力突破手套
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAllStats,3;
+      bonus2 bIgnoreDefClassRate,Class_Normal,50 + .@r*2 + (BaseLevel > 100)?(BaseLevel/5)*2:0;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,50 + .@r*2 + (BaseLevel > 100)?(BaseLevel/5)*2:0;
   - Id: 24770
     AegisName: S_EXP_Weapon
     Name: Experience Shadow Weapon
