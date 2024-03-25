@@ -5261,6 +5261,7 @@ Body:
     MaximumRefine: 9
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -5966,6 +5967,7 @@ Body:
     MaximumRefine: 10
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -6671,6 +6673,7 @@ Body:
     MaximumRefine: 11
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -7376,6 +7379,7 @@ Body:
     MaximumRefine: 12
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -8081,6 +8085,7 @@ Body:
     MaximumRefine: 13
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -8786,6 +8791,7 @@ Body:
     MaximumRefine: 14
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -9491,6 +9497,7 @@ Body:
     MaximumRefine: 15
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -10196,6 +10203,7 @@ Body:
     MaximumRefine: 16
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -10901,6 +10909,7 @@ Body:
     MaximumRefine: 17
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -11606,6 +11615,7 @@ Body:
     MaximumRefine: 18
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
@@ -12311,6 +12321,7 @@ Body:
     MaximumRefine: 19
     CardsAllowed: true
     TargetItems:
+      - Item: item_24880
       - Item: T1_Shadow_Armor
       - Item: T1_Shadow_Weapon
       - Item: T1_Shadow_Shield
