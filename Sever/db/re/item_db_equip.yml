@@ -115014,6 +115014,34 @@ Body:
       {
       bonus bFixedCast,-100;
       }
+  - Id: 24882
+    AegisName: item_24882
+    Name: 影子純淨聖潔手套
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,(.@r/2)*15;
+      bonus bBaseAtk,(.@r/2)*15; 
+      bonus bFixedCast,-((.@r)/3*100);
+      if(.@r >= 7)
+      {
+      bonus2 bAddRace,RC_All,10;
+      bonus2 bMagicAddRace,RC_All,10;
+      }
+      if(.@r >= 9)
+      {
+      bonus2 bAddClass,Class_Boss,10;
+      bonus2 bMagicAddClass,Class_Boss,10;
+      }
+      if(.@r >= 10)
+      {
+      bonus bIgnoreDefRace,RC_All;
+      bonus bIgnoreMDefRace,RC_All;
+      }
   - Id: 26001
     AegisName: Toughen_Metal_Lance
     Name: Enhanced Metal Lance
