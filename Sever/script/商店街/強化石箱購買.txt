@@ -7,89 +7,59 @@ OnInit:
 
 	tradertype(NST_EXPANDED_BARTER);
 	.@amount = 1;
-    sellitem(14681,0,-1);
+    sellitem(25445,0,-1);           //騎士領主石(頭上)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(22826,0,-1);
+    sellitem(25446,0,-1);           //騎士領主石(頭中)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(22868,0,-1);
+    sellitem(25447,0,-1);           //騎士領主石(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(22905,0,-1);
+    sellitem(1000297,0,-1);           //騎士領主石II(頭上)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(22953,0,-1);
+    sellitem(1000298,0,-1);           //騎士領主石II(頭中)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(23001,0,-1);
+    sellitem(1000299,0,-1);           //騎士領主石II(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(23058,0,-1);
+    sellitem(25448,0,-1);           //盧恩騎士石(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(23086,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23174,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23299,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23524,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23629,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23682,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(23770,0,-1);
+    sellitem(1000296,0,-1);           //盧恩騎士石II(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
-    sellitem(9510,0,-1);
+
+
+    sellitem(25450,0,-1);           //創造者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25451,0,-1);           //創造者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25452,0,-1);           //創造者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000301,0,-1);           //創造者石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000302,0,-1);           //創造者石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000303,0,-1);           //創造者石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25449,0,-1);           //基因學者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000300,0,-1);           //基因學者石II(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
-    sellitem(100019,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100052,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100202,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100314,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100502,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100721,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(100920,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(101103,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(101271,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(101416,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(101675,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
-    sellitem(101876,0,-1);
-    sellitemcurrency(6417,.@amount);
-    endsellitem();
+
 
 
 OnBuyItem:
