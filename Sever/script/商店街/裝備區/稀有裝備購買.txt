@@ -1387,6 +1387,10 @@ OnInit:
 //	sellitem(24683,.@p,-1);	//影子經驗值倍增神盾
 //	sellitemcurrency(6909,100);
 //    endsellitem(); 
+	sellitem(24882,.@p,-1);	//影子純淨聖潔手套
+	sellitemcurrency(24880,10);
+	sellitemcurrency(6909,.@meow*3);
+    endsellitem(); 
 
 	sellitem(24386,.@p,-1);	//影子無極手套
 	sellitemcurrency(6909,.@meow);
