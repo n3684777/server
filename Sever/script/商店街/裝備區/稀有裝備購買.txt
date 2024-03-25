@@ -1400,6 +1400,15 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 
+	sellitem(24117,.@c,-1);	//影子貪婪手套
+	sellitem(24141,.@c,-1);	//影子瞬移手套
+	sellitem(24135,.@c,-1);	//影子偽裝手套
+
+
+
+	sellitem(24341,.@c,-1);	//影子種族戰靴
+	sellitem(24342,.@c,-1);	//影子種族神盾
+
 
 OnBuyItem:
 end;
