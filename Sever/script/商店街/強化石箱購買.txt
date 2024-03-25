@@ -353,8 +353,70 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 	.@amount = 5;
 
-    sellitem(25805,0,-1);           //魅影追跡者石II(披肩)
+    sellitem(25067,0,-1);           //詠唱石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25170,0,-1);           //次級詠唱石(披肩)
     sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25068,0,-1);           //ASPD石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();    
+    sellitem(6908,0,-1);           //ASPD石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25302,0,-1);           //二刀連擊石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(6999,0,-1);           //HP吸收石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(6963,0,-1);           //HP吸收石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25000,0,-1);           //SP吸收石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(6964,0,-1);           //SP吸收石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25069,0,-1);           /改良石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25070,0,-1);           //改良石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25071,0,-1);           //改良石(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25304,0,-1);           //暴擊石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25060,0,-1);           //暴擊石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25305,0,-1);           //暴擊石(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25303,0,-1);           //暴擊石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25061,0,-1);           //廣域石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
+    sellitem(25171,0,-1);           //經驗值石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25141,0,-1);           //經驗值石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25015,0,-1);           //經驗值石(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
+    sellitem(25072,0,-1);           //霸邪石(頭下)
+    sellitemcurrency(6417,.@amount*2);
     endsellitem();
 
 OnBuyItem:
