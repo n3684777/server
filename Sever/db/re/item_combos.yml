@@ -34811,3 +34811,77 @@ Body:
       bonus2 bSubEle,ELE_FIRE,5;
       bonus2 bSubEle,ELE_EARTH,5;
       bonus2 bSubEle,ELE_WATER,5;
+  - Combos:
+      - Combo:
+          - item_24880
+          - S_Runeknight_Shield
+      - Combo:
+          - item_24880
+          - S_Royalguard_Shield
+      - Combo:
+          - item_24880
+          - S_Warlock_Shield
+      - Combo:
+          - item_24880
+          - S_Sorcerer_Shield
+      - Combo:
+          - item_24880
+          - S_Mechanic_Shield
+      - Combo:
+          - item_24880
+          - S_Genetic_Shield
+      - Combo:
+          - item_24880
+          - S_Guillotine_Shield
+      - Combo:
+          - item_24880
+          - S_Shadowchaser_Shield
+      - Combo:
+          - item_24880
+          - S_Archbishop_Shield
+      - Combo:
+          - item_24880
+          - S_Sura_Shield
+      - Combo:
+          - item_24880
+          - S_Ranger_Shield
+      - Combo:
+          - item_24880
+          - S_Minstrel_Shield
+      - Combo:
+          - item_24880
+          - S_Wanderer_Shield
+      - Combo:
+          - item_24880
+          - S_SuperNovice_Shield
+    Script: |
+      .@sg = getequiprefinerycnt(EQI_SHADOW_SHIELD) + getequiprefinerycnt(EQI_SHADOW_WEAPON);
+      bonus2 bIgnoreDefRaceRate,RC_All,30 + .@sg*2;
+      bonus2 bIgnoreMdefRaceRate,RC_All,30 + .@sg*2;
+  - Combos:
+      - Combo:
+      - Combo:
+          - item_24880
+          - S_Star_Emperor_Shoes
+      - Combo:
+          - item_24880
+          - S_Soul_Reaper_Shoes
+      - Combo:
+          - item_24880
+          - S_Kagerou_Shoes
+      - Combo:
+          - item_24880
+          - S_Oboro_Shoes
+      - Combo:
+          - item_24880
+          - S_Rebellion_Shoes
+      - Combo:
+          - item_24880
+          - S_DoramPhysical_Shoes
+      - Combo:
+          - item_24880
+          - S_DoramMagical_Shoes
+    Script: |
+      .@sg = getequiprefinerycnt(EQI_SHADOW_SHOES) + getequiprefinerycnt(EQI_SHADOW_WEAPON);
+      bonus2 bIgnoreDefRaceRate,RC_All,30 + .@sg*2;
+      bonus2 bIgnoreMdefRaceRate,RC_All,30 + .@sg*2;

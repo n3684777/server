@@ -453,7 +453,7 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(25306,0,-1);           //變動詠唱石(披肩)
-    sellitemcurrency(6417,.@amount);
+    sellitemcurrency(6417,.@amount*2);
     endsellitem();
 
     sellitem(25003,0,-1);           //STR轉換石(頭中)
@@ -582,22 +582,22 @@ OnInit:
     endsellitem();
 
     sellitem(6945,0,-1);           //力量寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(6946,0,-1);           //智慧寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(6947,0,-1);           //敏捷寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(6948,0,-1);           //靈巧寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(6949,0,-1);           //體力寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(6950,0,-1);           //運氣寶石(中端)
-    sellitemcurrency(6417,.@amount*2);
+    sellitemcurrency(6417,.@amount);
     endsellitem();
 
 
