@@ -6,7 +6,7 @@ OnInit:
 	waitingroom "★ 服飾強化石箱購買 ★",0;
 
 	tradertype(NST_EXPANDED_BARTER);
-	.@amount = 1;
+	.@amount = 5;
     sellitem(25445,0,-1);           //騎士領主石(頭上)
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -32,7 +32,133 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
+    sellitem(25453,0,-1);           //超魔導師石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25454,0,-1);           //超魔導師石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25455,0,-1);           //超魔導師石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000214,0,-1);           //超魔導師石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000215,0,-1);           //超魔導師石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000216,0,-1);           //超魔導師石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25456,0,-1);           //咒術士石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000213,0,-1);           //咒術士石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
 
+
+    sellitem(25413,0,-1);           //神射手石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25414,0,-1);           //神射手石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25415,0,-1);           //神射手石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000008,0,-1);           //神射手石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000009,0,-1);           //神射手石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000010,0,-1);           //神射手石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25416,0,-1);           //遊俠石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000011,0,-1);           //遊俠石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+
+    sellitem(25706,0,-1);           //神官石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25707,0,-1);           //神官石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25708,0,-1);           //神官石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000016,0,-1);           //神官石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000017,0,-1);           //神官石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000018,0,-1);           //神官石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25709,0,-1);           //大主教石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000019,0,-1);           //大主教石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+
+    sellitem(25494,0,-1);           //神工匠石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25495,0,-1);           //神工匠石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25496,0,-1);           //神工匠石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000012,0,-1);           //神工匠石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000013,0,-1);           //神工匠石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000014,0,-1);           //神工匠石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25497,0,-1);           //機械工匠石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000015,0,-1);           //機械工匠石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25714,0,-1);           //十字刺客石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25715,0,-1);           //十字刺客石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25716,0,-1);           //十字刺客石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000222,0,-1);           //十字刺客石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000223,0,-1);           //十字刺客石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000224,0,-1);           //十字刺客石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25717,0,-1);           //十字斬首者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000221,0,-1);           //十字斬首者石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
 
     sellitem(25450,0,-1);           //創造者石(頭上)
     sellitemcurrency(6417,.@amount);
