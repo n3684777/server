@@ -3,7 +3,7 @@
 OnNPCKillEvent:
     .@m = killedrid;
     addmonsterdrop .@m,950017,20;
-    addmonsterdrop .@m,300069,10;
+    addmonsterdrop .@m,300069,1;
     // ���2��� 
     addmonsterdrop 2732,950017,2;
     addmonsterdrop 1382,950017,2;
