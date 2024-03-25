@@ -1391,6 +1391,10 @@ OnInit:
 	sellitem(24386,.@p,-1);	//影子無極手套
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(24880,.@p,-1);	//影子純淨手套
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+
 
 	sellitem(24769,.@p,-1);	//影子潛力突破手套
 	sellitemcurrency(6909,.@meow);
