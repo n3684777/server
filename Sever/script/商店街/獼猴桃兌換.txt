@@ -14,7 +14,7 @@ OnInit:
     endsellitem();
 
     sellitem(6909, 50000000, -1);	    // 喵楊桃果實
-	sellitemcurrency(6417,1); 
+	sellitemcurrency(6417,5); 
     endsellitem();
     sellitem(100465, 0, -1);	
 	sellitemcurrency(6417,3);
