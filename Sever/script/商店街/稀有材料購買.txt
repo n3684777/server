@@ -51,6 +51,34 @@ OnInit:
 	sellitem(27106,0,-1);      //覺醒貝爾卡片
 	sellitemcurrency(940049,200);
     endsellitem();
+
+	sellitem(950003,0,-1);      //忽克連超高級影子精煉鎚12
+	sellitemcurrency(950002,5);
+    endsellitem();
+	sellitem(950004,0,-1);      //忽克連超高級影子精煉鎚13
+	sellitemcurrency(950002,10);
+    endsellitem();
+	sellitem(950005,0,-1);      //忽克連超高級影子精煉鎚14
+	sellitemcurrency(950002,15);
+    endsellitem();
+	sellitem(950006,0,-1);      //忽克連超高級影子精煉鎚15
+	sellitemcurrency(950002,20);
+    endsellitem();
+	sellitem(950007,0,-1);      //忽克連超高級影子精煉鎚16
+	sellitemcurrency(950002,30);
+    endsellitem();
+	sellitem(950008,0,-1);      //忽克連超高級影子精煉鎚17
+	sellitemcurrency(950002,45);
+    endsellitem();
+	sellitem(950009,0,-1);      //忽克連超高級影子精煉鎚18
+	sellitemcurrency(950002,60);
+    endsellitem();
+	sellitem(950010,0,-1);      //忽克連超高級影子精煉鎚19
+	sellitemcurrency(950002,80);
+    endsellitem();
+	sellitem(950011,0,-1);      //忽克連超高級影子精煉鎚20
+	sellitemcurrency(950002,100);
+    endsellitem();
 	
 OnBuyItem:
 end;
