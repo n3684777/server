@@ -160,6 +160,132 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
+    sellitem(25710,0,-1);           //十字軍石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25711,0,-1);           //十字軍石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25712,0,-1);           //十字軍石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000218,0,-1);           //十字軍石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000219,0,-1);           //十字軍石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000220,0,-1);           //十字軍石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25713,0,-1);           //皇室禁衛隊石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000217,0,-1);           //皇室禁衛隊石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25417,0,-1);           //智者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25418,0,-1);           //智者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(254419,0,-1);           //智者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25802,0,-1);           //智者石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25803,0,-1);           //智者石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25804,0,-1);           //智者石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25420,-1);           //妖術師石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25801,0,-1);           //妖術師石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25417,0,-1);           //智者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25418,0,-1);           //智者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25419,0,-1);           //智者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25802,0,-1);           //智者石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25803,0,-1);           //智者石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25804,0,-1);           //智者石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25420,-1);           //妖術師石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25801,0,-1);           //妖術師石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25498,0,-1);           //舞孃/詩人石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25499,0,-1);           //舞孃/詩人石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25500,0,-1);           //舞孃/詩人石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000305,0,-1);           //舞孃/詩人石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000306,0,-1);           //舞孃/詩人石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000307,0,-1);           //舞孃/詩人石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25501,-1);           //浪跡/樂師石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000304,0,-1);           //浪跡/樂師石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25409,0,-1);           //武術宗師石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25410,0,-1);           //武術宗師石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25411,0,-1);           //武術宗師石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25798,0,-1);           //武術宗師石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25799,0,-1);           //武術宗師石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25800,0,-1);           //武術宗師石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25412,-1);           //修羅石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25797,0,-1);           //修羅石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+
     sellitem(25450,0,-1);           //創造者石(頭上)
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -182,6 +308,31 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(1000300,0,-1);           //基因學者石II(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(25490,0,-1);           //神行太保石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25491,0,-1);           //神行太保石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25492,0,-1);           //神行太保石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25806,0,-1);           //神行太保石II(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25807,0,-1);           //神行太保石II(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25808,0,-1);           //神行太保石II(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25493,0,-1);           //魅影追跡者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25805,0,-1);           //魅影追跡者石II(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
