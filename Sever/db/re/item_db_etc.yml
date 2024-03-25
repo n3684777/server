@@ -69298,7 +69298,7 @@ Body:
     Trade:
       NoDrop: true
   - Id: 2000000
-    AegisName: 300036
+    AegisName: item_2000000
     Name: ¾Ô»î(¢Ì¦r±Ù­ºªÌ)3Lv
     Type: Card
     SubType: Enchant
