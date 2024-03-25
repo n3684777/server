@@ -113686,7 +113686,7 @@ Body:
          .@val += 200;
       if (.@r>=10)
          .@val += 400;
-      bonus2 bExpAddRace,RC_All,.@val + .@r/10;
+      bonus2 bExpAddRace,RC_All,.@val + .@r*100;
   - Id: 24684
     AegisName: S_SNV_Weapon
     Name: Super Novice Booster Shadow Weapon
