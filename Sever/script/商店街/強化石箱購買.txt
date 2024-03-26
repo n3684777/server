@@ -607,3 +607,57 @@ OnInit:
 OnBuyItem:
 end;
 }
+
+uttycty,90,168,4	script	★ 服飾特效石 ★	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"服飾特效石購買商";
+	waitingroom "★ 服飾特效石購買 ★",0;
+
+	tradertype(NST_EXPANDED_BARTER);
+	.@amount = 5;
+
+    sellitem(25058,0,-1);           //閃耀效果(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(25059,0,-1);           //幽靈效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();    
+
+    sellitem(25138,0,-1);           //縮小效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();    
+
+    sellitem(25138,0,-1);           //縮小效果(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();  
+    sellitem(25136,0,-1);           //	電氣效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();    
+
+    sellitem(25137,0,-1);           //綠光效果(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();    
+    sellitem(25177,0,-1);           //影子效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();      
+    sellitem(25224,0,-1);           //白化效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();      
+    sellitem(25225,0,-1);           //緋紅爆裂波動效果(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();      
+    sellitem(25226,0,-1);           //水域效果(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();      
+
+
+
+
+
+
+
+OnBuyItem:
+end;
+}
