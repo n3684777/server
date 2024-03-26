@@ -69333,4 +69333,40 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-      
+  - Id: 2000002
+    AegisName: item_2000002
+    Name: ¦Ê¥Ù¬ï¨ë¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_HUNDREDSPEAR",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_HUNDREDSPEAR",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RK_HUNDREDSPEAR",-3000;
+      bonus2 bSkillAtk,"RK_HUNDREDSPEAR",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+    - Id: 2000003
+    AegisName: item_2000003
+    Name: ­µ³t½ÄÀ»ªi¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_SONICWAVE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_SONICWAVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RK_SONICWAVE",-1750;
+      bonus2 bSkillAtk,"RK_SONICWAVE",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+
