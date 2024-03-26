@@ -66425,8 +66425,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,10+((.@r/2)*5);
-      bonus3 bAutoSpell,"SA_ABRACADABRA",10,300;
+      bonus2 bAddClass,Class_All,10+((.@r/2)*8);
   - Id: 900074
     AegisName: As_Ragged_Golem_Card_
     Name: 歐內斯特 斯特凡˙傑克卡片-改
