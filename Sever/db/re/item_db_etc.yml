@@ -69659,4 +69659,21 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-
+  - Id: 2000020
+    AegisName: item_2000020
+    Name: ½b«B­·¼É¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RA_ARROWSTORM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RA_ARROWSTORM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RA_ARROWSTORM",-3200;
+      bonus2 bSkillAtk,"RA_ARROWSTORM",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
