@@ -69299,9 +69299,20 @@ Body:
       NoDrop: true
   - Id: 2000000
     AegisName: item_2000000
-    Name: 戰魂(十字斬首者)3Lv
+    Name: 致命爆裂石
     Type: Card
     SubType: Enchant
-    Buy: 10
     Script: |
-      bonus2 bAddSize,Size_All,10; autobonus3 "{ bonus bBaseAtk,50; bonus bCritical,10; }",10000,60000,"ASC_EDP","{ specialeffect2 EF_SPELLBREAKER; }";
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RK_IGNITIONBREAK",-2000;
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",15;
+      }
+      if(.@r >= 20){
+      autobonus3 "{ bonus bBaseAtk,300; }",10000,60000,"RK_IGNITIONBREAK","{ specialeffect2 EF_SPELLBREAKER; }";
+      }
+      
