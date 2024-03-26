@@ -69998,7 +69998,7 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
-      }
+      
   - Id: 2000039
     AegisName: item_2000039
     Name: ¤ô´¹ªiÃz
