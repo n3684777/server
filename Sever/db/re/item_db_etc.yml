@@ -69377,10 +69377,13 @@ Body:
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
       bonus2 bSkillAtk,"RK_DRAGONBREATH",(.@r/4)*7;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",(.@r/4)*7;
       if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",10;
       bonus2 bSkillAtk,"RK_DRAGONBREATH",10;
       }
       if(.@r >= 15){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",30;
       bonus2 bSkillAtk,"RK_DRAGONBREATH",30;
       }
       if(.@r >= 20){
@@ -69388,17 +69391,18 @@ Body:
       }
   - Id: 2000005
     AegisName: item_2000005
-    Name: Às¤§®ð®§-¤ô¥Û
+    Name: º¥¶iª®À»¥Û
     Type: Card
     SubType: Enchant
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
-      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",(.@r/4)*7;
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",(.@r/4)*7;
       if(.@r >= 11){
-      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",10;
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",10;
       }
       if(.@r >= 15){
-      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",30;
+      bonus2 bSkillCooldown,"WH_CRESCIVE_BOLT",-150;
+      bonus2 bSkillAtk,"WH_CRESCIVE_BOLT",15;
       }
       if(.@r >= 20){
       bonus bBaseAtk,300;
@@ -69619,3 +69623,40 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000018
+    AegisName: item_2000018
+    Name: ¾U§Q®gÀ»¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SN_SHARPSHOOTING",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SN_SHARPSHOOTING",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SN_SHARPSHOOTING",-150;
+      bonus2 bSkillAtk,"SN_SHARPSHOOTING",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000019
+    AegisName: item_2000019
+    Name: ºË·Ç¼Ð¹v¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RA_AIMEDBOLT",-1000;
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+
