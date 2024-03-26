@@ -69351,7 +69351,7 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-    - Id: 2000003
+  - Id: 2000003
     AegisName: item_2000003
     Name: ­µ³t½ÄÀ»ªi¥Û
     Type: Card
