@@ -69369,4 +69369,145 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-
+  - Id: 2000004
+    AegisName: item_2000004
+    Name: Às¤§®ð®§¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000005
+    AegisName: item_2000005
+    Name: Às¤§®ð®§-¤ô¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000006
+    AegisName: item_2000006
+    Name: ¾î´§±Ù¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"DK_HACKANDSLASHER",(.@r/4)*7;
+      if(.@r >= 11){
+      
+      bonus2 bSkillAtk,"DK_HACKANDSLASHER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RK_SONICWAVE",-700;
+      bonus2 bSkillAtk,"DK_HACKANDSLASHER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000007
+    AegisName: item_2000007
+    Name: ¨g¼É¯»¸H¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",(.@r/4)*7;
+      if(.@r >= 11){
+      
+      bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"DK_MADNESS_CRUSHER",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000008
+    AegisName: item_2000008
+    Name: ¤ÑÀs®ð®§¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"DK_DRAGONIC_BREATH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"DK_DRAGONIC_BREATH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"DK_DRAGONIC_BREATH",-500;
+      bonus2 bSkillAtk,"DK_DRAGONIC_BREATH",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000009
+    AegisName: item_2000009
+    Name: ¢Ì¦r±Ù¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"GC_CROSSIMPACT",-350;
+      bonus2 bSkillAtk,"GC_CROSSIMPACT",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000010
+    AegisName: item_2000010
+    Name: °j±Û¤M¤b¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"GC_ROLLINGCUTTER",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000011
+    AegisName: item_2000010
+    Name: °j±Û¢Ì¦r±Ù¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"GC_CROSSRIPPERSLASHER",-200;
+      bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }

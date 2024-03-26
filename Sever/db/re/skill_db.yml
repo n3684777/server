@@ -20084,13 +20084,13 @@ Body:
     Cooldown: # !TODO: Confirm cooldown
       - Level: 1
         Time: 150
-      - Level: 1
+      - Level: 2
         Time: 200
-      - Level: 1
+      - Level: 3
         Time: 250
-      - Level: 1
+      - Level: 4
         Time: 300
-      - Level: 1
+      - Level: 5
         Time: 350
     CastDelayFlags:
       IgnoreStatus: true
