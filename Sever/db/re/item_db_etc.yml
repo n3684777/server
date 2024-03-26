@@ -69313,6 +69313,24 @@ Body:
       bonus2 bSkillAtk,"RK_IGNITIONBREAK",15;
       }
       if(.@r >= 20){
-      autobonus3 "{ bonus bBaseAtk,300; }",10000,60000,"RK_IGNITIONBREAK","{ specialeffect2 EF_SPELLBREAKER; }";
+      bonus bBaseAtk,300;  
+      }
+  - Id: 2000001
+    AegisName: item_2000001
+    Name: ­·À£­¸¤b¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_WINDCUTTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_WINDCUTTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"RK_WINDCUTTER",-300;
+      bonus2 bSkillAtk,"RK_WINDCUTTER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
       }
       
