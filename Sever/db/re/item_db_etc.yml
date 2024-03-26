@@ -69511,3 +69511,111 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000012
+    AegisName: item_2000012
+    Name: ¤ßÆF¾_ªi¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"ASC_BREAKER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"ASC_BREAKER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"ASC_BREAKER",-350;
+      bonus2 bSkillAtk,"ASC_BREAKER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000013
+    AegisName: item_2000013
+    Name: ³¥ÆZ½ÄÀ»¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SHC_SAVAGE_IMPACT",-1000;
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000014
+    AegisName: item_2000014
+    Name: ¥Ã«í±ÙÀ»¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SHC_ETERNAL_SLASH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SHC_ETERNAL_SLASH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SHC_ETERNAL_SLASH",-750;
+      bonus2 bSkillAtk,"SHC_ETERNAL_SLASH",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000015
+    AegisName: item_2000015
+    Name: ¯«¤O¼²À»¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SHC_IMPACT_CRATER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SHC_IMPACT_CRATER",-1500;
+      bonus2 bSkillAtk,"SHC_IMPACT_CRATER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000016
+    AegisName: item_2000016
+    Name: ·t¼v¨ëÀ»¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SHC_SHADOW_STAB",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SHC_SHADOW_STAB",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SHC_SHADOW_STAB",-350;
+      bonus2 bSkillAtk,"SHC_SHADOW_STAB",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000017
+    AegisName: item_2000017
+    Name: ­P©R¼v¤ö¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SHC_FATAL_SHADOW_CROW",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SHC_FATAL_SHADOW_CROW",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SHC_FATAL_SHADOW_CROW",-60000;
+      bonus2 bSkillAtk,"SHC_FATAL_SHADOW_CROW",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
