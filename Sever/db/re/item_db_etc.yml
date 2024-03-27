@@ -70196,3 +70196,164 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
+  - Id: 2000050
+    AegisName: item_2000050
+    Name: ¾Ô©òÁü­·
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NC_AXETORNADO",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NC_AXETORNADO",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"NC_AXETORNADO",-1000;
+      bonus2 bSkillAtk,"NC_AXETORNADO",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000051
+    AegisName: item_2000051
+    Name: °j±Û©ò
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NC_AXEBOOMERANG",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NC_AXEBOOMERANG",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"NC_AXEBOOMERANG",-1500;
+      bonus2 bSkillAtk,"NC_AXEBOOMERANG",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000052
+    AegisName: item_2000052
+    Name: ¥[¹A¯¥(¾÷±ñ¤u¦K)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NC_ARMSCANNON",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NC_ARMSCANNON",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"NC_ARMSCANNON",-75;
+      bonus2 bSkillAtk,"NC_ARMSCANNON",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000053
+    AegisName: item_2000053
+    Name: ¤õ¯«¯¥
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NC_VULCANARM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NC_VULCANARM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"NC_VULCANARM",-50;
+      bonus2 bSkillAtk,"NC_VULCANARM",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000054
+    AegisName: item_2000054
+    Name: ¼Q®g­¸®±
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NC_BOOSTKNUCKLE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NC_BOOSTKNUCKLE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NC_BOOSTKNUCKLE",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000055
+    AegisName: item_2000055
+    Name: ¾Ô©ò½ñ·À
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"MT_AXE_STOMP",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"MT_AXE_STOMP",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"MT_AXE_STOMP",-35;
+      bonus2 bSkillAtk,"MT_AXE_STOMP",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000056
+    AegisName: item_2000056
+    Name: ±j¤O¯»¸H
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"MT_MIGHTY_SMASH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"MT_MIGHTY_SMASH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"MT_MIGHTY_SMASH",-15;
+      bonus2 bSkillAtk,"MT_MIGHTY_SMASH",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000057
+    AegisName: item_2000057
+    Name: ¤T³s¹p®g
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"MT_TRIPLE_LASER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"MT_TRIPLE_LASER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"MT_TRIPLE_LASER",-125;
+      bonus2 bSkillAtk,"MT_TRIPLE_LASER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000058
+    AegisName: item_2000058
+    Name: °{¥ú½ÄÀ»ªi
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"MT_SPARK_BLASTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"MT_SPARK_BLASTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"MT_SPARK_BLASTER",-350;
+      bonus2 bSkillAtk,"MT_SPARK_BLASTER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }

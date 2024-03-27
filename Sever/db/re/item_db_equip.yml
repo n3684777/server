@@ -66872,6 +66872,7 @@ Body:
     Weight: 300
     Slots: 1
     Jobs:
+      SoulLinker: true
       StarGladiator: true
     Locations:
       Armor: true
