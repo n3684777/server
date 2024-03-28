@@ -30,7 +30,7 @@ OnInit:
 	sellitemcurrency(.@cash,200);
     endsellitem();
 	sellitem(27381,.@p,-1);	//§Æ±ö¤Û¼v¥d
-	sellitemcurrency(.@cash,400);
+	sellitemcurrency(.@cash,200);
     endsellitem();
 //ÀY²¯
 	sellitem(19474,0,-1, 25864, 5);
