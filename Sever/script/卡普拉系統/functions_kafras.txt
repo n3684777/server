@@ -449,6 +449,7 @@ function	script	F_KafEnd	{
 	mes "[卡普拉服務人員]";
 	if(getarg(1)==1) {	
 		// Save
+		savepoint "amatsu",115,150;
 		mes "您的重生地點";
 		mes "現在被保存在這裡";
 		mes getarg(2)+".";
