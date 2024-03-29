@@ -67381,6 +67381,22 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bMatk,350;
+  - Id: 900139
+    AegisName: Sarah_Card_
+    Name: 莎拉卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bAbsorbDmgMaxHP2,20;
+      bonus2 bMagicAddRace,RC_All,.@r*15;
+      bonus bMatkRate,.@r*20;
   - Id: 910000
     AegisName: Nov_Stone
     Name: 初心者幻化石(披肩)
