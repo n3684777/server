@@ -65946,8 +65946,8 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus3 bAutoSpell,"WZ_STORMGUST",1,30;
-      bonus3 bAutoSpell,"SO_DIAMONDDUST",5,30;
+      bonus3 bAutoSpell,"WZ_STORMGUST",1,300;
+      bonus3 bAutoSpell,"SO_DIAMONDDUST",5,300;
       bonus2 bAddEff,Eff_Freeze,7000;
   - Id: 900045
     AegisName: Venom_Kimera_Card_
