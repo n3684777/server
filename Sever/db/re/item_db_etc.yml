@@ -70373,3 +70373,235 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000059
+    AegisName: item_2000059
+    Name: 加農砲攻擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_CANNONSPEAR",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_CANNONSPEAR",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"LG_CANNONSPEAR",-850;
+      bonus2 bSkillAtk,"LG_CANNONSPEAR",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000060
+    AegisName: item_2000060
+    Name: 放逐攻擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_BANISHINGPOINT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_BANISHINGPOINT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"LG_BANISHINGPOINT",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000061
+    AegisName: item_2000061
+    Name: 支配烙印
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_OVERBRAND",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_OVERBRAND",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"LG_OVERBRAND",-150;
+      bonus2 bSkillAtk,"LG_OVERBRAND",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000062
+    AegisName: item_2000062
+    Name: 強化衝擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_EXEEDBREAK",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_EXEEDBREAK",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"LG_EXEEDBREAK",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000063
+    AegisName: item_2000063
+    Name: 重壓盾擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_SHIELDPRESS",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_SHIELDPRESS",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"LG_SHIELDPRESS",-1000;
+      bonus2 bSkillAtk,"LG_SHIELDPRESS",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000064
+    AegisName: item_2000064
+    Name: 大地毀滅
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_EARTHDRIVE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_EARTHDRIVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"LG_EARTHDRIVE",-1250;
+      bonus2 bSkillAtk,"LG_EARTHDRIVE",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000065
+    AegisName: item_2000065
+    Name: 創世之光
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"LG_RAYOFGENESIS",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"LG_RAYOFGENESIS",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"LG_RAYOFGENESIS",-1000;
+      bonus2 bSkillAtk,"LG_RAYOFGENESIS",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000066
+    AegisName: item_2000066
+    Name: 神之威壓
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"PA_PRESSURE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"PA_PRESSURE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"PA_PRESSURE",-500;
+      bonus2 bSkillAtk,"PA_PRESSURE",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000067
+    AegisName: item_2000067
+    Name: 瞬間斬擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"Shield_Power",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"Shield_Power",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"Shield_Power",-350;
+      bonus2 bSkillAtk,"Shield_Power",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000068
+    AegisName: item_2000068
+    Name: 盾牌投擲
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"IG_SHIELD_SHOOTING",-350;
+      bonus2 bSkillAtk,"IG_SHIELD_SHOOTING",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000069
+    AegisName: item_2000069
+    Name: 盾牌投擲
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"IG_GRAND_JUDGEMENT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"IG_GRAND_JUDGEMENT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"IG_GRAND_JUDGEMENT",-250;
+      bonus2 bSkillAtk,"IG_GRAND_JUDGEMENT",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000070
+    AegisName: item_2000070
+    Name: 聖十字雨
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"IG_CROSS_RAIN",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"IG_CROSS_RAIN",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"IG_CROSS_RAIN",-150;
+      bonus2 bSkillAtk,"IG_CROSS_RAIN",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000071
+    AegisName: item_2000071
+    Name: 交錯審判
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"IG_JUDGEMENT_CROSS",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"IG_JUDGEMENT_CROSS",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"IG_JUDGEMENT_CROSS",-250;
+      bonus2 bSkillAtk,"IG_JUDGEMENT_CROSS",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
