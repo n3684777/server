@@ -1128,7 +1128,7 @@ OnInit:
 	sellitemcurrency(27020,.@h);
     endsellitem(); 
 	sellitem(900115,.@p,-1);	//不祥烏龜將軍卡片-改 x
-	sellitemcurrency(27119,.@h);
+	sellitemcurrency(27119,.@h*2);
     endsellitem(); 
 	sellitem(900116,.@p,-1);	//亡者君主卡片-改 x
 	sellitemcurrency(27025,.@h);
