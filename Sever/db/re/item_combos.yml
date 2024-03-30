@@ -4689,9 +4689,9 @@ Body:
           - Turtle_General_Card
           - OminousTurtleG_Card_
     Script: |
-      bonus2 bSubSize,Size_All,5;
+      bonus2 bSubSize,Size_All,10;
       bonus bHit,25;
-      bonus2 bAddSize,Size_All,20;
+      bonus2 bAddSize,Size_All,50;
   - Combos:
       - Combo:
           - Permeter_Card

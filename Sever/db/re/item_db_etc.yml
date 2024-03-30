@@ -67041,9 +67041,10 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
+      .@r = getrefine();
       bonus bDef,60;
       bonus bMdef,30;
-      bonus2 bSubSize,Size_All,20;
+      bonus2 bSubSize,Size_All,.@r*3;
   - Id: 900116
     AegisName: Lich_Lord_Card_
     Name: 亡者君主卡片-改
