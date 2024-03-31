@@ -22012,7 +22012,7 @@ Body:
       - Slot: 3
         Materials:
           - Material: Nyangvine_Fruit
-            Amount: 2
+            Amount: 50
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -22117,357 +22117,163 @@ Body:
                 Chance: 11112
       - Slot: 2
         Materials:
-          - Material: Pow_Meteorite_Dust
-            Amount: 4
-          - Material: Sta_Meteorite_Dust
-            Amount: 4
-          - Material: Con_Meteorite_Dust
-            Amount: 4
-          - Material: Crt_Meteorite_Dust
-            Amount: 4
-          - Material: Spl_Meteorite_Dust
-            Amount: 4
-          - Material: Wis_Meteorite_Dust
-            Amount: 4
           - Material: Nyangvine_Fruit
-            Amount: 3
+            Amount: 100
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: Nebula_Of_FS1
-                Chance: 10500
-              - Item: Nebula_Of_EA1
-                Chance: 10500
-              - Item: Nebula_Of_SH1
-                Chance: 10500
-              - Item: Nebula_Of_SP1
-                Chance: 10500
-              - Item: Nebula_Of_HL1
-                Chance: 10500
-              - Item: Nebula_Of_HP1
-                Chance: 10500
-              - Item: Nebula_Of_FS2
-                Chance: 4600
-              - Item: Nebula_Of_EA2
-                Chance: 4600
-              - Item: Nebula_Of_SH2
-                Chance: 4600
-              - Item: Nebula_Of_SP2
-                Chance: 4600
-              - Item: Nebula_Of_HL2
-                Chance: 4600
-              - Item: Nebula_Of_HP2
-                Chance: 4600
-              - Item: Nebula_Of_FS3
-                Chance: 1570
-              - Item: Nebula_Of_EA3
-                Chance: 1570
-              - Item: Nebula_Of_SH3
-                Chance: 1570
-              - Item: Nebula_Of_SP3
-                Chance: 1570
-              - Item: Nebula_Of_HL3
-                Chance: 1560
-              - Item: Nebula_Of_HP3
-                Chance: 1560
+              - Item: item_2000081
+                Chance: 11111
+              - Item: item_2000082
+                Chance: 11111
+              - Item: item_2000083
+                Chance: 11111
+              - Item: item_2000084
+                Chance: 11111
+              - Item: item_2000085
+                Chance: 11111
+              - Item: item_2000086
+                Chance: 11111
+              - Item: item_2000087
+                Chance: 11111
+              - Item: item_2000088
+                Chance: 11111
+              - Item: item_2000089
+                Chance: 11112
           - Enchantgrade: 1
             Items:
-              - Item: Nebula_Of_FS1
-                Chance: 10500
-              - Item: Nebula_Of_EA1
-                Chance: 10500
-              - Item: Nebula_Of_SH1
-                Chance: 10500
-              - Item: Nebula_Of_SP1
-                Chance: 10500
-              - Item: Nebula_Of_HL1
-                Chance: 10500
-              - Item: Nebula_Of_HP1
-                Chance: 10500
-              - Item: Nebula_Of_FS2
-                Chance: 4600
-              - Item: Nebula_Of_EA2
-                Chance: 4600
-              - Item: Nebula_Of_SH2
-                Chance: 4600
-              - Item: Nebula_Of_SP2
-                Chance: 4600
-              - Item: Nebula_Of_HL2
-                Chance: 4600
-              - Item: Nebula_Of_HP2
-                Chance: 4600
-              - Item: Nebula_Of_FS3
-                Chance: 1570
-              - Item: Nebula_Of_EA3
-                Chance: 1570
-              - Item: Nebula_Of_SH3
-                Chance: 1570
-              - Item: Nebula_Of_SP3
-                Chance: 1570
-              - Item: Nebula_Of_HL3
-                Chance: 1560
-              - Item: Nebula_Of_HP3
-                Chance: 1560
+              - Item: item_2000081
+                Chance: 11111
+              - Item: item_2000082
+                Chance: 11111
+              - Item: item_2000083
+                Chance: 11111
+              - Item: item_2000084
+                Chance: 11111
+              - Item: item_2000085
+                Chance: 11111
+              - Item: item_2000086
+                Chance: 11111
+              - Item: item_2000087
+                Chance: 11111
+              - Item: item_2000088
+                Chance: 11111
+              - Item: item_2000089
+                Chance: 11112
           - Enchantgrade: 2
             Items:
-              - Item: Nebula_Of_FS1
-                Chance: 10500
-              - Item: Nebula_Of_EA1
-                Chance: 10500
-              - Item: Nebula_Of_SH1
-                Chance: 10500
-              - Item: Nebula_Of_SP1
-                Chance: 10500
-              - Item: Nebula_Of_HL1
-                Chance: 10500
-              - Item: Nebula_Of_HP1
-                Chance: 10500
-              - Item: Nebula_Of_FS2
-                Chance: 4600
-              - Item: Nebula_Of_EA2
-                Chance: 4600
-              - Item: Nebula_Of_SH2
-                Chance: 4600
-              - Item: Nebula_Of_SP2
-                Chance: 4600
-              - Item: Nebula_Of_HL2
-                Chance: 4600
-              - Item: Nebula_Of_HP2
-                Chance: 4600
-              - Item: Nebula_Of_FS3
-                Chance: 1570
-              - Item: Nebula_Of_EA3
-                Chance: 1570
-              - Item: Nebula_Of_SH3
-                Chance: 1570
-              - Item: Nebula_Of_SP3
-                Chance: 1570
-              - Item: Nebula_Of_HL3
-                Chance: 1560
-              - Item: Nebula_Of_HP3
-                Chance: 1560
+              - Item: item_2000081
+                Chance: 11111
+              - Item: item_2000082
+                Chance: 11111
+              - Item: item_2000083
+                Chance: 11111
+              - Item: item_2000084
+                Chance: 11111
+              - Item: item_2000085
+                Chance: 11111
+              - Item: item_2000086
+                Chance: 11111
+              - Item: item_2000087
+                Chance: 11111
+              - Item: item_2000088
+                Chance: 11111
+              - Item: item_2000089
+                Chance: 11112
           - Enchantgrade: 3
             Items:
-              - Item: Nebula_Of_FS1
-                Chance: 10500
-              - Item: Nebula_Of_EA1
-                Chance: 10500
-              - Item: Nebula_Of_SH1
-                Chance: 10500
-              - Item: Nebula_Of_SP1
-                Chance: 10500
-              - Item: Nebula_Of_HL1
-                Chance: 10500
-              - Item: Nebula_Of_HP1
-                Chance: 10500
-              - Item: Nebula_Of_FS2
-                Chance: 4600
-              - Item: Nebula_Of_EA2
-                Chance: 4600
-              - Item: Nebula_Of_SH2
-                Chance: 4600
-              - Item: Nebula_Of_SP2
-                Chance: 4600
-              - Item: Nebula_Of_HL2
-                Chance: 4600
-              - Item: Nebula_Of_HP2
-                Chance: 4600
-              - Item: Nebula_Of_FS3
-                Chance: 1570
-              - Item: Nebula_Of_EA3
-                Chance: 1570
-              - Item: Nebula_Of_SH3
-                Chance: 1570
-              - Item: Nebula_Of_SP3
-                Chance: 1570
-              - Item: Nebula_Of_HL3
-                Chance: 1560
-              - Item: Nebula_Of_HP3
-                Chance: 1560
+              - Item: item_2000081
+                Chance: 11111
+              - Item: item_2000082
+                Chance: 11111
+              - Item: item_2000083
+                Chance: 11111
+              - Item: item_2000084
+                Chance: 11111
+              - Item: item_2000085
+                Chance: 11111
+              - Item: item_2000086
+                Chance: 11111
+              - Item: item_2000087
+                Chance: 11111
+              - Item: item_2000088
+                Chance: 11111
+              - Item: item_2000089
+                Chance: 11112
           - Enchantgrade: 4
             Items:
-              - Item: Nebula_Of_FS1
-                Chance: 10500
-              - Item: Nebula_Of_EA1
-                Chance: 10500
-              - Item: Nebula_Of_SH1
-                Chance: 10500
-              - Item: Nebula_Of_SP1
-                Chance: 10500
-              - Item: Nebula_Of_HL1
-                Chance: 10500
-              - Item: Nebula_Of_HP1
-                Chance: 10500
-              - Item: Nebula_Of_FS2
-                Chance: 4600
-              - Item: Nebula_Of_EA2
-                Chance: 4600
-              - Item: Nebula_Of_SH2
-                Chance: 4600
-              - Item: Nebula_Of_SP2
-                Chance: 4600
-              - Item: Nebula_Of_HL2
-                Chance: 4600
-              - Item: Nebula_Of_HP2
-                Chance: 4600
-              - Item: Nebula_Of_FS3
-                Chance: 1570
-              - Item: Nebula_Of_EA3
-                Chance: 1570
-              - Item: Nebula_Of_SH3
-                Chance: 1570
-              - Item: Nebula_Of_SP3
-                Chance: 1570
-              - Item: Nebula_Of_HL3
-                Chance: 1560
-              - Item: Nebula_Of_HP3
-                Chance: 1560
+              - Item: item_2000081
+                Chance: 11111
+              - Item: item_2000082
+                Chance: 11111
+              - Item: item_2000083
+                Chance: 11111
+              - Item: item_2000084
+                Chance: 11111
+              - Item: item_2000085
+                Chance: 11111
+              - Item: item_2000086
+                Chance: 11111
+              - Item: item_2000087
+                Chance: 11111
+              - Item: item_2000088
+                Chance: 11111
+              - Item: item_2000089
+                Chance: 11112
       - Slot: 1
         Materials:
-          - Material: Pow_Meteorite_Fragment
-            Amount: 4
-          - Material: Sta_Meteorite_Fragment
-            Amount: 4
-          - Material: Con_Meteorite_Fragment
-            Amount: 4
-          - Material: Crt_Meteorite_Fragment
-            Amount: 4
-          - Material: Spl_Meteorite_Fragment
-            Amount: 4
-          - Material: Wis_Meteorite_Fragment
-            Amount: 4
           - Material: Nyangvine_Fruit
-            Amount: 4
+            Amount: 150
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: Star_Cluster_Of_Pow1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Sta1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Con1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Crt1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Spl1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Wis1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Pow2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Sta2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Con2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Crt2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Spl2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Wis2
-                Chance: 1850
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
           - Enchantgrade: 1
             Items:
-              - Item: Star_Cluster_Of_Pow1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Sta1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Con1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Crt1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Spl1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Wis1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Pow2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Sta2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Con2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Crt2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Spl2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Wis2
-                Chance: 1850
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
           - Enchantgrade: 2
             Items:
-              - Item: Star_Cluster_Of_Pow1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Sta1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Con1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Crt1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Spl1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Wis1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Pow2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Sta2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Con2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Crt2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Spl2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Wis2
-                Chance: 1850
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
           - Enchantgrade: 3
             Items:
-              - Item: Star_Cluster_Of_Pow1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Sta1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Con1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Crt1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Spl1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Wis1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Pow2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Sta2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Con2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Crt2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Spl2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Wis2
-                Chance: 1850
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
           - Enchantgrade: 4
             Items:
-              - Item: Star_Cluster_Of_Pow1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Sta1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Con1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Crt1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Spl1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Wis1
-                Chance: 14800
-              - Item: Star_Cluster_Of_Pow2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Sta2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Con2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Crt2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Spl2
-                Chance: 1870
-              - Item: Star_Cluster_Of_Wis2
-                Chance: 1850
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000

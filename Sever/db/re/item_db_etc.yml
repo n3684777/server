@@ -69741,7 +69741,7 @@ Body:
       bonus2 bSkillAtk,"CD_ARBITRIUM",10;
       }
       if(.@r >= 15){
-      bonus2 bSkillCooldown,"CD_ARBITRIUM",-750;
+      bonus2 bSkillCooldown,"CD_ARBITRIUM",-1000;
       bonus2 bSkillAtk,"CD_ARBITRIUM",15;
       }
       if(.@r >= 20){
