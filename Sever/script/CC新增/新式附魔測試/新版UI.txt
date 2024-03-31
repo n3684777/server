@@ -59,7 +59,8 @@ function	script	新版UI	{
 	setarray .@enchant62[0],490304,490307;
 	setarray .@enchant10001[0],470183;
 	setarray .@enchant10002[0],450293,450294,450295,450296,450297,450298;
-	setarray .@enchant10003[0],2100000,900000;
+	setarray .@enchant10003[0],2100000;
+	setarray .@enchant10004[0],900000;
 	getinventorylist(getcharid(0), INV_IDX | INV_ID);
 	for(.@i = 0; .@i < getarraysize(@inventorylist_idx[.@i]); .@i++){
 		for ( .@j = 0; .@j < getarraysize(.@box);.@j++){
@@ -232,6 +233,10 @@ function	script	新版UI	{
 				end;
 		}
 		else if ((inarray(.@enchant10003[0],.@ret) !=-1 )){
+				item_enchant(10003);
+				end;
+		}
+		else if ((inarray(.@enchant10004[0],.@ret) !=-1 )){
 				item_enchant(10003);
 				end;
 		}
