@@ -22392,7 +22392,7 @@ Body:
                 Amount: 300
   - Id: 10004
     TargetItems:
-      item_2100000: true
+      item_2100001: true
     Reset:
       Chance: 100000
       Materials:
