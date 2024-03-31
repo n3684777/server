@@ -6203,7 +6203,7 @@ Body:
   - Item: C_Armor_Reform_3
     BaseItems:
       - BaseItem: aegis_490262 # °í©w«H¥õÅ]§Ù
-        MinimumRefine: 0
+        MinimumRefine: 9
         CardsAllowed: true
         Materials:
          - Material: Armor_Stone_3

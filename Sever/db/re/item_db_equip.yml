@@ -187391,6 +187391,7 @@ Body:
     Locations:
       Both_Accessory: true
     ArmorLevel: 2
+    Refineable: true
     EquipLevelMin: 100
     Script: |
       .@g = getenchantgrade();
