@@ -22017,105 +22017,1330 @@ Body:
         Enchants:
           - Enchantgrade: 0
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 1
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 2
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 3
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 4
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
         PerfectEnchants:
+          - Item: item_2000000
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000001
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000002
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000003
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000004
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000005
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000006
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000007
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000008
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000009
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000010
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000011
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000012
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000013
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000014
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000015
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000016
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000017
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000018
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000019
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000020
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000021
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000022
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000023
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000024
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000025
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000026
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000027
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000028
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000029
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000030
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000031
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000032
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000033
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000034
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000035
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000036
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000037
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000038
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000039
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000040
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000041
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000042
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000043
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000044
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000045
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000046
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000047
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000048
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000049
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000050
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000051
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000052
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000053
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000054
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000055
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000056
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000057
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000058
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000059
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000060
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000061
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000062
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000063
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000064
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000065
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000066
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000067
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000068
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000069
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000070
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000071
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000072
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000073
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000074
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000075
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000076
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000077
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000078
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000079
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000080
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
           - Item: item_2000081
             Price: 50000000
             Materials:
@@ -22169,150 +23394,1191 @@ Body:
         Enchants:
           - Enchantgrade: 0
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 1
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 2
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
-          - Enchantgrade: 3
-            Items:
-              - Item: item_2000081
-                Chance: 11111
-              - Item: item_2000082
-                Chance: 11111
-              - Item: item_2000083
-                Chance: 11111
-              - Item: item_2000084
-                Chance: 11111
-              - Item: item_2000085
-                Chance: 11111
-              - Item: item_2000086
-                Chance: 11111
-              - Item: item_2000087
-                Chance: 11111
-              - Item: item_2000088
-                Chance: 11111
-              - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
           - Enchantgrade: 4
             Items:
+              - Item: item_2000000
+                Chance: 1111
+              - Item: item_2000001
+                Chance: 1111
+              - Item: item_2000002
+                Chance: 1111
+              - Item: item_2000003
+                Chance: 1111
+              - Item: item_2000004
+                Chance: 1111
+              - Item: item_2000005
+                Chance: 1111
+              - Item: item_2000006
+                Chance: 1111
+              - Item: item_2000007
+                Chance: 1111
+              - Item: item_2000008
+                Chance: 1111
+              - Item: item_2000009
+                Chance: 1111
+              - Item: item_2000010
+                Chance: 1111
+              - Item: item_2000011
+                Chance: 1111
+              - Item: item_2000012
+                Chance: 1111
+              - Item: item_2000013
+                Chance: 1111
+              - Item: item_2000014
+                Chance: 1111
+              - Item: item_2000015
+                Chance: 1111
+              - Item: item_2000016
+                Chance: 1111
+              - Item: item_2000017
+                Chance: 1111
+              - Item: item_2000018
+                Chance: 1111
+              - Item: item_2000019
+                Chance: 1111
+              - Item: item_2000020
+                Chance: 1111
+              - Item: item_2000021
+                Chance: 1111
+              - Item: item_2000022
+                Chance: 1111
+              - Item: item_2000023
+                Chance: 1111
+              - Item: item_2000024
+                Chance: 1111
+              - Item: item_2000025
+                Chance: 1111
+              - Item: item_2000026
+                Chance: 1111
+              - Item: item_2000027
+                Chance: 1111
+              - Item: item_2000028
+                Chance: 1111
+              - Item: item_2000029
+                Chance: 1111
+              - Item: item_2000030
+                Chance: 1111
+              - Item: item_2000031
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000032
+                Chance: 1111
+              - Item: item_2000033
+                Chance: 1111
+              - Item: item_2000034
+                Chance: 1111
+              - Item: item_2000035
+                Chance: 1111
+              - Item: item_2000036
+                Chance: 1111
+              - Item: item_2000037
+                Chance: 1111
+              - Item: item_2000038
+                Chance: 1111
+              - Item: item_2000039
+                Chance: 1111
+              - Item: item_2000040
+                Chance: 1111
+              - Item: item_2000041
+                Chance: 1111
+              - Item: item_2000042
+                Chance: 1111
+              - Item: item_2000043
+                Chance: 1111
+              - Item: item_2000044
+                Chance: 1111
+              - Item: item_2000045
+                Chance: 1111
+              - Item: item_2000046
+                Chance: 1111
+              - Item: item_2000047
+                Chance: 1111
+              - Item: item_2000048
+                Chance: 1111
+              - Item: item_2000049
+                Chance: 1111
+              - Item: item_2000050
+                Chance: 1111
+              - Item: item_2000051
+                Chance: 1111
+              - Item: item_2000052
+                Chance: 1111
+              - Item: item_2000053
+                Chance: 1111
+              - Item: item_2000054
+                Chance: 1111
+              - Item: item_2000055
+                Chance: 1111
+              - Item: item_2000056
+                Chance: 1111
+              - Item: item_2000057
+                Chance: 1111
+              - Item: item_2000058
+                Chance: 1111
+              - Item: item_2000059
+                Chance: 1111
+              - Item: item_2000060
+                Chance: 1111
+              - Item: item_2000061
+                Chance: 1111
+              - Item: item_2000062
+                Chance: 1111
+              - Item: item_2000063
+                Chance: 1111
+              - Item: item_2000064
+                Chance: 1111
+              - Item: item_2000065
+                Chance: 1111
+              - Item: item_2000066
+                Chance: 1111
+              - Item: item_2000067
+                Chance: 1111
+              - Item: item_2000068
+                Chance: 1111
+              - Item: item_2000069
+                Chance: 1111
+              - Item: item_2000070
+                Chance: 1111
+              - Item: item_2000071
+                Chance: 1111
+              - Item: item_2000072
+                Chance: 1111
+              - Item: item_2000073
+                Chance: 1111
+              - Item: item_2000074
+                Chance: 1111
+              - Item: item_2000075
+                Chance: 1111
+              - Item: item_2000076
+                Chance: 1111
+              - Item: item_2000077
+                Chance: 1111
+              - Item: item_2000078
+                Chance: 1111
+              - Item: item_2000079
+                Chance: 1111
+              - Item: item_2000080
+                Chance: 1111
               - Item: item_2000081
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000082
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000083
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000084
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000085
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000086
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000087
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000088
-                Chance: 11111
+                Chance: 1111
               - Item: item_2000089
-                Chance: 11112
+                Chance: 1121
         PerfectEnchants:
+         - Item: item_2000000
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000001
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000002
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000003
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000004
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000005
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000006
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000007
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000008
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000009
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000010
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000011
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000012
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000013
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000014
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000015
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000016
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000017
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000018
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000019
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000020
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000021
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000022
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000023
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000024
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000025
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000026
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000027
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000028
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000029
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000030
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000031
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000032
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000033
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000034
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000035
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000036
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000037
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000038
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000039
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000040
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000041
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000042
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000043
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000044
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000045
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000046
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000047
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000048
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000049
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000050
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000051
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000052
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000053
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000054
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000055
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000056
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000057
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000058
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000059
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000060
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000061
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000062
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000063
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000064
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000065
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000066
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000067
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000068
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000069
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000070
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000071
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000072
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000073
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000074
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000075
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000076
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000077
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000078
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000079
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000080
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
           - Item: item_2000081
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000082
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000083
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000084
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000085
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000086
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000087
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000088
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
           - Item: item_2000089
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
-                Amount: 200
+                Amount: 100
       - Slot: 1
         Materials:
           - Material: Nyangvine_Fruit
