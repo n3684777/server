@@ -237,7 +237,7 @@ function	script	新版UI	{
 				end;
 		}
 		else if ((inarray(.@enchant10004[0],.@ret) !=-1 )){
-				item_enchant(10003);
+				item_enchant(10004);
 				end;
 		}
 		else {
