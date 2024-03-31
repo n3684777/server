@@ -6202,6 +6202,20 @@ Body:
         ResultItem: Fatalist_LT
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: aegis_490262 # °í©w«H¥õÅ]§Ù
+        MinimumRefine: 0
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Kiel_Card_
+           Amount: 3
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100000
+        ChangeRefine: -1
       - BaseItem: Wine_Shoes
         MinimumRefine: 9
         CardsAllowed: true
