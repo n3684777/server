@@ -21999,6 +21999,7 @@ Body:
   - Id: 10003
     TargetItems:
       item_2100000: true
+      Boyboy_Accessory: true
     Reset:
       Chance: 100000
       Materials:
