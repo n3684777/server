@@ -22121,6 +22121,46 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
+          - Item: item_2000082
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000083
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000084
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000085
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000086
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000087
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000088
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000089
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
       - Slot: 2
         Materials:
           - Material: Nyangvine_Fruit
@@ -22233,6 +22273,46 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 200
+          - Item: item_2000082
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000083
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000084
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000085
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000086
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000087
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000088
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
+          - Item: item_2000089
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 200
       - Slot: 1
         Materials:
           - Material: Nyangvine_Fruit
@@ -22290,7 +22370,22 @@ Body:
               - Item: Unknown_Item_300387
                 Chance: 25000
         PerfectEnchants:
-          - Item: item_2000081
+          - Item: Release_Of_Magic
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Hero
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300386
+            Price: 500000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300387
             Price: 500000000
             Materials:
               - Material: Nyangvine_Fruit
