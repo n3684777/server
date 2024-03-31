@@ -187429,3 +187429,52 @@ Body:
             }
         }
       }
+  - Id: 2100001
+    AegisName: item_2100001
+    Name: 樞機之光-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bFixedCastrate,-500;
+      bonus bMatkRate,20;
+      bonus bNoWeaponDamage,4;
+      bonus bNoMagicDamage,4;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bSMatk,5;
+      bonus bSMatkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bSMatk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus2 bMagicAtkEle,Ele_All,(.@r/2)*10; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+              bonus bNoWeaponDamage,2;
+              bonus bNoMagicDamage,2;
+                    bonus bMatkRate,10;
+              bonus bFixedCastrate,-500;
+              }
+            }
+        }
+      }
