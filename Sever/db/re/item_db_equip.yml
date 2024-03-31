@@ -187393,6 +187393,7 @@ Body:
     ArmorLevel: 2
     Refineable: true
     EquipLevelMin: 100
+    Gradable: true
     Script: |
       .@g = getenchantgrade();
       .@r = getequiprefinerycnt(EQI_HAND_R);
