@@ -6216,20 +6216,6 @@ Body:
            Amount: 20
         ResultItem: item_2100000
         ChangeRefine: -1
-      - BaseItem: aegis_490269 # ¼Ï¾÷¤§¥ú
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 200
-         - Material: Fallen_Bishop_Card_
-           Amount: 3
-         - Material: item_940048
-           Amount: 200
-         - Material: Money_1E
-           Amount: 20
-        ResultItem: item_2100001
-        ChangeRefine: -1
       - BaseItem: Wine_Shoes
         MinimumRefine: 9
         CardsAllowed: true
