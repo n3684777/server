@@ -6222,7 +6222,7 @@ Body:
          - Material: Armor_Stone_3
            Amount: 200
          - Material: Fallen_Bishop_Card_
-           Amount: 3
+           Amount: 9
          - Material: item_940048
            Amount: 200
          - Material: Money_1E
