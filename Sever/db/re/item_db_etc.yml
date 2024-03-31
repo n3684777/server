@@ -70921,3 +70921,129 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000090
+    AegisName: item_2000090
+    Name: ¶ø¸q½b¶Ã»R
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"CG_ARROWVULCAN",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"CG_ARROWVULCAN",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"CG_ARROWVULCAN",-750;
+      bonus2 bSkillAtk,"CG_ARROWVULCAN",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000091
+    AegisName: item_2000091
+    Name: ¤j¼É«B
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-3500;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000092
+    AegisName: item_2000092
+    Name: ­«ª÷ÄÝ­µ¼Ö
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"WM_METALICSOUND",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"WM_METALICSOUND",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"WM_METALICSOUND",-1250;
+      bonus2 bSkillAtk,"WM_METALICSOUND",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000093
+    AegisName: item_2000093
+    Name: ´ÝÅT
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"WM_REVERBERATION",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"WM_REVERBERATION",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"WM_REVERBERATION",-75;
+      bonus2 bSkillAtk,"WM_REVERBERATION",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000094
+    AegisName: item_2000094
+    Name: ª÷ÄÝ¨g«ã
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"TR_METALIC_FURY",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"TR_METALIC_FURY",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"TR_METALIC_FURY",-150;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000095
+    AegisName: item_2000095
+    Name: ¸`«µ®gÀ»
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"TR_RHYTHMSHOOTING",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"TR_RHYTHMSHOOTING",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"TR_RHYTHMSHOOTING",-75;
+      bonus2 bSkillAtk,"TR_RHYTHMSHOOTING",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000096
+    AegisName: item_2000096
+    Name: ª´ºÀ½b¥Ú
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"TR_ROSEBLOSSOM",-350;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
