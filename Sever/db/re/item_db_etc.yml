@@ -71047,3 +71047,372 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000097
+    AegisName: item_2000097
+    Name: ¶W¦ÛµMªi
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_PSYCHIC_WAVE",-2500;
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000098
+    AegisName: item_2000098
+    Name: ¸tºj¨ëÀ»
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_VARETYR_SPEAR",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_VARETYR_SPEAR",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_VARETYR_SPEAR",-2500;
+      bonus2 bSkillAtk,"SO_VARETYR_SPEAR",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000099
+    AegisName: item_2000099
+    Name: Æp¥Û¬P¹Ð
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_DIAMONDDUST",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_DIAMONDDUST",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_DIAMONDDUST",-2500;
+      bonus2 bSkillAtk,"SO_DIAMONDDUST",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000100
+    AegisName: item_2000100
+    Name: ¤j¦a¼X³õ
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_EARTHGRAVE,(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_EARTHGRAVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_EARTHGRAVE",-2500;
+      bonus2 bSkillAtk,"SO_EARTHGRAVE",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000101
+    AegisName: item_2000101
+    Name: ¶³±þ
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_CLOUD_KILL",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_CLOUD_KILL",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_CLOUD_KILL",-2500;
+      bonus2 bSkillAtk,"SO_CLOUD_KILL",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000102
+    AegisName: item_2000102
+    Name: ¼@¬r²rÀ»
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_POISON_BUSTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_POISON_BUSTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SO_POISON_BUSTER",-1000;
+      bonus2 bSkillAtk,"SO_POISON_BUSTER",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000103
+    AegisName: item_2000103
+    Name: Å]¤O®±
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SO_SPELLFIST",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SO_SPELLFIST",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"SO_SPELLFIST",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000104
+    AegisName: item_2000104
+    Name: ¬r²Gªh¿A
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_VENOM_SWAMP",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_VENOM_SWAMP",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_VENOM_SWAMP",-1000;
+      bonus2 bSkillAtk,"EM_VENOM_SWAMP",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000105
+    AegisName: item_2000105
+    Name: ¨`¼ö©¥¼ß
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_CONFLAGRATION",-1000;
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000106
+    AegisName: item_2000106
+    Name: Æp¥Û­·¼É
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_DIAMOND_STORM",-500;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000107
+    AegisName: item_2000107
+    Name: ¹p¾^°}¦a
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_LIGHTNING_LAND",-1000;
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000108
+    AegisName: item_2000108
+    Name: ¤j¦aÅX°Ê
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_TERRA_DRIVE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_TERRA_DRIVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_TERRA_DRIVE",-500;
+      bonus2 bSkillAtk,"EM_TERRA_DRIVE",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000109
+    AegisName: item_2000109
+    Name: ¤¸¯À¯}Ãa
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"EM_ELEMENTAL_BUSTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"EM_ELEMENTAL_BUSTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"EM_ELEMENTAL_BUSTER",-2500;
+      bonus2 bSkillAtk,"EM_ELEMENTAL_BUSTER",15;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000110
+    AegisName: item_2000110
+    Name: ¤â±À¨®¥[¹A¯¥
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GN_CARTCANNON",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GN_CARTCANNON",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"EM_ELEMENTAL_BUSTER",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000111
+    AegisName: item_2000111
+    Name: ¤â±À¨®Às±²­·
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GN_CART_TORNADO",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GN_CART_TORNADO",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"GN_CART_TORNADO",-1000;
+      bonus2 bSkillAtk,"GN_CART_TORNADO",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000112
+    AegisName: item_2000112
+    Name: ¦aº»´Óª«
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"GN_HELLS_PLANT",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"GN_HELLS_PLANT",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"GN_HELLS_PLANT",-150;
+      bonus2 bSkillAtk,"GN_HELLS_PLANT",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000113
+    AegisName: item_2000113
+    Name: ±j»Ä¤õ·Ï²~§ëÂY
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"CR_ACIDDEMONSTRATION",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"CR_ACIDDEMONSTRATION",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"CR_ACIDDEMONSTRATION",30;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000114
+    AegisName: item_2000114
+    Name: ±j»Ä¸T¦a
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WATER",(.@r/4)*7;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_GROUND",(.@r/4)*7;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WIND",(.@r/4)*7;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_FIRE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WATER",10;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_GROUND",10;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WIND",10;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_FIRE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"BO_ACIDIFIED_ZONE_WATER",-250;
+      bonus2 bSkillCooldown,"BO_ACIDIFIED_ZONE_GROUND",-250;
+      bonus2 bSkillCooldown,"BO_ACIDIFIED_ZONE_WIND",-250;
+      bonus2 bSkillCooldown,"BO_ACIDIFIED_ZONE_FIRE",-250;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WATER",15;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_GROUND",15;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_WIND",15;
+      bonus2 bSkillAtk,"BO_ACIDIFIED_ZONE_FIRE",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000115
+    AegisName: item_2000115
+    Name: Ãz¬µ¬µÃÄ
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"BO_EXPLOSIVE_POWDER",-350;
+      bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000116
+    AegisName: item_2000116
+    Name: ²V¶Ãªº¯ð´Æ
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"BO_MAYHEMIC_THORNS",-350;
+      bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",15;
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }

@@ -22412,923 +22412,1192 @@ Body:
           - Enchantgrade: 0
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 1
-            Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 2
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 3
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 4
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
         PerfectEnchants:
           - Item: item_2000000
             Price: 50000000
@@ -23776,6 +24045,141 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000089
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000090
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000091
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000092
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000093
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000094
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000095
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000096
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000097
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000098
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000099
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000100
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000101
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000102
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000103
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000104
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000105
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000106
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000107
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000108
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000109
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000110
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000111
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000112
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000113
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000114
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000115
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000116
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
@@ -23789,739 +24193,955 @@ Body:
           - Enchantgrade: 0
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 1
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 2
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
           - Enchantgrade: 4
             Items:
               - Item: item_2000000
-                Chance: 1111
+                Chance: 854
               - Item: item_2000001
-                Chance: 1111
+                Chance: 854
               - Item: item_2000002
-                Chance: 1111
+                Chance: 854
               - Item: item_2000003
-                Chance: 1111
+                Chance: 854
               - Item: item_2000004
-                Chance: 1111
+                Chance: 854
               - Item: item_2000005
-                Chance: 1111
+                Chance: 854
               - Item: item_2000006
-                Chance: 1111
+                Chance: 854
               - Item: item_2000007
-                Chance: 1111
+                Chance: 854
               - Item: item_2000008
-                Chance: 1111
+                Chance: 854
               - Item: item_2000009
-                Chance: 1111
+                Chance: 854
               - Item: item_2000010
-                Chance: 1111
+                Chance: 854
               - Item: item_2000011
-                Chance: 1111
+                Chance: 854
               - Item: item_2000012
-                Chance: 1111
+                Chance: 854
               - Item: item_2000013
-                Chance: 1111
+                Chance: 854
               - Item: item_2000014
-                Chance: 1111
+                Chance: 854
               - Item: item_2000015
-                Chance: 1111
+                Chance: 854
               - Item: item_2000016
-                Chance: 1111
+                Chance: 854
               - Item: item_2000017
-                Chance: 1111
+                Chance: 854
               - Item: item_2000018
-                Chance: 1111
+                Chance: 854
               - Item: item_2000019
-                Chance: 1111
+                Chance: 854
               - Item: item_2000020
-                Chance: 1111
+                Chance: 854
               - Item: item_2000021
-                Chance: 1111
+                Chance: 854
               - Item: item_2000022
-                Chance: 1111
+                Chance: 854
               - Item: item_2000023
-                Chance: 1111
+                Chance: 854
               - Item: item_2000024
-                Chance: 1111
+                Chance: 854
               - Item: item_2000025
-                Chance: 1111
+                Chance: 854
               - Item: item_2000026
-                Chance: 1111
+                Chance: 854
               - Item: item_2000027
-                Chance: 1111
+                Chance: 854
               - Item: item_2000028
-                Chance: 1111
+                Chance: 854
               - Item: item_2000029
-                Chance: 1111
+                Chance: 854
               - Item: item_2000030
-                Chance: 1111
+                Chance: 854
               - Item: item_2000031
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000032
-                Chance: 1111
+                Chance: 854
               - Item: item_2000033
-                Chance: 1111
+                Chance: 854
               - Item: item_2000034
-                Chance: 1111
+                Chance: 854
               - Item: item_2000035
-                Chance: 1111
+                Chance: 854
               - Item: item_2000036
-                Chance: 1111
+                Chance: 854
               - Item: item_2000037
-                Chance: 1111
+                Chance: 854
               - Item: item_2000038
-                Chance: 1111
+                Chance: 854
               - Item: item_2000039
-                Chance: 1111
+                Chance: 854
               - Item: item_2000040
-                Chance: 1111
+                Chance: 854
               - Item: item_2000041
-                Chance: 1111
+                Chance: 854
               - Item: item_2000042
-                Chance: 1111
+                Chance: 854
               - Item: item_2000043
-                Chance: 1111
+                Chance: 854
               - Item: item_2000044
-                Chance: 1111
+                Chance: 854
               - Item: item_2000045
-                Chance: 1111
+                Chance: 854
               - Item: item_2000046
-                Chance: 1111
+                Chance: 854
               - Item: item_2000047
-                Chance: 1111
+                Chance: 854
               - Item: item_2000048
-                Chance: 1111
+                Chance: 854
               - Item: item_2000049
-                Chance: 1111
+                Chance: 854
               - Item: item_2000050
-                Chance: 1111
+                Chance: 854
               - Item: item_2000051
-                Chance: 1111
+                Chance: 854
               - Item: item_2000052
-                Chance: 1111
+                Chance: 854
               - Item: item_2000053
-                Chance: 1111
+                Chance: 854
               - Item: item_2000054
-                Chance: 1111
+                Chance: 854
               - Item: item_2000055
-                Chance: 1111
+                Chance: 854
               - Item: item_2000056
-                Chance: 1111
+                Chance: 854
               - Item: item_2000057
-                Chance: 1111
+                Chance: 854
               - Item: item_2000058
-                Chance: 1111
+                Chance: 854
               - Item: item_2000059
-                Chance: 1111
+                Chance: 854
               - Item: item_2000060
-                Chance: 1111
+                Chance: 854
               - Item: item_2000061
-                Chance: 1111
+                Chance: 854
               - Item: item_2000062
-                Chance: 1111
+                Chance: 854
               - Item: item_2000063
-                Chance: 1111
+                Chance: 854
               - Item: item_2000064
-                Chance: 1111
+                Chance: 854
               - Item: item_2000065
-                Chance: 1111
+                Chance: 854
               - Item: item_2000066
-                Chance: 1111
+                Chance: 854
               - Item: item_2000067
-                Chance: 1111
+                Chance: 854
               - Item: item_2000068
-                Chance: 1111
+                Chance: 854
               - Item: item_2000069
-                Chance: 1111
+                Chance: 854
               - Item: item_2000070
-                Chance: 1111
+                Chance: 854
               - Item: item_2000071
-                Chance: 1111
+                Chance: 854
               - Item: item_2000072
-                Chance: 1111
+                Chance: 854
               - Item: item_2000073
-                Chance: 1111
+                Chance: 854
               - Item: item_2000074
-                Chance: 1111
+                Chance: 854
               - Item: item_2000075
-                Chance: 1111
+                Chance: 854
               - Item: item_2000076
-                Chance: 1111
+                Chance: 854
               - Item: item_2000077
-                Chance: 1111
+                Chance: 854
               - Item: item_2000078
-                Chance: 1111
+                Chance: 854
               - Item: item_2000079
-                Chance: 1111
+                Chance: 854
               - Item: item_2000080
-                Chance: 1111
+                Chance: 854
               - Item: item_2000081
-                Chance: 1111
+                Chance: 854
               - Item: item_2000082
-                Chance: 1111
+                Chance: 854
               - Item: item_2000083
-                Chance: 1111
+                Chance: 854
               - Item: item_2000084
-                Chance: 1111
+                Chance: 854
               - Item: item_2000085
-                Chance: 1111
+                Chance: 854
               - Item: item_2000086
-                Chance: 1111
+                Chance: 854
               - Item: item_2000087
-                Chance: 1111
+                Chance: 854
               - Item: item_2000088
-                Chance: 1111
+                Chance: 854
               - Item: item_2000089
-                Chance: 1121
+                Chance: 854
+              - Item: item_2000090
+                Chance: 854
+              - Item: item_2000091
+                Chance: 854
+              - Item: item_2000092
+                Chance: 854
+              - Item: item_2000093
+                Chance: 854
+              - Item: item_2000094
+                Chance: 854
+              - Item: item_2000095
+                Chance: 854
+              - Item: item_2000096
+                Chance: 854
+              - Item: item_2000097
+                Chance: 854
+              - Item: item_2000098
+                Chance: 854
+              - Item: item_2000099
+                Chance: 854
+              - Item: item_2000100
+                Chance: 854
+              - Item: item_2000101
+                Chance: 854
+              - Item: item_2000102
+                Chance: 854
+              - Item: item_2000103
+                Chance: 854
+              - Item: item_2000104
+                Chance: 854
+              - Item: item_2000105
+                Chance: 854
+              - Item: item_2000106
+                Chance: 854
+              - Item: item_2000107
+                Chance: 854
+              - Item: item_2000108
+                Chance: 854
+              - Item: item_2000109
+                Chance: 854
+              - Item: item_2000110
+                Chance: 854
+              - Item: item_2000111
+                Chance: 854
+              - Item: item_2000112
+                Chance: 854
+              - Item: item_2000113
+                Chance: 854
+              - Item: item_2000114
+                Chance: 854
+              - Item: item_2000115
+                Chance: 854
+              - Item: item_2000116
+                Chance: 936
         PerfectEnchants:
           - Item: item_2000000
             Price: 50000000
@@ -24969,6 +25589,141 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000089
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000090
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000091
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000092
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000093
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000094
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000095
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000096
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000097
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000098
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000099
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000100
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000101
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000102
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000103
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000104
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000105
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000106
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000107
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000108
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000109
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000110
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000111
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000112
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000113
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000114
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000115
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000116
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
