@@ -22648,6 +22648,7 @@ Body:
               - Item: item_2000116
                 Chance: 936
           - Enchantgrade: 1
+            Items:
               - Item: item_2000000
                 Chance: 854
               - Item: item_2000001
