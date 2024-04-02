@@ -141,13 +141,7 @@ OnInit:
 	sellitem(420199,.@p,-1);	//«Õ¾y¤õ²y
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(5966,.@p,-1);	//¬_¦Õ
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
 	sellitem(19181,.@p,-1);	//·s®ö¼é¾¥Ãè
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
-	sellitem(5966,.@p,-1);	//¬_¦Õ
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400440,.@p,-1);	//Äb®¬Å]©G
@@ -174,9 +168,6 @@ OnInit:
 	sellitem(420236,.@p,-1);	//Å]¤ý¹ÚÃ¹§J©¾¸Û¹²¤H
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(410254,.@p,-1);	//¥j¥N¹ÚÃ¹§J¶Q±Ú­º¹¢
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
 	sellitem(400401,.@p,-1);	//¤Ñ¦a¾ðªº«H¥õ
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
@@ -184,9 +175,6 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(410184,.@p,-1);	//¼»¥¹Ä_¥Û¶A©G¾v¹¢
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
-	sellitem(410254,.@p,-1);	//¥j¥N¹ÚÃ¹§J¶Q±Ú­º¹¢
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(410235,.@p,-1);	//»´«K±æ»·Ãè
@@ -202,9 +190,6 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(19393,.@p,-1);	//Å]¤O¤§¬P
-	sellitemcurrency(6909,.@meow);
-    endsellitem(); 
-	sellitem(410254,.@p,-1);	//¥j¥N©sÃ¹§J¶Q±Ú­º¹¢
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(420239,.@p,-1);	//«_ÀI©¯¹B¯ó

@@ -26110,9 +26110,20 @@ Body:
                 Amount: 300
   - Id: 10006 # ÀY¤¤ªþÅ]
     TargetItems:
-      Sunglasses_: true
-      KarduiEar: true
-      19181: true
+      Sunglasses_: true # 2202
+      KarduiEar: true # 5966
+      New_Wave_Sunglasses_: true # 19181
+      Old_Moroc_Acc: true # 410254
+      Shine_Circlet: true # 410183
+      Sin_Circlet: true # 410184
+      Handiness_Telescope: true # 410235
+      Magic_Star_TW: true # 19393
+      Magic_Star_TW_LT: true # 410256
+      SeraphimCoronet: true # 19138
+      Imperial_Feather: true # 18823
+      Gambler_Seal: true # 5918
+      C_Little_Abyss_Dragon: true # 410211
+      Wing_Of_Bless: true # 400291
     Reset:
       Price: 2000000
       Chance: 100000
