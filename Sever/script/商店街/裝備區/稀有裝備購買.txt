@@ -311,7 +311,7 @@ OnInit:
 	sellitem(400199,.@p,-1);	//«H¥õ¤§²¯ II(¹C«L)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400200,.@p,-1);	//(¬Ó®a¸T½Ã¶¤)
+	sellitem(400200,.@p,-1);	//«H¥õ¤§²¯ (¬Ó®a¸T½Ã¶¤)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400201,.@p,-1);	//«H¥õ¤§²¯ II(¬Ó®a¸T½Ã¶¤)

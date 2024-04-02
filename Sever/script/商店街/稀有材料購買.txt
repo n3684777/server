@@ -9,6 +9,10 @@ OnInit:
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(910132,100000000,-1);      //1Eや下
+
+	sellitem(910132,0,-1);      //1Eや下
+	sellitemcurrency(969,50);
+    endsellitem();
 	
 	sellitem(1001174,.@p*3,-1);      //み摘
 	sellitemcurrency(6909,30);
