@@ -170,6 +170,7 @@ Body:
       - Item: Geffen_Mage_Robe
       - Item: Anti_Magic_Suit
   - Item: Gray_Charcoal_Melee
+    CardsAllowed: true
     RandomOptionGroup: GRAY_CHARCOAL_MELEE
     TargetItems:
       - Item: Thanos_Whip
