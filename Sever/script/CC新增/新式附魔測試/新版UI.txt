@@ -1,4 +1,4 @@
-function	script	新版UI	{
+function	script	??��??UI	{
 	freeloop(1);
 	set .@k,0;
 	setarray .@box[0],450177,450178,480091,480090,470087,470088,490106,490108,490107,490109,450169,450170,450171,
@@ -16,7 +16,7 @@ function	script	新版UI	{
 						540056,550089,550090,560037,570032,580033,590047,590048,600030,610041,620019,630019,640034,
 						650028,700059,800015,810015,820011,830015,840010,450293,450294,450295,450296,450297,450298,
 						450243,480231,470174,450234,480230,470173,450244,480232,470175,450245,480233,470176,490299,
-						490300,490301,490302,490303,490304,490305,490306,490307,470183,2100000,900000,2100001;
+						490300,490301,490302,490303,490304,490305,490306,490307,470183,2100000,900000,2100001,2202;
 	setarray .@enchant1[0],450177,450178;
 	setarray .@enchant2[0],480091,480090;
 	setarray .@enchant3[0],470087,470088;
@@ -62,6 +62,7 @@ function	script	新版UI	{
 	setarray .@enchant10003[0],2100000;
 	setarray .@enchant10004[0],900000;
 	setarray .@enchant10005[0],2100001;
+	setarray .@enchant10006[0],2202;
 	getinventorylist(getcharid(0), INV_IDX | INV_ID);
 	for(.@i = 0; .@i < getarraysize(@inventorylist_idx[.@i]); .@i++){
 		for ( .@j = 0; .@j < getarraysize(.@box);.@j++){
@@ -75,7 +76,7 @@ function	script	新版UI	{
 	else{
 		.@ret = itemlist(.@boxs);
 		clear;
-		mes "即將開啟介面。";
+		mes "??��????????�???��??";
 		close2;
 		if ((inarray(.@enchant1[0],.@ret) !=-1 )){
 				item_enchant(1);
@@ -243,6 +244,10 @@ function	script	新版UI	{
 		}
 		else if ((inarray(.@enchant10005[0],.@ret) !=-1 )){
 				item_enchant(10005);
+				end;
+		}
+		else if ((inarray(.@enchant10006[0],.@ret) !=-1 )){
+				item_enchant(10006);
 				end;
 		}
 		else {
