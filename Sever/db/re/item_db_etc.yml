@@ -71416,3 +71416,211 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000117
+    AegisName: item_2000117
+    Name: ¤õª¢ªá
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_KOUENKA",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_KOUENKA",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_KOUENKA",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000118
+    AegisName: item_2000118
+    Name: Ãzª¢Às
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_BAKUENRYU",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_BAKUENRYU",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_BAKUENRYU",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000119
+    AegisName: item_2000119
+    Name: ¦B°{ºj
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000120
+    AegisName: item_2000120
+    Name: ¦B´¹¸¨
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_HYOUSYOURAKU",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_HYOUSYOURAKU",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_HYOUSYOURAKU",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000121
+    AegisName: item_2000121
+    Name: ­·¤b
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_HUUJIN",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_HUUJIN",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_HUUJIN",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000122
+    AegisName: item_2000122
+    Name: ®Ò­·
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"NJ_KAMAITACHI",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"NJ_KAMAITACHI",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"NJ_KAMAITACHI",30;
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000123
+    AegisName: item_2000123
+    Name: ­·Å]­¸Ãð¤§­¸»R
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_HUUMARANKA",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_HUUMARANKA",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_HUUMARANKA",-1500;
+      bonus2 bSkillAtk,"KO_HUUMARANKA",15;      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000124
+    AegisName: item_2000124
+    Name: Ãz¬µ­¸¤M
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_BAKURETSU",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_BAKURETSU",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_BAKURETSU",-1500;
+      bonus2 bSkillAtk,"KO_BAKURETSU",15;      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000125
+    AegisName: item_2000125
+    Name: «Õ­ß¢Ì¦r±Ù
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_JYUMONJIKIRI",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_JYUMONJIKIRI",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_JYUMONJIKIRI",-1550;
+      bonus2 bSkillAtk,"KO_JYUMONJIKIRI",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000126
+    AegisName: item_2000126
+    Name: ¤õµK¯¥
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_KAHU_ENTEN",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_KAHU_ENTEN",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_KAHU_ENTEN",-200;
+      bonus2 bSkillAtk,"KO_KAHU_ENTEN",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000127
+    AegisName: item_2000127
+    Name: §NµK¯¥
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_HYOUHU_HUBUKI",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_HYOUHU_HUBUKI",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_HYOUHU_HUBUKI",-200;
+      bonus2 bSkillAtk,"KO_HYOUHU_HUBUKI",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000128
+    AegisName: item_2000128
+    Name: ¹p¹q¯¥
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"KO_KAZEHU_SEIRAN",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"KO_KAZEHU_SEIRAN",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"KO_KAZEHU_SEIRAN",-200;
+      bonus2 bSkillAtk,"KO_KAZEHU_SEIRAN",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }

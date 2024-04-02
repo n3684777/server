@@ -1,0 +1,94 @@
+  - Id: 10006 # 頭中附魔
+    TargetItems:
+      Ceres_Armor_TW_LT: true
+      Jupiter_Armor_TW_LT: true
+      Apollo_Armor_TW_LT: true
+      Mars_Armor_TW_LT: true
+      Vinus_Armor_TW_LT: true
+      Vulcan_Armor_TW_LT: true
+    Reset:
+      Chance: 80000
+      Materials:
+        - Material: Nyangvine_Fruit
+          Amount: 3
+    Order:
+      - Slot: 3
+      - Slot: 2
+      - Slot: 1
+    Slots:
+      - Slot: 3
+        Materials:
+          - Material: Nyangvine_Fruit
+            Amount: 2
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 1
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 2
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 3
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 4
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+      - Slot: 2
+        Materials:
+          - Material: Pow_Meteorite_Dust
+            Amount: 4
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 1
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 2
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 3
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 4
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+      - Slot: 1
+        Materials:
+          - Material: Pow_Meteorite_Dust
+            Amount: 4
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 1
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 2
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 3
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
+          - Enchantgrade: 4
+            Items:
+              - Item: Inteligence5
+                Chance: 2000
