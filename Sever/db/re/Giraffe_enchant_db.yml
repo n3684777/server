@@ -26112,11 +26112,11 @@ Body:
     TargetItems:
       Sunglasses_: true
     Reset:
-      Chance: 80000
+      Chance: 100000
       Materials:
         - Material: Ep18_Amethyst_Fragment
           Amount: 0
-        Price: 2000000
+          Price: 2000000
     Order:
       - Slot: 3
       - Slot: 2
@@ -26126,7 +26126,7 @@ Body:
         Materials:
           - Material: Ep18_Amethyst_Fragment
             Amount: 0
-        Price: 1000000
+            Price: 1000000
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -26965,7 +26965,7 @@ Body:
         Materials:
           - Material: Ep18_Amethyst_Fragment
             Amount: 0
-        Price: 1000000
+            Price: 1000000
         Enchants:
           - Enchantgrade: 0
             Items:
@@ -27803,7 +27803,7 @@ Body:
         Materials:
           - Material: Ep18_Amethyst_Fragment
             Amount: 0
-        Price: 1000000
+            Price: 1000000
         Enchants:
           - Enchantgrade: 0
             Items:
