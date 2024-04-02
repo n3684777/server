@@ -26114,8 +26114,7 @@ Body:
     Reset:
       Chance: 80000
       Materials:
-        - Material: Nyangvine_Fruit
-          Amount: 10
+        Price: 2000000
     Order:
       - Slot: 3
       - Slot: 2
@@ -26123,8 +26122,7 @@ Body:
     Slots:
       - Slot: 3
         Materials:
-          - Material: Nyangvine_Fruit
-            Amount: 5
+        Price: 1000000
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -26961,8 +26959,7 @@ Body:
                 Chance: 1060           
       - Slot: 2
         Materials:
-          - Material: Nyangvine_Fruit
-            Amount: 5
+        Price: 1000000
         Enchants:
           - Enchantgrade: 0
             Items:
@@ -27798,8 +27795,7 @@ Body:
                 Chance: 1060
       - Slot: 1
         Materials:
-          - Material: Nyangvine_Fruit
-            Amount: 5
+        Price: 1000000
         Enchants:
           - Enchantgrade: 0
             Items:
