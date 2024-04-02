@@ -26111,6 +26111,8 @@ Body:
   - Id: 10006 # ÀY¤¤ªþÅ]
     TargetItems:
       Sunglasses_: true
+      KarduiEar: true
+      19181: true
     Reset:
       Price: 2000000
       Chance: 100000

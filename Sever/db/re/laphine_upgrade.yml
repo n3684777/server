@@ -195,6 +195,7 @@ Body:
       - Item: Thanos_Axe_AD
       - Item: Thanos_Violin_AD
   - Item: Gray_Charcoal_Magic
+    CardsAllowed: true
     RandomOptionGroup: GRAY_CHARCOAL_MAGIC
     TargetItems:
       - Item: Thanos_Rod
@@ -210,6 +211,7 @@ Body:
       - Item: Thanos_Violin_AD
       - Item: Thanos_Whip_AD
   - Item: Gray_Charcoal_Range
+    CardsAllowed: true
     RandomOptionGroup: GRAY_CHARCOAL_RANGE
     TargetItems:
       - Item: Thanos_Bow
