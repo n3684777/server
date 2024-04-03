@@ -27182,7 +27182,7 @@ Body:
                 Chance: 1216
           - Enchantgrade: 1
             Items:
-                - Item: Strength1
+              - Item: Strength1
                 Chance: 1176
               - Item: Strength2
                 Chance: 1176
