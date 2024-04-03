@@ -68126,7 +68126,9 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
+      if (Sex == SEX_MALE){
       changebase 4211;
+      }
     UnEquipScript: |
       changebase Class;
   - Id: 910073
@@ -68136,7 +68138,9 @@ Body:
     Buy: 20
     Weight: 100
     Script: |
+      if (Sex == SEX_FEMALE){
       changebase 4212;
+      }
     UnEquipScript: |
       changebase Class;
   - Id: 910074
@@ -68718,6 +68722,166 @@ Body:
     Script: |
       changebase 4142;
     UnEquipScript: |
+      changebase Class;
+  - Id: 910139
+    AegisName: RK_J_Stone
+    Name: ¿c®¦ÃM¤hJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4060;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910140
+    AegisName: WL_J_Stone
+    Name: ©G³N¤hJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4061;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910141
+    AegisName: TArc2_J_Stone
+    Name: ¹C«LJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4062;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910142
+    AegisName: AB_J_Stone
+    Name: ¤j¥D±ÐJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4063;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910143
+    AegisName: TMer_J_Stone
+    Name: ¾÷±ñ¤u¦KJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4064;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910144
+    AegisName: CA_J_Stone
+    Name: ¢Ì¦r±Ù­ºªÌJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4065;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910145
+    AegisName: TS2_J_Stone
+    Name: ¬Ó®a¸T½Ã­xJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4073;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910146
+    AegisName: TM2_J_Stone
+    Name: §¯³N®vJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4074;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910147
+    AegisName: TBar_J_Stone
+    Name: ®c§Ê¼Ö®vJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      if (Sex == SEX_MALE){
+      changebase 4075;
+      setlook LOOK_BODY2,1;
+      }
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910148
+    AegisName: TDan_J_Stone
+    Name: ®ö¸ñ»RªÌJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      if (Sex == SEX_FEMALE){
+      changebase 4076;
+      setlook LOOK_BODY2,1;
+      }
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910149
+    AegisName: TMon_J_Stone
+    Name: ­×Ã¹JRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4077;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910150
+    AegisName: Mer222_J_Stone
+    Name: °ò¦]¾ÇªÌJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4078;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
+      changebase Class;
+  - Id: 910151
+    AegisName: TThi2_J_Stone
+    Name: ¾y¼v°lÂÜªÌJRO¤Û¤Æ¥Û(©ÜªÓ)
+    Type: Card
+    Buy: 20
+    Weight: 100
+    Script: |
+      changebase 4079;
+      setlook LOOK_BODY2,1;
+    UnEquipScript: |
+      setlook LOOK_BODY2,0;
       changebase Class;
   - Id: 930000
     AegisName: item_930000

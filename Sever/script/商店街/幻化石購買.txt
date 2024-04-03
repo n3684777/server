@@ -160,3 +160,31 @@ OnInit:
 OnBuyItem:
 end;
 }
+
+    uttycty,24,82,4	script	JRO職業幻化石購買商	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"JRO職業幻化石購買";
+	waitingroom "★ JRO職業幻化石 ★",0;
+	.@p = 5000000;
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(910139,.@p,-1);
+	sellitem(910140,.@p,-1);
+	sellitem(910141,.@p,-1);
+	sellitem(910142,.@p,-1);
+	sellitem(910143,.@p,-1);
+	sellitem(910144,.@p,-1);
+	sellitem(910145,.@p,-1);
+	sellitem(910146,.@p,-1);
+	sellitem(910147,.@p,-1);
+	sellitem(910148,.@p,-1);
+	sellitem(910149,.@p,-1);
+	sellitem(910150,.@p,-1);
+	sellitem(910151,.@p,-1);
+	
+OnBuyItem:
+end;
+}
