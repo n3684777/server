@@ -26350,6 +26350,7 @@ Body:
                 Chance: 970
               - Item: SP150
                 Chance: 1060
+
           - Enchantgrade: 1
             Items:
               - Item: Strength1
@@ -26973,7 +26974,215 @@ Body:
               - Item: SP100
                 Chance: 970
               - Item: SP150
-                Chance: 1060           
+                Chance: 1060 
+          - Enchantgrade: 4
+            Items:
+              - Item: Strength1
+                Chance: 970
+              - Item: Strength2
+                Chance: 970
+              - Item: Strength3
+                Chance: 970
+              - Item: Strength4
+                Chance: 970
+              - Item: Strength5
+                Chance: 970
+              - Item: Strength6
+                Chance: 970
+              - Item: Strength7
+                Chance: 970
+              - Item: Strength8
+                Chance: 970
+              - Item: Strength9
+                Chance: 970
+              - Item: Strength10
+                Chance: 970
+              - Item: Inteligence1
+                Chance: 970
+              - Item: Inteligence2
+                Chance: 970
+              - Item: Inteligence3
+                Chance: 970
+              - Item: Inteligence4
+                Chance: 970
+              - Item: Inteligence5
+                Chance: 970
+              - Item: Inteligence6
+                Chance: 970
+              - Item: Inteligence7
+                Chance: 970
+              - Item: Inteligence8
+                Chance: 970
+              - Item: Inteligence9
+                Chance: 970
+              - Item: Inteligence10
+                Chance: 970
+              - Item: Dexterity1
+                Chance: 970
+              - Item: Dexterity2
+                Chance: 970
+              - Item: Dexterity3
+                Chance: 970
+              - Item: Dexterity4
+                Chance: 970
+              - Item: Dexterity5
+                Chance: 970
+              - Item: Dexterity6
+                Chance: 970
+              - Item: Dexterity7
+                Chance: 970
+              - Item: Dexterity8
+                Chance: 970
+              - Item: Dexterity9
+                Chance: 970
+              - Item: Dexterity10
+                Chance: 970
+              - Item: Agility1
+                Chance: 970
+              - Item: Agility2
+                Chance: 970
+              - Item: Agility3
+                Chance: 970
+              - Item: Agility4
+                Chance: 970
+              - Item: Agility5
+                Chance: 970
+              - Item: Agility6
+                Chance: 970
+              - Item: Agility7
+                Chance: 970
+              - Item: Agility8
+                Chance: 970
+              - Item: Agility9
+                Chance: 970
+              - Item: Agility10
+                Chance: 970
+              - Item: Vitality1
+                Chance: 970
+              - Item: Vitality2
+                Chance: 970
+              - Item: Vitality3
+                Chance: 970
+              - Item: Vitality4
+                Chance: 970
+              - Item: Vitality5
+                Chance: 970
+              - Item: Vitality6
+                Chance: 970
+              - Item: Vitality7
+                Chance: 970
+              - Item: Vitality8
+                Chance: 970
+              - Item: Vitality9
+                Chance: 970
+              - Item: Vitality10
+                Chance: 970
+              - Item: Luck1
+                Chance: 970
+              - Item: Luck2
+                Chance: 970
+              - Item: Luck3
+                Chance: 970
+              - Item: Luck4
+                Chance: 970
+              - Item: Luck5
+                Chance: 970
+              - Item: Luck6
+                Chance: 970
+              - Item: Luck7
+                Chance: 970
+              - Item: Luck8
+                Chance: 970
+              - Item: Luck9
+                Chance: 970
+              - Item: Luck10
+                Chance: 970
+              - Item: Matk2
+                Chance: 970
+              - Item: Matk3
+                Chance: 970
+              - Item: Evasion6
+                Chance: 970
+              - Item: Evasion12
+                Chance: 970
+              - Item: Critical5
+                Chance: 970
+              - Item: Critical7
+                Chance: 970
+              - Item: Atk2
+                Chance: 970
+              - Item: Atk3
+                Chance: 970
+              - Item: Str1_J
+                Chance: 970
+              - Item: Str2_J
+                Chance: 970
+              - Item: Str3_J
+                Chance: 970
+              - Item: Int1_J
+                Chance: 970
+              - Item: Int2_J
+                Chance: 970
+              - Item: Int3_J
+                Chance: 970
+              - Item: Vit1_J
+                Chance: 970
+              - Item: Vit2_J
+                Chance: 970
+              - Item: Vit3_J
+                Chance: 970
+              - Item: Agi1_J
+                Chance: 970
+              - Item: Agi2_J
+                Chance: 970
+              - Item: Agi3_J
+                Chance: 970
+              - Item: Dex1_J
+                Chance: 970
+              - Item: Dex2_J
+                Chance: 970
+              - Item: Dex3_J
+                Chance: 970
+              - Item: Luk1_J
+                Chance: 970
+              - Item: Luk2_J
+                Chance: 970
+              - Item: Luk3_J
+                Chance: 970
+              - Item: Mdef2
+                Chance: 970
+              - Item: Mdef4
+                Chance: 970
+              - Item: Mdef6
+                Chance: 970
+              - Item: Mdef8
+                Chance: 970
+              - Item: Mdef10
+                Chance: 970
+              - Item: Def3
+                Chance: 970
+              - Item: Def6
+                Chance: 970
+              - Item: Def9
+                Chance: 970
+              - Item: Def12
+                Chance: 970
+              - Item: HP100
+                Chance: 970
+              - Item: HP200
+                Chance: 970
+              - Item: HP300
+                Chance: 970
+              - Item: HP400
+                Chance: 970
+              - Item: HP500
+                Chance: 970
+              - Item: SP50
+                Chance: 970
+              - Item: SP100
+                Chance: 970
+              - Item: SP150
+                Chance: 1060          
       - Slot: 2
         Price: 1000000
         Materials:
@@ -27812,841 +28021,1607 @@ Body:
                 Chance: 970
               - Item: SP150
                 Chance: 1060
+          - Enchantgrade: 4
+            Items:
+              - Item: Strength1
+                Chance: 970
+              - Item: Strength2
+                Chance: 970
+              - Item: Strength3
+                Chance: 970
+              - Item: Strength4
+                Chance: 970
+              - Item: Strength5
+                Chance: 970
+              - Item: Strength6
+                Chance: 970
+              - Item: Strength7
+                Chance: 970
+              - Item: Strength8
+                Chance: 970
+              - Item: Strength9
+                Chance: 970
+              - Item: Strength10
+                Chance: 970
+              - Item: Inteligence1
+                Chance: 970
+              - Item: Inteligence2
+                Chance: 970
+              - Item: Inteligence3
+                Chance: 970
+              - Item: Inteligence4
+                Chance: 970
+              - Item: Inteligence5
+                Chance: 970
+              - Item: Inteligence6
+                Chance: 970
+              - Item: Inteligence7
+                Chance: 970
+              - Item: Inteligence8
+                Chance: 970
+              - Item: Inteligence9
+                Chance: 970
+              - Item: Inteligence10
+                Chance: 970
+              - Item: Dexterity1
+                Chance: 970
+              - Item: Dexterity2
+                Chance: 970
+              - Item: Dexterity3
+                Chance: 970
+              - Item: Dexterity4
+                Chance: 970
+              - Item: Dexterity5
+                Chance: 970
+              - Item: Dexterity6
+                Chance: 970
+              - Item: Dexterity7
+                Chance: 970
+              - Item: Dexterity8
+                Chance: 970
+              - Item: Dexterity9
+                Chance: 970
+              - Item: Dexterity10
+                Chance: 970
+              - Item: Agility1
+                Chance: 970
+              - Item: Agility2
+                Chance: 970
+              - Item: Agility3
+                Chance: 970
+              - Item: Agility4
+                Chance: 970
+              - Item: Agility5
+                Chance: 970
+              - Item: Agility6
+                Chance: 970
+              - Item: Agility7
+                Chance: 970
+              - Item: Agility8
+                Chance: 970
+              - Item: Agility9
+                Chance: 970
+              - Item: Agility10
+                Chance: 970
+              - Item: Vitality1
+                Chance: 970
+              - Item: Vitality2
+                Chance: 970
+              - Item: Vitality3
+                Chance: 970
+              - Item: Vitality4
+                Chance: 970
+              - Item: Vitality5
+                Chance: 970
+              - Item: Vitality6
+                Chance: 970
+              - Item: Vitality7
+                Chance: 970
+              - Item: Vitality8
+                Chance: 970
+              - Item: Vitality9
+                Chance: 970
+              - Item: Vitality10
+                Chance: 970
+              - Item: Luck1
+                Chance: 970
+              - Item: Luck2
+                Chance: 970
+              - Item: Luck3
+                Chance: 970
+              - Item: Luck4
+                Chance: 970
+              - Item: Luck5
+                Chance: 970
+              - Item: Luck6
+                Chance: 970
+              - Item: Luck7
+                Chance: 970
+              - Item: Luck8
+                Chance: 970
+              - Item: Luck9
+                Chance: 970
+              - Item: Luck10
+                Chance: 970
+              - Item: Matk2
+                Chance: 970
+              - Item: Matk3
+                Chance: 970
+              - Item: Evasion6
+                Chance: 970
+              - Item: Evasion12
+                Chance: 970
+              - Item: Critical5
+                Chance: 970
+              - Item: Critical7
+                Chance: 970
+              - Item: Atk2
+                Chance: 970
+              - Item: Atk3
+                Chance: 970
+              - Item: Str1_J
+                Chance: 970
+              - Item: Str2_J
+                Chance: 970
+              - Item: Str3_J
+                Chance: 970
+              - Item: Int1_J
+                Chance: 970
+              - Item: Int2_J
+                Chance: 970
+              - Item: Int3_J
+                Chance: 970
+              - Item: Vit1_J
+                Chance: 970
+              - Item: Vit2_J
+                Chance: 970
+              - Item: Vit3_J
+                Chance: 970
+              - Item: Agi1_J
+                Chance: 970
+              - Item: Agi2_J
+                Chance: 970
+              - Item: Agi3_J
+                Chance: 970
+              - Item: Dex1_J
+                Chance: 970
+              - Item: Dex2_J
+                Chance: 970
+              - Item: Dex3_J
+                Chance: 970
+              - Item: Luk1_J
+                Chance: 970
+              - Item: Luk2_J
+                Chance: 970
+              - Item: Luk3_J
+                Chance: 970
+              - Item: Mdef2
+                Chance: 970
+              - Item: Mdef4
+                Chance: 970
+              - Item: Mdef6
+                Chance: 970
+              - Item: Mdef8
+                Chance: 970
+              - Item: Mdef10
+                Chance: 970
+              - Item: Def3
+                Chance: 970
+              - Item: Def6
+                Chance: 970
+              - Item: Def9
+                Chance: 970
+              - Item: Def12
+                Chance: 970
+              - Item: HP100
+                Chance: 970
+              - Item: HP200
+                Chance: 970
+              - Item: HP300
+                Chance: 970
+              - Item: HP400
+                Chance: 970
+              - Item: HP500
+                Chance: 970
+              - Item: SP50
+                Chance: 970
+              - Item: SP100
+                Chance: 970
+              - Item: SP150
+                Chance: 1060
       - Slot: 1
         Price: 1000000
         Materials:
-          - Material: Ep18_Amethyst_Fragment
-            Amount: 0
+          - Material: Nyangvine_Fruit
+            Amount: 15
         Enchants:
           - Enchantgrade: 0
             Items:
               - Item: Strength1
-                Chance: 970
+                Chance: 874
               - Item: Strength2
-                Chance: 970
+                Chance: 874
               - Item: Strength3
-                Chance: 970
+                Chance: 874
               - Item: Strength4
-                Chance: 970
+                Chance: 874
               - Item: Strength5
-                Chance: 970
+                Chance: 874
               - Item: Strength6
-                Chance: 970
+                Chance: 874
               - Item: Strength7
-                Chance: 970
+                Chance: 874
               - Item: Strength8
-                Chance: 970
+                Chance: 874
               - Item: Strength9
-                Chance: 970
+                Chance: 874
               - Item: Strength10
-                Chance: 970
+                Chance: 874
               - Item: Inteligence1
-                Chance: 970
+                Chance: 874
               - Item: Inteligence2
-                Chance: 970
+                Chance: 874
               - Item: Inteligence3
-                Chance: 970
+                Chance: 874
               - Item: Inteligence4
-                Chance: 970
+                Chance: 874
               - Item: Inteligence5
-                Chance: 970
+                Chance: 874
               - Item: Inteligence6
-                Chance: 970
+                Chance: 874
               - Item: Inteligence7
-                Chance: 970
+                Chance: 874
               - Item: Inteligence8
-                Chance: 970
+                Chance: 874
               - Item: Inteligence9
-                Chance: 970
+                Chance: 874
               - Item: Inteligence10
-                Chance: 970
+                Chance: 874
               - Item: Dexterity1
-                Chance: 970
+                Chance: 874
               - Item: Dexterity2
-                Chance: 970
+                Chance: 874
               - Item: Dexterity3
-                Chance: 970
+                Chance: 874
               - Item: Dexterity4
-                Chance: 970
+                Chance: 874
               - Item: Dexterity5
-                Chance: 970
+                Chance: 874
               - Item: Dexterity6
-                Chance: 970
+                Chance: 874
               - Item: Dexterity7
-                Chance: 970
+                Chance: 874
               - Item: Dexterity8
-                Chance: 970
+                Chance: 874
               - Item: Dexterity9
-                Chance: 970
+                Chance: 874
               - Item: Dexterity10
-                Chance: 970
+                Chance: 874
               - Item: Agility1
-                Chance: 970
+                Chance: 874
               - Item: Agility2
-                Chance: 970
+                Chance: 874
               - Item: Agility3
-                Chance: 970
+                Chance: 874
               - Item: Agility4
-                Chance: 970
+                Chance: 874
               - Item: Agility5
-                Chance: 970
+                Chance: 874
               - Item: Agility6
-                Chance: 970
+                Chance: 874
               - Item: Agility7
-                Chance: 970
+                Chance: 874
               - Item: Agility8
-                Chance: 970
+                Chance: 874
               - Item: Agility9
-                Chance: 970
+                Chance: 874
               - Item: Agility10
-                Chance: 970
+                Chance: 874
               - Item: Vitality1
-                Chance: 970
+                Chance: 874
               - Item: Vitality2
-                Chance: 970
+                Chance: 874
               - Item: Vitality3
-                Chance: 970
+                Chance: 874
               - Item: Vitality4
-                Chance: 970
+                Chance: 874
               - Item: Vitality5
-                Chance: 970
+                Chance: 874
               - Item: Vitality6
-                Chance: 970
+                Chance: 874
               - Item: Vitality7
-                Chance: 970
+                Chance: 874
               - Item: Vitality8
-                Chance: 970
+                Chance: 874
               - Item: Vitality9
-                Chance: 970
+                Chance: 874
               - Item: Vitality10
-                Chance: 970
+                Chance: 874
               - Item: Luck1
-                Chance: 970
+                Chance: 874
               - Item: Luck2
-                Chance: 970
+                Chance: 874
               - Item: Luck3
-                Chance: 970
+                Chance: 874
               - Item: Luck4
-                Chance: 970
+                Chance: 874
               - Item: Luck5
-                Chance: 970
+                Chance: 874
               - Item: Luck6
-                Chance: 970
+                Chance: 874
               - Item: Luck7
-                Chance: 970
+                Chance: 874
               - Item: Luck8
-                Chance: 970
+                Chance: 874
               - Item: Luck9
-                Chance: 970
+                Chance: 874
               - Item: Luck10
-                Chance: 970
+                Chance: 874
               - Item: Matk2
-                Chance: 970
+                Chance: 874
               - Item: Matk3
-                Chance: 970
+                Chance: 874
               - Item: Evasion6
-                Chance: 970
+                Chance: 874
               - Item: Evasion12
-                Chance: 970
+                Chance: 874
               - Item: Critical5
-                Chance: 970
+                Chance: 874
               - Item: Critical7
-                Chance: 970
+                Chance: 874
               - Item: Atk2
-                Chance: 970
+                Chance: 874
               - Item: Atk3
-                Chance: 970
+                Chance: 874
               - Item: Str1_J
-                Chance: 970
+                Chance: 874
               - Item: Str2_J
-                Chance: 970
+                Chance: 874
               - Item: Str3_J
-                Chance: 970
+                Chance: 874
               - Item: Int1_J
-                Chance: 970
+                Chance: 874
               - Item: Int2_J
-                Chance: 970
+                Chance: 874
               - Item: Int3_J
-                Chance: 970
+                Chance: 874
               - Item: Vit1_J
-                Chance: 970
+                Chance: 874
               - Item: Vit2_J
-                Chance: 970
+                Chance: 874
               - Item: Vit3_J
-                Chance: 970
+                Chance: 874
               - Item: Agi1_J
-                Chance: 970
+                Chance: 874
               - Item: Agi2_J
-                Chance: 970
+                Chance: 874
               - Item: Agi3_J
-                Chance: 970
+                Chance: 874
               - Item: Dex1_J
-                Chance: 970
+                Chance: 874
               - Item: Dex2_J
-                Chance: 970
+                Chance: 874
               - Item: Dex3_J
-                Chance: 970
+                Chance: 874
               - Item: Luk1_J
-                Chance: 970
+                Chance: 874
               - Item: Luk2_J
-                Chance: 970
+                Chance: 874
               - Item: Luk3_J
-                Chance: 970
+                Chance: 874
               - Item: Mdef2
-                Chance: 970
+                Chance: 874
               - Item: Mdef4
-                Chance: 970
+                Chance: 874
               - Item: Mdef6
-                Chance: 970
+                Chance: 874
               - Item: Mdef8
-                Chance: 970
+                Chance: 874
               - Item: Mdef10
-                Chance: 970
+                Chance: 874
               - Item: Def3
-                Chance: 970
+                Chance: 874
               - Item: Def6
-                Chance: 970
+                Chance: 874
               - Item: Def9
-                Chance: 970
+                Chance: 874
               - Item: Def12
-                Chance: 970
+                Chance: 874
               - Item: HP100
-                Chance: 970
+                Chance: 874
               - Item: HP200
-                Chance: 970
+                Chance: 874
               - Item: HP300
-                Chance: 970
+                Chance: 874
               - Item: HP400
-                Chance: 970
+                Chance: 874
               - Item: HP500
-                Chance: 970
+                Chance: 874
               - Item: SP50
-                Chance: 970
+                Chance: 874
               - Item: SP100
-                Chance: 970
+                Chance: 874
               - Item: SP150
-                Chance: 1060
+                Chance: 877
+              - Item: Star_Of_Mettle1
+                Chance: 285
+              - Item: Star_Of_Mettle2
+                Chance: 285
+              - Item: Star_Of_Mettle3
+                Chance: 285
+              - Item: Star_Of_Mettle4
+                Chance: 285
+              - Item: Star_Of_Mettle5
+                Chance: 285
+              - Item: Star_Of_MasterArcher1
+                Chance: 285
+              - Item: Star_Of_MasterArcher2
+                Chance: 285
+              - Item: Star_Of_MasterArcher3
+                Chance: 285
+              - Item: Star_Of_MasterArcher4
+                Chance: 285
+              - Item: Star_Of_MasterArcher5
+                Chance: 285
+              - Item: Star_Of_Sharp1
+                Chance: 285
+              - Item: Star_Of_Sharp2
+                Chance: 285
+              - Item: Star_Of_Sharp3
+                Chance: 285
+              - Item: Star_Of_Sharp4
+                Chance: 285
+              - Item: Star_Of_Sharp5
+                Chance: 285
+              - Item: Star_Of_Spell1
+                Chance: 285
+              - Item: Star_Of_Spell2
+                Chance: 285
+              - Item: Star_Of_Spell3
+                Chance: 285
+              - Item: Star_Of_Spell4
+                Chance: 285
+              - Item: Star_Of_Spell5
+                Chance: 285
+              - Item: Star_Of_Speed1
+                Chance: 285
+              - Item: Star_Of_Speed2
+                Chance: 285
+              - Item: Star_Of_Speed3
+                Chance: 285
+              - Item: Star_Of_Speed4
+                Chance: 285
+              - Item: Star_Of_Speed5
+                Chance: 285
+              - Item: Star_Of_Vital1
+                Chance: 285
+              - Item: Star_Of_Vital2
+                Chance: 285
+              - Item: Star_Of_Vital3
+                Chance: 285
+              - Item: Star_Of_Vital4
+                Chance: 285
+              - Item: Star_Of_Vital5
+                Chance: 285
+              - Item: Star_Of_Spirit1
+                Chance: 285
+              - Item: Star_Of_Spirit2
+                Chance: 285
+              - Item: Star_Of_Spirit3
+                Chance: 285
+              - Item: Star_Of_Spirit4
+                Chance: 285
+              - Item: Star_Of_Spirit5
+                Chance: 285
           - Enchantgrade: 1
             Items:
               - Item: Strength1
-                Chance: 970
+                Chance: 874
               - Item: Strength2
-                Chance: 970
+                Chance: 874
               - Item: Strength3
-                Chance: 970
+                Chance: 874
               - Item: Strength4
-                Chance: 970
+                Chance: 874
               - Item: Strength5
-                Chance: 970
+                Chance: 874
               - Item: Strength6
-                Chance: 970
+                Chance: 874
               - Item: Strength7
-                Chance: 970
+                Chance: 874
               - Item: Strength8
-                Chance: 970
+                Chance: 874
               - Item: Strength9
-                Chance: 970
+                Chance: 874
               - Item: Strength10
-                Chance: 970
+                Chance: 874
               - Item: Inteligence1
-                Chance: 970
+                Chance: 874
               - Item: Inteligence2
-                Chance: 970
+                Chance: 874
               - Item: Inteligence3
-                Chance: 970
+                Chance: 874
               - Item: Inteligence4
-                Chance: 970
+                Chance: 874
               - Item: Inteligence5
-                Chance: 970
+                Chance: 874
               - Item: Inteligence6
-                Chance: 970
+                Chance: 874
               - Item: Inteligence7
-                Chance: 970
+                Chance: 874
               - Item: Inteligence8
-                Chance: 970
+                Chance: 874
               - Item: Inteligence9
-                Chance: 970
+                Chance: 874
               - Item: Inteligence10
-                Chance: 970
+                Chance: 874
               - Item: Dexterity1
-                Chance: 970
+                Chance: 874
               - Item: Dexterity2
-                Chance: 970
+                Chance: 874
               - Item: Dexterity3
-                Chance: 970
+                Chance: 874
               - Item: Dexterity4
-                Chance: 970
+                Chance: 874
               - Item: Dexterity5
-                Chance: 970
+                Chance: 874
               - Item: Dexterity6
-                Chance: 970
+                Chance: 874
               - Item: Dexterity7
-                Chance: 970
+                Chance: 874
               - Item: Dexterity8
-                Chance: 970
+                Chance: 874
               - Item: Dexterity9
-                Chance: 970
+                Chance: 874
               - Item: Dexterity10
-                Chance: 970
+                Chance: 874
               - Item: Agility1
-                Chance: 970
+                Chance: 874
               - Item: Agility2
-                Chance: 970
+                Chance: 874
               - Item: Agility3
-                Chance: 970
+                Chance: 874
               - Item: Agility4
-                Chance: 970
+                Chance: 874
               - Item: Agility5
-                Chance: 970
+                Chance: 874
               - Item: Agility6
-                Chance: 970
+                Chance: 874
               - Item: Agility7
-                Chance: 970
+                Chance: 874
               - Item: Agility8
-                Chance: 970
+                Chance: 874
               - Item: Agility9
-                Chance: 970
+                Chance: 874
               - Item: Agility10
-                Chance: 970
+                Chance: 874
               - Item: Vitality1
-                Chance: 970
+                Chance: 874
               - Item: Vitality2
-                Chance: 970
+                Chance: 874
               - Item: Vitality3
-                Chance: 970
+                Chance: 874
               - Item: Vitality4
-                Chance: 970
+                Chance: 874
               - Item: Vitality5
-                Chance: 970
+                Chance: 874
               - Item: Vitality6
-                Chance: 970
+                Chance: 874
               - Item: Vitality7
-                Chance: 970
+                Chance: 874
               - Item: Vitality8
-                Chance: 970
+                Chance: 874
               - Item: Vitality9
-                Chance: 970
+                Chance: 874
               - Item: Vitality10
-                Chance: 970
+                Chance: 874
               - Item: Luck1
-                Chance: 970
+                Chance: 874
               - Item: Luck2
-                Chance: 970
+                Chance: 874
               - Item: Luck3
-                Chance: 970
+                Chance: 874
               - Item: Luck4
-                Chance: 970
+                Chance: 874
               - Item: Luck5
-                Chance: 970
+                Chance: 874
               - Item: Luck6
-                Chance: 970
+                Chance: 874
               - Item: Luck7
-                Chance: 970
+                Chance: 874
               - Item: Luck8
-                Chance: 970
+                Chance: 874
               - Item: Luck9
-                Chance: 970
+                Chance: 874
               - Item: Luck10
-                Chance: 970
+                Chance: 874
               - Item: Matk2
-                Chance: 970
+                Chance: 874
               - Item: Matk3
-                Chance: 970
+                Chance: 874
               - Item: Evasion6
-                Chance: 970
+                Chance: 874
               - Item: Evasion12
-                Chance: 970
+                Chance: 874
               - Item: Critical5
-                Chance: 970
+                Chance: 874
               - Item: Critical7
-                Chance: 970
+                Chance: 874
               - Item: Atk2
-                Chance: 970
+                Chance: 874
               - Item: Atk3
-                Chance: 970
+                Chance: 874
               - Item: Str1_J
-                Chance: 970
+                Chance: 874
               - Item: Str2_J
-                Chance: 970
+                Chance: 874
               - Item: Str3_J
-                Chance: 970
+                Chance: 874
               - Item: Int1_J
-                Chance: 970
+                Chance: 874
               - Item: Int2_J
-                Chance: 970
+                Chance: 874
               - Item: Int3_J
-                Chance: 970
+                Chance: 874
               - Item: Vit1_J
-                Chance: 970
+                Chance: 874
               - Item: Vit2_J
-                Chance: 970
+                Chance: 874
               - Item: Vit3_J
-                Chance: 970
+                Chance: 874
               - Item: Agi1_J
-                Chance: 970
+                Chance: 874
               - Item: Agi2_J
-                Chance: 970
+                Chance: 874
               - Item: Agi3_J
-                Chance: 970
+                Chance: 874
               - Item: Dex1_J
-                Chance: 970
+                Chance: 874
               - Item: Dex2_J
-                Chance: 970
+                Chance: 874
               - Item: Dex3_J
-                Chance: 970
+                Chance: 874
               - Item: Luk1_J
-                Chance: 970
+                Chance: 874
               - Item: Luk2_J
-                Chance: 970
+                Chance: 874
               - Item: Luk3_J
-                Chance: 970
+                Chance: 874
               - Item: Mdef2
-                Chance: 970
+                Chance: 874
               - Item: Mdef4
-                Chance: 970
+                Chance: 874
               - Item: Mdef6
-                Chance: 970
+                Chance: 874
               - Item: Mdef8
-                Chance: 970
+                Chance: 874
               - Item: Mdef10
-                Chance: 970
+                Chance: 874
               - Item: Def3
-                Chance: 970
+                Chance: 874
               - Item: Def6
-                Chance: 970
+                Chance: 874
               - Item: Def9
-                Chance: 970
+                Chance: 874
               - Item: Def12
-                Chance: 970
+                Chance: 874
               - Item: HP100
-                Chance: 970
+                Chance: 874
               - Item: HP200
-                Chance: 970
+                Chance: 874
               - Item: HP300
-                Chance: 970
+                Chance: 874
               - Item: HP400
-                Chance: 970
+                Chance: 874
               - Item: HP500
-                Chance: 970
+                Chance: 874
               - Item: SP50
-                Chance: 970
+                Chance: 874
               - Item: SP100
-                Chance: 970
+                Chance: 874
               - Item: SP150
-                Chance: 1060
+                Chance: 877
+              - Item: Star_Of_Mettle1
+                Chance: 285
+              - Item: Star_Of_Mettle2
+                Chance: 285
+              - Item: Star_Of_Mettle3
+                Chance: 285
+              - Item: Star_Of_Mettle4
+                Chance: 285
+              - Item: Star_Of_Mettle5
+                Chance: 285
+              - Item: Star_Of_MasterArcher1
+                Chance: 285
+              - Item: Star_Of_MasterArcher2
+                Chance: 285
+              - Item: Star_Of_MasterArcher3
+                Chance: 285
+              - Item: Star_Of_MasterArcher4
+                Chance: 285
+              - Item: Star_Of_MasterArcher5
+                Chance: 285
+              - Item: Star_Of_Sharp1
+                Chance: 285
+              - Item: Star_Of_Sharp2
+                Chance: 285
+              - Item: Star_Of_Sharp3
+                Chance: 285
+              - Item: Star_Of_Sharp4
+                Chance: 285
+              - Item: Star_Of_Sharp5
+                Chance: 285
+              - Item: Star_Of_Spell1
+                Chance: 285
+              - Item: Star_Of_Spell2
+                Chance: 285
+              - Item: Star_Of_Spell3
+                Chance: 285
+              - Item: Star_Of_Spell4
+                Chance: 285
+              - Item: Star_Of_Spell5
+                Chance: 285
+              - Item: Star_Of_Speed1
+                Chance: 285
+              - Item: Star_Of_Speed2
+                Chance: 285
+              - Item: Star_Of_Speed3
+                Chance: 285
+              - Item: Star_Of_Speed4
+                Chance: 285
+              - Item: Star_Of_Speed5
+                Chance: 285
+              - Item: Star_Of_Vital1
+                Chance: 285
+              - Item: Star_Of_Vital2
+                Chance: 285
+              - Item: Star_Of_Vital3
+                Chance: 285
+              - Item: Star_Of_Vital4
+                Chance: 285
+              - Item: Star_Of_Vital5
+                Chance: 285
+              - Item: Star_Of_Spirit1
+                Chance: 285
+              - Item: Star_Of_Spirit2
+                Chance: 285
+              - Item: Star_Of_Spirit3
+                Chance: 285
+              - Item: Star_Of_Spirit4
+                Chance: 285
+              - Item: Star_Of_Spirit5
+                Chance: 285
           - Enchantgrade: 2
             Items:
               - Item: Strength1
-                Chance: 970
+                Chance: 874
               - Item: Strength2
-                Chance: 970
+                Chance: 874
               - Item: Strength3
-                Chance: 970
+                Chance: 874
               - Item: Strength4
-                Chance: 970
+                Chance: 874
               - Item: Strength5
-                Chance: 970
+                Chance: 874
               - Item: Strength6
-                Chance: 970
+                Chance: 874
               - Item: Strength7
-                Chance: 970
+                Chance: 874
               - Item: Strength8
-                Chance: 970
+                Chance: 874
               - Item: Strength9
-                Chance: 970
+                Chance: 874
               - Item: Strength10
-                Chance: 970
+                Chance: 874
               - Item: Inteligence1
-                Chance: 970
+                Chance: 874
               - Item: Inteligence2
-                Chance: 970
+                Chance: 874
               - Item: Inteligence3
-                Chance: 970
+                Chance: 874
               - Item: Inteligence4
-                Chance: 970
+                Chance: 874
               - Item: Inteligence5
-                Chance: 970
+                Chance: 874
               - Item: Inteligence6
-                Chance: 970
+                Chance: 874
               - Item: Inteligence7
-                Chance: 970
+                Chance: 874
               - Item: Inteligence8
-                Chance: 970
+                Chance: 874
               - Item: Inteligence9
-                Chance: 970
+                Chance: 874
               - Item: Inteligence10
-                Chance: 970
+                Chance: 874
               - Item: Dexterity1
-                Chance: 970
+                Chance: 874
               - Item: Dexterity2
-                Chance: 970
+                Chance: 874
               - Item: Dexterity3
-                Chance: 970
+                Chance: 874
               - Item: Dexterity4
-                Chance: 970
+                Chance: 874
               - Item: Dexterity5
-                Chance: 970
+                Chance: 874
               - Item: Dexterity6
-                Chance: 970
+                Chance: 874
               - Item: Dexterity7
-                Chance: 970
+                Chance: 874
               - Item: Dexterity8
-                Chance: 970
+                Chance: 874
               - Item: Dexterity9
-                Chance: 970
+                Chance: 874
               - Item: Dexterity10
-                Chance: 970
+                Chance: 874
               - Item: Agility1
-                Chance: 970
+                Chance: 874
               - Item: Agility2
-                Chance: 970
+                Chance: 874
               - Item: Agility3
-                Chance: 970
+                Chance: 874
               - Item: Agility4
-                Chance: 970
+                Chance: 874
               - Item: Agility5
-                Chance: 970
+                Chance: 874
               - Item: Agility6
-                Chance: 970
+                Chance: 874
               - Item: Agility7
-                Chance: 970
+                Chance: 874
               - Item: Agility8
-                Chance: 970
+                Chance: 874
               - Item: Agility9
-                Chance: 970
+                Chance: 874
               - Item: Agility10
-                Chance: 970
+                Chance: 874
               - Item: Vitality1
-                Chance: 970
+                Chance: 874
               - Item: Vitality2
-                Chance: 970
+                Chance: 874
               - Item: Vitality3
-                Chance: 970
+                Chance: 874
               - Item: Vitality4
-                Chance: 970
+                Chance: 874
               - Item: Vitality5
-                Chance: 970
+                Chance: 874
               - Item: Vitality6
-                Chance: 970
+                Chance: 874
               - Item: Vitality7
-                Chance: 970
+                Chance: 874
               - Item: Vitality8
-                Chance: 970
+                Chance: 874
               - Item: Vitality9
-                Chance: 970
+                Chance: 874
               - Item: Vitality10
-                Chance: 970
+                Chance: 874
               - Item: Luck1
-                Chance: 970
+                Chance: 874
               - Item: Luck2
-                Chance: 970
+                Chance: 874
               - Item: Luck3
-                Chance: 970
+                Chance: 874
               - Item: Luck4
-                Chance: 970
+                Chance: 874
               - Item: Luck5
-                Chance: 970
+                Chance: 874
               - Item: Luck6
-                Chance: 970
+                Chance: 874
               - Item: Luck7
-                Chance: 970
+                Chance: 874
               - Item: Luck8
-                Chance: 970
+                Chance: 874
               - Item: Luck9
-                Chance: 970
+                Chance: 874
               - Item: Luck10
-                Chance: 970
+                Chance: 874
               - Item: Matk2
-                Chance: 970
+                Chance: 874
               - Item: Matk3
-                Chance: 970
+                Chance: 874
               - Item: Evasion6
-                Chance: 970
+                Chance: 874
               - Item: Evasion12
-                Chance: 970
+                Chance: 874
               - Item: Critical5
-                Chance: 970
+                Chance: 874
               - Item: Critical7
-                Chance: 970
+                Chance: 874
               - Item: Atk2
-                Chance: 970
+                Chance: 874
               - Item: Atk3
-                Chance: 970
+                Chance: 874
               - Item: Str1_J
-                Chance: 970
+                Chance: 874
               - Item: Str2_J
-                Chance: 970
+                Chance: 874
               - Item: Str3_J
-                Chance: 970
+                Chance: 874
               - Item: Int1_J
-                Chance: 970
+                Chance: 874
               - Item: Int2_J
-                Chance: 970
+                Chance: 874
               - Item: Int3_J
-                Chance: 970
+                Chance: 874
               - Item: Vit1_J
-                Chance: 970
+                Chance: 874
               - Item: Vit2_J
-                Chance: 970
+                Chance: 874
               - Item: Vit3_J
-                Chance: 970
+                Chance: 874
               - Item: Agi1_J
-                Chance: 970
+                Chance: 874
               - Item: Agi2_J
-                Chance: 970
+                Chance: 874
               - Item: Agi3_J
-                Chance: 970
+                Chance: 874
               - Item: Dex1_J
-                Chance: 970
+                Chance: 874
               - Item: Dex2_J
-                Chance: 970
+                Chance: 874
               - Item: Dex3_J
-                Chance: 970
+                Chance: 874
               - Item: Luk1_J
-                Chance: 970
+                Chance: 874
               - Item: Luk2_J
-                Chance: 970
+                Chance: 874
               - Item: Luk3_J
-                Chance: 970
+                Chance: 874
               - Item: Mdef2
-                Chance: 970
+                Chance: 874
               - Item: Mdef4
-                Chance: 970
+                Chance: 874
               - Item: Mdef6
-                Chance: 970
+                Chance: 874
               - Item: Mdef8
-                Chance: 970
+                Chance: 874
               - Item: Mdef10
-                Chance: 970
+                Chance: 874
               - Item: Def3
-                Chance: 970
+                Chance: 874
               - Item: Def6
-                Chance: 970
+                Chance: 874
               - Item: Def9
-                Chance: 970
+                Chance: 874
               - Item: Def12
-                Chance: 970
+                Chance: 874
               - Item: HP100
-                Chance: 970
+                Chance: 874
               - Item: HP200
-                Chance: 970
+                Chance: 874
               - Item: HP300
-                Chance: 970
+                Chance: 874
               - Item: HP400
-                Chance: 970
+                Chance: 874
               - Item: HP500
-                Chance: 970
+                Chance: 874
               - Item: SP50
-                Chance: 970
+                Chance: 874
               - Item: SP100
-                Chance: 970
+                Chance: 874
               - Item: SP150
-                Chance: 1060
+                Chance: 877
+              - Item: Star_Of_Mettle1
+                Chance: 285
+              - Item: Star_Of_Mettle2
+                Chance: 285
+              - Item: Star_Of_Mettle3
+                Chance: 285
+              - Item: Star_Of_Mettle4
+                Chance: 285
+              - Item: Star_Of_Mettle5
+                Chance: 285
+              - Item: Star_Of_MasterArcher1
+                Chance: 285
+              - Item: Star_Of_MasterArcher2
+                Chance: 285
+              - Item: Star_Of_MasterArcher3
+                Chance: 285
+              - Item: Star_Of_MasterArcher4
+                Chance: 285
+              - Item: Star_Of_MasterArcher5
+                Chance: 285
+              - Item: Star_Of_Sharp1
+                Chance: 285
+              - Item: Star_Of_Sharp2
+                Chance: 285
+              - Item: Star_Of_Sharp3
+                Chance: 285
+              - Item: Star_Of_Sharp4
+                Chance: 285
+              - Item: Star_Of_Sharp5
+                Chance: 285
+              - Item: Star_Of_Spell1
+                Chance: 285
+              - Item: Star_Of_Spell2
+                Chance: 285
+              - Item: Star_Of_Spell3
+                Chance: 285
+              - Item: Star_Of_Spell4
+                Chance: 285
+              - Item: Star_Of_Spell5
+                Chance: 285
+              - Item: Star_Of_Speed1
+                Chance: 285
+              - Item: Star_Of_Speed2
+                Chance: 285
+              - Item: Star_Of_Speed3
+                Chance: 285
+              - Item: Star_Of_Speed4
+                Chance: 285
+              - Item: Star_Of_Speed5
+                Chance: 285
+              - Item: Star_Of_Vital1
+                Chance: 285
+              - Item: Star_Of_Vital2
+                Chance: 285
+              - Item: Star_Of_Vital3
+                Chance: 285
+              - Item: Star_Of_Vital4
+                Chance: 285
+              - Item: Star_Of_Vital5
+                Chance: 285
+              - Item: Star_Of_Spirit1
+                Chance: 285
+              - Item: Star_Of_Spirit2
+                Chance: 285
+              - Item: Star_Of_Spirit3
+                Chance: 285
+              - Item: Star_Of_Spirit4
+                Chance: 285
+              - Item: Star_Of_Spirit5
+                Chance: 285
           - Enchantgrade: 3
             Items:
               - Item: Strength1
-                Chance: 970
+                Chance: 874
               - Item: Strength2
-                Chance: 970
+                Chance: 874
               - Item: Strength3
-                Chance: 970
+                Chance: 874
               - Item: Strength4
-                Chance: 970
+                Chance: 874
               - Item: Strength5
-                Chance: 970
+                Chance: 874
               - Item: Strength6
-                Chance: 970
+                Chance: 874
               - Item: Strength7
-                Chance: 970
+                Chance: 874
               - Item: Strength8
-                Chance: 970
+                Chance: 874
               - Item: Strength9
-                Chance: 970
+                Chance: 874
               - Item: Strength10
-                Chance: 970
+                Chance: 874
               - Item: Inteligence1
-                Chance: 970
+                Chance: 874
               - Item: Inteligence2
-                Chance: 970
+                Chance: 874
               - Item: Inteligence3
-                Chance: 970
+                Chance: 874
               - Item: Inteligence4
-                Chance: 970
+                Chance: 874
               - Item: Inteligence5
-                Chance: 970
+                Chance: 874
               - Item: Inteligence6
-                Chance: 970
+                Chance: 874
               - Item: Inteligence7
-                Chance: 970
+                Chance: 874
               - Item: Inteligence8
-                Chance: 970
+                Chance: 874
               - Item: Inteligence9
-                Chance: 970
+                Chance: 874
               - Item: Inteligence10
-                Chance: 970
+                Chance: 874
               - Item: Dexterity1
-                Chance: 970
+                Chance: 874
               - Item: Dexterity2
-                Chance: 970
+                Chance: 874
               - Item: Dexterity3
-                Chance: 970
+                Chance: 874
               - Item: Dexterity4
-                Chance: 970
+                Chance: 874
               - Item: Dexterity5
-                Chance: 970
+                Chance: 874
               - Item: Dexterity6
-                Chance: 970
+                Chance: 874
               - Item: Dexterity7
-                Chance: 970
+                Chance: 874
               - Item: Dexterity8
-                Chance: 970
+                Chance: 874
               - Item: Dexterity9
-                Chance: 970
+                Chance: 874
               - Item: Dexterity10
-                Chance: 970
+                Chance: 874
               - Item: Agility1
-                Chance: 970
+                Chance: 874
               - Item: Agility2
-                Chance: 970
+                Chance: 874
               - Item: Agility3
-                Chance: 970
+                Chance: 874
               - Item: Agility4
-                Chance: 970
+                Chance: 874
               - Item: Agility5
-                Chance: 970
+                Chance: 874
               - Item: Agility6
-                Chance: 970
+                Chance: 874
               - Item: Agility7
-                Chance: 970
+                Chance: 874
               - Item: Agility8
-                Chance: 970
+                Chance: 874
               - Item: Agility9
-                Chance: 970
+                Chance: 874
               - Item: Agility10
-                Chance: 970
+                Chance: 874
               - Item: Vitality1
-                Chance: 970
+                Chance: 874
               - Item: Vitality2
-                Chance: 970
+                Chance: 874
               - Item: Vitality3
-                Chance: 970
+                Chance: 874
               - Item: Vitality4
-                Chance: 970
+                Chance: 874
               - Item: Vitality5
-                Chance: 970
+                Chance: 874
               - Item: Vitality6
-                Chance: 970
+                Chance: 874
               - Item: Vitality7
-                Chance: 970
+                Chance: 874
               - Item: Vitality8
-                Chance: 970
+                Chance: 874
               - Item: Vitality9
-                Chance: 970
+                Chance: 874
               - Item: Vitality10
-                Chance: 970
+                Chance: 874
               - Item: Luck1
-                Chance: 970
+                Chance: 874
               - Item: Luck2
-                Chance: 970
+                Chance: 874
               - Item: Luck3
-                Chance: 970
+                Chance: 874
               - Item: Luck4
-                Chance: 970
+                Chance: 874
               - Item: Luck5
-                Chance: 970
+                Chance: 874
               - Item: Luck6
-                Chance: 970
+                Chance: 874
               - Item: Luck7
-                Chance: 970
+                Chance: 874
               - Item: Luck8
-                Chance: 970
+                Chance: 874
               - Item: Luck9
-                Chance: 970
+                Chance: 874
               - Item: Luck10
-                Chance: 970
+                Chance: 874
               - Item: Matk2
-                Chance: 970
+                Chance: 874
               - Item: Matk3
-                Chance: 970
+                Chance: 874
               - Item: Evasion6
-                Chance: 970
+                Chance: 874
               - Item: Evasion12
-                Chance: 970
+                Chance: 874
               - Item: Critical5
-                Chance: 970
+                Chance: 874
               - Item: Critical7
-                Chance: 970
+                Chance: 874
               - Item: Atk2
-                Chance: 970
+                Chance: 874
               - Item: Atk3
-                Chance: 970
+                Chance: 874
               - Item: Str1_J
-                Chance: 970
+                Chance: 874
               - Item: Str2_J
-                Chance: 970
+                Chance: 874
               - Item: Str3_J
-                Chance: 970
+                Chance: 874
               - Item: Int1_J
-                Chance: 970
+                Chance: 874
               - Item: Int2_J
-                Chance: 970
+                Chance: 874
               - Item: Int3_J
-                Chance: 970
+                Chance: 874
               - Item: Vit1_J
-                Chance: 970
+                Chance: 874
               - Item: Vit2_J
-                Chance: 970
+                Chance: 874
               - Item: Vit3_J
-                Chance: 970
+                Chance: 874
               - Item: Agi1_J
-                Chance: 970
+                Chance: 874
               - Item: Agi2_J
-                Chance: 970
+                Chance: 874
               - Item: Agi3_J
-                Chance: 970
+                Chance: 874
               - Item: Dex1_J
-                Chance: 970
+                Chance: 874
               - Item: Dex2_J
-                Chance: 970
+                Chance: 874
               - Item: Dex3_J
-                Chance: 970
+                Chance: 874
               - Item: Luk1_J
-                Chance: 970
+                Chance: 874
               - Item: Luk2_J
-                Chance: 970
+                Chance: 874
               - Item: Luk3_J
-                Chance: 970
+                Chance: 874
               - Item: Mdef2
-                Chance: 970
+                Chance: 874
               - Item: Mdef4
-                Chance: 970
+                Chance: 874
               - Item: Mdef6
-                Chance: 970
+                Chance: 874
               - Item: Mdef8
-                Chance: 970
+                Chance: 874
               - Item: Mdef10
-                Chance: 970
+                Chance: 874
               - Item: Def3
-                Chance: 970
+                Chance: 874
               - Item: Def6
-                Chance: 970
+                Chance: 874
               - Item: Def9
-                Chance: 970
+                Chance: 874
               - Item: Def12
-                Chance: 970
+                Chance: 874
               - Item: HP100
-                Chance: 970
+                Chance: 874
               - Item: HP200
-                Chance: 970
+                Chance: 874
               - Item: HP300
-                Chance: 970
+                Chance: 874
               - Item: HP400
-                Chance: 970
+                Chance: 874
               - Item: HP500
-                Chance: 970
+                Chance: 874
               - Item: SP50
-                Chance: 970
+                Chance: 874
               - Item: SP100
-                Chance: 970
+                Chance: 874
               - Item: SP150
-                Chance: 1060	            
+                Chance: 877
+              - Item: Star_Of_Mettle1
+                Chance: 285
+              - Item: Star_Of_Mettle2
+                Chance: 285
+              - Item: Star_Of_Mettle3
+                Chance: 285
+              - Item: Star_Of_Mettle4
+                Chance: 285
+              - Item: Star_Of_Mettle5
+                Chance: 285
+              - Item: Star_Of_MasterArcher1
+                Chance: 285
+              - Item: Star_Of_MasterArcher2
+                Chance: 285
+              - Item: Star_Of_MasterArcher3
+                Chance: 285
+              - Item: Star_Of_MasterArcher4
+                Chance: 285
+              - Item: Star_Of_MasterArcher5
+                Chance: 285
+              - Item: Star_Of_Sharp1
+                Chance: 285
+              - Item: Star_Of_Sharp2
+                Chance: 285
+              - Item: Star_Of_Sharp3
+                Chance: 285
+              - Item: Star_Of_Sharp4
+                Chance: 285
+              - Item: Star_Of_Sharp5
+                Chance: 285
+              - Item: Star_Of_Spell1
+                Chance: 285
+              - Item: Star_Of_Spell2
+                Chance: 285
+              - Item: Star_Of_Spell3
+                Chance: 285
+              - Item: Star_Of_Spell4
+                Chance: 285
+              - Item: Star_Of_Spell5
+                Chance: 285
+              - Item: Star_Of_Speed1
+                Chance: 285
+              - Item: Star_Of_Speed2
+                Chance: 285
+              - Item: Star_Of_Speed3
+                Chance: 285
+              - Item: Star_Of_Speed4
+                Chance: 285
+              - Item: Star_Of_Speed5
+                Chance: 285
+              - Item: Star_Of_Vital1
+                Chance: 285
+              - Item: Star_Of_Vital2
+                Chance: 285
+              - Item: Star_Of_Vital3
+                Chance: 285
+              - Item: Star_Of_Vital4
+                Chance: 285
+              - Item: Star_Of_Vital5
+                Chance: 285
+              - Item: Star_Of_Spirit1
+                Chance: 285
+              - Item: Star_Of_Spirit2
+                Chance: 285
+              - Item: Star_Of_Spirit3
+                Chance: 285
+              - Item: Star_Of_Spirit4
+                Chance: 285
+              - Item: Star_Of_Spirit5
+                Chance: 285
+          - Enchantgrade: 4
+            Items:
+              - Item: Strength1
+                Chance: 874
+              - Item: Strength2
+                Chance: 874
+              - Item: Strength3
+                Chance: 874
+              - Item: Strength4
+                Chance: 874
+              - Item: Strength5
+                Chance: 874
+              - Item: Strength6
+                Chance: 874
+              - Item: Strength7
+                Chance: 874
+              - Item: Strength8
+                Chance: 874
+              - Item: Strength9
+                Chance: 874
+              - Item: Strength10
+                Chance: 874
+              - Item: Inteligence1
+                Chance: 874
+              - Item: Inteligence2
+                Chance: 874
+              - Item: Inteligence3
+                Chance: 874
+              - Item: Inteligence4
+                Chance: 874
+              - Item: Inteligence5
+                Chance: 874
+              - Item: Inteligence6
+                Chance: 874
+              - Item: Inteligence7
+                Chance: 874
+              - Item: Inteligence8
+                Chance: 874
+              - Item: Inteligence9
+                Chance: 874
+              - Item: Inteligence10
+                Chance: 874
+              - Item: Dexterity1
+                Chance: 874
+              - Item: Dexterity2
+                Chance: 874
+              - Item: Dexterity3
+                Chance: 874
+              - Item: Dexterity4
+                Chance: 874
+              - Item: Dexterity5
+                Chance: 874
+              - Item: Dexterity6
+                Chance: 874
+              - Item: Dexterity7
+                Chance: 874
+              - Item: Dexterity8
+                Chance: 874
+              - Item: Dexterity9
+                Chance: 874
+              - Item: Dexterity10
+                Chance: 874
+              - Item: Agility1
+                Chance: 874
+              - Item: Agility2
+                Chance: 874
+              - Item: Agility3
+                Chance: 874
+              - Item: Agility4
+                Chance: 874
+              - Item: Agility5
+                Chance: 874
+              - Item: Agility6
+                Chance: 874
+              - Item: Agility7
+                Chance: 874
+              - Item: Agility8
+                Chance: 874
+              - Item: Agility9
+                Chance: 874
+              - Item: Agility10
+                Chance: 874
+              - Item: Vitality1
+                Chance: 874
+              - Item: Vitality2
+                Chance: 874
+              - Item: Vitality3
+                Chance: 874
+              - Item: Vitality4
+                Chance: 874
+              - Item: Vitality5
+                Chance: 874
+              - Item: Vitality6
+                Chance: 874
+              - Item: Vitality7
+                Chance: 874
+              - Item: Vitality8
+                Chance: 874
+              - Item: Vitality9
+                Chance: 874
+              - Item: Vitality10
+                Chance: 874
+              - Item: Luck1
+                Chance: 874
+              - Item: Luck2
+                Chance: 874
+              - Item: Luck3
+                Chance: 874
+              - Item: Luck4
+                Chance: 874
+              - Item: Luck5
+                Chance: 874
+              - Item: Luck6
+                Chance: 874
+              - Item: Luck7
+                Chance: 874
+              - Item: Luck8
+                Chance: 874
+              - Item: Luck9
+                Chance: 874
+              - Item: Luck10
+                Chance: 874
+              - Item: Matk2
+                Chance: 874
+              - Item: Matk3
+                Chance: 874
+              - Item: Evasion6
+                Chance: 874
+              - Item: Evasion12
+                Chance: 874
+              - Item: Critical5
+                Chance: 874
+              - Item: Critical7
+                Chance: 874
+              - Item: Atk2
+                Chance: 874
+              - Item: Atk3
+                Chance: 874
+              - Item: Str1_J
+                Chance: 874
+              - Item: Str2_J
+                Chance: 874
+              - Item: Str3_J
+                Chance: 874
+              - Item: Int1_J
+                Chance: 874
+              - Item: Int2_J
+                Chance: 874
+              - Item: Int3_J
+                Chance: 874
+              - Item: Vit1_J
+                Chance: 874
+              - Item: Vit2_J
+                Chance: 874
+              - Item: Vit3_J
+                Chance: 874
+              - Item: Agi1_J
+                Chance: 874
+              - Item: Agi2_J
+                Chance: 874
+              - Item: Agi3_J
+                Chance: 874
+              - Item: Dex1_J
+                Chance: 874
+              - Item: Dex2_J
+                Chance: 874
+              - Item: Dex3_J
+                Chance: 874
+              - Item: Luk1_J
+                Chance: 874
+              - Item: Luk2_J
+                Chance: 874
+              - Item: Luk3_J
+                Chance: 874
+              - Item: Mdef2
+                Chance: 874
+              - Item: Mdef4
+                Chance: 874
+              - Item: Mdef6
+                Chance: 874
+              - Item: Mdef8
+                Chance: 874
+              - Item: Mdef10
+                Chance: 874
+              - Item: Def3
+                Chance: 874
+              - Item: Def6
+                Chance: 874
+              - Item: Def9
+                Chance: 874
+              - Item: Def12
+                Chance: 874
+              - Item: HP100
+                Chance: 874
+              - Item: HP200
+                Chance: 874
+              - Item: HP300
+                Chance: 874
+              - Item: HP400
+                Chance: 874
+              - Item: HP500
+                Chance: 874
+              - Item: SP50
+                Chance: 874
+              - Item: SP100
+                Chance: 874
+              - Item: SP150
+                Chance: 877
+              - Item: Star_Of_Mettle1
+                Chance: 285
+              - Item: Star_Of_Mettle2
+                Chance: 285
+              - Item: Star_Of_Mettle3
+                Chance: 285
+              - Item: Star_Of_Mettle4
+                Chance: 285
+              - Item: Star_Of_Mettle5
+                Chance: 285
+              - Item: Star_Of_MasterArcher1
+                Chance: 285
+              - Item: Star_Of_MasterArcher2
+                Chance: 285
+              - Item: Star_Of_MasterArcher3
+                Chance: 285
+              - Item: Star_Of_MasterArcher4
+                Chance: 285
+              - Item: Star_Of_MasterArcher5
+                Chance: 285
+              - Item: Star_Of_Sharp1
+                Chance: 285
+              - Item: Star_Of_Sharp2
+                Chance: 285
+              - Item: Star_Of_Sharp3
+                Chance: 285
+              - Item: Star_Of_Sharp4
+                Chance: 285
+              - Item: Star_Of_Sharp5
+                Chance: 285
+              - Item: Star_Of_Spell1
+                Chance: 285
+              - Item: Star_Of_Spell2
+                Chance: 285
+              - Item: Star_Of_Spell3
+                Chance: 285
+              - Item: Star_Of_Spell4
+                Chance: 285
+              - Item: Star_Of_Spell5
+                Chance: 285
+              - Item: Star_Of_Speed1
+                Chance: 285
+              - Item: Star_Of_Speed2
+                Chance: 285
+              - Item: Star_Of_Speed3
+                Chance: 285
+              - Item: Star_Of_Speed4
+                Chance: 285
+              - Item: Star_Of_Speed5
+                Chance: 285
+              - Item: Star_Of_Vital1
+                Chance: 285
+              - Item: Star_Of_Vital2
+                Chance: 285
+              - Item: Star_Of_Vital3
+                Chance: 285
+              - Item: Star_Of_Vital4
+                Chance: 285
+              - Item: Star_Of_Vital5
+                Chance: 285
+              - Item: Star_Of_Spirit1
+                Chance: 285
+              - Item: Star_Of_Spirit2
+                Chance: 285
+              - Item: Star_Of_Spirit3
+                Chance: 285
+              - Item: Star_Of_Spirit4
+                Chance: 285
+              - Item: Star_Of_Spirit5
+                Chance: 285
