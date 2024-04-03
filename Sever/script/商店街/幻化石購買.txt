@@ -161,7 +161,7 @@ OnBuyItem:
 end;
 }
 
-    uttycty,24,82,4	script	JRO職業幻化石購買商	112,{
+    uttycty,45,82,1	script	JRO職業幻化石購買商	112,{
 	disable_items;
 	end;
 OnInit:
