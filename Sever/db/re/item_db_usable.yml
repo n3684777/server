@@ -46848,6 +46848,13 @@ Body:
       NoDrop: true
     Script: |
       /* TODO */
+  - Id: 100915
+    AegisName: Time_Unseal_Key_
+    Name: 扭曲時光鑰匙
+    Type: Delayconsume
+    Weight: 1
+    Script: |
+      laphine_upgrade();
   - Id: 100917
     AegisName: Hero_Weapon_Hammer_4
     Name: 古代英雄武器精煉錘 IV

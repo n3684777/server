@@ -13036,3 +13036,8 @@ Body:
       - Item: S_R_Bearers_Earring
       - Item: S_Mega_Blitz_Shield
       - Item: S_Mega_Blitz_Weapon
+  - Item: Time_Unseal_Key_
+    RandomOptionGroup: TIME_UNSEAL_KEY_ # ®É¥ú¶W¶VltñZ¥Ò
+    CardsAllowed: true
+    TargetItems:
+      - Item: Temporal_Armor_TW_LT
