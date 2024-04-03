@@ -101481,7 +101481,7 @@ Body:
         Rate: 5
         StealProtected: true
       - Item: M_Dimension_Essence
-        Rate: 5
+        Rate: 50
         StealProtected: true
       - Item: C_Himel_Card
         Rate: 1
@@ -101541,7 +101541,7 @@ Body:
       - Item: Patriotism_Marks
         Rate: 100
       - Item: M_Dimension_Essence
-        Rate: 5
+        Rate: 50
         StealProtected: true
       - Item: C_Amdarais_Card
         Rate: 1
