@@ -29104,10 +29104,12 @@ Body:
       - Slot: 1
     Slots:
       - Slot: 3
-        Price: 50000
+        Price: 1000000
         Materials:
-          - Material: Meteorite_Dust
-            Amount: 5
+          - Material: Spell_Of_Time
+            Amount: 6
+          - Material: Jewel_Of_Time_Ore
+            Amount: 4
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -29271,10 +29273,23 @@ Body:
               - Item: Dexterity4
                 Chance: 500
       - Slot: 2
-        Price: 100000
+        Price: 1000000
         Materials:
           - Material: Pow_Meteorite_Dust
-            Amount: 5
+            Amount: 10
+          - Material: Sta_Meteorite_Dust
+            Amount: 10
+          - Material: Con_Meteorite_Dust
+            Amount: 10
+          - Material: Crt_Meteorite_Dust
+            Amount: 10
+          - Material: Spl_Meteorite_Dust
+            Amount: 10
+          - Material: Wis_Meteorite_Dust
+            Amount: 10
+          - Material: Coagulated_Spell
+            Amount: 10
+            
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -29472,6 +29487,18 @@ Body:
         Materials:
           - Material: Pow_Meteorite_Fragment
             Amount: 5
+          - Material: Sta_Meteorite_Fragment
+            Amount: 5
+          - Material: Con_Meteorite_Fragment
+            Amount: 5
+          - Material: Crt_Meteorite_Fragment
+            Amount: 5
+          - Material: Spl_Meteorite_Fragment
+            Amount: 5
+          - Material: Wis_Meteorite_Fragment
+            Amount: 5
+          - Material: Polluted_Spell
+            Amount: 3
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
