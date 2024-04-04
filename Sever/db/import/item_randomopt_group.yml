@@ -1822,7 +1822,6 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-            Chance: 460
       - Slot: 4
         Options:
           - Option: VAR_MAXHPAMOUNT # MHP
