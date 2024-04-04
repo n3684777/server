@@ -23,7 +23,7 @@ function	script	·sª©UI	{
 	setarray .@enchant3[0],470087,470088;
 	setarray .@enchant4[0],490106,490108;
 	setarray .@enchant5[0],490107,490109;
-	setarray .@enchant7[0],450169,450299;
+	setarray .@enchant7[0],450169;
 	setarray .@enchant8[0],450170;
 	setarray .@enchant9[0],450171;
 	setarray .@enchant10[0],450172;
@@ -64,6 +64,7 @@ function	script	·sª©UI	{
 	setarray .@enchant10004[0],900000;
 	setarray .@enchant10005[0],2100001;
 	setarray .@enchant10006[0],2202,5966,19181,410254,410183,410184,410235,19393,410256,19138,18823,5918,410211,400291;
+	setarray .@enchant10007[0],450299;
 	getinventorylist(getcharid(0), INV_IDX | INV_ID);
 	for(.@i = 0; .@i < getarraysize(@inventorylist_idx[.@i]); .@i++){
 		for ( .@j = 0; .@j < getarraysize(.@box);.@j++){
@@ -249,6 +250,10 @@ function	script	·sª©UI	{
 		}
 		else if ((inarray(.@enchant10006[0],.@ret) !=-1 )){
 				item_enchant(10006);
+				end;
+		}
+		else if ((inarray(.@enchant10007[0],.@ret) !=-1 )){
+				item_enchant(10007);
 				end;
 		}
 		else {
