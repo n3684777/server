@@ -16346,14 +16346,6 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: VAR_DEC_SPELL_DELAY_TIME # 技能的後延遲減少 %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
           - Option: ATTR_TOLERACE_NOTHING # 對無屬性攻擊的抗性增加 + %
             MinValue: 5
             MaxValue: 10
