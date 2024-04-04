@@ -113687,7 +113687,6 @@ Body:
          .@val += 200;
       if (.@r>=10)
          .@val += 400;
-      bonus2 bExpAddRace,RC_All,.@val + .@r*100;
   - Id: 24684
     AegisName: S_SNV_Weapon
     Name: Super Novice Booster Shadow Weapon
@@ -187480,3 +187479,13 @@ Body:
             }
         }
       }
+  - Id: 2110000
+    AegisName: item_2110000
+    Name: 影子掉寶率倍增神盾
+    Type: ShadowGear
+    Locations:
+      Shadow_Shield: true
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bDropAddRace,RC_All,.@r * 200;
