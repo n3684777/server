@@ -16346,6 +16346,34 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
+          - Option: DEC_SPELL_CAST_TIME # 變動詠唱減少 %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DEC_SPELL_DELAY_TIME # 技能的後延遲減少 %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: MELEE_ATTACK_DAMAGE_TARGET # 近距離物理傷害 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: MELEE_ATTACK_DAMAGE_USER # 受到近距離物理傷害 - %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RANGE_ATTACK_DAMAGE_TARGET # 遠距離攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RANGE_ATTACK_DAMAGE_USER # 遠距離攻擊減少 - %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
           - Option: ATTR_TOLERACE_NOTHING # 對無屬性攻擊的抗性增加 + %
             MinValue: 5
             MaxValue: 10
