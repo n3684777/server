@@ -44751,7 +44751,7 @@ Body:
     Buy: 10
     Weight: 30
     Script: |
-      sc_start SC_REF_T_POTION,30000,0;
+      sc_start SC_REF_T_POTION,3600000,0;
   - Id: 100232
     AegisName: Add_Atk_Potion
     Name: ¬õ¦âÃÄ¯ó¬¡¤Æ²G

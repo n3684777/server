@@ -66016,7 +66016,7 @@ Body:
       bonus5 bAutoSpellWhenHit,"AB_PRAEFATIO",10,(500+200*(readparam(bInt)>=99)),BF_WEAPON|BF_MAGIC,0;
   - Id: 900049
     AegisName: Grave_Amon_Ra_Card_
-    Name: 滅絕古埃及王卡-改
+    Name: 滅絕古埃及王卡片-改
     Type: Card
     Buy: 20
     Weight: 10
