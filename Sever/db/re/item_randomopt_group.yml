@@ -14990,7 +14990,7 @@ Body:
         MaxValue: 10
         Chance: 5000
   - Id: 165
-    Group: TIME_UNSEAL_KEY_
+    Group: TWISTED_TIME_KEY_TW
     Slots:
       - Slot: 1
         Options:

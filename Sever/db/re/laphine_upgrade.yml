@@ -13048,8 +13048,8 @@ Body:
       - Item: S_R_Bearers_Earring
       - Item: S_Mega_Blitz_Shield
       - Item: S_Mega_Blitz_Weapon
-  - Item: Time_Unseal_Key_
-    RandomOptionGroup: TIME_UNSEAL_KEY_ # 時光超越lt鎧甲
+  - Item: Twisted_Time_Key_TW
+    RandomOptionGroup: TWISTED_TIME_KEY_TW # 時光超越lt鎧甲
     CardsAllowed: true
     TargetItems:
       - Item: Temporal_Armor_TW_LT
