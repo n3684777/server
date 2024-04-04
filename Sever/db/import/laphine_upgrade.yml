@@ -343,12 +343,4 @@ Body:
       - Item: S_Evilcurse_Earring
       - Item: S_Evilcurse_Pendant
       - Item: S_Evilcurse_Shoes
-  - Item: Twisted_Time_Key_TW
-    RandomOptionGroup: TWISTED_TIME_KEY_TW # 超越裝備(含LT)
-    CardsAllowed: true
-    TargetItems:
-      - Item: Temporal_Armor_TW_LT
-      - Item: Temporal_Cape_TW_LT
-      - Item: Temporal_Cape_TW
-      - Item: Temporal_Armor_TW
       

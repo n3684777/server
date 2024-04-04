@@ -13048,3 +13048,11 @@ Body:
       - Item: S_R_Bearers_Earring
       - Item: S_Mega_Blitz_Shield
       - Item: S_Mega_Blitz_Weapon
+  - Item: Twisted_Time_Key_TW
+    RandomOptionGroup: TWISTED_TIME_KEY_TW # ¶W¶V¸Ë³Æ(§tLT)
+    CardsAllowed: true
+    TargetItems:
+      - Item: Temporal_Armor_TW_LT
+      - Item: Temporal_Cape_TW_LT
+      - Item: Temporal_Cape_TW
+      - Item: Temporal_Armor_TW
