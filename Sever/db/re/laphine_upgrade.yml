@@ -13049,8 +13049,11 @@ Body:
       - Item: S_Mega_Blitz_Shield
       - Item: S_Mega_Blitz_Weapon
   - Item: Twisted_Time_Key_TW
-    RandomOptionGroup: TWISTED_TIME_KEY_TW # 時光超越lt鎧甲
+    RandomOptionGroup: TWISTED_TIME_KEY_TW # 超越裝備(含LT)
     CardsAllowed: true
     TargetItems:
       - Item: Temporal_Armor_TW_LT
       - Item: Temporal_Cape_TW_LT
+      - Item: Temporal_Cape_TW
+      - Item: Temporal_Cape_TW
+      
