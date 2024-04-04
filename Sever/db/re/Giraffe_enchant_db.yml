@@ -1355,6 +1355,7 @@ Body:
   - Id: 7
     TargetItems:
       Star_Armor_Of_Pow: true
+      Temporal_Armor_TW_LT: true
     MinimumRefine: 9
     Reset:
       Chance: 80000
