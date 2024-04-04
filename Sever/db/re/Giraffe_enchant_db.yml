@@ -29497,8 +29497,6 @@ Body:
             Amount: 5
           - Material: Wis_Meteorite_Fragment
             Amount: 5
-          - Material: Polluted_Spell
-            Amount: 3
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
