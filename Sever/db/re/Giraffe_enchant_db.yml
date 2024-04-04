@@ -29286,10 +29286,7 @@ Body:
           - Material: Spl_Meteorite_Dust
             Amount: 10
           - Material: Wis_Meteorite_Dust
-            Amount: 10
-          - Material: Coagulated_Spell
-            Amount: 10
-            
+            Amount: 10    
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
