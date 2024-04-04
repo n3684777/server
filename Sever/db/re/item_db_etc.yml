@@ -65854,6 +65854,8 @@ Body:
     Script: |
       bonus bSpeedRate,10000;
       atcommand "@speed 1";
+    UnEquipScript: |
+      atcommand "@speed 25";
   - Id: 900039
     AegisName: Pharaoh_Card_
     Name: 法老王卡片-改

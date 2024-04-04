@@ -2444,7 +2444,7 @@ Body:
             MaxValue: 20
             Chance: 460
           - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
-            MinValue: 55
+            MinValue: 15
             MaxValue: 20
             Chance: 460
           - Option: CLASS_DAMAGE_BOSS_USER # 對首領類魔物受到的物理的攻擊減少 + %
