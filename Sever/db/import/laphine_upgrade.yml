@@ -43,6 +43,8 @@ Body:
     RandomOptionGroup: CLASSSHADOW_ATTR_S
     MinimumRefine: 9
     TargetItems:
+      - Item: item_24880
+      - Item: item_24882
       - Item: S_Swordman_earring
       - Item: S_Merchant_earring
       - Item: S_Acolyte_earring

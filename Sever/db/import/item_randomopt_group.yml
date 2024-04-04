@@ -1187,7 +1187,7 @@ Body:
             MaxValue: 20
             Chance: 460
           - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
-            MinValue: 55
+            MinValue: 15
             MaxValue: 20
             Chance: 460
           - Option: CLASS_DAMAGE_BOSS_USER # 對首領類魔物受到的物理的攻擊減少 + %
@@ -1501,7 +1501,7 @@ Body:
             MaxValue: 20
             Chance: 460
           - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
-            MinValue: 55
+            MinValue: 15
             MaxValue: 20
             Chance: 460
           - Option: CLASS_DAMAGE_BOSS_USER # 對首領類魔物受到的物理的攻擊減少 + %
@@ -2232,6 +2232,34 @@ Body:
             MaxValue: 10
             Chance: 460
           - Option: VAR_CRITICALSUCCESSVALUE # CRI
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_DEC_SPELL_CAST_TIME # 變動施法時間減少 %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_DEC_SPELL_DELAY_TIME # 技能的後延遲減少 %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: MELEE_ATTACK_DAMAGE_TARGET # 近距離物理傷害 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: MELEE_ATTACK_DAMAGE_USER # 受到近距離物理傷害 - %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: MELEE_ATTACK_DAMAGE_DAMAGE # 遠距離攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RANGE_ATTACK_DAMAGE_USER # 遠距離攻擊減少 - %
             MinValue: 15
             MaxValue: 20
             Chance: 460
