@@ -187488,4 +187488,4 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      bonus2 bDropAddRace,RC_All,.@r * 200;
+      bonus2 bDropAddRace,RC_All,.@r * 75;
