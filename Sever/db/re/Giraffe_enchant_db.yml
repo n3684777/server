@@ -29087,6 +29087,7 @@ Body:
   - Id: 10007 # ¶W¶VLT ªþÅ]
     TargetItems:
       Temporal_Armor_TW_LT: true # 450299
+      Temporal_Cape_TW_LT: true # 480312
     MinimumRefine: 9
     Reset:
       Chance: 80000

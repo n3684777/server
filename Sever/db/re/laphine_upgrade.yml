@@ -13053,3 +13053,4 @@ Body:
     CardsAllowed: true
     TargetItems:
       - Item: Temporal_Armor_TW_LT
+      - Item: Temporal_Cape_TW_LT
