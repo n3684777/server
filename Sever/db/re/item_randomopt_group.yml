@@ -16366,7 +16366,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: MELEE_ATTACK_DAMAGE_DAMAGE # 遠距離攻擊增加 + %
+          - Option: MELEE_ATTACK_DAMAGE_TARGET # 遠距離攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
