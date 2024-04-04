@@ -53,8 +53,6 @@ Body:
     Value: 20003
   - Name: IG_HATBOX_1400
     Value: 20004
-  - Name: IG_TWISTED_TIME_KEY_TW
-    Value: 20005
 Footer:
   Imports:
   - Path: db/import/const.yml

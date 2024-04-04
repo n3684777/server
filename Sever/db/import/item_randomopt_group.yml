@@ -877,3 +877,244 @@ Body:
         MinValue: 5
         MaxValue: 15
         Chance: 4700
+  - Id: 169
+    Group: TWISTED_TIME_KEY_TW
+    Slots:
+      - Slot: 1
+        Options:
+          - Option: VAR_MAXHPAMOUNT # MHP
+            MinValue: 3000
+            MaxValue: 30000
+            Chance: 460
+          - Option: VAR_MAXSPAMOUNT # MSP
+            MinValue: 500
+            MaxValue: 5000
+            Chance: 460
+          - Option: VAR_STRAMOUNT # STR
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_AGIAMOUNT # AGI
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_VITAMOUNT # VIT
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_INTAMOUNT # INT
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_DEXAMOUNT # DEX
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_LUKAMOUNT # LUK
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_MAXHPPERCENT # MHP + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_MAXSPPERCENT # MSP + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_HPACCELERATION #    HP 恢復速度增加 + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_SPACCELERATION #    SP 恢復速度增加 + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_SPACCELERATION # ATK + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_MAGICATKPERCENT # MATK + %
+            MinValue: 5
+            MaxValue: 20
+            Chance: 460
+          - Option: VAR_PLUSASPD # ASPD
+            MinValue: 1
+            MaxValue: 3
+            Chance: 460
+          - Option: VAR_PLUSASPDPERCENT # ASPD + %
+            MinValue: 1
+            MaxValue: 3
+            Chance: 460
+          - Option: VAR_ATTPOWER # ATK
+            MinValue: 10
+            MaxValue: 100
+            Chance: 460
+          - Option: VAR_HITSUCCESSVALUE # HIT
+            MinValue: 5
+            MaxValue: 50
+            Chance: 460
+          - Option: VAR_ATTMPOWER # MATK
+            MinValue: 10
+            MaxValue: 100
+            Chance: 460
+          - Option: VAR_ITEMDEFPOWER # DEF
+            MinValue: 5
+            MaxValue: 50
+            Chance: 460
+          - Option: VAR_MDEFPOWER # MDEF
+            MinValue: 5
+            MaxValue: 50
+            Chance: 460
+          - Option: VAR_AVOIDSUCCESSVALUE # FLEE
+            MinValue: 5
+            MaxValue: 50
+            Chance: 460
+          - Option: VAR_PLUSAVOIDSUCCESSVALUE # 完全迴避 FLEE2
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: VAR_CRITICALSUCCESSVALUE # CRI
+            MinValue: 2
+            MaxValue: 20
+            Chance: 460
+          - Option: ATTR_TOLERACE_NOTHING # 對無屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_WATER # 對水屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_GROUND # 對地屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_FIRE # 對火屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_WIND # 對風屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_POISON # 對毒屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_SAINT # 對聖屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_DARKNESS # 對暗屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_TELEKINESIS # 對念屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_UNDEAD # 對不死屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: ATTR_TOLERACE_ALL # 對全屬性攻擊的抗性增加 + %
+            MinValue: 1
+            MaxValue: 5
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_NOTHING_USER # 被無屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 10
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_WATER_USER # 被水屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_WATER_TARGET # 給予水屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_GROUND_USER # 被地屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_GROUND_TARGET # 給予地屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_FIRE_USER # 被火屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_FIRE_TARGET # 給予火屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_WIND_USER # 被風屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_WIND_TARGET # 給予風屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_POISON_USER # 被毒屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_POISON_TARGET # 給予毒屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_SAINT_USER # 被聖屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_SAINT_TARGET # 給予聖屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_DARKNESS_USER # 被暗屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_DARKNESS_TARGET # 給予暗屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_TELEKINESIS_USER # 被念屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_TELEKINESIS_TARGET # 給予念屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_UNDEAD_USER # 被不死屬性魔物受到的物理傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_PROPERTY_UNDEAD_TARGET # 給予不死屬性怪的物理傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: MDAMAGE_PROPERTY_NOTHING_USER # 被無屬性魔物受到的魔法傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: MDAMAGE_PROPERTY_WATER_USER # 被水屬性魔物受到的魔法傷害力減少 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
+          - Option: MDAMAGE_PROPERTY_WATER_TARGET # 給予水屬性怪的魔法傷害增加 + %
+            MinValue: 1
+            MaxValue: 20
+            Chance: 460
