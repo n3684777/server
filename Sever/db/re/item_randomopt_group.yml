@@ -16346,10 +16346,6 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: VAR_DEC_SPELL_CAST_TIME # 變動施法時間減少 %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
           - Option: VAR_DEC_SPELL_DELAY_TIME # 技能的後延遲減少 %
             MinValue: 15
             MaxValue: 20
