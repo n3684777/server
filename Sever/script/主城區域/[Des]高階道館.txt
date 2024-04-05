@@ -1,3 +1,5 @@
+guild_vs3	mapflag	skill_damage	all,BL_MOB,100
+
 uttycty,149,169,3	script	¹DÀ]¬D¾Ô[¶W²×·¥¹ÚÆL]	468,{
 	set .@md_name$,"¹DÀ]¬D¾Ô[¶W²×·¥¹ÚÆL]";
 	set .@Zeny, 8000000; //¬D¾Ôª÷ÃB
