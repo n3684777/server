@@ -1,4 +1,4 @@
-guild_vs1	mapflag	skill_damage	all,BL_MOB,100
+guild_vs2	mapflag	skill_damage	all,BL_MOB,100
 
 uttycty,145,169,3	script	¹DÀ]¬D¾Ô[¶W¨g²×·¥¹ÚÆL] 	459,{
 	set .@md_name$,"¹DÀ]¬D¾Ô[¶W¨g²×·¥¹ÚÆL]";
@@ -131,7 +131,7 @@ OnTimer1000:
 	end;
 
 }
-guild_vs1,50,49,5	script	¹DÀ]µô§P#rank2	470,{
+guild_vs2,50,49,5	script	¹DÀ]µô§P#rank2	470,{
 	//====================================================================================
 			setarray 'mobkid[1],31001,31002,31003,31004,31005,31006,31007,31008,31009,31010,31011,31012,31013,31014,31015,
 								31016,31017,31018,31019,31020,31021,31022,31023,31024,31025,31026,31027,31028,31029,31030,
@@ -159,7 +159,7 @@ guild_vs1,50,49,5	script	¹DÀ]µô§P#rank2	470,{
 			close;
 	}
 }
-guild_vs1,50,49,6	script	¹DÀ]µô§P#rank2_1	470,{
+guild_vs2,50,49,6	script	¹DÀ]µô§P#rank2_1	470,{
 	if('win==0) {
 OnInstanceInit:
 		disablenpc  instance_npcname(strnpcinfo(0)); end;
@@ -188,7 +188,7 @@ OnInstanceInit:
 	warp "SavePoint",0,0;
 	end;
 }
-guild_vs1,0,0,0	script	#rankno2	-1,{
+guild_vs2,0,0,0	script	#rankno2	-1,{
 OnMobstart:
 	'Checkpoint++;
 	for(.@n=1;.@n<='mobknum['Checkpoint];.@n++) {
@@ -241,10 +241,10 @@ OnMobDead:
 	end;
 }
 
-guild_vs1	mapflag	nobranch
-guild_vs1	mapflag	noteleport
-guild_vs1	mapflag	nosave	SavePoint
-guild_vs1	mapflag	nopenalty
-guild_vs1	mapflag	nomemo
-guild_vs1	mapflag	noloot
-guild_vs1	mapflag	noexp
+guild_vs2	mapflag	nobranch
+guild_vs2	mapflag	noteleport
+guild_vs2	mapflag	nosave	SavePoint
+guild_vs2	mapflag	nopenalty
+guild_vs2	mapflag	nomemo
+guild_vs2	mapflag	noloot
+guild_vs2	mapflag	noexp
