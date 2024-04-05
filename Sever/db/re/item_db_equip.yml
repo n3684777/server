@@ -187512,17 +187512,17 @@ Body:
             if(.@r >= 15){ bonus2 bSubEle,Ele_All,(.@r/2)*3; }
           }
             if(.@g >= ENCHANTGRADE_A){
-            bonus2 bSubEle,Ele_All,12.5; 
-            bonus2 bSubClass,Class_All,12.5;
-            bonus2 bWeaponSubSize,Size_All,12.5;
-            bonus2 bMagicSubSize,Size_All,12.5;	
-            bonus2 bSubRace,RC_All,12.5;
+            bonus2 bSubEle,Ele_All,12; 
+            bonus2 bSubClass,Class_All,12;
+            bonus2 bWeaponSubSize,Size_All,12;
+            bonus2 bMagicSubSize,Size_All,12;	
+            bonus2 bSubRace,RC_All,12;
               if(.@r >= 20){
-            bonus2 bSubEle,Ele_All,12.5; 
-            bonus2 bSubClass,Class_All,12.5;
-            bonus2 bWeaponSubSize,Size_All,12.5;
-            bonus2 bMagicSubSize,Size_All,12.5;	
-            bonus2 bSubRace,RC_All,12.5;
+            bonus2 bSubEle,Ele_All,12; 
+            bonus2 bSubClass,Class_All,12;
+            bonus2 bWeaponSubSize,Size_All,12;
+            bonus2 bMagicSubSize,Size_All,12;	
+            bonus2 bSubRace,RC_All,12;
               bonus bNoWeaponDamage,4;
               bonus bNoMagicDamage,4;
               bonus bMaxHPrate,10;
