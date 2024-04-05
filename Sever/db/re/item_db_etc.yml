@@ -66581,7 +66581,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bShortWeaponDamageReturn,900000000000000000000000000000000000;
+      bonus bShortWeaponDamageReturn,9000000000000000000000000;
   - Id: 900085
     AegisName: Jungoliant_Card_
     Name: 珠寶溫古力安特卡片-改
