@@ -2,7 +2,7 @@
 guild_vs2	mapflag	skill_damage	all,BL_MOB,100
 
 uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
-	set .@md_name$,"道館挑戰[超狂終極夢魘]";
+	set .@md_name$,"道館挑戰[不當人的夢魘]";
 	set .@Zeny, 8000000; //挑戰金額
 	mes "=========道館挑戰========";
 	mes "- ^984AAC歡迎你參加普通道館挑戰^000000";
@@ -18,7 +18,7 @@ uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
 	mes "- ^984AAC並於午夜12點重置^000000";
 	mes "=========================";
 	next;
-	switch(select("申請道館挑戰[超狂終極夢魘]:查看獎勵")){
+	switch(select("申請道館挑戰[不當人的夢魘]:查看獎勵")){
 	case 1:
 		deletearray $@partymembercid;
 		deletearray $@partymembercount;
@@ -32,7 +32,7 @@ uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
 				}
 				if (instance_check_party(getcharid(1),1,150,260)) {
 					if (getpartyleader(getcharid(1),2) == getcharid(0)) {
-						if (instance_create("道館挑戰[超狂終極夢魘]") < 0) {	
+						if (instance_create("道館挑戰[不當人的夢魘]") < 0) {	
 							mes "=========道館挑戰========";
 							mes "- ^C63131挑戰中無法進入!^000000";
 							mes "=========================";	
@@ -67,7 +67,7 @@ uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
 							}
 							if (instance_check_party(getcharid(1),1,150,260)) {
 								if (getpartyleader(getcharid(1),2) == getcharid(0)) {
-									if (instance_create("道館挑戰[超狂終極夢魘]") < 0)  {	
+									if (instance_create("道館挑戰[不當人的夢魘]") < 0)  {	
 										mes "=========道館挑戰========";
 										mes "- ^C63131挑戰中無法進入!^000000";
 										mes "=========================";	
@@ -92,7 +92,7 @@ uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
 							}
 						}
 						mes "==========道館挑戰==========";
-						mes "- ^C63131超狂終極夢魘道館禁止雙開以上^000000 -";
+						mes "- ^C63131不當人的夢魘道館禁止雙開以上^000000 -";
 						mes "============================";
 						close;
 					}
@@ -127,7 +127,7 @@ uttycty,141,169,3	script	道館挑戰[不當人的夢魘] 	470,{
 
 OnInit:
 OnTimer1000:
-	showscript " [★超狂終極夢魘道館] ";
+	showscript " [★不當人的夢魘道館] ";
 	initnpctimer;
 	end;
 
@@ -222,7 +222,7 @@ OnMobDead:
 		announce   "道館裁判 : 還剩下 ["+.@mobcount+"] 隻怪物",17; end;
 	}
 	if ('Checkpoint ==  getarraysize('mobknum)-1){
-		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '超狂終極夢魘道館' 成功",0;
+		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '不當人的夢魘道館' 成功",0;
 		sleep2 2000;
 		set 'win,1;
 		enablenpc  instance_npcname("道館裁判#rank1");
