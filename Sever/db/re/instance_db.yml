@@ -481,13 +481,13 @@ Body:
       X: 203
       Y: 200
   - Id: 995
-    Name: 道館挑戰[初階]
+    Name: 道館挑戰[不當人的夢魘]
     Enter:
       Map: guild_vs1
       X: 50
       Y: 50
   - Id: 996
-    Name: 道館挑戰[中階]
+    Name: 道館挑戰[超狂終極夢魘]
     Enter:
       Map: guild_vs2
       X: 50

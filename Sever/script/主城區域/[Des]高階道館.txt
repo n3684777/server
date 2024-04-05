@@ -234,7 +234,7 @@ OnMobDead:
 	}
 	for(.@n=1;.@n<getarraysize('round);.@n++){
 		if ('Checkpoint ==  'round[.@n]){
-			enablenpc  instance_npcname("¹DÀ]µô§P#rank5"); end;
+			enablenpc  instance_npcname("¹DÀ]µô§P#rank3"); end;
 		}
 	}
 	addtimer 2000,instance_npcname(strnpcinfo(0))+"::OnMobstart";
