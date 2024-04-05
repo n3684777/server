@@ -6229,6 +6229,20 @@ Body:
            Amount: 20
         ResultItem: item_2100001
         ChangeRefine: -1
+      - BaseItem: aegis_490263 # ¬Ó­x¹ÏÄË§Ù
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Incant_Samurai_Card_ # 900042
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100002
+        ChangeRefine: -1
       - BaseItem: Wine_Shoes
         MinimumRefine: 9
         CardsAllowed: true
