@@ -124,7 +124,7 @@ uttycty,149,169,3	script	道館挑戰[超終極夢魘]	468,{
 
 OnInit:
 OnTimer1000:
-	showscript " [★終極夢魘道館] ";
+	showscript " [★超終極夢魘道館] ";
 	initnpctimer;
 	end;
 
@@ -148,7 +148,7 @@ guild_vs3,50,49,5	script	道館裁判#rank3	470,{
 	next;
 	switch(select("開始挑戰！","不小心點到！")){
 		case 1:
-			doevent instance_npcname ("#rankno5")+"::OnMobstart";
+			doevent instance_npcname ("#rankno3")+"::OnMobstart";
 			disablenpc  instance_npcname(strnpcinfo(0));
 			close;
 		case 2:
@@ -200,7 +200,7 @@ OnMobstart:
 		setunitdata 'BossID,34,65535;
 		setunitdata 'BossID,35,65535;
 		setunitdata 'BossID,36,65535;
-		setunitdata 'BossID,UMOB_DAMAGETAKEN,1000;
+		setunitdata 'BossID,UMOB_DAMAGETAKEN,100;
 		setunitdata 'BossID,8,70;
 		setunitdata 'BossID,39,5000;
 	}
@@ -219,10 +219,10 @@ OnMobDead:
 		announce   "道館裁判 : 還剩下 ["+.@mobcount+"] 隻怪物",17; end;
 	}
 	if ('Checkpoint ==  getarraysize('mobknum)-1){
-		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '終極夢魘道館' 成功",0;
+		announce "恭喜隊伍 "+getpartyname(getcharid(1))+" 挑戰 '超終極夢魘道館' 成功",0;
 		sleep2 2000;
 		set 'win,1;
-		enablenpc  instance_npcname("道館裁判#rank5_1");
+		enablenpc  instance_npcname("道館裁判#rank3_1");
 		end;
 	}
 	if ('Checkpoint ==  getarraysize('mobknum)-2 ){
