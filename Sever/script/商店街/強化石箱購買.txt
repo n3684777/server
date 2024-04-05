@@ -228,7 +228,7 @@ OnInit:
     sellitem(25804,0,-1);           //智者石II(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(25420,-1);           //妖術師石(披肩)
+    sellitem(25420,0,-1);           //妖術師石(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(25801,0,-1);           //妖術師石II(披肩)
@@ -253,7 +253,7 @@ OnInit:
     sellitem(1000307,0,-1);           //舞孃/詩人石II(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(25501,-1);           //浪跡/樂師石(披肩)
+    sellitem(25501,0,-1);           //浪跡/樂師石(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(1000304,0,-1);           //浪跡/樂師石II(披肩)
@@ -278,7 +278,7 @@ OnInit:
     sellitem(25800,0,-1);           //武術宗師石II(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(25412,-1);           //修羅石(披肩)
+    sellitem(25412,0,-1);           //修羅石(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
     sellitem(25797,0,-1);           //修羅石II(披肩)
@@ -380,6 +380,11 @@ OnInit:
     sellitem(6964,0,-1);           //SP吸收石(披肩)
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
+
+    sellitem(1000922,0,-1);           //S.Matk攻擊石(披肩)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
     sellitem(25069,0,-1);           //改良石(頭上)
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
@@ -401,6 +406,20 @@ OnInit:
     sellitem(25303,0,-1);           //暴擊石(披肩)
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
+
+    sellitem(1000528,0,-1);           //魔法屬性石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
+    sellitem(1000529,0,-1);           //魔法屬性石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
+    sellitem(1000530,0,-1);           //魔法屬性石(頭下)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+
+
     sellitem(25061,0,-1);           //廣域石(頭中)
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
@@ -600,6 +619,61 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
+// 雙重石部分
+    sellitem(1000520,0,-1);           //ASPD石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000521,0,-1);           //次等詠唱石(雙重)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1000522,0,-1);           //變詠石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000523,0,-1);           //廣域石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000524,0,-1);           //近戰石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000525,0,-1);           //SP吸收石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000526,0,-1);           //HP吸收石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000527,0,-1);           //魔法屬性石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000675,0,-1);           //改良石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000676,0,-1);           //爆發力石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000921,0,-1);           //SPL石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000856,0,-1);           //CON石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1001055,0,-1);           //POW石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1001172,0,-1);           //抗性石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000520,0,-1);           //ASPD石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000520,0,-1);           //ASPD石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000520,0,-1);           //ASPD石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000520,0,-1);           //ASPD石(雙重)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
 
 
 

@@ -202,7 +202,7 @@ OnMobstart:
 		setunitdata 'BossID,34,65535;
 		setunitdata 'BossID,35,65535;
 		setunitdata 'BossID,36,65535;
-		setunitdata 'BossID,UMOB_DAMAGETAKEN,10;
+		setunitdata 'BossID,UMOB_DAMAGETAKEN,1000;
 		setunitdata 'BossID,8,70;
 		setunitdata 'BossID,39,5000;
 	}
