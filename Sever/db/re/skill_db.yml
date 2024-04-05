@@ -36580,7 +36580,7 @@ Body:
     CastCancel: true
     AfterCastActDelay: 150
     Duration1: 4500
-    Cooldown: 4500
+    Cooldown: 300
     FixedCastTime: 1500
     Requires:
       SpCost:

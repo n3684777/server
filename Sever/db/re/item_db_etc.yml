@@ -71275,7 +71275,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
-      bonus2 bSkillAtk,"SO_EARTHGRAVE,(.@r/4)*7;
+      bonus2 bSkillAtk,"SO_EARTHGRAVE",(.@r/4)*7;
       if(.@r >= 11){
       bonus2 bSkillAtk,"SO_EARTHGRAVE",10;
       }
