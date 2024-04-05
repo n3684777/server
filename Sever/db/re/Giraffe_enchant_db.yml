@@ -29763,7 +29763,7 @@ Body:
                 Chance: 7696
           - Enchantgrade: 2
             Items:
-               - Item: item_2000059
+              - Item: item_2000059
                 Chance: 7692
               - Item: item_2000060
                 Chance: 7692
