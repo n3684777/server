@@ -64,6 +64,7 @@ OnPCEnterMapExpress:
 		percentheal 100,100;
 		sc_start SC_BLESSING,600000,10;
 		sc_start SC_INCREASEAGI,600000,10;
+		atcommand "@autoloot 1";
 		end;
 	}
 	

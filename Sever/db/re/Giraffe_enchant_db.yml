@@ -29686,3 +29686,489 @@ Body:
                 Chance: 300
               - Item: Star_Cluster_Of_Wis3
                 Chance: 300
+  - Id: 10008 # ¬Ó­x¹ÏÄË§Ù-LTªþÅ]
+    TargetItems:
+      item_2100002: true
+    Reset:
+      Chance: 100000
+      Materials:
+        - Material: Nyangvine_Fruit
+          Amount: 20
+    Order:
+      - Slot: 3
+      - Slot: 2
+      - Slot: 1
+    Slots:
+      - Slot: 3
+        Materials:
+          - Material: Nyangvine_Fruit
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696   
+          - Enchantgrade: 1
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696
+          - Enchantgrade: 2
+            Items:
+               - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696 
+          - Enchantgrade: 3
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696   
+          - Enchantgrade: 4
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696  
+        PerfectEnchants:
+          - Item: item_2000059
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000060
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000061
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000062
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000063
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000064
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000065
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000066
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000067
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000068
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000069
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000070
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000071
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+      - Slot: 2
+        Materials:
+          - Material: Nyangvine_Fruit
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696
+          - Enchantgrade: 2
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696
+          - Enchantgrade: 3
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696
+          - Enchantgrade: 4
+            Items:
+              - Item: item_2000059
+                Chance: 7692
+              - Item: item_2000060
+                Chance: 7692
+              - Item: item_2000061
+                Chance: 7692
+              - Item: item_2000062
+                Chance: 7692
+              - Item: item_2000063
+                Chance: 7692
+              - Item: item_2000064
+                Chance: 7692
+              - Item: item_2000065
+                Chance: 7692
+              - Item: item_2000066
+                Chance: 7692
+              - Item: item_2000067
+                Chance: 7692
+              - Item: item_2000068
+                Chance: 7692
+              - Item: item_2000069
+                Chance: 7692
+              - Item: item_2000070
+                Chance: 7692  
+              - Item: item_2000071
+                Chance: 7696
+        PerfectEnchants:
+          - Item: item_2000059
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000060
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000061
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000062
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000063
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000064
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000065
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000066
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000067
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000068
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000069
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000070
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000071
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+      - Slot: 1
+        Materials:
+          - Material: Nyangvine_Fruit
+            Amount: 30
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 1
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 2
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 3
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 4
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+        PerfectEnchants:
+          - Item: Release_Of_Magic
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Hero
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300386
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300387
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300

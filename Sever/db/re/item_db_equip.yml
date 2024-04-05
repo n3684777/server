@@ -187479,6 +187479,58 @@ Body:
             }
         }
       }
+  - Id: 2100002
+    AegisName: item_2100002
+    Name: 皇軍圖騰戒-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bRes,5;  
+      bonus bMRes,5;
+      bonus bFixedCastrate,-500;
+      bonus bMaxHPrate,20;
+      bonus bNoWeaponDamage,8;
+      bonus bNoMagicDamage,8;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bRes,5;  
+      bonus bMRes,5;
+        if(.@g >= ENCHANTGRADE_C){
+          bonus bRes,(.@r/2)*4;  
+          bonus bMRes,(.@r/2)*4;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus2 bSubEle,Ele_All,(.@r/2)*3; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bSubEle,Ele_All,12.5; 
+            bonus2 bSubClass,Class_All,12.5;
+            bonus2 bWeaponSubSize,Size_All,12.5;
+            bonus2 bMagicSubSize,Size_All,12.5;	
+            bonus2 bSubRace,RC_All,12.5;
+              if(.@r >= 20){
+            bonus2 bSubEle,Ele_All,12.5; 
+            bonus2 bSubClass,Class_All,12.5;
+            bonus2 bWeaponSubSize,Size_All,12.5;
+            bonus2 bMagicSubSize,Size_All,12.5;	
+            bonus2 bSubRace,RC_All,12.5;
+              bonus bNoWeaponDamage,4;
+              bonus bNoMagicDamage,4;
+              bonus bMaxHPrate,10;
+              bonus bFixedCastrate,-500;
+              }
+            }
+        }
+      }
   - Id: 2110000
     AegisName: item_2110000
     Name: 影子掉寶率倍增神盾
