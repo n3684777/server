@@ -3946,7 +3946,7 @@ Body:
       - Item: Poenitentia_Planta
       - Item: Poenitentia_Ferrum
   - Item: Sakray_Regret2
-  RandomOptionGroup: SAKRAY_REGRET2 # 魔法精華薩克萊
+    RandomOptionGroup: SAKRAY_REGRET2 # 魔法精華薩克萊
     TargetItems:
       - Item: Poenitentia_Ensis
       - Item: Poenitentia_Catapulta

@@ -45880,14 +45880,14 @@ Body:
     Type: DelayConsume
     Weight: 10
     Script: |
-      callfunc "hueihen_ENCHANT",100485;
+      laphine_upgrade();
   - Id: 100486
     AegisName: Sakray_Regret2
     Name: 精華薩克萊悔恨
     Type: DelayConsume
     Weight: 10
     Script: |
-      callfunc "hueihen_ENCHANT",100486;
+      laphine_upgrade();
   - Id: 100495
     AegisName: aegis_100495
     Name: (服飾)強化石箱子(披肩)II
