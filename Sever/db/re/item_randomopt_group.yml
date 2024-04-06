@@ -17315,7 +17315,7 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
-          - Option: VAR_ATKPERCENT # ATK + %
+          - Option: VAR_MAGICATKPERCENT # MATK + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17327,7 +17327,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: VAR_ATTPOWER # ATK
+          - Option: ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
@@ -17338,10 +17338,6 @@ Body:
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
-            Chance: 460
-          - Option: VAR_CRITICALSUCCESSVALUE # CRI
-            MinValue: 15
-            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
@@ -17441,7 +17437,7 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
-          - Option: VAR_ATKPERCENT # ATK + %
+          - Option: VAR_MAGICATKPERCENT # MATK + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17453,7 +17449,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: VAR_ATTPOWER # ATK
+          - Option: ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
@@ -17464,10 +17460,6 @@ Body:
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
-            Chance: 460
-          - Option: VAR_CRITICALSUCCESSVALUE # CRI
-            MinValue: 15
-            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
@@ -17567,7 +17559,7 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
-          - Option: VAR_ATKPERCENT # ATK + %
+          - Option: VAR_MAGICATKPERCENT # MATK + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17579,7 +17571,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: VAR_ATTPOWER # ATK
+          - Option: ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
@@ -17590,10 +17582,6 @@ Body:
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
-            Chance: 460
-          - Option: VAR_CRITICALSUCCESSVALUE # CRI
-            MinValue: 15
-            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
