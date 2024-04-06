@@ -16713,6 +16713,12 @@ Body:
         Area: 13
       - Level: 10
         Area: 13
+  - Id: 681
+    Name: ALL_INCCARRY
+    Description: 負重量上升R
+    MaxLevel: 10
+    Flags:
+      IsQuest: true
   - Id: 682
     Name: NPC_TALK
     Description: 說話
