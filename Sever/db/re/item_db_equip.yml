@@ -185259,8 +185259,7 @@ Body:
       bonus2 bExpAddRace,RC_All,.@ra;
       bonus2 bHPDrainRate,.@ra*10,.@ra;
       bonus2 bSPDrainRate,.@ra*10,.@ra;
-      bonus bShortWeaponDamageReturn,.@ra;
-      bonus bLongWeaponDamageReturn,.@ra;
+
       }
       if(.@allrefine >= 55){
       bonus bMagicHPGainValue,.@magicgain*2;
@@ -185309,8 +185308,7 @@ Body:
       bonus2 bExpAddRace,RC_All,2*.@ra;
       bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
       bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
-      bonus bShortWeaponDamageReturn,2*.@ra;
-      bonus bLongWeaponDamageReturn,2*.@ra;
+
       }
   - Id: 400440
     AegisName: Remorse_C_Crown
@@ -185972,8 +185970,7 @@ Body:
       bonus2 bExpAddRace,RC_All,.@ra;
       bonus2 bHPDrainRate,.@ra*10,.@ra;
       bonus2 bSPDrainRate,.@ra*10,.@ra;
-      bonus bShortWeaponDamageReturn,.@ra;
-      bonus bLongWeaponDamageReturn,.@ra;
+
       }
       if(.@allrefine >= 55){
       bonus bMagicHPGainValue,.@magicgain*2;
@@ -186022,8 +186019,7 @@ Body:
       bonus2 bExpAddRace,RC_All,2*.@ra;
       bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
       bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
-      bonus bShortWeaponDamageReturn,2*.@ra;
-      bonus bLongWeaponDamageReturn,2*.@ra;
+
       }
   - Id: 920004
     AegisName: Boyboy_Accessory_Right
@@ -186094,8 +186090,7 @@ Body:
       bonus2 bExpAddRace,RC_All,.@ra;
       bonus2 bHPDrainRate,.@ra*10,.@ra;
       bonus2 bSPDrainRate,.@ra*10,.@ra;
-      bonus bShortWeaponDamageReturn,.@ra;
-      bonus bLongWeaponDamageReturn,.@ra;
+
       }
       if(.@allrefine >= 55){
       bonus bMagicHPGainValue,.@magicgain*2;
@@ -186144,8 +186139,7 @@ Body:
       bonus2 bExpAddRace,RC_All,2*.@ra;
       bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
       bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
-      bonus bShortWeaponDamageReturn,2*.@ra;
-      bonus bLongWeaponDamageReturn,2*.@ra;
+
       }
   - Id: 920006
     AegisName: Boyboy_Accessory_Left_L
@@ -186220,8 +186214,7 @@ Body:
       bonus2 bExpAddRace,RC_All,.@ra;
       bonus2 bHPDrainRate,.@ra*10,.@ra;
       bonus2 bSPDrainRate,.@ra*10,.@ra;
-      bonus bShortWeaponDamageReturn,.@ra;
-      bonus bLongWeaponDamageReturn,.@ra;
+
       }
       if(.@allrefine >= 55){
       bonus bMagicHPGainValue,.@magicgain*2;
@@ -186270,8 +186263,7 @@ Body:
       bonus2 bExpAddRace,RC_All,2*.@ra;
       bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
       bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
-      bonus bShortWeaponDamageReturn,2*.@ra;
-      bonus bLongWeaponDamageReturn,2*.@ra;
+
       }
   - Id: 920007
     AegisName: Boyboy_Accessory_Right_R
@@ -186346,8 +186338,7 @@ Body:
       bonus2 bExpAddRace,RC_All,.@ra;
       bonus2 bHPDrainRate,.@ra*10,.@ra;
       bonus2 bSPDrainRate,.@ra*10,.@ra;
-      bonus bShortWeaponDamageReturn,.@ra;
-      bonus bLongWeaponDamageReturn,.@ra;
+
       }
       if(.@allrefine >= 55){
       bonus bMagicHPGainValue,.@magicgain*2;
@@ -186396,8 +186387,7 @@ Body:
       bonus2 bExpAddRace,RC_All,2*.@ra;
       bonus2 bHPDrainRate,2*.@ra*10,2*.@ra;
       bonus2 bSPDrainRate,2*.@ra*10,2*.@ra;
-      bonus bShortWeaponDamageReturn,2*.@ra;
-      bonus bLongWeaponDamageReturn,2*.@ra;
+
       }
   - Id: 450299
     AegisName: Temporal_Armor_TW_LT
