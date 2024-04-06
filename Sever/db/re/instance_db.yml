@@ -482,24 +482,28 @@ Body:
       Y: 200
   - Id: 995
     Name: 道館挑戰[不當人的夢魘]
+    TimeLimit: 7200
     Enter:
       Map: guild_vs1
       X: 50
       Y: 50
   - Id: 996
     Name: 道館挑戰[超狂終極夢魘]
+    TimeLimit: 7200
     Enter:
       Map: guild_vs2
       X: 50
       Y: 50
   - Id: 997
     Name: 道館挑戰[超終極夢魘]
+    TimeLimit: 7200
     Enter:
       Map: guild_vs3
       X: 50
       Y: 50
   - Id: 998
     Name: 道館挑戰[不當人還當神經病的夢魘]
+    TimeLimit: 7200
     Enter:
       Map: guild_vs4
       X: 50

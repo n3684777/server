@@ -336,6 +336,86 @@ OnInit:
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
+    sellitem(1001050,0,-1);           //獵靈士石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001051,0,-1);           //獵靈士石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001052,0,-1);           //獵靈士石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25482,0,-1);           //獵靈士石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(1001044,0,-1);           //拳皇石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001045,0,-1);           //拳皇石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001046,0,-1);           //拳皇石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25489,0,-1);           //拳皇石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(1001159,0,-1);           //日影忍者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001160,0,-1);           //日影忍者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001161,0,-1);           //日影忍者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25853,0,-1);           //日影忍者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(1001162,0,-1);           //月影忍者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001163,0,-1);           //月影忍者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001164,0,-1);           //月影忍者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25854,0,-1);           //月影忍者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+
+    sellitem(1001047,0,-1);           //叛亂者石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001048,0,-1);           //叛亂者石(頭中)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(1001049,0,-1);           //叛亂者石(頭下)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25858,0,-1);           //叛亂者石(披肩)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    
+    sellitem(25859,0,-1);           //喵族石(頭上) 
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25860,0,-1);           //喵族石(頭中) 
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25861,0,-1);           //喵族石(頭下) 
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    sellitem(25862,0,-1);           //喵族石(披肩) 
+    sellitemcurrency(6417,.@amount);
+    endsellitem();
+    
+    
+
 
 
 
