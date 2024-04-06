@@ -13319,6 +13319,8 @@ Body:
     RandomOptionGroup: ACCESS_TICKET # 飾品頭飾附魔使用券
     CardsAllowed: true
     TargetItems:
+      - Item: Rescue_whistle # 420194
+      - Item: Angeling_Balloon_TW # 420065
       - Item: Boyboy_Accessory # 900000
       - Item: Boyboy_Accessory_Left # 920003
       - Item: Boyboy_Accessory_Right # 920004 
