@@ -50129,3 +50129,10 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 900502
+    AegisName: access_ticket
+    Name: 飾品頭飾附魔使用券
+    Type: DelayConsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();

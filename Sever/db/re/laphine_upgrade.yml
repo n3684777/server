@@ -13315,3 +13315,92 @@ Body:
       - Item: Thanos_Hammer_AD
       - Item: Thanos_Axe_AD
       - Item: Thanos_Violin_AD
+  - Item: access_ticket
+    RandomOptionGroup: ACCESS_TICKET # 飾品頭飾附魔使用券
+    CardsAllowed: true
+    TargetItems:
+      - Item: Boyboy_Accessory # 900000
+      - Item: Boyboy_Accessory_Left # 920003
+      - Item: Boyboy_Accessory_Right # 920004 
+      - Item: Temporal_Sprout_TW # 420106
+      - Item: KarduiEar # 5966
+      - Item: Tree_Of_Sprout_JP # 19299
+      - Item: Ghost_Fire # 420199
+      - Item: New_Wave_Sunglasses_ # 19181
+      - Item: Old_Moroc_Acc # 410254
+      - Item: Moroc_Slave_TW # 420236
+      - Item: Shine_Circlet # 410183
+      - Item: Sin_Circlet # 410184
+      - Item: Handiness_Telescope # 410235
+      - Item: Magic_Star_TW # 19393
+      - Item: Magic_Star_TW_LT # 410256
+      - Item: Magic_Circle_TW # 420087
+      - Item: Magic_Circle_TW_LT # 420301
+      - Item: Adventure_Clover # 420239
+      - Item: SeraphimCoronet # 19138
+      - Item: Feather_Of_Seraphim # 19327
+      - Item: Royalguard_Necklace # 19246
+      - Item: Imperial_Feather # 18823
+      - Item: Gambler_Seal # 5918
+      - Item: Heart_Card_In_Mouth # 19306
+      - Item: Mob_Scarf # 28502
+      - Item: Sunglasses_ # 2202
+      - Item: C_Little_Abyss_Dragon # 410211
+      - Item: CharmOfAnywhere # 420323
+      - Item: Wing_Of_Bless # 400291
+      - Item: Ear_OF_Bloody # 410213
+      - Item: Ear_OF_Spirit # 410215
+      - Item: Ear_OF_Abyss # 410216
+      - Item: LittleGarden # 19437
+      - Item: aegis_410091 # 410091
+      - Item: Love_Cheek_TW # 410090
+      - Item: Promise_aglow # 410197
+      - Item: Noble_Hankie_TW # 420064
+      - Item: CD_In_MouthK # 420003
+      - Item: Glastheim_Onlooker # 19101
+      - Item: 20th_Anniversary_TW # 420186
+      - Item: Temporal_Ring_TW # 490030
+      - Item: Temporal_Ring_TW_LT # 490404
+      - Item: TimeOverloadRing_TW # 490097
+      - Item: aegis_490257 # 490257
+      - Item: aegis_490258 # 490258
+      - Item: aegis_490259 # 490259
+      - Item: aegis_490262 # 490262
+      - Item: item_2100000 # 2100000
+      - Item: item_2100001 # 2100001
+      - Item: item_2100002 # 2100002
+      - Item: aegis_490263 # 490263
+      - Item: aegis_490284 # 490284
+      - Item: aegis_490260 # 490260
+      - Item: aegis_490238 # 490238
+      - Item: aegis_490269 # 490269
+      - Item: WM_Job_Pick # 490211
+      - Item: aegis_490281 # 490281
+      - Item: Twin_Dragonic_Ring # 490219
+      - Item: Palace_Ring # 490208
+      - Item: Wind_Spirit_Ring_TW # 490168
+      - Item: Elvira_Pendant # 28436
+      - Item: Evil_Purgatory_Ring # 490472
+      - Item: Star_Force_Ring_TW # 32243
+      - Item: Record_Sward_TW # 490094
+      - Item: Record_Acol_TW # 32288
+      - Item: Record_Mage_TW # 32285
+      - Item: RRecord_Thief_TW # 32287
+      - Item: Record_Merchant_TW # 32286
+      - Item: Record_Acher_TW # 490095
+      - Item: Record_Sward2_TW # 490173
+      - Item: Record_Acolyte2_TW # 490192
+      - Item: Record_Mage2_TW # 490170
+      - Item: Record_Thief2_TW # 490191
+      - Item: Record_Merchant2_TW # 490175
+      - Item: Record_Acher2_TW # 490198
+      - Item: aegis_490184 # 490184
+      - Item: aegis_490185 # 490185
+      - Item: aegis_490186 # 490186
+      - Item: aegis_490187 # 490187
+      - Item: aegis_490188 # 490188
+      
+      
+      
+      
+      
