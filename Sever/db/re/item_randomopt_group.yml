@@ -17203,6 +17203,10 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
+          - Option: VAR_SPACCELERATION # ATK + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
           - Option: VAR_PLUSASPD # ASPD
             MinValue: 1
             MaxValue: 5
@@ -17211,9 +17215,21 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
+          - Option: VAR_ATTPOWER # ATK
+            MinValue: 80
+            MaxValue: 100
+            Chance: 460
+          - Option: VAR_HITSUCCESSVALUE # HIT
+            MinValue: 30
+            MaxValue: 50
+            Chance: 460
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
+            Chance: 460
+          - Option: VAR_CRITICALSUCCESSVALUE # CRI
+            MinValue: 15
+            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
@@ -17255,7 +17271,51 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DRAGON # 對龍族系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_NOTHING # 對無型系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_UNDEAD # 對不死系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANIMAL # 對動物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_PLANT # 對植物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_INSECT # 對昆蟲系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_FISHS # 對魚貝系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DEVIL # 對惡魔系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_HUMAN # 對人類型魔物(不包含玩家)的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANGEL # 對天使系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17269,6 +17329,10 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
+          - Option: VAR_SPACCELERATION # ATK + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
           - Option: VAR_PLUSASPD # ASPD
             MinValue: 1
             MaxValue: 5
@@ -17277,9 +17341,21 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
+          - Option: VAR_ATTPOWER # ATK
+            MinValue: 80
+            MaxValue: 100
+            Chance: 460
+          - Option: VAR_HITSUCCESSVALUE # HIT
+            MinValue: 30
+            MaxValue: 50
+            Chance: 460
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
+            Chance: 460
+          - Option: VAR_CRITICALSUCCESSVALUE # CRI
+            MinValue: 15
+            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
@@ -17321,7 +17397,51 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DRAGON # 對龍族系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_NOTHING # 對無型系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_UNDEAD # 對不死系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANIMAL # 對動物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_PLANT # 對植物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_INSECT # 對昆蟲系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_FISHS # 對魚貝系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DEVIL # 對惡魔系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_HUMAN # 對人類型魔物(不包含玩家)的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANGEL # 對天使系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17335,6 +17455,10 @@ Body:
             MinValue: 15
             MaxValue: 25
             Chance: 460
+          - Option: VAR_SPACCELERATION # ATK + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
           - Option: VAR_PLUSASPD # ASPD
             MinValue: 1
             MaxValue: 5
@@ -17343,9 +17467,21 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
+          - Option: VAR_ATTPOWER # ATK
+            MinValue: 80
+            MaxValue: 100
+            Chance: 460
+          - Option: VAR_HITSUCCESSVALUE # HIT
+            MinValue: 30
+            MaxValue: 50
+            Chance: 460
           - Option: VAR_AVOIDSUCCESSVALUE # FLEE
             MinValue: 30
             MaxValue: 50
+            Chance: 460
+          - Option: VAR_CRITICALSUCCESSVALUE # CRI
+            MinValue: 15
+            MaxValue: 20
             Chance: 460
           - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
             MinValue: 15
@@ -17387,7 +17523,51 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DRAGON # 對龍族系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_NOTHING # 對無型系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_UNDEAD # 對不死系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANIMAL # 對動物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_PLANT # 對植物系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_INSECT # 對昆蟲系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_FISHS # 對魚貝系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_DEVIL # 對惡魔系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_HUMAN # 對人類型魔物(不包含玩家)的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_MDAMAGE_ANGEL # 對天使系魔物的魔法傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17472,53 +17652,79 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WATER_TARGET # 給予水屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_GROUND_TARGET # 給予地屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_FIRE_TARGET # 給予火屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WIND_TARGET # 給予風屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_POISON_TARGET # 給予毒屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_SAINT_TARGET # 給予聖屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_DARKNESS_TARGET # 給予暗屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_TELEKINESIS_TARGET # 給予念屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_UNDEAD_TARGET # 給予不死屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
           - Option: CLASS_DAMAGE_BOSS_TARGET # 對首領類魔物的物理攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_DAMAGE_BOSS_USER # 對首領類魔物受到的物理的攻擊減少 + %
-            MinValue: 5
-            MaxValue: 10
+          - Option: RACE_DAMAGE_DRAGON # 對龍族系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_NOTHING # 對無型系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_UNDEAD # 對不死系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANIMAL # 對動物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_PLANT # 對植物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_INSECT # 對昆蟲系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_FISHS # 對魚貝系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_DEVIL # 對惡魔系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_HUMAN # 對人類型魔物(不包含玩家)的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANGEL # 對天使系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_SIZE_PERFECT # 刪除對武器大小的懲罰
+            Chance: 460
+          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
             Chance: 460
       - Slot: 2
         Options:
@@ -17598,53 +17804,79 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WATER_TARGET # 給予水屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_GROUND_TARGET # 給予地屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_FIRE_TARGET # 給予火屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WIND_TARGET # 給予風屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_POISON_TARGET # 給予毒屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_SAINT_TARGET # 給予聖屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_DARKNESS_TARGET # 給予暗屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_TELEKINESIS_TARGET # 給予念屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_UNDEAD_TARGET # 給予不死屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
           - Option: CLASS_DAMAGE_BOSS_TARGET # 對首領類魔物的物理攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_DAMAGE_BOSS_USER # 對首領類魔物受到的物理的攻擊減少 + %
-            MinValue: 5
-            MaxValue: 10
+          - Option: RACE_DAMAGE_DRAGON # 對龍族系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_NOTHING # 對無型系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_UNDEAD # 對不死系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANIMAL # 對動物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_PLANT # 對植物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_INSECT # 對昆蟲系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_FISHS # 對魚貝系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_DEVIL # 對惡魔系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_HUMAN # 對人類型魔物(不包含玩家)的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANGEL # 對天使系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_SIZE_PERFECT # 刪除對武器大小的懲罰
+            Chance: 460
+          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
             Chance: 460
       - Slot: 3
         Options:
@@ -17724,47 +17956,77 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: MDAMAGE_PROPERTY_NOTHING_TARGET # 給予無屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WATER_TARGET # 給予水屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_GROUND_TARGET # 給予地屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_FIRE_TARGET # 給予火屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_WIND_TARGET # 給予風屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_POISON_TARGET # 給予毒屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_SAINT_TARGET # 給予聖屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_DARKNESS_TARGET # 給予暗屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_TELEKINESIS_TARGET # 給予念屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: MDAMAGE_PROPERTY_UNDEAD_TARGET # 給予不死屬性怪的魔法傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
           - Option: CLASS_DAMAGE_BOSS_TARGET # 對首領類魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_DRAGON # 對龍族系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_NOTHING # 對無型系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_UNDEAD # 對不死系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANIMAL # 對動物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_PLANT # 對植物系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_INSECT # 對昆蟲系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_FISHS # 對魚貝系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_DEVIL # 對惡魔系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_HUMAN # 對人類型魔物(不包含玩家)的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: RACE_DAMAGE_ANGEL # 對天使系魔物的物理傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: DAMAGE_SIZE_PERFECT # 刪除對武器大小的懲罰
+            Chance: 460
+          - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
+            MinValue: 15
+            MaxValue: 20
+            Chance: 460
+          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460

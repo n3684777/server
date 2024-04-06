@@ -13181,6 +13181,27 @@ Body:
       - Item: Poenitentia_Ramus
       - Item: Poenitentia_Planta
       - Item: Poenitentia_Ferrum
+      - Item: Thanos_Whip
+      - Item: Thanos_Sword
+      - Item: Thanos_Great_Sword
+      - Item: Thanos_Spear
+      - Item: Thanos_Long_Spear
+      - Item: Thanos_Dagger
+      - Item: Thanos_Katar
+      - Item: Thanos_Knuckle
+      - Item: Thanos_Hammer
+      - Item: Thanos_Axe
+      - Item: Thanos_Violin
+      - Item: Thanos_Whip_AD
+      - Item: Thanos_Sword_AD
+      - Item: Thanos_TSword_AD
+      - Item: Thanos_Spear_AD
+      - Item: Thanos_Dagger_AD
+      - Item: Thanos_Katar_AD
+      - Item: Thanos_Knuckle_AD
+      - Item: Thanos_Hammer_AD
+      - Item: Thanos_Axe_AD
+      - Item: Thanos_Violin_AD
   - Item: Weapon_magic_ticket
     RandomOptionGroup: WEAPON_MAGIC_TICKET # ªZ¾¹Å]ªkªþÅ]¨é
     CardsAllowed: true
@@ -13273,3 +13294,24 @@ Body:
       - Item: Poenitentia_Ramus
       - Item: Poenitentia_Planta
       - Item: Poenitentia_Ferrum
+      - Item: Thanos_Whip
+      - Item: Thanos_Sword
+      - Item: Thanos_Great_Sword
+      - Item: Thanos_Spear
+      - Item: Thanos_Long_Spear
+      - Item: Thanos_Dagger
+      - Item: Thanos_Katar
+      - Item: Thanos_Knuckle
+      - Item: Thanos_Hammer
+      - Item: Thanos_Axe
+      - Item: Thanos_Violin
+      - Item: Thanos_Whip_AD
+      - Item: Thanos_Sword_AD
+      - Item: Thanos_TSword_AD
+      - Item: Thanos_Spear_AD
+      - Item: Thanos_Dagger_AD
+      - Item: Thanos_Katar_AD
+      - Item: Thanos_Knuckle_AD
+      - Item: Thanos_Hammer_AD
+      - Item: Thanos_Axe_AD
+      - Item: Thanos_Violin_AD
