@@ -17315,7 +17315,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_NORMAL # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17441,7 +17441,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_NORMAL # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17567,7 +17567,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_NORMAL_TARGET # 對一般魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_NORMAL # 對一般魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
