@@ -17706,26 +17706,6 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
       - Slot: 2
         Options:
           - Option: VAR_MAXHPPERCENT # MHP + %
@@ -17858,26 +17838,6 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
       - Slot: 3
         Options:
           - Option: VAR_MAXHPPERCENT # MHP + %
@@ -18007,26 +17967,6 @@ Body:
           - Option: DAMAGE_SIZE_PERFECT # 刪除對武器大小的懲罰
             Chance: 460
           - Option: DAMAGE_CRI_TARGET # 必殺技傷害增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
-            MinValue: 15
-            MaxValue: 20
-            Chance: 460
-          - Option: CLASS_DAMAGE_NORMAL_TARGET # 對一般魔物的物理攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
