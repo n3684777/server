@@ -45859,14 +45859,14 @@ Body:
     Type: DelayConsume
     Weight: 10
     Script: |
-      callfunc "hueihen_ENCHANT",100479;
+      laphine_upgrade();
   - Id: 100480
     AegisName: Sakray_Fury2
     Name: 精華薩克萊憤怒
     Type: DelayConsume
     Weight: 10
     Script: |
-      callfunc "hueihen_ENCHANT",100480;
+      laphine_upgrade();
   - Id: 100481
     AegisName: Overclocker
     Name: 戰鬥器超頻
