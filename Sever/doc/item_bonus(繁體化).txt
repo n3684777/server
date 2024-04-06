@@ -633,7 +633,7 @@ EQI_SHADOW_ACC_L - [影子飾品左]
 
 
 getequiprefinerycnt(EQI_HEAD_TOP); (頭上精煉)
-getequiprefinerycnt(EQI_ARMO);  (鎧甲精煉)
+getequiprefinerycnt(EQI_ARMOR);  (鎧甲精煉)
 getequiprefinerycnt(EQI_HAND_L);  (左手/盾牌精煉)
 getequiprefinerycnt(EQI_HAND_R);	 (右手/武器精煉)
 getequiprefinerycnt(EQI_GARMENT);  (斗篷精煉)

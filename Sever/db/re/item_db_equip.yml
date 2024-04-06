@@ -187081,6 +187081,31 @@ Body:
             }
         }
       }
+  - Id: 400511
+    AegisName: item_400511
+    Name: 女王甲蟲頭盔
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    View: 1231
+    Script: |
+      .@r = getrefine();
+      bonus bPow,3;
+      bonus bCon,3;
+      bouns bCrt,3;
+      bonus bBaseAtk,(.@r/2)*20;
+      bonus bCritical,(.@r/2)*4;
+      bonus bCritAtkRate,(.@r/3)*10;
+      if(.@r >= 7){bonus bAtkRate,10;};
+      if(.@r >= 9){bonus bDelayrate,-10; }
+      if(.@r >= 11){bonus bShortAtkRate,15;bonus bLongAtkRate,15;}
+      if(.@r >= 12){bonus2 bAddRace,RC_All,15;}
+      if(.@r >= 13){bonus bFixedCast,-500;}
   - Id: 450263
     AegisName: Lunar_E_Armor_LT
     Name: 月全蝕魔力外袍-LT

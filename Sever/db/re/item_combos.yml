@@ -34885,3 +34885,33 @@ Body:
       .@sg = getequiprefinerycnt(EQI_SHADOW_SHOES) + getequiprefinerycnt(EQI_SHADOW_WEAPON);
       bonus2 bIgnoreDefRaceRate,RC_All,30 + .@sg*2;
       bonus2 bIgnoreMdefRaceRate,RC_All,30 + .@sg*2;
+  - Combos:
+      - Combo:
+          - item_400511
+          - Gold_Q_Scaraba_Card
+      - Combo:
+          - item_400511
+          - Gold_Q_Scaraba_Card_
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus bPAtk,20;
+      bonus bCritAtkRate,.@r*10;
+  - Combos:
+      - Combo:
+          - item_400511
+          - Q_Scaraba_Card
+      - Combo:
+          - item_400511
+          - Q_Scaraba_Card_
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus2 bAddClass,Class_Boss,10+(.@r/2)*3;
+  - Combos:
+      - Combo:
+          - item_400511
+          - SLD_Q_Scaraba_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus2 bAddClass,Class_Boss,5+(.@r/3)*2;
+      
+

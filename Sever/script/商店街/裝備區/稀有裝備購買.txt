@@ -390,6 +390,9 @@ OnInit:
 	sellitem(400006,.@p,-1);	//獸人族的傳承象徵
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+	sellitem(400511,.@p,-1);	//女王甲蟲頭盔
+	sellitemcurrency(6909,.@meow);
+    endsellitem();
 	sellitem(400328,.@p,-1);	//羽翼貝雷帽
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
