@@ -13319,6 +13319,73 @@ Body:
     RandomOptionGroup: ACCESS_TICKET # 飾品頭飾附魔使用券
     CardsAllowed: true
     TargetItems:
+      - Item: Remorse_C_Crown # 400440
+      - Item: Poenetentia_B_Crown # 400447
+      - Item: Poenetentia_V_Crown # 400457
+      - Item: Poenetentia_D_Crown # 400469
+      - Item: Remorse_Crown # 400474
+      - Item: Poenetentia_H_Crown # 400482
+      - Item: Yggdrasil_Faith # 400401
+      - Item: Thanos_Helm_1 # 400134
+      - Item: Thanos_Helm1_LT # 400135
+      - Item: Thanos_Helm_2 # 400141
+      - Item: Thanos_Helm2_LT # 400142
+      - Item: Thanos_Helm_1 # 400134
+      - Item: Thanos_Helm1_LT # 400135
+      - Item: Thanos_Helm_3 # 400146
+      - Item: Thanos_Helm3_LT # 400145
+      - Item: Thanos_Helm_4 # 400150
+      - Item: Thanos_Helm4_LT # 400151
+      - Item: BioWeapon_Helm_RK # 400078
+      - Item: BioWeapon_Helm_LG # 400079
+      - Item: BioWeapon_Helm_WL # 400094
+      - Item: BioWeapon_Helm_SO # 400095
+      - Item: BioWeapon_Helm_NC # 400098
+      - Item: BioWeapon_Helm_GN # 400099
+      - Item: BioWeapon_Helm_RA # 400116
+      - Item: BioWeapon_Helm_WM # 400117
+      - Item: BioWeapon_Helm_AB # 400118
+      - Item: BioWeapon_Helm_SR # 400119
+      - Item: BioWeapon_Helm_SC # 400120
+      - Item: BioWeapon_Helm_GC # 400121
+      - Item: Viva_Adul_Hat_WL1 # 400178
+      - Item: Viva_Adul_Hat_WL2 # 400179
+      - Item: Viva_Adul_Hat_SR1 # 400180
+      - Item: Viva_Adul_Hat_SR2 # 400181
+      - Item: Viva_Adul_Hat_AB1 # 400189
+      - Item: Viva_Adul_Hat_AB2 # 400190
+      - Item: Viva_Adul_Hat_SC1 # 400191
+      - Item: Viva_Adul_Hat_SC2 # 400192
+      - Item: Viva_Adul_Hat_RA1 # 400198
+      - Item: Viva_Adul_Hat_GC1 # 400216
+      - Item: Viva_Adul_Hat_GC2 # 400217
+      - Item: Viva_Adul_Hat_SO1 # 400218
+      - Item: Viva_Adul_Hat_RK1 # 400226
+      - Item: Viva_Adul_Hat_RK2 # 400227
+      - Item: Viva_Adul_Hat_WM1 # 400228
+      - Item: Viva_Adul_Hat_WM2 # 400229
+      - Item: Viva_Adul_Hat_NC1 # 400230
+      - Item: Viva_Adul_Hat_NC2 # 400231
+      - Item: Viva_Adul_Hat_GN1 # 400233
+      - Item: Viva_Adul_Hat_GN2 # 400234
+      - Item: Viva_Adul_Hat_KO1 # 400235
+      - Item: Viva_Adul_Hat_KO2 # 400236
+      - Item: Viva_Adul_Hat_RL1 # 400237
+      - Item: Viva_Adul_Hat_RL2 # 400238
+      - Item: Viva_Adul_Hat_SP1 # 400239
+      - Item: Viva_Adul_Hat_SP2 # 400240
+      - Item: Viva_Adul_Hat_SJ1 # 400241
+      - Item: Viva_Adul_Hat_SJ2 # 400242
+      - Item: Viva_Adul_Hat_WL1 # 400178
+      - Item: Viva_Adul_Hat_SU1 # 400243
+      - Item: maypay_05 # 400087
+      - Item: Orcsuccessionhelm_TW # 400006
+      - Item: item_400511 # 400511
+      - Item: Feather_Beret_WH # 400328
+      - Item: Wing_Of_Bless # 400291
+      - Item: 20th_Anniversary_Hat_TW # 400368
+      - Item: Vanargand_Helm # 18652
+      - Item: Laser_Of_Eagle # 19111 
       - Item: Rescue_whistle # 420194
       - Item: Angeling_Balloon_TW # 420065
       - Item: Boyboy_Accessory # 900000
