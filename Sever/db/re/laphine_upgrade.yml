@@ -13385,7 +13385,7 @@ Body:
       - Item: Record_Sward_TW # 490094
       - Item: Record_Acol_TW # 32288
       - Item: Record_Mage_TW # 32285
-      - Item: RRecord_Thief_TW # 32287
+      - Item: Record_Thief_TW # 32287
       - Item: Record_Merchant_TW # 32286
       - Item: Record_Acher_TW # 490095
       - Item: Record_Sward2_TW # 490173

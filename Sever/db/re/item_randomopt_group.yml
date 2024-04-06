@@ -17327,7 +17327,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: ATTMPOWER # MATK
+          - Option: VAR_ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
@@ -17449,7 +17449,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: ATTMPOWER # MATK
+          - Option: VAR_ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
@@ -17571,7 +17571,7 @@ Body:
             MinValue: 5
             MaxValue: 10
             Chance: 460
-          - Option: ATTMPOWER # MATK
+          - Option: VAR_ATTMPOWER # MATK
             MinValue: 80
             MaxValue: 100
             Chance: 460
