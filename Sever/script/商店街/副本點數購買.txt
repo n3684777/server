@@ -20,6 +20,13 @@ OnInit:
 	sellitem(6909,.@p,-1);	//喵楊桃果實
 	sellitemcurrency(.@cash,5);
     endsellitem(); 
+	sellitem(900500,.@p,-1);	//武器物理附魔使用券
+	sellitemcurrency(.@cash,5);
+    endsellitem(); 
+	sellitem(900501,.@p,-1);	//武器物理附魔使用券
+	sellitemcurrency(.@cash,5);
+    endsellitem(); 
+
 	
 OnBuyItem:
 end;
