@@ -110,6 +110,7 @@ Body:
       Super Player: true
     Level: 1
     Commands:
+      resetskill: true
       version: true
       where: true
       jumpto: true
