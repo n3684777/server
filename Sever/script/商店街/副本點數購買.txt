@@ -23,7 +23,7 @@ OnInit:
 	sellitem(900500,.@p,-1);	//武器物理附魔使用券
 	sellitemcurrency(.@cash,5);
     endsellitem(); 
-	sellitem(900501,.@p,-1);	//武器物理附魔使用券
+	sellitem(900501,.@p,-1);	//武器魔法附魔使用券
 	sellitemcurrency(.@cash,5);
     endsellitem(); 
 
