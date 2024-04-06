@@ -17271,7 +17271,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17397,7 +17397,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
@@ -17523,7 +17523,7 @@ Body:
             MinValue: 15
             MaxValue: 20
             Chance: 460
-          - Option: CLASS_MDAMAGE_BOSS_TARGET # 對首領類魔物的魔法攻擊增加 + %
+          - Option: CLASS_MDAMAGE_BOSS # 對首領類魔物的魔法攻擊增加 + %
             MinValue: 15
             MaxValue: 20
             Chance: 460
