@@ -239,7 +239,7 @@ OnInit:
 	sellitem(400134,.@p,-1);	//塔諾斯近戰頭盔
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400141,.@p,-1);	//塔諾斯魔法頭盔
+	sellitem(400146,.@p,-1);	//塔諾斯魔法頭盔
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400150,.@p,-1);	//塔諾斯暴力頭盔
@@ -938,6 +938,9 @@ OnInit:
 	sellitemcurrency(300107,.@h*20);
     endsellitem(); 
 	sellitem(900057,.@p,-1);	//女王甲蟲卡片-改 x
+	sellitemcurrency(4507,.@h);
+    endsellitem();
+	sellitem(900140,.@p,-1);	//黃金女王甲蟲卡片-改 x
 	sellitemcurrency(4507,.@h);
     endsellitem(); 
 	sellitem(900058,.@p,-1);	//將軍大賢卡片-改 x
