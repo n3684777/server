@@ -749,6 +749,9 @@ OnInit:
     endsellitem();
 	sellitem(300426,.@c,-1);	//克魯斯卡
     endsellitem();
+	sellitem(4509,0,-1);	//黃金女王甲蟲卡片
+	sellitemcurrency(4507,1);
+    endsellitem();
 	
 end;
 }
