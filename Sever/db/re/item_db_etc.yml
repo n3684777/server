@@ -2611,9 +2611,12 @@ Body:
     Name: ªi§Q¥d¤ù
     Type: Card
     Buy: 20
+    Refineable: true
+    Gradable: true
     Weight: 10
     Locations:
       Armor: true
+      Card: true
     Flags:
       BuyingStore: true
       DropEffect: CLIENT
