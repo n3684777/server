@@ -71791,3 +71791,20 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
+  - Id: 2000129
+    AegisName: item_2000129
+    Name: ­·¼É½ÄÀ»(¿c®¦ÃM¤h)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"RK_STORMBLAST",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"RK_STORMBLAST",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"RK_STORMBLAST",30;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
