@@ -187097,7 +187097,7 @@ Body:
       .@r = getrefine();
       bonus bPow,3;
       bonus bCon,3;
-      bouns bCrt,3;
+      bonus bCrt,3;
       bonus bBaseAtk,(.@r/2)*20;
       bonus bCritical,(.@r/2)*4;
       bonus bCritAtkRate,(.@r/3)*10;

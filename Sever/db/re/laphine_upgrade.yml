@@ -13319,6 +13319,7 @@ Body:
     RandomOptionGroup: ACCESS_TICKET # 飾品頭飾附魔使用券
     CardsAllowed: true
     TargetItems:
+      - Item: Poring_Card # 4001
       - Item: Remorse_C_Crown # 400440
       - Item: Poenetentia_B_Crown # 400447
       - Item: Poenetentia_V_Crown # 400457
