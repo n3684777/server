@@ -2616,7 +2616,6 @@ Body:
     Weight: 10
     Locations:
       Armor: true
-      Card: true
     Flags:
       BuyingStore: true
       DropEffect: CLIENT
