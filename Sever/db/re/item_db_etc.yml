@@ -66172,7 +66172,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddRace2,RC2_SCARABA,50;
+      bonus bPAtk,5;
   - Id: 900058
     AegisName: Daehyon_Card_
     Name: 將軍大賢卡片-改
@@ -67403,6 +67403,21 @@ Body:
       bonus bAbsorbDmgMaxHP2,20;
       bonus2 bMagicAddRace,RC_All,.@r*15;
       bonus bMatkRate,.@r*20;
+  - Id: 900140
+    AegisName: Gold_Q_Scaraba_Card_
+    Name: 黃金女王甲蟲卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bPAtk,10;
   - Id: 910000
     AegisName: Nov_Stone
     Name: 初心者幻化石(披肩)

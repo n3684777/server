@@ -34899,6 +34899,16 @@ Body:
   - Combos:
       - Combo:
           - item_400511
+          - Gold_Q_Scaraba_Card_
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus bPAtk,.@r;
+      bonus bCrt,.@r/2;
+      bonus bLongAtkRate,(.@r/3)*10;
+      bonus bShortAtkRate,(.@r/3)*10;
+  - Combos:
+      - Combo:
+          - item_400511
           - Q_Scaraba_Card
       - Combo:
           - item_400511
@@ -34906,6 +34916,16 @@ Body:
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus2 bAddClass,Class_Boss,10+(.@r/2)*3;
+  - Combos:
+      - Combo:
+          - item_400511
+          - Q_Scaraba_Card_
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,.@r/2;
+      bonus bCrt,.@r/4;
+      bonus bLongAtkRate,(.@r/3)*5;
+      bonus bShortAtkRate,(.@r/3)*5;
   - Combos:
       - Combo:
           - item_400511
