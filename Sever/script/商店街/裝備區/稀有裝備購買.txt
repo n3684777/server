@@ -944,7 +944,7 @@ OnInit:
 	sellitemcurrency(4507,.@h);
     endsellitem();
 	sellitem(900140,.@p,-1);	//黃金女王甲蟲卡片-改 x
-	sellitemcurrency(4507,.@h);
+	sellitemcurrency(4509,.@h);
     endsellitem(); 
 	sellitem(900058,.@p,-1);	//將軍大賢卡片-改 x
 	sellitemcurrency(4574,.@h);
