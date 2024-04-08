@@ -22755,5 +22755,20 @@ Body:
     Name: ²ï©ÔÃdª«³J
     Type: Petegg
     Buy: 20
+  - Id: 960001
+    AegisName: item_960001
+    Name: ÃC¨}ªº¤Û¼vÃdª«³J
+    Type: Petegg
+    Buy: 20
+  - Id: 960002
+    AegisName: item_960002
+    Name: Ä±¿ôÃC¨}Ãdª«³J
+    Type: Petegg
+    Buy: 20
+  - Id: 960003
+    AegisName: item_960003
+    Name: §Æ±öº¸¯÷ªº¤Û¼vÃdª«³J
+    Type: Petegg
+    Buy: 20
 
 

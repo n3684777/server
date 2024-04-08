@@ -2323,3 +2323,24 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+  - Mob: MD_C_AMDARAIS
+    CaptureRate : 1000
+    EggItem: item_960001
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MG_AMDARAIS_H
+    CaptureRate : 1000
+    EggItem: item_960002
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_HEMEL
+    CaptureRate : 1000
+    EggItem: item_960003
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
