@@ -821,6 +821,20 @@ Body:
     Drops:
       - Item: Betelgeuse_Soul
         Rate: 1000
+      - Item: 1000442
+        Rate: 10
+      - Item: 1000443
+        Rate: 10
+      - Item: 1000444
+        Rate: 10 
+      - Item: 1000445
+        Rate: 10 
+      - Item: 1000446
+        Rate: 10 
+      - Item: 1000447
+        Rate: 10 
+      - Item: Four_Card
+        Rate: 1     
   - Id: 20995
     AegisName: MD_G_DEADSOUL
     Name: DEADSOUL
