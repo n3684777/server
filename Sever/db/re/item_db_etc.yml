@@ -67442,7 +67442,7 @@ Body:
       .@r = getrefine();
       bonus bAbsorbDmgMaxHP2,20;
       bonus2 bAddRace,RC_All,.@r*15;
-      bonus bAtkRate,.@r*20;
+      bonus2 bAddClass,RC_All,.@r*20;
   - Id: 910000
     AegisName: Nov_Stone
     Name: ªì¤ßªÌ¤Û¤Æ¥Û(©ÜªÓ)
