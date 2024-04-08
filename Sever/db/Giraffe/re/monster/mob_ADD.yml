@@ -822,17 +822,17 @@ Body:
       - Item: Betelgeuse_Soul
         Rate: 1000
       - Item: 1000442
-        Rate: 10
+        Rate: 5
       - Item: 1000443
-        Rate: 10
+        Rate: 5
       - Item: 1000444
-        Rate: 10 
+        Rate: 5 
       - Item: 1000445
-        Rate: 10 
+        Rate: 5 
       - Item: 1000446
-        Rate: 10 
+        Rate: 5 
       - Item: 1000447
-        Rate: 10 
+        Rate: 5 
       - Item: Four_Card
         Rate: 1     
   - Id: 20995
