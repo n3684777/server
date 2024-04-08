@@ -22750,6 +22750,10 @@ Body:
       if ( .@r >= 12 ) {
         bonus2 bMagicAtkEle,ELE_ALL,7;
       }
-
+  - Id: 960000
+    AegisName: item_960000
+    Name: ²ï©ÔÃdª«³J
+    Type: Petegg
+    Buy: 20
 
 

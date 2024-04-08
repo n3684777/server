@@ -2316,3 +2316,10 @@ Body:
       } else {
         bonus bPerfectHitAddRate,3;
       }
+  - Mob: MM_SARAH
+    CaptureRate : 1000
+    EggItem: Piske_PET_Egg
+    FoodItem: Carrot
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
