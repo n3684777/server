@@ -1199,6 +1199,16 @@ OnInit:
 	sellitemcurrency(6803,300);
 	sellitemcurrency(6909,300);
     endsellitem(); 
+	sellitem(900142,.@p*3,-1);	//參宿四卡片-改 x
+	sellitemcurrency(900141,100);
+	sellitemcurrency(1000442,50);
+	sellitemcurrency(1000443,50);
+	sellitemcurrency(1000444,50);
+	sellitemcurrency(1000445,50);
+	sellitemcurrency(1000446,50);
+	sellitemcurrency(1000447,50);
+	sellitemcurrency(6909,300);
+    endsellitem(); 
 
 	
 end;

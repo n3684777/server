@@ -2611,8 +2611,6 @@ Body:
     Name: 波利卡片
     Type: Card
     Buy: 20
-    Refineable: true
-    Gradable: true
     Weight: 10
     Locations:
       Armor: true
@@ -67418,6 +67416,33 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bPAtk,10;
+  - Id: 900141
+    AegisName: Four_Card
+    Name: 參宿四的名片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+  - Id: 900142
+    AegisName: Four_Card_
+    Name: 參宿四卡片-改
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bAbsorbDmgMaxHP2,20;
+      bonus2 bAddRace,RC_All,.@r*15;
+      bonus bAtkRate,.@r*20;
   - Id: 910000
     AegisName: Nov_Stone
     Name: 初心者幻化石(披肩)

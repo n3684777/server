@@ -50136,3 +50136,10 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 900503
+    AegisName: SE_Bomb
+    Name: 六千億張的起爆符
+    Type: Healing
+    Weight: 0
+    Script: |
+      atcommand "@killmonster";
