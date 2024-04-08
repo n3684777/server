@@ -2318,7 +2318,7 @@ Body:
       }
   - Mob: MM_SARAH
     CaptureRate : 1000
-    EggItem: Piske_PET_Egg
+    EggItem: item_960000
     FoodItem: Carrot
     Fullness: 2
     IntimacyFed: 50
