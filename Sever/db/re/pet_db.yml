@@ -2386,3 +2386,88 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+  - Mob: WILOW
+    CaptureRate : 1000
+    EggItem: item_960010
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+
+  - Mob: WILOW
+    CaptureRate : 1000
+    EggItem: item_960010
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: CHONCHON
+    CaptureRate : 1000
+    EggItem: item_960011
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: RODA_FROG
+    CaptureRate : 1000
+    EggItem: item_960012
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WOLF
+    CaptureRate : 1000
+    EggItem: item_960013
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: SPORE
+    CaptureRate : 1000
+    EggItem: item_960014
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ZOMBIE
+    CaptureRate : 1000
+    EggItem: item_960015
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ARCHER_SKELETON
+    CaptureRate : 1000
+    EggItem: item_960016
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: CREAMY
+    CaptureRate : 1000
+    EggItem: item_960017
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: PECOPECO
+    CaptureRate : 1000
+    EggItem: item_960018
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MANDRAGORA
+    CaptureRate : 1000
+    EggItem: item_960019
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
