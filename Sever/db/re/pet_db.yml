@@ -2319,28 +2319,63 @@ Body:
   - Mob: MM_SARAH
     CaptureRate : 1000
     EggItem: item_960000
-    FoodItem: Carrot
+    FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
   - Mob: MD_C_AMDARAIS
     CaptureRate : 1000
     EggItem: item_960001
-    FoodItem: Carrot
+    FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
   - Mob: MG_AMDARAIS_H
     CaptureRate : 1000
     EggItem: item_960002
-    FoodItem: Carrot
+    FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
   - Mob: MD_C_HEMEL
     CaptureRate : 1000
     EggItem: item_960003
-    FoodItem: Carrot
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: SCORPION
+    CaptureRate : 1000
+    EggItem: item_960004
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: HORNET
+    CaptureRate : 1000
+    EggItem: item_960005
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: FARMILIAR
+    CaptureRate : 1000
+    EggItem: item_960006
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: FABRE
+    CaptureRate : 1000
+    EggItem: item_960007
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: CONDOR
+    CaptureRate : 1000
+    EggItem: item_960009
+    FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
