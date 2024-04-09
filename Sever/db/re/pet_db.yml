@@ -2367,7 +2367,7 @@ Body:
     AllowAutoFeed: true
   - Mob: FABRE
     CaptureRate : 1000
-    EggItem: item_960007
+    EggItem: item_960008
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
