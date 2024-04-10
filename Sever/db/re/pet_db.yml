@@ -2532,6 +2532,12 @@ Body:
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
+  - Mob: MIN_RAGGLER
+    CaptureRate : 1000
+    EggItem: item_960030
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
     AllowAutoFeed: true
   - Mob: MIN_DRAGON_TAIL
     CaptureRate : 1000
