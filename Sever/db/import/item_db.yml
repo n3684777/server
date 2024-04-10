@@ -22860,3 +22860,10 @@ Body:
     Name: ´ËÆFÃdª«³J
     Type: Petegg
     Buy: 20
+  - Id: 965000
+    AegisName: item_965000
+    Name: Ãdª«³J©â©â¼Ö
+    Type: Usable
+    Buy: 20
+    Script: |
+      atcommand "@makeegg " + rand(960012,960020);
