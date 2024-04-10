@@ -22756,7 +22756,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,960020);
+      atcommand "@makeegg " + rand(960000,960032);
   - Id: 960000
     AegisName: item_960000
     Name: ²ï©ÔÃdª«³J
