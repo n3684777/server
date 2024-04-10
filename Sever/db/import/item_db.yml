@@ -22750,6 +22750,13 @@ Body:
       if ( .@r >= 12 ) {
         bonus2 bMagicAtkEle,ELE_ALL,7;
       }
+  - Id: 959999
+    AegisName: item_959999
+    Name: 胐矹┾┾贾絚
+    Type: Usable
+    Buy: 20
+    Script: |
+      atcommand "@makeegg " + rand(960000,960020);
   - Id: 960000
     AegisName: item_960000
     Name: 诧┰胐矹
@@ -22860,10 +22867,303 @@ Body:
     Name: 此艶胐矹
     Type: Petegg
     Buy: 20
-  - Id: 965000
-    AegisName: item_965000
-    Name: 胐矹┾┾贾
-    Type: Usable
+  - Id: 960021
+    AegisName: item_960021
+    Name: 獵矰胐矹
+    Type: Petegg
     Buy: 20
-    Script: |
-      atcommand "@makeegg " + rand(960012,960020);
+  - Id: 960022
+    AegisName: item_960022
+    Name: 瑀矰胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960023
+    AegisName: item_960023
+    Name: 猧胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960024
+    AegisName: item_960024
+    Name: 集胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960025
+    AegisName: item_960025
+    Name: 闷胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960026
+    AegisName: item_960026
+    Name: フ闷胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960027
+    AegisName: item_960027
+    Name: エホ┣胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960028
+    AegisName: item_960028
+    Name: 妮嚼挛胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960029
+    AegisName: item_960029
+    Name: 猟胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960030
+    AegisName: item_960030
+    Name: ー尘胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960031
+    AegisName: item_960031
+    Name: Ю籪富胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960032
+    AegisName: item_960032
+    Name: 厚跑︹纒胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20
+  - Id: 960020
+    AegisName: item_960020
+    Name: 此艶胐矹
+    Type: Petegg
+    Buy: 20

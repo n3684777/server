@@ -2393,7 +2393,6 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-
   - Mob: WILOW
     CaptureRate : 1000
     EggItem: item_960010
@@ -2460,6 +2459,433 @@ Body:
   - Mob: MANDRAGORA
     CaptureRate : 1000
     EggItem: item_960019
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_SNAKE
+    CaptureRate : 1000
+    EggItem: item_960021
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_ANACONDAQ
+    CaptureRate : 1000
+    EggItem: item_960022
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_MARIN
+    CaptureRate : 1000
+    EggItem: item_960023
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_MUKA
+    CaptureRate : 1000
+    EggItem: item_960024
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_DENIRO
+    CaptureRate : 1000
+    EggItem: item_960025
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_ANDRE
+    CaptureRate : 1000
+    EggItem: item_960026
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_GOLEM
+    CaptureRate : 1000
+    EggItem: item_960027
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_METALLER
+    CaptureRate : 1000
+    EggItem: item_960028
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_SAND_MAN
+    CaptureRate : 1000
+    EggItem: item_960029
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_DRAGON_TAIL
+    CaptureRate : 1000
+    EggItem: item_960031
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MIN_GREEN_IGUANA
+    CaptureRate : 1000
+    EggItem: item_960032
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: WORM_TAIL
+    CaptureRate : 1000
+    EggItem: item_960020
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
