@@ -2553,58 +2553,58 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_SEE_OTTER
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960033
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_GALAPAGO
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960034
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_FUR_SEAL
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960035
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_ALLIGATOR
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960036
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_MEGALODON
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960037
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_TRI_JOINT
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960038
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_MEGALITH
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960039
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MIN_DRYAD
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960040
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50

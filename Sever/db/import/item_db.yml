@@ -22756,7 +22756,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,960032);
+      atcommand "@makeegg " + rand(960000,960040);
   - Id: 960000
     AegisName: item_960000
     Name: 诧┰胐矹
@@ -22927,44 +22927,44 @@ Body:
     Name: 厚跑︹纒胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960033
+    AegisName: item_960033
+    Name: 谩胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960034
+    AegisName: item_960034
+    Name: 班皊肸胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960035
+    AegisName: item_960035
+    Name: 癨腳腳胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960036
+    AegisName: item_960036
+    Name: 苨辰胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960037
+    AegisName: item_960037
+    Name: ǜ纄辰胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960038
+    AegisName: item_960038
+    Name: 腑挛胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960039
+    AegisName: item_960039
+    Name: ǜ碿集︺胐矹
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 此艶胐矹
+  - Id: 960040
+    AegisName: item_960040
+    Name: 此狶Н甐胐矹
     Type: Petegg
     Buy: 20
   - Id: 960020
