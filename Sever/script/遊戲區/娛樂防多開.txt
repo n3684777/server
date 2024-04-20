@@ -1,0 +1,66 @@
+-	script	IP_map_restriction	-1,{
+	function set_map;
+	
+	OnInit:
+		// set_map( "地圖名稱",<幾開> );
+		set_map( "quiz_02",1 );
+		set_map( "que_moon",1 );
+		set_map( "force_1-1",1 );
+		set_map( "force_1-3",1 );
+		set_map( "quiz_00",1 );
+		set_map( "kinggea01",1 );
+		set_map( "Hyrule",1 );
+		end;
+		
+	OnPCLoadMapEvent:
+		// sleep2 1;
+		.@map$ = strcharinfo(3);
+		.@count = getd( ".ip_"+.@map$ );
+		if ( .@count > 0 ) {
+			query_sql( "SELECT `name` FROM `char` WHERE `online` > 0 AND `account_id` IN ( SELECT `account_id` FROM `login` WHERE `last_ip` = '"+@ip_address$+"' )",.@char_name$ );
+			.@name_size = getarraysize( .@char_name$ );
+			.@name$ = strcharinfo(0); 
+			while ( .@i < .@name_size ) {
+				getmapxy( .@temp_map$,.@x,.@y,BL_PC,.@char_name$[.@i] );
+				if ( .@map$ == .@temp_map$ )
+					.@online++;
+				.@i++;
+			}
+			if ( .@online > .@count ) {
+
+
+
+				mes " 【^FF0000防多開系統^000000】";
+				mes "此地圖為禁止 ^FF0000多開^000000 進入地圖";
+				mes " ";
+				mes "偵測到您違規，將^FF0000自動傳送^000000至主城";
+				mes " ";
+				mes "如有任何疑問請洽詢在線 GM。";
+				sleep2(3000);
+				warp "egg1",215,177;
+
+//				mes "你只能有 "+.@count+" 角色在這張地圖上.";
+
+			}
+		}
+		end;
+		
+	OnPCLoginEvent:
+		// sleep2 1;
+		@ip_address$ = escape_sql( getcharip() );
+		end;
+		
+	function	set_map	{
+		.@map$ = getarg(0);
+		.@count = getarg(1);
+		
+		if ( .@count && getmapusers( .@map$ ) >= 0 ) {
+			setd( ".ip_"+.@map$ ),.@count;
+			setmapflag .@map$,mf_loadevent;
+		}
+		return;
+	}
+}
+
+
+

@@ -1,0 +1,84 @@
+/*================================================
+- 腳本名稱：塔羅牌占卜師
+- 腳本作者：瘋兔工作組
+- 測試環境：CSeA、SeAr、eAthena
+- 更新內容：
+- Ver 1.0 完成架構
+>>>各位大哥大姐轉載請保留以上，萬分感激<<<
+================================================*/
+mid_camp,224,246,3	script	塔羅牌占卜師#1	625,{
+	cutin "nines01.bmp",2;
+	mes "["+strnpcinfo(0)+"]";
+	mes "^0066CC"+strcharinfo(0)+"^000000 你好";
+	mes "我是命運的塔羅牌占卜師";
+	mes "要不要跟我來一場^0000FF塔羅牌的對決^000000";
+	mes "你我各抽一張牌，^FF0000直到先抽中死神的人就輸了^000000";
+	mes "敢不敢呢?";
+	next;
+	switch(select(Zeny>=(.zeny*10000)?"- 廢話少說了...對決吧!":"^888888- 廢話少說了...對決吧!^000000","- 規則是什麼?","- 離開")){
+		case 1:
+			if(.name$!=""){
+				mes "["+strnpcinfo(0)+"]";
+				mes "稍等我...";
+				mes "我正在跟 ^0000FF"+.name$+"^000000 決一死鬥呢!";
+				mes "死神絕對是找向他的..哈哈哈";
+				break;
+			}
+			mes "["+strnpcinfo(0)+"]";
+			mes "請付出要跟我對決的金額吧.(^FF0000單位:萬^000000)";
+			mes "輸入金額: ^0000FF"+.zeny[0]+" ~ "+.zeny[1]+" 萬z^000000.";
+			next;
+			input .@num;
+			if(.@num <= 0 || Zeny < .@num*10000 || .@num < .zeny[0] || .@num > .zeny[1] ){
+				mes "["+strnpcinfo(0)+"]";
+				mes "金額不足或是輸入錯誤.";
+				break;
+			}
+			set Zeny,Zeny-(.@num*10000);
+			mes "["+strnpcinfo(0)+"]";
+			mes "呵呵..這麼勇敢阿.";
+			mes "那就相信命運吧...!";
+			close2;
+			set .name$,strcharinfo(0);
+			while(isloggedin(getcharid(3))){
+				misceffect set(.@npc,rand(523,536));
+				specialeffect2 set(.@own,rand(523,536));
+				if(.@npc == 531 || .@own == 531) break;
+				sleep2 500;
+			}
+			if(.@npc == 531){
+				misceffect 372;
+				dispbottom "金錢增加: "+(.@num*2)+"萬z.";
+				set Zeny,Zeny+(.@num*20000);
+				npctalk "死神真是太眷顧我了...";
+			} else if(.@own == 531){
+				npctalk "哈哈哈...真是死神命運的捉弄阿!";
+				percentheal -100,0;
+			}
+			set .name$,"";
+			cutin "",255;
+			end;
+		case 2:
+			mes "["+strnpcinfo(0)+"]";
+			mes "你我各抽一張牌，^FF0000直到先抽中死神的人就輸了^000000";
+			mes "占卜一次需要的費用由你決定";
+			mes "贏的話你就能獲得雙倍的金額.";
+			mes "輸的話...費用我就拿走囉!";
+			break;
+		case 3:
+			mes "["+strnpcinfo(0)+"]";
+			mes "呵呵呵.命運的安排就交給上天吧!";
+			break;
+	}
+close2;
+cutin "",255;
+end;
+OnInit:
+	// 最小及最大的費用(單位:萬)
+	setarray .zeny,10,1000;
+	while(1){ delwaitingroom; waitingroom .name$==""?"無人對決.":"與"+.name$+"對決中.",0; sleep 1000; }
+	end;
+OnPCLogOutEvent:
+	if(.name$ == strcharinfo(0)) set .name$,"";
+	end;
+}

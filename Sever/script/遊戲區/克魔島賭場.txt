@@ -1,0 +1,2314 @@
+-	script	#HPhmd	-1,{
+
+OnInit:
+//-------------------------------------------------------------------------------------------------
+//
+//基本賭場設定
+//
+//-------------------------------------------------------------------------------------------------
+
+//代幣的兌換金額 ( 預設 5 P )
+	set $@TP,5;
+
+//代幣換為Zeny的金額 ( 預設 4 P )
+	set $@TPAT,4;
+
+//代幣的一次兌換最多數量 ( 預設 500 個 )
+	set $@AAN,500;
+
+//彩金換為 P 的比值 ( 預設 50 P )
+	set $@TPAT0,50;
+
+//NPC對話的ID
+	set $@keiname$,"賭場服務人員";
+
+//防外掛驗證
+	set $KIi,1;//最低驗證數字 ( 預設 1 )
+	set $KIo,99999;//最高驗證數字 ( 預設 99 )
+
+//-------------------------------------------------------------------------------------------------
+//
+// 62017 賭場代幣 
+//
+// 62018 賭場彩金
+//
+//-------------------------------------------------------------------------------------------------
+
+	set $@item01_Name$,getitemname($Litem01);
+	set $@item02_Name$,getitemname($Litem02);
+	set $@item03_Name$,getitemname($Litem03);
+	set $@item04_Name$,getitemname($Litem04);
+	set $@item05_Name$,getitemname($Litem05);
+	set $@item06_Name$,getitemname($Litem06);
+	set $@item07_Name$,getitemname($Litem07);
+	set $@item08_Name$,getitemname($Litem08);
+	set $@item09_Name$,getitemname($Litem09);
+	set $@item10_Name$,getitemname($Litem10);
+
+//-------------------------------------------------------------------------------------------------
+//
+//老虎機設定 
+//
+//-------------------------------------------------------------------------------------------------
+
+//押注的最少代幣數量 ( 預設 1 )
+	set $@TWI,1;
+
+//押注的最多代幣數量 ( 預設 30 )
+	set $@TWO,30;
+
+//兩個數字相同時所給予的代幣倍率 ( 預設 2 倍 )
+	set $@TBOK,2;
+
+//三個數字相同時所給予的代幣倍率 ( 預設 5 倍 )
+	set $@TBOF,5;
+
+//出現７７７時所給予的代幣倍率 ( 預設 10 倍 )
+	set $@TBOG,10;
+
+//是否開啟贏得遊戲後額外給予彩金 ( 0:關閉 1:開啟 )( 預設 1 )
+	set $@TYMA,1;
+
+//-------------------------------------------------------------------------------------------------
+//老虎機彩金設定 ( 開啟 額外給予彩金 時才須修改 )
+//-------------------------------------------------------------------------------------------------
+
+//兩個數字相同時額外給予的彩金數量 ( 預設 0 張 )
+	set $@TYMAA,0;
+
+//三個數字相同時額外給予的彩金數量 ( 預設 1 張 )
+	set $@TYMAB,1;
+
+//出現７７７時額外給予的彩金數量 ( 預設 3 張 )
+	set $@TYMAC,3;
+
+//-------------------------------------------------------------------------------------------------
+//
+//幸運輪設定 
+//
+//-------------------------------------------------------------------------------------------------
+
+//幸運輪玩一次所需代幣數量 ( 預設 6  )
+	set $@SINT,6;
+
+//指到數字1所領取的獎品
+	set $@gifta,0;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftaa,0;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字2所領取的獎品
+	set $@giftb,1;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftbb,5;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字3所領取的獎品
+	set $@giftc,1;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftcc,3;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字4所領取的獎品
+	set $@giftd,0;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftdd,0;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字5所領取的獎品
+	set $@gifte,1;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftee,12;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字6所領取的獎品
+	set $@giftf,0;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftff,0;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字7所領取的獎品
+	set $@giftg,2;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@giftgg,1;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//指到數字8所領取的獎品
+	set $@gifth,2;//( 0:沒獎品 1:領代幣 2:領彩金 )
+	set $@gifthh,2;//代幣or彩金數量 ( 上面設定 0 , 這項就設 0  )
+
+//-------------------------------------------------------------------------------------------------
+//
+//21點遊戲設定 
+//
+//-------------------------------------------------------------------------------------------------
+
+//最少下注代幣數量 ( 預設 5  )
+	set $@TO21X,5;
+
+//最多下注代幣數量 ( 預設 20  )
+	set $@TO21A,20;
+
+
+//-------------------------------------------------------------------------------------------------
+//
+//猜數字遊戲設定 
+//
+//-------------------------------------------------------------------------------------------------
+
+//猜數字遊戲[練習模式]所需代幣數量 ( 預設 1  )
+	set $@LTP,1;
+
+//猜數字遊戲[得分模式]所需代幣數量 ( 預設 3  )
+	set $@DATP,3;
+
+//得分模式彩金獎品數量 ( 預設 15  )
+	set $@YAMY,15;
+
+//得分模式刷新紀錄獎品數量 ( 預設 20  )
+	set $@YAMYA,20;
+
+//猜數字遊戲猜錯機會次數 ( 預設 6  )
+	set $@KT123,6;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+//NPC
+//
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+under_mark,54,101,5	script	賭場服務人員#2	845,{callfunc"HP_cmd";}
+
+under_mark,65,103,0	script	老虎機#1	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 65 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(1號檯)",0;
+	end;
+}
+
+under_mark,70,103,0	script	老虎機#2	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 70 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(2號檯)",0;
+	end;
+}
+
+under_mark,77,103,0	script	老虎機#3	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 77 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(3號檯)",0;
+	end;
+}
+
+under_mark,87,103,0	script	老虎機#4	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 87 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(4號檯)",0;
+	end;
+}
+
+under_mark,97,103,0	script	老虎機#5	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 97 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(5號檯)",0;
+	end;
+}
+
+under_mark,107,103,0	script	老虎機#6	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 107 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(6號檯)",0;
+	end;
+}
+
+under_mark,117,103,0	script	老虎機#7	563,{
+getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
+if (@mapx != 117 || @mapy != 102) goto Notplay; 
+callfunc"HP_amd";
+close;
+
+Notplay:
+	mes "你必須要做在機器前才可玩。";
+	close;
+
+OnInit:
+	waitingroom "老虎機(7號檯)",0;
+	end;
+}
+
+under_mark,128,101,5	script	幸運輪盤	563,{
+callfunc"SP_amd";
+close;
+
+OnInit:
+	waitingroom "　 幸運輪盤",0;
+	end;
+}
+
+under_mark,138,101,5	script	21點莊家	57,{
+callfunc"MP_amd";
+close;
+
+OnInit:
+	waitingroom "撲克牌21點遊戲",0;
+	end;
+}
+
+under_mark,145,101,3	script	猜數字人員	47,{
+callfunc"KP_amd";
+close;
+
+OnInit:
+	waitingroom "猜數字遊戲",0;
+	end;
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//服務人員
+//
+//-------------------------------------------------------------------------------------------------
+
+function	script	HP_cmd	{
+KGM:
+	mes "[" + $@keiname$ + "]";
+	mes " ^0088FF"+strcharinfo(0)+"^000000 您好，";
+	mes "歡迎來到 拉斯維加斯賭場 ，";
+	mes "需要什麼服務嗎？";
+	if( getgmlevel()>90 ){
+	next;
+	menu 
+	"^0000FF購買賭場代幣^000000",KAPE,
+	"^9900FF兌換獎品^000000",PRT,
+	"^009900代幣 換 P^000000",Lzeny,
+	"^CC00CC彩金 換 P^000000",LAzeny,
+	"***後台設置***",LGM,
+	"離開",AEND;
+	}
+	next;
+	menu
+	"^0000FF購買賭場代幣^000000",KAPE,
+	"^9900FF兌換獎品^000000",PRT,
+	"^009900代幣 換 P^000000",Lzeny,
+	"^CC00CC彩金 換 P^000000",LAzeny,
+	"離開",AEND;
+KAPE:
+	next;
+	mes "[" + $@keiname$ + "]";
+	mes "一個代幣要^FF0000 "+$@TP+" ^000000P，";
+	mes "您可選擇要換幾個，";
+	mes "或輸入 0 取消兌換，";
+	mes "一次最多可兌換"+$@AAN+"個代幣。";
+APKE:
+	next;
+	input .@num;
+	if( .@num <= 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "歡迎下次在來。";
+		close;
+	}
+	if( .@num > $@AAN ) {
+		mes "[" + $@keiname$ + "]";
+		mes "請輸入兌換範圍內 1 ～ "+$@AAN+" 個";
+		mes "或輸入 0 取消兌換。";
+		goto APKE;
+	}
+	if( (#CASHPOINTS) < .@num * $@TP ) {
+		mes "[" + $@keiname$ + "]";
+		mes "您的金錢不足兌換代幣。";
+		close;
+	}
+	if( checkweight(62017,.@num)==0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "代幣的重量過重，";
+		mes "請減輕您身上的重量。";
+		close;
+	}
+	set #CASHPOINTS,#CASHPOINTS - .@num * $@TP ;
+	getitem 62017, .@num ;
+	mes "[" + $@keiname$ + "]";
+	mes "祝您玩的愉快。";
+	dispbottom " 消費了 "+.@num * $@TP+" P，您帳號內 P 點為 [  " + #CASHPOINTS + "  ] 點 ";
+	close;
+LAzeny:
+	next;
+	mes "[" + $@keiname$ + "]";
+	mes "一個彩金："+ $@TPAT0 +" P";
+	mes "輸入 0 則取消兌換，";
+	mes "您要將多少個 彩金 換為 P 呢？";
+	next;
+	input .@num1D;
+	if( .@num1D <= 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "歡迎下次在來。";
+		close;
+	}
+	if(countitem(62018)< .@num1D ) {
+		mes "[" + $@keiname$ + "]";
+		mes "您沒有那麼多彩金。";
+		close;
+	}
+	set #CASHPOINTS,#CASHPOINTS + .@num1D * $@TPAT0 ;
+	set @AnyZeny, .@num1D * $@TPAT0 ;
+	delitem	62018, .@num1D ;
+	mes "[" + $@keiname$ + "]";
+	mes "您換了 ^FF0000 "+.@num1D+" ^000000個彩金，";
+	mes "取得了 ^0000FF "+@AnyZeny+" ^000000 P，";
+	dispbottom " 取得了 ^0000FF "+@AnyZeny+" ^000000 P ， 您帳號內 P 點為 [  " + #CASHPOINTS + "  ] 點 ";
+	close;
+PRT:
+	mes "[" + $@keiname$ + "]";
+	mes "您可以將您贏得的彩金，";
+	mes "找我兌換獎品，";
+	mes "請選擇您要兌換的獎品：";
+	next;
+	if( $Luka == 0 ){
+	mes "[" + $@keiname$ + "]";
+	mes "目前不開放兌換獎品。";
+	close;
+	}
+	if( $Luka == 1 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01;
+	}
+	if( $Luka == 2 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02;
+	}
+	if( $Luka == 3 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03;
+	}
+	if( $Luka == 4 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04;
+	}
+	if( $Luka == 5 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05;
+	}
+	if( $Luka == 6 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05,
+	"[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",L06;
+	}
+	if( $Luka == 7 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05,
+	"[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",L06,
+	"[^0000FF"+$@item07_Name$+"^000000]^9900FF"+$Litemd07+"個^000000 ＝ ^FF0000彩金"+$Lkb07+"張^000000 ",L07;
+	}
+	if( $Luka == 8 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05,
+	"[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",L06,
+	"[^0000FF"+$@item07_Name$+"^000000]^9900FF"+$Litemd07+"個^000000 ＝ ^FF0000彩金"+$Lkb07+"張^000000 ",L07,
+	"[^0000FF"+$@item08_Name$+"^000000]^9900FF"+$Litemd08+"個^000000 ＝ ^FF0000彩金"+$Lkb08+"張^000000 ",L08;
+	}
+	if( $Luka == 9 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05,
+	"[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",L06,
+	"[^0000FF"+$@item07_Name$+"^000000]^9900FF"+$Litemd07+"個^000000 ＝ ^FF0000彩金"+$Lkb07+"張^000000 ",L07,
+	"[^0000FF"+$@item08_Name$+"^000000]^9900FF"+$Litemd08+"個^000000 ＝ ^FF0000彩金"+$Lkb08+"張^000000 ",L08,
+	"[^0000FF"+$@item09_Name$+"^000000]^9900FF"+$Litemd09+"個^000000 ＝ ^FF0000彩金"+$Lkb09+"張^000000 ",L09;
+	}
+	if( $Luka == 10 ){
+	menu 
+	"[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",L01,
+	"[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",L02,
+	"[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",L03,
+	"[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",L04,
+	"[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",L05,
+	"[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",L06,
+	"[^0000FF"+$@item07_Name$+"^000000]^9900FF"+$Litemd07+"個^000000 ＝ ^FF0000彩金"+$Lkb07+"張^000000 ",L07,
+	"[^0000FF"+$@item08_Name$+"^000000]^9900FF"+$Litemd08+"個^000000 ＝ ^FF0000彩金"+$Lkb08+"張^000000 ",L08,
+	"[^0000FF"+$@item09_Name$+"^000000]^9900FF"+$Litemd09+"個^000000 ＝ ^FF0000彩金"+$Lkb09+"張^000000 ",L09,
+	"[^0000FF"+$@item10_Name$+"^000000]^9900FF"+$Litemd10+"個^000000 ＝ ^FF0000彩金"+$Lkb10+"張^000000 ",L10;
+	}
+L01:
+	if(countitem(62018)< $Lkb01 ) goto NOBAY;
+	delitem	62018, $Lkb01 ;
+	getitem $Litem01 , $Litemd01 ;
+	goto Theok;
+L02:
+	if(countitem(62018)< $Lkb02 ) goto NOBAY;
+	delitem	62018, $Lkb02 ;
+	getitem $Litem02 , $Litemd02 ;
+	goto Theok;
+L03:
+	if(countitem(62018)< $Lkb03 ) goto NOBAY;
+	delitem	62018, $Lkb03 ;
+	getitem $Litem03 , $Litemd03 ;
+	goto Theok;
+L04:
+	if(countitem(62018)< $Lkb04 ) goto NOBAY;
+	delitem	62018, $Lkb04 ;
+	getitem $Litem04 , $Litemd04 ;
+	goto Theok;
+L05:
+	if(countitem(62018)< $Lkb05 ) goto NOBAY;
+	delitem	62018, $Lkb05 ;
+	getitem $Litem05 , $Litemd05 ;
+	goto Theok;
+L06:
+	if(countitem(62018)< $Lkb06 ) goto NOBAY;
+	delitem	62018, $Lkb06 ;
+	getitem $Litem06 , $Litemd06 ;
+	goto Theok;
+L07:
+	if(countitem(62018)< $Lkb07 ) goto NOBAY;
+	delitem	62018, $Lkb07 ;
+	getitem $Litem07 , $Litemd07 ;
+	goto Theok;
+L08:
+	if(countitem(62018)< $Lkb08 ) goto NOBAY;
+	delitem	62018, $Lkb08 ;
+	getitem $Litem08 , $Litemd08 ;
+	goto Theok;
+L09:
+	if(countitem(62018)< $Lkb09 ) goto NOBAY;
+	delitem	62018, $Lkb09 ;
+	getitem $Litem09 , $Litemd09 ;
+	goto Theok;
+L10:
+	if(countitem(62018)< $Lkb10 ) goto NOBAY;
+	delitem	62018, $Lkb10 ;
+	getitem $Litem10 , $Litemd10 ;
+	goto Theok;
+Lzeny:
+	mes "[" + $@keiname$ + "]";
+	mes "一個代幣："+ $@TPAT +" P";
+	mes "輸入 0 則取消兌換，";
+	mes "您要將多少個代幣換為 P點 呢？";
+	next;
+	input .@num1;
+	if( .@num1 <= 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "歡迎下次在來。";
+		close;
+	}
+	if(countitem(62017)< .@num1 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "您沒有那麼多代幣。";
+		close;
+	}
+	set #CASHPOINTS,#CASHPOINTS + .@num1 * $@TPAT ;
+	set @AnyZeny, .@num1 * $@TPAT ;
+	delitem	62017, .@num1 ;
+	mes "[" + $@keiname$ + "]";
+	mes "您換了 "+.@num1+" 個代幣，";
+	mes "取得了 "+@AnyZeny+" P，";
+	dispbottom " 取得了 ^0000FF "+@AnyZeny+" ^000000 P ， 您帳號內 P 點為 [  " + #CASHPOINTS + "  ] 點 ";
+	close;
+
+Theok:
+	mes "[" + $@keiname$ + "]";
+	mes "兌換成功，祝您玩的愉快。";
+	close;
+
+NOBAY:
+	mes "[" + $@keiname$ + "]";
+	mes "您的彩金不足。";
+	close;
+AEND:
+	mes "[" + $@keiname$ + "]";
+	mes "祝您玩的愉快。";
+	close;
+
+LGM:
+	mes "[" + $@keiname$ + "]";
+	mes "獎品種類最多只能選擇10個";
+	mes "分別為獎品１～獎品１０";
+	mes "請選擇您要更變的項目：";
+	next;
+	menu 
+	"賭場防外掛驗證 [^0000FF "+$LKK+" ^000000]",LKK,
+	"玩幾次後才會驗證 [^0000FF "+$LKKK+" ^000000] 次",LKKK,
+	"可兌換的獎品種類 [^FF0000 "+$Luka+" ^000000] 種",-,
+	"獎品１號[^0000FF"+$@item01_Name$+"^000000]^9900FF"+$Litemd01+"個^000000 ＝ ^FF0000彩金"+$Lkb01+"張^000000 ",A01,
+	"獎品２號[^0000FF"+$@item02_Name$+"^000000]^9900FF"+$Litemd02+"個^000000 ＝ ^FF0000彩金"+$Lkb02+"張^000000 ",A02,
+	"獎品３號[^0000FF"+$@item03_Name$+"^000000]^9900FF"+$Litemd03+"個^000000 ＝ ^FF0000彩金"+$Lkb03+"張^000000 ",A03,
+	"獎品４號[^0000FF"+$@item04_Name$+"^000000]^9900FF"+$Litemd04+"個^000000 ＝ ^FF0000彩金"+$Lkb04+"張^000000 ",A04,
+	"獎品５號[^0000FF"+$@item05_Name$+"^000000]^9900FF"+$Litemd05+"個^000000 ＝ ^FF0000彩金"+$Lkb05+"張^000000 ",A05,
+	"獎品６號[^0000FF"+$@item06_Name$+"^000000]^9900FF"+$Litemd06+"個^000000 ＝ ^FF0000彩金"+$Lkb06+"張^000000 ",A06,
+	"獎品７號[^0000FF"+$@item07_Name$+"^000000]^9900FF"+$Litemd07+"個^000000 ＝ ^FF0000彩金"+$Lkb07+"張^000000 ",A07,
+	"獎品８號[^0000FF"+$@item08_Name$+"^000000]^9900FF"+$Litemd08+"個^000000 ＝ ^FF0000彩金"+$Lkb08+"張^000000 ",A08,
+	"獎品９號[^0000FF"+$@item09_Name$+"^000000]^9900FF"+$Litemd09+"個^000000 ＝ ^FF0000彩金"+$Lkb09+"張^000000 ",A09,
+	"獎品１０號[^0000FF"+$@item10_Name$+"^000000]^9900FF"+$Litemd10+"個^000000 ＝ ^FF0000彩金"+$Lkb10+"張^000000 ",A10,
+	"獎品重新設置",NOGM,
+	"結束後台控制",KGM;
+	mes "[" + $@keiname$ + "]";
+	mes "有效範圍１～１０";
+	mes "如不開放兌換請輸入 ０";
+	next;
+	input .@numLU;
+	if( .@numLU < 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "請輸入有效範圍。";
+		next;
+		goto LGM;
+	}
+	if( .@numLU > 10 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "請輸入有效範圍。";
+		next;
+		goto LGM;
+	}
+	set $Luka, .@numLU ;
+	mes "[" + $@keiname$ + "]";
+	mes "設定成功。";
+	next;
+	goto LGM;
+LKK:
+	if( $LKK == 0 ){
+		set $LKK,1;
+		goto LGM;
+	}
+	set $LKK,0;
+	goto LGM;
+LKKK:
+	next;
+	input .@LKKK;
+	set $LKKK, .@LKKK ;
+	goto LGM;
+
+NOGM:
+	mes "[" + $@keiname$ + "]";
+	mes "您確定要清空所有兌換資料？";
+	menu 
+	"確定",-,
+	"返回",LGM,
+	next;
+//清除獎品1
+	set $Litem01, 0 ;
+	set $Lkb01, 0 ;
+	set $Litemd01, 0 ;
+	set $@item01_Name$,getitemname($Litem01);
+//清除獎品2
+	set $Litem02, 0 ;
+	set $Lkb02, 0 ;
+	set $Litemd02, 0 ;
+	set $@item02_Name$,getitemname($Litem02);
+//清除獎品3
+	set $Litem03, 0 ;
+	set $Lkb03, 0 ;
+	set $Litemd03, 0 ;
+	set $@item03_Name$,getitemname($Litem03);
+//清除獎品4
+	set $Litem04, 0 ;
+	set $Lkb04, 0 ;
+	set $Litemd04, 0 ;
+	set $@item04_Name$,getitemname($Litem04);
+//清除獎品5
+	set $Litem05, 0 ;
+	set $Lkb05, 0 ;
+	set $Litemd05, 0 ;
+	set $@item05_Name$,getitemname($Litem05);
+//清除獎品6
+	set $Litem06, 0 ;
+	set $Lkb06, 0 ;
+	set $Litemd06, 0 ;
+	set $@item06_Name$,getitemname($Litem06);
+//清除獎品7
+	set $Litem07, 0 ;
+	set $Lkb07, 0 ;
+	set $Litemd07, 0 ;
+	set $@item07_Name$,getitemname($Litem07);
+//清除獎品8
+	set $Litem08, 0 ;
+	set $Lkb08, 0 ;
+	set $Litemd08, 0 ;
+	set $@item08_Name$,getitemname($Litem08);
+//清除獎品9
+	set $Litem09, 0 ;
+	set $Lkb09, 0 ;
+	set $Litemd09, 0 ;
+	set $@item09_Name$,getitemname($Litem09);
+//清除獎品10
+	set $Litem10, 0 ;
+	set $Lkb10, 0 ;
+	set $Litemd10, 0 ;
+	set $@item10_Name$,getitemname($Litem10);
+//清除獎品種類
+	set $Luka,0;
+	mes "[" + $@keiname$ + "]";
+	mes "資料已經清空，";
+	mes "您可重新設定。";
+	next;
+	goto LGM;
+A01:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品１號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA1;
+	if( .@numA1 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem01, .@numA1 ;
+	set $@item01_Name$,getitemname($Litem01);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１號設定介面";
+	mes "獎品名稱^0000FF"+$@item01_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA1A;
+	if( .@numA1A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb01, .@numA1A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１號設定介面";
+	mes "獎品名稱^0000FF"+$@item01_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb01+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA1B;
+	if( .@numA1B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd01, .@numA1B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１號設定介面";
+	mes "獎品名稱^0000FF"+$@item01_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb01+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd01+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A01;
+
+A02:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品２號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA2;
+	if( .@numA2 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem02, .@numA2 ;
+	set $@item02_Name$,getitemname($Litem02);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品２號設定介面";
+	mes "獎品名稱^0000FF"+$@item02_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA2A;
+	if( .@numA2A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb02, .@numA2A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品２號設定介面";
+	mes "獎品名稱^0000FF"+$@item02_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb02+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA2B;
+	if( .@numA2B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd02, .@numA2B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品２號設定介面";
+	mes "獎品名稱^0000FF"+$@item02_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb02+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd02+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A02;
+
+A03:
+
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品３號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA3;
+	if( .@numA3 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem03, .@numA3 ;
+	set $@item03_Name$,getitemname($Litem03);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品３號設定介面";
+	mes "獎品名稱^0000FF"+$@item03_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA3A;
+	if( .@numA3A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb03, .@numA3A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品３號設定介面";
+	mes "獎品名稱^0000FF"+$@item03_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb03+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA3B;
+	if( .@numA3B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd03, .@numA3B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品３號設定介面";
+	mes "獎品名稱^0000FF"+$@item03_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb03+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd03+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A03;
+A04:
+
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品４號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA4;
+	if( .@numA4 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem04, .@numA4 ;
+	set $@item04_Name$,getitemname($Litem04);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品４號設定介面";
+	mes "獎品名稱^0000FF"+$@item04_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA4A;
+	if( .@numA4A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb04, .@numA4A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品４號設定介面";
+	mes "獎品名稱^0000FF"+$@item04_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb04+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA4B;
+	if( .@numA4B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd04, .@numA4B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品４號設定介面";
+	mes "獎品名稱^0000FF"+$@item04_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb04+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd04+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A04;
+A05:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品５號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA5;
+	if( .@numA5 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem05, .@numA5 ;
+	set $@item05_Name$,getitemname($Litem05);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品５號設定介面";
+	mes "獎品名稱^0000FF"+$@item05_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA5A;
+	if( .@numA5A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb05, .@numA5A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品５號設定介面";
+	mes "獎品名稱^0000FF"+$@item05_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb05+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA5B;
+	if( .@numA5B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd05, .@numA5B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品５號設定介面";
+	mes "獎品名稱^0000FF"+$@item05_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb05+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd05+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A05;
+A06:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品６號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA6;
+	if( .@numA6 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem06, .@numA6 ;
+	set $@item06_Name$,getitemname($Litem06);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品６號設定介面";
+	mes "獎品名稱^0000FF"+$@item06_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA6A;
+	if( .@numA6A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb06, .@numA6A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品６號設定介面";
+	mes "獎品名稱^0000FF"+$@item06_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb06+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA6B;
+	if( .@numA6B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd06, .@numA6B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品６號設定介面";
+	mes "獎品名稱^0000FF"+$@item06_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb06+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd06+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A06;
+A07:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品７號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA7;
+	if( .@numA7 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem07, .@numA7 ;
+	set $@item07_Name$,getitemname($Litem07);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品７號設定介面";
+	mes "獎品名稱^0000FF"+$@item07_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA7A;
+	if( .@numA7A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb07, .@numA7A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品７號設定介面";
+	mes "獎品名稱^0000FF"+$@item07_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb07+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA7B;
+	if( .@numA7B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd07, .@numA7B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品７號設定介面";
+	mes "獎品名稱^0000FF"+$@item07_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb07+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd07+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A07;
+
+A08:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品８號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA8;
+	if( .@numA8 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem08, .@numA8 ;
+	set $@item08_Name$,getitemname($Litem08);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品８號設定介面";
+	mes "獎品名稱^0000FF"+$@item08_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA8A;
+	if( .@numA8A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb08, .@numA8A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品８號設定介面";
+	mes "獎品名稱^0000FF"+$@item08_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb08+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA8B;
+	if( .@numA8B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd08, .@numA8B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品８號設定介面";
+	mes "獎品名稱^0000FF"+$@item08_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb08+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd08+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A08;
+
+A09:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品９號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA9;
+	if( .@numA9 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem09, .@numA9 ;
+	set $@item09_Name$,getitemname($Litem09);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品９號設定介面";
+	mes "獎品名稱^0000FF"+$@item09_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA9A;
+	if( .@numA9A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb09, .@numA9A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品９號設定介面";
+	mes "獎品名稱^0000FF"+$@item09_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb09+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA9B;
+	if( .@numA9B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd09, .@numA9B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品９號設定介面";
+	mes "獎品名稱^0000FF"+$@item09_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb09+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd09+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A09;
+
+A10:
+	mes "[" + $@keiname$ + "]";
+	mes "^FF0000獎品１０號^000000設定介面";
+	mes "請輸入正確的^FF0000物品編號^000000";
+	mes "取消則輸入 0";
+	next;
+	input .@numA10;
+	if( .@numA10 == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litem10, .@numA10 ;
+	set $@item10_Name$,getitemname($Litem10);
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１０號設定介面";
+	mes "獎品名稱^0000FF"+$@item10_Name$+"^000000";
+	mes "接下來請輸入需要的彩金數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA10A;
+	if( .@numA10A == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Lkb10, .@numA10A ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１０號設定介面";
+	mes "獎品名稱^0000FF"+$@item10_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb10+"^000000 個";
+	mes "接下來請輸入獎品數量";
+	mes "取消則輸入 0";
+	next;
+	input .@numA10B;
+	if( .@numA10B == 0 ) {
+		mes "[" + $@keiname$ + "]";
+		mes "動作取消。";
+		next;
+		goto LGM;
+	}
+	set $Litemd10, .@numA10B ;
+	mes "[" + $@keiname$ + "]";
+	mes "獎品１０號設定介面";
+	mes "獎品名稱^0000FF"+$@item10_Name$+"^000000";
+	mes "需要彩金數量 ^0000FF"+$Lkb10+"^000000 個";
+	mes "獎品數量 ^0000FF"+$Litemd10+"^000000 個";
+	mes "確認無誤請按 [ 是 ]";
+	mes "回頭修改請按 [ 否 ]";
+	next;
+	menu 
+	"是",LGM,"否",A10;
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//老虎機
+//
+//-------------------------------------------------------------------------------------------------
+
+function	script	HP_amd	{
+if (Class == Job_Novice) goto nogo;
+		mes "╞════════╡";
+		mes "｜ ★ ｜ ★ ｜ ★ ｜老虎機遊戲";
+		mes "╞════════╡";
+		mes "　  拉斯維加斯賭場";
+		next;
+		menu	"開始遊戲",Lgame,"離開遊戲",Lover;
+Lgame:
+		if( $LKK == 1 ){
+			if( LKKGG >= $LKKK ){
+			next;
+			set .@TB,rand($KIi,$KIo);
+			mes "╞════════╡";
+			mes "｜ ★ ｜ ★ ｜ ★ ｜";
+			mes "╞════════╡";
+			mes "　  拉斯維加斯賭場";
+			mes "為了防止外掛洗機器";
+			mes "請簡單輸入^FF0000 "+ .@TB +" ^000000";
+			input .@GBS;
+			next;
+			if (.@GBS != .@TB ){
+				mes "╞════════╡";
+				mes "｜ ★ ｜ ★ ｜ ★ ｜輸入錯誤";
+				mes "╞════════╡請重新點取";
+				mes "　  拉斯維加斯賭場";
+				close;
+				}
+			}
+		}
+		if( $LKK == 1 ){
+			if( LKKGG >= $LKKK )set LKKGG,0;
+			set LKKGG,LKKGG+1;
+		}
+		mes "╞════════╡";
+		mes "｜ ★ ｜ ★ ｜ ★ ｜請先下注";
+		mes "╞════════╡"+$@TWI+"～"+$@TWO+"個代幣";
+		mes "　  拉斯維加斯賭場";
+		goto Lthegame;
+Lthegame:
+		next;
+		input @yz;
+		if (@yz < $@TWI) goto Lxx;
+		if (@yz > $@TWO) goto Lxx;
+		if (@yz > countitem(62017)) goto Lnocm;
+        	delitem 62017,@yz;
+		misceffect 100;
+		if( $LKK == 1 ){
+			set LKKGG,LKKGG+1;
+		}
+		next;
+		mes "╞════════╡";
+		mes "｜ ★ ｜ ★ ｜ ★ ｜下注完畢";
+		mes "╞════════╡按鍵";
+		mes "　  拉斯維加斯賭場";
+		next;
+		set @AA,rand(1,9);
+		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ ★ ｜ ★ ｜第一個[^FF0000"+@AA+"^000000]";
+		mes "╞════════╡按鍵";
+		mes "　  拉斯維加斯賭場";
+		specialeffect2 5;
+		next;
+		set @BB,rand(1,9);
+		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ ★ ｜第二個[^FF0000"+@BB+"^000000]";
+		mes "╞════════╡按鍵";
+		mes "　  拉斯維加斯賭場";
+		specialeffect2 5;
+		next;
+		set @CC,rand(1,9);
+		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜第三個[^FF0000"+@CC+"^000000]";
+		mes "╞════════╡";
+		mes "　  拉斯維加斯賭場";
+		specialeffect2 5;
+		next;
+		if (@AA == @BB) goto hiwin;
+		if (@AA == @CC) goto hiwin;
+		if (@BB == @CC) goto hiwin;
+		if (@AA != @BB || @BB != @CC) goto L_lost;
+hiwin:
+		if (@BB != @CC) goto Lhmwin;
+		if (@AA != @CC) goto Lhmwin;
+		if (@BB != @AA) goto Lhmwin;
+		if (@CC == 7 ) goto swin;
+		goto Landun;
+
+Lhmwin:	
+		getitem 62017,@yz * $@TBOK;
+		if( $@TYMA == 1 ) getitem 62018,$@TYMAA;
+		specialeffect2 131;
+		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOK+"^000000 ]倍";
+		mes "╞════════╡遊戲結束";
+		mes "　  拉斯維加斯賭場";
+		next;
+		menu	"繼續遊戲",Lgame,"不玩了",Lover;
+
+Landun:
+		getitem 62017,@yz * $@TBOF;
+		if( $@TYMA == 1 ) getitem 62018,$@TYMAB;
+		specialeffect2 810;
+		specialeffect2 811;
+		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOF+"^000000 ]倍";
+		mes "╞════════╡遊戲結束";
+		mes "　  拉斯維加斯賭場";
+		next;
+		menu	"繼續遊戲",Lgame,"不玩了",Lover;
+
+
+swin:		getitem 62017,@yz * $@TBOG;
+		if( $@TYMA == 1 ) getitem 62018,$@TYMAC;
+		specialeffect2 804;
+		specialeffect2 668;
+		specialeffect2 573;
+		specialeffect2 915;
+		mes "╞════════╡３個７！！";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOG+"^000000 ]倍";
+		mes "╞════════╡遊戲結束";
+		mes "　  拉斯維加斯賭場";
+		next;
+		menu	"繼續遊戲",Lgame,"不玩了",Lover;
+
+L_lost:		mes "╞════════╡";
+		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜您輸了!!";
+		mes "╞════════╡遊戲結束";
+		mes "　  拉斯維加斯賭場";
+		specialeffect2 817;
+		next;
+		menu	"繼續遊戲",Lgame,"不玩了",Lover;
+
+Lover:
+	mes "╞════════╡";
+	mes "｜ ★ ｜ ★ ｜ ★ ｜歡迎下次";
+	mes "╞════════╡再玩遊戲";
+	mes "　  拉斯維加斯賭場";
+	close;
+Lnocm:
+	mes "╞════════╡";
+	mes "｜ ★ ｜ ★ ｜ ★ ｜代幣不足";
+	mes "╞════════╡";
+	mes "　  拉斯維加斯賭場";
+	close;
+nogo:
+	mes "╞════════╡";
+	mes "｜ ★ ｜ ★ ｜ ★ ｜";
+	mes "╞════════╡";
+	mes "　  拉斯維加斯賭場";
+	mes " 小朋友禁止進入賭場";
+	close;
+
+Lxx:	mes "╞════════╡";
+	mes "｜ ★ ｜ ★ ｜ ★ ｜您未下注";
+	mes "╞════════╡遊戲結束";
+	mes "　  拉斯維加斯賭場";
+	close;
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//幸運輪
+//
+//-------------------------------------------------------------------------------------------------
+
+function	script	SP_amd	{
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　↑　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│一次需要"+$@SINT+"個代幣";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	menu "開始遊戲",L_checkmoney,"獎品說明",L_Gift,"離開",L_Close;
+	close;
+L_checkmoney:  
+		if( $LKK == 1 ){
+			if( LKKGG > $LKKK ){
+			next;
+			set .@TBA,rand($KIi,$KIo);
+			mes "┌─────┐";
+			mes "│8 　1 　2 │幸運輪";
+			mes "│　　↑　　│";
+			mes "│7 　。　3 │";
+			mes "│　　　　　│請簡單輸入^FF0000 "+ .@TBA +" ^000000";
+			mes "│6 　5　 4 │";
+			mes "└─────┘";
+			input .@GBSA;
+			if (.@GBSA != .@TBA ){
+				mes "┌─────┐";
+				mes "│8 　1 　2 │幸運輪";
+				mes "│　　↑　　│";
+				mes "│7 　。　3 │輸入錯誤";
+				mes "│　　　　　│請重新點取";
+				mes "│6 　5　 4 │";
+				mes "└─────┘";
+				close;
+				}
+			}
+		}
+		next;
+		if( $LKK == 1 ){
+			if( LKKGG > $LKKK )set LKKGG,0;
+			set LKKGG,LKKGG+1;
+		}
+	if(countitem(62017)<$@SINT) goto nomoney;
+	delitem 62017,$@SINT;
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　↑　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 923;
+		misceffect 781;
+		misceffect 782;
+		misceffect 770;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 500 && @number>0) goto resulta;
+	if (@number <= 1000 && @number>500) goto resultb;
+	close;
+resulta:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　↑　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultb;
+	if (@number <= 1000 && @number>800) goto gifta;
+	close;
+resultb:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　↗　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultc;
+	if (@number <= 1000 && @number>800) goto giftb;
+	close;
+resultc:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。→3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		//misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultd;
+	if (@number <= 1000 && @number>800) goto giftc;
+	close;
+resultd:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　↘　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 990 && @number>0) goto resulte;
+	if (@number <= 1000 && @number>990) goto giftd;
+	close;
+resulte:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　　↓　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		//misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultf;
+	if (@number <= 1000 && @number>800) goto gifte;
+	close;
+resultf:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　↙　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 950 && @number>0) goto resultg;
+	if (@number <= 1000 && @number>950) goto giftf;
+	close;
+resultg:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 ←。  3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		//misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resulth;
+	if (@number <= 1000 && @number>800) goto giftg;
+	close;
+resulth:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　↖　　　│";
+	mes "│7 　。  3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+		misceffect 786;
+		misceffect 773;
+	set @number,rand(1000);
+	if (@number <= 995 && @number>0) goto resulta;
+	if (@number <= 1000 && @number>995) goto gifth;
+	close;
+gifta:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　↑　　│";
+	mes "│7 　。  3 │數字１";
+	mes "│　　　　　│";
+	if( $@gifta == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@gifta == 1 ) { mes "│6 　5　 4 │代幣"+$@giftaa+"個"; }
+	if( $@gifta == 2 ) { mes "│6 　5　 4 │彩金"+$@giftaa+"個"; }
+	mes "└─────┘";
+	if( $@gifta == 1 ) getitem 62017,$@giftaa;
+	if( $@gifta == 2 ) getitem 62018,$@giftaa;
+	close;
+giftb:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　↗　│";
+	mes "│7 　。　3 │數字２";
+	mes "│　　　　　│";
+	if( $@giftb == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@giftb == 1 ) { mes "│6 　5　 4 │代幣"+$@giftbb+"個"; }
+	if( $@giftb == 2 ) { mes "│6 　5　 4 │彩金"+$@giftbb+"個"; }
+	mes "└─────┘";
+	if( $@giftb == 1 ) getitem 62017,$@giftbb;
+	if( $@giftb == 2 ) getitem 62018,$@giftbb;
+	close;
+giftc:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。→3 │數字３";
+	mes "│　　　　　│";
+	if( $@giftc == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@giftc == 1 ) { mes "│6 　5　 4 │代幣"+$@giftcc+"個"; }
+	if( $@giftc == 2 ) { mes "│6 　5　 4 │彩金"+$@giftcc+"個"; }
+	mes "└─────┘";
+	if( $@giftc == 1 ) getitem 62017,$@giftcc;
+	if( $@giftc == 2 ) getitem 62018,$@giftcc;
+	close;
+giftd:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │數字４";
+	mes "│　　　↘　│";
+	if( $@giftd == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@giftd == 1 ) { mes "│6 　5　 4 │代幣"+$@giftdd+"個"; }
+	if( $@giftd == 2 ) { mes "│6 　5　 4 │彩金"+$@giftdd+"個"; }
+	mes "└─────┘";
+	if( $@giftd == 1 ) getitem 62017,$@giftdd;
+	if( $@giftd == 2 ) getitem 62018,$@giftdd;
+	close;
+gifte:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │數字５";
+	mes "│　　↓　　│";
+	if( $@gifte == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@gifte == 1 ) { mes "│6 　5　 4 │代幣"+$@giftee+"個"; }
+	if( $@gifte == 2 ) { mes "│6 　5　 4 │彩金"+$@giftee+"個"; }
+	mes "└─────┘";
+	if( $@gifte == 1 ) getitem 62017,$@giftee;
+	if( $@gifte == 2 ) getitem 62018,$@giftee;
+	close;
+giftf:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │數字６";
+	mes "│　↙　　　│";
+	if( $@giftf == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@giftf == 1 ) { mes "│6 　5　 4 │代幣"+$@giftff+"個"; }
+	if( $@giftf == 2 ) { mes "│6 　5　 4 │彩金"+$@giftff+"個"; }
+	mes "└─────┘";
+	if( $@giftf == 1 ) getitem 62017,$@giftff;
+	if( $@giftf == 2 ) getitem 62018,$@giftff;
+	close;
+giftg:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　　　　│";
+	mes "│7 ←。  3 │數字７";
+	mes "│　　　　　│";
+	if( $@giftg == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@giftg == 1 ) { mes "│6 　5　 4 │代幣"+$@giftgg+"個"; }
+	if( $@giftg == 2 ) { mes "│6 　5　 4 │彩金"+$@giftgg+"個"; }
+	mes "└─────┘";
+	if( $@giftg == 1 ) getitem 62017,$@giftgg;
+	if( $@giftg == 2 ) getitem 62018,$@giftgg;
+	close;
+gifth:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　↖　　　│";
+	mes "│7 　。  3 │數字８";
+	mes "│　　　　　│";
+	if( $@gifth == 0 ) { mes "│6 　5　 4 │沒有獎品"; }
+	if( $@gifth == 1 ) { mes "│6 　5　 4 │代幣"+$@gifthh+"個"; }
+	if( $@gifth == 2 ) { mes "│6 　5　 4 │彩金"+$@gifthh+"個"; }
+	mes "└─────┘";
+	if( $@gifth == 1 ) getitem 62017,$@gifthh;
+	if( $@gifth == 2 ) getitem 62018,$@gifthh;
+	close;
+nomoney: 
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　  ↑　　│";
+	mes "│7 　。  3 │";
+	mes "│　　　　　│代幣不夠";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	close; 
+L_Gift:
+	if( $@gifta == 0 ) { mes "數字1：　沒有獎品"; }
+	if( $@gifta == 1 ) { mes "數字1：　賭場代幣 ^FF0000"+$@giftaa+"^000000 個"; }
+	if( $@gifta == 2 ) { mes "數字1：　賭場彩金 ^0000FF"+$@giftaa+"^000000 個"; }
+
+	if( $@giftb == 0 ) { mes "數字2：　沒有獎品"; }
+	if( $@giftb == 1 ) { mes "數字2：　賭場代幣 ^FF0000"+$@giftbb+"^000000 個"; }
+	if( $@giftb == 2 ) { mes "數字2：　賭場彩金 ^0000FF"+$@giftbb+"^000000 個"; }
+
+	if( $@giftc == 0 ) { mes "數字3：　沒有獎品"; }
+	if( $@giftc == 1 ) { mes "數字3：　賭場代幣 ^FF0000"+$@giftcc+"^000000 個"; }
+	if( $@giftc == 2 ) { mes "數字3：　賭場彩金 ^0000FF"+$@giftcc+"^000000 個"; }
+
+	if( $@giftd == 0 ) { mes "數字4：　沒有獎品"; }
+	if( $@giftd == 1 ) { mes "數字4：　賭場代幣 ^FF0000"+$@giftdd+"^000000 個"; }
+	if( $@giftd == 2 ) { mes "數字4：　賭場彩金 ^0000FF"+$@giftdd+"^000000 個"; }
+
+	if( $@gifte == 0 ) { mes "數字5：　沒有獎品"; }
+	if( $@gifte == 1 ) { mes "數字5：　賭場代幣 ^FF0000"+$@giftee+"^000000 個"; }
+	if( $@gifte == 2 ) { mes "數字5：　賭場彩金 ^0000FF"+$@giftee+"^000000 個"; }
+
+	if( $@giftf == 0 ) { mes "數字6：　沒有獎品"; }
+	if( $@giftf == 1 ) { mes "數字6：　賭場代幣 ^FF0000"+$@giftff+"^000000 個"; }
+	if( $@giftf == 2 ) { mes "數字6：　賭場彩金 ^0000FF"+$@giftff+"^000000 個"; }
+
+	if( $@giftg == 0 ) { mes "數字7：　沒有獎品"; }
+	if( $@giftg == 1 ) { mes "數字7：　賭場代幣 ^FF0000"+$@giftgg+"^000000 個"; }
+	if( $@giftg == 2 ) { mes "數字7：　賭場彩金 ^0000FF"+$@giftgg+"^000000 個"; }
+
+	if( $@gifth == 0 ) { mes "數字8：　沒有獎品"; }
+	if( $@gifth == 1 ) { mes "數字8：　賭場代幣 ^FF0000"+$@gifthh+"^000000 個"; }
+	if( $@gifth == 2 ) { mes "數字8：　賭場彩金 ^0000FF"+$@gifthh+"^000000 個"; }
+	close; 
+L_Close:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │幸運輪";
+	mes "│　　↑　　│";
+	mes "│7 　。  3 │";
+	mes "│　　　　　│歡迎再來";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	close; 
+
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//二十一點 ( 作者 KEI )
+//
+//-------------------------------------------------------------------------------------------------
+
+function	script	MP_amd	{
+
+	mes "[21點莊家]";
+	mes "你好! 想不想來玩一把21點?";
+	M_Menu:
+	next;
+	menu "遊戲規則是怎麼樣的?",M_0, "我要玩.",L_Play, "不，謝了.",M_End;
+
+	M_0:
+		mes "[21點莊家]";
+		mes "你想要瞭解哪一方面的?";
+		sM_Menu0:
+		next;
+		menu "基礎知識。",sM_0a, "勝負規則",sM_0b, "'加倍'。",sM_0c,
+			"'Ａ'的值。",sM_0d, "沒什麼。",M_Menu;
+
+		sM_0a:
+			mes "[21點莊家]";
+			mes "21點就是一個紙牌遊戲，這遊戲的目標就是取得21點或者是更接近21點，當然不能超過21點。";
+			next;
+			mes "[21點莊家]";
+			mes "開始遊戲前，玩家必須下注。一旦下注，莊家和玩家每人將發到2張牌。";
+			mes "根據你手上的牌你可以選擇 ^5533FF'停牌'^000000,或者^5533FF'要牌'^000000。";
+			next;
+			mes "[21點莊家]";
+			mes "當你選擇'停牌',就是告訴莊家你需要再加任何牌了。";
+			mes "然後莊家選擇是否要牌。 ";
+			mes "你必須至少達到^FF3355 13點 ^000000才可以停牌。";
+			mes "莊家必須要到^FF3355 17點或者17點以上 ^000000才可以停牌。";
+			next;
+			mes "[21點莊家]";
+			mes "當你選擇'要牌',就是告訴莊家你還要加一張牌。";
+			mes "你可以通過要牌來增加你的點數.";
+			mes "只要你沒超過^FF3355 21 ^000000點，你就一直可以要牌。";
+			goto sM_Menu0;
+		sM_0b:
+			mes "[21點莊家]";
+			mes "這裡有幾條勝負規則：";
+			next;
+			mes "[21點莊家]";
+			mes "1.) 在21點最後1回合中：如果你的點數大於莊家的，那麼你就贏了。反之，如果你的點數小於莊家的，那麼你就輸了。";
+			next;
+			mes "[21點莊家]";
+			mes "2.) 如果你要了1張牌而使你的點數超過了21點，那麼你就輸掉這局。這個就叫作^5533FF'爆牌'^000000。";
+			mes "如果莊家爆牌，那麼你就贏得了這局。";
+			next;
+			mes "[21點莊家]";
+			mes "3.) 如果你拿的頭2張牌就21點了，那麼你就贏得了這局。";
+			mes "當你頭2張拿到1張'Ａ'和1張值為10點的牌,這個就叫作^5533FF'Black Jack'^000000牌型。";
+			mes "當莊家拿到'Black Jack',那麼就是莊家贏了。";
+			next;
+			mes "[21點莊家]";
+			mes "4.) 除了勝負，還有就是平局。";
+			mes "當你和莊家都是相同的點數時，這種就是沒有勝負沒有輸贏的平局";
+			next;
+			mes "[21點莊家]";
+			mes "這個就叫你和莊家打成^5533FF'平手'^000000。";
+			mes "同樣，你和莊家同時拿到'Black Jack'也是這種情況。";
+			goto sM_Menu0;
+		sM_0c:
+			mes "[21點莊家]";
+			mes "'加倍'就是把你的下注加倍,但是這樣你就只能再要1張牌。";
+			mes "這個只能在每局的第一回合中使用。";
+			next;
+			mes "[21點莊家]";
+			mes "舉1個加倍很有用的例子就是當你一開始的2張牌加起來是11點時。";
+			mes "拿1下張牌，你很有可能得到21點或者20點。";
+			mes "這個就是加倍的好時機。";
+			goto sM_Menu0;
+		sM_0d:
+			mes "[21點莊家]";
+			mes "'Ａ'是在21點中唯一一張特殊的牌，因為它有2個值。";
+			mes "'Ａ'可以當作11點也可以當作1點。";
+			mes "舉例來說，你拿了1張4和1張A,那麼你得到的點數可以說是15點，也可以說是5點。";
+			next;
+			mes "[21點莊家]";
+			mes "如果你選擇停牌，那麼A將自動被認為是11點，你得到總點數為15點";
+			next;
+			mes "[21點莊家]";
+			mes "如果你選擇要牌然後得到了1張9，那麼A將自動作為1點，你的總點數為14點。";
+			mes "如果A作為11點來算，你的點數就超過21點了，將馬上輸掉這個比賽";
+			next;
+			mes "[21點莊家]";
+			mes "因為A在遊戲裡可以有2個不同的值，";
+			mes "所以這是1張非常厲害的牌";
+			goto sM_Menu0;
+	M_End:
+		mes "[21點莊家]";
+		mes "無論何時都歡迎您的到來";
+		close;
+
+//================
+L_Play:
+	mes "[21點莊家]";
+	mes "請你下注...";
+	mes "最少"+$@TO21X+"個代幣，最多"+$@TO21A+"個";
+	mes "您必須在比賽中 [加倍]";
+	mes "賭注才會加倍，但如果您贏了";
+	mes "您就可以取得賭注x2的代幣";
+	mes"^FF0000嚴重注意: ^000000";	
+	mes"^FF0000顧客想加倍的時候 ^000000";
+	mes"^FF0000請留意自己有沒有那麼多代幣 ^000000";
+	mes"^FF0000一旦發現代幣不足將會結束21點 ^000000";
+	mes"^FF0000且不退還任何代幣 ^000000";
+	next;
+	input @bet;
+		if (@bet < $@TO21X) goto sL_NotEnuf;
+		if (@bet > $@TO21A) goto sL_NotEnuf;
+		if (@bet > countitem(62017)) goto kei_nomoney;
+
+		delitem 62017, @bet;
+		goto L_Cont0;
+
+		sL_NotEnuf:
+			mes "[21點莊家]";
+			mes "請下注";
+			close;
+
+		kei_nomoney:
+			mes "[21點莊家]";
+			mes "你沒有這麼多代幣吧...";
+			close;
+
+	L_Cont0:
+	mes "(已有的牌)";
+	next;
+	deletearray $@card[0],13;
+	set @dealerTurn, 0;
+	set @numP, 0;
+	set @numD, 0;
+	set @pAce, 0;
+	set @dAce, 0;
+	callsub sF_GetCards, @numP, @playCard[@numP], @playCard$[@numP], @pAce;
+	callsub sF_GetCards, @numP, @playCard[@numP], @playCard$[@numP], @pAce;
+	callsub sF_GetCards, @numD, @dealCard[@numD], @dealCard$[@numD], @dAce;
+	callsub sF_GetCards, @numD, @dealCard[@numD], @dealCard$[@numD], @dAce;
+
+//==============
+L_Start:
+	callsub sF_GetTot;
+
+	mes "- 這個是 ^FF5533莊家^000000 的牌:";
+	if (@numD==2) callsub sF_D2cards;
+	if (@numD==3) callsub sF_D3cards;
+	if (@numD==4) callsub sF_D4cards;
+	if (@numD==5) callsub sF_D5cards;
+	mes "   莊家有: ^FF5533"+@dealTot+"^000000";
+	mes " ";
+	mes "- 這個是 ^5533FF你^000000 的牌:";
+	if (@numP==2) callsub sF_P2cards;
+	if (@numP==3) callsub sF_P3cards;
+	if (@numP==4) callsub sF_P4cards;
+	if (@numP==5) callsub sF_P5cards;
+	if(@pAce != 1 || @playTot == 21) mes "   你有: ^5533FF" +@playTot+ "^000000";
+	if(@pAce == 1 && @playTot != 21) mes "   你有: ^5533FF" +@playTot+ "^000000, 或者 ^5533FF" +(@playTot-10)+ "^000000";
+	next;
+	if(@playTot==21 && @dealTot==21) goto sL_Push;
+	if(@numP==2 && @playTot == 21) goto sL_Win;
+	if(@numD==2 && @dealTot == 21) goto sL_Lose;
+	if(@playTot > 21) goto sL_Lose;
+	if(@dealTot > 21) goto sL_Win;
+	if(@numP==2 && @dealerTurn==0) menu "點擊(要牌)",M_Hit, "停牌",M_Stay, "加倍",M_Double;
+	if(@dealerTurn == 0) menu "點擊(要牌)",M_Hit, "停牌",M_Stay;
+
+	M_Stay:
+		mes "[21點莊家]";
+		if(@playTot < 13) goto sL_PlayToLow;
+		if(@dealTot > 16) mes "莊家停牌了.";
+		if(@dealTot > 16 || @numD == 5) goto L_Check;
+		mes "莊家要牌...";
+		next;
+		callsub sF_GetCards, @numD, @dealCard[@numD], @dealCard$[@numD], @dAce;
+		set @dealerTurn, 1;
+		goto L_Start;
+
+		sL_PlayToLow:
+			mes "你的點數太低不能停牌，你必須要牌";
+			next;
+			goto M_Hit;
+
+	M_Hit:
+		if(@numP == 5) goto M_Stay;
+		callsub sF_GetCards, @numP, @playCard[@numP], @playCard$[@numP], @pAce;
+		goto L_Start;
+	M_Double:
+		mes "[21點莊家]";
+		mes "玩家選擇了加倍. 你現在的賭注將加倍，";
+		mes "只能再給你加1張牌";
+		next;
+		if (countitem(62017) < @bet ) goto kei_nomoney;
+		delitem 62017, @bet;
+		set @dealerTurn, 1;
+		set @bet, @bet*3;
+		callsub sF_GetCards, @numP, @playCard[@numP], @playCard$[@numP], @pAce;
+		goto L_Start;
+
+//=============
+L_Check:
+	next;
+	if(@playTot < @dealTot) goto sL_Lose;
+	if(@playTot == @dealTot) goto sL_Push;
+
+	sL_Win:
+		mes "[21點莊家]";
+		mes "祝賀你, 你贏了!";
+		misceffect 565;
+		misceffect 566;
+		misceffect 567;
+		next;
+		getitem 62017, @bet*2;
+		goto L_Play;
+	sL_Lose:
+		mes "[21點莊家]";
+		mes "你輸了";
+		specialeffect2 565;
+		specialeffect2 566;
+		specialeffect2 567;
+		delitem 62017, @bet;
+		next;
+		goto L_Play;
+	sL_Push:
+		mes "[21點莊家]";
+		mes "這是和局，你和莊家平手。";
+		misceffect 618;
+		specialeffect2 618;
+		getitem 62017, @bet;
+		next;
+		goto L_Play;
+
+
+//==================================
+// Sub function for dealing/pulling the cards
+sF_GetCards:
+	set @rnd, rand(1,13);
+	if($@card[@rnd] == 4) goto sF_GetCards;
+	set $@card[@rnd], $@card[@rnd] + 1;
+	set getarg(1), @rnd;
+	if(getarg(1) > 10) set getarg(1), 10;
+	if(getarg(1) == 1 && getarg(3) < 1) set getarg(1), 11;
+	if(getarg(1) == 11) set getarg(3), 1;
+	set getarg(2), " " + getarg(1) + " ";
+	if(@rnd == 10) set getarg(2), getarg(1);
+	if(@rnd == 1) set getarg(2), " A ";
+	if(@rnd == 11) set getarg(2), " J ";
+	if(@rnd == 12) set getarg(2), " Q ";
+	if(@rnd == 13) set getarg(2), " K ";
+	set getarg(0), getarg(0) + 1;
+	return;
+
+//==================================
+// Sub function for getting the total score for each hand
+sF_GetTot:
+	set @i, 0;
+	set @dealTot, 0;
+	set @playTot, 0;
+
+	GetDealTot:
+		set @dealTot, @dealTot + @dealCard[@i];
+		set @i, @i + 1;
+		if(@i < @numD) goto GetDealTot;
+		if(@dAce == 1 && @dealTot > 21) set @dealTot, @dealTot - 10;
+		set @i, 0;
+	GetPlayTot:
+		set @playTot, @playTot + @playCard[@i];
+		set @i, @i + 1;
+		if(@i < @numP) goto GetPlayTot;
+		if(@pAce == 1 && @playTot > 21) set @pAce, 2;
+		if(@pAce > 0 && @playTot > 21) set @playTot, @playTot - 10;
+	return;
+
+//=======================================
+// Sub function for displaying the Cards
+sF_D2cards:
+	mes "    .-----.   .-----. ";
+	mes "    | "+@dealCard$[0]+" |   | "+@dealCard$[1]+" | ";
+	mes "    '-----'   '-----' ";
+	return;
+sF_P2cards:
+	mes "    .-----.   .-----. ";
+	mes "    | "+@playCard$[0]+" |   | "+@playCard$[1]+" | ";
+	mes "    '-----'   '-----' ";
+	return;
+sF_D3cards:
+	mes "    .-----.   .-----.   .-----. ";
+	mes "    | "+@dealCard$[0]+" |   | "+@dealCard$[1]+" |   | "+@dealCard$[2]+" | ";
+	mes "    '-----'   '-----'    '-----' ";
+	return;
+sF_P3cards:
+	mes "    .-----.   .-----.   .-----. ";
+	mes "    | "+@playCard$[0]+" |   | "+@playCard$[1]+" |   | "+@playCard$[2]+" | ";
+	mes "    '-----'   '-----'    '-----' ";
+	return;
+sF_D4cards:
+	mes " .-----.  .-----.  .-----. ";
+	mes " | "+@dealCard$[0]+" |  | "+@dealCard$[1]+" |  | "+@dealCard$[2]+" | ";
+	mes " '-----'  '-----'   '-----' ";
+	mes "    .-----.  ";
+	mes "    | "+@dealCard$[3]+" |";
+	mes "    '-----'   ";
+	return;
+sF_P4cards:
+	mes " .-----.  .-----.  .-----. ";
+	mes " | "+@playCard$[0]+" |  | "+@playCard$[1]+" |  | "+@playCard$[2]+" |";
+	mes " '-----'  '-----'   '-----' ";
+	mes "    .-----.  ";
+	mes "    | "+@playCard$[3]+" |";
+	mes "    '-----'   ";
+	return;
+sF_D5cards:
+	mes " .-----.  .-----.  .-----. ";
+	mes " | "+@dealCard$[0]+" |  | "+@dealCard$[1]+" |  | "+@dealCard$[2]+" | ";
+	mes " '-----'  '-----'   '-----' ";
+	mes "    .-----.   .-----. ";
+	mes "    | "+@dealCard$[3]+" |   | "+@dealCard$[4]+" | ";
+	mes "    '-----'   '-----' ";
+	return;
+sF_P5cards:
+	mes " .-----.  .-----.  .-----. ";
+	mes " | "+@playCard$[0]+" |  | "+@playCard$[1]+" |  | "+@playCard$[2]+" | ";
+	mes " '-----'  '-----'   '-----' ";
+	mes "    .-----.   .-----. ";
+	mes "    | "+@playCard$[3]+" |   | "+@playCard$[4]+" | ";
+	mes "    '-----'   '-----' ";
+	return;
+
+Oninit:
+	waitingroom "玩21點的快來!",0;
+	end;
+
+}
+
+//-------------------------------------------------------------------------------------------------
+//
+//猜數字遊戲 ( 作者 likes080 )
+//
+//-------------------------------------------------------------------------------------------------
+
+function	script	KP_amd	{
+        mes "[猜數字人員]";
+        mes "您好，歡迎來到拉斯維加斯賭場";
+        mes "我是3位猜數字人員";
+        mes "^FF0000＊選擇模式後則不退代幣＊^000000";
+        next;
+        mes "[猜數字人員]";
+        mes "請你你要不要跟我玩猜數字遊戲呢?";
+        mes "每局^FF0000 "+$@DATP+" ^000000個賭場代幣";
+        mes "每勝出1次都有^FF0000 "+$@YAMY+" ^000000個彩金";
+        mes "刷新最高紀錄可得^0000FF "+$@YAMYA+" ^000000個彩金";
+        mes "^FF0000＊選擇模式後則不退代幣＊^000000";
+        next;
+        switch (select("規則如何?","我要玩猜數字遊戲(練習模式)","我要玩猜數字遊戲(得分模式)","觀看目前最佳的紀錄","取消")) {
+        case 1:
+                mes "[猜數字人員]";
+                mes "規則很簡單，你只要猜中我想的數字即可";
+                mes "，你說很難啊? 啊哈哈哈!";
+                mes "當然那數字的規則是有規定的";
+                next;
+                mes "[猜數字人員]";
+                mes "首先是三位數字，並排除使用0號，另外";
+                mes "數字不能重複，舉例來說像112或是107等";
+                mes "數字是不行的";
+                next;
+                mes "[猜數字人員]";
+                mes "當你任意說出數字時，我會核對與我想的";
+                mes "數字，猜中幾個後再把結果告訴你的";
+                next;
+                mes "[猜數字人員]";
+                mes "例如我想的數字是168，而你說出678時，";
+                mes "我會告訴你位置數字猜對的有1個，數字";
+                mes "猜中的也僅有一個";
+                next;
+                mes "[猜數字人員]";
+                mes "這樣你能瞭解嗎";
+                next;
+                mes "[猜數字人員]";
+                mes "請先到練習模式練習後，再去挑戰得分模";
+                mes "式吧，得分模式是考驗你猜中的速度能有";
+                mes "多快之比賽模式";
+                next;
+                mes "[猜數字人員]";
+                mes "因為你能說出數字的機會只有"+$@KT123+"次，所以";
+                mes "這是要求你慎重又迅速判斷力的模式，如";
+                mes "果打破了現有的紀錄，就會把你的名字和";
+                mes "紀錄顯示上去的，請你挑戰看看吧!";
+                close;
+        case 2:
+                mes "[猜數字人員]";
+                mes "好的，先扣除你練習的費用"+$@LTP+"個代幣";
+	next;
+	if(countitem(62017)<$@LTP) goto nomoney;
+	next;
+	delitem 62017,$@LTP;
+                set @chance,-1;        // 練習模式是無限制
+                break;
+        case 3:
+                mes "[猜數字人員]";
+                mes "好的，先扣除你費用"+$@DATP+"個代幣";
+	next;
+	if(countitem(62017)<$@DATP) goto nomoney;
+	next;
+	delitem 62017,$@DATP;
+                set @chance,$@KT123;
+                set @start,gettimetick(0);
+                break;
+        case 4:
+                mes "[猜數字人員]";
+                mes "目前最高紀錄保持人是^FF3152"+ $NumbersName$ +"^000000先生/小姐";
+                mes "所創立的^FF3152"+ ($NumbersTime/60000) +"分"+ ($NumbersTime/1000) + "秒^000000 呢";
+                close;
+        case 5:
+                mes "[猜數字人員]";
+                mes "唉呀，很可惜!";
+                mes "歡迎下次再來吧!";
+                close;
+        }
+        mes "[猜數字人員]";
+        mes "那麼要開始了，請你猜猜我想的數字吧，";
+        mes "若你想要取消遊戲時，";
+        mes "請輸入1000以上的數字即可";
+        mes "^FF0000＊注意取消不會退代幣＊^000000";
+        function GetCount;
+        // 解答的3位數（@ans排行）隨機抽樣生成
+        setarray @list,1,2,3,4,5,6,7,8,9;
+        for(set @i,0; @i<3; set @i,@i+1) {
+                set @r,rand(9-@i);
+                set @ans[@i],@list[@r];
+                deletearray @list[@r],1;
+        }
+        while(1) {
+                next;
+                set @match,0;        // 格式化必要
+                set @shift,0;
+                input @temp;
+                if(@temp < 0 || @temp >= 1000) {
+                        mes "[猜數字人員]";
+                        mes "已經取消遊戲了!";
+                        close;
+                }
+                // 橫列分解、658 -> @num[0]=6, @num[1]=5, @num[2]=8
+                setarray @num,@temp/100,@temp%100/10,@temp%100%10;
+                if(@num[0] == 0 || @num[1] == 0 || @num[2] == 0 ||
+                   @num[0] == @num[1] || @num[1] == @num[2] || @num[0] == @num[2]) {
+                        mes "[猜數字人員]";
+                        mes "若你輸入0或是重複的數字時是無效的，";
+                        mes "請重新輸入數字";
+                        continue;
+                }
+                mes "[猜數字人員]";
+                mes "^FF3152"+ strcharinfo(0) +"^000000先生/小姐所輸入的數字是";
+                mes "^3152FF"+ @temp +"^000000 呢，";
+                mes "告訴你結果是";
+                next;
+                if(@num[0] == @ans[0])
+                        set @match,@match+1;
+                if(@num[0] == @ans[1] || @num[0] == @ans[2])
+                        set @shift,@shift+1;
+                if(@num[1] == @ans[1])
+                        set @match,@match+1;
+                if(@num[1] == @ans[0] || @num[1] == @ans[2])
+                        set @shift,@shift+1;
+                if(@num[2] == @ans[2])
+                        set @match,@match+1;
+                if(@num[2] == @ans[0] || @num[2] == @ans[1])
+                        set @shift,@shift+1;
+                if(@match == 3)        // 正解的時候
+                        break;
+                mes "[猜數字人員]";
+                mes "很可惜答錯了，";
+                mes "位置數字答對的有^FF3152"+ @match +"^000000個，";
+                mes "只答對數字的有^FF3152"+ @shift +"^000000個，";
+                if(@chance == -1) {
+                        mes "請你再加油囉!再來挑戰一次吧";
+                        continue;
+                }
+                set @chance,@chance-1;
+                if(@chance > 1)
+                        mes "這是第"+ GetCount(@chance) +"次挑戰，請說出數字吧";
+                else if(@chance == 1)
+                        mes "最後一次了請慎重的說出數字吧";
+                else {
+                        mes "答案是^FF3152"+ @ans[0] +""+ @ans[1] +""+ @ans[2] +"^000000 呀，";
+                        next;
+                        mes "[猜數字人員]";
+                        mes "很可惜，"+$@KT123+"次挑戰的機會都已經結束了，";        // 不知道為什麼被認為是五次
+                        mes "無法再挑戰了，請你下次再來挑戰吧!。";
+                        close;
+                }
+        }
+        // 正解的時候繼續
+        if(@chance == -1) {
+                mes "[猜數字人員]";
+                mes "恭喜你，";
+                mes "請看正解";
+                mes "答案是^FF3152"+ @ans[0] +""+ @ans[1] +""+ @ans[2] +"^000000 呀，";
+                mes "慢慢習慣這種程度啊!";
+                mes "請挑戰得分模式看看!";
+                close;
+        }
+        set @time,gettimetick(0)-@start;
+        mes "[猜數字人員]";
+        mes "恭喜你，";
+        mes "答案是^FF3152"+ @ans[0] +""+ @ans[1] +""+ @ans[2] +"^000000 呀，";
+        mes "^FF3152"+ strcharinfo(0) +"^000000先生/小姐，";
+        mes "猜出正確答案的時間是";
+        mes "^FF3152" +(@time/60000)+ "分" +(@time/1000)+ "秒^000000 呢";
+        next;
+        if($NumbersTime == 0 || @time < $NumbersTime) {
+                // 由於未調查適當
+                set $NumbersName$,strcharinfo(0);
+                set $NumbersTime,@time;
+                mes "[猜數字人員]";
+                mes "恭喜你刷新記錄了!";
+                mes "這是給你的獎勵";
+                mes "繼續努力啊!";
+		misceffect 794;
+		misceffect 800;
+		getitem 62018,$@YAMYA;
+		close;
+        }
+        mes "[猜數字人員]";
+        mes "現在的最高紀錄是";
+        mes "^FF3152"+ $NumbersName$ +"^000000先生/小姐，";
+        mes "^FF3152"+ ($NumbersTime/60000) +"分"+ ($NumbersTime/1000) + "秒^000000 呢，";
+        mes "請努力之後，";
+        mes "挑戰給我看看吧!";
+	getitem 62018,$@YAMY;
+        close;
+
+        function GetCount {
+                switch (getarg(0)) {
+                        case 2: return "二";
+                        case 3: return "三";
+                        case 4: return "四";
+                        case 5: return "五";
+                        case 6: return "六";
+                        case 7: return "七";
+                        case 8: return "八";
+                        case 9: return "九";
+                }
+                return "";
+        }
+
+nomoney:
+                mes "[猜數字人員]";
+                mes "你的代幣不足..";
+close;
+
+Oninit:
+	waitingroom "3位猜數字",0;
+	end;
+
+}

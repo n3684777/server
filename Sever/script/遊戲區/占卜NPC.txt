@@ -1,0 +1,114 @@
+/*================================================
+- 腳本名稱：占卜師(草莓頭飾)
+- 腳本作者：瘋兔工作組
+- 測試環境：CSeA、SeAr、eAthena
+- 更新內容：
+- Ver 1.0 完成架構
+>>>各位大哥大姐轉載請保留以上，萬分感激<<<
+================================================*/
+mid_camp,212,234,5	script	占卜師	625,{
+	cutin "nines01.bmp",2;
+	mes "["+strnpcinfo(0)+"]";
+	mes "嗚! 一眼就看出你今天不太順利喔!";
+	next;
+	if(select("喔! 那怎麼辦?","...胡說八道")==2){
+		mes "["+strnpcinfo(0)+"]";
+		mes "信不信由你阿! 我可以非常準的!";
+		close2;
+		cutin "",255;
+		end;
+	}
+	mes "["+strnpcinfo(0)+"]";
+	mes "我可以幫你占卜一下你的運勢，但是無法改變就是了，當然也不是免費的",
+	getitemname(7645),
+	"而你身上需要有 ^FF0000300 萬Zeny^000000 和",getitemname(531)+"一瓶",
+	"才能開始占卜.";
+	next;
+	if(select("切！ 我有錢啦!當然帶來了！","那還是算了...")==2){
+		mes "["+strnpcinfo(0)+"]";
+		mes "有需要的話再來找我吧! 我可不是天天都幫人占卜的!";
+		close2;
+		cutin "",255;
+		end;
+	}
+	if(Zeny<3000000){
+		mes "["+strnpcinfo(0)+"]";
+		mes "請帶齊我需要的東西吧!";
+		mes "^0000FF300 萬 RO幣";
+		close2;
+		cutin "",255;
+		end;
+	}
+	mes "["+strnpcinfo(0)+"]";
+	mes "現在馬上就幫您進行占卜...";
+	next;
+	cutin "tw_threecard.bmp",4;
+	sleep2 3000;
+	switch(rand(1,3)){
+		case 1:	// 機會牌
+			cutin "tw_chancecard.bmp",2;
+			mes "["+strnpcinfo(0)+"]";
+			mes "你抽中的是 ^0000FF機會牌^000000.";
+			set .@R,rand(1,100);
+			if(.@R<=10){
+				mes "你最近可能有血光之災，要注意！ HP/SP會降到10… 送你瑪絲黛拉果實 10個，可緊急時使用。";
+				percentheal -10,-10;
+				getitem 522,10;
+			} else if(.@R<=30){
+				mes "你最近運氣會很背！ 不緊身心受創，HP和SP只剩到10也無人幫助，好孤單啊，趕快多交點朋友吧！";
+			} else if(.@R<=50){
+				mes "運氣不佳，可能被怪物襲擊，最後逃到SP只剩10，要小心！ ";
+				percentheal -10,-10;
+			} else {
+				mes "喔喔.. 要小心！ 最近可能會吃點虧…！！";
+				set .@R,rand(1,100);
+				if(.@R<=20) set Zeny,Zeny-200000;
+				else if(.@R<=50) set Zeny,Zeny-580000;
+				else set Zeny,Zeny-3000000;
+			}
+			break;
+		case 2:	// 命運牌
+			cutin "tw_destinycard.bmp",2;
+			mes "["+strnpcinfo(0)+"]";
+			mes "你抽中的是 ^0000FF命運牌^000000.";
+			set .@R,rand(1,100);
+			if(.@R<=10){
+				mes "不得了！奧丁神和弗蕾亞女神的好運通通都灌到你身上了！ 我看不管今天做甚麼都很幸運。";
+				sc_start SC_BLESSING,1800000,10;
+				sc_start SC_ASSUMPTIO,1800000,10;
+				sc_start SC_INCREASEAGI,1800000,10;
+			} else if(.@R<=40){
+				mes "奧丁的好運都灌到你身上了，你感受到了嗎?  ";
+				sc_start SC_ASSUMPTIO,1800000,10;
+			} else if(.@R<=80){
+				mes "哇嗚！低頭都有可能撿到黃金，連怪都可能掉好料呢！快去打怪吧~~！！ ";
+				sc_start SC_INCREASEAGI,1800000,10;
+			} else {
+				mes "哇嗚！大吉大利！連老天都幫你！ 你的運氣好到爆連擋都擋不住。 ";
+				sc_start SC_BLESSING,1800000,10;
+			}
+			break;
+		case 3:	// 幸運牌
+			cutin "tw_luckycard.bmp",2;
+			mes "["+strnpcinfo(0)+"]";
+			mes "你抽中的是 ^0000FF幸運牌^000000.";
+			set .@R,rand(1,100);
+			if(.@R<=10){
+				announce "占卜師: 這運勢是... ！！ 終於找到這帽子的真正主人了("+strcharinfo(0)+")，恭喜！今天盧恩米德加茲最好運的是你了…！",15;
+				getitem 18852,1;
+			} else if(.@R<=30){
+				mes "飛來橫財…！可能要發大財了，真是令人稱羨。 ";
+				getitem 608,20;
+			} else {
+				mes "只要好運來時擋都擋不住，這是奧丁賜的禮物請收下吧！";
+				getitem 663,30;
+			}
+			break;
+	}
+close2;
+cutin "",255;
+end;
+OnInit:
+	waitingroom strnpcinfo(0),0;
+	end;
+}

@@ -1,0 +1,196 @@
+///////////////////////////////////
+//  編輯修正版_超級轉盤           /
+//  製作者 _ 瓶子月 [OK討論區]    /
+//                                /
+//                                /
+//                                /
+//  聲明:此為翻外版！盡量別盜用   /
+// 否則以後就沒有這種趣味腳本了！ /
+///////////////////////////////////
+
+cmd_in02,178,99,4	script	指定轉盤樂	111,{
+	mes "[歡樂轉盤]";
+	mes "玩家『"+strcharinfo(0)+"』歡迎使用";
+	mes "5000 Zeny 即可參與";
+	mes "歡樂轉盤 遊戲唷^^";
+	next;
+	menu "我要玩",L_checkmoney,"獎品說明",L_Gift,"離開",L_Close;
+	close;
+L_checkmoney:  
+	if(zeny < 5000) goto nomoney;
+	set zeny,zeny - 5000;
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　↑　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 500 && @number>0) goto resulta;
+	if (@number <= 1000 && @number>500) goto resultb;
+	close;
+resulta:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　↑　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultb;
+	if (@number <= 1000 && @number>800) goto gifta;
+	close;
+resultb:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　↗　│";
+	mes "│7 　。　3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultc;
+	if (@number <= 1000 && @number>800) goto giftb;
+	close;
+resultc:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　　　│";
+	mes "│7 　。→3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultd;
+	if (@number <= 1000 && @number>800) goto giftc;
+	close;
+resultd:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　　　↘　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 990 && @number>0) goto resulte;
+	if (@number <= 1000 && @number>990) goto giftd;
+	close;
+resulte:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　　↓　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resultf;
+	if (@number <= 1000 && @number>800) goto gifte;
+	close;
+resultf:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　　　│";
+	mes "│7 　。　3 │";
+	mes "│　↙　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 950 && @number>0) goto resultg;
+	if (@number <= 1000 && @number>950) goto giftf;
+	close;
+resultg:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　　　　　│";
+	mes "│7 ←。  3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 800 && @number>0) goto resulth;
+	if (@number <= 1000 && @number>800) goto giftg;
+	close;
+resulth:
+	mes "┌─────┐";
+	mes "│8 　1 　2 │";
+	mes "│　↖　　　│";
+	mes "│7 　。  3 │";
+	mes "│　　　　　│";
+	mes "│6 　5　 4 │";
+	mes "└─────┘";
+	next;
+	set @number,rand(1000);
+	if (@number <= 995 && @number>0) goto resulta;
+	if (@number <= 1000 && @number>995) goto gifth;
+	close;
+gifta:
+	mes"[系統偵測 數字停位 1]";
+	mes"獎品:^0088FF紅包 1個^000000";
+	getitem 668,1;
+	close;
+giftb:
+	mes"[系統偵測 數字停位 2]";
+	mes"^0088FF銘謝惠顧，多努力吧^000000";
+	close;
+giftc:
+	mes"[系統偵測 數字停位 3]";
+	mes"^0088FF瑪絲黛拉果實 1個^000000";
+	getitem 522,1;
+	close;
+giftd:
+	mes"[系統偵測 數字停位 4]";
+	mes"^0088FF銘謝惠顧^000000";
+	close;
+gifte:
+	mes"[系統偵測 數字停位 5]";
+	mes"^0088FF天地樹果實 1個^000000";
+	getitem 607,1;
+	close;
+giftf:
+	mes"[系統偵測 數字停位 6]";
+	mes"^0088FF銘謝惠顧，多努力吧^000000";
+	close;
+giftg:
+	mes"[系統偵測 數字停位 7]";
+	mes"^0088FF銘謝惠顧，多努力吧^000000";
+	close;
+gifth:
+	mes"[系統偵測 數字停位 8]";
+	mes"獎品: 獮猴桃果實 5 個、E級代幣 10 個";
+	getitem 6417,5;
+	getitem 6422,10;
+//	dispbottom "您獲得任務獎品 1000000 積分 點數! 目前累積點數為：《"+zeny+"》 點！";
+	close;
+nomoney:
+	mes "[轉盤機]";
+	mes "非常抱歉沒有你身上有足夠的金錢";
+	close;
+L_Gift:
+	mes "[轉盤機]";
+	mes "[努力獎] 數字1，紅包 1個";
+	mes "數字2，銘謝惠顧";
+	mes "數字3，瑪絲黛拉果實 1個";
+	mes "數字4，銘謝惠顧";
+	mes "數字5，天地樹果實 1個";
+	mes "數字6，銘謝惠顧";
+	mes "數字7，銘謝惠顧";
+	mes "[大賞] 數字8，獮猴桃果實 5 個、E級代幣 10 個!";
+	close; 
+L_Close:
+	mes "[轉盤機]"; 
+	mes "多謝 "+strcharinfo(0)+" 支持，歡迎再次光臨，再見!";
+	close; 
+}
+

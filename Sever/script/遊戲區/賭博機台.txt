@@ -1,0 +1,120 @@
+under_mark,119,57,3	script	機台	563,{
+mes"遊戲玩法:";
+mes"押大(5,6)";
+mes"押中(3,4)";
+mes"押小(1,2)";
+mes"押注與擲出點數相同獲勝！";
+mes"賠率 3";
+next;
+mes"請輸入下注金額！";
+menu"以R幣作為賭注^FF8800(1000W - 9999W)^000000",aa,"以P點作為賭注^FF8800(100P - 10000P)^000000",bb;
+aa:
+mes"單位: 萬";
+input .@k;
+if (.@k <= 0){close;}
+if (.@k > 9999){close;}
+if (.@k < 1000){close;}
+if (Zeny<.@k){next;mes"R幣不夠！";close;}
+set Zeny,Zeny-.@k*10000;
+goto pp;
+bb:
+input .@c;
+if (.@c <= 0){close;}
+if (.@c > 10000){close;}
+if (.@c < 100){close;}
+if (#CASHPOINTS<.@c){next;mes"點數不足！";close;}
+set #CASHPOINTS,#CASHPOINTS-.@c;
+goto pp;
+pp:
+menu"押大",a,"押中",b,"押小",c;
+a:
+set .@y,1;
+goto m;
+b:
+set .@y,2;
+goto m;
+c:
+set .@y,3;
+goto m;
+m:
+if (.@c >500){
+set .@rx,rand(1,20);
+set .@r,rand(1,6);
+if (.@y == 1 && .@rx <20){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(1,2);
+}
+if (.@t==2){
+set .@r,rand(3,4);
+}
+}
+if (.@y == 2 && .@rx <20){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(1,2);
+}
+if (.@t==2){
+set .@r,rand(5,6);
+}
+}
+if (.@y == 3 && .@rx <20){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(3,4);
+}
+if (.@t==2){
+set .@r,rand(5,6);
+}
+}
+goto ppx;
+}
+set .@rx,rand(1,2);
+set .@r,rand(1,6);
+if (.@y == 1 && .@rx <2){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(1,2);
+}
+if (.@t==2){
+set .@r,rand(3,4);
+}
+}
+if (.@y == 2 && .@rx <2){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(1,2);
+}
+if (.@t==2){
+set .@r,rand(5,6);
+}
+}
+if (.@y == 3 && .@rx <2){
+set .@t,rand(1,2);
+if (.@t==1){
+set .@r,rand(3,4);
+}
+if (.@t==2){
+set .@r,rand(5,6);
+}
+}
+ppx:
+if (.@r == 1){emotion ET_DICE1;}
+if (.@r == 2){emotion ET_DICE2;}
+if (.@r == 3){emotion ET_DICE3;}
+if (.@r == 4){emotion ET_DICE4;}
+if (.@r == 5){emotion ET_DICE5;}
+if (.@r == 6){emotion ET_DICE6;}
+sleep2 1000;
+if (.@y==1 && .@r ==1||.@y==1 && .@r ==2||.@y==1 && .@r ==3||.@y==1 && .@r ==4){next; mes"輸了～";close;}
+if (.@y==2 && .@r ==1||.@y==2 && .@r ==2||.@y==2 && .@r ==5||.@y==2 && .@r ==6){next; mes"輸了～";close;}
+if (.@y==3 && .@r ==3||.@y==3 && .@r ==4||.@y==3 && .@r ==5||.@y==3 && .@r ==6){next; mes"輸了～";close;}
+next;
+mes"恭喜中獎！";
+if (.@k>0){set Zeny,Zeny+(.@k*30000);}
+if (.@c>0){set #CASHPOINTS,#CASHPOINTS+(.@c*3);}
+close;
+OnInit:
+waitingroom "大中小",0;
+end;
+}

@@ -1,0 +1,182 @@
+/* =============================================================
+/* Slot Machine - Triple Slot Machine
+/* =============================================================
+/* Version: v0.7
+/* v0.1 - Original Script Created.
+/* v0.2 - Added Option for Triple Slot Machine with animations.
+/* v0.3 - Added support for item pricing &/or zeny pricing.
+/* v0.4 - Cleaned up script variables for easy editing.
+/* v0.5 - Tested out some new scripting methods with IF(THEN).
+/* v0.6 - Added option to change slot machine modes ingame.
+/* v0.7 - Added optional sound effects to slot machines. - NOTE 
+/* =============================================================
+/* Description
+/* =============================================================
+/* This script will allow users to spend zeny &/or an item for a
+/* chance to win a prize from the slot machine. Currently there
+/* are 2 versions. First is a Single Slot Machine, where only 1 
+/* slot is rolled. Second is the Triple Slot machine, where 3
+/* slots are rolled. For either version, SUCCESS must be the 
+/* only thing displayed in order to win.
+/* =============================================================
+/* NOTE - If using soundeffects you must add the ".wav" files
+/* provided in the ".rar" file to your: data/wav  folder located
+/* in either your:  ( Ragnarok folder )  OR  ( .grf file )
+/* =============================================================
+/* Created By: GmOcean
+/* ===========================================================*/
+
+cmd_in02,189,116,4	script	動態老虎機::1slot	563,{
+	if( getgmlevel() == 99 ) {
+		mes "歡迎您遊戲管理員.","您想要做些什麼?";
+		menu "直接玩遊戲",-,"改變老虎機的模式",iMode;
+		next;
+		}
+switch( getd(".mode"+strnpcinfo(3)+"") ){
+	case 0: // 單個老虎機模式.
+		mes "您想要玩這個遊戲嗎?";
+		if( !.payment ) { mes "您需要支付: "+ .ssm_payment_message$[0] +" 才能進行遊戲."; }
+			else if ( .payment == 1 ) { mes "您需要支付: "+ .ssm_payment_message$[1] +" 才能進行遊戲."; }
+				else if ( .payment == 2 ) { mes "您需要支付: "+ .ssm_payment_message$[0] +" & "+ .payment_message$[1] +" 才能進行遊戲."; }
+		if( select("好的:不要") == 2 || Zeny < .ssm_payment[0] && ( !.payment || .payment == 2 ) || countitem(.ssm_payment[1]) < .ssm_payment[2] && .payment ){ close; }
+		while( @menu == 1 ){
+			if( !.payment || .payment == 2 ) { Zeny -= .ssm_payment[0]; }
+			if( .payment ) { delitem( .ssm_payment[1], .ssm_payment[2] ); }
+			if( .soundeffects ) { soundeffect "slot_jackpot.wav",0; }
+			.@a = rand(1,100);
+			if( .@a < atoi(.ssm_animate$[0]) ){ .@a = 1; } else { .@a = 2; }
+			.@b = 1;
+			while( .@b < atoi(.ssm_animate$[.@a]) ) {
+				cutin .ssm_animate$[3] + .@b,4; sleep2 ( ( atoi(.ssm_animate$[4]) * 1000 ) / atoi(.ssm_animate$[.@a]) ); .@b++;
+				}
+			if( .@a == 1 ){ 
+				cutin .ssm_animate$[3] + atoi(.ssm_animate$[.@a]),4;
+				dispbottom "很抱歉, 您沒有中獎";
+				} 
+			else {
+				cutin .ssm_animate$[3] + atoi(.ssm_animate$[.@a]),4;
+				if( !.prize || .prize == 2 ) { Zeny += .ssm_prize[0]; }
+				if( .prize ) { getitem .ssm_prize[1], .ssm_prize[2]; }
+				if( .soundeffects ){ soundeffect "slot_pay_coin.wav",0; }
+				}
+			if( select("再來一次:離開") == 2 || Zeny < .ssm_payment[0] && ( !.payment || .payment == 2 ) || countitem(.ssm_payment[1]) < .ssm_payment[2] && .payment ){ cutin "",255; close; }
+			}
+		end;
+	
+	case 1: // 多個老虎機模式.
+		mes "您想要玩這個遊戲嗎?";
+		if( !.payment ) { mes "您需要支付: "+ .tsm_payment_message$[0] +" 才能進行遊戲."; }
+			else if ( .payment == 1 ) { mes "您需要支付: "+ .tsm_payment_message$[1] +" 才能進行遊戲."; }
+				else if ( .payment == 2 ) { mes "您需要支付: "+ .tsm_payment_message$[0] +" & "+ .tsm_payment_message$[1] +" 才能進行遊戲."; }
+		if( select("好的:不要") == 2 || Zeny < .tsm_payment[0] && ( !.payment || .payment == 2 ) || countitem(.tsm_payment[1]) < .tsm_payment[2] && .payment ){ close; }
+		while( @menu == 1 ){
+			if( !.payment || .payment == 2 ) { Zeny -= .tsm_payment[0]; }
+			if( .payment ) { delitem( .tsm_payment[1], .tsm_payment[2] ); }
+			if( .soundeffects ) { soundeffect "slot_jackpot.wav",0; }
+			// 第一個動畫成功率 = 100%的成功機會. (因為我沒做失敗的動畫).
+			.@2 = rand(1,100); //第二個動畫成功率
+			.@3 = rand(1,100); //第三個動畫成功率
+				if( .@2 <= atoi(.tsm_animate$[0]) && .@3 <= atoi(.tsm_animate$[1]) ){ .@a = 8; }
+				else if( .@2 <= atoi(.tsm_animate$[0]) && .@3 > atoi(.tsm_animate$[1]) ){ .@a = 6; }
+				else if( .@2 > atoi(.tsm_animate$[0]) && .@3 <= atoi(.tsm_animate$[1]) ){ .@a = 4; }
+				else { .@a = 2; }
+			.@b = 1;
+			while( .@b < atoi(.tsm_animate$[.@a+1]) ) {
+				cutin .tsm_animate$[.@a] + .@b,4; sleep2 ( ( atoi(.tsm_animate$[10]) * 1000 ) / atoi(.tsm_animate$[.@a+1]) ); .@b++;
+				}
+			cutin .tsm_animate$[.@a] + atoi(.tsm_animate$[.@a+1]),4;
+				if( .@a == 2 ){
+					if( !.prize || .prize == 2 ) { Zeny += .tsm_prize[0]; }
+					if( .prize ) { getitem .tsm_prize[1], .tsm_prize[2]; }
+					if( .soundeffects ){ soundeffect "slot_pay_coin.wav",1; }
+				} else { dispbottom "很抱歉, 您沒有中獎"; }
+			if( select("再來一次:離開") == 2 || Zeny < .tsm_payment[0] && ( !.payment || .payment == 2 ) || countitem(.tsm_payment[1]) < .tsm_payment[2] && .payment ){ cutin "",255; close; }
+			}
+		end;
+	}
+OnSingleSlot:
+setd ".mode"+strnpcinfo(3)+"",0;
+end;
+OnTripleSlot:
+setd ".mode"+strnpcinfo(3)+"",1;
+end;
+
+iMode:
+next;
+mes "您想要做哪個選擇?";
+menu "只改變這一台老虎機的模式:改變所有老虎機的模式",-;
+if( @menu == 1 ) {
+	next;
+	mes "您想將這台老虎機改變成什麼模式?";
+	menu "單個老虎機模式:多個老虎機模式",-;
+	if( @menu == 1 ) {
+		setd ".mode"+strnpcinfo(3)+"",0;
+		} else {
+			setd ".mode"+strnpcinfo(3)+"",1;
+			}
+	close;
+	} else {
+		next;
+		mes "您想將所有老虎機改變成什麼模式?";
+		menu "單個老虎機模式:多個老虎機模式",-;
+		if( @menu == 1 ) {
+			donpcevent "::OnSingleSlot";
+			} else {
+				donpcevent "::OnTripleSlot";
+				}
+		close;
+		}
+
+OnInit:
+// 聲效開關 0 = 關閉, 1 = 打開.
+.soundeffects = 1; 
+
+//[ 0 = 單個老虎機模式 ]_[ 1 = 多個老虎機模式 ]
+setd ".mode"+strnpcinfo(3)+"",1;
+
+//[0] = Fail Rate
+//[1] = Fail (Do not change)
+//[2] = Success (Do not change)
+//[3] = File Name (Do not change)
+//[4] = Animation Time (Do not change, for best results :D)
+setarray .ssm_animate$[0],"30","29","33","slot_","3";
+
+//[0] = Fail Rate "Slot 2"
+//[1] = Fail Rate "Slot 3"
+//[2] = SSS (Do not change)
+//[3] = SSS_Count (Do not change)
+//[4] = SSF (Do not change)
+//[5] = SSF_Count (Do not change)
+//[6] = SFS (Do not change)
+//[7] = SFS_Count (Do not change)
+//[8] = SFF (Do not change)
+//[9] = SFF_Count (Do not change)
+//[10] = Animation Time (Do not change, for best results :D)
+setarray .tsm_animate$[0],"30","30","SSS_","41","SSF_","37","SFS_","41","SFF_","45","3";
+
+// 獎品設置
+// 獎品類型
+// 0 = Zeny, 1 = 物品, 2 = Zeny和物品
+.prize = 1;
+// [0] = Zeny, [1] = 物品ID, [2] = 物品數量;
+setarray .ssm_prize[0],125,39001,2;
+setarray .tsm_prize[0],450,39001,6;
+
+// 支付設置
+// 支付類型
+// 0 = Zeny, 1 = 物品, 2 = Zeny和物品
+.payment = 2;
+// [0] = Zeny, [1] = 物品ID, [2] = 物品數量;
+setarray .ssm_payment[0],100,705,1; // 單個老虎機模式
+setarray .tsm_payment[0],300,705,3; // 多個老虎機模式
+
+// 不要改變以下
+// 支付腳本語法
+setarray .ssm_payment_message$[0],""+ .ssm_payment[0] +" zeny",""+ getitemname(.ssm_payment[1]) +" x"+ .ssm_payment[2] +"";
+setarray .tsm_payment_message$[0],""+ .tsm_payment[0] +" zeny",""+ getitemname(.tsm_payment[1]) +" x"+ .tsm_payment[2] +"";
+end;
+}
+
+// 多個坐標設置
+cmd_in02,192,116,4	duplicate(1slot)	動態老虎機#2slot	563
+cmd_in02,195,116,4	duplicate(1slot)	動態老虎機#3slot	563

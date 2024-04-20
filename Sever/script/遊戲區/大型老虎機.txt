@@ -1,0 +1,311 @@
+mid_camp,216,237,6	script	大型老虎機#0	562,{
+	mes"[老虎機] ╒══╤══╤══╕";
+	mes"第一行   ｜ ● ｜ ☆ ｜ ■ ｜";
+	mes".        ╞══╪══╪══╡  ●";
+	mes"第二行   ｜ ７ ｜ ７ ｜ ７ ｜  ｜";
+	mes".        ╞══╪══╪══○═╛";
+	mes"第三行   ｜ ■ ｜ ◆ ｜ ☆ ｜";
+	mes".        ╘══╧══╧══╛";
+	mes"這老虎機是用^FF0000 10000 Zeny ^000000來玩的!!";
+	mes"只要橫行^FF0000 3圖相同 ^000000就有^FF000010萬^000000!!";
+	mes"如果由左上(第1行)至右下(第3行)^FF0000 3字相同 ^000000就有^FF00001萬^000000!!";
+	mes"如果由右下(第3行)至左上(第1行)^FF0000 3字相同 ^000000就有^FF00001萬^000000!!";
+	mes"如果^FF0000同時中了兩行^000000就有^FF000020萬^000000!!";
+	mes"如果^FF0000同時中了三行^000000就有^FF000030萬^000000!!";
+	mes"如果^FF0000同時中了四行^000000就有^FF000040萬^000000!!";
+	mes"如果^FF0000同時9圖相同^000000就有^FF0000武器、防具精煉能力+7券 各1張^000000!!";
+	mes"如果^FF0000同時9圖相是777^000000就有^FF0000武器、防具精煉能力+9券 各1張^000000!!";
+	mes"要玩嗎??";
+	next;
+	menu "好的",playB777,"不用",notplayB777;
+	end;
+
+notplayB777:
+	mes"[老虎機]";
+	if ( zeny <  10000 )  mes "你金錢不足!!";
+//	if ( paodian <= 10) mes "你積分不足!!";
+	if ( zeny >= 2000000000 ) mes "你身上金錢太多!!";
+	mes "下次再見!!";
+	close;
+	end;
+
+
+playB777:
+	if ( zeny < 10000 ) goto notplayB777;
+//	if ( paodian <= 10) goto notplayB777;
+	if ( zeny >= 200000000 ) goto notplayB777;
+	set zeny,zeny-10000;
+//	set paodian,paodian-10;
+	set @wh,0;
+	set @NUM11 ,rand(10);
+	if (@NUM11 == 0) set @NUM21$,"☆";
+	if (@NUM11 == 1) set @NUM21$,"★";
+	if (@NUM11 == 2) set @NUM21$,"■";
+	if (@NUM11 == 3) set @NUM21$,"□";
+	if (@NUM11 == 4) set @NUM21$,"◇";
+	if (@NUM11 == 5) set @NUM21$,"◆";
+	if (@NUM11 == 6) set @NUM21$,"６";
+	if (@NUM11 == 7) set @NUM21$,"７";
+	if (@NUM11 == 8) set @NUM21$,"△";
+	if (@NUM11 == 9) set @NUM21$,"▲";
+	set @NUM12 ,rand(10);
+	if (@NUM12 == 0) set @NUM22$,"☆";
+	if (@NUM12 == 1) set @NUM22$,"★";
+	if (@NUM12 == 2) set @NUM22$,"■";
+	if (@NUM12 == 3) set @NUM22$,"□";
+	if (@NUM12 == 4) set @NUM22$,"◇";
+	if (@NUM12 == 5) set @NUM22$,"◆";
+	if (@NUM12 == 6) set @NUM22$,"６";
+	if (@NUM12 == 7) set @NUM22$,"７";
+	if (@NUM12 == 8) set @NUM22$,"△";
+	if (@NUM12 == 9) set @NUM22$,"▲";
+	set @NUM13 ,rand(10);
+	if (@NUM13 == 0) set @NUM23$,"☆";
+	if (@NUM13 == 1) set @NUM23$,"★";
+	if (@NUM13 == 2) set @NUM23$,"■";
+	if (@NUM13 == 3) set @NUM23$,"□";
+	if (@NUM13 == 4) set @NUM23$,"◇";
+	if (@NUM13 == 5) set @NUM23$,"◆";
+	if (@NUM13 == 6) set @NUM23$,"６";
+	if (@NUM13 == 7) set @NUM23$,"７";
+	if (@NUM13 == 8) set @NUM23$,"△";
+	if (@NUM13 == 9) set @NUM23$,"▲";
+	set @NUM14 ,rand(10);
+	if (@NUM14 == 0) set @NUM24$,"☆";
+	if (@NUM14 == 1) set @NUM24$,"★";
+	if (@NUM14 == 2) set @NUM24$,"■";
+	if (@NUM14 == 3) set @NUM24$,"□";
+	if (@NUM14 == 4) set @NUM24$,"◇";
+	if (@NUM14 == 5) set @NUM24$,"◆";
+	if (@NUM14 == 6) set @NUM24$,"６";
+	if (@NUM14 == 7) set @NUM24$,"７";
+	if (@NUM14 == 8) set @NUM24$,"△";
+	if (@NUM14 == 9) set @NUM24$,"▲";
+	set @NUM15 ,rand(10);
+	if (@NUM15 == 0) set @NUM25$,"☆";
+	if (@NUM15 == 1) set @NUM25$,"★";
+	if (@NUM15 == 2) set @NUM25$,"■";
+	if (@NUM15 == 3) set @NUM25$,"□";
+	if (@NUM15 == 4) set @NUM25$,"◇";
+	if (@NUM15 == 5) set @NUM25$,"◆";
+	if (@NUM15 == 6) set @NUM25$,"６";
+	if (@NUM15 == 7) set @NUM25$,"７";
+	if (@NUM15 == 8) set @NUM25$,"△";
+	if (@NUM15 == 9) set @NUM25$,"▲";
+	set @NUM16 ,rand(10);
+	if (@NUM16 == 0) set @NUM26$,"☆";
+	if (@NUM16 == 1) set @NUM26$,"★";
+	if (@NUM16 == 2) set @NUM26$,"■";
+	if (@NUM16 == 3) set @NUM26$,"□";
+	if (@NUM16 == 4) set @NUM26$,"◇";
+	if (@NUM16 == 5) set @NUM26$,"◆";
+	if (@NUM16 == 6) set @NUM26$,"６";
+	if (@NUM16 == 7) set @NUM26$,"７";
+	if (@NUM16 == 8) set @NUM26$,"△";
+	if (@NUM16 == 9) set @NUM26$,"▲";
+	set @NUM17 ,rand(10);
+	if (@NUM17 == 0) set @NUM27$,"☆";
+	if (@NUM17 == 1) set @NUM27$,"★";
+	if (@NUM17 == 2) set @NUM27$,"■";
+	if (@NUM17 == 3) set @NUM27$,"□";
+	if (@NUM17 == 4) set @NUM27$,"◇";
+	if (@NUM17 == 5) set @NUM27$,"◆";
+	if (@NUM17 == 6) set @NUM27$,"６";
+	if (@NUM17 == 7) set @NUM27$,"７";
+	if (@NUM17 == 8) set @NUM27$,"△";
+	if (@NUM17 == 9) set @NUM27$,"▲";
+	set @NUM18 ,rand(10);
+	if (@NUM18 == 0) set @NUM28$,"☆";
+	if (@NUM18 == 1) set @NUM28$,"★";
+	if (@NUM18 == 2) set @NUM28$,"■";
+	if (@NUM18 == 3) set @NUM28$,"□";
+	if (@NUM18 == 4) set @NUM28$,"◇";
+	if (@NUM18 == 5) set @NUM28$,"◆";
+	if (@NUM18 == 6) set @NUM28$,"６";
+	if (@NUM18 == 7) set @NUM28$,"７";
+	if (@NUM18 == 8) set @NUM28$,"△";
+	if (@NUM18 == 9) set @NUM28$,"▲";
+	set @NUM19 ,rand(10);
+	if (@NUM19 == 0) set @NUM29$,"☆";
+	if (@NUM19 == 1) set @NUM29$,"★";
+	if (@NUM19 == 2) set @NUM29$,"■";
+	if (@NUM19 == 3) set @NUM29$,"□";
+	if (@NUM19 == 4) set @NUM29$,"◇";
+	if (@NUM19 == 5) set @NUM29$,"◆";
+	if (@NUM19 == 6) set @NUM29$,"６";
+	if (@NUM19 == 7) set @NUM29$,"７";
+	if (@NUM19 == 8) set @NUM29$,"△";
+	if (@NUM19 == 9) set @NUM29$,"▲";
+	mes"[老虎機] ╒══╤══╤══╕";
+	mes"第一行   ｜ ∥ ｜ ∥ ｜ ∥ ｜";
+	mes".        ╞══╪══╪══╡";
+	mes"第二行   ｜ ∥ ｜ ∥ ｜ ∥ ｜";
+	mes".        ╞══╪══╪══○═╗";
+	mes"第三行   ｜ ∥ ｜ ∥ ｜ ∥ ｜  ●";
+	mes".        ╘══╧══╧══╛";
+	next;
+	mes"[老虎機] ╒══╤══╤══╕";
+	mes"第一行   ｜ " +@NUM21$+ " ｜ ∥ ｜ ∥ ｜";
+	mes".        ╞══╪══╪══╡  ●";
+	mes"第二行   ｜ " +@NUM22$+ " ｜ ∥ ｜ ∥ ｜  ｜";
+	mes".        ╞══╪══╪══○═╛";
+	mes"第三行   ｜ " +@NUM23$+ " ｜ ∥ ｜ ∥ ｜";
+	mes".        ╘══╧══╧══╛";
+	next;
+	mes"[老虎機] ╒══╤══╤══╕";
+	mes"第一行   ｜ " +@NUM21$+ " ｜ " +@NUM24$+ " ｜ ∥ ｜";
+	mes".        ╞══╪══╪══╡  ●";
+	mes"第二行   ｜ " +@NUM22$+ " ｜ " +@NUM25$+ " ｜ ∥ ｜  ｜";
+	mes".        ╞══╪══╪══○═╛";
+	mes"第三行   ｜ " +@NUM23$+ " ｜ " +@NUM26$+ " ｜ ∥ ｜";
+	mes".        ╘══╧══╧══╛";
+	next;
+	mes"[老虎機] ╒══╤══╤══╕";
+	mes"第一行   ｜ " +@NUM21$+ " ｜ " +@NUM24$+ " ｜ " +@NUM27$+ " ｜";
+	mes".        ╞══╪══╪══╡  ●";
+	mes"第二行   ｜ " +@NUM22$+ " ｜ " +@NUM25$+ " ｜ " +@NUM28$+ " ｜  ｜";
+	mes".        ╞══╪══╪══○═╛";
+	mes"第三行   ｜ " +@NUM23$+ " ｜ " +@NUM26$+ " ｜ " +@NUM29$+ " ｜";
+	mes".        ╘══╧══╧══╛";
+	next;
+	if ( @NUM11 == @NUM14 ) goto W1;
+	if ( @NUM11 != @NUM14 ) goto W2;
+        close;
+	end;
+
+W1:
+	if ( @NUM14 == @NUM17 ) set @wh,@wh+1;
+	if ( @NUM14 == @NUM17 ) goto W2;
+	if ( @NUM14 != @NUM17 ) goto W2;
+        close;
+	end;
+W2:
+	if ( @NUM11 == @NUM15 ) goto W3;
+	if ( @NUM11 != @NUM15 ) goto W4;
+        close;
+	end;
+W3:
+	if ( @NUM15 == @NUM19 ) set @wh,@wh+10;
+	if ( @NUM15 == @NUM19 ) goto W4;
+	if ( @NUM15 != @NUM19 ) goto W4;
+        close;
+	end;
+W4:
+	if ( @NUM12 == @NUM15 ) goto W5;
+	if ( @NUM12 != @NUM15 ) goto W6;
+        close;
+	end;
+W5:
+	if ( @NUM15 == @NUM18 ) set @wh,@wh+1;
+	if ( @NUM15 == @NUM18 ) goto W6;
+	if ( @NUM15 != @NUM18 ) goto W6;
+        close;
+	end;
+W6:
+	if ( @NUM13 == @NUM15 ) goto W7;
+	if ( @NUM13 != @NUM15 ) goto W8;
+        close;
+	end;
+W7:
+	if ( @NUM15 == @NUM17 ) set @wh,@wh+10;
+	if ( @NUM15 == @NUM17 ) goto W8;
+	if ( @NUM15 != @NUM17 ) goto W8;
+        close;
+	end;
+W8:
+	if ( @NUM13 == @NUM16 ) goto W9;
+	if ( @NUM13 != @NUM16 ) goto W10;
+        close;
+	end;
+W9:
+	if ( @NUM16 == @NUM19 ) set @wh,@wh+1;
+	if ( @NUM16 == @NUM19 ) goto W10;
+	if ( @NUM16 != @NUM19 ) goto W10;
+        close;
+	end;
+W10:
+	mes"[老虎機]";
+	if ( @wh == 0 ) mes "沒獎了";
+	if ( @wh == 1 ) goto LINE1;
+	if ( @wh == 10 ) goto LINE1;
+	if ( @wh == 2 ) goto LINE2;
+	if ( @wh == 11 ) goto LINE2;
+	if ( @wh == 20 ) goto LINE2;
+	if ( @wh == 12 ) goto LINE3;
+	if ( @wh == 21 ) goto LINE3;
+	if ( @wh == 22 ) goto LINE4;
+	if ( @wh == 3 ) goto LINE5;
+	if ( @wh == 13 ) goto LINE5;
+	if ( @wh == 23 ) goto LINE5;
+	close;
+	end;
+	
+LINE1:
+	mes"[老虎機]";
+	mes"你中了一行!!";
+	mes"可獲以下獎品!!";
+	mes"10萬";
+	set zeny,zeny+100000;
+	close;
+	end;
+
+LINE2:
+	mes"[老虎機]";
+	mes"恭喜!!你中了兩行!!";
+	mes"可獲以下獎品!!";
+	mes"20萬";
+	set zeny,zeny+200000;
+	close;
+	end;
+
+LINE3:
+	mes"[老虎機]";
+	mes"恭喜!!你中了三行!!";
+	mes"可獲以下獎品!!";
+	mes"30萬";
+	set zeny,zeny+3000000;
+	set SkillPoint,SkillPoint+2;
+	close;
+	end;
+
+LINE4:
+	mes"[老虎機]";
+	mes"恭喜!!你中了四行!!";
+	mes"可獲以下獎品!!";
+	mes"40萬";
+	set zeny,zeny+4000000;
+	close;
+	end;
+
+LINE5:
+	if (@NUM11 == 7) goto W777;
+	mes"[老虎機]";
+	mes"恭喜!!你中了全部數字,太厲害了!!";
+	mes"可獲以下獎品!!";
+	mes"武器、防具精煉能力+7券 各1張";	
+	getitem	6230,1; //武器精煉能力+7券//
+	getitem	6234,1; //防具精煉能力+7券//
+	announce "恭喜" + strcharinfo(0) + "中了大型老虎機全部數字相同。",15;
+	close;
+	end;
+
+W777:
+	mes"[老虎機]";
+	mes"恭喜!!你中了全部7字,太厲害了!!";
+	mes"可獲以下獎品!!";
+	mes"武器、防具精煉能力+9券 各1張";	
+	getitem	6228,1; //武器精煉能力+9券//
+	getitem	6232,1; //防具精煉能力+9券//
+	announce "恭喜" + strcharinfo(0) + "中了大型老虎機全部7字相同。",15;
+	close;
+	end;
+}
+
+
+cmd_in02,184,102,6	duplicate(大型老虎機#0)	大型老虎機#1	111
+cmd_in02,188,108,6	duplicate(大型老虎機#0)	大型老虎機#2	111
+cmd_in02,184,108,6	duplicate(大型老虎機#0)	大型老虎機#3	111
+
+cmd_in02,171,102,6	duplicate(大型老虎機#0)	大型老虎機#4	111
+cmd_in02,167,102,6	duplicate(大型老虎機#0)	大型老虎機#5	111
+cmd_in02,169,108,6	duplicate(大型老虎機#0)	大型老虎機#6	111

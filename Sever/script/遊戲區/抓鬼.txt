@@ -1,0 +1,135 @@
+-	script	ROPIRATESKEL	-1,{
+
+//----- RO大盜的隨機出現城市時間設定 ----- 
+
+OnClock0000:
+OnClock0030:
+OnClock0100:
+OnClock0130:
+OnClock0200:
+OnClock0230:
+OnClock0300:
+OnClock0330:
+OnClock0400:
+OnClock0430:
+OnClock0500:
+OnClock0530:
+OnClock0600:
+OnClock0630:
+OnClock0700:
+OnClock0730:
+OnClock0800:
+OnClock0830:
+OnClock0900:
+OnClock0956:
+OnClock1000:
+OnClock1030:
+OnClock1100:
+OnClock1130:
+OnClock1200:
+OnClock1230:
+OnClock1300:
+OnClock1330:
+OnClock1400:
+OnClock1430:
+OnClock1500:
+OnClock1530:
+OnClock1600:
+OnClock1630:
+OnClock1700:
+OnClock1730:
+OnClock1800:
+OnClock1830:
+OnClock1900:
+OnClock1930:
+OnClock2000:
+OnClock2030:
+OnClock2100:
+OnClock2130:
+OnClock2200:
+OnClock2230:
+OnClock2300:
+OnClock2330:
+
+//----- RO大盜的隨機出現城市數量設定 [0-13 有14個 ]-----
+set $@ditu,rand(0,12);			
+//----- RO大盜的隨機出現城市設定 ----- (別打.gat)
+setarray $@romonapper$[0],"prontera","morocc","izlude","geffen","payon","alberta","aldebaran","xmas","comodo","yuno","gonryun","louyang","niflheim";
+//----- RO大盜的隨機出現城市名字設定 -----  (請對應上面次序)
+setarray $@romonmapname$[0],"普隆德拉","夢羅克","伊斯魯德","吉芬","斐揚","艾爾貝塔","艾爾帕蘭","姜餅城","克魔島","朱諾","昆侖","洛陽","尼芙菲姆";
+
+monster ""+$@romonapper$[$@ditu]+"",0,0,"幽魂",2003,20;
+announce "[ 抓鬼令 ] : 怨念幽魂在 [ "+$@romonmapname$[$@ditu]+" ] 出現,請玩家們速往抓捕,重重有賞!",16;
+end;
+}
+
+-	script	ROPIRATESKELL	-1,{
+OnNPCKillEvent:
+  	if ( killedrid == 2003 ) {
+//----------------------------------------------------------------[ RO大盜獎勵的相關設定 , 請各伺服器依情況斟酌 ]---------------------------------------------------------------- 
+//----- RO大盜的獎勵獎金設定 -----
+//----- 獎勵金額最少能夠取得多少 (預設 100萬 Zeny) 
+	set $@RORewardZeny,10000;
+
+//----- RO大盜的獎勵獎金最多能夠取得多少 (預設 500萬 Zeny) 
+	set $@RORewardZenyMax,1000000;
+
+//----- RO大盜的獎勵商城點數設定 -----
+//----- 獎勵金額最少能夠取得多少 (預設 25 點) 
+	set $@RORewardCash,1;
+
+//----- RO大盜的獎勵商城點數最多能夠取得多少 (預設 50 點) 
+	set $@RORewardCashMax,3;
+
+//----- RO大盜的獎勵獎品設定 -----
+//----- 獎勵獎品能夠取得的物品
+	setarray $@RORewardItem[1],910134;
+
+//----- RO大盜的獎品能夠取得的數量
+	setarray $@RORewardItemMax[1],1;
+
+//----- RO大盜的獎勵獎品的總數量 (預設 2 個) -----
+//----- Ps:請對應 獎勵獎品能夠取得的物品總數 -----
+	set $@RORewardItemNumber,1;
+
+//----------------------------------------------------------------[ 以下別修改 ]----------------------------------------------------------------
+	set @a,1;
+	if (@a==1) {
+	set @GetItem,rand(1,$@RORewardItemNumber);
+	getitem $@RORewardItem[@GetItem],$@RORewardItemMax[@GetItem];
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFF怨念幽魂^000000 ]!!";
+	mes "你獲得了 ^0000FF["+getitemname($@RORewardItem[@GetItem])+"]^000000 數量 ^FF0000["+$@RORewardItemMax[@GetItem]+"]^000000 個";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ 怨念幽魂 ] 獲得獎勵獎品 ["+getitemname($@RORewardItem[@GetItem])+"] 數量 ["+$@RORewardItemMax[@GetItem]+"] 個。",16;
+	close;
+	}
+	if (@a==2) {
+	set @GetZeny,rand($@RORewardZeny,$@RORewardZenyMax);
+	set zeny,zeny + @GetZeny;
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFF怨念幽魂^000000 ]!!";
+	mes "你獲得了 ^FF0000["+@GetZeny+"]^000000 Zeny";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ 怨念幽魂 ] 獲得獎勵獎金 ["+@GetZeny+"] Zeny。",16;
+	close;
+	}
+	if (@a==3) {
+	set @GetCash,rand($@RORewardCash,$@RORewardCashMax);
+	set #CASHPOINTS,#CASHPOINTS + @GetCash;
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFF怨念幽魂^000000 ]!!";
+	mes "你獲得了 ^0000FF商城點數^000000 ^FF0000["+@GetCash+"]^000000 點";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ 怨念幽魂 ] 獲得獎勵商城點數 ["+@GetCash+"] 點。",16;
+	close;
+	}
+	if (@a==4) {
+	atcommand "@die";
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "很不幸";
+	mes "[ ^00BBFF怨念幽魂^000000 ]用盡了最后的一絲力量,";
+	mes "與你同歸於盡了!!";
+	announce "[ 追悼會 ] : 英勇的玩家 [ "+strcharinfo(0)+" ] ,雖然制服了 [ 怨念幽魂 ] , 但是他自己卻付出了血的代價!!",16;
+	close;
+	}
+	}
+	end;
+}

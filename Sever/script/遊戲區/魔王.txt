@@ -1,0 +1,369 @@
+/*================================================
+- 腳本名稱：魔王問答
+- 腳本作者：阿神ˇ(a20775689@raidcall.com.tw)
+- 地圖作者：soulestar
+- 腳本分類：活動類
+- 測試端口：rA.CSEA.SeA.eA
+- 更新內容：
+- Ver 2.0 [調整] 回答方式調整(喊話)避免不必要的錯誤。
+- Ver 1.9 [修正] 一個錯位。
+- Ver 1.8 [修正] 移除一個潛在的錯誤。
+- Ver 1.7 [修正] 一個溢位。
+- Ver 1.6 [修正] 一個sleep錯誤。
+- Ver 1.5 [調整] 移除一個潛在的錯誤(測試中)。
+- Ver 1.4 [優化] 更新補位寫法。
+	  [修正] 最後一人被淘汰時的補位錯誤。
+- Ver 1.3 [修正] 活動時間靠太近時，若上一場還沒結束，則不會觸發下一場。
+- Ver 1.2 [新增] 可以自行設定報名及入場時間。
+	  [優化] 提醒報名及入場時間。
+	  [調整] NPC常駐顯示。
+- Ver 1.1 [修正] 現在不只支援rA、CSEA、SeA。
+- Ver 1.0 基礎架構完成。
+==================================================
+>>>各位大哥大姐轉載請保留以上，萬分感激<<<
+==================================================*/
+under_mark,92,54,5	script	魔王問答	738,{
+callfunc "PartyIPCheck";
+	switch($@BeelzebubState){
+		case 0:
+			mes "["+strnpcinfo(0)+"]";
+			mes "很抱歉，目前魔王休眠中";
+			mes "起床時間分別為";
+			mes "^0000FF10:30、19:15^000000";
+			mes "好好把握機會、勝出者可以獲得";
+			next;
+			mes "......幹嘛告訴你，你自己去試試";
+			close;
+		case 1:
+			/*query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
+			query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@LastIp$+"'", .@AccountId);
+			for(set .@i ,0;.@i<getarraysize(.@AccountId);set .@i,.@i+1){
+				if(isloggedin(.@AccountId[.@i])) set .@j,.@j+1;
+				if(.@j>1){
+					mes "Sorry，^FF6600" + strcharinfo(0) + "^000000，From[^FF6600" + .@LastIp$ + "^000000]";
+					mes "^FF0000Same IP，more than 1 windows.";
+					close;
+				}
+			}*/
+			for(set .@i,0; .@i<getarraysize($@Beelzebub$); set .@i,.@i+1){
+				if($@Beelzebub$[.@i]==strcharinfo(0)){
+					mes "["+strnpcinfo(0)+"]";
+					mes "^FF0000你已經報名過了喔^000000";
+					mes "請耐心等候游戲開始。";
+					close;
+				}
+			}
+			if(getarraysize($@Beelzebub$) > 127) {
+				mes "["+strnpcinfo(0)+"]";
+				mes "^0000FF報名人數已滿^000000。";
+			}
+			setarray $@Beelzebub$[getarraysize($@Beelzebub$)],strcharinfo(0);
+			mes "["+strnpcinfo(0)+"]";
+			mes "^FF6600你已經成功報名了^000000";
+			mes "記得要在^0066CC開放入場時找我進入場地^000000。";
+			close;
+		case 2: warp "que_moon",33,21;	end;
+		case 3:
+			mes "["+strnpcinfo(0)+"]";
+			mes "活動已經開始了，如果你錯過的話請等下一場吧。";
+			close;
+	}
+OnClock1030:
+OnClock1915:
+
+	if($@BeelzebubState) end;
+	set $@BeelzebubState,1;
+	deletearray $@Beelzebub$;
+	announce "[魔王問答] 活動已經開放報名, 限時 5 分鐘, 請要參與的玩家來找我報名。",15;
+	Initnpctimer;
+	delwaitingroom;
+	waitingroom "報名中…",0;
+	end;
+OnTimer300000:
+	delwaitingroom;
+	waitingroom "入場中…",0;
+	donpcevent strnpcinfo(0)+"::OnWarp";
+	end;
+OnTimer600000:
+	delwaitingroom;
+	waitingroom "進行中…",0;
+	donpcevent strnpcinfo(0)+"::OnStart";
+	end;
+
+OnWarp:
+	if(getarraysize($@Beelzebub$) < 2){
+		set $@BeelzebubState,0;
+		stopnpctimer;
+		announce "[魔王問答] 參賽人數不足 2 人，活動自行取消！",15;
+		delwaitingroom;
+		waitingroom "魔王問答",0;
+		end;
+	}
+	set $@BeelzebubState,2;
+	announce "[魔王問答] 報名時間已經截止，現在開放參賽者或觀看者入場, 請在 5 分鐘內完成！",15;
+	end;
+
+OnStart:
+	set $@BeelzebubState,3;
+	announce "[魔王問答] 活動現在已經開始，報名人數 ["+getarraysize($@Beelzebub$)+"]，關閉入場通道，請仔細的聽取說明！",15;
+	donpcevent "黑暗之王::OnRule";
+	end;
+
+OnInit:
+	set .SignTime,300; // 報名時間(單位：秒)
+	set .WarpTime,300; // 入場時間(單位：秒)
+	setnpcdisplay("黑暗之王","黑暗之王",737,2);
+	waitingroom "魔王問答",0;
+	end;
+}
+que_moon,33,34,4	script	黑暗之王	737,{
+	if(.Respondents$ != strcharinfo(0)) end;
+	switch(select(
+	@boon[0]?"使用【^008800PASS^000000】卡片":"^888888PASS^000000",
+	@boon[1]?"使用【^FFAA33迴轉^000000】卡片":"^888888迴轉^000000",
+	@boon[2]?"使用【^9900FF指定^000000】 卡片":"^888888指定^000000")){
+		case 1: // PASS 選項 1 ---
+			if(!@boon[0]) end;
+			mapannounce "que_moon", strcharinfo(0)+" : PASS !!",bc_map,0xFF8800;
+			if($@Beelzebub$[.temp+1] != "" && .temp != getarraysize($@Beelzebub$)-1) set .Respondents$,$@Beelzebub$[set(.temp,.temp+1)];
+			else { set .Respondents$,$@Beelzebub$[set(.temp,0)]; }
+			unittalk getcharid(3),"PASS";
+			mapannounce "que_moon", strnpcinfo(0)+" : "+strcharinfo(0)+" 使用【PASS】卡片, 輪到 [ "+.Respondents$+" ], 你有15秒的時間可以回答。",bc_map,0xFFFF90;
+			set @boon[0],0;
+			set .time,0;
+			stopnpctimer;
+			initnpctimer;
+			close;
+
+		case 2: // 迴轉 選項 2 ---
+			if(!@boon[1]) close;
+			if($@Beelzebub$[.temp-1] != "" && .temp != 0) set .Respondents$,$@Beelzebub$[set(.temp,.temp-1)];
+			else { set .Respondents$,$@Beelzebub$[set(.temp,getarraysize($@Beelzebub$)-1)]; }
+			unittalk getcharid(3),"迴轉";
+			mapannounce "que_moon", strnpcinfo(0)+" : "+strcharinfo(0)+" 使用【迴轉】卡片, 輪到 [ "+.Respondents$+" ], 你有15秒的時間可以回答。",bc_map,0xFFFF90;
+			set @boon[1],0;
+			set .time,0;
+			stopnpctimer;
+			initnpctimer;
+			close;
+
+		case 3: // 指定 選項 3 ---
+			if(!@boon[2]) close;
+			for(set .@i,0; .@i<getarraysize($@Beelzebub$); set .@i,.@i+1) set .@menu$,.@menu$+($@Beelzebub$[.@i])+":";
+			set .@who,select(.@menu$)-1;
+			if($@Beelzebub$[.@who] == strcharinfo(0)){
+				mes "["+strnpcinfo(0)+"]";
+				mes "^FF6600你無法選擇指定自己。^000000";
+				close;
+			}
+			set .Respondents$, $@Beelzebub$[set(.temp,.@who)];
+			unittalk getcharid(3),"指定";
+			mapannounce "que_moon", strnpcinfo(0)+" : "+strcharinfo(0)+" 使用【指定】卡片, 輪到 [ "+.Respondents$+" ], 你有15秒的時間可以回答。",bc_map,0xFFFF90;
+			set @boon[2],0;
+			set .time,0;
+			stopnpctimer;
+			initnpctimer;
+			close;
+	}
+end;
+
+// 遊戲規則說明 ---
+OnRule:
+	enablenpc strnpcinfo(0);
+	mapannounce "que_moon",strnpcinfo(0)+" : 遊戲開始後，我會出題並且點名玩家回答。",bc_map,0x0fff8c;
+	sleep 5000;
+	mapannounce "que_moon", strnpcinfo(0)+" : 被我點名到的玩家，請在 15 秒之內點我作答。",bc_map,0x0fff8c;
+	sleep 5000;
+	mapannounce "que_moon", strnpcinfo(0)+" : 題目五花八門，請玩家仔細思考在作答，你也可以選擇【PASS】【迴轉】【指定】。",bc_map,0x0fff8c;
+	sleep 5000;
+	mapannounce "que_moon", strnpcinfo(0)+" : 當然你必須答對上一到題目才有機率獲得這些福利。",bc_map,0x0fff8c;
+	sleep 5000;
+	mapannounce "que_moon", strnpcinfo(0)+" : 遊戲採淘汰制，只有一個人能夠打敗我！",bc_map,0x0fff8c;
+	sleep 5000;
+	mapannounce "que_moon", strnpcinfo(0)+" : 準備好的話，即將開始囉！",bc_map,0x0fff8c;
+	sleep 5000;
+
+// 魔王出題 ---
+OnDo:
+	deletepset 1;
+	set .Respondents$,"";
+	set .num,0;
+	set .ans$,"";
+	set .time,0;
+	if(getarraysize($@Beelzebub$) == 1){
+		stopnpctimer;
+		delwaitingroom;
+		waitingroom "魔王問答",0;
+		set $@BeelzebubState,0;
+		disablenpc strnpcinfo(0);
+		query_sql("SELECT `account_id` FROM `char` WHERE `name` = '"+escape_sql($@Beelzebub$[0])+"'",.@AID);
+		mapannounce "que_moon", strnpcinfo(0)+" : [ "+$@Beelzebub$[0]+"] 是最後的贏家！",bc_map,0xFFFF90;
+		deletearray $@Beelzebub$;
+		getitem 4,1,.@AID;
+		mapwarp "que_moon","prontera",56,174;
+		end;
+
+
+	}
+	if($@Beelzebub$[.temp+1] != "" && .temp != getarraysize($@Beelzebub$)-1) set .Respondents$,$@Beelzebub$[set(.temp,.temp+1)];
+	else { set .Respondents$,$@Beelzebub$[set(.temp,0)]; }
+	mapannounce "que_moon", getd("$@Question_"+set(.num,rand($@count))+"$")+" - [ "+.Respondents$+" ] 你有15秒的時間可以回答。",bc_map,0xFFFF90;
+	defpattern 1,".*:\\s(.*)","OnCheck";
+	activatepset 1;
+	Initnpctimer;
+	end;
+
+// 答題判斷
+OnCheck:
+	if(.Respondents$ != strcharinfo(0)) end;
+	mapannounce "que_moon", strcharinfo(0)+" : 答案是 ... "+$@p1$,bc_map,0x33FFAA;
+	set .time,0;
+	stopnpctimer;
+	if($@p1$ == getd("$@Answer_"+.num+"$")){
+		specialeffect2 131;
+		mapannounce "que_moon", strnpcinfo(0)+" : 恭喜答對 ! 真是幸運的逃過一劫了阿 !",bc_map,0xFFFF90;
+		if(rand(100)<30){
+			set @boon[set(.@j,rand(3))],1;
+			dispbottom "[魔王悄悄話] 恭喜你獲得免死金牌 ["+(.@j==1?"迴轉":.@j==2?"指定":"PASS")+"] ！";
+		}
+		donpcevent strnpcinfo(0)+"::OnDo";
+	} else {
+		specialeffect2 92;
+		percentheal -100,0;
+		mapannounce "que_moon", strnpcinfo(0)+" : 很抱歉, 你答錯了, 死吧智障 ! 這一題的答案是 [ "+getd("$@Answer_"+.num+"$")+" ] !",bc_map,0xFFFF90;
+		donpcevent strnpcinfo(0)+"::OnUpdate";
+	}
+	set $@p1$,"";
+	end;
+
+// 參賽者陣列更新(補位) ---
+OnUpdate:
+	for(set .@i,0; .@i<getarraysize($@Beelzebub$); set .@i,.@i+1){
+		if($@Beelzebub$[.@i] == .Respondents$){
+			if(.@i == getarraysize($@Beelzebub$)-1) break;
+			for(;.@i<getarraysize($@Beelzebub$);set .@i,.@i+1) set $@Beelzebub$[.@i],$@Beelzebub$[.@i+1];
+			break;
+		}
+	}
+	set $@Beelzebub$[(.@i==getarraysize($@Beelzebub$)-1?getarraysize($@Beelzebub$)-1:getarraysize($@Beelzebub$))],"";
+	donpcevent strnpcinfo(0)+"::OnDo";
+	end;
+
+// 時間倒數計時 ---
+OnTimer1000:
+	if(.time == 15 && .ans$ == ""){
+		stopnpctimer;
+		set .time,0;
+		delwaitingroom;
+		waitingroom "時間到",0;
+		mapannounce "que_moon", strnpcinfo(0)+" : 由於 [ "+.Respondents$+" ] 參賽者沒有在時間內答題，慘遭淘汰～這一題的答案是 [ "+getd("$@Answer_"+.num+"$")+" ]！",bc_map,0xFFFF90;
+		donpcevent strnpcinfo(0)+"::OnUpdate";
+	} else {
+		set .time,.time+1;
+		delwaitingroom;
+		waitingroom "剩餘 "+(15-.time)+" 秒 ",0;
+		Initnpctimer;
+	}
+	end;
+
+OnInit:
+	disablenpc strnpcinfo(0);
+	// 新增題目函數 勿動 ---
+	function QA {
+		setd "$@Question_"+$@count+"$",getarg(0);
+		setd "$@Answer_"+$@count+"$",getarg(1);
+		return set($@count,$@count+1);
+	}
+	// 題庫新增( 使用方法 : QA("題目","答案") ) ------------------------------------------------
+	QA("【歷史題】中國[四大美女](西施、王昭君、貂蟬、楊貴妃)中何者是唯一虛構的人物？","貂蟬");
+	QA("【時勢題】2013年度的金曲最佳國語男歌手是？","蕭敬騰");
+	QA("【時勢題】2013年度的金曲最佳國語女歌手是？","林憶蓮");
+	QA("【音樂題】很旅行的愛情的演唱歌手是？","袁詠琳");
+	QA("【時勢題】天使之護[Lv.7]時，對不死系增加防禦力為多少？","21");
+	QA("【藝文題】『剪刀石頭布』最早源自於哪一個國家？","中國");
+	QA("【歷史題】漢朝稱為『身毒』的是現今哪一個國家？","印度");
+	QA("【健體題】紅綠燈的『小綠人』是台灣人發明的那紅綠燈最初是哪一國人發明的？","英國");
+	QA("【國文題】「詩聖」是杜甫，「詩仙」是李白，那誰又被稱為「師佛」？","王維");
+	QA("【歷史題】成語「五十步，笑百步」是出自來一本書？","孟子");
+	QA("【綜合題】陀螺的起原來自宋朝，請問它最早的名稱是什麼？","千千");
+	QA("【常識題】反詐騙電話是幾號？","165");
+	QA("【書籍題】賣火柴的小女孩、醜小鴨、國王的新衣等都是哪一個童話作家的作品？","安徒生");
+	QA("【書籍題】三國演義中呂布和董卓為了哪一個美女誰而決裂？","貂蟬");
+	QA("【腦筋急轉彎】大象是世界上鼻子第一長的動物，那鼻子第二長的動物是什麼？","小象");
+	QA("【腦筋急轉彎】請問哪一條街不會下雨？","芝麻街");
+	QA("【自然題】糖尿病患者都會注射什麼讓血糖下降？","胰島素");
+	QA("【必知題】請問[此魔王問答]的作者是？","阿神");
+	QA("【歷史題】抗戰名將張自忠是山東人，對或錯？","對");
+	QA("【歷史題】抗戰名將張自忠是山西人，對或錯？","錯");
+	QA("【常識題】中國的國樹是銀杏，對或錯？","對");
+	QA("【常識題】台灣的國樹是銀杏，對或錯？","錯");
+	QA("【歷史題】仰韶文化是屬於新石器時代文化，對或錯？","對");
+	QA("【歷史題】仰韶文化是屬於舊石器時代文化，對或錯？","錯");
+	QA("【歷史題】中國歷史上統治時間最短的朝代是秦代，對或錯？","對");
+	QA("【歷史題】中國歷史上統治時間最短的朝代是唐代，對或錯？","錯");
+	QA("【自然題】世界上最大的動物是藍鯨，對或錯？","對");
+	QA("【自然題】世界上最大的動物是長鬚鯨，對或錯？","錯");
+	QA("【音樂題】被稱為樂聖的是貝多芬，對或錯？","對");
+	QA("【音樂題】被稱為樂聖的是蕭邦，對或錯？","錯");
+	QA("【歷史題】最早懂得用火的是北京人，對或錯？","對");
+	QA("【歷史題】最早懂得用火的是東京人，對或錯？","錯");
+	QA("【健體題】鬥牛表演中的彎頭劍是要刺心臟，對或錯？","對");
+	QA("【健體題】鬥牛表演中的彎頭劍是要刺背脊，對或錯？","錯");
+	QA("【健體題】鬥牛表演中的十字劍是要刺背脊，對或錯？","對");
+	QA("【健體題】鬥牛表演中的十字劍是要刺心臟，對或錯？","錯");
+	QA("【音樂題】被稱為愛國鋼琴詩人是蕭邦，對或錯？","對");
+	QA("【音樂題】被稱為愛國鋼琴詩人是貝多芬，對或錯？","錯");
+	QA("【常識題】世界上最早發現和使用石油的國家是美國，對或錯？","錯");
+	QA("【歷史題】愛德華八世是維多利亞女王的兒子，對或錯？","錯");
+	QA("【自然題】什麼動物的血是藍色的？(鱷魚、鯨魚、海豚、龍蝦)","龍蝦");
+	QA("【常識題】在空氣中含量最多的氣體是什麼？(氮氣、氫氣、氖氣、氧氣)","氮氣");
+	QA("【科學題】阿姆斯壯在西元幾年登陸月球？(1969、1970、1971、1972)","1969");
+	QA("【遊戲題】天使之擊只屬於服事的技能，對或錯？","錯");
+	QA("【遊戲題】犧牲祈福不論是LV1或是LV3，消耗SP皆為8，對或錯？","對");
+	QA("【遊戲題】無邊帽的防禦比冒險衣高，對或錯？","對");
+	QA("【遊戲題】長大衣的重量比皮帶重，對或錯？","錯");
+	QA("【遊戲題】長大衣的重量比皮帶輕，對或錯？","錯");
+	QA("【遊戲題】青蛇卡片效果為攻擊敵人時，可使用二刀連擊技能Lv1[所有武器皆適用]，對或錯？","錯");
+	QA("【遊戲題】黑蛇卡片效果為攻擊敵人時，可使用二刀連擊技能Lv1[所有武器皆適用]，對或錯？","對");
+	QA("【遊戲題】巴風特卡片效果為攻擊範圍可以達到九格內，對或錯？","錯");
+	QA("【遊戲題】增加DEX會影響ATK，對或錯？","對");
+	QA("【遊戲題】[怪物情報]是巫師專有的技能，對或錯？？","錯");
+	QA("【遊戲題】[營養蚯蚓]是抓大嘴鳥的道具，對或錯？","對");
+	QA("【遊戲題】[變態蚯蚓]是抓小雞的道具，對或錯？","對");
+	QA("【遊戲題】[營養蚯蚓]是抓小雞的道具，對或錯？","錯");
+	QA("【遊戲題】[變態蚯蚓]是抓大嘴鳥的道具，對或錯？","錯");
+	QA("【遊戲題】[心愛女人的回憶]是抓妖道的道具，對或錯？","對");
+	QA("【遊戲題】[心愛女人的回憶]是抓殭屍的道具，對或錯？","錯");
+	QA("【遊戲題】[山岳之都─斐揚]是製作各種果汁的地方，對或錯？","對");
+	QA("【國文題】「唐詩三百首」是由哪個朝代的人所編輯的？( 唐朝、宋朝、清朝 )","清朝");
+	QA("【國文題】『人生以服務為目的』這句話是哪個偉人說的？( 孫中山、蔣中正、胡適 )","孫中山");
+	QA("【地理題】東港在屏東，南港在台北，北港在雲林；請問西港在哪裡？( 台南、屏東、新竹 )","台南");
+	QA("【地理題】馬雅人的金字塔與埃及相同，都是帝王的陵墓，對或錯？","錯");
+	QA("【國文題】宋江陣是已『三國誌』的故事為背景，是三國時代常用的一種軍事陣法，對或錯？","錯");
+	QA("【常識題】台灣諺語頂港有名聲，下港有出名請問頂港、下港是用什麼來分界？( 大安溪、濁水溪、大甲溪 )","濁水溪");
+	QA("【常識題】台灣素有『珊瑚潭』之稱的水庫？( 烏山頭水庫、翡翠水庫、曾文水庫 )","烏山頭水庫"); 
+	QA("【常識題】廟會中常見的舞龍舞獅，當中的舞獅是哪個朝代傳入中國的？( 漢朝、元朝、唐朝 )","漢朝");
+	QA("【常識題】排灣族是台灣第三大原住民，他們的『祖靈祭』每幾年會舉行一次？( 每年、3年、5年 )","5年");
+	QA("【綜合題】曾經引領風潮的『黃梅調』是從哪種戲曲演變而來的？( 採茶歌、崑曲、京戲 )","採茶歌");
+	QA("【綜合題】呼拉圈中的『呼拉』是源自夏威夷語，它的意思是？( 圓圈圈、舞蹈、歡呼語 )","舞蹈");
+	QA("【國文題】中國古典文學『水滸傳』與『金瓶梅』都有『武松』這號人物，對或錯？","對");
+	QA("【藝文題】義大利文藝復興時期，著名的壁畫『最後的審判』是誰的代表作品？","米開朗基羅");
+	QA("【藝文題】表現主義大師－孟克以畫作『吶喊』聞名世界，請問他是哪一國人？( 瑞典、丹麥、挪威 )","挪威");
+	QA("【藝文題】垃圾車的前導音樂是鋼琴名取少女的祈禱，她的作者邦達傑芙卡是哪一國音樂家？( 瑞典、波蘭、挪威 )","波蘭");
+	QA("【國文題】沒有一三五七只有二四六八，猜四字成語。","無獨有偶");
+	//QA("【】","");
+	// 題庫新增完成-----------------------------------------------------------------------------
+	debugmes "魔王問答共 [ "+$@count+" ] 條題庫載入完成";
+	end;
+}
+
+-	script	OPEN	-1,{
+OnWhisperGlobal:
+	if(getgmlevel()) donpcevent "魔王的隨從::OnClock0000";
+	end;
+}
+
+
+que_moon	mapflag	nightenabled
+que_moon	mapflag	nobranch
+que_moon	mapflag	nosave	SavePoint

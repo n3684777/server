@@ -1,0 +1,572 @@
+cmd_in02,174,131,4	script	賭王	102,{
+	set @dice1,rand(1,6);
+	set @dice2,rand(1,6);
+	set @dice3,rand(1,6);
+	set @sun,@dice1+@dice2+@dice3;
+	//最大賭金
+	set @maxmoney,10000;
+	//大小賠率
+	set @c1,2;
+	//點數賠率
+	set @c2,50;
+	set @c3,25;
+	set @c4,4;
+	//豹子賠率
+	set @c5,30;
+	set @c6,100;
+	
+	mes "[賭王]";
+	mes "小賭養家，大賭傷身";
+	mes "你要賭大小、點數、還是豹子呢？";
+	mes "差別當然是在賠率不一樣囉！";
+	mes "目前的最大賭金為^ff0000" + @maxmoney + "^000000zeny";
+	next;
+	switch(select("賭大小","賭點數","賭豹子","不跟你賭了")) {
+	case 1:
+		mes "[賭王]";
+		mes "大小的賠率是^ff0000" +@c1+ "^000000倍";
+		mes "你要壓多少賭注呢？";
+		next;
+		input @money;
+		if(@money > @maxmoney) {
+			mes "[賭王]";
+			mes "最大賭金為^ff0000" + @maxmoney + "^000000zeny";
+			close;	
+		}
+		if(zeny < @money){
+		mes "[賭王]";
+		mes "您的金錢不足";
+		close;
+		}
+		set zeny,zeny - @money;
+		next;
+		switch(select("賭大","賭小","取消")) 
+		{
+		case 1:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun >= 10 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點大";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c1;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點小";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}		
+		case 2:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun <= 9 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點小";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c1;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點大";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 3:
+			mes "[賭王]";
+			mes "您的賭金為" + @money + "zeny，賭金還你";
+			set zeny,zeny + @money;
+			close;
+		}
+	case 2:
+		mes "[賭王]";
+		mes "點數的賠率是依照點數不同賠率有所不同。";
+		mes "4跟17的賠率為^ff0000" + @c2 + "^000000倍";
+		mes "5到7跟14到16的賠率為^ff0000" + @c3 + "^000000倍";
+		mes "8到13賠率為^ff0000" + @c4 + "^000000倍";
+		mes "你要壓多少賭注呢？";
+		next;
+		input @money;
+		if(@money > @maxmoney) 
+		{
+			mes "[賭王]";
+			mes "最大賭金為^ff0000" + @maxmoney + "^000000zeny";
+			close;	
+		}
+		if(zeny < @money)
+		{
+			mes "[賭王]";
+			mes "您的金錢不足";
+			close;
+		}
+		set zeny,zeny - @money;
+		next;
+		switch(select("賭4點","賭5點","賭6點","賭7點","賭8點","賭9點","賭10點","賭11點","賭12點","賭13點","賭14點","賭15點","賭16點","賭17點","取消")) 
+		{
+		case 1:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 4 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c2;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 2:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 5 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 3:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 6 ){
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}	
+		case 4:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 7 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 5:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 8 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 6:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 9 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 7:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 10 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 8:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 11 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 9:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 12 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 10:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 13 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c4;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 11:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 14 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			}else{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 12:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 15 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 13:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 16 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c3;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 14:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "挖哈哈";
+				mes "豹子通殺!!";
+				close;
+			}
+			if ( @sun == 17 )
+			{
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c2;
+				close;
+			} else {
+				mes "點數為^0000ff" + @sun + "^000000點";
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 15:
+			mes "[賭王]";
+			mes "您的賭金為" + @money + "zeny，賭金還你";
+			set zeny,zeny + @money;
+			close;
+		}
+	case 3:	
+		mes "[賭王]";
+		mes "豹子的賠率分兩種。";
+		mes "一種是只要是豹子，另一種是賭幾點的豹子。";
+		mes "第一種賠率為^ff0000" + @c5 + "^000000倍";
+		mes "第二種賠率為^ff0000" + @c6 + "^000000倍";
+		mes "你要壓多少賭注呢？";
+		next;
+		input @money;
+		if(@money > @maxmoney) 
+		{
+			mes "[賭王]";
+			mes "最大賭金為^ff0000" + @maxmoney + "^000000zeny";
+			close;	
+		}
+		if(zeny < @money)
+		{
+			mes "[賭王]";
+			mes "您的金錢不足";
+			close;
+		}
+		set zeny,zeny - @money;
+		next;
+		switch(select("賭豹子就好","賭3個1點","賭3個2點","賭3個3點","賭3個4點","賭3個5點","賭3個6點","取消")) 
+		{
+		case 1:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==@dice2 && @dice2==@dice3 && @dice1==@dice3 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c5;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 2:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==1 && @dice2==1 && @dice1==1 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 3:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==2 && @dice2==2 && @dice1==2 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 4:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==3 && @dice2==3 && @dice1==3 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 5:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==4 && @dice2==4 && @dice1==4 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 6:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==5 && @dice2==5 && @dice1==5 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 7:
+			mes "[賭王]";
+			mes "第一顆骰子為^3B39DF" + @dice1 + "^000000點";
+			mes "第二顆骰子為^3B39DF" + @dice2 + "^000000點";
+			mes "第三顆骰子為^3B39DF" + @dice3 + "^000000點";
+			if( @dice1==6 && @dice2==6 && @dice1==6 )
+			{
+				mes "點數為" + @dice1 + "點豹子";
+				mes "恭喜你贏了";
+				set zeny,zeny + @money*@c6;
+				close;
+			} else {
+				mes "可惜差一點，下次加油拉。";
+				close;
+			}
+		case 8:
+			mes "[賭王]";
+			mes "您的賭金為" + @money + "zeny，賭金還你";
+			set zeny,zeny + @money;
+			close;
+		}
+	case 4:
+		close;
+	}	
+}
