@@ -71851,7 +71851,7 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-  - Id: 2110000
+  - Id: 2110001
     AegisName: Card_Coin_
     Name: °ª¯Å¥d¤ùµw¹ô
     Type: Etc

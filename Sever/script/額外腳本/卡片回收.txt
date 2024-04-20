@@ -50,7 +50,7 @@ uttycty,120,167,5	script	卡片回收人員	10126,{
 		{
 			if(.@cardlist[.@choose] == .@mvpcard[.@i] ){mvptag = 1; break;}
 		}
-	if(mvptag == 1){getitem 2110000,.@count;}else{getitem 6379,.@count;}
+	if(mvptag == 1){getitem 2110001,.@count;}else{getitem 6379,.@count;}
 	close; 
 	case 2:
 	input .@card_quantity;
@@ -66,7 +66,7 @@ uttycty,120,167,5	script	卡片回收人員	10126,{
 		{
 			if(.@cardlist[.@choose] == .@mvpcard[.@i] ){mvptag = 1; break;}
 		}
-	if(mvptag == 1){getitem 2110000,.@card_quantity;}else{getitem 6379,.@card_quantity;}
+	if(mvptag == 1){getitem 2110001,.@card_quantity;}else{getitem 6379,.@card_quantity;}
 	close;
 	case 3:
 	callfunc "checkOKOK";
@@ -78,7 +78,7 @@ uttycty,120,167,5	script	卡片回收人員	10126,{
 		{
 			if(.@cardlist[.@c] == .@mvpcard[.@i] ){mvptag = 1; break;}
 		}
-	if(mvptag == 1){getitem 2110000,.@count;}else{getitem 6379,.@count;}
+	if(mvptag == 1){getitem 2110001,.@count;}else{getitem 6379,.@count;}
 	
 	}
 	close;
@@ -399,10 +399,10 @@ OnInit:
 	.@m = 3; //硬幣兌換需求數量
 	.@l = 3; //硬幣兌換需求數量
 	.@hh = 1000; // 卡片硬幣兌換高級卡片硬幣數量
-	.@coin = 2110000; // 卡片硬幣ID
+	.@coin = 2110001; // 卡片硬幣ID
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
-	sellitem(2110000,.@p,-1);	//高級卡片硬幣
+	sellitem(2110001,.@p,-1);	//高級卡片硬幣
 	sellitemcurrency(6379,.@hh);
     endsellitem(); 	
 	sellitem(4679,.@p,-1);	//闇●盧恩騎士 賽依連卡片
