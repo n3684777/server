@@ -1,0 +1,235 @@
+egg1,246,174,3	script	廣結良緣媒婆	71,{
+mes"----------交友系統-----------";
+mes"-登記需要費用:["+$@jyrob+"]";
+mes"-目前男性玩家登記人數:["+$mjsrenshu+"]";
+mes"-目前女性玩家登記人數:["+$fjsrenshu+"]";
+mes"-----------------------------";
+next;
+switch(select(		"01->^D9006C[ 登記交友資料 ]^000000",
+			"02->^2894FF[ 尋找男性玩家 ]^000000",
+			"03->^8CEA00[ 尋找女性玩家 ]^000000",
+			"04->^7E3D76[ 刪除交友信息 ]^000000",
+			"05->^FF1493[ 贈送好友物品 ]^000000",
+     (getgmlevel()>=90)?"06->^D9006C[ GM刪除功能表 ]^000000":""
+	
+)){
+case 1:
+if (#dengjihy==1) {
+mes"----------交友系統-----------";
+mes"-你的帳號已經有人物登記過了.";
+mes"-----------------------------";
+close;
+}
+if (zeny<$@jyrob){
+mes"----------交友系統-----------";
+mes"-你的錢貌似不夠登記費用哦.";
+mes"-----------------------------";
+close;
+}
+
+//==============================================女
+if(sex==0){
+mes"----------交友系統-----------";
+mes"-請輸入你的LINE:";
+next;
+input @qq$;
+mes"----------交友系統-----------";
+mes"-請輸入你的交友宣言:";
+next;
+input @ly$;
+query_sql "insert `haoyouf` values ('"+strcharinfo(0)+"','"+@qq$+"','"+@ly$+"',"+getcharid(3)+","+$@jiaoyou+")";
+set #dengjihy,1;
+set $fjsrenshu,$fjsrenshu+1;
+set zeny,zeny-$@jyrob;
+}
+//==============================================男
+if(sex==1){
+mes"----------交友系統-----------";
+mes"-請輸入你的LINE:";
+next;
+input @qq$;
+mes"----------交友系統-----------";
+mes"-請輸入你的交友宣言:";
+next;
+input @ly$;
+query_sql "insert `haoyoum` values ('"+strcharinfo(0)+"','"+@qq$+"','"+@ly$+"',"+getcharid(3)+","+$@jiaoyou+")";
+set #dengjihy,1;
+set $mjsrenshu,$mjsrenshu+1;
+set zeny,zeny-$@jyrob;
+}
+mes"----------交友系統-----------";
+mes"-你已經成功提交了資料";
+mes"-----------------------------";
+close;
+
+//===============================================男
+case 2:
+deletearray @rwid$[0],128;
+deletearray @qqhao$[0],128;
+deletearray @liuyan$[0],128;
+deletearray @jyaid[0],128;
+deletearray @dj[0],128;
+query_sql "select * from `haoyoum` where `dengji` = '1'",@rwid$,@qqhao$,@liuyan$,@jyaid,@dj;
+mes"----------交友系統-----------";
+for (set @t,0;@t<getarraysize(@dj);set @t,@t+1)
+{
+mes"-名字:^707038["+@rwid$[@t]+"]^000000";
+mes"-編號:^D9006C["+@jyaid[@t]+"]^000000";
+mes"-LINE:^5A5AAD["+@qqhao$[@t]+"]^000000";
+mes"-留言:^00A600["+@liuyan$[@t]+"]^000000";
+mes"-----------------------------";
+}
+close;
+
+
+
+//===============================================女
+case 3:
+deletearray @rwid$[0],128;
+deletearray @qqhao$[0],128;
+deletearray @liuyan$[0],128;
+deletearray @jyaid[0],128;
+deletearray @dj[0],128;
+query_sql "select * from `haoyouf` where `dengji` = '1'",@rwid$,@qqhao$,@liuyan$,@jyaid,@dj;
+mes"----------交友系統-----------";
+for (set @t,0;@t<getarraysize(@dj);set @t,@t+1)
+{
+mes"-名字:^707038["+@rwid$[@t]+"]^000000";
+mes"-編號:^D9006C["+@jyaid[@t]+"]^000000";
+mes"-LINE:^5A5AAD["+@qqhao$[@t]+"]^000000";
+mes"-留言:^00A600["+@liuyan$[@t]+"]^000000";
+mes"-----------------------------";
+}
+close;
+
+
+case 4:
+mes"----------交友系統-----------";
+if (sex==0&&#dengjihy==1){
+query_sql "delete from `haoyouf` where `account_id` = '"+getcharid(3)+"' and `dengji` = '1'";
+set #dengjihy,0;
+set $fjsrenshu,$fjsrenshu-1;
+mes"----------已經刪除-----------";
+close;
+}
+if (sex==1&&#dengjihy==1){
+query_sql "delete from `haoyoum` where `account_id` = '"+getcharid(3)+"' and `dengji` = '1'";
+set #dengjihy,0;
+set $mjsrenshu,$mjsrenshu-1;
+mes"----------已經刪除-----------";
+close;
+}
+mes"-你並沒有登記記錄啊";
+mes"-----------------------------";
+close;
+
+//==================================================贈送功能
+
+case 5:
+mes"----------交友系統-----------";
+mes"-請選則你要贈送好友的物品";
+next;
+setarray .@wu[1],678,1025,7135,7136,7137,7138,7139,12217,12114,12115,12116,12117,12210,30027;//====物品ID設置
+setarray .@shu[1],1,1,1,1,1,1,1,5,5,5,5,5,20,50;//======P點設置
+	set .@wp,select(
+	getitemname(.@wu[1])+" ["+.@shu[1]+"]P點",
+	getitemname(.@wu[2])+" ["+.@shu[2]+"]P點",
+	getitemname(.@wu[3])+" ["+.@shu[3]+"]P點",
+	getitemname(.@wu[4])+" ["+.@shu[4]+"]P點",
+	getitemname(.@wu[5])+" ["+.@shu[5]+"]P點",
+	getitemname(.@wu[6])+" ["+.@shu[6]+"]P點",
+	getitemname(.@wu[7])+" ["+.@shu[7]+"]P點",
+	getitemname(.@wu[8])+" ["+.@shu[8]+"]P點",
+	getitemname(.@wu[9])+" ["+.@shu[9]+"]P點",
+	getitemname(.@wu[10])+" ["+.@shu[10]+"]P點",
+	getitemname(.@wu[11])+" ["+.@shu[11]+"]P點",
+	getitemname(.@wu[12])+" ["+.@shu[12]+"]P點",
+	getitemname(.@wu[13])+" ["+.@shu[13]+"]P點",
+	getitemname(.@wu[14])+" ["+.@shu[14]+"]P點");
+mes"----------交友系統-----------";
+mes"-請輸入要贈送玩家的編號";
+next;
+input .@scaid$;
+mes"----------交友系統-----------";
+mes"-你要對他/她說的話:";
+next;
+input .@duihua$;
+next;
+mes"----------交友系統-----------";
+mes "你要贈送^0000FF"+getitemname(.@wu[.@wp])+"^000000給編號為["+.@scaid$+"]的玩家嗎?";
+next;
+menu "確定",-;
+if(#CASHPOINTS<.@shu[.@wp]){
+mes"-你的P點不足哦";
+mes"-----------------------------";
+close;
+}
+
+if(!isloggedin(atoi(.@scaid$))) {
+mes"----------交友系統-----------";
+mes "你的好友不在線上哦。";
+close;
+}
+set .@benren$,strcharinfo(0);
+set #CASHPOINTS,#CASHPOINTS-.@shu[.@wp];
+mes"----------交友系統-----------";
+mes"-禮物已經送出了";
+mes"-----------------------------";
+close2;
+attachrid (atoi(.@scaid$));
+announce "-[ 交友系統 ]您的粉絲["+.@benren$+"]贈送了["+getitemname(.@wu[.@wp])+"]給你了。",bc_self,0xFFFFAA;
+announce "-["+.@benren$+"]對你說的話:["+.@duihua$+"]",bc_self,0xFFFFAA;
+getitem .@wu[.@wp],.@shu[.@wp];
+detachrid;
+end;
+
+
+//==================================================GM功能
+
+case 6:
+mes"----------交友系統-----------";
+mes"-請輸入要刪除玩家的AID";
+next;
+input .@scaid$;
+mes"----------交友系統-----------";
+mes"-請輸入要刪除玩家的性別";
+mes"-輸入1為女,輸入2為男";
+next;
+input @sex;
+mes"----------交友系統-----------";
+mes"-你要刪除AID為:["+@scaid$+"]的玩家資料嗎?";
+if (@sex==1)mes"-性別為女的玩家資料嗎?";
+if (@sex==2)mes"-性別為男的玩家資料嗎?";
+next;
+menu "確定刪除",-;
+if (@sex<0&&@sex>2){
+mes"----------交友系統-----------";
+mes"-性別輸入錯誤了,請重新輸入";
+mes"-----------------------------";
+close;
+}
+if (@sex==1){
+query_sql "delete from `haoyouf` where `account_id` = '"+@scaid$+"' and `dengji` = '1'";
+}
+if (@sex==2){
+query_sql "delete from `haoyoum` where `account_id` = '"+@scaid$+"' and `dengji` = '1'";
+}
+mes"----------已經刪除-----------";
+close;
+
+
+}
+OnInit:
+set $@jiaoyou,1;//===莫修改
+set $@jyrob,10000;//======登記需要ROB設置
+query_sql "create table if not exists `haoyoum` (`name` varchar(20) not null default '0',`qq` varchar(20) not null default '0',`liuyan` varchar(20) not null default '0',`account_id` varchar(20) not null default '0',`dengji` varchar(20) not null default '0') ENGINE=MyISAM";
+query_sql "create table if not exists `haoyouf` (`name` varchar(20) not null default '0',`qq` varchar(20) not null default '0',`liuyan` varchar(20) not null default '0',`account_id` varchar(20) not null default '0',`dengji` varchar(20) not null default '0') ENGINE=MyISAM";
+	end;
+
+
+
+}
+
+
+
+

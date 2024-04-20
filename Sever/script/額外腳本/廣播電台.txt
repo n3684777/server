@@ -1,0 +1,157 @@
+//作者:????(不名)
+//修改:Akor 
+//修改日期:5月28;
+//來自:xwro.512j.com
+egg1,246,185,3	script	廣播電台	703,{	callfunc "broadcast";	}
+
+function	script	broadcast	{
+	if((#time7 < gettime(7)) || (#time8 < gettime(8)) || (#time3 < gettime(3)) || ((gettime(2)-#time2) >= 4)) set #WaitingTime,0;
+	if(#shuaping==1)goto L_WAITING;
+	mes " [廣播電台]";
+	mes "你好,我可以幫你廣播一些信息";
+	mes "請注意不要亂刷屏!";
+	mes "惡意刷屏的話一律^FF0000凍結小喇叭權限^000000處理";
+	mes "^FF0000而且靠下線來逃避處罰是沒有用的！^000000";
+	if(#WaitingTime>=3)mes "^FF0000請注意你已經在3分鐘內連續發言超過3次了,如果超過5次,系統將自動記錄你刷屏信息，並取消小喇叭資格，同時禁言1小時^000000";
+	next;
+	if(sex==1)set $@Lsex$,"MM";
+	if(sex==0)set $@Lsex$,"GG";
+	mes " [廣播電台]";
+	mes " 這是收費服務";
+	mes " 根據每種信息檔次";
+	mes " 將會分別收取不同的信息費用";
+	mes " 請選擇你要發送信息的類型";
+	next; 
+	menu	" 找"+$@Lsex$+"( 2000 Zeny)",S_mes1,
+        	" 找人組隊 ( 2000 Zeny)",S_mes3,
+        	" 找人帶我 ( 1000 Zeny)",S_mes4,
+        	" 工會收人 (10000 Zeny)",S_mes5,
+        	" 自定義多條發言",S_mes7;
+        close;
+
+L_WAITING:
+	if(countitem(19991)!=0)goto L_CLEAR;
+	mes " [廣播電台]";
+	mes " 你已經在三分鐘內";
+	mes " 連續發五次廣播,系統已經記錄你的刷屏信息!";
+	mes " 請自行到管理員認錯!";
+	close;
+	
+S_mes1:
+	if ( Zeny < 2000 ) goto Over;
+	set Zeny , Zeny - 2000;
+	if(sex==1)announce "【廣播電台】 漂亮MM們好,我是帥哥 (" + strcharinfo(0) + "),有MM願意和我聊天嗎?M我噢,嘿嘿^_^",15;
+	if(sex==0)announce "【廣播電台】 蟀GG們好,偶系最最口耐滴(" + strcharinfo(0) + ")美眉,有蟀GG願意陪偶聊天嗎?M偶喔,嘻嘻^o^",15;
+	goto L_END;
+S_mes3:
+	if ( getcharid(1) == 0 ) goto S_mes3_1;
+	if ( Zeny < 2000 ) goto Over;
+	set Zeny , Zeny - 2000;
+	announce "【廣播電台】 大家好,我是(" + strcharinfo(0) + "),有人願意加入(" + getpartyname(getcharid(1)) + ")隊伍一起練級打寶嗎?M我噢,吼吼-_-",15;
+	goto L_END;
+	close;
+S_mes3_1:
+	mes " [廣播電台]";
+	mes " 你還沒有組隊哦！";
+	mes " 為了節約你的Zeny";
+	mes " 請先建立隊伍！";
+	close;
+S_mes4:
+	if ( Zeny < 1000 ) goto Over;
+	set Zeny , Zeny - 1000;
+	announce "【廣播電台】 GGJJ們好,偶是新人(" + strcharinfo(0) + "),有GG/JJ願意帶我練級嗎?M偶喔,嗚嗚T_T",15;
+	goto L_END;
+	close;
+S_mes5:  
+	if ( getcharid(2) == 0 ) goto S_mes5_1;
+	if ( Zeny < 10000 ) goto Over;
+	set Zeny , Zeny - 10000;
+	announce "【廣播電台】 (" + getguildname(getcharid(2)) + ")工會收人嘍,入會的快M會長(" + getguildmaster(getcharid(2)) + ")!!!!",15; 
+	goto L_END;
+	close;
+S_mes5_1:
+	mes " [廣播電台]";
+	mes " 你好像還沒有加入任何工會嘛";
+	mes " 為了節約你的Zeny";
+	mes " 還是有了工會再發吧";
+	close;
+S_mes7:
+	mes " [廣播電台]";
+	mes "在輸入信息之前請看^FF0000注意事項^000000";
+	mes "^3355FF禁止發送任何含有暴力、色情、政治、人身攻擊的文字^000000";
+	mes "如有玩家發現違反規定者請抓圖在論壇上舉報,任何違規者^FF0000凍結帳戶1周^000000,再犯將^FF0000永久凍結帳戶^000000!";
+	next;	
+	mes " [廣播電台]";
+	mes " 請選擇你要打多少條";
+	menu "一條(10000 Zeny)",Stiao1,"二條(25000 Zeny)",Stiao2,"三條(40000 Zeny)",Stiao3,"四條(60000 Zeny)",Stiao4,"五條(88000 Zeny)",Stiao5;
+Stiao1:
+	if ( Zeny < 10000 ) goto Over;
+	set Zeny , Zeny - 10000;
+	set @Ldt,1;
+	goto L_g;
+Stiao2:
+	if ( Zeny < 25000 ) goto Over;
+	set Zeny , Zeny - 25000;
+	set @Ldt,2;
+	goto L_g;
+Stiao3:
+	if ( Zeny < 40000 ) goto Over;
+	set Zeny , Zeny - 40000;
+	set @Ldt,3;
+	goto L_g;
+Stiao4:
+	if ( Zeny < 60000 ) goto Over;
+	set Zeny , Zeny - 60000;
+	set @Ldt,4;
+	goto L_g;
+Stiao5:
+	if ( Zeny < 88000 ) goto Over;
+	set Zeny , Zeny - 88000;
+	set @Ldt,5;
+	
+L_g:
+	input @string1$;
+L_g2:	
+	if(@Ldt==1)goto L_gog;
+	input @string2$;
+L_g3:
+	if(@Ldt==2)goto L_gog;
+	input @string3$;
+L_g4:
+	if(@Ldt==3)goto L_gog;
+	input @string4$;
+L_g5:
+	if(@Ldt==4)goto L_gog;
+	input @string5$;
+L_gog:
+	if(@Ldt==1)announce "【廣播電台】("+strcharinfo(0)+")說:"+ @string1$ + ".",15;
+	if(@Ldt==2)announce "【廣播電台】("+strcharinfo(0)+")說:"+ @string1$ +"" + @string2$+"。",15;
+	if(@Ldt==3)announce "【廣播電台】("+strcharinfo(0)+")說:"+ @string1$ +"" + @string2$+""+ @string3$+"",15;
+	if(@Ldt==4)announce "【廣播電台】("+strcharinfo(0)+")說:"+ @string1$ +"" + @string2$+""+ @string3$+""+@string4$ +"",15;
+	if(@Ldt==5)announce "【廣播電台】("+strcharinfo(0)+")說:"+ @string1$ +"" + @string2$+""+ @string3$+""+@string4$ +""+@string5$ +"",15;
+L_CLOSE:
+	mes "信息發送成功";
+	goto L_END;
+	close;
+L_CLEAR:
+	delitem 19991,1;
+	mes "再敢耍屏殺無赦";
+	set #shuaping, 0;
+	set #WaitingTime, 0;
+	sc_end SC_NOCHAT;
+	close;
+Over:
+	mes " [廣播電台]";
+	mes "對不起，你的金額不足";
+	close;
+L_END:
+	if(#WaitingTime == 0) set #time7,gettime(7);
+	if(#WaitingTime == 0) set #time8,gettime(8);
+	if(#WaitingTime == 0) set #time3,gettime(3);
+	if(#WaitingTime == 0) set #time2,gettime(2);
+	set #WaitingTime,#WaitingTime+1;
+	if(#WaitingTime==5)set #shuaping,1;
+	if(#WaitingTime==5)sc_start SC_NOCHAT,3600,1;
+	close;
+	end;
+}

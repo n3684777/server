@@ -1,0 +1,377 @@
+////---------------------------------------------------------------
+////			ID換色			  -
+////---------------------------------------------------------------
+egg1	mapflag	nobranch
+////---------------------------------------------------------------
+////			染色髮型			  -
+////---------------------------------------------------------------
+egg1,182,170,3	script	造型師	625,{
+cutin "nines01",2;
+if( Class==4218 ||Class==4220){
+mes "[造型師]";
+mes "!!!!";
+mes "什麼喵喵喵?";
+mes "我聽不懂!";
+next;
+cutin "nines01",255;
+close;
+	}
+		mes "[造型師]";
+		mes "想要改變自己的顏色嗎?";
+		mes "^DD5AD2(髮型、染色編號可在試衣間預覽)^000000";
+			next;
+	switch(select("更改衣服顏色:更改髮型:更改髮型顏色:")){
+		
+	case 1:
+		if( dresscolor == 1 || Class==4252 ||Class==4253 || Class==4254 || 
+							   Class==4255 ||Class==4256 || Class==4257 ||
+							   Class==4258 ||Class==4259 || Class==4260 ||
+							   Class==4261 ||Class==4262 || Class==4263 ||
+							   Class==4264){ //機匠測試服裝染色判定及四轉
+			mes "請輸入衣服顏色編號";
+			mes "服裝開放7種顏色";
+			next;
+			input .@dpc;
+			if(.@dpc <= 7){ 
+			setlook 7,.@dpc;
+			cutin "nines01",255;
+				end;
+			}
+			mes "編號超出範圍";
+			mes "測試服裝開放7種顏色";
+			cutin "nines01",255;	
+			close;
+		}
+		mes "請輸入1~7衣服顏色編號";
+		next;
+		//==========================================
+		inputno:
+		set .@i,0;
+		input .@dpc;
+		if(.@dpc <= 7){ 
+		setlook 7,.@dpc;
+		next;
+		mes "這顏色滿意嗎?";
+		mes "當前顏色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nextco,
+		"上一款",lastco,
+		"重新輸入編號",inputno,
+		"離開",closemes;
+		//==========================================
+		nextco:
+		set .@i,.@i+1;
+		if(.@dpc+.@i > 7){ goto closemes;}
+		setlook 7,.@dpc+.@i;
+		next;
+		mes "這顏色滿意嗎?";
+		mes "當前顏色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nextco,
+		"上一款",lastco,
+		"重新輸入編號",inputno,
+		"離開",closemes;
+		//==========================================
+		lastco:
+		set .@i,.@i-1;
+		setlook 7,.@dpc+.@i;
+		next;
+		mes "這顏色滿意嗎?";
+		mes "當前顏色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nextco,
+		"上一款",lastco,
+		"重新輸入編號",inputno,
+		"離開",closemes;
+		//==========================================
+		}
+		mes "編號超出範圍";
+		close2;
+		cutin "laperm01",2;	
+		end;
+			
+	case 2:
+		mes "請輸入1~32髮型編號";
+		next;
+		//==========================================
+		inputhair:
+		set .@i,0;
+		input .@dpc;
+		if(.@dpc <= 32){ 
+		setlook 1,.@dpc;
+		next;
+		mes "這髮型滿意嗎?";
+		mes "當前髮型編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthair,
+		"上一款",lasthair,
+		"重新輸入編號",inputhair,
+		"離開",closemes;
+		//==========================================
+		nexthair:
+		set .@i,.@i+1;
+		if(.@dpc+.@i > 32){ goto closemes;}
+		setlook 1,.@dpc+.@i;
+		next;
+		mes "這髮型滿意嗎?";
+		mes "當前髮型編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthair,
+		"上一款",lasthair,
+		"重新輸入編號",inputhair,
+		"離開",closemes;
+		//==========================================
+		lasthair:
+		set .@i,.@i-1;
+		setlook 1,.@dpc+.@i;
+		next;
+		mes "這髮型滿意嗎?";
+		mes "當前髮型編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthair,
+		"上一款",lasthair,
+		"重新輸入編號",inputhair,
+		"離開",closemes;
+		//==========================================
+		}
+		mes "編號超出範圍";
+		mes "編號內容可在試衣間預覽";
+		close2;
+		cutin "laperm01",2;	
+			end;
+			
+		
+	case 3:
+		mes "請輸1~49入髮型顏色編號";
+		next;
+		//==========================================
+		inputhac:
+		set .@i,0;
+		input .@dpc;
+		if(.@dpc <= 49){ 
+		setlook 6,.@dpc;
+		next;
+		mes "這髮色滿意嗎?";
+		mes "當前髮色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthac,
+		"上一款",lasthac,
+		"重新輸入編號",inputhac,
+		"離開",closemes;
+		
+		//==========================================
+		nexthac:
+		set .@i,.@i+1;
+		if(.@dpc+.@i > 49){ goto closemes;}
+		setlook 6,.@dpc+.@i;
+		next;
+		mes "這髮色滿意嗎?";
+		mes "當前髮色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthac,
+		"上一款",lasthac,
+		"重新輸入編號",inputhac,
+		"離開",closemes;
+		//==========================================
+		lasthac:
+		set .@i,.@i-1;
+		setlook 6,.@dpc+.@i;
+		next;
+		mes "這髮色滿意嗎?";
+		mes "當前髮色編號: ^0000ff["+(.@dpc+.@i)+"]";
+		menu
+		"下一款",nexthac,
+		"上一款",lasthac,
+		"重新輸入編號",inputhac,
+		"離開",closemes;		
+		//==========================================
+		}
+		mes "編號超出範圍";
+		close2;
+		cutin "nines01",255;	
+		end;
+		}
+		closemes:
+		close2;
+		cutin "nines01",255;
+		end;
+		
+}	
+
+////---------------------------------------------------------------
+////			貓咪美容			  -
+////---------------------------------------------------------------
+egg1,176,172,5	script	貓咪美容	10166,{
+if( Class==4218||Class==4220){	
+	mes "[艾瑪]";
+	mes "我是不是很美喵!";
+	mes "你也想變好看嗎喵?";
+	next;
+	switch(select("更改衣服顏色:更改髮型:更改髮型顏色:")){
+	case 1:
+		mes "[艾瑪]";
+		mes "很抱歉";
+		mes "因為設計師外出旅行";
+		mes "目前只開放三種顏色喵!";
+		next;
+		cutin "catcolour",2;	
+		mes "請輸入編號";
+		input .@cco;
+		next;
+		if(.@cco <= 3){ 
+		setlook 7,.@cco;
+		mes "[艾瑪]";
+		mes "喵喵喵!";
+		mes "我快愛上你了!";
+		next;
+		cutin "laperm01",2;	
+		close;
+		}else{
+		mes "[艾瑪]";
+		mes "很抱歉 !";
+		mes "目前只開放三種顏色喵!";
+		cutin "laperm01",2;	
+		close;
+		}
+	case 2:
+		mes "[艾瑪]";
+		mes "很抱歉";
+		mes "因為設計師外出旅行";
+		mes "目前只開放六種髮型喵!";
+		next;
+		cutin "catcolour3",2;	
+		mes "請輸入編號";
+		input .@cco;
+		next;
+		if(.@cco <= 6){ 
+		setlook 1,.@cco;
+		mes "[艾瑪]";
+		mes "喵喵喵!";
+		mes "我快愛上你了!";
+		next;
+		cutin "laperm01",2;	
+		close;
+		}else{
+		mes "[艾瑪]";
+		mes "很抱歉 !";
+		mes "目前只開放六種髮型喵!";
+		cutin "laperm01",2;	
+		close;
+		}
+		case 3:
+		mes "[艾瑪]";
+		mes "很抱歉";
+		mes "因為設計師外出旅行";
+		mes "目前只開放八種顏色喵!";
+		next;
+		cutin "catcolour2",2;	
+		mes "請輸入編號";
+		input .@cco;
+		next;
+		if(.@cco <= 8){ 
+		setlook 6,.@cco;
+		mes "[艾瑪]";
+		mes "喵喵喵!";
+		mes "我快愛上你了!";
+		next;
+		cutin "laperm01",2;	
+		close;
+		}else{
+		mes "[艾瑪]";
+		mes "很抱歉 !";
+		mes "目前只開放八種顏色喵!";
+		cutin "laperm01",2;	
+		close;
+			}
+		}
+	}
+	mes "喵喵喵!";
+	mes "喵~~~";
+	next;
+	mes "^A52D3C- 好可愛的貓咪呀!^000000";
+	close;
+}
+////---------------------------------------------------------------
+////			JRO服裝更換		  -
+////---------------------------------------------------------------
+egg1,179,170,6	script	服裝設計師	646,{
+		mes "[設計師]";
+		mes "-歡迎使用服裝切換服務-";
+		cutin "igu03",2;
+		next;
+		if( Class==4054||Class==4055||Class==4056||Class==4057||Class==4059||Class==4060||Class==4061||Class==4062||
+			Class==4063||Class==4065||Class==4066||Class==4067||Class==4068||Class==4069||Class==4070||Class==4071||
+			Class==4072||Class==4073||Class==4074||Class==4075||Class==4076||Class==4077||Class==4078||Class==4079||
+			Class==4096||Class==4097||Class==4098||Class==4099||Class==4100||Class==4101||Class==4102||Class==4103||
+			Class==4104||Class==4105||Class==4106||Class==4107||Class==4108){
+		switch(select("新服裝:原服裝:四轉服裝")){
+		case 1:
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+				setlook LOOK_BODY2,1;
+				setlook 7,0;
+				end;
+				close2;
+				
+		case 2:
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+				setlook LOOK_BODY2,0;
+				setlook 7,0;
+				end;
+				close2;
+		case 3:
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+				setlook LOOK_BODY2,4;
+				setlook 7,0;
+				end;
+				close2;
+
+				}
+			 }
+		if( Class==4058||Class==4064){
+		switch(select("新服裝:原服裝:四轉服裝")){
+		case 1:
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+			set dresscolor,0;
+				setlook LOOK_BODY2,1;
+				setlook 7,0;
+				end;
+				close2;
+				
+		case 2:
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+			set dresscolor,0;
+				setlook LOOK_BODY2,0;
+				setlook 7,0;
+				end;
+				close2;
+		case 3:
+			mes "※注意※";
+			mes "四轉服裝不提供染色代碼";
+			mes "且試衣間無法預覽";
+			next;
+			mes "[設計師]";
+			mes "^A52D3C-更換成功-^000000";
+				cutin "laperm01",2;	
+				set dresscolor,1;
+				setlook LOOK_BODY2,4;
+				setlook 7,0;
+				end;
+				close2;			
+			}			
+		}	
+		mes "[設計師]";
+		mes "^A52D3C-很遺憾-^000000";
+		mes "^A52D3C-暫未支援您的職業-^000000";
+			cutin "laperm01",2;	
+			close2;
+}

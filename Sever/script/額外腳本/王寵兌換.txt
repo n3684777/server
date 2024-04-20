@@ -1,0 +1,112 @@
+egg1,183,186,5	script	胐传	10126,{
+
+	menu
+
+	     " ブń胐矹",a1,
+	     " る窟胐矹",a2,
+	     " フ璼胐矹",a3,
+	     " 脋璣动胐矹",a4,
+	     " 穞冠配胐矹",a5;
+
+
+	a1:
+        mes " [胐传]";
+	mes " 传玡и惠璶Μ";
+	mes " 胐刽(ブń) x 1";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[胐传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(60953)< 1) goto NOitem;
+	delitem 60953,@s*1;
+	getitem 9111,@s*1;
+
+        mes " [胐传]";
+	mes " 谅谅磃臮";
+	close;
+
+	a2:
+        mes " [胐传]";
+	mes " 传玡и惠璶Μ";
+	mes " 胐刽(る窟) x 1";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[胐传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(60954)< 1) goto NOitem;
+	delitem 60954,@s*1;
+	getitem 9112,@s*1;
+
+        mes " [胐传]";
+	mes " 谅谅磃臮";
+	close;
+
+	a3:
+        mes " [胐传]";
+	mes " 传玡и惠璶Μ";
+	mes " 胐刽(フ璼) x 1";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[胐传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(60955)< 1) goto NOitem;
+	delitem 60955,@s*1;
+	getitem 9115,@s*1;
+
+        mes " [胐传]";
+	mes " 谅谅磃臮";
+	close;
+
+	a4:
+        mes " [胐传]";
+	mes " 传玡и惠璶Μ";
+	mes " 胐刽(脋璣动) x 1";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[胐传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(60956)< 1) goto NOitem;
+	delitem 60956,@s*1;
+	getitem 9121,@s*1;
+
+        mes " [胐传]";
+	mes " 谅谅磃臮";
+	close;
+
+	a5:
+        mes " [胐传]";
+	mes " 传玡и惠璶Μ";
+	mes " 胐刽(穞冠配) x 1";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[胐传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(60957)< 1) goto NOitem;
+	delitem 60957,@s*1;
+	getitem 9122,@s*1;
+
+        mes " [胐传]";
+	mes " 谅谅磃臮";
+	close;
+
+
+	NOitem:
+	mes " [胐传]";
+	mes " 叫絋粄计秖琌ì镑";
+	close;
+	}

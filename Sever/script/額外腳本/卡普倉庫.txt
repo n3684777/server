@@ -1,0 +1,56 @@
+egg1,217,185,4	script	莎拉倉庫管理員#1::Kafla	3190,{
+    //cutin "sarah_hero3",2;
+	mes "^33CC33【莎拉】^000000";
+	//mes "現在是:^FF0000"+ gettimestr("%Y年%m月%d日 %H:%M:%S",50) +"^000000";
+    mes "^0088FF"+strcharinfo(0)+"^000000 您好。";
+	mes "我是仙境傳說 ^3355FF服務人員^000000";
+	mes "能在這裡見到你真的很高興唷!";
+	mes "請問你需要什麼樣的服務呢？";
+	switch(select("開啟倉庫:開啟公會倉庫:儲存服務")){
+		case 1:
+			openstorage();
+			cutin "laperm01",2;	
+				close;
+		case 2: //開啟公會倉庫
+			guildopenstorage();
+			cutin "laperm01",2;	
+				close;	
+		case 3: //儲存服務
+            callfunc "Service","egg1",214,167;
+		        break;		
+    }
+}
+lroom00,59,148,5	duplicate(Kafla)	莎拉 職員#2	3190
+under_mark,102,54,5	duplicate(Kafla)	莎拉 職員##	3190
+function	script	Service	{
+	next;
+	switch(select("儲存服務")){
+	
+	case 1:
+		savepoint getarg(0),getarg(1),getarg(2);
+		mes "已經儲存好了，";
+		mes "謝謝您的使用";
+		cutin "laperm01",2;	
+		close;
+	}
+	end;
+}
+
+egg1,215,182,3	script	小護士	864,{
+percentheal 100,50;
+sc_start SC_BLESSING,600000,10;
+sc_start SC_INCREASEAGI,600000,10;
+sc_start SC_ADRENALINE,600000,10;
+sc_start SC_ASPERSIO,600000,10;
+sc_start SC_ASSUMPTIO,600000,5;
+sc_start SC_INCCRI,600000,5;
+sc_start SC_FOOD_STR_CASH,1800000,10;
+sc_start SC_FOOD_AGI_CASH,1800000,10;
+sc_start SC_FOOD_INT_CASH,1800000,10;
+sc_start SC_FOOD_DEX_CASH,1800000,10;
+sc_start SC_FOOD_LUK_CASH,1800000,10;
+sc_start SC_FOOD_VIT_CASH,1800000,10;
+
+specialeffect2 66;
+end;
+}

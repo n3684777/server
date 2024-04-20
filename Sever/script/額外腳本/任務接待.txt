@@ -1,0 +1,123 @@
+/*================================================
+- 腳本名稱：任務接待員 腳本設置版
+- 腳本作者：阿神ˇ(a20775689@raidcall.com.tw)
+- 測試環境：rAthena SQL
+- 更新內容：
+- Ver 1.4 優化腳本，移除一個潛在的錯誤
+- Ver 1.3 增加一個隨時觀看任務進度的function, 需要的使用者請自創物品使用callfunc "QP";
+- Ver 1.2 增加一個'每日任務'的設定(在第二個""添加1,無填入則非每日任務)
+- Ver 1.1 增加一個等級限制功能(在任務名稱後面添加)
+- Ver 1.0 完成架構
+* 數據結構:
+* quest("<任務名稱>",<限制等級>,<魔物1>,<數量1>,...,<魔物n>,<數量n>,"",<獎勵道具1>,<數量1>,...,<獎勵道具n>,<數量n>,"",<每日任務請填1，無填入則可以重複解>);
+>>>各位大哥大姐轉載請保留以上，萬分感激<<<
+================================================*/
+function	script	QP	{
+	if(Q){
+		mes "[任務進度]";
+		for(set .@i,0;.@i<getd("$@q"+"_"+GetQ);set .@i,.@i+1) mes "^0066CC"+getmonsterinfo(getd("$@qm"+"_"+GetQ+"_"+.@i),0)+"^000000 "+"[^009900"+getd("charid"+.@i)+"^000000/^FF6600"+getd("$@qn"+"_"+GetQ+"_"+.@i)+"^000000]";
+		close;
+	}
+	mes "^888888尚未接取任務^000000";
+	close;
+}
+egg1,180,202,5	script	任務接待員#2	856,{
+	function quest;
+	if(Q){
+		mes "你已接下^0066CC"+$@QuestName$[GetQ]+"^000000任務";
+		mes "但是尚未完成。";
+		mes "-----------------------------------";
+		mes "[任務進度]";
+		for(set .@i,0;.@i<getd("$@q"+"_"+GetQ);set .@i,.@i+1) mes "^0066CC"+getmonsterinfo(getd("$@qm"+"_"+GetQ+"_"+.@i),0)+"^000000 "+"[^009900"+getd("charid"+.@i)+"^000000/^FF6600"+getd("$@qn"+"_"+GetQ+"_"+.@i)+"^000000]";
+		if(select("取消任務","取消") == 2) close;
+		next;
+		mes "你目前的任務是^0066CC"+$QuestName$[GetQ]+"^000000";
+		mes "請問要取消任務嘛";
+		if(Select("^FF0000確定取消^000000:^0000FF不用取消^000000")==2)close;
+		for(set .@i,0;.@i<getd("$@q"+"_"+GetQ);set .@i,.@i+1) setd "charid"+.@i,0;
+		set Q,0;
+		set QC,0;
+		set GetQ,0;
+		mes "已取消任務";
+		close;
+	}
+	for(set .@i,0;.@i<getarraysize($@QuestName$);set .@i,.@i+1) set .@menu$,.@menu$+(BaseLevel>=getd("$@ql"+.@i)?"[Lv.^FF0000"+getd("$@ql"+.@i)+"^000000] "+$@QuestName$[.@i]:"^888888[Lv."+getd("$@ql"+.@i)+"] "+$@QuestName$[.@i])+":";
+	set .@ms,select(.@menu$)-1;
+	if(getd("$@ql"+.@ms)) mes "＊任務所需等級:^ff6600"+getd("$@ql"+.@ms)+"^000000";
+	mes "-----------------------------------";
+	mes "＊任務內容";
+	for(set .@i,0;getd("$@qm"+"_"+.@ms+"_"+.@i);set .@i,.@i+1)
+		mes "- 狩獵 ^0066CC"+getmonsterinfo(getd("$@qm"+"_"+.@ms+"_"+.@i),0)+"^000000 x ^D2691E"+getd("$@qn"+"_"+.@ms+"_"+.@i)+"^000000";
+	mes "-----------------------------------";
+	mes "＊任務獎勵";
+	for(set .@i,0;getd("$@qi"+"_"+.@ms+"_"+.@i);set .@i,.@i+1)
+		mes "- 獎勵道具 ^FF1493"+getitemname(getd("$@qi"+"_"+.@ms+"_"+.@i))+" x "+getd("$@qin"+"_"+.@ms+"_"+.@i)+" ^000000";
+	next;
+	if(select("接受","取消")==2)close;
+	if(BaseLevel<getd("$@ql"+.@ms)){
+		mes "您的等級不足 ^FF1493"+getd("$@ql"+.@ms);
+		close;
+	}
+	if(gettimetick(2)-getd("qtime"+.@ms) < 86400){
+		mes "此任務屬於每日任務";
+		mes "您今天已經解過一次了。";
+		mes " ";
+		mes " ";
+		mes "冷卻時間還有 : ^0066CC"+(86400-(gettimetick(2)-getd("qtime"+.@ms)))+"^000000 秒";
+		close;
+	}
+	set Q,1;
+	mes "你已接下^0066CC"+$@QuestName$[set(GetQ,.@ms)]+"^000000任務";
+	close;
+OnInit:
+	/*********** 任務設置開始 ***********/
+	quest("史波浪壯麗硬幣",50,3741,15,1554,20,"",6081,10,"",1);
+	quest("穆拉村硬幣",50,3741,15,1554,20,"",6380,10,"",1);
+	quest("死靈 傭兵召喚書",90,1098,150,1192,30,"",12301,1,"",1);
+	quest("闇●劍士 傭兵召喚書",60,1163,50,1276,20,1117,50,"",12302,1,"",1);
+	quest("伊甸園裝備I",30,1009,10,1107,10,1001,5,1051,10,1175,10,1005,5,"",5583,1,2560,1,15009,1,2456,1,"");
+	quest("伊甸園裝備II",60,1076,15,1031,10,1160,15,1237,15,1176,10,"",5583,1,2560,1,15010,1,2457,1,"");
+	quest("伊甸園裝備III",90,1023,10,1273,10,1686,10,1153,20,1152,20,1264,15,1065,10,"",5583,1,2560,1,15011,1,2458,1,"");
+	quest("伊甸園裝備IV",100,1192,20,1117,10,1619,30,1620,30,1621,30,1622,5,1776,60,1988,1,1995,1,"",18514,1,2571,1,15031,1,2473,1,"");
+	/*********** 任務設置結束 ***********/
+	end;
+OnNPCKillEvent:
+	if(Q){
+		for(set .@i,0;.@i<getd("$@q"+"_"+GetQ);set .@i,.@i+1){
+			if(killedrid == getd("$@qm"+"_"+GetQ+"_"+.@i)){
+				if(getd("charid"+.@i) < getd("$@qn"+"_"+GetQ+"_"+.@i)){
+					setd "charid"+.@i,getd("charid"+.@i)+1;
+					if(getd("charid"+.@i) >= getd("$@qn"+"_"+GetQ+"_"+.@i)) set QC,QC+1;
+					break;
+				}
+			}
+		}
+		if(QC == getd("$@q"+"_"+GetQ)){
+			for(set .@i,0;.@i<getd("$@g"+"_"+GetQ);set .@i,.@i+1)
+				getitem getd("$@qi"+"_"+GetQ+"_"+.@i),getd("$@qin"+"_"+GetQ+"_"+.@i);
+			if(getd("$@qt"+GetQ)) setd "qtime"+GetQ,gettimetick(2);
+			announce "【"+$@QuestName$[GetQ]+"】 任務已經完成！請查收獎勵！",bc_self,0x00ff7f;
+			for(set .@i,0;.@i<getd("$@q"+"_"+GetQ);set .@i,.@i+1) setd "charid"+.@i,0;
+			set Q,0;
+			set QC,0;
+			set GetQ,0;
+		}
+	}
+end;
+/* 任務函數　請勿更動*/
+function quest	{
+	for(set .@i,2;getArg(.@i)+""!="";set .@i,.@i+2){
+		setd "$@qm"+"_"+.l+"_"+set(.@p,set(.@k,.@k+1)-1),getArg(.@i);
+		setd "$@qn"+"_"+.l+"_"+.@p,getArg(.@i+1);
+		setd "$@q"+"_"+.l,getd("$@q"+"_"+.l)+1;
+	}
+	for(set .@i,.@i+1;getArg(.@i)+""!="";set .@i,.@i+2){
+		setd "$@qi"+"_"+.l+"_"+set(.@t,set(.@j,.@j+1)-1),getArg(.@i);
+		setd "$@qin"+"_"+.l+"_"+.@t,getArg(.@i+1);
+		setd "$@g"+"_"+.l,getd("$@g"+"_"+.l)+1;
+	}
+	if(getArg(.@i+1,0)) setd "$@qt"+.l,1;
+	setd "$@ql"+.l,getArg(1);
+	return set(getElementOfArray($@QuestName$,set(.l,.l+1)-1),getArg(0)+(getd("$@qt"+(getarraysize($@QuestName$)))?"(^FF0000每日任務^000000)":""));
+}
+}

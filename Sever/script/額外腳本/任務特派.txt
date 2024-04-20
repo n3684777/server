@@ -1,0 +1,228 @@
+
+
+egg1,185,200,5	script	任務特派#主城	2279,{
+	function Ro_MessageEnd;
+	function Ro_MissionShow;
+	@npcname$ = "^FF0000[任務特派]^000000";
+	mes @npcname$;
+	mes "^5599FF═══════════════^000000";
+	mes "^0AA770嗨嗨！親愛的，^000000";
+	mes "^0AA770有些任務我需要託付給你^000000";
+	mes "^0AA770希望你能幫忙我^000000";
+	mes "^5599FF═══════════════^000000";
+	switch(select((#Ro_Mission)?" ^FF0000提交任務^000000":"",(#Ro_Mission)?" ^FF0000放棄任務^000000":"",(!#Ro_Mission)?" ^0000FF承接任務^000000":"",(getgmlevel() >= 99)?"- 線上設置":""))
+	{
+		case 1:
+			for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+#Ro_Mission)); .@i++) {
+				if (getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@i+"]")) {
+					switch($Ro_MissionType[#Ro_Mission])
+					{
+						case 1:
+							if (countitem(getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@i+"]")) < getd("$Ro_MissionNeedNum_"+#Ro_Mission+"["+.@i+"]"))
+								Ro_MissionShow(#Ro_Mission,1);
+							break;
+						case 2:
+							if (getd("#Ro_MissionProgress_"+#Ro_Mission+"["+.@i+"]") < getd("$Ro_MissionNeedNum_"+#Ro_Mission+"["+.@i+"]"))
+								Ro_MissionShow(#Ro_Mission,1);
+							break;
+					}
+				}
+			}
+			switch($Ro_MissionType[#Ro_Mission])
+			{
+				case 1:
+					for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+#Ro_Mission)); .@i++)
+						if (getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@i+"]"))
+							delitem getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@i+"]"),getd("$Ro_MissionNeedNum_"+#Ro_Mission+"["+.@i+"]");
+					break;
+				case 2:
+					for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+#Ro_Mission)); .@i++)
+						setd "#Ro_MissionProgress_"+#Ro_Mission+"["+.@i+"]",0;
+					break;
+			}
+			#Ro_MissionCompleted[#Ro_Mission] = atoi(gettimestr("%Y%m%d",19));
+			Zeny += $Ro_MissionPrizeZeny[#Ro_Mission];
+			getitem $Ro_MissionPrizeID[#Ro_Mission],$Ro_MissionPrizeNum[#Ro_Mission];
+			#Ro_Mission = 0;
+			message strcharinfo(0),"任務提交成功,獎勵發放完畢!";
+			if ($@Ro_MissionIPMax > 0) {
+				if (set(.@i,searcharray($@Ro_MissionIP$,getcharid(3))) < 0) {
+					.@i = getarraysize($@Ro_MissionIP$)+1;
+					$@Ro_MissionIP$[.@i] = getcharip();
+				}
+				$@Ro_MissionIPCount[.@i]++;
+			}
+			break;
+		case 2:
+			Ro_MissionShow(#Ro_Mission,0);
+			if (select("- 確定放棄","- 取消") == 1) {
+				for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+#Ro_Mission)); .@i++)
+					setd "#Ro_MissionProgress_"+#Ro_Mission+"["+.@i+"]",0;
+				#Ro_Mission = 0;
+				message strcharinfo(0),"任務放棄成功!";
+			}
+			break;
+		case 3:
+			for(.@i = 1; .@i < $Ro_MissionCount; .@i++)
+				.@menu$ = .@menu$+(($Ro_MissionName$[.@i] != "")?"- ^FF0000"+sprintf("%02d", .@i)+".^000000^0000FF"+$Ro_MissionName$[.@i]+"^000000 ^656565[ 限制 "+$Ro_MissionLevel[.@i]+" 級 ]^000000":"")+":";
+			.@n = select(.@menu$);
+			Ro_MissionShow(.@n,0);
+			if (select("- 承接任務","- 取消") == 1) {
+				if (BaseLevel < $Ro_MissionLevel[.@n])
+					Ro_MessageEnd("角色等級不足!");
+				if (#Ro_MissionCompleted[.@n] == atoi(gettimestr("%Y%m%d",19)))
+					Ro_MessageEnd("當前角色已完成此任務,每晚00:00刷新計時!");
+				if ($@Ro_MissionIPMax > 0) {
+					if (set(.@i,searcharray($@Ro_MissionIP$,getcharid(3))) >= 0) {
+						if ($@Ro_MissionIPCount[.@i] >= $@Ro_MissionIPMax)
+							Ro_MessageEnd("當前IP已有賬號已完成此任務,每晚00:00刷新計時!");
+					}
+				}
+				#Ro_Mission = .@n;
+				message strcharinfo(0),"任務接取成功!";
+			}
+			break;
+		case 4:
+			close2;
+			switch(select("- ^0000FF設置任務^000000","- ^FF0000刪除任務^000000"))
+			{
+				case 1:
+					for(.@i = 1; .@i < $Ro_MissionCount; .@i++)
+						.@menu$ = .@menu$+(($Ro_MissionName$[.@i] != "")?"- ^FF0000"+sprintf("%02d", .@i)+".^000000^0000FF"+$Ro_MissionName$[.@i]+"^000000":"- 未設置")+":";
+					.@n = select(.@menu$);
+					message strcharinfo(0),"請選擇任務類型";
+					.@Type_M = select("- 任務類型 - 收集道具","- 任務類型 - 獵殺魔物");
+					message strcharinfo(0),"請輸入任務名字(1至24個字符)";
+					input .@Name$;
+					if (getstrlen(.@Name$) > 24)
+						Ro_MessageEnd("任務設置失敗,任務名字不可超過24個字符!");
+					message strcharinfo(0),"請輸入任務等級限制(1至185的數字)";
+					if (input(.@Level,1,185))
+						Ro_MessageEnd("任務設置失敗,任務等級限制範圍1至185級!");
+					while(1) {
+						while(1) {
+							message strcharinfo(0),"請輸入任務"+((.@Type_M == 1)?"道具ID":"魔物ID");
+							if (input(.@NeedID[.@i],1,65535) == 0) {
+								if (.@Type_M == 1 && itemexists(.@NeedID[.@i]) <= 0)
+									Ro_MessageEnd("任務設置失敗,指定道具不存在");
+								if (.@Type_M == 2 && getmonsterinfo(.@NeedID[.@i],MOB_NAME) == "")
+									Ro_MessageEnd("任務設置失敗,指定魔物不存在");
+								break;
+							} else Ro_MessageEnd("任務設置失敗,"+((.@Type_M == 1)?"道具ID":"魔物ID")+"範圍1至65535");
+						}
+						while(1) {
+							message strcharinfo(0),"請輸入任務所需"+((.@Type_M == 1)?"道具":"魔物")+"數量";
+							if (input(.@NeedNum[.@i],1,255))
+								Ro_MessageEnd("任務設置失敗,所需數量範圍1至255");
+							break;
+						}
+						message strcharinfo(0),"是否需要繼續添加?";
+						if (select("- 繼續添加","- 完成添加") == 2)
+							break;
+						.@i++;
+					}
+					message strcharinfo(0),"請輸入任務ZENY獎勵數量";
+					if (input(.@PrizeZeny,1,99999999))
+						Ro_MessageEnd("任務設置失敗,任務ZENY獎勵限制範圍1至99,999,999Exp");
+					message strcharinfo(0),"請輸入任務道具獎勵ID";
+					if (input(.@PrizeID,1,65535))
+						Ro_MessageEnd("任務設置失敗,指定道具不存在");
+					message strcharinfo(0),"請輸入任務道具獎勵數量";
+					if (input(.@PrizeNum,1,30000))
+						Ro_MessageEnd("任務設置失敗,獎勵數量範圍1至30000");
+					$Ro_MissionType[.@n] = .@Type_M;
+					$Ro_MissionName$[.@n] = .@Name$;
+					$Ro_MissionLevel[.@n] = .@Level;
+					$Ro_MissionPrizeID[.@n] = .@PrizeID;
+					$Ro_MissionPrizeNum[.@n] = .@PrizeNum;
+					$Ro_MissionPrizeZeny[.@n] = .@PrizeZeny;
+					for(.@j = 0; .@j <= .@i; .@j++) {
+						setd "$Ro_MissionNeedId_"+.@n+"["+.@j+"]",.@NeedID[.@j];
+						setd "$Ro_MissionNeedNum_"+.@n+"["+.@j+"]",.@NeedNum[.@j];
+					}
+					message strcharinfo(0),"任務設置完成!";
+					break;
+				case 2:
+					for(.@i = 1; .@i < $Ro_MissionCount; .@i++)
+						.@menu$ = .@menu$+(($Ro_MissionName$[.@i] != "")?"- ^FF0000"+sprintf("%02d", .@i)+".^000000^0000FF"+$Ro_MissionName$[.@i]+"^000000":"- 未設置")+":";
+					.@n = select(.@menu$);
+					if (select("- ^FF0000確定刪除^000000","- ^0000FF稍後決定^000000") == 1) {
+						$Ro_MissionType[.@n] = 0;
+						$Ro_MissionName$[.@n] = "";
+						$Ro_MissionLevel[.@n] = 0;
+						$Ro_MissionPrizeID[.@n] = 0;
+						$Ro_MissionPrizeNum[.@n] = 0;
+						$Ro_MissionPrizeZeny[.@n] = 0;
+						for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+.@n)); .@i++) {
+							setd "$Ro_MissionNeedId_"+.@n+"["+.@i+"]",0;
+							setd "$Ro_MissionNeedNum_"+.@n+"["+.@i+"]",0;
+						}
+					}
+					message strcharinfo(0),"所選擇任務刪除完畢!";
+					break;
+			}
+
+	}
+	end;
+
+	function Ro_MessageEnd {
+		message strcharinfo(0),getarg(0);
+		end;
+	}
+
+	function Ro_MissionShow {
+		.@idx = getarg(0);
+		.@flag = getarg(1);
+		if (.@idx) {
+			mesclear;
+			mes @npcname$;
+			mes "══════════════════";
+			mes "任務名稱: ^FF0000"+$Ro_MissionName$[.@idx]+"^000000";
+			for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+.@idx)); .@i++) {
+				if (getd("$Ro_MissionNeedId_"+.@idx+"["+.@i+"]")) {
+					switch($Ro_MissionType[.@idx])
+					{
+						case 1:	// 收集道具
+							mes "收集目標 ^000080"+getitemname(getd("$Ro_MissionNeedId_"+.@idx+"["+.@i+"]"))+" [ "+countitem(getd("$Ro_MissionNeedId_"+.@idx+"["+.@i+"]"))+"/"+getd("$Ro_MissionNeedNum_"+.@idx+"["+.@i+"]")+" ]^000000";
+							break;
+						case 2:	// 獵殺魔物
+							mes "獵殺目標 ^000080"+getmonsterinfo(getd("$Ro_MissionNeedId_"+.@idx+"["+.@i+"]"),MOB_NAME)+" [ "+getd("#Ro_MissionProgress_"+#Ro_Mission+"["+.@i+"]")+"/"+getd("$Ro_MissionNeedNum_"+.@idx+"["+.@i+"]")+" ]^000000";
+							break;
+					}
+				}
+			}
+			mes "任務獎勵1: ^8000FF"+$Ro_MissionPrizeZeny[.@idx]+" Zeny^000000";
+			mes "任務獎勵2: ^8000FF"+getitemname($Ro_MissionPrizeID[.@idx])+" x "+$Ro_MissionPrizeNum[.@idx]+"^000000";
+			if (.@flag)
+				close;
+		}
+		return;
+	}
+
+OnNPCKillEvent:
+	if (#Ro_Mission) {
+		if ($Ro_MissionType[#Ro_Mission] == 2) {
+			.@idx = searcharray(getd("$Ro_MissionNeedId_"+#Ro_Mission),KILLEDRID);
+			if (.@idx != -1) {
+				setd "#Ro_MissionProgress_"+#Ro_Mission+"["+.@idx+"]",getd("#Ro_MissionProgress_"+#Ro_Mission+"["+.@idx+"]")+1;
+				//dispbottom "[任務特派] : 獵殺魔物 [ "+getmonsterinfo(getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@idx+"]"),MOB_NAME)+" "+getd("#Ro_MissionProgress_"+#Ro_Mission+"["+.@idx+"]")+"/"+getd("$Ro_MissionNeedNum_"+#Ro_Mission+"["+.@idx+"]")+" ] 隻";
+				announce "[任務特派] : 獵殺魔物 [ "+getmonsterinfo(getd("$Ro_MissionNeedId_"+#Ro_Mission+"["+.@idx+"]"),MOB_NAME)+" "+getd("#Ro_MissionProgress_"+#Ro_Mission+"["+.@idx+"]")+"/"+getd("$Ro_MissionNeedNum_"+#Ro_Mission+"["+.@idx+"]")+" ] 隻",bc_self;
+			}
+		}
+	}
+	end;
+
+OnWhisperGlobal:
+	if (#Ro_Mission)
+		Ro_MissionShow(#Ro_Mission,1);
+	end;
+
+OnInit:
+	$@Ro_MissionIPMax = -1;
+	$Ro_MissionCount = 29;			// 設定任務數目有幾個,10代表可以設置10個任務,設置數量推薦不超過30.
+
+OnClock0001:
+	deletearray $@Ro_MissionIP$[0],getarraysize($@Ro_MissionIP$);
+	deletearray $@Ro_MissionIPCount[0],getarraysize($@Ro_MissionIPCount);
+	end;
+}

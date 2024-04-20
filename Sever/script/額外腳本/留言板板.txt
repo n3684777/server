@@ -1,0 +1,151 @@
+/*=======================================================================================================================
+- 腳本名稱: 留言板
+- 腳本作者: 八嘎
+- 測試環境: Rathena
+- 注意事項: 腳本僅供測試參考，嚴禁私自轉載
+- 更新內容: 
+
+- GM留言無法顯示
+- 刪除留言後questgmspeak未歸0
+
+=========================================================================================================================*/
+egg1,253,182,4	script	【線上留言板】	858,{
+
+	if (getgmlevel()>90){ goto seethequest; }
+
+	//============= 限制的字元 ================//關於禁止字元請自定義
+	setarray .NOfname$[0],"管理人員","幹","操","機掰","娘";
+	//===============================================
+
+	query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
+
+	mes "^000000【^009FCC留言板^000000】:";
+	mes "^DDDDDD==================================^000000";
+	for(set @i,0;@i<getarraysize($quest_activity_content$);@i++){
+	mes "^633CCF內容^000000 : ^666666"+$quest_activity_content$[@i];
+	if($questgmspeak_activity$[@i]!="0"){
+	mes "^0000FFGM回覆^000000 : ^666666"+$questgmspeak_activity$[@i];
+							}
+	mes "^DDDDDD==================================^000000";
+						}
+
+	switch(select("留言")) {
+		case 1:
+			mes "^000000[設置]^000000";
+			mes "^000000提出您所要留言的內容^000000";
+				set @questname$,strcharinfo(0);
+				set @questtime$,gettimestr("%Y-%m/%d %H:%M:%S",20);
+				set @questnameIP$,.@LastIp$;
+				set @questgmspeak$,0;
+				input @questcontent$;
+				next;
+
+				for (set .@i , 0; .@i < getarraysize ( .NOfname$ ); set .@i, .@i + 1){
+			if(compare(@questcontent$,.NOfname$[.@i])){ mes " "; mes " "; mes " "; 
+				mes "   ^ff0000內文含有不雅字眼，請重新輸入！^000000"; 
+					close; 
+				end;
+			} 
+		}
+				mes "[^008800下一步前請確認您的留言是否適當^000000]";
+				mes " ";
+			next;
+				mes "留言者: "+@questname$;
+				mes " 時間 : "+@questtime$;
+				mes " 內容 : "+@questcontent$;
+
+				switch(select("確定提出")) {
+
+					case 1:
+
+						setarray $quest_activity$[getarraysize($quest_activity$)],@questname$;
+						setarray $questnameIP_activity_content$[getarraysize($questnameIP_activity_content$)],@questnameIP$;
+						setarray $quest_activity_time$[getarraysize($quest_activity_time$)],@questtime$;
+						setarray $quest_activity_content$[getarraysize($quest_activity_content$)],@questcontent$;
+						setarray $questgmspeak_activity$[getarraysize($questgmspeak_activity$)],@questgmspeak$;
+						close;
+					break;
+					}
+				break;
+				}
+
+seethequest:
+
+	mes "^000000【^000000^009FCC留言板^000000】:";
+	mes "^DDDDDD==================================^000000";
+
+	for(set @i,0;@i<getarraysize($quest_activity_content$);@i++){
+	mes "^0066FF留言者^000000 ^0000FF"+(@i+1)+"^000000 : ^FF0000"+$quest_activity$[@i];
+	mes "^633CCFＩＰ^000000 : ^008800"+$questnameIP_activity_content$[@i];
+	mes "^633CCF時間^000000 : ^886600"+$quest_activity_time$[@i];
+	mes "^633CCF內容^000000 : ^666666"+$quest_activity_content$[@i];
+		if($questgmspeak_activity$[@i]!="0"){
+			mes "^0000FFGM回覆^000000 : ^666666"+$questgmspeak_activity$[@i];
+		}
+	mes "^DDDDDD==================================^000000";
+}
+
+	switch(select("刪除留言","回覆")) {
+
+		case 1:
+			set @x$,"";
+			for (set @i,0;@i<getarraysize($quest_activity$);@i++){
+			set @x$,@x$+"刪除留言"+(@i+1)+":";
+		}
+
+		set @op,select(@x$);
+		switch(@op) {
+	default:
+		next;
+		mes "留言者 : "+$quest_activity$[@op-1];
+		mes "IP     : "+$questnameIP_activity_content$[@op-1];
+		mes "時間   : "+$quest_activity_time$[@op-1];
+		mes "內容   : "+$quest_activity_content$[@op-1];
+		mes "^0000FFGM回覆^000000 : ^666666"+$questgmspeak_activity$[@op-1];
+
+		switch(select("確定刪除")) {
+			case 1:
+				set .@title$,0;
+				setarray $questgmspeak_activity$[@op-1],.@title$;
+				deletearray $quest_activity$[@op-1],1;
+				deletearray $quest_activity_time$[@op-1],1;
+				deletearray $quest_activity_content$[@op-1],1;
+				deletearray $questnameIP_activity_content$[@op-1],1;
+				deletearray $questgmspeak_activity[@op-1],1;
+								close;
+							break;
+						}
+					close;
+				break;
+			}
+
+
+		case 2:
+			set @x$,"";
+			for (set @i,0;@i<getarraysize($quest_activity$);@i++){
+				set @x$,@x$+"留言"+(@i+1)+":";
+		}
+
+		set @op,select(@x$);
+		switch(@op) {
+	default:
+		next;
+		mes "留言者 : "+$quest_activity$[@op-1];
+		mes "IP     : "+$questnameIP_activity_content$[@op-1];
+		mes "時間   : "+$quest_activity_time$[@op-1];
+		mes "內容   : "+$quest_activity_content$[@op-1];
+
+		switch(select("回覆")) {
+			case 1:
+				mes "回覆此留言";
+				input .@title$;
+				setarray $questgmspeak_activity$[@op-1],.@title$;
+							close;
+						break;
+					}
+				close;
+			break;
+		}
+	}
+}
+

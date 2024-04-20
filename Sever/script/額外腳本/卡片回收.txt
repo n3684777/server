@@ -1,0 +1,834 @@
+
+
+uttycty,120,167,5	script	卡片回收人員	10126,{
+	setarray .@mvpcard[0],4679,4680,4677,4681,4674,4682,4675,4672,4678,4671,4683,4673,4676,4357,4565,4359,4564,4361,4563,4363,4562,4365,4561,4367,4560,4566,4352,4147,4142,4168,4144,4132,4128,4143,4137,
+	4123,4146,4131,4148,4121,4430,4263,27287,4318,27150,4324,27294,4236,4652,4576,4376,27346,4302,4330,4441,300014,300013,4408,4134,4625,4276,4419,27362,27363,300151,27334,4305,
+	4507,4509,4574,4662,27104,27081,27113,27126,4578,4135,300007,4372,4407,27180,4145,4520,4374,4386,4425,27162,300021,4399,4525,4403,300281,27319,4342,27119,4580,300248,4462,27105;
+	set mvppoint,1000; // mvp卡片兌換硬幣數量倍率
+	mes "[卡片回收]";
+	mes "^0088FF"+strcharinfo(0)+"^000000您好，很高興為您服務。";
+    mes "有不要的卡片要回收嗎?";
+	next;
+	switch(select("回收卡片:離開")){
+	case 1:
+	cleararray @inventorylist_id[0],0,@inventorylist_id; 
+	getinventorylist(getcharid(0));
+    for (.@i = 0; .@i < getarraysize(@inventorylist_id); .@i++) {
+		if(@inventorylist_id[.@i] > 4000  && @inventorylist_id[.@i] < 4700 ||
+		   @inventorylist_id[.@i] > 27000 && @inventorylist_id[.@i] < 28000||
+		   @inventorylist_id[.@i] > 30999 && @inventorylist_id[.@i] < 31027||
+		   @inventorylist_id[.@i] > 299999 && @inventorylist_id[.@i] < 300022){
+          .@cardlist[getarraysize(.@cardlist)] = @inventorylist_id[.@i];        
+        }
+    }
+	for (.@i = 0; .@i < getarraysize(.@cardlist); .@i++){
+        .@menu$[.@i] = "[" + .@cardlist[.@i] + "] - " + getitemname(.@cardlist[.@i]);
+    }
+    if (getarraysize(.@menu$) == 0) {
+        close2; 
+        message strcharinfo(0), "您的背包內沒有任何卡片.";
+        end;
+    }
+	mes "[卡片回收]";
+	mes "每張卡片可兌換一枚卡片硬幣";
+	mes "您想回收哪張卡片?";
+    .@choose = select(implode(.@menu$, ":"))-1;
+	next;
+	mes "[卡片回收]";
+    mes "要回收 ^0088FF" + getitemname(.@cardlist[.@choose]) + " ^000000嗎?";
+	mes "^ff0000※請注意!※^000000";
+	mes "若選擇 - ^0000ff回收背包內所有卡片 ^000000 ";
+	mes " ^0000ff[MVP]^000000 以及 ^0000ff[BOSS]^000000 卡片將會一併回收。";
+	next;
+	switch(select("相同卡片全部回收:指定卡片回收數量:^ff0000回收背包所有卡片^000000:離開")){
+	case 1:
+	callfunc "checkOKOK";
+	set mvptag,0;
+	set .@count,countitem(.@cardlist[.@choose]);
+	delitem .@cardlist[.@choose],.@count;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == .@mvpcard[.@i] ){mvptag = 1; break;}
+		}
+	if(mvptag == 1){getitem 2110000,.@count;}else{getitem 6379,.@count;}
+	close; 
+	case 2:
+	input .@card_quantity;
+	 if (! .@card_quantity) {
+        close;
+    }
+    .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose])); 
+	callfunc "checkOKOK";
+	next;
+	set mvptag,0;
+	delitem .@cardlist[.@choose], .@card_quantity;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == .@mvpcard[.@i] ){mvptag = 1; break;}
+		}
+	if(mvptag == 1){getitem 2110000,.@card_quantity;}else{getitem 6379,.@card_quantity;}
+	close;
+	case 3:
+	callfunc "checkOKOK";
+	for(.@c = 0;.@c < getarraysize(.@cardlist); .@c++){
+	set mvptag,0;
+	set .@count,countitem(.@cardlist[.@c]);
+	delitem .@cardlist[.@c],.@count;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@c] == .@mvpcard[.@i] ){mvptag = 1; break;}
+		}
+	if(mvptag == 1){getitem 2110000,.@count;}else{getitem 6379,.@count;}
+	
+	}
+	close;
+	case 4:
+	  close;
+	  }
+	  case 2:
+	  close;
+	  
+	}	
+
+OnInit:
+	setnpcicon getnpcid(0),1026,"卡片回收";
+	waitingroom "★ 卡片回收 ★",0;
+
+}
+function	script	checkOKOK	{
+    mes"確定回收嗎?";
+	next;
+    if (select ("是", "不是") == 2) {
+        close;
+    }
+    return;
+}
+
+-	shop	Card_Shop_Storage	-1,501:-1
+egg1,175,179,5	script	卡片典藏倉庫	10126,{
+	disable_items;
+	if (checkweight(4001,1) == 0) {
+		mes "身上的道具已達最大數量. 請減少道具數量之後再來吧.";
+		close;
+	}
+	if (MaxWeight - Weight < 10000) {
+		mes "身上的負重量太高了. 請減輕負重量之後再來吧.";
+		close;
+	}
+	mes "[卡片典藏倉庫]";
+	mes "每張卡片可以額外增加10負重量";
+	mes "^FF0000相同的卡片無法重複存入^000000";
+	mes "^0000FF卡片可以隨時取出使用^000000。";
+	next;
+	switch(select("存入卡片:取出卡片"))
+	{
+		case 1:
+			announce "[卡片典藏倉庫] 無論您的卡片數量多寡，最多相同卡片只能存入一張.",bc_self|bc_blue;
+			callshop "Card_Shop_Storage",2;
+			npcshopattach "Card_Shop_Storage";
+			end;
+			
+		case 2:
+			if(getarraysize(Card_Storage) == 0)
+			{
+				mes "["+strnpcinfo(1)+"]";
+				mes "您的卡片典藏倉庫是空的。";
+				close;
+			}
+			switch(select("單張取出:批量取出(10張)"))
+			{
+				case 1:
+					mes "["+strnpcinfo(1)+"]";
+					mes "請選擇您要取出的卡片";
+					mes "^888888輸入0為取消^000000";
+					mes "您目前典藏的卡片有";
+					mes "-----------------------------------";
+					freeloop(1);
+					for(.@i=0; .@i<getarraysize(Card_Storage); .@i++)
+					{
+						if(.@i>=100 && .@i%100 == 0)
+						{
+							switch(select(getarraysize(Card_Storage)>=100?"下一頁":"",.@pages?"上一頁":"","輸入編號"))
+							{
+								case 1:
+									.@pages ++;
+									clear;
+									break;
+								case 2:
+									.@pages --;
+									if(.@pages == 0)
+										.@i = 0;
+									else
+										.@i = (100*.@pages);
+									clear;
+									break;
+								case 3:
+									.@input = 1;
+									break;
+							}
+						}
+						if(.@input) break;
+						mes "No."+(.@i+1)+" : "+getitemname(Card_Storage[.@i]);
+					}
+					freeloop(0);
+					input .@num;
+					if(.@num <= 0 || .@num > getarraysize(Card_Storage)) close;
+					.@j = .@num-1;
+					.@nameid = Card_Storage[.@j];
+					.@index = inarray(Card_Storage,.@nameid);
+					if(.@index == -1 || Card_Storage[.@j] == 0)
+					{
+						dispbottom "輸入錯誤",0xff0000;
+						end;
+					}
+					getitem Card_Storage[.@j], 1;
+					deletearray Card_Storage[.@j],1;
+					dispbottom "[卡片典藏倉庫] 已取出 "+getitemname(.@nameid),0xff9900;
+					break;
+				case 2:
+					getinventorylist;
+					if (@inventorylist_count > 90) 
+					{
+						mes "身上的道具已達最大數量. 請減少道具數量之後再來吧.";
+						close;
+					}
+					for(.@i=0; .@i<10; .@i++)
+					{
+						if(Card_Storage[.@i])
+							getitem Card_Storage[.@i],1;
+						else
+							break;
+					}
+					deletearray Card_Storage[0],.@i;
+					dispbottom "[卡片典藏倉庫] 已取出 "+.@i+" 張卡片.",0xff9900;
+					break;
+			}
+			specialeffect2 363;
+			recalculatestat;
+			end;
+	}
+	end;
+	
+OnSellItem:
+	for(.@i = 0; .@i<getarraysize(@sold_nameid); .@i++)
+	{
+		if(inarray(Card_Storage,@sold_nameid[.@i]) > -1)
+		{
+			dispbottom "[卡片典藏倉庫] "+getitemname(@sold_nameid[.@i])+" 這張卡片已在倉庫中無法重複存入.", 0xff0000;
+			continue;
+		}
+		else if(getiteminfo(@sold_nameid[.@i],2) != 6 || compare(getitemname(@sold_nameid[.@i]),"卡片") == 0)
+		{
+			dispbottom "[卡片典藏倉庫] "+getitemname(@sold_nameid[.@i])+" 不是卡片.", 0xff0000;
+			continue;
+		}
+		else
+		{
+			delitem @sold_nameid[.@i],1;
+			Card_Storage[getarraysize(Card_Storage)] = @sold_nameid[.@i];
+			dispbottom "[卡片典藏倉庫] "+getitemname(@sold_nameid[.@i])+" 已存入.",0xff9900;
+		}
+	}
+	specialeffect2 363;
+	recalculatestat;
+	end;
+
+// 每張卡片增加額外 10 負重量
+OnPCStatCalcEvent:
+	bonus bAddMaxWeight,getarraysize(Card_Storage)*100;
+	end;
+OnInit:
+
+}
+
+
+-	shop	quest_shop4	-1,512:100	//生成商店，請無視這行
+egg1,174,175,6	script	MVP卡片兌換	566,{ //自行設定位子,外觀
+	set @i,0;
+	mes "[MVP卡片兌換]";
+	mes "請按照購買物品似的選擇";
+	mes "材料足夠後將直接製作";
+	mes "材料不足將直接提示材料";
+	mes "請^FF0000一次選購一種^000000MVP卡片";
+	mes "請放心選購^FF3399 MVP卡片,不會扣除相應Zeny^000000";
+	close2;
+	callshop "quest_shop4",1;
+	npcshopattach "quest_shop4";
+	end;
+
+OnBuyItem:
+        
+	if(.BuildQuest) {
+		for(set .e,0; !compare(getarg(.e+1)+"","Zeny"); set .e,.e+2) {}
+		npcshopadditem "quest_shop4",getarg(.e+2),getarg(.e)*compare(getarg(.e+1)+"","SZeny");
+		setarray .Shop[.i],getarg(.e+2);
+		set .i,.i+1;
+		if(.i%20==0){sleep(1);}
+		goto Quest_Setup;
+	}
+	if(.Shop[@i]!=@bought_nameid) for(set @i,1; 1; set @i,@i+1) if(.Shop[@i]==@bought_nameid) { set .i,@i; callsub Quest_Setup; }
+	mes "- 製作 ^FF0000"+getitemname(@bought_nameid)+"^000000";
+	mes "- 請準備好下面材料！";
+	for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) mes " ^0066CC" + getitemname(getarg(@i)) + "^000000 x " + ((countitem(getarg(@i))>=getarg(@i+1))? "":"") + "" + getarg(@i+1) + " [^009900" + countitem(getarg(@i)) + "^000000/^FF6600" + getarg(@i+1) + "^000000]"+( countitem(getarg(@i))>=getarg(@i+1)?" ( ^D2691E已完成^000000 )":" ( ^999999未完成^000000 )");
+	if(getarg(@i)) mes " ^FF1493需要製作費用^000000 " + ((Zeny>=getarg(@i))? "^FF0000":"") + "" + getarg(@i) + "^000000 "+((Zeny>=getarg(@i))? "( ^D2691E已完成^000000 )":"( ^999999金錢不足^000000 )");
+	mes "- 在交換條件裡寫著, 我將會給你：^0000FF";
+	for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) mes getarg(@i+1) + " 個 " + getitemname(getarg(@i));
+	switch(select("- 1、製作 ^FF0000"+getitemname(@bought_nameid)+"^000000:" + (((((getiteminfo(@bought_nameid,5) & 1) || (getiteminfo(@bought_nameid,5) & 768) || (getiteminfo(@bought_nameid,5) & 8192)) && @equip==0))? "- 2、看看他長啥樣":"") + ":- 3、結束對話")) {
+		case 1:
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) if(countitem(getarg(@i)) < getarg(@i+1)) {
+				next;
+				mes "[MVP卡片兌換]";
+				mes "你身上有 ^FF0000" + countitem(getarg(@i)) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000,我需要 ^009900" + getarg(@i+1) + "^000000 個";
+				mes "請補齊 ^FF0000" + (getarg(@i+1)-countitem(getarg(@i))) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000 再來找我.";
+				emotion 53;
+				close;
+			}
+			if(Zeny < getarg(@i)) {
+				next;
+				mes "[MVP卡片兌換]";
+				mes "你身上攜帶的金錢不足.";
+				mes "請補齊 ^FF0000" + (getarg(@i)-Zeny) + "Zeny差額再來找我^000000.";
+				emotion 53;
+				close;
+			}
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) delitem getarg(@i),getarg(@i+1);
+			set Zeny,Zeny-getarg(@i);
+			for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) getitem getarg(@i),getarg(@i+1);
+			specialeffect2 154;
+			emotion 21;
+			if (compare(getarg(@i,0)+"","announce")) announce strcharinfo(0) + " 獲得了 " + getitemname(@bought_nameid) + "!",bc_all;
+			close;
+		case 2:
+			specialeffect2 6;
+			set @bottomview, getlook(3);
+			set @topview, getlook(4);
+			set @midview, getlook(5);
+			addtimer 1000, strnpcinfo(3)+"::On_Leave";
+			set @equip,getiteminfo(@bought_nameid, 5);
+			set @view, getiteminfo(@bought_nameid, 11);
+			if(@equip != -1 && @view > 0) {
+				if(@equip & 1) atcommand "@changelook 3 " + @view;
+				if(@equip & 768) atcommand "@changelook 1 " + @view;
+				if(@equip & 8192) atcommand "@changelook 7 " + @view;
+			}
+			next;
+			goto OnBuyItem;
+
+		case 3:
+			emotion 12;
+			close;
+	}
+On_Leave:
+	atcommand "@changelook 1 " + @topview;
+	atcommand "@changelook 7 " + @midview;
+	atcommand "@changelook 3 " + @bottomview;
+	set @equip,0;
+	set @view,0;
+	set @topview,0;
+	set @midview,0;
+	set @bottomview,0;
+	end;
+OnInit:
+	npcshopitem "quest_shop4",501,0;
+	npcshopdelitem "quest_shop4",501,0;
+	set .BuildQuest,1;
+	set .i,1;
+
+Quest_Setup:
+	switch(.i) {
+		default: set .BuildQuest,0; set .e,0; set .i,1; end;
+		case 1: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4121,1,"announce";
+		case 2: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4123,1,"announce";
+		case 3: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4128,1,"announce";
+		case 4: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4131,1,"announce";
+		case 5: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4132,1,"announce";
+		case 6: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4134,1,"announce";
+		case 7: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4135,1,"announce";
+		case 8: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4137,1,"announce";
+		case 9: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4142,1,"announce";
+		case 10: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4143,1,"announce";
+		case 11: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4144,1,"announce";
+		case 12: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4145,1,"announce";
+		case 13: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4146,1,"announce";
+		case 14: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4147,1,"announce";
+		case 15: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4148,1,"announce";
+		case 16: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4168,1,"announce";
+		case 17: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4169,1,"announce";
+		case 18: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4236,1,"announce";
+		case 19: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4276,1,"announce";
+		case 20: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4302,1,"announce";
+		case 21: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4305,1,"announce";
+		case 22: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4318,1,"announce";
+		case 23: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4324,1,"announce";
+		case 24: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4330,1,"announce";
+		case 25: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4342,1,"announce";
+		case 26: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4352,1,"announce";
+		case 27: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4357,1,"announce";
+		case 28: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4359,1,"announce";
+		case 29: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4361,1,"announce";
+		case 30: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4363,1,"announce";
+		case 31: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4365,1,"announce";
+		case 32: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4367,1,"announce";
+		case 33: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4372,1,"announce";
+		case 34: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4374,1,"announce";
+		case 35: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4376,1,"announce";
+		case 36: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4386,1,"announce";
+		case 37: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4399,1,"announce";
+		case 38: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4403,1,"announce";
+		case 39: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4407,1,"announce";
+		case 40: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4408,1,"announce";
+		case 41: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4419,1,"announce";
+		case 42: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4425,1,"announce";
+		case 43: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4430,1,"announce";
+		case 44: callsub OnBuyItem,7539,2500,7723,10,100000,"SZeny",4441,1,"announce";
+		case 45: callsub OnBuyItem,7539,2500,100,"SZeny",7723,10,"announce";
+
+	}
+}
+
+
+uttycty,125,167,4	script	卡片硬幣兌換	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"卡片硬幣兌換";
+	waitingroom "★ 卡片硬幣兌換 ★",0;
+	.@p = 0;
+	.@c = 10000000; // 便宜貨
+	.@h = 3; //硬幣兌換需求數量
+	.@m = 3; //硬幣兌換需求數量
+	.@l = 3; //硬幣兌換需求數量
+	.@hh = 1000; // 卡片硬幣兌換高級卡片硬幣數量
+	.@coin = 2110000; // 卡片硬幣ID
+	.@meow = 15;
+	tradertype(NST_EXPANDED_BARTER);
+	sellitem(2110000,.@p,-1);	//高級卡片硬幣
+	sellitemcurrency(6379,.@hh);
+    endsellitem(); 	
+	sellitem(4679,.@p,-1);	//闇●盧恩騎士 賽依連卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4680,.@p,-1);	//闇●皇家禁衛隊 蘭達卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4677,.@p,-1);	//闇●機械工匠 哈沃得卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4681,.@p,-1);	//闇●基因學者 普拉梅姆卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4674,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4682,.@p,-1);	//闇●魅影追蹤者 科迪卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4675,.@p,-1);	//闇●大主教 瑪嘉雷特卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4672,.@p,-1);	//闇●修羅 陳理歐卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4678,.@p,-1);	//闇●咒術士 凱特莉娜卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4671,.@p,-1);	//闇●妖術師 西里亞卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4683,.@p,-1);	//闇●浪姬舞者 特蘭提尼卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4673,.@p,-1);	//闇●宮廷樂師 雅歐帕奇爾卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4676,.@p,-1);	//闇●遊俠 迪文卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4357,.@p,-1);	//闇●騎士領主 賽依連卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4565,.@p,-1);	//闇●十字軍 蘭達卡片
+	sellitemcurrency(.@coin,.@h*5);
+    endsellitem(); 
+	sellitem(4359,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4564,.@p,-1);	//闇●神行太保 科迪卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4563,.@p,-1);	//闇●神工匠 哈沃得卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4679,.@p,-1);	//闇闇●創造者 普拉梅姆卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4363,.@p,-1);	//闇●神官 瑪嘉雷特卡片
+	sellitemcurrency(.@coin,.@h*2);
+    endsellitem(); 
+	sellitem(4562,.@p,-1);	//闇●武術宗師 陳理歐卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4365,.@p,-1);	//闇●超魔導師 凱特莉娜卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4367,.@p,-1);	//闇●智者 西里亞卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4679,.@p,-1);	//闇●神射手 迪文卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4560,.@p,-1);	//闇●搞笑藝人 雅歐帕奇爾卡片
+	sellitemcurrency(.@coin,.@l);
+    endsellitem(); 
+	sellitem(4566,.@p,-1);	//闇●冷豔舞姬 特蘭提尼卡片
+	sellitemcurrency(.@coin,.@l);
+    endsellitem(); 
+	sellitem(4352,.@p,-1);	//闇●劍士 賽尼亞卡片
+	sellitemcurrency(.@coin,.@l);
+    endsellitem(); 
+
+	sellitem(4147,.@p,-1);	//巴風特卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4142,.@p,-1);	//死靈卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4168,.@p,-1);	//黑暗之王卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4144,.@p,-1);	//俄塞里斯卡片
+	sellitemcurrency(.@coin,.@h*5);
+    endsellitem(); 
+	sellitem(4132,.@p,-1);	//蜂后卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4128,.@p,-1);	//黃金蟲卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4143,.@p,-1);	//獸人英雄卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4137,.@p,-1);	//海盜之王卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4123,.@p,-1);	//虎王卡片 /
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4146,.@p,-1);	//蟻后卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4131,.@p,-1);	//月夜貓卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4148,.@p,-1);	//法老王卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4121,.@p,-1);	//皮里恩卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4430,.@p,-1);	//伊夫利特卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4263,.@p,-1);	//元靈武士卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27287,.@p,-1);	//光芒泰迪熊卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4318,.@p,-1);	//冰暴騎士卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27150,.@p,-1);	//劇毒凱美拉卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4324,.@p,-1);	//卡崙卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27294,.@p,-1);	//古代塔奧群卡卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4236,.@p,-1);	//古埃及王卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4652,.@p,-1);	//滅絕古埃及王卡卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4576,.@p,-1);	//喬伊亞卡片
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4376,.@p,-1);	//嗒妮小姐卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	
+	sellitem(27346,.@p,-1);	//堅硬穆希貝斯寇卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4302,.@p,-1);	//塔奧群卡卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4330,.@p,-1);	//墨蛇君卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4441,.@p,-1);	//墮落大神官卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300107,.@p,-1);	//大王喵喵卡片 x
+	sellitemcurrency(.@coin,.@h*10);
+    endsellitem(); 
+	sellitem(4507,.@p,-1);	//女王甲蟲卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem();
+	sellitem(4509,.@p,-1);	//黃金女王甲蟲卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4574,.@p,-1);	//將軍大賢卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27152,.@p,-1);	//小可愛卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4456,.@p,-1);	//尼德霍格幻影卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4662,.@p,-1);	//大型蛋黃波利卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300014,.@p,-1);	//英格麗卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	
+
+	sellitem(300013,.@p,-1);	//雷吉麗芙卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27381,.@p,-1);	//希梅爾茲幻影卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(31023,.@p,-1);	//席琳基米卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300099,.@p,-1);	//席瓦帕皮利亞卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4408,.@p,-1);	//幽暗夢魘卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4134,.@p,-1);	//德古拉伯爵卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27104,.@p,-1);	//憤怒德古拉伯爵卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27081,.@p,-1);	//憤怒月夜貓卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem();
+	sellitem(27113,.@p,-1);	//甦醒水晶龍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem();
+	sellitem(4625,.@p,-1);	//時間支配者卡片 x
+	sellitemcurrency(.@coin,.@h*10);
+    endsellitem(); 
+	sellitem(4529,.@p,-1);	//暴力腔棘魚卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(31026,.@p,-1);	//歐內斯特 斯特凡˙傑克卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4276,.@p,-1);	//死靈騎士卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4419,.@p,-1);	//水晶龍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27362,.@p,-1);	//汙染蜘蛛女王卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27363,.@p,-1);	//汙染黑暗之王卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	
+	sellitem(27126,.@p,-1);	//波伊塔塔卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4578,.@p,-1);	//淘汰者傅立葉卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300151,.@p,-1);	//深海魔鬼大烏賊卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27334,.@p,-1);	//混沌巴風特卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4305,.@p,-1);	//烏龜將軍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4135,.@p,-1);	//獸人酋長卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300007,.@p,-1);	//珠寶溫古力安特卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4636,.@p,-1);	//畢尤卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4372,.@p,-1);	//白素貞卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27318,.@p,-1);	//米古爾卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4407,.@p,-1);	//巴基力 蘭特克力斯卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27180,.@p,-1);	//蜘蛛戰車卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	
+	sellitem(4604,.@p,-1);	//覺醒墮落根莖卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4602,.@p,-1);	//覺醒闇答萊屍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27329,.@p,-1);	//詛咒施密特國王卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4145,.@p,-1);	//貝雷傑卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4528,.@p,-1);	//變種腔棘魚卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4520,.@p,-1);	//讓特卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4374,.@p,-1);	//貝思波卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27321,.@p,-1);	//絕望之神夢羅克卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4386,.@p,-1);	//迪塔勒泰晤勒斯卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4534,.@p,-1);	//章魚大王卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27151,.@p,-1);	//邪心獵人 伊芙卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4425,.@p,-1);	//阿特羅斯卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27162,.@p,-1);	//青冠龍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27164,.@p,-1);	//驚駭森靈皇后卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300021,.@p,-1);	//骷髏迪塔勒泰晤勒斯卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4399,.@p,-1);	//魔劍士 達納托斯的記憶卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4525,.@p,-1);	//魔鬼大烏賊卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4527,.@p,-1);	//黑暗腔棘魚卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4403,.@p,-1);	//齊爾-D-01卡片 x
+	sellitemcurrency(.@coin,.@h*3);
+    endsellitem(); 
+	sellitem(27305,.@p,-1);	//EL-A17T卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300281,.@p,-1);	//R001-Bestia卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27319,.@p,-1);	//R48-85-BESTIA卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4342,.@p,-1);	//RSX-0806卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27020,.@p,-1);	//T W O卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27119,.@p,-1);	//不祥烏龜將軍卡片 x
+	sellitemcurrency(.@coin,.@h*2);
+    endsellitem(); 
+	sellitem(27025,.@p,-1);	//亡者君主卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4580,.@p,-1);	//亡靈的守護者卡德斯卡片 x
+	sellitemcurrency(.@coin,.@h*3);
+    endsellitem(); 
+	sellitem(300280,.@p,-1);	//破壞的達納托斯的記憶卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(300248,.@p,-1);	//死亡女巫卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4591,.@p,-1);	//食月暴龍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+		
+	sellitem(4590,.@p,-1);	//噩夢死神卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4603,.@p,-1);	//墮落根莖卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4457,.@p,-1);	//夜勝魔卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4592,.@p,-1);	//寶箱巨鱷卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27105,.@p,-1);	//波蜜卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27182,.@p,-1);	//船長裴陸卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4697,.@p,-1);	//查爾斯頓卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4426,.@p,-1);	//漂流浪人 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4556,.@p,-1);	//潘利爾卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4429,.@p,-1);	//火蜥蝪卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4431,.@p,-1);	//火鳥卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27382,.@p,-1);	//無限墮落根莖卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27262,.@p,-1);	//狄瓦伊卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4462,.@p,-1);	//硬石猛瑪卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(27106,.@p,-1);	//覺醒貝爾卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4532,.@p,-1);	//野貓騎士卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	sellitem(4601,.@p,-1);	//闇答萊屍卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem();
+	sellitem(4451,.@p,-1);	//骷髏觸角魔卡片 x
+	sellitemcurrency(.@coin,.@h);
+    endsellitem(); 
+	
+end;
+}

@@ -1,0 +1,56 @@
+egg1,203,179,4	script	副本管理員	10191,{
+        mes "你要做什麼?";
+        switch(select("接任務","取消任務","匯報任務")){
+        case 1:        
+                mes "你需要什麼任務";
+                switch(select("無限之塔","地下墓穴","神秘之門")){
+                        case 1:
+							if(checkquest(80000,HUNTING)== -1 ){setquest 80000;mes "任務接取完成";  close;}	
+							if(checkquest(80000,HUNTING)==0 ){mes "您的任務還在CD中唷";  close;}
+							close;
+						case 2:
+							if(checkquest(80001,HUNTING)== -1 ){setquest 80001;mes "任務接取完成";  close;}
+							if(checkquest(80001,HUNTING)==0 ){mes "您的任務還在CD中唷";   close;}
+							close;
+                        case 3:
+							if(checkquest(80002,HUNTING)== -1 ){setquest 80002;mes "任務接取完成";  close;}
+							if(checkquest(80002,HUNTING)==0 ){mes "您的任務還在CD中唷";   close;}
+							close;
+                        }
+                        close;
+        case 2:
+                mes "已經取消您的任務了~";
+                   if(checkquest(80000,HUNTING)==0 )     erasequest 80000; 
+                   if(checkquest(80001,HUNTING)==0 )     erasequest 80001; 
+                   if(checkquest(80002,HUNTING)==0 )     erasequest 80002; 
+                         close;
+        case 3:
+
+				
+                if(checkquest(80000,HUNTING)==2 ) { getitem 1000103,20;  completequest 80000; }
+                if(checkquest(80001,HUNTING)==2 ) { getitem 1000103,20;  completequest 80001; }
+                if(checkquest(80002,HUNTING)==2 ) { getitem 1000103,20;  completequest 80002; }         
+                mes "未完成任務或是您沒接取任務";
+                close;
+}
+ 
+CT_ETOK:
+        mes "您已經接了^0000FF無限之塔^000000的任務了唷~!";
+        close;
+CT_SSOK:
+        mes "您已經接了^0000FF地下墓穴^000000的任務了唷~!";
+        close;
+CT_NNOK:
+        mes "您已經接了^0000FF神秘之門^000000的任務了唷~!";
+        close;
+         
+OnTouch:        
+         
+        sc_end SC_Wedding;
+        sc_end SC_Xmas;
+        end;
+         
+OnInit:
+        waitingroom "副本任務專員",0;
+        end;
+}

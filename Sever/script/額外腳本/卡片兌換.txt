@@ -1,0 +1,87 @@
+egg1,177,182,5	script	卡片兌換代幣	10126,{
+    cleararray @inventorylist_idx[0], 0, getarraysize(@inventorylist_idx); //清掉所有陣列以防有重複選項
+    //cutin "16ISA",2;
+    mes .npcname$;
+    mes "^0088FF"+strcharinfo(0)+"^000000您好，很高興為您服務。";
+    mes "有不要的卡片要回收嗎?";
+    mes "每張普通卡片 - ^CC00FF" + callfunc("F_InsertComma", .CARD_COST) + " 波利代幣^000000";
+    mes "每張MVP卡片 - ^CC00FF" + callfunc("F_InsertComma", .MVP_CARD_COST) + " 波利代幣^000000";
+    next;
+    getinventorylist(getcharid(0)); // 取得人物的背包資料
+    for (.@i = 0; .@i < getarraysize(@inventorylist_idx); .@i++) {
+        if (getiteminfo(getinventoryinfo(@inventorylist_idx[.@i], 0), 2) == 6) { //檢查所有背包格子，如果那格是卡片就加入陣列 
+            .@cardlist[getarraysize(.@cardlist)] = getinventoryinfo(@inventorylist_idx[.@i], 0);        
+        }
+    }
+    
+    for (.@i = 0; .@i < getarraysize(.@cardlist); .@i++){ //生成選項
+        .@menu$[.@i] = "[" + .@cardlist[.@i] + "] - " + getitemname(.@cardlist[.@i]);
+    }
+    
+    if (getarraysize(.@menu$) == 0) { //如果身上沒有任何卡片則不繼續對話
+        close2; 
+        message strcharinfo(0), "您的背包內沒有任何卡片.";
+        cutin "", 255;
+        end;
+    }
+    .@choose = select(implode(.@menu$, ":"))-1;
+    mes .npcname$;
+    mes "要回收 ^0088FF" + getitemname(.@cardlist[.@choose]) + " ^000000嗎?";
+    mes "目前您共有 ^CC00FF" + countitem(.@cardlist[.@choose]) + "^000000 張";
+    if (searcharray(.blacklist, .@cardlist[.@choose]) != -1) {
+        mes "^FF44AAMVP卡片^000000，每張^CC00FF " + callfunc("F_InsertComma", .MVP_CARD_COST) + " 波利代幣^000000";
+        .@mvpcard = 1; //標記MVP卡
+    } else {
+        mes "^FF44AA普通卡片^000000，每張^CC00FF " + callfunc("F_InsertComma", .CARD_COST) + " 波利代幣^000000";
+    }
+    mes "請問要售出幾張呢?";
+    mes "^FF44AA(輸入0則取消)^000000";
+    next;
+    input .@card_quantity;
+    if (! .@card_quantity) {
+        close2; 
+        cutin "", 255;
+        end;
+    }
+    .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose])); //輸入數字如果大於自身持有卡片的總數，則令該數為卡片的總數
+    next;
+    mes .npcname$;
+    mes "回收 ^0088FF" + getitemname(.@cardlist[.@choose]) + "^FF44AA " + .@card_quantity + " ^000000張";
+    if (.@mvpcard == 1) {
+    mes "獲得^CC00FF " + callfunc("F_InsertComma",(.MVP_CARD_COST * .@card_quantity)) + " 波利代幣^000000";
+    callfunc "checkOK";
+    close2; 
+   .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose]));
+    getitem 7539,(.MVP_CARD_COST * .@card_quantity);
+    } else {
+    mes "獲得^CC00FF " + callfunc("F_InsertComma",(.CARD_COST * .@card_quantity)) + " 波利代幣^000000";
+    callfunc "checkOK";
+    close2; 
+   .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose]));
+    getitem 7539,(.CARD_COST * .@card_quantity);
+    }
+
+    delitem .@cardlist[.@choose], .@card_quantity;
+    cutin "", 255;
+    end;
+
+OnInit:
+    .npcname$ = "[" + strnpcinfo(0) + "]";
+    .CARD_COST = 1; //普卡的價值 (代幣)
+    .MVP_CARD_COST = 500; //MVP卡的價值 (代幣)
+
+    // MVP卡的清單
+    setarray .blacklist, 4121, 4123, 4128, 4131, 4132, 4134, 4135, 4137, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4168, 4169, 4236, 4263, 4276, 4302, 4305, 4318, 4324, 4330, 4342, 4352, 4357, 4359, 4361, 4363, 4365, 4367, 4372, 4374, 4376, 4386, 4399, 4403, 4407, 4408, 4419, 4425, 4430, 4441, 4446, 4446, 4451, 4454, 4455, 4456, 4457, 4478, 4479, 4480, 4481, 4482, 4483, 4484, 4485, 4486, 4487, 4488, 4489, 4490, 4491, 4492, 4493, 4494, 4495, 4496, 4497, 4498, 4499, 4500, 4501, 4502, 4503, 4504, 4507, 4509, 4520, 4525, 4526, 4527, 4528, 4529, 4534, 4535, 4536, 4537, 4538, 4539, 4540, 4541, 4542, 4543, 4544, 4546, 4547, 4548, 4549, 4550, 4552, 4553, 4554, 4555, 4556, 4560, 4561, 4561, 4562, 4563, 4564, 4565, 4566, 4574, 4576, 4578, 4580, 4590, 4591, 4592, 4601, 4602, 4603, 4604, 4610, 4625, 4633, 4634, 4635, 4636, 4642, 4643, 4644, 4645, 4646, 4647, 4647, 4648, 4648, 4649, 4649, 4650, 4650, 4651, 4652, 4662, 4671, 4672, 4673, 4674, 4675, 4676, 4677, 4678, 4679, 4680, 4681, 4682, 4683, 4697, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 27020, 31006, 31007, 31008, 31009, 31010, 31011, 31012, 31013, 31014, 31015, 31016, 31017, 31018, 31019, 31020, 31021, 31022, 31023, 31024, 31025, 31026;
+    end;
+}
+
+
+function	script	checkOK	{
+    mes"確定回收嗎?";
+    if (select ("是", "不是") == 2) {
+        close2; 
+        cutin "", 255;
+        end;
+    }
+    return;
+}

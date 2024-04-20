@@ -17846,7 +17846,7 @@ Body:
     Name: ¥d¤ùµw¹ô
     Type: Etc
     Buy: 20
-    Weight: 10
+    Weight: 0
   - Id: 6380
     AegisName: Mora_Coin
     Name: ¿p©Ô§øµw¹ô
@@ -71851,3 +71851,9 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2110000
+    AegisName: Card_Coin_
+    Name: °ª¯Å¥d¤ùµw¹ô
+    Type: Etc
+    Buy: 20
+    Weight: 0

@@ -1,0 +1,277 @@
+-	shop	quest_shop9987	-1,512:100
+egg1,207,153,3	script	料理兌換員	544,{
+	switch(select(" ^0000ff精髓換奧義"," ^0000ff精髓換年糕^000000"," ^ff0000料理換精髓^000000")){
+
+
+	case 1:	set @i,0;
+	mes "[精隨抽奧義]";
+	mes " 一個奧義料理精髓";
+	mes " 可以隨機取得一種奧義";
+	next;
+	menu "開始",change,"結束",cancel;
+
+change:
+	if(countitem(62080)< 1) goto A01;
+	mes "[精隨抽奧義]";
+	mes "那麼 .. 我開始囉";
+	next;
+	delitem 62080,1;
+        set @gx,rand(0,61);
+          if (@gx ==0)getitem 60765,1;
+          if (@gx ==1)getitem 60766,1;
+          if (@gx ==2)getitem 60767,1;
+          if (@gx ==3)getitem 60768,1;
+          if (@gx ==4)getitem 60769,1;
+          if (@gx ==5)getitem 60770,1;
+          if (@gx ==6)getitem 60771,1;
+          if (@gx ==7)getitem 60772,1;
+          if (@gx ==8)getitem 60773,1;
+          if (@gx ==9)getitem 60774,1;
+          if (@gx ==10)getitem 60775,1;
+          if (@gx ==11)getitem 60776,1;
+          if (@gx ==12)getitem 60777,1;
+          if (@gx ==13)getitem 60778,1;
+          if (@gx ==14)getitem 60779,1;
+          if (@gx ==15)getitem 60780,1;
+          if (@gx ==16)getitem 60781,1;
+          if (@gx ==17)getitem 60782,1;
+          if (@gx ==18)getitem 60783,1;
+          if (@gx ==19)getitem 60784,1;
+          if (@gx ==20)getitem 60785,1;
+          if (@gx ==21)getitem 60786,1;
+          if (@gx ==22)getitem 60787,1;
+          if (@gx ==23)getitem 60788,1;
+          if (@gx ==24)getitem 60789,1;
+          if (@gx ==25)getitem 60790,1;
+          if (@gx ==26)getitem 60791,1;
+          if (@gx ==27)getitem 60792,1;
+          if (@gx ==28)getitem 60793,1;
+          if (@gx ==29)getitem 60794,1;
+          if (@gx ==30)getitem 60795,1;
+          if (@gx ==31)getitem 60796,1;
+          if (@gx ==32)getitem 60797,1;
+          if (@gx ==33)getitem 60798,1;
+          if (@gx ==34)getitem 60799,1;
+          if (@gx ==35)getitem 60800,1;
+          if (@gx ==36)getitem 60801,1;
+          if (@gx ==37)getitem 60802,1;
+          if (@gx ==38)getitem 60803,1;
+          if (@gx ==39)getitem 60804,1;
+          if (@gx ==40)getitem 60805,1;
+          if (@gx ==41)getitem 60806,1;
+          if (@gx ==42)getitem 60807,1;
+          if (@gx ==43)getitem 60808,1;
+          if (@gx ==44)getitem 60809,1;
+          if (@gx ==45)getitem 60810,1;
+          if (@gx ==46)getitem 60811,1;
+          if (@gx ==47)getitem 60812,1;
+          if (@gx ==48)getitem 60813,1;
+          if (@gx ==49)getitem 60814,1;
+          if (@gx ==50)getitem 60815,1;
+          if (@gx ==51)getitem 60816,1;
+          if (@gx ==52)getitem 60817,1;
+          if (@gx ==53)getitem 60818,1;
+          if (@gx ==54)getitem 60819,1;
+          if (@gx ==55)getitem 60820,1;
+          if (@gx ==56)getitem 60821,1;
+          if (@gx ==57)getitem 60822,1;
+          if (@gx ==58)getitem 60823,1;
+          if (@gx ==59)getitem 60824,1;
+          if (@gx ==60)getitem 60825,1;
+          if (@gx ==61)getitem 60826,1;
+	close;
+cancel:
+	mes"[精髓抽奧義]";
+	mes"歡迎下次再來 =) ";
+	close;
+A01:
+	mes"[精髓抽奧義]";
+	mes"請檢查一下精髓是否足夠";
+	close;
+
+
+
+	case 2:		mes " [全能精髓製作師]";
+	mes " 一個全能料理精髓";
+	mes " 可以製作一個萬能年糕";
+	next;	
+	menu
+
+	     " 製作萬能年糕",a1;
+
+	a1:
+        mes " [全能精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[全能精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(62079)< 1) goto NOitem1;
+	delitem 62079,@s*1;
+	getitem 12883,@s*1;
+
+        mes " [全能精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+	NOitem1:
+	mes " [全能精髓製作師]";
+	mes " 請檢查精髓數量是否足夠 ..";
+	close;
+
+	case 3:		mes " [精髓製作師]";
+	mes " 50個單獨料理可製作一個奧義料理精髓";
+	mes " 六種料理各20個可製作一個全能料理精髓";
+	next;	
+	menu
+
+	     " 力量料理換精髓",aA1,
+	     " 敏捷料理換精髓",aA2,
+	     " 體質料理換精髓",aA3,
+	     " 智力料理換精髓",aA4,
+	     " 靈巧料理換精髓",aA5,
+	     " 幸運料理換精髓",aA6,
+	     " 製作全能料理精髓",aA7;
+
+aA1:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12202)< 50) goto NOitem2;
+	delitem 12202,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA2:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12203)< 50) goto NOitem2;
+	delitem 12203,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA3:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12207)< 50) goto NOitem2;
+	delitem 12207,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA4:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12204)< 50) goto NOitem2;
+	delitem 12204,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA5:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12205)< 50) goto NOitem2;
+	delitem 12205,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA6:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if(countitem(12206)< 50) goto NOitem2;
+	delitem 12206,@s*50;
+	getitem 62080,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+aA7:
+        mes " [精髓製作師]";
+	mes " 那我開始囉";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[精髓製作師]";
+			mes "您輸入的數量不正確！";
+				close;	}
+	if((countitem(12202)< 20) || (countitem(12203)< 20) || (countitem(12204)< 20) || (countitem(12205)< 20) || (countitem(12206)< 20) || (countitem(12207)< 20)) goto NOitem2;
+	delitem 12202,@s*20;
+	delitem 12203,@s*20;
+	delitem 12204,@s*20;
+	delitem 12205,@s*20;
+	delitem 12206,@s*20;
+	delitem 12207,@s*20;
+	getitem 62079,@s*1;
+
+        mes " [精髓製作師]";
+	mes " 謝謝惠顧";
+	close;
+
+	NOitem2:
+	mes " [精髓製作師]";
+	mes " 請檢查數量是否足夠 ..";
+	close;
+}
+}
+
+

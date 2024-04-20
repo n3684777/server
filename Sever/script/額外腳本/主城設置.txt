@@ -1,0 +1,138 @@
+prontera,151,104,5	script	掛賣線	837,{end;}
+prontera,156,104,5	script	掛賣線#1	837,{end;}
+prontera,161,104,5	script	掛賣線#2	837,{end;}
+egg1,184,166,5	script	道館區	837,{end;}
+egg1,304,273,3	script	告示牌#01	837,{end;}
+egg1,115,279,3	script	告示牌#02	837,{end;}
+egg1,211,285,5	script	告示牌#09	837,{end;}
+egg1,260,178,4	script	小遊戲傳送	105,{
+mes "[小遊戲傳送]";
+	mes "哈哈！想去小遊戲區嗎?";
+	next;
+	if(select("是的，準備好了:不了")==2){close;}
+	warp "under_mark",98,73;
+	end;
+}
+egg1,185,189,5	script	仙境大使	10038,{
+mes "[仙境大使]";
+mes "歡迎來到我們的仙境。";
+next;
+callfunc "點數兌換人員";
+close;
+}
+
+egg1,215,151,4	script	結婚傳送人員	71,{
+if(select("傳送:取消")==2){close;}
+warp "lasagna",335,248;
+end;
+}
+egg1,214,168,0	script	sup#1	139,8,8,{callfunc "BaseEffect";}
+function	script	BaseEffect	{
+if( #vip > 0){bonus_script "{bonus2 bDropAddClass,Class_All,15;bonus2 bExpAddClass,Class_All,15; bonus bNoGemStone;}",86400,552,1,675;}
+	percentheal 100,100;
+	sc_start SC_BLESSING,600000,10;
+	sc_start SC_INCREASEAGI,600000,10;
+	end;
+}
+egg1,272,178,4	script	前往賭城#1	105,{	
+	mes "[前往賭城傳送]";
+	mes "哈哈！今天的運氣怎麼樣，";
+	mes "準備前往賭場了嗎？";
+	next;
+	if(select("是的，準備好了:不了，再玩一會")==2){close;}
+	warp "cmd_in02",212,100;
+	end;
+}
+cmd_in02,206,101,4	script	主城傳送#1	105,{
+	mes "哈哈！今天的運氣怎麼樣，";
+	mes "準備好回主城嗎？";
+	next;
+	if(select("是的，準備好了:不了，再玩一會")==2){close;}
+	warp "egg1",178,180;
+	end;
+}
+cmd_in02,211,101,3	script	賭場管理員#1	112,{
+	mes "[賭場管理員]";
+	mes "歡迎來到^00A052 仙境賭場^000000。";
+	mes "所謂十賭九輸，";
+	mes "小賭怡情、大賭傷身，";
+	mes "我看過不少客人玩到^004EA0 哭爸哭娘的^000000，";
+	next;
+	mes "[賭場管理員]";
+	mes "若是過於沉迷而傾家當產，";
+	mes "只能說..^ff0000活該死好^000000..";
+	mes "阿！老闆來了不聊了！！";
+	close;
+}
+egg1,232,161,3	script	PVP人員	10066,{
+mes "[競技場傳送員]";
+mes "您好，想前往哪一個競技場地?";
+next;
+switch(select(
+"^663300依斯魯得 ^FF0000【"+getmapusers("pvp_y_2-2")+" 人】",
+"^663300普隆德拉 ^FF0000【"+getmapusers("pvp_y_1-1")+" 人】",
+"^663300生死羅盤 ^FF0000【"+getmapusers("pvp_n_2-5")+" 人】",
+"^663300禁白劍村 ^FF0000【"+getmapusers("pvp_y_1-2")+" 人】",
+"^663300天下第一武道會場 ^FF0000【"+getmapusers("dbz_tour")+" 人】")){
+case 1: warp "pvp_y_2-2",0,0;close;
+case 2: warp "pvp_y_1-1",0,0;close;
+case 3: warp "pvp_y_2-5",0,0;close;
+case 4: warp "pvp_y_1-2",0,0;close;
+case 5: warp "dbz_tour",98,106;close;
+	}
+}
+egg1,214,191,3	script	仙鏡時鐘	857,{
+OnInit:
+	initnpctimer;
+	OnTimer1000:
+	stopnpctimer;
+		showscript (gettime(6)<10?"0"+gettime(6):gettime(6))+"/"+(gettime(5)<10?"0"+gettime(5):gettime(5))+" "+(gettime(3)<10?"0"+gettime(3):gettime(3))+":"+(gettime(2)<10?"0"+gettime(2):gettime(2))+":"+(gettime(1)<10?"0"+gettime(1):gettime(1))+"";
+		initnpctimer;
+	end;
+}
+
+
+//地圖傳點語法===============================
+egg1,214,121,0	warp	egg1warp	1,1,prt_fild08,170,375
+egg1,309,270,0	warp	egg2warp	1,1,lroom00,61,130
+egg1,119,279,0	warp	egg3warp	1,1,prt_in,60,73
+prt_in,60,77,0	warp	egg4warp	1,1,egg1,119,276
+prt_fild08,170,378,0	warp	egg5warp	3,2,egg1,214,126
+egg1,215,289,0	warp	egg6warp	1,1,prontera,156,28
+prontera,156,22,0	warp	egg7warp	3,2,egg1,215,286
+
+egg1	mapflag	restricted	7
+egg1	mapflag	nobranch
+//egg1	mapflag	noskill
+pvp_y_1-2	mapflag	noteleport
+pvp_y_1-2	mapflag	nosave	SavePoint
+pvp_y_1-2	mapflag	nobranch
+pvp_y_1-2	mapflag	noicewall
+pvp_y_1-2	mapflag	restricted	7
+pvp_y_1-2	mapflag	monster_noteleport
+pvp_y_1-1	mapflag	noteleport
+pvp_y_1-1	mapflag	nosave	SavePoint
+pvp_y_1-1	mapflag	nobranch
+pvp_y_1-1	mapflag	noicewall
+pvp_y_1-1	mapflag	restricted	7
+pvp_y_1-1	mapflag	monster_noteleport
+pvp_n_2-5	mapflag	noteleport
+pvp_n_2-5	mapflag	nosave	SavePoint
+pvp_n_2-5	mapflag	nobranch
+pvp_n_2-5	mapflag	noicewall
+pvp_n_2-5	mapflag	restricted	7
+pvp_n_2-5	mapflag	monster_noteleport
+pvp_y_2-2	mapflag	noteleport
+pvp_y_2-2	mapflag	nosave	SavePoint
+pvp_y_2-2	mapflag	nobranch
+pvp_y_2-2	mapflag	noicewall
+pvp_y_2-2	mapflag	restricted	7
+pvp_y_2-2	mapflag	monster_noteleport
+dbz_tour	mapflag	noteleport
+dbz_tour	mapflag	nosave	SavePoint
+dbz_tour	mapflag	nobranch
+dbz_tour	mapflag	noicewall
+dbz_tour	mapflag	restricted	7
+dbz_tour	mapflag	monster_noteleport
+
+//==========================================
