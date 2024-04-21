@@ -17,7 +17,8 @@ uttycty,120,167,5	script	卡片回收人員	10126,{
 		if(@inventorylist_id[.@i] > 4000  && @inventorylist_id[.@i] < 4700 ||
 		   @inventorylist_id[.@i] > 27000 && @inventorylist_id[.@i] < 28000||
 		   @inventorylist_id[.@i] > 30999 && @inventorylist_id[.@i] < 31027||
-		   @inventorylist_id[.@i] > 299999 && @inventorylist_id[.@i] < 300022){
+		   @inventorylist_id[.@i] > 299999 && @inventorylist_id[.@i] < 300022||
+		   @inventorylist_id[.@i] > 300162 && @inventorylist_id[.@i] < 300427){
           .@cardlist[getarraysize(.@cardlist)] = @inventorylist_id[.@i];        
         }
     }
