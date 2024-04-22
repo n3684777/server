@@ -1,0 +1,83 @@
+function	script	GUAGUALE	{
+	if($caiquanst==1) {
+	set .@GUAGUALE_CoolDownTime,3600;
+	set .@GUAGUALE_lim_time,$GUAGUALE_timer+.@GUAGUALE_CoolDownTime;
+	set .@GUAGUALE_cur_time,gettimetick(2);
+	set .@GUAGUALE_ent_t,(.@GUAGUALE_lim_time - .@GUAGUALE_cur_time);
+	set .@GUAGUALE_m,(.@GUAGUALE_ent_t - (.@GUAGUALE_h * 3600)) / 60;
+	if (.@GUAGUALE_lim_time-.@GUAGUALE_cur_time<0) {
+		set $caiquanst,0;
+		}else{
+		dispbottom "[ 台灣彩券 ] 目前彩券已經虧損太多..請於 "+.@GUAGUALE_m+" 分鐘再試。";
+		getitem 60753,1;
+		end;
+		}
+	}
+	if($caiquanbg==1) {
+		set $caiquanid,$caiquanid+1;
+		set $caiquanbg,0;
+		set $caiquangg,0;
+		set $caiquannum,rand(1,500);
+		set $caiquanplaynum,500;
+	}
+	set $caiquanplaynum,$caiquanplaynum-1;
+	set $caiquangg,$caiquangg+1;
+	set $caiquanplayrand,rand(0,($caiquanplaynum/2));
+	if($caiquanplayrand==0){
+		set $caiquanplayrand,rand(0,2);
+		}
+	if($caiquannum-$caiquanplayrand<1){
+		set $caiquanplay,$caiquannum+$caiquanplayrand;
+		}else{
+		set $caiquanplay,$caiquannum-$caiquanplayrand;
+		}
+	if($caiquanplay==$caiquannum||$caiquanplaynum<2) {
+		set $caiquanbgname$,strcharinfo(0);
+		set $caiquanbg,1;
+		set #CASHPOINTS,#CASHPOINTS+3000;
+		set $caiquanggg,$caiquangg;
+	if($caiquanggg<200){
+		set $GUAGUALE_timer,gettimetick(2);
+		set $caiquanst,1;
+	}
+		dispbottom "[ 台灣彩券 ] 刮刮樂第 『 "+$caiquanid+" 』 期，頭獎 『 "+$caiquannum+" 』 號，你刮出了 『 "+$caiquanplay+" 』 號";
+		announce "[ 台灣彩券 ] 恭喜！ 『 "+strcharinfo(0)+" 』 玩刮刮樂刮中了頭獎P點3000。刮刮樂熱賣中！",15,0xD1BBFF;
+	}else{
+		dispbottom "[ 台灣彩券 ] 刮刮樂第 『 "+$caiquanid+" 』 期，頭獎 『 "+$caiquannum+" 』 號，你刮出了 『 "+$caiquanplay+" 』 號";
+		dispbottom "[ 台灣彩券 ] 剩餘 『 "+$caiquanplaynum+" 』 次，刮刮樂必中頭獎。";
+	if($caiquanplaynum==200||$caiquanplaynum==100||$caiquanplaynum==50){
+		announce "[ 台灣彩券 ] 刮刮樂頭獎剩餘 『 "+$caiquanplaynum+" 』 次必定刮出！趕緊把握購買刮刮樂！",15,0xD1BBFF;
+		}
+	}
+	end;
+}
+
+cmd_in02.gat,178,107,5	script	台灣彩券行	933,{
+	mes "　【  台  灣  彩  券  資  訊  】";
+	mes "　^0AA770目前為第『 ^ff0000"+$caiquanid+"^000000 ^0AA770』期刮刮樂^000000";
+	if($caiquanst==1) {
+	set .@GUAGUALE_CoolDownTime,3600;
+	set .@GUAGUALE_lim_time,$GUAGUALE_timer+.@GUAGUALE_CoolDownTime;
+	set .@GUAGUALE_cur_time,gettimetick(2);
+	set .@GUAGUALE_ent_t,(.@GUAGUALE_lim_time - .@GUAGUALE_cur_time);
+	set .@GUAGUALE_m,(.@GUAGUALE_ent_t - (.@GUAGUALE_h * 3600)) / 60;
+	if(.@GUAGUALE_m>0) {
+	mes "　^0AA770『 ^ff0000目前虧損，停止開獎中^000000 ^0AA770』^000000";
+	mes "　^0AA770請過『 ^ff0000"+.@GUAGUALE_m+"^000000 ^0AA770』分鐘再試^000000";
+	}else{
+	mes "　^0AA770本期頭獎獎號為『 ^ff0000"+$caiquannum+"^000000 ^0AA770』號^000000";
+	mes "　^0AA770剩餘必中次數『 ^ff0000"+$caiquanplaynum+"^000000 ^0AA770』次^000000";
+	}
+	}else{
+	mes "　^0AA770本期刮出獎號『 ^ff0000"+$caiquannum+"^000000 ^0AA770』號^000000";
+	mes "　^0AA770剩餘必中次數『 ^ff0000"+$caiquanplaynum+" ^0AA770』^0AA770次^000000";
+	}
+	mes "　^0AA770上期中獎者以『 ^ff0000"+$caiquanggg+"^000000 ^0AA770』張刮出頭獎^000000";
+	mes "　^0AA770上期幸運中獎人『 ^ff0000"+$caiquanbgname$+"^000000 ^0AA770』^000000";
+
+	close;
+
+OnInit:
+	waitingroom "　 台灣彩券", 0;
+	end;
+}

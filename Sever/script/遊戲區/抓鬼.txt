@@ -58,7 +58,7 @@ setarray $@romonapper$[0],"prontera","morocc","izlude","geffen","payon","alberta
 //----- RO大盜的隨機出現城市名字設定 -----  (請對應上面次序)
 setarray $@romonmapname$[0],"普隆德拉","夢羅克","伊斯魯德","吉芬","斐揚","艾爾貝塔","艾爾帕蘭","姜餅城","克魔島","朱諾","昆侖","洛陽","尼芙菲姆";
 
-monster ""+$@romonapper$[$@ditu]+"",0,0,"幽魂",2003,20;
+monster ""+$@romonapper$[$@ditu]+"",0,0,"幽魂",2003,5;
 announce "[ 抓鬼令 ] : 怨念幽魂在 [ "+$@romonmapname$[$@ditu]+" ] 出現,請玩家們速往抓捕,重重有賞!",16;
 end;
 }

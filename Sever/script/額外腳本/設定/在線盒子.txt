@@ -1,0 +1,21 @@
+function	script	eggrandforonoffPOPODEN	{
+	if ( rand(1,100) <= .eggrandforonoffPOPODENfailure )
+	{
+			set .@a,rand(1,10);
+			set #CASHPOINTS,#CASHPOINTS+.@a;
+		dispbottom "恭喜您獲得泡泡盒子給予 "+.@a+" Cash點數。您的 CASH 點數已累積 " + #CASHPOINTS + " 點。"; 
+}
+	if ( rand(1,100) <= .eggrandforonoffPOPODENfailure2 )
+	{
+			set .@b,rand(10000,30000);
+			set Zeny,Zeny + .@b;
+		dispbottom "恭喜您獲得泡泡盒子給予 "+.@b+" Zeny。"; 
+}
+
+
+
+OnInit:
+	.eggrandforonoffPOPODENfailure2 = 30;	//設置多少就是多少%取得
+	.eggrandforonoffPOPODENfailure = 5;	//設置多少就是多少%取得
+	end;
+}

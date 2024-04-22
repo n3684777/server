@@ -1,0 +1,147 @@
+////---------------------------------------------------------------
+////			GM卡			-
+////---------------------------------------------------------------
+function	script	GM_NPC	{
+	if(getgmlevel() < 99) close;
+
+    switch(select("^FF00001.^00DDAA改變移動速度:^FF00002.^0000ff伺服器重讀廣播:^FF00003.^FF0088玩家資料查詢:^FF00004.^5599FFIP在線用戶踢除:^FF00005.^0AA770凍結帳號:^FF00006.^9955FF取消^000000")){
+		case 1:
+			atcommand "@speed 0";
+			end;
+		case 2:
+			atcommand "@kamib 礙於伺服器修正內容,伺服器於半小時後進行伺服器讀取,不便之處請大家多多包涵，";
+
+			end;
+		case 3:
+			switch(select("^FF00001.^FF0088查詢類似ID資料:^FF00002.^5599FF查詢IP相關資料^000000")){
+				case 1:
+					mes "請輸入查詢類似ＩＤ!!";
+					input .@name$;
+					mes "要查詢的類似 ID: ^0000ff"+.@name$+"^000000";
+					if(query_sql("SELECT `name` FROM `char` WHERE name like '%"+.@name$+"%'",.@nameid$)){
+						for(set .@g,0;.@g<getarraysize(.@nameid$); set .@g,.@g+1){
+							query_sql("SELECT `account_id` FROM `char` WHERE name = '"+.@nameid$[.@g]+"'",.@account_id$);
+							query_sql("SELECT `char_id` FROM `char` WHERE name = '"+.@nameid$[.@g]+"'",.@char_id$);
+							query_sql("SELECT `last_ip` FROM `login` WHERE account_id = '"+.@account_id$+"'",.@last_ip$);
+							mes "^7B68EE["+.@account_id$+"] ^000000ID:^0000FF"+.@nameid$[.@g]+" ^7B68EE["+.@char_id$+"]^000000";
+							mes "IP【^7B68EE"+.@last_ip$+"^000000】"+(!getcharid(0,.@nameid$[.@g])?"^FF0000■^000000":"^00EC00■^000000");
+							if(.@g%100)sleep2 1;
+						}
+						mes " ";
+						mes "^00bb00查詢完畢^000000";
+						close;
+					}
+					mes " ";
+					mes "^ff0000沒有發現類似 ID 存在^000000 !";
+					close;
+
+				case 2:
+					mes "請輸入查詢ＩＰ!!";
+					input .@last_ip$;
+					mes "要查詢的 IP: ^0000ff"+.@last_ip$+"^000000";
+					if(query_sql("SELECT `account_id` FROM `login` WHERE last_ip = '"+.@last_ip$+"'",.@account_id$)){
+						for(set .@g,0; .@g<getarraysize(.@account_id$); set .@g,.@g+1){
+							deletearray .@char_id,getarraysize(.@char_id);
+							query_sql("SELECT `char_id` FROM `char` WHERE account_id ='"+.@account_id$[.@g]+"'",.@char_id);
+							for(set .@s,0; .@s<.@char_id[.@s]; set .@s,.@s+1){
+								query_sql("SELECT `name` FROM `char` WHERE char_id = '"+.@char_id[.@s]+"'",.@nameid$);
+								mes "^7B68EE["+.@account_id$[.@g]+"] ^000000ID:^0000FF"+.@nameid$+" ^7B68EE["+.@char_id[.@s]+"]^000000";
+								mes "IP【^7B68EE"+.@last_ip$+"^000000】"+(!getcharid(0,.@nameid$)?"^FF0000■^000000":"^00EC00■^000000");
+							}
+							if(.@g%5) sleep2(1);
+						}
+						mes " ";
+						mes "^00bb00查詢完畢^000000";
+						close;
+					}
+					mes " ";
+					mes "^ff0000沒有此 IP 登入過^000000 !";
+					close;
+			}
+
+		case 4:
+			mes "請輸入 ^ff0000要踢除的ＩＰ^000000!!";
+			input .@Kill_Ip_Player$;
+			mes "目標ＩＰ： ^0000ff"+.@Kill_Ip_Player$+"^000000";
+			if(select("取消","確定")==1) close;
+
+			next;
+			mes "目標ＩＰ： ^FF0000"+.@Kill_Ip_Player$+"^000000!";
+			query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@Kill_Ip_Player$+"'", .@AccountId10);
+			for(set .@e ,0;.@e<getarraysize(.@AccountId10);set .@e,.@e+1){
+				deletearray .@Name$,getarraysize(.@Name$);
+				query_sql("SELECT name FROM `char` WHERE account_id = '"+.@AccountId10[.@e]+"'", .@Name$);
+				for(set .@v ,0;.@v<getarraysize(.@Name$);set .@v,.@v+1){
+					if(isloggedin(getcharid(3,.@Name$[.@v]))){
+						set .@online,.@online+1;
+						mes "^0000FF"+.@online+"."+.@Name$[.@v]+"^000000";
+						set .@Kill_List$[getarraysize(.@Kill_List$)],.@Name$[.@v];
+					}
+				}
+			}
+
+			if(.@online==0){
+				mes "您輸入的ＩＰ目前沒任何窗口在線上唷!";
+				mes "^FF0000或^000000請確認ＩＰ後，再重新輸入!";
+				close;
+			}
+			mes "有以上角色在線上!";
+			mes "是否進行全部踢除!";
+				if(select("取消","踢除")==1) close;
+			mes "踢除Ing!";
+			for(set .@h ,0;.@h<getarraysize(.@Kill_List$);set .@h,.@h+1){
+				atcommand "@kick "+.@Kill_List$[.@h];
+			}
+			mes "踢除Finish!";
+			close;
+			
+		case 5:
+			switch(select("^FF00001.^FF0088凍結角色:^FF00002.^5599FF凍結關聯IP^000000")){
+				case 1:
+					mes "請輸入 ^ff0000要凍結的角色名稱^000000!!";
+					input .@block_name$;
+					mes "目標名稱： ^0000ff"+.@block_name$+"^000000";
+					if(select("取消","確定")==1) close;
+					if(query_sql("SELECT account_id FROM `char` WHERE name = '"+.@block_name$+"'",.@account_id)){
+						if(query_sql("SELECT state FROM `login` WHERE state = '0' And account_id = '"+.@account_id+"'",.@state)){
+							atcommand "@block "+.@block_name$;
+							mes "凍結完成!";
+						} else {
+							mes "已被凍結帳號";
+						}
+					} else {
+						mes "沒有角色名稱存在";
+					}
+					close;
+
+				case 2:
+					mes "請輸入 ^ff0000要凍結的ＩＰ^000000!!";
+					input .@block_ip$;
+					mes "目標ＩＰ： ^0000ff"+.@block_ip$+"^000000";
+					if(select("取消","確定")==1) close;
+
+					next;
+					mes "目標ＩＰ： ^FF0000"+.@block_ip$+"^000000!";
+					query_sql("SELECT account_id FROM `login` WHERE state = '0' And last_ip = '"+.@block_ip$+"'", .@AccountId10);
+					for(set .@e ,0;.@e<getarraysize(.@AccountId10);set .@e,.@e+1){
+						deletearray .@Name$,getarraysize(.@Name$);
+						if(query_sql("SELECT name FROM `char` WHERE account_id = '"+.@AccountId10[.@e]+"'", .@Name$)){
+							mes "["+set(.@s,.@s+1)+"] ^0000ff"+set(.@Kill_List$[.@s],.@Name$[0])+"^000000";
+						}
+					}
+
+					mes (.@s>0?"是否進行全部凍結!":"未有相符資料");
+						if(select("取消",.@s>0?"凍結":"")==1) close;
+					for(set .@h ,1;.@h<getarraysize(.@Kill_List$);set .@h,.@h+1){
+						atcommand "@block "+.@Kill_List$[.@h];
+					}
+					mes "凍結完成!";
+					close;
+			}
+
+		case 6:
+			close;
+			end;
+	}
+end;
+}

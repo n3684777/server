@@ -1,0 +1,212 @@
+-	script	RouletteSystem	-1,{
+	end;
+OnPCOpenRouletteFilter:
+	processhalt;
+	unlockcmd;
+
+
+
+switch(select("^ff0000(1). ^0AA770存點(^FF99FF主城^0AA770)^000000","^ff0000(2). ^0AA770回儲存點(^FF99FF主城^0AA770)^000000","^ff0000(3). ^0AA770VIP選單^000000","^ff0000(4). ^0AA770個人 ^0000ff積分 ^000000^0AA770/^ff0000 冷卻^000000 ^0AA770個人查詢^000000","^ff0000(5). ^0AA770設置撿取(^FF99FF設置掉落率^000000^0AA770)^000000","^ff0000(6). ^0AA770設置撿取(^FF99FF設置指定清單^000000^0AA770)^000000","^ff0000(7). ^0AA770開啟個人倉庫^000000","^ff0000(8). ^0AA770開啟公會倉庫^000000",(getgmlevel() >= 99)?"^FF0000 - GM專用選項 - ":"")){
+
+
+case 1:
+			
+		save "uttycty",100,86; 
+		mes $@GameService_Str$;
+		mes "^0AA770已幫您儲存重生點至主城^000000";
+		end;
+
+case 2:
+			
+		setarray @mapname$[0],"uttycty";
+		warp @mapname$[@w],100,86;
+		end;
+
+case 3:	
+		switch(select("^ff0000(1). ^0AA770貴賓級VIP^000000","^ff0000(2). ^0AA770尊榮級VIP^000000","^ff0000(3). ^0AA770至尊級VIP^000000")){
+		case 1:		callfunc("membervip1");
+		case 2:		callfunc("membervip2");
+		case 3:		callfunc("membervip3");
+		}
+
+case 4:	
+		switch(select("^ff0000(1). ^0AA770查詢副本冷卻時間^000000","^ff0000(2). ^0AA770查詢個人積分^000000","^ff0000(3). ^0AA770查詢一般轉蛋保底積分^000000","^ff0000(4). ^0AA770查詢影子轉蛋保底積分^000000")){
+		
+case 1:
+
+switch(select("^003D79副本狀態查詢^000000")){
+case 1:
+setarray .@instance[0],12058,3135,12059,3040,5112,9316,15002,7211,1261,13182,15050,7577,13185,12317,12334,12278,4229,9223,4197,9319,15005,7598,12254,12331,12325,9336,9419,60352;
+
+setarray .@instance2[0],7706,12378,14586,12365,7743,12375,12347,12455,16362,11379,22317,12461,22341,66912,66913,66911,66914,66910,66915,55155,55156,55158;
+
+setarray .@instancename$[0],"1.魔物終結塔","2.尼德霍格的巢穴","3.獸人的記憶","4.封印的神殿","5.保羅協夫的實驗室","6.吉芬魔法大賽","7.莎拉的記憶","8.霧林迷宮","9.幽靈皇宮","10.噩夢吉特巴","11.飛空艇襲擊","12.魔神之塔","13.危機的查理斯頓 ","14.舊克雷斯特漢姆古城","15.舊克雷斯特漢姆古城(夢魘)","16.巴庫暴龍湖","17.寶箱巨鱷","18.噩夢醫院","19.章魚洞穴","20.摩洛斯洞穴","21.拜歐斯島","22.魔神殿","23.排水溝","24.恐怖玩具工廠","25.驚駭森靈巢穴","26.潘利爾與莎拉","27.空中要塞","下一頁 -";
+
+setarray .@instancename2$[0],"28.儀式之屋","29.古代君王","30.白晝升起之半月","31.無限空間","32.維爾納研究所中樞室","33.邪心獵人軍事基地","34.中央實驗室","35.再探奧斯","36.核心記憶","37.最後房間","38.EDDA生體實驗研究所","39.EDDA克雷斯特漢姆的沒落","40.克雷斯特漢姆-挑戰模式","41.捕獲甜心","42.失落的農場","43.祕密花園(普通)","44.祕密花園(困難)","45.水上花園(普通)","46.水上花園(困難)";
+
+setarray .@instancemap$[0],"alberta","nyd_dun02","gef_fild10","monk_test","lhz_dun04","dali","dali","bif_fild01","dali02","moc_para01","dali02","dali02","verus04","glast_01","glast_01","ma_scene01","ma_fild02","ma_dun01","mal_dun01","moro_cav","moro_cav","moro_cav","mal_in01","xmas","dali","dali02","dali02";
+
+setarray .@instancemap2$[0],"prt_lib_q","gef_tower","rachel","cmd_fild07","slabw01","ein_fild04","verus01","sp_cor","sp_cor","un_myst","yuno","glast_01","glast_01","ba_maison","ba_maison","ba_maison","ba_maison","ba_maison","ba_maison";
+
+setarray .@instancex[0],216,95,242,313,148,95,135,159,47,28,132,135,71,200,182,174,316,151,154,61,48,38,165,233,82,93,118,0;
+setarray .@instancex2[0],90,55,176,64,234,277,151,163,111,156,213,244,135,56,308,197,197,233,233;
+setarray .@instancey[0],74,193,197,148,271,144,114,335,130,88,83,114,113,270,277,174,315,7,233,64,58,71,27,297,62,142,65,0;
+setarray .@instancey2[0],82,170,136,272,89,339,151,52,125,38,344,287,285,174,203,276,276,47,47;
+		for (.@i = 0; .@i < getarraysize(.@instance); .@i++) {
+		 if(checkquest(.@instance[.@i],PLAYTIME)==0||checkquest(.@instance[.@i],PLAYTIME)==1){
+			set .@status$[.@i],"^ff0000[冷卻中] ^000000";		
+			}else{
+			set .@status$[.@i],"^0000ff[可挑戰] ^000000";
+			}
+		}
+		set .@status$[27],"";
+		for (.@i = 0; .@i < getarraysize(.@instancename$); .@i++){
+         .@menu$[.@i] = ""+.@status$[.@i]+" ^00AEAE- "+.@instancename$[.@i]+"^000000";
+		}
+		mes "^00AEAE==========[副本狀態查詢]==========";
+		mes "^00AEAE若選擇副本將會傳送至副本挑戰處。";
+		.@choose = select(implode(.@menu$, ":"))-1;
+		next;
+		if(.@choose==27){
+			for (.@i = 0; .@i < getarraysize(.@instance2); .@i++) {
+		 if(checkquest(.@instance2[.@i],PLAYTIME)==0||checkquest(.@instance2[.@i],PLAYTIME)==1){
+			set .@status2$[.@i],"^ff0000[冷卻中] ^000000";		
+			}else{
+			set .@status2$[.@i],"^0000ff[可挑戰] ^000000";
+			}
+		}
+		for (.@i = 0; .@i < getarraysize(.@instancename2$); .@i++){
+         .@menu2$[.@i] = ""+.@status2$[.@i]+" - ^00AEAE"+.@instancename2$[.@i]+"^000000";
+		}	
+		.@choose2 = select(implode(.@menu2$, ":"))-1;
+		mes "^00AEAE==========[副本狀態查詢]==========";
+		mes "^00AEAE是否傳送至 "+.@instancename2$[.@i]+"";
+		if(select("^336666傳送^000000:^00AEAE取消^000000")==2){close;}
+		close2;
+		warp .@instancemap2$[.@choose2],.@instancex2[.@choose2],.@instancey2[.@choose2];
+		end;
+		}
+		mes "^00AEAE==========[副本狀態查詢]==========";
+		mes "^00AEAE是否傳送至 "+.@instancename$[.@i]+"";
+		if(select("^336666傳送^000000:^00AEAE取消^000000")==2){close;}
+		close2;
+		warp .@instancemap$[.@choose],.@instancex[.@choose],.@instancey[.@choose];
+		end;
+		}
+
+		case 2:
+		mes "　　　　　^0AA770個 人 積 分 查 詢^000000";
+		mes "  ^5599FF貴賓 VIP 積分：[^000000 ^FF0000" + #VIPLV1 + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF尊榮 VIP 積分：[^000000 ^FF0000" + #VIPLV2 + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF至尊 VIP 積分：[^000000 ^FF0000" + #VIPLV3 + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF個人商城點數：[^000000 ^FF0000" + #CASHPOINTS + "^000000 ^5599FF]點.^000000";
+		mes "  ^5599FF個人在線積分：[^000000 ^FF0000"+#OnlinePoint+"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF個人遊戲積分：[^000000 ^FF0000"+ #Gamepoint +"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF個人打王積分：[^000000 ^FF0000"+ #Mvp_Point +"^000000 ^5599FF]分.^000000";
+		close;
+
+		case 3:
+		mes "　　　　　^0AA770一般轉蛋保底積分查詢^000000";
+		mes "  ^5599FF超音速保底積分：[^000000 ^FF0000" + #JDsupersonic + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF獸人王保底積分：[^000000 ^FF0000" + #JDorcking + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF時空光陰保底積分：[^000000 ^FF0000"+#JDtimeandtime+"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF2019RTC紀念保底積分：[^000000 ^FF0000"+#JDTwozeroninertc+"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF突破者保底積分：[^000000 ^FF0000" + #JDbreakthrough + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF嘉年華保底積分：[^000000 ^FF0000" + #JDcarnival + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF飛馬保底積分：[^000000 ^FF0000" + #JDpegasus + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF滿懷感念保底積分：[^000000 ^FF0000" + #JDgratitude + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF德古拉保底積分：[^000000 ^FF0000" + #JDdracula + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF亡命暴徒保底積分：[^000000 ^FF0000" + #JDdesperate + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF神之追隨者保底積分：[^000000 ^FF0000" + #JDfollowerofgod + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF炎熱保底積分：[^000000 ^FF0000" + #JDhot + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF秋末保底積分：[^000000 ^FF0000" + #JDlateautumn + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF繼承者保底積分：[^000000 ^FF0000" + #JDinheritor + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF期盼保底積分：[^000000 ^FF0000" + #JDlookforwardto + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF彩虹橋紀念保底積分：[^000000 ^FF0000" + #JDrainbow + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF生命保底積分：[^000000 ^FF0000" + #JDlife + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF使命保底積分：[^000000 ^FF0000" + #JDmission + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF星願保底積分：[^000000 ^FF0000" + #JDstarwish + "^000000 ^5599FF]分.^000000";
+		close;
+
+		case 4:
+		mes "　　　　　^0AA770影子轉蛋保底積分查詢^000000";
+		mes "  ^5599FF影子進化者保底積分：[^000000 ^FF0000" + #SHevolutionary + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子轉換者保底積分：[^000000 ^FF0000" + #SHconverter + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子魔力保底積分：[^000000 ^FF0000"+#SHmagic+"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子閃電保底積分：[^000000 ^FF0000"+#SHlightning+"^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子王者保底積分：[^000000 ^FF0000" + #SHKing + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子神光保底積分：[^000000 ^FF0000" + #SHshenguang + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子情人保底積分：[^000000 ^FF0000" + #SHlover + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子超能保底積分：[^000000 ^FF0000" + #SHsuper + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子操作者保底積分：[^000000 ^FF0000" + #SHoperator + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子貫穿者保底積分：[^000000 ^FF0000" + #SHpenetrator + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子神速保底積分：[^000000 ^FF0000" + #SHfast + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子爭霸保底積分：[^000000 ^FF0000" + #SHhegemony + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子急速保底積分：[^000000 ^FF0000" + #SHrapidly + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子全能保底積分：[^000000 ^FF0000" + #SHalmighty + "^000000 ^5599FF]分.^000000";
+		mes "  ^5599FF影子全能II保底積分：[^000000 ^FF0000" + #SHalmightyii + "^000000 ^5599FF]分.^000000";
+		close;
+		}
+
+case 5:
+	mes "　　　　　　　^5599FF設置掉落率^000000";
+	mes "^0AA770可以設定 自動撿取 怪物掉落物品^000000";
+	mes "^0AA770自由設定 低於幾%的物品^000000 ^ff00001~100%^000000";
+	mes "^0AA770最低 ^ff00001%^000000 ^0AA770最高 ^ff0000100%^000000 ^0AA770低於 ^ff00001%^000000 ^0AA770視為關閉^000000";
+	mes "^ff0000重登後需再次設定^000000";
+	next;
+	input @input,0,101;
+	if (@input < 1) {
+	atcommand "@autoloot off";
+	close;
+	}
+	if (.@input > 100) {
+	atcommand "@autoloot "+100;
+	close;
+	}
+	atcommand "@autoloot "+@input;
+	close;
+	break;
+case 6:     
+     	mes "　　　　　　　^5599FF設置指定清單^000000";
+	mes "^0AA770可以設定你要指定撿怪物的物品^000000";
+	mes "^0AA770最多可以設^ff000010^000000 ^0AA770項物品清單^000000";
+	mes "^0AA770可隨時清空指定物品清單^000000";
+	mes "^ff0000重登後需再次設定^000000";
+      switch(select("^ff0000(1). ^5599FF設定指定撿物物品:^ff0000(2). ^5599FF查詢指定撿物清單:^ff0000(3). ^5599FF重置撿物清單^000000")){
+      case 1: 
+      mes "^0AA770請輸入物品ID或名稱^000000";
+      input .@itemname$;
+      atcommand "@alootid +"+.@itemname$;
+      close;
+      
+      case 2: 
+      atcommand "@alootid ";
+      close;
+      
+      case 3: 
+      atcommand "@alootid reset"+.@itemname$;
+      close;
+			}
+case 7:
+	mes "^0AA770個人倉庫已開啟^000000";
+		close2;
+		openstorage;
+		end;
+case 8:
+	if(getcharid(2)==0)
+	{
+	mes "無法開啟原因：";
+	mes " ^ff0000尚未加入公會 或 公會未升級倉庫功能^000000";
+	close;
+	}
+	mes "^0AA770公會倉庫已開啟^000000";
+		close2;
+		guildopenstorage;
+		end;
+
+case 9:
+		callfunc("GM_NPC");
+
+}
+}

@@ -1,0 +1,123 @@
+-	script	MVPPoint	-1,{//MVP點數
+OnInit:
+	setarray .@MVPMonster[0],1785,1159,1086,1190,1087,1059,1038,1046,1112,1115,1147,1150,1157,1251,1252,1630,1511,1389,1418,1688,
+	1039,1768,1373,1272,1312,1492,1583,1623,1658,1685,1734,2068,2087,1719,1885,1871,1779,1873,1646,1647,1648,1649,1650,1651,2235,
+	2236,2237,2238,2239,2240,2241,1832,1751,1708,2202,3074,3220,3221,3222,3223,3224,3225,3240,3241,3242,3243,3244,3245,3246,1917,
+	1874,1916,1876,1956,1957,2022,1990,1991,2131,2165,1890,1733,1530,1518,1502,2244,2149,2511,2512,2513,2514,2515,2148,
+	2251,2253,2249,2255,3526,3804,3758,3757,20260,20273,20277,20520,20601,20618,20610,20611,20422,20421,20419,3741;
+	for(set .@i,0; .@i < getarraysize(.@MVPMonster);set .@i,.@i+1){
+	if(getd("$MVP"+.@MVPMonster[.@i]+"")==0){setd "$MVP"+.@MVPMonster[.@i]+"",.@MVPMonster[.@i];}
+	}
+	end;
+OnNPCKillEvent:
+	if ( getd("$MVP"+killedrid+"") != 0 ){
+	set #Mvp_Point,#Mvp_Point+1;
+	dispbottom "[MVP點數積分]您成功獲1點MVP點數，目前累積 [ "+ #Mvp_Point +" ] 點";
+	end;
+	}
+}
+ -	script	VIPSet	-1,{ 
+OnHour04:
+query_sql("update `acc_reg_num` set `value`= `value`-'1' where `key` = '#vip' && `value` >= '0'");
+query_sql("update `acc_reg_num` set `value`= 0 where `key` = '#vipegg2'");
+query_sql("update `acc_reg_num` set `value`= 0 where `key` = '#worldmvp2'");
+end;
+}
+
+-	script	LoginTip	-1,{//在線積分&登入提示
+OnPCLoginEvent:
+if(#vip > 0){set .@vip$,"啟用";}else{set .@vip$,"未啟用";}
+	dispbottom "══════════════════";
+	dispbottom "[登錄時間]『"+gettimestr("%Y年%m月%d日 %H:%M:%S",50)+"』";
+	dispbottom "人物等級達到 100 級後開始累積在線積分!";
+	dispbottom "══════════════════";
+OnTimeA:
+if(BaseLevel<100||checkVending() & 2 ){end;}
+	addtimer 600000,"LoginTip::OnTimeA";
+	deltimer "LoginTip::OnTimeA";
+	set #OnlinePoint,#OnlinePoint + 1;
+	dispbottom "你已經在線滿 5 分鐘 ， 目前在線時間累積為 "+#OnlinePoint+" 點。";
+	addtimer 600000,"LoginTip::OnTimeA";
+	end;
+OnPCLogoutEvent:
+	deltimer "LoginTip::OnTimeA";
+	end;
+}
+
+//-	script	GamePoint	-1,{//小遊戲點數
+//OnNPCKillEvent:
+//	set #Gamepoint,#Gamepoint+1;
+//	dispbottom "[小遊戲點數積分]您成功獲1點小遊戲點數，目前累積 [ "+ #Gamepoint +" ] 點";
+//	end;
+//}
+
+
+
+function	script	點數兌換人員	{
+mes "[仙境大使]";
+mes "內容將持續更新，敬請期待。";
+next;
+switch(select("在線積分兌換:MVP點數兌換:小遊戲點數兌換:推廣點數兌換")){
+case 1:
+callshop "在線積分";end;
+case 2:
+callshop "MVP點數";end;
+case 3:
+callshop "小遊戲點數";end;
+case 4:
+callshop "推廣點數";end;	
+	}
+}
+//==============Shop set ========================
+-	pointshop	在線積分	-1,#OnlinePoint,60864:300, 12636:1,13710:280,607:10,14523:1,12208:24,12209:36,12922:500,12210:36,12909:280,12912:140,12915:70,12917:70,12918:70,12914:70,12913:70,12916:140,12903:70,12904:70,12905:70,12906:70,12907:70,12908:70,13857:280,6960:70
+//14862:280;
+-	pointshop	小遊戲點數	-1,#GamePoint,17508:100, 16770:100, 20278:1000,20287:1000, 13817:200, 14570:200, 14571:200, 7613:200, 12225:200, 12395:200, 14574:200, 12360:200, 12361:200, 12362:200, 12363:200, 12367:200, 12370:200, 12371:200, 12372:200, 12373:200, 12374:200, 9058:200, 12699:200, 12846:200, 23189:200, 12368:300, 12369:300, 12358:300, 23256:300, 12359:300, 12366:300, 12789:200, 9063:200, 9101:300,  12364:1000, 635:200, 23188:300, 23187:300, 12365:300, 22822:100, 12260:100, 24109:1000, 24110:1000, 24111:1000, 24112:1000, 24113:1000, 24114:1000, 24115:1000, 24116:1000, 24117:1000, 24118:1000, 24119:1000, 24120:1000, 24121:1000, 24122:1000, 24123:1000, 24124:1000, 24125:1000, 24126:1000, 24127:1000, 24128:1000, 24129:1000, 24130:1000, 24131:1000, 24132:1000, 24133:1000, 24134:1000, 24135:1000, 24136:1000, 24137:1000, 24138:1000, 24139:1000, 24140:1000, 24141:1000, 24142:1000, 24143:1000, 24144:1000, 24145:1000, 24146:1000, 24147:1000, 24148:1000, 24149:1000;
+
+//23257:200, 23258:200, 9110:300,
+
+-	pointshop	推廣點數	-1,#PropagandaPoint,22171:200,6635:30,6231:200,6235:200
+//14862:40,12883:40,23545:20,
+
+-	pointshop	MVP點數	-1,#Mvp_Point,18823:1000, 28901:1000, 19111:1000, 19433:1000,5969:1000,5933:1000,2936:1000, 28505:1000,28567:1000, 28536:1000, 19246:1000, 28515:1000,5967:1000, 19138:1000,28430:1000,15166:1000,19327:1000,28502:800,19112:500,19306:1000,5918:500, 18563:500, 18853:500, 18934:500,18600:500,18522:500,5360:500,18810:500,18601:500,18528:500, 5930:500, 18729:500,19299:500,5966:1000,2979:500, 18856:500, 18908:500, 28429:500, 28433:500, 18877:500, 5673:500,  5467:500, 1318:500, 28410:500,13438:500, 20943:500, 5985:500, 28437:500, 28428:500, 19393:500,28906:500, 18651:500,19126:500, 18878:500, 18601:250, 18600:250, 18564:250, 19243:250, 19141:250, 5657:250, 18949:250, 18947:250, 18940:250, 18938:250, 18933:250, 18910:250, 18909:250, 2589:250, 2573:250, 2998:250, 2936:250, 28351:250, 2198:250, 5397:100, 5560:100, 20711:100, 18894:100, 18670:100, 5152:100, 28358:100, 18521:100, 5499:100, 28321:100, 18652:100, 18603:100
+
+//5970:1000,32243:1000, 19104:500,19006:500,22222:500,18959:500, 18950:250,  22191:500, 5878:250, 19041:250,19174:250,18943:250, 18942:250, 18941:250, 18914:250, 18751:100,5946:100, 5932:100, 18954:100, 18935:100, 18912:100, 18913:100,5931:100 18962:100;
+
+
+//==============Shop set ========================
+
+function	script	PointTotal	{ //預留編號區間 51030~51100
+	.@point = getarg(0);
+	switch(.@point) {
+	//在線點數
+	case 51030: set .@chpoint,1; set .@pointname$,"在線點數";set #OnlinePoint,#OnlinePoint +.@chpoint; set .@calss,#OnlinePoint; break;
+	case 51031: set .@chpoint,10; set .@pointname$,"在線點數";set #OnlinePoint,#OnlinePoint +.@chpoint; set .@calss,#OnlinePoint; break;
+	case 51032: set .@chpoint,100; set .@pointname$,"在線點數";set #OnlinePoint,#OnlinePoint +.@chpoint; set .@calss,#OnlinePoint; break;
+	//推廣點數
+	case 51033: set .@chpoint,1; set .@pointname$,"推廣點數";set #PropagandaPoint,#PropagandaPoint +.@chpoint; set .@calss,#PropagandaPoint; break;
+	case 51034: set .@chpoint,10; set .@pointname$,"推廣點數";set #PropagandaPoint,#PropagandaPoint +.@chpoint; set .@calss,#PropagandaPoint; break;
+	case 51035: set .@chpoint,100; set .@pointname$,"推廣點數";set #PropagandaPoint,#PropagandaPoint +.@chpoint; set .@calss,#PropagandaPoint; break;
+	//小遊戲點數
+	case 51036: set .@chpoint,1; set .@pointname$,"小遊戲點數";set #GamePoint,#GamePoint +.@chpoint; set .@calss,#GamePoint; break;
+	case 51037: set .@chpoint,10; set .@pointname$,"小遊戲點數";set #GamePoint,#GamePoint +.@chpoint; set .@calss,#GamePoint; break;
+	case 51038: set .@chpoint,100; set .@pointname$,"小遊戲點數";set #GamePoint,#GamePoint +.@chpoint; set .@calss,#GamePoint; break;	
+	//MVP點數
+	case 51039: set .@chpoint,1; set .@pointname$,"MVP點數";set #Mvp_Point,#Mvp_Point +.@chpoint; set .@calss,#Mvp_Point; break;
+	case 51040: set .@chpoint,10; set .@pointname$,"MVP點數";set #Mvp_Point,#Mvp_Point +.@chpoint; set .@calss,#Mvp_Point; break;
+	case 51041: set .@chpoint,100; set .@pointname$,"MVP點數";set #Mvp_Point,#Mvp_Point +.@chpoint; set .@calss,#Mvp_Point; break;	
+	//商城點數	
+	case 51042: set .@chpoint,1; set .@pointname$,"Cash點數";set #CASHPOINTS,#CASHPOINTS +.@chpoint; set .@calss,#CASHPOINTS; break;
+	case 51043: set .@chpoint,10; set .@pointname$,"Cash點數";set #CASHPOINTS,#CASHPOINTS +.@chpoint; set .@calss,#CASHPOINTS; break;
+	case 51044: set .@chpoint,100; set .@pointname$,"Cash點數";set #CASHPOINTS,#CASHPOINTS +.@chpoint; set .@calss,#CASHPOINTS; break;	
+	case 51045: set .@chpoint,1000; set .@pointname$,"Cash點數";set #CASHPOINTS,#CASHPOINTS +.@chpoint; set .@calss,#CASHPOINTS; break;
+	case 51046: set .@chpoint,10000; set .@pointname$,"Cash點數";set #CASHPOINTS,#CASHPOINTS +.@chpoint; set .@calss,#CASHPOINTS; break;
+	//道館點數	
+	case 51047: set .@chpoint,1; set .@pointname$,"道館點數";set #DOKANPOINTS,#DOKANPOINTS +.@chpoint; set .@calss,#DOKANPOINTS; break;
+	case 51048: set .@chpoint,2; set .@pointname$,"道館點數";set #DOKANPOINTS,#DOKANPOINTS +.@chpoint; set .@calss,#DOKANPOINTS; break;
+	case 51049: set .@chpoint,3; set .@pointname$,"道館點數";set #DOKANPOINTS,#DOKANPOINTS +.@chpoint; set .@calss,#DOKANPOINTS; break;	
+	case 51050: set .@chpoint,5; set .@pointname$,"道館點數";set #DOKANPOINTS,#DOKANPOINTS +.@chpoint; set .@calss,#DOKANPOINTS; break;
+	case 51051: set .@chpoint,8; set .@pointname$,"道館點數";set #DOKANPOINTS,#DOKANPOINTS +.@chpoint; set .@calss,#DOKANPOINTS; break;
+	}
+	dispbottom "[兌換提示] 獲得 "+.@chpoint+" 點 "+.@pointname$+" 。目前擁有 "+.@calss+" 點。";
+	end;	
+}
+		

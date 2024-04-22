@@ -9,7 +9,7 @@
 - 刪除留言後questgmspeak未歸0
 
 =========================================================================================================================*/
-egg1,253,182,4	script	【線上留言板】	858,{
+uttycty,93,72,4	script	【線上留言板】	858,{
 
 	if (getgmlevel()>90){ goto seethequest; }
 
@@ -147,5 +147,9 @@ seethequest:
 			break;
 		}
 	}
+
+OnInit:
+	setnpcicon getnpcid(0),1026,"留言板板";
+	waitingroom "★ 留言板板 ★",0;
 }
 

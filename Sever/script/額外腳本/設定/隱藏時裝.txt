@@ -1,0 +1,98 @@
+
+-	script	HideCostume	-1,{
+
+OnInit:
+	bindatcmd "hidecostume",strnpcinfo(3)+"::OnHide",0,0;
+	end;
+
+OnHide:
+	@c = .@atcmd_parameters$[0];
+	.@head_top = getiteminfo ( getequipid(EQI_HEAD_TOP) , 11 );
+	.@head_mid = getiteminfo ( getequipid(EQI_HEAD_MID) , 11 );
+	.@head_bot = getiteminfo ( getequipid(EQI_HEAD_LOW) , 11 );
+	.@head_gar = getiteminfo ( getequipid(EQI_GARMENT) , 11 );
+	.@head_costume_top = getiteminfo ( getequipid(EQI_COSTUME_HEAD_TOP) , 11 );
+	.@head_costume_mid = getiteminfo ( getequipid(EQI_COSTUME_HEAD_MID) , 11 );
+	.@head_costume_bot = getiteminfo ( getequipid(EQI_COSTUME_HEAD_LOW) , 11 );
+	.@head_costume_gar = getiteminfo ( getequipid(EQI_COSTUME_GARMENT) , 11 );
+
+		if ( !@c )
+			{
+				if ( .@head_costume_top < 0 && .@head_top < 0 ) changelook LOOK_HEAD_TOP,0;    else if ( .@head_costume_top < 0 ) changelook LOOK_HEAD_TOP,.@head_top;    else changelook LOOK_HEAD_TOP,.@head_costume_top;
+				if ( .@head_costume_mid < 0 && .@head_mid < 0 ) changelook LOOK_HEAD_MID,0;    else if ( .@head_costume_mid < 0 ) changelook LOOK_HEAD_MID,.@head_mid;    else changelook LOOK_HEAD_MID,.@head_costume_mid;
+				if ( .@head_costume_bot < 0 && .@head_bot < 0 ) changelook LOOK_HEAD_BOTTOM,0; else if ( .@head_costume_bot < 0 ) changelook LOOK_HEAD_BOTTOM,.@head_bot; else changelook LOOK_HEAD_BOTTOM,.@head_costume_bot;
+				if ( .@head_costume_gar < 0 && .@head_gar < 0 ) changelook LOOK_ROBE,0;        else if ( .@head_costume_gar < 0 ) changelook LOOK_HEAD_ROBE,.@head_gar;   else changelook LOOK_ROBE,.@head_costume_gar;				
+			}
+		if ( @c & 1 )
+			{
+				if ( .@head_top < 0 ) changelook LOOK_HEAD_TOP,0; else changelook LOOK_HEAD_TOP,.@head_top;
+				
+			}
+		if ( @c & 2 )
+			{
+				if ( .@head_mid < 0 ) changelook LOOK_HEAD_MID,0; else changelook LOOK_HEAD_MID,.@head_mid;
+				
+			}		
+		if ( @c & 4 )
+			{
+				if ( .@head_bot < 0 ) changelook LOOK_HEAD_BOTTOM,0; else changelook LOOK_HEAD_BOTTOM,.@head_bot;
+				
+			}
+		if ( @c & 8 )
+			{
+				if ( .@head_gar < 0 ) changelook LOOK_ROBE,0; else changelook LOOK_ROBE,.@head_gar;
+				
+			}			
+		dispbottom "外觀顯示設定為 :"+@c; 	
+}
+
+-	script	OnPCStatCalc_HideCostume	-1,{
+
+OnPCStatCalcEvent:
+
+	.@head_top = getiteminfo ( getequipid(EQI_HEAD_TOP) , 11 );
+	.@head_mid = getiteminfo ( getequipid(EQI_HEAD_MID) , 11 );
+	.@head_bot = getiteminfo ( getequipid(EQI_HEAD_LOW) , 11 );
+	.@head_gar = getiteminfo ( getequipid(EQI_GARMENT) , 11 );
+
+		if ( @c & 1 )
+			{
+				if ( .@head_top < 0 ) changelook LOOK_HEAD_TOP,0; else changelook LOOK_HEAD_TOP,.@head_top;
+				
+			}
+		if ( @c & 2 )
+			{
+				if ( .@head_mid < 0 ) changelook LOOK_HEAD_MID,0; else changelook LOOK_HEAD_MID,.@head_mid;
+				
+			}		
+		if ( @c & 4 )
+			{
+				if ( .@head_bot < 0 ) changelook LOOK_HEAD_BOTTOM,0; else changelook LOOK_HEAD_BOTTOM,.@head_bot;
+				
+			}
+		if ( @c & 8 )
+			{
+				if ( .@head_gar < 0 ) changelook LOOK_ROBE,0; else changelook LOOK_ROBE,.@head_gar;
+				
+			}
+
+	end;
+}
+
+
+/*
+
+◎開放隱藏服裝顯示指令
+　"@hidecostume 0"全部顯示恢復正常
+　"@hidecostume 1"隱藏頭上
+　"@hidecostume 2"隱藏頭中
+　"@hidecostume 4"隱藏頭下
+　"@hidecostume 8"隱藏披肩
+　若要隱藏2種以上，請將數字相加
+　例如
+　隱藏頭上中=1+2=3
+　"@hidecostume 3"
+　隱藏頭上中下=1+2+4=7
+　"@hidecostume 7" 
+
+*/

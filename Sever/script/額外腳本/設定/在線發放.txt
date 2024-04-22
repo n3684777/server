@@ -1,0 +1,54 @@
+//=============================================
+// 在線發放物品 by 99MaxEathena SVN 小組
+//=============================================
+// @giveitem <物品ID> <數量> <附近|地圖|全服>
+-	script	atcmd_giveitem	-1,{
+function F_GiveItem;
+OnInit:
+	// 是否忽略正在開店的玩家?
+	.novend = false;
+	
+	// 是否忽略正在開聊天室的玩家？
+	.nopub = false;
+	
+	// 是否忽略空閒玩家? 如果是, 請設置視為空閒的時間 秒數/分鐘/小時 ?
+	// 秒數 * 分鐘 * 小時
+	// 默認 : 5 分鐘
+	.idle_time = 0;
+	bindatcmd "giveitem",strnpcinfo(0)+"::OnGiveItem",60,99;
+	end;
+OnGiveItem:
+	.@flag$ = .@atcmd_parameters$[2];
+	.@area = getbattleflag("area_size");
+	$@itemid_var = atoi( .@atcmd_parameters$[0] );
+	$@amt_var = atoi( .@atcmd_parameters$[1] );
+	if ( getitemname($@itemid_var) == "null" ) { 
+		message strcharinfo(0), "使用 @giveitem 失敗!";
+		dispbottom "無效的物品ID.", 0xff0000;
+	}
+	getmapxy(@map$, @x, @y, BL_PC);
+	if ( .@atcmd_numparameters < 3 ) {
+		message strcharinfo(0), "使用 @giveitem 失敗!";
+		dispbottom "缺少參數, 一共需要 3 個參數.", 0xff0000;
+		dispbottom "@giveitem <物品ID> <數量> < 附近 | 地圖 | 全服>", 0xff0000;
+		end;
+	}
+	if ( .@flag$ == "附近" ) {
+		addrid(4,0,@x+.@area, @y+.@area, @x-.@area, @y-.@area);
+		F_GiveItem;
+	} else if ( .@flag$ == "地圖" ) {
+		addrid(1);
+		F_GiveItem;
+	} else if ( .@flag$ == "全服" ) {
+		addrid(0);
+		F_GiveItem;
+	} else {
+		message strcharinfo(0), "使用 @giveitem 失敗!";
+		dispbottom "'"+ .@flag$ +"' 參數無效或不存在.", 0xff0000;
+	}
+	end;
+	function	F_GiveItem	{
+		getitem $@itemid_var, $@amt_var;
+		return;
+	}
+}

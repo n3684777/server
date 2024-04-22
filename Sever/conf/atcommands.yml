@@ -46,7 +46,7 @@ Body:
     Help: |
       將 conf/motd.txt 中配置的公告信息發送給全部玩家 (以黃字公告樣式顯示)
   - Command: me
-    Help: |
+    Help: |R
       參數: <消息>
       將 <消息> 以指定格式發送出去, 例如 "/me 大家好" 將會顯示為：* : 角色名 大家好 : *
   - Command: fakename

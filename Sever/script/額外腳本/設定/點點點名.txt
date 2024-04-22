@@ -1,0 +1,37 @@
+-	script	Ro_LuckyStar	-1,{
+	end;
+Onclock1500:
+	.@User = getusers(1);
+	if ( .@User > 0 ) 
+		.@Size = 3;
+	if ( .@User > 29 )
+		.@Size = 3;
+	if ( .@User > 49 )
+		.@Size = 3;
+	if ( .@User > 79 )
+		.@Size = 4;
+	if ( .@User > 99 )
+		.@Size = 5;
+	if ( .@User )
+	{
+		while( .@User && .@round < .@Size )
+		{
+			query_sql("SELECT `char_id`,`account_id`,`name` FROM `char` WHERE `online` = 1 AND `base_level` > 150 ORDER BY RAND() LIMIT 1", .@cid,.@aid,.@name$);
+			if ( !.@cid )
+				end;
+			if( .@cid && !checkvending(.@name$) )
+			{
+				.@idx = rand(getarraysize(.Prize_Id));				
+				sleep 200;
+				announce "[ 線上點點名 ] ： 玩家 [ "+.@name$+" ] 成為本時段的中獎者,獲得 "+getitemname(.Prize_Id[.@idx])+" 1個！",15,0xFFFFFF;			
+				getitem .Prize_Id[.@idx],1,.@aid;
+				.@round++;
+			}
+		}
+	}
+	end;
+
+OnInit:
+	setarray .Prize_Id[0],36203;
+	end;
+}

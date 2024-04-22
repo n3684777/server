@@ -1,0 +1,52 @@
+// @giveall - 給予伺服器所有人道具/CASH/ZENY [Sense] 
+// 使用方法：
+//	@giveall 道具名稱/道具ID
+//	@giveall 1 ZENY
+//	@giveall 2 CASH
+//
+-	script	cmd_giveall	-1,{
+
+OnRunCommand:
+
+	if (.@atcmd_numparameters < 2)
+	{
+		dispbottom "至少需要2個參數",0xff0000;
+		end;
+	}
+
+	.amount = atoi(.@atcmd_parameters$[1]);
+	.type = atoi(.@atcmd_parameters$[0]);
+
+	if (.type > 2)
+	{
+		.nameid$ = .@atcmd_parameters$[0];
+		if (getitemname((atoi(.nameid$) ? atoi(.nameid$) : .nameid$)) == "null")
+		{
+			dispbottom "您輸入的物品無效",0xff0000;
+			end;
+		}
+	}
+
+	addrid(0);
+	switch(.type)
+	{
+	case 1:
+		
+		ZENY += .amount;
+		break;
+
+	case 2:
+		#CASHPOINTS += .amount;
+		break;
+
+	default:
+		getitem atoi(.nameid$) ? atoi(.nameid$) : .nameid$,.amount;
+		break;
+	}
+	end;
+
+OnInit:
+	bindatcmd "giveall",strnpcinfo(3) + "::OnRunCommand",1,1;
+	end;
+}
+

@@ -1,0 +1,181 @@
+function	script	Enchan_Candy_Bag	{
+	function	RandomOPT	{
+		.@idx = rand(getarg(1,getarraysize(getarg(0))));
+		if(.@idx%2 == 0)
+			return .@idx;
+		else return .@idx-1;
+	}
+	disable_items;
+	if(getequipid(EQI_GARMENT) != getarg(0))
+	{
+		dispbottom "您並沒有裝備"+getitemname(getarg(0))+".",0xff0000;
+		return;
+	}
+	if(getarg(1,0))
+	{
+		if(getequiprefinerycnt(EQI_GARMENT) < 12)
+		{
+			dispbottom getitemname(getarg(0))+"精煉值在+12以上才可以使用.",0x0FFF90;
+			return;
+		}
+		.@level = 1;
+	}
+	if(select("取消","確認附魔 ^FF0000"+getitemname(getarg(0))) == 1)
+		close;
+	.@itemid = getarg(2);
+	.@nameid = getarg(0);
+	.@refine_cnt = getequiprefinerycnt(EQI_GARMENT);
+	setarray .@cardid, getequipcardid(EQI_GARMENT,0),getequipcardid(EQI_GARMENT,1),getequipcardid(EQI_GARMENT,2),getequipcardid(EQI_GARMENT,3);
+	switch(getarg(0))
+	{
+		case 20842:
+			setarray .@type,RDMOPT_VAR_CRITICALSUCCESSVALUE,rand(1,5),
+							RDMOPT_VAR_ATTPOWER,rand(1,20),
+							RDMOPT_DAMAGE_PROPERTY_NOTHING_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_WATER_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_GROUND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_FIRE_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_WIND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_POISON_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_SAINT_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_DARKNESS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_TELEKINESIS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_UNDEAD_TARGET,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_NOTHING,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_UNDEAD,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_ANIMAL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_PLANT,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_INSECT,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_FISHS,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_DEVIL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_HUMAN,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_ANGEL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_DRAGON,rand(1,.@level?12:10);
+							
+			setarray .@type2,RDMOPT_VAR_STRAMOUNT,rand(1,3),
+							RDMOPT_VAR_AGIAMOUNT,rand(1,3),
+							RDMOPT_VAR_VITAMOUNT,rand(1,3),
+							RDMOPT_VAR_INTAMOUNT,rand(1,3),
+							RDMOPT_VAR_DEXAMOUNT,rand(1,3),
+							RDMOPT_VAR_LUKAMOUNT,rand(1,3),
+							RDMOPT_DEC_SPELL_DELAY_TIME,rand(1,3);
+		
+			setarray .@type3,RDMOPT_DAMAGE_SIZE_SMALL_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_DAMAGE_SIZE_MIDIUM_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_DAMAGE_SIZE_LARGE_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_CLASS_DAMAGE_NORMAL_TARGET,.@level?rand(3,7):rand(3,5),
+							RDMOPT_CLASS_DAMAGE_BOSS_TARGET,rand(5,10),
+							RDMOPT_CLASS_IGNORE_DEF_PERCENT_NORMAL,.@level?rand(10,20):rand(5,10),
+							RDMOPT_CLASS_IGNORE_DEF_PERCENT_BOSS,.@level?rand(10,30):rand(5,10),
+							RDMOPT_VAR_PLUSASPDPERCENT,.@level?rand(3,7):rand(3,5),
+							RDMOPT_RANGE_ATTACK_DAMAGE_TARGET,.@level?rand(3,7):rand(3,5),
+							RDMOPT_DEC_SPELL_CAST_TIME,.@level?rand(3,7):rand(3,5),
+							.@level?RDMOPT_VAR_PLUSASPD:0,.@level?1:0,
+							.@level?RDMOPT_DEC_SPELL_DELAY_TIME:0,.@level?rand(1,5):0;
+			break;
+
+		case 20843:
+			setarray .@type,RDMOPT_VAR_HITSUCCESSVALUE,rand(1,5),
+							RDMOPT_VAR_AVOIDSUCCESSVALUE,rand(1,20),
+							RDMOPT_DAMAGE_PROPERTY_NOTHING_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_WATER_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_GROUND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_FIRE_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_WIND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_POISON_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_SAINT_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_DARKNESS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_TELEKINESIS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_DAMAGE_PROPERTY_UNDEAD_TARGET,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_NOTHING,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_UNDEAD,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_ANIMAL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_PLANT,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_INSECT,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_FISHS,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_DEVIL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_HUMAN,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_ANGEL,rand(1,.@level?12:10),
+							RDMOPT_RACE_DAMAGE_DRAGON,rand(1,.@level?12:10);
+							
+			setarray .@type2,RDMOPT_VAR_STRAMOUNT,rand(1,3),
+							RDMOPT_VAR_AGIAMOUNT,rand(1,3),
+							RDMOPT_VAR_VITAMOUNT,rand(1,3),
+							RDMOPT_VAR_INTAMOUNT,rand(1,3),
+							RDMOPT_VAR_DEXAMOUNT,rand(1,3),
+							RDMOPT_VAR_LUKAMOUNT,rand(1,3),
+							RDMOPT_DEC_SPELL_DELAY_TIME,rand(1,3);
+		
+			setarray .@type3,RDMOPT_DAMAGE_SIZE_SMALL_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_DAMAGE_SIZE_MIDIUM_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_DAMAGE_SIZE_LARGE_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_CLASS_DAMAGE_NORMAL_TARGET,.@level?rand(3,7):rand(3,5),
+							RDMOPT_CLASS_DAMAGE_BOSS_TARGET,rand(5,10),
+							RDMOPT_CLASS_IGNORE_DEF_PERCENT_NORMAL,.@level?rand(10,20):rand(5,10),
+							RDMOPT_CLASS_IGNORE_DEF_PERCENT_BOSS,.@level?rand(10,30):rand(5,10),
+							RDMOPT_VAR_PLUSASPDPERCENT,.@level?rand(3,7):rand(3,5),
+							RDMOPT_VAR_ATKPERCENT,.@level?rand(3,7):rand(3,5),
+							RDMOPT_DEC_SPELL_CAST_TIME,.@level?rand(3,7):rand(3,5),
+							.@level?RDMOPT_VAR_PLUSASPD:0,.@level?1:0,
+							.@level?RDMOPT_DEC_SPELL_DELAY_TIME:0,.@level?rand(1,5):0;
+			
+			break;
+
+		case 20844:
+			setarray .@type,RDMOPT_VAR_MDEFPOWER,rand(1,5),
+							RDMOPT_VAR_ATTMPOWER,rand(1,20),
+							RDMOPT_MDAMAGE_PROPERTY_NOTHING_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_WATER_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_GROUND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_FIRE_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_WIND_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_POISON_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_SAINT_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_DARKNESS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_TELEKINESIS_TARGET,rand(1,.@level?12:10),
+							RDMOPT_MDAMAGE_PROPERTY_UNDEAD_TARGET,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_NOTHING,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_UNDEAD,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_ANIMAL,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_PLANT,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_INSECT,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_FISHS,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_DEVIL,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_HUMAN,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_ANGEL,rand(1,.@level?12:10),
+							RDMOPT_RACE_MDAMAGE_DRAGON,rand(1,.@level?12:10);
+							
+			setarray .@type2,RDMOPT_VAR_STRAMOUNT,rand(1,3),
+							RDMOPT_VAR_AGIAMOUNT,rand(1,3),
+							RDMOPT_VAR_VITAMOUNT,rand(1,3),
+							RDMOPT_VAR_INTAMOUNT,rand(1,3),
+							RDMOPT_VAR_DEXAMOUNT,rand(1,3),
+							RDMOPT_VAR_LUKAMOUNT,rand(1,3),
+							RDMOPT_DEC_SPELL_DELAY_TIME,rand(1,3);
+			
+			setarray .@type3,RDMOPT_MDAMAGE_SIZE_SMALL_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_MDAMAGE_SIZE_MIDIUM_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_MDAMAGE_SIZE_LARGE_TARGET,.@level?rand(5,10):rand(3,7),
+							RDMOPT_CLASS_MDAMAGE_NORMAL,.@level?rand(3,7):rand(3,5),
+							RDMOPT_CLASS_MDAMAGE_BOSS,rand(5,10),
+							RDMOPT_CLASS_IGNORE_MDEF_PERCENT_NORMAL,.@level?rand(10,20):rand(5,10),
+							RDMOPT_CLASS_IGNORE_MDEF_PERCENT_BOSS,.@level?rand(10,30):rand(5,10),
+							RDMOPT_VAR_PLUSASPDPERCENT,.@level?rand(3,7):rand(3,5),
+							RDMOPT_VAR_MAGICATKPERCENT,.@level?rand(3,7):rand(3,5),
+							RDMOPT_DEC_SPELL_CAST_TIME,.@level?rand(3,7):rand(3,5),
+							.@level?RDMOPT_VAR_PLUSASPD:0,.@level?1:0,
+							.@level?RDMOPT_DEC_SPELL_DELAY_TIME:0,.@level?rand(1,5):0;
+			break;
+	}
+	specialeffect2 993;
+	dispbottom getitemname(.@nameid)+" 附魔成功.",0x00ffff;
+	if(rand(1,100) < 50)
+		.@slot3 = 1;
+	setarray .@RDMOPT[0],.@type[.@i=RandomOPT(.@type)],.@type2[.@j=RandomOPT(.@type2)],.@slot3?.@type3[.@k=RandomOPT(.@type3)]:0;
+	setarray .@VALUE[0],.@type[.@i+1],.@type2[.@j+1],.@slot3?.@type3[.@k+1]:0;
+	setarray .@OptParam,0;
+	delitem .@itemid,1;
+	delequip EQI_GARMENT;
+	getitem3 .@nameid,1,1,.@refine_cnt,0,.@cardid[0],.@cardid[1],.@cardid[2],.@cardid[3],.@RDMOPT,.@VALUE,.@OptParam;
+	end;
+}

@@ -1,0 +1,4304 @@
+function	script	eggfreelucky	{
+
+	menu
+
+	     " 亡命暴徒保底",A,
+	     " 獸人王保底",B,
+	     " 滿懷感念保底",C,
+	     " 德古拉保底",D,
+	     " 2019RTC紀念保底",E,
+	     " 突破者保底",F,
+	     " 嘉年華保底",G,
+	     " 神之追隨者保底",H,
+	     " 飛馬保底",I,
+	     " 時空光陰保底",J,
+	     " 超音速保底",K,
+	     " 炎熱保底",L,
+	     " 秋末保底",M,
+	     " 繼承者保底",N,
+	     " 期盼保底",P,
+	     " 彩虹橋紀念保底",Q,
+	     " 生命保底",R,
+	     " 使命保底",S,
+	     " 星願保底",T,
+		 " 影子進化者保底",U,
+		 " 影子轉換者保底",V,
+		 " 影子魔力保底",W,
+		 " 影子閃電保底",X,
+		 " 影子王者保底",Y,
+		 " 影子神光保底",Z,
+		 " 影子情人保底",AA,
+		 " 影子超能保底",BB,
+		 " 影子操作者保底",CC,
+		 " 影子貫穿者保底",DD,
+		 " 影子神速保底",EE,
+		 " 影子爭霸保底",FF,
+		 " 影子急速保底",GG,
+		 " 影子全能保底",HH,
+		 " 影子全能II保底",II;
+
+
+	A:
+
+	menu
+	     " 藍寶石手鐲",a1,
+	     " 大神官手套",a2,
+	     " 風力盾牌",a3,
+	     " 暴徒領巾",a4,
+	     " 黃金卡冊",a5,
+	     " 封印王卡卡冊",a6,
+	     " 莎拉卡片",a7,
+	     " 亡靈的守護者卡德斯卡片",a8;
+//****************************************************************
+	a1:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff000060^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 60) goto NOitem;
+		set #HAKEY,#HAKEY - @s*60;
+		getitem 28410,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*60+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a2:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff000060^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 60) goto NOitem;
+		set #HAKEY,#HAKEY - @s*60;
+		getitem 28437,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*60+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a3:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff000060^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 60) goto NOitem;
+		set #HAKEY,#HAKEY - @s*60;
+		getitem 28921,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*60+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a4:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff000060^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 60) goto NOitem;
+		set #HAKEY,#HAKEY - @s*60;
+		getitem 28502,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*60+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a5:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff0000200^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 200) goto NOitem;
+		set #HAKEY,#HAKEY - @s*200;
+		getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*200+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a6:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff0000150^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+		if((#HAKEY) < 150) goto NOitem;
+		set #HAKEY,#HAKEY - @s*150;
+		getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*150+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a7:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff0000300^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#HAKEY) < 300) goto NOitem;
+	set #HAKEY,#HAKEY - @s*300;
+	getitem 4610,@s*1;
+
+        mes " [轉蛋保底兌換]";
+	mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*300+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//****************************************************************
+	a8:
+        mes " [轉蛋保底兌換]";
+	mes " 亡命暴徒保底次數需要：^ff0000300^000000 次";
+	mes " 您的亡命暴徒保底積分為： ^ff0000"+ #HAKEY +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#HAKEY) < 300) goto NOitem;
+	set #HAKEY,#HAKEY - @s*300;
+	getitem 4580,@s*1;
+
+        mes " [轉蛋保底兌換]";
+	mes " 謝謝惠顧";
+	dispbottom "成功使用 亡命暴徒保底積分 "+@s*300+". 您的亡命暴徒保底積分剩餘： "+ #HAKEY +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+	B:
+	menu
+	     " 聖天使護士帽",b1,
+	     " 力量湧現鎧甲",b2,
+	     " 智慧湧現魔甲",b3,
+	     " 黑暗的荊棘骷髏杖",b4,
+	     " 獸人族的傳承象徵",b5,
+	     " 柯杜威之耳",b6,
+	     " 封印王卡卡冊",b7,
+	     " 黃金卡冊",b8,
+	     " 蜘蛛戰車卡片",b9;
+//****************************************************************
+	b1:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff000060^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 60) goto NOitem;
+	set #JDorcking,#JDorcking - @s*60;
+	getitem 5968,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*60+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b2:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff000060^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 60) goto NOitem;
+	set #JDorcking,#JDorcking - @s*60;
+	getitem 15278,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*60+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b3:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff000060^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 60) goto NOitem;
+	set #JDorcking,#JDorcking - @s*60;
+	getitem 15279,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*60+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b4:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff000060^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 60) goto NOitem;
+	set #JDorcking,#JDorcking - @s*60;
+	getitem 1664,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*60+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b5:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff0000100^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 100) goto NOitem;
+	set #JDorcking,#JDorcking - @s*100;
+	getitem 60944,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*100+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b6:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff000060^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 60) goto NOitem;
+	set #JDorcking,#JDorcking - @s*60;
+	getitem 5966,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*60+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b7:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff0000150^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 150) goto NOitem;
+	set #JDorcking,#JDorcking - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*150+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b8:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff0000200^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 200) goto NOitem;
+	set #JDorcking,#JDorcking - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*200+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+	b9:
+        mes " [轉蛋保底兌換]";
+	mes " 獸人王保底次數需要：^ff0000300^000000 次";
+	mes " 您的獸人王保底積分為： ^ff0000"+ #JDorcking +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDorcking) < 300) goto NOitem;
+	set #JDorcking,#JDorcking - @s*300;
+	getitem 27180,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 獸人王保底積分 "+@s*300+". 您的獸人王保底積分剩餘： "+ #JDorcking +" 分";
+		close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	C:
+
+	menu
+	     " 影子職業套裝箱",c1,
+	     " 惡靈山羊頭盔",c2,
+	     " 歐羅萊昂的項鍊",c3,
+	     " 古代英雄武器盒",c4,
+	     " 古代英雄戰靴",c5,
+	     " 鷹之激光",c6,
+	     " 黃金卡冊",c7,
+	     " 封印王卡卡冊",c8,
+	     " 獸人英雄卡片",c9,
+	     " 齊爾-D-01卡片",c10;
+//****************************************************************
+	c1:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 60858,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c2:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 5584,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c3:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 2881,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c4:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 23806,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c5:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 22171,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c6:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff000060^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 60) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*60;
+	getitem 19111,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*60+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c7:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff0000200^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 200) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*200+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c8:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff0000150^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 150) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*150+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c9:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff0000300^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 300) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*300;
+	getitem 4143,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*300+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+	c10:
+        mes " [轉蛋保底兌換]";
+	mes " 滿懷感念保底次數需要：^ff0000500^000000 次";
+	mes " 您的滿懷感念保底積分為： ^ff0000"+ #JDgratitude +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDgratitude) < 500) goto NOitem;
+	set #JDgratitude,#JDgratitude - @s*500;
+	getitem 4403,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 滿懷感念保底積分 "+@s*500+". 您的滿懷感念保底積分剩餘： "+ #JDgratitude +" 分";
+		close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	D:
+	
+	menu
+	     " 翡翠耳環",d1,
+	     " 翡翠戒指",d2,
+	     " 封印王卡卡冊",d3,
+	     " 黃金卡冊",d4,
+	     " 德古拉伯爵卡片",d5;
+//****************************************************************
+	d1:
+        mes " [轉蛋保底兌換]";
+	mes " 德古拉保底次數需要：^ff000060^000000 次";
+	mes " 您的德古拉保底積分為： ^ff0000"+ #JDdracula +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDdracula) < 60) goto NOitem;
+	set #JDdracula,#JDdracula - @s*60;
+	getitem 28536,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 德古拉保底積分 "+@s*60+". 您的德古拉保底積分剩餘： "+ #JDdracula +" 分";
+	close;
+//****************************************************************
+	d2:
+        mes " [轉蛋保底兌換]";
+	mes " 德古拉保底次數需要：^ff000060^000000 次";
+	mes " 您的德古拉保底積分為： ^ff0000"+ #JDdracula +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDdracula) < 60) goto NOitem;
+	set #JDdracula,#JDdracula - @s*60;
+	getitem 28573,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 德古拉保底積分 "+@s*60+". 您的德古拉保底積分剩餘： "+ #JDdracula +" 分";
+	close;
+//****************************************************************
+	d3:
+        mes " [轉蛋保底兌換]";
+	mes " 德古拉保底次數需要：^ff0000150^000000 次";
+	mes " 您的德古拉保底積分為： ^ff0000"+ #JDdracula +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDdracula) < 150) goto NOitem;
+	set #JDdracula,#JDdracula - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 德古拉保底積分 "+@s*150+". 您的德古拉保底積分剩餘： "+ #JDdracula +" 分";
+	close;
+//****************************************************************
+	d4:
+        mes " [轉蛋保底兌換]";
+	mes " 德古拉保底次數需要：^ff0000200^000000 次";
+	mes " 您的德古拉保底積分為： ^ff0000"+ #JDdracula +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDdracula) < 200) goto NOitem;
+	set #JDdracula,#JDdracula - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 德古拉保底積分 "+@s*200+". 您的德古拉保底積分剩餘： "+ #JDdracula +" 分";
+	close;
+//****************************************************************
+	d5:
+        mes " [轉蛋保底兌換]";
+	mes " 德古拉保底次數需要：^ff0000300^000000 次";
+	mes " 您的德古拉保底積分為： ^ff0000"+ #JDdracula +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDdracula) < 300) goto NOitem;
+	set #JDdracula,#JDdracula - @s*300;
+	getitem 4134,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 德古拉保底積分 "+@s*300+". 您的德古拉保底積分剩餘： "+ #JDdracula +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	E:
+	menu
+	     " 熾天使花冠",e1,
+	     " 古代英雄武器盒",e2,
+	     " 封印王卡卡冊",e3,
+	     " 黃金卡冊",e4,
+	     " 驚駭森靈皇后卡片",e5;
+//****************************************************************
+	e1:
+        mes " [轉蛋保底兌換]";
+	mes " 2019RTC紀念保底次數需要：^ff000060^000000 次";
+	mes " 您的2019RTC紀念保底積分為： ^ff0000"+ #JDTwozeroninertc +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDTwozeroninertc) < 60) goto NOitem;
+	set #JDTwozeroninertc,#JDTwozeroninertc - @s*60;
+	getitem 19138,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 2019RTC紀念保底積分 "+@s*60+". 您的2019RTC紀念保底積分剩餘： "+ #JDTwozeroninertc +" 分";
+	close;
+//****************************************************************
+	e2:
+        mes " [轉蛋保底兌換]";
+	mes " 2019RTC紀念保底次數需要：^ff000060^000000 次";
+	mes " 您的2019RTC紀念保底積分為： ^ff0000"+ #JDTwozeroninertc +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDTwozeroninertc) < 60) goto NOitem;
+	set #JDTwozeroninertc,#JDTwozeroninertc - @s*60;
+	getitem 23806,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 2019RTC紀念保底積分 "+@s*60+". 您的2019RTC紀念保底積分剩餘： "+ #JDTwozeroninertc +" 分";
+	close;
+//****************************************************************
+	e3:
+        mes " [轉蛋保底兌換]";
+	mes " 2019RTC紀念保底次數需要：^ff0000150^000000 次";
+	mes " 您的2019RTC紀念保底積分為： ^ff0000"+ #JDTwozeroninertc +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDTwozeroninertc) < 150) goto NOitem;
+	set #JDTwozeroninertc,#JDTwozeroninertc - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 2019RTC紀念保底積分 "+@s*150+". 您的2019RTC紀念保底積分剩餘： "+ #JDTwozeroninertc +" 分";
+	close;
+//****************************************************************
+	e4:
+        mes " [轉蛋保底兌換]";
+	mes " 2019RTC紀念保底次數需要：^ff0000200^000000 次";
+	mes " 您的2019RTC紀念保底積分為： ^ff0000"+ #JDTwozeroninertc +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDTwozeroninertc) < 200) goto NOitem;
+	set #JDTwozeroninertc,#JDTwozeroninertc - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 2019RTC紀念保底積分 "+@s*200+". 您的2019RTC紀念保底積分剩餘： "+ #JDTwozeroninertc +" 分";
+	close;
+//****************************************************************
+	e5:
+        mes " [轉蛋保底兌換]";
+	mes " 2019RTC紀念保底次數需要：^ff0000300^000000 次";
+	mes " 您的2019RTC紀念保底積分為： ^ff0000"+ #JDTwozeroninertc +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDTwozeroninertc) < 300) goto NOitem;
+	set #JDTwozeroninertc,#JDTwozeroninertc - @s*300;
+	getitem 27164,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 2019RTC紀念保底積分 "+@s*300+". 您的2019RTC紀念保底積分剩餘： "+ #JDTwozeroninertc +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	F:
+	
+	menu
+	     " 靈巧湧現鎧甲",f1,
+	     " 敏捷湧現鎖子甲",f2,
+	     " 烏鴉天狗面具",f3,
+	     " 天狗卷軸",f4,
+	     " 時光超越者之戒",f5,
+	     " 封印王卡卡冊",f6,
+	     " 墮落大神官卡片",f7,
+	     " 無限皮里恩卡片",f8,
+	     " 黃金卡冊",f9;
+//****************************************************************
+	f1:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff000060^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 60) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*60;
+	getitem 15354,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*60+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f2:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff000060^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 60) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*60;
+	getitem 15353,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*60+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f3:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff000060^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 60) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*60;
+	getitem 5933,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*60+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f4:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff000060^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 60) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*60;
+	getitem 19112,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*60+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f5:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff000060^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 60) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*60;
+	getitem 61030,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*60+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f6:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff0000150^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 150) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*150+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f7:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff0000300^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 300) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*300;
+	getitem 4441,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*300+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f8:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff0000300^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 300) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*300;
+	getitem 4649,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*300+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+	f9:
+        mes " [轉蛋保底兌換]";
+	mes " 突破者保底次數需要：^ff0000200^000000 次";
+	mes " 您的突破者保底積分為： ^ff0000"+ #JDbreakthrough +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDbreakthrough) < 200) goto NOitem;
+	set #JDbreakthrough,#JDbreakthrough - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 突破者保底積分 "+@s*200+". 您的突破者保底積分剩餘： "+ #JDbreakthrough +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	G:
+	
+	menu
+	     " 幸運湧現護甲",g1,
+	     " 體力湧現堅甲",g2,
+	     " 皮里恩飛行翼",g3,
+	     " 熾天使花冠",g4,
+	     " 封印王卡卡冊",g5,
+	     " 皮里恩卡片",g6,
+	     " 劇毒凱美拉卡片",g7,
+	     " 黃金卡冊",g8;
+//****************************************************************
+	g1:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff000060^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 60) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*60;
+	getitem 15346,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*60+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g2:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff000060^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 60) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*60;
+	getitem 15347,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*60+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g3:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff000080^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 80) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*80;
+	getitem 19138,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*80+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g4:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff000060^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 60) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*60;
+	getitem 20859,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*60+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g5:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff0000150^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 150) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*150+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g6:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff0000300^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 300) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*300;
+	getitem 4121,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*300+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g7:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff0000200^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 200) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*200;
+	getitem 27150,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*200+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+	g8:
+        mes " [轉蛋保底兌換]";
+	mes " 嘉年華保底次數需要：^ff0000200^000000 次";
+	mes " 您的嘉年華保底積分為： ^ff0000"+ #JDcarnival +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDcarnival) < 200) goto NOitem;
+	set #JDcarnival,#JDcarnival - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 嘉年華保底積分 "+@s*200+". 您的嘉年華保底積分剩餘： "+ #JDcarnival +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	H:
+	
+	menu
+	     " 審判決議長靴",h1,
+	     " 艾咪斯可魯貝雷帽",h2,
+	     " 不死軍團識別證",h3,
+	     " 封印王卡卡冊",h4,
+	     " 闇●十字刺客 艾勒梅斯卡片",h5,
+	     " 闇●神官 瑪嘉雷特卡片",h6,
+	     " 齊爾-D-01卡片",h7,
+	     " 黃金卡冊",h8;
+//****************************************************************
+	h1:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff000060^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 60) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*60;
+	getitem 22222,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 神之追隨者保底積分 "+@s*60+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h2:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff000060^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 60) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*60;
+	getitem 19308,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 神之追隨者保底積分 "+@s*60+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h3:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000100^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 100) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*100;
+	getitem 32204,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 神之追隨者保底積分 "+@s*100+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h4:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000150^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 150) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+	dispbottom "成功使用 神之追隨者保底積分 "+@s*150+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h5:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000300^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 300) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*300;
+	getitem 4359,@s*1;
+
+        mes " [轉蛋保底兌換]";
+	mes " 謝謝惠顧";
+		dispbottom "成功使用 神之追隨者保底積分 "+@s*300+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h6:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000300^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 300) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*300;
+	getitem 4363,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 神之追隨者保底積分 "+@s*300+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h7:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000500^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 500) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*500;
+	getitem 4403,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 神之追隨者保底積分 "+@s*500+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+	h8:
+        mes " [轉蛋保底兌換]";
+	mes " 神之追隨者保底次數需要：^ff0000200^000000 次";
+	mes " 您的神之追隨者保底積分為： ^ff0000"+ #JDfollowerofgod +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDfollowerofgod) < 200) goto NOitem;
+	set #JDfollowerofgod,#JDfollowerofgod - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 神之追隨者保底積分 "+@s*200+". 您的神之追隨者保底積分剩餘： "+ #JDfollowerofgod +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	I:
+	
+	menu
+	     " 阿斯特莉亞斗篷",i1,
+	     " 阿斯特莉亞戰靴",i2,
+	     " 時光超越者斗篷",i3,
+	     " 封印王卡卡冊",i4,
+	     " 封印齊爾-D-01卡片",i5,
+	     " 獸人酋長卡片",i6,
+	     " 黃金卡冊",i7;
+//****************************************************************
+	i1:
+        mes " [轉蛋保底兌換]";
+	mes " 飛馬保底次數需要：^ff000060^000000 次";
+	mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 60) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*60;
+	getitem 20905,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*60+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i2:
+        mes " [轉蛋保底兌換]";
+	mes " 飛馬保底次數需要：^ff000060^000000 次";
+	mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 60) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*60;
+	getitem 22167,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*60+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i3:
+        mes " [轉蛋保底兌換]";
+	mes " 飛馬保底次數需要：^ff000060^000000 次";
+	mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 60) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*60;
+	getitem 61029,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*60+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i4:
+        mes " [轉蛋保底兌換]";
+	mes " 飛馬保底次數需要：^ff0000150^000000 次";
+	mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 150) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*150+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i5:
+        mes " [轉蛋保底兌換]";
+		mes " 飛馬保底次數需要：^ff0000200^000000 次";
+		mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 200) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*200;
+	getitem 4480,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*200+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i6:
+        mes " [轉蛋保底兌換]";
+		mes " 飛馬保底次數需要：^ff0000300^000000 次";
+		mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 300) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*300;
+	getitem 4135,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*300+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+	i7:
+        mes " [轉蛋保底兌換]";
+		mes " 飛馬保底次數需要：^ff0000200^000000 次";
+		mes " 您的飛馬保底積分為： ^ff0000"+ #JDpegasus +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDpegasus) < 200) goto NOitem;
+	set #JDpegasus,#JDpegasus - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 飛馬保底積分 "+@s*200+". 您的飛馬保底積分剩餘： "+ #JDpegasus +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	J:
+	
+	menu
+	     " 古代英雄武器盒",j1,
+	     " 時光力量斗篷",j2,
+	     " 時光敏捷斗篷",j3,
+	     " 時光體力斗篷",j4,
+	     " 時光智慧斗篷",j5,
+	     " 時光靈巧斗篷",j6,
+	     " 時光幸運斗篷",j7,
+	     " 時光超越者之靴",j8,
+	     " 賭徒之印",j9,
+	     " 封印王卡卡冊",j10,
+	     " 魔劍士 達納托斯的記憶卡片",j11,
+	     " 黃金卡冊",j12;
+//****************************************************************
+	j1:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 23806,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j2:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20963,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j3:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20964,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j4:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20965,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j5:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20966,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j6:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20967,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j7:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 20968,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j8:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 22202,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j9:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff000060^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 60) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*60;
+	getitem 5918,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*60+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j10:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff0000150^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 150) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*150+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j11:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff0000500^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 500) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*500;
+	getitem 4399,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*500+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+	j12:
+        mes " [轉蛋保底兌換]";
+		mes " 時空光陰保底次數需要：^ff0000200^000000 次";
+		mes " 您的時空光陰保底積分為： ^ff0000"+ #JDtimeandtime +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDtimeandtime) < 200) goto NOitem;
+	set #JDtimeandtime,#JDtimeandtime - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 時空光陰保底積分 "+@s*200+". 您的時空光陰保底積分剩餘： "+ #JDtimeandtime +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	K:
+	
+	menu
+	     " 蓋吉式的戒指",k1,
+	     " 量子靈魂石",k2,
+	     " 瘋狂兔寶寶",k3,
+	     " 紅心王牌",k4,
+	     " 封印王卡卡冊",k5,
+	     " 闇●神射手 迪文卡片",k6,
+	     " 黃金卡冊",k7;
+//****************************************************************
+	k1:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff000060^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 60) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*60;
+	getitem 2985,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*60+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k2:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff000060^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 60) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*60;
+	getitem 26154,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*60+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k3:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff000060^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 60) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*60;
+	getitem 28902,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*60+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k4:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff000060^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 60) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*60;
+	getitem 19306,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*60+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k5:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff0000150^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 150) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*150+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k6:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff0000300^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 300) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*300;
+	getitem 4367,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*300+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+	k7:
+        mes " [轉蛋保底兌換]";
+		mes " 超音速保底次數需要：^ff0000200^000000 次";
+		mes " 您的超音速底積分為： ^ff0000"+ #JDsupersonic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDsupersonic) < 200) goto NOitem;
+	set #JDsupersonic,#JDsupersonic - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 超音速保底積分 "+@s*200+". 您的超音速保底積分剩餘： "+ #JDsupersonic +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	L:
+	
+	menu
+	     " 復仇者海盜帽",l1,
+	     " 虎王娃娃帽子",l2,
+	     " 阿斯特莉亞戰靴",l3,
+	     " 黃金卡冊",l4,
+	     " 貝雷傑卡片",l5;
+//****************************************************************
+	l1:
+        mes " [轉蛋保底兌換]";
+		mes " 炎熱保底次數需要：^ff000060^000000 次";
+		mes " 您的炎熱底積分為： ^ff0000"+ #JDhot +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDhot) < 60) goto NOitem;
+	set #JDhot,#JDhot - @s*60;
+	getitem 5969,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 炎熱保底積分 "+@s*60+". 您的炎熱保底積分剩餘： "+ #JDhot +" 分";
+	close;
+//****************************************************************
+	l2:
+        mes " [轉蛋保底兌換]";
+		mes " 炎熱保底次數需要：^ff000060^000000 次";
+		mes " 您的炎熱底積分為： ^ff0000"+ #JDhot +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDhot) < 60) goto NOitem;
+	set #JDhot,#JDhot - @s*60;
+	getitem 5497,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 炎熱保底積分 "+@s*60+". 您的炎熱保底積分剩餘： "+ #JDhot +" 分";
+	close;
+//****************************************************************
+	l3:
+        mes " [轉蛋保底兌換]";
+		mes " 炎熱保底次數需要：^ff000060^000000 次";
+		mes " 您的炎熱底積分為： ^ff0000"+ #JDhot +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDhot) < 60) goto NOitem;
+	set #JDhot,#JDhot - @s*60;
+	getitem 22167,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 炎熱保底積分 "+@s*60+". 您的炎熱保底積分剩餘： "+ #JDhot +" 分";
+	close;
+//****************************************************************
+	l4:
+        mes " [轉蛋保底兌換]";
+		mes " 炎熱保底次數需要：^ff0000200^000000 次";
+		mes " 您的炎熱底積分為： ^ff0000"+ #JDhot +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDhot) < 200) goto NOitem;
+	set #JDhot,#JDhot - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 炎熱保底積分 "+@s*200+". 您的炎熱保底積分剩餘： "+ #JDhot +" 分";
+	close;
+//****************************************************************
+	l5:
+        mes " [轉蛋保底兌換]";
+		mes " 炎熱保底次數需要：^ff0000300^000000 次";
+		mes " 您的炎熱底積分為： ^ff0000"+ #JDhot +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDhot) < 300) goto NOitem;
+	set #JDhot,#JDhot - @s*300;
+	getitem 4145,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 炎熱保底積分 "+@s*300+". 您的炎熱保底積分剩餘： "+ #JDhot +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+	M:
+	
+	menu
+	     " 影子基礎箱子",m1,
+	     " 影子職業套裝箱",m2,
+	     " 依莎褐耳帽",m3,
+	     " 機器植物帽",m4,
+	     " 幽暗夢魘卡片",m5,
+	     " 黃金卡冊",m6;
+//****************************************************************
+	m1:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff000050^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 50) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*50;
+	getitem 60857,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*50+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+	m2:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff000060^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 60) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*60;
+	getitem 60858,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*60+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+	m3:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff000060^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 60) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*60;
+	getitem 18909,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*60+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+	m4:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff000060^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 60) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*60;
+	getitem 18933,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*60+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+	m5:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff0000500^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 500) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*500;
+	getitem 4408,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*500+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+	m6:
+        mes " [轉蛋保底兌換]";
+		mes " 秋末保底次數需要：^ff0000200^000000 次";
+		mes " 您的秋末底積分為： ^ff0000"+ #JDlateautumn +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlateautumn) < 200) goto NOitem;
+	set #JDlateautumn,#JDlateautumn - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 秋末保底積分 "+@s*200+". 您的秋末保底積分剩餘： "+ #JDlateautumn +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	N:
+	
+	menu
+	     " 力量湧現鎧甲",n1,
+	     " 智慧湧現魔甲",n2,
+	     " 神木嫩葉",n3,
+	     " 紅心王牌",n4,
+	     " 封印王卡卡冊",n5,
+	     " 闇●神官 瑪嘉雷特卡片",n6,
+	     " 塔奧群卡卡片",n7,
+	     " 黃金卡冊",n8;
+//****************************************************************
+	n1:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff000060^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 60) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*60;
+	getitem 15278,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*60+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n2:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff000060^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 60) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*60;
+	getitem 15279,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*60+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n3:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff000060^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 60) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*60;
+	getitem 19299,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*60+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n4:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff000060^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 60) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*60;
+	getitem 19306,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*60+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n5:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff0000150^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 150) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*150+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n6:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff0000300^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 300) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*300;
+	getitem 4363,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*300+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n7:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff0000500^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 500) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*500;
+	getitem 4302,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*500+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+	n8:
+        mes " [轉蛋保底兌換]";
+		mes " 繼承者保底次數需要：^ff0000200^000000 次";
+		mes " 您的繼承者底積分為： ^ff0000"+ #JDinheritor +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDinheritor) < 200) goto NOitem;
+	set #JDinheritor,#JDinheritor - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 繼承者保底積分 "+@s*200+". 您的繼承者保底積分剩餘： "+ #JDinheritor +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	P:
+	
+	menu
+
+	     " 鬼丸",p1,
+	     " 夢魘古城旁觀者",p2,
+	     " 武神之盔",p3,
+	     " 阿斯特莉亞戰靴",p4,
+	     " 封印王卡卡冊",p5,
+	     " 貝思波卡片",p6,
+	     " 黃金卡冊",p7;
+//****************************************************************
+	p1:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff0000100^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 100) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*100;
+	getitem 21019,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*100+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p2:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff000060^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 60) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*60;
+	getitem 19101,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*60+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p3:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff000060^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 60) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*60;
+	getitem 18652,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*60+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p4:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff000060^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 60) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*60;
+	getitem 22167,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*60+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p5:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff0000150^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 150) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*150;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*150+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p6:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff0000300^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 300) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*300;
+	getitem 4374,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*300+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+	p7:
+        mes " [轉蛋保底兌換]";
+		mes " 期盼保底次數需要：^ff0000200^000000 次";
+		mes " 您的期盼底積分為： ^ff0000"+ #JDlookforwardto +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlookforwardto) < 200) goto NOitem;
+	set #JDlookforwardto,#JDlookforwardto - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 期盼保底積分 "+@s*200+". 您的期盼保底積分剩餘： "+ #JDlookforwardto +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	Q:
+	
+	menu
+	     " 黃金卡冊",q1,
+	     " 封印伊夫利特卡片",q2,
+	     " 伊夫利特卡片",q3;
+//****************************************************************
+	q1:
+        mes " [轉蛋保底兌換]";
+		mes " 彩虹橋紀念保底次數需要：^ff0000200^000000 次";
+		mes " 您的彩虹橋紀念底積分為： ^ff0000"+ #JDrainbow +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDrainbow) < 200) goto NOitem;
+	set #JDrainbow,#JDrainbow - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 彩虹橋紀念保底積分 "+@s*200+". 您的彩虹橋紀念保底積分剩餘： "+ #JDrainbow +" 分";
+	close;
+//****************************************************************
+	q2:
+        mes " [轉蛋保底兌換]";
+		mes " 彩虹橋紀念保底次數需要：^ff0000150^000000 次";
+		mes " 您的彩虹橋紀念底積分為： ^ff0000"+ #JDrainbow +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDrainbow) < 150) goto NOitem;
+	set #JDrainbow,#JDrainbow - @s*150;
+	getitem 4487,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 彩虹橋紀念保底積分 "+@s*150+". 您的彩虹橋紀念保底積分剩餘： "+ #JDrainbow +" 分";
+	close;
+
+//****************************************************************
+	q3:
+        mes " [轉蛋保底兌換]";
+		mes " 彩虹橋紀念保底次數需要：^ff0000300^000000 次";
+		mes " 您的彩虹橋紀念底積分為： ^ff0000"+ #JDrainbow +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDrainbow) < 300) goto NOitem;
+	set #JDrainbow,#JDrainbow - @s*300;
+	getitem 4430,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 彩虹橋紀念保底積分 "+@s*300+". 您的彩虹橋紀念保底積分剩餘： "+ #JDrainbow +" 分";
+	close;
+
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	R:
+	
+	menu
+	     " 冒險家背包",r1,
+	     " 寵物幣(皮里恩)",r2,
+	     " 寵物幣(月夜貓)",r3,
+	     " 寵物幣(白素貞)",r4,
+	     " 寵物幣(獸人英雄)",r5,
+	     " 寵物幣(幽暗夢饜)",r6,
+	     " 烏龜將軍卡片",r7,
+	     " 封印塔奧群卡卡片",r8,
+	     " 溫古力安特卡片",r9,
+	     " 封印齊爾-D-01卡片",r10,
+	     " 黃金卡冊",r11;
+//****************************************************************
+	r1:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 2576,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r2:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 60953,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r3:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 60954,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r4:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 60955,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r5:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 60956,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r6:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff000060^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 60) goto NOitem;
+	set #JDlife,#JDlife - @s*60;
+	getitem 60957,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*60+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r7:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff0000300^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 300) goto NOitem;
+	set #JDlife,#JDlife - @s*300;
+	getitem 4305,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*300+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r8:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff0000200^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 200) goto NOitem;
+	set #JDlife,#JDlife - @s*200;
+	getitem 4493,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*200+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r9:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff0000300^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 300) goto NOitem;
+	set #JDlife,#JDlife - @s*300;
+	getitem 4336,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*300+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r10:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff0000200^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 200) goto NOitem;
+	set #JDlife,#JDlife - @s*200;
+	getitem 4480,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*200+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+	r11:
+        mes " [轉蛋保底兌換]";
+		mes " 生命保底次數需要：^ff0000200^000000 次";
+		mes " 您的生命底積分為： ^ff0000"+ #JDlife +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDlife) < 200) goto NOitem;
+	set #JDlife,#JDlife - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 生命保底積分 "+@s*200+". 您的生命保底積分剩餘： "+ #JDlife +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	S:
+	
+	menu
+	     " 思念者斗篷",s1,
+	     " 封印元靈武士卡片",s2,
+	     " 元靈武士卡片",s3,
+	     " 黃金卡冊",s4;
+//****************************************************************
+	s1:
+        mes " [轉蛋保底兌換]";
+		mes " 使命保底次數需要：^ff0000100^000000 次";
+		mes " 您的使命底積分為： ^ff0000"+ #JDmission +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDmission) < 100) goto NOitem;
+	set #JDmission,#JDmission - @s*100;
+	getitem 61159,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 使命保底積分 "+@s*100+". 您的使命保底積分剩餘： "+ #JDmission +" 分";
+	close;
+//****************************************************************
+	s2:
+        mes " [轉蛋保底兌換]";
+		mes " 使命保底次數需要：^ff0000150^000000 次";
+		mes " 您的使命底積分為： ^ff0000"+ #JDmission +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDmission) < 150) goto NOitem;
+	set #JDmission,#JDmission - @s*150;
+	getitem 4499,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 使命保底積分 "+@s*150+". 您的使命保底積分剩餘： "+ #JDmission +" 分";
+	close;
+//****************************************************************
+	s3:
+        mes " [轉蛋保底兌換]";
+		mes " 使命保底次數需要：^ff0000300^000000 次";
+		mes " 您的使命底積分為： ^ff0000"+ #JDmission +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDmission) < 300) goto NOitem;
+	set #JDmission,#JDmission - @s*300;
+	getitem 4263,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 使命保底積分 "+@s*300+". 您的使命保底積分剩餘： "+ #JDmission +" 分";
+	close;
+//****************************************************************
+	s4:
+        mes " [轉蛋保底兌換]";
+		mes " 使命保底次數需要：^ff0000200^000000 次";
+		mes " 您的使命底積分為： ^ff0000"+ #JDmission +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDmission) < 200) goto NOitem;
+	set #JDmission,#JDmission - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 使命保底積分 "+@s*200+". 您的使命保底積分剩餘： "+ #JDmission +" 分";
+	close;
+//****************************************************************
+//------------------------------------------------------------------------------------------------
+	T:
+	
+	menu
+	     " 蒼藍光明珠",t1,
+	     " 封印法老王卡片",t2,
+	     " 法老王卡片",t3,
+	     " 黃金卡冊",t4;
+//****************************************************************
+	t1:
+        mes " [轉蛋保底兌換]";
+		mes " 星願保底次數需要：^ff000060^000000 次";
+		mes " 您的星願底積分為： ^ff0000"+ #JDstarwish +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDstarwish) < 60) goto NOitem;
+	set #JDstarwish,#JDstarwish - @s*60;
+	getitem 32270,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 星願保底積分 "+@s*60+". 您的星願保底積分剩餘： "+ #JDstarwish +" 分";
+	close;
+//****************************************************************
+	t2:
+        mes " [轉蛋保底兌換]";
+		mes " 星願保底次數需要：^ff0000150^000000 次";
+		mes " 您的星願底積分為： ^ff0000"+ #JDstarwish +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDstarwish) < 150) goto NOitem;
+	set #JDstarwish,#JDstarwish - @s*150;
+	getitem 4489,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 星願保底積分 "+@s*150+". 您的星願保底積分剩餘： "+ #JDstarwish +" 分";
+	close;
+//****************************************************************
+	t3:
+        mes " [轉蛋保底兌換]";
+		mes " 星願保底次數需要：^ff0000300^000000 次";
+		mes " 您的星願底積分為： ^ff0000"+ #JDstarwish +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDstarwish) < 300) goto NOitem;
+	set #JDstarwish,#JDstarwish - @s*300;
+	getitem 4148,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 星願保底積分 "+@s*300+". 您的星願保底積分剩餘： "+ #JDstarwish +" 分";
+	close;
+//****************************************************************
+	t4:
+        mes " [轉蛋保底兌換]";
+		mes " 星願保底次數需要：^ff0000200^000000 次";
+		mes " 您的星願底積分為： ^ff0000"+ #JDstarwish +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#JDstarwish) < 200) goto NOitem;
+	set #JDstarwish,#JDstarwish - @s*200;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 星願保底積分 "+@s*200+". 您的星願保底積分剩餘： "+ #JDstarwish +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------------------------
+	U:
+	
+	menu
+	     " 闇●超魔導師 凱特莉娜卡片",u1,
+	     " 闇●十字刺客 艾勒梅斯卡片",u2,
+	     " 黃金卡冊",u3;
+//****************************************************************
+	u1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子進化者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子進化者底積分為： ^ff0000"+ #SHevolutionary +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHevolutionary) < 400) goto NOitem;
+	set #SHevolutionary,#SHevolutionary - @s*400;
+	getitem 4365,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子進化者保底積分 "+@s*400+". 您的影子進化者保底積分剩餘： "+ #SHevolutionary +" 分";
+	close;
+//****************************************************************
+	u2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子進化者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子進化者底積分為： ^ff0000"+ #SHevolutionary +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHevolutionary) < 400) goto NOitem;
+	set #SHevolutionary,#SHevolutionary - @s*400;
+	getitem 4659,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子進化者保底積分 "+@s*400+". 您的影子進化者保底積分剩餘： "+ #SHevolutionary +" 分";
+	close;
+//****************************************************************
+	u3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子進化者保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子進化者底積分為： ^ff0000"+ #SHevolutionary +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHevolutionary) < 250) goto NOitem;
+	set #SHevolutionary,#SHevolutionary - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子進化者保底積分 "+@s*250+". 您的影子進化者保底積分剩餘： "+ #SHevolutionary +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	V:
+	
+	menu
+	     " 黃金卡冊",v1,
+	     " 德古拉伯爵 卡片",v2,
+	     " 強化弓箭手監護人怪物卡片",v3;
+//****************************************************************
+	v1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子轉換者保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子轉換者底積分為： ^ff0000"+ #SHconverter +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHconverter) < 250) goto NOitem;
+	set #SHconverter,#SHconverter - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子轉換者保底積分 "+@s*250+". 您的影子轉換者保底積分剩餘： "+ #SHconverter +" 分";
+	close;
+//****************************************************************
+	v2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子轉換者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子轉換者底積分為： ^ff0000"+ #SHconverter +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHconverter) < 400) goto NOitem;
+	set #SHconverter,#SHconverter - @s*400;
+	getitem 4134,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子轉換者保底積分 "+@s*400+". 您的影子轉換者保底積分剩餘： "+ #SHconverter +" 分";
+	close;
+//****************************************************************
+	v3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子轉換者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子轉換者底積分為： ^ff0000"+ #SHconverter +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHconverter) < 400) goto NOitem;
+	set #SHconverter,#SHconverter - @s*400;
+	getitem 4550,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子轉換者保底積分 "+@s*400+". 您的影子轉換者保底積分剩餘： "+ #SHconverter +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	W:
+	
+	menu
+	     " 黃金卡冊",w1,
+	     " 封印德古拉伯爵卡片",w2,
+		 " 武器精煉能力+13券",w3,
+		 " 防具精煉能力+13券",w4;
+//****************************************************************
+	w1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子魔力保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子魔力底積分為： ^ff0000"+ #SHmagic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHmagic) < 250) goto NOitem;
+	set #SHmagic,#SHmagic - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子魔力保底積分 "+@s*250+". 您的影子魔力保底積分剩餘： "+ #SHmagic +" 分";
+	close;
+//****************************************************************
+	w2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子魔力保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子魔力底積分為： ^ff0000"+ #SHmagic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHmagic) < 200) goto NOitem;
+	set #SHmagic,#SHmagic - @s*200;
+	getitem 4483,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子魔力保底積分 "+@s*200+". 您的影子魔力保底積分剩餘： "+ #SHmagic +" 分";
+	close;
+//****************************************************************
+	w3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子魔力保底次數需要：^ff000070^000000 次";
+		mes " 您的影子魔力底積分為： ^ff0000"+ #SHmagic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHmagic) < 70) goto NOitem;
+	set #SHmagic,#SHmagic - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子魔力保底積分 "+@s*70+". 您的影子魔力保底積分剩餘： "+ #SHmagic +" 分";
+	close;
+//****************************************************************
+	w4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子魔力保底次數需要：^ff000070^000000 次";
+		mes " 您的影子魔力底積分為： ^ff0000"+ #SHmagic +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHmagic) < 70) goto NOitem;
+	set #SHmagic,#SHmagic - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子魔力保底積分 "+@s*70+". 您的影子魔力保底積分剩餘： "+ #SHmagic +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	X:
+	
+	menu
+	     " 黃金卡冊",x1,
+	     " 防具精煉能力+11券",x2,
+	     " 武器精煉能力+11券",x3,
+		 " 防具精煉能力+13券",x4,
+	     " 武器精煉能力+13券",x5;
+//****************************************************************
+	x1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子閃電保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子閃電底積分為： ^ff0000"+ #SHlightning +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlightning) < 250) goto NOitem;
+	set #SHlightning,#SHlightning - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子閃電保底積分 "+@s*250+". 您的影子閃電保底積分剩餘： "+ #SHlightning +" 分";
+	close;
+//****************************************************************
+	x2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子閃電保底次數需要：^ff000050^000000 次";
+		mes " 您的影子閃電底積分為： ^ff0000"+ #SHlightning +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlightning) < 50) goto NOitem;
+	set #SHlightning,#SHlightning - @s*50;
+	getitem 6238,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子閃電保底積分 "+@s*50+". 您的影子閃電保底積分剩餘： "+ #SHlightning +" 分";
+	close;
+//****************************************************************
+	x3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子閃電保底次數需要：^ff000050^000000 次";
+		mes " 您的影子閃電底積分為： ^ff0000"+ #SHlightning +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlightning) < 50) goto NOitem;
+	set #SHlightning,#SHlightning - @s*50;
+	getitem 6239,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子閃電保底積分 "+@s*50+". 您的影子閃電保底積分剩餘： "+ #SHlightning +" 分";
+	close;
+	//****************************************************************
+	x4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子閃電保底次數需要：^ff000070^000000 次";
+		mes " 您的影子閃電底積分為： ^ff0000"+ #SHlightning +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlightning) < 70) goto NOitem;
+	set #SHlightning,#SHlightning - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子閃電保底積分 "+@s*70+". 您的影子閃電保底積分剩餘： "+ #SHlightning +" 分";
+	close;
+//****************************************************************
+	x5:
+        mes " [轉蛋保底兌換]";
+		mes " 影子閃電保底次數需要：^ff000070^000000 次";
+		mes " 您的影子閃電底積分為： ^ff0000"+ #SHlightning +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlightning) < 70) goto NOitem;
+	set #SHlightning,#SHlightning - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子閃電保底積分 "+@s*70+". 您的影子閃電保底積分剩餘： "+ #SHlightning +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	Y:
+	
+	menu
+	     " 黃金卡冊",y1,
+	     " 武器精煉能力+11券",y2,
+	     " 防具精煉能力+11券",y3,
+		 " 武器精煉能力+13券",y4,
+		 " 防具精煉能力+13券",y5;
+//****************************************************************
+	y1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子王者保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子王者底積分為： ^ff0000"+ #SHKing +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHKing) < 250) goto NOitem;
+	set #SHKing,#SHKing - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子王者保底積分 "+@s*250+". 您的影子王者保底積分剩餘： "+ #SHKing +" 分";
+	close;
+//****************************************************************
+	y2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子王者保底次數需要：^ff000050^000000 次";
+		mes " 您的影子王者底積分為： ^ff0000"+ #SHKing +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHKing) < 50) goto NOitem;
+	set #SHKing,#SHKing - @s*50;
+	getitem 6238,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子王者保底積分 "+@s*50+". 您的影子王者保底積分剩餘： "+ #SHKing +" 分";
+	close;
+//****************************************************************
+	y3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子王者保底次數需要：^ff000050^000000 次";
+		mes " 您的影子王者底積分為： ^ff0000"+ #SHKing +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHKing) < 50) goto NOitem;
+	set #SHKing,#SHKing - @s*50;
+	getitem 6239,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子王者保底積分 "+@s*50+". 您的影子王者保底積分剩餘： "+ #SHKing +" 分";
+	close;
+	//****************************************************************
+	y4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子王者保底次數需要：^ff000070^000000 次";
+		mes " 您的影子王者底積分為： ^ff0000"+ #SHKing +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHKing) < 70) goto NOitem;
+	set #SHKing,#SHKing - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子王者保底積分 "+@s*70+". 您的影子王者保底積分剩餘： "+ #SHKing +" 分";
+	close;
+//****************************************************************
+	y5:
+        mes " [轉蛋保底兌換]";
+		mes " 影子王者保底次數需要：^ff000070^000000 次";
+		mes " 您的影子王者底積分為： ^ff0000"+ #SHKing +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHKing) < 70) goto NOitem;
+	set #SHKing,#SHKing - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子王者保底積分 "+@s*70+". 您的影子王者保底積分剩餘： "+ #SHKing +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	Z:
+	
+	menu
+	     " 黃金卡冊",z1,
+	     " 封印王卡卡冊",z2,
+	     " 巴基力 蘭特克力斯卡片",z3;
+//****************************************************************
+	z1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神光保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子神光底積分為： ^ff0000"+ #SHshenguang +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHshenguang) < 250) goto NOitem;
+	set #SHshenguang,#SHshenguang - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神光保底積分 "+@s*250+". 您的影子神光保底積分剩餘： "+ #SHshenguang +" 分";
+	close;
+//****************************************************************
+	z2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神光保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子神光底積分為： ^ff0000"+ #SHshenguang +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHshenguang) < 200) goto NOitem;
+	set #SHshenguang,#SHshenguang - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神光保底積分 "+@s*200+". 您的影子神光保底積分剩餘： "+ #SHshenguang +" 分";
+	close;
+//****************************************************************
+	z3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神光保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子神光底積分為： ^ff0000"+ #SHshenguang +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHshenguang) < 400) goto NOitem;
+	set #SHshenguang,#SHshenguang - @s*400;
+	getitem 4407,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神光保底積分 "+@s*400+". 您的影子神光保底積分剩餘： "+ #SHshenguang +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	AA:
+	
+	menu
+	     " 黃金卡冊",aa1,
+	     " 封印王卡卡冊",aa2,
+	     " 武器精煉能力+11券",aa3,
+		 " 防具精煉能力+11券",aa4,
+		 " 防具精煉能力+13券",aa5,
+		 " 武器精煉能力+13券",aa6;
+//****************************************************************
+	aa1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 250) goto NOitem;
+	set #SHlover,#SHlover - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*250+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+//****************************************************************
+	aa2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 200) goto NOitem;
+	set #SHlover,#SHlover - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*200+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+//****************************************************************
+	aa3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff000050^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 50) goto NOitem;
+	set #SHlover,#SHlover - @s*50;
+	getitem 6238,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*50+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+//****************************************************************
+	aa4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff000050^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 50) goto NOitem;
+	set #SHlover,#SHlover - @s*50;
+	getitem 6239,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*50+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+//****************************************************************
+	aa5:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff000070^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 70) goto NOitem;
+	set #SHlover,#SHlover - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*70+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+//****************************************************************
+	aa6:
+        mes " [轉蛋保底兌換]";
+		mes " 影子情人保底次數需要：^ff000070^000000 次";
+		mes " 您的影子情人底積分為： ^ff0000"+ #SHlover +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHlover) < 70) goto NOitem;
+	set #SHlover,#SHlover - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子情人保底積分 "+@s*70+". 您的影子情人保底積分剩餘： "+ #SHlover +" 分";
+	close;
+
+//------------------------------------------------------------------------------------------------
+	BB:
+	
+	menu
+	     " 黃金卡冊",bb1,
+	     " 封印王卡卡冊",bb2,
+	     " 武器精煉能力+11券",bb3,
+		 " 防具精煉能力+11券",bb4,
+		 " 防具精煉能力+13券",bb5,
+		 " 武器精煉能力+13券",bb6;
+//****************************************************************
+	bb1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 250) goto NOitem;
+	set #SHsuper,#SHsuper - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*250+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//****************************************************************
+	bb2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 200) goto NOitem;
+	set #SHsuper,#SHsuper - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*200+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//****************************************************************
+	bb3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff000050^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 50) goto NOitem;
+	set #SHsuper,#SHsuper - @s*50;
+	getitem 6238,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*50+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//****************************************************************
+	bb4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff000050^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 50) goto NOitem;
+	set #SHsuper,#SHsuper - @s*50;
+	getitem 6239,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*50+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//****************************************************************
+	bb5:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff000070^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 70) goto NOitem;
+	set #SHsuper,#SHsuper - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*70+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//****************************************************************
+	bb6:
+        mes " [轉蛋保底兌換]";
+		mes " 影子超能保底次數需要：^ff000070^000000 次";
+		mes " 您的影子超能底積分為： ^ff0000"+ #SHsuper +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHsuper) < 70) goto NOitem;
+	set #SHsuper,#SHsuper - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子超能保底積分 "+@s*70+". 您的影子超能保底積分剩餘： "+ #SHsuper +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	CC:
+	
+	menu
+	     " 黃金卡冊",cc1,
+	     " 封印王卡卡冊",cc2,
+	     " 喬伊亞卡片",cc3;
+//****************************************************************
+	cc1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子操作者保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子操作者底積分為： ^ff0000"+ #SHoperator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHoperator) < 250) goto NOitem;
+	set #SHoperator,#SHoperator - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子操作者保底積分 "+@s*250+". 您的影子操作者保底積分剩餘： "+ #SHoperator +" 分";
+	close;
+//****************************************************************
+	cc2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子操作者保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子操作者底積分為： ^ff0000"+ #SHoperator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHoperator) < 200) goto NOitem;
+	set #SHoperator,#SHoperator - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子操作者保底積分 "+@s*200+". 您的影子操作者保底積分剩餘： "+ #SHoperator +" 分";
+	close;
+//****************************************************************
+	cc3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子操作者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子操作者底積分為： ^ff0000"+ #SHoperator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHoperator) < 400) goto NOitem;
+	set #SHoperator,#SHoperator - @s*400;
+	getitem 4576,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子操作者保底積分 "+@s*400+". 您的影子操作者保底積分剩餘： "+ #SHoperator +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	DD:
+	
+	menu
+	     " 黃金卡冊",dd1,
+	     " 封印王卡卡冊",dd2,
+	     " 時間支配者卡片",dd3;
+//****************************************************************
+	dd1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子貫穿者保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子貫穿者底積分為： ^ff0000"+ #SHpenetrator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHpenetrator) < 250) goto NOitem;
+	set #SHpenetrator,#SHpenetrator - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子貫穿者保底積分 "+@s*250+". 您的影子貫穿者保底積分剩餘： "+ #SHpenetrator +" 分";
+	close;
+//****************************************************************
+	dd2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子貫穿者保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子貫穿者底積分為： ^ff0000"+ #SHpenetrator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHpenetrator) < 200) goto NOitem;
+	set #SHpenetrator,#SHpenetrator - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子貫穿者保底積分 "+@s*200+". 您的影子貫穿者保底積分剩餘： "+ #SHpenetrator +" 分";
+	close;
+//****************************************************************
+	dd3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子貫穿者保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子貫穿者底積分為： ^ff0000"+ #SHpenetrator +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHpenetrator) < 400) goto NOitem;
+	set #SHpenetrator,#SHpenetrator - @s*400;
+	getitem 4625,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子貫穿者保底積分 "+@s*400+". 您的影子貫穿者保底積分剩餘： "+ #SHpenetrator +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	EE:
+	
+	menu
+	     " 黃金卡冊",ee1,
+	     " 惡魔波利卡片",ee2,
+	     " 封印元靈武士卡片",ee3;
+//****************************************************************
+	ee1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神速保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子神速底積分為： ^ff0000"+ #SHfast +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHfast) < 250) goto NOitem;
+	set #SHfast,#SHfast - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神速保底積分 "+@s*250+". 您的影子神速保底積分剩餘： "+ #SHfast +" 分";
+	close;
+//****************************************************************
+	ee2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神速保底次數需要：^ff000025^000000 次";
+		mes " 您的影子神速底積分為： ^ff0000"+ #SHfast +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHfast) < 25) goto NOitem;
+	set #SHfast,#SHfast - @s*25;
+	getitem 4174,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神速保底積分 "+@s*25+". 您的影子神速保底積分剩餘： "+ #SHfast +" 分";
+	close;
+//****************************************************************
+	ee3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子神速保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子神速底積分為： ^ff0000"+ #SHfast +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHfast) < 200) goto NOitem;
+	set #SHfast,#SHfast - @s*200;
+	getitem 4499,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子神速保底積分 "+@s*200+". 您的影子神速保底積分剩餘： "+ #SHfast +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	FF:
+	
+	menu
+	     " 黃金卡冊",ff1,
+	     " 封印王卡卡冊",ff2,
+	     " 武器精煉能力+11券",ff3,
+		 " 防具精煉能力+11券",ff4,
+	     " 武器精煉能力+13券",ff5,
+		 " 防具精煉能力+13券",ff6;
+//****************************************************************
+	ff1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 250) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*250+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//****************************************************************
+	ff2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 200) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*200+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//****************************************************************
+	ff3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff000050^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 50) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*50;
+	getitem 6238,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*50+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//****************************************************************
+	ff4:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff000050^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 50) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*50;
+	getitem 6239,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*50+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//****************************************************************
+	ff5:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff000070^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 70) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*70;
+	getitem 6870,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*70+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//****************************************************************
+	ff6:
+        mes " [轉蛋保底兌換]";
+		mes " 影子爭霸保底次數需要：^ff000070^000000 次";
+		mes " 您的影子爭霸底積分為： ^ff0000"+ #SHhegemony +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHhegemony) < 70) goto NOitem;
+	set #SHhegemony,#SHhegemony - @s*70;
+	getitem 6876,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子爭霸保底積分 "+@s*70+". 您的影子爭霸保底積分剩餘： "+ #SHhegemony +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	GG:
+	
+	menu
+	     " 黃金卡冊",gg1,
+	     " 封印王卡卡冊",gg2,
+	     " RSX-0806卡片",gg3;
+//****************************************************************
+	gg1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子急速保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子急速底積分為： ^ff0000"+ #SHrapidly +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHrapidly) < 250) goto NOitem;
+	set #SHrapidly,#SHrapidly - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子急速保底積分 "+@s*250+". 您的影子急速保底積分剩餘： "+ #SHrapidly +" 分";
+	close;
+//****************************************************************
+	gg2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子急速保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子急速底積分為： ^ff0000"+ #SHrapidly +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHrapidly) < 200) goto NOitem;
+	set #SHrapidly,#SHrapidly - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子急速保底積分 "+@s*200+". 您的影子急速保底積分剩餘： "+ #SHrapidly +" 分";
+	close;
+//****************************************************************
+	gg3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子急速保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子急速底積分為： ^ff0000"+ #SHrapidly +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHrapidly) < 400) goto NOitem;
+	set #SHrapidly,#SHrapidly - @s*400;
+	getitem 4342,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子急速保底積分 "+@s*400+". 您的影子急速保底積分剩餘： "+ #SHrapidly +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	HH:
+	
+	menu
+	     " 黃金卡冊",hh1,
+	     " 封印王卡卡冊",hh2,
+	     " RSX-0806卡片",hh3;
+//****************************************************************
+	hh1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子全能保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子全能底積分為： ^ff0000"+ #SHalmighty +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHalmighty) < 250) goto NOitem;
+	set #SHalmighty,#SHalmighty - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子全能保底積分 "+@s*250+". 您的影子全能保底積分剩餘： "+ #SHalmighty +" 分";
+	close;
+//****************************************************************
+	hh2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子全能保底次數需要：^ff0000200^000000 次";
+		mes " 您的影子全能底積分為： ^ff0000"+ #SHalmighty +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHalmighty) < 200) goto NOitem;
+	set #SHalmighty,#SHalmighty - @s*200;
+	getitem 22829,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子全能保底積分 "+@s*200+". 您的影子全能保底積分剩餘： "+ #SHalmighty +" 分";
+	close;
+//****************************************************************
+	hh3:
+        mes " [轉蛋保底兌換]";
+		mes " 影子全能保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子全能底積分為： ^ff0000"+ #SHalmighty +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHalmighty) < 400) goto NOitem;
+	set #SHalmighty,#SHalmighty - @s*400;
+	getitem 4342,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子全能保底積分 "+@s*400+". 您的影子全能保底積分剩餘： "+ #SHalmighty +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------
+	II:
+	
+	menu
+	     " 黃金卡冊",ii1,
+	     " 波伊塔塔卡片",ii2;
+//****************************************************************
+	ii1:
+        mes " [轉蛋保底兌換]";
+		mes " 影子全能II保底次數需要：^ff0000250^000000 次";
+		mes " 您的影子全能II底積分為： ^ff0000"+ #SHalmightyii +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHalmightyii) < 250) goto NOitem;
+	set #SHalmightyii,#SHalmightyii - @s*250;
+	getitem 22654,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子全能II保底積分 "+@s*250+". 您的影子全能II保底積分剩餘： "+ #SHalmightyii +" 分";
+	close;
+//****************************************************************
+	ii2:
+        mes " [轉蛋保底兌換]";
+		mes " 影子全能II保底次數需要：^ff0000400^000000 次";
+		mes " 您的影子全能II底積分為： ^ff0000"+ #SHalmightyii +"^000000 分";
+		next;
+		set @s,0;
+		input @s;
+		if ( @s < 1 || @s > 1 ) {
+		mes "[轉蛋保底兌換]";
+			mes "每次兌換數量只能輸入一個";
+				close;	}
+	if((#SHalmightyii) < 400) goto NOitem;
+	set #SHalmightyii,#SHalmightyii - @s*400;
+	getitem 27126,@s*1;
+
+        mes " [轉蛋保底兌換]";
+		mes " 謝謝惠顧";
+		dispbottom "成功使用 影子全能II保底積分 "+@s*400+". 您的影子全能II保底積分剩餘： "+ #SHalmightyii +" 分";
+	close;
+//------------------------------------------------------------------------------------------------
+	NOitem:
+	mes " [轉蛋保底兌換]";
+	mes " 請先確認積分再來兌換";
+	close;
+//OnInit:
+//	waitingroom "　轉蛋保底兌換",0;
+	end;	}
