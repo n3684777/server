@@ -2742,6 +2742,10 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+    SupportScript: >
+      petskillsupport "MER_BLESSING",10,30,100,100;
+      petskillsupport "MER_INCAGI",10,30,100,100;
+      petskillattack "NPC_IGNITIONBREAK",5,1,5;
   - Mob: PECOPECO_EGG
     CaptureRate : 1000
     EggItem: item_960060
