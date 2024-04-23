@@ -2800,6 +2800,7 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "SN_SIGHT",10,30,100,100;
       petskillattack "SN_SHARPSHOOTING",5,5,10;
   - Mob: B_KATRINN
@@ -2809,6 +2810,7 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "HW_MAGICPOWER",10,30,100,100;
       petskillattack "HW_GRAVITATION",5,5,10;
   - Mob: B_RANDEL
@@ -2819,6 +2821,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "CR_DEVOTION",5,30,100,100;
       petskillattack "CR_GRANDCROSS",10,5,10;
   - Mob: B_FLAMEL
@@ -2829,6 +2832,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "MC_LOUD",1,30,100,100;
       petskillattack "CR_ACIDDEMONSTRATION",10,5,10;
   - Mob: B_CELIA
@@ -2839,6 +2843,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "PF_DOUBLECASTING",5,30,100,100;
       petskillattack "PF_SPIDERWEB",1,5,10;
   - Mob: B_CHEN
@@ -2849,6 +2854,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "CH_SOULCOLLECT",1,30,100,100;
       petskillattack "MO_EXTREMITYFIST",5,5,10;
   - Mob: B_GERTIE
@@ -2859,6 +2865,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "ST_CHASEWALK",5,30,100,100;
       petskillattack "RG_INTIMIDATE",5,5,10;
   - Mob: B_ALPHOCCIO
@@ -2869,6 +2876,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "BA_POEMBRAGI",10,30,100,100;
       petskillattack "CG_ARROWVULCAN",10,5,10;
   - Mob: B_TRENTINI
@@ -2879,6 +2887,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     AllowAutoFeed: true
+    SupportScript: >
       petskillsupport "DC_FORTUNEKISS",10,30,100,100;
       petskillattack "CG_ARROWVULCAN",10,5,10;
   - Mob: WORM_TAIL
