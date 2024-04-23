@@ -2890,51 +2890,51 @@ Body:
     SupportScript: >
       petskillsupport "DC_FORTUNEKISS",10,30,100,100;
       petskillattack "CG_ARROWVULCAN",10,5,10;
-  - Mob: WORM_TAIL
+  - Mob: THIEF_BUG_EGG
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960074
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: PICKY_
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960075
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: THIEF_BUG
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960076
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: THIEF_BUG_
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960077
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: THIEF_BUG__
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960078
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: SMOKIE
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960079
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: WORM_TAIL
+  - Mob: MISTRESS
     CaptureRate : 1000
-    EggItem: item_960020
+    EggItem: item_960080
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
