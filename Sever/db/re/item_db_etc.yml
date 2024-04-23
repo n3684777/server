@@ -39200,7 +39200,6 @@ Body:
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"WL_CRIMSONROCK",10;
-      changebase 4010;
   - Id: 29477
     AegisName: Shadowchaser_Top
     Name: 神行太保石(頭上)
