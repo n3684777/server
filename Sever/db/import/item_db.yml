@@ -22756,7 +22756,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,960060);
+      atcommand "@makeegg " + rand(960000,960073);
   - Id: 960000
     AegisName: item_960000
     Name: 莎拉寵物蛋
@@ -23067,69 +23067,69 @@ Body:
     Name: 大嘴鳥蛋寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960061
+    AegisName: item_960061
+    Name: 闇●騎士領主賽依連寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960062
+    AegisName: item_960062
+    Name: 闇●十字刺客艾勒梅斯寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960063
+    AegisName: item_960063
+    Name: 闇●神工匠哈沃德寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960064
+    AegisName: item_960064
+    Name: 闇●神官瑪嘉雷特寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960065
+    AegisName: item_960065
+    Name: 闇●神射手迪文寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960066
+    AegisName: item_960066
+    Name: 闇●超魔導師凱特莉娜寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960067
+    AegisName: item_960067
+    Name: 闇●聖殿十字軍蘭德寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960068
+    AegisName: item_960068
+    Name: 闇●創造者普拉梅姆寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960069
+    AegisName: item_960069
+    Name: 闇●智者西里亞寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960070
+    AegisName: item_960070
+    Name: 闇●武術宗師陳理歐寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960071
+    AegisName: item_960071
+    Name: 闇●神行太保科迪寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960072
+    AegisName: item_960072
+    Name: 闇●搞笑藝人雅歐帕奇爾寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960020
-    AegisName: item_960020
-    Name: 森靈寵物蛋
+  - Id: 960073
+    AegisName: item_960073
+    Name: 闇●冷豔舞姬特蘭提尼寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960020
