@@ -135,7 +135,7 @@ Body:
     Name: 波利
     JapaneseName: 波利
     Level: 1
-    Hp: 60
+    Hp: 20000000000000
     BaseExp: 150
     JobExp: 40
     Attack: 8
