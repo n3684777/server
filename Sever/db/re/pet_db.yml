@@ -2770,6 +2770,7 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
+    AttackRate: 10000
     SupportScript: >
       petskillsupport "ASC_EDP",5,30,100,100;
       petskillattack "GC_DARKCROW",5,30,50;
