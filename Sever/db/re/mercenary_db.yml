@@ -677,3 +677,38 @@ Body:
         MaxLevel: 1
       - Name: MER_BLESSING
         MaxLevel: 3
+  - Id: 20994
+    AegisName: MD_BETELGEUSE
+    Name: 比克大魔王
+    JapaneseName: 參宿四
+    Level: 240
+    Hp: 500000000
+    Sp: 1000000
+    BaseExp: 926859
+    JobExp: 116903
+    MvpExp: 10
+    Attack: 90000000
+    Attack2: 90000000
+    Defense: 300
+    MagicDefense: 180
+    Resistance: 200
+    MagicResistance: 200
+    Str: 500000
+    Agi: 500000
+    Vit: 500000
+    Int: 500000
+    Dex: 500000
+    Luk: 500000
+    AttackRange: 3
+    SkillRange: 12
+    ChaseRange: 12
+    Size: Large
+    Race: Dragon
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 100
+    AttackDelay: 1
+    AttackMotion: 1
+    DamageMotion: 223
+    DamageTaken: 800
+

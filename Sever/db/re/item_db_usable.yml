@@ -50143,3 +50143,11 @@ Body:
     Weight: 0
     Script: |
       atcommand "@killmonster";
+  - Id: 970000
+    AegisName: item_970000
+    Name: °Ñ±J¥| ¥l´«®Ñ
+    Type: Usable
+    Buy: 20
+    Weight: 0
+    Script: |
+      mercenary_create 20994,720000000;
