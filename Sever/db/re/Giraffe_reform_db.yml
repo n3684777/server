@@ -6215,6 +6215,7 @@ Body:
          - Material: Money_1E
            Amount: 20
         ResultItem: item_2100000
+        ChangeRefine: -1
       - BaseItem: aegis_490269 # 樞機之光
         MinimumRefine: 9
         CardsAllowed: true
@@ -6242,6 +6243,20 @@ Body:
          - Material: Money_1E
            Amount: 20
         ResultItem: item_2100002
+        ChangeRefine: -1
+      - BaseItem: aegis_490284 # 風鷹狙殺戒
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Polluted_Spi_Q_Card_
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100003
         ChangeRefine: -1
       - BaseItem: Wine_Shoes
         MinimumRefine: 9
