@@ -158368,6 +158368,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bDelayrate,-5;
       bonus bLongAtkRate,6;
