@@ -34,8 +34,8 @@ uttycty,59,181,5	script	精煉券強化#rosfrc	85,{
 	disable_items;
 	mes "[" + strnpcinfo(1) + "]";
 	mes "請選擇您的精鍊裝備及道具！";
-	setarray .@equip_EQI[0],EQI_HEAD_TOP, EQI_HEAD_MID, EQI_HEAD_LOW, EQI_ARMOR, EQI_HAND_L, EQI_HAND_R, EQI_GARMENT, EQI_SHOES, EQI_COSTUME_HEAD_TOP, EQI_COSTUME_HEAD_MID, EQI_COSTUME_HEAD_LOW, EQI_COSTUME_GARMENT, EQI_SHADOW_ARMOR, EQI_SHADOW_WEAPON, EQI_SHADOW_SHIELD, EQI_SHADOW_SHOES, EQI_SHADOW_ACC_R, EQI_SHADOW_ACC_L;
-	setarray .@position$[0],"頭上","頭中","頭下", "鎧甲", "左手", "右手", "披肩", "鞋子", "服裝頭上", "服裝頭中", "服裝頭下", "服裝披肩", "影子鎧甲", "影子武器", "影子盾牌", "影子之靴", "影子耳環", "影子墜子";
+	setarray .@equip_EQI[0],EQI_HEAD_TOP, EQI_HEAD_MID, EQI_HEAD_LOW, EQI_ARMOR, EQI_HAND_L, EQI_HAND_R, EQI_GARMENT, EQI_SHOES, EQI_ACC_L, EQI_ACC_R, EQI_COSTUME_HEAD_TOP, EQI_COSTUME_HEAD_MID, EQI_COSTUME_HEAD_LOW, EQI_COSTUME_GARMENT, EQI_SHADOW_ARMOR, EQI_SHADOW_WEAPON, EQI_SHADOW_SHIELD, EQI_SHADOW_SHOES, EQI_SHADOW_ACC_R, EQI_SHADOW_ACC_L;
+	setarray .@position$[0],"頭上","頭中","頭下", "鎧甲", "左手", "右手", "披肩", "鞋子", "飾品左", "飾品右", "服裝頭上", "服裝頭中", "服裝頭下", "服裝披肩", "影子鎧甲", "影子武器", "影子盾牌", "影子之靴", "影子耳環", "影子墜子";
 	for(.@i=0; .@i<getarraysize(.@equip_EQI); .@i++)
 		set .@menu$,.@menu$+(getequipisequiped(.@equip_EQI[.@i])?.@position$[.@i]+" - "+"[ ^ff1493+"+getequiprefinerycnt(.@equip_EQI[.@i])+"^000000 ^0066cc"+getequipname(.@equip_EQI[.@i])+"^000000 ]":"^888888"+.@position$[.@i]+" - [ 無裝備 ]^000000")+":";
 	next;
