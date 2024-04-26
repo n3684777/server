@@ -50145,9 +50145,15 @@ Body:
       atcommand "@killmonster";
   - Id: 970000
     AegisName: item_970000
-    Name: 參宿四 召換書
+    Name: 比克大魔王 召換書
     Type: Usable
     Buy: 20
     Weight: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
     Script: |
-      mercenary_create 20994,720000000;
+      mercenary_create 20994,259200000;

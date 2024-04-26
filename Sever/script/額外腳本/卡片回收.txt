@@ -1,15 +1,15 @@
 
 
-uttycty,120,167,5	script	卡片回收人員	10126,{
+uttycty,120,167,5	script	稀有材料回收人員	10126,{
 	setarray .@mvpcard[0],4679,4680,4677,4681,4674,4682,4675,4672,4678,4671,4683,4673,4676,4357,4565,4359,4564,4361,4563,4363,4562,4365,4561,4367,4560,4566,4352,4147,4142,4168,4144,4132,4128,4143,4137,
 	4123,4146,4131,4148,4121,4430,4263,27287,4318,27150,4324,27294,4236,4652,4576,4376,27346,4302,4330,4441,300014,300013,4408,4134,4625,4276,4419,27362,27363,300151,27334,4305,
 	4507,4509,4574,4662,27104,27081,27113,27126,4578,4135,300007,4372,4407,27180,4145,4520,4374,4386,4425,27162,300021,4399,4525,4403,300281,27319,4342,27119,4580,300248,4462,27105;
 	set mvppoint,1000; // mvp卡片兌換硬幣數量倍率
-	mes "[卡片回收]";
+	mes "[稀有材料回收]";
 	mes "^0088FF"+strcharinfo(0)+"^000000您好，很高興為您服務。";
-    mes "有不要的卡片要回收嗎?";
+    mes "有不要的東西要回收嗎?";
 	next;
-	switch(select("回收卡片:離開")){
+	switch(select("回收卡片:回收超高級精煉槌:離開")){
 	case 1:
 	cleararray @inventorylist_id[0],0,@inventorylist_id; 
 	getinventorylist(getcharid(0));
@@ -86,14 +86,117 @@ uttycty,120,167,5	script	卡片回收人員	10126,{
 	case 4:
 	  close;
 	  }
-	  case 2:
+
+
+
+
+
+	case 2:
+	cleararray @inventorylist_id[0],0,@inventorylist_id; 
+	getinventorylist(getcharid(0));
+    for (.@i = 0; .@i < getarraysize(@inventorylist_id); .@i++) {
+		if(@inventorylist_id[.@i] > 950002  && @inventorylist_id[.@i] < 950011){
+          .@cardlist[getarraysize(.@cardlist)] = @inventorylist_id[.@i];        
+        }
+    }
+	for (.@i = 0; .@i < getarraysize(.@cardlist); .@i++){
+        .@menu$[.@i] = "[" + .@cardlist[.@i] + "] - " + getitemname(.@cardlist[.@i]);
+    }
+    if (getarraysize(.@menu$) == 0) {
+        close2; 
+        message strcharinfo(0), "您的背包內沒有任何精煉槌.";
+        end;
+    }
+	mes "[超高級精煉槌回收]";
+	mes "每個超高級精煉槌可兌換不同數量的+11超高級精煉槌，";
+	mes "您想怎麼回收?";
+    .@choose = select(implode(.@menu$, ":"))-1;
+	next;
+	mes "[超高級精煉槌回收]";
+    mes "要回收 ^0088FF" + getitemname(.@cardlist[.@choose]) + " ^000000嗎?";
+	mes "^ff0000※請注意!※^000000";
+	next;
+	switch(select("相同精煉槌全部回收:指定精煉槌回收數量:離開")){
+	case 1:
+	callfunc "checkOKOK";
+	set c12tag,0;
+	set c13tag,0;
+	set c14tag,0;
+	set c15tag,0;
+	set c16tag,0;
+	set c17tag,0;
+	set c18tag,0;
+	set c19tag,0;
+	set c12,3;
+	set c13,5;
+	set c14,8;
+	set c15,10;
+	set c16,15;
+	set c17,23;
+	set c18,30;
+	set c19,40;
+	set .@count,countitem(.@cardlist[.@choose]);
+	delitem .@cardlist[.@choose],.@count;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == 950003 ){c12tag = 1;break;}
+			if(.@cardlist[.@choose] == 950004 ){c13tag = 1;break;}
+			if(.@cardlist[.@choose] == 950005 ){c14tag = 1;break;}
+			if(.@cardlist[.@choose] == 950006 ){c15tag = 1;break;}
+			if(.@cardlist[.@choose] == 950007 ){c16tag = 1;break;}
+			if(.@cardlist[.@choose] == 950008 ){c17tag = 1;break;}
+			if(.@cardlist[.@choose] == 950009 ){c18tag = 1;break;}
+			if(.@cardlist[.@choose] == 950010 ){c19tag = 1;break;}
+		}
+		if(c12tag == 1){getitem 950002,.@count*c12;}
+		if(c13tag == 1){getitem 950002,.@count*c13;}
+		if(c14tag == 1){getitem 950002,.@count*c14;}
+		if(c15tag == 1){getitem 950002,.@count*c15;}
+		if(c16tag == 1){getitem 950002,.@count*c16;}
+		if(c17tag == 1){getitem 950002,.@count*c17;}
+		if(c18tag == 1){getitem 950002,.@count*c18;}
+		if(c19tag == 1){getitem 950002,.@count*c19;}
+	close; 
+	case 2:
+	input .@card_quantity;
+	 if (! .@card_quantity) {
+        close;
+    }
+    .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose])); 
+	callfunc "checkOKOK";
+	next;
+	delitem .@cardlist[.@choose], .@card_quantity;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == 950003 ){c12tag = 1;break;}
+			if(.@cardlist[.@choose] == 950004 ){c13tag = 1;break;}
+			if(.@cardlist[.@choose] == 950005 ){c14tag = 1;break;}
+			if(.@cardlist[.@choose] == 950006 ){c15tag = 1;break;}
+			if(.@cardlist[.@choose] == 950007 ){c16tag = 1;break;}
+			if(.@cardlist[.@choose] == 950008 ){c17tag = 1;break;}
+			if(.@cardlist[.@choose] == 950009 ){c18tag = 1;break;}
+			if(.@cardlist[.@choose] == 950010 ){c19tag = 1;break;}
+		}
+		if(c12tag == 1){getitem 950002,.@card_quantity*c12;}
+		if(c13tag == 1){getitem 950002,.@card_quantity*c13;}
+		if(c14tag == 1){getitem 950002,.@card_quantity*c14;}
+		if(c15tag == 1){getitem 950002,.@card_quantity*c15;}
+		if(c16tag == 1){getitem 950002,.@card_quantity*c16;}
+		if(c17tag == 1){getitem 950002,.@card_quantity*c17;}
+		if(c18tag == 1){getitem 950002,.@card_quantity*c18;}
+		if(c19tag == 1){getitem 950002,.@card_quantity*c19;}
+	close;
+	case 4:
+	  close;
+	  }
+	  case 3:
 	  close;
 	  
 	}	
 
 OnInit:
-	setnpcicon getnpcid(0),1026,"卡片回收";
-	waitingroom "★ 卡片回收 ★",0;
+	setnpcicon getnpcid(0),1026,"稀有材料回收";
+	waitingroom "★ 稀有材料回收 ★",0;
 
 }
 function	script	checkOKOK	{
