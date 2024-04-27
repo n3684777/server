@@ -301,40 +301,43 @@ function	script	F_KafTele	{
 	mes "您的目的地.";
 	next;
 	disable_items;
-	switch(select("世界傳送","普隆德拉","依斯魯德","吉芬","夢羅克","斐揚","愛爾貝塔","艾爾帕蘭","克魔島","朱諾","天津"))
+	switch(select("回到主城","世界傳送","普隆德拉","依斯魯德","吉芬","夢羅克","斐揚","愛爾貝塔","艾爾帕蘭","克魔島","朱諾","天津"))
 	{
 		case 1:
+			warp "uttycty",100,84;
+			end;
+		case 2:
 			clear;
 			callfunc("send_map");
 			end;
-		case 2:
+		case 3:
 			warp "prontera",156,99;
 			end;
-		case 3:
+		case 4:
 			warp "izlude",91,105;
 			end;
-		case 4:
+		case 5:
 			warp "geffen",119,68;
 			end;
-		case 5:
+		case 6:
 			warp "morocc",156,94;
 			end;
-		case 6:
+		case 7:
 			warp "payon",143,230;
 			end;
-		case 7:
+		case 8:
 			warp "alberta",117,56;
 			end;			
-		case 8:
+		case 9:
 			warp "aldebaran",143,110;
 			end;
-		case 9:
+		case 10:
 			warp "comodo",188,164;
 			end;		
-		case 10:
+		case 11:
 			warp "yuno",157,41;
 			end;
-		case 11:
+		case 12:
 			warp "amatsu",197,78;
 			end;
 	}

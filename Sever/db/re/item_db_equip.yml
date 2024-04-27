@@ -181238,6 +181238,7 @@ Body:
     Range: 5
     Slots: 1
     Jobs:
+      Rogue: true
       Hunter: true
     Classes:
       All_Third: true

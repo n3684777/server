@@ -3419,18 +3419,6 @@ Body:
         ChangeRefine: -5
   - Item: C_Armor_Reform_1
     BaseItems:
-      - BaseItem: maypay_05
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Seppay_07
-           Amount: 1
-         - Material: M_Dimension_Essence
-           Amount: 5
-        ResultItem: Seppay_06
-        ChangeRefine: -5
       - BaseItem: maypay_04
         MinimumRefine: 9
         CardsAllowed: true
@@ -3514,6 +3502,22 @@ Body:
          - Material: Ymir_Heart_TW
            Amount: 1
         ResultItem: Feather_Shield_LT_TW
+        ChangeRefine: -5
+      - BaseItem: maypay_05 # ¼ç¯à¿Eµo«_ÀI´U
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: item_940042
+           Amount: 200
+         - Material: item_940036
+           Amount: 200
+         - Material: item_940005
+           Amount: 200
+         - Material: Fenrir_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Seppay_06
         ChangeRefine: -5
       - BaseItem: Astraea_Shoes
         MinimumRefine: 9

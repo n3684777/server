@@ -5180,352 +5180,352 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_ANCIENT_MUMMY
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960401
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_LUDE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960402
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_RAGGED_ZOMBIE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960403
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_WRAITH
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960404
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_FLAME_SKULL
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960405
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_BANSHEE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960406
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_KNIGHT_OF_ABYSS
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960407
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_LORD_OF_DEATH
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960408
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_RUDO
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960409
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_ARCHANGELING
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960410
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_FAKE_ANGEL
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960411
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_PLASMA_P
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960412
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_SOLACE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960413
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_ANOPHELES
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960414
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_GRYPHON
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960415
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_RANDGRIS
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960416
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_COMODO
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960417
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_POISON_TOAD
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960418
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_SIDE_WINDER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960419
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_CRAMP
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960420
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_KUKRE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960421
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_NEPENTHES
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960422
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_ANGRA_MANTIS
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960423
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_VENOM_KIMERA
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960424
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_NIGHTMARE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960425
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_WHISPER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960426
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_MARIONETTE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960427
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_NOXIOUS
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960428
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_THE_PAPER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960429
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_GAJOMART
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960430
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_ODIUM
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960431
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ECO_GLOOMUNDERNIGHT
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960432
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: WILD_GINSENG
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960433
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: BABY_LEOPARD
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960434
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: ZIPPER_BEAR
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960435
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: DARK_SNAKE_LORD
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960436
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: G_ZOMBIE_PRISONER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960437
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: INCANTATION_SAMURAI
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960438
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: KIND_OF_BEETLE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960439
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: WOODEN_GOLEM
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960440
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: WOOTAN_SHOOTER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960441
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: WOOTAN_FIGHTER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960442
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: PARASITE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960443
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: PORING_V
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960444
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: GIBBET
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960445
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: DULLAHAN
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960446
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: DISGUISE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960447
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: BLOODY_MURDERER
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960448
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: QUVE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960449
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: HODE
+  - Mob: LUDE
     CaptureRate : 1000
-    EggItem: item_960131
+    EggItem: item_960450
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50

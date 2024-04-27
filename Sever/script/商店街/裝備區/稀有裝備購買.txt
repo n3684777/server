@@ -380,7 +380,10 @@ OnInit:
 	sellitem(400178,.@p,-1);	//信仰之盔(召喚師)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400243,.@p,-1);	//信仰之盔 II(召喚師)
+	sellitem(400243,.@p,-1);	//信仰之盔(召喚師)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400244,.@p,-1);	//信仰之盔 II(召喚師)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400087,.@p,-1);	//潛能激發冒險帽
@@ -678,7 +681,11 @@ OnInit:
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
-	
+
+	sellitem(28946,.@p,-1);	//神聖騎士盾牌
+	sellitemcurrency(6909,.@meow);
+	sellitemcurrency(28945,1);
+    endsellitem(); 	
 	sellitem(460027,.@p,-1);	//泰坦神盾
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
