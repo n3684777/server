@@ -22391,6 +22391,8 @@ Body:
   - Id: 10004
     TargetItems:
       Boyboy_Accessory: true
+      Boyboy_Accessory_Left: true
+      Boyboy_Accessory_Right: true
     Reset:
       Chance: 100000
       Materials:

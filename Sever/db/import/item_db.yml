@@ -22756,7 +22756,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,960332);
+      atcommand "@makeegg " + rand(960000,960400);
   - Id: 960000
     AegisName: item_960000
     Name: ²ï©ÔÃdª«³J
@@ -24507,264 +24507,264 @@ Body:
     Name: ®¬«ë¤§¬W¥~Æ[Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960349
+    AegisName: item_960349
+    Name: °Ñ±J¥|Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960350
+    AegisName: item_960350
+    Name: ¬P»îÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960351
+    AegisName: item_960351
+    Name: ©]³ÓÅ]Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960352
+    AegisName: item_960352
+    Name: ¦B¶éÅÁÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960353
+    AegisName: item_960353
+    Name: µo¥ú®ü¯óÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960354
+    AegisName: item_960354
+    Name: ¦B¿û®wÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960355
+    AegisName: item_960355
+    Name: ®ü¤Ñ¨ÏÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960356
+    AegisName: item_960356
+    Name: ¤£­áªáÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960357
+    AegisName: item_960357
+    Name: ¥d©Ô°¨ªi§QÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960358
+    AegisName: item_960358
+    Name: ­ì©lÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960359
+    AegisName: item_960359
+    Name: ³Ì¤U¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960360
+    AegisName: item_960360
+    Name: ¶W¯Å®ü¤Ñ¨ÏÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960361
+    AegisName: item_960361
+    Name: ¤U¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960362
+    AegisName: item_960362
+    Name: ¤¤¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960363
+    AegisName: item_960363
+    Name: ¨¸¤ßÂy¤H_ATÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960364
+    AegisName: item_960364
+    Name: ³Q¿ò±óªº­ì©lÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960365
+    AegisName: item_960365
+    Name: ¬}¥Þ¥d©Ô°¨ªi§QÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960366
+    AegisName: item_960366
+    Name: ¬}¥Þ¤£­áªáÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960367
+    AegisName: item_960367
+    Name: ©Ç½Ï¥®ÂÎÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960368
+    AegisName: item_960368
+    Name: ³Q¿ò±óªº¤¤¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960369
+    AegisName: item_960369
+    Name: ©Ç½ÏÂÎÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960370
+    AegisName: item_960370
+    Name: ¿W²´³UÀY½¼Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960371
+    AegisName: item_960371
+    Name: Âù²´³UÀY½¼Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960372
+    AegisName: item_960372
+    Name: ªÈÄñªº¤¤¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960373
+    AegisName: item_960373
+    Name: ¤ÑÆN®y-ªü«¶©ÔÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960374
+    AegisName: item_960374
+    Name: °ª¯ÅÄ¯ºÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960375
+    AegisName: item_960375
+    Name: ³D®VÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960376
+    AegisName: item_960376
+    Name: ¦¶§ÆÔÕÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960377
+    AegisName: item_960377
+    Name: ¯ó­ìªº¿W¨¤­¸°¨Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960378
+    AegisName: item_960378
+    Name: ¯ó­ìªº®·®»ÂÎÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960379
+    AegisName: item_960379
+    Name: ¯ó­ìªº¬õ»aÃÇÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960380
+    AegisName: item_960380
+    Name: ¯ó­ìªº½ÀÂÎÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960381
+    AegisName: item_960381
+    Name: ¯ó­ìªº³¥½ÞÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960382
+    AegisName: item_960382
+    Name: ¯ó­ìªº¾½¤HªáÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960383
+    AegisName: item_960383
+    Name: ¯ó­ìªº§Æº¸¤h§LÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960384
+    AegisName: item_960384
+    Name: ¯ó­ìªº¸Á¦ZÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960385
+    AegisName: item_960385
+    Name: ª¥¯PªºÃzª¢½¿½»Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960386
+    AegisName: item_960386
+    Name: ª¥¯Pªº¤C±m­¸ÀsÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960387
+    AegisName: item_960387
+    Name: ª¥¯Pªº«n¥Ê¥ý¥ÍÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960388
+    AegisName: item_960388
+    Name: ª¥¯Pªºº²©¥¥¨¥ÛÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960389
+    AegisName: item_960389
+    Name: ª¥¯Pªº¦Ì¬¥´µÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960390
+    AegisName: item_960390
+    Name: ª¥¯Pªº¤TÀYÀsÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960391
+    AegisName: item_960391
+    Name: ª¥¯Pªº§Æ¦«´µÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960392
+    AegisName: item_960392
+    Name: ª¥¯Pªº­}¶ð°Ç®õ±à°Ç´µÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960393
+    AegisName: item_960393
+    Name: »Å´Hªº¦B¥¨¤HÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960394
+    AegisName: item_960394
+    Name: »Å´Hªº¤p³·Ã~Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960395
+    AegisName: item_960395
+    Name: »Å´Hªº³·Ã~Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960396
+    AegisName: item_960396
+    Name: »Å´Hªº¸¼°GÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960397
+    AegisName: item_960397
+    Name: »Å´Hªº¤ôºëÆFÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960398
+    AegisName: item_960398
+    Name: »Å´Hªº¤èÅé´cÅ]Ãdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960399
+    AegisName: item_960399
+    Name: »Å´HªºÆF§JÃdª«³J
     Type: Petegg
     Buy: 20
-  - Id: 960080
-    AegisName: item_960080
-    Name: ¸Á¦ZÃdª«³J
+  - Id: 960400
+    AegisName: item_960400
+    Name: »Å´Hªº´H¦BÀsÃdª«³J
     Type: Petegg
     Buy: 20
   - Id: 960080

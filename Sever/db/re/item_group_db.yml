@@ -38817,8 +38817,6 @@ Body:
           - Item: N_Magnifier
             Rate: 1111
             Amount: 10
-          - Item: Time_Guardian_Box
-            Rate: 1111
           - Item: 1LVUP
             Rate: 1111
   - Group: 10LVUP

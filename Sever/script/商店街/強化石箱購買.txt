@@ -358,7 +358,7 @@ OnInit:
     sellitem(1001046,0,-1);           //拳皇石(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(25489,0,-1);           //拳皇石(披肩)
+    sellitem(25849,0,-1);           //拳皇石(披肩)
     sellitemcurrency(6417,.@amount);
     endsellitem();
 
@@ -771,7 +771,9 @@ OnInit:
 
 	tradertype(NST_EXPANDED_BARTER);
 	.@amount = 5;
-
+    sellitem(1000365,0,-1);           //魔幻羽毛特效石(頭上)
+    sellitemcurrency(6417,.@amount);
+    endsellitem();  
     sellitem(25058,0,-1);           //閃耀效果(頭上)
     sellitemcurrency(6417,.@amount);
     endsellitem();
@@ -798,10 +800,7 @@ OnInit:
     endsellitem();      
     sellitem(25224,0,-1);           //白化效果(頭中)
     sellitemcurrency(6417,.@amount);
-    endsellitem();      
-    sellitem(25225,0,-1);           //緋紅爆裂波動效果(頭中)
-    sellitemcurrency(6417,.@amount);
-    endsellitem();      
+    endsellitem();          
     sellitem(25226,0,-1);           //水域效果(頭下)
     sellitemcurrency(6417,.@amount);
     endsellitem();      

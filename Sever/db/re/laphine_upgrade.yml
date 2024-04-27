@@ -13390,6 +13390,8 @@ Body:
       - Item: Angeling_Balloon_TW # 420065
       - Item: Boyboy_Accessory # 900000
       - Item: Boyboy_Accessory_Left # 920003
+      - Item: Boyboy_Accessory_Right # 920004
+      - Item: Boyboy_Accessory_Left # 920003
       - Item: Boyboy_Accessory_Right # 920004 
       - Item: Temporal_Sprout_TW # 420106
       - Item: KarduiEar # 5966
