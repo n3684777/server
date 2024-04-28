@@ -18,7 +18,7 @@ uttycty,120,167,5	script	稀有材料回收人員	10126,{
 		   @inventorylist_id[.@i] > 27000 && @inventorylist_id[.@i] < 28000||
 		   @inventorylist_id[.@i] > 30999 && @inventorylist_id[.@i] < 31027||
 		   @inventorylist_id[.@i] > 299999 && @inventorylist_id[.@i] < 300022||
-		   @inventorylist_id[.@i] > 300162 && @inventorylist_id[.@i] < 300427){
+		   @inventorylist_id[.@i] > 300075 && @inventorylist_id[.@i] < 300427){
           .@cardlist[getarraysize(.@cardlist)] = @inventorylist_id[.@i];        
         }
     }
