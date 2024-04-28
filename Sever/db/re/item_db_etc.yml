@@ -71937,7 +71937,7 @@ Body:
       bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",15;      
       }
       if(.@r >= 20){
-     bonus bBaseAtk,300;
+       bonus bBaseAtk,300;
       }
   - Id: 2000135
     AegisName: item_2000135
@@ -71955,7 +71955,7 @@ Body:
       bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",15;      
       }
       if(.@r >= 20){
-      bonus bBaseAtk,300;
+       bonus bBaseAtk,300;
       }
   - Id: 2000136
     AegisName: item_2000136
