@@ -71919,7 +71919,7 @@ Body:
       bonus2 bSkillAtk,"SH_HOWLING_OF_CHUL_HO",15;      
       }
       if(.@r >= 20){
-     bonus bBaseAtk,300;
+      bonus bBaseAtk,300;
       }
   - Id: 2000134
     AegisName: item_2000134
@@ -71955,7 +71955,7 @@ Body:
       bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",15;      
       }
       if(.@r >= 20){
-     bonus bBaseAtk,300;
+      bonus bBaseAtk,300;
       }
   - Id: 2000136
     AegisName: item_2000136
