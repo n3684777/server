@@ -71850,6 +71850,149 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000130
+    AegisName: item_2000130
+    Name: ¤pÂû°ÖÀ»
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SU_PICKYPECK",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SU_PICKYPECK",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillAtk,"SU_PICKYPECK",30;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000131
+    AegisName: item_2000131
+    Name: ônµU®ç±ðºj
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SU_SV_STEMSPEAR",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SU_SV_STEMSPEAR",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SU_SV_STEMSPEAR",-500;
+      bonus2 bSkillAtk,"SU_SV_STEMSPEAR",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000132
+    AegisName: item_2000132
+    Name: ¿ßÁ¡²ü¹k¥Û
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SU_CN_METEOR",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SU_CN_METEOR",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SU_CN_METEOR",-2500;
+      bonus2 bSkillAtk,"SU_CN_METEOR",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000133
+    AegisName: item_2000133
+    Name: ÅKªê«ã©H­ý
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SH_HOWLING_OF_CHUL_HO",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SH_HOWLING_OF_CHUL_HO",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SH_HOWLING_OF_CHUL_HO",-500;
+      bonus2 bSkillAtk,"SH_HOWLING_OF_CHUL_HO",15;      
+      }
+      if(.@r >= 20){
+     bonus bBaseAtk,300;
+      }
+  - Id: 2000134
+    AegisName: item_2000134
+    Name: ÅKªêµêªÅ¤ö
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SH_CHUL_HO_SONIC_CLAW",-125;
+      bonus2 bSkillAtk,"SH_CHUL_HO_SONIC_CLAW",15;      
+      }
+      if(.@r >= 20){
+     bonus bBaseAtk,300;
+      }
+  - Id: 2000135
+    AegisName: item_2000135
+    Name: ªê­ú¸¹¶Ã¥´
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SH_HOGOGONG_STRIKE",-250;
+      bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",15;      
+      }
+      if(.@r >= 20){
+     bonus bBaseAtk,300;
+      }
+  - Id: 2000136
+    AegisName: item_2000136
+    Name: ¥È³À¸­±Û­·
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SH_HYUN_ROKS_BREEZE",-2250;
+      bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000137
+    AegisName: item_2000137
+    Name: ¥È³À¬¶
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SH_HYUN_ROK_CANNON",-250;
+      bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
   - Id: 2110001
     AegisName: Card_Coin_
     Name: °ª¯Å¥d¤ùµw¹ô
