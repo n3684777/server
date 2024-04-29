@@ -675,6 +675,111 @@ OnTimer1000:
 	end;
 }
 
+uttycty,35,75,6	script	披肩幻化3#cos_ect	4_FROG,{
+	disable_items;
+	mes "[雷斯查德]";
+	mes "歡迎光臨，時尚魔石!!";
+	mes "我是能將空虛肩膀變成動感肩飾的雷斯查德";
+	next;
+	mes "[雷斯查德]";
+	mes "若帶來 ^ff0000服裝披肩類^000000 和 ^ff0000披肩類專用石^000000的話,就能幫你升級喔!!";
+	mes "這是尋找我提昇樸素外表方法時，發現的辦法!!";
+	next;
+	if (select( "附魔.", "結束對話" ) == 2) {
+		mes "[雷斯查德]";
+		mes "是？您想看更多嗎？";
+		close;
+	}
+	if (checkweight(1119,3) == 0) {
+		mes "[雷斯查德]";
+		mes "好吧...您的肩膀看起來不再需要任何升級...!";
+		mes "不要殘忍你的肩膀！";
+		next;
+		mes "看來您的物品太多了。";
+		mes "清除一些庫存空間後再回來。";
+		close;
+	}
+	.@part = EQI_COSTUME_GARMENT;
+	.@equip_id = getequipid(.@part);
+	if (.@equip_id == -1) {
+		mes "[雷斯查德]";
+		mes "將服裝穿在身上。";
+		mes "我需要查看一下以檢查升級可能性。";
+		close;
+	}
+
+	
+
+	.@equip_refine = getequiprefinerycnt(.@part);
+	setarray .@card[0], getequipcardid(.@part, 0), getequipcardid(.@part, 1), getequipcardid(.@part, 2), getequipcardid(.@part, 3);
+
+	mes "[雷斯查德]";
+	mes "哇嗚 ^0000FF" + getitemname(.@equip_id) + "^000000!!! 你有感覺，不是嗎?";
+	mes "棒!! 我已經為升級做好了充分準備！！!";
+	next;
+	setarray .@data$[0],
+
+		910129, 910129, "",     // 基因II
+		910130, 910130, "",     // 基因II
+		910131, 910131, "";
+	.@size = getarraysize(.@data$);
+	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
+		.@id = atoi(.@data$[.@i]);
+		.@menu$ += sprintf( "%d. %s (%d) 個:", (.@j+1), getitemname(.@id), countitem(.@id) );
+		.@j++;
+	}
+	.@menu$ += "結束";
+	.@s = (select(.@menu$) - 1) * 3;
+	if (.@s == .@size) {
+		mes "[雷斯查德]";
+		mes "是？你想看更多?";
+		close;
+	}
+	.@id = atoi(.@data$[.@s]);
+	.@enchant = atoi(.@data$[.@s+1]);
+	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
+		mes "[雷斯查德]";
+		mes "您必須同時擁有服裝和能力石才能進行附魔。";
+		close;
+	}
+	mes "^FF0000   !!! 警告 !!!^000000";
+	mes "^ff0000此升級不會失敗。^000000";
+	mes "^ff0000如果該物品已經具有額外的能力，我們將重置該物品的能力並給予 " + .@data$[.@s+2] + ".^000000";
+	mes "^ff0000您確定要升級此項目嗎？^000000";
+	next;
+	if (select( "是.", "不要." ) == 2) {
+		mes "[雷斯查德]";
+		mes "是？您想看更多嗎？";
+		close;
+	}
+
+	// anti-hack
+	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine))
+		close;
+
+	delitem .@id, 1;
+	delequip .@part;
+	if (rand(99) < 100) {
+		mes "[雷斯查德]";
+		mes "漂亮l!!";
+		mes "我真的是自己做的！！";
+		.@card[3] = .@enchant; //幻化結果要改為3 
+	}
+	else {
+		mes "[雷斯查德]";
+		mes "歐 NO~~~";
+		mes "崩潰!!!!!我無法向世界展示這種失敗！！！";
+		.@card[0] = 0;
+	}
+	getitem2 .@equip_id,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+	close;
+
+OnInit:
+OnTimer1000:
+	initnpctimer;
+	end;
+}
+
 // Costume enchant (garment/JRO2)
 uttycty,42,80,6	script	JRO披肩幻化#cos_ect	4_FROG,{
 	disable_items;
