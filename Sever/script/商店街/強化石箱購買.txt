@@ -499,8 +499,13 @@ OnInit:
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
 
-
+    sellitem(1000375,0,-1);           //廣域石(頭上)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
     sellitem(25061,0,-1);           //廣域石(頭中)
+    sellitemcurrency(6417,.@amount*2);
+    endsellitem();
+    sellitem(1000376,0,-1);           //廣域石(頭下)
     sellitemcurrency(6417,.@amount*2);
     endsellitem();
 
