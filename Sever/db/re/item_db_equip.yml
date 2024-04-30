@@ -143487,7 +143487,7 @@ Body:
       bonus bAspd,1;
       bonus bMatkRate,3;
       bonus bSpl,3;
-      bonus5 bAutoSpell,"ABC_FROM_THE_ABYSS",(getskilllv("ABC_FROM_THE_ABYSS") > 2)?getskilllv("ABC_FROM_THE_ABYSS":2),100,BF_LONG|BF_SHORT,0;
+      bonus5 bAutoSpell,"ABC_FROM_THE_ABYSS",(getskilllv("ABC_FROM_THE_ABYSS") > 2)?getskilllv("ABC_FROM_THE_ABYSS"):2,100,BF_LONG|BF_SHORT,0;
   - Id: 430005
     AegisName: C_White_Tiger_Glass
     Name: (服飾)白虎眼鏡
