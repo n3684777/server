@@ -65,7 +65,8 @@ FunctionMap:
 	"^2200AA【競技場區域】^000000",FunMap3,
 	"^2200AA【道館區】初階/中階/高階/夢魘^000000",FunMap4,
 	"^227700【附魔區】裝備附魔^000000",FunMap5,
-	"^CC0000【製作區】裝備製作 ^000000",FunMap6;
+	"^CC0000【製作區】裝備製作 ^000000",FunMap6,
+		"^CC0000【遊戲區】賭博發財 ^000000",FunMap7;
 
 
 FunMap1:
@@ -90,6 +91,10 @@ FunMap5:
 
 FunMap6:
 	warp "uttycty",70,163;
+	end;
+
+FunMap7:
+	warp "cmd_in02",208,95;
 	end;
 
 FunMap0:

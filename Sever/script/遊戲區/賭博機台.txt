@@ -1,4 +1,4 @@
-under_mark,119,57,3	script	機台	563,{
+mid_camp,151,271,3	script	機台	563,{
 mes"遊戲玩法:";
 mes"押大(5,6)";
 mes"押中(3,4)";

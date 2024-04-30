@@ -60,3 +60,22 @@ OnInit:
 	waitingroom "★ 卡普拉職員 ★ ",0;
 }
 
+cmd_in02,207,101,5	script	卡普拉職員::utty_02	112,{
+	mes "[卡普拉職員]";
+	mes "歡迎來到";
+	mes "卡普拉公司~";
+	mes "卡普拉的服務將";
+	mes "永遠陪伴著您.";
+	mes "今天您需要什麼服務?";
+	switch(select("回去主城:離開")){
+	case 1: warp "uttycty",100,84; break;
+	case 2: break;
+	}
+
+	close;
+OnInit:
+	setnpcicon getnpcid(0),1028,"卡普拉職員";
+	waitingroom "★ 卡普拉職員 ★ ",0;
+}
+
+

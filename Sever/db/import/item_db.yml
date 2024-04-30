@@ -22750,6 +22750,14 @@ Body:
       if ( .@r >= 12 ) {
         bonus2 bMagicAtkEle,ELE_ALL,7;
       }
+  - Id: 62017
+    AegisName: 62017
+    Name: 拉斯維加斯賭場代幣
+    Type: Etc
+  - Id: 62018
+    AegisName: 62018
+    Name: 拉斯維加斯彩金
+    Type: Etc
   - Id: 959999
     AegisName: item_959999
     Name: 寵物蛋抽抽樂箱
@@ -26752,7 +26760,7 @@ Body:
     Name: 艾琳大長老寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960799
+  - Id: 960799 # part 2
     AegisName: item_960799
     Name: 斐揚警衛兵寵物蛋
     Type: Petegg

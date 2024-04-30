@@ -8,16 +8,16 @@ OnInit:
 //-------------------------------------------------------------------------------------------------
 
 //代幣的兌換金額 ( 預設 5 P )
-	set $@TP,5;
+	set $@TP,10000;
 
 //代幣換為Zeny的金額 ( 預設 4 P )
-	set $@TPAT,4;
+	set $@TPAT,1000;
 
 //代幣的一次兌換最多數量 ( 預設 500 個 )
-	set $@AAN,500;
+	set $@AAN,3000;
 
 //彩金換為 P 的比值 ( 預設 50 P )
-	set $@TPAT0,50;
+	set $@TPAT0,10000;
 
 //NPC對話的ID
 	set $@keiname$,"賭場服務人員";
@@ -55,7 +55,7 @@ OnInit:
 	set $@TWI,1;
 
 //押注的最多代幣數量 ( 預設 30 )
-	set $@TWO,30;
+	set $@TWO,1000;
 
 //兩個數字相同時所給予的代幣倍率 ( 預設 2 倍 )
 	set $@TBOK,2;
@@ -133,7 +133,7 @@ OnInit:
 	set $@TO21X,5;
 
 //最多下注代幣數量 ( 預設 20  )
-	set $@TO21A,20;
+	set $@TO21A,1000;
 
 
 //-------------------------------------------------------------------------------------------------
@@ -163,11 +163,11 @@ OnInit:
 //NPC
 //
 //＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
-under_mark,54,101,5	script	賭場服務人員#2	845,{callfunc"HP_cmd";}
+cmd_in02,210,101,5	script	賭場服務人員#2	845,{callfunc"HP_cmd";}
 
-under_mark,65,103,0	script	老虎機#1	563,{
+cmd_in02,195,112,0	script	老虎機#1	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 65 || @mapy != 102) goto Notplay; 
+if (@mapx != 194 || @mapy != 112) goto Notplay; 
 callfunc"HP_amd";
 close;
 
@@ -180,9 +180,9 @@ OnInit:
 	end;
 }
 
-under_mark,70,103,0	script	老虎機#2	563,{
+cmd_in02,195,114,0	script	老虎機#2	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 70 || @mapy != 102) goto Notplay; 
+if (@mapx != 194 || @mapy != 114) goto Notplay; 
 callfunc"HP_amd";
 close;
 
@@ -195,9 +195,9 @@ OnInit:
 	end;
 }
 
-under_mark,77,103,0	script	老虎機#3	563,{
+cmd_in02,195,116,0	script	老虎機#3	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 77 || @mapy != 102) goto Notplay; 
+if (@mapx != 194 || @mapy != 116) goto Notplay; 
 callfunc"HP_amd";
 close;
 
@@ -210,9 +210,9 @@ OnInit:
 	end;
 }
 
-under_mark,87,103,0	script	老虎機#4	563,{
+cmd_in02,189,112,0	script	老虎機#4	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 87 || @mapy != 102) goto Notplay; 
+if (@mapx != 188 || @mapy != 112) goto Notplay; 
 callfunc"HP_amd";
 
 Notplay:
@@ -224,9 +224,9 @@ OnInit:
 	end;
 }
 
-under_mark,97,103,0	script	老虎機#5	563,{
+cmd_in02,189,114,0	script	老虎機#5	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 97 || @mapy != 102) goto Notplay; 
+if (@mapx != 188 || @mapy != 114) goto Notplay; 
 callfunc"HP_amd";
 close;
 
@@ -239,9 +239,9 @@ OnInit:
 	end;
 }
 
-under_mark,107,103,0	script	老虎機#6	563,{
+cmd_in02,189,116,0	script	老虎機#6	563,{
 getmapxy(@mapname$,@mapx,@mapy,BL_PC,""+strcharinfo(0)+"");
-if (@mapx != 107 || @mapy != 102) goto Notplay; 
+if (@mapx != 188 || @mapy != 116) goto Notplay; 
 callfunc"HP_amd";
 close;
 
@@ -278,7 +278,7 @@ OnInit:
 	end;
 }
 
-under_mark,138,101,5	script	21點莊家	57,{
+cmd_in02,167,89,5	script	代幣玩21點莊家	57,{
 callfunc"MP_amd";
 close;
 
@@ -1253,9 +1253,9 @@ A10:
 
 function	script	HP_amd	{
 if (Class == Job_Novice) goto nogo;
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ ★ ｜ ★ ｜ ★ ｜老虎機遊戲";
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "　  拉斯維加斯賭場";
 		next;
 		menu	"開始遊戲",Lgame,"離開遊戲",Lover;
@@ -1264,18 +1264,18 @@ Lgame:
 			if( LKKGG >= $LKKK ){
 			next;
 			set .@TB,rand($KIi,$KIo);
-			mes "╞════════╡";
+			mes "╞════════╡";
 			mes "｜ ★ ｜ ★ ｜ ★ ｜";
-			mes "╞════════╡";
+			mes "╞════════╡";
 			mes "　  拉斯維加斯賭場";
 			mes "為了防止外掛洗機器";
 			mes "請簡單輸入^FF0000 "+ .@TB +" ^000000";
 			input .@GBS;
 			next;
 			if (.@GBS != .@TB ){
-				mes "╞════════╡";
+				mes "╞════════╡";
 				mes "｜ ★ ｜ ★ ｜ ★ ｜輸入錯誤";
-				mes "╞════════╡請重新點取";
+				mes "╞════════╡請重新點取";
 				mes "　  拉斯維加斯賭場";
 				close;
 				}
@@ -1285,9 +1285,9 @@ Lgame:
 			if( LKKGG >= $LKKK )set LKKGG,0;
 			set LKKGG,LKKGG+1;
 		}
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ ★ ｜ ★ ｜ ★ ｜請先下注";
-		mes "╞════════╡"+$@TWI+"～"+$@TWO+"個代幣";
+		mes "╞════════╡"+$@TWI+"～"+$@TWO+"個代幣";
 		mes "　  拉斯維加斯賭場";
 		goto Lthegame;
 Lthegame:
@@ -1302,29 +1302,29 @@ Lthegame:
 			set LKKGG,LKKGG+1;
 		}
 		next;
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ ★ ｜ ★ ｜ ★ ｜下注完畢";
-		mes "╞════════╡按鍵";
+		mes "╞════════╡按鍵";
 		mes "　  拉斯維加斯賭場";
 		next;
 		set @AA,rand(1,9);
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ ★ ｜ ★ ｜第一個[^FF0000"+@AA+"^000000]";
-		mes "╞════════╡按鍵";
+		mes "╞════════╡按鍵";
 		mes "　  拉斯維加斯賭場";
 		specialeffect2 5;
 		next;
 		set @BB,rand(1,9);
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ ★ ｜第二個[^FF0000"+@BB+"^000000]";
-		mes "╞════════╡按鍵";
+		mes "╞════════╡按鍵";
 		mes "　  拉斯維加斯賭場";
 		specialeffect2 5;
 		next;
 		set @CC,rand(1,9);
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜第三個[^FF0000"+@CC+"^000000]";
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "　  拉斯維加斯賭場";
 		specialeffect2 5;
 		next;
@@ -1343,9 +1343,9 @@ Lhmwin:
 		getitem 62017,@yz * $@TBOK;
 		if( $@TYMA == 1 ) getitem 62018,$@TYMAA;
 		specialeffect2 131;
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOK+"^000000 ]倍";
-		mes "╞════════╡遊戲結束";
+		mes "╞════════╡遊戲結束";
 		mes "　  拉斯維加斯賭場";
 		next;
 		menu	"繼續遊戲",Lgame,"不玩了",Lover;
@@ -1355,9 +1355,9 @@ Landun:
 		if( $@TYMA == 1 ) getitem 62018,$@TYMAB;
 		specialeffect2 810;
 		specialeffect2 811;
-		mes "╞════════╡";
+		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOF+"^000000 ]倍";
-		mes "╞════════╡遊戲結束";
+		mes "╞════════╡遊戲結束";
 		mes "　  拉斯維加斯賭場";
 		next;
 		menu	"繼續遊戲",Lgame,"不玩了",Lover;
@@ -1369,44 +1369,44 @@ swin:		getitem 62017,@yz * $@TBOG;
 		specialeffect2 668;
 		specialeffect2 573;
 		specialeffect2 915;
-		mes "╞════════╡３個７！！";
+		mes "╞════════╡３個７！！";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜[ ^0000FF"+$@TBOG+"^000000 ]倍";
-		mes "╞════════╡遊戲結束";
+		mes "╞════════╡遊戲結束";
 		mes "　  拉斯維加斯賭場";
 		next;
 		menu	"繼續遊戲",Lgame,"不玩了",Lover;
 
-L_lost:		mes "╞════════╡";
+L_lost:		mes "╞════════╡";
 		mes "｜ "+@AA+"  ｜ "+@BB+"  ｜ "+@CC+"  ｜您輸了!!";
-		mes "╞════════╡遊戲結束";
+		mes "╞════════╡遊戲結束";
 		mes "　  拉斯維加斯賭場";
 		specialeffect2 817;
 		next;
 		menu	"繼續遊戲",Lgame,"不玩了",Lover;
 
 Lover:
-	mes "╞════════╡";
+	mes "╞════════╡";
 	mes "｜ ★ ｜ ★ ｜ ★ ｜歡迎下次";
-	mes "╞════════╡再玩遊戲";
+	mes "╞════════╡再玩遊戲";
 	mes "　  拉斯維加斯賭場";
 	close;
 Lnocm:
-	mes "╞════════╡";
+	mes "╞════════╡";
 	mes "｜ ★ ｜ ★ ｜ ★ ｜代幣不足";
-	mes "╞════════╡";
+	mes "╞════════╡";
 	mes "　  拉斯維加斯賭場";
 	close;
 nogo:
-	mes "╞════════╡";
+	mes "╞════════╡";
 	mes "｜ ★ ｜ ★ ｜ ★ ｜";
-	mes "╞════════╡";
+	mes "╞════════╡";
 	mes "　  拉斯維加斯賭場";
 	mes " 小朋友禁止進入賭場";
 	close;
 
-Lxx:	mes "╞════════╡";
+Lxx:	mes "╞════════╡";
 	mes "｜ ★ ｜ ★ ｜ ★ ｜您未下注";
-	mes "╞════════╡遊戲結束";
+	mes "╞════════╡遊戲結束";
 	mes "　  拉斯維加斯賭場";
 	close;
 }
@@ -1756,7 +1756,7 @@ L_Close:
 
 //-------------------------------------------------------------------------------------------------
 //
-//二十一點 ( 作者 KEI )
+//二十一點 ( 作者 KEI )
 //
 //-------------------------------------------------------------------------------------------------
 

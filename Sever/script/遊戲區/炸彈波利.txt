@@ -36,7 +36,7 @@
 	set $@EWgmbga,90;
 }
 
-under_mark,90,41,5	script	炸彈波利管理員	607,{
+mid_camp,186,236,5	script	炸彈波利管理員	607,{
 
 	if(getgmlevel()>=$@EWgmbga && $@booStart == 1){
 	mes "[炸彈波利管理員]";

@@ -125,17 +125,7 @@ playB777:
 	if (@NUM18 == 7) set @NUM28$,"７";
 	if (@NUM18 == 8) set @NUM28$,"△";
 	if (@NUM18 == 9) set @NUM28$,"▲";
-	set @NUM19 ,rand(10);
-	if (@NUM19 == 0) set @NUM29$,"☆";
-	if (@NUM19 == 1) set @NUM29$,"★";
-	if (@NUM19 == 2) set @NUM29$,"■";
-	if (@NUM19 == 3) set @NUM29$,"□";
-	if (@NUM19 == 4) set @NUM29$,"◇";
-	if (@NUM19 == 5) set @NUM29$,"◆";
-	if (@NUM19 == 6) set @NUM29$,"６";
-	if (@NUM19 == 7) set @NUM29$,"７";
-	if (@NUM19 == 8) set @NUM29$,"△";
-	if (@NUM19 == 9) set @NUM29$,"▲";
+	set @NUM19 ,rand(10);,"▲";
 	mes"[老虎機] ╒══╤══╤══╕";
 	mes"第一行   ｜ ∥ ｜ ∥ ｜ ∥ ｜";
 	mes".        ╞══╪══╪══╡";
@@ -163,7 +153,17 @@ playB777:
 	mes"[老虎機] ╒══╤══╤══╕";
 	mes"第一行   ｜ " +@NUM21$+ " ｜ " +@NUM24$+ " ｜ " +@NUM27$+ " ｜";
 	mes".        ╞══╪══╪══╡  ●";
-	mes"第二行   ｜ " +@NUM22$+ " ｜ " +@NUM25$+ " ｜ " +@NUM28$+ " ｜  ｜";
+	mes"第二行   ｜ " +@NUM22
+	if (@NUM19 == 0) set @NUM29$,"☆";
+	if (@NUM19 == 1) set @NUM29$,"★";
+	if (@NUM19 == 2) set @NUM29$,"■";
+	if (@NUM19 == 3) set @NUM29$,"□";
+	if (@NUM19 == 4) set @NUM29$,"◇";
+	if (@NUM19 == 5) set @NUM29$,"◆";
+	if (@NUM19 == 6) set @NUM29$,"６";
+	if (@NUM19 == 7) set @NUM29$,"７";
+	if (@NUM19 == 8) set @NUM29$,"△";
+	if (@NUM19 == 9) set @NUM29$$+ " ｜ " +@NUM25$+ " ｜ " +@NUM28$+ " ｜  ｜";
 	mes".        ╞══╪══╪══○═╛";
 	mes"第三行   ｜ " +@NUM23$+ " ｜ " +@NUM26$+ " ｜ " +@NUM29$+ " ｜";
 	mes".        ╘══╧══╧══╛";
