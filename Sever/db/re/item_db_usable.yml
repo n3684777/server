@@ -1627,7 +1627,7 @@ Body:
     Name: 組織的團結力。
     Type: Usable
     Buy: 2
-    Weight: 500
+    Weight: 0
     Flags:
       BuyingStore: true
     Script: |

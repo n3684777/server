@@ -9867,7 +9867,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "NC_STEALTHFIELD",3,30,100,100;
+      petskillsupport "MC_LOUD",1,30,100,100;
       petskillattack "NC_AXETORNADO",5,5,10;
   - Mob: V_B_SHECIL
     CaptureRate : 1000
@@ -9897,8 +9897,8 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "GC_DARKCROW",5,30,100,100;
-      petskillattack "GC_CROSSIMPACT",5,5,10;
+      petskillsupport "GC_HALLUCINATIONWALK",5,30,100,100;
+      petskillattack "GC_DARKCROW",5,5,10;
   - Mob: V_B_SEYREN
     CaptureRate : 1000
     EggItem: item_961074
@@ -9907,7 +9907,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "RK_GIANTGROWTH",1,30,100,100;
+      petskillsupport "RK_ENCHANTBLADE",10,30,100,100;
       petskillattack "NPC_IGNITIONBREAK",5,5,10;
   - Mob: V_B_RANDEL
     CaptureRate : 1000
@@ -9948,7 +9948,7 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       petskillsupport "SR_POWERVELOCITY",1,30,100,100;
-      petskillattack "SR_GATEOFHELL",10,5,10;
+      petskillattack "SR_HELLGATE",10,5,10;
   - Mob: V_B_GERTIE
     CaptureRate : 1000
     EggItem: item_961079
@@ -9967,8 +9967,8 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "WM_SONG_OF_MANA",5,30,100,100;
-      petskillattack "NPC_REVERBERATION",5,5,10;
+      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
+      petskillattack "WM_REVERBERATION",5,5,10;
   - Mob: V_B_TRENTINI
     CaptureRate : 1000
     EggItem: item_961081
@@ -9977,7 +9977,7 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "WM_SONG_OF_MANA",5,30,100,100;
+      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
       petskillattack "WM_SEVERE_RAINSTORM",5,5,10;
   - Mob: C1_SIROMA
     CaptureRate : 1000
