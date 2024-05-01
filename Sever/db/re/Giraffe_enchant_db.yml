@@ -21193,7 +21193,7 @@ Body:
       Vinus_Armor_TW_LT: true
       Vulcan_Armor_TW_LT: true
     Reset:
-      Chance: 80000
+      Chance: 100000
       Materials:
         - Material: Nyangvine_Fruit
           Amount: 3
@@ -29305,7 +29305,7 @@ Body:
 
     MinimumRefine: 9
     Reset:
-      Chance: 80000
+      Chance: 100000
       Price: 1000000
       Materials:
         - Material: Meteorite_Dust
