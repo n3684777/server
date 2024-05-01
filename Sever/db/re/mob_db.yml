@@ -63578,7 +63578,7 @@ Body:
       - Item: Skeleton_General_Card
         Rate: 1
         StealProtected: true
-  - Id: 2660
+  - Id: 2660 # part 20240501
     AegisName: C5_SKEL_WORKER
     Name: 狡猾邪骸礦工
     JapaneseName: 狡猾邪骸礦工
