@@ -10133,709 +10133,1416 @@ Body:
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_RICE_CAKE_BOY
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961104
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_RETRIBUTION
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961105
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_RETRIBUTION
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961106
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_RETRIBUTION
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961107
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_REQUIEM
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961108
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_REMOVAL
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961109
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_RED_ERUMA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961110
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_RAYDRIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961111
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_RAYDRIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961112
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_RAWREL
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961113
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_RAKE_SCARABA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961114
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_RAGGLER
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961115
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_RAFFLESIA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961116
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_PORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961117
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_PORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961118
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_PORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961119
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_PORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961120
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_PORCELLIO
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961121
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_POPORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961122
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_POPORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961123
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_POPORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961124
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_POISON_TOAD
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961125
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_POISON_SPORE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961126
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_PLASMA_Y
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961127
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_PLANKTON
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961128
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_PITMAN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961129
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_PIRANHA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961130
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_PINGUICULA_D
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961131
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_PINGUICULA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961132
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_PICKY_
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961133
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_PHEN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961134
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_PETIT
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961135
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_PETIT
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961136
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_PENOMENA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961137
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_PENOMENA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961138
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_PECOPECO
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961139
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_PASANA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961140
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_PARASITE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961141
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_OWL_DUKE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961142
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_ORK_WARRIOR
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961143
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_ORC_ZOMBIE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961144
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_ORC_SKELETON
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961145
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_ORC_LADY
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961146
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_OBSERVATION
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961147
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_NOXIOUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961148
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_NOVUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961149
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_NOVUS
     CaptureRate : 1000
     EggItem: item_961004
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_NOVUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961151
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_NOVUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961152
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_NIGHTMARE_TERROR
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961153
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_NG_WRAITH_DEAD
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961154
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_NG_WANDER_MAN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961155
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_NEPENTHES
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961156
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_NECROMANCER
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961157
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MYSTCASE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961158
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MUSCIPULAR
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961159
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MUMMY
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961160
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_MUMMY
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961161
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_MUKA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961162
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MOROCC_1
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961163
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MOROCC_1
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961164
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MOROCC_1
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961165
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_MOLE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961166
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_MIYABI_NINGYO
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961167
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MINOROUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961168
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MINOROUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961169
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MINOROUS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961170
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_MINERAL
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961171
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_MIMING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961172
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MIMIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961173
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MIMIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961174
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_METALLER
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961175
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_METALING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961176
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_METALING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961177
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MERMAN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961178
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MENBLATT
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961179
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MEDUSA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961180
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_MARTIN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961181
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_MARIONETTE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961182
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MARIN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961183
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MARDUK
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961184
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MANTIS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961185
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_MANDRAGORA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961186
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_MANANANGGAL
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961187
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_MAJORUROS
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961188
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_MAGNOLIA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961189
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_MAGMARING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961190
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_LUNATIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961091
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_LUNATIC
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961192
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_LUDE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961193
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_LUCIOLA_VESPA
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961194
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_LOLI_RURI
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961195
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_LIVE_PEACH_TREE
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961196
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_LITTLE_PORING
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961197
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_LITTLE_FATUM
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961198
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_LI_ME_MANG_RYANG
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961199
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C1_LES
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961200
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C2_LEIB_OLMAI
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961201
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C3_LEAF_CAT
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961202
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C4_L_WHIKEBAIN
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961203
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
     AllowAutoFeed: true
-  - Mob: GEFFEN_MAGE_3_1
+  - Mob: C5_L_EREMES
     CaptureRate : 1000
-    EggItem: item_961004
+    EggItem: item_961204
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_GRAN_PAPILIA
+    CaptureRate : 1000
+    EggItem: item_961205
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_SILVA_PAPILIA
+    CaptureRate : 1000
+    EggItem: item_961206
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_VERPORTE_H
+    CaptureRate : 1000
+    EggItem: item_961207
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_VERPORTA
+    CaptureRate : 1000
+    EggItem: item_961208
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_G
+    CaptureRate : 1000
+    EggItem: item_961209
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_V
+    CaptureRate : 1000
+    EggItem: item_961210
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_B
+    CaptureRate : 1000
+    EggItem: item_961211
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_Y
+    CaptureRate : 1000
+    EggItem: item_961212
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_R
+    CaptureRate : 1000
+    EggItem: item_961213
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_PITAYA_BOSS
+    CaptureRate : 1000
+    EggItem: item_961214
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_G
+    CaptureRate : 1000
+    EggItem: item_961215
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_V
+    CaptureRate : 1000
+    EggItem: item_961216
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_B
+    CaptureRate : 1000
+    EggItem: item_961217
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_Y
+    CaptureRate : 1000
+    EggItem: item_961218
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_R
+    CaptureRate : 1000
+    EggItem: item_961219
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PITAYA_BOSS
+    CaptureRate : 1000
+    EggItem: item_961220
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BATH_MERMAID
+    CaptureRate : 1000
+    EggItem: item_961221
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PIRANHA
+    CaptureRate : 1000
+    EggItem: item_961222
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_SWORD_FISH
+    CaptureRate : 1000
+    EggItem: item_961223
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_MARC
+    CaptureRate : 1000
+    EggItem: item_961224
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_PHEN
+    CaptureRate : 1000
+    EggItem: item_961225
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_SWEETY
+    CaptureRate : 1000
+    EggItem: item_961226
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_OMEGA_CLEANER_NG
+    CaptureRate : 1000
+    EggItem: item_961227
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_OMEGA_CLEANER
+    CaptureRate : 1000
+    EggItem: item_961228
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_GUARDS_NG
+    CaptureRate : 1000
+    EggItem: item_961229
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_GUARDS
+    CaptureRate : 1000
+    EggItem: item_961230
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_ITEMKEEPER
+    CaptureRate : 1000
+    EggItem: item_961231
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_BATHS_B
+    CaptureRate : 1000
+    EggItem: item_961232
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_BATHS_A
+    CaptureRate : 1000
+    EggItem: item_961233
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_CLEANER_B
+    CaptureRate : 1000
+    EggItem: item_961234
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_CLEANER_A
+    CaptureRate : 1000
+    EggItem: item_961235
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_BETA_SCISSORE_NG_H
+    CaptureRate : 1000
+    EggItem: item_961236
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_BETA_SCISSORE_NG
+    CaptureRate : 1000
+    EggItem: item_961237
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_BASIC_NG
+    CaptureRate : 1000
+    EggItem: item_961238
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_BETA_BASIC
+    CaptureRate : 1000
+    EggItem: item_961239
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: EP17_2_ALPHA_MASTER
+    CaptureRate : 1000
+    EggItem: item_961240
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ALNOLDI_EX_H
+    CaptureRate : 1000
+    EggItem: item_961241
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ALNOLDI_EX
+    CaptureRate : 1000
+    EggItem: item_961242
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_DRY_RAFFLESIA_H
+    CaptureRate : 1000
+    EggItem: item_961243
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_DRY_RAFFLESIA
+    CaptureRate : 1000
+    EggItem: item_961244
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_REDPEPPER_H
+    CaptureRate : 1000
+    EggItem: item_961245
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_REDPEPPER
+    CaptureRate : 1000
+    EggItem: item_961246
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: BONE_DETALE
+    CaptureRate : 1000
+    EggItem: item_961247
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: BONE_ACIDUS
+    CaptureRate : 1000
+    EggItem: item_961248
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: BONE_FERUS
+    CaptureRate : 1000
+    EggItem: item_961249
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ACIDUS_S
+    CaptureRate : 1000
+    EggItem: item_961250
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ACIDUS_B
+    CaptureRate : 1000
+    EggItem: item_961251
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: TREASURE_MIMIC
+    CaptureRate : 1000
+    EggItem: item_961252
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: FERUS_P
+    CaptureRate : 1000
+    EggItem: item_961253
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: INGRID
+    CaptureRate : 1000
+    EggItem: item_961254
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: REGINLEIF
+    CaptureRate : 1000
+    EggItem: item_961255
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: PLASMA_SPT
+    CaptureRate : 1000
+    EggItem: item_961256
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: PLASMA_ARCH
+    CaptureRate : 1000
+    EggItem: item_961257
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: HOLY_SKOGUL
+    CaptureRate : 1000
+    EggItem: item_961258
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: HOLY_FRUS
+    CaptureRate : 1000
+    EggItem: item_961259
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ANGELGOLT2
+    CaptureRate : 1000
+    EggItem: item_961260
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ANGELGOLT
+    CaptureRate : 1000
+    EggItem: item_961261
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ABYSSMAN
+    CaptureRate : 1000
+    EggItem: item_961262
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: PORCELLIO_W
+    CaptureRate : 1000
+    EggItem: item_961263
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: JUNGOLIANT
+    CaptureRate : 1000
+    EggItem: item_961264
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: JEWEL
+    CaptureRate : 1000
+    EggItem: item_961265
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: JEWELIANT
+    CaptureRate : 1000
+    EggItem: item_961266
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MINERAL_P
+    CaptureRate : 1000
+    EggItem: item_961267
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MINERAL_W
+    CaptureRate : 1000
+    EggItem: item_961268
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MINERAL_R
+    CaptureRate : 1000
+    EggItem: item_961269
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MINERAL_G
+    CaptureRate : 1000
+    EggItem: item_961270
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: TOXIOUS
+    CaptureRate : 1000
+    EggItem: item_961271
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: POISONOUS
+    CaptureRate : 1000
+    EggItem: item_961272
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_RAY_ARCHER_G
+    CaptureRate : 1000
+    EggItem: item_961273
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_KHALITZBURG_G
+    CaptureRate : 1000
+    EggItem: item_961274
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_WHITEKNIGHT_G
+    CaptureRate : 1000
+    EggItem: item_961275
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_MANHOLE4
+    CaptureRate : 1000
+    EggItem: item_961276
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_THORN
+    CaptureRate : 1000
+    EggItem: item_961277
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_GHOUL
+    CaptureRate : 1000
+    EggItem: item_961278
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_ZOMBIE
+    CaptureRate : 1000
+    EggItem: item_961279
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_RAYDRIC_ARCHER
+    CaptureRate : 1000
+    EggItem: item_961280
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_RAYDRIC
+    CaptureRate : 1000
+    EggItem: item_961281
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_KHALITZBURG
+    CaptureRate : 1000
+    EggItem: item_961282
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_CORRUPTION_ROOT
+    CaptureRate : 1000
+    EggItem: item_961283
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_WHITEKNIGHT
+    CaptureRate : 1000
+    EggItem: item_961284
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_AMDARAIS
+    CaptureRate : 1000
+    EggItem: item_961285
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_C_HEMEL
+    CaptureRate : 1000
+    EggItem: item_961286
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: HIDDEN_MOB8
+    CaptureRate : 1000
+    EggItem: item_961287
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_M_SCIENCE
+    CaptureRate : 1000
+    EggItem: item_961288
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_LGTGUARD
+    CaptureRate : 1000
+    EggItem: item_961289
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_LGTHIGHGUARD
+    CaptureRate : 1000
+    EggItem: item_961290
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_ARMAIA
+    CaptureRate : 1000
+    EggItem: item_961291
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_EREND
+    CaptureRate : 1000
+    EggItem: item_961292
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_YGNIZEM
+    CaptureRate : 1000
+    EggItem: item_961293
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: MD_ED_B_YGNIZEM
+    CaptureRate : 1000
+    EggItem: item_961284
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: G_INGRID
+    CaptureRate : 1000
+    EggItem: item_961295
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: G_REGINLEIF
+    CaptureRate : 1000
+    EggItem: item_961296
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_STEM_WORM
+    CaptureRate : 1000
+    EggItem: item_961297
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_POPORING
+    CaptureRate : 1000
+    EggItem: item_961298
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_KILLER_MANTIS
+    CaptureRate : 1000
+    EggItem: item_961299
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_GHOSTRING
+    CaptureRate : 1000
+    EggItem: item_961300
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_MANTIS
+    CaptureRate : 1000
+    EggItem: item_961301
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_HUNTER_FLY
+    CaptureRate : 1000
+    EggItem: item_961302
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_SIDE_WINDER
+    CaptureRate : 1000
+    EggItem: item_961303
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_BAPHOMET_J
+    CaptureRate : 1000
+    EggItem: item_961304
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+  - Mob: ILL_CECILIA
+    CaptureRate : 1000
+    EggItem: item_961305
     FoodItem: Luxurious_Pet_Food
     Fullness: 2
     IntimacyFed: 50
