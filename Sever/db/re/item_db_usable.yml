@@ -12317,7 +12317,8 @@ Body:
     Trade:
       NoDrop: true
     Script: |
-      itemskill "PR_ASPERSIO",5;
+      atcommand "@useskill 68 5 " + strcharinfo(0);
+      atcommand "@delitem 12928 1";
   - Id: 12929
     AegisName: Pet_Egg_Scroll_Box3
     Name: ¯»¬õ¿ßÂà³J½c¤l

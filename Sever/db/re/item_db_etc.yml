@@ -71993,6 +71993,24 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
+  - Id: 2000138
+    AegisName: item_2000138
+    Name: 毀滅風暴
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"WH_GALESTORM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"WH_GALESTORM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"WH_GALESTORM",-750;
+      bonus2 bSkillAtk,"WH_GALESTORM",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
   - Id: 2110001
     AegisName: Card_Coin_
     Name: 高級卡片硬幣

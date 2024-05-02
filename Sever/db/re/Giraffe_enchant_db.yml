@@ -24290,6 +24290,11 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
+          - Item: item_2000138
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
       - Slot: 2
         Materials:
           - Material: Nyangvine_Fruit
@@ -25935,6 +25940,11 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000137
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000138
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
@@ -30474,6 +30484,11 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
+          - Item: item_2000138
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
       - Slot: 2
         Materials:
           - Material: Nyangvine_Fruit
@@ -30547,6 +30562,11 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000005
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000138
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
