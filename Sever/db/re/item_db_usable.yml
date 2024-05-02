@@ -50158,3 +50158,9 @@ Body:
       NoMail: true
     Script: |
       mercenary_create 20994,259200000;
+  - Id: 970001
+    AegisName: C_Armor_Reform_All
+    Name: 防具改造綜合箱
+    Type: DelayConsume
+    Script: |
+      item_reform();

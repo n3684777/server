@@ -3419,48 +3419,6 @@ Body:
         ChangeRefine: -5
   - Item: C_Armor_Reform_1
     BaseItems:
-      - BaseItem: maypay_04
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Zelunium
-           Amount: 999
-         - Material: Pitaya_Boss_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Seppay_05
-        ChangeRefine: -5
-      - BaseItem: maypay_03
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Bio_Test_Fragment
-           Amount: 999
-         - Material: Sweety_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Seppay_04
-        ChangeRefine: -5
-      - BaseItem: maypay_02
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Bio_Reseearch_Docu
-           Amount: 999
-         - Material: EL_A17T_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Seppay_03
-        ChangeRefine: -5
       - BaseItem: maypay_01
         MinimumRefine: 9
         CardsAllowed: true
@@ -3486,38 +3444,6 @@ Body:
          - Material: Ymir_Heart_P_TW
            Amount: 2
         ResultItem: Astraea_Cape_LT
-        ChangeRefine: -5
-      - BaseItem: Feather_Shield
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: item_940047
-           Amount: 200
-         - Material: item_940042
-           Amount: 200
-         - Material: item_940044
-           Amount: 200
-         - Material: Angeling_Card
-           Amount: 100
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Feather_Shield_LT_TW
-        ChangeRefine: -5
-      - BaseItem: maypay_05 # 潛能激發冒險帽
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: item_940042
-           Amount: 200
-         - Material: item_940036
-           Amount: 200
-         - Material: item_940005
-           Amount: 200
-         - Material: Fenrir_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Seppay_06
         ChangeRefine: -5
       - BaseItem: Astraea_Shoes
         MinimumRefine: 9
@@ -3618,50 +3544,6 @@ Body:
          - Material: Ymir_Heart_TW
            Amount: 3
         ResultItem: Devil_Flame_Manteau_LT
-        ChangeRefine: -5
-      - BaseItem: Temporal_Armor_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Timeoverload_Power_TW
-           Amount: 10
-         - Material: M_Dimension_Essence
-           Amount: 40
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Temporal_Armor_TW_LT
-        ChangeRefine: -5
-      - BaseItem: Temporal_Cape_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Temporal_Crystal
-           Amount: 999
-         - Material: Jewel_Of_Time_Ore
-           Amount: 200
-         - Material: Timeoverload_Power_TW
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Temporal_Cape_TW_LT
-        ChangeRefine: -5
-      - BaseItem: Temporal_Boots_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Spell_Of_Time
-           Amount: 150
-         - Material: Timeoverload_Power_TW
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Temporal_Boots_LT_TW
         ChangeRefine: -5
       - BaseItem: Thanos_Helm_1
         MinimumRefine: 9
@@ -6206,62 +6088,6 @@ Body:
         ResultItem: Fatalist_LT
   - Item: C_Armor_Reform_3
     BaseItems:
-      - BaseItem: aegis_490262 # 堅定信仰魔戒
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 200
-         - Material: Kiel_Card_
-           Amount: 3
-         - Material: item_940048
-           Amount: 200
-         - Material: Money_1E
-           Amount: 20
-        ResultItem: item_2100000
-        ChangeRefine: -1
-      - BaseItem: aegis_490269 # 樞機之光
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 200
-         - Material: Fallen_Bishop_Card_
-           Amount: 9
-         - Material: item_940048
-           Amount: 200
-         - Material: Money_1E
-           Amount: 20
-        ResultItem: item_2100001
-        ChangeRefine: -1
-      - BaseItem: aegis_490263 # 皇軍圖騰戒
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 200
-         - Material: Incant_Samurai_Card_ # 900042
-           Amount: 9
-         - Material: item_940048
-           Amount: 200
-         - Material: Money_1E
-           Amount: 20
-        ResultItem: item_2100002
-        ChangeRefine: -1
-      - BaseItem: aegis_490284 # 風鷹狙殺戒
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 200
-         - Material: Polluted_Spi_Q_Card_
-           Amount: 9
-         - Material: item_940048
-           Amount: 200
-         - Material: Money_1E
-           Amount: 20
-        ResultItem: item_2100003
-        ChangeRefine: -1
       - BaseItem: Wine_Shoes
         MinimumRefine: 9
         CardsAllowed: true
@@ -6275,20 +6101,6 @@ Body:
          - Material: Red_Magic_Key_TW
            Amount: 1
         ResultItem: Wine_Shoes_LT
-        ChangeRefine: -1
-      - BaseItem: Fake_Alloy_Pot
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 150
-         - Material: Fancy_Fairy_Wing
-           Amount: 300
-         - Material: Red_Pepper_H_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Fake_Alloy_Pot_LT
         ChangeRefine: -1
       - BaseItem: Garnet_Pendant_TW
         CardsAllowed: true
@@ -6348,32 +6160,6 @@ Body:
          - Material: M_Dimension_Essence
            Amount: 1
         ResultItem: Temporal_Ring_TW_LT
-      - BaseItem: Magic_Circle_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 150
-         - Material: Miguel_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Magic_Circle_TW_LT
-      - BaseItem: Magic_Star_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 150
-         - Material: EP17_1_EVT02
-           Amount: 999
-         - Material: Miguel_Card
-           Amount: 3
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Magic_Star_TW_LT
       - BaseItem: SurviveOrb_K
         CardsAllowed: false
         Materials:
@@ -7472,3 +7258,221 @@ Body:
           - Material: BarMealTicket
             Amount: 500
         ResultItem: Temple_M_Ring
+  - Item: C_Armor_Reform_All # 防具改造綜合箱
+    BaseItems:
+      - BaseItem: aegis_490262 # 堅定信仰魔戒
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Kiel_Card_
+           Amount: 3
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100000
+        ChangeRefine: -1
+      - BaseItem: aegis_490269 # 樞機之光
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Fallen_Bishop_Card_
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100001
+        ChangeRefine: -1
+      - BaseItem: aegis_490263 # 皇軍圖騰戒
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Incant_Samurai_Card_ # 900042
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100002
+        ChangeRefine: -1
+      - BaseItem: aegis_490284 # 風鷹狙殺戒
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Polluted_Spi_Q_Card_
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100003
+        ChangeRefine: 0
+      - BaseItem: Feather_Shield
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: item_940047
+           Amount: 200
+         - Material: item_940042
+           Amount: 200
+         - Material: item_940044
+           Amount: 200
+         - Material: Angeling_Card
+           Amount: 100
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Feather_Shield_LT_TW
+        ChangeRefine: 0
+      - BaseItem: maypay_05 # 潛能激發冒險帽
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: item_940042
+           Amount: 200
+         - Material: item_940036
+           Amount: 200
+         - Material: item_940005
+           Amount: 200
+         - Material: Fenrir_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Seppay_06
+        ChangeRefine: 0
+      - BaseItem: maypay_04
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Zelunium
+           Amount: 999
+         - Material: Pitaya_Boss_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Seppay_05
+        ChangeRefine: 0
+      - BaseItem: maypay_03
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Bio_Test_Fragment
+           Amount: 999
+         - Material: Sweety_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Seppay_04
+        ChangeRefine: 0
+      - BaseItem: maypay_02
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Bio_Reseearch_Docu
+           Amount: 999
+         - Material: EL_A17T_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Seppay_03
+        ChangeRefine: 0
+      - BaseItem: Fake_Alloy_Pot
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 150
+         - Material: Fancy_Fairy_Wing
+           Amount: 300
+         - Material: Red_Pepper_H_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Fake_Alloy_Pot_LT
+        ChangeRefine: 0
+      - BaseItem: Magic_Circle_TW
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 100
+         - Material: EP17_1_EVT39
+           Amount: 150
+         - Material: Miguel_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Magic_Circle_TW_LT
+        ChangeRefine: 0
+      - BaseItem: Magic_Star_TW
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 100
+         - Material: EP17_1_EVT39
+           Amount: 150
+         - Material: EP17_1_EVT02
+           Amount: 999
+         - Material: Miguel_Card
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Magic_Star_TW_LT
+        ChangeRefine: 0
+      - BaseItem: Temporal_Armor_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Timeoverload_Power_TW
+           Amount: 10
+         - Material: M_Dimension_Essence
+           Amount: 40
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Temporal_Armor_TW_LT
+        ChangeRefine: 0
+      - BaseItem: Temporal_Cape_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Temporal_Crystal
+           Amount: 999
+         - Material: Jewel_Of_Time_Ore
+           Amount: 200
+         - Material: Timeoverload_Power_TW
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Temporal_Cape_TW_LT
+        ChangeRefine: 0
+      - BaseItem: Temporal_Boots_TW
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Spell_Of_Time
+           Amount: 150
+         - Material: Timeoverload_Power_TW
+           Amount: 3
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Temporal_Boots_LT_TW
+        ChangeRefine: 0

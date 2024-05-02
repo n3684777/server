@@ -9,7 +9,7 @@ uttycty,120,167,5	script	稀有材料回收人員	10126,{
 	mes "^0088FF"+strcharinfo(0)+"^000000您好，很高興為您服務。";
     mes "有不要的東西要回收嗎?";
 	next;
-	switch(select("回收卡片:回收超高級精煉槌:回收封印超時空頭冠:離開")){
+	switch(select("回收卡片:回收超高級精煉槌:回收封印超時空頭冠:回收改造箱:離開")){
 	case 1:
 	cleararray @inventorylist_id[0],0,@inventorylist_id; 
 	getinventorylist(getcharid(0));
@@ -232,7 +232,83 @@ uttycty,120,167,5	script	稀有材料回收人員	10126,{
 	case 4:
 	  close;
 	  }
-	  case 4:
+
+
+
+
+
+	case 4:
+	cleararray @inventorylist_id[0],0,@inventorylist_id; 
+	getinventorylist(getcharid(0));
+    for (.@i = 0; .@i < getarraysize(@inventorylist_id); .@i++) {
+		if(@inventorylist_id[.@i] == 100694 || @inventorylist_id[.@i] == 100695 || @inventorylist_id[.@i] == 100786 ){
+          .@cardlist[getarraysize(.@cardlist)] = @inventorylist_id[.@i];        
+        }
+    }
+	for (.@i = 0; .@i < getarraysize(.@cardlist); .@i++){
+        .@menu$[.@i] = "[" + .@cardlist[.@i] + "] - " + getitemname(.@cardlist[.@i]);
+    }
+    if (getarraysize(.@menu$) == 0) {
+        close2; 
+        message strcharinfo(0), "您的背包內沒有任何改造箱.";
+        end;
+    }
+	mes "[改造箱回收]";
+	mes "每個改造箱可兌換綜合改造箱，";
+	mes "您想怎麼回收?";
+    .@choose = select(implode(.@menu$, ":"))-1;
+	next;
+	mes "[改造箱回收]";
+    mes "要回收 ^0088FF" + getitemname(.@cardlist[.@choose]) + " ^000000嗎?";
+
+	next;
+	switch(select("相同改造箱全部回收:指定改造箱回收數量:離開")){
+	case 1:
+	callfunc "checkOKOK";
+	set cttag,0;
+	set cmtag,0;
+	set cltag,0;
+
+	set .@count,countitem(.@cardlist[.@choose]);
+	delitem .@cardlist[.@choose],.@count;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == 100694 ){cttag = 1;break;}
+			if(.@cardlist[.@choose] == 100695 ){cmtag = 1;break;}
+			if(.@cardlist[.@choose] == 100786 ){cltag = 1;break;}
+
+		}
+		if(cttag == 1){getitem 970001,.@count;}
+		if(cmtag == 1){getitem 970001,.@count;}
+		if(cltag == 1){getitem 970001,.@count;}
+
+	close; 
+	case 2:
+	input .@card_quantity;
+	 if (! .@card_quantity) {
+        close;
+    }
+    .@card_quantity = min(.@card_quantity, countitem(.@cardlist[.@choose])); 
+	callfunc "checkOKOK";
+	next;
+	delitem .@cardlist[.@choose], .@card_quantity;
+		for( .@i = 0 ; .@i<getarraysize(.@mvpcard) ; .@i++)
+		{
+			if(.@cardlist[.@choose] == 100694 ){cttag = 1;break;}
+			if(.@cardlist[.@choose] == 100695 ){cmtag = 1;break;}
+			if(.@cardlist[.@choose] == 100786 ){cltag = 1;break;}
+
+		}
+		if(cttag == 1){getitem 970001,.@card_quantity;}
+		if(cmtag == 1){getitem 970001,.@card_quantity;}
+		if(cltag == 1){getitem 970001,.@card_quantity;}
+
+	close;
+	case 4:
+	  close;
+	  }
+
+	  case 5:
 	  close;
 	  
 	}	

@@ -53,15 +53,20 @@ OnInit:
 //    sellitemcurrency(6909,15);
 //    endsellitem();  
     //防具
-    sellitem(100694, 0, -1);
-	sellitemcurrency(6417,10);
-    sellitemcurrency(6909,5);
-    endsellitem();  
-    sellitem(100695, 0, -1);
-	sellitemcurrency(6417,15);
-    sellitemcurrency(6909,10);
-    endsellitem();  
-    sellitem(100786, 0, -1);
+//    sellitem(100694, 0, -1);
+//	sellitemcurrency(6417,10);
+//    sellitemcurrency(6909,5);
+//    endsellitem();  
+//    sellitem(100695, 0, -1);
+//	sellitemcurrency(6417,15);
+//    sellitemcurrency(6909,10);
+//    endsellitem();  
+//    sellitem(100786, 0, -1);
+//	sellitemcurrency(6417,30);
+//    sellitemcurrency(6909,15);
+//    endsellitem();  
+
+    sellitem(970001, 0, -1); // 防具改造綜合箱
 	sellitemcurrency(6417,30);
     sellitemcurrency(6909,15);
     endsellitem();  
