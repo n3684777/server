@@ -7316,6 +7316,34 @@ Body:
            Amount: 20
         ResultItem: item_2100003
         ChangeRefine: 0
+      - BaseItem: aegis_490238 # ¶W®ÉªÅÄ_¥Û¤M¤bÁå
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Incant_Samurai_Card_
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: aegis_490259 # Å]¤O¸T©G§Ù«ü
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Apocalips_H_Card_
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100005
+        ChangeRefine: 0
       - BaseItem: Feather_Shield
         MinimumRefine: 9
         CardsAllowed: true

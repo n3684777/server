@@ -157917,6 +157917,7 @@ Body:
     Locations:
       Both_Accessory: true
     ArmorLevel: 1
+    Refineable: true
     EquipLevelMin: 100
     Script: |
       .@skill = getskilllv("GC_CROSSIMPACT") + getskilllv("GC_ROLLINGCUTTER") + getskilllv("GC_CROSSRIPPERSLASHER") + getskilllv("GC_COUNTERSLASH");
@@ -158081,6 +158082,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bDelayrate,-5;
       bonus bMatkRate,5;
@@ -181239,6 +181241,8 @@ Body:
     Range: 5
     Slots: 1
     Jobs:
+      Archer: true
+      BardDancer: true
       Rogue: true
       Hunter: true
     Classes:
@@ -187593,6 +187597,103 @@ Body:
             bonus bCrt,3; 
             bonus bFixedCastrate,-300;
             bonus bLongAtkRate,10;
+              }
+            }
+        }
+      }
+  - Id: 2100004
+    AegisName: item_2100004
+    Name: 超時空寶石刀刃鍊-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bCritical,10; 
+      bonus bShortAtkRate,20;
+      bonus bCrt,5;
+      bonus bPow,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bPAtk,5;
+      bonus bPAtkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bPAtk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bShortAtkRate,(.@r/2)*10; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+            bonus bCrt,3; 
+            bonus bPow,3;
+            bonus bFixedCastrate,-300;
+            bonus bShortAtkRate,10;
+              }
+            }
+        }
+      }
+  - Id: 2100005
+    AegisName: item_2100005
+    Name: 魔力禁咒戒指-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bFixedCastrate,-500;
+      bonus bMatkRate,20;
+      bonus bSpl,10;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bSMatk,5;
+      bonus bSMatkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bSMatk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus2 bMagicAtkEle,Ele_All,(.@r/2)*10; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+            bonus bSpl,5;
+                    bonus bMatkRate,10;
+              bonus bFixedCastrate,-500;
               }
             }
         }

@@ -13441,6 +13441,8 @@ Body:
       - Item: item_2100001 # 2100001
       - Item: item_2100002 # 2100002
       - Item: item_2100003 # 2100003
+      - Item: item_2100004 # 2100004
+      - Item: item_2100005 # 2100005
       - Item: aegis_490263 # 490263
       - Item: aegis_490284 # 490284
       - Item: aegis_490260 # 490260
