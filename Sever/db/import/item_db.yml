@@ -22764,7 +22764,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,961507);
+      atcommand "@makeegg " + rand(960000,961709);
   - Id: 960000
     AegisName: item_960000
     Name: 莎拉寵物蛋
@@ -30305,329 +30305,1014 @@ Body:
     Name: 憤怒蓋俄斯提寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961508
+    AegisName: item_961508
+    Name: 菁英大腳熊寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961509
+    AegisName: item_961509
+    Name: 憤怒巫婆寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961510
+    AegisName: item_961510
+    Name: 狡猾愛爾蘭女妖首領寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961511
+    AegisName: item_961511
+    Name: 迅捷惡耗女妖寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961512
+    AegisName: item_961512
+    Name: 雄壯巴拿斯帕堤寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961513
+    AegisName: item_961513
+    Name: 菁英風靈龜寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961514
+    AegisName: item_961514
+    Name: 憤怒艾斯蜘蛛寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961515
+    AegisName: item_961515
+    Name: 狡猾艾吉歐蜈蚣寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961516
+    AegisName: item_961516
+    Name: 迅捷艾吉歐蜈蚣寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961517
+    AegisName: item_961517
+    Name: 雄壯捲甲蟲寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961518
+    AegisName: item_961518
+    Name: 菁英捲甲蟲寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961519
+    AegisName: item_961519
+    Name: 憤怒阿修羅機械戰士寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961520
+    AegisName: item_961520
+    Name: 狡猾鹿角甲蟲寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961521
+    AegisName: item_961521
+    Name: 迅捷古靈精怪書寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961522
+    AegisName: item_961522
+    Name: 雄壯古靈精怪書寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961523
+    AegisName: item_961523
+    Name: 憤怒虎蜥人寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961524
+    AegisName: item_961524
+    Name: 狡猾瘋狂螳螂寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961525
+    AegisName: item_961525
+    Name: 迅捷瘋狂螳螂寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961526
+    AegisName: item_961526
+    Name: 雄壯白蟻寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961527
+    AegisName: item_961527
+    Name: 菁英狂暴邪惡箱寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961528
+    AegisName: item_961528
+    Name: 憤怒毒蛇寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961529
+    AegisName: item_961529
+    Name: 狡猾蝸牛寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961530
+    AegisName: item_961530
+    Name: 迅捷泰坦魔芋花寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961531
+    AegisName: item_961531
+    Name: 雄壯鱷魚人寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961532
+    AegisName: item_961532
+    Name: 菁英愛麗莎寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961533
+    AegisName: item_961533
+    Name: 憤怒愛麗瑟寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961534
+    AegisName: item_961534
+    Name: 狡猾鐘怪寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961535
+    AegisName: item_961535
+    Name: 迅捷阿卡布寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961536
+    AegisName: item_961536
+    Name: 雄壯灰俄希托斯寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961537
+    AegisName: item_961537
+    Name: 菁英灰俄希托斯寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961538
+    AegisName: item_961538
+    Name: 大笨鐘寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961539
+    AegisName: item_961539
+    Name: 大鐘怪寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961540
+    AegisName: item_961540
+    Name: 時光守護者寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961541
+    AegisName: item_961541
+    Name: 惡靈朽魔寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961542
+    AegisName: item_961542
+    Name: 邪靈長老寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961543
+    AegisName: item_961543
+    Name: 鴞裊子爵寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961544
+    AegisName: item_961544
+    Name: 鴞裊侯爵寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961545
+    AegisName: item_961545
+    Name: 魔神影子寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961546
+    AegisName: item_961546
+    Name: 異變的王子寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961547
+    AegisName: item_961547
+    Name: 驚悚的裝飾樹寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961548
+    AegisName: item_961548
+    Name: 安東尼奧寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961549
+    AegisName: item_961549
+    Name: 禮物包裝負責人寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961550
+    AegisName: item_961550
+    Name: 玩具工廠警報兵寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961551
+    AegisName: item_961551
+    Name: 包裝好的箱子寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961552
+    AegisName: item_961552
+    Name: 工廠警衛的亡靈寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961553
+    AegisName: item_961553
+    Name: 未領到禮物的幽靈寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961554
+    AegisName: item_961554
+    Name: 尚未包裝的玩偶寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961555
+    AegisName: item_961555
+    Name: 被釋放的玩具熊寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961556
+    AegisName: item_961556
+    Name: 席琳基米寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961557
+    AegisName: item_961557
+    Name: 火焰禿鷹寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961558
+    AegisName: item_961558
+    Name: 火焰泥人寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961559
+    AegisName: item_961559
+    Name: 火焰傘蜥寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961560
+    AegisName: item_961560
+    Name: 火焰巨石怪寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961561
+    AegisName: item_961561
+    Name: 火坑寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961562
+    AegisName: item_961562
+    Name: 火蟻寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961563
+    AegisName: item_961563
+    Name: 索妮雅寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961564
+    AegisName: item_961564
+    Name: 死神 安庫寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961565
+    AegisName: item_961565
+    Name: 烈火夢羅克門徒寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961566
+    AegisName: item_961566
+    Name: 貝爾寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961567
+    AegisName: item_961567
+    Name: 覺醒的貝爾寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961568
+    AegisName: item_961568
+    Name: 時間支配者寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961344
-    AegisName: item_961344
-    Name: 憤怒綠腐屍寵物蛋
+  - Id: 961569
+    AegisName: item_961569
+    Name: 斐揚傭兵寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961570
+    AegisName: item_961570
+    Name: 重生的半魔神寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961571
+    AegisName: item_961571
+    Name: 冰霜蜘蛛寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 961004
-    AegisName: item_961004
-    Name: 吉分小偷寵物蛋
+  - Id: 961572
+    AegisName: item_961572
+    Name: 瘋狂卡薩寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961573
+    AegisName: item_961573
+    Name: 改造的顏良寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961574
+    AegisName: item_961574
+    Name: 強化邪骸士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961575
+    AegisName: item_961575
+    Name: 強化邪骸戰士寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961576
+    AegisName: item_961576
+    Name: 強化邪骸弓箭手寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961577
+    AegisName: item_961577
+    Name: 觀察者寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961578
+    AegisName: item_961578
+    Name: 塔皮寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961579
+    AegisName: item_961579
+    Name: 冰狼寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961580
+    AegisName: item_961580
+    Name: 邪惡摩艾寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961581
+    AegisName: item_961581
+    Name: 獸人戰士長寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961582
+    AegisName: item_961582
+    Name: 泥人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961583
+    AegisName: item_961583
+    Name: 狂暴木乃伊寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961584
+    AegisName: item_961584
+    Name: 大腳熊寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961585
+    AegisName: item_961585
+    Name: 蝙蝠弓箭手寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961586
+    AegisName: item_961586
+    Name: 塔奧群卡寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961587
+    AegisName: item_961587
+    Name: 俄塞里斯寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961588
+    AegisName: item_961588
+    Name: 乖戾的凱美拉寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961589
+    AegisName: item_961589
+    Name: 乖戾的藍瘋兔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961590
+    AegisName: item_961590
+    Name: 乖戾的蝗蟲之王寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961591
+    AegisName: item_961591
+    Name: 乖戾的流浪之狼寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961592
+    AegisName: item_961592
+    Name: 乖戾的蛙王寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961593
+    AegisName: item_961593
+    Name: 森林妖姬寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961594
+    AegisName: item_961594
+    Name: 邪惡摩艾寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961595
+    AegisName: item_961595
+    Name: 三葉蟲寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961596
+    AegisName: item_961596
+    Name: 邪骸食人魚寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961597
+    AegisName: item_961597
+    Name: 鱷魚人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961598
+    AegisName: item_961598
+    Name: 海豹寶寶寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961599
+    AegisName: item_961599
+    Name: 啤酒企鵝寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961600
+    AegisName: item_961600
+    Name: 海獺寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961601
+    AegisName: item_961601
+    Name: 綠變色龍寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961602
+    AegisName: item_961602
+    Name: 刺尾蜻蜓寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961603
+    AegisName: item_961603
+    Name: 奈吉鳥寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961604
+    AegisName: item_961604
+    Name: 重金屬蝗蟲寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961605
+    AegisName: item_961605
+    Name: 巨石怪寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961606
+    AegisName: item_961606
+    Name: 摩卡寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961607
+    AegisName: item_961607
+    Name: 毒蛇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961608
+    AegisName: item_961608
+    Name: 森靈寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961609
+    AegisName: item_961609
+    Name: 蜜糖土波利寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961610
+    AegisName: item_961610
+    Name: 溝鼠寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961611
+    AegisName: item_961611
+    Name: 沼澤捲甲蟲寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961612
+    AegisName: item_961612
+    Name: 狂熱的冒險家寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961613
+    AegisName: item_961613
+    Name: 真理超魔導師寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961614
+    AegisName: item_961614
+    Name: 含冤的士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961615
+    AegisName: item_961615
+    Name: 憤恨的鬼女寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961616
+    AegisName: item_961616
+    Name: 憤恨的妖道寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961617
+    AegisName: item_961617
+    Name: 憤恨的殭屍寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961618
+    AegisName: item_961618
+    Name: 憤怒的九尾狐寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961619
+    AegisName: item_961619
+    Name: 憤怒的月夜貓寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961620
+    AegisName: item_961620
+    Name: 憤怒的德古拉寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961621
+    AegisName: item_961621
+    Name: 暴走的波蜜寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961622
+    AegisName: item_961622
+    Name: 毒血蘑菇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961623
+    AegisName: item_961623
+    Name: 幻影夢魘寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961624
+    AegisName: item_961624
+    Name: 活死人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961625
+    AegisName: item_961625
+    Name: 活死人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961626
+    AegisName: item_961626
+    Name: 活死人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961627
+    AegisName: item_961627
+    Name: 幻影紅蝙蝠寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961628
+    AegisName: item_961628
+    Name: 精英彎刀草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961629
+    AegisName: item_961629
+    Name: 精英左輪手槍草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961630
+    AegisName: item_961630
+    Name: 精英散彈槍草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961631
+    AegisName: item_961631
+    Name: 砍刀牛仔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961632
+    AegisName: item_961632
+    Name: 視察牛仔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961633
+    AegisName: item_961633
+    Name: 巡邏牛仔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961634
+    AegisName: item_961634
+    Name: 海葵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961635
+    AegisName: item_961635
+    Name: 紫色礦石寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961636
+    AegisName: item_961636
+    Name: 蜘蛛戰車寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961637
+    AegisName: item_961637
+    Name: 瓦斯特寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961638
+    AegisName: item_961638
+    Name: 郊狼寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961639
+    AegisName: item_961639
+    Name: 彎刀草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961640
+    AegisName: item_961640
+    Name: 左輪手槍草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961641
+    AegisName: item_961641
+    Name: 散彈槍草寇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961642
+    AegisName: item_961642
+    Name: Deleter 2寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961643
+    AegisName: item_961643
+    Name: Diabolic2寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961644
+    AegisName: item_961644
+    Name: 紅蝙蝠寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961645
+    AegisName: item_961645
+    Name: 亡者君王寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961646
+    AegisName: item_961646
+    Name: Little Isis寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961647
+    AegisName: item_961647
+    Name: 劇毒凱美拉寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961648
+    AegisName: item_961648
+    Name: 物質型凱美拉寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961649
+    AegisName: item_961649
+    Name: 人類型凱美拉寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961650
+    AegisName: item_961650
+    Name: 埃琳娜 博克巴寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961651
+    AegisName: item_961651
+    Name: 砸毀手槍的怨靈寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961652
+    AegisName: item_961652
+    Name: 闇●邪心獵人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961653
+    AegisName: item_961653
+    Name: 邪心獵人保鑣寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961654
+    AegisName: item_961654
+    Name: 強化邪心獵人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961655
+    AegisName: item_961655
+    Name: Plasma B寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961656
+    AegisName: item_961656
+    Name: Plasma G寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961657
+    AegisName: item_961657
+    Name: Plasma R寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961658
+    AegisName: item_961658
+    Name: 特殊警衛寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961659
+    AegisName: item_961659
+    Name: 小可愛寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961660
+    AegisName: item_961660
+    Name: Casual Pope寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961661
+    AegisName: item_961661
+    Name: Official Pope寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961662
+    AegisName: item_961662
+    Name: 憤怒的水晶龍幻影寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961663
+    AegisName: item_961663
+    Name: 憤怒的冰巨人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961664
+    AegisName: item_961664
+    Name: 憤怒的儒閔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961665
+    AegisName: item_961665
+    Name: 冰封之心寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961666
+    AegisName: item_961666
+    Name: 憤怒的大神官寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961667
+    AegisName: item_961667
+    Name: 憤努狗寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961668
+    AegisName: item_961668
+    Name: 憤怒的信徒寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961669
+    AegisName: item_961669
+    Name: 憤怒的信徒寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961670
+    AegisName: item_961670
+    Name: 珠寶蜘蛛寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961671
+    AegisName: item_961671
+    Name: 憤怒的冰巨人寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961672
+    AegisName: item_961672
+    Name: 憤怒的儒閔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961673
+    AegisName: item_961673
+    Name: 冰封之心寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961674
+    AegisName: item_961674
+    Name: 憤怒的大神官寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961675
+    AegisName: item_961675
+    Name: 果實食人蜘蛛寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961676
+    AegisName: item_961676
+    Name: 叢林曼陀羅魔花寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961677
+    AegisName: item_961677
+    Name: 古代鐘乳巨石怪寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961678
+    AegisName: item_961678
+    Name: 特種巴西利斯克寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961679
+    AegisName: item_961679
+    Name: 突擊巴西利斯克寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961680
+    AegisName: item_961680
+    Name: 偵查巴西利斯克寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961681
+    AegisName: item_961681
+    Name: 變形魔菇寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961682
+    AegisName: item_961682
+    Name: 狩獵沙漠之狼寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961683
+    AegisName: item_961683
+    Name: 甜心羅達蛙寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961684
+    AegisName: item_961684
+    Name: 狂野蜂兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961685
+    AegisName: item_961685
+    Name: 草地綠棉蟲寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961686
+    AegisName: item_961686
+    Name: 群葉瘋兔寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961687
+    AegisName: item_961687
+    Name: 蛋黃波利寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961688
+    AegisName: item_961688
+    Name: Shining Poring寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961689
+    AegisName: item_961689
+    Name: 不死軍團軍官寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961690
+    AegisName: item_961690
+    Name: 粉碎犁士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961691
+    AegisName: item_961691
+    Name: 憎惡鐮刀士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961692
+    AegisName: item_961692
+    Name: 剁肉刀士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961693
+    AegisName: item_961693
+    Name: 畢尤的詛咒士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961694
+    AegisName: item_961694
+    Name: 歐內斯特 斯特凡˙傑克寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961695
+    AegisName: item_961695
+    Name: 不死影子寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961696
+    AegisName: item_961696
+    Name: 不死腐屍詛咒士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961697
+    AegisName: item_961697
+    Name: 不死腐屍突擊兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961698
+    AegisName: item_961698
+    Name: 空中要塞鑰匙保管者寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961699
+    AegisName: item_961699
+    Name: 不死要塞軍團士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961700
+    AegisName: item_961700
+    Name: 不死腐屍士兵寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961701
+    AegisName: item_961701
+    Name: 不朽風魔巫師寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961702
+    AegisName: item_961702
+    Name: 不朽受詛咒騎士寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961703
+    AegisName: item_961703
+    Name: 歐內斯特 斯特凡˙傑克寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961704
+    AegisName: item_961704
+    Name: 碟仙惡靈寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961705
+    AegisName: item_961705
+    Name: 可疑的入侵者寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961706
+    AegisName: item_961706
+    Name: 殭屍衛士寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961707
+    AegisName: item_961707
+    Name: 不死軍團寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961708
+    AegisName: item_961708
+    Name: 畢尤寵物蛋
+    Type: Petegg
+    Buy: 20
+  - Id: 961709
+    AegisName: item_961709
+    Name: 強化顏良寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961344
