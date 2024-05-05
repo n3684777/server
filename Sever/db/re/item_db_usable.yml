@@ -4843,6 +4843,9 @@ Body:
     Type: Usable
     Buy: 10000
     Weight: 0
+    Delay:
+      Duration: 3000
+      Status: Reuse_Limit_F
     Flags:
       BuyingStore: true
       DeadBranch: true
