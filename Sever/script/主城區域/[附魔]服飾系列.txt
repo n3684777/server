@@ -915,7 +915,7 @@ mes "選擇一個你想要的特效附魔";
 menu "閃耀效果",TT,"魔幻羽毛特效石",T2;
 
 T2:
-set .@item,29225; //效果
+set .@item,310322; //效果
 set .@item2,1000365; //材料
 set .inp_tmp$,"魔幻";
 goto KI;

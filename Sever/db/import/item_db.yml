@@ -22764,7 +22764,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,961753);
+      atcommand "@makeegg " + rand(960000,961731);
   - Id: 960000
     AegisName: item_960000
     Name: 莎拉寵物蛋
@@ -30697,112 +30697,112 @@ Body:
     Buy: 20
   - Id: 961586
     AegisName: item_961586
-    Name: 塔奧群卡寵物蛋
+    Name: 覺醒顏良寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961587
     AegisName: item_961587
-    Name: 俄塞里斯寵物蛋
+    Name: 覺醒墮落根莖寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961588
     AegisName: item_961588
-    Name: 乖戾的凱美拉寵物蛋
+    Name: 挖掘機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961589
     AegisName: item_961589
-    Name: 乖戾的藍瘋兔寵物蛋
+    Name: 巡邏機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961590
     AegisName: item_961590
-    Name: 乖戾的蝗蟲之王寵物蛋
+    Name: 修繕機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961591
     AegisName: item_961591
-    Name: 乖戾的流浪之狼寵物蛋
+    Name: 勘查機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961592
     AegisName: item_961592
-    Name: 乖戾的蛙王寵物蛋
+    Name: 滅亡祈福會信徒寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961593
     AegisName: item_961593
-    Name: 森林妖姬寵物蛋
+    Name: 炸彈寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961594
     AegisName: item_961594
-    Name: 邪惡摩艾寵物蛋
+    Name: 暴走的船長裴陸寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961595
     AegisName: item_961595
-    Name: 三葉蟲寵物蛋
+    Name: 古代中型基勘特斯寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961596
     AegisName: item_961596
-    Name: 邪骸食人魚寵物蛋
+    Name: 古代的基勘特斯寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961597
     AegisName: item_961597
-    Name: 鱷魚人寵物蛋
+    Name: 準大型基勘特斯寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961598
     AegisName: item_961598
-    Name: 海豹寶寶寵物蛋
+    Name: 惡臭腐屍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961599
     AegisName: item_961599
-    Name: 啤酒企鵝寵物蛋
+    Name: 惡臭綠腐屍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961600
     AegisName: item_961600
-    Name: 海獺寵物蛋
+    Name: T_W_O寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961601
     AegisName: item_961601
-    Name: 綠變色龍寵物蛋
+    Name: 系統訊息寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961602
     AegisName: item_961602
-    Name: 刺尾蜻蜓寵物蛋
+    Name: DR815寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961603
     AegisName: item_961603
-    Name: 奈吉鳥寵物蛋
+    Name: GC109寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961604
     AegisName: item_961604
-    Name: 重金屬蝗蟲寵物蛋
+    Name: 廢鐵機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961605
     AegisName: item_961605
-    Name: 巨石怪寵物蛋
+    Name: 探索機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961606
     AegisName: item_961606
-    Name: 摩卡寵物蛋
+    Name: 修復機器人寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961607
     AegisName: item_961607
-    Name: 毒蛇寵物蛋
+    Name: 綠惡靈之霧寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 961608
@@ -31423,115 +31423,5 @@ Body:
   - Id: 961731
     AegisName: item_961731
     Name: 覺醒毀滅的第2騎士團長寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961732
-    AegisName: item_961732
-    Name: 覺醒顏良寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961733
-    AegisName: item_961733
-    Name: 覺醒墮落根莖寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961734
-    AegisName: item_961734
-    Name: 挖掘機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961735
-    AegisName: item_961735
-    Name: 巡邏機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961736
-    AegisName: item_961736
-    Name: 修繕機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961737
-    AegisName: item_961737
-    Name: 勘查機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961738
-    AegisName: item_961738
-    Name: 滅亡祈福會信徒寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961739
-    AegisName: item_961739
-    Name: 炸彈寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961740
-    AegisName: item_961740
-    Name: 暴走的船長裴陸寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961741
-    AegisName: item_961741
-    Name: 古代中型基勘特斯寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961742
-    AegisName: item_961742
-    Name: 古代的基勘特斯寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961743
-    AegisName: item_961743
-    Name: 準大型基勘特斯寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961744
-    AegisName: item_961744
-    Name: 惡臭腐屍寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961745
-    AegisName: item_961745
-    Name: 惡臭綠腐屍寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961746
-    AegisName: item_961746
-    Name: T_W_O寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961747
-    AegisName: item_961747
-    Name: 系統訊息寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961748
-    AegisName: item_961748
-    Name: DR815寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961749
-    AegisName: item_961749
-    Name: GC109寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961750
-    AegisName: item_961750
-    Name: 廢鐵機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961751
-    AegisName: item_961751
-    Name: 探索機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961752
-    AegisName: item_961752
-    Name: 修復機器人寵物蛋
-    Type: Petegg
-    Buy: 20
-  - Id: 961753
-    AegisName: item_961753
-    Name: 綠惡靈之霧寵物蛋
     Type: Petegg
     Buy: 20

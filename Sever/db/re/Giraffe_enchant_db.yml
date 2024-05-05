@@ -21019,6 +21019,7 @@ Body:
   - Id: 10001
     TargetItems:
       Temporal_Boots_LT_TW: true
+      Temporal_Boots_LT: true
     Reset:
       Chance: 100000
       Materials:

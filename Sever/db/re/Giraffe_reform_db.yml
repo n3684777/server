@@ -7504,3 +7504,87 @@ Body:
            Amount: 1
         ResultItem: Temporal_Boots_LT_TW
         ChangeRefine: 0
+      - BaseItem: Twin_Dragonic_Ring # 雙頭龍紋指環
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Ifrit_Card_ # 900041
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: WM_Job_Pick # 不和諧破音pick
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Incant_Samurai_Card_
+           Amount: 9
+         - Material: Phreeoni_Card_ # 900040
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: aegis_490257 # 妖力結晶指環
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Amon_Ra_Card_ # 900048
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: aegis_490258 # 時空結晶神偷耳環
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Baphomet_Card_ # 900028
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: aegis_490260 # 陳舊推車造型吊飾
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Gloom_Under_Night_Card_ # 900067
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0
+      - BaseItem: aegis_490281 # 裝甲驅動齒輪
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Gloom_Under_Night_Card_ # 900084
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100004
+        ChangeRefine: 0

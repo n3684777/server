@@ -10,6 +10,8 @@ OnInit:
 	
 	sellitem(910132,100000000,-1);      //1E支票
 
+	sellitem(12103,500000,-1);      //血跡樹枝
+
 	sellitem(910132,0,-1);      //1E支票
 	sellitemcurrency(969,50);
     endsellitem();

@@ -157760,6 +157760,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Trade:
       NoDrop: true
     Script: |
@@ -157834,6 +157835,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Trade:
       NoDrop: true
     Script: |
@@ -158056,6 +158058,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bDelayrate,-5;
       bonus bMatkRate,5;
@@ -158069,6 +158072,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bAspdRate,5;
       bonus bLongAtkRate,5;
@@ -158096,6 +158100,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       .@skill = getskilllv("GN_CART_TORNADO") + getskilllv("GN_REMODELING_CART") + getskilllv("GN_CARTBOOST");
       bonus bDelayrate,-5;
@@ -158357,6 +158362,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       .@skill = getskilllv("NC_ACCELERATION") + getskilllv("NC_STEALTHFIELD") + getskilllv("NC_NEUTRALBARRIER") + getskilllv("NC_SHAPESHIFT") + getskilllv("NC_SELFDESTRUCTION");
       bonus bDelayrate,-5;
