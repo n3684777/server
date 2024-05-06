@@ -111425,6 +111425,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111448,6 +111449,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111471,6 +111473,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111494,6 +111497,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111517,6 +111521,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111540,6 +111545,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111563,6 +111569,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111586,6 +111593,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111609,6 +111617,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111632,6 +111641,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111655,6 +111665,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111678,6 +111689,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111701,6 +111713,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111724,6 +111737,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 482
+    DamageTaken: 1
     Modes:
       NoRandomWalk: true
       TeleportBlock: true
@@ -111746,6 +111760,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111769,6 +111784,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111792,6 +111808,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111815,6 +111832,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111838,6 +111856,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111861,6 +111880,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111884,6 +111904,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111907,6 +111928,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true
@@ -111930,6 +111952,7 @@ Body:
     AttackDelay: 1672
     AttackMotion: 672
     DamageMotion: 480
+    DamageTaken: 1
     Class: Boss
     Modes:
       NoRandomWalk: true

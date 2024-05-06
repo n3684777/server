@@ -40890,6 +40890,7 @@ Body:
     TargetType: Attack
     DamageFlags:
       Splash: true
+      Critical: true
       IgnoreDefense: true
     Flags:
       AllowOnMado: true
