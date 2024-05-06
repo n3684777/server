@@ -7516,7 +7516,7 @@ Body:
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100006
         ChangeRefine: 0
       - BaseItem: WM_Job_Pick # 不和諧破音pick
         MinimumRefine: 9
@@ -7524,13 +7524,13 @@ Body:
         Materials:
          - Material: Armor_Stone_3
            Amount: 200
-         - Material: Incant_Samurai_Card_
-           Amount: 9
          - Material: Phreeoni_Card_ # 900040
+           Amount: 9
+         - Material: item_940048
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100007
         ChangeRefine: 0
       - BaseItem: aegis_490257 # 妖力結晶指環
         MinimumRefine: 9
@@ -7544,7 +7544,7 @@ Body:
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100008
         ChangeRefine: 0
       - BaseItem: aegis_490258 # 時空結晶神偷耳環
         MinimumRefine: 9
@@ -7558,7 +7558,7 @@ Body:
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100009
         ChangeRefine: 0
       - BaseItem: aegis_490260 # 陳舊推車造型吊飾
         MinimumRefine: 9
@@ -7572,7 +7572,7 @@ Body:
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100010
         ChangeRefine: 0
       - BaseItem: aegis_490281 # 裝甲驅動齒輪
         MinimumRefine: 9
@@ -7580,11 +7580,11 @@ Body:
         Materials:
          - Material: Armor_Stone_3
            Amount: 200
-         - Material: Gloom_Under_Night_Card_ # 900084
+         - Material: Orc_Load_Card_ # 900084
            Amount: 9
          - Material: item_940048
            Amount: 200
          - Material: Money_1E
            Amount: 20
-        ResultItem: item_2100004
+        ResultItem: item_2100011
         ChangeRefine: 0

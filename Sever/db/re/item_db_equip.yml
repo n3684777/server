@@ -187704,6 +187704,339 @@ Body:
             }
         }
       }
+  - Id: 2100006
+    AegisName: item_2100006
+    Name: 雙頭龍紋指環-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bMaxHPrate,10;
+      bonus bLongAtkRate,10;
+      bonus bShortAtkRate,10;
+      bonus bCrt,5;
+      bonus bPow,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bPAtk,5;
+      bonus bPAtkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bPAtk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bLongAtkRate,(.@r/2)*2; bonus bShortAtkRate,(.@r/2)*2;bonus bMaxHPrate,(.@r/2)*7; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+            bonus bCrt,3; 
+            bonus bPow,3;
+            bonus bFixedCastrate,-300;
+            bonus bLongAtkRate,5;
+            bonus bShortAtkRate,5;
+              }
+            }
+        }
+      }
+  - Id: 2100007
+    AegisName: item_2100007
+    Name: 不和諧破音pick-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bAspdRate,5; 
+
+      bonus bMatkRate,10; 
+      bonus bLongAtkRate,10;
+      bonus bCon,5;
+      bonus bSpl,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bSMatk,3;
+      bonus bSMatkRate,3;
+      bonus bPAtk,3;
+      bonus bPAtkRate,3;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bSMatk,(.@r/2)*4;
+        bonus bPAtk,(.@r/2)*4;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bLongAtkRate,(.@r/2)*5;bonus2 bMagicAtkEle,Ele_All,(.@r/2)*5; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,13; 
+            bonus2 bAddClass,Class_All,13;
+            bonus2 bAddSize,Size_All,13;
+            bonus2 bAddRace,RC_All,13;
+            bonus2 bMagicAtkEle,Ele_All,13; 
+            bonus2 bMagicAddClass,Class_All,13;
+            bonus2 bMagicAddSize,Size_All,13;
+            bonus2 bMagicAddRace,RC_All,13;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,13; 
+            bonus2 bAddClass,Class_All,13;
+            bonus2 bAddSize,Size_All,13;
+            bonus2 bAddRace,RC_All,13;
+            bonus2 bMagicAtkEle,Ele_All,13; 
+            bonus2 bMagicAddClass,Class_All,13;
+            bonus2 bMagicAddSize,Size_All,13;
+            bonus2 bMagicAddRace,RC_All,13;
+            bonus bCon,3;
+            bonus bSpl,3; 
+            bonus bFixedCastrate,-300;
+            bonus bLongAtkRate,5;
+            bonus bMatkRate,5; 
+              }
+            }
+        }
+      }
+  - Id: 2100008
+    AegisName: item_2100008
+    Name: 妖力結晶指環-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bFixedCastrate,-500;
+      bonus bMatkRate,20;
+      bonus bSpl,10;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bSMatk,5;
+      bonus bSMatkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bSMatk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus2 bMagicAtkEle,Ele_All,(.@r/2)*10; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bMagicAtkEle,Ele_All,25; 
+            bonus2 bMagicAddClass,Class_All,25;
+            bonus2 bMagicAddSize,Size_All,25;
+            bonus2 bMagicAddRace,RC_All,25;
+            bonus bSpl,5;
+                    bonus bMatkRate,10;
+              bonus bFixedCastrate,-500;
+              }
+            }
+        }
+      }
+  - Id: 2100009
+    AegisName: item_2100009
+    Name: 時空結晶神偷耳環-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bAspdRate,5; 
+
+      
+      bonus bShortAtkRate,7;
+      bonus bLongAtkRate,7;
+      bonus bMatkRate,7; 
+      bonus bCon,5;
+      bonus bSpl,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bSMatk,3;
+      bonus bSMatkRate,3;
+      bonus bPAtk,3;
+      bonus bPAtkRate,3;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bSMatk,(.@r/2)*4;
+        bonus bPAtk,(.@r/2)*4;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bLongAtkRate,(.@r/2)*5;bonus2 bMagicAtkEle,Ele_All,(.@r/2)*5; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,13; 
+            bonus2 bAddClass,Class_All,13;
+            bonus2 bAddSize,Size_All,13;
+            bonus2 bAddRace,RC_All,13;
+            bonus2 bMagicAtkEle,Ele_All,13; 
+            bonus2 bMagicAddClass,Class_All,13;
+            bonus2 bMagicAddSize,Size_All,13;
+            bonus2 bMagicAddRace,RC_All,13;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,13; 
+            bonus2 bAddClass,Class_All,13;
+            bonus2 bAddSize,Size_All,13;
+            bonus2 bAddRace,RC_All,13;
+            bonus2 bMagicAtkEle,Ele_All,13; 
+            bonus2 bMagicAddClass,Class_All,13;
+            bonus2 bMagicAddSize,Size_All,13;
+            bonus2 bMagicAddRace,RC_All,13;
+            bonus bCon,3;
+            bonus bSpl,3; 
+            bonus bFixedCastrate,-300;
+            bonus bShortAtkRate,3;
+            bonus bLongAtkRate,3;
+            bonus bMatkRate,3; 
+              }
+            }
+        }
+      }
+  - Id: 2100010
+    AegisName: item_2100010
+    Name: 陳舊推車造型吊飾-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bCritical,10;
+
+      bonus bLongAtkRate,10;
+      bonus bShortAtkRate,10;
+      bonus bPow,5;
+      bonus bCon,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bPAtk,5;
+      bonus bPAtkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bPAtk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bLongAtkRate,(.@r/2)*5; bonus bShortAtkRate,(.@r/2)*5; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+            bonus bPow,3; 
+            bonus bCon,3;
+            bonus bFixedCastrate,-300;
+            bonus bLongAtkRate,5;
+            bonus bShortAtkRate,5;
+              }
+            }
+        }
+      }
+  - Id: 2100011
+    AegisName: item_2100011
+    Name: 裝甲驅動齒輪-LT
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    Refineable: true
+    EquipLevelMin: 100
+    Gradable: true
+    Script: |
+      .@g = getenchantgrade();
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus bPAtk,5; 
+      bonus bSMatk,5; 
+      bonus bAspdRate,5; 
+      bonus bShortAtkRate,20;
+      bonus bCon,5;
+      bonus bPow,5; 
+      bonus bFixedCastrate,-200;
+      if(.@g >= ENCHANTGRADE_D){
+      bonus bPAtk,5;
+      bonus bPAtkRate,5;
+        if(.@g >= ENCHANTGRADE_C){
+        bonus bPAtk,(.@r/2)*8;
+          if(.@g >= ENCHANTGRADE_B){
+          bonus bAllStats,10;
+          bonus bAllTraitStats,10;
+            if(.@r >= 15){ bonus bShortAtkRate,(.@r/2)*10; }
+          }
+            if(.@g >= ENCHANTGRADE_A){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+              if(.@r >= 20){
+            bonus2 bAddEle,Ele_All,25; 
+            bonus2 bAddClass,Class_All,25;
+            bonus2 bAddSize,Size_All,25;
+            bonus2 bAddRace,RC_All,25;
+            bonus bCon,3; 
+            bonus bPow,3;
+            bonus bFixedCastrate,-300;
+            bonus bShortAtkRate,10;
+              }
+            }
+        }
+      }
   - Id: 2110000
     AegisName: item_2110000
     Name: 影子掉寶率倍增神盾
