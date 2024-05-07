@@ -343,9 +343,12 @@ niflheim,0,0	monster	"--ja--"	27200,3,5000,0,0
 
 prt_maze02,93,168,0,0	boss_monster	²V¨P¤Ú­·¯S	20520,1,900000,600000,0
 abbey02,149,173,0,0	boss_monster	¼Z¸¨¤j¯«©x	1871,1,900000,600000,0
-abbey03,119,159,0,0	boss_monster	¨©¹p³Ç	1873,1,900000,600000,0
-xmas_dun02,209,229,0,0	boss_monster	¦BÃzÃM¤h	1251,1,900000,600000,0
+abbey03,119,159,0,0	boss_monster	¨©¹p³Ç	1874,1,900000,600000,0
+xmas_dun02,131,215,0,0	boss_monster	¦BÃzÃM¤h	1251,1,900000,600000,0
 gef_dun01,187,116,0,0	boss_monster	¼w¥j©Ô¨kÀï	1389,1,900000,600000,0
 gef_dun02,56,225,0,0	boss_monster	¦ºÆF	1046,1,900000,600000,0
 tur_dun04,100,110,0,0	boss_monster	¯QÀt±N­x	1312,1,900000,600000,0
+odin_tem03,201,268,0,0	boss_monster	¤Ú°ò¤O	1751,1,900000,600000,0
+iz_dun05,142,88,0,0	boss_monster	Å]°­¤j¯Q¸é	2202,1,900000,600000,0
+jupe_core,140,22,0,0	boss_monster	¨©«äªi	1685,1,900000,600000,0
 
