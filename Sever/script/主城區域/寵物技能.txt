@@ -60,6 +60,61 @@ function	script	petskill	{
       petskillattack "CG_ARROWVULCAN",10,5,10;
       break;
 
+    // ¾Ô¦º¤ý
+    case 961069:
+      petskillsupport "WL_RECOGNIZEDSPELL",5,30,100,100;
+      petskillattack "NPC_COMET",5,5,10;
+      break;
+    case 961070:
+      petskillsupport "MC_LOUD",1,30,100,100;
+      petskillattack "NC_AXETORNADO",5,5,10;
+      break;    
+    case 961071:
+      petskillsupport "RA_UNLIMIT",5,30,100,100;
+      petskillattack "NPC_ARROWSTORM",5,5,10;
+      break;
+    case 961072:
+      petskillsupport "AB_RENOVATIO",4,30,100,100;
+      petskillattack "AB_ADORAMUS",10,5,10;
+      break;
+    case 961073:
+      petskillsupport "GC_HALLUCINATIONWALK",5,30,100,100;
+      petskillattack "GC_DARKCROW",5,5,10;
+      break;
+    case 961074:
+      petskillsupport "RK_ENCHANTBLADE",10,30,100,100;
+      petskillattack "NPC_IGNITIONBREAK",5,5,10;
+      break;
+    case 961075:
+      petskillsupport "LG_SHIELDSPELL",3,30,100,100;
+      petskillattack "NPC_RAYOFGENESIS",10,5,10;
+      break;
+    case 961076:
+      petskillsupport "GN_BLOOD_SUCKER",5,30,100,100;
+      petskillattack "GN_SPORE_EXPLOSION",10,5,10;
+      break;
+    case 961077:
+      petskillsupport "SO_ELEMENTAL_SHIELD",5,30,100,100;
+      petskillattack "NPC_PSYCHIC_WAVE",10,5,10;
+      break;
+    case 961078:
+      petskillsupport "SR_POWERVELOCITY",1,30,100,100;
+      petskillattack "SR_HELLGATE",10,5,10;
+     break;
+    case 961079:
+      petskillsupport "SC_INVISIBILITY",5,30,100,100;
+      petskillattack "SC_FATALMENACE",10,5,10;
+      break;
+    case 961080:
+      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
+      petskillattack "WM_REVERBERATION",5,5,10;
+      break;
+    case 961081:
+      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
+      petskillattack "WM_SEVERE_RAINSTORM",5,5,10;
+      break;
+
+
 
     default:
       petskillsupport "WL_TELEKINESIS_INTENSE",5,30,100,100;
@@ -74,15 +129,16 @@ function	script	petstatus	{
     case 961111:
       break;
     default:
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {
-        bonus bLuk,3000;
-        bonus bCritical,1000;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {
-        bonus bLuk,2000;
-        bonus bCritical,1000;
-      }
+     // .@i = getpetinfo(PETINFO_INTIMATE);
+     // if (.@i >= PET_INTIMATE_LOYAL) {
+     //   bonus bLuk,3000;
+     //   bonus bCritical,1000;
+     // } else if (.@i >= PET_INTIMATE_CORDIAL) {
+     //   bonus bLuk,2000;
+     //   bonus bCritical,1000;
+     // }
+
+      bonus bAllStats,20; 
       break;
     }
 }

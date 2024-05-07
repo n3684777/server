@@ -2991,6 +2991,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960061;
+    Script: >
+      callfunc "petstatus",960061;
   - Mob: B_EREMES
     CaptureRate : 1000
     EggItem: item_960062
@@ -3001,6 +3003,8 @@ Body:
     AttackRate: 10000
     SupportScript: >
       callfunc "petskill",960062;
+    Script: >
+      callfunc "petstatus",960062;
   - Mob: B_HARWORD
     CaptureRate : 1000
     EggItem: item_960063
@@ -3010,6 +3014,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960063;
+    Script: >
+      callfunc "petstatus",960063;
   - Mob: B_MAGALETA
     CaptureRate : 1000
     EggItem: item_960064
@@ -3019,6 +3025,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960064;
+    Script: >
+      callfunc "petstatus",960064;
   - Mob: B_SHECIL
     CaptureRate : 1000
     EggItem: item_960065
@@ -3028,6 +3036,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960065;
+    Script: >
+      callfunc "petstatus",960065;
   - Mob: B_KATRINN
     CaptureRate : 1000
     EggItem: item_960066
@@ -3037,6 +3047,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960066;
+    Script: >
+      callfunc "petstatus",960066;
   - Mob: B_RANDEL
     CaptureRate : 1000
     EggItem: item_960067
@@ -3047,6 +3059,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960067;
+    Script: >
+      callfunc "petstatus",960067;
   - Mob: B_FLAMEL
     CaptureRate : 1000
     EggItem: item_960068
@@ -3057,6 +3071,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960068;
+    Script: >
+      callfunc "petstatus",960068;
   - Mob: B_CELIA
     CaptureRate : 1000
     EggItem: item_960069
@@ -3067,6 +3083,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960069;
+    Script: >
+      callfunc "petstatus",960069;
   - Mob: B_CHEN
     CaptureRate : 1000
     EggItem: item_960070
@@ -3077,6 +3095,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960070;
+    Script: >
+      callfunc "petstatus",960070;
   - Mob: B_GERTIE
     CaptureRate : 1000
     EggItem: item_960071
@@ -3087,6 +3107,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960071;
+    Script: >
+      callfunc "petstatus",960071;
   - Mob: B_ALPHOCCIO
     CaptureRate : 1000
     EggItem: item_960072
@@ -3097,6 +3119,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960072;
+    Script: >
+      callfunc "petstatus",960072;
   - Mob: B_TRENTINI
     CaptureRate : 1000
     EggItem: item_960073
@@ -3107,6 +3131,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960073;
+    Script: >
+      callfunc "petstatus",960073;
   - Mob: THIEF_BUG_EGG
     CaptureRate : 1000
     EggItem: item_960074
@@ -14068,8 +14094,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "WL_RECOGNIZEDSPELL",5,30,100,100;
-      petskillattack "NPC_COMET",5,5,10;
+      callfunc "petskill",961069;
+    Script: >
+      callfunc "petstatus",961069;
   - Mob: V_B_HARWORD
     CaptureRate : 1000
     EggItem: item_961070
@@ -14078,8 +14105,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "MC_LOUD",1,30,100,100;
-      petskillattack "NC_AXETORNADO",5,5,10;
+      callfunc "petskill",961070;
+    Script: >
+      callfunc "petstatus",961070;
   - Mob: V_B_SHECIL
     CaptureRate : 1000
     EggItem: item_961071
@@ -14088,8 +14116,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "RA_UNLIMIT",5,30,100,100;
-      petskillattack "NPC_ARROWSTORM",5,5,10;
+      callfunc "petskill",961071;
+    Script: >
+      callfunc "petstatus",961071;
   - Mob: V_B_MAGALETA
     CaptureRate : 1000
     EggItem: item_961072
@@ -14098,8 +14127,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "AB_RENOVATIO",4,30,100,100;
-      petskillattack "AB_ADORAMUS",10,5,10;
+      callfunc "petskill",961072;
+    Script: >
+      callfunc "petstatus",961072;
   - Mob: V_B_EREMES
     CaptureRate : 1000
     EggItem: item_961073
@@ -14108,8 +14138,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "GC_HALLUCINATIONWALK",5,30,100,100;
-      petskillattack "GC_DARKCROW",5,5,10;
+      callfunc "petskill",961073;
+    Script: >
+      callfunc "petstatus",961073;
   - Mob: V_B_SEYREN
     CaptureRate : 1000
     EggItem: item_961074
@@ -14118,8 +14149,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "RK_ENCHANTBLADE",10,30,100,100;
-      petskillattack "NPC_IGNITIONBREAK",5,5,10;
+      callfunc "petskill",961074;
+    Script: >
+      callfunc "petstatus",961074;
   - Mob: V_B_RANDEL
     CaptureRate : 1000
     EggItem: item_961075
@@ -14128,8 +14160,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "LG_SHIELDSPELL",3,30,100,100;
-      petskillattack "NPC_RAYOFGENESIS",10,5,10;
+      callfunc "petskill",961075;
+    Script: >
+      callfunc "petstatus",961075;
   - Mob: V_B_FLAMEL
     CaptureRate : 1000
     EggItem: item_961076
@@ -14138,8 +14171,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "GN_BLOOD_SUCKER",5,30,100,100;
-      petskillattack "GN_SPORE_EXPLOSION",10,5,10;
+      callfunc "petskill",961076;
+    Script: >
+      callfunc "petstatus",961076;
   - Mob: V_B_CELIA
     CaptureRate : 1000
     EggItem: item_961077
@@ -14148,8 +14182,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "SO_ELEMENTAL_SHIELD",5,30,100,100;
-      petskillattack "NPC_PSYCHIC_WAVE",10,5,10;
+      callfunc "petskill",961077;
+    Script: >
+      callfunc "petstatus",961077;
   - Mob: V_B_CHEN
     CaptureRate : 1000
     EggItem: item_961078
@@ -14158,8 +14193,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "SR_POWERVELOCITY",1,30,100,100;
-      petskillattack "SR_HELLGATE",10,5,10;
+      callfunc "petskill",961078;
+    Script: >
+      callfunc "petstatus",961078;
   - Mob: V_B_GERTIE
     CaptureRate : 1000
     EggItem: item_961079
@@ -14168,8 +14204,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "SC_INVISIBILITY",5,30,100,100;
-      petskillattack "SC_FATALMENACE",10,5,10;
+      callfunc "petskill",961079;
+    Script: >
+      callfunc "petstatus",961079;
   - Mob: V_B_ALPHOCCIO
     CaptureRate : 1000
     EggItem: item_961080
@@ -14178,8 +14215,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
-      petskillattack "WM_REVERBERATION",5,5,10;
+      callfunc "petskill",961080;
+    Script: >
+      callfunc "petstatus",961080;
   - Mob: V_B_TRENTINI
     CaptureRate : 1000
     EggItem: item_961081
@@ -14188,8 +14226,9 @@ Body:
     IntimacyFed: 50
     AllowAutoFeed: true
     SupportScript: >
-      petskillsupport "WM_FRIGG_SONG",5,30,100,100;
-      petskillattack "WM_SEVERE_RAINSTORM",5,5,10;
+      callfunc "petskill",961081;
+    Script: >
+      callfunc "petstatus",961081;
   - Mob: C1_SIROMA
     CaptureRate : 1000
     EggItem: item_961082

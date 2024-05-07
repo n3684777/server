@@ -1200,7 +1200,7 @@ function	script	Job_Rent	{
 	mes "[職業服務員]";
 	mes	"請選擇您想要租借的項目:";
 	next;
-	switch(select("坐騎、魔導機甲","獵鷹","手推車")){
+	switch(select("坐騎、魔導機甲","獵鷹","手推車/緊急治療")){
 		case 1:
 			if ( checkriding() ) {
 				goto Rent_Fail;
@@ -1264,6 +1264,7 @@ function	script	Job_Rent	{
 				skill "MC_PUSHCART",10,3;
 				skill "MC_CHANGECART",1,3;
 				skill "MC_CARTDECORATE",1,3;
+				skill "NV_FIRSTAID",1,3;
 				setcart;
 				goto Rent_Done;
 			}

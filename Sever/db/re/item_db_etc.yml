@@ -66151,12 +66151,6 @@ Body:
       bonus bSpl,100;
       bonus bCon,100;
       bonus bCrt,100;
-      bonus5 bAutoSpellWhenHit,"CD_COMPETENTIA",5,800,BF_WEAPON|BF_MAGIC,0;
-      bonus5 bAutoSpellWhenHit,"AB_RENOVATIO",5,800,BF_WEAPON|BF_MAGIC,0;
-      bonus5 bAutoSpellWhenHit,"CD_MEDIALE_VOTUM",5,800,BF_WEAPON|BF_MAGIC,0;
-      bonus5 bAutoSpellWhenHit,"BO_THE_WHOLE_PROTECTION",5,800,BF_WEAPON|BF_MAGIC,0;
-      bonus5 bAutoSpellWhenHit,"AL_CURE",1,800,BF_WEAPON|BF_MAGIC,0;
-      bonus5 bAutoSpellWhenHit,"AB_OFFERTORIUM",1,800,BF_WEAPON|BF_MAGIC,0;
   - Id: 900057
     AegisName: Q_Scaraba_Card_
     Name: 女王甲蟲卡片-改
