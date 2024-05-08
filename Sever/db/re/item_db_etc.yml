@@ -70517,7 +70517,7 @@ Body:
       bonus2 bSkillAtk,"MT_AXE_STOMP",10;
       }
       if(.@r >= 15){
-      bonus2 bSkillCooldown,"MT_AXE_STOMP",-35;
+      bonus2 bSkillCooldown,"MT_AXE_STOMP",-350;
       bonus2 bSkillAtk,"MT_AXE_STOMP",15;
       }
       if(.@r >= 20){
@@ -70535,7 +70535,7 @@ Body:
       bonus2 bSkillAtk,"MT_MIGHTY_SMASH",10;
       }
       if(.@r >= 15){
-      bonus2 bSkillCooldown,"MT_MIGHTY_SMASH",-15;
+      bonus2 bSkillCooldown,"MT_MIGHTY_SMASH",-150;
       bonus2 bSkillAtk,"MT_MIGHTY_SMASH",15;
       }
       if(.@r >= 20){
