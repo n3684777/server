@@ -121,6 +121,8 @@ Body:
       - Item: Temporal_M_Luk
       - Item: Temporal_Cape_TW
       - Item: Temporal_Cape_TW_LT
+      - Item: Temporal_Boots_TW # 22202
+      - Item: Temporal_Boots_LT_TW # 470183
   - Item: Frozen_Box_IL
     ResultRefineMinimum: 7
     ResultRefineMaximum: 10
@@ -13058,8 +13060,6 @@ Body:
       - Item: Temporal_Cape_TW_LT
       - Item: Temporal_Cape_TW
       - Item: Temporal_Armor_TW
-      - Item: Temporal_Boots_TW # 22202
-      - Item: Temporal_Boots_LT_TW # 470183
   - Item: Glacier_W_Refine
     ResultRefine: 9
     MaximumRefine: 8
