@@ -50147,6 +50147,13 @@ Body:
     Weight: 0
     Script: |
       atcommand "@killmonster";
+  - Id: 900504
+    AegisName: equip_ticket
+    Name: 鎧甲鞋子附魔使用券
+    Type: DelayConsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
   - Id: 970000
     AegisName: item_970000
     Name: 比克大魔王 召換書
@@ -50167,3 +50174,10 @@ Body:
     Type: DelayConsume
     Script: |
       item_reform();
+  - Id: 98000
+    AegisName: item_98000
+    Name: 不當人道館箱子
+    Type: Usable
+    Weight: 100
+    Script: |
+      callfunc "F_Gashapon", 98000;

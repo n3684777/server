@@ -29,17 +29,19 @@ OnInit:
 	sellitemcurrency(940052,200);
 	sellitemcurrency(4625,3);
     endsellitem();
-	sellitem(1001557,.@p*3,-1);      //超新星的祝福
-	sellitemcurrency(910132,999);
-	sellitemcurrency(1001174,999);
+	sellitem(1001557,0,-1);      //超新星的祝福
+	sellitemcurrency(940048,200);
+	sellitemcurrency(910132,20);
+	sellitemcurrency(910100,9);
     endsellitem();
 	sellitem(1001558,.@p*3,-1);      //魔神殿之息
 	sellitemcurrency(910132,999);
 	sellitemcurrency(1001174,999);
     endsellitem();
 	sellitem(1001573,.@p*3,-1);      //深紅魔術花瓣
-	sellitemcurrency(910132,999);
-	sellitemcurrency(1001174,999);
+	sellitemcurrency(940011,200);
+	sellitemcurrency(940012,200);
+	sellitemcurrency(4365,3);
     endsellitem();
 	sellitem(910134,0,-1);      //MVP點數(300點)
 	sellitemcurrency(910136,300);

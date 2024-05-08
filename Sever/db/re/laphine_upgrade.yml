@@ -13058,6 +13058,8 @@ Body:
       - Item: Temporal_Cape_TW_LT
       - Item: Temporal_Cape_TW
       - Item: Temporal_Armor_TW
+      - Item: Temporal_Boots_TW # 22202
+      - Item: Temporal_Boots_LT_TW # 470183
   - Item: Glacier_W_Refine
     ResultRefine: 9
     MaximumRefine: 8
@@ -13319,6 +13321,35 @@ Body:
     RandomOptionGroup: ACCESS_TICKET # 飾品頭飾附魔使用券
     CardsAllowed: true
     TargetItems:
+      - Item: Smoky_TransformHat # 19265
+      - Item: Smoky_TransformHat_LT # 400152
+      - Item: Whikebain_Ears_K # 19134
+      - Item: Whikebain_Ears_K_LT # 400153
+      - Item: Survive_Circlet_K # 19266
+      - Item: Survive_Circlet_K_LT # 400154
+      - Item: GoldFish_Hat # 19264
+      - Item: GoldFish_Hat_LT # 400155
+      - Item: Imp_Hat # 5658
+      - Item: Imp_Hat_LT # 400156
+      - Item: Whikebain_Ears # 5360
+      - Item: King_Tiger_Doll_Hat # 5497
+      - Item: King_Tiger_Doll_Hat_LT # 400245
+      - Item: Zaha_Doll_Hat # 5464
+      - Item: Baksojin_Hat_LT # 400246
+      - Item: Sagittarius_DiademK # 400061
+      - Item: Sagittarius_DiademK_LT # 400261
+      - Item: Scorpio_Diadem_K # 400059
+      - Item: Scorpio_Diadem_K_LT # 400262
+      - Item: Large_Sorcerer_Crown # 400054
+      - Item: Large_Sorcerer_Crown_LT # 400263
+      - Item: Stripe_Hat # 400049
+      - Item: Stripe_Hat_LT # 400264
+      - Item: Phantom_Cap # 400044
+      - Item: Phantom_Cap_LT # 400265
+      - Item: Ignis_CapK # 400022
+      - Item: Ignis_CapK_LT # 400266
+      - Item: Clock_Casket_RD # 400021
+      - Item: Clock_Casket_RD_LT # 400267
       - Item: Remorse_C_Crown # 400440
       - Item: Poenetentia_B_Crown # 400447
       - Item: Poenetentia_V_Crown # 400457
@@ -13480,8 +13511,37 @@ Body:
       - Item: aegis_490186 # 490186
       - Item: aegis_490187 # 490187
       - Item: aegis_490188 # 490188
-      
-      
-      
-      
-      
+  - Item: equip_ticket
+    RandomOptionGroup: ACCESS_TICKET # 鎧甲鞋子附魔使用券
+    CardsAllowed: true
+    TargetItems:
+      - Item: Tatenasi_Armor_ # 15137
+      - Item: Bloody_Dress # 450179
+      - Item: lunar_eclipse_Armor_ # 15374
+      - Item: Lunar_E_Armor_LT # 450263
+      - Item: Brynhild # 2383
+      - Item: Overwhelm_Str_Armor # 15278
+      - Item: Overwhelm_Int_Armor # 15279
+      - Item: Overwhelm_Vit_Armor # 15347
+      - Item: Overwhelm_Dex_Armor # 15354
+      - Item: Overwhelm_Agi_Armor # 15353
+      - Item: Overwhelm_Luk_Armor # 15346
+      - Item: Destroy_World_Boots # 470095
+      - Item: Corruption_Boots # 470129
+      - Item: Scorpio_Diadem_K # 470177
+      - Item: Leo_Shoes_J # 470187
+      - Item: EC_Boots_TW # 470098
+      - Item: Scrap_Remodel_Shoes_TW # 470120
+      - Item: Wine_Shoes # 470127
+      - Item: Wine_Shoes_LT # 470199
+      - Item: Agenda_Shoes_TW # 22222
+      - Item: Agenda_Boots_LT_TW # 470182
+      - Item: Oro_Shoes # 470029
+      - Item: Applause_Sandal_ # 22071
+      - Item: Astraea_Shoes # 22167
+      - Item: Astraea_Shoes_LT # 470205
+      - Item: Lapine_Pray_Shoes # 470086
+      - Item: Elemental_BootsK # 470033
+      - Item: Sleipnir # 2410
+      - Item: HalfBloodPrincess_Shoes # 470247
+      - Item: Beast_Leather_Shoes # 470122

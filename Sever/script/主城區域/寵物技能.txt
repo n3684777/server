@@ -114,19 +114,73 @@ function	script	petskill	{
       petskillattack "WM_SEVERE_RAINSTORM",5,5,10;
       break;
 
-
+// ¹ÚÆL¤ý
+    case 960835:
+      petskillsupport "SHC_POTENT_VENOM",10,30,100,100;
+      petskillattack "SHC_SAVAGE_IMPACT",10,5,10;
+      break;
+    case 960834:
+      petskillattack "CD_PNEUMATICUS_PROCELLA",10,5,10;
+      break;
+    case 960833:
+      petskillsupport "WH_CALAMITYGALE",1,30,100,100;
+      petskillattack "WH_GALESTORM",10,5,10;
+      break;
+    case 960832:
+      petskillsupport "ALL_FULL_THROTTLE",5,30,100,100;
+      petskillattack "MT_SPARK_BLASTER",10,5,10;
+      break;
+    case 960831:
+      petskillsupport "AG_CLIMAX",5,30,100,100;
+      petskillattack "AG_ASTRAL_STRIKE",10,5,10;
+      break;
+    case 960830:
+      petskillsupport "ALL_FULL_THROTTLE",5,30,100,100;
+      petskillattack "DK_DRAGONIC_AURA",10,5,10;
+      break;
+    case 960829:
+      petskillsupport "IG_ULTIMATE_SACRIFICE",5,30,100,100;
+      petskillattack "IG_GRAND_JUDGEMENT",10,5,10;
+      break;
+    case 960828:
+      petskillsupport "BO_WOODENWARRIOR",5,30,100,100;
+      petskillattack "BO_EXPLOSIVE_POWDER",5,5,10;
+      break;
+    case 960827:
+      petskillsupport "EM_SUMMON_ELEMENTAL_SERPENS",1,30,100,100;
+      petskillattack "EM_VENOM_SWAMP",5,5,10;
+      break;
+    case 960826:
+      petskillsupport "IQ_POWERFUL_FAITH",5,30,100,100;
+      petskillattack "IQ_EXPOSION_BLASTER",5,5,10;
+      break;
+    case 960825:
+      petskillsupport "ABC_ABYSS_SLAYER",10,30,100,100;
+      petskillattack "ABC_DEFT_STAB",5,5,10;
+      break;
+    case 960824:
+      petskillsupport "TR_MYSTIC_SYMPHONY",1,30,100,100;
+      petskillattack "TR_METALIC_FURY",5,5,10;
+      break;
+    case 960823:
+      petskillsupport "TR_MYSTIC_SYMPHONY",1,30,100,100;
+      petskillattack "TR_ROSEBLOSSOM",5,5,10;
+      break;
 
     default:
       petskillsupport "WL_TELEKINESIS_INTENSE",5,30,100,100;
       petskillattack "GC_CROSSIMPACT",5,5,10;
-    break;
-    }
+      break;
+      }
 }
 
 function	script	petstatus	{
     .@pet_id = getarg(0);
 	switch(.@pet_id) {
-    case 961111:
+    case 960834: // ¼Ï¾÷¥D±Ð¹ÚÆL¤ý
+      bonus bAllStats,20; 
+      skill "CD_COMPETENTIA",5;
+      bonus2 bSkillCooldown,"CD_COMPETENTIA",-60000;
       break;
     default:
      // .@i = getpetinfo(PETINFO_INTIMATE);

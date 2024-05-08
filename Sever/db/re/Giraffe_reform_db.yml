@@ -3417,364 +3417,8 @@ Body:
            Amount: 100
         ResultItem: Thanos_Knuckle_AD
         ChangeRefine: -5
-  - Item: C_Armor_Reform_1
-    BaseItems:
-      - BaseItem: maypay_01
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Seppay_07
-           Amount: 1
-         - Material: M_Dimension_Essence
-           Amount: 5
-        ResultItem: Seppay_02
-        ChangeRefine: -5
-      - BaseItem: Astrea_Cape
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Valhalla_Flower
-           Amount: 50
-         - Material: Phlogopite
-           Amount: 100
-         - Material: Ymir_Heart_P_TW
-           Amount: 2
-        ResultItem: Astraea_Cape_LT
-        ChangeRefine: -5
-      - BaseItem: Astraea_Shoes
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Valhalla_Flower
-           Amount: 30
-         - Material: Muscovite
-           Amount: 100
-         - Material: Ymir_Heart_P_TW
-           Amount: 2
-        ResultItem: Astraea_Shoes_LT
-        ChangeRefine: -5
-      - BaseItem: Bloody_Celine_Dress_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Bloody_Coin
-           Amount: 10000
-         - Material: XM_Celine_Kimi_Card
-           Amount: 1
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: B_Celine_D_LT_TW
-        ChangeRefine: -5
-      - BaseItem: Gothic_Heart_Wing_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Soft_Feather
-           Amount: 100
-         - Material: Rune_Of_Darkness
-           Amount: 100
-         - Material: Ymir_Heart_P_TW
-           Amount: 2
-        ResultItem: Gothic_HW_TW_LT
-        ChangeRefine: -5
-      - BaseItem: Red_Baby_Dragon_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Dragenergy_Red
-           Amount: 100
-         - Material: Drabone_S
-           Amount: 100
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Red_Baby_Dragon_LT
-        ChangeRefine: -5
-      - BaseItem: lunar_eclipse_Armor_
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Fang_Of_Garm
-           Amount: 100
-         - Material: Garm_Baby_Card
-           Amount: 10
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Lunar_E_Armor_LT
-        ChangeRefine: -5
-      - BaseItem: Agenda_Shoes_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Brigan
-           Amount: 150
-         - Material: Angel_Dream
-           Amount: 150
-         - Material: Ymir_Heart_TW
-           Amount: 1
-        ResultItem: Agenda_Boots_LT_TW
-        ChangeRefine: -5
-      - BaseItem: Devil_Flame_Manteau_TW
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 150
-         - Material: Zelunium
-           Amount: 1000
-         - Material: Scale_Of_Red_Dragon
-           Amount: 300
-         - Material: Sin_Fragment
-           Amount: 300
-         - Material: Ymir_Heart_TW
-           Amount: 3
-        ResultItem: Devil_Flame_Manteau_LT
-        ChangeRefine: -5
-      - BaseItem: Thanos_Helm_1
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Gray_Shard
-           Amount: 100
-        ResultItem: Thanos_Helm1_LT
-        ChangeRefine: -5
-      - BaseItem: Thanos_Helm_2
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Gray_Shard
-           Amount: 100
-        ResultItem: Thanos_Helm2_LT
-        ChangeRefine: -5
-      - BaseItem: Thanos_Helm_3
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Gray_Shard
-           Amount: 100
-        ResultItem: Thanos_Helm3_LT
-        ChangeRefine: -5
-      - BaseItem: Great_Hero_Boots
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Bio_Test_Fragment
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Bio_Reseearch_Docu
-           Amount: 50
-        ResultItem: Hero_Boots_LT
-        ChangeRefine: -5
-      - BaseItem: Smoky_TransformHat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Raccoon_Leaf
-           Amount: 150
-        ResultItem: Smoky_TransformHat_LT
-        ChangeRefine: -5
-      - BaseItem: Whikebain_Ears_K
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Black_Kitty_Doll
-           Amount: 50
-        ResultItem: Whikebain_Ears_K_LT
-        ChangeRefine: -5
-      - BaseItem: Survive_Circlet_K
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Soft_Silk_Cloth
-           Amount: 100
-        ResultItem: Survive_Circlet_K_LT
-        ChangeRefine: -5
-      - BaseItem: GoldFish_Hat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Shining_Scales
-           Amount: 150
-        ResultItem: GoldFish_Hat_LT
-        ChangeRefine: -5
-      - BaseItem: Imp_Hat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Hot_Hair
-           Amount: 150
-        ResultItem: Imp_Hat_LT
-        ChangeRefine: -5
-      - BaseItem: Thanos_Helm_4
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Gray_Shard
-           Amount: 100
-        ResultItem: Thanos_Helm4_LT
-        ChangeRefine: -5
-      - BaseItem: Whikebain_Ears
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Black_Kitty_Doll
-           Amount: 50
-        ResultItem: Whikebain_Ears_K_LT
-        ChangeRefine: -5
-      - BaseItem: Mad_Bunny_K_
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Soft_Feather
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Feather
-           Amount: 100
-        ResultItem: Mad_Bunny_K_LT
-        ChangeRefine: -5
-      - BaseItem: King_Tiger_Doll_Hat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Tiger_Footskin
-           Amount: 40
-        ResultItem: King_Tiger_Doll_Hat_LT
-        ChangeRefine: -5
-      - BaseItem: Zaha_Doll_Hat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Limpid_Celestial_Robe
-           Amount: 200
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: Soft_Silk_Cloth
-           Amount: 100
-        ResultItem: Baksojin_Hat_LT
-        ChangeRefine: -5
-      - BaseItem: Sagittarius_DiademK
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Sagittarius_DiademK_LT
-        ChangeRefine: -5
-      - BaseItem: Scorpio_Diadem_K
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Scorpio_Diadem_K_LT
-        ChangeRefine: -5
-      - BaseItem: Large_Sorcerer_Crown
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Large_Sorcerer_Crown_LT
-        ChangeRefine: -5
-      - BaseItem: Stripe_Hat
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Stripe_Hat_LT
-        ChangeRefine: -5
-      - BaseItem: Phantom_Cap
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Phantom_Cap_LT
-        ChangeRefine: -5
-      - BaseItem: Ignis_CapK
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Ignis_CapK_LT
-        ChangeRefine: -5
-      - BaseItem: Clock_Casket_RD
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: EP17_1_EVT02
-           Amount: 100
-         - Material: Armor_Stone_1
-           Amount: 100
-         - Material: EP17_1_EVT39
-           Amount: 20
-        ResultItem: Clock_Casket_RD_LT
-        ChangeRefine: -5
+#  - Item: C_Armor_Reform_1
+#   BaseItems:
 # - Item: Clock_Tower_W_Hammer
 #   BaseItems:
 #     - BaseItem: Precision_Bow
@@ -6086,88 +5730,8 @@ Body:
         ResultItem: Magic_Sword_LT
       - BaseItem: Up_Fatalist
         ResultItem: Fatalist_LT
-  - Item: C_Armor_Reform_3
-    BaseItems:
-      - BaseItem: Wine_Shoes
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 150
-         - Material: Dark_Red_Jewel
-           Amount: 100
-         - Material: Cardinal_Jewel
-           Amount: 100
-         - Material: Red_Magic_Key_TW
-           Amount: 1
-        ResultItem: Wine_Shoes_LT
-        ChangeRefine: -1
-      - BaseItem: Garnet_Pendant_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Acc_Stone_3
-           Amount: 100
-         - Material: Dark_Red_Jewel
-           Amount: 50
-         - Material: Cardinal_Jewel_
-           Amount: 50
-         - Material: Crimson_M_Petal
-           Amount: 1
-        ResultItem: Garnet_Pendant_LT
-      - BaseItem: Wine_Jewel_Brooch_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Acc_Stone_3
-           Amount: 100
-         - Material: Dark_Red_Jewel
-           Amount: 50
-         - Material: Cardinal_Jewel_
-           Amount: 50
-         - Material: Crimson_M_Petal
-           Amount: 1
-        ResultItem: Wine_Jewel_Brooch_LT
-      - BaseItem: maypay_06
-        CardsAllowed: true
-        Materials:
-         - Material: Acc_Stone_3
-           Amount: 100
-         - Material: Seppay_08
-           Amount: 1
-         - Material: M_Dimension_Essence
-           Amount: 5
-        ResultItem: Seppay_01
-      - BaseItem: Eclipsedefmind_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Acc_Stone_3
-           Amount: 100
-         - Material: Mystic_Horn
-           Amount: 300
-         - Material: M_Dimension_Essence
-           Amount: 10
-         - Material: Ymir_Heart_P_TW
-           Amount: 2
-        ResultItem: Eclipsedefmind_LT
-      - BaseItem: Temporal_Ring_TW
-        CardsAllowed: true
-        Materials:
-         - Material: Acc_Stone_3
-           Amount: 100
-         - Material: Time_Temp_Core_TW
-           Amount: 1
-         - Material: Spell_Of_Time
-           Amount: 200
-         - Material: M_Dimension_Essence
-           Amount: 1
-        ResultItem: Temporal_Ring_TW_LT
-      - BaseItem: SurviveOrb_K
-        CardsAllowed: false
-        Materials:
-         - Material: Armor_Stone_3
-           Amount: 100
-         - Material: Fragment_Of_Crystal
-           Amount: 450
-        ResultItem: SurviveOrb_K_LT
+#  - Item: C_Armor_Reform_3
+#    BaseItems:
   - Item: Hero_Weapon_Up_Box_3
     BaseItems:
       - BaseItem: Up_Sword_Of_Bluefire
@@ -7588,3 +7152,400 @@ Body:
            Amount: 20
         ResultItem: item_2100011
         ChangeRefine: 0
+      - BaseItem: maypay_01 # 生存者頭箍-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Seppay_07
+           Amount: 1
+         - Material: M_Dimension_Essence
+           Amount: 5
+        ResultItem: Seppay_02
+        ChangeRefine: 0
+      - BaseItem: Astrea_Cape # 阿斯特莉亞斗篷-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Rsx_0806_Card_ # 900113
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Astraea_Cape_LT
+        ChangeRefine: 0
+      - BaseItem: Astraea_Shoes # 阿斯特莉亞戰靴-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Q_Scaraba_Card_ # 900057
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Astraea_Shoes_LT
+        ChangeRefine: 0
+      - BaseItem: Bloody_Celine_Dress_TW # 席琳的沾血黑禮服-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Reginleif_Card_ # 900063
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: B_Celine_D_LT_TW
+        ChangeRefine: 0
+      - BaseItem: Gothic_Heart_Wing_TW # 墮落羽翼髮夾-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Ingrid_Card_ # 900062
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Gothic_HW_TW_LT
+        ChangeRefine: 0
+      - BaseItem: Red_Baby_Dragon_TW # 寶貝紅龍帽-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Gioia_Card_ # 900050
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Red_Baby_Dragon_LT
+        ChangeRefine: 0
+      - BaseItem: lunar_eclipse_Armor_ # 月全蝕魔力外袍-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Garm_Card_ # 900046
+           Amount: 100
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Lunar_E_Armor_LT
+        ChangeRefine: 0
+      - BaseItem: Agenda_Shoes_TW # 審判決議長靴-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Moonlight_Flower_Card_ # 900038
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Agenda_Boots_LT_TW
+        ChangeRefine: 0
+      - BaseItem: Devil_Flame_Manteau_TW # 魔鬼惡火斗篷-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Mistress_Card_ # 900032
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: Devil_Flame_Manteau_LT
+        ChangeRefine: 0
+      - BaseItem: Thanos_Helm_1 # 塔諾斯近戰頭盔-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Money_1E
+           Amount: 30
+        ResultItem: Thanos_Helm1_LT
+        ChangeRefine: 0
+      - BaseItem: Thanos_Helm_2 # 塔諾斯遠程頭盔-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Money_1E
+           Amount: 30
+        ResultItem: Thanos_Helm2_LT
+        ChangeRefine: 0
+      - BaseItem: Thanos_Helm_3 # 塔諾斯魔法頭盔-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Money_1E
+           Amount: 30
+        ResultItem: Thanos_Helm3_LT
+        ChangeRefine: 0
+      - BaseItem: Great_Hero_Boots # 英雄戰靴-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: Hero_Boots_LT
+        ChangeRefine: 0
+      - BaseItem: Smoky_TransformHat # 貍貓變身樹葉-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Smokie_Card # 4044
+           Amount: 15
+        ResultItem: Smoky_TransformHat_LT
+        ChangeRefine: 0
+      - BaseItem: Whikebain_Ears_K # 修咖巴殷的黑貓耳朵-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Wild_Rose_Card # 4257
+           Amount: 15
+        ResultItem: Whikebain_Ears_K_LT
+        ChangeRefine: 0
+      - BaseItem: Survive_Circlet_K # 生存者頭箍-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Am_Mut_Card # 4245
+           Amount: 15
+        ResultItem: Survive_Circlet_K_LT
+        ChangeRefine: 0
+      - BaseItem: GoldFish_Hat # 金色鮭魚帽-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Baby_Leopard_Card # 4233
+           Amount: 15
+        ResultItem: GoldFish_Hat_LT
+        ChangeRefine: 0
+      - BaseItem: Imp_Hat # 炙燄魔帽子-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Magmaring_Card # 4432
+           Amount: 15
+        ResultItem: Imp_Hat_LT
+        ChangeRefine: 0
+      - BaseItem: Thanos_Helm_4 # 塔諾斯暴力頭盔-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Money_1E
+           Amount: 30
+        ResultItem: Thanos_Helm4_LT
+        ChangeRefine: 0
+      - BaseItem: Whikebain_Ears # 修咖巴殷的黑貓耳朵-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Wild_Rose_Card # 4257
+           Amount: 15
+        ResultItem: Whikebain_Ears_K_LT
+        ChangeRefine: 0
+      - BaseItem: Mad_Bunny_K_ # 瘋狂兔寶寶-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Money_1E
+           Amount: 15
+         - Material: item_940001
+           Amount: 400
+         - Material: Ymir_Heart_TW
+           Amount: 1
+        ResultItem: Mad_Bunny_K_LT
+        ChangeRefine: 0
+      - BaseItem: King_Tiger_Doll_Hat # 虎王娃娃帽子-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Anolian_Card # 4234
+           Amount: 15
+        ResultItem: King_Tiger_Doll_Hat_LT
+        ChangeRefine: 0
+      - BaseItem: Zaha_Doll_Hat # 素貞娃娃頭飾-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Chung_E_Card # 4373
+           Amount: 15
+        ResultItem: Baksojin_Hat_LT
+        ChangeRefine: 0
+      - BaseItem: Sagittarius_DiademK # 精準射手冠-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Shecil_Card # 4368
+           Amount: 15
+        ResultItem: Sagittarius_DiademK_LT
+        ChangeRefine: 0
+      - BaseItem: Scorpio_Diadem_K # 聖魔導天蠍之盔-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Scorpion_Card # 4068
+           Amount: 15
+        ResultItem: Scorpio_Diadem_K_LT
+        ChangeRefine: 0
+      - BaseItem: Large_Sorcerer_Crown # 大巫師王冠-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Katrinn_Card # 4366
+           Amount: 15
+        ResultItem: Large_Sorcerer_Crown_LT
+        ChangeRefine: 0
+      - BaseItem: Stripe_Hat # 條紋帽-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: BigFoot_Card # 4074
+           Amount: 20
+        ResultItem: Stripe_Hat_LT
+        ChangeRefine: 0
+      - BaseItem: Phantom_Cap # 幽靈幻影帽-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Whisper_Card # 4102
+           Amount: 15
+        ResultItem: Phantom_Cap_LT
+        ChangeRefine: 0
+      - BaseItem: Ignis_CapK # 伊格尼斯狩獵帽-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Kavac_Card # 4351
+           Amount: 15
+        ResultItem: Ignis_CapK_LT
+        ChangeRefine: 0
+      - BaseItem: Clock_Casket_RD # 艾爾帕蘭時鐘帽(紅)-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 100
+         - Material: Alarm_Card # 4244
+           Amount: 15
+        ResultItem: Clock_Casket_RD_LT
+        ChangeRefine: 0
+      - BaseItem: Wine_Shoes # 深紅魔術之靴-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 150
+         - Material: Red_Magic_Key_TW
+           Amount: 1
+        ResultItem: Wine_Shoes_LT
+        ChangeRefine: 0
+      - BaseItem: Garnet_Pendant_TW # 深紅寶石結晶之墜-LT
+        CardsAllowed: true
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: Crimson_M_Petal
+           Amount: 1
+        ResultItem: Garnet_Pendant_LT
+        ChangeRefine: 0
+      - BaseItem: Wine_Jewel_Brooch_TW # 深紅寶石胸針-LT
+        CardsAllowed: true
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: Crimson_M_Petal
+           Amount: 1
+        ResultItem: Wine_Jewel_Brooch_LT
+        ChangeRefine: 0
+      - BaseItem: maypay_06 # 絕望的連通之環-LT
+        CardsAllowed: true
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: M_Dimension_Essence
+           Amount: 5
+        ResultItem: Seppay_01
+        ChangeRefine: 0
+      - BaseItem: Eclipsedefmind_TW #  月蝕守護之心-LT
+        CardsAllowed: true
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: M_Dimension_Essence
+           Amount: 5
+        ResultItem: Eclipsedefmind_LT
+      - BaseItem: Temporal_Ring_TW # 時光超越者之戒-LT
+        CardsAllowed: true
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: M_Dimension_Essence
+           Amount: 5
+        ResultItem: Temporal_Ring_TW_LT
+      - BaseItem: SurviveOrb_K # 生存魔球-LT
+        CardsAllowed: false
+        Materials:
+         - Material: Acc_Stone_3
+           Amount: 100
+         - Material: M_Dimension_Essence
+           Amount: 5
+        ResultItem: SurviveOrb_K_LT

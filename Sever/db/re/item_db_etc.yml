@@ -72005,6 +72005,214 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
+  - Id: 2000139
+    AegisName: item_2000139
+    Name: 怪物雙重擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_DOUBLEBOWLINGBASH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_DOUBLEBOWLINGBASH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_DOUBLEBOWLINGBASH",-500;
+      bonus2 bSkillAtk,"HN_DOUBLEBOWLINGBASH",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000140
+    AegisName: item_2000140
+    Name: 百萬音速擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_MEGA_SONIC_BLOW",-150;
+      bonus2 bSkillAtk,"HN_MEGA_SONIC_BLOW",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000141
+    AegisName: item_2000141
+    Name: 百萬音速擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_SHIELD_CHAIN_RUSH",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_SHIELD_CHAIN_RUSH",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_SHIELD_CHAIN_RUSH",-150;
+      bonus2 bSkillAtk,"HN_SHIELD_CHAIN_RUSH",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000142
+    AegisName: item_2000142
+    Name: 螺旋極限刺
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_SPIRAL_PIERCE_MAX",-150;
+      bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",15;      
+      }
+      if(.@r >= 20){
+      bonus bBaseAtk,300;
+      }
+  - Id: 2000143
+    AegisName: item_2000143
+    Name: 隕石轟炸術
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_METEOR_STORM_BUSTER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_METEOR_STORM_BUSTER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_METEOR_STORM_BUSTER",-750;
+      bonus2 bSkillAtk,"HN_METEOR_STORM_BUSTER",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000144
+    AegisName: item_2000144
+    Name: 雷鳴風暴術
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_JUPITEL_THUNDER_STORM",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_JUPITEL_THUNDER_STORM",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_JUPITEL_THUNDER_STORM",-450;
+      bonus2 bSkillAtk,"HN_JUPITEL_THUNDER_STORM",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000145
+    AegisName: item_2000145
+    Name: 冰球霜凍術
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_JACK_FROST_NOVA",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_JACK_FROST_NOVA",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_JACK_FROST_NOVA",-1500;
+      bonus2 bSkillAtk,"HN_JACK_FROST_NOVA",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000146
+    AegisName: item_2000146
+    Name: 地獄崩裂術
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_HELLS_DRIVE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_HELLS_DRIVE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_HELLS_DRIVE",-1250;
+      bonus2 bSkillAtk,"HN_HELLS_DRIVE",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000147
+    AegisName: item_2000147
+    Name: 超重力荒野
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_GROUND_GRAVITATION",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_GROUND_GRAVITATION",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_GROUND_GRAVITATION",-2500;
+      bonus2 bSkillAtk,"HN_GROUND_GRAVITATION",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000148
+    AegisName: item_2000148
+    Name: 念力魔神擊
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_NAPALM_VULCAN_STRIKE",-150;
+      bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000149
+    AegisName: item_2000149
+    Name: 限界突破
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_BREAKINGLIMIT",-30000;     
+      }
+      if(.@r >= 20){
+      bonus bMatk,150;
+      bonus bBaseAtk,150;
+      }
+  - Id: 2000150
+    AegisName: item_2000150
+    Name: 打破規則
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"HN_RULEBREAK",-30000;     
+      }
+      if(.@r >= 20){
+      bonus bMatk,150;
+      bonus bBaseAtk,150;
+      }
   - Id: 2110001
     AegisName: Card_Coin_
     Name: 高級卡片硬幣
