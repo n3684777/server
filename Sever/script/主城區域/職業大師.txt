@@ -1255,9 +1255,9 @@ function	script	Job_Rent	{
 				goto Rent_Fail2;
 			}
 		case 3:
-			if ( checkcart() ) {
-				goto Rent_Fail;
-			} else {
+		//	if ( checkcart() ) {
+		//		goto Rent_Fail;
+		//	} else {
 				//skill "MC_CARTDECORATE",1,2;
 				//skill "MC_CHANGECART",1,2;
 				//skill "MC_PUSHCART",10,2;
@@ -1267,7 +1267,7 @@ function	script	Job_Rent	{
 				skill "NV_FIRSTAID",1,3;
 				setcart;
 				goto Rent_Done;
-			}
+		//	}
 	}
 
 	
