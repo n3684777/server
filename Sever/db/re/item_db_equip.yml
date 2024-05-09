@@ -142752,6 +142752,7 @@ Body:
       Head_Low: true
     ArmorLevel: 2
     EquipLevelMin: 150
+    Refineable: true
     View: 1488
     Script: |
       bonus2 bMagicAtkEle,Ele_All,7;
@@ -155583,6 +155584,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bAllStats,1;
   - Id: 490033
@@ -156473,6 +156475,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bMdef,15;
       bonus2 bSubEle,Ele_Neutral,5; 
@@ -157607,6 +157610,7 @@ Body:
     Locations:
       Left_Accessory: true
     ArmorLevel: 2
+    Refineable: true
     EquipLevelMin: 100
     Script: |
       bonus bMdef,15;
@@ -187339,6 +187343,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus2 bAddClass,CLASS_ALL,5;
       bonus bMatkRate,5;
@@ -187367,6 +187372,7 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     EquipLevelMin: 100
+    Refineable: true
     Script: |
       bonus bMdef,10;
       bonus bMaxHPrate,8;

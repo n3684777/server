@@ -34476,7 +34476,7 @@ Body:
   - Combos:
       - Combo:
           - HalfBloodPrincess_Shoes
-          - Bloody_Knight_Shield__
+          - Bloody_Knight_Shield_f_
     Script: |
       bonus2 bAddClass,Class_Boss,30;
       bonus2 bMagicAddClass,Class_Boss,30;

@@ -50154,6 +50154,13 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 900505
+    AegisName: shield_ticket
+    Name: 盾牌附魔使用券
+    Type: DelayConsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
   - Id: 970000
     AegisName: item_970000
     Name: 比克大魔王 召換書

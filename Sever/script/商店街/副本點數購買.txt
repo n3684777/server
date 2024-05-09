@@ -32,6 +32,9 @@ OnInit:
 	sellitem(900504,.@p,-1);	//鎧甲鞋子附魔使用券
 	sellitemcurrency(.@cash,10);
     endsellitem(); 
+	sellitem(900505,.@p,-1);	//盾牌附魔使用券
+	sellitemcurrency(.@cash,10);
+    endsellitem(); 
 
 	
 OnBuyItem:

@@ -68929,8 +68929,10 @@ Body:
     Weight: 0
     Trade:
       NoDrop: true
-      NoSell: true
       NoTrade: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
   - Id: 940000
     AegisName: item_940000
     Name: 祝福儀式的證明

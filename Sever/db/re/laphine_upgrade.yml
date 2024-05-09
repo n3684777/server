@@ -13545,3 +13545,22 @@ Body:
       - Item: Sleipnir # 2410
       - Item: HalfBloodPrincess_Shoes # 470247
       - Item: Beast_Leather_Shoes # 470122
+  - Item: shield_ticket
+    RandomOptionGroup: ACCESS_TICKET # ¬ÞµPªþÅ]¨Ï¥Î¨é
+    CardsAllowed: true
+    TargetItems:
+      - Item: Bloody_Knight_Shield_f_ # 28946
+      - Item: Titan_Shield_TW # 460027
+      - Item: Fallen_Angel_Shield # 2193
+      - Item: Feather_Shield # 460003
+      - Item: Feather_Shield_LT_TW # 460053
+      - Item: Lapine_Shield # 2198
+      - Item: Nob_Lib_Shield # 460038
+      - Item: Mad_Bunny_K_ # 28902
+      - Item: Mad_Bunny_K_LT # 460020
+      - Item: Hervor # 2181
+      - Item: Hervor_Alvitr # 2182
+      - Item: Fake_Alloy_Pot # 460030
+      - Item: Fake_Alloy_Pot_LT # 460066
+      - Item: Mad_Bunny_K # 28901
+      

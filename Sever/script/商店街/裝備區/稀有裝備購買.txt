@@ -226,6 +226,53 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem();
 
+	sellitem(19295,.@p,-1);	//Ä_¨©¬õÀs´U
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19265,.@p,-1);	//»©¿ßÅÜ¨­¾ð¸­
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5360,.@p,-1);	//­×©@¤Ú®ïªº¶Â¿ß¦Õ¦·
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19266,.@p,-1);	//¥Í¦sªÌÀYãT
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(19264,.@p,-1);	//ª÷¦âÂD³½´U
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5658,.@p,-1);	//ª¥¿VÅ]´U¤l
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5497,.@p,-1);	//ªê¤ý«½«½´U¤l
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(5464,.@p,-1);	//¯À­s«½«½ÀY¹¢
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400061,.@p,-1);	//ºë·Ç®g¤â«a
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400059,.@p,-1);	//¸tÅ]¾É¤ÑÃÈ¤§²¯
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400054,.@p,-1);	//¤j§Å®v¤ý«a
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400049,.@p,-1);	//±ø¯¾´U
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400044,.@p,-1);	//«ÕÆF¤Û¼v´U
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400022,.@p,-1);	//¥ì®æ¥§´µ¬¼Ây´U
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+	sellitem(400021,.@p,-1);	//¦ãº¸©¬Äõ®ÉÄÁ´U(¬õ)
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
+
+
 	
 	sellitem(400134,.@p,-1);	//¶ð¿Õ´µªñ¾ÔÀY²¯
 	sellitemcurrency(6909,.@meow);
