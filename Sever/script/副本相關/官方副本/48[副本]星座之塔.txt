@@ -1043,29 +1043,9 @@ OnTimer1000:
 		'boss_25_die=1;
 		killmonsterall strnpcinfo(4);
 		stopnpctimer;
-		donpcevent instance_npcname("離開副本#101@ch_t")+"::OnEnable";
+		donpcevent instance_npcname("失落之魂#101")+"::OnEnable";
 		end;
 	}
-
-2@ch_t,0,0,0	script	離開副本#101@ch_t	obj_a2,{
-	mes "^33CC33【離開副本】^000000";
-	mes "你要離開副本了嗎？";
-	next;
-	menu
-	"^008000◆先不要◆^000000",get42,
-	"^008000◆離開◆^000000",get422;
-get42:
-	end;
-get422:
-	Instance_PassAnnounce;	
-	getitem 940048,3;
-	getitem 6909,20;
-	getitem 930000,5;
-	warp "SavePoint",0,0;
-	end;
-
-
-
 }
 
 // Level 75F
