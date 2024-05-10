@@ -1248,6 +1248,15 @@ OnInit:
 	sellitem(900138,.@p,-1);	//骷髏觸角魔卡片-改 x
 	sellitemcurrency(4451,.@h);
     endsellitem(); 
+
+	sellitem(900144,.@p,-1);	//深海魔女卡片-改 x
+	sellitemcurrency(300145,.@h);
+    endsellitem(); 
+	sellitem(900143,.@p,-1);	//天鷹座卡片-改 x
+	sellitemcurrency(300382,.@h);
+    endsellitem(); 
+
+
 	sellitem(900139,.@p*3,-1);	//莎拉卡片-改 x
 	sellitemcurrency(4610,100);
 	sellitemcurrency(6803,300);

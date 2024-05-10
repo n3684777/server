@@ -7241,7 +7241,7 @@ Body:
          - Material: Armor_Stone_1
            Amount: 150
          - Material: Garm_Card_ # 900046
-           Amount: 100
+           Amount: 9
          - Material: Money_1E
            Amount: 20
          - Material: item_940048

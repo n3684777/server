@@ -66270,6 +66270,7 @@ Body:
     Script: |
       bonus2 bMagicAtkEle,Ele_Neutral,100;
       bonus2 bMagicAtkEle,Ele_Holy,100;
+      bonus2 bMagicAddRace,RC_All,35;
   - Id: 900065
     AegisName: XM_Celine_Kimi_Card_
     Name: 畊礩膀μ-э
@@ -66483,6 +66484,7 @@ Body:
     Script: |
       bonus2 bMagicAtkEle,Ele_Earth,100;
       bonus2 bMagicAtkEle,Ele_Water,100;
+      bonus2 bMagicAddRace,RC_All,35;
   - Id: 900078
     AegisName: Polluted_Dark_L_Card_
     Name: 琕堵穞ぇ-э
@@ -67437,6 +67439,33 @@ Body:
       bonus2 bAddRace,RC_All,.@r*20;
       bonus2 bAddClass,RC_All,.@r*20;
       bonus bAtkRate,.@r*20;
+  - Id: 900143
+    AegisName: Aquila_Card_
+    Name: ぱ芅畒-э
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Poison,100;
+      bonus2 bMagicAtkEle,Ele_Undead,100;
+      bonus2 bMagicAddRace,RC_All,35;
+  - Id: 900144
+    AegisName: ILL_Abysmal_Witch_Card_
+    Name: 瞏臸-э
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Fire,100;
+      bonus2 bMagicAtkEle,Ele_Dark,100;
+      bonus2 bMagicAddRace,RC_All,35;
   - Id: 910000
     AegisName: Nov_Stone
     Name: みほてホ(┸)
@@ -68930,7 +68959,6 @@ Body:
     Trade:
       NoDrop: true
       NoTrade: true
-      NoStorage: true
       NoGuildStorage: true
       NoMail: true
   - Id: 940000
@@ -72210,6 +72238,190 @@ Body:
       .@r = getequiprefinerycnt(EQI_HAND_R);
       if(.@r >= 15){
       bonus2 bSkillCooldown,"HN_RULEBREAK",-30000;     
+      }
+      if(.@r >= 20){
+      bonus bMatk,150;
+      bonus bBaseAtk,150;
+      }
+  - Id: 2000151
+    AegisName: item_2000151
+    Name: Μ活俐
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_SOUL_GATHERING",-2500;     
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000152
+    AegisName: item_2000152
+    Name: 丢绑
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TOTEM_OF_TUTELARY",-7500;     
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000153
+    AegisName: item_2000153
+    Name: 艶旧才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_SOUL_STEALING",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_SOUL_STEALING",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_SOUL_STEALING",-500;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_SOUL_STEALING",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000154
+    AegisName: item_2000154
+    Name: ǜ艶瞓て
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_EXORCISM_OF_MALICIOUS_SOUL",-500;
+      bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000155
+    AegisName: item_2000155
+    Name: 獵纒才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLUE_DRAGON",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLUE_DRAGON",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_BLUE_DRAGON",-150;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLUE_DRAGON",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000156
+    AegisName: item_2000156
+    Name: フ才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_WHITE_TIGER",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_WHITE_TIGER",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_WHITE_TIGER",-200;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_WHITE_TIGER",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000157
+    AegisName: item_2000157
+    Name: Χ扯才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_RED_PHOENIX",-250;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_RED_PHOENIX",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000158
+    AegisName: item_2000158
+    Name: ト猌才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_BLACK_TORTOISE",-250;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_BLACK_TORTOISE",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000159
+    AegisName: item_2000159
+    Name: よ才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_FOUR_BEARING_GOD",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_FOUR_BEARING_GOD",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_TALISMAN_OF_FOUR_BEARING_GOD",-500;
+      bonus2 bSkillAtk,"SOA_TALISMAN_OF_FOUR_BEARING_GOD",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000160
+    AegisName: item_2000160
+    Name: よき︽才
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SOA_CIRCLE_OF_DIRECTIONS_AND_ELEMENTALS",(.@r/4)*7;
+      if(.@r >= 11){
+      bonus2 bSkillAtk,"SOA_CIRCLE_OF_DIRECTIONS_AND_ELEMENTALS",10;
+      }
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_CIRCLE_OF_DIRECTIONS_AND_ELEMENTALS",-2500;
+      bonus2 bSkillAtk,"SOA_CIRCLE_OF_DIRECTIONS_AND_ELEMENTALS",15;      
+      }
+      if(.@r >= 20){
+      bonus bMatk,300;
+      }
+  - Id: 2000161
+    AegisName: item_2000161
+    Name: ぱ艶
+    Type: Card
+    SubType: Enchant
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_R);
+      if(.@r >= 15){
+      bonus2 bSkillCooldown,"SOA_SOUL_OF_HEAVEN_AND_EARTH",-300000;     
       }
       if(.@r >= 20){
       bonus bMatk,150;

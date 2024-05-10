@@ -24356,6 +24356,61 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
+          - Item: item_2000151
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000152
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000153
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000154
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000155
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000156
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000157
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000158
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000159
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000160
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000161
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
       - Slot: 2
         Materials:
           - Material: Nyangvine_Fruit
@@ -26066,6 +26121,61 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000150
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000151
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000152
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000153
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000154
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000155
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000156
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000157
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000158
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000159
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000160
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000161
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
