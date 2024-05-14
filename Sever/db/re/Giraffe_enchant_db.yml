@@ -21193,6 +21193,16 @@ Body:
       Mars_Armor_TW_LT: true
       Vinus_Armor_TW_LT: true
       Vulcan_Armor_TW_LT: true
+      Jupiter_Armor_TW: true # 15361
+      Apollo_Armor_TW: true # 15362
+      Mars_Armor_TW: true # 15363
+      Ceres_Armor_TW: true # 15364
+      Vinus_Armor_TW: true # 15365
+      Vulcan_Armor_TW: true # 15366
+      Diana_Suits: true # 15430
+      Mercury_Suits: true # 15431
+      Bacchus_Armor: true # 15432
+      Neptune_Uniform: true # 15433      
     Reset:
       Chance: 100000
       Materials:
@@ -24411,6 +24421,61 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
+          - Item: item_2000162
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000163
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000164
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000165
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000166
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000167
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000168
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000169
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000170
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000171
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000172
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
       - Slot: 2
         Materials:
           - Material: Nyangvine_Fruit
@@ -26176,6 +26241,61 @@ Body:
               - Material: Nyangvine_Fruit
                 Amount: 100
           - Item: item_2000161
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000162
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000163
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000164
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000165
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000166
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000167
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000168
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000169
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000170
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000171
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+          - Item: item_2000172
             Price: 50000000
             Materials:
               - Material: Nyangvine_Fruit
@@ -29537,13 +29657,12 @@ Body:
                 Chance: 833
               - Item: Star_Of_Spirit5
                 Chance: 873
-  - Id: 10007 # ¶W¶VLT ªþÅ]
+  - Id: 10007 # ¶W¶V/¬P®yLT ªþÅ]
     TargetItems:
       Temporal_Armor_TW_LT: true # 450299
       Temporal_Armor_TW: true # 450175
       Temporal_Cape_TW_LT: true # 480312
       Temporal_Cape_TW: true # 480076
-
     MinimumRefine: 9
     Reset:
       Chance: 100000

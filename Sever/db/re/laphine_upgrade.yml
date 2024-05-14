@@ -13479,8 +13479,7 @@ Body:
       - Item: item_2100008 # 2100008
       - Item: item_2100009 # 2100009
       - Item: item_2100010 # 2100010
-      - Item: item_2100011 # 2100011
-      
+      - Item: item_2100011 # 2100011    
       - Item: aegis_490263 # 490263
       - Item: aegis_490284 # 490284
       - Item: aegis_490260 # 490260
@@ -13544,7 +13543,23 @@ Body:
       - Item: Elemental_BootsK # 470033
       - Item: Sleipnir # 2410
       - Item: HalfBloodPrincess_Shoes # 470247
-      - Item: Beast_Leather_Shoes # 470122
+      - Item: Beast_Leather_Shoes # 470122      
+      - Item: Jupiter_Armor_TW # 15361
+      - Item: Apollo_Armor_TW # 15362
+      - Item: Mars_Armor_TW # 15363
+      - Item: Ceres_Armor_TW # 15364
+      - Item: Vinus_Armor_TW # 15365
+      - Item: Vulcan_Armor_TW # 15366
+      - Item: Ceres_Armor_TW_LT # 450293
+      - Item: Jupiter_Armor_TW_LT # 450294
+      - Item: Apollo_Armor_TW_LT # 450295
+      - Item: Mars_Armor_TW_LT # 450296
+      - Item: Vinus_Armor_TW_LT # 450297
+      - Item: Vulcan_Armor_TW_LT # 450298
+      - Item: Diana_Suits # 15430
+      - Item: Mercury_Suits # 15431
+      - Item: Bacchus_Armor # 15432
+      - Item: Neptune_Uniform # 15433
   - Item: shield_ticket
     RandomOptionGroup: ACCESS_TICKET # ¬ÞµPªþÅ]¨Ï¥Î¨é
     CardsAllowed: true
