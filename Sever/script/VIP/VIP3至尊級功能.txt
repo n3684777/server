@@ -83,12 +83,12 @@ function	script	membervip3	{
 		  mes "下次要批量賣點擊第一選項即可";
 		  mes "注意 這無法使用技能高賣低買哦";
 		  next;
-			switch(select("開啟販售商店","賣出所有您設定的物品","設定販賣物品")){
+			switch(select("開啟販售商店")){
 				case 1:
 					close2;
 					callshop "道具商店",2;
 					end;
-				case 2:
+				/*case 2:
 					mes "將會賣出以下物品^FF0000最大數量^000000";
 					mes "並且高價賣出^FF0000無效^000000";
 					for ( set .@a,0; .@a < getarraysize( @sold_nameid ); set .@a, .@a + 1 ) 
@@ -107,7 +107,7 @@ function	script	membervip3	{
 				case 3:
 					callshop "ashop1", 2;
 					npcshopattach "ashop1";
-					end;
+					end; */
 				}
       OnSellItem:
 	    mes "紀錄拍賣物品";

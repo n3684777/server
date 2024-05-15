@@ -575,7 +575,7 @@ OnTouch:
 		setArray .@item_co0,rand(1,5),rand(1,3),rand(1,3),rand(1,2),rand(1,1);
 		
 		//設定一一對應掉落的機率 範圍 :1-100
-		setArray .@item_rate0,100,50,20,10,3;	
+		setArray .@item_rate0,100,50,20,10,5;	
 	
 		for(.@i =0;.@i<getarraysize(.@item_id_0) ;.@i++)
 		{
@@ -594,7 +594,7 @@ OnTouch:
 		setArray .@item_co1,rand(3,5),rand(3,5),rand(2,3),rand(2,3),rand(2,2);
 		
 		//設定一一對應掉落的機率 範圍 :1-100
-		setArray .@item_rate1,100,100,40,30,5;	
+		setArray .@item_rate1,100,100,40,30,15;	
 	
 		for(.@i =0;.@i<getarraysize(.@item_id_1) ;.@i++)
 		{
@@ -613,7 +613,7 @@ OnTouch:
 		setArray .@item_co2,rand(5,5),rand(5,5),rand(3,3),rand(3,3),rand(3,3);
 		
 		//設定一一對應掉落的機率 範圍 :1-100
-		setArray .@item_rate2,100,100,60,40,10;
+		setArray .@item_rate2,100,100,60,40,30;
 	
 		for(.@i =0;.@i<getarraysize(.@item_id_2) ;.@i++)
 		{
