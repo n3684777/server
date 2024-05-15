@@ -2,14 +2,11 @@ function	script	petskill	{
     .@pet_id = getarg(0);
 	switch(.@pet_id) {
     set SkillTimer,30; // 寵物施放輔助技能間隔時間
-    set MinSkillRate,0; // 寵物最小施放攻擊技能機率
-    set MaxSkillRate,0; // 寵物最大施放攻擊技能機率
+    set MinSkillRate,5; // 寵物最小施放攻擊技能機率
+    set MaxSkillRate,10; // 寵物最大施放攻擊技能機率
+
+    //set RandomSkill[0],"",
     // 研究所三樓魔物
-    case 960059:
-      petskillsupport "MER_BLESSING",10,SkillTimer,100,100;
-      petskillsupport "MER_INCAGI",10,SkillTimer,100,100;
-      petskillattack "NPC_IGNITIONBREAK",5,1,5;
-      break;
     case 960061:
       petskillsupport "LK_CONCENTRATION",5,SkillTimer,100,100;
       petskillattack "LK_SPIRALPIERCE",5,MinSkillRate,MaxSkillRate;
@@ -254,13 +251,18 @@ function	script	petskill	{
       petskillattack "CR_ACIDDEMONSTRATION",10,MinSkillRate,MaxSkillRate;
       break;
 
-
+  
     default:
+    .@r = rand(1,544);
+
+
       petskillsupport "CD_REPARATIO",5,SkillTimer,100,100;
       petskillattack "NPC_IGNITIONBREAK",5,MinSkillRate,MaxSkillRate;
-      break;
+      break; 
+      /*petskillsupport .@r,10,SkillTimer,100,100;
+      petskillattack .@r,10,MinSkillRate,MaxSkillRate;*/
 
-      }
+    }
 }
 
 function	script	petstatus	{
