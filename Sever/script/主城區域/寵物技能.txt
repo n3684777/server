@@ -255,6 +255,11 @@ function	script	petskill	{
       break;
 
 
+    default:
+      petskillsupport "CD_REPARATIO",5,SkillTimer,100,100;
+      petskillattack "NPC_IGNITIONBREAK",5,MinSkillRate,MaxSkillRate;
+      break;
+
       }
 }
 
