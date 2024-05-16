@@ -62,7 +62,7 @@ function	script	petskill	{
 
     // ¾Ô¦º¤ý
     case 961069:
-      petskillsupport "WL_RECOGNIZEDSPELL",5,SkillTimer,100,100;
+      petskillsupport "WL_TELEKINESIS_INTENSE",5,SkillTimer,100,100;
       petskillattack "NPC_COMET",5,MinSkillRate,MaxSkillRate;
       break;
     case 961070:
