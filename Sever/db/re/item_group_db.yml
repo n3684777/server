@@ -51750,3 +51750,13 @@ Body:
           - Item: hat_91399
             Rate: 7
           - Item: hat_91400
+  - Group: ITEM_2200006
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: item_2200000
+          - Item: item_2200001
+          - Item: item_2200002
+          - Item: item_2200003
+          - Item: item_2200004
+          - Item: item_2200005

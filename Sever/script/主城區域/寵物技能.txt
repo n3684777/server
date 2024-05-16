@@ -252,6 +252,13 @@ function	script	petskill	{
       break;
 
   
+    case 960460: // ¶ð¶ø¸s¥d
+      petskillsupport "NPC_STONESKIN",5,SkillTimer,100,100;
+      petskillattack "NPC_WIDEWEB",1,MinSkillRate,MaxSkillRate;
+      break;
+
+
+
     default:
     .@r = rand(1,544);
 

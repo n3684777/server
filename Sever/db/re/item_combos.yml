@@ -34933,5 +34933,24 @@ Body:
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus2 bAddClass,Class_Boss,5+(.@r/3)*2;
-      
+  - Combos: # ¼v¤l¿ûÅK®M¸Ë
+      - Combo:
+          - item_2200000
+          - item_2200000
+          - item_2200000
+          - item_2200000
+          - item_2200000
+          - item_2200000
+    Script: |
+      .@r = getequiprefinerycnt(EQI_SHADOW_ARMOR) + getequiprefinerycnt(EQI_SHADOW_WEAPON) + getequiprefinerycnt(EQI_SHADOW_SHIELD) + getequiprefinerycnt(EQI_SHADOW_SHOES) + getequiprefinerycnt(EQI_SHADOW_ACC_R) + getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      bonus2 bAddMonsterDropItem,999,1000;
+      bonus bMatk,.@r*5;
+      bonus bBaseAtk,.@r*5;
+      bonus bDef,.@r*5; 
+      bonus bMdef,.@r*1;  
+      bonus bHit,.@r*5;  
+      bonus bFlee,.@r*5;
+      bonus2 bIgnoreDefRaceRate,RC_All,80;
+      bonus2 bIgnoreMdefRaceRate,RC_All,80;
+
 

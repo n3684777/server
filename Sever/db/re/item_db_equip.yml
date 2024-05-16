@@ -188054,3 +188054,69 @@ Body:
     Script: |
       .@r = getrefine();
       bonus2 bDropAddRace,RC_All,.@r * 75;
+  - Id: 2200000
+    AegisName: item_2200000
+    Name: 影子鋼鐵手套
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,.@r*5;
+  - Id: 2200001
+    AegisName: item_2200001
+    Name: 影子鋼鐵鎧甲
+    Type: Shadowgear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,.@r*5;
+  - Id: 2200002
+    AegisName: item_2200002
+    Name: 影子鋼鐵盾牌
+    Type: Shadowgear
+    Locations:
+      Shadow_Shield: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,.@r*5; 
+  - Id: 2200003
+    AegisName: item_2200003
+    Name: 影子鋼鐵戰靴
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,.@r*1;  
+  - Id: 2200004
+    AegisName: item_2200004
+    Name: 影子鋼鐵耳環
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bHit,.@r*5;  
+  - Id: 2200005
+    AegisName: item_2200005
+    Name: 影子鋼鐵墜子
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bFlee,.@r*5;

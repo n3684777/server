@@ -5269,6 +5269,12 @@ Body:
     MaximumRefine: 9
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -5977,6 +5983,12 @@ Body:
     MaximumRefine: 10
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -6685,6 +6697,12 @@ Body:
     MaximumRefine: 11
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -7393,6 +7411,12 @@ Body:
     MaximumRefine: 12
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -8101,6 +8125,12 @@ Body:
     MaximumRefine: 13
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -8809,6 +8839,12 @@ Body:
     MaximumRefine: 14
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -9517,6 +9553,12 @@ Body:
     MaximumRefine: 15
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -10225,6 +10267,12 @@ Body:
     MaximumRefine: 16
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -10933,6 +10981,12 @@ Body:
     MaximumRefine: 17
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -11641,6 +11695,12 @@ Body:
     MaximumRefine: 18
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -12349,6 +12409,12 @@ Body:
     MaximumRefine: 19
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
       - Item: item_2110000
       - Item: item_24882
       - Item: item_24880
@@ -13578,4 +13644,15 @@ Body:
       - Item: Fake_Alloy_Pot # 460030
       - Item: Fake_Alloy_Pot_LT # 460066
       - Item: Mad_Bunny_K # 28901
-      
+  - Item: Shadow_9_Refine_Hammer_20_666
+    ResultRefine: 20
+    MaximumRefine: 19
+    CardsAllowed: true
+    TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
+      - Item: item_2110000

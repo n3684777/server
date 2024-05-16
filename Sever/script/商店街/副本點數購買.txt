@@ -17,6 +17,13 @@ OnInit:
 	sellitemcurrency(.@cash,1000);
 	sellitemcurrency(910132,100);
     endsellitem(); 
+	sellitem(2200006,.@p,-1);	// 影子鋼鐵套裝箱
+	sellitemcurrency(.@cash,50);
+    endsellitem(); 
+	sellitem(2200007,.@p,-1);	// 影子鋼鐵精煉槌Lv.20
+	sellitemcurrency(999,50);
+	sellitemcurrency(.@cash,50);
+    endsellitem(); 
 	sellitem(6909,.@p,-1);	//喵楊桃果實
 	sellitemcurrency(.@cash,5);
     endsellitem(); 
@@ -35,6 +42,8 @@ OnInit:
 	sellitem(900505,.@p,-1);	//盾牌附魔使用券
 	sellitemcurrency(.@cash,10);
     endsellitem(); 
+
+	
 
 	
 OnBuyItem:

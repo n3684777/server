@@ -55,6 +55,8 @@ Body:
     Value: 20004
   - Name: IG_TWISTED_TIME_KEY_TW
     Value: 20005
+  - Name: IG_ITEM_2200006 # ¼v¤l¿ûÅK®M¸Ë½c
+    Value: 20006
 Footer:
   Imports:
   - Path: db/import/const.yml

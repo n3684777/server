@@ -13253,8 +13253,8 @@ Body:
       Chance: 100000
       Price: 10000
       Materials:
-        - Material: Small_Spray_Of_Flowers
-          Amount: 5
+        - Material: Nyangvine_Fruit
+          Amount: 10
     Order:
       - Slot: 3
       - Slot: 2
