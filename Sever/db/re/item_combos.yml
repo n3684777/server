@@ -34936,20 +34936,26 @@ Body:
   - Combos: # ¼v¤l¿ûÅK®M¸Ë
       - Combo:
           - item_2200000
-          - item_2200000
-          - item_2200000
-          - item_2200000
-          - item_2200000
-          - item_2200000
+          - item_2200001
+          - item_2200002
+          - item_2200003
+          - item_2200004
+          - item_2200005
     Script: |
-      .@r = getequiprefinerycnt(EQI_SHADOW_ARMOR) + getequiprefinerycnt(EQI_SHADOW_WEAPON) + getequiprefinerycnt(EQI_SHADOW_SHIELD) + getequiprefinerycnt(EQI_SHADOW_SHOES) + getequiprefinerycnt(EQI_SHADOW_ACC_R) + getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      .@armor = getequiprefinerycnt(EQI_SHADOW_ARMOR);
+      .@weapon = getequiprefinerycnt(EQI_SHADOW_WEAPON);
+      .@shield = getequiprefinerycnt(EQI_SHADOW_SHIELD);
+      .@shoes = getequiprefinerycnt(EQI_SHADOW_SHOES);
+      .@ACC_R = getequiprefinerycnt(EQI_SHADOW_ACC_R);
+      .@ACC_L = getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      
       bonus2 bAddMonsterDropItem,999,1000;
-      bonus bMatk,.@r*5;
-      bonus bBaseAtk,.@r*5;
-      bonus bDef,.@r*5; 
-      bonus bMdef,.@r*1;  
-      bonus bHit,.@r*5;  
-      bonus bFlee,.@r*5;
+      bonus bMatk,.@weapon*5;
+      bonus bBaseAtk,.@armor*5;
+      bonus bDef,.@shield*5; 
+      bonus bMdef,.@shoes*1;  
+      bonus bHit,.@ACC_R*5;  
+      bonus bFlee,.@ACC_L*5;
       bonus2 bIgnoreDefRaceRate,RC_All,80;
       bonus2 bIgnoreMdefRaceRate,RC_All,80;
 
