@@ -5269,6 +5269,10 @@ Body:
     MaximumRefine: 9
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -5983,6 +5987,10 @@ Body:
     MaximumRefine: 10
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -6697,6 +6705,10 @@ Body:
     MaximumRefine: 11
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -7411,6 +7423,10 @@ Body:
     MaximumRefine: 12
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -8125,6 +8141,10 @@ Body:
     MaximumRefine: 13
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -8839,6 +8859,10 @@ Body:
     MaximumRefine: 14
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -9553,6 +9577,10 @@ Body:
     MaximumRefine: 15
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -10267,6 +10295,10 @@ Body:
     MaximumRefine: 16
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -10981,6 +11013,10 @@ Body:
     MaximumRefine: 17
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -11695,6 +11731,10 @@ Body:
     MaximumRefine: 18
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
@@ -12409,6 +12449,10 @@ Body:
     MaximumRefine: 19
     CardsAllowed: true
     TargetItems:
+      - Item: item_2200009
+      - Item: item_2200011
+      - Item: item_2200012
+      - Item: item_2200013
       - Item: item_2200000
       - Item: item_2200001
       - Item: item_2200002
