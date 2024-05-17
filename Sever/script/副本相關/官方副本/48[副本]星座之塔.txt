@@ -184,7 +184,7 @@ OnInstanceInit:
 	}
 	
 	//每層小怪數量
-	'mob_count = 60;
+	'mob_count = 15;
 	
 	//每層BOSS數量
 	'mob_mvp_count = 3;	
