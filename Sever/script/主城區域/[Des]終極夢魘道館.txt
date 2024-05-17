@@ -3,8 +3,8 @@ guild_vs5	mapflag	skill_damage	all,BL_MOB,100
 uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	set .@md_name$,"道館挑戰[終極夢魘]";
 	set .@Zeny, 8000000; //挑戰金額
-	set .@rewardamount,3; // 箱子獎勵數量
-	set .@rewardamount_first,6; // 箱子首次獎勵數量
+	set $rewardamount,3; // 箱子獎勵數量
+	set $rewardamount_first,6; // 箱子首次獎勵數量
 	mes "=========道館挑戰========";
 	mes "- ^984AAC歡迎你參加普通道館挑戰^000000";
 	mes "- ^984AAC入場需求金額 : "+.@Zeny+" z^000000";
@@ -102,8 +102,8 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	break;
 	case 2: 
 	mes "----------------------------";	
-	mes ">> 隨機獲得以下物品 有 " + .@rewardamount + " 箱 ";
-	mes "(首次通關可以拿 " + .@rewardamount_first + " 箱)";
+	mes ">> 隨機獲得以下物品 有 " + $rewardamount + " 箱 ";
+	mes "(首次通關可以拿 " + $rewardamount_first + " 箱)";
 	mes "----------------------------";
 	mes "<ITEM>防具精煉能力+18券<INFO>950009</INFO></ITEM>";
 	mes "<ITEM>武器精煉能力+17券<INFO>950008</INFO></ITEM>";
@@ -170,7 +170,7 @@ OnInstanceInit:
 	if (select("我確定要領取！","讓我好好考慮一下！")==2) {close;}
 	if (checkquest(55157,PLAYTIME)== 2){erasequest 55157;}
 	if (checkquest(55157,PLAYTIME)== -1){
-			getitem 61005,.@rewardamount_first;
+			getitem 61005,$rewardamount_first;
 			set #Mvp_Point,#Mvp_Point+500;
 			setquest 55157;
 //			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
@@ -178,7 +178,7 @@ OnInstanceInit:
 			warp "SavePoint",0,0;
 			end;	
 		}
-	getitem 61005,.@rewardamount;
+	getitem 61005,$rewardamount;
 	set #Mvp_Point,#Mvp_Point+20;
 	dispbottom "獲得道館點數 [20]，目前累積道館點數為 ["+#Mvp_Point+"]。";
 	warp "SavePoint",0,0;
