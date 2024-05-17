@@ -50205,3 +50205,10 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 2200014
+    AegisName: item_2200014
+    Name: 影子神力鋼鐵精靈轉換箱
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_synthesis();

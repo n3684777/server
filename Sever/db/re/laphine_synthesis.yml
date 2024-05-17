@@ -4562,3 +4562,14 @@ Body:
 #        Amount: 30
 #      - Item: Zelunium
 #        Amount: 250
+  - Item: item_2200014 # 影子神力鋼鐵精靈轉換箱
+    RewardGroup: ITEM_2200014
+    RequiredRequirementsCount: 5
+    MinimumRefine: 20
+    Requirements:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005

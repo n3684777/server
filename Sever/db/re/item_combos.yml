@@ -34889,9 +34889,6 @@ Body:
       - Combo:
           - item_400511
           - Gold_Q_Scaraba_Card
-      - Combo:
-          - item_400511
-          - Gold_Q_Scaraba_Card_
     Script: |
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bPAtk,20;
@@ -34902,17 +34899,15 @@ Body:
           - Gold_Q_Scaraba_Card_
     Script: |
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
-      bonus bPAtk,.@r;
+      bonus bPAtk,.@r+20;
       bonus bCrt,.@r/2;
       bonus bLongAtkRate,(.@r/3)*10;
       bonus bShortAtkRate,(.@r/3)*10;
+      bonus bCritAtkRate,.@r*10;
   - Combos:
       - Combo:
           - item_400511
           - Q_Scaraba_Card
-      - Combo:
-          - item_400511
-          - Q_Scaraba_Card_
     Script: |
       .@r = getequiprefinerycnt(EQI_ARMOR);
       bonus2 bAddClass,Class_Boss,10+(.@r/2)*3;
@@ -34921,6 +34916,8 @@ Body:
           - item_400511
           - Q_Scaraba_Card_
     Script: |
+      .@am = getequiprefinerycnt(EQI_ARMOR);
+      bonus2 bAddClass,Class_Boss,10+(.@am/2)*3;     
       .@r = getequiprefinerycnt(EQI_HAND_R);
       bonus bPAtk,.@r/2;
       bonus bCrt,.@r/4;
@@ -34958,5 +34955,69 @@ Body:
       bonus bFlee,.@ACC_L*5;
       bonus2 bIgnoreDefRaceRate,RC_All,80;
       bonus2 bIgnoreMdefRaceRate,RC_All,80;
-
+  - Combos: # 影子神力鋼鐵套裝
+      - Combo:
+          - item_2200012 # 耳
+          - item_2200013 # 墜
+    Script: |
+      .@ACC_R = getequiprefinerycnt(EQI_SHADOW_ACC_R);
+      .@ACC_L = getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      skill "SM_MAGNUM",10;
+      bonus2 bSkillCooldown,"SM_MAGNUM",60000; 
+      
+      if(.@ACC_R + .@ACC_L >= 20)
+      {
+      bonus bNoKnockback;
+      bonus bNoWalkDelay;
+      bonus bAllTraitStats,7;
+      }
+      if(.@ACC_R + .@ACC_L == 40)
+      {
+      bonus2 bResEff,Eff_Stone,10000; 
+      bonus2 bResEff,Eff_Freeze,10000; 
+      bonus2 bResEff,Eff_Stun,10000; 
+      bonus2 bResEff,Eff_Sleep,10000; 
+      bonus2 bResEff,Eff_Poison,10000; 
+      bonus2 bResEff,Eff_Curse,10000; 
+      bonus2 bResEff,Eff_Silence,10000; 
+      bonus2 bResEff,Eff_Confusion,10000; 
+      bonus2 bResEff,Eff_Blind,10000; 
+      bonus2 bResEff,Eff_Bleeding,10000; 
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,20000,"SM_MAGNUM","{ active_transform 2417,20000; }";
+      }else{
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,10000,"SM_MAGNUM","{ active_transform 2417,10000; }";
+      }
+  - Combos: # 影子神力鋼鐵套裝
+      - Combo:
+      - Combo:
+          - item_2200009 # 鎧
+          - item_2200011 # 靴
+    Script: |
+      .@armor = getequiprefinerycnt(EQI_SHADOW_ARMOR);
+      .@shoes = getequiprefinerycnt(EQI_SHADOW_SHOES);
+      skill "SM_MAGNUM",10;
+      bonus2 bSkillCooldown,"SM_MAGNUM",60000; 
+      
+      if(.@armor + .@shoes >= 20)
+      {
+      bonus bNoKnockback;
+      bonus bNoWalkDelay;
+      bonus bAllTraitStats,7;
+      }
+      if(.@armor + .@shoes == 40)
+      {
+      bonus2 bResEff,Eff_Stone,10000; 
+      bonus2 bResEff,Eff_Freeze,10000; 
+      bonus2 bResEff,Eff_Stun,10000; 
+      bonus2 bResEff,Eff_Sleep,10000; 
+      bonus2 bResEff,Eff_Poison,10000; 
+      bonus2 bResEff,Eff_Curse,10000; 
+      bonus2 bResEff,Eff_Silence,10000; 
+      bonus2 bResEff,Eff_Confusion,10000; 
+      bonus2 bResEff,Eff_Blind,10000; 
+      bonus2 bResEff,Eff_Bleeding,10000; 
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,20000,"SM_MAGNUM","{ active_transform 2417,20000; }";
+      }else{
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,10000,"SM_MAGNUM","{ active_transform 2417,10000; }";
+      }
 

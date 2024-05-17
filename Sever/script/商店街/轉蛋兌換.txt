@@ -19,6 +19,9 @@ OnInit:
 	sellitem(920010,0,-1); //星願轉蛋
 	sellitemcurrency(950017,1);
     endsellitem();
+	sellitem(920011,0,-1); //鋼鐵轉蛋
+	sellitemcurrency(950017,1);
+    endsellitem();
 
 	//        兌換券      //
 
@@ -33,6 +36,9 @@ OnInit:
     endsellitem();
 	sellitem(950017,0,-1); 
 	sellitemcurrency(920010,1); //星願轉蛋
+    endsellitem();
+	sellitem(950017,0,-1); 
+	sellitemcurrency(920011,1); //鋼鐵轉蛋
     endsellitem();
 	
 

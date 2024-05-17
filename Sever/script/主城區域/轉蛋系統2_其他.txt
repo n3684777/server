@@ -113,13 +113,14 @@ function	script	F_Gashapon	{
 								"800,1001413,1,950007,1",
 								"900,950007,1",
 								"10000,950007,1";
-			getitem 910138,1; // 1000mvp點數
+			getitem 910138,1; // mvp點數(1000點)
 			getitem 910132,2; // 1E支票
 			getitem 950002,2; // 11槌
 			getitem 920001,10; //轉蛋
 			getitem 920002,10; //轉蛋
 			getitem 920005,10; //轉蛋
 			getitem 920010,10; //轉蛋
+			getitem 920011,10; //轉蛋
 		//.@guarantee_item = 950002;
 		//.@guarantee_need_times = 2;
 		break;

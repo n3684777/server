@@ -22589,7 +22589,7 @@ Body:
     Script: |
       callfunc "F_Gashapon2",920005;
   - Id: 920010
-    AegisName: item_920006
+    AegisName: item_920010
     Name: 星願轉蛋
     Type: Usable
     Buy: 20
@@ -22598,7 +22598,16 @@ Body:
       Container: true
     Script: |
       callfunc "F_Gashapon2",920010;
-
+  - Id: 920011
+    AegisName: item_920011
+    Name: 鋼鐵轉蛋
+    Type: Usable
+    Buy: 20
+    Weight: 0
+    Flags:
+      Container: true
+    Script: |
+      callfunc "F_Gashapon2",920011;
   - Id: 9150
     AegisName: Hosangto_Pet_Egg
     Name: 好想兔寵物蛋

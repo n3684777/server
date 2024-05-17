@@ -51760,3 +51760,15 @@ Body:
           - Item: item_2200003
           - Item: item_2200004
           - Item: item_2200005
+  - Group: ITEM_2200014 # 影子神力鋼鐵
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: item_2200009
+            Rate: 1
+          - Item: item_2200011
+            Rate: 1
+          - Item: item_2200012
+            Rate: 1
+          - Item: item_2200012
+            Rate: 1

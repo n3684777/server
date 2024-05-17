@@ -188012,7 +188012,8 @@ Body:
       bonus bPAtk,5; 
       bonus bSMatk,5; 
       bonus bAspdRate,5; 
-      bonus bShortAtkRate,20;
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
       bonus bCon,5;
       bonus bPow,5; 
       bonus bFixedCastrate,-200;
@@ -188024,7 +188025,7 @@ Body:
           if(.@g >= ENCHANTGRADE_B){
           bonus bAllStats,10;
           bonus bAllTraitStats,10;
-            if(.@r >= 15){ bonus bShortAtkRate,(.@r/2)*10; }
+            if(.@r >= 15){ bonus bShortAtkRate,(.@r/2)*5;bonus bLongAtkRate,(.@r/2)*5; }
           }
             if(.@g >= ENCHANTGRADE_A){
             bonus2 bAddEle,Ele_All,25; 
@@ -188039,7 +188040,8 @@ Body:
             bonus bCon,3; 
             bonus bPow,3;
             bonus bFixedCastrate,-300;
-            bonus bShortAtkRate,10;
+            bonus bShortAtkRate,5;
+            bonus bLongAtkRate,5;
               }
             }
         }
@@ -188120,3 +188122,83 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bFlee,.@r*5;
+  - Id: 2200008
+    AegisName: item_2200008
+    Name: 影子神力鋼鐵手套
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,.@r*10;
+      bonus bAllTraitStats,5;
+  - Id: 2200009
+    AegisName: item_2200009
+    Name: 影子神力鋼鐵鎧甲
+    Type: Shadowgear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,.@r*10;
+      bonus bMatk,.@r*10;
+      bonus bMdef,.@r*2;
+      bonus bAllTraitStats,5;
+  - Id: 2200010
+    AegisName: item_2200010
+    Name: 影子神力鋼鐵盾牌
+    Type: Shadowgear
+    Locations:
+      Shadow_Shield: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,.@r*10;
+      bonus bAllTraitStats,5; 
+  - Id: 2200011
+    AegisName: item_2200011
+    Name: 影子神力鋼鐵戰靴
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,.@r*10;
+      bonus bMatk,.@r*10;
+      bonus bMdef,.@r*2;
+      bonus bAllTraitStats,5;
+  - Id: 2200012
+    AegisName: item_2200012
+    Name: 影子神力鋼鐵耳環
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,.@r*10;
+      bonus bHit,.@r*10;  
+      bonus bFlee,.@r*10;
+      bonus bAllTraitStats,5;
+  - Id: 2200013
+    AegisName: item_2200013
+    Name: 影子神力鋼鐵墜子
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,.@r*10;
+      bonus bHit,.@r*10;  
+      bonus bFlee,.@r*10;
+      bonus bAllTraitStats,5;

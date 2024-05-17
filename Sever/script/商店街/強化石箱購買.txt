@@ -345,7 +345,7 @@ OnInit:
     sellitem(1001052,0,-1);           //ÂyÆF¤h¥Û(ÀY¤U)
     sellitemcurrency(6417,.@amount);
     endsellitem();
-    sellitem(25482,0,-1);           //ÂyÆF¤h¥Û(©ÜªÓ)
+    sellitem(25842,0,-1);           //ÂyÆF¤h¥Û(©ÜªÓ)
     sellitemcurrency(6417,.@amount);
     endsellitem();
 

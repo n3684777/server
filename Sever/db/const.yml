@@ -57,6 +57,8 @@ Body:
     Value: 20005
   - Name: IG_ITEM_2200006 # 影子鋼鐵套裝箱
     Value: 20006
+  - Name: IG_ITEM_2200014 # 影子神力鋼鐵精靈轉換
+    Value: 20007
 Footer:
   Imports:
   - Path: db/import/const.yml

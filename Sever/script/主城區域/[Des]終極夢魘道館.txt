@@ -3,6 +3,8 @@ guild_vs5	mapflag	skill_damage	all,BL_MOB,100
 uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	set .@md_name$,"道館挑戰[終極夢魘]";
 	set .@Zeny, 8000000; //挑戰金額
+	set .@rewardamount,3; // 箱子獎勵數量
+	set .@rewardamount_first,6; // 箱子首次獎勵數量
 	mes "=========道館挑戰========";
 	mes "- ^984AAC歡迎你參加普通道館挑戰^000000";
 	mes "- ^984AAC入場需求金額 : "+.@Zeny+" z^000000";
@@ -100,23 +102,17 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	break;
 	case 2: 
 	mes "----------------------------";	
-	mes ">> 隨機獲得以下物品";
+	mes ">> 隨機獲得以下物品 有 " + .@rewardamount + " 箱 ";
+	mes "(首次通關可以拿 " + .@rewardamount_first + " 箱)";
 	mes "----------------------------";
-	mes "<ITEM>武器精煉能力+14券<INFO>6871</INFO></ITEM>";
-	mes "<ITEM>武器精煉能力+13券<INFO>6870</INFO></ITEM>";
-	mes "<ITEM>防具精煉能力+14券<INFO>6877</INFO></ITEM>";
-	mes "<ITEM>防具精煉能力+13券<INFO>6876</INFO></ITEM>";
-	mes "<ITEM>武器精煉能力+12券<INFO>6584</INFO></ITEM>";
-	mes "<ITEM>防具精煉能力+12券<INFO>6585</INFO></ITEM>";
-	mes "<ITEM>黃金卡冊<INFO>22654</INFO></ITEM>";
-	mes "<ITEM>封印的王卡卡冊<INFO>22829</INFO></ITEM>";
-	mes "<ITEM>鐵匠的祝福<INFO>6635</INFO></ITEM>";
-	mes "<ITEM>高密度鈽鐳礦石x6<INFO>6226</INFO></ITEM>";
-	mes "<ITEM>高密度鈣礦石x6<INFO>6225</INFO></ITEM>";
-	mes "<ITEM>高濃縮神之金屬x6<INFO>6240</INFO></ITEM>";
-	mes "<ITEM>高濃縮鋁x6<INFO>6241</INFO></ITEM>";
-	mes "<ITEM>BOSS雷達x5<INFO>12214</INFO></ITEM>";
-	mes "<ITEM>青澀的天地樹芽x30<INFO>12405</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+18券<INFO>950009</INFO></ITEM>";
+	mes "<ITEM>武器精煉能力+17券<INFO>950008</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+16券<INFO>950007</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+15券<INFO>950006</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+14券<INFO>950005</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+13券<INFO>950004</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+12券<INFO>950003</INFO></ITEM>";
+	mes "<ITEM>防具精煉能力+11券<INFO>950002</INFO></ITEM>";
 	mes "----------------------------";
 	close;
 					
@@ -174,7 +170,7 @@ OnInstanceInit:
 	if (select("我確定要領取！","讓我好好考慮一下！")==2) {close;}
 	if (checkquest(55157,PLAYTIME)== 2){erasequest 55157;}
 	if (checkquest(55157,PLAYTIME)== -1){
-			getitem 61005,6;
+			getitem 61005,.@rewardamount_first;
 			set #Mvp_Point,#Mvp_Point+500;
 			setquest 55157;
 //			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
@@ -182,7 +178,7 @@ OnInstanceInit:
 			warp "SavePoint",0,0;
 			end;	
 		}
-	getitem 61005,3;
+	getitem 61005,.@rewardamount;
 	set #Mvp_Point,#Mvp_Point+20;
 	dispbottom "獲得道館點數 [20]，目前累積道館點數為 ["+#Mvp_Point+"]。";
 	warp "SavePoint",0,0;
