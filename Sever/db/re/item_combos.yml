@@ -34989,7 +34989,6 @@ Body:
       }
   - Combos: # 影子神力鋼鐵套裝
       - Combo:
-      - Combo:
           - item_2200009 # 鎧
           - item_2200011 # 靴
     Script: |
