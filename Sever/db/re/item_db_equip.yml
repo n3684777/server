@@ -188202,3 +188202,29 @@ Body:
       bonus bHit,.@r*10;  
       bonus bFlee,.@r*10;
       bonus bAllTraitStats,5;
+  - Id: 2200015
+    AegisName: item_2200015
+    Name: 影子全能耳環-改
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Gradable: true
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAllTraitStats,5;
+      bonus bAllStats,.@r*2;
+  - Id: 2200016
+    AegisName: item_2200016
+    Name: 影子全能墜子-改
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAllTraitStats,5;
+      bonus bAllStats,.@r*2;

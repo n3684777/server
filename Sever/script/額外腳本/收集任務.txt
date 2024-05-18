@@ -1,13 +1,13 @@
-egg1,185,205,5	script	蒐集活動#主城	2279,{
+uttycty,99,144,5	script	蒐集活動#主城	2279,{
 
 
 
 	mes "[蒐集活動]";
-	mes "^5599FF═══════════════^000000";
+	mes "^5599FF═══════════════^000000";
 	mes "^0AA770嗨嗨！親愛的，^000000";
 	mes "^0AA770你目前應該沒再忙吧？^000000";
 	mes "^0AA770希望你能幫我把這些東西找回來^000000";
-	mes "^5599FF═══════════════^000000";
+	mes "^5599FF═══════════════^000000";
 	next;
 	switch(select(" ^0000ff報名蒐集活動^000000",getgmlevel()==99?"- 開啟活動 [ 限GM操作 ]":"",getgmlevel()==99?"- 關閉活動 [ 限GM操作 ]":"")) {
 
@@ -95,6 +95,10 @@ egg1,185,205,5	script	蒐集活動#主城	2279,{
 			break;
 		}
 	end;
+OnInit:
+OnTimer2000:
+showscript "★ 不定時活動 ★ ";
+	setnpcicon getnpcid(0),1028,"不定時活動";
 	
 OnTimer1000:
 	deletearray $@Ro_RandMissionIP$[0],getarraysize($@Ro_RandMissionIP$);

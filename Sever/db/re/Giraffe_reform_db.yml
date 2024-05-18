@@ -7549,3 +7549,23 @@ Body:
          - Material: M_Dimension_Essence
            Amount: 5
         ResultItem: SurviveOrb_K_LT
+      - BaseItem: S_AllMighty_Earring # 影子全能耳環-改
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 300
+         - Material: Pitaya_Boss_Card # 4244
+           Amount: 150
+        ResultItem: item_2200015
+        ChangeRefine: 0
+      - BaseItem: S_AllMighty_Pendant # 影子全能墜子-改
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 300
+         - Material: Pitaya_Boss_Card # 4244
+           Amount: 150
+        ResultItem: item_2200016
+        ChangeRefine: 0

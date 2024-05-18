@@ -44,7 +44,7 @@ setarray $@Morewindows$[0],"284.138.62.152";
 
 setarray $@Windiwsnum[0],4;                                //開放給特定客戶幾開，要對應上面特定用戶。
                                                    
-set $@OtherWimdows,3;                                     //非特定客戶 都只能幾開。
+set $@OtherWimdows,12;                                     //非特定客戶 都只能幾開。
 
 
 /*範例 今天我要設定 IP 200.200.200.101 開放給他6開

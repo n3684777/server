@@ -1,4 +1,4 @@
-egg1,246,174,3	script	廣結良緣媒婆	71,{
+uttycty,91,127,3	script	廣結良緣媒婆	71,{
 mes"----------交友系統-----------";
 mes"-登記需要費用:["+$@jyrob+"]";
 mes"-目前男性玩家登記人數:["+$mjsrenshu+"]";
@@ -220,6 +220,10 @@ close;
 
 }
 OnInit:
+OnTimer2000:
+showscript "★ 求偶 ★ ";
+	setnpcicon getnpcid(0),1028,"求偶";
+initnpctimer;
 set $@jiaoyou,1;//===莫修改
 set $@jyrob,10000;//======登記需要ROB設置
 query_sql "create table if not exists `haoyoum` (`name` varchar(20) not null default '0',`qq` varchar(20) not null default '0',`liuyan` varchar(20) not null default '0',`account_id` varchar(20) not null default '0',`dengji` varchar(20) not null default '0') ENGINE=MyISAM";

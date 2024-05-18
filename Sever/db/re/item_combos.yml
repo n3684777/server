@@ -35020,4 +35020,26 @@ Body:
       }else{
       autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,10000,"SM_MAGNUM","{ active_transform 2417,10000; }";
       }
-
+  - Combos: # 影子全能LT
+      - Combo:
+          - item_2200015 # 耳
+          - item_2200016 # 墜
+    Script: |
+      .@ACC_R = getequiprefinerycnt(EQI_SHADOW_ACC_R);
+      .@ACC_L = getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      skill "BS_WEAPONPERFECT",5;
+      bonus2 bSkillCooldown,"BS_WEAPONPERFECT",60000;
+      bonus bAllTraitStats,.@ACC_R+.@ACC_L;
+      if(.@ACC_R+.@ACC_L >= 20){
+      bonus bSplashAddRange,2;
+      skill "TF_DOUBLE",5;   
+      }
+      if(.@ACC_R+.@ACC_L >= 40){
+      bonus bNoSizeFix; 
+      bonus bSplashAddRange,4;
+      skill "TF_DOUBLE",10;
+      autobonus3 "{bonus bAllTraitStats,300;bonus bAllStats,600;}",10000,20000,"BS_WEAPONPERFECT","{ active_transform 20648,20000; }"; 
+      }else{
+      bonus bAllTraitStats,5;
+      bonus bAllStats,10;
+      autobonus3 "{bonus bAllTraitStats,300;bonus bAllStats,600;}",5000,10000,"BS_WEAPONPERFECT","{ active_transform 20648,10000; }";}

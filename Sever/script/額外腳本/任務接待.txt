@@ -21,7 +21,7 @@ function	script	QP	{
 	mes "^888888尚未接取任務^000000";
 	close;
 }
-egg1,180,202,5	script	任務接待員#2	856,{
+uttycty,99,139,5	script	任務接待員#2	856,{
 	function quest;
 	if(Q){
 		mes "你已接下^0066CC"+$@QuestName$[GetQ]+"^000000任務";
@@ -70,6 +70,9 @@ egg1,180,202,5	script	任務接待員#2	856,{
 	mes "你已接下^0066CC"+$@QuestName$[set(GetQ,.@ms)]+"^000000任務";
 	close;
 OnInit:
+OnTimer2000:
+showscript "★ 任務接待 ★ ";
+	setnpcicon getnpcid(0),1028,"任務接待";
 	/*********** 任務設置開始 ***********/
 	quest("史波浪壯麗硬幣",50,3741,15,1554,20,"",6081,10,"",1);
 	quest("穆拉村硬幣",50,3741,15,1554,20,"",6380,10,"",1);

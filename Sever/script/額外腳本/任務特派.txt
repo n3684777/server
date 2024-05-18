@@ -1,15 +1,15 @@
 
 
-egg1,185,200,5	script	任務特派#主城	2279,{
+uttycty,107,127,5	script	任務特派#主城	2279,{
 	function Ro_MessageEnd;
 	function Ro_MissionShow;
 	@npcname$ = "^FF0000[任務特派]^000000";
 	mes @npcname$;
-	mes "^5599FF═══════════════^000000";
+	mes "^5599FF═══════════════^000000";
 	mes "^0AA770嗨嗨！親愛的，^000000";
 	mes "^0AA770有些任務我需要託付給你^000000";
 	mes "^0AA770希望你能幫忙我^000000";
-	mes "^5599FF═══════════════^000000";
+	mes "^5599FF═══════════════^000000";
 	switch(select((#Ro_Mission)?" ^FF0000提交任務^000000":"",(#Ro_Mission)?" ^FF0000放棄任務^000000":"",(!#Ro_Mission)?" ^0000FF承接任務^000000":"",(getgmlevel() >= 99)?"- 線上設置":""))
 	{
 		case 1:
@@ -176,7 +176,7 @@ egg1,185,200,5	script	任務特派#主城	2279,{
 		if (.@idx) {
 			mesclear;
 			mes @npcname$;
-			mes "══════════════════";
+			mes "══════════════════";
 			mes "任務名稱: ^FF0000"+$Ro_MissionName$[.@idx]+"^000000";
 			for(.@i = 0; .@i <= getarraysize(getd("$Ro_MissionNeedId_"+.@idx)); .@i++) {
 				if (getd("$Ro_MissionNeedId_"+.@idx+"["+.@i+"]")) {
@@ -218,6 +218,10 @@ OnWhisperGlobal:
 	end;
 
 OnInit:
+OnTimer2000:
+showscript "★ 任務特派 ★ ";
+	setnpcicon getnpcid(0),1028,"任務特派";
+initnpctimer;
 	$@Ro_MissionIPMax = -1;
 	$Ro_MissionCount = 29;			// 設定任務數目有幾個,10代表可以設置10個任務,設置數量推薦不超過30.
 
