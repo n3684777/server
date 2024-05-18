@@ -124010,8 +124010,8 @@ Body:
     Script: |
       bonus2 bAddRace,RC_All,5;
       bonus2 bMagicAddRace,RC_All,5;
-      /*bonus bShortWeaponDamageReturn,10;
-      bonus5 bAutoSpellWhenHit,"NPC_MAGICMIRROR",8,100,BF_MAGIC,0;*/
+      bonus bShortWeaponDamageReturn,10;
+      bonus5 bAutoSpellWhenHit,"NPC_MAGICMIRROR",8,100,BF_MAGIC,0;
       .@r = getrefine();
       if (.@r>=7) {
          bonus bBaseAtk,5;

@@ -66375,7 +66375,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      .@v = 200;
+      .@v = 10;
       bonus bMatkRate,40;
       bonus3 bAutoSpell,"MG_FIREBOLT",10,.@v;
       bonus3 bAutoSpell,"MG_COLDBOLT",10,.@v;
