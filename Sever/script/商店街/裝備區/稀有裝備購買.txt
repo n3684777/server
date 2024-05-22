@@ -496,7 +496,9 @@ OnInit:
 	.@c = 10000000; // «K©y³f
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
-	
+	sellitem(480372,.@p,-1);	//ºÆ¨g¨ßÄ_Ä_«á­I¥]
+	sellitemcurrency(6909,.@meow);
+    endsellitem(); 
 	sellitem(480088,.@p,-1);	//¯Qº¸¤æ
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 

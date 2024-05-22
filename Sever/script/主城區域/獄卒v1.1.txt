@@ -1,0 +1,56 @@
+//吉米 好心獄卒v1.1
+
+sec_pri,35,62,4	script	獄卒	856,{
+	 //坐牢幾次永久被關
+	if(#jail>=3){
+		mes "[獄卒]";
+		mes "悟空，你作惡多端";
+		mes "為師幫不了你了";
+		close;
+		}
+
+	//設定坐牢秒數
+	.@Delay = 10800;
+
+	if (@ggjailD && @ggjailD > gettimetick(2)){
+		mes "[獄卒]";
+		mes "過了三小時了嗎？";
+		mes "好好待著別耍花樣";
+		mes "登出會重新計算";
+		close;
+		}
+	if (@ggjailD && @ggjailD < gettimetick(2)){
+		mes "[獄卒]";
+		mes "記得別再進來了";
+		mes "超過3次就再也出不去了";
+		#jail = #jail+1;
+		next;
+		@ggjailD = 0;
+		announce "[ 監獄公告 ] 更生人 "+strcharinfo(0)+" 從監獄被關出來了，這是他第 "+#jail+" 次坐牢。",15,0xff6677;
+		atcommand "@unjail "+strcharinfo(0);
+		end;
+		}
+
+	mes "[獄卒]";
+	mes "想出去嗎？";
+	mes "乖乖待著3小時";
+	mes "不吵不鬧不登出";
+	mes "能做到就偷偷放你出去";
+	next;
+	switch(select("3小時挑戰開始","天殺的放我出去")){
+		case 1:
+			@ggjailD = gettimetick(2) + .@Delay;
+			break;
+		case 2:
+			if (getgmlevel()>90){atcommand "@unjail "+strcharinfo(0);}
+			mes "[獄卒]";
+			mes "？";		
+			break;
+		}
+	close;
+end;
+
+OnInit:
+	waitingroom "好心的獄卒", 0;
+	end;
+}

@@ -12320,8 +12320,7 @@ Body:
     Trade:
       NoDrop: true
     Script: |
-      atcommand "@useskill 68 5 " + strcharinfo(0);
-      atcommand "@delitem 12928 1";
+      itemskill "PR_ASPERSIO",5;
   - Id: 12929
     AegisName: Pet_Egg_Scroll_Box3
     Name: 粉紅貓轉蛋箱子
@@ -48962,7 +48961,7 @@ Body:
       BuyingStore: true
   - Id: 101639
     AegisName: D_Gw_Extractor
-    Name: 黯淡冰川武器分解器
+    Name: 黯淡冰川武器分解箱
     Type: DelayConsume
     Trade:
       NoDrop: true

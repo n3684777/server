@@ -83128,6 +83128,8 @@ Body:
       - Item: Real_Eremes_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3209
     AegisName: V_MAGALETA
     Name: 闇●大主教
@@ -83175,6 +83177,8 @@ Body:
       - Item: Real_Magaleta_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3210
     AegisName: V_KATRINN
     Name: 闇●咒術士
@@ -83222,6 +83226,8 @@ Body:
       - Item: Real_Katrinn_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3211
     AegisName: V_SHECIL
     Name: 闇●遊俠
@@ -83271,6 +83277,8 @@ Body:
       - Item: Real_Shecil_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3212
     AegisName: V_HARWORD
     Name: 闇●機械工匠
@@ -83320,6 +83328,8 @@ Body:
       - Item: Real_Harword_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3213
     AegisName: V_SEYREN
     Name: 闇●盧恩騎士
@@ -83367,6 +83377,8 @@ Body:
       - Item: Real_Seyren_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3214
     AegisName: V_G_EREMES
     Name: 十字斬首者 艾勒梅斯
@@ -83938,6 +83950,8 @@ Body:
       - Item: Real_Randel_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3227
     AegisName: V_FLAMEL
     Name: 闇●基因學者
@@ -83987,6 +84001,8 @@ Body:
       - Item: Real_Flamel_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3228
     AegisName: V_CELIA
     Name: 闇●妖術師
@@ -84036,6 +84052,8 @@ Body:
       - Item: Real_Ceila_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3229
     AegisName: V_CHEN
     Name: 闇●修羅
@@ -84085,6 +84103,8 @@ Body:
       - Item: Real_Chen_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3230
     AegisName: V_GERTIE
     Name: 闇●魅影追蹤者
@@ -84134,6 +84154,8 @@ Body:
       - Item: Real_Gertie_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3231
     AegisName: V_ALPHOCCIO
     Name: 闇●宮廷樂師
@@ -84183,6 +84205,8 @@ Body:
       - Item: Real_Alphoccio_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3232
     AegisName: V_TRENTINI
     Name: 闇●浪姬舞者
@@ -84232,6 +84256,8 @@ Body:
       - Item: Real_Trentini_Card
         Rate: 1
         StealProtected: true
+      - Item: Particles_Of_Energy
+        Rate: 5
   - Id: 3233
     AegisName: V_G_RANDEL
     Name: 皇家禁衛隊 蘭達

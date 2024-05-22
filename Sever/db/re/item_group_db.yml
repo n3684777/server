@@ -51772,3 +51772,17 @@ Body:
             Rate: 1
           - Item: item_2200013
             Rate: 1
+  - Group: D_GW_EXTRACTOR # Åf²H¦B¤tªZ¾¹¤À¸Ñ½c
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: EP19_D_P_Ore
+            Rate: 1
+          - Item: EP19_N_P_Ore
+            Rate: 1
+          - Item: EP19_D_P_Crystal
+            Rate: 1
+          - Item: EP19_N_P_Crystal
+            Rate: 1
+          - Item: EP19_D_P_Stone
+            Rate: 1

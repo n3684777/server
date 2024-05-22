@@ -64313,7 +64313,7 @@ Body:
       DropEffect: CLIENT
   - Id: 1001033
     AegisName: EP19_D_P_Stone
-    Name: ¬rÅ]ªk¥Û
+    Name: ¼@¬rÅ]¤O
     Type: Etc
     Weight: 50
     Flags:
@@ -72421,7 +72421,7 @@ Body:
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
       if(.@r >= 15){
-      bonus2 bSkillCooldown,"SOA_SOUL_OF_HEAVEN_AND_EARTH",-300000;     
+      bonus2 bSkillCooldown,"SOA_SOUL_OF_HEAVEN_AND_EARTH",-150000;     
       }
       if(.@r >= 20){
       bonus bMatk,300;

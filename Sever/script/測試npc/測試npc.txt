@@ -74,3 +74,28 @@ OnSellItem:
 	}
 
 -	shop	card_shop1	-1,1201:10
+
+
+
+uttycty,110,85,5	script	測試npc	4_STEELBOX,{
+
+		setarray .@idArray[0],0;
+		.@idArrayIndex = 0;
+		.@allItemName$ = "";
+
+			for(.@i=0;.@i<@inventorylist_count;.@i++){
+			.@theId = @inventorylist_id[.@i];
+			
+			mes .@theId;
+			}
+		}
+		.@selectNum = .@allItemName$;
+		.@select_id = .@idArray[.@selectNum];
+		//mes ".@selectNum = " + .@selectNum;
+		//mes ".@select_id = " + .@select_id;
+		next;
+		mes "test";
+	close;
+
+	
+}

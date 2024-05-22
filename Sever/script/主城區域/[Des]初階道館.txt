@@ -179,7 +179,7 @@ OnInstanceInit:
 	if (select("我確定要領取！","讓我好好考慮一下！")==2) {close;}
 	if (checkquest(55157,PLAYTIME)== 2){erasequest 55157;}
 	if (checkquest(55157,PLAYTIME)== -1){
-			getitem 98000,$rewardamount_first;
+			getitem 98000,15;
 			set #Mvp_Point,#Mvp_Point+500;
 			setquest 55157;
 //			dispbottom "此為今日首次通關，獲得兩倍獎勵。";
@@ -187,7 +187,7 @@ OnInstanceInit:
 			warp "SavePoint",0,0;
 			end;	
 		}
-	getitem 98000,$rewardamount;
+	getitem 98000,10;
 	set #Mvp_Point,#Mvp_Point+20;
 	dispbottom "獲得道館點數 [20]，目前累積道館點數為 ["+#Mvp_Point+"]。";
 	warp "SavePoint",0,0;

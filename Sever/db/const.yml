@@ -45,6 +45,10 @@ Body:
     Value: 4
   - Name: JUMPINGCLAN
     Value: 5
+  - Name: IG_SR_Heart_TW 
+    Value: 10000
+  - Name: IG_D_GW_EXTRACTOR # Åf²H¦B¤tªZ¾¹¤À¸Ñ½c
+    Value: 10001
   - Name: IG_FREEDOM_STICK_CUBE
     Value: 20001
   - Name: IG_BLESSED_KNIFE_CUBE

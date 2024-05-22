@@ -35042,3 +35042,30 @@ Body:
       bonus bAllTraitStats,5;
       bonus bAllStats,10;
       autobonus3 "{bonus bAllTraitStats,300;bonus bAllStats,600;}",5000,10000,"BS_WEAPONPERFECT","{ active_transform 20648,10000; }";}
+  - Combos: 
+      - Combo:
+          - item_480372
+          - Mad_Bunny_K_
+      - Combo:
+          - item_480372
+          - Mad_Bunny_K
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_L) + getequiprefinerycnt(EQI_GARMENT);
+      bonus2 bAddClass,Class_Boss,10;
+      bonus2 bMagicAddClass,Class_Boss,10;
+      autobonus "{ bonus bBaseAtk,(.@r/2)*20; bonus bMatk,(.@r/2)*20; }",100,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1947,7000; }";}
+  - Combos: 
+      - Combo:
+          - item_480372
+          - Mad_Bunny_K_LT
+    Script: |
+      .@r = getequiprefinerycnt(EQI_HAND_L) + getequiprefinerycnt(EQI_GARMENT);
+      .@gs = getenchantgrade(EQI_HAND_L);
+      bonus2 bAddClass,Class_Boss,10;
+      bonus2 bMagicAddClass,Class_Boss,10;
+      autobonus "{ bonus bBaseAtk,(.@r/3)*30; bonus bMatk,(.@r/3)*30;bonus2 bAddClass,Class_Boss,(.@r/3)*2;bonus2 bMagicAddClass,Class_Boss,(.@r/3)*2; }",200,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1947,7000; }";}
+      if (.@g >= ENCHANTGRADE_B) {
+      autobonus "{ bonus bBaseAtk,(.@r/3)*30; bonus bMatk,(.@r/3)*30;bonus2 bAddClass,Class_Boss,(.@r/3)*2;bonus2 bMagicAddClass,Class_Boss,(.@r/3)*2; }",300,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1947,7000; }";}
+              if (.@g >= ENCHANTGRADE_C) {
+      autobonus "{ bonus bBaseAtk,(.@r/3)*30; bonus bMatk,(.@r/3)*30;bonus2 bAddClass,Class_Boss,(.@r/3)*2;bonus2 bMagicAddClass,Class_Boss,(.@r/3)*2; }",400,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1947,7000; }";}
+      }

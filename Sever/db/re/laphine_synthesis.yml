@@ -4573,3 +4573,33 @@ Body:
       - Item: item_2200003
       - Item: item_2200004
       - Item: item_2200005
+  - Item: D_Gw_Extractor # Åf²H¦B¤tªZ¾¹¤À¸Ñ½c
+    RewardGroup: D_GW_EXTRACTOR
+    RequiredRequirementsCount: 3
+    Requirements:
+      - Item: D_Glacier_Launcher
+      - Item: D_Glacier_Gatling
+      - Item: D_Glacier_Shotgun
+      - Item: D_Glacier_Rifle
+      - Item: D_Glacier_Revolver
+      - Item: D_Glacier_Humma
+      - Item: D_Glacier_Whip
+      - Item: D_Glacier_Violin
+      - Item: D_Glacier_Foxtail
+      - Item: D_Glacier_Wand
+      - Item: D_Glacier_Staff
+      - Item: D_Glacier_Katar
+      - Item: D_Glacier_Book
+      - Item: D_Glacier_Knuckle
+      - Item: D_Glacier_Bow
+      - Item: D_Glacier_B_Knife
+      - Item: D_Glacier_R_Knife
+      - Item: D_Glacier_Mace
+      - Item: D_Glacier_M_Mace
+      - Item: D_Glacier_Axe
+      - Item: D_Glacier_T_Axe
+      - Item: D_Glacier_Spear
+      - Item: D_Glacier_Lance
+      - Item: D_Glacier_B_Sword
+      - Item: D_Glacier_Sword
+      - Item: D_Glacier_T_Sword

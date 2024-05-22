@@ -1,0 +1,50 @@
+
+-	shop	anti_bot_shop	-1,909:-1
+function	script	OnRepeat	{
+	if(@rand_itemid != 0){end;}
+	sc_start SC_FREEZE,-1,0;
+	sc_start SC_SILENCE,-1,0;
+	sc_start SC_STONE,-1,0;
+        @wrong_count = @wrong_count+1;
+        deltimer .npc_name$+"::OnJail";
+        addtimer ( .duration * 1000 ),.npc_name$+"::OnJail";
+        @rand_itemid = .item_list[ rand( .item_list_size ) ];
+        @rand_amount = rand( 5,10 );
+        dispbottom "[ 驗證系統 ] 請立刻購買 "+@rand_amount+" 個 "+getitemname( @rand_itemid )+"";
+        dispbottom "[ 驗證系統 ] 30秒內無動作、關閉購買窗、輸入錯誤3次直接坐牢。";
+        npcshopattach .shop_name$,1;
+        callshop .shop_name$,1;
+        end;
+
+}
+
+OnInit:
+        .max_wrong_count = 3;
+        .duration = 30;
+        .shop_name$ = "anti_bot_shop";
+       
+        setarray .item_list,
+            501,
+            502,
+            503,
+            504,
+            505;
+        .item_list_size = getarraysize( .item_list );
+        .npc_name$ = strnpcinfo(3);
+        npcshopdelitem .shop_name$,909;
+        for ( .@i = 0; .@i < .item_list_size; .@i++ )
+            npcshopadditem .shop_name$,.item_list[.@i],-1;
+        end;
+
+OnJail:
+	sc_end SC_FREEZE;
+	sc_end SC_SILENCE;
+	sc_end SC_STONE;
+	@wrong_count = 0;
+	@rand_itemid = 0;
+        atcommand "@jail "+strcharinfo(0);
+        end;
+
+
+}
+}

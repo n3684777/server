@@ -563,294 +563,431 @@ MvpBoss:
 	mes "你想要去哪裡呢?";
 	next;
 	menu	
-	"魔劍士 達納托斯的記憶",mvp01,
-	"墮落大神官 悉潘",mvp36,
-	"迪塔勒泰晤勒斯",mvp02,
-	"蘭特克力斯",mvp03,
-	"德古拉男爵",mvp04,
-	"齊爾-D-01",mvp05,
-	"RSX-0806",mvp06,
-	"獸人英雄",mvp07,
-	"獸人酋長",mvp08,
-	"冰暴騎士",mvp09,
-	"嗒妮小姐",mvp10,
-	"海盜船長",mvp11,
-	"烏龜將軍",mvp12,
-    "死靈騎士",mvp13,
-    "俄塞裡斯",mvp14,
-    "黑暗之王",mvp15,
-    "塔奧群卡",mvp16,
-    "阿特羅斯",mvp17,
-	"元靈武士",mvp18,
-	"古埃及王",mvp19,
-	"幽暗夢魘",mvp20,
-	"伊夫利特",mvp21,
-	"法老王",mvp22,
-	"巴風特",mvp23,
-	"月夜貓",mvp24,
-	"墨蛇君",mvp25,
-	"白素貞",mvp26,
-	"黃金蟲",mvp27,
-	"皮里恩",mvp28,
-	"貝思波",mvp29,
-	"水晶龍",mvp30,
-	"蟻后",mvp31,
-	"蜂后",mvp32,
-	"虎王",mvp33,
-	"死靈",mvp34,
-	"卡崙",mvp35;
+	"混沌巴風特(^3355FF目前"+ getmapusers("prt_maze02") +"人^000000)",mvp01,
+	"墮落大神官 悉潘(^3355FF目前"+ getmapusers("abbey02") +"人^000000)",mvp02,
+	"貝雷傑(^3355FF目前"+ getmapusers("abbey03") +"人^000000)",mvp03,
+	"冰暴騎士(^3355FF目前"+ getmapusers("xmas_dun02") +"人^000000)",mvp04,
+	"德古拉男爵(^3355FF目前"+ getmapusers("gef_dun01") +"人^000000)",mvp05,
+	"死靈(^3355FF目前"+ getmapusers("gef_dun02") +"人^000000)",mvp06,
+	"烏龜將軍(^3355FF目前"+ getmapusers("tur_dun04") +"人^000000)",mvp07,
+	"巴基力 蘭特力克斯(^3355FF目前"+ getmapusers("odin_tem03") +"人^000000)",mvp08,
+	"魔鬼大烏賊(^3355FF目前"+ getmapusers("iz_dun05") +"人^000000)",mvp09,
+	"貝思波(^3355FF目前"+ getmapusers("jupe_core") +"人^000000)",mvp10,
+	"波伊塔塔(^3355FF目前"+ getmapusers("bra_dun02") +"人^000000)",mvp11,
+	"黃金女王甲蟲(^3355FF目前"+ getmapusers("dic_dun03") +"人^000000)",mvp12,
+	"女王甲蟲(^3355FF目前"+ getmapusers("dic_dun02") +"人^000000)",mvp13,
+	"RSX-0806(^3355FF目前"+ getmapusers("ein_dun02") +"人^000000)",mvp14,
+    "黑暗之王1(^3355FF目前"+ getmapusers("gl_chyard") +"人^000000)",mvp15,
+    "黑暗之王2(^3355FF目前"+ getmapusers("gl_chyard_") +"人^000000)",mvp16,
+	"闇●劍士 賽尼亞(^3355FF目前"+ getmapusers("lhz_dun02") +"人^000000)",mvp17,
+	"幽暗夢魘(^3355FF目前"+ getmapusers("ra_san05") +"人^000000)",mvp18,
+	"法老王(^3355FF目前"+ getmapusers("in_sphinx5") +"人^000000)",mvp19,
+	"迪塔勒泰晤勒斯(^3355FF目前"+ getmapusers("abyss_03") +"人^000000)",mvp20,	
+	"骨骸迪塔勒泰晤勒斯(^3355FF目前"+ getmapusers("abyss_04") +"人^000000)",mvp21,
+	"不祥烏龜將軍(^3355FF目前"+ getmapusers("tur_d04_i") +"人^000000)",mvp22,
+	"覺醒水晶龍(^3355FF目前"+ getmapusers("ice_d03_i") +"人^000000)",mvp23,
+	"火焰狼牙(^3355FF目前"+ getmapusers("oz_dun02") +"人^000000)",mvp24,
+	"汙染蜘蛛女王(^3355FF目前"+ getmapusers("gl_cas01_") +"人^000000)",mvp25,
+	"汙染黑暗之王(^3355FF目前"+ getmapusers("gl_cas01_") +"人^000000)",mvp26,
+	"深海魔鬼大烏賊(^3355FF目前"+ getmapusers("iz_d04_i") +"人^000000)",mvp27,
+	"深海魔女(^3355FF目前"+ getmapusers("iz_d05_i") +"人^000000)",mvp28,
+	"魔劍士 達納托斯的記憶(^3355FF目前"+ getmapusers("thana_boss") +"人^000000)",mvp29,
+	"齊爾-D-01(^3355FF目前"+ getmapusers("kh_dun02") +"人^000000)",mvp30,
+	"獸人英雄(^3355FF目前"+ getmapusers("gef_fild03") +"人^000000)",mvp31,
+	"獸人酋長(^3355FF目前"+ getmapusers("gef_fild10") +"人^000000)",mvp32,
+	"嗒妮小姐(^3355FF目前"+ getmapusers("ayo_dun02") +"人^000000)",mvp33,
+	"海盜之王(^3355FF目前"+ getmapusers("treasure02") +"人^000000)",mvp34,
+    "死靈騎士(^3355FF目前"+ getmapusers("niflheim") +"人^000000)",mvp35,
+    "俄塞裡斯(^3355FF目前"+ getmapusers("moc_pryd04") +"人^000000)",mvp36,
+    "塔奧群卡(^3355FF目前"+ getmapusers("beach_dun") +"人^000000)",mvp37,
+    "阿特羅斯(^3355FF目前"+ getmapusers("ra_fild03") +"人^000000)",mvp38,
+	"元靈武士(^3355FF目前"+ getmapusers("ama_dun03") +"人^000000)",mvp39,
+	"古埃及王(^3355FF目前"+ getmapusers("moc_pryd06") +"人^000000)",mvp40,
+	"伊夫利特(^3355FF目前"+ getmapusers("thor_v03") +"人^000000)",mvp41,
+	"巴風特(^3355FF目前"+ getmapusers("prt_maze03") +"人^000000)",mvp42,
+	"月夜貓(^3355FF目前"+ getmapusers("pay_dun04") +"人^000000)",mvp43,
+	"墨蛇君(^3355FF目前"+ getmapusers("gon_dun03") +"人^000000)",mvp44,
+	"白素貞(^3355FF目前"+ getmapusers("lou_dun03") +"人^000000)",mvp45,
+	"黃金蟲(^3355FF目前"+ getmapusers("prt_sewb4") +"人^000000)",mvp46,
+	"皮里恩(^3355FF目前"+ getmapusers("moc_fild17") +"人^000000)",mvp47,
+	"水晶龍(^3355FF目前"+ getmapusers("ice_dun03") +"人^000000)",mvp48,
+	"蟻后(^3355FF目前"+ getmapusers("anthell02") +"人^000000)",mvp49,
+	"蜂后(^3355FF目前"+ getmapusers("mjolnir_04") +"人^000000)",mvp50,
+	"虎王(^3355FF目前"+ getmapusers("pay_fild10") +"人^000000)",mvp51,
+	"卡崙(^3355FF目前"+ getmapusers("xmas_fild01") +"人^000000)",mvp52;
 
 
 mvp01:
-	set .@WarpMap$,"thana_boss";
-	set .@tempMFMap$,"魔劍士 達納托斯的記憶 thana_boss";
+	set .@WarpMap$,"prt_maze02";
+	set .@tempMFMap$,"混沌巴風特 prt_maze02";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
 mvp02:
-	set .@WarpMap$,"abyss_03";
-	set .@tempMFMap$,"迪塔勒泰晤勒斯 abyss_03";
+	set .@WarpMap$,"abbey02";
+	set .@tempMFMap$,"墮落大神官 悉潘 abbey02";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
 mvp03:
-	set .@WarpMap$,"odin_tem03";
-	set .@tempMFMap$,"蘭特克力斯 odin_tem03";
+	set .@WarpMap$,"abbey03";
+	set .@tempMFMap$,"貝雷傑 abbey03";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
 mvp04:
-	set .@WarpMap$,"gef_dun01";
-	set .@tempMFMap$,"德古拉男爵 gef_dun01";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp05:
-	set .@WarpMap$,"kh_dun02";
-	set .@tempMFMap$,"齊爾-D-01 kh_dun02";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp06:
-	set .@WarpMap$,"ein_dun02";
-	set .@tempMFMap$,"RSX-0806 ein_dun02";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp07:
-	set .@WarpMap$,"gef_fild03";
-	set .@tempMFMap$,"獸人英雄 gef_fild03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp08:
-	set .@WarpMap$,"gef_fild10";
-	set .@tempMFMap$,"獸人酋長 gef_fild10";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp09:
 	set .@WarpMap$,"xmas_dun02";
 	set .@tempMFMap$,"冰暴騎士 xmas_dun02";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
-mvp10:
-	set .@WarpMap$,"ayo_dun02";
-	set .@tempMFMap$,"嗒妮小姐 ayo_dun02";
+mvp05:
+	set .@WarpMap$,"gef_dun01";
+	set .@tempMFMap$,"德古拉男爵 gef_dun01";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
-mvp11:
-	set .@WarpMap$,"treasure02";
-	set .@tempMFMap$,"海盜船長 treasure02";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp12:
-	set .@WarpMap$,"tur_dun04";
-	set .@tempMFMap$,"烏龜將軍 tur_dun04";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp13:
-	set .@WarpMap$,"niflheim";
-	set .@tempMFMap$,"死靈騎士 niflheim";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp14:
-	set .@WarpMap$,"moc_pryd04";
-	set .@tempMFMap$,"俄塞裡斯 moc_pryd04";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp15:
-	set .@WarpMap$,"gl_chyard";
-	set .@tempMFMap$,"黑暗之王 gl_chyard";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp16:
-	set .@WarpMap$,"beach_dun";
-	set .@tempMFMap$,"塔奧群卡 beach_dun";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp17:
-	set .@WarpMap$,"ra_fild03";
-	set .@tempMFMap$,"阿特羅斯 ra_fild03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp18:
-	set .@WarpMap$,"ama_dun03";
-	set .@tempMFMap$,"元靈武士 ama_dun03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp19:
-	set .@WarpMap$,"moc_pryd06";
-	set .@tempMFMap$,"古埃及王 moc_pryd06";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp20:
-	set .@WarpMap$,"ra_san05";
-	set .@tempMFMap$,"幽暗夢魘 ra_san05";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp21:
-	set .@WarpMap$,"thor_v03";
-	set .@tempMFMap$,"伊夫利特 thor_v03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp22:
-	set .@WarpMap$,"in_sphinx5";
-	set .@tempMFMap$,"法老王 in_sphinx5";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp23:
-	set .@WarpMap$,"prt_maze03";
-	set .@tempMFMap$,"巴風特 prt_maze03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp24:
-	set .@WarpMap$,"pay_dun04";
-	set .@tempMFMap$,"月夜貓 pay_dun04";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp25:
-	set .@WarpMap$,"gon_dun03";
-	set .@tempMFMap$,"墨蛇君 gon_dun03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp26:
-	set .@WarpMap$,"lou_dun03";
-	set .@tempMFMap$,"白素貞 lou_dun03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp27:
-	set .@WarpMap$,"prt_sewb4";
-	set .@tempMFMap$,"黃金蟲 prt_sewb4";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp28:
-	set .@WarpMap$,"moc_fild17";
-	set .@tempMFMap$,"皮裡恩 moc_fild17";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp29:
-	set .@WarpMap$,"jupe_core";
-	set .@tempMFMap$,"貝思波 jupe_core";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp30:
-	set .@WarpMap$,"ice_dun03";
-	set .@tempMFMap$,"水晶龍 ice_dun03";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp31:
-	set .@WarpMap$,"anthell02";
-	set .@tempMFMap$,"蟻后 anthell02";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp32:
-	set .@WarpMap$,"mjolnir_04";
-	set .@tempMFMap$,"蜂后 mjolnir_04";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-mvp33:
-	set .@WarpMap$,"pay_fild10";
-	set .@tempMFMap$,"虎王 pay_fild10";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
-
-mvp34:
+mvp06:
 	set .@WarpMap$,"gef_dun02";
 	set .@tempMFMap$,"死靈 gef_dun02";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
+mvp07:
+	set .@WarpMap$,"tur_dun04";
+	set .@tempMFMap$,"烏龜將軍 tur_dun04";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp08:
+	set .@WarpMap$,"odin_tem03";
+	set .@tempMFMap$,"巴基力 蘭特力克斯 odin_tem03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp09:
+	set .@WarpMap$,"iz_dun05";
+	set .@tempMFMap$,"魔鬼大烏賊 iz_dun05";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp10:
+	set .@WarpMap$,"jupe_core";
+	set .@tempMFMap$,"貝思波 jupe_core";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp11:
+	set .@WarpMap$,"bra_dun02";
+	set .@tempMFMap$,"波伊塔塔 bra_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp12:
+	set .@WarpMap$,"dic_dun03";
+	set .@tempMFMap$,"黃金女王甲蟲 dic_dun03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp13:
+	set .@WarpMap$,"dic_dun02";
+	set .@tempMFMap$,"女王甲蟲 dic_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp14:
+	set .@WarpMap$,"ein_dun02";
+	set .@tempMFMap$,"RSX-0806 ein_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp15:
+	set .@WarpMap$,"gl_chyard";
+	set .@tempMFMap$,"黑暗之王1 gl_chyard";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp16:
+	set .@WarpMap$,"gl_chyard_";
+	set .@tempMFMap$,"黑暗之王2 gl_chyard_";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp17:
+	set .@WarpMap$,"lhz_dun02";
+	set .@tempMFMap$,"闇●劍士 賽尼亞 lhz_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp18:
+	set .@WarpMap$,"ra_san05";
+	set .@tempMFMap$,"幽暗夢魘 ra_san05";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp19:
+	set .@WarpMap$,"in_sphinx5";
+	set .@tempMFMap$,"法老王 in_sphinx5";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp20:
+	set .@WarpMap$,"abyss_03";
+	set .@tempMFMap$,"迪塔勒泰晤勒斯 abyss_03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp21:
+	set .@WarpMap$,"abyss_04";
+	set .@tempMFMap$,"骨骸迪塔勒泰晤勒斯 abyss_04";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp22:
+	set .@WarpMap$,"tur_d04_i";
+	set .@tempMFMap$,"魔劍士 不祥烏龜將軍 tur_d04_i";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp23:
+	set .@WarpMap$,"ice_d03_i";
+	set .@tempMFMap$,"覺醒水晶龍 ice_d03_i";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp24:
+	set .@WarpMap$,"oz_dun02";
+	set .@tempMFMap$,"火焰狼牙 oz_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp25:
+	set .@WarpMap$,"gl_cas01_";
+	set .@tempMFMap$,"汙染蜘蛛女王 gl_cas01_";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp26:
+	set .@WarpMap$,"gl_cas01_";
+	set .@tempMFMap$,"汙染黑暗之王 gl_cas01_";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp27:
+	set .@WarpMap$,"iz_d04_i";
+	set .@tempMFMap$,"深海魔鬼大烏賊 iz_d04_i";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp28:
+	set .@WarpMap$,"iz_d05_i";
+	set .@tempMFMap$,"深海魔女 iz_d05_i";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp29:
+	set .@WarpMap$,"thana_boss";
+	set .@tempMFMap$,"魔劍士 達納托斯的記憶 thana_boss";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp30:
+	set .@WarpMap$,"kh_dun02";
+	set .@tempMFMap$,"齊爾-D-01 kh_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp31:
+	set .@WarpMap$,"gef_fild03";
+	set .@tempMFMap$,"獸人英雄 gef_fild03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp32:
+	set .@WarpMap$,"gef_fild10";
+	set .@tempMFMap$,"獸人酋長 gef_fild10";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp33:
+	set .@WarpMap$,"ayo_dun02";
+	set .@tempMFMap$,"嗒妮小姐 ayo_dun02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp34:
+	set .@WarpMap$,"treasure02";
+	set .@tempMFMap$,"海盜船長 treasure02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
 mvp35:
+	set .@WarpMap$,"niflheim";
+	set .@tempMFMap$,"死靈騎士 niflheim";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp36:
+	set .@WarpMap$,"moc_pryd04";
+	set .@tempMFMap$,"俄塞裡斯 moc_pryd04";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp37:
+	set .@WarpMap$,"beach_dun";
+	set .@tempMFMap$,"塔奧群卡 beach_dun";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp38:
+	set .@WarpMap$,"ra_fild03";
+	set .@tempMFMap$,"阿特羅斯 ra_fild03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp39:
+	set .@WarpMap$,"ama_dun03";
+	set .@tempMFMap$,"元靈武士 ama_dun03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp40:
+	set .@WarpMap$,"moc_pryd06";
+	set .@tempMFMap$,"古埃及王 moc_pryd06";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp41:
+	set .@WarpMap$,"thor_v03";
+	set .@tempMFMap$,"伊夫利特 thor_v03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp42:
+	set .@WarpMap$,"prt_maze03";
+	set .@tempMFMap$,"巴風特 prt_maze03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp43:
+	set .@WarpMap$,"pay_dun04";
+	set .@tempMFMap$,"月夜貓 pay_dun04";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp44:
+	set .@WarpMap$,"gon_dun03";
+	set .@tempMFMap$,"墨蛇君 gon_dun03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp45:
+	set .@WarpMap$,"lou_dun03";
+	set .@tempMFMap$,"白素貞 lou_dun03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp46:
+	set .@WarpMap$,"prt_sewb4";
+	set .@tempMFMap$,"黃金蟲 prt_sewb4";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp47:
+	set .@WarpMap$,"moc_fild17";
+	set .@tempMFMap$,"皮里恩 moc_fild17";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp48:
+	set .@WarpMap$,"ice_dun03";
+	set .@tempMFMap$,"水晶龍 ice_dun03";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp49:
+	set .@WarpMap$,"anthell02";
+	set .@tempMFMap$,"蟻后 anthell02";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp50:
+	set .@WarpMap$,"mjolnir_04";
+	set .@tempMFMap$,"蜂后 mjolnir_04";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp51:
+	set .@WarpMap$,"pay_fild10";
+	set .@tempMFMap$,"虎王 pay_fild10";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+mvp52:
 	set .@WarpMap$,"xmas_fild01";
 	set .@tempMFMap$,"卡崙 xmas_fild01";
 	set .@WarpMapX,0;
 	set .@WarpMapY,0;
 	goto AddorWarp;
 
-mvp36:
-	set .@WarpMap$,"abbey02";
-	set .@tempMFMap$,"墮落大神官 悉潘 abbey02";
-	set .@WarpMapX,0;
-	set .@WarpMapY,0;
-	goto AddorWarp;
+
+
+
+
+
+
+
 //更新
 Newbie:
 	mes "^33CC33【世界傳送員】^000000";

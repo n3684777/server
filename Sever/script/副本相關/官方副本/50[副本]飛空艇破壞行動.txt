@@ -347,7 +347,7 @@ Onkill_dead:
 		'LastBoss = 1;
 		'BossID = $@mobid[0];
 		getunitdata 'BossID,.@mobarr;
-		setunitdata 'BossID,UMOB_MAXHP,.@mobarr[UMOB_MAXHP]*(1+'mode);
+		if('mode == 2){setunitdata 'BossID,UMOB_MAXHP,.@mobarr[UMOB_MAXHP]*2;}else{setunitdata 'BossID,UMOB_MAXHP,.@mobarr[UMOB_MAXHP]*(1+'mode);}
 		setunitdata 'BossID,UMOB_ATKMIN,.@mobarr[UMOB_ATKMIN]+'mode*2000;				
 		setunitdata 'BossID,UMOB_MATKMIN,.@mobarr[UMOB_MATKMIN]+'mode*2000;
 		setunitdata 'BossID,UMOB_DEF,.@mobarr[UMOB_DEF]+'mode*100;

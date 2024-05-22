@@ -1,0 +1,20 @@
+function	script	getskillmaxlv	{
+    .@sk = getarg(0);
+    if(.@sk == 1 ){
+        return 9;
+    }else if(.@sk >= 2 && .@sk <= 9 || .@sk >= 11 && .@sk <= 23 || .@sk >= 28 && .@sk <= 30 ||
+     .@sk >= 32 && .@sk <= 34 || .@sk >= 36 && .@sk <= 39 || .@sk >= 41 && .@sk <= 52 || .@r >= 55 && .@r <= 58 || .@r == 60 || .@r == 62 || .@r == 65 || .@r == 70 ){
+        return 10;
+    }else if(.@sk == 10 || .@sk == 24 || .@sk == 25 || .@sk == 31 || .@sk == 35 || .@sk == 40 || .@sk == 53 || .@sk == 63 || .@r == 71){
+        return 1;
+    }else if(.@sk == 26){
+        return 2;
+    }else if(.@sk == 27 || .@r == 54 || .@r == 71){
+        return 4;
+    }else if(.@sk == 59 || .@r == 61 || .@r == 64 || .@r == 66 || .@r == 68 || .@r == 69){
+        return 5;
+    }else if(.@sk == 67){
+        return 3;
+    }
+
+}
