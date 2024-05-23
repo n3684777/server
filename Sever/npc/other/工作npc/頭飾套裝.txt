@@ -1,0 +1,1963 @@
+payon,150,235,5	script	頭飾套裝製作	997,{
+	mes "請問你要製作哪個套裝？";
+	next;
+	menu	"暗夜套裝",ta,
+		"緋紅套裝",tb,
+		"黃昏套裝",tc,
+		"蔚藍套裝",td,
+		"血紅套裝",te,
+		"白金套裝",tf,
+		"取消",tg;
+
+ta:
+	mes "你要製作什麼？";
+	menu	"暗夜頭盔",ta1,
+		"暗夜之翼",ta2,
+		"暗夜圍巾",ta3,
+		"查看套裝效果",ta4;
+
+ta1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dota1,
+		"放棄",nd1;
+
+dota1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 27953,1;
+	close;
+
+nd1:
+	close;
+
+ta2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dota2,
+		"放棄",nd2;
+
+dota2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 27954,1;
+	close;
+
+nd2:
+	close;
+
+ta3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dota3,
+		"放棄",nd3;
+
+dota3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 27952,1;
+	close;
+
+nd3:
+	close;
+
+ta4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "習得「致命塗毒」LV5";
+	close;
+
+tb:
+	mes "你要製作什麼？";
+	menu	"緋紅頭盔",tb1,
+		"緋紅之翼",tb2,
+		"緋紅圍巾",tb3,
+		"查看套裝效果",tb4;
+
+tb1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotb1,
+		"放棄",nd4;
+
+dotb1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 27955,1;
+	close;
+
+nd4:
+	close;
+
+tb2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotb2,
+		"放棄",nd5;
+
+dotb2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 27957,1;
+	close;
+
+nd5:
+	close;
+
+tb3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotb3,
+		"放棄",nd6;
+
+dotb3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 27956,1;
+	close;
+
+nd6:
+	close;
+
+tb4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "攻擊時自動詠唱「祭司的靈魂」LV5";
+	close;
+
+tc:
+	mes "你要製作什麼？";
+	menu	"黃昏頭盔",tc1,
+		"黃昏之翼",tc2,
+		"黃昏圍巾",tc3,
+		"查看套裝效果",tc4;
+
+tc1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotc1,
+		"放棄",nd7;
+
+dotc1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 27959,1;
+	close;
+
+nd7:
+	close;
+
+tc2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotc2,
+		"放棄",nd8;
+
+dotc2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 27960,1;
+	close;
+
+nd8:
+	close;
+
+tc3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotc3,
+		"放棄",nd9;
+
+dotc3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 27958,1;
+	close;
+
+nd9:
+	close;
+
+tc4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "習得「靈氣劍」LV5";
+	close;
+
+td:
+	mes "你要製作什麼？";
+	menu	"蔚藍頭盔",td1,
+		"蔚藍之翼",td2,
+		"蔚藍星光",td3,
+		"查看套裝效果",td4;
+
+td1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotd1,
+		"放棄",nd10;
+
+dotd1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 29134,1;
+	close;
+
+nd10:
+	close;
+
+td2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotd2,
+		"放棄",nd11;
+
+dotd2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 29140,1;
+	close;
+
+nd11:
+	close;
+
+td3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotd3,
+		"放棄",nd12;
+
+dotd3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 29137,1;
+	close;
+
+nd12:
+	close;
+
+td4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "習得「魔法效果解除」LV5";
+	close;
+
+te:
+	mes "你要製作什麼？";
+	menu	"血紅頭盔",te1,
+		"血紅之翼",te2,
+		"血紅星光",te3,
+		"查看套裝效果",te4;
+
+te1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dote1,
+		"放棄",nd13;
+
+dote1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 29135,1;
+	close;
+
+nd13:
+	close;
+
+te2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dote2,
+		"放棄",nd14;
+
+dote2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 29141,1;
+	close;
+
+nd14:
+	close;
+
+te3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dote3,
+		"放棄",nd15;
+
+dote3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 29138,1;
+	close;
+
+nd15:
+	close;
+
+te4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "習得「所有化學武器保護」LV5";
+	close;
+
+tf:
+	mes "你要製作什麼？";
+	menu	"白金頭盔",tf1,
+		"白金之翼",tf2,
+		"白金星光",tf3,
+		"查看套裝效果",tf4;
+
+tf1:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "不可破壞";
+	mes "攻擊時自動施放「天使之怒」LV1";
+	mes "精煉20時，HP額外 + 100%";
+	next;
+	mes "製作材料需要：";
+	mes "^996699金庸任務十四天書一套^000000";
+	mes "^996699二階頭上一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotf1,
+		"放棄",nd16;
+
+dotf1:
+	mes "檢查材料中...";
+	if(countitem(28080)< 1) goto NOitem;
+	if(countitem(28081)< 1) goto NOitem;
+	if(countitem(28082)< 1) goto NOitem;
+	if(countitem(28083)< 1) goto NOitem;
+	if(countitem(28084)< 1) goto NOitem;
+	if(countitem(28085)< 1) goto NOitem;
+	if(countitem(28086)< 1) goto NOitem;
+	if(countitem(28087)< 1) goto NOitem;
+	if(countitem(28088)< 1) goto NOitem;
+	if(countitem(28089)< 1) goto NOitem;
+	if(countitem(28090)< 1) goto NOitem;
+	if(countitem(28091)< 1) goto NOitem;
+	if(countitem(28092)< 1) goto NOitem;
+	if(countitem(28093)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(5022)< 1) goto NOitem;
+	if(countitem(27214)< 1) goto NOitem;
+	if(countitem(27216)< 1) goto NOitem;
+	if(countitem(27243)< 1) goto NOitem;
+	if(countitem(27474)< 1) goto NOitem;
+	if(countitem(27500)< 1) goto NOitem;
+	if(countitem(27639)< 1) goto NOitem;
+	if(countitem(27709)< 1) goto NOitem;
+	delitem 28080,1;
+	delitem 28081,1;
+	delitem 28082,1;
+	delitem 28083,1;
+	delitem 28084,1;
+	delitem 28085,1;
+	delitem 28086,1;
+	delitem 28087,1;
+	delitem 28088,1;
+	delitem 28089,1;
+	delitem 28090,1;
+	delitem 28091,1;
+	delitem 28092,1;
+	delitem 28093,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 5022,1;
+	delitem 27214,1;
+	delitem 27216,1;
+	delitem 27243,1;
+	delitem 27474,1;
+	delitem 27500,1;
+	delitem 27639,1;
+	delitem 27709,1;
+	getitem 29136,1;
+	close;
+
+nd16:
+	close;
+
+tf2:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「聖母之祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699星座任務十二星冠一套^000000";
+	mes "^996699二階頭中一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotf2,
+		"放棄",nd17;
+
+dotf2:
+	mes "檢查材料中...";
+	if(countitem(27072)< 1) goto NOitem;
+	if(countitem(27073)< 1) goto NOitem;
+	if(countitem(27074)< 1) goto NOitem;
+	if(countitem(27075)< 1) goto NOitem;
+	if(countitem(27076)< 1) goto NOitem;
+	if(countitem(27077)< 1) goto NOitem;
+	if(countitem(27078)< 1) goto NOitem;
+	if(countitem(27079)< 1) goto NOitem;
+	if(countitem(27080)< 1) goto NOitem;
+	if(countitem(27081)< 1) goto NOitem;
+	if(countitem(27082)< 1) goto NOitem;
+	if(countitem(27083)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(27961)< 1) goto NOitem;
+	if(countitem(27962)< 1) goto NOitem;
+	if(countitem(27963)< 1) goto NOitem;
+	if(countitem(27964)< 1) goto NOitem;
+	if(countitem(27965)< 1) goto NOitem;
+	if(countitem(27966)< 1) goto NOitem;
+	if(countitem(29018)< 1) goto NOitem;
+	if(countitem(29019)< 1) goto NOitem;
+	if(countitem(29020)< 1) goto NOitem;
+	if(countitem(29021)< 1) goto NOitem;
+	if(countitem(29022)< 1) goto NOitem;
+	delitem 27072,1;
+	delitem 27073,1;
+	delitem 27074,1;
+	delitem 27075,1;
+	delitem 27076,1;
+	delitem 27077,1;
+	delitem 27078,1;
+	delitem 27079,1;
+	delitem 27080,1;
+	delitem 27081,1;
+	delitem 27082,1;
+	delitem 27083,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 27961,1;
+	delitem 27962,1;
+	delitem 27963,1;
+	delitem 27964,1;
+	delitem 27965,1;
+	delitem 27966,1;
+	delitem 29018,1;
+	delitem 29019,1;
+	delitem 29020,1;
+	delitem 29021,1;
+	delitem 29022,1;
+	getitem 29142,1;
+	close;
+
+nd17:
+	close;
+
+tf3:
+	mes "頭飾效果：ALLSTATS + 150";
+	mes "HP + 100%";
+	mes "攻擊時自動施放「神威祈福」LV3";
+	next;
+	mes "製作材料需要：";
+	mes "^996699生肖任務十二生肖一套^000000";
+	mes "^996699二階頭下一套^000000";
+	mes "^996699八卦各5000個^000000";
+	next;
+	menu	"製作",dotf3,
+		"放棄",nd18;
+
+dotf3:
+	mes "檢查材料中...";
+	if(countitem(28634)< 1) goto NOitem;
+	if(countitem(28635)< 1) goto NOitem;
+	if(countitem(28636)< 1) goto NOitem;
+	if(countitem(28637)< 1) goto NOitem;
+	if(countitem(28638)< 1) goto NOitem;
+	if(countitem(28639)< 1) goto NOitem;
+	if(countitem(28640)< 1) goto NOitem;
+	if(countitem(28641)< 1) goto NOitem;
+	if(countitem(28642)< 1) goto NOitem;
+	if(countitem(28643)< 1) goto NOitem;
+	if(countitem(28644)< 1) goto NOitem;
+	if(countitem(28645)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(25013)< 1) goto NOitem;
+	if(countitem(25014)< 1) goto NOitem;
+	if(countitem(25015)< 1) goto NOitem;
+	if(countitem(25016)< 1) goto NOitem;
+	if(countitem(25017)< 1) goto NOitem;
+	if(countitem(25018)< 1) goto NOitem;
+	if(countitem(25020)< 1) goto NOitem;
+	if(countitem(25021)< 1) goto NOitem;
+	if(countitem(25019)< 1) goto NOitem;
+	if(countitem(25023)< 1) goto NOitem;
+	if(countitem(25024)< 1) goto NOitem;
+	if(countitem(25025)< 1) goto NOitem;
+	if(countitem(25027)< 1) goto NOitem;
+	if(countitem(25028)< 1) goto NOitem;
+	if(countitem(25026)< 1) goto NOitem;
+	delitem 28634,1;
+	delitem 28635,1;
+	delitem 28636,1;
+	delitem 28637,1;
+	delitem 28638,1;
+	delitem 28639,1;
+	delitem 28640,1;
+	delitem 28641,1;
+	delitem 28642,1;
+	delitem 28643,1;
+	delitem 28644,1;
+	delitem 28645,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 25013,1;
+	delitem 25014,1;
+	delitem 25015,1;
+	delitem 25016,1;
+	delitem 25017,1;
+	delitem 25018,1;
+	delitem 25020,1;
+	delitem 25021,1;
+	delitem 25019,1;
+	delitem 25023,1;
+	delitem 25024,1;
+	delitem 25025,1;
+	delitem 25027,1;
+	delitem 25028,1;
+	delitem 25026,1;
+	getitem 29139,1;
+	close;
+
+nd18:
+	close;
+
+tf4:
+	mes "套裝效果：";
+	mes "ALLSTATS + 150 HP + 100%";
+	mes "習得「地元素領域」LV5";
+	close;
+
+tg:
+	close;
+
+NOitem:
+	mes "材料不足";
+	close;
+
+OnInit:
+        waitingroom "頭飾套裝",0;
+        end;
+}
+
+
+//////////
+/*
+製作人:FalseApple
+腳本說明:
+防範多IP執行遊戲
+
+  1.可自定義哪些IP 可以幾開!!
+    給同宿舍福利!!
+  2.可線上直接修改 幾開...(方法 c)
+    PS:線上修改的，重開私服，重讀NPC 都會恢復原來腳本設定，永久特定用戶還是得在腳本做更新!! 
+最後修改時間:2013/2/28/14:30
+聯絡方式:ok論壇  s1089954zx
+若要分享，請勿將以上介紹刪除，感謝。 
+
+改版資訊
+v1.0 : 初步完成!
+v1.1 : 增加以下功能!
+       1.增加查詢IP功能(方便非開機GM也可以查詢該玩家IP).
+       2.高階GM可以將系統線上鎖定.
+
+v1.2 : 增加以下功能!
+       1.增加利用IP查詢相同IP玩家有哪些，以及一鍵踢除.
+       2.黑名單功能(腳本設定，方便將VIP和黑名單分離).
+*/
+
+-	script	Windowcontrol	-1,{
+OnInit:
+cleararray $@Morewindows$,"",getarraysize($@Morewindows$);
+cleararray $@Windiwsnum,0,getarraysize($@Windiwsnum);
+cleararray .@Name$,"",getarraysize(.@Name$);
+cleararray $@Kill_List$,"",getarraysize($@Kill_List$);
+
+
+
+//=======================腳本基礎設定======================//
+
+set $@GM_Right,99;                                         //GM權利多少以上可使用此系統
+set $@BigGM_Right,99;                                      //GM權利多少以上可線上關閉此系統(暫時鎖定給低階GM更改用)
+
+//=======================IP限制設定=======================//
+
+setarray $@Morewindows$[0],"36.231.117.45",               //加入特定客戶。
+	                   "114.43.195.157",
+	                   "",	
+	                   "36.226.36.59",
+	                   "118.233.142.121",              //77
+	                   "180.218.109.120",              //阿弟
+	                   "1.165.151.44",              //蔚藍
+			   "122.116.209.161",		//雪羽紗
+			   "123.194.29.75",			//蹦兒
+			   "180.177.126.127",			//澪′
+			   "220.133.240.170",			//EDMEDM
+			   "61.223.192.156",			//大叔
+			   "122.100.111.4",			//李奧納多狄卡皮歐
+			   "59.126.165.134",			//小ㄚ頭沒心沒肺'
+			   "122.116.89.74";                //銀銀
+
+setarray $@Windiwsnum[0],4                               //開放給特定客戶幾開，要對應上面特定用戶。
+           		,4
+           		,2
+           		,2
+           		,5
+           		,2
+           		,2
+           		,5
+           		,2
+           		,2
+           		,2
+           		,2
+           		,2
+           		,2
+           		,2;
+
+set $@OtherWimdows,2;                                     //非特定客戶 都只能幾開。
+
+/*範例 今天我要設定 IP 200.200.200.101 開放給他6開
+就在$@Morewindows$陣列 新增 200.200.200.101
+然後在$@Windiwsnum陣列 新增 6 即可
+如果您想直接封鎖該IP可以在系列黑名單新增IP。
+*/
+
+//=======================黑名單IP新增=====================//
+setarray $@Black_IP$[0],"1.172.207.160",
+			"1.172.203.168",
+			"1.172.192.5",
+			"1.172.193.144",
+			"1.172.209.178",
+			"1.172.197.44",
+			"1.172.208.186",
+			"36.227.225.130",
+			"111.240.164.110",
+			"114.47.169.74",
+			"1.172.208.186",
+                        "1.172.211.45";
+
+
+//=======================================================//
+end;
+}
+
+-	script	ip	-1,{               //若您不習慣用 Windows 可改成你想要得，在npc:您更改後的名稱。
+OnWhisperGlobal:
+    if(getgmlevel() < $@GM_Right){mes "你無權使用這操作";close;}
+    if($@SysetemRock==1 && getgmlevel() < $@BigGM_Right){mes "^FF0000※系統已被關閉※^000000";close;}
+    mes "歡迎使用IP限制，線上修改!!";
+    mes "請選擇修改項目";
+    mes " ";
+    mes "^FF0000PS: 線上修改的，凡是重新讀取NPC 或是 重開私服，都會還原，所以還是請靠腳本增加，謝謝.....^000000";
+    next;
+    switch(select("玩家IP查詢:特定客戶窗口修改:無特定客戶窗口修改:暫時增加特定客戶:特定用戶暫時移除:查詢目前各窗口設定:查詢此IP窗口或踢除:開關系統使用:取消")){
+
+        case 1:
+                   mes "請輸入查詢該IP的玩家ID!!";
+                   set .@Ip_GM_Player$,"";
+                   input .@Ip_GM_Player$;
+                   mes "玩家ID: ^0000FF"+.@Ip_GM_Player$+"^000000";
+                   menu "正確",-;
+                   if(isloggedin(getcharid(3,.@Ip_GM_Player$))==0){
+                           mes "^ff0000該玩家不在線上唷!^000000";
+                           close;}
+
+		   query_sql("SELECT last_ip FROM `login` WHERE account_id = '"+getcharid(3,.@Ip_GM_Player$)+"'", .@PlayIP$);
+
+                   mes "該玩家IP = ^0000FF"+.@PlayIP$+"^000000";
+                   close;
+
+
+
+
+        case 2:
+                   mes "請輸入要改的IP!!";
+                   set .@Ip_GM_Control$,"";
+                   input .@Ip_GM_Control$;
+                   mes "IP: ^0000FF"+.@Ip_GM_Control$+"^000000";
+                   next;
+                   for(set .@b,0;.@b<getarraysize($@Morewindows$); set .@b,.@b+1){
+                       if(.@Ip_GM_Control$==$@Morewindows$[.@b]){ goto A1; end;}
+                     }
+                            mes "你輸入的IP不是特定用戶唷!!";
+                            mes "請確認在重新輸入。";
+                            close;
+                A1:
+                   mes "請輸入要更改的視窗數量!!";
+                   set .@Windows_GM_Control,"";
+                   input .@Windows_GM_Control;
+                   mes "您要將 "+.@Ip_GM_Control$+"";
+                   mes "從 ^FF0000"+$@Windiwsnum[.@b]+"^000000 開 -> ^0000FF"+.@Windows_GM_Control+"^000000 開?";
+                   menu "是",-;
+                   if($@SysetemRock==1 && getgmlevel() < $@BigGM_Right){mes "^FF0000※系統已被關閉※^000000";close;}
+                   setarray $@Windiwsnum[.@b],.@Windows_GM_Control;
+                   mes "修改完成!!";    
+                   close;
+       case 3:
+                   mes "請輸入要改的數量窗口!!";
+                   set .@Windows_GM_Control,"";
+                   input .@Windows_GM_Control;
+                   mes "修改後將變成";
+                   mes "^FF0000"+$@OtherWimdows+"^000000 開 -> ^0000FF"+.@Windows_GM_Control+"^000000 開";
+                   menu "是",-;
+                   if($@SysetemRock==1 && getgmlevel() < $@BigGM_Right){mes "^FF0000※系統已被關閉※^000000";close;}
+                   set $@OtherWimdows,.@Windows_GM_Control;    
+                   mes "修改完成!!";    
+                   close;
+       case 4:
+                   mes "請輸入要新增的特定客戶...";
+                   set .@New_Windows$,"";
+                   input .@New_Windows$;
+                   next;
+                   mes "請輸入要限定的窗數...";   
+                   set .@New_Windowsnum,"";
+                   input .@New_Windowsnum; 
+                   next;
+                   mes "請問您要將....";
+                   mes "IP: ^0000FF"+.@New_Windows$+"^000000";
+                   mes "限定 ^FF0000"+.@New_Windowsnum+"^000000 開。";
+                   menu "是",-;
+                   if($@SysetemRock==1 && getgmlevel() < $@BigGM_Right){mes "^FF0000※系統已被關閉※^000000";close;}
+                   set $@Morewindows$[getarraysize($@morewindows$)],.@New_Windows$;
+                   set $@Windiwsnum[getarraysize($@windiwsnum)],.@New_Windowsnum;
+                   mes "新增成功!!";   
+                   close;
+       case 5:        
+                   mes "請問您要移除的特定用戶是!?";
+                   set .@Move_Windows$,"";
+                   input .@Move__Windows$;
+                   next;
+                   mes "你要移除的特定用戶...";
+                   mes "IP: ^0000FF"+.@Move__Windows$+"^000000";
+                   menu "是",-;
+                   if($@SysetemRock==1 && getgmlevel() < $@BigGM_Right){mes "^FF0000※系統已被關閉※^000000";close;}
+                   for(set .@q,0;.@q<getarraysize($@morewindows$); set .@q,.@q+1){
+                      if(.@Move__Windows$==$@Morewindows$[.@q]){
+                           deletearray $@Morewindows$[.@q],1;
+                           deletearray $@Windiwsnum[.@q],1;
+                           mes "移除成功!!";
+                           close;
+                      } 
+                   }
+                            next;
+                            mes "你輸入的IP沒有在特定用戶唷!!";
+                            mes "請確認在重新輸入。";
+                            close;
+                     
+       case 6:
+                   mes "非特定用戶 ^FF0000"+$@OtherWimdows+"^000000 開。";
+                   for(set .@g,0;.@g<getarraysize($@Morewindows$); set .@g,.@g+1){
+                      mes "^7B68EE["+.@g+"]^000000IP ^0000FF"+$@Morewindows$[.@g]+"^000000 目前可 ^FF0000"+$@Windiwsnum[.@g]+"^000000 開。";
+                     } 
+                   close;
+       case 7:
+                   mes "請輸入要查詢或踢除的IP!!";
+                   set .@Kill_Ip_Player$,"";
+                   input .@Kill_Ip_Player$;
+                   mes "目標IP: ^FF0000"+.@Kill_Ip_Player$+"^000000";
+                   menu "正確",-;
+                   next;
+                   mes "目標IP: ^FF0000"+.@Kill_Ip_Player$+"^000000!";
+
+
+	           query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@Kill_Ip_Player$+"'", .@AccountId10);
+
+	           cleararray $@Kill_List$,"",getarraysize($@Kill_List$);
+                   set .@online,0;
+
+                   for(set .@e ,0;.@e<getarraysize(.@AccountId10);set .@e,.@e+1){
+	               cleararray .@Name$,"",getarraysize(.@Name$);
+
+		       query_sql("SELECT name FROM `char` WHERE account_id = '"+.@AccountId10[.@e]+"'", .@Name$);
+
+                       for(set .@v ,0;.@v<getarraysize(.@Name$);set .@v,.@v+1){
+                            if(isloggedin(getcharid(3,.@Name$[.@v]))!=0){
+                                  set .@online,.@online+1;
+                                  mes "^0000FF"+.@online+"."+.@Name$[.@v]+"^000000";
+                                  set $@Kill_List$[getarraysize($@Kill_List$)],.@Name$[.@v];
+                            }
+                       }		  
+	           }
+                   if(.@online==0){
+                   mes "您輸入的IP目前沒任何窗口在線上唷!";
+                   mes "請確認IP後，再重新輸入!";
+                   close;
+                   }
+                   mes "有以上角色在線上!";
+                   mes "是否進行全部踢除!";
+                   if(select("[ 踢除 ]","[ 取消 ]")==2)close;
+                   mes "踢除Ing!";
+                   for(set .@h ,0;.@h<getarraysize($@Kill_List$);set .@h,.@h+1){
+			atcommand "@kick "+$@Kill_List$[.@h];
+                   }
+                   mes "踢除Finish!";
+                   close;
+
+       case 8:
+                   if(getgmlevel() < $@BigGM_Right){mes "您GM權利不足使用這項操作!";close;}
+		   if($@SysetemRock){
+                            mes "請問是否要開啟此系統?";
+                            menu "是",-;
+                            set $@SysetemRock,0;
+                            mes "^FF0000※系統已經開啟※^000000";
+                            close;
+                   }
+
+                   mes "關閉此系統後，GM權利低於 ^ff0000"+$@GM_Right+"^000000 者";
+                   mes "將無法使用此系統......";
+                   mes "";
+                   mes "請問是否要關閉此系統?";
+                   menu "是",-;
+                   set $@SysetemRock,1;
+                   mes "^FF0000※系統已經關閉※^000000";
+                   close;
+
+
+       case 9:
+                  close;
+}
+end;
+
+OnPCLoginEvent:
+        
+	query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
+
+	query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@LastIp$+"'", .@AccountId);
+
+        for(set .@s,0; .@s < getarraysize($@Black_IP$); set .@s,.@s+1){
+              if(.@LastIp$==$@Black_IP$[.@s]){
+			mes "^FF0000很抱歉...您已被列入黑名單!";
+			mes "請於其他管道連絡GM查詢原因!^000000";
+			sleep2(3000);
+			atcommand "@kick "+strcharinfo(0);
+			end;
+		}
+	}
+
+
+	set $@MaxWimdows,$@OtherWimdows;
+
+        for(set .@a,0; .@a < getarraysize($@Morewindows$); set .@a,.@a+1){
+
+              if(.@LastIp$==$@Morewindows$[.@a]){
+                      set $@MaxWimdows,$@Windiwsnum[.@a];
+                      break;
+               }
+          }
+	for(set .@i ,0;.@i<getarraysize(.@AccountId);set .@i,.@i+1){
+		if(isloggedin(.@AccountId[.@i]))set .@j,.@j+1;
+		   if(.@j>$@MaxWimdows){
+			mes "很抱歉....";
+			mes "玩家名稱: "+strcharinfo(0)+" 來自[^FF6600" + .@LastIp$ + "^000000]";
+			mes "同樣 IP，不可以超過 ^FF0000"+$@MaxWimdows+"^000000 開.";
+			mes "請確認窗口，謝謝!!!";
+			mes "^0000FF若您是需要多開，請洽GM為您升級特定用戶，謝謝。^000000";
+			sleep2(3000);
+			atcommand "@kick "+strcharinfo(0);
+			end;
+		}
+	}
+end;
+
+}

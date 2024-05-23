@@ -1,0 +1,19 @@
+goodjob01,33,165,4	script	小兵道館獎勵員	856,{
+	mes "**獎品領取**";
+	mes "[^996699 隨機取得獎品 ^000000]";
+	mes "[^ff0000 祝您中大獎 ^000000]";
+        percentheal 100,100;
+	next;
+        set @gi,rand(5);
+	if (@gi ==0)getitem 28566,15;
+	if (@gi ==1)getitem 28567,15;
+	if (@gi ==2)getitem 28568,15;
+	if (@gi ==3)getitem 28569,15;
+	if (@gi ==4)getitem 28570,15;
+        set @gu,rand(4);	
+        if (@gu ==3)getitem 28572,1;
+        if (@gu ==1)getitem 13635,2;
+	warp "lighthalzen",213,141;
+		close;
+		end;
+}

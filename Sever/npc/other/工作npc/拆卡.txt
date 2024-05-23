@@ -1,0 +1,139 @@
+//繁體翻譯 武魂
+new_3-2,95,113,6	script	拆卡魔法師	123,{
+
+UPGRADEROOT:
+	mes "[拆卡魔法師]";
+	mes "你好啊~~年輕人！";
+	mes "想要卸除裝載在裝備上的卡片嗎？";
+	mes "我可以使用魔法來幫你這個忙！";
+	mes "不過你必須支付一定的費用喔！";
+	next;
+	menu "好啊！看來真不錯。",REMOVEMENU,
+	     "不了，謝謝。",CLOSEOUT;
+
+
+REMOVEMENU:
+	mes "[拆卡魔法師]";
+	mes "HOO~你想我幫你卸除哪一件裝備呢？";
+	next;
+	menu "嗯..卸除..讓我想想。",CLOSEOUT,
+	     getequipname(1),SLOT1,
+	     getequipname(2),SLOT2,
+	     getequipname(3),SLOT3,
+	     getequipname(4),SLOT4,
+	     getequipname(5),SLOT5,
+	     getequipname(6),SLOT6,
+	     getequipname(7),SLOT7,
+	     getequipname(8),SLOT8,
+	     getequipname(9),SLOT9,
+	     getequipname(10),SLOT10;
+
+SLOT1:
+	set @part,1;
+	goto CARDNUMCHECK;
+
+SLOT2:
+	set @part,2;
+	goto CARDNUMCHECK;
+
+SLOT3:
+	set @part,3;
+	goto CARDNUMCHECK;
+
+SLOT4:
+	set @part,4;
+	goto CARDNUMCHECK;
+
+SLOT5:
+	set @part,5;
+	goto CARDNUMCHECK;
+
+SLOT6:
+	set @part,6;
+	goto CARDNUMCHECK;
+
+SLOT7:
+	set @part,7;
+	goto CARDNUMCHECK;
+
+SLOT8:
+	set @part,8;
+	goto CARDNUMCHECK;
+
+SLOT9:
+	set @part,9;
+	goto CARDNUMCHECK;
+
+SLOT10:
+	set @part,10;
+	goto CARDNUMCHECK;
+
+CARDNUMCHECK:
+	if(getequipcardcnt(@part) == 0) goto DENYCARDCOUNT;
+	set @cardcount,getequipcardcnt(@part);
+	mes "[拆卡魔法師]";
+	mes "這件裝備的插槽上已經插上了" + @cardcount + "張卡片。";
+	next;
+	menu "我要拆卡。",REMOVECARDWARNING,
+	     "我還沒有准備好。",CLOSEOUT;
+
+REMOVECARDWARNING:
+	mes "[拆卡魔法師]";
+	mes "在開始之前我得先告訴你。";
+	mes "使用這種魔法萬一失敗，";
+	mes "^FF4040可能會損壞了卡片或裝備、^000000。";
+	mes "萬一損壞了";
+	mes "我可^FF4040不會賠償^000000給你的喔~~";
+	mes "所以，你必須考慮清楚。";
+	next;
+	mes "[拆卡魔法師]";
+	mes "如果損壞的話^FF4040你想保留卡片還是裝備^000000呢、";
+	mes "不過會有^FF0000一定機率^000000兩種全損壞";
+	mes "當然我是唬爛你的！";
+	next;
+	menu "想想還是算了。",CLOSEOUT,
+	     "保留裝備。",PRIORITYITEM,
+	     "保留卡片。",PRIORITYCARD;
+
+PRIORITYITEM:
+	set @failtype,1;
+	goto REMOVECARD;
+
+PRIORITYCARD:
+	set @failtype,2;
+	goto REMOVECARD;
+
+REMOVECARD:
+	mes "[拆卡魔法師]";
+	mes "很好！那我開始了~~。";
+	next;
+
+	set @failchance,rand(100);
+	successremovecards @part;
+	emotion 100;
+	mes "[拆卡魔法師]";
+	mes "大功告成啦！";
+	mes "這是你的卡片和你的道具，再見！";
+	close;
+
+
+DENYCARDCOUNT:
+        mes "[拆卡魔法師]";
+        mes "年輕人...。";
+        mes "這件裝備上面並沒有卡片呀~~~。";
+	close;
+
+DENYMATERIAL:
+        mes "[拆卡魔法師]";
+        mes "你並沒有把我需要的材料帶來呀。";
+        mes "還是把東西都帶齊了再來找我吧！";
+        mes "再說，我的付出也應該得要有所收獲嘛！";
+	close;
+
+CLOSEOUT:
+        mes "[拆卡魔法師]";
+        mes "很好，如果需要。";
+        mes "我願意隨時為你服務。";
+	close;
+
+}

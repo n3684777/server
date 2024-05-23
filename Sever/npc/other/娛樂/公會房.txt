@@ -1,0 +1,886 @@
+gonryun,151,117,5	script	公會房間一	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@ALOWER$;
+					mes "您輸入的公會名稱為:"+.@ALOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ALOWER$,.@ALOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@ALOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@ALOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ALOWER_MAP$,.@ALOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $ALOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $ALOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,151,113,5	script	公會房間二	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@BLOWER$;
+					mes "您輸入的公會名稱為:"+.@BLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $BLOWER$,.@BLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@BLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@BLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $BLOWER_MAP$,.@BLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $BLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $BLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,151,109,5	script	公會房間三	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@CLOWER$;
+					mes "您輸入的公會名稱為:"+.@CLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $CLOWER$,.@CLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@CLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@CLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $CLOWER_MAP$,.@CLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $CLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $CLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,151,105,5	script	公會房間四	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@DLOWER$;
+					mes "您輸入的公會名稱為:"+.@DLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $DLOWER$,.@DLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@DLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@DLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $DLOWER_MAP$,.@DLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $DLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $DLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+gonryun,151,101,5	script	公會房間五	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@ELOWER$;
+					mes "您輸入的公會名稱為:"+.@ELOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ELOWER$,.@ELOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@ELOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@ELOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ELOWER_MAP$,.@ELOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $ELOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $ELOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,151,97,5	script	公會房間六	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@FLOWER$;
+					mes "您輸入的公會名稱為:"+.@FLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER$,.@FLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@FLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@FLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER_MAP$,.@FLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $FLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $FLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,117,4	script	公會房間七	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@FLOWER$;
+					mes "您輸入的公會名稱為:"+.@FLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER$,.@FLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@FLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@FLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER_MAP$,.@FLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $FLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $FLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,113,4	script	公會房間八	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@FLOWER$;
+					mes "您輸入的公會名稱為:"+.@FLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER$,.@FLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@FLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@FLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $FLOWER_MAP$,.@FLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $FLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $FLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,109,4	script	公會房間九	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@ILOWER$;
+					mes "您輸入的公會名稱為:"+.@ILOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ILOWER$,.@ILOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@ILOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@ILOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $ILOWER_MAP$,.@ILOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $ILOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $ILOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,105,4	script	公會房間十	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@JLOWER$;
+					mes "您輸入的公會名稱為:"+.@JLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $JLOWER$,.@JLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@JLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@JLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $JLOWER_MAP$,.@JLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $JLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $JLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,101,4	script	公會房間十一	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@KLOWER$;
+					mes "您輸入的公會名稱為:"+.@KLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $KLOWER$,.@KLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@KLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@KLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $KLOWER_MAP$,.@KLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $KLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $KLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+
+
+gonryun,167,97,4	script	公會房間十二	986,{	
+
+	mes "[公會管理員]";
+	mes "我是幫助指定公會傳送至公會房間的NPC";
+	mes "請問您需要什麼服務嗎?";
+	next;
+	switch(select( ((getgmlevel() < 90)?"":"^CC0000【管理GM設置】^000000"),"傳送服務","取消")){
+		case 1:
+			mes "[GM]";
+			mes "GM大人請問您要設定什麼?";
+			next;
+			switch(select(	"設定公會","設定地圖","取消")){	
+				case 1:
+					mes "[GM]";
+					mes "請輸入您要設定的公會名稱";
+					input .@LLOWER$;
+					mes "您輸入的公會名稱為:"+.@LLOWER$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $LLOWER$,.@LLOWER$;
+					close;
+					
+				case 2:
+					mes "[GM]";
+					mes "請輸入您要設定的地圖名稱";
+					input .@LLOWER_MAP$;
+					mes "您輸入的地圖名稱為:"+.@LLOWER_MAP$;
+						if ( select("確定","取消")==2){
+							close;
+						};	
+					set $LLOWER_MAP$,.@LLOWER_MAP$;
+					close;				
+				
+				
+				case 3:
+					close;
+			
+			};
+		case 2:
+			if ( $LLOWER$!=strcharinfo(2) ){
+				mes "您不是GM所授權的公會";
+				close;
+			};
+			warp $LLOWER_MAP$,120,123;
+			close;
+		case 3:
+			close;
+	
+	
+	};
+
+end;
+}
+prontera,155,196,5	script	稱號管理員	512,{
+
+	if(PeopleLevel==1) { set @People$," 準‧游擊士 "; } else
+	if(PeopleLevel==2) { set @People$," 潛行的黑影 "; } else
+	if(PeopleLevel==3) { set @People$," 守護的信念 "; } else
+	if(PeopleLevel==4) { set @People$," 空之軌跡 "; } else
+	if(PeopleLevel==5) { set @People$," 昏黃聖痕 "; } else
+	if(PeopleLevel==6) { set @People$," 遙遠炎群 "; } else
+	if(PeopleLevel==7) { set @People$,"法外制裁者、"; } else
+	if(PeopleLevel==8) { set @People$,"八葉ㄧ刀流、"; } else
+	if(PeopleLevel==9) { set @People$,"【庭園之主】"; } else
+	if(PeopleLevel==10) { set @People$,"【隱者】"; } else
+	{  set @People$,"旅程的開始"; }
+	mes "你目前的階級 : " +PeopleLevel;
+	mes "你目前的稱號 : ^0000ff" +@People$+ "^000000";
+	mes "你目前的名聲 : ^ff0000" +#MVPPoint+ "^000000";
+	mes "^00ff00------------------------------^000000";
+	mes "稱號一共分為 ^ff000010^000000 階";
+	mes "( 不含^0000ff旅程的開始^000000 )";
+	mes "每一階有不同的稱號及加乘素質";
+	mes "第1階稱號 : ^0000ff準‧游擊士^000000  - ^ff0000All + 10 HP+10%^000000";
+	mes "第2階稱號 : ^0000ff潛行的黑影^000000  - ^ff0000All + 20 HP+20%^000000";
+	mes "第3階稱號 : ^0000ff守護的信念^000000  - ^ff0000All + 30 HP+30%^000000";
+	mes "第4階稱號 : ^0000ff空之軌跡^000000    - ^ff0000All + 40 HP+40%^000000";
+	mes "第5階稱號 : ^0000ff昏黃聖痕^000000    - ^ff0000All + 50 HP+50%^000000";
+	mes "第6階稱號 : ^0000ff遙遠炎群^000000    - ^ff0000All + 60 HP+60%^000000";
+	mes "第7階稱號 : ^0000ff法外制裁者、^000000- ^ff0000All + 70 HP+70%^000000";
+	mes "第8階稱號 : ^0000ff八葉ㄧ刀流、^000000- ^ff0000All + 80 HP+80%^000000";
+	mes "第9階稱號 : ^0000ff【庭園之主】^000000- ^ff0000All + 90 HP+90%^000000";
+	mes "第10階稱號: ^0000ff【隱者】^000000    - ^ff0000All + 100 HP+100%^000000";
+	mes "*   隨意穿(脫)裝備才能加乘素質";
+	mes "^00ff00------------------------------^000000";
+	mes "每一階的名聲需求也不同";
+	mes "第 1 階  => 1000";
+	mes "第 2 階  => 2000";
+	mes "第 3 階  => 4000";
+	mes "         .";
+	mes "         .";
+	mes "第 10 階 => 512000";
+	next;
+	menu
+		"更換稱號",#MVPPoint1;
+
+
+#MVPPointoff:
+	    atcommand "@showtitle 0";
+	close;
+
+
+#MVPPoint1:
+
+	if(#MVPPoint<1000){goto A;}
+	if(PeopleLevel==1) { if(#MVPPoint<2000){goto A;} } else
+	if(PeopleLevel==2) { if(#MVPPoint<4000){goto A;} } else
+	if(PeopleLevel==3) { if(#MVPPoint<8000){goto A;} } else
+	if(PeopleLevel==4) { if(#MVPPoint<16000){goto A;} } else
+	if(PeopleLevel==5) { if(#MVPPoint<32000){goto A;} } else
+	if(PeopleLevel==6) { if(#MVPPoint<64000){goto A;} } else
+	if(PeopleLevel==7) { if(#MVPPoint<128000){goto A;} } else
+	if(PeopleLevel==8) { if(#MVPPoint<256000){goto A;} } else
+	if(PeopleLevel==9) { if(#MVPPoint<512000){goto A;} } else
+	if(PeopleLevel>=10) { mes "你已經是最高階了"; close; }
+	set .@a,$@Reputation[PeopleLevel] * 1000;
+	set #MVPPoint,#MVPPoint - .@a;
+	set PeopleLevel,PeopleLevel+1;
+	if(PeopleLevel==1) { set @People$," 準‧游擊士 "; } else
+	if(PeopleLevel==2) { set @People$," 潛行的黑影 "; } else
+	if(PeopleLevel==3) { set @People$," 守護的信念 "; } else
+	if(PeopleLevel==4) { set @People$," 空之軌跡 "; } else
+	if(PeopleLevel==5) { set @People$," 昏黃聖痕 "; } else
+	if(PeopleLevel==6) { set @People$," 遙遠炎群 "; } else
+	if(PeopleLevel==7) { set @People$,"法外制裁者、"; } else
+	if(PeopleLevel==8) { set @People$,"八葉ㄧ刀流、"; } else
+	if(PeopleLevel==9) { set @People$,"【庭園之主】"; } else
+	if(PeopleLevel==10) { set @People$,"【隱者】"; } else
+	{  set @People$,"旅程的開始"; }
+
+	mes "完成 .";
+	mes "*   隨意穿(脫)裝備才能加乘素質";
+	close;
+
+A:
+
+	mes "你再去多練練吧 .";
+	close;
+Oninit:
+	waitingroom "可設定稱號顯示",0;
+end;
+}
+
+-	script	haha2	-1,{
+end;
+
+OnPCLoginEvent:
+
+	if(PeopleLevel==1) { set @People$," 準‧游擊士 "; } else
+	if(PeopleLevel==2) { set @People$," 潛行的黑影 "; } else
+	if(PeopleLevel==3) { set @People$," 守護的信念 "; } else
+	if(PeopleLevel==4) { set @People$," 空之軌跡 "; } else
+	if(PeopleLevel==5) { set @People$," 昏黃聖痕 "; } else
+	if(PeopleLevel==6) { set @People$," 遙遠炎群 "; } else
+	if(PeopleLevel==7) { set @People$,"法外制裁者、"; } else
+	if(PeopleLevel==8) { set @People$,"八葉ㄧ刀流、"; } else
+	if(PeopleLevel==9) { set @People$,"【庭園之主】"; } else
+	if(PeopleLevel==10) { set @People$,"【隱者】"; } else
+	{  set @People$,"旅程的開始"; }
+
+	end;
+
+
+	if(PeopleLevel==1) { bonus bAllStats,10; bonus bMaxHPrate,10;} else
+	if(PeopleLevel==2) { bonus bAllStats,20; bonus bMaxHPrate,20;} else
+	if(PeopleLevel==3) { bonus bAllStats,30; bonus bMaxHPrate,30;} else
+	if(PeopleLevel==4) { bonus bAllStats,40; bonus bMaxHPrate,40;} else
+	if(PeopleLevel==5) { bonus bAllStats,50; bonus bMaxHPrate,50;} else
+	if(PeopleLevel==6) { bonus bAllStats,60; bonus bMaxHPrate,60;} else
+	if(PeopleLevel==7) { bonus bAllStats,70; bonus bMaxHPrate,70;} else
+	if(PeopleLevel==8) { bonus bAllStats,80; bonus bMaxHPrate,80;} else
+	if(PeopleLevel==9) { bonus bAllStats,90; bonus bMaxHPrate,90;} else
+	if(PeopleLevel==10) { bonus bAllStats,100; bonus bMaxHPrate,100;} else
+	{  end; }
+
+
+Oninit:
+	waitingroom "稱號管理員",0;
+	setarray $@Reputation[0],1,2,4,8,16,32,64,128,256,512;
+	if(PeopleLevel==1) { bonus bAllStats,10; bonus bMaxHPrate,10;} else
+	if(PeopleLevel==2) { bonus bAllStats,20; bonus bMaxHPrate,20;} else
+	if(PeopleLevel==3) { bonus bAllStats,30; bonus bMaxHPrate,30;} else
+	if(PeopleLevel==4) { bonus bAllStats,40; bonus bMaxHPrate,40;} else
+	if(PeopleLevel==5) { bonus bAllStats,50; bonus bMaxHPrate,50;} else
+	if(PeopleLevel==6) { bonus bAllStats,60; bonus bMaxHPrate,60;} else
+	if(PeopleLevel==7) { bonus bAllStats,70; bonus bMaxHPrate,70;} else
+	if(PeopleLevel==8) { bonus bAllStats,80; bonus bMaxHPrate,80;} else
+	if(PeopleLevel==9) { bonus bAllStats,90; bonus bMaxHPrate,90;} else
+	if(PeopleLevel==10) { bonus bAllStats,100; bonus bMaxHPrate,100;} else
+	{  end; }
+end;
+
+}
+
+function	script	haha3	{
+
+	set #MVPPoint,#MVPPoint + @#MVPPoint;
+	announce "[稱號系統]   名聲增加 "+@#MVPPoint+" , 名聲到達 "+#MVPPoint+" .",bc_self,0x965A78;
+	end;
+}
+
+prontera.gat,0,0,0	script	OnNPCKillEvent	-1,{
+OnNPCKillEvent:
+   if ( killedrid == 1038
+|| killedrid == 1039 || killedrid == 1046 || killedrid == 1059 ||
+   killedrid == 1086 || killedrid == 1087 || killedrid ==
+1112 || killedrid == 1115 ||
+   killedrid == 1147 ||
+killedrid == 1150 || killedrid == 1157 || killedrid == 1159 ||
+   killedrid == 1190 || killedrid == 1251 || killedrid ==
+1252 || killedrid == 1272 ||
+   killedrid == 1312 ||
+killedrid == 1373 || killedrid == 1389 || killedrid == 1418 ||
+   killedrid == 1492 || killedrid == 1511 || killedrid ==
+1583 || killedrid == 1623 ||
+   killedrid == 1630 ||
+killedrid == 1658 || killedrid == 1685 || killedrid == 1688 ||
+   killedrid == 1708 || killedrid == 1719 || killedrid ==
+1734 || killedrid == 1751 ||
+   killedrid == 1768 ||
+killedrid == 1502 || killedrid == 1646 || killedrid == 1647 ||
+   killedrid == 1648 || killedrid == 1649 || killedrid ==
+1650 || killedrid == 1651 ||
+   killedrid == 1832 ||
+killedrid == 1871 || killedrid == 1873 || killedrid == 1917 ||
+   killedrid == 1929 || killedrid == 1956 || killedrid ==
+1957 || killedrid == 1779 ||
+   killedrid == 1785 ||
+killedrid == 1980 || killedrid == 1990 || killedrid == 1991 ||
+   killedrid == 2022 || killedrid == 1931 ||
+killedrid == 1874 || killedrid == 1885 || killedrid == 1916 
+|| killedrid == 2583
+|| killedrid == 2584
+|| killedrid == 2585
+|| killedrid == 2586
+|| killedrid == 2587
+|| killedrid == 2520
+|| killedrid == 2521
+|| killedrid == 2522
+|| killedrid == 2523
+|| killedrid == 2524
+|| killedrid == 2525
+|| killedrid == 2526
+|| killedrid == 2527
+|| killedrid == 2395
+|| killedrid == 2396
+|| killedrid == 2397
+|| killedrid == 2398
+|| killedrid == 2399
+|| killedrid == 2400
+|| killedrid == 2401
+|| killedrid == 2402
+|| killedrid == 2403
+|| killedrid == 2404
+|| killedrid == 2405
+|| killedrid == 2406
+|| killedrid == 2407
+|| killedrid == 2408
+|| killedrid == 2409
+|| killedrid == 2410
+|| killedrid == 2411
+|| killedrid == 2412
+|| killedrid == 2413
+|| killedrid == 2414
+|| killedrid == 2415
+|| killedrid == 2416) {
+   set @abc,rand(100,300); set #MVPPoint,#MVPPoint+@abc;
+   dispbottom"恭喜 【獲得聲望 " + @abc + " 點，聲望已累積 " + #MVPPoint + " 點。】";
+   }
+} 

@@ -1,0 +1,310 @@
+payon,156,201,8	script	進階頭中	596,{ 
+	
+
+        mes " [進階頭中製作]";
+	mes "您需要什麼?";
+	mes "^660000惡魔臉孔[4s]^000000 ALL+130、HP+100%、MDEF+4、ATK+1000、MATK+1000。";
+	mes "需要材料是^996699三階頭中各1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各4000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000彩晶蝶翼[4s]^000000 ALL+150、HP+100%、MDEF+5、ATK+2000、MATK+2000。";
+	mes "需要材料是^996699惡魔臉孔1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各5000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000彩色羽毛耳飾[4s]^000000 ALL+170、HP+100%、MDEF+6、ATK+3000、MATK+3000。";
+	mes "需要材料是^996699彩晶蝶翼1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各6000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000冒愛心耳飾[4s]^000000 ALL+190、HP+100%、MDEF+7、ATK+4000、MATK+4000。";
+	mes "需要材料是^996699彩色羽毛耳飾1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各7000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000漆黑大鵬之翼[4s]^000000 ALL+210、HP+100%、MDEF+8、ATK+5000、MATK+5000。";
+	mes "需要材料是^996699冒愛心耳飾1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各8000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000閃光大鵬之翼[4s]^000000 ALL+230、HP+100%、MDEF+9、ATK+6000、MATK+6000。";
+	mes "需要材料是^996699漆黑大鵬之翼1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各9000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭中製作]";
+	mes "^660000風雲劍[4s]^000000 ALL+250、HP+100%、MDEF+10、ATK+7000、MATK+7000。";
+	mes "需要材料是^996699閃光大鵬之翼1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各10000個、破滅的硬幣30000個。^000000";
+	next;
+	menu    "^00FA03惡魔臉孔^000000",a,
+		"^00F7FA彩晶蝶翼^000000",b,
+		"^0300FA彩色羽毛耳飾^000000",c,
+		"^F7FA00冒愛心耳飾^000000",d,
+		"^8000FA漆黑大鵬之翼^000000",e,
+		"^FA0300閃光大鵬之翼^000000",f,
+		"^7F7F7F風雲劍^000000",g,
+		"離開",h;
+
+	a:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27912)< 1) goto NOitem;
+	if(countitem(27913)< 1) goto NOitem;
+	if(countitem(27914)< 1) goto NOitem;
+	if(countitem(29015)< 1) goto NOitem;
+	if(countitem(29023)< 1) goto NOitem;
+	if(countitem(29103)< 1) goto NOitem;
+	if(countitem(29104)< 1) goto NOitem;
+	if(countitem(29105)< 1) goto NOitem;
+	if(countitem(29106)< 1) goto NOitem;
+	if(countitem(29107)< 1) goto NOitem;
+	if(countitem(29143)< 1) goto NOitem;
+	if(countitem(29144)< 1) goto NOitem;
+	if(countitem(29145)< 1) goto NOitem;
+	if(countitem(29146)< 1) goto NOitem;
+	if(countitem(29147)< 1) goto NOitem;
+	if(countitem(29148)< 1) goto NOitem;
+	if(countitem(29149)< 1) goto NOitem;
+	if(countitem(29150)< 1) goto NOitem;
+	if(countitem(29151)< 1) goto NOitem;
+	if(countitem(28579)< 4000) goto NOitem;
+	if(countitem(28580)< 4000) goto NOitem;
+	if(countitem(28581)< 4000) goto NOitem;
+	if(countitem(28582)< 4000) goto NOitem;
+	if(countitem(28583)< 4000) goto NOitem;
+	if(countitem(28584)< 4000) goto NOitem;
+	if(countitem(28585)< 4000) goto NOitem;
+	if(countitem(28586)< 4000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27912,1;
+	delitem 27913,1;
+	delitem 27914,1;
+	delitem 29015,1;
+	delitem 29023,1;
+	delitem 29103,1;
+	delitem 29104,1;
+	delitem 29105,1;
+	delitem 29106,1;
+	delitem 29107,1;
+	delitem 29143,1;
+	delitem 29144,1;
+	delitem 29145,1;
+	delitem 29146,1;
+	delitem 29147,1;
+	delitem 29148,1;
+	delitem 29149,1;
+	delitem 29150,1;
+	delitem 29151,1;
+	delitem 28579,4000;
+	delitem 28580,4000;
+	delitem 28581,4000;
+	delitem 28582,4000;
+	delitem 28583,4000;
+	delitem 28584,4000;
+	delitem 28585,4000;
+	delitem 28586,4000;
+	delitem 7606,30000;
+	getitem 29228,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【惡魔臉孔】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000惡魔臉孔^000000啦!";
+	close;
+
+	b:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(29228)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 29228,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 7606,30000;
+	getitem 27846,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【彩晶蝶翼】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000彩晶蝶翼^000000啦!";
+	close;
+
+	c:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27846)< 1) goto NOitem;
+	if(countitem(28579)< 6000) goto NOitem;
+	if(countitem(28580)< 6000) goto NOitem;
+	if(countitem(28581)< 6000) goto NOitem;
+	if(countitem(28582)< 6000) goto NOitem;
+	if(countitem(28583)< 6000) goto NOitem;
+	if(countitem(28584)< 6000) goto NOitem;
+	if(countitem(28585)< 6000) goto NOitem;
+	if(countitem(28586)< 6000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27846,1;
+	delitem 28579,6000;
+	delitem 28580,6000;
+	delitem 28581,6000;
+	delitem 28582,6000;
+	delitem 28583,6000;
+	delitem 28584,6000;
+	delitem 28585,6000;
+	delitem 28586,6000;
+	delitem 7606,30000;
+	getitem 29007,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【彩色羽毛耳飾】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000彩色羽毛耳飾^000000啦!";
+	close;
+
+	d:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(29007)< 1) goto NOitem;
+	if(countitem(28579)< 7000) goto NOitem;
+	if(countitem(28580)< 7000) goto NOitem;
+	if(countitem(28581)< 7000) goto NOitem;
+	if(countitem(28582)< 7000) goto NOitem;
+	if(countitem(28583)< 7000) goto NOitem;
+	if(countitem(28584)< 7000) goto NOitem;
+	if(countitem(28585)< 7000) goto NOitem;
+	if(countitem(28586)< 7000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 29007,1;
+	delitem 28579,7000;
+	delitem 28580,7000;
+	delitem 28581,7000;
+	delitem 28582,7000;
+	delitem 28583,7000;
+	delitem 28584,7000;
+	delitem 28585,7000;
+	delitem 28586,7000;
+	delitem 7606,30000;
+	getitem 27788,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【冒愛心耳飾】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000冒愛心耳飾^000000啦!";
+	close;
+
+	e:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27788)< 1) goto NOitem;
+	if(countitem(28579)< 8000) goto NOitem;
+	if(countitem(28580)< 8000) goto NOitem;
+	if(countitem(28581)< 8000) goto NOitem;
+	if(countitem(28582)< 8000) goto NOitem;
+	if(countitem(28583)< 8000) goto NOitem;
+	if(countitem(28584)< 8000) goto NOitem;
+	if(countitem(28585)< 8000) goto NOitem;
+	if(countitem(28586)< 8000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27788,1;
+	delitem 28579,8000;
+	delitem 28580,8000;
+	delitem 28581,8000;
+	delitem 28582,8000;
+	delitem 28583,8000;
+	delitem 28584,8000;
+	delitem 28585,8000;
+	delitem 28586,8000;
+	delitem 7606,30000;
+	getitem 27716,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【漆黑大鵬之翼】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000漆黑大鵬之翼^000000啦!";
+	close;
+
+	f:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27716)< 1) goto NOitem;
+	if(countitem(28579)< 9000) goto NOitem;
+	if(countitem(28580)< 9000) goto NOitem;
+	if(countitem(28581)< 9000) goto NOitem;
+	if(countitem(28582)< 9000) goto NOitem;
+	if(countitem(28583)< 9000) goto NOitem;
+	if(countitem(28584)< 9000) goto NOitem;
+	if(countitem(28585)< 9000) goto NOitem;
+	if(countitem(28586)< 9000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27716,1;
+	delitem 28579,9000;
+	delitem 28580,9000;
+	delitem 28581,9000;
+	delitem 28582,9000;
+	delitem 28583,9000;
+	delitem 28584,9000;
+	delitem 28585,9000;
+	delitem 28586,9000;
+	delitem 7606,30000;
+	getitem 27715,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【閃光大鵬之翼】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000閃光大鵬之翼^000000啦!";
+	close;
+
+	g:
+        mes " [進階頭中製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27715)< 1) goto NOitem;
+	if(countitem(28579)< 10000) goto NOitem;
+	if(countitem(28580)< 10000) goto NOitem;
+	if(countitem(28581)< 10000) goto NOitem;
+	if(countitem(28582)< 10000) goto NOitem;
+	if(countitem(28583)< 10000) goto NOitem;
+	if(countitem(28584)< 10000) goto NOitem;
+	if(countitem(28585)< 10000) goto NOitem;
+	if(countitem(28586)< 10000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27715,1;
+	delitem 28579,10000;
+	delitem 28580,10000;
+	delitem 28581,10000;
+	delitem 28582,10000;
+	delitem 28583,10000;
+	delitem 28584,10000;
+	delitem 28585,10000;
+	delitem 28586,10000;
+	delitem 7606,30000;
+	getitem 29111,1;
+
+        mes " [進階頭中製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【風雲劍】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000風雲劍^000000啦!";
+	close;
+
+	h:
+        mes " [進階頭中製作]";
+	mes "嗯...有需要製作的話隨時歡迎你!";
+	close;
+
+	NOitem:
+	mes " [進階頭中製作]";
+	mes "材料不充足，麻煩您檢查一下再過來吧!";
+	close;
+OnInit:
+	waitingroom "進階頭中",0;
+	end;	}
+
+
+
+

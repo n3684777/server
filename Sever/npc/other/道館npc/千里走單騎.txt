@@ -1,0 +1,370 @@
+-	script	killSixMan_Config	-1,{
+OnInit:
+
+	set $@kill_level,99;		//所需等級
+
+	set $@kill_team_player,1;	//單人副本
+
+	set $@kill_Time_All,3600;	//挑戰時間
+
+	set $@kill_Time_In,300;		//進場時間
+
+	set $@kill_Time_Cooldown,3600;	//冷卻時間
+
+	set $@kill_GM,99;		//GM最低等級
+
+	end;
+
+}
+//==========================登記============================
+
+
+aldebaran,133,123,5	script	千里走單騎	971,{
+	if(kill_Lasttime + $@kill_Time_Cooldown > gettimetick(2) && kill_Lasttime < gettimetick(2) && getgmlevel() < $@kill_GM ){
+		set .@kill_lastTime,kill_Lasttime + $kill_Cooldown - gettimetick(2);
+		set .@kill_hoursTime,.@kill_lastTime / 60 / 60;
+		set .@kill_minutesTime,.@kill_lastTime / 60 % 60;
+		set .@kill_secondsTime,.@kill_lastTime % 60;
+		mes "[千里走單騎]";
+		mes "根據進入規則，你現在無法進入冰雪王國";
+		mes "你現在還有, "+.@kill_hoursTime+"小時 "+.@kill_minutesTime+"分鐘 "+.@kill_secondsTime+"秒才能進入";
+		close;
+		}
+
+		if(BaseLevel<$@kill_level){
+		mes "[千里走單騎]";
+		mes "你的等級還沒到"+$@kill_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount != $@kill_team_player){
+		mes "[千里走單騎]";
+		mes "你必須是單人組隊。";
+		close;
+		}
+
+		mes "[千里走單騎]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[千里走單騎]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[千里走單騎]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@kill") == ""){
+				mes "[千里走單騎]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[千里走單騎]";
+			mes "你的隊伍已經申請過了千里走單騎的任務"; 
+			mes "請在主界面選擇 ^0000FF進入千里走單騎選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(kill_Lasttime + $@kill_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@kill_GM) {
+			mes "[千里走單騎]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[千里走單騎]";
+		mes "^0000FF千里走單騎^000000 - 正在準備中";
+		mes "當千里走單騎準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_kill_id,instance_create("千里走單騎",getcharid(1)); 
+		if(.@instance_kill_id < 0){
+			mes "[千里走單騎]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@kill",.@instance_kill_id);
+		instance_attachmap("2@kill",.@instance_kill_id);
+		instance_attachmap("3@kill",.@instance_kill_id);
+		instance_attachmap("4@kill",.@instance_kill_id);
+		instance_attachmap("5@kill",.@instance_kill_id);
+		instance_set_timeout $@kill_Time_All,$@kill_Time_In,.@instance_kill_id;
+		instance_init .@instance_kill_id;
+		instance_attach .@instance_kill_id;
+		set 'kill_Lasttime,gettimetick(2) + $@kill_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@kill") == ""){ 
+			mes "[千里走單騎]";
+			mes "千里走單騎副本不存在.";
+			mes "請確定你的隊伍已經申請過千里走單騎，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(kill_Lasttime + $@kill_Time_Cooldown < gettimetick(2))
+		set kill_Lasttime,'kill_Lasttime;
+		warpparty has_instance("1@kill"),129,103,getcharid(1);
+		doevent instance_npcname("kill_monster",instance_id(1))+"::Onmonster20";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+//============登記/傳送=============
+
+1@kill,251,349,0	script	KSwarp_1	45,1,1,{ warp has_instance("2@kill"),129,103;	end; }
+2@kill,251,349,0	script	KSwarp_2	45,1,1,{ warp has_instance("3@kill"),129,103;	end; }
+3@kill,251,349,0	script	KSwarp_3	45,1,1,{ warp has_instance("4@kill"),129,103;	end; }
+4@kill,251,349,0	script	KSwarp_4	45,1,1,{ warp has_instance("5@kill"),129,103;	end; }
+
+//==============刷怪================
+
+1@kill,0,0,0	script	kill_monster	-1,{
+Onmonster20:
+	disablenpc instance_npcname("KSwarp_1", instance_id());
+	disablenpc instance_npcname("KSwarp_2", instance_id());
+	disablenpc instance_npcname("KSwarp_3", instance_id());
+	disablenpc instance_npcname("KSwarp_4", instance_id());
+	hideonnpc instance_npcname("KSwarp_1", instance_id());
+	hideonnpc instance_npcname("KSwarp_2", instance_id());
+	hideonnpc instance_npcname("KSwarp_3", instance_id());
+	hideonnpc instance_npcname("KSwarp_4", instance_id());
+	set .@ks,instance_id(0);
+//千里走單騎1F
+	set 'kill_Mobs,50;
+	areamonster "1@kill",240,297,263,274,"第一關衛兵",2573,10,instance_npcname("kill_monster")+"::OnKillMob";
+	areamonster "1@kill",240,297,263,274,"第一關衛兵",2574,10,instance_npcname("kill_monster")+"::OnKillMob";
+	areamonster "1@kill",240,297,263,274,"第一關衛兵",2575,10,instance_npcname("kill_monster")+"::OnKillMob";
+	areamonster "1@kill",240,297,263,274,"第一關衛兵",2576,10,instance_npcname("kill_monster")+"::OnKillMob";
+	areamonster "1@kill",240,297,263,274,"第一關衛兵",2578,10,instance_npcname("kill_monster")+"::OnKillMob";
+	end;
+OnKillMob:
+	set 'kill_Mobs,'kill_Mobs-1;
+	if('kill_Mobs){
+	instance_announce .@ks,"第一關衛兵還剩下: "+'kill_Mobs,bc_map,0x00FF00;
+	end;
+	}
+	else {
+	instance_announce .@ks,"本關衛兵已經全部被擊敗了!你可以去打倒守關將領了",bc_map;
+	doevent instance_npcname("kill_monster2",instance_id())+"::Onmonster21";
+	}
+
+
+//千里走單騎2F
+	set 'kill2_Mobs,50;
+	areamonster "2@kill",240,297,263,274,"第二關衛兵",2573,10,instance_npcname("kill_monster")+"::OnKillMob2";
+	areamonster "2@kill",240,297,263,274,"第二關衛兵",2574,10,instance_npcname("kill_monster")+"::OnKillMob2";
+	areamonster "2@kill",240,297,263,274,"第二關衛兵",2575,10,instance_npcname("kill_monster")+"::OnKillMob2";
+	areamonster "2@kill",240,297,263,274,"第二關衛兵",2576,10,instance_npcname("kill_monster")+"::OnKillMob2";
+	areamonster "2@kill",240,297,263,274,"第二關衛兵",2578,10,instance_npcname("kill_monster")+"::OnKillMob2";
+	end;
+OnKillMob2:
+	set 'kill2_Mobs,'kill2_Mobs-1;
+	if('kill2_Mobs){
+	instance_announce .@ks,"第二關衛兵還剩下: "+'kill2_Mobs,bc_map,0x00FF00;
+	end;
+	}
+	else {
+	instance_announce .@ks,"本關衛兵已經全部被擊敗了!你可以去打倒守關將領了",bc_map;
+	doevent instance_npcname("kill_monster2",instance_id())+"::Onmonster22";
+	}
+
+
+//千里走單騎3F
+	set 'kill3_Mobs,50;
+	areamonster "3@kill",240,297,263,274,"第三關衛兵",2573,10,instance_npcname("kill_monster")+"::OnKillMob3";
+	areamonster "3@kill",240,297,263,274,"第三關衛兵",2574,10,instance_npcname("kill_monster")+"::OnKillMob3";
+	areamonster "3@kill",240,297,263,274,"第三關衛兵",2575,10,instance_npcname("kill_monster")+"::OnKillMob3";
+	areamonster "3@kill",240,297,263,274,"第三關衛兵",2576,10,instance_npcname("kill_monster")+"::OnKillMob3";
+	areamonster "3@kill",240,297,263,274,"第三關衛兵",2578,10,instance_npcname("kill_monster")+"::OnKillMob3";
+	end;
+OnKillMob3:
+	set 'kill3_Mobs,'kill3_Mobs-1;
+	if('kill3_Mobs){
+	instance_announce .@ks,"第三關衛兵還剩下: "+'kill3_Mobs,bc_map,0x00FF00;
+	end;
+	}
+	else {
+	instance_announce .@ks,"本關衛兵已經全部被擊敗了!你可以去打倒守關將領了",bc_map;
+	doevent instance_npcname("kill_monster2",instance_id())+"::Onmonster23";
+	}
+
+
+//千里走單騎4F
+	set 'kill4_Mobs,50;
+	areamonster "4@kill",240,297,263,274,"第四關衛兵",2573,10,instance_npcname("kill_monster")+"::OnKillMob4";
+	areamonster "4@kill",240,297,263,274,"第四關衛兵",2574,10,instance_npcname("kill_monster")+"::OnKillMob4";
+	areamonster "4@kill",240,297,263,274,"第四關衛兵",2575,10,instance_npcname("kill_monster")+"::OnKillMob4";
+	areamonster "4@kill",240,297,263,274,"第四關衛兵",2576,10,instance_npcname("kill_monster")+"::OnKillMob4";
+	areamonster "4@kill",240,297,263,274,"第四關衛兵",2578,10,instance_npcname("kill_monster")+"::OnKillMob4";
+	end;
+OnKillMob4:
+	set 'kill4_Mobs,'kill4_Mobs-1;
+	if('kill4_Mobs){
+	instance_announce .@ks,"第四關衛兵還剩下: "+'kill4_Mobs,bc_map,0x00FF00;
+	end;
+	}
+	else {
+	instance_announce .@ks,"本關衛兵已經全部被擊敗了!你可以去打倒守關將領了",bc_map;
+	doevent instance_npcname("kill_monster2",instance_id())+"::Onmonster24";
+	}
+
+
+//千里走單騎5F
+	set 'kill5_Mobs,50;
+	areamonster "5@kill",240,297,263,274,"第五關衛兵",2573,10,instance_npcname("kill_monster")+"::OnKillMob5";
+	areamonster "5@kill",240,297,263,274,"第五關衛兵",2574,10,instance_npcname("kill_monster")+"::OnKillMob5";
+	areamonster "5@kill",240,297,263,274,"第五關衛兵",2575,10,instance_npcname("kill_monster")+"::OnKillMob5";
+	areamonster "5@kill",240,297,263,274,"第五關衛兵",2576,10,instance_npcname("kill_monster")+"::OnKillMob5";
+	areamonster "5@kill",240,297,263,274,"第五關衛兵",2578,10,instance_npcname("kill_monster")+"::OnKillMob5";
+	end;
+OnKillMob5:
+	set 'kill5_Mobs,'kill5_Mobs-1;
+	if('kill5_Mobs){
+	instance_announce .@ks,"第五關衛兵還剩下: "+'kill5_Mobs,bc_map,0x00FF00;
+	end;
+	}
+	else {
+	instance_announce .@ks,"本關衛兵已經全部被擊敗了!你可以去打倒守關將領了",bc_map;
+	doevent instance_npcname("kill_monster2",instance_id())+"::Onmonster25";
+	}
+end;
+}
+
+1@kill,0,0,0	script	kill_monster2	-1,{
+Onmonster21:
+	monster "1@kill",252,339,"--ja--",2676,1,instance_npcname("kill_monster2")+"::OnKillBoss";
+	end;
+
+OnKillBoss:
+	if('ksboss<1){
+	set 'ksboss,'ksboss+1;
+	set 'Ks_a,1-'ksboss;
+	instance_announce .@ks,"通往第二關的傳送點已開啟!!",bc_map,0x00ff00;
+	}
+	if ('Ks_a == 0){
+	enablenpc instance_npcname("KSwarp_1", instance_id());
+	hideoffnpc instance_npcname("KSwarp_1", instance_id());
+	}
+	end;
+
+Onmonster22:
+	monster "2@kill",252,339,"--ja--",2677,1,instance_npcname("kill_monster2")+"::OnKillBoss2";
+	end;
+
+OnKillBoss2:
+	if('ksboss2<1){
+	set 'ksboss2,'ksboss2+1;
+	set 'Ks_b,1-'ksboss2;
+	instance_announce .@ks,"通往第三關的傳送點已開啟!!",bc_map,0x00ff00;
+	}
+	if ('Ks_b == 0){
+	enablenpc instance_npcname("KSwarp_2", instance_id());
+	hideoffnpc instance_npcname("KSwarp_2", instance_id());
+	}
+	end;
+
+Onmonster23:
+	monster "3@kill",252,339,"--ja--",2678,1,instance_npcname("kill_monster2")+"::OnKillBoss3";
+	end;
+
+OnKillBoss3:
+	if('ksboss3<1){
+	set 'ksboss3,'ksboss3+1;
+	set 'Ks_c,1-'ksboss3;
+	instance_announce .@ks,"通往第二關的傳送點已開啟!!",bc_map,0x00ff00;
+	}
+	if ('Ks_c == 0){
+	enablenpc instance_npcname("KSwarp_3", instance_id());
+	hideoffnpc instance_npcname("KSwarp_3", instance_id());
+	}
+	end;
+
+Onmonster24:
+	monster "4@kill",252,339,"--ja--",2679,1,instance_npcname("kill_monster2")+"::OnKillBoss4";
+	end;
+
+OnKillBoss4:
+	if('ksboss4<1){
+	set 'ksboss4,'ksboss4+1;
+	set 'Ks_d,1-'ksboss4;
+	instance_announce .@ks,"通往第四關的傳送點已開啟!!",bc_map,0x00ff00;
+	}
+	if ('Ks_d == 0){
+	enablenpc instance_npcname("KSwarp_4", instance_id());
+	hideoffnpc instance_npcname("KSwarp_4", instance_id());
+	}
+	end;
+
+Onmonster25:
+	monster "5@kill",243,339,"--ja--",2680,1,instance_npcname("kill_monster2")+"::OnKillBoss5";
+	monster "5@kill",261,339,"--ja--",2681,1,instance_npcname("kill_monster2")+"::OnKillBoss5";
+	end;
+
+OnKillBoss5:
+	if('ksboss5<2){
+	set 'ksboss5,'ksboss5+1;
+	set 'Ks_e,2-'ksboss5;
+	instance_announce .@ks,"第五關衛兵還剩下: "+'Ks_e,bc_map,0x00ff00;
+	}
+	if ('Ks_e == 0){
+	instance_announce .@ks,"等等!!關羽…只要有你在孟德就會迷惘，受死吧",bc_map,0x00ff00;
+	doevent instance_npcname("kill_monster3",instance_id())+"::Onmonster26";
+	}
+	end;
+}
+
+5@kill,0,0,0	script	kill_monster3	-1,{
+Onmonster26:
+	monster "5@kill",252,339,"--ja--",2616,1,instance_npcname("kill_monster3")+"::OnKillBoss6";
+	end;
+
+OnKillBoss6:
+	instance_announce .@ks,"可惡…關羽，我不會放過你的",bc_map,0x00ff00;
+	sleep2 5000;
+	instance_announce .@ks,"10秒後將傳送你們到領獎地圖!!",bc_map,0x00ff00;
+	sleep2 15000;
+	instance_warpall "goodjob15",33,142;
+	instance_destroy(instance_id());
+	end;
+}
+
+
+//=====================地圖屬性=======================
+1@kill	mapflag	noteleport
+1@kill	mapflag	nosave	SavePoint
+1@kill	mapflag	nomemo
+1@kill	mapflag	nobranch
+1@kill	mapflag	monster_noteleport
+1@kill	mapflag	noloot
+
+2@kill	mapflag	noteleport
+2@kill	mapflag	nosave	SavePoint
+2@kill	mapflag	nomemo
+2@kill	mapflag	nobranch
+2@kill	mapflag	monster_noteleport
+2@kill	mapflag	noloot
+
+3@kill	mapflag	noteleport
+3@kill	mapflag	nosave	SavePoint
+3@kill	mapflag	nomemo
+3@kill	mapflag	nobranch
+3@kill	mapflag	monster_noteleport
+3@kill	mapflag	noloot
+
+4@kill	mapflag	noteleport
+4@kill	mapflag	nosave	SavePoint
+4@kill	mapflag	nomemo
+4@kill	mapflag	nobranch
+4@kill	mapflag	monster_noteleport
+4@kill	mapflag	noloot
+
+5@kill	mapflag	noteleport
+5@kill	mapflag	nosave	SavePoint
+5@kill	mapflag	nomemo
+5@kill	mapflag	nobranch
+5@kill	mapflag	monster_noteleport
+5@kill	mapflag	noloot

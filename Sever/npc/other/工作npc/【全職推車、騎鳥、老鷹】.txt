@@ -1,0 +1,416 @@
+prontera,148,182,5	script	職業租借人員::cart	852,{
+mes "職業租借人員";
+mes "只要你學會手推車使用技能，就能租用手推車。";
+next;
+mes "職業租借人員";
+mes "請選擇你要的服務:";
+next;
+	menu "手推車",dino1,"老鷹",dino6,"騎鳥",dino7,"取消",dinodel;
+	dino1:
+                if(Zeny<1) goto dinonoZ;
+		skill 39,10,1;
+                setcart;
+                set zeny,zeny-1;
+		mes "職業租借人員";
+		mes "您已經可以使用手推車了，歡迎下次再來！";
+		close;
+	dino6:
+                if(Zeny<1) goto dinonoZ;
+		else if(getskilllv(127) == 0) {
+		mes "職業租借人員";
+		mes "對不起，你必須至少學會一級的馴鷹術技能才能使用獵鷹。";
+		close;
+		}		
+                setoption (16);
+                set zeny,zeny-1;
+		mes "職業租借人員";
+		mes "您已經可以使用老鷹了，歡迎下次再來！";
+		close;
+	dino7:
+                if(Zeny<1) goto dinonoZ;		
+                setoption (32);
+                set zeny,zeny-1;
+		mes "職業租借人員";
+		mes "您已經可以使用騎鳥了，歡迎下次再來！";
+		close;
+	dinodel:
+		mes "職業租借人員";
+		mes "歡迎下次再來！";
+		close;
+
+dinocar:
+mes "職業租借人員";
+mes "您確定要使用手推車了嗎？";
+next;
+	menu "是的，我要使用手推車",dino1_1,"我想還是不了",dinodel;
+
+//以下為騎士、十字軍專用
+
+	dino1_1:
+                if(Class == 11) goto dino2_1;
+                if(Zeny<1) goto dinonoZ;
+                setcart;		
+                setoption (40);
+                set zeny,zeny-1;
+		mes "職業租借人員";
+		mes "您已經可以使用手推車了，歡迎下次再來！";
+		close;
+
+//以下為獵人專用
+
+	dino2_1:
+                if(Zeny<1) goto dinonoZ;
+                setcart;		
+                setoption (24);
+                set zeny,zeny-1;
+		mes "職業租借人員";
+		mes "您已經可以使用手推車了，歡迎下次再來！";
+		close;
+
+//以下為金錢不足
+
+        dinonoZ:
+
+                mes "職業租借人員";
+                mes "對不起，你沒有足夠金錢。";
+                close;
+OnInit:
+	waitingroom "【職業租借人員】",0;
+}
+
+pay_arche,51,136,5	duplicate(cart)	職業租借人員#2pay	852
+
+
+
+
+
+-	script	OnlineAward	-1,{
+function user{
+	return getd("$@__oa_onlineUser" + (getArg(0,$@__oa_onlineUserCount) / 128) + "[" + (getArg(0,$@__oa_onlineUserCount) % 128) + "]");
+}
+
+OnInit:
+OnAwardStart:
+	while ( 1 ) {
+		set .@version , $@version;
+		if ( !$__oa_Status ) break;
+		if ( $__oa_peopleLimit > $@__oa_onlineUserCount ) break;
+		set .@nowTime , getTime(3) * 100 + getTime(2);
+		if ( !($__oa_startTime < $__oa_endTime && $__oa_startTime <= .@nowTime && $__oa_endTime > .@nowTime) )
+			sleep (($__oa_endTime/100 - $__oa_startTime/100) * 60 + $__oa_endTime%100-$__oa_startTime%100) * 60000;
+			
+		if ( !($__oa_startTime > $__oa_endTime && $__oa_startTime < .@nowTime || $__oa_endTime > .@nowTime) )
+			sleep (($__oa_startTime/100 - $__oa_endTime/100) * 60 + $__oa_startTime%100-$__oa_endTime%100) * 60000;
+
+		if ( .@version != $@version ) break;
+		for ( set .@c,0; .@c<$@__oa_onlineUserCount; set .@c,.@c+1){
+			if ( attachRID(user(.@c)) ){
+				
+				dispBottom "獲得在線獎勵 : ";
+				
+				if ( $__oa_AwardZeny ){
+					dispbottom "　" + $__oa_AwardZeny + " Zeny";
+					set Zeny , Zeny + $__oa_AwardZeny;
+				}
+				
+				if ( $__oa_AwardCash ){
+					dispbottom "　" + $__oa_AwardCash + " Cash";
+					set #CASHPOINTS, #CASHPOINTS + $__oa_AwardCash;
+				}
+				
+				set .@len , getArraySize($__oa_AwardVariable$);
+				for ( set .@i,0; .@i<.@len; set .@i,.@i+1 ){
+					dispBottom "　" + $__oa_AwardVariablePrefix$[.@i] + $__oa_AwardVariablePoint$[.@i] + $__oa_AwardVariablePostfix$[.@i];
+					setd $__oa_AwardVariable$,getd("$__oa_AwardVariable$[.@i]") +  $__oa_AwardVariablePoint$[.@i];
+				}
+				
+				set .@len , getArraySize($__oa_AwardItemID);
+				for ( set .@i,0; .@i<.@len; set .@i,.@i+1 ){
+					if ( checkWeight($__oa_AwardItemID[.@i],$__oa_AwardItemCount[.@i]) ){
+						dispBottom "　" + getItemName($__oa_AwardItemID[.@i]) + " " + $__oa_AwardItemCount[.@i] + "個";
+						getItem $__oa_AwardItemID[.@i],$__oa_AwardItemCount[.@i];
+					}  else 
+					dispBottom "身上物品過多 無法領取獎勵" + getItemName($__oa_AwardItemID[.@i]) + " " + $__oa_AwardItemCount[.@i] + "個";
+					
+				}
+				detachRID;
+			}
+			sleep 1;
+		}
+		sleep $__oa_Interval * 60000;
+	}
+	end;
+	
+OnPcLoginEvent:
+	setd "$@__oa_onlineUser" + $@__oa_onlineUserCount / 128 + "[" + $@__oa_onlineUserCount % 128 + "]" , getCharID(3) + .@i;
+	set @__oa_Index, $@__oa_onlineUserCount;
+	set $@__oa_onlineUserCount, $@__oa_onlineUserCount + 1;
+	if ( $@__oa_onlineUserCount >= $__oa_peopleLimit ) doEvent "OnlineAward::OnAwardStart";
+	end;
+
+OnPcLogoutEvent:
+	for ( set .@i,0; .@i<$@__oa_onlineUserCount; set .@i,.@i+1 )
+		if ( user(.@i) == getCharID(3) ){
+			deleteArray user(.@i),1;
+			for ( set .@l,1; .@l<=.@i/128; set .@l,.@l+1){
+				setd user(.@l*128-1),user(.@l*128);
+				deleteArray user(.@l),1;
+			}
+			set $@__oa_onlineUserCount , $@__oa_onlineUserCount - 1;
+			break;
+		}
+	
+	end;
+	
+OnWhisperGlobal:
+	dispBottom " - - - - - - - - - - - - - [ 在 線 獎 勵 設 置 ] - - - - - - - - - - - - -";
+	dispBottom "每 " + ($__oa_Interval / 60 ? $__oa_Interval / 60 + "小時":"") + ($__oa_Interval % 60 ? $__oa_Interval % 60 + "分鐘":"") + "發配獎勵一次";
+	dispBottom "獎勵 : ";
+	if ( $__oa_AwardZeny ) dispbottom "　" + $__oa_AwardZeny + " Zeny";
+	if ( $__oa_AwardCash ) dispbottom "　" + $__oa_AwardCash + " Cash";
+	
+	set .@len , getArraySize($__oa_AwardVariable$);
+	for ( set .@i,0; .@i<.@len; set .@i,.@i+1 )
+		dispBottom "　" + $__oa_AwardVariablePrefix$[.@i] + $__oa_AwardVariablePoint[.@i] + $__oa_AwardVariablePostfix$[.@i];
+	
+	set .@len , getArraySize($__oa_AwardItemID);
+	for ( set .@i,0; .@i<.@len; set .@i,.@i+1 )
+		dispBottom "　" + getItemName($__oa_AwardItemID[.@i]) + " " + $__oa_AwardItemCount[.@i] + "個";
+	
+	if ( getGMLevel() > 90 ){
+		while ( 1 ) {
+			mes "[ 在 線 獎 勵 設 置 ]";
+			mes "狀態 : " + ($__oa_Status?"開啟":"關閉");
+			mes "發放時間 : " + $__oa_startTime + " ~ " + $__oa_endTime;
+			mes "人數限制 : " + $__oa_peopleLimit;
+			mes "間隔時間 :  " + ($__oa_Interval / 60 ? $__oa_Interval / 60 + "小時":"") + ($__oa_Interval % 60 ? $__oa_Interval % 60 + "分鐘":"");
+			mes "獎勵 : ";
+			mes "　" + $__oa_AwardZeny + " Zeny";
+			mes "　" + $__oa_AwardCash + " Cash";
+			set .@select$ , "";
+			
+			set .@VaribleCount , getArraySize($__oa_AwardVariable$);
+			for ( set .@i,0; .@i<.@VaribleCount; set .@i,.@i+1 ){
+				mes "　" + $__oa_AwardVariablePrefix$[.@i] + " " + $__oa_AwardVariablePoint[.@i] + " " + $__oa_AwardVariablePostfix$[.@i];
+				set .@select$,.@select$ + "^DC0300[刪除獎勵]" + $__oa_AwardVariablePrefix$[.@i] +" "+ $__oa_AwardVariablePoint[.@i] +" "+ $__oa_AwardVariablePostfix$[.@i] + ":";
+			}
+			
+			set .@ItemCount , getArraySize($__oa_AwardItemID);
+			for ( set .@i,0; .@i<.@ItemCount; set .@i,.@i+1 ){
+				mes "　" + getItemName($__oa_AwardItemID[.@i]) + " " + $__oa_AwardItemCount[.@i] + "個";
+				set .@select$,.@select$ + "^DC0300[刪除獎勵]" + getItemName($__oa_AwardItemID[.@i]) + " " + $__oa_AwardItemCount[.@i] + "個 :";
+			}
+			
+			next;
+			switch(set(.@s,select(
+				($__oa_Status?"^FF0000關閉在線獎勵":"^00A002開啟在線獎勵") ,
+				"^0300DC設定獎勵間隔時間",
+				"^0300DC設定獎勵發放時間",
+				"^0300DC設定發放獎勵最低人數",
+				"^0300DC設定獎勵Zeny",
+				"^0300DC設定獎勵Cash",
+				"^00A002新增獎勵物品",
+				"^00A002新增獎勵點數",
+				.@select$
+			))){
+			
+				case 1:
+					if ( $__oa_Status )
+						mes "你確定要關閉在線獎勵?";
+					else
+						mes "你確定要開啟在線獎勵?";
+					if ( select("確定:取消") == 1)
+						set $__oa_Status , !$__oa_Status;
+					break;
+					
+				case 2:
+					do{
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "請輸入間隔時間(單位:分鐘)";
+						next;
+						input .@input;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "間隔時間 - " + .@input + "分鐘";
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1 )
+						set $__oa_Interval,.@input;
+					break;
+					
+				case 3:
+					do{
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "設定發放獎勵時間";
+						mes " ^CC0000Step 1. 請輸入獎勵開始時間 :^000000";
+						mes " ^AAAAAAStep 2. 請輸入獎勵結束時間 :^000000";
+						mes " ^CCCCCC輸入24小時制4位數字 如0730";
+						next;
+						input .@input_startTime;
+					
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "設定發放獎勵時間";
+						mes " ^AAAAAAStep 1. 請輸入獎勵開始時間 :^000000";
+						mes " ^CC0000Step 2. 請輸入獎勵結束時間 :^000000";
+						mes " ^CCCCCC輸入24小時制4位數字 如0730";
+						next;
+						input .@input_endTime;
+						
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "發放獎勵時間" + .@input_startTime + " ~ " + .@input_endTime;
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1 ){
+						set $__oa_startTime,.@input_startTime;
+						set $__oa_endTime,.@input_endTime;
+					}
+					break;
+				
+				case 4:
+					do{
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "請輸入獎勵發放最低人數";
+						next;
+						input .@input;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "最低獎勵人數" + .@input;
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1 )
+						set $__oa_peopleLimit,.@input;
+					break;
+					
+				case 5:
+					do{
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "請輸入獎勵金額(單位:Zeny)";
+						next;
+						input .@input;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "Zeny - " + .@input + "Zeny";
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1 )
+						set $__oa_AwardZeny,.@input;
+					break;
+				case 6:
+					do{
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "請輸入獎勵點數(單位:Cash)";
+						next;
+						input .@input;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "Cash - " + .@input + " Cash";
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1 )
+						set $__oa_AwardCash,.@input;
+					break;
+				case 7:
+					do {
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵物品";
+						mes " ^CC0000Step 1. 請輸入物品編號 :^000000";
+						mes " ^AAAAAAStep 2. 請輸入物品數量 :^000000";
+						next;
+						input .@input_itemID;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵物品";
+						mes " ^AAAAAAStep 1. 請輸入物品編號 :^000000";
+						mes " ^CC0000Step 2. 請輸入物品數量 :^000000";
+						next;
+						input .@input_Count;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "你輸入的是" + getItemName(.@input_itemID) + " " + .@input_Count + "個";
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1){
+						set $__oa_AwardItemID[.@ItemCount] , .@input_itemID;
+						set $__oa_AwardItemCount[.@ItemCount] , .@input_Count;
+					}
+					break;
+				case 8:
+					do {
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵變數";
+						mes " ^CC0000Step 1. 請輸入變數名稱 :^000000";
+						mes " ^AAAAAAStep 2. 請輸入獎勵數量 :^000000";
+						mes " ^AAAAAAStep 3. 請輸入變數前輟 :^000000";
+						mes " ^AAAAAAStep 4. 請輸入變數後輟 :^000000";
+						next;
+						input .@inpit_var$;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵變數";
+						mes " ^AAAAAAStep 1. 請輸入變數名稱 :^000000";
+						mes " ^CC0000Step 2. 請輸入獎勵數量 :^000000";
+						mes " ^AAAAAAStep 3. 請輸入變數前輟 :^000000";
+						mes " ^AAAAAAStep 4. 請輸入變數後輟 :^000000";
+						next;
+						input .@inpit_count;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵變數";
+						mes " ^AAAAAAStep 1. 請輸入變數名稱 :^000000";
+						mes " ^AAAAAAStep 2. 請輸入獎勵數量 :^000000";
+						mes " ^CC0000Step 3. 請輸入變數前輟 :^000000";
+						mes " ^AAAAAAStep 4. 請輸入變數後輟 :^000000";
+						next;
+						input .@inpit_prefix$;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "新增獎勵變數";
+						mes " ^AAAAAAStep 1. 請輸入變數名稱 :^000000";
+						mes " ^AAAAAAStep 2. 請輸入獎勵數量 :^000000";
+						mes " ^AAAAAAStep 3. 請輸入變數前輟 :^000000";
+						mes " ^CC0000Step 4. 請輸入變數後輟 :^000000";
+						next;
+						input .@inpit_postfix$;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "你輸入的是" + .@inpit_prefix$ + .@inpit_count + .@inpit_postfix$ + "(" + .@inpit_var$ + ")";
+						mes "確定嘛?";
+						next;
+					} while ( set(.@_s,select("確定:重新設置:取消設置")) == 2);
+					if ( .@_s == 1){
+						set $__oa_AwardVariable$[.@VaribleCount] , .@inpit_var$;
+						set $__oa_AwardVariablePrefix$[.@VaribleCount] , .@inpit_prefix$;
+						set $__oa_AwardVariablePoint[.@VaribleCount] , .@inpit_count;
+						set $__oa_AwardVariablePostfix$[.@VaribleCount] , .@inpit_postfix$;
+					}
+					break;
+				default:
+					if ( .@s <= 8 + .@VaribleCount ) {
+						set .@index , .@s - 9;
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "將" + $__oa_AwardVariablePrefix$[.@index] + $__oa_AwardVariablePoint[.@index] + $__oa_AwardVariablePostfix$[.@index] + "(" + $__oa_AwardVariable$[.@index] + ")刪除";
+						mes "確定嘛?";
+						next;
+						if ( select("確定:取消") == 1){
+							deleteArray $__oa_AwardVariable$[.@s - 6] , 1;
+							deleteArray $__oa_AwardVariablePrefix$[.@s - 6] , 1;
+							deleteArray $__oa_AwardVariablePoint[.@s - 6] , 1;
+							deleteArray $__oa_AwardVariablePostfix$[.@s - 6] , 1;
+						}
+					} else {
+						set .@index , .@s - 9 - .@VaribleCount;
+						
+						mes "[ 在 線 獎 勵 設 置 ]";
+						mes "將" + getItemName($__oa_AwardItemID[.@index]) + " " + $__oa_AwardItemCount[.@index] + "個刪除";
+						mes "確定嘛?";
+						next;
+						if ( select("確定:取消") == 1){
+							deleteArray $__oa_AwardItemID[.@index] , 1;
+							deleteArray $__oa_AwardItemCount[.@index ] , 1;
+						}
+					}
+					break;
+			}
+			set $@version , $@version + 1;
+			doEvent "OnlineAward::OnAwardStart";
+		}
+	}
+	end;
+
+}

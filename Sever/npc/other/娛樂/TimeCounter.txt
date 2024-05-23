@@ -1,0 +1,104 @@
+amatsu,108,156,5	script	時間第六感	990,{
+function countTime;
+if(getgmlevel()>98){	
+	mes "GM手動開啟";
+switch(select("離開","開啟","玩家介面")){
+	case 1:
+	close;
+	case 2:
+	close2;
+OnClock1007:
+OnClock1537:
+OnClock2053:
+OnClock2207:
+if(!playerattached()){
+	callfunc "SkyGameFunc",999;//遊戲開始函數
+	}
+	set $@Rtime,rand(5,20);//計算時間
+	set $@Itime,rand(1,$@Rtime-1);//干擾時間
+	announce "[時間第六感] 計算時間 ["+$@Rtime+"] 秒",bc_map|bc_npc;
+	sleep2 3000;
+	announce "[時間第六感] 倒數 [ 3 ] 秒開始計時",bc_map|bc_npc;
+	sleep2 1000;
+	announce "[時間第六感] 倒數 [ 2 ] 秒開始計時",bc_map|bc_npc;
+	sleep2 1000;
+	announce "[時間第六感] 倒數 [ 1 ] 秒開始計時",bc_map|bc_npc;
+	sleep2 1000;
+	announce "[時間第六感] 開始計時 ["+$@Rtime+"] 秒",bc_map|bc_npc;
+	set $@Rtime,gettimetick(0)+$@Rtime*1000;
+	set .GmStart,1;
+	//變數歸零
+	set .f1,0;
+	set .f2,0;
+	set .an,0;
+	defpattern 1,".*:\\s(.*)","CheckTime";
+	activatepset 1;
+	//干擾
+	sleep2 $@Itime*1000;
+	set .@a,rand(1,9);
+	set .@b,rand(1,9);
+	set .@c,rand(1,2);
+	switch (.@c) {
+      case 1: set .an,.@a+.@b; break;
+      case 2: set .an,.@a-.@b; break;
+      //case 3: set .an,.@a*.@b; break;
+	}
+	announce "[時間第六感] 時間到時請計算 "+.@a+" "+(.@c-2?"+":"-")+" "+.@b+" = ?",bc_map|bc_npc;
+	end;
+	
+	case 3:
+	break;
+	close;
+	}
+	}
+	mes "倒數計時^0000FF猜時最接近者獲勝^000000";
+	mes "^0000FF在聊天視窗打題目要求的計算數字猜結束時間^000000";
+	mes "^0000FF例如[請計算5-3=?]^000000";
+	mes "^FF0000請在聊天室窗打[2]^000000";
+	mes "^0000FF例如[請計算1-8=?]^000000";
+	mes "^FF0000請在聊天室窗打[-7]^000000";
+	callfunc "SkyGameFunc",1,"showitem";//顯示獎品函數
+	close;
+
+
+CheckTime:
+	if( atoi($@p1$) != .an ){
+		dispbottom "計算錯誤";
+		end;
+		}
+	if( !.GmStart) end;
+	set @i,gettimetick(0);
+	set .f2,@i-$@Rtime;
+	dispbottom "你的誤差 "+.f2/1000+"."+(.f2-(countTime(.f2))*1000)+"秒";
+	if( (.f2 > 0 && .f1) ){ //勝利者出現
+	set .GmStart,0;
+	set .f2,@i-$@Rtime;
+	if( .f1 < .f2){
+	announce "[時間第六感] 勝利者 ["+rid2name(.p1)+"] win 誤差時間 "+countTime(.f1)+"."+(.f1-countTime(.f1)*1000)+" 秒",bc_map|bc_npc;
+	deletepset 1;
+	if(attachrid(.p1))
+	callfunc "SkyGameFunc",1,"getitem";//領獎品函數
+	end;
+	}
+	announce "[時間第六感] 勝利者 ["+strcharinfo(0)+"] win 誤差時間 "+countTime(.f2)+"."+(.f2-(countTime(.f2))*1000)+" 秒",bc_map|bc_npc;
+	deletepset 1;
+	callfunc "SkyGameFunc",1,"getitem";//領獎品函數
+	end;
+	}
+	set .f1,@i-$@Rtime;
+	if (.f1<0) set .f1,$@Rtime-@i;
+	set .p1,getcharid(3,strcharinfo(0));
+	if( @i == $@Rtime){//勝利者出現
+	set .GmStart,0;
+	announce "[時間第六感] 勝利者 ["+strcharinfo(0)+"] win 100%精準猜中時間",bc_map|bc_npc;
+	deletepset 1;
+	callfunc "SkyGameFunc",1,"getitem";//領獎品函數
+	}
+	end;
+	
+function countTime {
+	set .@s,getarg(0)/1000;
+	return .@s;
+}
+
+}

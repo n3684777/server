@@ -1,0 +1,228 @@
+/*AndySky製作20140131
+callfunc "SkyGameFunc",1,"getitem";//領獎品函數
+callfunc "SkyGameFunc",999;//遊戲開始函數
+callfunc "SkyGameFunc",1,"showitem";//顯示獎品函數
+*/
+function	script	SkyGameFunc	{
+	if(getarg(0)==999){//startFunc
+		//if( getarg(2) ){//如果需要變數
+		//	setd ""+getarg(1)+"",getarg(2);
+		//	}
+		announce "["+strnpcinfo(0)+"] 活動將在[ 5 ]分鐘後開始 , 請踴躍找[活動傳送員]參加，說明請點NPC觀看",0;
+		sleep2 180000;
+		announce "["+strnpcinfo(0)+"] 活動將在[ 2 ]分鐘後開始 , 請踴躍找[活動傳送員]參加",0;
+		sleep2 90000;
+		announce "["+strnpcinfo(0)+"] 活動將在[ 30 ]秒鐘後開始 , 請踴躍找[活動傳送員]參加",0;
+		sleep2 15000;
+		announce "["+strnpcinfo(0)+"] 活動將在[ 15 ]秒鐘後開始 , 請踴躍找[活動傳送員]參加",0;
+		sleep2 15000;
+		return;
+		}
+	//領獎設定
+	switch (getarg(0)) {
+	case 1:	//TimeCounter時間第六感
+		setarray .@item[0],13644,28570,28566,28567,28568,28613,28587,13634,13639,13638,27418,27418;
+		setarray .@amt[0],150,50,75,75,75,75,75,1,1,50,3,5;
+		break;
+	//case 2:	//guessnumber猜數字
+		setarray .@item[0],14408,5201,12210,7273,608,663,12210,7619,7620,677,11011;
+		setarray .@amt[0],2,1,1,5,50,100,2,10,10,10,1;
+		break;
+	//case 3:	//color眼睛嘴巴不一樣
+		setarray .@item[0],607,12210,7619,7620,7621,12214,7135,7136,663,7606,671,675,677;
+		setarray .@amt[0],10	,1	,5	,5	 ,5	  ,5	,70	 ,70  ,100,5,5,5,5;
+		//setarray .@rt1[0],226,226,226,226,25,226,25;
+		break;
+	}
+	if( getarg(1) == "showitem" ){//顯示獎品
+		mes "獎品^FF0000"+getarraysize(.@item)+"^000000個";
+		for ( set @i,0; @i <= (getarraysize(.@item)-1); set @i,@i+1 ) 
+			mes "獎品."+@i+"　^FF0000"+getitemname(.@item[@i])+"^000000 個 ^0000FF"+.@amt[@i]+"^000000";
+		return;
+	}
+	//領獎
+	if( getarg(1) == "getitem" ){
+		set .@GetItem,rand(0,getarraysize(.@item)-1);
+		getitem .@item[.@GetItem],.@amt[.@GetItem];
+		announce "["+strnpcinfo(0)+"] 恭喜 ["+strcharinfo(0)+"] 獲得 ["+getitemname(.@item[.@GetItem])+"] 數量 ["+.@amt[.@GetItem]+"] 個。",15;
+	}
+	return;
+}
+
+
+
+//////////////////////////
+/*================================================
+- 腳本名稱：敲敲幸運蛋(仿希望戀曲敲彩金模式)
+- 腳本作者：阿神ˇ(a20775689@raidcall.com.tw)
+- 測試環境：CSEA、RA、SEAR
+- 更新內容：
+- Ver 1.1 更換C語言(set)寫法, 現在已經支援EA
+- Ver 1.0 完成架構
+>>>各位大哥大姐轉載請保留以上，萬分感激<<<
+================================================*/
+amatsu,123,144,5	script	敲敲幸運蛋	463,{
+	mes "    [ 敲 敲 幸 運 蛋 ]";
+	mes "> 目前累積金額 : ^00AA99"+($LG/10000)+"^000000 萬Zeny";
+	mes "> 該次的敲敲金額^0000FF等於或超過^000000^FFBBAA幸運值^000000";
+	mes "> 您將獲得該次敲敲蛋的^FF00AA幸運金額^000000";
+	mes "> ^00AAAA但不包括該次投注的敲敲金額^000000";
+	mes "> ^FF0000最小敲敲金額 1 萬^000000";
+	mes "> ^888888輸入單位 : 萬^888888";
+	input .@num;
+	if(.@num < 1 || .@num > (Zeny/10000)) close;
+	set Zeny,Zeny - (.@num*10000);
+	if(($LG+(.@num*10000)) >= $LuckeyZeny){
+		announce "[ 敲敲幸運蛋 ] "+strcharinfo(0)+" 該次敲敲金額 ("+.@num+"萬) 突破了敲敲幸運值 ("+($LuckeyZeny/10000)+"萬) 獲得了對等的報酬.",15;
+		set Zeny,Zeny + $LuckeyZeny;
+		set $LG,5000000;
+		set $LuckeyZeny,rand(111,9999)*10000;
+		debugmes "幸運彩蛋金額"+$LuckeyZeny;
+	} else {
+		set $LG,$LG + (.@num*10000);
+		misceffect 10;
+	}
+	close;
+OnInit:
+	if(!$LuckeyZeny) set $LuckeyZeny,rand(111,9999)*10000;
+	debugmes "幸運彩蛋金額"+$LuckeyZeny;
+	do{ waitingroom $LG?"　　"+($LG/10000)+" 萬":"無人投注敲敲金額",0; sleep 1000; delwaitingroom; }while(1);
+	end;
+}
+
+
+-	script	poring_event	734,{
+
+OnClock0800:
+OnClock0900:
+OnClock1000:
+OnClock1100:
+OnClock1200:
+OnClock1300:
+OnClock1400:
+OnClock1500:
+OnClock1600:
+OnClock1700:
+OnClock1800:
+OnClock1900:
+OnClock2000:
+OnClock2100:
+OnClock2200:
+OnClock2300:
+OnClock0000:
+OnClock0100:
+OnClock0200:
+OnClock0300:
+
+	announce "【公告】: 波利識別活動現在開啟，參加地點在娛樂區！",0;
+        donpcevent "波利識別活動人員::OnWarp";
+}
+amatsu,123,148,3	script	波利識別活動人員	734,{
+
+OnTouch:
+        mes "[- 波利識別活動人員]";
+        mes "- 你好！ "+strcharinfo(0)+"你想要幹什麼？";
+        next;
+        menu "- 直接進入",L_enter,"- 信息查看",L_info,"- 沒事離開",bye;
+        close;
+
+L_enter:
+        mes "[- 波利識別活動人員]";
+        mes "- 那就進入吧";
+        next;
+        warp "poring_w01",        100,        100;        end;
+
+L_info:
+        mes "[- 波利識別活動人員]";
+        mes "- 每次活動將會放出100只波利。";
+        mes "- 而只有1只是名字為：^FF0000波利^000000。";
+        mes "- 如果你覺得你有能力找到並打死它";
+        mes "- 那麼祝你好運，趕緊報名進入吧！";
+        close;
+bye:
+        mes "[- 波利識別活動人員]";
+        mes "- 再見！";
+        close;        
+
+OnInit:
+        disablenpc "波利識別活動人員";
+        end;
+
+OnWarp:
+        initnpctimer;
+        enablenpc "波利識別活動人員";
+        donpcevent "Poringsummoner::OnSummon";
+        end;
+
+OnTimer300000:
+        stopnpctimer;
+        killmonster "poring_w01.gat","All";
+        announce "【公告】: 波利識別活動結束，沒有玩夠的朋友下次繼續！",0;
+        announce "【公告】: 波利識別活動在每天早上8:00至凌晨3:00整。",0;
+        end;
+}
+
+-	script	Poringsummoner	-1,{
+
+OnSummon:
+        monster "poring_w01.gat",0,0,"波利",1002,1,"poringwin::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波 利",1002,7,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波^利",1002,7,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波_利",1002,7,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"菠利",1002,7,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"我是波利",1002,5,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波莉",1002,1,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"菠莉",1113,1,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"玻璃",1062,1,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"薄利",1002,7,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波俐",1002,10,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波 俐",1002,10,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波_俐",1002,10,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波_莉",1002,10,"poringlose::OnMobKilled";
+        monster "poring_w01.gat",0,0,"波波利",1002,1,"poringlose::OnMobKilled";end;
+}
+
+-	script	poringwin	-1,{
+OnMobKilled:
+        dispbottom "- 你得到了一個的禮物，";
+        dispbottom "- 恭喜你找到了我！";
+	announce "【公告】[波利識別活動]本次優勝者是 [" + strcharinfo(0) + "]",0;
+
+	set @gx,rand(10);
+	if (@gx ==0)getitem 13644,30;
+	if (@gx ==1)getitem 28570,10;
+	if (@gx ==2)getitem 28566,rand(15,30);
+	if (@gx ==3)getitem 28567,rand(15,30);
+	if (@gx ==4)getitem 28568,rand(15,30);
+	if (@gx ==5)getitem 28613,rand(15,30);
+	if (@gx ==6)getitem 28587,rand(15,30);
+        if (@gx ==7)getitem 13638,15;
+        if (@gx ==8)getitem 27418,1;
+        if (@gx ==9)getitem 27418,2;
+
+
+        killmonster "poring_w01.gat","All";
+        donpcevent "Poringsummoner::OnSummon";
+        end;
+}
+
+-	script	poringlose	-1,{
+OnMobKilled:
+        dispbottom "- 呵呵，你還不夠仔細，看走眼啦。";
+        percentheal -100,-100;
+        warp "amatsu",115,153;
+        end;
+}
+
+
+poring_w01.gat,97,102,3	script	回城傳送員	1002,{
+        warp "amatsu",115,153;
+        close;
+OnInit:
+	waitingroom "回城傳送員",0;  
+	atcommand "@skilloff"; 
+}
+
+
+
+

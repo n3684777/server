@@ -1,0 +1,151 @@
+prontera,0,0,0	script	OnNPCKillEvent	-1,{
+OnNPCKillEvent:
+if ( killedrid == 2381 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 文成武德‧劉備 」成為MVP！",15; } 
+
+if ( killedrid == 2382 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 霸傲天將‧關羽 」成為MVP！",15; } 
+
+if ( killedrid == 2383 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 黑面大眼‧張飛 」成為MVP！",15; } 
+
+if ( killedrid == 2384 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 治世能臣‧曹操 」成為MVP！",15; } 
+
+if ( killedrid == 2385 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 冰山尤物‧甄宓 」成為MVP！",15; } 
+
+if ( killedrid == 2386 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 能歌善舞‧蔡琰 」成為MVP！",15; } 
+
+if ( killedrid == 2387 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 江東之主‧孫權 」成為MVP！",15; } 
+
+if ( killedrid == 2388 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 霸王嬌妻‧大喬 」成為MVP！",15; } 
+
+if ( killedrid == 2389 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 絕代佳人‧小喬 」成為MVP！",15; } 
+
+if ( killedrid == 2390 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 飛將英傑‧呂布 」成為MVP！",15; } 
+
+if ( killedrid == 2391 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 傾城傾國‧貂蟬 」成為MVP！",15; } 
+
+if ( killedrid == 2392 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 大賢良師‧張角 」成為MVP！",15; } 
+
+if ( killedrid == 2393 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 禍國太師‧董卓 」成為MVP！",15; } 
+
+if ( killedrid == 2394 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 四世三公‧袁紹 」成為MVP！",15; } 
+
+if ( killedrid == 2395 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 仁義天下‧劉玄德 」成為MVP！",15; } 
+
+if ( killedrid == 2396 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 忠義武聖‧關雲長 」成為MVP！",15; } 
+
+if ( killedrid == 2397 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 剛猛神威‧張益德 」成為MVP！",15; } 
+
+if ( killedrid == 2398 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 白龍銀槍‧趙子龍 」成為MVP！",15; }   
+
+if ( killedrid == 2399 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 箭無虛發‧黃漢升 」成為MVP！",15; }   
+
+if ( killedrid == 2400 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 錦衣電光‧馬孟起 」成為MVP！",15; }  
+
+if ( killedrid == 2401 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 神機妙算‧諸葛亮 」成為MVP！",15; }  
+
+if ( killedrid == 2402 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 亂世奸雄‧曹孟德 」成為MVP！",15; }  
+
+if ( killedrid == 2403 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 威震八方‧張文遠 」成為MVP！",15; }  
+
+if ( killedrid == 2404 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 護主虎將‧許仲康 」成為MVP！",15; }  
+
+if ( killedrid == 2405 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 古之惡來‧典韋 」成為MVP！",15; }  
+
+if ( killedrid == 2406 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 獨眼狂獅‧夏侯惇 」成為MVP！",15; }  
+
+if ( killedrid == 2407 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 身先士卒‧夏侯淵 」成為MVP！",15; }  
+
+if ( killedrid == 2408 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 識破人心‧司馬懿 」成為MVP！",15; }  
+
+if ( killedrid == 2409 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 東吳大帝‧孫仲謀 」成為MVP！",15; }  
+
+if ( killedrid == 2410 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 東吳統領‧周公瑾 」成為MVP！",15; }  
+
+if ( killedrid == 2411 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 水軍之最‧呂子明 」成為MVP！",15; }  
+
+if ( killedrid == 2412 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 旋焰霸王‧孫伯符 」成為MVP！",15; }  
+
+if ( killedrid == 2413 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 合淝英靈‧太史慈 」成為MVP！",15; }
+
+if ( killedrid == 2414 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 盡忠職守‧周幼平 」成為MVP！",15; }
+
+if ( killedrid == 2415 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 不讓鬚眉‧孫尚香 」成為MVP！",15; }
+
+if ( killedrid == 2416 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 人中龍鳳‧呂奉先 」成為MVP！",15; }
+
+if ( killedrid == 2583 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 西楚霸王‧項羽 」成為MVP！",15; }
+
+if ( killedrid == 2584 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 平民皇帝‧劉邦 」成為MVP！",15; }
+
+if ( killedrid == 2585 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 創世軒轅‧黃帝 」成為MVP！",15; }
+
+if ( killedrid == 2586 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 九黎戰神‧蚩尤 」成為MVP！",15; }
+
+if ( killedrid == 2587 ) 
+{ announce "【 恭喜 】玩家「 " + strcharinfo(0) + " 」擊敗了「 神農之末‧炎帝 」成為MVP！",15; }   
+
+if ( killedrid == 2520 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 噬魂者 」",bc_all,0xFF0000; }   
+
+if ( killedrid == 2521 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 斬魔者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2522 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 墮天者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2523 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 操焰者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2524 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 弒龍者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2525 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 暗殺者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2526 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 修行者 」",bc_all,0xFF0000; }  
+
+if ( killedrid == 2527 ) 
+{ announce "【 公告 】玩家「 " + strcharinfo(0) + " 」擊殺了「 逐暗者 」",bc_all,0xFF0000; }  
+   } 
+
+

@@ -1,18 +1,18 @@
-//===== rAthena Script ======================================= 
+//===== eAthena Script ======================================= 
 //= Misc. Message Boards
 //===== By: ================================================== 
 //= kobra_k88
 //= L0ne_W0lf
 //===== Current Version: ===================================== 
-//= 1.7
+//= 1.5
 //===== Compatible With: ===================================== 
-//= [Official Conversion]
-//= rAthena Project; 7.15 +
+//= [Aegis Conversion]
+//= eAthena 7.15 +
 //===== Description: ========================================= 
 //= Misc. Message Boards for:
 //=  - Prontera
-//=  - Morocc
-//=  - Geffen
+//=  - Morroc
+//-  - Geffen
 //=  - Al De Baran
 //=  - Izlude
 //=  - Alberta
@@ -23,8 +23,6 @@
 //= 1.4 Rescripted to Aegis 10.3 standard. [L0ne_W0lf]
 //= 1.5 Removed a duplicate related to the Sign Quest. [SinSloth]
 //= 1.5 Corrected NPC names to fall within proper restrictions. [L0ne_W0lf]
-//= 1.6 Commented out conflicting npcs. (bugreport:4093) [L0ne_W0lf]
-//= 1.7 Moved Izlude NPCs to Pre-RE path. [Euphy]
 //============================================================
 
 // Prontera
@@ -37,7 +35,7 @@ prontera,158,213,1	script	Sign Post#Prt1	111,{
 	mes "East to Prontera Fields";
 	mes "South to Prontera Fields";
 	mes "Southeast to Alberta";
-	mes "Southwest to Morocc";
+	mes "Southwest to Morroc";
 	mes "Southwest to Comodo";
 	mes "West to Prontera Fields";
 	close;
@@ -52,7 +50,7 @@ prontera,156,197,1	script	Prontera Bulletin#Prt2	111,{
 	mes "Will take any offer!";
 	mes "Contact Abramulious";
 	mes "Help Wanted: Buying or selling a used Peco Peco?";
-	mes "Contact Grasisium in Morocc now!";
+	mes "Contact Grasisium in Morroc now!";
 	close;
 }
 
@@ -61,13 +59,13 @@ prontera,278,212,1	script	Sign#Prt3	111,{
 	mes "Please help keep Prontera a clean place.";
 	close;
 }
-/*
+
 prontera,150,326,1	script	Sign#Prt4	111,{
 	mes "^993300- The Sign Reads -^000000";
 	mes "Citizens of Prontera are Welcomed in the Prontera Castle.";
 	close;
 }
-*/
+
 prontera,31,212,1	script	Billboard#Prt5	111,{
 	mes "^993300- The Billboard Reads -^000000";
 	mes "~WANTED~";
@@ -93,7 +91,7 @@ prontera,145,304,1	script	Sign#Prt7	111,{
 	close;
 }
 
-// Morocc
+// Morroc
 //============================================================
 morocc,144,84,1	script	Sign#Moc1	111,{
 	mes "^993300- The Sign Reads -^000000";
@@ -111,15 +109,15 @@ morocc,145,83,1	script	Sign#Moc2	111,{
 
 morocc,32,174,1	script	Bulletin#Moc3	111,{
 	mes "^993300- The Bulletin Reads -^000000";
-	mes "^0099FFMorocc women up in arms!^000000";
+	mes "^0099FFMorroc women up in arms!^000000";
 	mes "A recent study has shown that the majority of male citizens in";
-	mes "Morocc prefer the women of Geffen. 90 of the 100 male citizens";
-	mes "of Morocc claimed that they have had numerous relationships";
-	mes "with Geffen women outside of the Morocc Region.";
+	mes "Morroc prefer the women of Geffen. 90 of the 100 male citizens";
+	mes "of Morroc claimed that they have had numerous relationships";
+	mes "with Geffen women outside of the Morroc Region.";
 	next;
 	mes "^993300- The Bulletin Continued -^000000";
-	mes "'I just prefer their company better, that's all...' said one Morocc man.";
-	mes "'it's not like I'm against Morocc women or anything, so what's the problem...'";
+	mes "'I just prefer their company better, that's all...' said one Morroc man.";
+	mes "'it's not like I'm against Morroc women or anything, so what's the problem...'";
 	mes "Besides emotional and stressful issues in regards to the daily";
 	mes "activities of these males.";
 	mes "Hunting still seems to be their number one priority";
@@ -129,7 +127,7 @@ morocc,32,174,1	script	Bulletin#Moc3	111,{
 
 morocc,168,266,1	script	Sign#Moc5	111,{
 	mes "^993300- The Sign Reads -^000000";
-	mes "Welcome to Morocc.";
+	mes "Welcome to Morroc.";
 	close;
 }
 
@@ -143,7 +141,7 @@ morocc,168,264,1	script	Billboard#Moc6	111,{
 
 morocc,298,211,1	script	Sign#Moc7	111,{
 	mes "^993300- The Sign Reads -^000000";
-	mes "Welcome to Morocc.";
+	mes "Welcome to Morroc.";
 	close;
 }
 
@@ -154,13 +152,14 @@ geffen,116,58,1	script	Geffen Bulletin#Gef1	111,{
 	mes "Remember Wizard's...It's not how many skills you know, it's the magic that counts!";
 	close;
 }
-/*
+
 geffen,61,174,1	script	Sign#Gef2	111,{
+OnClick:
 	mes "^993300- The Sign Reads -^000000";
 	mes "- Seems to be written in a language unfamiliar to you -";
 	close;
 }
-*/
+
 geffen,113,104,1	script	Billboard#Gef3	111,{
 	mes "^993300- The Billboard Reads -^000000";
 	mes "Selling: Brand new Chon Chon Doll!";
@@ -179,7 +178,7 @@ geffen,119,190,1	script	Sign Post#Gef4	111,{
 	mes "Northeast to Al De Baran";
 	mes "Northwest to Glast Heim";
 	mes "East to Geffen Fields";
-	mes "South to Morocc";
+	mes "South to Morroc";
 	mes "Southeast to Prontera";
 	mes "Southeast to Alberta";
 	mes "Southwest to Comodo";
@@ -225,7 +224,7 @@ aldebaran,54,223,1	script	Billboard#Alde3	111,{
 }
 
 aldebaran,197,228,1	script	#Alde4	-1,1,1,{
-OnTouch_:
+OnTouch:
 	mes "[Home Owner]";
 	mes "Get off my roof you no good leecher!";
 	close;
@@ -235,6 +234,20 @@ aldebaran,217,222,1	script	Sign#Alde5	111,{
 	mes "^993300- The Sign Reads -^000000";
 	mes "I saw Santa Claus in Lutie!";
 	mes "- The rest looks like scribble -";
+	close;
+}
+
+// Izlude
+//============================================================
+izlude,54,139,1	script	Sign#Iz1	111,{
+	mes "^993300- The Sign Reads -^000000";
+	mes "Welcome to the Swordsman Academy.";
+	close;
+}
+
+izlude,144,148,1	script	Sign#Iz2	111,{
+	mes "^993300- The Sign Reads -^000000";
+	mes "Welcome.";
 	close;
 }
 

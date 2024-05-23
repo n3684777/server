@@ -1,0 +1,168 @@
+prontera,163,186,4	script	米修米修::sound	787,{
+	set $@announce_npcname$,strnpcinfo(0);
+	set .@title$,"[ ^0FB4F0"+$@announce_npcname$+"^000000 ]";
+	if(getgmlevel()==99)goto login;
+	if(gettimetick(2)<wt){
+	mes .@title$;
+	mes " 你剛剛發過廣播";
+	mes " 請稍微等會再來";
+	close;
+	end;}
+login:
+	mes .@title$;
+	mes " 你好,我可以幫你廣播一些信息";
+	mes " 為了防止有人利用廣播刷屏";
+	mes " 規定每次廣播間隔"+$@mes_ss+"秒!";
+	next;
+	mes .@title$;
+	mes " 這是收費服務";
+	mes " 根據每種信息檔次";
+	mes " 將會分別收取不同的信息費用";
+	mes " 請選擇你要發送信息的類型";
+	next;
+	if(getgmlevel()==99){
+	menu "繼續廣播功能",-,"管理功能",gm_contrl;
+	}
+	menu 	" 找MM/GG  ( 2W Zeny)",S_mes1,
+		" 找人組隊 ( 2W Zeny)",S_mes2,
+		" 找人帶我 ( 1W Zeny)",S_mes3,
+		" 工會收人 (10W Zeny)",S_mes4,
+		" 自定義廣播<限35個漢字以內>(20W zeny)",S_mes5;
+gm_contrl:
+	mes .@title$;
+	mes "目前設定"+$@mes_ss/1000+"秒";
+	mes "請輸入目前想更改的間隔秒數!";
+	mes "^FF00001秒=1!^000000";
+	input .@mes_ss;
+	next;
+	mes .@title$;
+	mes "你所輸入的是"+.@mes_ss+"!";
+	mes "是否更改?";
+	menu "是",-;
+	next;
+	set $@mes_ss,.@mes_ss;
+	mes .@title$;
+	mes "已更改"+$@mes_ss+"秒";
+	close2;
+	goto login;
+S_mes1:
+	if(Zeny<20000) goto Over;
+	set Zeny,Zeny-20000;
+	mes .@title$;
+	callfunc "color_select";
+	callfunc "GM_announce",@color$;
+	goto L_END;
+S_mes2:
+	if(getcharid(1)==0)
+	{
+	mes .@title$;
+	mes " 你還沒有組隊哦！";
+	mes " 為了節約你的Zeny";
+	mes " 請先建立隊伍！";
+	close;
+	end;
+	}
+	if(Zeny<20000) goto Over;
+	set Zeny,Zeny-20000;
+	mes .@title$;
+	callfunc "color_select";
+	callfunc "party_announce",@color$;
+	goto L_END;
+S_mes3:
+	if(Zeny<10000) goto Over;
+	set Zeny,Zeny-10000;
+	mes .@title$;
+	callfunc "color_select";
+	callfunc "new_announce",@color$;
+	goto L_END;
+S_mes4:  
+	if(getcharid(2)==0)
+	{
+	mes .@title$;
+	mes " 你好像還沒有加入任何工會嘛";
+	mes " 為了節約你的Zeny";
+	mes " 還是有了工會再發吧";
+	close;
+	end;
+	}
+	if(Zeny<100000) goto Over;
+	set Zeny,Zeny-100000;
+	announce "【"+$@announce_npcname$+"】(" + getguildname(getcharid(2)) + ")工會收人嘍，入會的快M會長(" + getguildmaster(getcharid(2)) + ")！！",15,0xe9967a; 
+	goto L_END;
+S_mes5:  
+	mes .@title$;
+	mes "在輸入信息之前請看^FF0000注意事項^000000";
+	mes "^3355FF1、只限70個字符或35個漢字以內^000000";
+	mes "^3355FF2、禁止發送任何含有暴力、色情、政治、人身攻擊的文字^000000";
+	next;
+	mes .@title$;
+	mes "如有玩家發現違反規定者請抓圖在論壇上舉報,任何違規者^FF0000凍結帳戶1周^000000,再犯將^FF0000直接刪除帳戶^000000!";
+	next;
+	if(Zeny<200000) goto Over;
+	input @string$;
+	set Zeny,Zeny-200000;
+	mes .@title$;
+	callfunc "color_select";
+	callfunc "myself_announce",@color$;
+	goto L_END;
+
+Over:
+	mes .@title$;
+	mes "對不起，你的金額不足";
+	close;
+	end;
+L_END:
+      
+        set wt,gettimetick(2)+$@mes_ss;
+        close;
+	end;
+OnInterIfInitOnce:
+	set $@mes_ss,180;
+	end;
+}
+
+function	script	GM_announce	{
+	if(Sex){announce "【"+$@announce_npcname$+"】漂亮MM們好,我是帥哥(" + strcharinfo(0) + ")，有MM願意和我聊天嗎？M我噢，嘿嘿^_^",15,getarg(0);}
+	else{announce "【"+$@announce_npcname$+"】帥GG們好，我是最最可愛的(" + strcharinfo(0) + ")美眉，有帥GG願意陪我聊天嗎？M偶喔，嘻嘻^o^",15,getarg(0);}
+	return;
+}
+function	script	party_announce	{
+	announce "【"+$@announce_npcname$+"】大家好，我是(" + strcharinfo(0) + ")，有人願意加入(" + getpartyname(getcharid(1)) + ")隊伍一起練級打寶嗎？M我噢，吼吼-_-",15,getarg(0);
+	return;
+}
+function	script	new_announce	{
+	announce "【"+$@announce_npcname$+"】 GGJJ們好，我是新人(" + strcharinfo(0) + ")，有GG/JJ願意帶我練級嗎？M偶喔，嗚嗚T_T",15,getarg(0);
+	return;
+}
+function	script	myself_announce	{
+	announce "【"+$@announce_npcname$+"】(" + strcharinfo(0) + ")說:" + @string$ + "。",15,getarg(0);
+	return;
+}
+function	script	color_select	{
+	mes " 那麼請選擇你喜歡的顏色吧!";
+	next;
+	switch(select(	"^FF0000紅色^000000",
+			"^00FF7F綠色^000000",
+			"^FF96F0粉色^000000",
+			"^FFFF00黃色^000000",
+			"^00FFFF藍色^000000",
+			"^781E78紫色^000000",
+			"^001E00黑色^000000")){
+	case 1:	set @color$,"0xFF0000";
+		break;
+	case 2:	set @color$,"0x00FF7F";
+		break;
+	case 3:	set @color$,"0xFF96F0";
+		break;
+	case 4:	set @color$,"0xFFFF00";
+		break;
+	case 5:	set @color$,"0x00FFFF";
+		break;
+	case 6:	set @color$,"0x781E78";
+		break;
+	case 7:	set @color$,"0x001E00";
+		break;
+	}return @color$;
+}
+
+pay_arche,46,136,5	duplicate(sound)	米修米修2號	787

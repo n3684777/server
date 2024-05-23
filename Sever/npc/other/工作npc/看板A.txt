@@ -1,0 +1,40 @@
+prontera,148,166,5	script	私服公告	857,{
+	mes "請不要使用內／外掛進行遊戲。";
+	mes "請不要雙開進行GM開放之活動。";
+	mes "請不要開人物洗新手道具。";
+	mes "請不要利用BUG破壞私服平衡。";
+	mes "以上抓到鎖帳處理。";
+	mes "發現BUG請用RC或至本私服論壇回報。";
+	mes "請不要以身試法。";
+	close;
+OnInit:
+	waitingroom "私服公告",0;
+	end;
+}
+
+
+
+lighthalzen,211,141,5	script	道館公告	857,{
+	mes "請不要使用非法程式多開打道館。";
+	mes "請不要使用按鍵精靈打怪打道館。";
+	mes "請遵守玩家該有的本分。";
+	mes "多開者鎖帳處理。";
+	close;
+OnInit:
+	waitingroom "道館公告",0;
+	end;
+}
+
+
+
+prontera,163,166,4	script	新手必看	857,{
+	mes "全撿指令 = @AUTOLOOT 1 10000。";
+	mes "指定撿指令 = @ALOOTID 1 撿取物。";
+	mes "指定撿指令可以設定10個。";
+	mes "全撿指令和指定撿指令可以一起使用。";
+	mes "每天登入送的紅包可以到商店街換取金錢。";
+	close;
+OnInit:
+	waitingroom "新手必看",0;
+	end;
+}

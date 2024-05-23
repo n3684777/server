@@ -1,0 +1,488 @@
+
+-	script	antibot_main	-1,{
+
+OnInit:
+
+// [--------------------------------------------------------]
+// [ Configuraci?n:                                         ]
+// [========================================================]
+
+	set $@AB$,"外掛查緝人員"; // NPC名稱.
+	set $@ABr,10000;		// 根據設定 , 殺怪機率性的啟動 AntiBot 系統 . (x/10000)
+	set .t1,60;		// 啟動的AntiBot於多少(秒)後對玩家進行測試.
+	set $@ABt2,300;		// 玩家回應時間限制. (秒)
+	set $@ABc,5;		// 玩家回應次數限制.
+
+	set .gm1,99;		// 避免對GM啟動 AntiBot 測試權限級別.
+	set $@ABgm2,50;		// AntiBot  能後台控制設定的GM權限級別.
+
+	set .b$,"@ban +1m";	// 逞罰 bot 命令. 你也可以使用 @jail o @block.
+	set .bl,20;		// Numero maximo de datos almacenados en la lista de sancionados.
+
+	// Lista de mapas donde AntiBot permanecer? desactivado:
+	setarray .m$,"bat_","g_cas","guild_vs","nguild","poring","pvp","rwc";
+
+// [--------------------------------------------------------]
+// [ Final de la configuraci?n.                             ]
+// [========================================================]
+
+	if(!getarraysize($AB$))
+		setarray $AB$[0],"Blancanieves y los 7 enanitos","Caperucita Roja","La Bella Durmiente","Los tres cerditos","Alicia en le pals de las maravillas";
+
+	// NPC names:
+	set .@a,1;
+	while(!setnpcdisplay("AB#"+.@a,$@AB$+"#"+.@a)) set .@a,.@a + 1;
+	end;
+
+OnNPCKillEvent:
+	if(!rand(10000 / $@ABr)) {
+		set .@m$,strcharinfo(3);
+		set .@a,getarraysize(.m$);
+		while(.@a) {
+			set .@a,.@a - 1;
+			if(compare(.@m$,.m$[.@a])) {
+				set .@b,1;
+				break;
+			}
+		}
+		if(!.@b) {
+			if(getcharid(1)) {
+				getpartymember getcharid(1),2;
+				set .@a,$@partymembercount;
+				if(.@a > 1) {
+					copyarray .@b[0],$@partymemberaid[0],.@a;
+					while(.@a) {
+						set .@a,.@a - 1;
+						if(attachrid(.@b[.@a]))
+							if(.@m$ == strcharinfo(3)) continue;
+						deletearray .@b[.@a],1;
+					}
+					set .@a,rand(getarraysize(.@b));
+					attachrid .@b[.@a];
+				}
+				cleararray $@partymemberaid[0],0,.@a;
+				set $@partymembercount,0;
+			}
+On0:
+			set .@i,getcharid(0) - 149999;
+			if(!getd("$@AB"+.@i) && (getgmlevel() < .gm1)) {
+				setd "$@AB"+.@i,1;
+				set .@t,.t1;
+				while((getd("$@AB"+.@i) == 1) && .@t) {
+					if(!((.t1 - .@t) % 3)) {
+						if(!((.t1 - .@t) % 2))	announce "["+$@AB$+"]: 查緝系統60秒後對您進行測試.",bc_self,"0xff"+rand(5)+"0"+rand(5)+"0";
+						else			announce "["+$@AB$+"]: 請勿斷線躲避!!否則視同外掛封鎖帳號!!",bc_self,"0xff"+rand(5)+"0"+rand(5)+"0";
+						emotion 0,1;
+					}
+					set .@t,.@t - 1;
+					specialeffect2 548;
+					sleep2 1000;
+				}
+				if(getd("$@AB"+.@i) == 1) {
+					setd "$@AB"+.@i,2;
+					addtimer 1,"antibot::On0";
+				}
+				set .@t,$@ABt2;
+				while((getd("$@AB"+.@i) == 2) && .@t) {
+					itemskill 674,.@t;
+					announce "["+$@AB$+"]: 您剩餘 "+.@t+" 秒回應測試.",bc_self,"0xff"+rand(5)+"0"+rand(5)+"0";
+					set .@t,.@t - 1;
+					sleep2 1000;
+				}
+				itemskill 674,0;
+				if(getd("$@AB"+.@i)) callsub OnBan;
+			}
+		}
+	}
+	end;
+
+OnPCLoginEvent:
+OnPCLogoutEvent:
+	if(getd("$@AB"+(getcharid(0) - 149999))) callsub OnBan;
+	end;
+
+OnBan:
+	setd "$@AB"+(getcharid(0) - 149999),0;
+	set .@a$,strcharinfo(0);
+	sleep 1000;
+	atcommand .b$+" "+.@a$;
+	announce .@a$+" 未通過外掛查緝測試 - 封鎖帳號.",bc_all,0xdd8833;
+	set .@a,getarraysize($AB1$);
+	if(.@a >= .bl) {
+		deletearray $AB1$[0],1;
+		deletearray $AB2$[0],1;
+		set .@a,.bl - 1;
+	}
+	set $AB1$[.@a],.@a$;
+	setarray .@b[0],gettime(5),gettime(6),gettime(3),gettime(2),gettime(1);
+	set .@c,5;
+	while(.@c) {
+		set .@c,.@c - 1;
+		set .@b$[.@c],.@b[.@c];
+		if(.@b[.@c] < 10) set .@b$[.@c],"0"+.@b$[.@c];
+	}
+	set $AB2$[.@a],.@b$[0]+"/"+.@b$[1]+"/"+gettime(7)+" - "+.@b$[2]+":"+.@b$[3]+":"+.@b$[4];
+	end;
+}
+
+-	script	antibot	-1,{
+
+OnWhisperGlobal:
+	if(getd("$@AB"+(getcharid(0) - 149999)) == 1) {
+On0:
+		set .@i,getcharid(0) - 149999;
+		setd "$@AB"+.@i,2;
+		setoption 0x40,1;
+		pcblockmove getcharid(3),1;
+		specialeffect2 159;
+		specialeffect2 160;
+		set .@n$,"^008888"+$@AB$+"^000000";
+		mes .@n$;
+		mes "你好, "+strcharinfo(0);
+		mes "不要害怕閱讀這條信息.";
+		mes "這是 AntiBot 查緝系統. 只要通過測試就能繼續遊戲.";
+		next;
+		mes .@n$;
+		mes "為了證明你不是 bot, 必須通過測試.";
+		mes "如果沒在300秒限時內回應, 或直接斷線躲避, 將立即封鎖帳號.";
+		set .@a,$@ABc;
+		do {
+			next;
+			set .@a,.@a - 1;
+			set .@b,rand(getarraysize($AB$));
+			set .@c,getstrlen($AB$[.@b]);
+			cleararray .@d[0],0,getarraysize(.@d);
+			set .@e,0;
+			while(.@c) {
+				set .@c,.@c - 1;
+				if(compare("0123456789abcdefghijklmnnopqrstuvwxyz",charat($AB$[.@b],.@c))) {
+					set .@d[.@e],.@c;
+					set .@e,.@e + 1;
+				}
+			}
+			set .@e,.@d[rand(.@e)];
+			set .@c$,charat($AB$[.@b],.@e);
+			set .@a$,"";
+			while(.@c < getstrlen($AB$[.@b])) {
+				if(.@c == .@e)	set .@a$,.@a$+"#";
+				else		set .@a$,.@a$+""+charat($AB$[.@b],.@c);
+				set .@c,.@c + 1;
+			}
+			mes .@n$;
+			mes "請仔細閱讀下面內容:";
+			mes " ";
+			mes "^"+rand(3,9)+"0"+rand(3,9)+"0ff"+.@a$+"^000000";
+			mes " ";
+			mes "缺少的字母標有 # 符號.";
+			mes "這是什麼字母?";
+			next;
+			input .@b$;
+			if(compare(.@c$,.@b$)) setd "$@AB"+.@i,0;
+			else if(.@a) {
+				specialeffect2 611;
+				mes .@n$;
+				mes "抱歉, 這不是正確答案.";
+				mes "別擔心, 你有 4 次失敗機會.";
+				mes "還能重新嘗試.";
+			}
+			else setd "$@AB"+.@i,3;
+		} while(.@a && getd("$@AB"+.@i));
+		if(!getd("$@AB"+.@i)) {
+			deltimer "antibot::On3";
+			emotion 21,1;
+			mes .@n$;
+			mes "你可以繼續遊戲.";
+			if(Hp) {
+				getmapxy .@m$,.@x,.@y,0;
+				setarray .@a$,"原地","地圖上任一點","回到起點";
+				set .@b,0;
+				set .@c,0;
+				while(.@b < 3) {
+					if(	((.@b == 1) && getmapflag(.@m$,mf_noteleport)) ||
+						((.@b == 2) && getmapflag(.@m$,mf_noreturn))
+					)
+						deletearray .@a$[.@b],1;
+					else {
+						set .@a[.@c],.@b + 1;
+						set .@c,.@c + 1;
+					}
+					set .@b,.@b + 1;
+				}
+				if(.@c > 1) {
+					mes "你想離開去哪呢?";
+					next;
+					set .@c,prompt(.@a$[0],.@a$[1],.@a$[2]);
+				}
+				if(.@c < 255) {
+					set .@c,.@a[.@c - 1];
+					close2;
+					if(.@c == 2) set .@m$,"Random";
+					if(.@c == 3) set .@m$,"SavePoint";
+				}
+				warp .@m$,.@x,.@y;
+				skilleffect 350,0;
+				skilleffect 8,0;
+				skilleffect 73,0;
+				sc_start 60,20000,0;
+				sc_start 21,20000,10;
+				sc_start 39,20000,10;
+			}
+			else close2;
+		}
+		setoption 0x40,0;
+		pcblockmove getcharid(3),0;
+	}
+	end;
+}
+
+-	script	AB#0::AB	-1,{
+
+	set .@n$,"^008888"+$@AB$+"^000000";
+	mes .@n$;
+	mes "歡迎光臨 Antibot控制面板.";
+	mes "有什麼我可以幫忙嗎?";
+	next;
+	if(getgmlevel() >= $@ABgm2) setarray .@a$[0],"指定對某線上玩家進行 bot 測試","瀏覽測試句組清單.","添加新的句組.","刪除句組.";
+	set .@a,select("^aa0000Salir^000000","關於AntiBot.","瀏覽封鎖清單.",.@a$[0],.@a$[1],.@a$[2],.@a$[3]);
+	mes .@n$;
+	switch(.@a) {
+		case 2:
+
+			mes "為了讓自己熟悉 AntiBot 外掛查緝系統, 你可以進行系統模擬測試。.";
+			next;
+			set .@a,select("^aa0000Salir^000000","進行模擬測試") - 1;
+			if(.@a) {
+				set .@t$,"abcdefgh";
+				set .@b,getstrlen(.@t$);
+				set .@c,0;
+				while(.@b) {
+					set .@b,.@b - 1;
+					if(compare("0123456789abcdefghijklmnnopqrstuvwxyz",charat(.@t$,.@b))) {
+						set .@d[.@c],.@b;
+						set .@c,.@c + 1;
+					}
+				}
+				while(.@a) {
+					set .@e,.@d[rand(.@c)];
+					set .@c$,charat(.@t$,.@e);
+					set .@a$,"";
+					set .@b,0;
+					while(.@b < getstrlen(.@t$)) {
+						if(.@b == .@e)	set .@a$,.@a$+"#";
+						else		set .@a$,.@a$+""+charat(.@t$,.@b);
+						set .@b,.@b + 1;
+					}
+					mes .@n$;
+					mes "請仔細閱讀下面內容:";
+					mes " ";
+					mes "^"+rand(3,9)+"0"+rand(3,9)+"0ff"+.@a$+"^000000";
+					mes " ";
+					mes "缺少的字母標有 # 符號.";
+					mes "這是什麼字母?";
+					next;
+					input .@b$;
+					if(compare(.@c$,.@b$)) set .@a,0;
+					else {
+						specialeffect2 611;
+						mes .@n$;
+						mes "抱歉, 這不是正確答案.";
+						mes "別擔心, 你有 4 次失敗機會.";
+						mes "還能重新嘗試.";
+						next;
+					}
+				}
+				emotion 21;
+				mes .@n$;
+				mes "非常好!";
+				mes "是不是沒那麼困難呢!";
+				next;
+			}
+			mes .@n$;
+			break;
+		case 3:
+			mes "Esta lista muestra las ?ltimas 20 penalizaciones por uso de bot realizadas por el AntiBot.";
+			mes "等待幾秒發送鎖定清單到您的聊天視窗.";
+			close2;
+			emotion 5;
+			announce "[ 日期 - 時間 ]  -  名稱",bc_self,0xff7700;
+			set .@a,getarraysize($AB1$);
+			if(!.@a) announce "沒有找到結果.",bc_self,"0x"+rand(7,9)+"0"+rand(7,9)+"0"+rand(7,9)+"0";
+			while(.@a) {
+				set .@a,.@a - 1;
+				announce "[ "+$AB2$[.@a]+" ]  -  "+$AB1$[.@a],bc_self,"0x"+rand(7,9)+"0"+rand(7,9)+"0"+rand(7,9)+"0";
+			}
+			announce "----------",bc_self,0xff7700;
+			end;
+		case 4:
+			mes "輸入你要調查的角色名稱.";
+			next;
+			input .@a$;
+			mes .@n$;
+			set .@a,getcharid(3,.@a$);
+			if(.@a) {
+				set .@b,getcharid(3);
+				attachrid .@a;
+				doevent "antibot_main::On0";
+				attachrid .@b;
+
+				mes "AntiBot 測試 "+.@a$+" 玩家是否為bot.";
+				mes "謝謝您的合作.";
+				emotion 21;
+			}
+			else {
+				mes "線上未發現玩家.";
+				mes "1.玩家下線.";
+				mes "2.您名稱輸入有誤.";
+				mes "請確認檢查稍後再試.";
+				emotion 40;
+			}
+			next;
+			mes .@n$;
+			break;
+		case 5:
+			mes "這個列表包含所有AntiBot的測試句組.";
+			mes "等待幾秒發送清單到您的聊天視窗.";
+			close2;
+			emotion 5;
+			announce "[ n? ]  -  Frase",bc_self,0xff7700;
+			set .@a,getarraysize($AB$);
+			if(!.@a) announce "沒有找到結果.",bc_self,"0x"+rand(7,9)+"0"+rand(7,9)+"0"+rand(7,9)+"0";
+			while(.@b < .@a) {
+				set .@b,.@b + 1;
+				announce "[ "+.@b+" ]  -  "+$AB$[.@b - 1],bc_self,"0x"+rand(7,9)+"0"+rand(7,9)+"0"+rand(7,9)+"0";
+			}
+			announce "----------",bc_self,0xff7700;
+			end;
+		case 6:
+			mes " 你想新增測試句組到 AntiBot 列表嗎?.";
+			next;
+			input .@a$;
+			set .@a,getstrlen(.@a$);
+			while(.@a) {
+				set .@a,.@a - 1;
+				if(compare("0123456789abcdefghijklmnnopqrstuvwxyz",charat(.@a$,.@a)))
+					set .@b,.@b + 1;
+			}
+			mes .@n$;
+			if(.@b >= 5) {
+				set .@a,getarraysize($AB$);
+				if(.@a == 128) {
+					deletearray $AB$[0],1;
+					set .@a,127;
+				}
+				set $AB$[.@a],.@a$;
+				mes "你的句組已被添加到AntiBot列表:";
+				mes "[ "+(.@a + 1)+" ]  -  ^"+rand(3,9)+"0"+rand(3,9)+"0ff"+.@a$+"^000000";
+				emotion 21;
+			}
+			else {
+				mes "抱歉, 你的句組過於簡單或沒有足夠的字符.";
+				emotion 40;
+			}
+			next;
+			mes .@n$;
+			break;
+		case 7:
+			mes "選擇你要刪除的句組編號:";
+			next;
+			input .@a;
+			mes .@n$;
+			if((.@a > 0) && (.@a < getarraysize($AB$))) {
+				deletearray $AB$[.@a - 1],1;
+				mes "Muy bien.";
+				mes "句組 "+.@a+" 已被刪除.";
+				emotion 21;
+			}
+			else {
+				mes "抱歉, 選擇的編號沒有對應到任何句組列表.";
+				emotion 40;
+			}
+			next;
+			mes .@n$;
+			break;
+	}
+	mes "記住:";
+	mes "公平競賽樂趣更多.";
+	close2;
+	emotion 12;
+	end;
+}
+alberta,195,134,4	duplicate(AB)	AB#1	852
+alberta,55,250,5	duplicate(AB)	AB#2	852
+aldebaran,133,112,6	duplicate(AB)	AB#3	852
+aldebaran,133,232,6	duplicate(AB)	AB#4	852
+alde_gld,234,146,4	duplicate(AB)	AB#5	852
+amatsu,240,275,6	duplicate(AB)	AB#6	852
+amatsu,95,262,4	duplicate(AB)	AB#7	852
+amatsu,207,96,4	duplicate(AB)	AB#8	852
+ayothaya,212,200,4	duplicate(AB)	AB#9	852
+ayothaya,157,74,4	duplicate(AB)	AB#10	852
+comodo,180,325,4	duplicate(AB)	AB#11	852
+comodo,205,108,4	duplicate(AB)	AB#12	852
+comodo,312,183,4	duplicate(AB)	AB#13	852
+comodo,40,223,6	duplicate(AB)	AB#14	852
+einbech,66,88,6	duplicate(AB)	AB#15	852
+einbech,131,241,6	duplicate(AB)	AB#16	852
+einbech,46,201,8	duplicate(AB)	AB#17	852
+einbroch,70,187,2	duplicate(AB)	AB#18	852
+einbroch,145,313,6	duplicate(AB)	AB#19	852
+einbroch,152,45,4	duplicate(AB)	AB#20	852
+einbroch,253,239,2	duplicate(AB)	AB#21	852
+geffen,123,65,4	duplicate(AB)	AB#22	852
+geffen,41,103,6	duplicate(AB)	AB#23	852
+geffen,124,173,4	duplicate(AB)	AB#24	852
+geffen,175,123,6	duplicate(AB)	AB#25	852
+gef_fild13,195,240,4	duplicate(AB)	AB#26	852
+gonryun,152,106,6	duplicate(AB)	AB#27	852
+gonryun,164,178,2	duplicate(AB)	AB#28	852
+gonryun,149,14,6	duplicate(AB)	AB#29	852
+hugel,101,126,4	duplicate(AB)	AB#30	852
+hugel,180,166,4	duplicate(AB)	AB#31	852
+izlude,121,90,6	duplicate(AB)	AB#32	852
+jawaii,137,251,4	duplicate(AB)	AB#33	852
+yuno,175,85,4	duplicate(AB)	AB#34	852
+yuno,72,199,4	duplicate(AB)	AB#35	852
+sch_gld,291,119,4	duplicate(AB)	AB#36	852
+lighthalzen,209,91,6	duplicate(AB)	AB#37	852
+lighthalzen,218,318,4	duplicate(AB)	AB#38	852
+lighthalzen,311,295,4	duplicate(AB)	AB#39	852
+louyang,199,104,6	duplicate(AB)	AB#40	852
+louyang,57,242,4	duplicate(AB)	AB#41	852
+xmas,139,302,6	duplicate(AB)	AB#42	852
+xmas,165,106,4	duplicate(AB)	AB#43	852
+morocc,166,72,4	duplicate(AB)	AB#44	852
+morocc,51,174,4	duplicate(AB)	AB#45	852
+morocc,166,285,4	duplicate(AB)	AB#46	852
+morocc,283,197,8	duplicate(AB)	AB#47	852
+morocc,37,286,4	duplicate(AB)	AB#48	852
+moscovia,238,202,4	duplicate(AB)	AB#49	852
+moscovia,161,60,4	duplicate(AB)	AB#50	852
+niflheim,33,160,6	duplicate(AB)	AB#51	852
+niflheim,197,192,4	duplicate(AB)	AB#52	852
+payon,213,68,6	duplicate(AB)	AB#53	852
+payon,156,49,2	duplicate(AB)	AB#54	852
+payon,232,312,4	duplicate(AB)	AB#55	852
+payon,63,116,6	duplicate(AB)	AB#56	852
+pay_gld,201,153,4	duplicate(AB)	AB#57	852
+prontera,165,67,4	duplicate(AB)	AB#58	852
+prontera,44,212,6	duplicate(AB)	AB#59	852
+prontera,164,166,4	duplicate(AB)	AB#60	852
+prontera,255,213,4	duplicate(AB)	AB#61	852
+prontera,161,308,4	duplicate(AB)	AB#62	852
+prt_gld,166,71,4	duplicate(AB)	AB#63	852
+rachel,268,136,4	duplicate(AB)	AB#64	852
+rachel,150,148,4	duplicate(AB)	AB#65	852
+rachel,135,41,4	duplicate(AB)	AB#66	852
+rachel,43,131,6	duplicate(AB)	AB#67	852
+aru_gld,179,322,6	duplicate(AB)	AB#68	852
+umbala,125,126,8	duplicate(AB)	AB#69	852
+umbala,163,245,4	duplicate(AB)	AB#70	852
+veins,213,232,4	duplicate(AB)	AB#71	852
+veins,222,348,4	duplicate(AB)	AB#72	852
+veins,161,62,6	duplicate(AB)	AB#73	852
+mid_camp,223,287,4	duplicate(AB)	AB#74	852
+mid_camp,142,237,6	duplicate(AB)	AB#75	852
+mid_camp,248,234,8	duplicate(AB)	AB#76	852
+manuk,277,124,2	duplicate(AB)	AB#77	852
+manuk,179,173,6	duplicate(AB)	AB#78	852
+splendide,181,133,6	duplicate(AB)	AB#79	852

@@ -1,0 +1,432 @@
+//===================================
+// =下水道討伐
+// =By BlackJack
+// =2010.4.20
+// =測試 SeAr_1.2.93
+// =BUG匯報聯繫QQ：263639348
+// =版權BlackJack於PJRO所有
+// ==============日誌=================
+// = 2010.4.20 
+// = 11:00 am 開始編寫腳本 (BlackJack)
+// = 12:00 pm 副本設置
+// = 12:30 pm 完成副本怪物刷新
+// = 2010.4.21 
+// = 20:24 pm 完成整個腳本
+// ==============註明=================
+//============== 設置 ==================
+
+-	script	xsMemorial_Config	-1,{
+OnInit:
+	
+	set $@xs_level,99;		//需要等級
+
+	set $@xs_team_players,2; 	//隊伍最大人數
+
+	set $@xs_Time_All,7200;	//挑戰時間
+
+	set $@xs_Time_In,300;		//進場時間
+
+	set $@xs_Time_Cooldown,3600;	//冷卻時間
+
+	set $@xs_GM,99;			//GM最低等級
+
+
+	setarray $@xs_monster1[0],2573,2574,2575,2576,2577,2578; //1F刷怪
+
+	setarray $@xs_monster2[0],2573,2574,2575,2576,2577,2578; //2F刷怪
+
+	setarray $@xs_monster3[0],2573,2574,2575,2576,2577,2578; //3F刷怪
+
+	setarray $@xs_monster4[0],2573,2574,2575,2576,2577,2578; //4F刷怪
+
+	end;
+}
+//============== 登記 ==================
+
+aldebaran,146,123,4	script	下水道衛兵	971,{
+	if(xs_Lasttime + $@xs_Time_Cooldown > gettimetick(2) && xs_Lasttime < gettimetick(2) && getgmlevel() < $@xs_GM ){
+		set .@xs_lastTime,xs_Lasttime + $xs_Cooldown - gettimetick(2);
+		set .@xs_hoursTime,.@xs_lastTime / 60 / 60;
+		set .@xs_minutesTime,.@xs_lastTime / 60 % 60;
+		set .@xs_secondsTime,.@xs_lastTime % 60;
+		mes "[下水道衛兵]";
+		mes "根據進入規則，你現在無法進入下水道";
+		mes "你現在還有, "+.@xs_hoursTime+"小時 "+.@xs_minutesTime+"分鐘 "+.@xs_secondsTime+"秒才能進入";
+		close;
+	}
+
+		if(BaseLevel<$@xs_level){
+		mes "[下水道衛兵]";
+		mes "你的等級還沒到"+$@xs_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@xs_team_players){
+		mes "[下水道衛兵]";
+		mes "請加入一個超過"+$@xs_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[下水道衛兵]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[下水道衛兵]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[下水道衛兵]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@xs") == ""){
+				mes "[下水道衛兵]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[下水道衛兵]";
+			mes "你的隊伍已經申請過了下水道的討伐任務"; 
+			mes "請在主界面選擇 ^0000FF進入下水道選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(xs_Lasttime + $@xs_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@xs_GM) {
+			mes "[下水道衛兵]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[下水道衛兵]";
+		mes "^0000FF下水道^000000 - 正在準備中";
+		mes "當下水道準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_xs_id,instance_create("下水道討伐",getcharid(1)); 
+		if(.@instance_xs_id < 0){
+			mes "[下水道衛兵]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@xs",.@instance_xs_id);
+		instance_attachmap("2@xs",.@instance_xs_id);
+		instance_attachmap("3@xs",.@instance_xs_id);
+		instance_attachmap("4@xs",.@instance_xs_id);
+		instance_set_timeout $@xs_Time_All,$@xs_Time_In,.@instance_xs_id;
+		instance_init .@instance_xs_id;
+		instance_attach .@instance_xs_id;
+		set 'xs_Lasttime,gettimetick(2) + $@xs_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@xs") == ""){ 
+			mes "[下水道衛兵]";
+			mes "下水道討伐副本不存在.";
+			mes "請確定你的隊伍已經申請過下水道討伐，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(xs_Lasttime + $@xs_Time_Cooldown < gettimetick(2))
+		set xs_Lasttime,'xs_Lasttime;
+		warpparty has_instance("1@xs"),132,247,getcharid(1);
+		doevent instance_npcname("xs_monster",instance_id(1))+"::Onmonster20";
+		doevent instance_npcname("xs_monster2",instance_id(1))+"::Onmonster21";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+
+//============== 登記/傳送 ==================
+
+1@xs,189,248,0	script	XSwarp_1	45,1,1,{warp has_instance("2@xs"),20,14;	end; }
+2@xs,19,173,0	script	XSwarp_2	45,1,1,{warp has_instance("2@xs"),60,24;	end; }
+2@xs,99,175,0	script	XSwarp_3	45,1,1,{warp has_instance("2@xs"),139,24;	end; }
+2@xs,180,24,0	script	XSwarp_4	45,1,1,{warp has_instance("3@xs"),20,184;	end; }
+3@xs,180,173,0	script	XSwarp_5	45,1,1,{warp has_instance("4@xs"),100,95;	end; }
+
+//============== 刷怪==================
+
+1@xs,0,0,0	script	xs_monster	-1,{
+Onmonster20:
+	disablenpc  instance_npcname("XSwarp_2", instance_id());
+	disablenpc  instance_npcname("XSwarp_3", instance_id());
+	disablenpc  instance_npcname("XSwarp_4", instance_id());
+	disablenpc  instance_npcname("XSwarp_5", instance_id());
+	hideonnpc  instance_npcname("XSwarp_2", instance_id());
+	hideonnpc  instance_npcname("XSwarp_3", instance_id());
+	hideonnpc  instance_npcname("XSwarp_4", instance_id());
+	hideonnpc  instance_npcname("XSwarp_5", instance_id());
+	set .@ia,instance_id(0);
+// 下水道1F
+		monster "1@xs",0,0,"--ja--",2573,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		monster "1@xs",0,0,"--ja--",2574,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		monster "1@xs",0,0,"--ja--",2575,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		monster "1@xs",0,0,"--ja--",2576,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		monster "1@xs",0,0,"--ja--",2577,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		monster "1@xs",0,0,"--ja--",2578,1,instance_npcname("xs_monster")+"::OnKillMsMob";
+
+// 下水道2F
+		monster "2@xs",0,0,"--ja--",2573,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		monster "2@xs",0,0,"--ja--",2574,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		monster "2@xs",0,0,"--ja--",2575,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		monster "2@xs",0,0,"--ja--",2576,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		monster "2@xs",0,0,"--ja--",2577,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		monster "2@xs",0,0,"--ja--",2578,1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+
+// 下水道3F
+		monster "3@xs",0,0,"--ja--",2573,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		monster "3@xs",0,0,"--ja--",2574,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		monster "3@xs",0,0,"--ja--",2575,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		monster "3@xs",0,0,"--ja--",2576,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		monster "3@xs",0,0,"--ja--",2577,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		monster "3@xs",0,0,"--ja--",2578,1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+
+// 下水道4F
+		monster "4@xs",0,0,"--ja--",2573,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		monster "4@xs",0,0,"--ja--",2574,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		monster "4@xs",0,0,"--ja--",2575,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		monster "4@xs",0,0,"--ja--",2576,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		monster "4@xs",0,0,"--ja--",2577,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		monster "4@xs",0,0,"--ja--",2578,1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+
+// 下水道2F boss
+		monster "2@xs",20,159,"--ja--",2579,1,instance_npcname("xs_tongguan")+"::Ontongguan";
+		monster "2@xs",100,25,"--ja--",2579,1,instance_npcname("xs_tongguan")+"::Ontongguan2";
+		monster "2@xs",179,178,"--ja--",2579,1,instance_npcname("xs_tongguan")+"::Ontongguan3";
+// 下水道3F boss
+		monster "3@xs",51,182,"--ja--",2580,1,instance_npcname("xs_tongguan")+"::Ontongguan4";
+		monster "3@xs",179,168,"--ja--",2581,1,instance_npcname("xs_tongguan")+"::Ontongguan4";
+		end;
+
+OnKillMsMob:
+		monster "1@xs",0,0,"--ja--",$@xs_monster1[rand(getarraysize($@xs_monster1))],1,instance_npcname("xs_monster")+"::OnKillMsMob";
+		end;
+OnKillMsMob2:
+		monster "2@xs",0,0,"--ja--",$@xs_monster2[rand(getarraysize($@xs_monster2))],1,instance_npcname("xs_monster")+"::OnKillMsMob2";
+		end;
+OnKillMsMob3:
+		monster "3@xs",0,0,"--ja--",$@xs_monster3[rand(getarraysize($@xs_monster3))],1,instance_npcname("xs_monster")+"::OnKillMsMob3";
+		end;
+OnKillMsMob4:
+		monster "4@xs",0,0,"--ja--",$@xs_monster4[rand(getarraysize($@xs_monster4))],1,instance_npcname("xs_monster")+"::OnKillMsMob4";
+		end;
+}
+
+2@xs,0,0,0	script	xs_monster2	-1,{
+Onmonster21:
+		monster "4@xs",100,89,"--ja--",2582,1,instance_npcname("xs_monster2")+"::OnKillMsMob5";
+		end;
+OnKillMsMob5:
+	instance_announce .@ia,"龍宮王女:我居然敗在你們手上,但是這個只是開始,我爸爸不會饒過你們的.",bc_map,0x00ff00;
+	sleep2 5000;
+	instance_announce .@ia,"【副本公告】:稍候將自動傳送出去副本.",bc_map,0x00ff00;
+	sleep2 15000;
+	instance_warpall "goodjob10",33,142;
+	instance_destroy(instance_id(1));
+	end;
+}
+
+//============== 通關設定 ==================
+2@xs,0,0,0	script	xs_tongguan	-1,{
+Ontongguan:
+	instance_announce .@ia,"【副本公告】:打敗龍宮王女手下,傳送點打開.",bc_map,0x00ff00;
+	enablenpc  instance_npcname("XSwarp_2", instance_id());
+	hideoffnpc  instance_npcname("XSwarp_2", instance_id());
+
+end;
+Ontongguan2:
+	instance_announce .@ia,"【副本公告】:打敗龍宮王女手下,傳送點打開.",bc_map,0x00ff00;
+	enablenpc  instance_npcname("XSwarp_3", instance_id());
+	hideoffnpc  instance_npcname("XSwarp_3", instance_id());
+
+end;
+Ontongguan3:
+	instance_announce .@ia,"【副本公告】:打敗龍宮王女手下,傳送點打開.",bc_map,0x00ff00;
+	enablenpc  instance_npcname("XSwarp_4", instance_id());
+	hideoffnpc  instance_npcname("XSwarp_4", instance_id());
+
+end;
+Ontongguan4:
+	if('tongguan<8){
+	set 'tongguan,'tongguan+1;
+	set 'J_g,8-'tongguan;
+	instance_announce .@ia,"還有機關"+'J_g,bc_map,0x00ff00;
+	}
+	if('J_g ==0){
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan5";
+	}
+end;
+Ontongguan5:
+	instance_announce .@ia,"龍宮王女:看來你們挺厲害,居然把我的手下打死了,但是別忘記我是龍王的女兒.",bc_map,0x00ff00;
+	enablenpc  instance_npcname("XSwarp_5", instance_id());
+	hideoffnpc  instance_npcname("XSwarp_5", instance_id());
+	end;
+}
+// 下水道3F機關
+3@xs,25,185,0	script	機關#1	111,{
+	if('jiguan == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+3@xs,41,71,0	script	機關#2	111,{
+	if('jiguan2 == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan2,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+3@xs,98,125,0	script	機關#3	111,{
+	if('jiguan3 == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan3,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+3@xs,147,182,0	script	機關#4	111,{
+	if('jiguan4 == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan4,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+
+3@xs,179,17,0	script	機關#5	111,{
+	if('jiguan5 == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan5,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+3@xs,139,94,0	script	機關#6	111,{
+	if('jiguan6 == 0){
+	mes "[機關]";
+	mes "是否打開機關";
+	next;
+	switch (select("是:否")) {
+	case 1:
+	set 'jiguan6,1;
+	doevent instance_npcname("xs_tongguan",instance_id(1))+"::Ontongguan4";
+	close;
+	end;
+	case 2:
+	close;
+	end;
+}
+	}else {
+	mes "[機關]";
+	mes "你已經打開過了";
+	close;
+	end;
+		}
+}
+
+//============== 地圖屬性 ==================
+1@xs	mapflag	noteleport
+1@xs	mapflag	nosave	SavePoint
+1@xs	mapflag	nomemo
+1@xs	mapflag	nobranch
+1@xs	mapflag	noicewall
+1@xs	mapflag	monster_noteleport
+
+2@xs	mapflag	noteleport
+2@xs	mapflag	nosave	SavePoint
+2@xs	mapflag	nomemo
+2@xs	mapflag	nobranch
+2@xs	mapflag	noicewall
+2@xs	mapflag	monster_noteleport
+
+3@xs	mapflag	noteleport
+3@xs	mapflag	nosave	SavePoint
+3@xs	mapflag	nomemo
+3@xs	mapflag	nobranch
+3@xs	mapflag	noicewall
+3@xs	mapflag	monster_noteleport
+
+4@xs	mapflag	noteleport
+4@xs	mapflag	nosave	SavePoint
+4@xs	mapflag	nomemo
+4@xs	mapflag	nobranch
+4@xs	mapflag	noicewall
+4@xs	mapflag	monster_noteleport
+
+
+//////

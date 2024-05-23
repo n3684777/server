@@ -1,0 +1,281 @@
+//=====================================
+// =冰雪王國
+// =By Apollon
+// =2014.7.9
+// =測試 3CeAm R720
+// =轉用時請保留以上資訊
+//=============測試日誌================
+// = 2014.7.9
+// = 21:20 開始撰寫腳本 (Apollon)
+// = 2014.7.10
+// = 00:32 腳本撰寫完成
+// = 2014.7.11
+// = 15:30 腳本測試完畢
+//=====================================
+
+
+
+
+-	script	iceaKingdom_Config	-1,{
+OnInit:
+
+	set $@icea_level,99;		//所需等級
+
+	set $@icea_team_players,1;	//最低隊員人數
+
+	set $@icea_Time_All,14400;	//挑戰時間
+
+	set $@icea_Time_In,300;		//進場時間
+
+	set $@icea_Time_Cooldown,3600;	//冷卻時間
+
+	set $@icea_GM,99;		//GM最低等級
+
+	setarray $@icea_monster1[0],2600,2601,2602,2603,2604;	//1F刷怪
+
+	setarray $@icea_monster2[0],2600,2601,2602,2603,2604;	//2F刷怪
+
+	setarray $@icea_monster3[0],2600,2601,2602,2603,2604;	//3F刷怪
+
+	end;
+}
+//=============登記==============
+
+aldebaran,146,115,4	script	冰雪王國士兵	971,{
+	if(icea_Lasttime + $@icea_Time_Cooldown > gettimetick(2) && icea_Lasttime < gettimetick(2) && getgmlevel() < $@icea_GM ){
+		set .@icea_lastTime,icea_Lasttime + $icea_Cooldown - gettimetick(2);
+		set .@icea_hoursTime,.@icea_lastTime / 60 / 60;
+		set .@icea_minutesTime,.@icea_lastTime / 60 % 60;
+		set .@icea_secondsTime,.@icea_lastTime % 60;
+		mes "[冰雪王國士兵]";
+		mes "根據進入規則，你現在無法進入冰雪王國";
+		mes "你現在還有, "+.@icea_hoursTime+"小時 "+.@icea_minutesTime+"分鐘 "+.@icea_secondsTime+"秒才能進入";
+		close;
+		}
+
+		if(BaseLevel<$@icea_level){
+		mes "[冰雪王國士兵]";
+		mes "你的等級還沒到"+$@icea_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@icea_team_players){
+		mes "[冰雪王國士兵]";
+		mes "請加入一個超過"+$@icea_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[冰雪王國士兵]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[冰雪王國士兵]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[冰雪王國士兵]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@icea") == ""){
+				mes "[冰雪王國士兵]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[冰雪王國士兵]";
+			mes "你的隊伍已經申請過了冰雪王國的任務"; 
+			mes "請在主界面選擇 ^0000FF進入冰雪王國選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(icea_Lasttime + $@icea_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@icea_GM) {
+			mes "[冰雪王國士兵]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[冰雪王國士兵]";
+		mes "^0000FF冰雪王國^000000 - 正在準備中";
+		mes "當冰雪王國準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_icea_id,instance_create("冰雪王國",getcharid(1)); 
+		if(.@instance_icea_id < 0){
+			mes "[冰雪王國士兵]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@icea",.@instance_icea_id);
+		instance_attachmap("2@icea",.@instance_icea_id);
+		instance_attachmap("3@icea",.@instance_icea_id);
+		instance_set_timeout $@icea_Time_All,$@icea_Time_In,.@instance_icea_id;
+		instance_init .@instance_icea_id;
+		instance_attach .@instance_icea_id;
+		set 'icea_Lasttime,gettimetick(2) + $@icea_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@icea") == ""){ 
+			mes "[冰雪王國士兵]";
+			mes "冰雪王國副本不存在.";
+			mes "請確定你的隊伍已經申請過冰雪王國，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(icea_Lasttime + $@icea_Time_Cooldown < gettimetick(2))
+		set icea_Lasttime,'icea_Lasttime;
+		warpparty has_instance("1@icea"),157,14,getcharid(1);
+		doevent instance_npcname("icea_monster",instance_id(1))+"::Onmonster20";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+//============登記/傳送=============
+
+1@icea,146,161,0	script	IKwarp_1	45,1,1,{ warp has_instance("2@icea"),151,139;	end; }
+2@icea,150,285,0	script	IKwarp_2	45,1,1,{ warp has_instance("3@icea"),149,24;	end; }
+
+//==============刷怪================
+
+1@icea,0,0,0	script	icea_monster	-1,{
+Onmonster20:
+	disablenpc instance_npcname("IKwarp_1", instance_id());
+	disablenpc instance_npcname("IKwarp_2", instance_id());
+	hideonnpc instance_npcname("IKwarp_1", instance_id());
+	hideonnpc instance_npcname("IKwarp_2", instance_id());
+	set .@ik,instance_id(0);
+// 冰雪王國1F
+		monster "1@icea",0,0,"--ja--",2600,1,instance_npcname("icea_monster")+"::OnKillMsMob";
+		monster "1@icea",0,0,"--ja--",2601,1,instance_npcname("icea_monster")+"::OnKillMsMob";
+		monster "1@icea",0,0,"--ja--",2602,1,instance_npcname("icea_monster")+"::OnKillMsMob";
+		monster "1@icea",0,0,"--ja--",2603,1,instance_npcname("icea_monster")+"::OnKillMsMob";
+		monster "1@icea",0,0,"--ja--",2604,1,instance_npcname("icea_monster")+"::OnKillMsMob";
+
+// 冰雪王國2F
+		monster "2@icea",0,0,"--ja--",2600,1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+		monster "2@icea",0,0,"--ja--",2601,1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+		monster "2@icea",0,0,"--ja--",2602,1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+		monster "2@icea",0,0,"--ja--",2603,1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+		monster "2@icea",0,0,"--ja--",2604,1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+
+// 冰雪王國3F
+		monster "3@icea",0,0,"--ja--",2600,1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+		monster "3@icea",0,0,"--ja--",2601,1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+		monster "3@icea",0,0,"--ja--",2602,1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+		monster "3@icea",0,0,"--ja--",2603,1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+		monster "3@icea",0,0,"--ja--",2604,1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+
+// 冰雪王國1F boss
+		monster "1@icea",56,71,"--ja--",2614,1,instance_npcname("icea_tongguan")+"::Ontongguan";
+		monster "1@icea",104,200,"--ja--",2615,1,instance_npcname("icea_tongguan")+"::Ontongguan";
+		monster "1@icea",185,198,"--ja--",2616,1,instance_npcname("icea_tongguan")+"::Ontongguan";
+		monster "1@icea",250,94,"--ja--",2617,1,instance_npcname("icea_tongguan")+"::Ontongguan";
+// 冰雪王國2F boss
+		monster "2@icea",151,15,"--ja--",2534,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",31,26,"--ja--",2535,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",19,283,"--ja--",2536,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",151,276,"--ja--",2537,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",19,150,"--ja--",2538,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",286,20,"--ja--",2539,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",286,152,"--ja--",2540,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+		monster "2@icea",285,283,"--ja--",2541,1,instance_npcname("icea_tongguan")+"::Ontongguan2";
+// 冰雪王國3F boss
+		monster "3@icea",38,30,"--ja--",2608,1,instance_npcname("icea_tongguan")+"::Ontongguan3";
+		monster "3@icea",33,258,"--ja--",2613,1,instance_npcname("icea_tongguan")+"::Ontongguan3";
+		monster "3@icea",265,33,"--ja--",2622,1,instance_npcname("icea_tongguan")+"::Ontongguan3";
+		monster "3@icea",264,260,"--ja--",2620,1,instance_npcname("icea_tongguan")+"::Ontongguan3";
+		end;
+
+OnKillMsMob:
+		monster "1@icea",0,0,"--ja--",$@icea_monster1[rand(getarraysize($@icea_monster1))],1,instance_npcname("icea_monster")+"::OnKillMsMob";
+		end;
+OnKillMsMob2:
+		monster "2@icea",0,0,"--ja--",$@icea_monster2[rand(getarraysize($@icea_monster2))],1,instance_npcname("icea_monster")+"::OnKillMsMob2";
+		end;
+OnKillMsMob3:
+		monster "3@icea",0,0,"--ja--",$@icea_monster3[rand(getarraysize($@icea_monster3))],1,instance_npcname("icea_monster")+"::OnKillMsMob3";
+		end;
+}
+
+
+3@icea,0,0,0	script	icea_monster2	-1,{
+Onmonster21:
+		monster "3@icea",149,138,"--ja--",2533,1,instance_npcname("icea_monster2")+"::OnKillMsMob4";
+		end;
+OnKillMsMob4:
+	instance_announce .@ik,"黑社會波利:我會再次重生的!!哈哈哈哈哈哈!!",bc_map,0x00ff00;
+	sleep2 3000;
+	instance_announce .@ik,"10秒後將傳送你們到領獎地圖!!",bc_map,0x00ff00;
+	sleep2 13000;
+	instance_warpall "goodjob12",33,142;
+	instance_destroy(instance_id());
+	end;
+}
+
+//================通關設定==================
+2@icea,0,0,0	script	icea_tongguan	-1,{
+Ontongguan:
+	if('boss<4){
+	set 'boss,'boss+1;
+	set 'B_g,4-'boss;
+	instance_announce .@ik,"還有守護者"+'B_g,bc_map,0x00ff00;
+	}
+	if('B_g==0){
+	instance_announce .@ik,"打敗所有守護者，通往二樓的傳點開了",bc_map,0x00ff00;
+	enablenpc instance_npcname("IKwarp_1", instance_id());
+	hideoffnpc instance_npcname("IKwarp_1", instance_id());
+	}
+	end;
+Ontongguan2:
+	if('bossf<8){
+	set 'bossf,'bossf+1;
+	set 'B_f,8-'bossf;
+	instance_announce .@ik,"還有守護者"+'B_f,bc_map,0x00ff00;
+	}
+	if('B_f==0){
+	instance_announce .@ik,"打敗所有守護者，通往三樓的傳點開了",bc_map,0x00ff00;
+	enablenpc instance_npcname("IKwarp_2", instance_id());
+	hideoffnpc instance_npcname("IKwarp_2", instance_id());
+	}
+	end;
+Ontongguan3:
+	if('bosst<4){
+	set 'bosst,'bosst+1;
+	set 'B_t,4-'bosst;
+	instance_announce .@ik,"還有守護者"+'B_t,bc_map,0x00ff00;
+	}
+	if('B_t==0){
+	instance_announce .@ik,"打敗所有守護者，最終魔王在中間出現了",bc_map,0x00ff00;
+	doevent instance_npcname("icea_monster2",instance_id())+"::Onmonster21";
+	}
+	end;
+}
+
+
+//==================地圖屬性====================
+1@icea	mapflag	noteleport
+1@icea	mapflag	nosave	SavePoint
+1@icea	mapflag	nomemo
+1@icea	mapflag	noloot
+1@icea	mapflag	nobranch
+1@icea	mapflag	noicewall
+1@icea	mapflag	monster_noteleport
+
+2@icea	mapflag	noteleport
+2@icea	mapflag	nosave	SavePoint
+2@icea	mapflag	nomemo
+2@icea	mapflag	noloot
+2@icea	mapflag	nobranch
+2@icea	mapflag	noicewall
+2@icea	mapflag	monster_noteleport
+
+3@icea	mapflag	noteleport
+3@icea	mapflag	nosave	SavePoint
+3@icea	mapflag	nomemo
+2@icea	mapflag	noloot
+3@icea	mapflag	nobranch
+3@icea	mapflag	noicewall
+3@icea	mapflag	monster_noteleport

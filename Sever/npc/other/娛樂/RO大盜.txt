@@ -1,0 +1,186 @@
+//      =====================================================================
+//      =====================================================================
+//
+//	腳 本 名 稱 : [2010-8-22][EA/SeAR限定] RO大盜v2.0 [進階精緻可設定版] 附圖片
+//
+//      製 作 日 期 : 2010.08.16
+//
+//      完 成 日 期 : 2010.08.16
+//
+//      更 新 日 期 : 2010.08.22
+//
+//	製 作 環 境 : [SeAr]1.4.65
+//
+//	製 作 人 員 : tommy55555
+//
+//	錯 誤 回 報 : ＯＫ 討 論 區 http://www.okay88.com 短 消 息 給 tommy55555
+//
+//                    或 聯 絡 即 時 通 tommy25975682@yahoo.com.hk
+//
+//      =====================================================================
+//      =====================================================================
+//	更 新 日 期 : 2010.08.22
+//	
+//	[ 1 ] 腳 本 重 新 編 寫
+//	[ 2 ] 腳 本 精 緻 化 
+//	[ 3 ] 可 設 置 版 方 便 簡 單
+//	
+//      =====================================================================
+//      =====================================================================
+//	[ 腳 本 使 用 說 明 ]
+//
+//	請 先 去 mob_db2 新 增 以 下 文 字
+//
+//	2003,ROPIRATE_SKEL,Ro大盜,RoSkeleton,25,1676,0,233,142,1,145,178,10,15,25,13,25,5,25,10,10,12,1,1,29,0x3885,200,1754,554,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+//
+//      再 去 mob_avail 新 增 以 下 文 字
+//	2003,1071//Ro大盜
+//
+//	然後放置腳本完成
+//	
+//      =====================================================================
+//      =====================================================================
+
+-	script	ROPIRATESKEL	-1,{
+
+//----- RO大盜的隨機出現城市時間設定 ----- 
+
+OnClock0000:
+OnClock0030:
+OnClock0100:
+OnClock0130:
+OnClock0200:
+OnClock0230:
+OnClock0300:
+OnClock0330:
+OnClock0400:
+OnClock0430:
+OnClock0500:
+OnClock0530:
+OnClock0600:
+OnClock0630:
+OnClock0700:
+OnClock0730:
+OnClock0800:
+OnClock0830:
+OnClock0900:
+OnClock0930:
+OnClock1000:
+OnClock1030:
+OnClock1100:
+OnClock1130:
+OnClock1200:
+OnClock1230:
+OnClock1300:
+OnClock1330:
+OnClock1400:
+OnClock1430:
+OnClock1500:
+OnClock1530:
+OnClock1600:
+OnClock1630:
+OnClock1700:
+OnClock1730:
+OnClock1800:
+OnClock1830:
+OnClock1900:
+OnClock1930:
+OnClock2000:
+OnClock2030:
+OnClock2100:
+OnClock2130:
+OnClock2200:
+OnClock2230:
+OnClock2300:
+OnClock2330:
+
+
+//----- RO大盜的隨機出現城市數量設定 [0-12 有13個 ]-----
+set $@ditu,rand(0,12);			
+
+//----- RO大盜的隨機出現城市設定 ----- (別打.gat)
+setarray $@romonapper$[0],"prontera","morocc","geffen","payon","alberta","aldebaran","xmas","comodo","yuno","amatsu","gonryun","louyang","niflheim";
+
+//----- RO大盜的隨機出現城市名字設定 -----  (請對應上面次序)
+setarray $@romonmapname$[0],"普隆德拉","夢羅克","吉芬","斐揚","艾爾貝塔","艾爾帕蘭","姜餅城","克魔島","朱諾","天津","崑崙","龍之城-洛陽","尼芙菲姆";
+
+
+/*[這行別改]*/	monster ""+$@romonapper$[$@ditu]+"",0,0,"RO大盜",2417,1;
+/*[這行別改]*/	announce "[ 逮捕令 ] : RO大盜在 [ "+$@romonmapname$[$@ditu]+" ] 出現,請玩家們速往抓捕,重重有賞!",16;
+/*[這行別改]*/	end;
+/*[這行別改]*/	}
+
+
+
+/*[這行別改]*/	-	script	ROPIRATESKELL	-1,{
+/*[這行別改]*/	OnNPCKillEvent:
+/*[這行別改]*/   	if ( killedrid == 2417 ) {
+
+
+//----------------------------------------------------------------[ RO大盜獎勵的相關設定 , 請各伺服器依情況斟酌 ]---------------------------------------------------------------- 
+//----- RO大盜的獎勵獎金設定 -----
+//----- 獎勵金額最少能夠取得多少 (預設 100萬 Zeny) 
+	set $@RORewardZeny,1000000;
+
+//----- RO大盜的獎勵獎金最多能夠取得多少 (預設 500萬 Zeny) 
+	set $@RORewardZenyMax,5000000;
+
+//----- RO大盜的獎勵商城點數設定 -----
+//----- 獎勵金額最少能夠取得多少 (預設 25 點) 
+	set $@RORewardCash,100;
+
+//----- RO大盜的獎勵商城點數最多能夠取得多少 (預設 50 點) 
+	set $@RORewardCashMax,500;
+
+//----- RO大盜的獎勵獎品設定 -----
+//----- 獎勵獎品能夠取得的物品
+	setarray $@RORewardItem[1],28569,28570,28000,13640,13636,13641,13644,27418;
+
+//----- RO大盜的獎品能夠取得的數量
+	setarray $@RORewardItemMax[1],3,3,10,1,1,1,3,1;
+
+//----- RO大盜的獎勵獎品的總數量 (預設 2 個) -----
+//----- Ps:請對應 獎勵獎品能夠取得的物品總數 -----
+	set $@RORewardItemNumber,5;
+
+//----------------------------------------------------------------[ 以下別修改 ]----------------------------------------------------------------
+	set @a,rand(1,4);
+	if (@a==1) {
+	set @GetItem,rand(1,$@RORewardItemNumber);
+	getitem $@RORewardItem[@GetItem],$@RORewardItemMax[@GetItem];
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFFRO大盜^000000 ]!!";
+	mes "你獲得了 ^0000FF["+getitemname($@RORewardItem[@GetItem])+"]^000000 數量 ^FF0000["+$@RORewardItemMax[@GetItem]+"]^000000 個";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ RO大盜 ] 獲得獎勵獎品 ["+getitemname($@RORewardItem[@GetItem])+"] 數量 ["+$@RORewardItemMax[@GetItem]+"] 個。",16;
+	close;
+	}
+	if (@a==2) {
+	set @GetZeny,rand($@RORewardZeny,$@RORewardZenyMax);
+	set zeny,zeny + @GetZeny;
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFFRO大盜^000000 ]!!";
+	mes "你獲得了 ^FF0000["+@GetZeny+"]^000000 Zeny";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ RO大盜 ] 獲得獎勵獎金 ["+@GetZeny+"] Zeny。",16;
+	close;
+	}
+	if (@a==3) {
+	set @GetCash,rand($@RORewardCash,$@RORewardCashMax);
+	set #CASHPOINTS,#CASHPOINTS + @GetCash;
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "恭喜你殺死了[ ^00BBFFRO大盜^000000 ]!!";
+	mes "你獲得了 ^0000FF商城點數^000000 ^FF0000["+@GetCash+"]^000000 點";
+	announce "[ 英雄榜 ] : 恭喜玩家 [ "+strcharinfo(0)+" ] 殺死了 [ RO大盜 ] 獲得獎勵商城點數 ["+@GetCash+"] 點。",16;
+	close;
+	}
+	if (@a==4) {
+	atcommand "@die";
+	mes "[ ^00BBFF系統提示^000000 ]";
+	mes "很不幸";
+	mes "[ ^00BBFFRO大盜^000000 ]用盡了最后的一絲力量,";
+	mes "與你同歸於盡了!!";
+	announce "[ 追悼會 ] : 英勇的玩家 [ "+strcharinfo(0)+" ] ,雖然制服了 [ RO大盜 ] , 但是他自己卻付出了血的代價!!",16;
+	close;
+	}
+	}
+	end;
+}

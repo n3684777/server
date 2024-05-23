@@ -1,0 +1,324 @@
+-	script	lfxg_Config	-1,{
+OnInit:
+	
+	set $@lfxg_level,99;		//需要等級
+
+	set $@lfxg_team_players,1; 	//隊伍最少人數
+
+	set $@lfxg_Time_All,7200;	//挑戰時間
+
+	set $@lfxg_Time_In,300;		//進場時間
+
+	set $@lfxg_Time_Cooldown,3600;	//冷卻時間
+
+	end;
+}
+//============== 登記 ==================
+
+aldebaran,146,119,4	script	凜風峽谷	971,{
+	if(lfxg_Lasttime + $@lfxg_Time_Cooldown > gettimetick(2) && lfxg_Lasttime < gettimetick(2) ){
+		set .@lfxg_lastTime,lfxg_Lasttime + $lfxg_Cooldown - gettimetick(2);
+		set .@lfxg_hoursTime,.@lfxg_lastTime / 60 / 60;
+		set .@lfxg_minutesTime,.@lfxg_lastTime / 60 % 60;
+		set .@lfxg_secondsTime,.@lfxg_lastTime % 60;
+		mes "[凜風峽谷]";
+		mes "根據進入規則，你現在無法進入[凜風峽谷]";
+		mes "你現在還有, "+.@lfxg_hoursTime+"小時 "+.@lfxg_minutesTime+"分鐘 "+.@lfxg_secondsTime+"秒才能進入";
+		close;
+	}
+
+		if(BaseLevel<$@lfxg_level){
+		mes "[凜風峽谷]";
+		mes "你的等級還沒到"+$@lfxg_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@lfxg_team_players){
+		mes "[凜風峽谷]";
+		mes "請加入一個超過"+$@lfxg_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[凜風峽谷]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		mes "^ff0000凜風峽谷副本可獲得^000000";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[凜風峽谷]";
+			mes "我不能為你做任何事情,人類...只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[凜風峽谷]";
+		mes "峽谷地帶有不明的生物在遊蕩,我很焦慮";
+		next;
+		switch (select("請批准進入:進入[凜風峽谷]:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@lfxg01") == ""){
+				mes "[凜風峽谷]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[凜風峽谷]";
+			mes "你的隊伍已經申請過了[凜風峽谷]任務"; 
+			mes "請在主界面選擇 ^0000FF進入[凜風峽谷]選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(lfxg_Lasttime + $@lfxg_Time_Cooldown > gettimetick(2)) {
+			mes "[凜風峽谷]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[凜風峽谷]";
+		mes "^0000FF[凜風峽谷]^000000 - 正在準備中";
+		mes "當通道準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_id,instance_create("凜風峽谷",getcharid(1)); 
+		if(.@instance_id < 0){
+			mes "[凜風峽谷]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@lfxg01",.@instance_id);
+		instance_attachmap("1@lfxg02",.@instance_id);
+		instance_attachmap("1@lfxg03",.@instance_id);
+		instance_set_timeout $@lfxg_Time_All,$@lfxg_Time_In,.@instance_id;
+		instance_init .@instance_id;
+		instance_attach .@instance_id;
+		set 'lfxg_Lasttime,gettimetick(2) + $@lfxg_Time_All;
+		end;
+	case 2:
+		if(lfxg_Lasttime + $@lfxg_Time_Cooldown > gettimetick(2)) {
+			mes "[凜風峽谷]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+
+		if(!instance_id(1) || has_instance("1@lfxg01") == ""){ 
+			mes "[凜風峽谷]";
+			mes "[凜風峽谷]副本不存在.";
+			mes "請確定你的隊伍已經申請過[凜風峽谷]，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(lfxg_Lasttime + $@lfxg_Time_Cooldown < gettimetick(2))
+		set lfxg_Lasttime,'lfxg_Lasttime;
+		mapannounce "aldebaran",getpartyname(getcharid(1))+"隊伍的"+strcharinfo(0)+" 進入了[凜風峽谷]。",bc_map | bc_blue;
+		warpparty has_instance("1@lfxg01"),206,54,getcharid(1);
+		doevent instance_npcname("lfxg_monster",instance_id(1))+"::OnLmonster1";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+
+//============== 登記/傳送 ==================
+
+1@lfxg01,200,273,0	script	lfxgwarp_1	45,1,1,{ warp has_instance("1@lfxg02"),165,28;	end; }
+1@lfxg02,262,118,0	script	lfxgwarp_2	45,1,1,{ warp has_instance("1@lfxg03"),24,138;	end; }
+
+//============== 刷怪==================
+
+1@lfxg01,0,0,0	script	lfxg_monster	-1,{
+end;
+
+OnLKillMob:
+	set 'lfxg_Mobs,'lfxg_Mobs-1;
+	if('lfxg_Mobs){
+		instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg_Mobs,bc_map,0x00FF00;
+		end;
+	}
+	else { 
+	instance_announce .@i,"本層小怪已經全部被擊敗了!你可以去打倒守關BOSS了",bc_map;
+	}
+end;
+
+OnL2KillMob:
+	set 'lfxg2_Mobs,'lfxg2_Mobs-1;
+	if('lfxg2_Mobs){
+		instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg2_Mobs,bc_map,0x00FF00;
+		end;
+	}
+	else { 
+	instance_announce .@i,"本層小怪已經全部被打敗了!",bc_map;
+	}
+end;
+
+OnL3KillMob:
+	set 'lfxg3_Mobs,'lfxg3_Mobs-1;
+	if('lfxg3_Mobs){
+		instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg3_Mobs,bc_map,0x00FF00;
+		end;
+	}
+	else { 
+	instance_announce .@i,"本層小怪已經全部被打敗了!",bc_map;
+	}
+end;
+
+OnLKillBoss:
+		instance_announce .@i,"左下角出現了獨眼狂獅‧夏侯惇！快去打倒他吧！",bc_map;
+		monster "1@lfxg01",85,68,"--ja--",2616,1,instance_npcname("lfxg_monster")+"::OnLKillBoss1";
+end;
+
+OnLKillBoss1:
+		instance_announce .@i,"左上方出現了身先士卒‧夏侯淵！快去打倒他吧！",bc_map;
+		monster "1@lfxg01",81,214,"--ja--",2617,1,instance_npcname("lfxg_monster")+"::OnLKillBoss2";
+end;
+
+OnLKillBoss2:
+		if('lfxg_Mobs){
+			instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg_Mobs,bc_map,0x00FF00;
+			instance_announce .@i,"哈哈哈...只要本樓層還有怪物我就會不斷的重生,你是打不倒我的",bc_map,0x00FF00;
+			monster "1@lfxg01",81,214,"--ja--",2617,1,instance_npcname("lfxg_monster")+"::OnLKillBoss2";
+			end;
+		} else {
+		instance_announce .@i,"[遠方傳來的聲音]：親愛的人類，我們還會再見面的~哈哈哈哈哈.",bc_map,0x00ff00;
+		instance_announce .@i,"[凜風峽谷]：已消滅所有怪物!右上方的傳送門已打開,請速度進入下一層!",bc_map,0x00ff00;
+		doevent instance_npcname("lfxg_monster",instance_id(1))+"::OnLmonster2";
+		enablenpc  instance_npcname("lfxgwarp_1", instance_id());
+		hideoffnpc  instance_npcname("lfxgwarp_1", instance_id());
+		}
+end;
+
+OnL2KillBoss:
+		instance_announce .@i,"地圖左下角出現了聖鬥士！快去打倒他吧！",bc_map;
+		monster "1@lfxg02",70,65,"--ja--",2608,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss1";
+end;
+OnL2KillBoss1:
+		instance_announce .@i,"地圖中間出現了小姐電話幾號！快去打倒他吧！",bc_map;
+		monster "1@lfxg02",131,154,"--ja--",2611,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss2";
+end;
+OnL2KillBoss2:
+		instance_announce .@i,"地圖右上角出現了電車痴漢！快去打倒他吧！",bc_map;
+		monster "1@lfxg02",201,222,"--ja--",2620,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss3";
+end;
+OnL2KillBoss3:
+		instance_announce .@i,"地圖右下角出現了魔導士！快去打倒他吧！",bc_map;
+		monster "1@lfxg02",205,61,"--ja--",2622,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss4";
+end;
+OnL2KillBoss4:
+		if('lfxg2_Mobs){
+			instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg2_Mobs,bc_map,0x00FF00;
+			instance_announce .@i,"哈哈哈...只要本樓層還有怪物我就會不斷的重生,你是打不倒我的",bc_map,0x00FF00;
+			monster "1@lfxg02",205,61,"--ja--",2622,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss4";
+			end;
+		} else {
+			instance_announce .@i,"[遠方傳來的聲音]：親愛的人類，我們還會再見面的~哈哈哈哈哈.",bc_map,0x00ff00;
+			instance_announce .@i,"[凜風峽谷]：已消滅所有怪物!傳送門已打開,請速度進入下一層!",bc_map,0x00ff00;
+			doevent instance_npcname("lfxg_monster",instance_id(1))+"::OnLmonster3";
+			enablenpc  instance_npcname("lfxgwarp_2", instance_id());
+			hideoffnpc  instance_npcname("lfxgwarp_2", instance_id());
+		}
+end;
+
+OnL3KillBoss:
+		instance_announce .@i,"[凜風峽谷提示]:最終BOSS已出現，請大家小心~~~~",bc_map;
+		monster "1@lfxg03",204,209,"--ja--",2628,1,instance_npcname("lfxg_monster")+"::OnL3KillBoss1";
+end;
+OnL3KillBoss1:
+		if('lfxg3_Mobs){
+			instance_announce .@i,"[凜風峽谷]:本層小怪還剩下: "+'lfxg3_Mobs,bc_map,0x00FF00;
+			instance_announce .@i,"哈哈哈...只要本樓層還有怪物我就會不斷的重生,你是打不倒我的",bc_map,0x00FF00;
+			monster "1@lfxg03",204,209,"--ja--",2628,1,instance_npcname("lfxg_monster")+"::OnL3KillBoss1";
+			end;
+		} else {
+			instance_announce .@i,"惡：咳··咳··這這這這 怎麼可能....",bc_map,0x00ff00;
+			instance_announce .@i,"[凜風峽谷]：任務完成,請快速領獎!獎勵人員座標(213,218)",bc_map,0x00ff00;
+			enablenpc  instance_npcname("凜風峽谷獎勵人員", instance_id());
+			hideoffnpc  instance_npcname("凜風峽谷獎勵人員", instance_id());
+		}
+end;
+
+
+OnLmonster1:
+	disablenpc  instance_npcname("lfxgwarp_1", instance_id());
+	disablenpc  instance_npcname("lfxgwarp_2", instance_id());
+	disablenpc  instance_npcname("凜風峽谷獎勵人員", instance_id());
+	hideonnpc  instance_npcname("lfxgwarp_1", instance_id());
+	hideonnpc  instance_npcname("lfxgwarp_2", instance_id());
+	hideonnpc  instance_npcname("凜風峽谷獎勵人員", instance_id());
+	set .@i,instance_id(0);
+// [凜風峽谷]1F 小怪
+		set 'lfxg_Mobs,80;
+		monster "1@lfxg01",0,0,"--ja--",2595,40,instance_npcname("lfxg_monster")+"::OnLKillMob";
+		monster "1@lfxg01",0,0,"--ja--",2596,40,instance_npcname("lfxg_monster")+"::OnLKillMob";
+// [凜風峽谷]1F boss
+		monster "1@lfxg01",269,78,"--ja--",2615,1,instance_npcname("lfxg_monster")+"::OnLKillBoss";
+end;
+// [凜風峽谷]2F
+	
+OnLmonster2:
+// [凜風峽谷]2F 小怪
+		set 'lfxg2_Mobs,40;
+		monster "1@lfxg02",0,0,"--ja--",2598,40,instance_npcname("lfxg_monster")+"::OnL2KillMob";
+// [凜風峽谷]2F boss
+		monster "1@lfxg02",59,196,"--ja--",2613,1,instance_npcname("lfxg_monster")+"::OnL2KillBoss";
+	end;
+	
+OnLmonster3:
+// [凜風峽谷]3F 小怪
+		set 'lfxg3_Mobs,40;
+		monster "1@lfxg03",0,0,"--ja--",2599,40,instance_npcname("lfxg_monster")+"::OnL3KillMob";
+// [凜風峽谷]3F boss
+		monster "1@lfxg03",135,134,"--ja--",2618,1,instance_npcname("lfxg_monster")+"::OnL3KillBoss";
+	end;
+}
+
+
+1@lfxg03,213,218,5	script	凜風峽谷獎勵人員	437,{
+
+	getinventorylist;
+	if ( @inventorylist_count > 98 ) {
+	mes "你所攜帶的物品太多了";
+	mes "所以不能獲得物品";
+	mes "請把身上的物品減輕之後";
+	mes "再來找我領獎吧";
+	close;
+	}
+
+	mes "[凜風峽谷獎勵人員]";
+	mes "現在......讓我把你們送出這裡吧.";
+	mes "並送你們一些物品作為獎勵";
+	next;
+	switch (select("請把我送出去.:我還想再轉轉.")) {
+	case 1:
+		instance_warpall "goodjob11",33,142;
+		instance_destroy(instance_id());
+		end;
+	case 2:
+		close;
+		end;
+	}
+}
+
+
+//============== 地圖屬性 ==================
+1@lfxg01	mapflag	noteleport
+1@lfxg01	mapflag	nosave	SavePoint
+1@lfxg01	mapflag	nomemo
+1@lfxg01	mapflag	nobranch
+1@lfxg01	mapflag	nodrop
+1@lfxg01	mapflag	noicewall
+1@lfxg01	mapflag	monster_noteleport
+1@lfxg01	mapflag	noloot
+
+1@lfxg02	mapflag	noteleport
+1@lfxg02	mapflag	nosave	SavePoint
+1@lfxg02	mapflag	nomemo
+1@lfxg02	mapflag	nodrop
+1@lfxg02	mapflag	nobranch
+1@lfxg02	mapflag	noicewall
+1@lfxg02	mapflag	monster_noteleport
+
+1@lfxg03	mapflag	noteleport
+1@lfxg03	mapflag	nosave	SavePoint
+1@lfxg03	mapflag	nodrop
+1@lfxg03	mapflag	nomemo
+1@lfxg03	mapflag	nobranch
+1@lfxg03	mapflag	noicewall
+1@lfxg03	mapflag	monster_noteleport
+

@@ -1,0 +1,313 @@
+xmas,141,125,5	script	任務接待員	510,{
+//設定任務數目有幾個，10代表可以設置10個任務，最大128。
+set $@qnum,100;
+//設定GM等級多少以上可以使用GM設定。
+set .@gmlv,99; 
+//是否開啟同一個任務24小時只能解一次，0為關閉，1為開啟。
+set $@time,0;
+//是否開啟等級設置(任務所需等級)，0為關閉，1為開啟。
+set $@setlevel,0;
+
+
+mes "[任務接待員]";
+mes "請問要使用哪項服務";
+next;
+Switch(Select("^0000FF選擇任務^000000","^FF0000取消任務^000000",getgmlevel()<.@gmlv?"":"線上設置")){
+case 0: close;
+case 1:
+//判斷是否已接任務-----------------
+if(GetQ){
+mes "[任務接待員]";
+mes "你已接下^0000FF"+$quename$[GetQ-1]+"^000000任務";
+mes "[任務進度]";
+while(1){
+if(getd("$mobname"+(GetQ-1)+"$["+.@y+"]")=="")break;
+mes "^00ff7f"+getd("$mobname"+(GetQ-1)+"$["+.@y+"]")+" [ "+getd("charid"+getd("$mobid"+(GetQ-1)+.@y))+"/"+getd("$mobnum"+(GetQ-1)+.@y)+"]^000000";
+set .@y,.@y+1;
+}
+close;
+}
+//----------------------------------
+mes "[任務接待員]";
+mes "請問你要接取哪個任務";
+for(set .@i,0; .@i < $@qnum; set .@i,.@i+1){
+if(!$@setlevel) set .@select$,.@select$+($quename$[.@i]!=""?"^0000FF"+$quename$[.@i]+"^000000任務":"")+":";
+else set .@select$,.@select$+($quename$[.@i]!=""?"^0000FF"+$quename$[.@i]+"^000000任務 所需等級 ^FF0000"+$quelevel[.@i]+"^000000":"")+":";
+}
+next;
+set .@SetQ,(Select(.@select$));
+if($@setlevel)
+mes "[任務所需等級:"+$quelevel[.@SetQ-1]+"]";
+mes "[任務內容]";
+while(1){
+if(getd("$mobname"+(.@SetQ-1)+"$["+.@y+"]")=="")break;
+mes "目標魔物^FF0000"+getd("$mobname"+(.@SetQ-1)+"$["+.@y+"]")+"^000000需要^FF0000"+getd("$mobnum"+(.@SetQ-1)+.@y)+"^000000隻";
+set .@y,.@y+1;
+}
+mes "[任務獎勵]";
+mes "獎勵BaseExp^00FF00"+$bexp[.@SetQ-1]+"^000000點";
+mes "獎勵JobExp^00FF00"+$jexp[.@SetQ-1]+"^000000點";
+mes "獎勵^00FF00"+$zeny[.@SetQ-1]+"^000000Zeny";
+mes "獎勵^00FF00"+$cash[.@SetQ-1]+"^000000點Cash";
+if($itemname$[.@SetQ-1]!="")
+mes "獎勵道具^00FF00"+$itemname$[.@SetQ-1]+" "+$itemnum[.@SetQ-1]+" ^000000個";
+next;
+if(Select("^0000FF接下此任務^000000:下次在考慮")==2)close;
+set GetQ,.@SetQ;
+//等級是否足夠------------------------
+if($@setlevel){
+if(BaseLevel < $quelevel[GetQ-1]){
+mes "[任務接待員]";
+mes "等級需要^FF0000"+$quelevel[GetQ-1]+"^000000喔";
+set GetQ,0;
+close;
+}
+}
+//------------------------------------
+//判斷時間到了沒----------------------
+if(gettimetick(2) < getd("pctime"+(GetQ-1)) ){
+mes "[任務接待員]";
+mes "您還必須等待^FF0000"+(getd("pctime"+(GetQ-1))-gettimetick(2))+"^000000秒。";
+set GetQ,0;
+close;
+}
+//------------------------------------
+//加入時間限制------------------------
+if($@time)
+setd "pctime"+(GetQ-1),gettimetick(2)+86400;
+//------------------------------------
+close;
+
+case 2:
+mes "[任務接待員]";
+if(GetQ){
+mes "你目前的任務是^0000FF"+$quename$[GetQ-1]+"^000000";
+mes "請問要取消任務嘛";
+if(Select("^FF0000確定取消^000000:^0000FF不用取消^000000")==2)close;
+set GetQ,0;
+	while(1){
+	if(getd("$mobname"+.@i+"$["+.@z+"]")=="")break;
+	setd "charid"+getd("$mobid"+.@i+.@z),0;
+	set .@z,.@z+1;
+	}
+mes "已取消任務";
+close;
+}else{
+mes "你目前沒接取任務";
+close;
+}
+case 3:
+mes "[任務接待員]";
+mes "請問要作哪項操作";
+next;
+Switch(Select("^0000FF設置任務^000000:^FF0000刪除任務^000000")){
+
+case 1:
+mes "[任務接待員]";
+mes "請問要設置哪個任務";
+for(set .@i,0; .@i < $@qnum; set .@i,.@i+1)
+set .@select$,.@select$+($quename$[.@i]!=""?"^0000FF"+$quename$[.@i]+"^000000任務":"未設置")+":";
+next;
+set .@SetQ,(Select(.@select$));
+set .@i,.@SetQ-1;
+mes "[任務接待員]";
+mes "請依照提示設定作設定";
+if($@setlevel)
+mes "可設定^FF0000任務所需等級^000000";
+mes "可設定^FF0000任務名稱^000000";
+mes "可設定^FF0000魔物^000000及必須擊殺的^FF0000數量^000000";
+mes "可設定^FF0000經驗值^000000";
+mes "可設定^FF0000獎金^000000";
+mes "可設定獎勵^FF0000商城點數^000000";
+mes "可設定^FF0000獎品^000000及^FF0000數量^000000";
+next;
+if($@setlevel){
+mes "[任務接待員]";
+mes "請輸入^0000FF任務所需等級^000000";
+next;
+input .@level;
+set $quelevel[.@i],.@level;
+}
+mes "[任務接待員]";
+mes "請輸入^0000FF任務名稱^000000";
+next;
+input .@quename$;
+set $quename$[.@i],.@quename$;
+while(1){
+	while(1){
+mes "[任務接待員]";
+mes "請輸入^0000FF魔物編號^000000";
+next;
+input .@mobid;
+setd "$mobid"+.@i+.@y,.@mobid;
+setd "$mobname"+.@i+"$["+.@y+"]",getmonsterinfo(.@mobid,0);
+if(getd("$mobname"+.@i+"$["+.@y+"]")!="null")break;
+mes "^FF0000無此魔物，請重新輸入^000000";
+next;
+	}
+mes "[任務接待員]";
+mes "請輸入必須擊殺^0000FF"+getd("$mobname"+.@i+"$["+.@y+"]")+"^000000幾隻";
+next;
+while(1){
+input .@mobnum;
+if(.@mobnum > 0 )break;
+mes "^FF0000沒有0隻，請重新輸入^000000";
+next; 
+}
+setd "$mobnum"+.@i+.@y,.@mobnum;
+mes "[任務接待員]";
+mes "要繼續^0000FF增加魔物^000000嗎?";
+next;
+if(Select("是:否")==2)break;
+set .@y,.@y+1;
+}
+mes "[任務接待員]";
+mes "請輸入^0000FFBaseExp^000000可獲的多少";
+next;
+input .@bexp;
+set $bexp[.@i],.@bexp;
+mes "[任務接待員]";
+mes "請輸入^0000FFJobExp^000000可獲的多少";
+next;
+input .@jexp;
+set $jexp[.@i],.@jexp;
+mes "[任務接待員]";
+mes "請輸入^0000FF獎金(Zeny)^000000可獲的多少";
+next;
+input .@zeny;
+set $zeny[.@i],.@zeny;
+mes "[任務接待員]";
+mes "請輸入^0000FF商城點數(Cash)^000000可獲的多少";
+next;
+input .@cash;
+set $cash[.@i],.@cash;
+//獎品是否設定---------------------
+mes "[任務接待員]";
+mes "請問是否要設置獎品";
+next;
+if(Select("是:否")==1){
+while(1){
+mes "[任務接待員]";
+mes "請輸入可獲得^0000FF獎品的編號^000000";
+next;
+input .@itemid;
+set $itemid[.@i],.@itemid;
+set $itemname$[.@i],getitemname(.@itemid);
+if($itemname$[.@i]!="null")break;
+mes"^FF0000無此物品，請重新設置^000000";
+}
+mes "[任務接待員]";
+mes "請輸入可獲得^0000FF"+$itemname$+"^000000幾個";
+next;
+input .@itemnum;
+set $itemnum[.@i],.@itemnum;
+}
+//----------------------------------
+mes "[任務接待員]";
+mes "設置完成";
+close;
+
+case 2:
+mes "[任務接待員]";
+mes "請選取要刪除哪項任務";
+for(set .@i,0; .@i < $@qnum; set .@i,.@i+1)
+set .@select$,.@select$+($quename$[.@i]!=""?"^0000FF"+$quename$[.@i]+"^000000任務":"未設置")+":";
+next;
+set .@DelQ,(Select(.@select$));
+mes "確定刪除此任務嗎?";
+if(Select("^FF0000確定刪除^000000:^0000FF稍後決定^000000")==2)close;
+set $bexp[.@DelQ-1],0;
+set $itemnum[.@DelQ-1],0;
+set $itemname$[.@DelQ-1],"";
+set $bexp[.@DelQ-1],0;
+set $cash[.@DelQ-1],0;
+set $quename$[.@DelQ-1],"";
+set $quelevel[.@DelQ-1],0;
+set $zeny[.@DelQ-1],0;
+while(1){
+if(getd("$mobname"+(.@DelQ-1)+"$["+.@d+"]")=="")break;
+setd "$mobid"+(.@DelQ-1)+.@d,0;
+setd "$mobname"+(.@DelQ-1)+"$["+.@d+"]","";
+set .@d,.@d+1;
+}
+mes "任務已刪除";
+close;
+}
+
+
+}
+
+
+OnNPCKillEvent:
+
+if(GetQ){
+while(1){
+if(getd("$mobname"+(GetQ-1)+"$["+.@y+"]")=="")break; 
+if(killedrid==getd("$mobid"+(GetQ-1)+.@y)){
+setd "charid"+getd("$mobid"+(GetQ-1)+.@y),getd("charid"+getd("$mobid"+(GetQ-1)+.@y))+1;
+
+
+while(1){
+	while(1){
+	if(getd("$mobname"+(GetQ-1)+"$["+.@x+"]")=="")break;
+	if(getd("charid"+getd("$mobid"+(GetQ-1)+.@x)) >= getd("$mobnum"+(GetQ-1)+.@x)){
+	setd "charid"+getd("$mobid"+(GetQ-1)+.@x),getd("$mobnum"+(GetQ-1)+.@x);
+	set .@x,.@x+1;
+	}
+	else{
+		while(1){
+		set .@x,.@x+1;
+		if(getd("$mobname"+(GetQ-1)+"$["+.@x+"]")=="")break;
+		if(getd("charid"+getd("$mobid"+(GetQ-1)+.@x)) >= getd("$mobnum"+(GetQ-1)+.@x))
+		setd "charid"+getd("$mobid"+(GetQ-1)+.@x),getd("$mobnum"+(GetQ-1)+.@x);
+		}
+		end;
+	     }	
+
+	}
+	
+	announce "獲得"+$zeny[GetQ-1]+"Zeny",bc_self,0x00ff7f;
+	set Zeny,Zeny+$zeny[GetQ-1];
+	announce "獲得"+$cash[GetQ-1]+"點商城點數",bc_self,0x00ff7f;
+	set #CASHPOINTS,#CASHPOINTS+$cash[GetQ-1];
+	announce "獲得"+$bexp[GetQ-1]+"點BaseExp",bc_self,0x00ff7f;
+	set BaseExp,BaseExp+$bexp[GetQ-1];
+	announce "獲得"+$jexp[GetQ-1]+"點JobExp",bc_self,0x00ff7f;
+	set JobExp,JobExp+$jexp[GetQ-1];
+	if($itemname$[GetQ-1]!=""){
+	announce "獲得"+$itemname$[GetQ-1]+" "+$itemnum[GetQ-1]+"個",bc_self,0x00ff7f;
+	getitem $itemid[GetQ-1],$itemnum[GetQ-1];
+	}
+	while(1){
+	if(getd("$mobname"+(GetQ-1)+"$["+.@z+"]")=="")break;
+	setd "charid"+getd("$mobid"+(GetQ-1)+.@z),0;
+	set .@z,.@z+1;
+	}
+	set GetQ,0;
+	end;
+	}
+
+}
+set .@y,.@y+1;
+}	
+}
+end;
+
+
+
+
+
+}
+
+-	script	任務提示	-1,{
+OnWhisperGlobal:
+
+if(GetQ){
+while(1){
+if(getd("$mobname"+(GetQ-1)+"$["+.@y+"]")=="")break;
+dispbottom "任務提示 : "+getd("$mobname"+(GetQ-1)+"$["+.@y+"]")+" [ "+getd("charid"+getd("$mobid"+(GetQ-1)+.@y))+"/"+getd("$mobnum"+(GetQ-1)+.@y)+"]";
+set .@y,.@y+1;
+}
+}
+end;
+}

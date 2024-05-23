@@ -1,0 +1,262 @@
+/*
+	腳本製作：楓逝情
+	測試版本：eAthena_13878
+	更新記錄：
+		  2009-8-28
+		  ‧實裝防爆系統，請於腳本內設置相關
+                  2009-8-17
+                  ‧加入防具、各級武器個別設置最大精練值
+                  ‧修改防具、各級武器個別設置機率
+                  ‧修改濃縮礦石個別設置機率
+                  ‧加入了可自行選用是否使用濃縮礦石
+                  ‧加入了callfunc，用於一個以上的NPC設置
+		  2009-7-6
+		  ‧加入循環精鍊，條件內循環精鍊至最大精練值
+		  ‧NPC預設形象由銀行家改為忽大叔
+                  ‧縮短了設置區的設置項目
+		  ‧加入增加機率精鍊系統(同濃縮礦石精鍊)
+		  2009-7-5
+		  ‧加入更高階段的精鍊
+		  ‧實裝自設精鍊成功率
+*/
+
+
+//以下可以設置此NPC數量大於1時使用
+new_3-2,92,113,5	script	高階精鍊師	945,{callfunc "refines";
+OnInit:
+	waitingroom "高階精練師",0;
+	end;
+	}
+//--------------------------------------script設置----------------------------------
+function	script	refines	{
+//---------------最大精鍊值---------------
+
+//---防具---
+set @aref_max,20;
+//---1級武器---
+set @wref_max_lv1,20;
+//---2級武器---
+set @wref_max_lv2,20;
+//---3級武器---
+set @wref_max_lv3,20;
+//---4級武器---
+set @wref_max_lv4,20;
+
+//---------------精鍊機率---------------
+//※需跟最大精鍊值數目相符
+//※設置100為安定值
+//-------一般精練機率-------
+//---防具---
+setarray @apref[0],100,100,100,100,95,90,85,80,75,70,65,60,55,50,40,30,20,10,5,3;
+//---1級武器---
+setarray @1wpref[0],100,100,100,100,100,100,100,95,90,85,80,75,70,65,60,55,50,30,20,10;
+//---2級武器---
+setarray @2wpref[0],100,100,100,100,100,100,95,90,85,80,75,70,65,60,55,50,40,30,20,10;
+//---3級武器---
+setarray @3wpref[0],100,100,100,100,100,95,90,85,80,75,70,65,60,55,50,40,30,20,10,5;
+//---4級武器---
+setarray @4wpref[0],100,100,100,100,95,90,85,80,75,70,65,60,55,50,40,30,20,10,5,3;
+
+//-------濃縮精練機率-------
+//---防具---
+setarray @apref_p[0],100,100,100,100,100,95,90,85,80,75,70,65,60,55,45,35,25,15,10,8;
+//---1級武器---
+setarray @1wpref_p[0],100,100,100,100,100,100,100,100,95,90,85,80,75,70,65,60,55,35,25,15;
+//---2級武器---
+setarray @2wpref_p[0],100,100,100,100,100,100,100,95,90,85,80,75,70,65,60,55,45,35,25,15;
+//---3級武器---
+setarray @3wpref_p[0],100,100,100,100,100,100,95,90,85,80,75,70,65,60,55,45,35,25,15,10;
+//---4級武器---
+setarray @4wpref_p[0],100,100,100,100,100,95,90,85,80,75,70,65,60,55,45,35,25,15,10,8;
+
+//---------------精鍊材料---------------
+
+//-------一般精練-------
+//---費用---
+setarray @zeny[0],2000,500,2000,2500,5000;	
+//---物品代碼---
+setarray @itemid[0],985,1010,1011,984,984;	
+//---物品消耗量---
+setarray @cnum[0],1,1,1,1,1;
+
+//-------濃縮精鍊-------
+//---費用---
+setarray @pzeny[0],2000,500,2000,5000,20000;
+//---物品代碼---
+setarray @pitemid[0],7619,7620,7620,7620,7620;
+//---物品消耗量---
+setarray @pcnum[0],1,1,1,1,1;
+
+//---------------防爆精練系統---------------
+//防爆物品(預設為傑勒比結晶，請自行修改)
+set @ritem,30008;
+
+//是否開啟防爆系統(0=否/1=是)
+set @refa,1;
+
+//精練成功是否依然扣除防爆物品(0=否/1=是)
+set @refb,1;
+
+//--------------------------------------設置結束----------------------------------
+	if(getequipisequiped(1)+getequipisequiped(2)+getequipisequiped(3)+getequipisequiped(4)+getequipisequiped(5)+getequipisequiped(6)==0)
+	{
+		mes "[高階精鍊師]";
+		mes "您身上未著任何可精鍊裝備，無法使用精鍊服務。";
+		close;
+	}
+	if(getequipisequiped(1)!=0) set .@menu_1$,"精鍊^006400"+getequipname(1)+"^000000"; else set .@menu_1$,"";
+	if(getequipisequiped(2)!=0) set .@menu_2$,"精鍊^006400"+getequipname(2)+"^000000"; else set .@menu_2$,"";
+	if(getequipisequiped(3)!=0)
+	{
+		if(getequipweaponlv(3)>0) set .@menu_3$,"精鍊^0000AA"+getequipname(3)+"^000000";
+		else set .@menu_3$,"精鍊^006400"+getequipname(3)+"^000000";
+	}else set .@menu_3$,"";
+	if(getequipisequiped(4)!=0) set .@menu_4$,"精鍊^0000AA"+getequipname(4)+"^000000"; else set .@menu_4$,"";
+	if(getequipisequiped(5)!=0) set .@menu_5$,"精鍊^006400"+getequipname(5)+"^000000"; else set .@menu_5$,"";
+	if(getequipisequiped(6)!=0) set .@menu_6$,"精鍊^006400"+getequipname(6)+"^000000"; else set .@menu_6$,"";
+	switch(select(.@menu_1$,.@menu_2$,.@menu_3$,.@menu_4$,.@menu_5$,.@menu_6$,"取消精鍊"))
+	{
+		case 1: set @Part,1; break;
+		case 2: set @Part,2; break;
+		case 3: set @Part,3; break;
+		case 4: set @Part,4; break;
+		case 5: set @Part,5; break;
+		case 6: set @Part,6; break;
+		case 7: close;
+	}
+	set @Type,getequipweaponlv(@Part);
+	if(@Type==0) set @ref_max,@aref_max;
+	else if(@Type==1) set @ref_max,@wref_max_lv1;
+	else if(@Type==2) set @ref_max,@wref_max_lv2;
+	else if(@Type==3) set @ref_max,@wref_max_lv3;
+	else if(@Type==4) set @ref_max,@wref_max_lv4;
+	if(getequiprefinerycnt(@Part)>=@ref_max)
+	{
+		mes "[高階精鍊師]";
+		mes "^0000FF"+getequipname(@Part)+"^000000精鍊值已達最高。";
+		next;
+		callfunc "refines";
+		close;
+	}
+	if(getequipisenableref(@Part)==0)
+	{
+		mes "[高階精鍊師]";
+		mes "^0000FF"+getequipname(@Part)+"^000000無法精練。";
+		next;
+		callfunc "refines";
+		close;
+	}
+do{
+	if(getequippercentrefinery(@Part)>=100)
+	{
+		if(@Type==0) set @Probability,@apref[getequiprefinerycnt(@Part)];
+		else if(@Type==1) set @Probability,@1wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==2) set @Probability,@2wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==3) set @Probability,@3wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==4) set @Probability,@4wpref[getequiprefinerycnt(@Part)];
+		set @ref_zeny,@zeny[@Type];
+		set @ref_item,@itemid[@Type];
+		set @ref_cnum,@cnum[@Type];
+	} else if(getequippercentrefinery(@Part)<100)
+	{
+		if(countitem(@pitemid[@Type])>=1)
+		{
+			switch(select("使用濃縮礦石","不使用濃縮礦石","退出精鍊"))
+			{
+		case 1:
+			if(@Type==0) set @Probability,@apref_p[getequiprefinerycnt(@Part)];
+			else if(@Type==1) set @Probability,@1wpref_p[getequiprefinerycnt(@Part)];
+			else if(@Type==2) set @Probability,@2wpref_p[getequiprefinerycnt(@Part)];
+			else if(@Type==3) set @Probability,@3wpref_p[getequiprefinerycnt(@Part)];
+			else if(@Type==4) set @Probability,@4wpref_p[getequiprefinerycnt(@Part)];
+			set @ref_zeny,@pzeny[@Type];
+			set @ref_item,@pitemid[@Type];
+			set @ref_cnum,@pcnum[@Type];
+			break;
+		case 2:
+			if(@Type==0) set @Probability,@apref[getequiprefinerycnt(@Part)];
+			else if(@Type==1) set @Probability,@1wpref[getequiprefinerycnt(@Part)];
+			else if(@Type==2) set @Probability,@2wpref[getequiprefinerycnt(@Part)];
+			else if(@Type==3) set @Probability,@3wpref[getequiprefinerycnt(@Part)];
+			else if(@Type==4) set @Probability,@4wpref[getequiprefinerycnt(@Part)];
+			set @ref_zeny,@zeny[@Type];
+			set @ref_item,@itemid[@Type];
+			set @ref_cnum,@cnum[@Type];
+			break;
+		case 3: close;
+			}
+		} else if(countitem(@pitemid[@Type])==0) {
+		if(@Type==0) set @Probability,@apref[getequiprefinerycnt(@Part)];
+		else if(@Type==1) set @Probability,@1wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==2) set @Probability,@2wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==3) set @Probability,@3wpref[getequiprefinerycnt(@Part)];
+		else if(@Type==4) set @Probability,@4wpref[getequiprefinerycnt(@Part)];
+		set @ref_zeny,@zeny[@Type];
+		set @ref_item,@itemid[@Type];
+		set @ref_cnum,@cnum[@Type];
+		}
+	}
+	if(@Probability>=100) set @color$,"^0000FF"; else if(@Probability<100) set @color$,"^FF0000";
+	mes "[高階精鍊師]";
+	mes "精鍊項目：^339900"+getequipname(@part)+"^000000^2F4F4F+"+getequiprefinerycnt(@part)+"^000000 至 ^A0522D+"+(getequiprefinerycnt(@part)+1)+"^000000";
+	mes "成功機率："+.@color$+""+@Probability+" %^000000";
+	mes "消耗物品：^6CA6CD"+getitemname(@ref_item)+"^000000 ^8968CD"+@ref_cnum+"個^000000";
+	mes "精鍊費用：^B8860B"+@ref_zeny+"^000000 Zeny";
+	if(countitem(@ref_item)<@ref_cnum || zeny<@ref_zeny)
+	{
+		next;
+		mes "[高階精鍊師]";
+		mes "您的精鍊所需材料或費用不足。";
+		next;
+		callfunc "refines";
+	}
+	mes "是否繼續精鍊？";
+	next;
+	if(select("繼續精鍊","取消精鍊")==2)
+	{
+		mes "[高階精鍊師]";
+		mes "如有需要隨時歡迎您來。";
+		close;
+	}
+	if(@Probability<100 && @refa==1 && countitem(@ritem)>=1)
+	{
+		mes "[高階精鍊師]";
+		mes "您身上有^006400"+getitemname(@ritem)+"^000000，";
+		mes "可幫助您防護裝備避免因為失敗而消失，";
+		if(@refb==1)
+		{
+			mes "^ff0000(但成功或失敗均會扣除物品)^000000";
+		}
+		mes "請問您要使用嗎?";
+		next;
+		if(select("使用^006400"+getitemname(@ritem)+"^000000","不使用^006400"+getitemname(@ritem)+"^000000")==1)
+		{ set @ref,1; }
+	}
+	set zeny,zeny-@ref_zeny;
+	delitem @ref_item,@ref_cnum;
+	if(@Probability<=rand(100))
+	{
+		mes "[高階精鍊師]";
+		if(@ref==1)
+		{
+			specialeffect2 EF_REPAIRWEAPON;
+			mes "精練失敗了，但因為有^006400"+getitemname(@ritem)+"^000000，";
+			mes "所以物品沒有損壞。";
+			delitem @ritem,1;
+			close;
+		}
+		failedrefitem @part;
+		mes "很抱歉，精鍊失敗了。";
+		close;
+	}
+	mes "[高階精鍊師]";
+	mes "恭喜您，精鍊成功了。";
+	successrefitem @part;
+	if(@ref==1 && @refb==1) { delitem @ritem,1; set @ref,0;}
+	next;
+}while(getequiprefinerycnt(@Part)<@ref_max);
+	mes "[高階精鍊師]";
+	mes "^0000FF"+getequipname(@Part)+"^000000精鍊值已達最高。";
+	mes "無法再繼續精鍊。";
+	close;
+}

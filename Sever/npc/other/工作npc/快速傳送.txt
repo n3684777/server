@@ -1,0 +1,69 @@
+prontera,152,163,5	script	快速傳南門#1	510,{
+	mes "你確定要傳送嗎?";
+	next;
+	menu
+		"確定",yes,
+		"取消",no;
+
+yes:
+	warp "prt_fild08",170,375;
+	close;
+no:
+	close;
+OnInit:
+	waitingroom "點我傳南門",0;
+	end;
+}
+
+
+prontera,159,163,4	script	快速傳波利島#1	510,{
+	mes "你確定要傳送嗎?";
+	next;
+	menu
+		"確定",yes,
+		"取消",no;
+
+yes:
+	warp "pay_fild04",20,165;
+	close;
+no:
+	close;
+OnInit:
+	waitingroom "點我傳波利島",0;
+	end;
+}
+
+pay_arche,71,132,4	script	快速傳南門#2	510,{
+	mes "你確定要傳送嗎?";
+	next;
+	menu
+		"確定",yes,
+		"取消",no;
+
+yes:
+	warp "prt_fild08",170,375;
+	close;
+no:
+	close;
+OnInit:
+	waitingroom "點我傳南門",0;
+	end;
+}
+
+
+pay_arche,71,128,4	script	快速傳波利島#2	510,{
+	mes "你確定要傳送嗎?";
+	next;
+	menu
+		"確定",yes,
+		"取消",no;
+
+yes:
+	warp "pay_fild04",20,165;
+	close;
+no:
+	close;
+OnInit:
+	waitingroom "點我傳波利島",0;
+	end;
+}

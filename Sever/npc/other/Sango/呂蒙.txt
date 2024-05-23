@@ -1,0 +1,56 @@
+morocc,152,95,5	script	呂蒙	459,{
+	mes "士別三日，刮目相看，我已非吳下阿蒙。";
+	next;
+	menu	"請讓我加入你門下",j,
+		"我想離開你的門下",l,
+		"在下告退",b;
+
+j:
+	if ( Llv != 10 ) goto NOten;
+	mes "哦？那你就在我門下學習吧！";
+	mes "在我門下學習之時，我也會給你一些能力加成。";
+	mes "當然，要是脫離我門下，我所給你的加成也會消失";
+	mes "加入我門下所獲得的能力加成是";
+	mes "^FF0000AGI+20^000000";
+	mes "^FF0000INT+10^000000";
+	mes "確定要跟隨我嗎？";
+	next;
+	menu	"是的，從今往後願效犬馬之勞",j1,
+		"我還是另擇明主好了。",j2;
+j1:
+	if ( Sango != 0 ) goto Shit;
+	mes "記得早晚熟讀兵書。";
+	next;
+	mes "獲得能力加成";
+	mes "^FF0000AGI+20^000000";
+	mes "^FF0000INT+10^000000";
+	set Sango,17;
+	atcommand "@agi 20";
+	atcommand "@int 10";
+	close;
+j2:
+	mes "那你快滾吧！";
+	close;
+l:
+	if ( Sango != 17 ) goto Nmast;
+	mes "你不想在待在我手下了是嗎？";
+	mes "既然你已無心，留你何用？";
+	set Sango,0;
+	atcommand "@agi -20";
+	atcommand "@int -10";
+	close;
+b:
+	mes "退下吧！";
+	close;
+NOten:
+	mes "轉生次數必須到十次才能加入我門下";
+	mes "去多鍛鍊吧！";
+	close;
+Shit:
+	mes "你已經有主公了，為何還要來投效我？";
+	close;
+Nmast:
+	mes "我不是你的主公！";
+	close;
+	end;
+}

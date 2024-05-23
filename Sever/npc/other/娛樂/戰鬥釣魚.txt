@@ -1,0 +1,270 @@
+///////////////////////////////////////////////////////////////
+//                                                           //
+// 戰鬥釣魚系統 (Fighting Fishing System)                    //
+//                                                           //
+// 版本: Ver1.0                                              //
+//                                                           //
+// 作者: 小鮭魚 (grass0916)                                  //
+//                                                           //
+// 腳本簡介: 玩了就知道, 遊戲愉快!                           //
+//                                                           //
+///////////////////////////////////////////////////////////////
+
+cmd_fild04,96,86,3	script	 游動的魚群::shift1	139,1,1,{
+	setarray $@FishItem01[0], 28000, 28079; // 此處新增獲得的獎品(魚類)
+	setarray $@FishItem02[0], 13640, 13636; // 此處新增獲得的獎品(垃圾道具類)
+	setarray $@FishItem03[0], 13641, 13643; // 此處新增獲得的獎品(及低機率高級物品類)
+	setarray $@FishEquip[0], 28307, 2220; // 輕巧型釣竿, 漁夫帽
+	setarray $@FishMonster[0], 2670, 2671, 2672, 2673 ,2674 ,2675; // 寶箱巨鱷, 雍容, 肥皂, 一柱
+	if ( ( countitem ( $@FishEquip[0] ) >= 1 ) && ( countitem ( $@FishEquip[1] ) >= 1 ) ) {
+		dispbottom "這裡似乎有魚群流動的動靜...";
+		set canfish, 2; // 為2時擁有釣魚的資格(可以使用釣竿)
+	}
+}
+
+
+cmd_fild04,192,62,3	duplicate(shift1)	 游動的魚群#1	139,1,1,{
+cmd_fild04,196,64,3	duplicate(shift1)	 游動的魚群#2	139,1,1,{
+cmd_fild04,201,69,3	duplicate(shift1)	 游動的魚群#3	139,1,1,{
+cmd_fild04,209,69,3	duplicate(shift1)	 游動的魚群#4	139,1,1,{
+cmd_fild04,216,69,3	duplicate(shift1)	 游動的魚群#5	139,1,1,{
+cmd_fild04,223,69,3	duplicate(shift1)	 游動的魚群#6	139,1,1,{
+cmd_fild04,229,73,3	duplicate(shift1)	 游動的魚群#7	139,1,1,{
+cmd_fild04,234,77,3	duplicate(shift1)	 游動的魚群#8	139,1,1,{
+cmd_fild04,239,80,3	duplicate(shift1)	 游動的魚群#9	139,1,1,{
+cmd_fild04,246,81,3	duplicate(shift1)	 游動的魚群#10	139,1,1,{
+cmd_fild04,253,84,3	duplicate(shift1)	 游動的魚群#11	139,1,1,{
+cmd_fild04,265,86,3	duplicate(shift1)	 游動的魚群#12	139,1,1,{
+cmd_fild04,273,86,3	duplicate(shift1)	 游動的魚群#13	139,1,1,{
+cmd_fild04,281,87,3	duplicate(shift1)	 游動的魚群#14	139,1,1,{
+cmd_fild04,291,85,3	duplicate(shift1)	 游動的魚群#15	139,1,1,{
+cmd_fild04,305,77,3	duplicate(shift1)	 游動的魚群#16	139,1,1,{
+cmd_fild04,312,76,3	duplicate(shift1)	 游動的魚群#17	139,1,1,{
+cmd_fild04,320,76,3	duplicate(shift1)	 游動的魚群#18	139,1,1,{
+cmd_fild04,327,71,3	duplicate(shift1)	 游動的魚群#19	139,1,1,{
+cmd_fild04,334,68,3	duplicate(shift1)	 游動的魚群#20	139,1,1,{
+cmd_fild04,342,67,3	duplicate(shift1)	 游動的魚群#21	139,1,1,{
+cmd_fild04,348,69,3	duplicate(shift1)	 游動的魚群#22	139,1,1,{
+cmd_fild04,181,67,3	duplicate(shift1)	 游動的魚群#23	139,1,1,{
+cmd_fild04,174,73,3	duplicate(shift1)	 游動的魚群#24	139,1,1,{
+cmd_fild04,170,77,3	duplicate(shift1)	 游動的魚群#25	139,1,1,{
+cmd_fild04,166,81,3	duplicate(shift1)	 游動的魚群#26	139,1,1,{
+cmd_fild04,159,85,3	duplicate(shift1)	 游動的魚群#27	139,1,1,{
+cmd_fild04,151,87,3	duplicate(shift1)	 游動的魚群#28	139,1,1,{
+cmd_fild04,143,89,3	duplicate(shift1)	 游動的魚群#29	139,1,1,{
+cmd_fild04,136,95,3	duplicate(shift1)	 游動的魚群#30	139,1,1,{
+cmd_fild04,127,96,3	duplicate(shift1)	 游動的魚群#31	139,1,1,{
+cmd_fild04,118,94,3	duplicate(shift1)	 游動的魚群#32	139,1,1,{
+cmd_fild04,108,94,3	duplicate(shift1)	 游動的魚群#33	139,1,1,{
+cmd_fild04,99,87,3	duplicate(shift1)	 游動的魚群#34	139,1,1,{
+cmd_fild04,90,86,3	duplicate(shift1)	 游動的魚群#35	139,1,1,{
+cmd_fild04,82,82,3	duplicate(shift1)	 游動的魚群#36	139,1,1,{
+cmd_fild04,72,78,3	duplicate(shift1)	 游動的魚群#37	139,1,1,{
+cmd_fild04,64,77,3	duplicate(shift1)	 游動的魚群#38	139,1,1,{
+cmd_fild04,54,74,3	duplicate(shift1)	 游動的魚群#39	139,1,1,{
+cmd_fild04,45,71,3	duplicate(shift1)	 游動的魚群#40	139,1,1,{
+cmd_fild04,36,69,3	duplicate(shift1)	 游動的魚群#41	139,1,1,{
+cmd_fild04,30,65,3	duplicate(shift1)	 游動的魚群#42	139,1,1,{
+
+
+
+// 只要是在移動任何一點後, 取消能夠釣魚的資格(遠離魚群點)
+cmd_fild04,96,86,3	script	 開始釣魚::shift	139,3,3,{
+	set canfish, 0; // 為0時無釣魚的資格(無法使用釣竿)
+}
+
+cmd_fild04,192,62,3	duplicate(shift)	 開始釣魚#1	139,3,3,{
+cmd_fild04,196,64,3	duplicate(shift)	 開始釣魚#2	139,3,3,{
+cmd_fild04,201,69,3	duplicate(shift)	 開始釣魚#3	139,3,3,{
+cmd_fild04,209,69,3	duplicate(shift)	 開始釣魚#4	139,3,3,{
+cmd_fild04,216,69,3	duplicate(shift)	 開始釣魚#5	139,3,3,{
+cmd_fild04,223,69,3	duplicate(shift)	 開始釣魚#6	139,3,3,{
+cmd_fild04,229,73,3	duplicate(shift)	 開始釣魚#7	139,3,3,{
+cmd_fild04,234,77,3	duplicate(shift)	 開始釣魚#8	139,3,3,{
+cmd_fild04,239,80,3	duplicate(shift)	 開始釣魚#9	139,3,3,{
+cmd_fild04,246,81,3	duplicate(shift)	 開始釣魚#10	139,3,3,{
+cmd_fild04,253,84,3	duplicate(shift)	 開始釣魚#11	139,3,3,{
+cmd_fild04,265,86,3	duplicate(shift)	 開始釣魚#12	139,3,3,{
+cmd_fild04,273,86,3	duplicate(shift)	 開始釣魚#13	139,3,3,{
+cmd_fild04,281,87,3	duplicate(shift)	 開始釣魚#14	139,3,3,{
+cmd_fild04,291,85,3	duplicate(shift)	 開始釣魚#15	139,3,3,{
+cmd_fild04,305,77,3	duplicate(shift)	 開始釣魚#16	139,3,3,{
+cmd_fild04,312,76,3	duplicate(shift)	 開始釣魚#17	139,3,3,{
+cmd_fild04,320,76,3	duplicate(shift)	 開始釣魚#18	139,3,3,{
+cmd_fild04,327,71,3	duplicate(shift)	 開始釣魚#19	139,3,3,{
+cmd_fild04,334,68,3	duplicate(shift)	 開始釣魚#20	139,3,3,{
+cmd_fild04,342,67,3	duplicate(shift)	 開始釣魚#21	139,3,3,{
+cmd_fild04,348,69,3	duplicate(shift)	 開始釣魚#22	139,3,3,{
+cmd_fild04,181,67,3	duplicate(shift)	 開始釣魚#23	139,3,3,{
+cmd_fild04,174,73,3	duplicate(shift)	 開始釣魚#24	139,3,3,{
+cmd_fild04,170,77,3	duplicate(shift)	 開始釣魚#25	139,3,3,{
+cmd_fild04,166,81,3	duplicate(shift)	 開始釣魚#26	139,3,3,{
+cmd_fild04,159,85,3	duplicate(shift)	 開始釣魚#27	139,3,3,{
+cmd_fild04,151,87,3	duplicate(shift)	 開始釣魚#28	139,3,3,{
+cmd_fild04,143,89,3	duplicate(shift)	 開始釣魚#29	139,3,3,{
+cmd_fild04,136,95,3	duplicate(shift)	 開始釣魚#30	139,3,3,{
+cmd_fild04,127,96,3	duplicate(shift)	 開始釣魚#31	139,3,3,{
+cmd_fild04,118,94,3	duplicate(shift)	 開始釣魚#32	139,3,3,{
+cmd_fild04,108,94,3	duplicate(shift)	 開始釣魚#33	139,3,3,{
+cmd_fild04,99,87,3	duplicate(shift)	 開始釣魚#34	139,3,3,{
+cmd_fild04,90,86,3	duplicate(shift)	 開始釣魚#35	139,3,3,{
+cmd_fild04,82,82,3	duplicate(shift)	 開始釣魚#36	139,3,3,{
+cmd_fild04,72,78,3	duplicate(shift)	 開始釣魚#37	139,3,3,{
+cmd_fild04,64,77,3	duplicate(shift)	 開始釣魚#38	139,3,3,{
+cmd_fild04,54,74,3	duplicate(shift)	 開始釣魚#39	139,3,3,{
+cmd_fild04,45,71,3	duplicate(shift)	 開始釣魚#40	139,3,3,{
+cmd_fild04,36,69,3	duplicate(shift)	 開始釣魚#41	139,3,3,{
+cmd_fild04,30,65,3	duplicate(shift)	 開始釣魚#42	139,3,3,{
+
+
+
+
+function	script	Fishing	{
+	if ( canfish == 2 ) { // 在NPC附近
+		dispbottom "拋出魚線, 釣魚開始!";
+		set canfish, canfish - 1; // 重置
+		set FishReply_A, 0;
+		set FishReply_B, 0;
+		set ProcessLimit, rand(3, 5); // 必須與魚群搏鬥3~5回合(隨機)
+		set ProcessTime, rand( 500, 3000 ); // 搏鬥每回合的時間, 單位: 毫秒
+		goto Fish_Process;
+	}
+	else {
+		dispbottom "好像沒有什麼效果...";
+		end;
+	}
+
+Fish_Process:
+	if ( ProcessTime < 750 ) dispbottom "天哪!! 這條魚的力道真是前所未見!!";
+	else if ( ProcessTime <= 1000 ) dispbottom "這隻魚看起來不太好應付....";
+	else if ( ProcessTime <= 2000 ) dispbottom "必須認真一點應對了!";
+	else if ( ProcessTime <= 3000 ) dispbottom "似乎輕輕鬆鬆就能將這隻魚打撈起來。";
+	for ( set ProcessNum, 0; ProcessNum <= ProcessLimit ; set ProcessNum, ProcessNum + 1 ) {
+		if ( canfish == 0 ) {
+			dispbottom "步伐太大嚇走魚群了。";
+			end;
+		}
+		else if ( canfish != 0 ) {
+			sleep2 ProcessTime;
+			if ( FishReply_B != FishReply_A ) {
+				dispbottom "一時的疏忽讓魚游走了。";
+				misceffect 611;
+				end;
+		}
+
+		else if ( ProcessNum == ProcessLimit ) goto Fish_Success;
+			else {
+				switch( rand( 1, 11 ) ) {
+				case 1:
+					dispbottom "沉住氣...";
+					misceffect 11;
+					break;
+				case 2:
+					dispbottom "集 中 精 神";
+					misceffect 745;
+					break;
+				case 3:
+					dispbottom "被魚線被鉤傷了!! 好痛!!";
+					percentheal -5,-5;
+					misceffect 522;
+					break;
+				case 4:
+					dispbottom "採到石塊上的青苔, 狠狠地滑了一跤!!";
+					percentheal -3,-3;
+					misceffect 310;
+					misceffect 414;
+					break;
+				case 5:
+					dispbottom "濺起的水花弄濕全身...";
+					percentheal -3,-3;
+					misceffect 748;
+					break;
+				case 6:
+					dispbottom "不好了, 身體開始失溫, 快點使用『安全火柴』取暖!!";
+					set FishReply_B, 6;
+					percentheal 0,-20;
+					misceffect 379;
+					break;
+				case 7:
+					dispbottom "就是現在 使用『捲線器』, 趁魚有鬆懈的這瞬間!!";
+					set FishReply_B, 7;
+					break;
+				case 8:
+					dispbottom "魚餌被吃掉了, 趕快換上新的『好吃的魚餌』!!";
+					set FishReply_B, 8;
+					break;
+				case 9:
+					dispbottom "釣線竟然斷掉了, 趕快換上新的『耐用的釣線』!!";
+					set FishReply_B, 9;
+					break;
+				case 10:
+					set FishBroken, rand( 0, 30 );
+					if ( FishBroken ) dispbottom "雖然這魚的力氣很大, 但魚竿還撐得住。";
+					else {
+						dispbottom "跟魚群搏鬥的力道過大, 魚竿壞掉了!!";
+						delitem  $@FishEquip[0], 1;
+						misceffect 611;
+					end;
+					}
+					break;
+				case 11:
+					dispbottom "被魚群們耍得團團轉阿... 失敗了...";
+					misceffect 501;
+					misceffect 611;
+					end;
+				}
+			}
+		}
+	}
+	end;
+
+Fish_Success:
+	misceffect 610;
+	set IsFish, rand( 1, 100 );
+	if ( ( getequipid(3) == $@FishEquip[0] ) && ( getequipid(1) == $@FishEquip[1] ) ) set FishRate, 125; // 機率漲幅倍率
+	else {
+		dispbottom "如果同時裝備 輕巧型釣竿 與 漁夫帽, 更能發揮釣魚的本領。";
+		set FishRate, 100; // 原始倍率
+	}
+
+	if ( IsFish <= ( ( 1 * FishRate ) / 100 ) ) {
+		dispbottom "釣到寶物了!! 真是太幸運了!!";
+		getitem $@FishItem03[ rand( 0, getarraysize( $@FishItem03 ) -1 ) ], 1;
+	}
+	else if ( IsFish <= ( ( 50 * FishRate ) / 100 ) ) {
+		dispbottom "釣到材料了!! 不錯哦!!";
+		getitem $@FishItem01[ rand( 0, getarraysize( $@FishItem01 ) -1 ) ], 1;
+	}
+	else if ( IsFish <= ( ( 75 * FishRate ) / 100 ) ) {
+		dispbottom "這是魚嗎...?";
+		getitem $@FishItem02[ rand( 0, getarraysize( $@FishItem02 ) -1 ) ], 1;
+	}
+	else if ( IsFish <= ( ( 95 * FishRate ) / 100 ) ) {
+		getmapxy $@fmap$, $@fmapx, $@fmapy, 0;
+		set $@randmon, rand(0, getarraysize($@FishMonster) - 1);
+		monster $@fmap$, $@fmapx, $@fmapy, getmonsterinfo($@FishMonster[$@randmon], 0), $@FishMonster[$@randmon], 1;
+		dispbottom "魚群們瘋狂地衝了出來 !!! 是 "+ getmonsterinfo( $@FishMonster[$@randmon], 0 ) +"!!!";
+	}
+	else dispbottom "什麼也沒有...?";
+	end;
+}
+
+// 當你遇到任何的情況, 要做出的臨場反應
+function	script	Fishing_Reply6	{
+	set FishReply_A, 6; // 安全火柴
+}
+
+function	script	Fishing_Reply7	{
+	set FishReply_A, 7; // 捲線器
+}
+
+function	script	Fishing_Reply8	{
+	set FishReply_A, 8; // 好吃的魚餌
+}
+
+function	script	Fishing_Reply9	{
+	set FishReply_A, 9; // 耐用的釣線
+}
+
+// 如果要用下面的NPC, 請把雙斜線槓掉
+cmd_fild04,190,76,3	shop	太公望	963,28307:50000,2220:1000,28308:500,28309:100,28310:100,28311:100,28312:100

@@ -1,0 +1,14 @@
+-	script	Set	-1,{
+
+	OnInit:
+
+		//	砞﹚计	( 虫 :  )
+		//	3600 / 60 = 60だ牧
+		set $SetWaitingTime,60;
+
+		//	计锣传睝	( ㄧ计づ笆 )
+		set $WaitingTime,$SetWaitingTime * 1000;
+
+		end;
+
+}

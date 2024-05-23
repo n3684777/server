@@ -1,0 +1,29 @@
+//@LOADNPC npc/my/在線點數/在線計時.txt
+
+-	script	在線計時	-1,{
+
+OnPCLoginEvent:
+	addtimer $WaitingTime,"在線計時::OnTimeA";
+	set Time,gettimetick(2) + $SetWaitingTime;
+	dispbottom "[ 泡點系統 ] 目前泡點累積為 "+ChangePoint+" 點，開店及未滿70等無法積點";
+	end;
+
+OnTimeA:
+	deltimer "在線計時::OnTimeA";
+
+if(!checkvending()&&BaseLevel>=70){
+	set ChangePoint,ChangePoint + 10;
+	dispbottom "[ 泡點系統 ] 在線滿 "+($SetWaitingTime / 60)+" 分鐘 ， 目前泡點累積為 "+ChangePoint+" 點";
+
+	addtimer $WaitingTime,"在線計時::OnTimeA";
+	set Time,gettimetick(2) + $SetWaitingTime;
+	end;
+}
+	dispbottom "[ 泡點系統 ] 開店和未滿70等無法積點 ，";
+	dispbottom "[ 泡點系統 ] 如需重新計算積點請重新登入，謝謝！";
+	end;
+OnPCLogoutEvent:
+
+	deltimer "在線計時::OnTimeA";
+	end;
+}

@@ -1,0 +1,823 @@
+prontera,152,193,5	script	各地區傳送#1	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+payon,155,235,5	script	各地區傳送#2	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+new_3-2,100,113,4	script	各地區傳送#3	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+gonryun,159,122,4	script	各地區傳送#4	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+pay_arche,55,147,5	script	各地區傳送#5	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+lighthalzen,207,134,5	script	各地區傳送#6	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+amatsu,108,144,5	script	各地區傳送#7	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+
+jawaii,209,294,4	script	各地區傳送#9	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+aldebaran,136,126,5	script	各地區傳送#10	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+ra_temple,119,154,4	script	各地區傳送#11	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+xmas,154,109,4	script	各地區傳送#12	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}
+
+cmd_fild04,195,76,4	script	各地區傳送#13	762,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu
+		"主城區(^3355FF目前"+ getmapusers("prontera") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"製作區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"任務區(^3355FF目前"+ getmapusers("xmas") +"人^000000)",H,
+		"掛賣區(^3355FF目前"+ getmapusers("ra_temple") +"人^000000)",I,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",C,
+		"公會區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",J,
+		"試裝區(^3355FF目前"+ getmapusers("pvp_room") +"人^000000)",E,
+		"離開",LEndA;
+	Lload1:
+		warp "prontera",156,170;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "cmd_fild04",193,73;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "pvp_room",51,16;
+		close;
+	F:
+		warp "pay_arche",59,128;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "xmas",148,118;
+		close;
+	I:
+		warp "ra_temple",119,152;
+		close;
+	J:
+		warp "gonryun",159,109;
+		close;
+	LpshopA:
+		warp "payon",155,224;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+OnInit:
+	waitingroom "主城及各地區傳送",0;
+end;
+
+}

@@ -1,0 +1,340 @@
+-	script	mwjl_Config	-1,{
+OnInit:
+
+	set $@mwjl_level,99;
+
+	set $@mwjl_team_players,1;
+
+	set $@mwjl_Time_All,14400;
+
+	set $@mwjl_Time_In,300;
+
+	set $@mwjl_Time_Cooldown,3600;
+
+	set $@mwjl_GM,99;
+
+	setarray $@mwjl_monster1[0],2551,2552,2553,2554,2555;
+
+	setarray $@mwjl_monster2[0],2551,2552,2553,2554,2555;
+
+	setarray $@mwjl_monster3[0],2551,2552,2553,2554,2555;
+
+	setarray $@mwjl_monster4[0],2551,2552,2553,2554,2555;
+
+	setarray $@mwjl_monster5[0],2551,2552,2553,2554,2555;
+
+	end;
+}
+//==================登記==================
+
+aldebaran,146,107,4	script	魔之試煉	971,{
+	if(mwjl_Lasttime + $@mwjl_Time_Cooldown > gettimetick(2) && mwjl_Lasttime < gettimetick(2) && getgmlevel() < $@mwjl_GM ){
+		set .@mwjl_lastTime,mwjl_Lasttime + $mwjl_Cooldown - gettimetick(2);
+		set .@mwjl_hoursTime,.@mwjl_lastTime / 60 / 60;
+		set .@mwjl_minutesTime,.@mwjl_lastTime / 60 % 60;
+		set .@mwjl_secondsTime,.@mwjl_lastTime % 60;
+		mes "[魔之試煉]";
+		mes "根據進入規則，你現在無法進入魔之試煉";
+		mes "你現在還有, "+.@mwjl_hoursTime+"小時 "+.@mwjl_minutesTime+"分鐘 "+.@mwjl_secondsTime+"秒才能進入";
+		close;
+		}
+
+		if(BaseLevel<$@mwjl_level){
+		mes "[魔之試煉]";
+		mes "你的等級還沒到"+$@mwjl_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@mwjl_team_players){
+		mes "[魔之試煉]";
+		mes "請加入一個超過"+$@mwjl_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[魔之試煉]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[魔之試煉]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[魔之試煉]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@mwjl") == ""){
+				mes "[魔之試煉]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[魔之試煉]";
+			mes "你的隊伍已經申請過了魔之試煉的任務"; 
+			mes "請在主界面選擇 ^0000FF進入魔之試煉選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(mwjl_Lasttime + $@mwjl_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@mwjl_GM) {
+			mes "[魔之試煉]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[魔之試煉]";
+		mes "^0000FF魔之試煉^000000 - 正在準備中";
+		mes "當魔之試煉準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_mwjl_id,instance_create("魔之試煉",getcharid(1)); 
+		if(.@instance_mwjl_id < 0){
+			mes "[魔之試煉]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@mwjl",.@instance_mwjl_id);
+		instance_attachmap("2@mwjl",.@instance_mwjl_id);
+		instance_attachmap("3@mwjl",.@instance_mwjl_id);
+		instance_attachmap("4@mwjl",.@instance_mwjl_id);
+		instance_attachmap("5@mwjl",.@instance_mwjl_id);
+		instance_set_timeout $@mwjl_Time_All,$@mwjl_Time_In,.@instance_mwjl_id;
+		instance_init .@instance_mwjl_id;
+		instance_attach .@instance_mwjl_id;
+		set 'mwjl_Lasttime,gettimetick(2) + $@mwjl_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@mwjl") == ""){ 
+			mes "[魔之試煉]";
+			mes "魔之試煉副本不存在.";
+			mes "請確定你的隊伍已經申請過魔之試煉，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(mwjl_Lasttime + $@mwjl_Time_Cooldown < gettimetick(2))
+		set mwjl_Lasttime,'mwjl_Lasttime;
+		warpparty has_instance("1@mwjl"),188,111,getcharid(1);
+		doevent instance_npcname("mwjl_monster",instance_id(1))+"::Onmonster90";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+
+//===============登記/傳送===============
+
+1@mwjl,13,160,0	script	MWwarp_1	45,1,1,{ warp has_instance("2@mwjl"),110,18;	end; }
+2@mwjl,36,234,0	script	MWwarp_2	45,1,1,{ warp has_instance("3@mwjl"),262,272;	end; }
+3@mwjl,25,24,0	script	MWwarp_3	45,1,1,{ warp has_instance("4@mwjl"),278,273;	end; }
+4@mwjl,146,280,0	script	MWwarp_4	45,1,1,{ warp has_instance("5@mwjl"),116,24;	end; }
+
+//=================刷怪==================
+
+1@mwjl,0,0,0	script	mwjl_monster	-1,{
+Onmonster90:
+	disablenpc instance_npcname("MWwarp_1", instance_id());
+	disablenpc instance_npcname("MWwarp_2", instance_id());
+	disablenpc instance_npcname("MWwarp_3", instance_id());
+	disablenpc instance_npcname("MWwarp_4", instance_id());
+	hideonnpc instance_npcname("MWwarp_1", instance_id());
+	hideonnpc instance_npcname("MWwarp_2", instance_id());
+	hideonnpc instance_npcname("MWwarp_3", instance_id());
+	hideonnpc instance_npcname("MWwarp_4", instance_id());
+	set .@mw,instance_id(0);
+
+//魔之試煉1F小怪
+	monster "1@mwjl",0,0,"--ja--",2551,1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+	monster "1@mwjl",0,0,"--ja--",2552,1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+	monster "1@mwjl",0,0,"--ja--",2553,1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+	monster "1@mwjl",0,0,"--ja--",2554,1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+	monster "1@mwjl",0,0,"--ja--",2555,1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+//魔之試煉2F小怪
+	monster "2@mwjl",0,0,"--ja--",2551,1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+	monster "2@mwjl",0,0,"--ja--",2552,1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+	monster "2@mwjl",0,0,"--ja--",2553,1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+	monster "2@mwjl",0,0,"--ja--",2554,1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+	monster "2@mwjl",0,0,"--ja--",2555,1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+//魔之試煉3F小怪
+	monster "3@mwjl",0,0,"--ja--",2551,1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+	monster "3@mwjl",0,0,"--ja--",2552,1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+	monster "3@mwjl",0,0,"--ja--",2553,1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+	monster "3@mwjl",0,0,"--ja--",2554,1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+	monster "3@mwjl",0,0,"--ja--",2555,1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+//魔之試煉4F小怪
+	monster "4@mwjl",0,0,"--ja--",2551,1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+	monster "4@mwjl",0,0,"--ja--",2552,1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+	monster "4@mwjl",0,0,"--ja--",2553,1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+	monster "4@mwjl",0,0,"--ja--",2554,1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+	monster "4@mwjl",0,0,"--ja--",2555,1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+//魔之試煉5F小怪
+	monster "5@mwjl",0,0,"--ja--",2551,1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+	monster "5@mwjl",0,0,"--ja--",2552,1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+	monster "5@mwjl",0,0,"--ja--",2553,1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+	monster "5@mwjl",0,0,"--ja--",2554,1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+	monster "5@mwjl",0,0,"--ja--",2555,1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+//魔之試煉1F BOSS
+	monster "1@mwjl",161,35,"--ja--",2556,1,instance_npcname("mwjl_rainy")+"::Onrainy";
+	monster "1@mwjl",155,162,"--ja--",2556,1,instance_npcname("mwjl_rainy")+"::Onrainy";
+	monster "1@mwjl",35,113,"--ja--",2556,1,instance_npcname("mwjl_rainy")+"::Onrainy";
+//魔之試煉2F BOSS
+	monster "2@mwjl",248,36,"--ja--",2557,1,instance_npcname("mwjl_rainy")+"::Onrainy2";
+	monster "2@mwjl",260,232,"--ja--",2557,1,instance_npcname("mwjl_rainy")+"::Onrainy2";
+	monster "2@mwjl",55,125,"--ja--",2557,1,instance_npcname("mwjl_rainy")+"::Onrainy2";
+//魔之試煉3F BOSS
+	monster "3@mwjl",166,182,"--ja--",2558,1,instance_npcname("mwjl_rainy")+"::Onrainy3";
+	monster "3@mwjl",266,36,"--ja--",2534,1,instance_npcname("mwjl_rainy")+"::Onrainy3";
+	monster "3@mwjl",39,236,"--ja--",2535,1,instance_npcname("mwjl_rainy")+"::Onrainy3";
+//魔之試煉4F BOSS
+	monster "4@mwjl",250,34,"--ja--",2536,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",71,35,"--ja--",2537,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",171,209,"--ja--",2538,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",50,192,"--ja--",2539,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",236,252,"--ja--",2540,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",264,191,"--ja--",2541,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+	monster "4@mwjl",144,266,"--ja--",2559,1,instance_npcname("mwjl_rainy")+"::Onrainy4";
+//魔之試煉5F BOSS
+	monster "5@mwjl",176,38,"--ja--",2533,1,instance_npcname("mwjl_rainy")+"::Onrainy5";
+	monster "5@mwjl",65,161,"--ja--",2533,1,instance_npcname("mwjl_rainy")+"::Onrainy5";
+	monster "5@mwjl",159,155,"--ja--",2533,1,instance_npcname("mwjl_rainy")+"::Onrainy5";
+	monster "5@mwjl",41,55,"--ja--",2533,1,instance_npcname("mwjl_rainy")+"::Onrainy5";
+
+OnMKillMob:
+	monster "1@mwjl",0,0,"--ja--",$@mwjl_monster1[rand(getarraysize($@mwjl_monster1))],1,instance_npcname("mwjl_monster")+"::OnMKillMob";
+	end;
+OnMKillMob1:
+	monster "2@mwjl",0,0,"--ja--",$@mwjl_monster2[rand(getarraysize($@mwjl_monster1))],1,instance_npcname("mwjl_monster")+"::OnMKillMob1";
+	end;
+OnMKillMob2:
+	monster "3@mwjl",0,0,"--ja--",$@mwjl_monster3[rand(getarraysize($@mwjl_monster1))],1,instance_npcname("mwjl_monster")+"::OnMKillMob2";
+	end;
+OnMKillMob3:
+	monster "4@mwjl",0,0,"--ja--",$@mwjl_monster4[rand(getarraysize($@mwjl_monster1))],1,instance_npcname("mwjl_monster")+"::OnMKillMob3";
+	end;
+OnMKillMob4:
+	monster "5@mwjl",0,0,"--ja--",$@mwjl_monster5[rand(getarraysize($@mwjl_monster1))],1,instance_npcname("mwjl_monster")+"::OnMKillMob4";
+	end;
+}
+
+2@mwjl,0,0,0	script	mwjl_monster2	-1,{
+Onmonster91:
+	monster "5@mwjl",98,103,"--ja--",2588,1,instance_npcname("mwjl_monster2")+"::OnMKillMob5";
+	end;
+OnMKillMob5:
+	instance_announce .@mw,"區區人類竟然阻止了我的復活...",bc_map,0x00ff00;
+	sleep2 3000;
+	instance_announce .@mw,"10秒後將傳送你們到領獎地圖!!",bc_map,0x00ff00;
+	sleep2 13000;
+	instance_warpall "goodjob14",33,142;
+	instance_destroy(instance_id());
+	end;
+}
+
+//================通關設定==================
+2@mwjl,0,0,0	script	mwjl_rainy	-1,{
+Onrainy:
+	if('moss<3){
+	set 'moss,'moss+1;
+	set 'M_a,3-'moss;
+	instance_announce .@mw,"還有魔物"+'M_a,bc_map,0x00ff00;
+	}
+	if('M_a==0){
+	instance_announce .@mw,"打敗所有魔物，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("MWwarp_1", instance_id());
+	hideoffnpc instance_npcname("MWwarp_1", instance_id());
+	}
+	end;
+
+Onrainy2:
+	if('mossa<3){
+	set 'mossa,'mossa+1;
+	set 'M_b,3-'mossa;
+	instance_announce .@mw,"還有魔物"+'M_b,bc_map,0x00ff00;
+	}
+	if('M_b==0){
+	instance_announce .@mw,"打敗所有魔物，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("MWwarp_2", instance_id());
+	hideoffnpc instance_npcname("MWwarp_2", instance_id());
+	}
+	end;
+
+
+Onrainy3:
+	if('mossb<3){
+	set 'mossb,'mossb+1;
+	set 'M_c,3-'mossb;
+	instance_announce .@mw,"還有魔物"+'M_c,bc_map,0x00ff00;
+	}
+	if('M_c==0){
+	instance_announce .@mw,"打敗所有魔物，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("MWwarp_3", instance_id());
+	hideoffnpc instance_npcname("MWwarp_3", instance_id());
+	}
+	end;
+
+Onrainy4:
+	if('mossc<7){
+	set 'mossc,'mossc+1;
+	set 'M_d,7-'mossc;
+	instance_announce .@mw,"還有魔物"+'M_d,bc_map,0x00ff00;
+	}
+	if('M_d==0){
+	instance_announce .@mw,"打敗所有魔物，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("MWwarp_4", instance_id());
+	hideoffnpc instance_npcname("MWwarp_4", instance_id());
+	}
+	end;
+
+Onrainy5:
+	if('mossd<4){
+	set 'mossd,'mossd+1;
+	set 'M_e,4-'mossd;
+	instance_announce .@mw,"還有魔王分身"+'M_e,bc_map,0x00ff00;
+	}
+	if('M_e==0){
+	instance_announce .@mw,"打敗所有魔王分身，魔王本尊在地圖正中間出現了",bc_map,0x00ff00;
+	doevent instance_npcname("mwjl_monster2",instance_id())+"::Onmonster91";
+	}
+	end;
+}
+
+//=================地圖屬性===================
+1@mwjl	mapflag	noteleport
+1@mwjl	mapflag	nosave	SavePoint
+1@mwjl	mapflag	nomemo
+1@mwjl	mapflag	noloot
+1@mwjl	mapflag	nobranch
+1@mwjl	mapflag	noicewall
+1@mwjl	mapflag	monster_noteleport
+
+2@mwjl	mapflag	noteleport
+2@mwjl	mapflag	nosave	SavePoint
+2@mwjl	mapflag	nomemo
+2@mwjl	mapflag	noloot
+2@mwjl	mapflag	nobranch
+2@mwjl	mapflag	noicewall
+2@mwjl	mapflag	monster_noteleport
+
+3@mwjl	mapflag	noteleport
+3@mwjl	mapflag	nosave	SavePoint
+3@mwjl	mapflag	nomemo
+3@mwjl	mapflag	noloot
+3@mwjl	mapflag	nobranch
+3@mwjl	mapflag	noicewall
+3@mwjl	mapflag	monster_noteleport
+
+4@mwjl	mapflag	noteleport
+4@mwjl	mapflag	nosave	SavePoint
+4@mwjl	mapflag	nomemo
+4@mwjl	mapflag	noloot
+4@mwjl	mapflag	nobranch
+4@mwjl	mapflag	noicewall
+4@mwjl	mapflag	monster_noteleport
+
+5@mwjl	mapflag	noteleport
+5@mwjl	mapflag	nosave	SavePoint
+5@mwjl	mapflag	nomemo
+5@mwjl	mapflag	noloot
+5@mwjl	mapflag	nobranch
+5@mwjl	mapflag	noicewall
+5@mwjl	mapflag	monster_noteleport

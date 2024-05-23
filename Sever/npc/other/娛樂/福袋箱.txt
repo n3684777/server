@@ -1,0 +1,626 @@
+function	script	HeadTop	{
+	set @ht,rand(7);
+	if (@ht == 0) getitem 28552,rand(50,100);
+	if (@ht == 1) getitem 28553,rand(50,100);
+	if (@ht == 2) getitem 28554,rand(50,100);
+	if (@ht == 3) getitem 28555,rand(50,100);
+	if (@ht == 4) getitem 28556,rand(50,100);
+	if (@ht == 5) getitem 28557,rand(50,100);
+	if (@ht == 6) getitem 28558,rand(50,100);
+	end;
+}
+
+function	script	HeadMedium	{
+	set @hm,rand(7);
+	if (@hm == 0) getitem 28559,rand(50,100);
+	if (@hm == 1) getitem 28560,rand(50,100);
+	if (@hm == 2) getitem 28561,rand(50,100);
+	if (@hm == 3) getitem 28562,rand(50,100);
+	if (@hm == 4) getitem 28563,rand(50,100);
+	if (@hm == 5) getitem 28564,rand(50,100);
+	if (@hm == 6) getitem 28565,rand(50,100);
+	end;
+}
+
+function	script	HeadUnder	{
+	set @hu,rand(7);
+	if (@hu == 0) getitem 28545,rand(50,100);
+	if (@hu == 1) getitem 28546,rand(50,100);
+	if (@hu == 2) getitem 28547,rand(50,100);
+	if (@hu == 3) getitem 28548,rand(50,100);
+	if (@hu == 4) getitem 28549,rand(50,100);
+	if (@hu == 5) getitem 28550,rand(50,100);
+	if (@hu == 6) getitem 28551,rand(50,100);
+	end;
+}
+
+function	script	Weapon	{
+	set @wp,rand(5);
+	if (@wp == 0) getitem 28534,rand(50,100);
+	if (@wp == 1) getitem 28535,rand(50,100);
+	if (@wp == 2) getitem 28536,rand(50,100);
+	if (@wp == 3) getitem 28537,rand(50,100);
+	if (@wp == 4) getitem 28538,rand(50,100);
+	end;
+}
+
+function	script	Equit	{
+	set @eq,rand(14);
+	if (@eq == 0) getitem 7511,rand(50,100);
+	if (@eq == 1) getitem 7563,rand(50,100);
+	if (@eq == 2) getitem 7025,rand(50,100);
+	if (@eq == 3) getitem 7078,rand(50,100);
+	if (@eq == 4) getitem 7086,rand(50,100);
+	if (@eq == 5) getitem 7835,rand(50,100);
+	if (@eq == 6) getitem 7836,rand(50,100);
+	if (@eq == 7) getitem 7837,rand(50,100);
+	if (@eq == 8) getitem 7838,rand(50,100);
+	if (@eq == 9) getitem 7830,rand(50,100);
+	if (@eq == 10) getitem 7833,rand(50,100);
+	if (@eq == 11) getitem 7834,rand(50,100);
+	if (@eq == 12) getitem 7839,rand(50,100);
+	if (@eq == 13) getitem 7840,rand(50,100);
+	end;
+}
+
+function	script	Pushfloor	{
+	set @pf,rand(190);
+if (@pf > 0 && @pf <= 15) getitem 28566,50;
+if (@pf > 15 && @pf <= 30) getitem 28567,50;
+if (@pf > 30 && @pf <= 45) getitem 28568,50;
+if (@pf > 45 && @pf <= 60) getitem 28569,50;
+if (@pf > 60 && @pf <= 75) getitem 28570,50;
+if (@pf > 75 && @pf <= 90) getitem 28566,50;
+if (@pf > 90 && @pf <= 105) getitem 28573,1;
+if (@pf > 105 && @pf <= 120) getitem 28574,1;
+if (@pf > 120 && @pf <= 135) getitem 28575,1;
+if (@pf > 135 && @pf <= 150) getitem 28576,1;
+if (@pf > 150 && @pf <= 165) getitem 28577,1;
+if (@pf > 165 && @pf <= 180) getitem 28578,1;
+if (@pf > 180 && @pf <= 185) getitem 13642,5;
+if (@pf > 185 && @pf <= 190) getitem 13645,1;
+	end;
+}
+
+function	script	Cards	{
+	set @cs,rand(14);
+	if (@cs == 0) getitem 26000,1;
+	if (@cs == 1) getitem 26001,1;
+	if (@cs == 2) getitem 26002,1;
+	if (@cs == 3) getitem 26003,1;
+	if (@cs == 4) getitem 26004,1;
+	if (@cs == 5) getitem 26005,1;
+	if (@cs == 6) getitem 26006,1;
+	if (@cs == 7) getitem 26007,1;
+	if (@cs == 8) getitem 26008,1;
+	if (@cs == 9) getitem 26009,1;
+	if (@cs == 10) getitem 26010,1;
+	if (@cs == 11) getitem 26011,1;
+	if (@cs == 12) getitem 26012,1;
+	if (@cs == 13) getitem 26013,1;
+	end;
+}
+
+function	script	Mvpcard	{
+	set @mc,rand(45);
+	if (@mc == 0) getitem 4407,1;
+	if (@mc == 1) getitem 4144,1;
+	if (@mc == 2) getitem 4147,1;
+	if (@mc == 3) getitem 4128,1;
+	if (@mc == 4) getitem 4143,1;
+	if (@mc == 5) getitem 4324,1;
+	if (@mc == 6) getitem 4318,1;
+	if (@mc == 7) getitem 4142,1;
+	if (@mc == 8) getitem 4374,1;
+	if (@mc == 9) getitem 4132,1;
+	if (@mc == 10) getitem 4054,1;
+	if (@mc == 11) getitem 4123,1;
+	if (@mc == 12) getitem 4047,1;
+	if (@mc == 13) getitem 4146,1;
+	if (@mc == 14) getitem 4131,1;
+	if (@mc == 15) getitem 4148,1;
+	if (@mc == 16) getitem 4121,1;
+	if (@mc == 17) getitem 4168,1;
+	if (@mc == 18) getitem 4135,1;
+	if (@mc == 19) getitem 4305,1;
+	if (@mc == 20) getitem 4276,1;
+	if (@mc == 21) getitem 4134,1;
+	if (@mc == 22) getitem 4330,1;
+	if (@mc == 23) getitem 4263,1;
+	if (@mc == 24) getitem 4236,1;
+	if (@mc == 25) getitem 4425,1;
+	if (@mc == 26) getitem 4174,1;
+	if (@mc == 27) getitem 4302,1;
+	if (@mc == 28) getitem 4342,1;
+	if (@mc == 29) getitem 4352,1;
+	if (@mc == 30) getitem 4376,1;
+	if (@mc == 31) getitem 4399,1;
+	if (@mc == 32) getitem 4386,1;
+	if (@mc == 33) getitem 4403,1;
+	if (@mc == 34) getitem 4408,1;
+	if (@mc == 35) getitem 4419,1;
+	if (@mc == 36) getitem 4430,1;
+	if (@mc == 37) getitem 4441,1;
+	if (@mc == 38) getitem 4357,1;
+	if (@mc == 39) getitem 4359,1;
+	if (@mc == 40) getitem 4361,1;
+	if (@mc == 41) getitem 4363,1;
+	if (@mc == 42) getitem 4365,1;
+	if (@mc == 43) getitem 4367,1;
+	if (@mc == 44) getitem 4137,1;
+	end;
+}
+
+function	script	Boxone	{
+	set @bo,rand(6);
+	if (@bo == 0) getitem 7598,1;
+	if (@bo == 1) getitem 7599,1;
+	if (@bo == 2) getitem 7600,1;
+	if (@bo == 3) getitem 7601,1;
+	if (@bo == 4) getitem 7602,1;
+	if (@bo == 5) getitem 28533,200;
+	end;
+}
+
+function	script	Boxsix	{
+	set @bo,rand(4);
+	if (@bo == 0) getitem 7461,1;
+	if (@bo == 1) getitem 7462,1;
+	if (@bo == 2) getitem 7463,1;
+	if (@bo == 3) getitem 7464,1;
+	end;
+}
+function	script	Boxfiv	{
+	set @bo,rand(6);
+	if (@bo == 0) getitem 28539,rand(50,70);
+	if (@bo == 1) getitem 28540,rand(50,70);
+	if (@bo == 2) getitem 28541,rand(50,70);
+	if (@bo == 3) getitem 28542,rand(50,70);
+	if (@bo == 4) getitem 28543,rand(50,70);
+	if (@bo == 5) getitem 28544,rand(50,70);
+	end;
+}
+
+function	script	Boxnine	{
+	set @bo,rand(7);
+	if (@bo == 0) getitem 7465,1;
+	if (@bo == 1) getitem 7466,1;
+	if (@bo == 2) getitem 7467,1;
+	if (@bo == 3) getitem 7468,1;
+	if (@bo == 4) getitem 7469,1;
+	if (@bo == 5) getitem 7470,1;
+	if (@bo == 6) getitem 7471,1;
+	end;
+}
+
+function	script	Boxhead	{
+	set @boh,rand(21);
+	if (@boh == 0) getitem 28545,50;
+	if (@boh == 1) getitem 28546,50;
+	if (@boh == 2) getitem 28547,50;
+	if (@boh == 3) getitem 28548,50;
+	if (@boh == 4) getitem 28549,50;
+	if (@boh == 5) getitem 28550,50;
+	if (@boh == 6) getitem 28551,50;
+	if (@boh == 7) getitem 28552,50;
+	if (@boh == 8) getitem 28553,50;
+	if (@boh == 9) getitem 28554,50;
+	if (@boh == 10) getitem 28555,50;
+	if (@boh == 11) getitem 28556,50;
+	if (@boh == 12) getitem 28557,50;
+	if (@boh == 13) getitem 28558,50;
+	if (@boh == 14) getitem 28559,50;
+	if (@boh == 15) getitem 28560,50;
+	if (@boh == 16) getitem 28561,50;
+	if (@boh == 17) getitem 28562,50;
+	if (@boh == 18) getitem 28563,50;
+	if (@boh == 19) getitem 28564,50;
+	if (@boh == 20) getitem 28565,50;
+	end;
+}
+
+function	script	Petmvp	{
+	set @pm,rand(44);
+	if (@pm == 0) getitem 28002,1;
+	if (@pm == 1) getitem 28003,1;
+	if (@pm == 2) getitem 28004,1;
+	if (@pm == 3) getitem 28005,1;
+	if (@pm == 4) getitem 28006,1;
+	if (@pm == 5) getitem 28007,1;
+	if (@pm == 6) getitem 28008,1;
+	if (@pm == 7) getitem 28009,1;
+	if (@pm == 8) getitem 28010,1;
+	if (@pm == 9) getitem 28011,1;
+	if (@pm == 10) getitem 28012,1;
+	if (@pm == 11) getitem 28013,1;
+	if (@pm == 12) getitem 28014,1;
+	if (@pm == 13) getitem 28015,1;
+	if (@pm == 14) getitem 28016,1;
+	if (@pm == 15) getitem 28017,1;
+	if (@pm == 16) getitem 28018,1;
+	if (@pm == 17) getitem 28019,1;
+	if (@pm == 18) getitem 28020,1;
+	if (@pm == 19) getitem 28021,1;
+	if (@pm == 20) getitem 28022,1;
+	if (@pm == 21) getitem 28023,1;
+	if (@pm == 22) getitem 28024,1;
+	if (@pm == 23) getitem 28025,1;
+	if (@pm == 24) getitem 28026,1;
+	if (@pm == 25) getitem 28027,1;
+	if (@pm == 26) getitem 28028,1;
+	if (@pm == 27) getitem 28029,1;
+	if (@pm == 28) getitem 28030,1;
+	if (@pm == 29) getitem 28031,1;
+	if (@pm == 30) getitem 28032,1;
+	if (@pm == 31) getitem 28033,1;
+	if (@pm == 32) getitem 28034,1;
+	if (@pm == 33) getitem 28035,1;
+	if (@pm == 34) getitem 28036,1;
+	if (@pm == 35) getitem 28037,1;
+	if (@pm == 36) getitem 28038,1;
+	if (@pm == 37) getitem 28039,1;
+	if (@pm == 38) getitem 19585,1;
+	if (@pm == 39) getitem 19587,1;
+	if (@pm == 40) getitem 19589,1;
+	if (@pm == 41) getitem 19591,1;
+	if (@pm == 42) getitem 19593,1;
+	if (@pm == 43) getitem 19595,1;
+	end;
+}
+
+function	script	Guwa	{
+	set @qs,rand(8);
+	if(@qs == 0)getitem 28579,rand(75,200);
+	if(@qs == 1)getitem 28580,rand(75,200);
+	if(@qs == 2)getitem 28581,rand(75,200);
+	if(@qs == 3)getitem 28582,rand(75,200);
+	if(@qs == 4)getitem 28583,rand(75,200);
+	if(@qs == 5)getitem 28584,rand(75,200);
+	if(@qs == 6)getitem 28585,rand(75,200);
+	if(@qs == 7)getitem 28586,rand(75,200);
+	end;
+}
+
+function	script	Boxthree	{
+	set @bth,rand(6);
+	if (@bth == 0) getitem 2395,1;
+	if (@bth == 1) getitem 2445,1;
+	if (@bth == 2) getitem 2773,1;
+	if (@bth == 3) getitem 25119,1;
+	if (@bth == 4) getitem 25123,1;
+	if (@bth == 5) getitem 25146,1;
+	end;
+}
+
+function	script	Piece	{
+	set @sp,rand(25);
+	if (@sp == 0) getitem 28588,rand(10,50);
+	if (@sp == 1) getitem 28589,rand(10,50);
+	if (@sp == 2) getitem 28590,rand(10,50);
+	if (@sp == 3) getitem 28591,rand(10,50);
+	if (@sp == 4) getitem 28592,rand(10,50);
+	if (@sp == 5) getitem 28593,rand(10,50);
+	if (@sp == 6) getitem 28594,rand(10,50);
+	if (@sp == 7) getitem 28595,rand(10,50);
+	if (@sp == 8) getitem 28596,rand(10,50);
+	if (@sp == 9) getitem 28597,rand(10,50);
+	if (@sp == 10) getitem 28598,rand(10,50);
+	if (@sp == 11) getitem 28599,rand(10,50);
+	if (@sp == 12) getitem 28600,rand(10,50);
+	if (@sp == 13) getitem 28601,rand(10,50);
+	if (@sp == 14) getitem 28602,rand(10,50);
+	if (@sp == 15) getitem 28603,rand(10,50);
+	if (@sp == 16) getitem 28604,rand(10,50);
+	if (@sp == 17) getitem 28605,rand(10,50);
+	if (@sp == 18) getitem 28606,rand(10,50);
+	if (@sp == 19) getitem 28607,rand(10,50);
+	if (@sp == 20) getitem 28608,rand(10,50);
+	if (@sp == 21) getitem 28609,rand(10,50);
+	if (@sp == 22) getitem 28610,rand(10,50);
+	if (@sp == 23) getitem 28611,rand(10,50);
+	if (@sp == 24) getitem 28612,rand(10,50);
+
+	end;
+}
+
+function	script	bonus	{
+	set @bonus,rand(0,259);
+	if (@bonus == 0) getitem 5356,1;
+	if (@bonus == 1) getitem 27007,1;
+	if (@bonus == 2) getitem 27119,1;
+	if (@bonus == 3) getitem 27187,1;
+	if (@bonus == 4) getitem 27207,1;
+	if (@bonus == 5) getitem 27209,1;
+	if (@bonus == 6) getitem 27211,1;
+	if (@bonus == 7) getitem 27327,1;
+	if (@bonus == 8) getitem 27507,1;
+	if (@bonus == 9) getitem 27511,1;
+	if (@bonus == 10 ) getitem 27512,1;
+	if (@bonus == 11 ) getitem 27513,1;
+	if (@bonus == 12 ) getitem 27514,1;
+	if (@bonus == 13 ) getitem 27516,1;
+	if (@bonus == 14 ) getitem 27518,1;
+	if (@bonus == 15 ) getitem 27519,1;
+	if (@bonus == 16 ) getitem 27523,1;
+	if (@bonus == 17 ) getitem 27524,1;
+	if (@bonus == 18 ) getitem 27528,1;
+	if (@bonus == 19 ) getitem 27541,1;
+	if (@bonus == 20 ) getitem 27542,1;
+	if (@bonus == 21 ) getitem 27543,1;
+	if (@bonus == 22 ) getitem 27544,1;
+	if (@bonus == 23 ) getitem 27545,1;
+	if (@bonus == 24 ) getitem 27546,1;
+	if (@bonus == 25 ) getitem 27554,1;
+	if (@bonus == 26 ) getitem 27557,1;
+	if (@bonus == 27 ) getitem 27579,1;
+	if (@bonus == 28 ) getitem 27587,1;
+	if (@bonus == 29 ) getitem 27594,1;
+	if (@bonus == 30 ) getitem 27596,1;
+	if (@bonus == 31 ) getitem 27598,1;
+	if (@bonus == 32 ) getitem 27664,1;
+	if (@bonus == 33 ) getitem 27688,1;
+	if (@bonus == 34 ) getitem 27701,1;
+	if (@bonus == 35 ) getitem 27702,1;
+	if (@bonus == 36 ) getitem 27704,1;
+	if (@bonus == 37 ) getitem 25004,1;
+	if (@bonus == 38 ) getitem 25005,1;
+	if (@bonus == 39 ) getitem 25006,1;
+	if (@bonus == 40 ) getitem 25012,1;
+	if (@bonus == 41 ) getitem 27532,1;
+	if (@bonus == 42 ) getitem 27537,1;
+	if (@bonus == 43 ) getitem 27538,1;
+	if (@bonus == 44 ) getitem 27539,1;
+	if (@bonus == 45 ) getitem 27563,1;
+	if (@bonus == 46 ) getitem 27564,1;
+	if (@bonus == 47 ) getitem 27603,1;
+	if (@bonus == 48 ) getitem 27606,1;
+	if (@bonus == 49 ) getitem 27609,1;
+	if (@bonus == 50 ) getitem 27615,1;
+	if (@bonus == 51 ) getitem 27616,1;
+	if (@bonus == 52 ) getitem 27622,1;
+	if (@bonus == 53 ) getitem 27631,1;
+	if (@bonus == 54 ) getitem 27633,1;
+	if (@bonus == 55 ) getitem 27635,1;
+	if (@bonus == 56 ) getitem 27668,1;
+	if (@bonus == 57 ) getitem 27672,1;
+	if (@bonus == 58 ) getitem 27677,1;
+	if (@bonus == 59 ) getitem 27684,1;
+	if (@bonus == 60 ) getitem 27690,1;
+	if (@bonus == 61 ) getitem 27698,1;
+	if (@bonus == 62 ) getitem 27699,1;
+	if (@bonus == 63 ) getitem 27700,1;
+	if (@bonus == 64 ) getitem 27712,1;
+	if (@bonus == 65 ) getitem 27720,1;
+	if (@bonus == 66 ) getitem 27743,1;
+	if (@bonus == 67 ) getitem 27745,1;
+	if (@bonus == 68 ) getitem 27747,1;
+	if (@bonus == 69 ) getitem 27786,1;
+	if (@bonus == 70 ) getitem 27836,1;
+	if (@bonus == 71 ) getitem 27837,1;
+	if (@bonus == 72 ) getitem 27839,1;
+	if (@bonus == 73 ) getitem 27847,1;
+	if (@bonus == 74 ) getitem 27869,1;
+	if (@bonus == 75 ) getitem 27880,1;
+	if (@bonus == 76 ) getitem 27896,1;
+	if (@bonus == 77 ) getitem 27897,1;
+	if (@bonus == 78 ) getitem 27922,1;
+	if (@bonus == 79 ) getitem 27939,1;
+	if (@bonus == 80 ) getitem 29033,1;
+	if (@bonus == 81 ) getitem 29061,1;
+	if (@bonus == 82 ) getitem 29066,1;
+	if (@bonus == 83 ) getitem 29091,1;
+	if (@bonus == 84 ) getitem 5775,1;
+	if (@bonus == 85 ) getitem 27328,1;
+	if (@bonus == 86 ) getitem 27520,1;
+	if (@bonus == 87 ) getitem 27547,1;
+	if (@bonus == 88 ) getitem 27571,1;
+	if (@bonus == 89 ) getitem 27625,1;
+	if (@bonus == 90 ) getitem 27770,1;
+	if (@bonus == 91 ) getitem 27785,1;
+	if (@bonus == 92 ) getitem 27822,1;
+	if (@bonus == 93 ) getitem 27834,1;
+	if (@bonus == 94 ) getitem 27870,1;
+	if (@bonus == 95 ) getitem 27879,1;
+	if (@bonus == 96 ) getitem 27883,1;
+	if (@bonus == 97 ) getitem 27890,1;
+	if (@bonus == 98 ) getitem 27917,1;
+	if (@bonus == 99 ) getitem 29076,1;
+	if (@bonus == 100 ) getitem 29081,1;
+	if (@bonus == 101 ) getitem 27930,1;
+	if (@bonus == 102 ) getitem 27931,1;
+	if (@bonus == 103 ) getitem 27935,1;
+	if (@bonus == 104 ) getitem 27941,1;
+	if (@bonus == 105 ) getitem 27969,1;
+	if (@bonus == 106 ) getitem 29012,1;
+	if (@bonus == 107 ) getitem 29024,1;
+	if (@bonus == 108 ) getitem 29025,1;
+	if (@bonus == 109 ) getitem 29030,1;
+	if (@bonus == 110 ) getitem 29031,1;
+	if (@bonus == 111 ) getitem 29090,1;
+	if (@bonus == 112 ) getitem 32001,1;
+	if (@bonus == 113 ) getitem 32002,1;
+	if (@bonus == 114 ) getitem 32004,1;
+	if (@bonus == 115 ) getitem 32005,1;
+	if (@bonus == 116 ) getitem 32006,1;
+	if (@bonus == 117 ) getitem 32007,1;
+	if (@bonus == 118 ) getitem 32008,1;
+	if (@bonus == 119 ) getitem 32009,1;
+	if (@bonus == 120 ) getitem 32010,1;
+	if (@bonus == 121 ) getitem 32011,1;
+	if (@bonus == 122 ) getitem 32012,1;
+	if (@bonus == 123 ) getitem 32014,1;
+	if (@bonus == 124 ) getitem 32015,1;
+	if (@bonus == 125 ) getitem 32016,1;
+	if (@bonus == 126 ) getitem 32017,1;
+	if (@bonus == 127 ) getitem 32018,1;
+	if (@bonus == 128 ) getitem 32019,1;
+	if (@bonus == 129 ) getitem 32020,1;
+	if (@bonus == 130 ) getitem 32021,1;
+	if (@bonus == 131 ) getitem 32022,1;
+	if (@bonus == 132 ) getitem 32024,1;
+	if (@bonus == 133 ) getitem 32025,1;
+	if (@bonus == 134 ) getitem 32026,1;
+	if (@bonus == 135 ) getitem 32027,1;
+	if (@bonus == 136 ) getitem 32028,1;
+	if (@bonus == 137 ) getitem 32029,1;
+	if (@bonus == 138 ) getitem 32031,1;
+	if (@bonus == 139 ) getitem 32032,1;
+	if (@bonus == 140 ) getitem 32033,1;
+	if (@bonus == 141 ) getitem 32034,1;
+	if (@bonus == 142 ) getitem 32035,1;
+	if (@bonus == 143 ) getitem 32036,1;
+	if (@bonus == 144 ) getitem 27000,1;
+	if (@bonus == 145 ) getitem 27001,1;
+	if (@bonus == 146 ) getitem 27002,1;
+	if (@bonus == 147 ) getitem 27003,1;
+	if (@bonus == 148 ) getitem 27004,1;
+	if (@bonus == 149 ) getitem 27005,1;
+	if (@bonus == 150 ) getitem 27006,1;
+	if (@bonus == 151 ) getitem 27007,1;
+	if (@bonus == 152 ) getitem 27008,1;
+	if (@bonus == 153 ) getitem 27009,1;
+	if (@bonus == 154 ) getitem 27010,1;
+	if (@bonus == 155 ) getitem 27011,1;
+	if (@bonus == 156 ) getitem 27012,1;
+	if (@bonus == 157 ) getitem 27013,1;
+	if (@bonus == 158 ) getitem 27014,1;
+	if (@bonus == 159 ) getitem 27015,1;
+	if (@bonus == 160 ) getitem 27016,1;
+	if (@bonus == 161 ) getitem 27017,1;
+	if (@bonus == 162 ) getitem 27018,1;
+	if (@bonus == 163 ) getitem 27019,1;
+	if (@bonus == 164 ) getitem 27020,1;
+	if (@bonus == 165 ) getitem 27021,1;
+	if (@bonus == 166 ) getitem 27022,1;
+	if (@bonus == 167 ) getitem 27023,1;
+	if (@bonus == 168 ) getitem 27024,1;
+	if (@bonus == 169 ) getitem 27025,1;
+	if (@bonus == 170 ) getitem 27026,1;
+	if (@bonus == 171 ) getitem 27027,1;
+	if (@bonus == 172 ) getitem 27028,1;
+	if (@bonus == 173 ) getitem 27029,1;
+	if (@bonus == 174 ) getitem 27030,1;
+	if (@bonus == 175 ) getitem 27031,1;
+	if (@bonus == 176 ) getitem 27032,1;
+	if (@bonus == 177 ) getitem 27033,1;
+	if (@bonus == 178 ) getitem 27034,1;
+	if (@bonus == 179 ) getitem 27035,1;
+	if (@bonus == 180 ) getitem 27036,1;
+	if (@bonus == 181 ) getitem 27037,1;
+	if (@bonus == 182 ) getitem 27038,1;
+	if (@bonus == 183 ) getitem 27039,1;
+	if (@bonus == 184 ) getitem 27040,1;
+	if (@bonus == 185 ) getitem 27041,1;
+	if (@bonus == 186 ) getitem 27042,1;
+	if (@bonus == 187 ) getitem 27043,1;
+	if (@bonus == 188 ) getitem 27044,1;
+	if (@bonus == 189 ) getitem 27045,1;
+	if (@bonus == 190 ) getitem 27046,1;
+	if (@bonus == 191 ) getitem 27047,1;
+	if (@bonus == 192 ) getitem 27048,1;
+	if (@bonus == 193 ) getitem 27049,1;
+	if (@bonus == 194 ) getitem 27050,1;
+	if (@bonus == 195 ) getitem 27051,1;
+	if (@bonus == 196 ) getitem 27052,1;
+	if (@bonus == 197 ) getitem 27053,1;
+	if (@bonus == 198 ) getitem 27054,1;
+	if (@bonus == 199 ) getitem 27055,1;
+	if (@bonus == 200 ) getitem 27056,1;
+	if (@bonus == 201 ) getitem 27057,1;
+	if (@bonus == 202 ) getitem 27058,1;
+	if (@bonus == 203 ) getitem 27059,1;
+	if (@bonus == 204 ) getitem 27060,1;
+	if (@bonus == 205 ) getitem 27061,1;
+	if (@bonus == 206 ) getitem 27062,1;
+	if (@bonus == 207 ) getitem 27063,1;
+	if (@bonus == 208 ) getitem 27064,1;
+	if (@bonus == 209 ) getitem 27065,1;
+	if (@bonus == 210 ) getitem 27066,1;
+	if (@bonus == 211 ) getitem 27067,1;
+	if (@bonus == 212 ) getitem 27068,1;
+	if (@bonus == 213 ) getitem 27069,1;
+	if (@bonus == 214 ) getitem 27070,1;
+	if (@bonus == 215 ) getitem 27071,1;
+	if (@bonus == 216 ) getitem 27072,1;
+	if (@bonus == 217 ) getitem 27073,1;
+	if (@bonus == 218 ) getitem 27074,1;
+	if (@bonus == 219 ) getitem 27075,1;
+	if (@bonus == 220 ) getitem 27076,1;
+	if (@bonus == 221 ) getitem 27077,1;
+	if (@bonus == 222 ) getitem 27078,1;
+	if (@bonus == 223 ) getitem 27079,1;
+	if (@bonus == 224 ) getitem 27080,1;
+	if (@bonus == 225 ) getitem 27081,1;
+	if (@bonus == 226 ) getitem 27082,1;
+	if (@bonus == 227 ) getitem 27083,1;
+	if (@bonus == 228 ) getitem 27084,1;
+	if (@bonus == 229 ) getitem 27085,1;
+	if (@bonus == 230 ) getitem 27086,1;
+	if (@bonus == 231 ) getitem 27087,1;
+	if (@bonus == 232 ) getitem 27088,1;
+	if (@bonus == 233 ) getitem 27089,1;
+	if (@bonus == 234 ) getitem 27090,1;
+	if (@bonus == 235 ) getitem 27091,1;
+	if (@bonus == 236 ) getitem 27092,1;
+	if (@bonus == 237 ) getitem 27093,1;
+	if (@bonus == 238 ) getitem 27094,1;
+	if (@bonus == 239 ) getitem 27095,1;
+	if (@bonus == 240 ) getitem 27096,1;
+	if (@bonus == 241 ) getitem 27097,1;
+	if (@bonus == 242 ) getitem 27098,1;
+	if (@bonus == 243 ) getitem 27099,1;
+	if (@bonus == 244 ) getitem 27100,1;
+	if (@bonus == 245 ) getitem 27101,1;
+	if (@bonus == 246 ) getitem 27102,1;
+	if (@bonus == 247 ) getitem 27103,1;
+	if (@bonus == 248 ) getitem 27104,1;
+	if (@bonus == 249 ) getitem 27105,1;
+	if (@bonus == 250 ) getitem 27106,1;
+	if (@bonus == 251 ) getitem 27107,1;
+	if (@bonus == 252 ) getitem 27108,1;
+	if (@bonus == 253 ) getitem 27109,1;
+	if (@bonus == 254 ) getitem 27110,1;
+	if (@bonus == 255 ) getitem 27111,1;
+	if (@bonus == 256 ) getitem 27112,1;
+	if (@bonus == 257 ) getitem 27113,1;
+	if (@bonus == 258 ) getitem 27114,1;
+	if (@bonus == 259 ) getitem 27115,1;
+
+
+
+
+
+	if (@bonus > 111 && @bonus <= 143){announce "[伺服器公告] 恭喜(" + strcharinfo(0) + ") 從隨機時裝轉蛋取得高級時裝。",bc_all;}
+	end;
+}
+
+function	script	boss1hcard	{
+	set @card,rand(26);
+	if (@card == 0) getitem 26014,1;
+	if (@card == 1) getitem 26015,1;
+	if (@card == 2) getitem 26016,1;
+	if (@card == 3) getitem 26018,1;
+	if (@card == 4) getitem 26019,1;
+	if (@card == 5) getitem 26021,1;
+	if (@card == 6) getitem 26023,1;
+	if (@card == 7) getitem 26024,1;
+	if (@card == 8) getitem 26025,1;
+	if (@card == 9) getitem 26026,1;
+	if (@card == 10) getitem 26028,1;
+	if (@card == 11) getitem 26030,1;
+	if (@card == 12) getitem 26032,1;
+	if (@card == 13) getitem 26033,1;
+	if (@card == 14) getitem 26034,1;
+	if (@card == 15) getitem 26035,1;
+	if (@card == 16) getitem 26065,1;
+	if (@card == 17) getitem 26066,1;
+	if (@card == 18) getitem 26067,1;
+	if (@card == 19) getitem 26070,1;
+	if (@card == 20) getitem 26071,1;
+	if (@card == 21) getitem 26072,1;
+	if (@card == 22) getitem 26074,1;
+	if (@card == 23) getitem 26075,1;
+	if (@card == 24) getitem 26076,1;
+	if (@card == 25) getitem 26078,1;
+	end;
+}

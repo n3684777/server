@@ -1,0 +1,60 @@
+prontera,144,190,5	script	PVP傳送::PVP	468,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+        next;
+	menu 
+		"PVP 羅盤 (^3355FF目前"+ getmapusers("pvp_n_1-5.gat") +"人^000000)",Lprt1,
+		"離開",LEnd1;
+	Lprt1:
+		warp "pvp_n_1-5.gat",0,0;
+		close;
+	LEnd1:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+OnInit:
+	waitingroom "PVP傳送",0;
+end;
+}
+
+prontera,144,186,5	script	攻城傳送人員::GVG	468,{
+	mes "[傳送人員]";
+	mes "您好!歡迎使用本服務!";
+	mes "請問您想傳送到哪裡?";
+
+	if( $@GVGEND == 1 ){
+	mes " [ 目前城戰領域^996699普隆德拉^000000 ]";
+        next;
+	menu 
+		"普隆德拉 主要城堡(^3355FF目前"+ getmapusers("prtg_cas03.gat") +"人^000000)",Lshop,
+		"離開",LEnd;
+	}
+	if( $@GVGEND == 2 ){
+	mes " [ 城戰^0000FF休息時間^000000 ]";
+	mes " 下一座城 ^996699普隆德拉^000000 ";
+        next;
+	menu 
+		"普隆德拉 主要城堡(^3355FF目前"+ getmapusers("prtg_cas03.gat") +"人^000000)",Lshop,
+		"離開",LEnd;
+	}
+	mes " [ ^FF0000非城戰時間^000000 ]";
+        next;
+	menu 
+	"普隆德拉 主要城堡(^3355FF目前"+ getmapusers("prtg_cas03.gat") +"人^000000)",Lshop,
+	"離開",LEnd;
+
+	Lshop:
+		warp "prt_gld.gat",153,134;
+		close;
+	LEnd:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+OnInit:
+	waitingroom "攻城傳送人員",0;
+end;
+}
+
+pay_arche,71,144,4	duplicate(PVP)	PVP傳送#2pay	468
+pay_arche,71,140,4	duplicate(GVG)	攻城傳送人員#2pay	468

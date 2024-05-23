@@ -1,0 +1,30 @@
+/*
+【原創腳本】: 【聊天室顯示時間】
+【腳本類型】：通用
+【腳本作者】： s7623755 7795719 都是本人我           
+【腳本介紹】: gm老是在/w查人數嗎 不用這個腳本可以免打/w摟
+*/
+prontera,163,174,3	script	現在時間#1	935,{
+OnInit:
+OnTimer60000:
+set .s,.s+1;
+if(.s>59){set .s,0;set .m,.m+1;}
+if(.m>59){set .m,0;set .h,.h+1;}
+if(.h>23){set .h,0;set .d,.d+1;}
+delwaitingroom;
+waitingroom "【"+gettime(7)+"年"+gettime(6)+"月"+gettime(5)+"日"+gettime(3)+ "點" +gettime(2)+ "分】",0;
+initnpctimer;
+}
+
+
+pay_arche,66,132,3	script	現在時間#2	935,{
+OnInit:
+OnTimer60000:
+set .s,.s+1;
+if(.s>59){set .s,0;set .m,.m+1;}
+if(.m>59){set .m,0;set .h,.h+1;}
+if(.h>23){set .h,0;set .d,.d+1;}
+delwaitingroom;
+waitingroom "【"+gettime(7)+"年"+gettime(6)+"月"+gettime(5)+"日"+gettime(3)+ "點" +gettime(2)+ "分】",0;
+initnpctimer;
+}

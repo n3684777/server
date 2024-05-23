@@ -1,0 +1,294 @@
+payon,151,201,8	script	進階頭上	595,{ 
+	
+
+        mes " [進階頭上製作]";
+	mes "您需要什麼?";
+	mes "^660000藍色GM簽名球[4s]^000000 ALL+130、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699三階頭上各1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各4000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000綠色GM簽名球[4s]^000000 ALL+150、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699藍色GM簽名球1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各5000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000橘色GM簽名球[4s]^000000 ALL+170、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699綠色GM簽名球1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各6000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000黑社會波利頭飾[4s]^000000 ALL+190、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699橘色GM簽名球1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各7000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000RO十周年頭飾[4s]^000000 ALL+210、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699黑社會波利頭飾1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各8000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000RO十周年王冠[4s]^000000 ALL+230、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699RO十周年頭飾1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各9000個、破滅的硬幣30000個。^000000";
+	next;
+        mes " [進階頭上製作]";
+	mes "^660000白幽靈紳士帽[4s]^000000 ALL+250、HP+100%、不可破壞、自動聖母之祈福，神威祈福，天使之怒技能，^000033當精練度+20時，HP+100%^000000。";
+	mes "需要材料是^996699RO十周年王冠1個、乾卦、兌卦、離卦、震卦、巽卦、坎卦、艮卦、坤卦各10000個、破滅的硬幣30000個。^000000";
+	next;
+	menu    "^00FA03藍色GM簽名球^000000",a,
+		"^00F7FA綠色GM簽名球^000000",b,
+		"^0300FA橘色GM簽名球^000000",c,
+		"^F7FA00黑社會波利頭飾^000000",d,
+		"^8000FARO十周年頭飾^000000",e,
+		"^FA0300RO十周年王冠^000000",f,
+		"^7F7F7F白幽靈紳士帽^000000",g,
+		"離開",h;
+
+	a:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(5210)< 1) goto NOitem;
+	if(countitem(5376)< 1) goto NOitem;
+	if(countitem(29008)< 1) goto NOitem;
+	if(countitem(27346)< 1) goto NOitem;
+	if(countitem(27413)< 1) goto NOitem;
+	if(countitem(27417)< 1) goto NOitem;
+	if(countitem(27428)< 1) goto NOitem;
+	if(countitem(27429)< 1) goto NOitem;
+	if(countitem(27430)< 1) goto NOitem;
+	if(countitem(27431)< 1) goto NOitem;
+	if(countitem(27501)< 1) goto NOitem;
+	if(countitem(28579)< 4000) goto NOitem;
+	if(countitem(28580)< 4000) goto NOitem;
+	if(countitem(28581)< 4000) goto NOitem;
+	if(countitem(28582)< 4000) goto NOitem;
+	if(countitem(28583)< 4000) goto NOitem;
+	if(countitem(28584)< 4000) goto NOitem;
+	if(countitem(28585)< 4000) goto NOitem;
+	if(countitem(28586)< 4000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 5210,1;
+	delitem 5376,1;
+	delitem 29008,1;
+	delitem 27346,1;
+	delitem 27413,1;
+	delitem 27417,1;
+	delitem 27428,1;
+	delitem 27429,1;
+	delitem 27430,1;
+	delitem 27431,1;
+	delitem 27501,1;
+	delitem 28579,4000;
+	delitem 28580,4000;
+	delitem 28581,4000;
+	delitem 28582,4000;
+	delitem 28583,4000;
+	delitem 28584,4000;
+	delitem 28585,4000;
+	delitem 28586,4000;
+	delitem 7606,30000;
+	getitem 27253,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【藍色GM簽名球】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000藍色GM簽名球^000000啦!";
+	close;
+
+	b:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27253)< 1) goto NOitem;
+	if(countitem(28579)< 5000) goto NOitem;
+	if(countitem(28580)< 5000) goto NOitem;
+	if(countitem(28581)< 5000) goto NOitem;
+	if(countitem(28582)< 5000) goto NOitem;
+	if(countitem(28583)< 5000) goto NOitem;
+	if(countitem(28584)< 5000) goto NOitem;
+	if(countitem(28585)< 5000) goto NOitem;
+	if(countitem(28586)< 5000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27253,1;
+	delitem 28579,5000;
+	delitem 28580,5000;
+	delitem 28581,5000;
+	delitem 28582,5000;
+	delitem 28583,5000;
+	delitem 28584,5000;
+	delitem 28585,5000;
+	delitem 28586,5000;
+	delitem 7606,30000;
+	getitem 27254,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【綠色GM簽名球】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000綠色GM簽名球^000000啦!";
+	close;
+
+	c:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27254)< 1) goto NOitem;
+	if(countitem(28579)< 6000) goto NOitem;
+	if(countitem(28580)< 6000) goto NOitem;
+	if(countitem(28581)< 6000) goto NOitem;
+	if(countitem(28582)< 6000) goto NOitem;
+	if(countitem(28583)< 6000) goto NOitem;
+	if(countitem(28584)< 6000) goto NOitem;
+	if(countitem(28585)< 6000) goto NOitem;
+	if(countitem(28586)< 6000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27254,1;
+	delitem 28579,6000;
+	delitem 28580,6000;
+	delitem 28581,6000;
+	delitem 28582,6000;
+	delitem 28583,6000;
+	delitem 28584,6000;
+	delitem 28585,6000;
+	delitem 28586,6000;
+	delitem 7606,30000;
+	getitem 27255,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【橘色GM簽名球】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000橘色GM簽名球^000000啦!";
+	close;
+
+	d:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27255)< 1) goto NOitem;
+	if(countitem(28579)< 7000) goto NOitem;
+	if(countitem(28580)< 7000) goto NOitem;
+	if(countitem(28581)< 7000) goto NOitem;
+	if(countitem(28582)< 7000) goto NOitem;
+	if(countitem(28583)< 7000) goto NOitem;
+	if(countitem(28584)< 7000) goto NOitem;
+	if(countitem(28585)< 7000) goto NOitem;
+	if(countitem(28586)< 7000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27255,1;
+	delitem 28579,7000;
+	delitem 28580,7000;
+	delitem 28581,7000;
+	delitem 28582,7000;
+	delitem 28583,7000;
+	delitem 28584,7000;
+	delitem 28585,7000;
+	delitem 28586,7000;
+	delitem 7606,30000;
+	getitem 27861,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【黑社會波利頭飾】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000黑社會波利頭飾^000000啦!";
+	close;
+
+	e:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27861)< 1) goto NOitem;
+	if(countitem(28579)< 8000) goto NOitem;
+	if(countitem(28580)< 8000) goto NOitem;
+	if(countitem(28581)< 8000) goto NOitem;
+	if(countitem(28582)< 8000) goto NOitem;
+	if(countitem(28583)< 8000) goto NOitem;
+	if(countitem(28584)< 8000) goto NOitem;
+	if(countitem(28585)< 8000) goto NOitem;
+	if(countitem(28586)< 8000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27861,1;
+	delitem 28579,8000;
+	delitem 28580,8000;
+	delitem 28581,8000;
+	delitem 28582,8000;
+	delitem 28583,8000;
+	delitem 28584,8000;
+	delitem 28585,8000;
+	delitem 28586,8000;
+	delitem 7606,30000;
+	getitem 27829,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【RO十周年頭飾】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000RO十周年頭飾^000000啦!";
+	close;
+
+	f:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27829)< 1) goto NOitem;
+	if(countitem(28579)< 9000) goto NOitem;
+	if(countitem(28580)< 9000) goto NOitem;
+	if(countitem(28581)< 9000) goto NOitem;
+	if(countitem(28582)< 9000) goto NOitem;
+	if(countitem(28583)< 9000) goto NOitem;
+	if(countitem(28584)< 9000) goto NOitem;
+	if(countitem(28585)< 9000) goto NOitem;
+	if(countitem(28586)< 9000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27829,1;
+	delitem 28579,9000;
+	delitem 28580,9000;
+	delitem 28581,9000;
+	delitem 28582,9000;
+	delitem 28583,9000;
+	delitem 28584,9000;
+	delitem 28585,9000;
+	delitem 28586,9000;
+	delitem 7606,30000;
+	getitem 27830,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【RO十周年王冠】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000RO十周年王冠^000000啦!";
+	close;
+
+	g:
+        mes " [進階頭上製作]";
+	mes "檢查材料中...";
+	next;
+	if(countitem(27830)< 1) goto NOitem;
+	if(countitem(28579)< 10000) goto NOitem;
+	if(countitem(28580)< 10000) goto NOitem;
+	if(countitem(28581)< 10000) goto NOitem;
+	if(countitem(28582)< 10000) goto NOitem;
+	if(countitem(28583)< 10000) goto NOitem;
+	if(countitem(28584)< 10000) goto NOitem;
+	if(countitem(28585)< 10000) goto NOitem;
+	if(countitem(28586)< 10000) goto NOitem;
+	if(countitem(7606)< 30000) goto NOitem;
+	delitem 27830,1;
+	delitem 28579,10000;
+	delitem 28580,10000;
+	delitem 28581,10000;
+	delitem 28582,10000;
+	delitem 28583,10000;
+	delitem 28584,10000;
+	delitem 28585,10000;
+	delitem 28586,10000;
+	delitem 7606,30000;
+	getitem 29010,1;
+
+        mes " [進階頭上製作]";
+	announce "★☆★☆【公告】玩家 "+strcharinfo(0)+" 已經製作出了【白幽靈紳士帽】啦!!!!★☆★☆",15;
+	mes "恭喜你製作出了^FF0000白幽靈紳士帽^000000啦!";
+	close;
+
+	h:
+        mes " [進階頭上製作]";
+	mes "嗯...有需要製作的話隨時歡迎你!";
+	close;
+
+	NOitem:
+	mes " [進階頭上製作]";
+	mes "材料不充足，麻煩您檢查一下再過來吧!";
+	close;
+OnInit:
+	waitingroom "進階頭上",0;
+	end;	}
+
+
+
+

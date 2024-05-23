@@ -1,0 +1,95 @@
+xmas,154,125,4	script	神秘人	997,{
+	mes ".............";
+	mes "想把卡片升級.";
+	mes "只有解任務...";
+	mes "拿到任務物品才可以";
+	mes ".............";
+	mes "有何貴幹?....";
+	next;
+	menu
+		"我想把卡片升級",c1,
+		"我想聽聽要怎麼升級",c2,
+		"沒事...",c3;
+
+c1:
+	mes "你要升級哪張卡片?";
+	next;
+	menu
+		"劉備卡片",cc1,
+		"關羽卡片",cc2,
+		"張飛卡片",cc3,
+		"曹操卡片",cc4,
+		"孫權卡片",cc5,
+		"呂布卡片",cc6;
+
+cc1:
+	if ((countitem(26000) < 1) || (countitem(28573) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26000,1;
+	delitem 28573,1;
+	getitem 26014,1;
+	close;
+
+cc2:
+	if ((countitem(26001) < 1) || (countitem(28574) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26001,1;
+	delitem 28574,1;
+	getitem 26015,1;
+	close;
+
+cc3:
+	if ((countitem(26002) < 1) || (countitem(28575) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26002,1;
+	delitem 28575,1;
+	getitem 26016,1;
+	close;
+
+cc4:
+	if ((countitem(26003) < 1) || (countitem(28576) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26003,1;
+	delitem 28576,1;
+	getitem 26021,1;
+	close;
+
+cc5:
+	if ((countitem(26006) < 1) || (countitem(28577) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26006,1;
+	delitem 28577,1;
+	getitem 26028,1;
+	close;
+
+cc6:
+	if ((countitem(26009) < 1) || (countitem(28578) < 1)) goto NOitem;
+	mes "那就升級吧";
+	next;
+	delitem 26009,1;
+	delitem 28578,1;
+	getitem 26035,1;
+	close;
+
+c2:
+	mes "仁之證+劉備卡片";
+	mes "義之證+關羽卡片";
+	mes "威之證+張飛卡片";
+	mes "奸之證+曹操卡片";
+	mes "謀之證+孫權卡片";
+	mes "鬼之證+呂布卡片";
+	close;
+
+c3:
+	close;
+
+NOitem:
+	mes "你沒帶夠材料...";
+	close;
+	end;
+}

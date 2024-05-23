@@ -1,0 +1,493 @@
+//===== Athena Script ========================================
+//= Poring Race System
+//===== By: ==================================================
+//= Masao
+//= Original Script from Zell_ff8 & xianz
+//===== Current Version: =====================================
+//= 1.0
+//===== Compatible With: =====================================
+//= Any eAthena SVN
+//===== Description: =========================================
+//= Poring Race
+//===== Additional Comments: =================================
+//= Version 1.0 if there are any Bugs please let me know.
+//= Thanks to goddameit for helping me with the prize distribution.
+//============================================================
+function	script	Reward_PRS	{
+        set @gx,rand(11);
+	if (@gx ==0)getitem 13644,300;
+	if (@gx ==1)getitem 28570,100;
+	if (@gx ==2)getitem 28566,rand(100,150);
+	if (@gx ==3)getitem 28567,rand(100,150);
+	if (@gx ==4)getitem 28568,rand(100,150);
+	if (@gx ==5)getitem 28613,rand(100,150);
+	if (@gx ==6)getitem 28587,rand(100,150);
+	if (@gx ==7)getitem 13634,2;
+        if (@gx ==8)getitem 13639,2;
+        if (@gx ==9)getitem 13638,100;
+        if (@gx ==10)getitem 13638,110;
+
+return;
+}
+-	script	PraceAnnouncer	-1,{
+
+OnClock0340:
+OnClock0740:
+OnClock1140:
+OnClock1540:
+OnClock1940:
+OnClock2340:
+	set $@accessPrace,1;
+	initnpctimer "競賽管理員#prace0";
+	announce "【波利賽跑】要開始了，請到娛樂區進場！",0;
+	end;
+}
+
+amatsu,108,164,5	script	波利賽跑傳送員	909,{
+
+	set .@name$,"[波利賽跑傳送員]";
+	if ($@accessPrace == 0&&!getgmlevel()) goto L_PraceOff;
+
+	mes .@name$;
+	mes "你想要移動到波利賽跑的地圖嗎??";
+	menu "是!",-,"不, 謝了.",L_Cancel,"強制開始遊戲[GM專用]",bscasc;
+	close2;
+	warp "p_track01",74,42;
+	end;
+bscasc:
+	if(!getgmlevel()){close;}
+	set $@accessPrace,1;
+	initnpctimer "競賽管理員#prace0";
+	announce "【波利賽跑】要開始了，請到娛樂區進場！",0;
+	close;
+L_Cancel:
+	mes .@name$;
+	mes "OK, 掰.";
+	close;
+
+L_PraceOff:
+	set @PraceTime, gettime(3) + 4;
+	if (gettime(3) == 1) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 2) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 3) set @PraceTime, @PraceTime-3;
+	
+	if (gettime(3) == 5) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 6) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 7) set @PraceTime, @PraceTime-3;
+	
+	if (gettime(3) == 9) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 10) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 11) set @PraceTime, @PraceTime-3;
+	
+	if (gettime(3) == 13) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 14) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 15) set @PraceTime, @PraceTime-3;
+	
+	if (gettime(3) == 17) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 18) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 19) set @PraceTime, @PraceTime-3;
+	
+	if (gettime(3) == 21) set @PraceTime, @PraceTime-1;
+	if (gettime(3) == 22) set @PraceTime, @PraceTime-2;
+	if (gettime(3) == 23) set @PraceTime, @PraceTime-3;
+	mes .@name$;
+	mes "波利賽跑關閉中.";
+	mes "下一場時間是 "+@PraceTime+".";
+	mes "而現在是 "+gettime(3)+":"+gettime(2)+".";
+	close;
+}
+
+p_track01,69,38,4	script	競賽管理員#prace0	765,{
+
+	set .@name$,"[競賽管理員]";
+	set .@prace_zeny,5000000;
+	if ($@prace_random < 1) callsub OnInit;
+	if (@prace_bet == 1) goto L_AlreadyPlaying;
+	if ($@goddameittt) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+
+	mes .@name$;
+	mes "你想在哪個波利上下賭注呢??";
+	mes "賭注會需要花費你 "+.@prace_zeny+" Zeny.";
+	next;
+	menu "波利",L_P1,"天使波利",L_P2,"金屬波利",L_P3,"惡魔波利",L_P4,"聖誕波利",L_P5,"波波利",L_P6,"不下注",-;
+
+	mes .@name$; 
+	mes "祝你有美好的一天.";
+	close;
+
+L_P1:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"波利";
+	goto L_Ready;
+L_P2:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"天使波利";
+	goto L_Ready;
+L_P3:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"金屬波利";
+	goto L_Ready;
+L_P4:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"惡魔波利";
+	goto L_Ready;
+L_P5:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"聖誕波利";
+	goto L_Ready;
+L_P6:
+	if (Zeny < .@prace_zeny) goto L_NoZeny;
+	if ($@goddameittt == 1) {
+	mes .@name$;
+	mes "比賽已經開始了...";
+	close;
+	}
+	set Zeny,Zeny-.@prace_zeny;
+	set @prace_winner$,"波波利";
+	goto L_Ready;
+
+L_Ready:
+	set $@prace_bets,$@prace_bets+1;
+	set $@prace_bidders[$@prace_bets],getcharid(3);
+	set @prace_bet,1;
+	mes .@name$;
+	npctalk strcharinfo(0)+"參加了這此的賭注!";
+	close;
+
+L_AlreadyPlaying:
+	mes .@name$;
+	mes "你已經下賭注在 ^00bb00"+@prace_winner$+"^000000 上了.";
+	close;
+
+L_NoZeny:
+	mes .@name$;
+	mes "錢不夠喔.";
+	close;
+
+OnInit:
+	set $@prace_random,70;
+	set $@prace_random2,600;
+	end;
+
+OnTimer60000:
+	mapannounce "p_track01","3 分鐘後開始比賽!",1,0xFFAB54;
+	end;
+
+OnTimer120000:
+	mapannounce "p_track01","2 分鐘後開始比賽!",1,0xFFAB54;
+	end;
+
+OnTimer180000:
+	mapannounce "p_track01","1 分鐘後開始比賽!",1,0xFFAB54;
+	end;
+
+OnTimer240000:
+	mapannounce "p_track01","預備....",1,0xFFAB54;
+	end;
+
+OnTimer241000:
+	mapannounce "p_track01","3...",1,0xFFAB54;
+	end;
+
+OnTimer242000:
+	mapannounce "p_track01","2...",1,0xFFAB54;
+	end;
+
+OnTimer243000:
+	donpcevent "競賽管理員#prace0::OnStartRace";
+	mapannounce "p_track01","1...",1,0xFFAB54;
+	end;
+
+OnTimer243500:
+	mapannounce "p_track01","Go~!!!",1,0xFFAB54;
+	set $@goddameittt,1;
+	end;
+
+OnTimer303500:
+	set $@prace_winner$,"";
+	set $@prace_bets,0;
+	callsub ReturnRace;
+	end;
+
+OnStartRace:
+	donpcevent "波利#prace1::OnRace";
+	donpcevent "天使波利#prace2::OnRace";
+	donpcevent "金屬波利#prace3::OnRace";
+	donpcevent "惡魔波利#prace4::OnRace";
+	donpcevent "聖誕波利#prace5::OnRace";
+	donpcevent "波波利#prace6::OnRace";
+	end;
+
+OnStopRace:
+	donpcevent "波利#prace1::OnStop";
+	donpcevent "天使波利#prace2::OnStop";
+	donpcevent "金屬波利#prace3::OnStop";
+	donpcevent "惡魔波利#prace4::OnStop";
+	donpcevent "聖誕波利#prace5::OnStop";
+	donpcevent "波波利#prace6::OnStop";
+	if ($@prace_winner$ != "") callsub WinRace;
+	end;
+
+ReturnRace:
+	donpcevent "波利#prace1::OnReturn";
+	donpcevent "天使波利#prace2::OnReturn";
+	donpcevent "金屬波利#prace3::OnReturn";
+	donpcevent "惡魔波利#prace4::OnReturn";
+	donpcevent "聖誕波利#prace5::OnReturn";
+	donpcevent "波波利#prace6::OnReturn";
+	end;
+
+WinRace:
+	mapannounce "p_track01","勝利者是 "+$@prace_winner$,1,0xFFAB54;
+	set $@goddameittt,0;
+	donpcevent "Checker#prace0::OnCheck";
+	sleep2 10000;
+	mapwarp "p_track01","amatsu",116,152;
+	set $@accessPrace,0;
+	set $@prace_winner$,"";
+	set $@prace_bets,0;
+	set $@prace_bidders,0;
+	donpcevent "波利#prace1::OnReturn";
+	donpcevent "天使波利#prace2::OnReturn";
+	donpcevent "金屬波利#prace3::OnReturn";
+	donpcevent "惡魔波利#prace4::OnReturn";
+	donpcevent "聖誕波利#prace5::OnReturn";
+	donpcevent "波波利#prace6::OnReturn";
+	end;
+}
+
+-	script	Checker#prace0	-1,{
+OnCheck:
+    for(set .@tmp1,1;.@tmp1<=$@prace_bets;set .@tmp1,.@tmp1+1){
+        if(attachrid($@prace_bidders[.@tmp1])){
+            dispbottom "勝利者是 "+$@prace_winner$+" 而你賭的是 "+@prace_winner$+".";
+            if (@prace_winner$ == $@prace_winner$) {
+		dispbottom "你贏了~";
+                callfunc "Reward_PRS";
+                emotion 21,1;
+            } else {
+                dispbottom "你輸了.";
+                emotion 28,1;
+            }
+            set @prace_winner$,"";
+            set @prace_bet,0;
+            detachrid;
+        }
+    }
+    deletearray $@prace_bidders[1],128;
+    set $@prace_bets,0;
+    end;
+}
+
+p_track01,58,38,2	script	波利#prace1	1002,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,38;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"波利#prace1");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01,58,36,2	script	天使波利#prace2	1096,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,36;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"天使波利#prace2");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"天使波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01,58,34,2	script	金屬波利#prace3	1613,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,34;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"金屬波利#prace3");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"金屬波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01,58,32,2	script	惡魔波利#prace4	1582,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,32;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"惡魔波利#prace4");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"惡魔波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01,58,30,2	script	聖誕波利#prace5	1062,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,30;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"聖誕波利#prace5");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"聖誕波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01,58,28,2	script	波波利#prace6	1031,{
+end;
+
+OnRace:
+	initnpctimer;
+	end;
+
+OnStop:
+	stopnpctimer;
+	end;
+
+OnReturn:
+	npcwalkto 58,28;
+	end;
+
+OnTimer1000:
+	getmapxy(.@mapname$,.@mapx,.@mapy,1,"波波利#prace6");
+	if (rand(100) < $@prace_random) npcwalkto .@mapx-1,.@mapy;
+	setnpctimer rand($@prace_random2);
+	startnpctimer;
+	if ((.@mapx-1) == 29) {
+	set $@prace_winner$,"波波利";
+	emotion 29;
+	donpcevent "競賽管理員#prace0::OnStopRace";
+	}
+	end;
+}
+
+p_track01	mapflag	nobranch
+p_track01	mapflag	noicewall
+p_track01	mapflag	nomemo
+p_track01	mapflag	noreturn
+p_track01	mapflag	noteleport
+p_track01	mapflag	nowarpto
+p_track01	mapflag	nowarp
+p_track01	mapflag	pvp	off
+p_track01	mapflag	nosave
+p_track01	mapflag	nocommand

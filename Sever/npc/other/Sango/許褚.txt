@@ -1,0 +1,56 @@
+yuno,163,304,4	script	許褚	483,{
+	mes "保護丞相是偶的職責。";
+	next;
+	menu	"請讓我加入你門下",j,
+		"我想離開你的門下",l,
+		"在下告退",b;
+
+j:
+	if ( Llv != 10 ) goto NOten;
+	mes "哦？那你就在偶門下學習吧！";
+	mes "在偶門下學習之時，偶也會給你一些能力加成。";
+	mes "當然，要是脫離偶門下，偶所給你的加成也會消失";
+	mes "加入偶門下所獲得的能力加成是";
+	mes "^FF0000STR+10^000000";
+	mes "^FF0000VIT+20^000000";
+	mes "確定要跟隨偶嗎？";
+	next;
+	menu	"是的，從今往後願效犬馬之勞",j1,
+		"我還是另擇明主好了。",j2;
+j1:
+	if ( Sango != 0 ) goto Shit;
+	mes "一起吃飯吧！";
+	next;
+	mes "獲得能力加成";
+	mes "^FF0000STR+10^000000";
+	mes "^FF0000VIT+20^000000";
+	set Sango,4;
+	atcommand "@str 10";
+	atcommand "@vit 20";
+	close;
+j2:
+	mes "那你快滾吧！";
+	close;
+l:
+	if ( Sango != 4 ) goto Nmast;
+	mes "你不想在待在偶手下了是嗎？";
+	mes "偶生氣了哦！。";
+	set Sango,0;
+	atcommand "@str -10";
+	atcommand "@vit -20";
+	close;
+b:
+	mes "退下吧！";
+	close;
+NOten:
+	mes "轉生次數必須到十次才能加入偶門下";
+	mes "去多鍛鍊吧！";
+	close;
+Shit:
+	mes "你已經有主公了，為何還要來投效偶？";
+	close;
+Nmast:
+	mes "偶不是你的主公！";
+	close;
+	end;
+}

@@ -1,0 +1,209 @@
+pay_arche,66,144,4	script	【無限轉生天使】#2	811,{
+	if ( Sango != 0 ) goto false;
+	mes "[轉生人員]";
+	mes "你好,這裡提供轉生服務";
+	mes "轉生後會多出400點的屬性點";
+	mes "最高十轉";
+	next;
+	menu "我要轉生",L1,"查詢轉生",Lw,"取消",Over;
+L1:
+        if(BaseLevel<99) goto No;
+        if(Llv==1) goto L2;
+        if(Llv==2) goto L3;
+        if(Llv==3) goto L4;
+        if(Llv==4) goto L5;
+        if(Llv==5) goto L6;
+        if(Llv==6) goto L7;
+        if(Llv==7) goto L8;
+        if(Llv==8) goto L9;
+        if(Llv==9) goto Le;
+        if(Llv==10) goto Le;
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set Llv,1;        
+        resetskill;
+        resetstatus;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set StatusPoint,400;
+        set SkillPoint,0;
+        close;
+No:
+        mes "[轉生人員]";
+        mes "你還沒達成轉生的條件";
+        close;
+L2:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,2;        
+        resetskill;
+        resetstatus;
+        set StatusPoint,800;
+        set SkillPoint,0;
+        close;
+L3:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,3;        
+        resetskill;
+        resetstatus;
+        set StatusPoint,1200;
+        set SkillPoint,0;
+        close;
+L4:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set Llv,4;        
+        resetskill;
+        resetstatus;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set StatusPoint,1600;
+        set SkillPoint,0;
+        close;
+L5:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,5;      
+        resetskill;
+        resetstatus;
+        set StatusPoint,2000;
+        set SkillPoint,0;
+        close;
+L6:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,6;      
+        resetskill;
+        resetstatus;
+        set StatusPoint,2400;
+        set SkillPoint,0;
+        close;
+L7:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        resetskill;
+        resetstatus;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,7;
+        set StatusPoint,2800;
+        set SkillPoint,0;
+        close;
+L8:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        resetskill;
+        resetstatus;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,8;
+        set StatusPoint,3200;
+        set SkillPoint,0;
+        close;
+L9:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set Llv,9;
+        resetskill;
+        resetstatus;
+        set StatusPoint,3600;
+        set SkillPoint,0;
+        close;
+Le:
+        mes "[轉生人員]";
+        mes "恭喜你轉生成功";
+        jobchange 0,1;
+        set Llv,10;
+        resetstatus;
+        resetskill;
+        set BaseLevel,1;
+        set JobLevel,1;
+        set StatusPoint,4000;
+        set SkillPoint,0;
+        close;
+L0:
+        mes "[轉生人員]";
+        mes "你已經轉生十次了";
+	close;
+Lw:
+        if(Llv==1) goto Lw1;
+        if(Llv==2) goto Lw3;
+        if(Llv==3) goto Lw4;
+        if(Llv==4) goto Lw5;
+        if(Llv==5) goto Lw6;
+        if(Llv==6) goto Lw7;
+        if(Llv==7) goto Lw8;
+        if(Llv==8) goto Lw9;
+        if(Llv==9) goto Lw0;
+        if(Llv==10) goto Lwe;
+Lw1:
+        mes "[轉生人員]";
+        mes "你為1轉的角色";
+        close;
+Lw3:
+        mes "[轉生人員]";
+        mes "你為2轉的角色";
+        close;
+Lw4:
+        mes "[轉生人員]";
+        mes "你為3轉的角色";
+        close;
+Lw5:
+        mes "[轉生人員]";
+        mes "你為4轉的角色";
+        close;
+Lw6:
+        mes "[轉生人員]";
+        mes "你為5轉的角色";
+        close;
+Lw7:
+        mes "[轉生人員]";
+        mes "你為6轉的角色";
+        close;
+Lw8:
+        mes "[轉生人員]";
+        mes "你為7轉的角色";
+        close;
+Lw9:
+        mes "[轉生人員]";
+        mes "你為8轉的角色";
+        close;
+Lw0:
+        mes "[轉生人員]";
+        mes "你為9轉的角色";
+        close;
+Lwe:
+        mes "[轉生人員]";
+        mes "你為10轉的角色";
+        close;
+Over:
+        mes "[轉生人員]";
+        mes "等你符合轉生條件在來吧!";
+        close;
+false:
+	mes "你必須先解除師徒關係";
+	close;
+OnInit:
+	waitingroom "【無限轉生天使】",0;
+	end;
+}

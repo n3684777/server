@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prontera,167,190,4	script	造型師	831,{
+	mes "^006699[ 造型師 ] ^777777";
+	mes "哈囉~ ^996600 "+strcharinfo(0)+"^000000";
+	mes "衣色^ff0000 553 ^000000種";
+	mes "髮色^ff0000 251 ^000000種";
+	mes "髮型^ff0000 55 ^000000種";
+	mes "每個服務都需要花費1萬";
+	mes "您需要哪項服務？";
+	next;
+	menu
+		"更 換 衣 色",aa,
+		"更 換 髮 色",bb,
+		"更 換 髮 型",cc;
+aa:
+        if(Zeny<10000) goto nomoney;	
+        set zeny,zeny-10000;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "我們提供553種衣色";
+	mes "可以試到你滿意為止";
+	next;
+	menu
+		"^996600開始更換衣色   ^777777",a0,
+		"取        消",mm_exit;
+a0:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "請輸入您要變換的衣色編號。";
+	mes "[ Min 0 ]&[ Max 553 ]";
+	next;
+	input .@color;
+	if ( .@color < 0 || .@color > 553 ) {	close;	}
+	setlook 7,.@color;
+	goto yifuend01;
+yifuend01:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "這個色彩滿意嗎 ?";
+	mes "可以繼續選色彩呦";
+	menu
+		"^996600我要換其它色彩 !",a0,
+		"^ff0000恩~ 就是這個啦 !",yifu_done;
+
+bb:
+        if(Zeny<10000) goto nomoney;	
+        set zeny,zeny-10000;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "我們提供251種色彩.";
+	mes "可以試到你滿意為止";
+	next;
+	menu
+		"^996600開始更換髮色   ^777777",b0,
+		"取        消",mm_exit;
+b0:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "請輸入您要變換的髮色編號。";
+	mes "[ Min 0 ]&[ Max 251 ]";
+	next;
+	input .@hair;
+	if ( .@hair < 0 || .@hair > 251 ) {	close;	}
+	setlook 6,.@hair;
+	goto yifuend;
+yifuend:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "這個色彩滿意嗎 ?";
+	mes "可以繼續選色彩呦";
+	menu
+		"^996600我要換其它色彩 !",b0,
+		"^ff0000恩~ 就是這個啦 !",yifu_done;
+	
+cc:
+        if(Zeny<10000) goto nomoney;	
+        set zeny,zeny-10000;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "我們提供55種髮型.";
+	mes "可以試到你滿意為止";
+	next;
+	menu
+		"^996600開始更換髮型   ^777777",c0,
+		"取        消",mm_exit;
+c0:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "請輸入您要變換的髮型編號。";
+	mes "[ Min 0 ]&[ Max 55 ]";
+	next;
+	input .@style;
+	if ( .@style < 0 || .@style > 55 ) {	close;	}
+	setlook 1,.@style;
+	goto yifuend02;
+yifuend02:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "這個色彩滿意嗎 ?";
+	mes "可以繼續選色彩呦";
+	menu
+		"^996600我要換其它色彩 !",c0,
+		"^ff0000恩~ 就是這個啦 !",yifu_done;
+yifu_done:
+	next;
+	mes "^006699[ 造型師 ] ^777777";
+	mes "感謝您的惠顧";
+	mes "您的改變一定會讓";
+	mes "你的朋友很羨慕";
+	close;
+nomoney:
+	mes "^006699[ 造型師 ] ^777777";
+	mes "您沒有足夠的金錢";
+	close;
+mm_exit:
+	close;
+
+}

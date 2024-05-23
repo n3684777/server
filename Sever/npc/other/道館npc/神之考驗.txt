@@ -1,0 +1,344 @@
+-	script	hv_Config	-1,{
+OnInit:
+
+	set $@hv_level,99;
+
+	set $@hv_team_players,1;
+
+	set $@hv_Time_All,14400;
+
+	set $@hv_Time_In,300;
+
+	set $@hv_Time_Cooldown,3600;
+
+	set $@hv_GM,99;
+
+	setarray $@hv_monster1[0],2543,2544,2546,2547,2548;
+
+	setarray $@hv_monster2[0],2543,2544,2546,2547,2548;
+
+	setarray $@hv_monster3[0],2543,2544,2546,2547,2548;
+
+	setarray $@hv_monster4[0],2543,2544,2546,2547,2548;
+
+	setarray $@hv_monster5[0],2543,2544,2546,2547,2548;
+
+	end;
+}
+//==================登記==================
+
+aldebaran,146,111,4	script	神之考驗	971,{
+	if(hv_Lasttime + $@hv_Time_Cooldown > gettimetick(2) && hv_Lasttime < gettimetick(2) && getgmlevel() < $@hv_GM ){
+		set .@hv_lastTime,hv_Lasttime + $hv_Cooldown - gettimetick(2);
+		set .@hv_hoursTime,.@hv_lastTime / 60 / 60;
+		set .@hv_minutesTime,.@hv_lastTime / 60 % 60;
+		set .@hv_secondsTime,.@hv_lastTime % 60;
+		mes "[神之考驗]";
+		mes "根據進入規則，你現在無法進入神之考驗";
+		mes "你現在還有, "+.@hv_hoursTime+"小時 "+.@hv_minutesTime+"分鐘 "+.@hv_secondsTime+"秒才能進入";
+		close;
+		}
+
+		if(BaseLevel<$@hv_level){
+		mes "[神之考驗]";
+		mes "你的等級還沒到"+$@hv_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@hv_team_players){
+		mes "[神之考驗]";
+		mes "請加入一個超過"+$@hv_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[神之考驗]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[神之考驗]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[神之考驗]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@hv") == ""){
+				mes "[神之考驗]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[神之考驗]";
+			mes "你的隊伍已經申請過了神之考驗的任務"; 
+			mes "請在主界面選擇 ^0000FF進入神之考驗選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(hv_Lasttime + $@hv_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@hv_GM) {
+			mes "[神之考驗]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[神之考驗]";
+		mes "^0000FF神之考驗^000000 - 正在準備中";
+		mes "當神之考驗準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_hv_id,instance_create("神之考驗",getcharid(1)); 
+		if(.@instance_hv_id < 0){
+			mes "[神之考驗]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@hv",.@instance_hv_id);
+		instance_attachmap("2@hv",.@instance_hv_id);
+		instance_attachmap("3@hv",.@instance_hv_id);
+		instance_attachmap("4@hv",.@instance_hv_id);
+		instance_attachmap("5@hv",.@instance_hv_id);
+		instance_set_timeout $@hv_Time_All,$@hv_Time_In,.@instance_hv_id;
+		instance_init .@instance_hv_id;
+		instance_attach .@instance_hv_id;
+		set 'hv_Lasttime,gettimetick(2) + $@hv_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@hv") == ""){ 
+			mes "[神之考驗]";
+			mes "神之考驗副本不存在.";
+			mes "請確定你的隊伍已經申請過神之考驗，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(hv_Lasttime + $@hv_Time_Cooldown < gettimetick(2))
+		set hv_Lasttime,'hv_Lasttime;
+		warpparty has_instance("1@hv"),140,10,getcharid(1);
+		doevent instance_npcname("hv_monster",instance_id(1))+"::Onmonster30";
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+
+//===============登記/傳送===============
+
+1@hv,139,139,0	script	GTwarp_1	45,1,1,{ warp has_instance("2@hv"),214,279;	end; }
+2@hv,29,21,0	script	GTwarp_2	45,1,1,{ warp has_instance("3@hv"),278,22;	end; }
+3@hv,124,283,0	script	GTwarp_3	45,1,1,{ warp has_instance("4@hv"),120,105;	end; }
+4@hv,119,50,0	script	GTwarp_4	45,1,1,{ warp has_instance("5@hv"),149,6;	end; }
+
+//=================刷怪==================
+
+1@hv,0,0,0	script	hv_monster	-1,{
+Onmonster30:
+	disablenpc instance_npcname("GTwarp_1", instance_id());
+	disablenpc instance_npcname("GTwarp_2", instance_id());
+	disablenpc instance_npcname("GTwarp_3", instance_id());
+	disablenpc instance_npcname("GTwarp_4", instance_id());
+	hideonnpc instance_npcname("GTwarp_1", instance_id());
+	hideonnpc instance_npcname("GTwarp_2", instance_id());
+	hideonnpc instance_npcname("GTwarp_3", instance_id());
+	hideonnpc instance_npcname("GTwarp_4", instance_id());
+	set .@gk,instance_id(0);
+
+//神之考驗1F小怪
+	monster "1@hv",0,0,"--ja--",2543,8,instance_npcname("hv_monster")+"::OnGKillMob";
+	monster "1@hv",0,0,"--ja--",2544,8,instance_npcname("hv_monster")+"::OnGKillMob";
+	monster "1@hv",0,0,"--ja--",2546,8,instance_npcname("hv_monster")+"::OnGKillMob";
+	monster "1@hv",0,0,"--ja--",2547,8,instance_npcname("hv_monster")+"::OnGKillMob";
+	monster "1@hv",0,0,"--ja--",2548,8,instance_npcname("hv_monster")+"::OnGKillMob";
+//神之考驗2F小怪
+	monster "2@hv",0,0,"--ja--",2543,8,instance_npcname("hv_monster")+"::OnGKillMob1";
+	monster "2@hv",0,0,"--ja--",2544,8,instance_npcname("hv_monster")+"::OnGKillMob1";
+	monster "2@hv",0,0,"--ja--",2546,8,instance_npcname("hv_monster")+"::OnGKillMob1";
+	monster "2@hv",0,0,"--ja--",2547,8,instance_npcname("hv_monster")+"::OnGKillMob1";
+	monster "2@hv",0,0,"--ja--",2548,8,instance_npcname("hv_monster")+"::OnGKillMob1";
+//神之考驗3F小怪
+	monster "3@hv",0,0,"--ja--",2543,8,instance_npcname("hv_monster")+"::OnGKillMob2";
+	monster "3@hv",0,0,"--ja--",2544,8,instance_npcname("hv_monster")+"::OnGKillMob2";
+	monster "3@hv",0,0,"--ja--",2546,8,instance_npcname("hv_monster")+"::OnGKillMob2";
+	monster "3@hv",0,0,"--ja--",2547,8,instance_npcname("hv_monster")+"::OnGKillMob2";
+	monster "3@hv",0,0,"--ja--",2548,8,instance_npcname("hv_monster")+"::OnGKillMob2";
+//神之考驗4F小怪
+	monster "4@hv",0,0,"--ja--",2543,8,instance_npcname("hv_monster")+"::OnGKillMob3";
+	monster "4@hv",0,0,"--ja--",2544,8,instance_npcname("hv_monster")+"::OnGKillMob3";
+	monster "4@hv",0,0,"--ja--",2546,8,instance_npcname("hv_monster")+"::OnGKillMob3";
+	monster "4@hv",0,0,"--ja--",2547,8,instance_npcname("hv_monster")+"::OnGKillMob3";
+	monster "4@hv",0,0,"--ja--",2548,8,instance_npcname("hv_monster")+"::OnGKillMob3";
+//神之考驗5F小怪
+	monster "5@hv",0,0,"--ja--",2543,8,instance_npcname("hv_monster")+"::OnGKillMob4";
+	monster "5@hv",0,0,"--ja--",2544,8,instance_npcname("hv_monster")+"::OnGKillMob4";
+	monster "5@hv",0,0,"--ja--",2546,8,instance_npcname("hv_monster")+"::OnGKillMob4";
+	monster "5@hv",0,0,"--ja--",2547,8,instance_npcname("hv_monster")+"::OnGKillMob4";
+	monster "5@hv",0,0,"--ja--",2548,8,instance_npcname("hv_monster")+"::OnGKillMob4";
+//神之考驗1F boss
+	monster "1@hv",46,233,"--ja--",2542,1,instance_npcname("hv_tongguan")+"::Ontongguana";
+	monster "1@hv",233,233,"--ja--",2542,1,instance_npcname("hv_tongguan")+"::Ontongguana";
+	monster "1@hv",46,46,"--ja--",2542,1,instance_npcname("hv_tongguan")+"::Ontongguana";
+	monster "1@hv",233,46,"--ja--",2542,1,instance_npcname("hv_tongguan")+"::Ontongguana";
+//神之考驗2F boss
+	monster "2@hv",259,281,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+	monster "2@hv",184,190,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+	monster "2@hv",40,240,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+	monster "2@hv",110,108,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+	monster "2@hv",272,77,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+	monster "2@hv",111,24,"--ja--",2545,1,instance_npcname("hv_tongguan")+"::Ontongguana2";
+//神之考驗3F boss
+	monster "3@hv",121,49,"--ja--",2549,1,instance_npcname("hv_tongguan")+"::Ontongguana3";
+	monster "3@hv",37,106,"--ja--",2549,1,instance_npcname("hv_tongguan")+"::Ontongguana3";
+	monster "3@hv",36,284,"--ja--",2549,1,instance_npcname("hv_tongguan")+"::Ontongguana3";
+	monster "3@hv",181,186,"--ja--",2549,1,instance_npcname("hv_tongguan")+"::Ontongguana3";
+	monster "3@hv",284,149,"--ja--",2549,1,instance_npcname("hv_tongguan")+"::Ontongguana3";
+//神之考驗4F boss
+	monster "4@hv",203,218,"--ja--",2550,1,instance_npcname("hv_tongguan")+"::Ontongguana4";
+	monster "4@hv",36,222,"--ja--",2550,1,instance_npcname("hv_tongguan")+"::Ontongguana4";
+	monster "4@hv",48,114,"--ja--",2550,1,instance_npcname("hv_tongguan")+"::Ontongguana4";
+	monster "4@hv",193,116,"--ja--",2550,1,instance_npcname("hv_tongguan")+"::Ontongguana4";
+	monster "4@hv",120,16,"--ja--",2550,1,instance_npcname("hv_tongguan")+"::Ontongguana4";
+//神之考驗5F boss
+	monster "5@hv",264,264,"--ja--",2533,1,instance_npcname("hv_tongguan")+"::Ontongguana5";
+	monster "5@hv",35,264,"--ja--",2533,1,instance_npcname("hv_tongguan")+"::Ontongguana5";
+	monster "5@hv",35,36,"--ja--",2533,1,instance_npcname("hv_tongguan")+"::Ontongguana5";
+	monster "5@hv",264,36,"--ja--",2533,1,instance_npcname("hv_tongguan")+"::Ontongguana5";
+
+OnGKillMob:
+	monster "1@hv",0,0,"--ja--",$@hv_monster1[rand(getarraysize($@hv_monster1))],1,instance_npcname("hv_monster")+"::OnGKillMob";
+	end;
+OnGKillMob1:
+	monster "2@hv",0,0,"--ja--",$@hv_monster2[rand(getarraysize($@hv_monster1))],1,instance_npcname("hv_monster")+"::OnGKillMob1";
+	end;
+OnGKillMob2:
+	monster "3@hv",0,0,"--ja--",$@hv_monster3[rand(getarraysize($@hv_monster1))],1,instance_npcname("hv_monster")+"::OnGKillMob2";
+	end;
+OnGKillMob3:
+	monster "4@hv",0,0,"--ja--",$@hv_monster4[rand(getarraysize($@hv_monster1))],1,instance_npcname("hv_monster")+"::OnGKillMob3";
+	end;
+OnGKillMob4:
+	monster "5@hv",0,0,"--ja--",$@hv_monster5[rand(getarraysize($@hv_monster1))],1,instance_npcname("hv_monster")+"::OnGKillMob4";
+	end;
+}
+
+2@hv,0,0,0	script	hv_monster2	-1,{
+Onmonster31:
+		monster "5@hv",149,145,"--ja--",2432,1,instance_npcname("hv_monster2")+"::OnGKillMob5";
+		end;
+OnGKillMob5:
+	instance_announce .@gk,"神是不死的!!",bc_map,0x00ff00;
+	sleep2 3000;
+	instance_announce .@gk,"10秒後將傳送你們到領獎地圖!!",bc_map,0x00ff00;
+	sleep2 13000;
+	instance_warpall "goodjob13",33,142;
+	instance_destroy(instance_id());
+	end;
+	}
+
+//================通關設定==================
+2@hv,0,0,0	script	hv_tongguan	-1,{
+Ontongguana:
+	if('goss<4){
+	set 'goss,'goss+1;
+	set 'God_g,4-'goss;
+	instance_announce .@gk,"還有神兵"+'God_g,bc_map,0x00ff00;
+	}
+	if('God_g==0){
+	instance_announce .@gk,"打敗所有神兵，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("GTwarp_1", instance_id());
+	hideoffnpc instance_npcname("GTwarp_1", instance_id());
+	}
+	end;
+
+Ontongguana2:
+	if('gossa<6){
+	set 'gossa,'gossa+1;
+	set 'God_h,6-'gossa;
+	instance_announce .@gk,"還有神兵"+'God_h,bc_map,0x00ff00;
+	}
+	if('God_h==0){
+	instance_announce .@gk,"打敗所有神兵，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("GTwarp_2", instance_id());
+	hideoffnpc instance_npcname("GTwarp_2", instance_id());
+	}
+	end;
+
+Ontongguana3:
+	if('gossb<5){
+	set 'gossb,'gossb+1;
+	set 'God_i,5-'gossb;
+	instance_announce .@gk,"還有神兵"+'God_i,bc_map,0x00ff00;
+	}
+	if('God_i==0){
+	instance_announce .@gk,"打敗所有神兵，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("GTwarp_3", instance_id());
+	hideoffnpc instance_npcname("GTwarp_3", instance_id());
+	}
+	end;
+
+Ontongguana4:
+	if('gossc<5){
+	set 'gossc,'gossc+1;
+	set 'God_j,5-'gossc;
+	instance_announce .@gk,"還有神兵"+'God_j,bc_map,0x00ff00;
+	}
+	if('God_j==0){
+	instance_announce .@gk,"打敗所有神兵，得到前往下一層的資格",bc_map,0x00ff00;
+	enablenpc instance_npcname("GTwarp_4", instance_id());
+	hideoffnpc instance_npcname("GTwarp_4", instance_id());
+	}
+	end;
+
+Ontongguana5:
+	if('gossd<4){
+	set 'gossd,'gossd+1;
+	set 'God_k,4-'gossd;
+	instance_announce .@gk,"還有神兵"+'God_k,bc_map,0x00ff00;
+	}
+	if('God_k==0){
+	instance_announce .@gk,"打敗所有神兵，神在地圖正中間降臨了",bc_map,0x00ff00;
+	doevent instance_npcname("hv_monster2",instance_id())+"::Onmonster31";
+	}
+	end;
+}
+
+
+//=================地圖屬性===================
+1@hv	mapflag	noteleport
+1@hv	mapflag	nosave	SavePoint
+1@hv	mapflag	nomemo
+1@hv	mapflag	noloot
+1@hv	mapflag	nobranch
+1@hv	mapflag	noicewall
+1@hv	mapflag	monster_noteleport
+
+2@hv	mapflag	noteleport
+2@hv	mapflag	nosave	SavePoint
+2@hv	mapflag	nomemo
+2@hv	mapflag	noloot
+2@hv	mapflag	nobranch
+2@hv	mapflag	noicewall
+2@hv	mapflag	monster_noteleport
+
+3@hv	mapflag	noteleport
+3@hv	mapflag	nosave	SavePoint
+3@hv	mapflag	nomemo
+3@hv	mapflag	noloot
+3@hv	mapflag	nobranch
+3@hv	mapflag	noicewall
+3@hv	mapflag	monster_noteleport
+
+4@hv	mapflag	noteleport
+4@hv	mapflag	nosave	SavePoint
+4@hv	mapflag	nomemo
+4@hv	mapflag	noloot
+4@hv	mapflag	nobranch
+4@hv	mapflag	noicewall
+4@hv	mapflag	monster_noteleport
+
+5@hv	mapflag	noteleport
+5@hv	mapflag	nosave	SavePoint
+5@hv	mapflag	nomemo
+5@hv	mapflag	noloot
+5@hv	mapflag	nobranch
+5@hv	mapflag	noicewall
+5@hv	mapflag	monster_noteleport

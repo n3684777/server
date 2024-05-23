@@ -1,0 +1,81 @@
+xmas,154,121,4	script	祡Τ胐ユ传	997,{
+	mes "璶30玭胐锣矹";
+	mes "碞繦诀ユ传祡Τ胐干";
+	mes "^FF0000ノ胐娥ず┣^000000";
+	next;
+	menu	"еㄓ",exc,
+		"ぃ稱传",noexc;
+
+exc:
+	if (countitem(28079) < 30 ) goto NOitem;
+	delitem 28079,30;
+	set @pe,rand(0,59);
+	if ( @pe == 0 ) getitem 28375,1;
+	if ( @pe == 1 ) getitem 28376,1;
+	if ( @pe == 2 ) getitem 28377,1;
+	if ( @pe == 3 ) getitem 28378,1;
+	if ( @pe == 4 ) getitem 28380,1;
+	if ( @pe == 5 ) getitem 28381,1;
+	if ( @pe == 6 ) getitem 28382,1;
+	if ( @pe == 7 ) getitem 28383,1;
+	if ( @pe == 8 ) getitem 28384,1;
+	if ( @pe == 9 ) getitem 28386,1;
+	if ( @pe == 10 ) getitem 28387,1;
+	if ( @pe == 11 ) getitem 28388,1;
+	if ( @pe == 12 ) getitem 28389,1;
+	if ( @pe == 13 ) getitem 28390,1;
+	if ( @pe == 14 ) getitem 28391,1;
+	if ( @pe == 15 ) getitem 28392,1;
+	if ( @pe == 16 ) getitem 28393,1;
+	if ( @pe == 17 ) getitem 28394,1;
+	if ( @pe == 18 ) getitem 28395,1;
+	if ( @pe == 19 ) getitem 28396,1;
+	if ( @pe == 20 ) getitem 28397,1;
+	if ( @pe == 21 ) getitem 28398,1;
+	if ( @pe == 22 ) getitem 28399,1;
+	if ( @pe == 23 ) getitem 28400,1;
+	if ( @pe == 24 ) getitem 28401,1;
+	if ( @pe == 25 ) getitem 28402,1;
+	if ( @pe == 26 ) getitem 28403,1;
+	if ( @pe == 27 ) getitem 28404,1;
+	if ( @pe == 28 ) getitem 28405,1;
+	if ( @pe == 29 ) getitem 28406,1;
+	if ( @pe == 30 ) getitem 28407,1;
+	if ( @pe == 31 ) getitem 28408,1;
+	if ( @pe == 32 ) getitem 28409,1;
+	if ( @pe == 33 ) getitem 28410,1;
+	if ( @pe == 34 ) getitem 28411,1;
+	if ( @pe == 35 ) getitem 28412,1;
+	if ( @pe == 36 ) getitem 28413,1;
+	if ( @pe == 37 ) getitem 28414,1;
+	if ( @pe == 38 ) getitem 28415,1;
+	if ( @pe == 39 ) getitem 28416,1;
+	if ( @pe == 40 ) getitem 28417,1;
+	if ( @pe == 41 ) getitem 28418,1;
+	if ( @pe == 42 ) getitem 28419,1;
+	if ( @pe == 43 ) getitem 28420,1;
+	if ( @pe == 44 ) getitem 28421,1;
+	if ( @pe == 45 ) getitem 28422,1;
+	if ( @pe == 46 ) getitem 28423,1;
+	if ( @pe == 47 ) getitem 28424,1;
+	if ( @pe == 48 ) getitem 28425,1;
+	if ( @pe == 49 ) getitem 28426,1;
+	if ( @pe == 50 ) getitem 28427,1;
+	if ( @pe == 51 ) getitem 28428,1;
+	if ( @pe == 52 ) getitem 28429,1;
+	if ( @pe == 53 ) getitem 28430,1;
+	if ( @pe == 54 ) getitem 28431,1;
+	if ( @pe == 55 ) getitem 28432,1;
+	if ( @pe == 56 ) getitem 28433,1;
+	if ( @pe == 57 ) getitem 28434,1;
+	if ( @pe == 58 ) getitem 28435,1;
+	if ( @pe == 59 ) getitem 28436,1;
+	close;
+noexc:
+	close;
+NOitem:
+	mes "瑼и狥﹁ぃ镑碞筁ㄓ";
+	close;
+end;
+
+}

@@ -1,0 +1,196 @@
+/*
+╔═════════╤═════════╤═════╤════════╤═════════╗
+║   【登入驗證】   │    驗證類腳本    │版本：v1.2│作者： 小剪★   │ 時間：2009/08/30 ║
+╠════╤════╧═════════╧═════╧════════╧═════════╣
+║變數介紹│[$@nonumbtimes]:設定驗證碼錯了幾遍要踢掉                                      ║
+║        │[$@yesnumbtimes]:設定驗證碼對了幾遍能繼續遊戲                                 ║
+║        │[$@checknumb[1]]:這千萬別動，不然驗證一定會猛失敗=ˋ=                         ║
+║        │[$@codenotimes]:防盜密碼錯幾遍要踢掉        　　　　　                        ║
+║　　　  │                                                                              ║
+╠════╪═══════════════════════════════════════╣
+║基本介紹│　　基本上就是仿夜靜人囂的登入驗證系統                                        ║
+╠════╪═══════════════════════════════════════╣
+║更新日誌│版本：v1.0                                                                    ║
+║　　　　├　─　─　─　─　─　─　─　─　─　─　─　─　─　─　─  ─　─　─　─　╢
+║　　　　│　　無                                                                        ║
+║        ├───────────────────────────────────────╢
+║        │版本：v1.1                                                                    ║
+║　　　　├　─　─　─　─　─　─　─　─　─　─　─　─　─　─　─  ─　─　─　─　╢
+║　　　　│　1.新增防盜密碼功能                                                          ║
+║　　　　│  2.新增登入後冰凍效果                                                        ║
+║        ├───────────────────────────────────────╢
+║        │版本：v1.2                                                                    ║
+║　　　　├　─　─　─　─　─　─　─　─　─　─　─　─　─　─　─  ─　─　─　─　╢
+║　　　　│　1.修正防盜密碼的變數                                                        ║
+║　　　　│  2.修正對話的順暢度                                                          ║
+╚════╧═══════════════════════════════════════╝
+[有任何Bug歡迎OK論壇短訊我:D]
+[即時通:ilovesky_1130]
+*/
+-	script	LoginCheck	-1,{
+OnInit:
+	setarray $@checknumb[0],1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25;
+	set $@nonumbtimes,3;
+	set $@yesnumbtimes,1;
+	set $@codenotimes,3;
+	end;
+OnPCLogoutEvent:
+	set CheckOK,0;
+	set ChecknoOK,0;
+	set CodenoOK,0;	end;
+OnPCLoginEvent:
+	atcommand "@option 1 0 "+(64|(checkoption(8)*8)|(checkoption(16)*16)|(checkoption(32)*32)|(checkoption(128)*128)|(checkoption(256)*256)|(checkoption(512)*512)|(checkoption(1024)*1024));
+	set CheckOK,0;
+	set ChecknoOK,0;
+	set CodenoOK,0;
+codecheck:
+	mes "[登入驗證系統]";
+	mes "歡迎使用反外掛系統";
+	mes "您只需要輸入右下角^0000FF黃色框框內^000000的數字即可!";
+	mes "輸入正確^DC143C"+$@yesnumbtimes+"^000000次即可進行遊戲";
+	mes "輸入錯誤^DC143C"+$@nonumbtimes+"^000000次會被強制踢除";
+	mes "請注意看數字【謹慎】打哦!!";
+	next;
+again:	
+	set @i,rand(getarraysize($@checknumb));
+	cutin "checknum"+$@checknumb[@i]+"",4;
+	mes "[登入驗證系統]";
+	mes "請輸入右下角的黃色驗證碼";
+	mes "目前您的錯誤次數為:[^FF0000"+ChecknoOK+"^000000]次";
+	mes "目前您的正確次數為:[^FF0000"+CheckOK+"^000000]次";
+	next;
+	input @checknum;
+	if(@checknum!=$@checknumb[@i]){
+	set ChecknoOK,ChecknoOK+1;
+	if(ChecknoOK==$@nonumbtimes){
+	mes "[登入驗證系統]";
+	mes "輸入錯誤超過[^2E8B57"+$@nonumbtimes+"^000000]次!!";
+	mes "強制踢除!";	atcommand "@kick "+strcharinfo(0);	
+	set CheckOK,0;
+	set ChecknoOK,0;
+	set CodenoOK,0;	end;}
+	mes "[登入驗證系統]";
+	mes "輸入錯誤!!";
+	mes "^800080請看仔細再打哦^000000:)";
+	next;
+	cutin "checknum"+@i+"",255;
+	goto again;
+	}
+	set CheckOK,CheckOK+1;
+	if(CheckOK==$@yesnumbtimes){
+	mes "[登入驗證系統]";
+	mes "正確[^FF0000"+CheckOK+"^000000]次";
+	mes "錯誤[^FF0000"+ChecknoOK+"^000000]次";
+	mes "恭喜你驗證成功!!";
+	mes "您可以繼續遊戲囉XD";
+	mes "祝您玩得愉快";
+	atcommand "@option 0 0 "+((checkoption(8)*8)|(checkoption(16)*16)|(checkoption(32)*32)|(checkoption(128)*128)|(checkoption(256)*256)|(checkoption(512)*512)|(checkoption(1024)*1024));
+	set CheckOK,0;
+	set ChecknoOK,0;
+	set CodenoOK,0;
+	cutin "checknum"+@i+"",255;	close;	end;}
+	mes "[登入驗證系統]";
+	mes "輸入正確!!";
+	mes "^800080請繼續下一道驗證^000000";
+	next;
+	cutin "checknum"+@i+"",255;
+	goto again;	}
+
+
+
+///////////////////
+
+
+
+/*  
+  【腳本名稱】: 定時廣播Ver1,線上設置
+  【製作人員】: q357741
+  【製作日期】: 10/09/05
+  【版    本】: EA
+*/
+
+prontera,164,203,5	script	定時廣播	862,{
+
+//多少GM等級可使用 預設>89
+if(getgmlevel()>89){
+
+//顏色代碼
+setarray .@color[0],0xF0693C,0xE1E1F0,0xFFFFB4,0xF02D78,0x2D78F0,0x00D2B4,0x78A5F0,0xE1C3B4,0xF0A500,0xFF783C,0x69C3F0,0x00FF78,0xFFFFFF;
+
+
+mes "廣播名稱 : ^F00000"+$sayname$+"^000000";
+for(set .pp,0; .pp<$nob; set .pp,.pp+1){
+mes "編號"+.pp+" : "+$says$[.pp]+"";
+}
+switch(select("設定內容:開始定時:關閉廣播:設定廣播名稱:^F04B78內容修改^000000:^F00000內容洗白^000000:離開")) {
+
+case 1:
+		next;
+		mes "內容設定";
+		mes "請輸入要新增的選項內容";
+		input .@sy$;
+		set $says$[$nob],.@sy$;
+		set $nob,$nob+1;
+		close;
+
+
+case 2:
+		next;
+		mes "開始定時";
+		mes "請輸入要定的時間";
+		mes "^F00000單位毫秒 1000毫秒=1秒^000000";
+		set .pp2,1;
+		input .@say;
+		close2;
+		for(set .pp2,0; .pp2==0; set .pp2,.pp2+0){
+
+	for(set .pp3,0; .pp3<$nob; set .pp3,.pp3+1){
+	specialeffect 311;
+	announce "["+$sayname$+"] : "+$says$[.pp3]+"",15,.@color[rand(getarraysize(.@color))];
+	sleep (.@say);
+	}
+		set .pp3,.pp3-$nob;
+	}
+		end;
+
+case 3:
+		set .pp2,1;
+		close;
+
+case 4:
+		input .@resayname$;
+	set $sayname$,.@resayname$;
+		next;
+		mes "設定完成";
+	close;
+
+case 5:
+		mes "輸入要修改的編號";
+	input .@rsay;
+		next;
+	if(.@rsay>$nob){mes "編號錯誤";close;}
+		mes "輸入要修改的內容";
+	input .@resay$;
+		set $says$[.@rsay],.@resay$;
+	for(set .pp,0; .pp<$nob; set .pp,.pp+1){
+		mes "編號"+.pp+" : "+$says$[.pp]+"";
+		}
+		next;
+		mes "修改完成";
+	close;
+
+
+case 6:
+		for(set .pp,0; .pp<$nob; set .pp,.pp+1){
+	set $says$[.pp],0;
+		}
+	set $nob,0;
+	next;
+		mes "洗白完成";
+	close;
+
+
+case 7:
+	close;
+}}
+}

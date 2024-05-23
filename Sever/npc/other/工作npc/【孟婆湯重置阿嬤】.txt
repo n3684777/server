@@ -1,0 +1,55 @@
+prontera,148,174,5	script	重置阿嬤::grand	771,{
+	if ( Sango != 0 ) goto false;
+	mes " [孟婆湯重置阿嬤]";
+	mes "親愛的^0000FF"+strcharinfo(0)+"^000000玩家您好";
+	mes "我是此伺服器的^0000FF>重置阿嬤<^000000。";
+	mes "請問您需要什麼服務呢？";
+	mes "重置素質需要50萬";
+	mes "重置素質+重置技能需要80萬";
+	mes "=====[伺服器目前的時間]=====";
+	mes "【"+gettime(7)+"年"+gettime(6)+"月"+gettime(5)+"日 "+gettime(3)+"點"+gettime(2)+"分"+gettime(1)+"秒】";
+	mes "============================";
+	next;
+	menu " 重置素質",c2," 重置技能",c3," 重置素質+重置技能",c4," 取消",c5;
+	c2:
+		if (Zeny < 500000) goto Naruto;
+		mes "好，請稍等";
+		next;
+		set Zeny,Zeny-500000;
+		mes " 感謝^0000FF"+strcharinfo(0)+"^000000玩家的服務";
+		mes " 您的素質已重置";
+		resetstatus;
+		close;
+	c3:
+		if (Zeny < 500000) goto Naruto;
+		mes "好，請稍等";
+		next;
+		set Zeny,Zeny-500000;
+		mes " 感謝^0000FF"+strcharinfo(0)+"^000000玩家的服務";
+		mes " 您的技能已重置";
+		resetskill;
+		close;
+	c4:
+		if (Zeny < 800000) goto Naruto;
+		mes "好，請稍等";
+		next;
+		set Zeny,Zeny-800000;
+		mes " 感謝^0000FF"+strcharinfo(0)+"^000000玩家的服務";
+		mes " 您的素質+技能已重置";
+		resetstatus;
+		resetskill;
+		close;
+	c5:
+		close;
+Naruto:
+		mes "很抱歉，你金錢不足";
+		close;
+false:
+	mes "你必須先解除師徒關係";
+	close;
+OnInit:
+	waitingroom "【孟婆湯重置阿嬤】",0;
+	end;
+}
+
+pay_arche,51,132,5	duplicate(grand)	重置阿嬤#2pay	771

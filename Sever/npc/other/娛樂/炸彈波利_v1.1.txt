@@ -1,0 +1,347 @@
+//炸彈波利腳本，顧名思義是由炸彈波利來進行的遊戲
+//本遊戲場地為que_moon(月亮宮殿)100,25
+//玩家需要閃躲炸彈波利(會自爆)
+//而炸彈波利的自爆攻擊力為血量，例如:1000HP自爆傷害為1000
+//使用此遊戲腳本請將炸彈波利(ID:1904)設定為草類+主攻+群攻+魔反
+//炸彈波利技能部份請依自家私服而改變(預設為攻擊時和被攻擊時發動自爆[詠唱3秒])
+//如技能不會設定請打開mob_skill_db加入(把以下斜線拿掉)
+//1904,Bomb Poring@NPC_SELFDESTRUCTION,attack,173,2,4000,2000,0,no,self,always,0,,,,,,
+//1904,Bomb Poring@NPC_SELFDESTRUCTION,chase,173,2,4000,2000,0,no,self,always,0,,,,,,
+//1904,Bomb Poring@NPC_SELFDESTRUCTION,walk,173,2,3000,2000,0,no,self,always,0,,,,,,
+//1904,Bomb Poring@NPC_SELFDESTRUCTION,idle,173,2,2000,2000,0,no,self,always,0,,,,,,
+//1904,Bomb Poring@NPC_SELFDESTRUCTION,any,173,2,1000,2000,0,no,self,always,0,,,,,,
+//測試平台SeAr_1.6.103Big5
+//作者:犽犽
+-	script	Bga_OnInit	-1,{	OnInit:
+//--------------------------------------------------------------
+//-------放出炸彈數量---
+	setarray $@boogmo[1],5,5,5,5,5,6,8,10,12,15;
+//--------------------------------------------------------------
+//-------可抽得的獎品id-----
+	setarray $@gooen1214[1],13644,28570,28566,28567,28568,28613,28587,13634,13639,13638,27418,27418,27418;
+//--------------------------------------------------------------
+//對應-可抽得的獎品數量-設定
+	setarray $@gooen[1],150,50,75,75,75,75,75,75,1,1,50,3,5,7;
+//--------------------------------------------------------------
+//------對應抽獎品的機率(單樣物品機率/全部物品機率*100%)
+	setarray $@gooenpro[1],100,100,100,100,100,100,100,100,100,100,100,100,100,100;
+//--------------------------------------------------------------
+//--------參加人數(預設5人)------
+	set $@EWbgapeo,3;
+//--------------------------------------------------------------
+//--------獲勝人數(預設1人)------
+	set $@EWbgagp,2;
+//--------------------------------------------------------------
+//--------GM選單權限(預設90)--------
+	set $@EWgmbga,90;
+}
+
+amatsu,112,164,5	script	炸彈波利管理員	793,{
+
+	if(getgmlevel()>=$@EWgmbga && $@booStart == 1){
+	mes "[炸彈波利管理員]";
+	mes "是否開起炸彈波利遊戲";
+	next;
+	menu	
+		"跳過GM選單",Menu_1,
+		"^FF0000馬上啟動炸彈^000000",bga_st2,
+		"進入活動場地",bga_en,
+		"關閉視窗",bga_ed;
+	}
+
+	if(getgmlevel()>=$@EWgmbga && $@booStart != 1){
+	mes "[炸彈波利管理員]";
+	mes "是否開起炸彈波利遊戲";
+	next;
+	menu	
+		"跳過GM選單",Menu_1,
+		"開啟炸彈",bga_st,
+		"進入活動場地",bga_en,
+		"關閉視窗",bga_ed;
+
+bga_en:
+	warp "que_moon.gat",100,25;
+	end;
+bga_ed:
+	close;
+	end;
+bga_st2:
+	if ($@booStart == 1) {
+	setnpctimer 290000,"SYSbooTimmerCher";
+	announce "炸彈波利管理員： GM強制啟動了炸彈波利將在 10 秒後開始遊戲",15,"0xff0000";
+	next;
+	goto Menu_1;
+	}
+bga_st:
+	if ($@booStart != 1) {
+	mes "炸彈波利已開啟";
+	callfunc "SYSbooggw";
+	sleep2(1000);
+	next;
+	goto bga_st;
+	end;
+	}
+	}
+Menu_1:
+	
+	if ($@booStart != 1) {
+	mes "[炸彈波利管理員]";
+	mes "時間還沒開始或遊戲進行中呦";
+	mes "開始時間為凌晨1:30兩小時一次";
+	mes "共12場，如有另外時間將會由GM開啟";
+	close;
+	end;
+	}
+
+	mes "[炸彈波利管理員]";
+	mes "大夥們~出發囉~";
+	warp "que_moon.gat",100,25;
+	end;
+
+
+OnClock0130:
+	callfunc "SYSbooggw";
+	end;
+OnClock0230:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock0330:
+	callfunc "SYSbooggw";
+	end;
+OnClock0430:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock0530:
+	callfunc "SYSbooggw";
+	end;
+OnClock0630:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock0730:
+	callfunc "SYSbooggw";
+	end;
+OnClock0830:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock0930:
+	callfunc "SYSbooggw";
+	end;
+OnClock1030:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock1130:
+	callfunc "SYSbooggw";
+	end;
+OnClock1230:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock1330:
+	callfunc "SYSbooggw";
+	end;
+OnClock1430:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock1730:
+	callfunc "SYSbooggw";
+	end;
+OnClock1830:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+OnClock2130:
+	callfunc "SYSbooggw";
+	end;
+OnClock2230:
+	if(getmapusers("splendide.gat") < 1 && ($@bga <getarraysize($@boogmo) || ($@bga==getarraysize($@boogmo) && $@bgge!=0))){
+	killmonsterall "splendide.gat";
+	}
+	end;
+
+OnPCDieEvent:
+	getmapxy(@bggmapname$,@bggmapx,@bggmapy,0,strcharinfo(0));
+	if(@bggmapname$ == "que_moon" ){
+	warp "SavePoint",0,0;
+	end;
+	}
+	end;
+
+OnInit:
+	waitingroom "炸彈波利人員",0;
+}
+
+function	script	SYSbooggw	{
+	hideonnpc "炸彈波利頒獎人員";
+	initnpctimer "SYSbooTimmerCher";
+	return;
+}
+
+que_moon.gat,100,41,1	script	SYSbooTimmerCher	-1,{
+OnTimer1000:
+	set $@booStart,1;
+	announce "炸彈波利管理員：炸彈波利開始倒數5分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer120000:
+	announce "炸彈波利管理員：炸彈波利開始倒數3分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer240000:
+	announce "炸彈波利管理員：炸彈波利開始倒數1分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer300000:
+	if (getmapusers("que_moon.gat") < $@EWbgapeo) goto No_pp;
+	announce "炸彈波利管理員：炸彈波利活動參加人數" + getmapusers("que_moon.gat") + "人，現在開始",15;
+	end;
+OnTimer301000:
+	MapAnnounce "que_moon.gat","開始前先說明規則。",17;
+	end;
+OnTimer303000:
+	MapAnnounce "que_moon.gat","遊戲總共"+(getarraysize($@boogmo) - 1)+"關，每經過一關將會多出數隻炸彈。",17;
+	end;
+OnTimer305000:
+	MapAnnounce "que_moon.gat","只要經過"+(getarraysize($@boogmo) - 1)+"關或是玩家剩一位以下(包含一位)，遊戲就結束。",17;
+	end;
+OnTimer307000:
+	MapAnnounce "que_moon.gat","現在宣布，遊戲開始。",17;
+	set $@booStart,0;
+	set $@bga,1;
+	initnpctimer "SYSbooStartTime";
+	goto SYS_EndbooTime;
+No_pp:
+	announce "炸彈波利管理員：人數少於"+$@EWbgapeo+"人參加炸彈波利，活動取消",15;
+	areawarp "que_moon.gat",0,0,300,100,"gonryun",160,171;
+	set $@booStart,0;
+SYS_EndbooTime:
+	stopnpctimer;
+	setnpctimer 0,"SYSbooTimmerCher";
+	end;
+}
+
+que_moon.gat,100,50,0	script	SYSbooStartTime	-1,{
+OnTimer1000:
+	set $@bgge,0;
+	areamonster "que_moon.gat",90,12,107,33,"炸彈波利",1904,$@boogmo[$@bga],"starterbga::OnMobDead";
+	MapAnnounce "que_moon.gat","魔物放出！挑戰開始！",17;
+	set $@bgge,$@boogmo[$@bga];
+	end;
+OnTimer2000:
+	setnpctimer 0,"SYSbooStartTime";
+	stopnpctimer;
+	end;
+
+OnTimer7000:
+	areamonster "que_moon.gat",90,12,107,33,"炸彈波利",1904,$@boogmo[$@bga],"starterbga::OnMobDead";
+	set $@bgge,$@boogmo[$@bga];
+	if($@bga==(getarraysize($@boogmo)-1)){
+	MapAnnounce "que_moon.gat","最後一批魔物已放出，請各位加油！！",17;
+	end;
+	}
+	MapAnnounce "que_moon.gat","魔物放出！挑戰開始！",17;
+	end;
+
+OnTimer8000:
+	setnpctimer 0,"SYSbooStartTime";
+	stopnpctimer;
+	end;
+
+}
+
+que_moon.gat,100,50,0	script	starterbga	-1,{
+
+OnMobDead:
+	set $@bgge,$@bgge-1;
+	if(getmapusers("que_moon.gat") < 1){
+	announce "炸彈波利管理員：因地圖上沒有玩家了，所以活動到此無人勝利。",15;
+	killmonsterall "que_moon.gat";
+	//areawarp "que_moon.gat",0,0,300,300,"SavePoint",0,0;
+	end;
+	}
+	if(getmapusers("que_moon.gat") < ($@EWbgagp + 1) || ($@bga==(getarraysize($@boogmo)-1) && $@bgge==0) ){
+	killmonsterall "que_moon.gat";
+	announce "炸彈波利管理員：地圖上只剩下"+$@EWbgagp+"人或是怪物死亡，所以遊戲結束。",15;
+	announce "炸彈波利管理員：請獲勝玩家找NPC領取獲勝道具。",15;
+	hideoffnpc "炸彈波利頒獎人員";
+	end;
+	}
+	if($@bga <(getarraysize($@boogmo)-1) && $@bgge==0){
+	MapAnnounce "que_moon.gat","第"+$@bga+"關挑戰成功。",17;
+	set $@bga,$@bga+1;
+	setnpctimer 3000,"SYSbooStartTime";
+	startnpctimer "SYSbooStartTime";
+	end;
+	}
+	end;
+}
+
+que_moon.gat,100,25,4	script	炸彈波利頒獎人員	793,{
+	mes "[炸彈波利頒獎人員]";
+	mes "你很厲害！可以閃過如此多的炸彈！";
+	next;
+	mes "[炸彈波利頒獎人員]";
+	mes "獎品機率及數量如下表";
+	mes "----------------------------";
+	set @EWgooen,0;
+	for(set @j,1; @j<getarraysize($@gooenpro); set @j,@j+1){
+	set @EWgooen,@EWgooen+$@gooenpro[@j];
+	}
+	for(set @j,1; @j<getarraysize($@gooen1214); set @j,@j+1){
+	mes "^0000FF"+getitemname($@gooen1214[@j])+"^000000 ^AA00AA["+$@gooen[@j]+"]^000000　 "+(($@gooenpro[@j] * 100)/ @EWgooen)+"."+(($@gooenpro[@j] * 10000) / @EWgooen - (($@gooenpro[@j] * 100)/ @EWgooen)*100)+"%";
+	}
+	mes "----------------------------";
+	next;
+	menu	"領取!!",-,"我想想!!",bgacancel;
+	set @EWgip,rand(1,@EWgooen);
+	set @EWgooen2,1;
+	set @EWgooen3,0;
+	for(set @gj,1; @gj<getarraysize($@gooenpro) ; set @gj,@gj+1){
+		set @EWgooen3,@EWgooen3+$@gooenpro[@gj];
+		if(@EWgip>=@EWgooen2 && @EWgip<=@EWgooen3){
+		getitem $@gooen1214[@gj],$@gooen[@gj];
+		announce "炸彈波利人員：恭喜 "+strcharinfo(0)+" ，獲得"+getitemname($@gooen1214[@gj])+" "+$@gooen[@gj]+"個",15;
+    		warp "SavePoint",0,0;
+		close;
+		end;
+		}
+		set @EWgooen2,@EWgooen2+$@gooenpro[@gj];
+	}
+
+bgacancel:
+	mes "[炸彈波利頒獎人員]";
+	mes "請慢慢考慮吧";
+	close;
+	end;
+}
+
+//-----限制地圖變數-------------
+
+que_moon	mapflag	nomemo
+que_moon	mapflag	noteleport
+que_moon	mapflag	noreturn
+que_moon	mapflag	monster_noteleport
+que_moon	mapflag	nosave	SavePoint
+que_moon	mapflag	nobranch
+que_moon	mapflag	noexppenalty
+que_moon	mapflag	nozenypenalty
+que_moon	mapflag	notrade
+que_moon	mapflag	nowarp
+que_moon	mapflag	noicewall
+que_moon	mapflag	noskill
+que_moon	mapflag	nobaseexp
+que_moon	mapflag	nojobexp
+que_moon	mapflag	noloot
+que_moon	mapflag	nodrop
+que_moon	mapflag	novending
+que_moon	mapflag	nochat

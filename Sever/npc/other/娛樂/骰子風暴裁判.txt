@@ -1,0 +1,246 @@
+prt_are_in,22,139,5	script	骰子風暴裁判	998,{
+
+	set @p1,1;
+	set @p2,2;
+	set @p3,3;
+	set @p4,4;
+	set @p5,5;
+	set @p6,6;
+	set @p,(@p2*(countitem(28190))+@p3*(countitem(28191))+@p4*(countitem(28192))+@p5*(countitem(28193))+@p6*(countitem(28194)));
+
+	mes "你現在的點數有^FF0000"+(@p1*(countitem(28189))+@p2*(countitem(28190))+@p3*(countitem(28191))+@p4*(countitem(28192))+@p5*(countitem(28193))+@p6*(countitem(28194)))+"^000000點";
+	mes "你想交出卡片兌換成績嗎？";
+	next;
+	menu	"換點數",a,
+		"換物品",c,
+		"送我出去吧！",b;
+a:
+	mes "你現在扣除1點的點數有^FF0000"+@p+"^000000點";
+	mes "即將把你的點數都換成1點";
+	next;
+	getitem 28189,@p;
+	delitem 28190,countitem(28190);
+	delitem 28191,countitem(28191);
+	delitem 28192,countitem(28192);
+	delitem 28193,countitem(28193);
+	delitem 28194,countitem(28194);
+	close;
+
+c:
+	mes "請選擇你要換的物品";
+	next;
+	menu	"50點換覺醒玉",c12,
+		"100點換武器材料轉蛋",c1,
+		"100點換裝備材料轉蛋",c2,
+		"150點換頭上材料轉蛋",c3,
+		"150點換頭中材料轉蛋",c4,
+		"150點換頭下材料轉蛋",c5,
+		"200點換福袋箱7",c6,
+		"300點換福袋箱3",c7,
+		"300點換八卦轉蛋",c8,
+		"400點換福袋箱8",c9,
+		"500點換福袋箱9",c10,
+		"750點換神秘特殊轉蛋",c11;
+
+c1:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*100) goto NOitem;
+	delitem 28189,@s*100;
+	getitem 28569,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c2:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*100) goto NOitem;
+	delitem 28189,@s*100;
+	getitem 28570,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c3:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 200 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*150) goto NOitem;
+	delitem 28189,@s*150;
+	getitem 28566,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c4:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 200 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*150) goto NOitem;
+	delitem 28189,@s*150;
+	getitem 28567,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c5:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 200 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*150) goto NOitem;
+	delitem 28189,@s*150;
+	getitem 28568,@s;
+
+	mes "謝謝惠顧";
+	close;
+c6:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 150 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*200) goto NOitem;
+	delitem 28189,@s*200;
+	getitem 13640,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c7:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 100 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*300) goto NOitem;
+	delitem 28189,@s*300;
+	getitem 13636,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c8:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 100 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*300) goto NOitem;
+	delitem 28189,@s*300;
+	getitem 28587,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c9:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 75 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*400) goto NOitem;
+	delitem 28189,@s*400;
+	getitem 13641,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c10:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 60 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*500) goto NOitem;
+	delitem 28189,@s*500;
+	getitem 13642,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c11:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 40 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*750) goto NOitem;
+	delitem 28189,@s*750;
+	getitem 28572,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+c12:
+	mes "請輸入你要兌換的數量";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+	mes "您輸入的數量不正確！";
+	close;	}
+	if(countitem(28189)< @s*50) goto NOitem;
+	delitem 28189,@s*50;
+	getitem 28533,@s;
+
+	mes "謝謝惠顧";
+	close;
+
+
+NOitem:
+	mes "你沒有那麼多點數";
+	close;
+b:
+	mes "你確定你要出去？";
+	next;
+	menu	"按錯了",b1,
+		"是的",b2;
+	b1:
+	close;
+
+	b2:
+	delitem 28189,countitem(28189);
+	delitem 28190,countitem(28190);
+	delitem 28191,countitem(28191);
+	delitem 28192,countitem(28192);
+	delitem 28193,countitem(28193);
+	delitem 28194,countitem(28194);
+	warp "amatsu",116,152;
+	close;
+	end;
+}

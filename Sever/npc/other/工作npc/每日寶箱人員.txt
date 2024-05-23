@@ -1,0 +1,87 @@
+/////////////////////////////////////////////////////
+//                                                 //
+//                                                 //
+//    作者 : By.cc                                 //
+//                                                 //
+//    腳本環境 : rAthena 17690[SQL]                //
+//                                                 //
+//    如轉載麻煩保留此段 謝謝                      //
+//                                                 //
+//                                                 //
+/////////////////////////////////////////////////////
+
+
+function	script	dayitem	{
+	
+//====每日贈送的物品 (建議31種)===================//
+	setarray .@item[1],668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668,668;
+
+//====每日贈送的物品數量 (與上方長度對應)=========//
+	setarray .@num[1],1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31;
+	
+//====達到幾天贈送額外獎品 (哪幾天)===============//
+	setarray .@add,5,10,15,20,25;
+
+//====達到幾天贈送的物品 (與上方對應)==========================//
+	setarray .@aitem[0],668,668,668,668,668;
+
+//====達到幾天贈送的數量 (與上方長度對應)=========//
+	setarray .@anum[0],10,20,30,40,50;
+	
+//================================================//
+
+for ( set .@i,0; .@i<getarraysize(.@add); set .@i,.@i+1 )
+{
+	if ( getArg(0) == .@add[.@i] )
+	{
+		set .@j,1;
+		getitem .@aitem[.@i],.@anum[.@i];
+		break;
+	}
+}	
+	set .@dayn,gettime(5);
+	getitem .@item[.@dayn],.@num[.@dayn];
+	announce "============================================",bc_self,0xCD1039;
+	announce "==                                        ",bc_self,0xFF7F50;
+	announce "==         連續登入 [ "+getarg(0)+" ] 天",bc_self,0xFFDC3C;
+	announce "==                                        ",bc_self,0x80E12A;
+	announce "==         今天的登入獎品是.. !!!         ",bc_self,0x00BFFF;
+	announce "==                                        ",bc_self,0x7B68EE;
+	if ( .@j ) { announce "==    "+.@num[.@dayn]+" 個 [ "+getitemname(.@item[.@dayn])+" ] 額外獲得 "+.@anum[.@i]+" 個 [ "+getitemname(.@aitem[.@i])+" ] 	",bc_self,0x00000; }
+	else { announce "==          "+.@num[.@dayn]+" 個 [ "+getitemname(.@item[.@dayn])+" ]  	",bc_self,0x00000; }
+	announce "==                                        ",bc_self,0x9932CC;
+	announce "==  每天的獎品都不一樣哦,記得上線領取>.0  ",bc_self,0xF08080;
+	announce "==                                        ",bc_self,0x00E1F0;
+	announce "============================================",bc_self,0x783C3C;
+	end;
+}
+
+-	script	daylogin	-1,{
+		
+OnPCLoginEvent:
+
+	if( gettime(7)%4==0 ) set .@pr,1;
+	if ( #daytime >= 366+.@pr )  set #daytime,1; 
+if ( #daytime )
+	{
+		if ( #daytime == gettime(8) )
+		{
+			set #daytime,gettime(8)+1;
+			set #daylogin,#daylogin+1;
+			callfunc "dayitem",#daylogin;
+			end;
+		}
+		if ( #daytime < gettime(8) && #daytime != 1 )
+		{
+			set #daytime,gettime(8)+1;
+			set #daylogin,1;
+			callfunc "dayitem",1;
+			end;
+		}
+		end;
+	}
+		set #daytime,gettime(8)+1;
+		set #daylogin,1;
+		callfunc "dayitem",1;
+		end;
+}	

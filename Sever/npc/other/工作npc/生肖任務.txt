@@ -1,0 +1,720 @@
+//====================１====================\\
+xmas,141,109,5	script	貝瑪	510,{
+	if(WCCB_2 == 1) goto XY;
+	mes "^0000FF【貝瑪】^000000";
+	mes "你能幫我找十二生肖嗎，";
+	next;
+	menu "好",GO_1,"不好",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【貝瑪】^000000";
+	mes "那你要先經過我的考驗，";
+	mes "讓我看看你是不是真有本事擔此重任。";
+	mes "收集10張幽暗夢魘卡片";
+	mes "收集10張嗒妮小姐卡片";
+	mes "收集10張RSX-0806卡片";
+	mes "共要收集30張卡片";
+	next;
+	menu 	"不給",cancel,
+		"在這裡",Shi_1;
+Shi_1:
+	mes "^0000FF【貝瑪】^000000";
+	mes "讓我來見識你的能耐。";
+	next;
+	if(countitem(4408)< 10) goto NoMake;
+	if(countitem(4376)< 10) goto NoMake;
+	if(countitem(4342)< 10) goto NoMake;
+	mes "^0000FF【貝瑪】^000000";
+	mes "嗯…讓我來看看…";
+	next;
+	delitem 4408,10;
+	delitem 4376,10;
+	delitem 4342,10;
+	getitem 668,2000;
+	set WCCB_2,WCCB_2+1;
+	goto XY;
+XY:
+	mes "^0000FF【貝瑪】^000000";
+	mes "很好…你果然不會辜負我的期待！";
+	mes "找回生肖娃娃的任務就交給你了！";
+	mes "鼠鼠在下水道3樓^000000";
+	close;
+NoMake:
+	mes "^0000FF【貝瑪】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "那還不快去！";
+	close;
+}
+
+//====================２====================\\
+prt_sewb3,168,18,7	script	鼠鼠	510,{
+	if(WCCB_3 == 1) goto XY;
+	if(WCCB_2 == 1){
+	mes "^0000FF【鼠鼠】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "你有什麼要求？",GO_1,"我不想鳥你！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【鼠鼠】^000000";
+	mes "收集^FF00003000個鼠尾^000000";
+	mes "收集^FF00003000個鼠鬚^000000";
+	mes "收集^FF00003000個鼠指甲^000000";
+	next;
+	menu 	"你獅子大開口阿…",cancel,
+		"東西在這！",Shi_1;
+Shi_1:
+	mes "^0000FF【鼠鼠】^000000";
+	mes "如此之快，你才去不到15分鐘的時間！";
+	next;
+	if(countitem(1016)< 3000) goto NoMake;
+	if(countitem(1017)< 3000) goto NoMake;
+	if(countitem(1018)< 3000) goto NoMake;
+	mes "^0000FF【鼠鼠】^000000";
+	mes "果然是真漢子，鼠鼠敬你一杯！";
+	next;
+	delitem 1016,3000;
+	delitem 1017,3000;
+	delitem 1018,3000;
+	getitem 28634,1;
+	set WCCB_3,WCCB_3+1;
+	next;
+	mes "《鼠鼠娃娃》已交到你手中！";
+	mes "下個生肖在金字塔地下1樓";
+	close;
+}
+	mes "^0000FF【鼠鼠】^000000";
+	mes "你也是鼠生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【鼠鼠】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在金字塔地下1樓";
+	close;
+NoMake:
+	mes "^0000FF【鼠鼠】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "辦不到非大丈夫所言之語！";
+	close;
+}
+
+//====================３====================\\
+moc_pryd05,210,107,4	script	牛牛	510,{
+	if(WCCB_4 == 1) goto XY;
+	if(WCCB_3 == 1){
+	mes "^0000FF【牛牛】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "要完成什麼呢？",GO_1,"干我屁事！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【牛牛】^000000";
+	mes "收集^FF00003000個牛鼻環^000000";
+	mes "收集^FF00003000個蝸牛殼^000000";
+	mes "收集^FF00003000個硬角^000000";
+	next;
+	menu 	"馬上去",cancel,
+		"我回來了！",Shi_1;
+Shi_1:
+	mes "^0000FF【牛牛】^000000";
+	mes "讓我來看看…";
+	next;
+	if(countitem(941)< 3000) goto NoMake;
+	if(countitem(946)< 3000) goto NoMake;
+	if(countitem(947)< 3000) goto NoMake;
+	mes "^0000FF【牛牛】^000000";
+	mes "黏合需要一點時間。";
+	next;
+	delitem 941,3000;
+	delitem 946,3000;
+	delitem 947,3000;
+	getitem 28635,1;
+	set WCCB_4,WCCB_4+1;
+	next;
+	mes "《牛牛娃娃》就交給你了！";
+	mes "下個生肖在波利島";
+	close;
+}
+	mes "^0000FF【牛牛】^000000";
+	mes "你也是牛生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【牛牛】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在波利島";
+	close;
+NoMake:
+	mes "^0000FF【牛牛】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "干你屁事！";
+	close;
+}
+
+//====================４====================\\
+pay_fild04,125,294,4	script	虎虎	512,{
+	if(WCCB_5 == 1) goto XY;
+	if(WCCB_4 == 1){
+	mes "^0000FF【虎虎】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "你想要我做什麼？",GO_1,"看起來你不是什麼好人…",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【虎虎】^000000";
+	mes "收集^FF0000100個虎掌^000000";
+	mes "收集^FF00003000個虎蜥皮^000000";
+	mes "收集^FF00001個虎王寵物蛋^000000";
+	next;
+	menu 	"你的罪孽還真深呀…",cancel,
+		"我會洗清你的罪孽。",Shi_1;
+Shi_1:
+	mes "^0000FF【虎虎】^000000";
+	mes "我只是個有罪之人…";
+	next;
+	if(countitem(1030)< 100) goto NoMake;
+	if(countitem(7003)< 3000) goto NoMake;
+	if(countitem(28047)< 1) goto NoMake;
+	mes "^0000FF【虎虎】^000000";
+	mes "沒想到江湖中還有你這種正義人士。";
+	next;
+	delitem 1030,100;
+	delitem 7003,3000;
+	delitem 28047,1;
+	getitem 28636,1;
+	set WCCB_5,WCCB_5+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在普隆德拉西門";
+	close;
+}
+	mes "^0000FF【虎虎】^000000";
+	mes "你也是虎生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【虎虎】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在普隆德拉西門";
+	close;
+NoMake:
+	mes "^0000FF【虎虎】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "希望能看到明天的太陽…";
+	close;
+}
+
+//====================５====================\\
+prt_fild05,202,264,5	script	兔兔	510,{
+	if(WCCB_6 == 1) goto XY;
+	if(WCCB_5 == 1){
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "還是請你給點輕鬆任務。",GO_1,"不想勒！",NO;
+NO:
+	mes "喝呀！！！！！躺下吧你～～～～";
+	close;
+GO_1:
+	mes "^0000FF【兔兔】^000000";
+	mes "收集^FF00003000個瘋兔娃娃^000000";
+	mes "收集^FF00003000個柔毛^000000";
+	mes "收集^FF00003000個三葉幸運草^000000";
+	next;
+	menu 	"你欺負人阿…",cancel,
+		"你快來領東西！",Shi_1;
+Shi_1:
+	mes "^0000FF【兔兔】^000000";
+	mes "我來清點清點…";
+	next;
+	if(countitem(740)< 3000) goto NoMake;
+	if(countitem(949)< 3000) goto NoMake;
+	if(countitem(705)< 3000) goto NoMake;
+	mes "^0000FF【兔兔】^000000";
+	mes "謝謝你！";
+	mes "感激不盡！";
+	next;
+	delitem 740,3000;
+	delitem 949,3000;
+	delitem 705,3000;
+	getitem 28637,1;
+	set WCCB_6,WCCB_6+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在深淵湖水3樓";
+	close;
+}
+	mes "^0000FF【兔兔】^000000";
+	mes "你也是兔生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【兔兔】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在深淵湖水3樓";
+	close;
+NoMake:
+	mes "^0000FF【兔兔】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "靜候佳音。";
+	close;
+}
+
+//====================６====================\\
+abyss_03,136,145,4	script	龍龍	512,{
+	if(WCCB_7 == 1) goto XY;
+	if(WCCB_6 == 1){
+	mes "^0000FF【龍龍】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "快點吧",GO_1,"少廢話了！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【龍龍】^000000";
+	mes "收集^FF00003000個龍牙^000000";
+	mes "收集^FF00003000個龍鱗^000000";
+	mes "收集^FF00003000個龍皮^000000";
+	next;
+	menu 	"好難",cancel,
+		"區區任務，何足掛齒",Shi_1;
+Shi_1:
+	mes "^0000FF【龍龍】^000000";
+	mes "俠義之人必有俠義之心。";
+	next;
+	if(countitem(1035)< 3000) goto NoMake;
+	if(countitem(1036)< 3000) goto NoMake;
+	if(countitem(7123)< 3000) goto NoMake;
+	mes "^0000FF【龍龍】^000000";
+	mes "我果然沒看錯人。";
+	mes "依照約定，《龍龍娃娃》拿去吧！";
+	next;
+	delitem 1035,3000;
+	delitem 1036,3000;
+	delitem 7123,3000;
+	getitem 28638,1;
+	set WCCB_7,WCCB_7+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在夢羅克";
+	close;
+}
+	mes "^0000FF【龍龍】^000000";
+	mes "你也是龍生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【龍龍】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在夢羅克";
+	close;
+NoMake:
+	mes "^0000FF【龍龍】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "看來你還不夠格。";
+	close;
+}
+
+//====================７====================\\
+morocc,91,102,5	script	蛇蛇	512,{
+	if(WCCB_8 == 1) goto XY;
+	if(WCCB_7 == 1){
+	mes "^0000FF【蛇蛇】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "好！你說",GO_1,"不會是叫我殺人吧？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【蛇蛇】^000000";
+	mes "收集^FF00003000個蛇鱗^000000";
+	mes "收集^FF00003000個蛇女之首^000000";
+	mes "收集^FF00003000個蛇髮^000000";
+	next;
+	menu 	"我不想幫你",cancel,
+		"我幫你",Shi_1;
+Shi_1:
+	mes "^0000FF【蛇蛇】^000000";
+	mes "讓我來看看…";
+	next;
+	if(countitem(926)< 3000) goto NoMake;
+	if(countitem(1047)< 3000) goto NoMake;
+	if(countitem(1048)< 3000) goto NoMake;
+	mes "^0000FF【蛇蛇】^000000";
+	mes "做的好！";
+	mes "《蛇蛇娃娃》拿去吧！";
+	next;
+	delitem 926,3000;
+	delitem 1047,3000;
+	delitem 1048,3000;
+	getitem 28639,1;
+	set WCCB_8,WCCB_8+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在吉芬塔2樓";
+	close;
+}
+	mes "^0000FF【蛇蛇】^000000";
+	mes "你也是蛇生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【蛇蛇】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在吉芬塔2樓";
+	close;
+NoMake:
+	mes "^0000FF【蛇蛇】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "原來你這麼壞心眼。";
+	close;
+}
+
+//====================８====================\\
+gef_dun02,199,70,4	script	馬馬	512,{
+	if(WCCB_9 == 1) goto XY;
+	if(WCCB_8 == 1){
+	mes "^0000FF【馬馬】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "給我給我",GO_1,"你不會虛脫嗎？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【馬馬】^000000";
+	mes "收集^FF00003000個馬蹄^000000";
+	mes "收集^FF00002000個燃燒的馬蹄鐵^000000";
+	mes "收集^FF00001000個馬牌^000000";
+	next;
+	menu 	"飛踢",cancel,
+		"你好帥阿！",Shi_1;
+Shi_1:
+	mes "^0000FF【馬馬】^000000";
+	mes "給我的好朋友";
+	next;
+	if(countitem(944)< 3000) goto NoMake;
+	if(countitem(7120)< 2000) goto NoMake;
+	if(countitem(662)< 1000) goto NoMake;
+	mes "^0000FF【馬馬】^000000";
+	mes "嘶！";
+	mes "《馬馬娃娃》給你吧！";
+	next;
+	delitem 944,3000;
+	delitem 7120,2000;
+	delitem 662,1000;
+	getitem 28640,1;
+	set WCCB_9,WCCB_9+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在迷藏森林3樓";
+	close;
+}
+	mes "^0000FF【馬馬】^000000";
+	mes "你也是馬生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【馬馬】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在迷藏森林3樓";
+	close;
+NoMake:
+	mes "^0000FF【馬馬】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "我爽，你咬我？";
+	close;
+}
+
+//====================９====================\\
+prt_maze03,129,146,5	script	羊羊	510,{
+	if(WCCB_10 == 1) goto XY;
+	if(WCCB_9 == 1){
+	mes "^0000FF【羊羊】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "沒問題",GO_1,"瘋了",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【羊羊】^000000";
+	mes "收集^FF00002000個惡魔角^000000";
+	mes "收集^FF00001000個毛線^000000";
+	mes "收集^FF00002000個賽依伐^000000";
+	next;
+	menu 	"聽說處女座的都很呆？",cancel,
+		"等我一下吧！",Shi_1;
+Shi_1:
+	mes "^0000FF【羊羊】^000000";
+	mes "哈哈哈哈哈哈哈哈…";
+	next;
+	if(countitem(923)< 2000) goto NoMake;
+	if(countitem(7038)< 1000) goto NoMake;
+	if(countitem(7053)< 2000) goto NoMake;
+	mes "^0000FF【羊羊】^000000";
+	mes "你果然不同凡響。";
+	mes "《羊羊娃娃》就送給你了！";
+	next;
+	delitem 923,2000;
+	delitem 7038,1000;
+	delitem 7053,2000;
+	getitem 28641,1;
+	set WCCB_10,WCCB_10+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在普隆德拉修道院";
+	close;
+}
+	mes "^0000FF【羊羊】^000000";
+	mes "你也是處女座嗎？";
+	close;
+XY:
+	mes "^0000FF【羊羊】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在普隆德拉修道院";
+	close;
+NoMake:
+	mes "^0000FF【羊羊】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "葡萄美酒夜光杯，欲飲琵琶馬上催。";
+	close;
+}
+
+//====================１０====================\\
+prt_monk,32,259,5	script	猴猴	512,{
+	if(WCCB_11 == 1) goto XY;
+	if(WCCB_10 == 1){
+	mes "^0000FF【猴猴】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "你想要什麼？",GO_1,"了不起嗎？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【猴猴】^000000";
+	mes "收集^FF00003000個動物外皮^000000";
+	mes "收集^FF00002000個猴子尾巴^000000";
+	mes "收集^FF00001000個猴子指甲^000000";
+	next;
+	menu 	"不想幫你勒",cancel,
+		"我幫你！！",Shi_1;
+Shi_1:
+	mes "^0000FF【猴猴】^000000";
+	mes "公平公正公開。";
+	next;
+	if(countitem(919)< 3000) goto NoMake;
+	if(countitem(942)< 2000) goto NoMake;
+	if(countitem(7011)< 1000) goto NoMake;
+	mes "^0000FF【猴猴】^000000";
+	mes "公平公正公開！";
+	mes "《猴猴娃娃》，接住！";
+	next;
+	delitem 919,3000;
+	delitem 942,2000;
+	delitem 7011,1000;
+	getitem 28642,1;
+	getitem 668,1000;
+	set WCCB_11,WCCB_11+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在死亡之都";
+	close;
+}
+	mes "^0000FF【猴猴】^000000";
+	mes "你也是猴生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【猴猴】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在死亡之都";
+	close;
+NoMake:
+	mes "^0000FF【猴猴】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "不想要公平嗎？";
+	close;
+}
+
+//====================１１====================\\
+niflheim,143,152,4	script	雞雞	510,{
+	if(WCCB_12 == 1) goto XY;
+	if(WCCB_11 == 1){
+	mes "^0000FF【雞雞】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "你的任務是？",GO_1,"蛇蠍美人",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【雞雞】^000000";
+	mes "收集^FF00001000個鳥嘴^000000";
+	mes "收集^FF00002000個鳥指甲^000000";
+	mes "收集^FF00003000個羽毛^000000";
+	next;
+	menu 	"我不跟蛇蠍心腸打交道",cancel,
+		"我會幫你的",Shi_1;
+Shi_1:
+	mes "^0000FF【雞雞】^000000";
+	mes "你心腸真好！";
+	next;
+	if(countitem(925)< 1000) goto NoMake;
+	if(countitem(917)< 2000) goto NoMake;
+	if(countitem(916)< 3000) goto NoMake;
+	mes "^0000FF【雞雞】^000000";
+	mes "物品都帶來了嗎？";
+	mes "那拿走吧…（把《雞雞娃娃》交到你手中）";
+	next;
+	delitem 925,1000;
+	delitem 917,2000;
+	delitem 916,3000;
+	getitem 28643,1;
+	set WCCB_12,WCCB_12+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在朱諾";
+	close;
+}
+	mes "^0000FF【雞雞】^000000";
+	mes "你也是生肖雞嗎？";
+	close;
+XY:
+	mes "^0000FF【雞雞】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在朱諾";
+	close;
+NoMake:
+	mes "^0000FF【雞雞】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "沒錯我就是。";
+	close;
+}
+
+//====================１２====================\\
+yuno,264,112,4	script	狗狗	510,{
+	if(WCCB_13 == 1) goto XY;
+	if(WCCB_12 == 1){
+	mes "^0000FF【狗狗】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "一言為定",GO_1,"不想",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【狗狗】^000000";
+	mes "收集^FF00003000個犬妖的毛^000000";
+	mes "收集^FF00003000個獸人犬齒^000000";
+	mes "收集^FF00003000個不死心臟^000000";
+	next;
+	menu 	"我是浪子！",cancel,
+		"我馬上回來",Shi_1;
+Shi_1:
+	mes "^0000FF【狗狗】^000000";
+	mes "你…帶回來了嗎？";
+	next;
+	if(countitem(1034)< 3000) goto NoMake;
+	if(countitem(922)< 3000) goto NoMake;
+	if(countitem(929)< 3000) goto NoMake;
+	mes "^0000FF【狗狗】^000000";
+	mes "謝謝你";
+	mes "這是《狗狗娃娃》，請笑納。";
+	next;
+	delitem 1034,3000;
+	delitem 922,3000;
+	delitem 929,3000;
+	getitem 28644,1;
+	set WCCB_13,WCCB_13+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在獸人部落";
+	close;
+}
+	mes "^0000FF【狗狗】^000000";
+	mes "你也是生肖狗嗎？";
+	close;
+XY:
+	mes "^0000FF【狗狗】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個生肖在獸人部落";
+	close;
+NoMake:
+	mes "^0000FF【狗狗】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "拜託你了";
+	close;
+}
+
+//====================１３====================\\
+gef_fild10,66,331,5	script	豬豬	512,{
+	if(WCCB_14 == 1) goto XY;
+	if(WCCB_13 == 1){
+	mes "^0000FF【豬豬】^000000";
+	mes "是貝瑪叫你來的嗎？";
+	mes "要拿回娃娃可以，先完成我的任務在說。";
+	next;
+	menu "我要怎麼幫你？",GO_1,"不幫你",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【豬豬】^000000";
+	mes "收集^FF00003000個野豬毛^000000";
+	mes "收集^FF00003000個酒精^000000";
+	mes "收集^FF00003000個仙人掌刺^000000";
+	next;
+	menu 	"不想幫",cancel,
+		"ＧＯ。",Shi_1;
+Shi_1:
+	mes "^0000FF【豬豬】^000000";
+	mes "你真的帶回來了？";
+	next;
+	if(countitem(1028)< 3000) goto NoMake;
+	if(countitem(970)< 3000) goto NoMake;
+	if(countitem(952)< 3000) goto NoMake;
+	mes "^0000FF【豬豬】^000000";
+	mes "萬般感謝，我定當湧泉以報。";
+	mes "《豬豬娃娃》已經交給你了。";
+	next;
+	delitem 1028,3000;
+	delitem 970,3000;
+	delitem 952,3000;
+	getitem 28645,1;
+	set WCCB_14,WCCB_14+1;
+	mes "東西都給你了,恭喜你完成生肖任務";
+	close;
+}
+	mes "^0000FF【豬豬】^000000";
+	mes "你也是豬生肖嗎？";
+	close;
+XY:
+	mes "^0000FF【豬豬】^000000";
+	mes "東西都給你了,恭喜你完成生肖任務";
+	close;
+NoMake:
+	mes "^0000FF【豬豬】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "我等你回來。";
+	close;
+}

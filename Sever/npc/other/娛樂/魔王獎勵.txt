@@ -1,0 +1,20 @@
+pvp_n_2-5,99,100,4	script	國王的賞賜	990,{
+	mes "你成功的保護了我們人民";
+	mes "這是給你的賞賜！";
+	next;
+	set @gx,rand(12);
+	if (@gx ==0)getitem 13644,150;
+	if (@gx ==1)getitem 28570,50;
+	if (@gx ==2)getitem 28566,rand(50,75);
+	if (@gx ==3)getitem 28567,rand(50,75);
+	if (@gx ==4)getitem 28568,rand(50,75);
+	if (@gx ==5)getitem 28613,rand(50,75);
+	if (@gx ==6)getitem 28587,rand(50,75);
+	if (@gx ==7)getitem 13634,1;
+        if (@gx ==8)getitem 13639,1;
+        if (@gx ==9)getitem 13638,50;
+        if (@gx ==10)getitem 27418,3;
+        if (@gx ==11)getitem 27418,5;
+	warp "amatsu",116,152;
+	close;
+}

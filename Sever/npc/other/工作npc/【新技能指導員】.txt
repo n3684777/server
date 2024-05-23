@@ -1,0 +1,311 @@
+//===== eAthena Script ======================================================================
+//= Platinum Skills NPC
+//===== By: =================================================================================
+//= Keichii and edited by DarkChild
+//===== Current Version: ====================================================================
+//= 2.1 
+//===== Compatible With: ====================================================================
+//= Any eAthena Version
+//===== Description: ========================================================================
+//= Single NPC that assigns quests skills for all classes.
+//===== Additional Comments: ================================================================
+//= Added advanced classes by ShadowLady.
+//= Added baby clases by Midas
+//= 漢化 by coolfishfish 05/18/2005
+//===========================================================================================
+prontera,148,186,5	script	【新技能指導員】	834,{
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "你能在我這裡學到你的職業的特殊技能，想學嗎？";
+next;
+menu "要",Lgetskills,"不要",Lnogetskills;
+
+Lgetskills:
+if (BaseJob==0) goto Lskillsnovice;
+if (BaseJob==Job_SuperNovice) goto Lskillssnovice;
+if (BaseJob==Job_Swordman) goto Lskillsswordie;
+if (BaseJob==Job_Mage) goto Lskillsmage;
+if (BaseJob==Job_Archer) goto Lskillsarcher;
+if (BaseJob==Job_Acolyte) goto Lskillsaco;
+if (BaseJob==Job_Merchant) goto Lskillsmerchie;
+if (BaseJob==Job_Thief) goto Lskillsthief;
+if (BaseJob==Job_Knight) goto LskillsKnight;
+if ((Class==Job_Crusader) || (Class==4015)) goto LskillsCrusader;
+if (BaseJob==Job_Assassin) goto LskillsAssassin;
+if ((Class==Job_Rogue) || (Class==4018)) goto LskillsRogue;
+if (BaseJob==Job_Wizard) goto LskillsWizard;
+if ((BaseJob==Job_Sage) || (Class==4017)) goto LskillsSage;
+if ((Class==Job_Hunter) || (Class==4012)) goto LskillsHunter;
+if ((BaseJob==Job_Bard) || (Class==job_Clown)) goto LskillsBard;
+if ((BaseJob==Job_Dancer) || (Class==job_Gypsy)) goto LskillsDancer;
+if ((Class==Job_Blacksmith) || (Class==Job_WhiteSmith)) goto LskillsBlacksmith;
+if (BaseJob==Job_Priest) goto LskillsPriest;
+if ((BaseJob==Job_Monk) || (Class==4016)) goto LskillsMonk;
+if ((BaseJob==Job_Alchem) || (Class==Creator)) goto LskillsAlchem;
+Lskillsnovice:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 143,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把初心者的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillssnovice:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0; //Snovices don't have play dead, do they?
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把超級初心者的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsswordie:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 144,1,0;
+skill 145,1,0;
+skill 146,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把劍士系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsmage:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 157,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把魔法師系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsarcher:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 147,1,0;
+skill 148,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把弓箭手系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsaco:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 156,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把服侍系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsmerchie:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 153,1,0;
+skill 154,1,0;
+skill 155,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "我已經把商人系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+Lskillsthief:
+mes "[ ^0065DF新技能指導員^000000 ]";
+skill 142,1,0;
+skill 149,1,0;
+skill 150,1,0;
+skill 151,1,0;
+skill 152,1,0;
+mes " ";
+mes "我已經把盜賊系列的新技能教給你了，打開技能表看一下吧";
+mes "雖然這不是什麼厲害的技能，但是也可以在一定程度上幫助你的";
+next;
+goto LskillsEND;
+LskillsEND:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "祝你好運。";
+close;
+Lnogetskills:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "啊， 這樣啊，隨你咯~";
+mes "祝你好運... >.>";
+close;
+LskillsKnight:
+skill 142,1,0;
+skill 144,1,0;
+skill 145,1,0;
+skill 146,1,0;
+skill 1001,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "劍士、騎士的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsCrusader:
+skill 142,1,0;
+skill 144,1,0;
+skill 145,1,0;
+skill 146,1,0;
+skill 1002,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "劍士、十字軍的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsAssassin:
+if (JobLevel<30) goto LnoskillsAssassin;
+skill 142,1,0;
+skill 149,1,0;
+skill 150,1,0;
+skill 151,1,0;
+skill 152,1,0;
+skill 1003,1,0;
+skill 1004,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "盜賊、剌客的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LnoskillsAssassin:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "抱歉@@!你的技能等級未到30!";
+mes "再多加點油!";
+close;
+LskillsRogue:
+skill 142,1,0;
+skill 149,1,0;
+skill 150,1,0;
+skill 151,1,0;
+skill 152,1,0;
+skill 1005,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "盜賊、流氓的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsWizard:
+skill 142,1,0;
+skill 157,1,0;
+skill 1006,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "法師、巫師的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsSage:
+skill 142,1,0;
+skill 157,1,0;
+skill 1007,1,0;
+if (getskilllv(1008)>0) goto Lalreadyhave;
+if (getskilllv(1017)>0) goto Lalreadyhave;
+if (getskilllv(1018)>0) goto Lalreadyhave;
+if (getskilllv(1019)>0) goto Lalreadyhave;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "請選擇你想要的元素更換!!";
+menu "^00CCFF水屬性轉換^000000",LskillsSage1,"^663300地屬性轉換^000000",LskillsSage2,"^FF0000火屬性轉換^000000",LskillsSage3,"^66FF00風屬性轉換^000000",LskillsSage4,"搞懂下次再來學",LskillsClose;
+LskillsSage1:
+skill 1008,1,0;
+goto LskillsSageOk;
+LskillsSage2:
+skill 1017,1,0;
+goto LskillsSageOk;
+LskillsSage3:
+skill 1018,1,0;
+goto LskillsSageOk;
+LskillsSage4:
+skill 1019,1,0;
+goto LskillsSageOk;
+LskillsSageOk:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "法師、賢者的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+Lalreadyhave:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "已有^3300FF屬性更換^000000的技能";
+mes "此種技能只能學其中一種喔@@!";
+mes "請再創一支再來學吧@@!";
+close;
+LskillsClose:
+close;
+LskillsHunter:
+skill 142,1,0;
+skill 147,1,0;
+skill 148,1,0;
+skill 1009,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "弓手、獵人的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsBard:
+skill 142,1,0;
+skill 147,1,0;
+skill 148,1,0;
+skill 1010,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "弓手、詩人的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsDancer:
+skill 142,1,0;
+skill 147,1,0;
+skill 148,1,0;
+skill 1011,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "弓手、舞孃的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsBlacksmith:
+skill 142,1,0;
+skill 153,1,0;
+skill 154,1,0;
+skill 155,1,0;
+skill 1012,1,0;
+skill 1013,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "商人、鐵匠的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsPriest:
+skill 142,1,0;
+skill 156,1,0;
+if (getskilllv(54)<0) goto Lneedskill;
+skill 1014,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "服侍、祭師的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+Lneedskill:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "尚有技能未點出-"+"^0000FF復活術^000000";
+mes "只需要1級即可學得新技能@@!";
+close;
+LskillsMonk:
+skill 142,1,0;
+skill 156,1,0;
+skill 1015,1,0;
+skill 1016,1,0;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "服侍、武道的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+LskillsAlchem:
+skill 142,1,0;
+skill 153,1,0;
+skill 154,1,0;
+skill 155,1,0;
+skill 238,1,0;
+if(countitem(7434)) goto L_have;
+if (JobLevel<40) goto LneedJoblvl;
+getitem 7434, 1;
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "商人、鍊金的最新技能被你學走了@@!";
+mes "真厲害耶你@o@!";
+close;
+L_have:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "你已學習過此項技能了@@!";
+close;
+LneedJoblvl:
+mes "[ ^0065DF新技能指導員^000000 ]";
+mes "你的技能等級尚未達40級@@!";
+mes "請再多加點油再來找我!!";
+close;
+OnInit:
+	waitingroom "【新技能指導員】",0;
+	end;
+}

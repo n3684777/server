@@ -1,0 +1,230 @@
+payon,165,235,4	script	传	873,{ 
+
+	mes " [传]";
+	mes " и腊盢眤ō瘆刽ユ传癬ㄓ";
+	mes " ^66000050瘆刽传ド^000000";
+next;	
+	mes " 50瘆防祑刽传 1ド";
+	mes " 1 ド  传 50瘆防祑刽";
+	mes " 50れ  传 1堵穞縞";
+	mes " 50れ  传 1﹀縞";
+	mes " 75れ  传 1臸ぇ泊瞈";
+	mes " 75れ  传 1ぺ膀极";
+	mes " 75れ  传 1び锭禜紉";
+	mes " 100れ  传 1独▇";
+	mes " 100れ  传 1兢睲";
+	mes " 100れ  传 1る";
+	mes " 100れ  传 1堵棵棵琍";
+	next;
+	menu
+		"50瘆防祑刽传 1    ド",a,
+		"1  ド  传 50瘆防祑刽",b,
+		"50れ  传 1堵穞縞",c,
+		"50れ  传 1﹀縞",d,
+		"75れ  传 1臸ぇ泊瞈",e,
+		"75れ  传 1ぺ膀极",f,
+		"75れ  传 1び锭禜紉",g,
+		"100れ  传 1独▇",h,
+		"100れ  传 1兢睲",i,
+		"100れ  传 1る",j,
+		"100れ  传 1堵棵棵琍",k;
+
+	a:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+		if (countitem(7606)< 50) goto NOitem;
+		set @r,countitem(7606);
+		set @r2,(@r/50);
+		set @r3,(@r2*50);
+		delitem 7606,@r3;
+		getitem 28534,@r2;
+
+
+	b:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28534)< 1) goto NOitem;
+	delitem 28534,@s;
+	getitem 7606,@s*50;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	c:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*50;
+	getitem 7511,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	d:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 600 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*50;
+	getitem 7563,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	e:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 400 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*75;
+	getitem 7025,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	f:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 400 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*75;
+	getitem 7078,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	g:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 400 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*75;
+	getitem 7086,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	h:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*100;
+	getitem 7835,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	i:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*100;
+	getitem 7836,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	j:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*100;
+	getitem 7837,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	k:
+        mes " [传]";
+	mes " 瞷腊眤传";
+	next;
+	set @s,0;
+	input @s;
+	if ( @s < 1 || @s > 300 ) {
+		mes "[传]";
+			mes "眤块计秖ぃタ絋";
+				close;	}
+	if(countitem(28543)< 1) goto NOitem;
+	delitem 28543,@s*100;
+	getitem 7838,@s;
+
+        mes " [传]";
+	mes " 谅谅磃臮";
+	close;
+
+	NOitem:
+	mes " [传]";
+	mes " 狦⊿Τ叫ぃ璶ㄓ睹...";
+	close;
+OnInit:
+	waitingroom "传",0;
+	end;	}

@@ -1,0 +1,56 @@
+yuno,152,304,5	script	司馬懿	897,{
+	mes "無悔的選擇是好的選擇。";
+	next;
+	menu	"請讓我加入你門下",j,
+		"我想離開你的門下",l,
+		"在下告退",b;
+
+j:
+	if ( Llv != 10 ) goto NOten;
+	mes "哦？那你就在我門下學習吧！";
+	mes "在我門下學習之時，我也會給你一些能力加成。";
+	mes "當然，要是脫離我門下，我所給你的加成也會消失";
+	mes "加入我門下所獲得的能力加成是";
+	mes "^FF0000INT+20^000000";
+	mes "^FF0000DEX+10^000000";
+	mes "確定要跟隨我嗎？";
+	next;
+	menu	"是的，從今往後願效犬馬之勞",j1,
+		"我還是另擇明主好了。",j2;
+j1:
+	if ( Sango != 0 ) goto Shit;
+	mes "一起吃飯吧！";
+	next;
+	mes "獲得能力加成";
+	mes "^FF0000INT+20^000000";
+	mes "^FF0000DEX+10^000000";
+	set Sango,5;
+	atcommand "@int 20";
+	atcommand "@dex 10";
+	close;
+j2:
+	mes "那你快滾吧！";
+	close;
+l:
+	if ( Sango != 5 ) goto Nmast;
+	mes "你不想在待在偶手下了是嗎？";
+	mes "哈哈哈哈哈哈哈哈哈哈哈哈哈！。";
+	set Sango,0;
+	atcommand "@int -20";
+	atcommand "@dex -10";
+	close;
+b:
+	mes "退下吧！";
+	close;
+NOten:
+	mes "轉生次數必須到十次才能加入我門下";
+	mes "去多鍛鍊吧！";
+	close;
+Shit:
+	mes "你已經有主公了，為何還要來投效我？";
+	close;
+Nmast:
+	mes "我不是你的主公！";
+	close;
+	end;
+}

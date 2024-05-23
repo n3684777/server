@@ -1,0 +1,1358 @@
+xmas,141,121,5	script	任務委託員	510,{
+	mes "【任務委託員】";
+	mes "你來找我是想接任務嗎？";
+	mes "那你就找對人了！";
+	mes "我這裡的任務是有五個難易度的，";
+	mes "請斟酌自己的能力再接任務。";
+	next;
+	menu "【接受任務】",accept,
+	     "【交還任務】",regive,
+	     "【放棄任務】",giveup,
+	     "【查詢任務】",search;
+accept:
+	mes "請選擇你要的難易度。";
+	next;
+	menu "★☆☆☆☆",L1,
+	     "★★☆☆☆",L2,
+	     "★★★☆☆",L3,
+	     "★★★★☆",L4,
+	     "★★★★★",L5,
+	     "取消",cancel;
+L1:
+	if(gid > 0) goto noway;
+	mes "請稍候…";
+	next;
+	menu	"任務一",veasy0,
+		"任務二",veasy1,
+		"任務三",veasy2,
+		"任務四",veasy3,
+		"任務五",veasy4,
+		"任務六",veasy5,
+		"任務七",veasy6,
+		"任務八",veasy7,
+		"任務九",veasy8,
+		"任務十",veasy9;
+	close;
+L2:
+	if(gid > 0) goto noway;
+	mes "請稍候…";
+	next;
+	menu	"任務一",easy0,
+		"任務二",easy1,
+		"任務三",easy2,
+		"任務四",easy3,
+		"任務五",easy4,
+		"任務六",easy5,
+		"任務七",easy6,
+		"任務八",easy7,
+		"任務九",easy8,
+		"任務十",easy9;
+	close;
+L3:
+	if(gid > 0) goto noway;
+	mes "請稍候…";
+	next;
+	menu	"任務一",medium0,
+		"任務二",medium1,
+		"任務三",medium2,
+		"任務四",medium3,
+		"任務五",medium4,
+		"任務六",medium5,
+		"任務七",medium6,
+		"任務八",medium7,
+		"任務九",medium8,
+		"任務十",medium9;
+	close;
+L4:
+	if(gid > 0) goto noway;
+	mes "請稍候…";
+	next;
+	menu	"任務一",hard0,
+		"任務二",hard1,
+		"任務三",hard2,
+		"任務四",hard3,
+		"任務五",hard4,
+		"任務六",hard5,
+		"任務七",hard6,
+		"任務八",hard7,
+		"任務九",hard8,
+		"任務十",hard9;
+	close;
+L5:
+	if(gid > 0) goto noway;
+	mes "請稍候…";
+	next;
+	menu	"任務一",vhard0,
+		"任務二",vhard1,
+		"任務三",vhard2,
+		"任務四",vhard3,
+		"任務五",vhard4,
+		"任務六",vhard5,
+		"任務七",vhard6,
+		"任務八",vhard7,
+		"任務九",vhard8,
+		"任務十",vhard9;
+	close;
+cancel:
+	close;
+noway:
+	mes "你還有任務在身，先解完或是放棄吧！";
+	close;
+veasy0:
+	mes "【任務委託員】";
+	mes "有個人在^996699克魔島山頂^000000";
+	mes "你帶^FF000010個天地樹果實^000000給他，他會很感謝你的。";
+	set gid,1;
+	close;
+veasy1:
+	mes "【任務委託員】";
+	mes "有個人在^996699普隆德拉教堂後面^000000";
+	mes "你帶^FF000010個瑪絲黛拉果實^000000，他會很感謝你的。";
+	set gid,2;
+	close;
+veasy2:
+	mes "【任務委託員】";
+	mes "有個人在^996699武陵道院最西北方^000000";
+	mes "你帶^FF000010個萬能藥^000000，他會很感謝你的。";
+	set gid,3;
+	close;
+veasy3:
+	mes "【任務委託員】";
+	mes "有個人在^996699古城地下監獄1F東南方^000000";
+	mes "你帶^FF000010個天地樹芽^000000，他會很感謝你的。";
+	set gid,4;
+	close;
+veasy4:
+	mes "【任務委託員】";
+	mes "有個人在^996699斐陽西南邊的涼亭^000000";
+	mes "你帶^FF000010個天地樹葉子^000000，他會很感謝你的。";
+	set gid,5;
+	close;
+veasy5:
+	mes "【任務委託員】";
+	mes "有個人在^996699朱諾廣場上方^000000";
+	mes "你帶^FF000010個放大鏡^000000，他會很感謝你的。";
+	set gid,6;
+	close;
+veasy6:
+	mes "【任務委託員】";
+	mes "有個人在^996699艾爾帕蘭東北方^000000";
+	mes "你帶^FF000010個蝴蝶翅膀^000000，他會很感謝你的。";
+	set gid,7;
+	close;
+veasy7:
+	mes "【任務委託員】";
+	mes "有個人在^996699舊良宮正中間^000000";
+	mes "你帶^FF000010個曼特療傷藥^000000，他會很感謝你的。";
+	set gid,8;
+	close;
+veasy8:
+	mes "【任務委託員】";
+	mes "有個人在^996699鐘塔地下4F東南方^000000";
+	mes "你帶^FF000010個蘆薈汁液^000000，他會很感謝你的。";
+	set gid,9;
+	close;
+veasy9:
+	mes "【任務委託員】";
+	mes "有個人在^996699龍之城酒店內^000000";
+	mes "你帶^FF000010個聖水^000000，他會很感謝你的。";
+	set gid,10;
+	close;
+easy0:
+	mes "收集^FF0000100個不死心臟^000000";
+	mes "收集^FF0000100個人魚之心^000000";
+	mes "收集^FF0000100個亡者牙齒^000000";
+	set gid,11;
+	close;
+easy1:
+	mes "收集^FF0000100個酒精^000000";
+	mes "收集^FF0000100個帝特立米藥水^000000";
+	mes "收集^FF0000100個卡勒波迪藥水^000000";
+	set gid,12;
+	close;
+easy2:
+	mes "收集^FF0000100個骷髏頭^000000";
+	mes "收集^FF0000100個紅色蝙蝠翅膀^000000";
+	mes "收集^FF0000100個巨鼠指甲^000000";
+	set gid,13;
+	close;
+easy3:
+	mes "收集^FF0000100個賽依伐^000000";
+	mes "收集^FF0000100個布里刊^000000";
+	mes "收集^FF0000100個柔軟的羽毛^000000";
+	set gid,14;
+	close;
+easy4:
+	mes "收集^FF0000100個燃燒的馬蹄鐵^000000";
+	mes "收集^FF0000100個蜂蜜罐^000000";
+	mes "收集^FF0000100個炙熱的毛^000000";
+	set gid,15;
+	close;
+easy5:
+	mes "收集^FF0000100個破舊之手裏劍^000000";
+	mes "收集^FF0000100個黑色覆面^000000";
+	mes "收集^FF0000100個破碎的酒缸^000000";
+	set gid,16;
+	close;
+easy6:
+	mes "收集^FF0000100個魔幻拉鏈^000000";
+	mes "收集^FF0000100個花豹外皮^000000";
+	mes "收集^FF0000100個花豹指甲^000000";
+	set gid,17;
+	close;
+easy7:
+	mes "收集^FF0000100個蝙蝠籠子^000000";
+	mes "收集^FF0000100個斷針^000000";
+	mes "收集^FF0000100個紅色圍巾^000000";
+	set gid,18;
+	close;
+easy8:
+	mes "收集^FF0000100個纏線筒^000000";
+	mes "收集^FF0000100個彩色襪子^000000";
+	mes "收集^FF0000100個綠色粘稠物^000000";
+	set gid,19;
+	close;
+easy9:
+	mes "收集^FF0000100個舞獅之角^000000";
+	mes "收集^FF0000100個舞獅的假牙^000000";
+	mes "收集^FF0000100個小鬼靈^000000";
+	set gid,20;
+	close;
+medium0:
+	mes "收集^FF000010張皮里恩卡片^000000";
+	mes "收集^FF000010張虎王卡片^000000";
+	mes "收集^FF000010張月夜貓卡片^000000";
+	set gid,21;
+	close;
+medium1:
+	mes "收集^FF000010張死靈卡片^000000";
+	mes "收集^FF000010張獸人英雄卡片^000000";
+	mes "收集^FF000010張俄賽里斯卡片^000000";
+	set gid,22;
+	close;
+medium2:
+	mes "收集^FF000010張蟻后卡片^000000";
+	mes "收集^FF000010張巴風特卡片^000000";
+	mes "收集^FF000010張法老王卡片^000000";
+	set gid,23;
+	close;
+medium3:
+	mes "收集^FF000010張黑暗之王卡片^000000";
+	mes "收集^FF000010張惡魔波利卡片^000000";
+	mes "收集^FF000010張古埃及王卡片^000000";
+	set gid,24;
+	close;
+medium4:
+	mes "收集^FF000010張死靈騎士卡片^000000";
+	mes "收集^FF000010張塔奧群卡卡片^000000";
+	mes "收集^FF000010張烏龜將軍卡片^000000";
+	set gid,25;
+	close;
+medium5:
+	mes "收集^FF000010張冰暴騎士卡片^000000";
+	mes "收集^FF000010張墨蛇君卡片^000000";
+	mes "收集^FF000010張闇●劍士 賽尼亞卡片^000000";
+	set gid,26;
+	close;
+medium6:
+	mes "收集^FF000010張貝思波卡片^000000";
+	mes "收集^FF000010張迪塔勒泰晤勒斯卡片^000000";
+	mes "收集^FF000010張魔劍士 達納托斯的記憶卡片^000000";
+	set gid,27;
+	close;
+medium7:
+	mes "收集^FF000010張嗒妮小姐卡片^000000";
+	mes "收集^FF000010張巴基力 蘭特克力斯卡片^000000";
+	mes "收集^FF000010張幽暗夢魘卡片^000000";
+	set gid,28;
+	close;
+medium8:
+	mes "收集^FF000010張水晶龍卡片^000000";
+	mes "收集^FF000010張阿特羅斯卡片^000000";
+	mes "收集^FF000010張RSX-0806卡片^000000";
+	set gid,29;
+	close;
+medium9:
+	mes "收集^FF000010張幽靈波利卡片^000000";
+	mes "收集^FF000010張天使波利卡片^000000";
+	mes "收集^FF000010張黃金蟲卡片^000000";
+	set gid,30;
+	close;
+hard0:
+	mes "【任務委託員】";
+	mes "成為擊殺「文成武德‧劉備」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,31;
+	close;
+hard1:
+	mes "【任務委託員】";
+	mes "成為擊殺「霸傲天將‧關羽」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,32;
+	close;
+hard2:
+	mes "【任務委託員】";
+	mes "成為擊殺「黑面大眼‧張飛」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,33;
+	close;
+hard3:
+	mes "【任務委託員】";
+	mes "成為擊殺「治世能臣‧曹操」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,34;
+	close;
+hard4:
+	mes "【任務委託員】";
+	mes "成為擊殺「冰山尤物‧甄宓」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,35;
+	close;
+hard5:
+	mes "【任務委託員】";
+	mes "成為擊殺「能歌善舞‧蔡琰」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,36;
+	close;
+hard6:
+	mes "【任務委託員】";
+	mes "成為擊殺「江東之主‧孫權」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,37;
+	close;
+hard7:
+	mes "【任務委託員】";
+	mes "成為擊殺「霸王嬌妻‧大喬」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,38;
+	close;
+hard8:
+	mes "【任務委託員】";
+	mes "成為擊殺「絕代佳人‧小喬」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,39;
+	close;
+hard9:
+	mes "【任務委託員】";
+	mes "成為擊殺「飛將英傑‧呂布」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,40;
+	close;
+vhard0:
+	mes "【任務委託員】";
+	mes "成為擊殺「箭無虛發‧黃漢升」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,41;
+	close;
+vhard1:
+	mes "【任務委託員】";
+	mes "成為擊殺「錦衣電光‧馬孟起」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,42;
+	close;
+vhard2:
+	mes "【任務委託員】";
+	mes "成為擊殺「護主虎將‧許仲康」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,43;
+	close;
+vhard3:
+	set gid,44;
+	mes "【任務委託員】";
+	mes "成為擊殺「古之惡來‧典韋」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,44;
+	close;
+vhard4:
+	mes "【任務委託員】";
+	mes "成為擊殺「獨眼狂獅‧夏侯惇」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,45;
+	close;
+vhard5:
+	mes "【任務委託員】";
+	mes "成為擊殺「身先士卒‧夏侯淵」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,46;
+	close;
+vhard6:
+	mes "【任務委託員】";
+	mes "成為擊殺「水軍之最‧呂子明」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,47;
+	close;
+vhard7:
+	mes "【任務委託員】";
+	mes "成為擊殺「合淝英靈‧太史慈」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,48;
+	close;
+vhard8:
+	mes "【任務委託員】";
+	mes "成為擊殺「盡忠職守‧周幼平」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,49;
+	close;
+vhard9:
+	mes "【任務委託員】";
+	mes "成為擊殺「不讓鬚眉‧孫尚香」的MVP，";
+	mes "帶回成為MVP的證明。";
+	set gid,50;
+	close;
+regive:
+	if(gid ==11) goto re11;
+	if(gid ==12) goto re12;
+	if(gid ==13) goto re13;
+	if(gid ==14) goto re14;
+	if(gid ==15) goto re15;
+	if(gid ==16) goto re16;
+	if(gid ==17) goto re17;
+	if(gid ==18) goto re18;
+	if(gid ==19) goto re19;
+	if(gid ==20) goto re20;
+	if(gid ==21) goto re21;
+	if(gid ==22) goto re22;
+	if(gid ==23) goto re23;
+	if(gid ==24) goto re24;
+	if(gid ==25) goto re25;
+	if(gid ==26) goto re26;
+	if(gid ==27) goto re27;
+	if(gid ==28) goto re28;
+	if(gid ==29) goto re29;
+	if(gid ==30) goto re30;
+	if(gid ==31) goto re31;
+	if(gid ==32) goto re32;
+	if(gid ==33) goto re33;
+	if(gid ==34) goto re34;
+	if(gid ==35) goto re35;
+	if(gid ==36) goto re36;
+	if(gid ==37) goto re37;
+	if(gid ==38) goto re38;
+	if(gid ==39) goto re39;
+	if(gid ==40) goto re40;
+	if(gid ==41) goto re41;
+	if(gid ==42) goto re42;
+	if(gid ==43) goto re43;
+	if(gid ==44) goto re44;
+	if(gid ==45) goto re45;
+	if(gid ==46) goto re46;
+	if(gid ==47) goto re47;
+	if(gid ==48) goto re48;
+	if(gid ==49) goto re49;
+	if(gid ==50) goto re50;
+re11:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(929) < 100 ) goto NOitem;
+	if(countitem(950) < 100 ) goto NOitem;
+	if(countitem(958) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 929,100;
+	delitem 950,100;
+	delitem 958,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re12:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(970) < 100 ) goto NOitem;
+	if(countitem(971) < 100 ) goto NOitem;
+	if(countitem(972) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 970,100;
+	delitem 971,100;
+	delitem 972,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re13:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7005) < 100 ) goto NOitem;
+	if(countitem(7006) < 100 ) goto NOitem;
+	if(countitem(7007) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7005,100;
+	delitem 7006,100;
+	delitem 7007,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re14:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7053) < 100 ) goto NOitem;
+	if(countitem(7054) < 100 ) goto NOitem;
+	if(countitem(7063) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7053,100;
+	delitem 7054,100;
+	delitem 7063,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re15:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7120) < 100 ) goto NOitem;
+	if(countitem(7121) < 100 ) goto NOitem;
+	if(countitem(7122) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7120,100;
+	delitem 7121,100;
+	delitem 7122,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re16:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7156) < 100 ) goto NOitem;
+	if(countitem(7157) < 100 ) goto NOitem;
+	if(countitem(7158) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7156,100;
+	delitem 7157,100;
+	delitem 7158,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re17:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7167) < 100 ) goto NOitem;
+	if(countitem(7171) < 100 ) goto NOitem;
+	if(countitem(7172) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7167,100;
+	delitem 7171,100;
+	delitem 7172,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re18:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7214) < 100 ) goto NOitem;
+	if(countitem(7215) < 100 ) goto NOitem;
+	if(countitem(7216) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7214,100;
+	delitem 7215,100;
+	delitem 7216,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re19:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7217) < 100 ) goto NOitem;
+	if(countitem(7219) < 100 ) goto NOitem;
+	if(countitem(7220) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7217,100;
+	delitem 7219,100;
+	delitem 7220,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re20:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(7265) < 100 ) goto NOitem;
+	if(countitem(7266) < 100 ) goto NOitem;
+	if(countitem(7268) < 100 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 7265,100;
+	delitem 7266,100;
+	delitem 7268,100;
+	getitem 28538,100;
+	getitem 28613,1;
+	set gid,0;
+	close;
+re21:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4121) < 10 ) goto NOitem;
+	if(countitem(4123) < 10 ) goto NOitem;
+	if(countitem(4131) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4121,10;
+	delitem 4123,10;
+	delitem 4131,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re22:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4142) < 10 ) goto NOitem;
+	if(countitem(4143) < 10 ) goto NOitem;
+	if(countitem(4144) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4142,10;
+	delitem 4143,10;
+	delitem 4144,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re23:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4146) < 10 ) goto NOitem;
+	if(countitem(4147) < 10 ) goto NOitem;
+	if(countitem(4148) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4146,10;
+	delitem 4147,10;
+	delitem 4148,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re24:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4168) < 10 ) goto NOitem;
+	if(countitem(4174) < 10 ) goto NOitem;
+	if(countitem(4236) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4168,10;
+	delitem 4174,10;
+	delitem 4236,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re25:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4276) < 10 ) goto NOitem;
+	if(countitem(4302) < 10 ) goto NOitem;
+	if(countitem(4305) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4276,10;
+	delitem 4302,10;
+	delitem 4305,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re26:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4318) < 10 ) goto NOitem;
+	if(countitem(4330) < 10 ) goto NOitem;
+	if(countitem(4352) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4318,10;
+	delitem 4330,10;
+	delitem 4352,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re27:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4374) < 10 ) goto NOitem;
+	if(countitem(4386) < 10 ) goto NOitem;
+	if(countitem(4399) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4374,10;
+	delitem 4386,10;
+	delitem 4399,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re28:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4376) < 10 ) goto NOitem;
+	if(countitem(4407) < 10 ) goto NOitem;
+	if(countitem(4408) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4376,10;
+	delitem 4407,10;
+	delitem 4408,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re29:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4419) < 10 ) goto NOitem;
+	if(countitem(4425) < 10 ) goto NOitem;
+	if(countitem(4342) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4419,10;
+	delitem 4425,10;
+	delitem 4342,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re30:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(4047) < 10 ) goto NOitem;
+	if(countitem(4054) < 10 ) goto NOitem;
+	if(countitem(4128) < 10 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 4047,10;
+	delitem 4054,10;
+	delitem 4128,10;
+	getitem 28535,300;
+	getitem 28613,3;
+	set gid,0;
+	close;
+re31:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28614) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28614,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re32:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28615) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28615,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re33:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28616) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28616,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re34:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28617) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28617,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re35:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28618) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28618,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re36:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28619) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28619,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re37:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28620) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28620,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re38:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28621) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28621,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re39:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28622) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28622,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re40:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28623) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28623,1;
+	getitem 28536,500;
+	getitem 28613,4;
+	set gid,0;
+	close;
+re41:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28624) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28624,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re42:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28625) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28625,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re43:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28626) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28626,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re44:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28627) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28627,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	close;
+re45:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28628) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28628,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re46:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28629) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28629,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re47:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28630) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28630,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re48:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28631) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28631,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re49:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28632) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28632,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+re50:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "請稍候";
+	next;
+	if(countitem(28633) < 1 ) goto NOitem;
+	mes "這是你的獎勵，";
+	mes "不用太感謝我。";
+	delitem 28633,1;
+	getitem 28537,750;
+	getitem 28613,5;
+	set gid,0;
+	close;
+NOitem:
+	mes "【任務委託員】";
+	mes "讓我看看";
+	mes "你沒把東西帶齊";
+	close;
+giveup:
+	mes "【任務委託員】";
+	mes "你現在沒有任何任務了。";
+	set gid,0;
+	close;
+search:
+	if(gid ==0) goto nomission;
+	if(gid ==1) goto veasy00;
+	if(gid ==2) goto veasy01;
+	if(gid ==3) goto veasy02;
+	if(gid ==4) goto veasy03;
+	if(gid ==5) goto veasy04;
+	if(gid ==6) goto veasy05;
+	if(gid ==7) goto veasy06;
+	if(gid ==8) goto veasy07;
+	if(gid ==9) goto veasy08;
+	if(gid ==10) goto veasy09;
+	if(gid ==11) goto easy00;
+	if(gid ==12) goto easy01;
+	if(gid ==13) goto easy02;
+	if(gid ==14) goto easy03;
+	if(gid ==15) goto easy04;
+	if(gid ==16) goto easy05;
+	if(gid ==17) goto easy06;
+	if(gid ==18) goto easy07;
+	if(gid ==19) goto easy08;
+	if(gid ==20) goto easy09;
+	if(gid ==21) goto medium00;
+	if(gid ==22) goto medium01;
+	if(gid ==23) goto medium02;
+	if(gid ==24) goto medium03;
+	if(gid ==25) goto medium04;
+	if(gid ==26) goto medium05;
+	if(gid ==27) goto medium06;
+	if(gid ==28) goto medium07;
+	if(gid ==29) goto medium08;
+	if(gid ==30) goto medium09;
+	if(gid ==31) goto hard00;
+	if(gid ==32) goto hard01;
+	if(gid ==33) goto hard02;
+	if(gid ==34) goto hard03;
+	if(gid ==35) goto hard04;
+	if(gid ==36) goto hard05;
+	if(gid ==37) goto hard06;
+	if(gid ==38) goto hard07;
+	if(gid ==39) goto hard08;
+	if(gid ==40) goto hard09;
+	if(gid ==41) goto vhard00;
+	if(gid ==42) goto vhard01;
+	if(gid ==43) goto vhard02;
+	if(gid ==44) goto vhard03;
+	if(gid ==45) goto vhard04;
+	if(gid ==46) goto vhard05;
+	if(gid ==47) goto vhard06;
+	if(gid ==48) goto vhard07;
+	if(gid ==49) goto vhard08;
+	if(gid ==50) goto vhard09;
+nomission:
+	mes "【任務委託員】";
+	mes "你身上沒有任務。";
+	close;
+veasy00:
+	mes "【任務委託員】";
+	mes "有個人在^996699克魔島山頂^000000";
+	mes "你帶^FF000010個天地樹果實^000000給他，他會很感謝你的。";
+	close;
+veasy01:
+	mes "【任務委託員】";
+	mes "有個人在^996699普隆德拉教堂後面^000000";
+	mes "你帶^FF000010個瑪絲黛拉果實^000000，他會很感謝你的。";
+	close;
+veasy02:
+	mes "【任務委託員】";
+	mes "有個人在^996699武陵道院最西北方^000000";
+	mes "你帶^FF000010個萬能藥^000000，他會很感謝你的。";
+	close;
+veasy03:
+	mes "【任務委託員】";
+	mes "有個人在^996699古城地下監獄1F東南方^000000";
+	mes "你帶^FF000010個天地樹芽^000000，他會很感謝你的。";
+	close;
+veasy04:
+	mes "【任務委託員】";
+	mes "有個人在^996699斐陽西南邊的涼亭^000000";
+	mes "你帶^FF000010個天地樹葉子^000000，他會很感謝你的。";
+	close;
+veasy05:
+	mes "【任務委託員】";
+	mes "有個人在^996699朱諾廣場上方^000000";
+	mes "你帶^FF000010個放大鏡^000000，他會很感謝你的。";
+	close;
+veasy06:
+	mes "【任務委託員】";
+	mes "有個人在^996699艾爾帕蘭東北方^000000";
+	mes "你帶^FF000010個蝴蝶翅膀^000000，他會很感謝你的。";
+	close;
+veasy07:
+	mes "【任務委託員】";
+	mes "有個人在^996699舊良宮正中間^000000";
+	mes "你帶^FF000010個曼特療傷藥^000000，他會很感謝你的。";
+	close;
+veasy08:
+	mes "【任務委託員】";
+	mes "有個人在^996699鐘塔地下4F東南方^000000";
+	mes "你帶^FF000010個蘆薈汁液^000000，他會很感謝你的。";
+	close;
+veasy09:
+	mes "【任務委託員】";
+	mes "有個人在^996699龍之城酒店內^000000";
+	mes "你帶^FF000010個聖水^000000，他會很感謝你的。";
+	close;
+easy00:
+	mes "收集^FF0000100個不死心臟^000000";
+	mes "收集^FF0000100個人魚之心^000000";
+	mes "收集^FF0000100個亡者牙齒^000000";
+	close;
+easy01:
+	mes "收集^FF0000100個酒精^000000";
+	mes "收集^FF0000100個帝特立米藥水^000000";
+	mes "收集^FF0000100個卡勒波迪藥水^000000";
+	close;
+easy02:
+	mes "收集^FF0000100個骷髏頭^000000";
+	mes "收集^FF0000100個紅色蝙蝠翅膀^000000";
+	mes "收集^FF0000100個巨鼠指甲^000000";
+	close;
+easy03:
+	mes "收集^FF0000100個賽依伐^000000";
+	mes "收集^FF0000100個布里刊^000000";
+	mes "收集^FF0000100個柔軟的羽毛^000000";
+	close;
+easy04:
+	mes "收集^FF0000100個燃燒的馬蹄鐵^000000";
+	mes "收集^FF0000100個蜂蜜罐^000000";
+	mes "收集^FF0000100個炙熱的毛^000000";
+	close;
+easy05:
+	mes "收集^FF0000100個破舊之手裏劍^000000";
+	mes "收集^FF0000100個黑色覆面^000000";
+	mes "收集^FF0000100個破碎的酒缸^000000";
+	close;
+easy06:
+	mes "收集^FF0000100個魔幻拉鏈^000000";
+	mes "收集^FF0000100個花豹外皮^000000";
+	mes "收集^FF0000100個花豹指甲^000000";
+	close;
+easy07:
+	mes "收集^FF0000100個蝙蝠籠子^000000";
+	mes "收集^FF0000100個斷針^000000";
+	mes "收集^FF0000100個紅色圍巾^000000";
+	close;
+easy08:
+	mes "收集^FF0000100個纏線筒^000000";
+	mes "收集^FF0000100個彩色襪子^000000";
+	mes "收集^FF0000100個綠色粘稠物^000000";
+	close;
+easy09:
+	mes "收集^FF0000100個舞獅之角^000000";
+	mes "收集^FF0000100個舞獅的假牙^000000";
+	mes "收集^FF0000100個小鬼靈^000000";
+	close;
+medium00:
+	mes "收集^FF000010張皮里恩卡片^000000";
+	mes "收集^FF000010張虎王卡片^000000";
+	mes "收集^FF000010張月夜貓卡片^000000";
+	close;
+medium01:
+	mes "收集^FF000010張死靈卡片^000000";
+	mes "收集^FF000010張獸人英雄卡片^000000";
+	mes "收集^FF000010張俄賽里斯卡片^000000";
+	close;
+medium02:
+	mes "收集^FF000010張蟻后卡片^000000";
+	mes "收集^FF000010張巴風特卡片^000000";
+	mes "收集^FF000010張法老王卡片^000000";
+	close;
+medium03:
+	mes "收集^FF000010張黑暗之王卡片^000000";
+	mes "收集^FF000010張惡魔波利卡片^000000";
+	mes "收集^FF000010張古埃及王卡片^000000";
+	close;
+medium04:
+	mes "收集^FF000010張死靈騎士卡片^000000";
+	mes "收集^FF000010張塔奧群卡卡片^000000";
+	mes "收集^FF000010張烏龜將軍卡片^000000";
+	close;
+medium05:
+	mes "收集^FF000010張冰暴騎士卡片^000000";
+	mes "收集^FF000010張墨蛇君卡片^000000";
+	mes "收集^FF000010張闇●劍士 賽尼亞卡片^000000";
+	close;
+medium06:
+	mes "收集^FF000010張貝思波卡片^000000";
+	mes "收集^FF000010張迪塔勒泰晤勒斯卡片^000000";
+	mes "收集^FF000010張魔劍士 達納托斯的記憶卡片^000000";
+	close;
+medium07:
+	mes "收集^FF000010張嗒妮小姐卡片^000000";
+	mes "收集^FF000010張巴基力 蘭特克力斯卡片^000000";
+	mes "收集^FF000010張幽暗夢魘卡片^000000";
+	close;
+medium08:
+	mes "收集^FF000010張水晶龍卡片^000000";
+	mes "收集^FF000010張阿特羅斯卡片^000000";
+	mes "收集^FF000010張RSX-0806卡片^000000";
+	close;
+medium09:
+	mes "收集^FF000010張幽靈波利卡片^000000";
+	mes "收集^FF000010張天使波利卡片^000000";
+	mes "收集^FF000010張黃金蟲卡片^000000";
+	close;
+hard00:
+	mes "【任務委託員】";
+	mes "成為擊殺「文成武德‧劉備」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard01:
+	mes "【任務委託員】";
+	mes "成為擊殺「霸傲天將‧關羽」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard02:
+	mes "【任務委託員】";
+	mes "成為擊殺「黑面大眼‧張飛」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard03:
+	mes "【任務委託員】";
+	mes "成為擊殺「治世能臣‧曹操」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard04:
+	mes "【任務委託員】";
+	mes "成為擊殺「冰山尤物‧甄宓」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard05:
+	mes "【任務委託員】";
+	mes "成為擊殺「能歌善舞‧蔡琰」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard06:
+	mes "【任務委託員】";
+	mes "成為擊殺「江東之主‧孫權」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard07:
+	mes "【任務委託員】";
+	mes "成為擊殺「霸王嬌妻‧大喬」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard08:
+	mes "【任務委託員】";
+	mes "成為擊殺「絕代佳人‧小喬」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+hard09:
+	mes "【任務委託員】";
+	mes "成為擊殺「飛將英傑‧呂布」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard00:
+	mes "【任務委託員】";
+	mes "成為擊殺「箭無虛發‧黃漢升」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard01:
+	mes "【任務委託員】";
+	mes "成為擊殺「錦衣電光‧馬孟起」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard02:
+	mes "【任務委託員】";
+	mes "成為擊殺「護主虎將‧許仲康」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard03:
+	mes "【任務委託員】";
+	mes "成為擊殺「古之惡來‧典韋」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard04:
+	mes "【任務委託員】";
+	mes "成為擊殺「獨眼狂獅‧夏侯惇」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard05:
+	mes "【任務委託員】";
+	mes "成為擊殺「身先士卒‧夏侯淵」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard06:
+	mes "【任務委託員】";
+	mes "成為擊殺「水軍之最‧呂子明」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard07:
+	mes "【任務委託員】";
+	mes "成為擊殺「合淝英靈‧太史慈」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard08:
+	mes "【任務委託員】";
+	mes "成為擊殺「盡忠職守‧周幼平」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+vhard09:
+	mes "【任務委託員】";
+	mes "成為擊殺「不讓鬚眉‧孫尚香」的MVP，";
+	mes "帶回成為MVP的證明。";
+	close;
+}

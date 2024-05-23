@@ -1,0 +1,717 @@
+prontera,148,190,5	script	轉職天使	811,{
+	cutin "wish_maiden11",2;
+	mes "[轉職天使]";
+	mes "請選擇您要轉的職業";
+	mes "本服有提供忍者與超初2轉的服務唷！";
+	next;
+	menu "一轉職業",make,
+	     "二轉職業",New,
+	     "寶寶職業",baby,
+	     "寶寶二轉職業",baby2;
+
+
+make:
+{
+if (class == 0|| class == 4001){
+	if (JobLevel > 9){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "劍士",Z1,"魔法師",Z2,"弓箭手",Z3,"服事",Z4,"商人",Z5,"盜賊",Z6,"跆拳少年/少女",Z7,"槍手",Z8,"忍者",Z9,"超級初心者",Z10;
+
+Z1:
+	if(class == 4001) {jobchange 1,1; goto Z1end;}
+	else {jobchange 1; goto Z1end;}
+Z1end:
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+Z2:
+	if(class == 4001) {jobchange 2,1; goto Z2end;}
+	else {jobchange 2; goto Z2end;}
+Z2end:
+	skill 142,1,0;
+	skill 157,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+Z3:
+	if(class == 4001) {jobchange 3,1; goto Z3end;}
+	else {jobchange 3; goto Z3end;}
+Z3end:
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+	
+
+Z4:
+	if(class == 4001) {jobchange 4,1; goto Z4end;}
+	else {jobchange 4; goto Z4end;}
+Z4end:
+	skill 142,1,0;
+	skill 156,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+
+
+Z5:
+	if(class == 4001) {jobchange 5,1; goto Z5end;}
+	else {jobchange 5; goto Z5end;}
+Z5end:
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+Z6:
+	if(class == 4001) {jobchange 6,1; goto Z6end;}
+	else {jobchange 6; goto Z6end;}
+Z6end:
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+Z7:
+	jobchange 4046;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+Z8:
+	jobchange 24;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;	
+
+Z9:
+	jobchange 25;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+Z10:
+	jobchange 23;
+	skill 143,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+		}
+	}
+	next;
+	mes "[轉職天使]";
+	mes "很抱歉你的JOB等級不足";
+	mes "本階段需要JOB等級10才可以轉職";
+	cutin "",0;close;
+}
+
+
+
+
+
+
+New:
+{
+if (JobLevel > 39){
+	if (class == 23){
+	if (JobLevel < 49) goto BBy;
+	jobchange 4190;
+	skill 143,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+}
+	if (class == 25){
+	if (JobLevel < 49) goto BBy;
+	if (sex==2) goto Len02;
+	jobchange 4212;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+Len02:
+	jobchange 4211;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+}
+
+
+	if (class == 1|| class == 4002){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "騎士領主",J1,"聖騎士",J7;
+J1:
+	if(class == 4002) {jobchange 7,1; goto J1end;}
+	else {jobchange 7; goto J1end;}
+J1end:
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	skill 1001,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+J7:
+	if(class == 4002) {jobchange 14,1; goto J7end;}
+	else {jobchange 14; goto J7end;}
+J7end:
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	skill 1002,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;		
+	}
+
+	if (class == 2|| class == 4003){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "魔導士",J6,"智者",J13;
+J6:
+	if(class == 4003) {jobchange 9,1; goto J6end;}
+	else {jobchange 9; goto J6end;}
+J6end:
+	skill 142,1,0;
+	skill 157,1,0;
+	skill 1006,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+J13:
+	if(class == 4003) {jobchange 16,1; goto J13end;}
+	else {jobchange 16; goto J13end;}
+J13end:
+	skill 142,1,0;
+	skill 157,1,0;
+	skill 1007,1,0;
+	skill 1008,1,0;
+	skill 1017,1,0;
+	skill 1018,1,0;
+	skill 1019,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+
+	if (class == 3|| class == 4004){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "神射手",J5,"舞姬/藝人",J11;
+
+J5:
+	if(class == 4004) {jobchange 11,1; goto J5end;}
+	else {jobchange 11; goto J5end;}
+J5end:
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1009,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+
+
+J11:
+	if(sex==2) goto J_M;
+	if(class == 4004) {jobchange 20,1; goto J11end;}
+	else {jobchange 20; goto J11end;}
+J11end:
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1010,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+
+J_M:
+	if(class == 4004) {jobchange 19,1; goto J_Mend;}
+	else {jobchange 19; goto J_Mend;}
+J_Mend:
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1010,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;		
+	}
+
+
+	if (class == 4|| class == 4005){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "神官",J3,"武術宗師",J9;
+
+J3:
+	if(class == 4005) {jobchange 8,1; goto J3end;}
+	else {jobchange 8; goto J3end;}
+J3end:
+	skill 142,1,0;
+	skill 156,1,0;
+	skill 1014,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+	
+J9:
+	if(class == 4005) {jobchange 15,1; goto J9end;}
+	else {jobchange 15; goto J9end;}
+J9end:
+	skill 142,1,0;
+	skill 156,1,0;
+	skill 1015,1,0;
+	skill 1016,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+
+
+	if (class == 4046){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "拳聖",J14,"悟靈士",J15;
+
+J14:
+	jobchange 4047;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+J15:
+	jobchange 4049;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+
+	if (class == 5|| class == 4006){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "神工匠",J4,"創造者",J10;
+J4:
+	if(class == 4006) {jobchange 10,1; goto J4end;}
+	else {jobchange 10; goto J4end;}
+J4end:
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	skill 1012,1,0;
+	skill 1013,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+	
+J10:
+	if(class == 4006) {jobchange 18,1; goto J10end;}
+	else {jobchange 18; goto J10end;}
+J10end:
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	skill 238,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+
+	if (class == 6|| class == 4007){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "十字刺客",J2,"神行太保",J8;
+
+J2:
+	if(class == 4007) {jobchange 12,1; goto J2end;}
+	else {jobchange 12; goto J2end;}
+J2end:
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	skill 1003,1,0;
+	skill 1004,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+	
+J8:
+	if(class == 4007) {jobchange 17,1; goto J8end;}
+	else {jobchange 17; goto J8end;}
+J8end:
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	skill 1005,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+
+}
+	if(class == 23 || class == 25 ) goto BBy;
+	next;
+	mes "[轉職天使]";
+	mes "很抱歉你的JOB等級不足";
+	mes "本階段需要JOB等級40以上才能轉職";
+	cutin "",0;close;
+BBy:
+	next;
+	mes "[轉職天使]";
+	mes "很抱歉你的JOB等級不足";
+	mes "忍者與超初需要JOB等級50以上才能轉職";
+	cutin "",0;close;
+}
+
+
+
+baby:
+{
+if (class == 0|| class == 4001){
+	if (JobLevel > 9){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "寶寶劍士",B1,"寶寶魔法師",B2,"寶寶弓箭手",B3,"寶寶服事",B4,"寶寶商人",B5,"寶寶盜賊",B6,"寶寶超級初心者",B7;
+
+B1:
+	jobchange 4024;
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B2:
+	jobchange 4025;
+	skill 142,1,0;
+	skill 157,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B3:
+	jobchange 4026;
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B4:
+	jobchange 4027;
+	skill 142,1,0;
+	skill 156,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B5:
+	jobchange 4028;
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B6:
+	jobchange 4029;
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;cutin "",0;close;
+B7:
+	jobchange 4045;
+	skill 143,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+		}
+	}
+	next;
+	mes "[轉職天使]";
+	mes "很抱歉你的JOB等級不足";
+	mes "本階段需要JOB等級10才可以轉職";
+	cutin "",0;close;
+}
+
+baby2:
+	if ( JobLevel < 40 ){
+	mes "[轉職天使]";
+	mes "JOB要大於40等";
+	close;
+}
+	if ( class == 4024 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "騎士",R1,"十字軍",R2;
+
+R1:
+	jobchange 4030;
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	skill 1001,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;	
+
+R2:
+	jobchange 4037;
+	skill 142,1,0;
+	skill 144,1,0;
+	skill 145,1,0;
+	skill 146,1,0;
+	skill 1002,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;		
+	}
+	if (class == 4025 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "巫師",R3,"賢者",R4;
+
+R3:
+	jobchange 4032;
+	skill 142,1,0;
+	skill 157,1,0;
+	skill 1006,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R4:
+	jobchange 4039;
+	skill 142,1,0;
+	skill 157,1,0;
+	skill 1007,1,0;
+	skill 1008,1,0;
+	skill 1017,1,0;
+	skill 1018,1,0;
+	skill 1019,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+	if ( class == 4026 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "獵人",R5,"詩人/舞孃",R6;
+
+R5:
+	jobchange 4034;
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1009,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R6:
+	if ( sex == 2 ) goto R_M;
+	jobchange 4043;
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1010,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R_M:
+	jobchange 4042;
+	skill 142,1,0;
+	skill 147,1,0;
+	skill 148,1,0;
+	skill 1010,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+	if ( class == 4027 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "祭司",R7,"武僧",R8;
+
+R7:
+	jobchange 4031;
+	skill 142,1,0;
+	skill 156,1,0;
+	skill 1014,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R8:
+	jobchange 4038;
+	skill 142,1,0;
+	skill 156,1,0;
+	skill 1015,1,0;
+	skill 1016,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+	if ( class == 4028 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "鐵匠",R9,"鍊金術士",R10;
+
+R9:
+	jobchange 4033;
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	skill 1012,1,0;
+	skill 1013,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R10:
+	jobchange 4041;
+	skill 142,1,0;
+	skill 153,1,0;
+	skill 154,1,0;
+	skill 155,1,0;
+	skill 238,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+	if ( class == 4029 ){
+	mes "[轉職天使]";
+	mes "請選擇下列的的職業";
+	next;
+	menu "刺客",R11,"流氓",R12;
+
+R11:
+	jobchange 4035;
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	skill 1003,1,0;
+	skill 1004,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+R12:
+	jobchange 4040;
+	skill 142,1,0;
+	skill 149,1,0;
+	skill 150,1,0;
+	skill 151,1,0;
+	skill 152,1,0;
+	skill 1005,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+	}
+	if ( class == 4045 ){
+	jobchange 4191;
+	skill 142,1,0;
+	mes "[轉職天使]";
+	mes "好了,恭喜你,轉職成功!";
+	mes "祝你玩得愉快!";
+	cutin "",0;close;
+}
+
+cutin "",0;close;
+
+OnInit:
+	waitingroom "【全職轉職天使】",0;
+	end;
+}

@@ -1,0 +1,657 @@
+//      =====================================================================
+//
+//	腳 本 名 稱 : 炸 彈 人 ver 0.5 ( EA 版 本 )
+//
+//      製 作 日 期 : 2009.06.10
+//
+//      完 成 日 期 : 2009.06.24
+//
+//	製 作 環 境 : Eathena 13753 TXT / Eathena 13888 TXT ( 冥 王 Pluto EA )
+//
+//	製 作 人 員 : 魂 哥
+//
+//	錯 誤 回 報 : ＯＫ 討 論 區 http://www.okay88.com 短 消 息 給 魂 哥 
+//
+//                    或 聯 絡 即 時 通 c19940204@yahoo.com
+//
+//      =====================================================================
+//
+//	版 本 歷 史 :
+//
+//	Ver 0.1 - 腳 本 完 成 ( 2009.06.24 )
+//
+//	Ver 0.2 - 修 正 報 名 人 數 最 小 值 無 法 判 斷 的 問 題 ( 2009.06.27 )
+//
+//	Ver 0.3 - 修 正 當 同 時 炸 到 怪 物 及 玩 家 Map-server 會 產 生 錯 誤 的 問 題
+//                ( 2009.07.14 - 回報Bug者 : 人氣指數王 )
+//
+//	Ver 0.4 - 修 正 最 低 人 數 設 定 寫 法 錯 誤 的 問 題 ( 2009.07.17 )
+//
+//	Ver 0.5 - 修 正 身 上 無 炸 彈 時 取 得 第 三 名 對 話 會 卡 住 的 問 題 ( 2009.08.04 )
+//
+//      =====================================================================
+//
+//      作 者 言 :
+//
+//         感 謝 幫 忙 測 試 的 半 自 立 伺 服 器
+//
+//         ThE FallSounD 秋 音
+//
+//         論 壇 網 址 為 http://fallsound.freebbs.tw/index.php
+//
+//         有 興 趣 歡 迎 試 試
+//
+//      =====================================================================
+//
+//	設 定 說 明 :
+//
+//	$@weight		重量0的限制 ( 0:關閉 / 1:開啟 )
+//	$@peono			報名人數最小值
+//	$@TEXTA			勝利的積分標準
+//
+//	$@zenyyn		給予Zeny ( 0:關閉 / 1:開啟 )
+//	$@zenyno1		給予第一名Zeny最小值
+//	$@zenymax1		給予第一名Zeny最大值
+//	$@zenyno2		給予第二名Zeny最小值
+//	$@zenymax2		給予第二名Zeny最大值
+//	$@zenyno3		給予第三名Zeny最小值
+//	$@zenymax3		給予第三名Zeny最大值
+//
+//	$@cashyn		給予Cash點數 ( 0:關閉 / 1:開啟 )
+//	$@cashno1		給予第一名Cash點數最小值
+//	$@cashmax1		給予第一名Cash點數最大值
+//	$@cashno2		給予第二名Cash點數最小值
+//	$@cashmax2		給予第二名Cash點數最大值
+//	$@cashno3		給予第三名Cash點數最小值
+//	$@cashmax3		給予第三名Cash點數最大值
+//
+//	$@itemyn		給予獎品 ( 0:關閉 / 1:開啟 )
+//	$@itemno1		給予第一名物品的編號
+//	$@itemmax1		給予第一名物品的數量
+//	$@itemno2		給予第二名物品的編號
+//	$@itemmax2		給予第二名物品的數量
+//	$@itemno3		給予第三名物品的編號
+//	$@itemmax3		給予第三名物品的數量
+//
+//	$@goodno		炸死 天使波利 加分最小值
+//	$@goodmax		炸死 天使波利 加分最大值
+//	$@dieno			炸死 惡魔波利 扣分最小值
+//	$@diemax		炸死 惡魔波利 扣分最大值
+//	$@patolayn		炸死 潘朵拉的贈禮 加分或扣分 ( 1:加分 / 2:扣分 )
+//	$@patolano		炸死 潘朵拉的贈禮 ±分最小值
+//	$@patolamax		炸死 潘朵拉的贈禮 ±分最大值
+//
+//      =====================================================================
+//
+//	地 圖 屬 性
+//
+	pvp_n_2-1	mapflag	noskill
+	pvp_n_2-1	mapflag	nomemo
+	pvp_n_2-1	mapflag	pvp	off
+	pvp_n_2-1	mapflag	noexp
+//
+//      =====================================================================
+
+
+
+//內部設定核心
+-	script	PoManSYStem	-1,{
+OnInit:
+
+////////////////////////////////////////////////////
+////=============★ 基 本 設 定 ☆=============/////
+////////////////////////////////////////////////////
+
+//報名時身上重量必須為0的限制 ( 0:關閉 / 1:開啟 )
+	set $@weight,0;
+
+//人數未滿幾人時取消遊戲 ( 0:關閉 / 1:未滿一人 / 2:未滿兩人 .... 以此類推 )
+	set $@peono,5;
+
+////////////////////////////////////////////////////
+////==========★ 遊 戲 內 部 設 定 ☆==========/////
+////////////////////////////////////////////////////
+
+//當遊戲積分到達多少時勝利
+	set $@TEXTA,200;
+
+//〝天使波利〞獲分設限
+	set $@goodno,1;		//獲分最小值
+	set $@goodmax,5;	//獲分最大值
+
+//〝惡魔波利〞扣分設限
+	set $@dieno,1;		//扣分最小值
+	set $@diemax,5;		//扣分最大值
+
+//〝潘朵拉的贈禮〞分數設限
+	set $@patolayn,1;	//炸死牠加分還是扣分 ( 1:加分 / 2:扣分 )
+	set $@patolano,5;	//加減分數最小值
+	set $@patolamax,20;	//加減分數最大值
+
+////////////////////////////////////////////////////
+////==========★ 遊 戲 獎 勵 設 定 ☆==========/////
+////////////////////////////////////////////////////
+
+//是否給予Zeny金錢 ( 0:關閉 / 1:開啟 )
+	set $@zenyyn,0;
+
+//給予 Zeny 最小值設定 ( 如關閉給予Zeny則不用設定此項 )
+	set $@zenyno1,100000;	//第一名
+	set $@zenyno2,80000;	//第二名
+	set $@zenyno3,50000;	//第三名
+
+//給予 Zeny 最大值設定 ( 如關閉給予Zeny則不用設定此項 )
+	set $@zenymax1,500000;	//第一名
+	set $@zenymax2,400000;	//第二名
+	set $@zenymax3,300000;	//第三名
+
+
+
+
+//是否給予商城點數 ( 0:關閉 / 1:開啟 )
+	set $@cashyn,0;
+
+//給予 商城點數 最小值設定 ( 如關閉給予商城點數則不用設定此項 )
+	set $@cashno1,30;	//第一名
+	set $@cashno2,20;	//第二名
+	set $@cashno3,10;	//第三名
+
+//給予 商城點數 最大值設定 ( 如關閉給予商城點數則不用設定此項 )
+	set $@cashmax1,40;	//第一名
+	set $@cashmax2,30;	//第二名
+	set $@cashmax3,20;	//第三名
+
+
+
+//是否給予獎品 ( 0:關閉 / 1:開啟 )
+	set $@itemyn,1;
+
+//給予獎品 物品編號 設定 ( 如關閉給予獎品則不用設定此項 )
+	set $@itemno1,27418;	//第一名
+	set $@itemno2,27418;	//第二名
+	set $@itemno3,27418;	//第三名
+
+//給予獎品 物品數量 設定 ( 如關閉給予獎品則不用設定此項 )
+	set $@itemmax1,3;	//第一名
+	set $@itemmax2,2;	//第二名
+	set $@itemmax3,1;	//第三名
+
+//=========================================
+//不要更變的設定
+//=========================================
+set $@itemno1_Name$,getitemname($@itemno1);
+set $@itemno2_Name$,getitemname($@itemno2);
+set $@itemno3_Name$,getitemname($@itemno3);
+//=========================================
+
+end;
+}
+
+
+//================================================================================
+//================================================================================
+//================================================================================
+//================================================================================
+
+////遊戲的報名及解說NPC
+
+amatsu,123,156,4	script	RO炸彈人遊戲	415,{
+fanhui:
+mes "[RO炸彈人遊戲人員]";
+mes "玩家 ^FF8000"+ strcharinfo(0) +"^000000 您好,";
+mes "我是^FF0000RO 炸彈人遊戲 ^000000的報名人員,";
+if($@bmsj==1)mes "現在^0000FF可以^000000報名";
+if($@bmsj==0)mes "現在^FF0000不可以^000000報名";
+mes "報名時段 [02:30][06:30][10:30][14:30][18:30][22:30]";
+if($@weight==1)mes "身上重量必須為 0 才可參與遊戲,";
+mes "( 建議使用^FF0000 初學者 ^000000來進行遊戲 )";
+if( getgmlevel() == 99){
+next;
+menu "跳過GM選單",-,"臨時開啟遊戲",GM02;
+}
+next;
+switch(select("查看RO炸彈人相關說明","進入遊戲室 [ ^FF0000"+ getmapusers("pvp_n_2-1.gat") +" 人^000000 ]","離開")) {
+
+case 1:
+	mes "[RO炸彈人遊戲人員]";
+	mes "遊戲時間 10 分鐘,";
+	mes "進入等待室時會給予一顆炸彈,";
+	mes "假如被炸彈炸死或被怪物殺死,";
+	mes "復活時間為 20 秒,";
+	mes "這時可選擇棄權或等待.";
+	next;
+	mes "[RO炸彈人遊戲人員]";
+	mes "當參與人數未滿^FF0000"+$@peono+"^000000人將取消遊戲";
+	mes "並建議使用^FF0000 初學者 ^000000來進行遊戲";
+	mes "最快在時間內達到^FF0000"+$@TEXTA+"^000000分的前三名玩家獲勝.";
+	next;
+	mes "[RO炸彈人遊戲人員]";
+	mes "遊戲開始後,將會出現下列怪物:";
+	mes "^0000FF 天使波利 ^000000- 炸死隨機取得"+$@goodno+"～"+$@goodmax+"分";
+	mes "^996600 惡魔波利 ^000000- 炸死隨機扣取"+$@dieno+"～"+$@diemax+"分";
+	mes "^FF0000 潘朵拉的贈禮 ^000000";
+	if($@patolayn==1)mes "- 炸死隨機取得"+$@patolano+"～"+$@patolamax+"分";
+	if($@patolayn==2)mes "- 炸死隨機扣取"+$@patolano+"～"+$@patolamax+"分";
+	mes "- 隨機出現正面或負面的狀態";
+	next;
+	mes "[RO炸彈人遊戲人員]";
+	mes "^0000FF 潘朵拉的贈禮 ^000000 隨機狀態";
+	mes "有下列幾種:";
+	mes "【加速術 五等】【加速術 十等】";
+	mes "【風之步 五等】【風之步 十等】";
+	mes "【緩速術 五等】【緩速術 十等】";
+	mes "【潘朵拉的詛咒】";
+	next;
+	mes "[RO炸彈人遊戲人員]";
+	mes "^0000FF 潘朵拉的詛咒 ^000000的六種狀態包括:";
+	mes "【石化】【冰凍】【暈眩】";
+	mes "【睡眠】【詛咒】【黑暗】";
+	mes "-----------------------------";
+	next;
+	goto fanhui;
+
+case 2:
+	if ($@bmsj==0) {
+		mes "[RO炸彈人遊戲人員]";
+		mes "報名時間尚未開始.";
+		close;
+	}
+	if ($@weight==1){
+		if (weight!=0)  {
+		mes "[RO炸彈人遊戲人員]";
+		mes "為了防止作弊,";		
+		mes "請將身上物品清空.";
+		mes "( 建議使用^FF0000 初學者 ^000000來進行遊戲 )";		
+		close;
+		}
+	}
+	mes "[RO炸彈人遊戲人員]";
+	mes "為了防止作弊";
+	mes "自動將您的座騎/鳥/推車卸除";
+	mes "並將身上有的輔助技能消除";
+	mes "現在將你傳送至遊戲場地！";
+	if(countitem(26041)>0){
+	delitem	26041,countitem(26041);
+	}
+	next;
+	set @ATM,0;
+	getitem 26041,1;
+	setoption 0;
+	atcommand "@die";
+	sleep2 1000;
+	atcommand "@alive";
+	set @ssdsl,0;
+	set @FXJ,0;
+	sleep2 1000;
+	warp "pvp_n_2-1.gat",104,100;
+	close;
+
+case 3:
+	mes "[RO炸彈人遊戲人員]";
+	mes "歡迎您下次來參加.";
+	close;
+}
+
+GM02:
+if($@bmsj==1){
+	mes "[RO炸彈人遊戲人員]";
+	mes "您已經開啟過遊戲了.";
+	close;
+}
+if($pptr==1){
+	mes "[RO炸彈人遊戲人員]";
+	mes "遊戲進行中.";
+	close;
+}
+set $@bmsj,1;
+areawarp "pvp_n_2-1.gat",0,0,150,150,"amatsu",116,152;
+announce "[RO炸彈人遊戲] : 距離報名截止還剩十分鐘，此次活動由管理員手動開啟。",15;
+set $@MITO,0;
+initnpctimer;
+close;
+
+
+////遊戲開始報名時間
+OnClock0230:
+OnClock0630:
+OnClock1030:
+OnClock1430:
+OnClock1830:
+OnClock2230:
+
+////開始計算時間
+set $@bmsj,1;
+//主城傳送地圖座標(自行修改)
+areawarp "pvp_n_2-1.gat",0,0,150,150,"amatsu",116,152;
+announce "[RO炸彈人遊戲] : 距離報名截止還剩十分鐘，如人數未滿"+$@peono+"人將取消遊戲。",15;
+set $@MITO,0;
+initnpctimer;
+end;
+
+OnTimer120000:
+announce "[RO炸彈人遊戲] : 距離報名截止還剩八分鐘，目前報名人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+end;
+
+OnTimer300000:
+announce "[RO炸彈人遊戲] : 距離報名截止還剩五分鐘，目前報名人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+end;
+
+OnTimer420000:
+announce "[RO炸彈人遊戲] : 距離報名截止還剩三分鐘，目前報名人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+end;
+
+OnTimer480000:
+announce "[RO炸彈人遊戲] : 距離報名截止還剩二分鐘，目前報名人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+end;
+
+OnTimer540000:
+announce "[RO炸彈人遊戲] : 距離報名截止還剩一分鐘，目前報名人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+end;
+
+OnTimer600000:
+set $@bmsj,0;
+if (getmapusers("pvp_n_2-1.gat")>=$@peono) {
+	monster "pvp_n_2-1.gat",0,0,"天使波利(加分)",2530,70,"#THEKO::OnKOONE";
+	monster "pvp_n_2-1.gat",0,0,"惡魔波利(扣分)",2531,30,"#THEKO::OnOOKNE";
+	monster "pvp_n_2-1.gat",0,0,"潘朵拉的贈禮",2532,4,"#THEKO::OnNEAA";
+	announce "[RO炸彈人遊戲] : 遊戲開始，參與人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+	MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 積分最快到達"+$@TEXTA+"分的人只要到中間找〝成績登記NPC〞即可獲勝。",15;
+	set $pptr,1;
+	set $@aviv,1;
+	end;
+}
+if($@LALA==1){
+	monster "pvp_n_2-1.gat",0,0,"天使波利(加分)",2530,70,"#THEKO::OnKOONE";
+	monster "pvp_n_2-1.gat",0,0,"惡魔波利(扣分)",2531,30,"#THEKO::OnOOKNE";
+	monster "pvp_n_2-1.gat",0,0,"潘朵拉的贈禮",2532,4,"#THEKO::OnNEAA";
+	announce "[RO炸彈人遊戲] : 遊戲開始，參與人數 "+ getmapusers("pvp_n_2-1.gat") +" 人。",15;
+	MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 積分最快到達"+$@TEXTA+"分的人只要到中間找〝成績登記NPC〞即可獲勝。",15;
+	set $pptr,1;
+	set $@aviv,1;
+	end;
+}
+//主城傳送地圖座標(自行修改)
+areawarp "pvp_n_2-1",0,0,400,400,"amatsu",116,152;
+announce "[RO炸彈人遊戲] : 人數未滿"+$@peono+"人，遊戲取消。",15;
+end;
+
+OnTimer720000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩八分鐘。",15;
+end;
+
+OnTimer780000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 定時刷怪。",15;
+killmonsterall "pvp_n_2-1.gat";
+monster "pvp_n_2-1.gat",0,0,"天使波利(加分)",2530,70,"#THEKO::OnKOONE";
+monster "pvp_n_2-1.gat",0,0,"惡魔波利(扣分)",2531,30,"#THEKO::OnOOKNE";
+monster "pvp_n_2-1.gat",0,0,"潘朵拉的贈禮",2532,4,"#THEKO::OnNEAA";
+end;
+
+OnTimer900000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩五分鐘。",15;
+end;
+
+OnTimer960000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩四分鐘。",15;
+end;
+
+OnTimer1020000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩三分鐘。",15;
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 定時刷怪。",15;
+killmonsterall "pvp_n_2-1.gat";
+monster "pvp_n_2-1.gat",0,0,"天使波利(加分)",2530,70,"#THEKO::OnKOONE";
+monster "pvp_n_2-1.gat",0,0,"惡魔波利(扣分)",2531,30,"#THEKO::OnOOKNE";
+monster "pvp_n_2-1.gat",0,0,"潘朵拉的贈禮",2532,4,"#THEKO::OnNEAA";
+end;
+
+OnTimer1080000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩二分鐘。",15;
+end;
+
+OnTimer1140000:
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 距離遊戲結束還剩一分鐘。",15;
+end;
+
+OnTimer1200000:
+killmonsterall "pvp_n_2-1.gat";
+MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 遊戲結束。",15;
+set $@LALA,0;
+set $@aviv,0;
+set $pptr,0;
+sleep2 2000;
+//主城傳送地圖座標(自行修改)
+areawarp "pvp_n_2-1",0,0,400,400,"amatsu",116,152;
+end;
+
+OnInit:
+waitingroom "RO炸彈人遊戲",0;
+set $pptr,0;
+end;
+}
+
+//================================================================================
+//================================================================================
+//================================================================================
+//================================================================================
+
+////遊戲加減分狀態運作變數
+
+pvp_n_2-1,1,1,0	script	#THEKO	-1,{
+
+OnKOONE:
+monster "pvp_n_2-1.gat",0,0,"天使波利(加分)",2530,1,"#THEKO::OnKOONE";
+set @ssppB,rand($@goodno,$@goodmax);
+set @ssdsl,@ssdsl+@ssppB;
+announce "[RO炸彈人] : 您取得了 "+@ssppB+" 分,目前的積分是 "+ @ssdsl +" 分.",3;
+end;
+
+OnOOKNE:
+monster "pvp_n_2-1.gat",0,0,"惡魔波利(扣分)",2531,1,"#THEKO::OnOOKNE";
+set @ssppA,rand($@dieno,$@diemax);
+set @ssdsl,@ssdsl-@ssppA;
+if( @ssdsl < 1 ){set @ssdsl,0;}
+announce "[RO炸彈人] : 您被扣了 "+@ssppA+" 分,目前的積分是 "+ @ssdsl +" 分.",3;
+end;
+
+OnNEAA:
+set @sspp,rand($@patolano,$@patolamax);
+if($@patolayn==1){
+set @ssdsl,@ssdsl+@sspp;
+announce "[RO炸彈人] : 您取得了 "+@sspp+" 分,目前的積分是 "+ @ssdsl +" 分.",3;
+}
+if($@patolayn==2){
+set @ssdsl,@ssdsl-@sspp;
+if( @ssdsl < 1 ){set @ssdsl,0;}
+announce "[RO炸彈人] : 您被扣了 "+@sspp+" 分,目前的積分是 "+ @ssdsl +" 分.",3;
+}
+sleep2 1000;
+set @petola,rand(100);
+if ( @petola <= 15 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【加速術 五等】的正面效果.",bc_self,0x3399FF;
+skilleffect "AL_INCAGI",0;
+sc_start SC_INCREASEAGI,30000,5;
+}
+if ( @petola > 15 && @petola <= 25 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【加速術 十等】的正面效果.",bc_self,0x3399FF;
+skilleffect "AL_INCAGI",0;
+sc_start SC_INCREASEAGI,30000,10;
+}
+if ( @petola > 25 && @petola <= 40 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【風之步 五等】的正面效果.",bc_self,0x3399FF;
+skilleffect "SN_WINDWALK",0;
+sc_start SC_WINDWALK,30000,5;
+}
+if ( @petola > 40 && @petola <= 50 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【風之步 十等】的正面效果.",bc_self,0x3399FF;
+skilleffect "SN_WINDWALK",0;
+sc_start SC_WINDWALK,30000,10;
+}
+if ( @petola > 50 && @petola <= 65 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【緩速術 五等】的負面效果.",bc_self,0x996600;
+skilleffect "AL_DECAGI",0;
+sc_start SC_DECREASEAGI,20000,5;
+}
+if ( @petola > 65 && @petola <= 75 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【緩速術 十等】的負面效果.",bc_self,0x996600;
+skilleffect "AL_DECAGI",0;
+sc_start SC_DECREASEAGI,20000,10;
+}
+if ( @petola > 75 ){
+announce "[RO炸彈人] : 受到【潘朵拉的贈禮】影響,您被賦予【潘朵拉的詛咒】的負面效果.",bc_self,0xFF0000;
+set @petola7,rand(1,6);
+	if(@petola7==1)sc_start SC_Stone,20000,10;//石化
+	if(@petola7==2)sc_start SC_Freeze,20000,10;//冰凍
+	if(@petola7==3)sc_start SC_Stan,20000,10;//暈眩
+	if(@petola7==4)sc_start SC_Sleep,20000,10;//睡眠
+	if(@petola7==5)sc_start SC_Curse,20000,10;//詛咒
+	if(@petola7==6)sc_start SC_Blind,20000,10;//黑暗
+end;
+}
+sleep2 20000;
+monster "pvp_n_2-1.gat",0,0,"潘朵拉的贈禮",2532,1,"#THEKO::OnNEAA";
+end;
+
+}
+
+pvp_n_2-1,1,2,0	script	#DIE	-1,{
+OnPCDieEvent:
+	getmapxy(@mapname$,@mapx,@mapy,0);
+	if ( @mapname$ == "pvp_n_2-1" ){
+		if ( $@aviv == 1 ){
+		announce "[RO炸彈人] : 您將在20秒後復活,可選擇棄權或等待復活.",bc_self,0x00FFFF;
+		sleep2 20000;
+		if (@mapname$ != "pvp_n_2-1"){
+		announce "[RO炸彈人] : 您未在遊戲場地內,無法復活.",bc_self,0x00FFFF;
+		end;
+		}
+		atcommand "@alive";
+		}
+	end;
+	} 
+}
+
+//================================================================================
+//================================================================================
+//================================================================================
+//================================================================================
+
+////遊戲進行中積分到達時登記勝利的NPC
+
+pvp_n_2-1,106,102,4	script	成績登記	415,{
+	if(@ssdsl<$@TEXTA){
+	mes "您的積分是 ^FF0000"+ @ssdsl +"^000000 分,";
+	mes "尚未到達^0000FF"+$@TEXTA+"^000000分的標準,";
+	mes "取前三名為勝利者.";
+	close;
+	}
+	mes "您的積分是 ^FF0000"+ @ssdsl +"^000000 分,";
+	mes "達到了^0000FF"+$@TEXTA+"^000000分的標準,";
+	mes "請搶先按下一步.";
+	next;
+	if($@MITO==3){
+	mes "您的積分是 ^FF0000"+ @ssdsl +"^000000 分,";
+	mes "但是前三名都已經有了,";
+	mes "現在將您傳回娛樂區.";
+	areawarp "pvp_n_2-1",0,0,400,400,"gonryun",160,171;
+	close;
+	}
+	if(@ssdsl<$@TEXTA){
+	mes "您的積分是 ^FF0000"+ @ssdsl +"^000000 分,";
+	mes "尚未到達^00000FF"+$@TEXTA+"^000000分的標準,";
+	mes "取前三名為勝利者.";
+	close;
+	}
+	set @ssdsl,0;
+	set $@MITO,$@MITO+1;
+	MapAnnounce "pvp_n_2-1.gat","[RO炸彈人遊戲] : 玩家 "+ strcharinfo(0) +" 分數已達到，並成為第 "+$@MITO+" 名的炸彈人。",15;
+	if($@MITO==1){
+	set @ATM,1;
+	//給予zeny
+		if($@zenyyn==1)set @zzzz,rand($@zenyno1,$@zenymax1);
+		if($@zenyyn==1)set zeny,zeny+@zzzz;
+		if($@zenyyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@zzzz+"z 的金錢。";
+	//給予點數
+		if($@cashyn==1)set @cccc,rand($@cashno1,$@cashmax1);
+		if($@cashyn==1)set #CASHPOINTS,#CASHPOINTS+@cccc;
+		if($@cashyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@cccc+" 點商城點數，目前您共有 "+#CASHPOINTS+" 點。";
+	//給予獎品
+		if($@itemyn==1)getitem $@itemno1,$@itemmax1;
+		if($@itemyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了獎品 "+$@itemno1_Name$+" 。";
+	//主城傳送地圖座標(自行修改)
+	warp "amatsu",116,152;
+	end;
+	}
+	if($@MITO==2){
+	set @ATM,1;
+	//給予zeny
+		if($@zenyyn==1)set @zzzz,rand($@zenyno2,$@zenymax2);
+		if($@zenyyn==1)set zeny,zeny+@zzzz;
+		if($@zenyyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@zzzz+"z 的金錢。";
+	//給予點數
+		if($@cashyn==1)set @cccc,rand($@cashno2,$@cashmax2);
+		if($@cashyn==1)set #CASHPOINTS,#CASHPOINTS+@cccc;
+		if($@cashyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@cccc+" 點商城點數，目前您共有 "+#CASHPOINTS+" 點。";
+	//給予獎品
+		if($@itemyn==1)getitem $@itemno2,$@itemmax2;
+		if($@itemyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了獎品 "+$@itemno2_Name$+" 。";
+	//主城傳送地圖座標(自行修改)
+	warp "amatsu",116,152;
+	end;
+	}
+	if($@MITO==3){
+	set @ATM,1;
+	//給予zeny
+		if($@zenyyn==1)set @zzzz,rand($@zenyno3,$@zenymax3);
+		if($@zenyyn==1)set zeny,zeny+@zzzz;
+		if($@zenyyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@zzzz+"z 的金錢。";
+	//給予點數
+		if($@cashyn==1)set @cccc,rand($@cashno3,$@cashmax3);
+		if($@cashyn==1)set #CASHPOINTS,#CASHPOINTS+@cccc;
+		if($@cashyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了 "+@cccc+" 點商城點數，目前您共有 "+#CASHPOINTS+" 點。";
+	//給予獎品
+		if($@itemyn==1)getitem $@itemno3,$@itemmax3;
+		if($@itemyn==1)dispbottom "您藉由 RO炸彈人遊戲 取得了獎品 "+$@itemno3_Name$+" 。";
+	//第三名遊戲結束後全體傳送地圖座標(自行修改)
+	areawarp "pvp_n_2-1",0,0,400,400,"amatsu",116,152;
+	end;
+	}
+	end;
+}
+
+
+//================================================================================
+//================================================================================
+//================================================================================
+//================================================================================
+
+////炸彈使用運作
+
+function	script	ROPPT	{
+delitem	26041,1;
+getmapxy(@map$,@mapx,@mapy,0);
+if (@map$ != "pvp_n_2-1"){
+announce "[RO炸彈人] : 您沒有在遊戲場地裡,無法使用.",bc_self,0x00FFFF;
+end;
+}
+if ($pptr != 1){
+announce "[RO炸彈人] : 遊戲尚未開始,無法使用.",bc_self,0x00FFFF;
+getitem	26041,1;
+end;
+}
+if (@ropt == 1){
+announce "[RO炸彈人] : 您所召喚的炸彈還沒消失.",bc_self,0x00FFFF;
+end;
+}
+atcommand "@summon 2529";
+set @ropt,1;
+announce "[RO炸彈人] : 您召喚了炸彈,等待爆炸後才可繼續使用.",bc_self,0x00FFFF;
+sleep2 5000;
+set @ropt,0;
+if ( $@aviv == 1 ){
+	if( @ATM == 1 ){end;}
+	announce "[RO炸彈人] : 您可再次召喚炸彈.",bc_self,0x00FFFF;
+	getitem	26041,1;
+	end;
+}
+end;
+}

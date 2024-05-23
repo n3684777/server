@@ -1,0 +1,56 @@
+veins,200,333,5	script	關羽	628,{
+	mes "某誓與吾兄玄德患難與共，終生相伴，生死相隨。";
+	next;
+	menu	"請讓我加入你門下",j,
+		"我想離開你的門下",l,
+		"在下告退",b;
+
+j:
+	if ( Llv != 10 ) goto NOten;
+	mes "哦？那你就在我門下學習吧！";
+	mes "在我門下學習之時，我也會給你一些能力加成。";
+	mes "當然，要是脫離我門下，我所給你的加成也會消失";
+	mes "加入我門下所獲得的能力加成是";
+	mes "^FF0000STR+20^000000";
+	mes "^FF0000AGI+10^000000";
+	mes "確定要跟隨我嗎？";
+	next;
+	menu	"是的，從今往後願效犬馬之勞",j1,
+		"我還是另擇明主好了。",j2;
+j1:
+	if ( Sango != 0 ) goto Shit;
+	mes "有君相助，我大哥大業必成。";
+	next;
+	mes "獲得能力加成";
+	mes "^FF0000STR+20^000000";
+	mes "^FF0000AGI+10^000000";
+	set Sango,9;
+	atcommand "@str 20";
+	atcommand "@agi 10";
+	close;
+j2:
+	mes "那你快滾吧！";
+	close;
+l:
+	if ( Sango != 9 ) goto Nmast;
+	mes "你不想在待在我手下了是嗎？";
+	mes "汝為義而去，吾自不當攔。";
+	set Sango,0;
+	atcommand "@str -20";
+	atcommand "@agi -10";
+	close;
+b:
+	mes "退下吧！";
+	close;
+NOten:
+	mes "轉生次數必須到十次才能加入我門下";
+	mes "去多鍛鍊吧！";
+	close;
+Shit:
+	mes "你已經有主公了，為何還要來投效我？";
+	close;
+Nmast:
+	mes "我不是你的主公！";
+	close;
+	end;
+}

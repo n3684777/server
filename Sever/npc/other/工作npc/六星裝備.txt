@@ -1,0 +1,233 @@
+-	shop	quest_shop31	-1,512:100
+payon,169,213,4	script	六星裝備製作	435,{
+	set @i,0;
+	mes "[武器製作]";
+	mes "請按照購買物品似的選擇";
+	mes "材料足夠後將直接製作";
+	mes "材料不足將直接提示材料";
+	mes "請^FF0000一次選購一種^000000裝備";
+	mes "請放心選購^FF3399 查看裝備時,不會扣除相應Zeny^000000";
+	callshop "quest_shop31",1;
+	npcshopattach "quest_shop31";
+	end;
+
+OnBuyItem:
+        
+	if(.BuildQuest) {
+		for(set .e,0; !compare(getarg(.e+1)+"","Zeny"); set .e,.e+2) {}
+		npcshopadditem "quest_shop31",getarg(.e+2),getarg(.e)*compare(getarg(.e+1)+"","SZeny");
+		setarray .Shop[.i],getarg(.e+2);
+		set .i,.i+1;
+		if(.i%20==0){sleep(1);}
+		goto Quest_Setup;
+	}
+	if(.Shop[@i]!=@bought_nameid) for(set @i,1; 1; set @i,@i+1) if(.Shop[@i]==@bought_nameid) { set .i,@i; callsub Quest_Setup; }
+	mes "- 製作 ^FF0000"+getitemname(@bought_nameid)+"^000000";
+	mes "- 請準備好下面材料！";
+	for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) mes " ^0066CC" + getitemname(getarg(@i)) + "^000000 x " + ((countitem(getarg(@i))>=getarg(@i+1))? "":"") + "" + getarg(@i+1) + " [^009900" + countitem(getarg(@i)) + "^000000/^FF6600" + getarg(@i+1) + "^000000]"+( countitem(getarg(@i))>=getarg(@i+1)?" ( ^D2691E已完成^000000 )":" ( ^999999未完成^000000 )");
+	if(getarg(@i)) mes " ^FF1493需要製作費用^000000 " + ((Zeny>=getarg(@i))? "^FF0000":"") + "" + getarg(@i) + "^000000 "+((Zeny>=getarg(@i))? "( ^D2691E已完成^000000 )":"( ^999999金錢不足^000000 )");
+	mes "- 在交換條件裡寫著, 我將會給你：^0000FF";
+	for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) mes getarg(@i+1) + " 個 " + getitemname(getarg(@i));
+	switch(select("- 1、製作 ^FF0000"+getitemname(@bought_nameid)+"^000000:- 2、結束對話")) {
+		case 1:
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) if(countitem(getarg(@i)) < getarg(@i+1)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上有 ^FF0000" + countitem(getarg(@i)) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000,我需要 ^009900" + getarg(@i+1) + "^000000 個";
+				mes "請補齊 ^FF0000" + (getarg(@i+1)-countitem(getarg(@i))) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000 再來找我.";
+				emotion 53;
+				close;
+			}
+			if(Zeny < getarg(@i)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上攜帶的金錢不足.";
+				mes "請補齊 ^FF0000" + (getarg(@i)-Zeny) + "Zeny差額再來找我^000000.";
+				emotion 53;
+				close;
+			}
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) delitem getarg(@i),getarg(@i+1);
+			set Zeny,Zeny-getarg(@i);
+			for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) getitem getarg(@i),getarg(@i+1);
+			specialeffect2 154;
+			emotion 21;
+			if (compare(getarg(@i,0)+"","announce")) announce strcharinfo(0) + " 獲得了 " + getitemname(@bought_nameid) + "!",bc_all;
+			close;
+		case 2:
+			emotion 12;
+			close;
+	}
+OnInit:
+	npcshopitem "quest_shop31",0,0;
+	npcshopdelitem "quest_shop31",0,0;
+	set .BuildQuest,1;
+	set .i,1;
+	waitingroom "六星裝備",0;
+Quest_Setup:
+	switch(.i) {
+		default: set .BuildQuest,0; set .e,0; set .i,0; end;
+                case 1: callsub OnBuyItem,25051,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25200,1,"end";
+                case 2: callsub OnBuyItem,25052,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25201,1,"end";
+                case 3: callsub OnBuyItem,25053,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25202,1,"end";
+                case 4: callsub OnBuyItem,25054,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25203,1,"end";
+                case 5: callsub OnBuyItem,25060,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25204,1,"end";
+                case 6: callsub OnBuyItem,25148,2,28543,5000,28544,5000,28540,5000,28539,5000,28541,5000,28542,5000,10,"SZeny",25205,1,"end";
+	}
+}
+
+
+
+-	shop	quest_shop89	-1,512:100
+payon,169,209,4	script	七星裝備製作	435,{
+	set @i,0;
+	mes "[武器製作]";
+	mes "請按照購買物品似的選擇";
+	mes "材料足夠後將直接製作";
+	mes "材料不足將直接提示材料";
+	mes "請^FF0000一次選購一種^000000裝備";
+	mes "請放心選購^FF3399 查看裝備時,不會扣除相應Zeny^000000";
+	callshop "quest_shop89",1;
+	npcshopattach "quest_shop89";
+	end;
+
+OnBuyItem:
+        
+	if(.BuildQuest) {
+		for(set .e,0; !compare(getarg(.e+1)+"","Zeny"); set .e,.e+2) {}
+		npcshopadditem "quest_shop89",getarg(.e+2),getarg(.e)*compare(getarg(.e+1)+"","SZeny");
+		setarray .Shop[.i],getarg(.e+2);
+		set .i,.i+1;
+		if(.i%20==0){sleep(1);}
+		goto Quest_Setup;
+	}
+	if(.Shop[@i]!=@bought_nameid) for(set @i,1; 1; set @i,@i+1) if(.Shop[@i]==@bought_nameid) { set .i,@i; callsub Quest_Setup; }
+	mes "- 製作 ^FF0000"+getitemname(@bought_nameid)+"^000000";
+	mes "- 請準備好下面材料！";
+	for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) mes " ^0066CC" + getitemname(getarg(@i)) + "^000000 x " + ((countitem(getarg(@i))>=getarg(@i+1))? "":"") + "" + getarg(@i+1) + " [^009900" + countitem(getarg(@i)) + "^000000/^FF6600" + getarg(@i+1) + "^000000]"+( countitem(getarg(@i))>=getarg(@i+1)?" ( ^D2691E已完成^000000 )":" ( ^999999未完成^000000 )");
+	if(getarg(@i)) mes " ^FF1493需要製作費用^000000 " + ((Zeny>=getarg(@i))? "^FF0000":"") + "" + getarg(@i) + "^000000 "+((Zeny>=getarg(@i))? "( ^D2691E已完成^000000 )":"( ^999999金錢不足^000000 )");
+	mes "- 在交換條件裡寫著, 我將會給你：^0000FF";
+	for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) mes getarg(@i+1) + " 個 " + getitemname(getarg(@i));
+	switch(select("- 1、製作 ^FF0000"+getitemname(@bought_nameid)+"^000000:- 2、結束對話")) {
+		case 1:
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) if(countitem(getarg(@i)) < getarg(@i+1)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上有 ^FF0000" + countitem(getarg(@i)) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000,我需要 ^009900" + getarg(@i+1) + "^000000 個";
+				mes "請補齊 ^FF0000" + (getarg(@i+1)-countitem(getarg(@i))) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000 再來找我.";
+				emotion 53;
+				close;
+			}
+			if(Zeny < getarg(@i)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上攜帶的金錢不足.";
+				mes "請補齊 ^FF0000" + (getarg(@i)-Zeny) + "Zeny差額再來找我^000000.";
+				emotion 53;
+				close;
+			}
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) delitem getarg(@i),getarg(@i+1);
+			set Zeny,Zeny-getarg(@i);
+			for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) getitem getarg(@i),getarg(@i+1);
+			specialeffect2 154;
+			emotion 21;
+			if (compare(getarg(@i,0)+"","announce")) announce strcharinfo(0) + " 獲得了 " + getitemname(@bought_nameid) + "!",bc_all;
+			close;
+		case 2:
+			emotion 12;
+			close;
+	}
+OnInit:
+	npcshopitem "quest_shop89",0,0;
+	npcshopdelitem "quest_shop89",0,0;
+	set .BuildQuest,1;
+	set .i,1;
+	waitingroom "七星裝備",0;
+Quest_Setup:
+	switch(.i) {
+		default: set .BuildQuest,0; set .e,0; set .i,0; end;
+                case 1: callsub OnBuyItem,25200,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25206,1,"end";
+                case 2: callsub OnBuyItem,25201,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25207,1,"end";
+                case 3: callsub OnBuyItem,25202,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25208,1,"end";
+                case 4: callsub OnBuyItem,25203,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25209,1,"end";
+                case 5: callsub OnBuyItem,25204,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25210,1,"end";
+                case 6: callsub OnBuyItem,25205,2,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25211,1,"end";
+	}
+}
+
+
+-	shop	quest_shop1242	-1,512:100
+payon,169,205,4	script	八星裝備製作	435,{
+	set @i,0;
+	mes "[武器製作]";
+	mes "請按照購買物品似的選擇";
+	mes "材料足夠後將直接製作";
+	mes "材料不足將直接提示材料";
+	mes "請^FF0000一次選購一種^000000裝備";
+	mes "請放心選購^FF3399 查看裝備時,不會扣除相應Zeny^000000";
+	callshop "quest_shop1242",1;
+	npcshopattach "quest_shop1242";
+	end;
+
+OnBuyItem:
+        
+	if(.BuildQuest) {
+		for(set .e,0; !compare(getarg(.e+1)+"","Zeny"); set .e,.e+2) {}
+		npcshopadditem "quest_shop1242",getarg(.e+2),getarg(.e)*compare(getarg(.e+1)+"","SZeny");
+		setarray .Shop[.i],getarg(.e+2);
+		set .i,.i+1;
+		if(.i%20==0){sleep(1);}
+		goto Quest_Setup;
+	}
+	if(.Shop[@i]!=@bought_nameid) for(set @i,1; 1; set @i,@i+1) if(.Shop[@i]==@bought_nameid) { set .i,@i; callsub Quest_Setup; }
+	mes "- 製作 ^FF0000"+getitemname(@bought_nameid)+"^000000";
+	mes "- 請準備好下面材料！";
+	for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) mes " ^0066CC" + getitemname(getarg(@i)) + "^000000 x " + ((countitem(getarg(@i))>=getarg(@i+1))? "":"") + "" + getarg(@i+1) + " [^009900" + countitem(getarg(@i)) + "^000000/^FF6600" + getarg(@i+1) + "^000000]"+( countitem(getarg(@i))>=getarg(@i+1)?" ( ^D2691E已完成^000000 )":" ( ^999999未完成^000000 )");
+	if(getarg(@i)) mes " ^FF1493需要製作費用^000000 " + ((Zeny>=getarg(@i))? "^FF0000":"") + "" + getarg(@i) + "^000000 "+((Zeny>=getarg(@i))? "( ^D2691E已完成^000000 )":"( ^999999金錢不足^000000 )");
+	mes "- 在交換條件裡寫著, 我將會給你：^0000FF";
+	for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) mes getarg(@i+1) + " 個 " + getitemname(getarg(@i));
+	switch(select("- 1、製作 ^FF0000"+getitemname(@bought_nameid)+"^000000:- 2、結束對話")) {
+		case 1:
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) if(countitem(getarg(@i)) < getarg(@i+1)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上有 ^FF0000" + countitem(getarg(@i)) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000,我需要 ^009900" + getarg(@i+1) + "^000000 個";
+				mes "請補齊 ^FF0000" + (getarg(@i+1)-countitem(getarg(@i))) + "^000000 個 ^FF0000" + getitemname(getarg(@i)) + "^000000 再來找我.";
+				emotion 53;
+				close;
+			}
+			if(Zeny < getarg(@i)) {
+				next;
+				mes "[裝備製作]";
+				mes "你身上攜帶的金錢不足.";
+				mes "請補齊 ^FF0000" + (getarg(@i)-Zeny) + "Zeny差額再來找我^000000.";
+				emotion 53;
+				close;
+			}
+			for(set @i,0; !compare(getarg(@i+1)+"","Zeny"); set @i,@i+2) delitem getarg(@i),getarg(@i+1);
+			set Zeny,Zeny-getarg(@i);
+			for(set @i,@i+2; getarg(@i+1,0); set @i,@i+2) getitem getarg(@i),getarg(@i+1);
+			specialeffect2 154;
+			emotion 21;
+			if (compare(getarg(@i,0)+"","announce")) announce strcharinfo(0) + " 獲得了 " + getitemname(@bought_nameid) + "!",bc_all;
+			close;
+		case 2:
+			emotion 12;
+			close;
+	}
+OnInit:
+	npcshopitem "quest_shop1242",0,0;
+	npcshopdelitem "quest_shop1242",0,0;
+	set .BuildQuest,1;
+	set .i,1;
+	waitingroom "八星裝備",0;
+Quest_Setup:
+	switch(.i) {
+		default: set .BuildQuest,0; set .e,0; set .i,0; end;
+                case 1: callsub OnBuyItem,25206,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25212,1,"end";
+                case 2: callsub OnBuyItem,25207,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25213,1,"end";
+                case 3: callsub OnBuyItem,25208,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25214,1,"end";
+                case 4: callsub OnBuyItem,25209,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25215,1,"end";
+                case 5: callsub OnBuyItem,25210,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25216,1,"end";
+                case 6: callsub OnBuyItem,25211,2,7465,200,7466,200,7467,200,7468,200,7469,200,7470,200,7471,200,28543,10000,28544,10000,28540,10000,28539,10000,28541,10000,28542,10000,7461,20,7462,20,7463,20,7464,20,10,"SZeny",25217,1,"end";
+	}
+}

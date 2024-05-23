@@ -1,0 +1,258 @@
+-	script	hellKnt_Config	-1,{
+OnInit:
+
+	set $@hell_level,99;		//所需等級
+
+	set $@hell_team_players,1;	//最低隊員人數
+
+	set $@hell_Time_All,7200;	//挑戰時間
+
+	set $@hell_Time_In,300;		//進場時間
+
+	set $@hell_Time_Cooldown,3600;	//冷卻時間
+
+	set $@hell_GM,99;		//GM最低等級
+
+	setarray $@hell_monster1[0],1646,1647,1648,1649,1650,1651;	//1F刷怪
+
+	setarray $@hell_monster2[0],1646,1647,1648,1649,1650,1651;	//2F刷怪
+
+	end;
+}
+//=============登記==============
+
+aldebaran,133,107,5	script	秘境探險士兵	971,{
+	if(hell_Lasttime + $@hell_Time_Cooldown > gettimetick(2) && hell_Lasttime < gettimetick(2) && getgmlevel() < $@hell_GM ){
+		set .@hell_lastTime,hell_Lasttime + $hell_Cooldown - gettimetick(2);
+		set .@hell_hoursTime,.@hell_lastTime / 60 / 60;
+		set .@hell_minutesTime,.@hell_lastTime / 60 % 60;
+		set .@hell_secondsTime,.@hell_lastTime % 60;
+		mes "[秘境探險士兵]";
+		mes "根據進入規則，你現在無法進入秘境探險";
+		mes "你現在還有, "+.@hell_hoursTime+"小時 "+.@hell_minutesTime+"分鐘 "+.@hell_secondsTime+"秒才能進入";
+		close;
+		}
+
+		if(BaseLevel<$@hell_level){
+		mes "[秘境探險士兵]";
+		mes "你的等級還沒到"+$@hell_level+".";
+		close;
+		}
+
+		getpartymember(getcharid(1)); 
+		if(!getcharid(1) || $@partymembercount < $@hell_team_players){
+		mes "[秘境探險士兵]";
+		mes "請加入一個超過"+$@hell_team_players+"人的隊伍再來挑戰吧.";
+		close;
+		}
+
+		mes "[秘境探險士兵]";
+		mes "你在一支不錯的隊伍裡啊，請問你要做什麼呢";
+		next;
+		if (getcharid(0) != getpartyleader(getcharid(1),2)) {
+			mes "[秘境探險士兵]";
+			mes "我不能為你做任何事情, 人類... 只有組隊的隊長才能登記.";
+			close;
+		}
+		mes "[秘境探險士兵]";
+		mes "原來是傭兵,找我有什麼事情";
+		next;
+		switch (select("請批准進入:我要進去:我要離開")) {
+	case 1:
+			if(instance_id(1)){
+				if(has_instance("1@hell") == ""){
+				mes "[秘境探險]";
+				mes "你的隊伍已經申請了另一個副本，請先完成，或者放棄?";
+				close;
+				}
+			mes "[秘境探險士兵]";
+			mes "你的隊伍已經申請過了秘境探險的任務"; 
+			mes "請在主界面選擇 ^0000FF進入秘境探險選項^000000 來開始你的挑戰吧。"; 
+			close;
+		}
+		if(hell_Lasttime + $@hell_Time_Cooldown > gettimetick(2)&& getgmlevel() < $@hell_GM) {
+			mes "[秘境探險士兵]";
+			mes "你的冷卻時間尚未結束";
+			close;	
+		}
+		mes "[秘境探險士兵]";
+		mes "^0000FF秘境探險^000000 - 正在準備中";
+		mes "當秘境探險準備完成後，請選擇進入開始你的挑戰吧";
+		close2;
+		set .@instance_hell_id,instance_create("秘境探險",getcharid(1)); 
+		if(.@instance_hell_id < 0){
+			mes "[秘境探險士兵]";
+			mes "創建副本失敗"; 
+			mes "副本系統已經達到系統上限"; 
+			mes "請通知GM或者管理員"; 
+			close;
+		}
+		instance_attachmap("1@hell",.@instance_hell_id);
+		instance_attachmap("2@hell",.@instance_hell_id);
+		instance_set_timeout $@hell_Time_All,$@hell_Time_In,.@instance_hell_id;
+		instance_init .@instance_hell_id;
+		instance_attach .@instance_hell_id;
+		set 'hell_Lasttime,gettimetick(2) + $@hell_Time_All;
+		end;
+	case 2:
+		if(!instance_id(1) || has_instance("1@hell") == ""){ 
+			mes "[秘境探險士兵]";
+			mes "秘境探險副本不存在.";
+			mes "請確定你的隊伍已經申請過秘境探險，並且你們的挑戰副本並沒有因為長時間沒有人參加而取消";
+			close;
+		}
+		instance_attach instance_id(1);
+		if(hell_Lasttime + $@hell_Time_Cooldown < gettimetick(2))
+		set hell_Lasttime,'hell_Lasttime;
+		warpparty has_instance("1@hell"),150,6,getcharid(1);
+		doevent instance_npcname("hell_monster",instance_id(1))+"::Onmonster40";
+		set 'hover,0;
+		end; 
+	case 3:
+		close;
+		end;
+		}
+}
+
+//============== 登記/傳送 ==================
+
+1@hell,150,200,0	script	KTwarp_1	45,1,1,{ warp has_instance("2@hell"),150,170; end; }
+1@hell,129,291,0	script	KTwarp_2	45,1,1,{ warp has_instance("1@hell"),103,205; end; }
+
+//=================刷怪======================
+
+1@hell,0,0,0	script	hell_monster	-1,{
+Onmonster40:
+	disablenpc instance_npcname("KTwarp_1", instance_id());
+	hideonnpc instance_npcname("KTwarp_1", instance_id());
+	disablenpc instance_npcname("KTwarp_2", instance_id());
+	hideonnpc instance_npcname("KTwarp_2", instance_id());
+	set .@kt,instance_id(0);
+// 秘境探險1F
+		monster "1@hell",0,0,"--ja--",1646,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		monster "1@hell",0,0,"--ja--",1647,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		monster "1@hell",0,0,"--ja--",1648,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		monster "1@hell",0,0,"--ja--",1649,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		monster "1@hell",0,0,"--ja--",1650,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		monster "1@hell",0,0,"--ja--",1651,1,instance_npcname("hell_monster")+"::OnKillKtMob";
+
+// 秘境探險2F
+		monster "2@hell",0,0,"--ja--",1646,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		monster "2@hell",0,0,"--ja--",1647,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		monster "2@hell",0,0,"--ja--",1648,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		monster "2@hell",0,0,"--ja--",1649,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		monster "2@hell",0,0,"--ja--",1650,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		monster "2@hell",0,0,"--ja--",1651,1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+
+// 秘境探險1F BOSS
+		monster "1@hell",284,19,"--ja--",2604,1,instance_npcname("hell_koboss")+"::OnKillBoss";
+
+// 秘境探險2F BOSS
+		monster "2@hell",16,146,"--ja--",2608,1,instance_npcname("hell_koboss")+"::OnKillBoss6";
+		monster "2@hell",284,144,"--ja--",2613,1,instance_npcname("hell_koboss")+"::OnKillBoss6";
+		monster "2@hell",150,26,"--ja--",2622,1,instance_npcname("hell_koboss")+"::OnKillBoss6";
+		monster "2@hell",157,292,"--ja--",2620,1,instance_npcname("hell_koboss")+"::OnKillBoss6";
+
+OnKillKtMob:
+		monster "1@hell",0,0,"--ja--",$@hell_monster1[rand(getarraysize($@hell_monster1))],1,instance_npcname("hell_monster")+"::OnKillKtMob";
+		end;
+OnKillKtMob2:
+		monster "2@hell",0,0,"--ja--",$@hell_monster2[rand(getarraysize($@hell_monster2))],1,instance_npcname("hell_monster")+"::OnKillKtMob2";
+		end;
+}
+//================通關設定=================
+2@hell,0,0,0	script	hell_koboss	-1,{
+OnKillBoss:
+	if('kboss<1){
+	set 'kboss,'kboss+1;
+	set 'K_t,1-'kboss;
+	instance_announce .@kt,"下一隻神獸在地圖右上角!!",bc_map,0x00ff00;
+	}
+	if ('K_t == 0){
+	monster "1@hell",289,284,"--ja--",2603,1,instance_npcname("hell_koboss")+"::OnKillBoss2";
+	}
+	end;
+OnKillBoss2:
+	if('kbosa<1){
+	set 'kbosa,'kbosa+1;
+	set 'K_a,1-'kbosa;
+	instance_announce .@kt,"下一隻神獸在地圖左上角!!",bc_map,0x00ff00;
+	}
+	if ('K_a == 0){
+	monster "1@hell",22,271,"--ja--",2602,1,instance_npcname("hell_koboss")+"::OnKillBoss3";
+	}
+	end;
+OnKillBoss3:
+	if('kbosb<1){
+	set 'kbosb,'kbosb+1;
+	set 'K_b,1-'kbosb;
+	instance_announce .@kt,"下一隻神獸在地圖左下角!!",bc_map,0x00ff00;
+	}
+	if ('K_b == 0){
+	monster "1@hell",10,16,"--ja--",2601,1,instance_npcname("hell_koboss")+"::OnKillBoss4";
+	}
+	end;
+OnKillBoss4:
+	if('kbosc<1){
+	set 'kbosc,'kbosc+1;
+	set 'K_c,1-'kbosc;
+	instance_announce .@kt,"下一隻神獸在地圖正中間!!",bc_map,0x00ff00;
+	enablenpc instance_npcname("KTwarp_2", instance_id());
+	hideoffnpc instance_npcname("KTwarp_2", instance_id());
+	}
+	if ('K_c == 0){
+	monster "1@hell",150,158,"--ja--",2600,1,instance_npcname("hell_koboss")+"::OnKillBoss5";
+	}
+	end;
+OnKillBoss5:
+	if('kbosd<1){
+	set 'kbosd,'kbosd+1;
+	set 'K_d,1-'kbosd;
+	instance_announce .@kt,"通往二樓的傳送點已開啟!!",bc_map,0x00ff00;
+	}
+	if ('K_d == 0){
+	enablenpc instance_npcname("KTwarp_1", instance_id());
+	hideoffnpc instance_npcname("KTwarp_1", instance_id());
+	}
+	end;
+OnKillBoss6:
+	if('kbosf<4){
+	set 'kbosf,'kbosf+1;
+	set 'K_f,4-'kbosf;
+	instance_announce .@kt,"守護人還有"+'K_f,bc_map,0x00ff00;
+	}
+	if ('K_f == 0 ){
+	instance_announce .@kt,"最後的王在中間出現了!!",bc_map,0x00ff00;
+	doevent instance_npcname("hell_monster2",instance_id())+"::Onmonster41";
+	}
+	end;
+}
+
+2@hell,0,0,0	script	hell_monster2	-1,{
+Onmonster41:
+		monster "2@hell",155,220,"--ja--",2629,1,instance_npcname("hell_monster2")+"::OnKillBoss8";
+		end;
+
+OnKillBoss8:
+	instance_announce .@kt,"區區人類..怎麼可能..",bc_map,0x00ff00;
+	sleep2 5000;
+	instance_announce .@kt,"10秒後將傳送你們到領獎地圖!!",bc_map,0x00ff00;
+	sleep2 15000;
+	instance_warpall "goodjob09",33,142;
+	instance_destroy(instance_id());
+	end;
+}
+
+
+//=====================地圖屬性=======================
+1@hell	mapflag	noteleport
+1@hell	mapflag	nosave	SavePoint
+1@hell	mapflag	nomemo
+1@hell	mapflag	nobranch
+1@hell	mapflag	monster_noteleport
+
+2@hell	mapflag	noteleport
+2@hell	mapflag	nosave	SavePoint
+2@hell	mapflag	nomemo
+2@hell	mapflag	nobranch
+2@hell	mapflag	monster_noteleport

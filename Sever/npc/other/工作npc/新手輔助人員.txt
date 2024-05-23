@@ -1,0 +1,45 @@
+//新人裝備發送員
+//by 老手
+
+prontera,144,174,5	script	可憐的小女孩	441,{
+mes "[可憐的小女孩]";
+mes "求求你快來拿裝備吧";
+mes "我爸爸說沒發完今天就沒有晚餐吃...";
+mes "但是每個人只能領一次哦！";
+next;
+menu "我要領取！",LGET,"離開",LCLOSE;
+
+//開始
+LGET:
+		if (g == 2) goto OREADY;
+		set g,2;
+		getitem	601,1;	
+		getitem	2629,1;
+		getitem	2630,1;
+		getitem	2410,1;
+		getitem	2126,1;
+		getitem	2545,1;
+		getitem	682,100;
+		getitem	683,100;
+		getitem	12622,1;
+		getitem	5557,1;
+		getitem	5402,1;
+		getitem	5594,1;
+		getitem	12208,3;
+		goto LOK;
+OREADY:
+		mes "[可憐的小女孩]";
+		mes "爸爸說領過了不能再領哦！";
+		goto LCLOSE;
+LOK:
+		mes "[可憐的小女孩]";
+		mes "希望你玩得愉快!";
+		goto LCLOSE;	
+LCLOSE:
+		close;
+OnInit:
+	waitingroom "新手快來點我！",0;
+	end;
+	
+	
+}

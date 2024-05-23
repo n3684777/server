@@ -1,0 +1,23 @@
+/*
+【原創腳本】: 【聊天室顯示人數】
+【腳本類型】：通用
+【腳本作者】： s7623755 7795719 都是本人我           
+【腳本介紹】: gm老是在/w查人數嗎 不用這個腳本可以免打/w摟
+*/
+prontera,163,170,3	script	伺服器人數#1	920,{
+OnInit:
+OnTimer1000:
+set .s,.s+1;
+delwaitingroom;
+waitingroom "【目前人數"+ getusers(1) +"】",0;
+initnpctimer;
+}
+
+pay_arche,66,128,3	script	伺服器人數#2	920,{
+OnInit:
+OnTimer1000:
+set .s,.s+1;
+delwaitingroom;
+waitingroom "【目前人數"+ getusers(1) +"】",0;
+initnpctimer;
+}

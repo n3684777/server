@@ -1,0 +1,3280 @@
+//------------------------------//
+//【名    稱】世界傳送服務人員  //
+//【類    型】服務              //
+//【版    本】3.0               //
+//【授權費用】免費              //
+//【製作人員】神猴              //
+//【協助校閱】神豬		//
+//【指導人員】咬我阿笨蛋        //
+//【更新日誌】EP14.2(TRO)	//
+//【最後修正】2013/08/31	//
+//【最後聲明】以上請保留，謝謝  //
+//------------------------------//
+
+prontera,159,193,4	script	傳送服務員#1::warper	986,{
+
+	function Favorites_note;
+Start:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "親愛的[ ^0088FF"+strcharinfo(0)+"^000000 ]您好，";
+	mes "很高興在這裡為您服務。";
+	mes "請問您想去什麼地方?";
+	menu
+	"^008000◆　　快速傳送　　◆^000000^7100DC 最近選擇地圖^000000",note,
+	"^008000◆　　我的最愛　　◆^000000^7100DC 過去儲存的地圖^000000",MyFavorites,
+	"^008000◆　　BOSS領域　　◆^000000^7100DC 自創王的世界^000000",boss,
+	"^008000◆　　城市傳送　　◆^000000^7100DC 24個城市^000000",city,
+	"^008000◆　　迷宮密穴　　◆^000000^7100DC 50個迷宮密穴^000000",maze,
+	"^008000◆　　三國領地　　◆^000000^7100DC 三國名將俱在^000000",sango,
+	"^008000◆　公會地下密穴　◆^000000^7100DC 6個公會地下密穴^000000",gud,
+	"^008000◆EP13以上版本地圖◆^000000^7100DC 10個EP13以上新地圖^000000",ep13atm;
+	close;
+
+
+//------------ 城市選單 ------------//
+city:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"中央首都-普隆德拉",A01,
+		"魔幻之城-吉芬",A02,
+		"山嶽之城-斐揚",A03,
+		"田園都市-毀葛",A04,
+		"教國首都-拉赫",A05,
+		"沙漠之都-夢羅克",A06,
+		"天水之國-天津",A07,
+		"神仙之島-崑崙",A08,
+		"天空之城-朱諾",A09,
+		"港口之都-艾爾貝塔",A10,
+		"運河之都-艾爾帕蘭",A11,
+		"夢幻之島-克魔島",A12,
+		"白雪村落-姜餅城",A13,
+		"中國古都-龍之城",A14,
+		"死亡之都-尼芙菲姆",A15,
+		"泰國祕境-哎喲泰雅",A16,
+		"峽谷村落-菲音斯",A17,
+		"採礦村落-艾音貝赫",A18,
+		"鋼鐵之都-艾音布羅克",A19,
+		"企業之都-里希塔樂鎮",A20,
+		"雨檀族村落-汶巴拉",A21,
+		"克雷斯特漢姆古城",A22,
+		"莫斯科比亞",A23,
+		"蜜月島-爪哇伊",A24;
+
+A01:	set .@WarpMap$,"prontera";
+	set .@tempMFMap$,"中央首都-普隆德拉";
+	set .@WarpMapX,156;
+	set .@WarpMapY,94;
+	goto AddorWarp;
+
+A02:	set .@WarpMap$,"geffen";
+	set .@tempMFMap$,"魔幻之城-吉芬";
+	set .@WarpMapX,119;
+	set .@WarpMapY,68;
+	goto AddorWarp;
+
+A03:	set .@WarpMap$,"payon";
+	set .@tempMFMap$,"山嶽之城-斐揚";
+	set .@WarpMapX,172;
+	set .@WarpMapY,83;
+	goto AddorWarp;
+
+A04:	set .@WarpMap$,"hugel";
+	set .@tempMFMap$,"田園都市-毀葛";
+	set .@WarpMapX,93;
+	set .@WarpMapY,147;
+	goto AddorWarp;
+
+A05:	set .@WarpMap$,"rachel";
+	set .@tempMFMap$,"教國首都-拉赫";
+	set .@WarpMapX,142;
+	set .@WarpMapY,137;
+	goto AddorWarp;
+
+A06:	set .@WarpMap$,"morocc";
+	set .@tempMFMap$,"沙漠之都-夢羅克";
+	set .@WarpMapX,156;
+	set .@WarpMapY,94;
+	goto AddorWarp;
+
+A07:	set .@WarpMap$,"amatsu";
+	set .@tempMFMap$,"天水之國-天津";
+	set .@WarpMapX,197;
+	set .@WarpMapY,78;
+	goto AddorWarp;
+
+A08:	set .@WarpMap$,"gonryun";
+	set .@tempMFMap$,"神仙之島-崑崙";
+	set .@WarpMapX,161;
+	set .@WarpMapY,18;
+	goto AddorWarp;
+
+A09:	set .@WarpMap$,"yuno";
+	set .@tempMFMap$,"天空之城-朱諾";
+	set .@WarpMapX,157;
+	set .@WarpMapY,41;
+	goto AddorWarp;
+
+A10:	set .@WarpMap$,"alberta";
+	set .@tempMFMap$,"港口之都-艾爾貝塔";
+	set .@WarpMapX,117;
+	set .@WarpMapY,56;
+	goto AddorWarp;
+
+A11:	set .@WarpMap$,"aldebaran";
+	set .@tempMFMap$,"運河之都-艾爾帕蘭";
+	set .@WarpMapX,143;
+	set .@WarpMapY,110;
+	goto AddorWarp;
+
+A12:	set .@WarpMap$,"comodo";
+	set .@tempMFMap$,"夢幻之島-克魔島";
+	set .@WarpMapX,188;
+	set .@WarpMapY,106;
+	goto AddorWarp;
+
+A13:	set .@WarpMap$,"xmas";
+	set .@tempMFMap$,"白雪村落-姜餅城";
+	set .@WarpMapX,138;
+	set .@WarpMapY,106;
+	goto AddorWarp;
+
+A14:	set .@WarpMap$,"louyang";
+	set .@tempMFMap$,"中國古都-龍之城";
+	set .@WarpMapX,217;
+	set .@WarpMapY,40;
+	goto AddorWarp;
+
+A15:	set .@WarpMap$,"niflheim";
+	set .@tempMFMap$,"死亡之都-尼芙菲姆";
+	set .@WarpMapX,202;
+	set .@WarpMapY,177;
+	goto AddorWarp;
+
+A16:	set .@WarpMap$,"ayothaya";
+	set .@tempMFMap$,"泰國祕境-哎喲泰雅";
+	set .@WarpMapX,217;
+	set .@WarpMapY,187;
+	goto AddorWarp;
+
+A17:	set .@WarpMap$,"veins";
+	set .@tempMFMap$,"峽谷村落-菲音斯";
+	set .@WarpMapX,197;
+	set .@WarpMapY,231;
+	goto AddorWarp;
+
+A18:	set .@WarpMap$,"einbech";
+	set .@tempMFMap$,"採礦村落-艾音貝赫";
+	set .@WarpMapX,103;
+	set .@WarpMapY,197;
+	goto AddorWarp;
+
+A19:
+	menu
+		"鋼鐵之都-艾音布羅克(北門)",A19_1,
+		"鋼鐵之都-艾音布羅克(南門)",A19_2;
+
+A19_1:	set .@WarpMap$,"einbroch";
+	set .@tempMFMap$,"鋼鐵之都-艾音布羅克(北門)";
+	set .@WarpMapX,158;
+	set .@WarpMapY,317;
+	goto AddorWarp;
+
+A19_2:	set .@WarpMap$,"einbroch";
+	set .@tempMFMap$,"鋼鐵之都-艾音布羅克(南門)";
+	set .@WarpMapX,149;
+	set .@WarpMapY,38;
+	goto AddorWarp;
+
+A20:	set .@WarpMap$,"lighthalzen";
+	set .@tempMFMap$,"企業之都-里希塔樂鎮";
+	set .@WarpMapX,214;
+	set .@WarpMapY,322;
+	goto AddorWarp;
+
+A21:	set .@WarpMap$,"umbala";
+	set .@tempMFMap$,"雨檀族村落-汶巴拉";
+	set .@WarpMapX,126;
+	set .@WarpMapY,132;
+	goto AddorWarp;
+
+A22:	set .@WarpMap$,"glast_01";
+	set .@tempMFMap$,"克雷斯特漢姆古城";
+	set .@WarpMapX,200;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+A23:	set .@WarpMap$,"moscovia";
+	set .@tempMFMap$,"莫斯科比亞";
+	set .@WarpMapX,223;
+	set .@WarpMapY,194;
+	goto AddorWarp;
+
+A24:	set .@WarpMap$,"jawaii";
+	set .@tempMFMap$,"蜜月島-爪哇伊";
+	set .@WarpMapX,221;
+	set .@WarpMapY,215;
+	goto AddorWarp;
+
+
+//------------ 迷宮密穴選單 ------------//
+maze:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+	        "波利島(斐揚樹林)",M01,
+	        "寵物塔",M51,
+		"沉沒之船",M02,
+		"獸人 地下洞窟",M03,
+		"斐揚 地下洞窟",M04,
+		"螞蟻地獄 密穴",M05,
+		"海底洞穴",M06,
+		"鐘塔迷宮",M07,
+		"妙勒尼 廢棄礦場",M08,
+		"玩具工廠",M09,
+		"迷藏森林",M10,
+		"克魔島洞窟",M11,
+		"克克魔區域",M12,
+		"諾可羅德(火洞)",M13,
+		"普隆德拉 地下水道",M14,
+		"古代神殿",M15,
+		"吉芬 密穴",M16,
+		"菲音斯 原野",M17,
+		"崑崙 密穴",M18,
+		"烏龜島 密穴",M19,
+		"龍之城 密穴",M20,
+		"金字塔 密穴",M21,
+		"天津町",M22,
+		"史芬克斯 密穴",M23,
+		"優沛擂斯 廢墟",M24,
+		"礦山洞穴",M25,
+		"瀑布內的洞窟",M26,
+		"克雷斯特漢姆古城",M27,
+		"死都尼芙菲姆原野",M28,
+        	"樹木裡的-木工所",M29,
+		"莫斯科比亞-森林洞穴",M30,
+        	"葛帔尼亞",M31,
+        	"冰洞窟",M32,
+		"無名島",M33,
+        	"死亡之塔",M34,
+		"奧丁神殿",M35,
+		"神殿聖域",M36,
+		"托爾火山",M37,
+		"深淵湖水",M38,
+		"生體試驗研究所",M39,
+		"機械人型工廠",M40,
+		"夢羅克魔王",M41,
+		"阿巫敦拉 草原",M42,
+		"伊達 平原",M43,
+		"里希塔樂鎮 原野",M44,
+		"艾音布羅克 原野",M45,
+		"毀葛 原野",M46,
+		"蘇克拉特 沙漠",M47,
+		"普隆德拉 平原地區",M48,
+		"妙勒尼山脈",M49,
+		"吉芬 原野",M50;
+
+
+M01:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"森林北方地區 (波利島)",M01_1,
+		"斐揚 樹林01",M01_2,
+		"斐揚 樹林02",M01_3,
+		"斐揚 樹林03",M01_4,
+		"斐揚 樹林05",M01_5,
+		"斐揚 樹林06",M01_6,
+		"斐揚 樹林07",M01_7,
+		"斐揚 樹林08",M01_8,
+		"斐揚 樹林09",M01_9,
+		"斐揚 樹林10",M01_10,
+		"斐揚 樹林11",M01_11;
+
+M01_1:	set .@WarpMap$,"pay_fild04";
+	set .@tempMFMap$,"森林北方地區 (波利島)";
+	set .@WarpMapX,51;
+	set .@WarpMapY,173;
+	goto AddorWarp;
+
+M01_2:	set .@WarpMap$,"pay_fild01";
+	set .@tempMFMap$,"斐揚 樹林01";
+	set .@WarpMapX,29;
+	set .@WarpMapY,151;
+	goto AddorWarp;
+
+M01_3:	set .@WarpMap$,"pay_fild02";
+	set .@tempMFMap$,"斐揚 樹林02";
+	set .@WarpMapX,233;
+	set .@WarpMapY,121;
+	goto AddorWarp;
+
+M01_4:	set .@WarpMap$,"pay_fild03";
+	set .@tempMFMap$,"斐揚 樹林03";
+	set .@WarpMapX,384;
+	set .@WarpMapY,69;
+	goto AddorWarp;
+
+M01_5:	set .@WarpMap$,"pay_fild05";
+	set .@tempMFMap$,"斐揚 樹林05";
+	set .@WarpMapX,123;
+	set .@WarpMapY,358;
+	goto AddorWarp;
+
+M01_6:	set .@WarpMap$,"pay_fild06";
+	set .@tempMFMap$,"斐揚 樹林06";
+	set .@WarpMapX,300;
+	set .@WarpMapY,354;
+	goto AddorWarp;
+
+M01_7:	set .@WarpMap$,"pay_fild07";
+	set .@tempMFMap$,"斐揚 樹林07";
+	set .@WarpMapX,220;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M01_8:	set .@WarpMap$,"pay_fild08";
+	set .@tempMFMap$,"斐揚 樹林08";
+	set .@WarpMapX,160;
+	set .@WarpMapY,31;
+	goto AddorWarp;
+
+M01_9:	set .@WarpMap$,"pay_fild09";
+	set .@tempMFMap$,"斐揚 樹林09";
+	set .@WarpMapX,185;
+	set .@WarpMapY,226;
+	goto AddorWarp;
+
+M01_10:	set .@WarpMap$,"pay_fild10";
+	set .@tempMFMap$,"斐揚 樹林10";
+	set .@WarpMapX,144;
+	set .@WarpMapY,249;
+	goto AddorWarp;
+
+M01_11:	set .@WarpMap$,"pay_fild11";
+	set .@tempMFMap$,"斐揚 樹林11";
+	set .@WarpMapX,279;
+	set .@WarpMapY,135;
+	goto AddorWarp;
+
+M02:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"沉沒之船 1樓",M02_1,
+		"沉沒之船 2樓",M02_2;
+
+M02_1:	set .@WarpMap$,"treasure01";
+	set .@tempMFMap$,"沉沒之船 1樓";
+	set .@WarpMapX,69;
+	set .@WarpMapY,24;
+	goto AddorWarp;
+
+M02_2:	set .@WarpMap$,"treasure02";
+	set .@tempMFMap$,"沉沒之船 2樓";
+	set .@WarpMapX,102;
+	set .@WarpMapY,27;
+	goto AddorWarp;
+
+M03:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"獸人地下洞窟 1F",M03_1,
+		"獸人地下洞窟 2F",M03_2;
+
+M03_1:	set .@WarpMap$,"orcsdun01";
+	set .@tempMFMap$,"獸人地下洞窟 1F";
+	set .@WarpMapX,32;
+	set .@WarpMapY,165;
+	goto AddorWarp;
+
+M03_2:	set .@WarpMap$,"orcsdun02";
+	set .@tempMFMap$,"獸人地下洞窟 2F";
+	set .@WarpMapX,22;
+	set .@WarpMapY,183;
+	goto AddorWarp;
+
+M04:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"斐揚 地下-第1層",M04_1,
+		"斐揚 地下-第2層",M04_2,
+		"斐揚 地下-第3層",M04_3,
+		"地下廢棄村落-第4層",M04_4,
+		"地下廢棄村落-第5層",M04_5;
+
+M04_1:	set .@WarpMap$,"pay_dun00";
+	set .@tempMFMap$,"斐揚 地下-第1層";
+	set .@WarpMapX,21;
+	set .@WarpMapY,183;
+	goto AddorWarp;
+
+M04_2:	set .@WarpMap$,"pay_dun01";
+	set .@tempMFMap$,"斐揚 地下-第2層";
+	set .@WarpMapX,19;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+M04_3:	set .@WarpMap$,"pay_dun02";
+	set .@tempMFMap$,"斐揚 地下-第3層";
+	set .@WarpMapX,19;
+	set .@WarpMapY,63;
+	goto AddorWarp;
+
+M04_4:	set .@WarpMap$,"pay_dun03";
+	set .@tempMFMap$,"地下廢棄村落-第4層";
+	set .@WarpMapX,155;
+	set .@WarpMapY,159;
+	goto AddorWarp;
+
+M04_5:	set .@WarpMap$,"pay_dun04";
+	set .@tempMFMap$,"地下廢棄村落-第5層";
+	set .@WarpMapX,201;
+	set .@WarpMapY,204;
+	goto AddorWarp;
+
+M05:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"螞蟻 地獄 密穴-第1層",M05_1,
+		"螞蟻 地獄 密穴-第2層",M05_2;
+
+M05_1:	set .@WarpMap$,"anthell01";
+	set .@tempMFMap$,"螞蟻 地獄 密穴-第1層";
+	set .@WarpMapX,35;
+	set .@WarpMapY,262;
+	goto AddorWarp;
+
+M05_2:	set .@WarpMap$,"anthell02";
+	set .@tempMFMap$,"螞蟻 地獄 密穴-第2層";
+	set .@WarpMapX,168;
+	set .@WarpMapY,170;
+	goto AddorWarp;
+
+M06:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"海底 洞窟-第1層",M06_1,
+		"海底 洞窟-第2層",M06_2,
+		"海底 洞窟-第3層",M06_3,
+		"海底 洞窟-第4層",M06_4,
+		"海底 洞窟-第5層",M06_5;
+
+M06_1:	set .@WarpMap$,"iz_dun00";
+	set .@tempMFMap$,"海底 洞窟-第1層";
+	set .@WarpMapX,168;
+	set .@WarpMapY,168;
+	goto AddorWarp;
+
+M06_2:	set .@WarpMap$,"iz_dun01";
+	set .@tempMFMap$,"海底 洞窟-第2層";
+	set .@WarpMapX,253;
+	set .@WarpMapY,252;
+	goto AddorWarp;
+
+M06_3:	set .@WarpMap$,"iz_dun02";
+	set .@tempMFMap$,"海底 洞窟-第3層";
+	set .@WarpMapX,235;
+	set .@WarpMapY,205;
+	goto AddorWarp;
+
+M06_4:	set .@WarpMap$,"iz_dun03";
+	set .@tempMFMap$,"海底 洞窟-第4層";
+	set .@WarpMapX,32;
+	set .@WarpMapY,63;
+	goto AddorWarp;
+
+M06_5:	set .@WarpMap$,"iz_dun04";
+	set .@tempMFMap$,"海底 洞窟-第5層";
+	set .@WarpMapX,26;
+	set .@WarpMapY,27;
+	goto AddorWarp;
+
+M07:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"艾爾帕蘭 鐘塔地上樓層 1樓",M07_1,
+		"艾爾帕蘭 鐘塔地上樓層 2樓",M07_2,
+		"艾爾帕蘭 鐘塔地上樓層 3樓",M07_3,
+		"艾爾帕蘭 鐘塔地上樓層 4樓",M07_4,
+		"艾爾帕蘭 鐘塔地下樓層 B1樓",M07_5,
+		"艾爾帕蘭 鐘塔地下樓層 B2樓",M07_6,
+		"艾爾帕蘭 鐘塔地下樓層 B3樓",M07_7,
+		"艾爾帕蘭 鐘塔地下樓層 B4樓",M07_8;
+
+M07_1:	set .@WarpMap$,"c_tower1";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地上樓層 1樓";
+	set .@WarpMapX,199;
+	set .@WarpMapY,159;
+	goto AddorWarp;
+
+M07_2:	set .@WarpMap$,"c_tower2";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地上樓層 2樓";
+	set .@WarpMapX,148;
+	set .@WarpMapY,283;
+	goto AddorWarp;
+
+M07_3:	set .@WarpMap$,"c_tower3";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地上樓層 3樓";
+	set .@WarpMapX,65;
+	set .@WarpMapY,147;
+	goto AddorWarp;
+
+M07_4:	set .@WarpMap$,"c_tower4";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地上樓層 4樓";
+	set .@WarpMapX,56;
+	set .@WarpMapY,155;
+	goto AddorWarp;
+
+M07_5:	set .@WarpMap$,"alde_dun01";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地下樓層 B1樓";
+	set .@WarpMapX,297;
+	set .@WarpMapY,25;
+	goto AddorWarp;
+
+M07_6:	set .@WarpMap$,"alde_dun02";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地下樓層 B2樓";
+	set .@WarpMapX,127;
+	set .@WarpMapY,169;
+	goto AddorWarp;
+
+M07_7:	set .@WarpMap$,"alde_dun03";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地下樓層 B3樓";
+	set .@WarpMapX,277;
+	set .@WarpMapY,178;
+	goto AddorWarp;
+
+M07_8:	set .@WarpMap$,"alde_dun04";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地下樓層 B4樓";
+	set .@WarpMapX,268;
+	set .@WarpMapY,74;
+	goto AddorWarp;
+
+M08:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"妙勒尼 廢棄礦場-第1層",M08_1,
+		"妙勒尼 廢棄礦場-第2層",M08_2,
+		"妙勒尼 廢棄礦場-第3層",M08_3;
+
+M08_1:	set .@WarpMap$,"mjo_dun01";
+	set .@tempMFMap$,"妙勒尼 廢棄礦場-第1層";
+	set .@WarpMapX,52;
+	set .@WarpMapY,17;
+	goto AddorWarp;
+
+M08_2:	set .@WarpMap$,"mjo_dun02";
+	set .@tempMFMap$,"妙勒尼 廢棄礦場-第2層";
+	set .@WarpMapX,381;
+	set .@WarpMapY,343;
+	goto AddorWarp;
+
+M08_3:	set .@WarpMap$,"mjo_dun03";
+	set .@tempMFMap$,"妙勒尼 廢棄礦場-第3層";
+	set .@WarpMapX,303;
+	set .@WarpMapY,262;
+	goto AddorWarp;
+
+M09:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"玩具工廠倉庫",M09_1,
+		"玩具分類場",M09_2,
+		"薑餅城原野",M09_3;
+		
+M09_1:	set .@WarpMap$,"xmas_dun01";
+	set .@tempMFMap$,"玩具工廠倉庫";
+	set .@WarpMapX,205;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+M09_2:	set .@WarpMap$,"xmas_dun02";
+	set .@tempMFMap$,"玩具分類場";
+	set .@WarpMapX,129;
+	set .@WarpMapY,133;
+	goto AddorWarp;
+
+M09_3:	set .@WarpMap$,"xmas_fild01";
+	set .@tempMFMap$,"薑餅城原野";
+	set .@WarpMapX,102;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+M10:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"迷藏森林-第1層",M10_1,
+		"迷藏森林-第2層",M10_2,
+		"迷藏森林-第3層",M10_3;
+
+M10_1:	set .@WarpMap$,"prt_maze01";
+	set .@tempMFMap$,"迷藏森林-第1層";
+	set .@WarpMapX,176;
+	set .@WarpMapY,7;
+	goto AddorWarp;
+
+M10_2:	set .@WarpMap$,"prt_maze02";
+	set .@tempMFMap$,"迷藏森林-第2層";
+	set .@WarpMapX,116;
+	set .@WarpMapY,125;
+	goto AddorWarp;
+
+M10_3:	set .@WarpMap$,"prt_maze03";
+	set .@tempMFMap$,"迷藏森林-第3層";
+	set .@WarpMapX,23;
+	set .@WarpMapY,8;
+	goto AddorWarp;
+
+M11:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"東邊 洞穴 馬吾",M11_1,
+		"北邊 洞穴 盧安達",M11_2,
+		"西邊 洞穴 加露",M11_3;
+
+M11_1:	set .@WarpMap$,"beach_dun";
+	set .@tempMFMap$,"東邊 洞穴 馬吾";
+	set .@WarpMapX,266;
+	set .@WarpMapY,67;
+	goto AddorWarp;
+
+M11_2:	set .@WarpMap$,"beach_dun2";
+	set .@tempMFMap$,"北邊 洞穴 盧安達";
+	set .@WarpMapX,154;
+	set .@WarpMapY,26;
+	goto AddorWarp;
+
+M11_3:	set .@WarpMap$,"beach_dun3";
+	set .@tempMFMap$,"西邊 洞穴 加露";
+	set .@WarpMapX,23;
+	set .@WarpMapY,260;
+	goto AddorWarp;
+
+M12:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"巴不其卡森林",M12_1,
+		"海豹沙灘",M12_2,
+		"沼澤地",M12_3,
+		"克克魔海邊",M12_4;
+
+M12_1:	set .@WarpMap$,"cmd_fild01";
+	set .@tempMFMap$,"巴不其卡森林";
+	set .@WarpMapX,222;
+	set .@WarpMapY,28;
+	goto AddorWarp;
+
+M12_2:	set .@WarpMap$,"cmd_fild02";
+	set .@tempMFMap$,"海豹沙灘";
+	set .@WarpMapX,376;
+	set .@WarpMapY,263;
+	goto AddorWarp;
+
+M12_3:	set .@WarpMap$,"cmd_fild03";
+	set .@tempMFMap$,"沼澤地";
+	set .@WarpMapX,183;
+	set .@WarpMapY,23;
+	goto AddorWarp;
+
+M12_4:	set .@WarpMap$,"cmd_fild04";
+	set .@tempMFMap$,"克克魔海邊";
+	set .@WarpMapX,372;
+	set .@WarpMapY,287;
+	goto AddorWarp;
+
+M13:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"諾可羅德-第1層(火洞)",M13_1,
+		"諾可羅德-第2層(火洞)",M13_2;
+
+M13_1:	set .@WarpMap$,"mag_dun01";
+	set .@tempMFMap$,"諾可羅德-第1層(火洞)";
+	set .@WarpMapX,32;
+	set .@WarpMapY,170;
+	goto AddorWarp;
+
+M13_2:	set .@WarpMap$,"mag_dun02";
+	set .@tempMFMap$,"諾可羅德-第2層(火洞)";
+	set .@WarpMapX,48;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+M14:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"普隆德拉 地下水道-第1層",M14_1,
+		"普隆德拉 地下水道-第2層",M14_2,
+		"普隆德拉 地下水道-第3層",M14_3,
+		"普隆德拉 地下水道-第4層",M14_4;
+
+M14_1:	set .@WarpMap$,"prt_sewb1";
+	set .@tempMFMap$,"普隆德拉 地下水道-第1層";
+	set .@WarpMapX,131;
+	set .@WarpMapY,247;
+	goto AddorWarp;
+
+M14_2:	set .@WarpMap$,"prt_sewb2";
+	set .@tempMFMap$,"普隆德拉 地下水道-第2層";
+	set .@WarpMapX,19;
+	set .@WarpMapY,19;
+	goto AddorWarp;
+
+M14_3:	set .@WarpMap$,"prt_sewb3";
+	set .@tempMFMap$,"普隆德拉 地下水道-第3層";
+	set .@WarpMapX,180;
+	set .@WarpMapY,169;
+	goto AddorWarp;
+
+M14_4:	set .@WarpMap$,"prt_sewb4";
+	set .@tempMFMap$,"普隆德拉 地下水道-第4層";
+	set .@WarpMapX,100;
+	set .@WarpMapY,92;
+	goto AddorWarp;
+
+M15:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"哎喲泰雅 原野01",M15_1,
+		"哎喲泰雅 原野02",M15_2,
+		"古代神殿 迷宮",M15_3,
+		"古代神殿 內部",M15_4;
+
+M15_1:	set .@WarpMap$,"ayo_fild01";
+	set .@tempMFMap$,"哎喲泰雅 原野01";
+	set .@WarpMapX,314;
+	set .@WarpMapY,172;
+	goto AddorWarp;
+
+M15_2:	set .@WarpMap$,"ayo_fild02";
+	set .@tempMFMap$,"哎喲泰雅 原野02";
+	set .@WarpMapX,31;
+	set .@WarpMapY,153;
+	goto AddorWarp;
+
+M15_3:	set .@WarpMap$,"ayo_dun01";
+	set .@tempMFMap$,"古代神殿 迷宮";
+	set .@WarpMapX,270;
+	set .@WarpMapY,20;
+	goto AddorWarp;
+
+M15_4:	set .@WarpMap$,"ayo_dun02";
+	set .@tempMFMap$,"古代神殿 內部";
+	set .@WarpMapX,23;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+M16:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"吉芬 地下 密穴-第1層",M16_1,
+		"吉芬 地下 密穴-第2層",M16_2,
+		"吉芬 地下 密穴-第3層",M16_3,
+		"吉芬 地下 密穴-第4層",M16_4;
+
+M16_1:	set .@WarpMap$,"gef_dun00";
+	set .@tempMFMap$,"吉芬 地下 密穴-第1層";
+	set .@WarpMapX,104;
+	set .@WarpMapY,99;
+	goto AddorWarp;
+
+M16_2:	set .@WarpMap$,"gef_dun01";
+	set .@tempMFMap$,"吉芬 地下 密穴-第2層";
+	set .@WarpMapX,115;
+	set .@WarpMapY,236;
+	goto AddorWarp;
+
+M16_3:	set .@WarpMap$,"gef_dun02";
+	set .@tempMFMap$,"吉芬 地下 密穴-第3層";
+	set .@WarpMapX,106;
+	set .@WarpMapY,132;
+	goto AddorWarp;
+
+M16_4:	set .@WarpMap$,"gef_dun03";
+	set .@tempMFMap$,"吉芬 地下 密穴-第4層";
+	set .@WarpMapX,203;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M17:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"發菲依雅 公會",M17_1,
+		"菲音斯 原野02",M17_2,
+		"菲音斯 原野03",M17_3,
+		"菲音斯 原野04",M17_4,
+		"菲音斯 原野05",M17_5,
+		"菲音斯 原野06",M17_6,
+		"菲音斯 原野07",M17_7;
+
+M17_1:	set .@WarpMap$,"aru_gld";
+	set .@tempMFMap$,"發菲依雅 公會";
+	set .@WarpMapX,207;
+	set .@WarpMapY,184;
+	goto AddorWarp;
+
+M17_2:	set .@WarpMap$,"ve_fild02";
+	set .@tempMFMap$,"菲音斯 原野02";
+	set .@WarpMapX,187;
+	set .@WarpMapY,211;
+	goto AddorWarp;
+
+M17_3:	set .@WarpMap$,"ve_fild03";
+	set .@tempMFMap$,"菲音斯 原野03";
+	set .@WarpMapX,196;
+	set .@WarpMapY,87;
+	goto AddorWarp;
+
+M17_4:	set .@WarpMap$,"ve_fild04";
+	set .@tempMFMap$,"菲音斯 原野04";
+	set .@WarpMapX,207;
+	set .@WarpMapY,190;
+	goto AddorWarp;
+
+M17_5:	set .@WarpMap$,"ve_fild05";
+	set .@tempMFMap$,"菲音斯 原野05";
+	set .@WarpMapX,93;
+	set .@WarpMapY,232;
+	goto AddorWarp;
+
+M17_6:	set .@WarpMap$,"ve_fild06";
+	set .@tempMFMap$,"菲音斯 原野06";
+	set .@WarpMapX,115;
+	set .@WarpMapY,236;
+	goto AddorWarp;
+
+M17_7:	set .@WarpMap$,"ve_fild07";
+	set .@tempMFMap$,"菲音斯 原野07";
+	set .@WarpMapX,159;
+	set .@WarpMapY,218;
+	goto AddorWarp;
+
+M18:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"西王母神殿",M18_1,
+		"神仙的圍棋臺",M18_2,
+		"武陵道院",M18_3;
+
+M18_1:	set .@WarpMap$,"gon_dun01";
+	set .@tempMFMap$,"西王母神殿";
+	set .@WarpMapX,153;
+	set .@WarpMapY,53;
+	goto AddorWarp;
+
+M18_2:	set .@WarpMap$,"gon_dun02";
+	set .@tempMFMap$,"神仙的圍棋臺";
+	set .@WarpMapX,28;
+	set .@WarpMapY,113;
+	goto AddorWarp;
+
+M18_3:	set .@WarpMap$,"gon_dun03";
+	set .@tempMFMap$,"武陵道院";
+	set .@WarpMapX,68;
+	set .@WarpMapY,16;
+	goto AddorWarp;
+
+M19:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"烏龜島",M19_1,
+		"烏龜島密穴1樓",M19_2,
+		"良龜村2樓",M19_3,
+		"舊良宮",M19_4,
+		"地下沼澤地帶",M19_5;
+
+M19_1:	set .@WarpMap$,"tur_dun01";
+	set .@tempMFMap$,"烏龜島";
+	set .@WarpMapX,154;
+	set .@WarpMapY,49;
+	goto AddorWarp;
+
+M19_2:	set .@WarpMap$,"tur_dun02";
+	set .@tempMFMap$,"烏龜島密穴1樓";
+	set .@WarpMapX,148;
+	set .@WarpMapY,261;
+	goto AddorWarp;
+
+M19_3:	set .@WarpMap$,"tur_dun03";
+	set .@tempMFMap$,"良龜村2樓";
+	set .@WarpMapX,132;
+	set .@WarpMapY,189;
+	goto AddorWarp;
+
+M19_4:	set .@WarpMap$,"tur_dun04";
+	set .@tempMFMap$,"舊良宮";
+	set .@WarpMapX,100;
+	set .@WarpMapY,192;
+	goto AddorWarp;
+
+M19_5:	set .@WarpMap$,"tur_dun05";
+	set .@tempMFMap$,"地下沼澤地帶";
+	set .@WarpMapX,81;
+	set .@WarpMapY,68;
+	goto AddorWarp;
+
+M20:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"王陵",M20_1,
+		"王陵內部",M20_2,
+		"審良宮",M20_3;
+
+M20_1:	set .@WarpMap$,"lou_dun01";
+	set .@tempMFMap$,"王陵";
+	set .@WarpMapX,213;
+	set .@WarpMapY,195;
+	goto AddorWarp;
+
+M20_2:	set .@WarpMap$,"lou_dun02";
+	set .@tempMFMap$,"王陵內部";
+	set .@WarpMapX,280;
+	set .@WarpMapY,18;
+	goto AddorWarp;
+
+M20_3:	set .@WarpMap$,"lou_dun03";
+	set .@tempMFMap$,"審良宮";
+	set .@WarpMapX,165;
+	set .@WarpMapY,42;
+	goto AddorWarp;
+
+M21:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"金字塔 迷宮-地上1層",M21_1,
+		"金字塔 迷宮-地上2層",M21_2,
+		"金字塔 迷宮-地上3層",M21_3,
+		"金字塔 迷宮-地上4層",M21_4,
+		"金字塔 迷宮-地下B1層",M21_5,
+		"金字塔 迷宮-地下B2層",M21_6;
+
+M21_1:	set .@WarpMap$,"moc_pryd01";
+	set .@tempMFMap$,"金字塔 迷宮-地上1層";
+	set .@WarpMapX,192;
+	set .@WarpMapY,9;
+	goto AddorWarp;
+
+M21_2:	set .@WarpMap$,"moc_pryd02";
+	set .@tempMFMap$,"金字塔 迷宮-地上2層";
+	set .@WarpMapX,10;
+	set .@WarpMapY,192;
+	goto AddorWarp;
+
+M21_3:	set .@WarpMap$,"moc_pryd03";
+	set .@tempMFMap$,"金字塔 迷宮-地上3層";
+	set .@WarpMapX,100;
+	set .@WarpMapY,92;
+	goto AddorWarp;
+
+M21_4:	set .@WarpMap$,"moc_pryd04";
+	set .@tempMFMap$,"金字塔 迷宮-地上4層";
+	set .@WarpMapX,181;
+	set .@WarpMapY,11;
+	goto AddorWarp;
+
+M21_5:	set .@WarpMap$,"moc_pryd05";
+	set .@tempMFMap$,"金字塔 迷宮-地下B1層";
+	set .@WarpMapX,94;
+	set .@WarpMapY,96;
+	goto AddorWarp;
+
+M21_6:	set .@WarpMap$,"moc_pryd06";
+	set .@tempMFMap$,"金字塔 迷宮-地下B2層";
+	set .@WarpMapX,192;
+	set .@WarpMapY,8;
+	goto AddorWarp;
+
+M22:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"榻榻米 迷宮",M22_1,
+		"地下森 戰場",M22_2,
+		"天津町 地下神舍",M22_3;
+
+M22_1:	set .@WarpMap$,"ama_dun01";
+	set .@tempMFMap$,"榻榻米 迷宮";
+	set .@WarpMapX,228;
+	set .@WarpMapY,11;
+	goto AddorWarp;
+
+M22_2:	set .@WarpMap$,"ama_dun02";
+	set .@tempMFMap$,"地下森 戰場";
+	set .@WarpMapX,34;
+	set .@WarpMapY,41;
+	goto AddorWarp;
+
+M22_3:	set .@WarpMap$,"ama_dun03";
+	set .@tempMFMap$,"天津町 地下神舍";
+	set .@WarpMapX,119;
+	set .@WarpMapY,14;
+	goto AddorWarp;
+
+M23:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"史芬克斯 密穴-第1層",M23_1,
+		"史芬克斯 密穴-第2層",M23_2,
+		"史芬克斯 密穴-第3層",M23_3,
+		"史芬克斯 密穴-第4層",M23_4,
+		"史芬克斯 密穴-第5層",M23_5;
+
+M23_1:	set .@WarpMap$,"in_sphinx1";
+	set .@tempMFMap$,"史芬克斯 密穴-第1層";
+	set .@WarpMapX,288;
+	set .@WarpMapY,9;
+	goto AddorWarp;
+
+M23_2:	set .@WarpMap$,"in_sphinx2";
+	set .@tempMFMap$,"史芬克斯 密穴-第2層";
+	set .@WarpMapX,149;
+	set .@WarpMapY,81;
+	goto AddorWarp;
+
+M23_3:	set .@WarpMap$,"in_sphinx3";
+	set .@tempMFMap$,"史芬克斯 密穴-第3層";
+	set .@WarpMapX,210;
+	set .@WarpMapY,54;
+	goto AddorWarp;
+
+M23_4:	set .@WarpMap$,"in_sphinx4";
+	set .@tempMFMap$,"史芬克斯 密穴-第4層";
+	set .@WarpMapX,10;
+	set .@WarpMapY,222;
+	goto AddorWarp;
+
+M23_5:	set .@WarpMap$,"in_sphinx5";
+	set .@tempMFMap$,"史芬克斯 密穴-第5層";
+	set .@WarpMapX,100;
+	set .@WarpMapY,99;
+	goto AddorWarp;
+
+M24:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"國界 檢查站",M24_1,
+		"吉 海伊洛 別墅",M24_2,
+		"爾邁斯 瀑雷德(03)",M24_3,
+		"爾邁斯 瀑雷德(04)",M24_4,
+		"爾邁斯 瀑雷德(06)",M24_5,
+		"爾邁斯 峽谷(深淵的峽谷)入口",M24_6,
+		"啟 海伊洛 學院",M24_7,
+		"秀發茲發德 警備隊 露營地",M24_8,
+		"朱諾 原野",M24_9,
+		"國界 檢查站",M24_10,
+		"優配擂斯 廢墟-1",M24_11,
+		"優配擂斯 廢墟-2",M24_12,
+		"優沛擂斯 中心部",M24_13;
+
+M24_1:	set .@WarpMap$,"yuno_fild01";
+	set .@tempMFMap$,"國界 檢查站";
+	set .@WarpMapX,207;
+	set .@WarpMapY,44;
+	goto AddorWarp;
+
+M24_2:	set .@WarpMap$,"yuno_fild02";
+	set .@tempMFMap$,"吉 海伊洛 別墅";
+	set .@WarpMapX,146;
+	set .@WarpMapY,186;
+	goto AddorWarp;
+
+M24_3:	set .@WarpMap$,"yuno_fild03";
+	set .@tempMFMap$,"爾邁斯 瀑雷德(03)";
+	set .@WarpMapX,212;
+	set .@WarpMapY,175;
+	goto AddorWarp;
+
+M24_4:	set .@WarpMap$,"yuno_fild04";
+	set .@tempMFMap$,"爾邁斯 瀑雷德(04)";
+	set .@WarpMapX,230;
+	set .@WarpMapY,131;
+	goto AddorWarp;
+
+M24_5:	set .@WarpMap$,"yuno_fild06";
+	set .@tempMFMap$,"爾邁斯 瀑雷德(06)";
+	set .@WarpMapX,171;
+	set .@WarpMapY,255;
+	goto AddorWarp;
+
+M24_6:	set .@WarpMap$,"yuno_fild07";
+	set .@tempMFMap$,"爾邁斯 峽谷(深淵的峽谷)入口";
+	set .@WarpMapX,212;
+	set .@WarpMapY,175;
+	goto AddorWarp;
+
+M24_7:	set .@WarpMap$,"yuno_fild08";
+	set .@tempMFMap$,"啟 海伊洛 學院";
+	set .@WarpMapX,216;
+	set .@WarpMapY,190;
+	goto AddorWarp;
+
+M24_8:	set .@WarpMap$,"yuno_fild09";
+	set .@tempMFMap$,"秀發茲發德 警備隊 露營地";
+	set .@WarpMapX,212;
+	set .@WarpMapY,175;
+	goto AddorWarp;
+
+M24_9:	set .@WarpMap$,"yuno_fild11";
+	set .@tempMFMap$,"朱諾 原野";
+	set .@WarpMapX,212;
+	set .@WarpMapY,175;
+	goto AddorWarp;
+
+M24_10:	set .@WarpMap$,"yuno_fild12";
+	set .@tempMFMap$,"國界 檢查站";
+	set .@WarpMapX,236;
+	set .@WarpMapY,306;
+	goto AddorWarp;
+
+M24_11:	set .@WarpMap$,"juperos_01";
+	set .@tempMFMap$,"優配擂斯 廢墟-1";
+	set .@WarpMapX,53;
+	set .@WarpMapY,246;
+	goto AddorWarp;
+
+M24_12:	set .@WarpMap$,"juperos_02";
+	set .@tempMFMap$,"優配擂斯 廢墟-2";
+	set .@WarpMapX,37;
+	set .@WarpMapY,62;
+	goto AddorWarp;
+
+M24_13:	set .@WarpMap$,"jupe_core";
+	set .@tempMFMap$,"優沛擂斯 中心部";
+	set .@WarpMapX,146;
+	set .@WarpMapY,25;
+	goto AddorWarp;
+
+M25:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"礦山洞穴-第1層",M25_1,
+		"礦山洞穴-第2層",M25_2;
+
+M25_1:	set .@WarpMap$,"ein_dun01";
+	set .@tempMFMap$,"礦山洞穴-第1層";
+	set .@WarpMapX,21;
+	set .@WarpMapY,16;
+	goto AddorWarp;
+
+M25_2:	set .@WarpMap$,"ein_dun02";
+	set .@tempMFMap$,"礦山洞穴-第2層";
+	set .@WarpMapX,285;
+	set .@WarpMapY,287;
+	goto AddorWarp;
+
+M26:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"瀑布內的洞窟入口",M26_1,
+		"瀑布內的洞窟內部",M26_2;
+
+M26_1:	set .@WarpMap$,"bra_dun01";
+	set .@tempMFMap$,"瀑布內的洞窟入口";
+	set .@WarpMapX,198;
+	set .@WarpMapY,40;
+	goto AddorWarp;
+
+M26_2:	set .@WarpMap$,"bra_dun02";
+	set .@tempMFMap$,"瀑布內的洞窟內部";
+	set .@WarpMapX,261;
+	set .@WarpMapY,259;
+	goto AddorWarp;
+
+M27:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"古城圖書館",M27_1,
+		"地上1層",M27_2,
+		"地上2層",M27_3,
+		"騎士團1層",M27_4,
+		"騎士團2層",M27_5,
+		"地下墳場",M27_6,
+		"下水道1層",M27_7,
+		"下水道2層",M27_8,
+		"下水道3層",M27_9,
+		"下水道4層",M27_10,
+		"修道院",M27_11,
+		"階梯密穴",M27_12,
+		"地下1層",M27_13,
+		"地下2層",M27_14,
+		"地下監獄1層",M27_15,
+		"地下監獄2層",M27_16;
+
+M27_1:	set .@WarpMap$,"gl_in01";
+	set .@tempMFMap$,"古城圖書館";
+	set .@WarpMapX,124;
+	set .@WarpMapY,59;
+	goto AddorWarp;
+
+M27_2:	set .@WarpMap$,"gl_cas01";
+	set .@tempMFMap$,"地上1層";
+	set .@WarpMapX,199;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+M27_3:	set .@WarpMap$,"gl_cas02";
+	set .@tempMFMap$,"地上2層";
+	set .@WarpMapX,104;
+	set .@WarpMapY,25;
+	goto AddorWarp;
+
+M27_4:	set .@WarpMap$,"gl_knt01";
+	set .@tempMFMap$,"騎士團1層";
+	set .@WarpMapX,150;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+M27_5:	set .@WarpMap$,"gl_knt02";
+	set .@tempMFMap$,"騎士團2層";
+	set .@WarpMapX,157;
+	set .@WarpMapY,287;
+	goto AddorWarp;
+
+M27_6:	set .@WarpMap$,"gl_chyard";
+	set .@tempMFMap$,"地下墳場";
+	set .@WarpMapX,147;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+M27_7:	set .@WarpMap$,"gl_sew01";
+	set .@tempMFMap$,"下水道1層";
+	set .@WarpMapX,258;
+	set .@WarpMapY,255;
+	goto AddorWarp;
+
+M27_8:	set .@WarpMap$,"gl_sew02";
+	set .@tempMFMap$,"下水道2層";
+	set .@WarpMapX,108;
+	set .@WarpMapY,291;
+	goto AddorWarp;
+
+M27_9:	set .@WarpMap$,"gl_sew03";
+	set .@tempMFMap$,"下水道3層";
+	set .@WarpMapX,171;
+	set .@WarpMapY,283;
+	goto AddorWarp;
+
+M27_10:	set .@WarpMap$,"gl_sew04";
+	set .@tempMFMap$,"下水道4層";
+	set .@WarpMapX,68;
+	set .@WarpMapY,277;
+	goto AddorWarp;
+
+M27_11:	set .@WarpMap$,"gl_church";
+	set .@tempMFMap$,"修道院";
+	set .@WarpMapX,156;
+	set .@WarpMapY,7;
+	goto AddorWarp;
+
+M27_12:	set .@WarpMap$,"gl_step";
+	set .@tempMFMap$,"階梯密穴";
+	set .@WarpMapX,12;
+	set .@WarpMapY,7;
+	goto AddorWarp;
+
+M27_13:	set .@WarpMap$,"gl_dun01";
+	set .@tempMFMap$,"地下1層";
+	set .@WarpMapX,133;
+	set .@WarpMapY,271;
+	goto AddorWarp;
+
+M27_14:	set .@WarpMap$,"gl_dun02";
+	set .@tempMFMap$,"地下2層";
+	set .@WarpMapX,224;
+	set .@WarpMapY,274;
+	goto AddorWarp;
+
+M27_15:	set .@WarpMap$,"gl_prison";
+	set .@tempMFMap$,"地下監獄1層";
+	set .@WarpMapX,14;
+	set .@WarpMapY,70;
+	goto AddorWarp;
+
+M27_16:	set .@WarpMap$,"gl_prison1";
+	set .@tempMFMap$,"地下監獄2層";
+	set .@WarpMapX,150;
+	set .@WarpMapY,14;
+	goto AddorWarp;
+
+M28:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+
+		"偏遠村落",M28_1,
+		"鬼的峽谷",M28_2;
+
+M28_1:	set .@WarpMap$,"nif_fild01";
+	set .@tempMFMap$,"偏遠村落";
+	set .@WarpMapX,315;
+	set .@WarpMapY,64;
+	goto AddorWarp;
+
+M28_2:	set .@WarpMap$,"nif_fild02";
+	set .@tempMFMap$,"鬼的峽谷";
+	set .@WarpMapX,30;
+	set .@WarpMapY,311;
+	goto AddorWarp;
+
+M29:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"樹木裡的 木工所-第1層",M29_1,
+		"樹木裡的 異界通路-第2層",M29_2;
+
+M29_1:	set .@WarpMap$,"um_dun01";
+	set .@tempMFMap$,"樹木裡的 木工所-第1層";
+	set .@WarpMapX,45;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+M29_2:	set .@WarpMap$,"um_dun02";
+	set .@tempMFMap$,"樹木裡的 異界通路-第2層";
+	set .@WarpMapX,46;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+M30:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"森林洞穴第1層",M30_1,
+		"森林洞穴第2層",M30_2,
+		"森林洞穴第3層",M30_3;
+
+M30_1:	set .@WarpMap$,"mosk_dun01";
+	set .@tempMFMap$,"森林洞穴第1層";
+	set .@WarpMapX,189;
+	set .@WarpMapY,45;
+	goto AddorWarp;
+
+M30_2:	set .@WarpMap$,"mosk_dun02";
+	set .@tempMFMap$,"森林洞穴第2層";
+	set .@WarpMapX,165;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+M30_3:	set .@WarpMap$,"mosk_dun03";
+	set .@tempMFMap$,"森林洞穴第3層";
+	set .@WarpMapX,32;
+	set .@WarpMapY,135;
+	goto AddorWarp;
+
+M31:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"葛帔尼亞1",M31_1,
+		"葛帔尼亞2",M31_2,
+		"葛帔尼亞3",M31_3,
+		"葛帔尼亞4",M31_4;
+
+M31_1:	set .@WarpMap$,"gefenia01";
+	set .@tempMFMap$,"葛帔尼亞1";
+	set .@WarpMapX,124;
+	set .@WarpMapY,145;
+	goto AddorWarp;
+
+M31_2:	set .@WarpMap$,"gefenia02";
+	set .@tempMFMap$,"葛帔尼亞2";
+	set .@WarpMapX,156;
+	set .@WarpMapY,109;
+	goto AddorWarp;
+
+M31_3:	set .@WarpMap$,"gefenia03";
+	set .@tempMFMap$,"葛帔尼亞3";
+	set .@WarpMapX,21;
+	set .@WarpMapY,228;
+	goto AddorWarp;
+
+M31_4:	set .@WarpMap$,"gefenia04";
+	set .@tempMFMap$,"葛帔尼亞4";
+	set .@WarpMapX,10;
+	set .@WarpMapY,229;
+	goto AddorWarp;
+
+M32:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+
+		"冰洞穴-第1層",M32_1,
+		"冰洞穴-第2層",M32_2,
+		"冰洞穴-第3層",M32_3;
+
+M32_1:	set .@WarpMap$,"ice_dun01";
+	set .@tempMFMap$,"冰洞穴-第1層";
+	set .@WarpMapX,158;
+	set .@WarpMapY,18;
+	goto AddorWarp;
+
+M32_2:	set .@WarpMap$,"ice_dun02";
+	set .@tempMFMap$,"冰洞穴-第2層";
+	set .@WarpMapX,150;
+	set .@WarpMapY,153;
+	goto AddorWarp;
+
+M32_3:	set .@WarpMap$,"ice_dun03";
+	set .@tempMFMap$,"冰洞穴-第3層";
+	set .@WarpMapX,178;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+M33:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"無名島",M33_1,
+		"修道院01",M33_2,
+		"修道院02",M33_3,
+		"修道院03",M33_4;
+
+M33_1:	set .@WarpMap$,"nameless_n";
+	set .@tempMFMap$,"無名島";
+	set .@WarpMapX,173;
+	set .@WarpMapY,185;
+	goto AddorWarp;
+
+M33_2:	set .@WarpMap$,"abbey01";
+	set .@tempMFMap$,"修道院01";
+	set .@WarpMapX,51;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+M33_3:	set .@WarpMap$,"abbey02";
+	set .@tempMFMap$,"修道院02";
+	set .@WarpMapX,150;
+	set .@WarpMapY,47;
+	goto AddorWarp;
+	warp "abbey02",150,47;	close;
+
+M33_4:	set .@WarpMap$,"abbey03";
+	set .@tempMFMap$,"修道院03";
+	set .@WarpMapX,120;
+	set .@WarpMapY,12;
+	goto AddorWarp;
+
+M34:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"達納托斯 塔台 下層部-第1層",M34_1,
+		"達納托斯 塔台 下層部-第2層",M34_2,
+		"達納托斯 塔台 下層部-第3層",M34_3,
+		"達納托斯 塔台 下層部-第4層",M34_4,
+		"達納托斯 塔台 上層部-第5層",M34_5,
+		"達納托斯 塔台 上層部-第6層",M34_6,
+		"達納托斯 塔台 上層部-第7層",M34_7,
+		"達納托斯 塔台 上層部-第8層",M34_8,
+		"達納托斯 塔台 上層部-第9層",M34_9,
+		"達納托斯 塔台 上層部-第10層",M34_10,
+		"達納托斯 塔台 上層部-第11層",M34_11,
+		"達納托斯 塔台 上層部-第12層",M34_12,
+		"達納托斯 塔台 頂層",M34_13;
+
+M34_1:	set .@WarpMap$,"tha_t01";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第1層";
+	set .@WarpMapX,150;
+	set .@WarpMapY,35;
+	goto AddorWarp;
+
+M34_2:	set .@WarpMap$,"tha_t02";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第2層";
+	set .@WarpMapX,150;
+	set .@WarpMapY,136;
+	goto AddorWarp;
+
+M34_3:	set .@WarpMap$,"tha_t03";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第3層";
+	set .@WarpMapX,220;
+	set .@WarpMapY,158;
+	goto AddorWarp;
+
+M34_4:	set .@WarpMap$,"tha_t04";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第4層";
+	set .@WarpMapX,59;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+M34_5:	set .@WarpMap$,"tha_t05";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第5層";
+	set .@WarpMapX,62;
+	set .@WarpMapY,11;
+	goto AddorWarp;
+
+M34_6:	set .@WarpMap$,"tha_t06";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第6層";
+	set .@WarpMapX,119;
+	set .@WarpMapY,4;
+	goto AddorWarp;
+
+M34_7:	set .@WarpMap$,"tha_t07";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第7層";
+	set .@WarpMapX,102;
+	set .@WarpMapY,139;
+	goto AddorWarp;
+
+M34_8:	set .@WarpMap$,"tha_t08";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第8層";
+	set .@WarpMapX,105;
+	set .@WarpMapY,44;
+	goto AddorWarp;
+
+M34_9:	set .@WarpMap$,"tha_t09";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第9層";
+	set .@WarpMapX,88;
+	set .@WarpMapY,145;
+	goto AddorWarp;
+
+M34_10:	set .@WarpMap$,"tha_t10";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第10層";
+	set .@WarpMapX,167;
+	set .@WarpMapY,138;
+	goto AddorWarp;
+
+M34_11:	set .@WarpMap$,"tha_t11";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第11層";
+	set .@WarpMapX,89;
+	set .@WarpMapY,36;
+	goto AddorWarp;
+
+M34_12:	set .@WarpMap$,"tha_t12";
+	set .@tempMFMap$,"達納托斯 塔台 下層部-第12層";
+	set .@WarpMapX,126;
+	set .@WarpMapY,51;
+	goto AddorWarp;
+
+M34_13:	set .@WarpMap$,"thana_boss";
+	set .@tempMFMap$,"達納托斯 塔台 頂層";
+	set .@WarpMapX,65;
+	set .@WarpMapY,170;
+	goto AddorWarp;
+
+M35:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"奧丁神殿1",M35_1,
+		"奧丁神殿2",M35_2,
+		"奧丁神殿3",M35_3;
+
+M35_1:	set .@WarpMap$,"odin_tem01";
+	set .@tempMFMap$,"奧丁神殿1";
+	set .@WarpMapX,110;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+M35_2:	set .@WarpMap$,"odin_tem02";
+	set .@tempMFMap$,"奧丁神殿2";
+	set .@WarpMapX,28;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M35_3:	set .@WarpMap$,"odin_tem03";
+	set .@tempMFMap$,"奧丁神殿3";
+	set .@WarpMapX,247;
+	set .@WarpMapY,40;
+	goto AddorWarp;
+
+M36:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"神殿 聖域1",M36_1,
+		"神殿 聖域2",M36_2,
+		"神殿 聖域3",M36_3,
+		"神殿 聖域4",M36_4,
+		"神殿 聖域5",M36_5;
+
+M36_1:	set .@WarpMap$,"ra_san01";
+	set .@tempMFMap$,"神殿 聖域1";
+	set .@WarpMapX,140;
+	set .@WarpMapY,19;
+	goto AddorWarp;
+
+M36_2:	set .@WarpMap$,"ra_san02";
+	set .@tempMFMap$,"神殿 聖域2";
+	set .@WarpMapX,36;
+	set .@WarpMapY,21;
+	goto AddorWarp;
+
+M36_3:	set .@WarpMap$,"ra_san03";
+	set .@tempMFMap$,"神殿 聖域3";
+	set .@WarpMapX,11;
+	set .@WarpMapY,149;
+	goto AddorWarp;
+
+M36_4:	set .@WarpMap$,"ra_san04";
+	set .@tempMFMap$,"神殿 聖域4";
+	set .@WarpMapX,37;
+	set .@WarpMapY,217;
+	goto AddorWarp;
+
+M36_5:	set .@WarpMap$,"ra_san05";
+	set .@tempMFMap$,"神殿 聖域5";
+	set .@WarpMapX,150;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+M37:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"托爾火山 洞穴-第1層",M37_1,
+		"托爾火山 洞穴-第2層",M37_2,
+		"托爾火山 洞穴-第3層",M37_3;
+
+M37_1:	set .@WarpMap$,"thor_v01";
+	set .@tempMFMap$,"托爾火山 洞穴-第1層";
+	set .@WarpMapX,20;
+	set .@WarpMapY,233;
+	goto AddorWarp;
+
+M37_2:	set .@WarpMap$,"thor_v02";
+	set .@tempMFMap$,"托爾火山 洞穴-第2層";
+	set .@WarpMapX,71;
+	set .@WarpMapY,206;
+	goto AddorWarp;
+
+M37_3:	set .@WarpMap$,"thor_v03";
+	set .@tempMFMap$,"托爾火山 洞穴-第3層";
+	set .@WarpMapX,116;
+	set .@WarpMapY,242;
+	goto AddorWarp;
+
+M38:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"深淵湖水 地下洞穴-第1層",M38_1,
+		"深淵湖水 地下洞穴-第2層",M38_2,
+		"深淵湖水 地下洞穴-第3層",M38_3;
+
+M38_1:	set .@WarpMap$,"abyss_01";
+	set .@tempMFMap$,"深淵湖水 地下洞穴-第1層";
+	set .@WarpMapX,25;
+	set .@WarpMapY,28;
+	goto AddorWarp;
+
+M38_2:	set .@WarpMap$,"abyss_02";
+	set .@tempMFMap$,"深淵湖水 地下洞穴-第2層";
+	set .@WarpMapX,270;
+	set .@WarpMapY,270;
+	goto AddorWarp;
+
+M38_3:	set .@WarpMap$,"abyss_03";
+	set .@tempMFMap$,"深淵湖水 地下洞穴-第3層";
+	set .@WarpMapX,115;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+M39:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"生體試驗 研究所-第1層",M39_1,
+		"生體試驗 研究所-第2層",M39_2,
+		"生體試驗 研究所-第3層",M39_3;
+
+M39_1:	set .@WarpMap$,"lhz_dun01";
+	set .@tempMFMap$,"生體試驗 研究所-第1層";
+	set .@WarpMapX,17;
+	set .@WarpMapY,151;
+	goto AddorWarp;
+
+M39_2:	set .@WarpMap$,"lhz_dun02";
+	set .@tempMFMap$,"生體試驗 研究所-第2層";
+	set .@WarpMapX,17;
+	set .@WarpMapY,152;
+	goto AddorWarp;
+
+M39_3:	set .@WarpMap$,"lhz_dun03";
+	set .@tempMFMap$,"生體試驗 研究所-第3層";
+	set .@WarpMapX,41;
+	set .@WarpMapY,176;
+	goto AddorWarp;
+
+M40:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"機械人型工廠1樓",M40_1,
+		"機械人型工廠2樓",M40_2;
+
+M40_1:	set .@WarpMap$,"kh_dun01";
+	set .@tempMFMap$,"機械人型工廠1樓";
+	set .@WarpMapX,63;
+	set .@WarpMapY,10;
+	goto AddorWarp;
+
+M40_2:	set .@WarpMap$,"kh_dun02";
+	set .@tempMFMap$,"機械人型工廠2樓";
+	set .@WarpMapX,42;
+	set .@WarpMapY,197;
+	goto AddorWarp;
+
+M41:	set .@WarpMap$,"moc_fild21";
+	set .@tempMFMap$,"夢羅克魔王";
+	set .@WarpMapX,181;
+	set .@WarpMapY,260;
+	goto AddorWarp;
+
+M42:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"阿巫敦拉 草原01",M42_1,
+		"阿巫敦拉 草原04",M42_2,
+		"阿巫敦拉 草原05",M42_3,
+		"浦勒吐 盧納",M42_4;
+
+M42_1:	set .@WarpMap$,"ra_fild01";
+	set .@tempMFMap$,"阿巫敦拉 草原01";
+	set .@WarpMapX,205;
+	set .@WarpMapY,157;
+	goto AddorWarp;
+
+M42_2:	set .@WarpMap$,"ra_fild04";
+	set .@tempMFMap$,"阿巫敦拉 草原04";
+	set .@WarpMapX,223;
+	set .@WarpMapY,211;
+	goto AddorWarp;
+
+M42_3:	set .@WarpMap$,"ra_fild05";
+	set .@tempMFMap$,"阿巫敦拉 草原05";
+	set .@WarpMapX,200;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M42_4:	set .@WarpMap$,"ra_fild06";
+	set .@tempMFMap$,"浦勒吐 盧納";
+	set .@WarpMapX,207;
+	set .@WarpMapY,215;
+	goto AddorWarp;
+
+M43:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"伊達 平原03",M43_1,
+		"伊達 平原08",M43_2,
+		"伊達 平原12",M43_3;
+
+M43_1:	set .@WarpMap$,"ra_fild03";
+	set .@tempMFMap$,"伊達 平原03";
+	set .@WarpMapX,227;
+	set .@WarpMapY,166;
+	goto AddorWarp;
+
+M43_2:	set .@WarpMap$,"ra_fild08";
+	set .@tempMFMap$,"伊達 平原08";
+	set .@WarpMapX,223;
+	set .@WarpMapY,211;
+	goto AddorWarp;
+
+M43_3:	set .@WarpMap$,"ra_fild12";
+	set .@tempMFMap$,"伊達 平原12";
+	set .@WarpMapX,200;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M44:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"里希塔樂鎮 原野01",M44_1,
+		"里希塔樂鎮 原野02",M44_2,
+		"里希塔樂鎮 原野03",M44_3;
+
+M44_1:	set .@WarpMap$,"lhz_fild01";
+	set .@tempMFMap$,"里希塔樂鎮 原野01";
+	set .@WarpMapX,227;
+	set .@WarpMapY,166;
+	goto AddorWarp;
+
+M44_2:	set .@WarpMap$,"lhz_fild02";
+	set .@tempMFMap$,"里希塔樂鎮 原野02";
+	set .@WarpMapX,190;
+	set .@WarpMapY,217;
+	goto AddorWarp;
+
+M44_3:	set .@WarpMap$,"lhz_fild03";
+	set .@tempMFMap$,"里希塔樂鎮 原野03";
+	set .@WarpMapX,224;
+	set .@WarpMapY,279;
+	goto AddorWarp;
+
+M45:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"洞穴村落",M45_1,
+		"艾音布羅克 原野01",M45_2,
+		"艾音布羅克 原野03",M45_3,
+		"艾音布羅克 原野04",M45_4,
+		"艾音布羅克 原野05",M45_5,
+		"艾音布羅克 原野06",M45_6,
+		"艾音布羅克 原野07",M45_7,
+		"艾音布羅克 原野08",M45_8,
+		"艾音布羅克 原野09",M45_9;
+
+M45_1:	set .@WarpMap$,"cave";
+	set .@tempMFMap$,"洞穴村落";
+	set .@WarpMapX,95;
+	set .@WarpMapY,34;
+	goto AddorWarp;
+
+M45_2:	set .@WarpMap$,"ein_fild01";
+	set .@tempMFMap$,"艾音布羅克 原野01";
+	set .@WarpMapX,110;
+	set .@WarpMapY,44;
+	goto AddorWarp;
+
+M45_3:	set .@WarpMap$,"ein_fild03";
+	set .@tempMFMap$,"艾音布羅克 原野03";
+	set .@WarpMapX,278;
+	set .@WarpMapY,177;
+	goto AddorWarp;
+
+M45_4:	set .@WarpMap$,"ein_fild04";
+	set .@tempMFMap$,"艾音布羅克 原野04";
+	set .@WarpMapX,204;
+	set .@WarpMapY,244;
+	goto AddorWarp;
+
+M45_5:	set .@WarpMap$,"ein_fild05";
+	set .@tempMFMap$,"艾音布羅克 原野05";
+	set .@WarpMapX,208;
+	set .@WarpMapY,286;
+	goto AddorWarp;
+
+M45_6:	set .@WarpMap$,"ein_fild06";
+	set .@tempMFMap$,"艾音布羅克 原野06";
+	set .@WarpMapX,140;
+	set .@WarpMapY,43;
+	goto AddorWarp;
+
+M45_7:	set .@WarpMap$,"ein_fild07";
+	set .@tempMFMap$,"艾音布羅克 原野07";
+	set .@WarpMapX,274;
+	set .@WarpMapY,233;
+	goto AddorWarp;
+
+M45_8:	set .@WarpMap$,"ein_fild08";
+	set .@tempMFMap$,"艾音布羅克 原野08";
+	set .@WarpMapX,190;
+	set .@WarpMapY,217;
+	goto AddorWarp;
+
+M45_9:	set .@WarpMap$,"ein_fild09";
+	set .@tempMFMap$,"艾音布羅克 原野09";
+	set .@WarpMapX,104;
+	set .@WarpMapY,174;
+	goto AddorWarp;
+
+M46:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	
+		"達納托斯 塔台01",M46_1,
+		"毀葛 原野02",M46_2,
+		"毀葛 原野04",M46_3,
+		"深淵湖水05",M46_4,
+		"毀葛 原野06",M46_5;
+
+M46_1:	set .@WarpMap$,"hu_fild01";
+	set .@tempMFMap$,"達納托斯 塔台01";
+	set .@WarpMapX,274;
+	set .@WarpMapY,74;
+	goto AddorWarp;
+
+M46_2:	set .@WarpMap$,"hu_fild02";
+	set .@tempMFMap$,"毀葛 原野02";
+	set .@WarpMapX,209;
+	set .@WarpMapY,127;
+	goto AddorWarp;
+
+M46_3:	set .@WarpMap$,"hu_fild04";
+	set .@tempMFMap$,"毀葛 原野04";
+	set .@WarpMapX,278;
+	set .@WarpMapY,177;
+	goto AddorWarp;
+
+M46_4:	set .@WarpMap$,"hu_fild05";
+	set .@tempMFMap$,"深淵湖水05";
+	set .@WarpMapX,280;
+	set .@WarpMapY,69;
+	goto AddorWarp;
+
+M46_5:	set .@WarpMap$,"hu_fild06";
+	set .@tempMFMap$,"毀葛 原野06";
+	set .@WarpMapX,246;
+	set .@WarpMapY,215;
+	goto AddorWarp;
+
+M47:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"蘇克拉特 沙漠01",M47_1,
+		"蘇克拉特 沙漠02",M47_2,
+		"蘇克拉特 沙漠03",M47_3,
+		"蘇克拉特 沙漠07",M47_4,
+		"蘇克拉特 沙漠11",M47_5,
+		"蘇克拉特 沙漠12",M47_6,
+		"蘇克拉特 沙漠13",M47_7,
+		"蘇克拉特 沙漠16",M47_8,
+		"蘇克拉特 沙漠17",M47_9,
+		"蘇克拉特 沙漠18",M47_10,
+		"蘇克拉特 沙漠19",M47_11;
+
+M47_1:	set .@WarpMap$,"moc_fild01";
+	set .@tempMFMap$,"蘇克拉特 沙漠01";
+	set .@WarpMapX,197;
+	set .@WarpMapY,221;
+	goto AddorWarp;
+
+M47_2:	set .@WarpMap$,"moc_fild02";
+	set .@tempMFMap$,"蘇克拉特 沙漠02";
+	set .@WarpMapX,194;
+	set .@WarpMapY,223;
+	goto AddorWarp;
+
+M47_3:	set .@WarpMap$,"moc_fild03";
+	set .@tempMFMap$,"蘇克拉特 沙漠03";
+	set .@WarpMapX,233;
+	set .@WarpMapY,121;
+	goto AddorWarp;
+
+M47_4:	set .@WarpMap$,"moc_fild07";
+	set .@tempMFMap$,"蘇克拉特 沙漠07";
+	set .@WarpMapX,250;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M47_5:	set .@WarpMap$,"moc_fild11";
+	set .@tempMFMap$,"蘇克拉特 沙漠11";
+	set .@WarpMapX,170;
+	set .@WarpMapY,120;
+	goto AddorWarp;
+
+M47_6:	set .@WarpMap$,"moc_fild12";
+	set .@tempMFMap$,"蘇克拉特 沙漠12";
+	set .@WarpMapX,140;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M47_7:	set .@WarpMap$,"moc_fild13";
+	set .@tempMFMap$,"蘇克拉特 沙漠13";
+	set .@WarpMapX,60;
+	set .@WarpMapY,225;
+	goto AddorWarp;
+
+M47_8:	set .@WarpMap$,"moc_fild16";
+	set .@tempMFMap$,"蘇克拉特 沙漠16";
+	set .@WarpMapX,206;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M47_9:	set .@WarpMap$,"moc_fild17";
+	set .@tempMFMap$,"蘇克拉特 沙漠17";
+	set .@WarpMapX,185;
+	set .@WarpMapY,226;
+	goto AddorWarp;
+
+M47_10:	set .@WarpMap$,"moc_fild18";
+	set .@tempMFMap$,"蘇克拉特 沙漠18";
+	set .@WarpMapX,260;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M47_11:	set .@WarpMap$,"moc_fild19";
+	set .@tempMFMap$,"蘇克拉特 沙漠19";
+	set .@WarpMapX,160;
+	set .@WarpMapY,107;
+	goto AddorWarp;
+
+M48:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"普隆德拉首都 北部地區01",M48_1,
+		"普隆德拉 平原地區02",M48_2,
+		"普隆德拉 平原地區03",M48_3,
+		"普隆德拉 平原地區04",M48_4,
+		"普隆德拉首都 西部地區05",M48_5,
+		"普隆德拉 平原地區06",M48_6,
+		"普隆德拉 平原地區07",M48_7,
+		"普隆德拉首都 南部地區08",M48_8,
+		"蘇克拉特沙漠 平原地區09",M48_9,
+		"普隆德拉 平原地區10",M48_10,
+		"普隆德拉 平原地區11",M48_11;
+
+M48_1:	set .@WarpMap$,"prt_fild01";
+	set .@tempMFMap$,"普隆德拉首都 北部地區01";
+	set .@WarpMapX,197;
+	set .@WarpMapY,62;
+	goto AddorWarp;
+
+M48_2:	set .@WarpMap$,"prt_fild02";
+	set .@tempMFMap$,"普隆德拉 平原地區02";
+	set .@WarpMapX,302;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+M48_3:	set .@WarpMap$,"prt_fild03";
+	set .@tempMFMap$,"普隆德拉 平原地區03";
+	set .@WarpMapX,33;
+	set .@WarpMapY,249;
+	goto AddorWarp;
+
+M48_4:	set .@WarpMap$,"prt_fild04";
+	set .@tempMFMap$,"普隆德拉 平原地區04";
+	set .@WarpMapX,322;
+	set .@WarpMapY,372;
+	goto AddorWarp;
+
+M48_5:	set .@WarpMap$,"prt_fild05";
+	set .@tempMFMap$,"普隆德拉首都 西部地區05";
+	set .@WarpMapX,287;
+	set .@WarpMapY,365;
+	goto AddorWarp;
+
+M48_6:	set .@WarpMap$,"prt_fild06";
+	set .@tempMFMap$,"普隆德拉 平原地區06";
+	set .@WarpMapX,140;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M48_7:	set .@WarpMap$,"prt_fild07";
+	set .@tempMFMap$,"普隆德拉 平原地區07";
+	set .@WarpMapX,368;
+	set .@WarpMapY,241;
+	goto AddorWarp;
+
+M48_8:	set .@WarpMap$,"prt_fild08";
+	set .@tempMFMap$,"普隆德拉首都 南部地區08";
+	set .@WarpMapX,206;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M48_9:	set .@WarpMap$,"prt_fild09";
+	set .@tempMFMap$,"蘇克拉特沙漠 平原地區09";
+	set .@WarpMapX,185;
+	set .@WarpMapY,226;
+	goto AddorWarp;
+
+M48_10:	set .@WarpMap$,"prt_fild10";
+	set .@tempMFMap$,"普隆德拉 平原地區10";
+	set .@WarpMapX,260;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M48_11:	set .@WarpMap$,"prt_fild11";
+	set .@tempMFMap$,"普隆德拉 平原地區11";
+	set .@WarpMapX,160;
+	set .@WarpMapY,107;
+	goto AddorWarp;
+
+M49:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"妙勒尼山脈 北部地區01",M49_1,
+		"妙勒尼山脈02",M49_2,
+		"妙勒尼山脈03",M49_3,
+		"妙勒尼山脈04",M49_4,
+		"妙勒尼山脈05",M49_5,
+		"妙勒尼山脈 南部地區06",M49_6,
+		"妙勒尼山脈07",M49_7,
+		"妙勒尼山脈08",M49_8,
+		"妙勒尼山脈 南部山麓09",M49_9,
+		"妙勒尼山脈10",M49_10,
+		"妙勒尼山脈11",M49_11,
+		"妙勒尼山脈 北部山麓12",M49_12;
+
+M49_1:	set .@WarpMap$,"mjolnir_01";
+	set .@tempMFMap$,"妙勒尼山脈 北部地區01";
+	set .@WarpMapX,197;
+	set .@WarpMapY,221;
+	goto AddorWarp;
+
+M49_2:	set .@WarpMap$,"mjolnir_02";
+	set .@tempMFMap$,"妙勒尼山脈02";
+	set .@WarpMapX,107;
+	set .@WarpMapY,241;
+	goto AddorWarp;
+
+M49_3:	set .@WarpMap$,"mjolnir_03";
+	set .@tempMFMap$,"妙勒尼山脈03";
+	set .@WarpMapX,253;
+	set .@WarpMapY,103;
+	goto AddorWarp;
+
+M49_4:	set .@WarpMap$,"mjolnir_04";
+	set .@tempMFMap$,"妙勒尼山脈04";
+	set .@WarpMapX,130;
+	set .@WarpMapY,208;
+	goto AddorWarp;
+
+M49_5:	set .@WarpMap$,"mjolnir_05";
+	set .@tempMFMap$,"妙勒尼山脈05";
+	set .@WarpMapX,170;
+	set .@WarpMapY,120;
+	goto AddorWarp;
+
+M49_6:	set .@WarpMap$,"mjolnir_06";
+	set .@tempMFMap$,"妙勒尼山脈 南部地區06";
+	set .@WarpMapX,296;
+	set .@WarpMapY,215;
+	goto AddorWarp;
+
+M49_7:	set .@WarpMap$,"mjolnir_07";
+	set .@tempMFMap$,"妙勒尼山脈07";
+	set .@WarpMapX,283;
+	set .@WarpMapY,210;
+	goto AddorWarp;
+
+M49_8:	set .@WarpMap$,"mjolnir_08";
+	set .@tempMFMap$,"妙勒尼山脈08";
+	set .@WarpMapX,164;
+	set .@WarpMapY,310;
+	goto AddorWarp;
+
+M49_9:	set .@WarpMap$,"mjolnir_09";
+	set .@tempMFMap$,"妙勒尼山脈 南部山麓09";
+	set .@WarpMapX,185;
+	set .@WarpMapY,226;
+	goto AddorWarp;
+
+M49_10:	set .@WarpMap$,"mjolnir_10";
+	set .@tempMFMap$,"妙勒尼山脈10";
+	set .@WarpMapX,260;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M49_11:	set .@WarpMap$,"mjolnir_11";
+	set .@tempMFMap$,"妙勒尼山脈11";
+	set .@WarpMapX,160;
+	set .@WarpMapY,107;
+	goto AddorWarp;
+
+M49_12:	set .@WarpMap$,"mjolnir_12";
+	set .@tempMFMap$,"妙勒尼山脈 北部山麓12";
+	set .@WarpMapX,198;
+	set .@WarpMapY,100;
+	goto AddorWarp;
+
+M50:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"吉芬 東部原野地區00",M50_1,
+		"吉芬 原野地區01",M50_2,
+		"吉芬 原野地區02",M50_3,
+		"吉芬 原野地區03",M50_4,
+		"吉芬 北部原野地區04",M50_5,
+		"冷豔舞姬村05",M50_6,
+		"吉芬 原野地區06",M50_7,
+		"吉芬 西部原野地區07",M50_8,
+		"吉芬 原野地區08",M50_9,
+		"吉芬 原野地區09",M50_10,
+		"獸人村村落10",M50_11,
+		"吉芬 原野地區11",M50_12;
+
+M50_1:	set .@WarpMap$,"gef_fild00";
+	set .@tempMFMap$,"吉芬 東部原野地區00";
+	set .@WarpMapX,197;
+	set .@WarpMapY,221;
+	goto AddorWarp;
+
+M50_2:	set .@WarpMap$,"gef_fild01";
+	set .@tempMFMap$,"吉芬 原野地區01";
+	set .@WarpMapX,194;
+	set .@WarpMapY,223;
+	goto AddorWarp;
+
+M50_3:	set .@WarpMap$,"gef_fild02";
+	set .@tempMFMap$,"吉芬 原野地區02";
+	set .@WarpMapX,366;
+	set .@WarpMapY,153;
+	goto AddorWarp;
+
+M50_4:	set .@WarpMap$,"gef_fild03";
+	set .@tempMFMap$,"吉芬 原野地區03";
+	set .@WarpMapX,363;
+	set .@WarpMapY,274;
+	goto AddorWarp;
+
+M50_5:	set .@WarpMap$,"gef_fild04";
+	set .@tempMFMap$,"吉芬 北部原野地區04";
+	set .@WarpMapX,190;
+	set .@WarpMapY,100;
+	goto AddorWarp;
+
+M50_6:	set .@WarpMap$,"gef_fild05";
+	set .@tempMFMap$,"冷豔舞姬村05";
+	set .@WarpMapX,140;
+	set .@WarpMapY,180;
+	goto AddorWarp;
+
+M50_7:	set .@WarpMap$,"gef_fild06";
+	set .@tempMFMap$,"吉芬 原野地區06";
+	set .@WarpMapX,336;
+	set .@WarpMapY,211;
+	goto AddorWarp;
+
+M50_8:	set .@WarpMap$,"gef_fild07";
+	set .@tempMFMap$,"吉芬 西部原野地區07";
+	set .@WarpMapX,206;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M50_9:	set .@WarpMap$,"gef_fild08";
+	set .@tempMFMap$,"吉芬 原野地區08";
+	set .@WarpMapX,185;
+	set .@WarpMapY,226;
+	goto AddorWarp;
+
+M50_10:	set .@WarpMap$,"gef_fild09";
+	set .@tempMFMap$,"吉芬 原野地區09";
+	set .@WarpMapX,250;
+	set .@WarpMapY,100;
+	goto AddorWarp;
+
+M50_11:	set .@WarpMap$,"gef_fild10";
+	set .@tempMFMap$,"獸人村村落10";
+	set .@WarpMapX,260;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+M50_12:	set .@WarpMap$,"gef_fild11";
+	set .@tempMFMap$,"吉芬 原野地區11";
+	set .@WarpMapX,260;
+	set .@WarpMapY,190;
+	goto AddorWarp;
+
+M51:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"寵物塔 1樓",M51_1,
+		"寵物塔 2樓",M51_2,
+		"寵物塔 3樓",M51_3,
+		"寵物塔 4樓",M51_4,
+		"寵物塔 5樓",M51_5;
+
+M51_1:	set .@WarpMap$,"petin_01";
+	set .@tempMFMap$,"寵物塔 1樓";
+	set .@WarpMapX,147;
+	set .@WarpMapY,13;
+	goto AddorWarp;
+
+M51_2:	set .@WarpMap$,"petin_02";
+	set .@tempMFMap$,"寵物塔 2樓";
+	set .@WarpMapX,147;
+	set .@WarpMapY,13;
+	goto AddorWarp;
+
+M51_3:	set .@WarpMap$,"petin_03";
+	set .@tempMFMap$,"寵物塔 3樓";
+	set .@WarpMapX,147;
+	set .@WarpMapY,13;
+	goto AddorWarp;
+
+M51_4:	set .@WarpMap$,"petin_04";
+	set .@tempMFMap$,"寵物塔 4樓";
+	set .@WarpMapX,147;
+	set .@WarpMapY,13;
+	goto AddorWarp;
+
+M51_5:	set .@WarpMap$,"petin_05";
+	set .@tempMFMap$,"寵物塔 5樓";
+	set .@WarpMapX,147;
+	set .@WarpMapY,13;
+	goto AddorWarp;
+
+
+//------------ 公會地下密穴 ------------//
+gud:	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"地下公會密穴-普隆德拉",GU01,
+		"地下公會密穴-斐陽",GU02,
+		"地下公會密穴-吉芬",GU03,
+		"地下公會密穴-艾爾帕蘭",GU04,
+		"地下公會密穴-修發茲",GU05,
+		"地下公會密穴-阿露娜法爾茲",GU06;
+
+GU01:	set .@WarpMap$,"gld_dun03";
+	set .@tempMFMap$,"地下公會密穴-普隆德拉";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+GU02:	set .@WarpMap$,"gld_dun01";
+	set .@tempMFMap$,"地下公會密穴-斐陽";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+GU03:	set .@WarpMap$,"gld_dun04";
+	set .@tempMFMap$,"地下公會密穴-吉芬";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+GU04:	set .@WarpMap$,"gld_dun02";
+	set .@tempMFMap$,"地下公會密穴-艾爾帕蘭";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+GU05:	set .@WarpMap$,"schg_dun01";
+	set .@tempMFMap$,"地下公會密穴-修發茲";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+GU06:	set .@WarpMap$,"arug_dun01";
+	set .@tempMFMap$,"地下公會密穴-阿露娜法爾茲";
+	set .@WarpMapX,0;
+	set .@WarpMapY,0;
+	goto AddorWarp;
+
+
+//------------ EP13以上地圖選單 ------------//
+ep13atm:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"海底洞窟6樓",EP01,
+		"EP13.1米德加爾特聯合營區",EP02,
+		"EP13.2守護精靈前線陣地-史波浪壯麗",EP03,
+		"EP13.2粗暴者的傷口",EP04,
+		"EP13.2礦村魔怒克",EP05,
+		"EP13.2巴西",EP06,
+		"EP13.3艾爾迪卡斯特",EP07,
+		"EP14.1穆拉村",EP08,
+		"EP14.1貓咪國都 綿綿島",EP09,
+		"EP14.1火山島群 德瓦拉",EP10;
+
+EP01:	set .@WarpMap$,"iz_dun05";
+	set .@tempMFMap$,"海底洞窟6樓";
+	set .@WarpMapX,141;
+	set .@WarpMapY,191;
+	goto AddorWarp;
+
+EP02:	set .@WarpMap$,"mid_camp";
+	set .@tempMFMap$,"EP13.1米德加爾特聯合營區";
+	set .@WarpMapX,221;
+	set .@WarpMapY,239;
+	goto AddorWarp;
+
+EP03: 	
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"守護精靈前線陣地-史波浪壯麗",EP03_1,
+		"史波浪壯麗原野1區",EP03_2,
+		"史波浪壯麗原野2區",EP03_3,
+		"史波浪壯麗原野3區",EP03_4;
+
+EP03_1:	set .@WarpMap$,"splendide";
+	set .@tempMFMap$,"守護精靈前線陣地-史波浪壯麗";
+	set .@WarpMapX,196;
+	set .@WarpMapY,151;
+	goto AddorWarp;
+
+EP03_2:	set .@WarpMap$,"spl_fild01";
+	set .@tempMFMap$,"史波浪壯麗原野1區";
+	set .@WarpMapX,289;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+EP03_3:	set .@WarpMap$,"spl_fild02";
+	set .@tempMFMap$,"史波浪壯麗原野2區";
+	set .@WarpMapX,10;
+	set .@WarpMapY,241;
+	goto AddorWarp;
+
+EP03_4:	set .@WarpMap$,"spl_fild03";
+	set .@tempMFMap$,"史波浪壯麗原野3區";
+	set .@WarpMapX,306;
+	set .@WarpMapY,375;
+	goto AddorWarp;
+
+EP04:	set .@WarpMap$,"nyd_dun01";
+	set .@tempMFMap$,"EP13.2粗暴者的傷口";
+	set .@WarpMapX,75;
+	set .@WarpMapY,127;
+	goto AddorWarp;
+
+EP05: 
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"礦村魔怒克",EP05_1,
+		"魔怒克原野01",EP05_2,
+		"魔怒克原野02",EP05_3,
+		"魔怒克原野03",EP05_4;
+
+EP05_1:	set .@WarpMap$,"manuk";
+	set .@tempMFMap$,"礦村魔怒克";
+	set .@WarpMapX,274;
+	set .@WarpMapY,223;
+	goto AddorWarp;
+
+EP05_2:	set .@WarpMap$,"man_fild01";
+	set .@tempMFMap$,"魔怒克原野01";
+	set .@WarpMapX,34;
+	set .@WarpMapY,238;
+	goto AddorWarp;
+
+EP05_3:	set .@WarpMap$,"man_fild02";
+	set .@tempMFMap$,"魔怒克原野02";
+	set .@WarpMapX,37;
+	set .@WarpMapY,261;
+	goto AddorWarp;
+
+EP05_4:	set .@WarpMap$,"man_fild03";
+	set .@tempMFMap$,"魔怒克原野03";
+	set .@WarpMapX,84;
+	set .@WarpMapY,365;
+	goto AddorWarp;
+
+EP06:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"巴西",EP06_1,
+		"巴西原野",EP06_2,
+		"瀑布內的洞窟01",EP06_3,
+		"瀑布內的洞窟02",EP06_4;
+
+EP06_1:	set .@WarpMap$,"brasilis";
+	set .@tempMFMap$,"巴西";
+	set .@WarpMapX,195;
+	set .@WarpMapY,329;
+	goto AddorWarp;
+
+EP06_2:	set .@WarpMap$,"bra_fild01";
+	set .@tempMFMap$,"巴西原野";
+	set .@WarpMapX,75;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+EP06_3:	set .@WarpMap$,"bra_dun01";
+	set .@tempMFMap$,"瀑布內的洞窟01";
+	set .@WarpMapX,199;
+	set .@WarpMapY,38;
+	goto AddorWarp;
+
+EP06_4:	set .@WarpMap$,"bra_dun02";
+	set .@tempMFMap$,"瀑布內的洞窟02";
+	set .@WarpMapX,262;
+	set .@WarpMapY,260;
+	goto AddorWarp;
+
+EP07:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"邪派國都-艾爾迪卡斯特",EP07_1,
+		"卡米達山麓01",EP07_2,
+		"卡米達山麓02",EP07_3,
+		"卡米達隧道",EP07_4,
+		"斯卡勒伯熔岩",EP07_5,
+		"斯卡勒伯熔岩(夢魘模式)",EP07_6;
+
+EP07_1:	set .@WarpMap$,"dicastes01";
+	set .@tempMFMap$,"邪派國都-艾爾迪卡斯特";
+	set .@WarpMapX,197;
+	set .@WarpMapY,192;
+	goto AddorWarp;
+
+EP07_2:	set .@WarpMap$,"dic_fild01";
+	set .@tempMFMap$,"卡米達山麓01";
+	set .@WarpMapX,69;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+EP07_3:	set .@WarpMap$,"dic_fild02";
+	set .@tempMFMap$,"卡米達山麓02";
+	set .@WarpMapX,71;
+	set .@WarpMapY,368;
+	goto AddorWarp;
+
+EP07_4:	set .@WarpMap$,"dic_dun01";
+	set .@tempMFMap$,"卡米達隧道";
+	set .@WarpMapX,370;
+	set .@WarpMapY,229;
+	goto AddorWarp;
+
+EP07_5:	set .@WarpMap$,"dic_dun02";
+	set .@tempMFMap$,"斯卡勒伯熔岩";
+	set .@WarpMapX,101;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+EP07_6:	set .@WarpMap$,"dic_dun03";
+	set .@tempMFMap$,"斯卡勒伯熔岩(夢魘模式)";
+	set .@WarpMapX,101;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+EP08:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"穆拉村",EP08_1,
+		"穆拉村野外01",EP08_2,
+		"穆拉村野外02",EP08_3;
+
+EP08_1:	set .@WarpMap$,"mora";
+	set .@tempMFMap$,"穆拉村";
+	set .@WarpMapX,112;
+	set .@WarpMapY,54;
+	goto AddorWarp;
+
+EP08_2:	set .@WarpMap$,"bif_fild01";
+	set .@tempMFMap$,"穆拉村野外01";
+	set .@WarpMapX,162;
+	set .@WarpMapY,351;
+	goto AddorWarp;
+
+EP08_3:	set .@WarpMap$,"bif_fild02";
+	set .@tempMFMap$,"穆拉村野外02";
+	set .@WarpMapX,291;
+	set .@WarpMapY,331;
+	goto AddorWarp;
+
+EP09:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"貓咪國都 綿綿島",EP09_1,
+		"星光珊瑚地帶",EP09_2;
+
+EP09_1:	set .@WarpMap$,"malangdo";
+	set .@tempMFMap$,"貓咪國都 綿綿島";
+	set .@WarpMapX,173;
+	set .@WarpMapY,136;
+	goto AddorWarp;
+
+EP09_2:	set .@WarpMap$,"mal_dun01";
+	set .@tempMFMap$,"星光珊瑚地帶";
+	set .@WarpMapX,152;
+	set .@WarpMapY,235;
+	goto AddorWarp;
+
+EP10:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"火山島群 德瓦拉",EP10_1,
+		"德瓦他原野 賈提族部落",EP10_2,
+		"喀拉喀托火山島",EP10_3,
+		"伊斯坦納洞穴",EP10_4;
+
+EP10_1:	set .@WarpMap$,"dewata";
+	set .@tempMFMap$,"火山島群 德瓦拉";
+	set .@WarpMapX,207;
+	set .@WarpMapY,174;
+	goto AddorWarp;
+
+EP10_2:	set .@WarpMap$,"dew_fild01";
+	set .@tempMFMap$,"德瓦他原野 賈提族部落";
+	set .@WarpMapX,375;
+	set .@WarpMapY,213;
+	goto AddorWarp;
+
+EP10_3:	set .@WarpMap$,"dew_dun01";
+	set .@tempMFMap$,"喀拉喀托火山島";
+	set .@WarpMapX,294;
+	set .@WarpMapY,159;
+	goto AddorWarp;
+
+EP10_4:	set .@WarpMap$,"dew_dun02";
+	set .@tempMFMap$,"伊斯坦納洞穴";
+	set .@WarpMapX,308;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+Bye:
+	mes "【^33CC33世界傳送員^000000】";
+	mes "有需要的話，歡迎隨時來找我。";
+	close;
+
+
+//------------ 快速傳送 ------------//
+note:
+	if( World_note_first == 0)
+	{
+		next;
+		mes "【^33CC33MVP傳送人員^000000】";
+		mes "尚未有傳送紀錄";
+		close;
+	}
+	else
+	{
+		next;
+		mes "【^33CC33MVP傳送人員^000000】";
+		mes "您是否要傳送到";
+		mes World_note_map$+" ?";
+		menu
+		"是",World_yes,
+		"否",Bye;
+	close;
+	}
+World_yes:
+	warp World_note_map_set$,World_note_map_X,World_note_map_Y;	close;
+
+
+//------------ 選擇加入我的最愛或是傳送 ------------//
+AddorWarp:
+	menu
+		"^FF0000傳送" + .@tempMFMap$ + " ^000000",Warptomap,
+		"^FF0000加入我的最愛^000000",AddFavorite,
+		"^FF0000清除我的最愛^000000",MyFavoritesClear_World;
+//------------------------傳送----------------------//
+Warptomap:
+	set	World_note_map_set$,.@WarpMap$;
+	set	World_note_map$,.@tempMFMap$;
+	set	World_note_first,1;
+	set	World_note_map_X,.@WarpMapX;
+	set	World_note_map_Y,.@WarpMapY;
+	warp .@WarpMap$,.@WarpMapX,.@WarpMapY;
+	close;
+//-------------------加入我的最愛-------------------//
+AddFavorite:
+	Favorites_note(  .@WarpMap$  ,  .@tempMFMap$  ,	.@WarpMapX	,	.@WarpMapY)  ;
+	goto Start;
+	close;
+
+MyFavorites:
+		next;
+		mes "【^33CC33MVP傳送人員^000000】";
+		mes "請問您要傳送到哪裡呢?";
+		select(Favorites_1$,Favorites_2$,Favorites_3$,"回最上層");
+		switch(@menu)
+		{
+			case 1:
+				goto WarpFavorites1;
+			case 2:
+				goto WarpFavorites2;
+			case 3:
+				goto WarpFavorites3;
+			case 4:
+				close2;
+				goto Start;
+		}
+
+WarpFavorites1:
+	if( Favorites_1$ == "尚未新增" )
+		goto ErrorChoose;
+	warp Favorites_set_1$,Favorites_X_1,Favorites_Y_1;
+	close;
+WarpFavorites2:	
+	if( Favorites_2$ == "尚未新增" )	
+		goto ErrorChoose;
+	warp Favorites_set_2$,Favorites_X_2,Favorites_Y_2;
+	close;	
+WarpFavorites3:		
+	if( Favorites_3$ == "尚未新增" )
+		goto ErrorChoose;
+	warp Favorites_set_3$,Favorites_X_3,Favorites_Y_3;
+	close;	
+	
+ErrorChoose:
+	mes "【^33CC33MVP傳送人員^000000】";
+	mes "尚未新增地圖";
+	next;
+	goto Start;
+	
+	
+	
+	
+//------------ 刪除我的最愛 ------------//
+MyFavoritesClear_World:
+	next;
+	mes "【^33CC33MVP傳送人員^000000】";
+	mes "您是否要將我的最愛列表重置刪除?";
+	select(Favorites_1$,Favorites_2$,Favorites_3$,"全部刪除","回最上層");
+	switch(@menu)
+	{
+		case 1:
+			mes "【^33CC33MVP傳送人員^000000】";
+			mes "已刪除"+Favorites_1$;
+			set Favorites_set_1$,"尚未新增";
+			set Favorites_1$,"尚未新增";
+			next;
+			goto AddorWarp;
+		case 2:
+			mes "【^33CC33MVP傳送人員^000000】";
+			mes "已刪除"+Favorites_1$;
+			set Favorites_set_2$,"尚未新增";
+			set Favorites_2$,"尚未新增";
+			next;
+			goto AddorWarp;
+		case 3:
+			mes "【^33CC33MVP傳送人員^000000】";
+			mes "已刪除"+Favorites_1$;
+			set Favorites_set_3$,"尚未新增";
+			set Favorites_3$,"尚未新增";
+			next;
+			goto AddorWarp;
+		case 4:
+			set Favorites_set_1$,"尚未新增";
+			set Favorites_1$,"尚未新增";		
+			set Favorites_set_2$,"尚未新增";
+			set Favorites_2$,"尚未新增";
+			set Favorites_set_3$,"尚未新增";
+			set Favorites_3$,"尚未新增";
+			goto Start;
+		case 5:
+			close2;
+			goto Start;
+			
+		}
+
+boss:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	"自創BOSS",Z01,
+		"精靈BOSS",Z02,
+		"24HRBOSS",Z03;
+
+Z01:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"文成武德‧劉備",BS01,
+		"霸傲天將‧關羽",BS02,
+		"黑面大眼‧張飛",BS03,
+		"治世能臣‧曹操",BS04,
+		"冰山尤物‧甄宓",BS05,
+		"能歌善舞‧蔡琰",BS06,
+		"江東之主‧孫權",BS07,
+		"霸王嬌妻‧大喬",BS08,
+		"絕代佳人‧小喬",BS09,
+		"飛將英傑‧呂布",BS10,
+		"傾城傾國‧貂蟬",BS11,
+		"大賢良師‧張角",BS12,
+		"禍國太師‧董卓",BS13,
+		"四世三公‧袁紹",BS14,
+		"仁義天下‧劉玄德",BS15,
+		"忠義武聖‧關雲長",BS16,
+		"剛猛神威‧張益德",BS17,
+		"箭無虛發‧黃漢升",BS18,
+		"錦衣電光‧馬孟起",BS19,
+		"亂世奸雄‧曹孟德",BS20,
+		"護主虎將‧許仲康",BS21,
+		"古之惡來‧典韋",BS22,
+		"獨眼狂獅‧夏侯惇",BS23,
+		"身先士卒‧夏侯淵",BS24,
+		"東吳大帝‧孫仲謀",BS25,
+		"水軍之最‧呂子明",BS26,
+		"合淝英靈‧太史慈",BS27,
+		"盡忠職守‧周幼平",BS28,
+		"不讓鬚眉‧孫尚香",BS29,
+		"人中龍鳳‧呂奉先",BS30;
+
+BS01:	set .@WarpMap$,"ayo_fild02";
+	set .@tempMFMap$,"哎喲泰雅 原野02";
+	set .@WarpMapX,31;
+	set .@WarpMapY,153;
+	goto AddorWarp;
+
+BS02:	set .@WarpMap$,"bif_fild02";
+	set .@tempMFMap$,"穆拉村野外02";
+	set .@WarpMapX,291;
+	set .@WarpMapY,331;
+	goto AddorWarp;
+
+BS03:	set .@WarpMap$,"cmd_fild03";
+	set .@tempMFMap$,"沼澤地";
+	set .@WarpMapX,183;
+	set .@WarpMapY,23;
+	goto AddorWarp;
+
+BS04:	set .@WarpMap$,"dic_fild02";
+	set .@tempMFMap$,"卡米達山麓02";
+	set .@WarpMapX,71;
+	set .@WarpMapY,368;
+	goto AddorWarp;
+
+BS05:	set .@WarpMap$,"ein_fild04";
+	set .@tempMFMap$,"艾音布羅克 原野04";
+	set .@WarpMapX,204;
+	set .@WarpMapY,244;
+	goto AddorWarp;
+
+BS06:	set .@WarpMap$,"gef_fild06";
+	set .@tempMFMap$,"吉芬 原野地區06";
+	set .@WarpMapX,336;
+	set .@WarpMapY,211;
+	goto AddorWarp;
+
+BS07:	set .@WarpMap$,"gon_fild01";
+	set .@tempMFMap$,"崑崙原野";
+	set .@WarpMapX,191;
+	set .@WarpMapY,261;
+	goto AddorWarp;
+
+BS08:	set .@WarpMap$,"hu_fild07";
+	set .@tempMFMap$,"毀葛 原野07";
+	set .@WarpMapX,80;
+	set .@WarpMapY,360;
+	goto AddorWarp;
+
+BS09:	set .@WarpMap$,"lhz_fild03";
+	set .@tempMFMap$,"里希塔樂鎮 原野03";
+	set .@WarpMapX,224;
+	set .@WarpMapY,279;
+	goto AddorWarp;
+
+BS10:	set .@WarpMap$,"man_fild01";
+	set .@tempMFMap$,"魔怒克原野01";
+	set .@WarpMapX,34;
+	set .@WarpMapY,238;
+	goto AddorWarp;
+
+BS11:	set .@WarpMap$,"mjolnir_05";
+	set .@tempMFMap$,"妙勒尼山脈05";
+	set .@WarpMapX,170;
+	set .@WarpMapY,120;
+	goto AddorWarp;
+
+BS12:	set .@WarpMap$,"moc_fild16";
+	set .@tempMFMap$,"蘇克拉特 沙漠16";
+	set .@WarpMapX,206;
+	set .@WarpMapY,200;
+	goto AddorWarp;
+
+BS13:	set .@WarpMap$,"pay_fild10";
+	set .@tempMFMap$,"斐揚 樹林10";
+	set .@WarpMapX,144;
+	set .@WarpMapY,249;
+	goto AddorWarp;
+
+BS14:	set .@WarpMap$,"prt_fild11";
+	set .@tempMFMap$,"普隆德拉 平原地區11";
+	set .@WarpMapX,160;
+	set .@WarpMapY,107;
+	goto AddorWarp;
+
+BS15:	set .@WarpMap$,"pay_dun04";
+	set .@tempMFMap$,"地下廢棄村落-第5層";
+	set .@WarpMapX,201;
+	set .@WarpMapY,204;
+	goto AddorWarp;
+
+BS16:	set .@WarpMap$,"orcsdun02";
+	set .@tempMFMap$,"獸人地下洞窟 2F";
+	set .@WarpMapX,22;
+	set .@WarpMapY,183;
+	goto AddorWarp;
+
+BS17:	set .@WarpMap$,"odin_tem03";
+	set .@tempMFMap$,"奧丁神殿3";
+	set .@WarpMapX,247;
+	set .@WarpMapY,40;
+	goto AddorWarp;
+
+BS18:	set .@WarpMap$,"prt_sewb4";
+	set .@tempMFMap$,"普隆德拉 地下水道-第4層";
+	set .@WarpMapX,100;
+	set .@WarpMapY,92;
+	goto AddorWarp;
+
+BS19:	set .@WarpMap$,"thana_boss";
+	set .@tempMFMap$,"達納托斯 塔台 頂層";
+	set .@WarpMapX,65;
+	set .@WarpMapY,170;
+	goto AddorWarp;
+
+BS20:	set .@WarpMap$,"ra_san05";
+	set .@tempMFMap$,"神殿 聖域5";
+	set .@WarpMapX,150;
+	set .@WarpMapY,15;
+	goto AddorWarp;
+
+BS21:	set .@WarpMap$,"thor_v01";
+	set .@tempMFMap$,"托爾火山 洞穴-第1層";
+	set .@WarpMapX,20;
+	set .@WarpMapY,233;
+	goto AddorWarp;
+
+BS22:	set .@WarpMap$,"tur_dun04";
+	set .@tempMFMap$,"舊良宮";
+	set .@WarpMapX,100;
+	set .@WarpMapY,192;
+	goto AddorWarp;
+
+BS23:	set .@WarpMap$,"alde_dun04";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地下樓層 B4樓";
+	set .@WarpMapX,268;
+	set .@WarpMapY,74;
+	goto AddorWarp;
+
+BS24:	set .@WarpMap$,"ama_dun02";
+	set .@tempMFMap$,"地下森 戰場";
+	set .@WarpMapX,34;
+	set .@WarpMapY,41;
+	goto AddorWarp;
+
+BS25:	set .@WarpMap$,"anthell02";
+	set .@tempMFMap$,"螞蟻 地獄 密穴-第2層";
+	set .@WarpMapX,168;
+	set .@WarpMapY,170;
+	goto AddorWarp;
+
+BS26:	set .@WarpMap$,"ayo_dun02";
+	set .@tempMFMap$,"古代神殿 內部";
+	set .@WarpMapX,23;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+BS27:	set .@WarpMap$,"c_tower4";
+	set .@tempMFMap$,"艾爾帕蘭 鐘塔地上樓層 4樓";
+	set .@WarpMapX,56;
+	set .@WarpMapY,155;
+	goto AddorWarp;
+
+BS28:	set .@WarpMap$,"ein_dun01";
+	set .@tempMFMap$,"礦山洞穴-第1層";
+	set .@WarpMapX,21;
+	set .@WarpMapY,16;
+	goto AddorWarp;
+
+BS29:	set .@WarpMap$,"in_sphinx5";
+	set .@tempMFMap$,"史芬克斯 密穴-第5層";
+	set .@WarpMapX,100;
+	set .@WarpMapY,99;
+	goto AddorWarp;
+
+BS30:	set .@WarpMap$,"gef_dun02";
+	set .@tempMFMap$,"吉芬 地下 密穴-第3層";
+	set .@WarpMapX,106;
+	set .@WarpMapY,132;
+	goto AddorWarp;
+
+Z02:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"白龍銀槍‧趙子龍",BS31,
+		"神機妙算‧諸葛亮",BS32,
+		"威震八方‧張文遠",BS33,
+		"識破人心‧司馬懿",BS34,
+		"東吳統領‧周公瑾",BS35,
+		"旋焰霸王‧孫伯符",BS36,
+		"噬魂者",BS42,
+		"斬魔者",BS43,
+		"墮天者",BS44,
+		"操焰者",BS45,
+		"弒龍者",BS46,
+		"暗殺者",BS47,
+		"修行者",BS48,
+		"逐暗者",BS49;
+
+BS31:	set .@WarpMap$,"prt_maze03";
+	set .@tempMFMap$,"迷藏森林-第3層";
+	set .@WarpMapX,23;
+	set .@WarpMapY,8;
+	goto AddorWarp;
+
+BS32:	set .@WarpMap$,"mosk_dun02";
+	set .@tempMFMap$,"森林洞穴第2層";
+	set .@WarpMapX,165;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+BS33:	set .@WarpMap$,"moc_pryd04";
+	set .@tempMFMap$,"金字塔 迷宮-地上4層";
+	set .@WarpMapX,181;
+	set .@WarpMapY,11;
+	goto AddorWarp;
+
+BS34:	set .@WarpMap$,"mal_dun01";
+	set .@tempMFMap$,"星光珊瑚地帶";
+	set .@WarpMapX,152;
+	set .@WarpMapY,235;
+	goto AddorWarp;
+
+BS35:	set .@WarpMap$,"iz_dun04";
+	set .@tempMFMap$,"海底 洞窟-第5層";
+	set .@WarpMapX,26;
+	set .@WarpMapY,27;
+	goto AddorWarp;
+
+BS36:	set .@WarpMap$,"mag_dun02";
+	set .@tempMFMap$,"諾可羅德-第2層(火洞)";
+	set .@WarpMapX,48;
+	set .@WarpMapY,33;
+	goto AddorWarp;
+
+BS42:	set .@WarpMap$,"mjolnir_04";
+	set .@tempMFMap$,"妙勒尼山脈04";
+	set .@WarpMapX,130;
+	set .@WarpMapY,208;
+	goto AddorWarp;
+
+BS43:	set .@WarpMap$,"spl_fild03";
+	set .@tempMFMap$,"史波浪壯麗原野3區";
+	set .@WarpMapX,99;
+	set .@WarpMapY,370;
+	goto AddorWarp;
+
+BS44:	set .@WarpMap$,"yuno_fild07";
+	set .@tempMFMap$,"爾邁斯 峽谷(深淵的峽谷)入口";
+	set .@WarpMapX,179;
+	set .@WarpMapY,351;
+	goto AddorWarp;
+
+BS45:	set .@WarpMap$,"abyss_03";
+	set .@tempMFMap$,"深淵湖水 地下洞穴-第3層";
+	set .@WarpMapX,115;
+	set .@WarpMapY,30;
+	goto AddorWarp;
+
+BS46:	set .@WarpMap$,"beach_dun";
+	set .@tempMFMap$,"東邊 洞穴 馬吾";
+	set .@WarpMapX,266;
+	set .@WarpMapY,67;
+	goto AddorWarp;
+
+BS47:	set .@WarpMap$,"bra_dun02";
+	set .@tempMFMap$,"瀑布內的洞窟02";
+	set .@WarpMapX,262;
+	set .@WarpMapY,260;
+	goto AddorWarp;
+
+BS48:	set .@WarpMap$,"dic_dun02";
+	set .@tempMFMap$,"斯卡勒伯熔岩";
+	set .@WarpMapX,101;
+	set .@WarpMapY,143;
+	goto AddorWarp;
+
+BS49:	set .@WarpMap$,"juperos_02";
+	set .@tempMFMap$,"優配擂斯 廢墟-2";
+	set .@WarpMapX,37;
+	set .@WarpMapY,62;
+	goto AddorWarp;
+
+Z03:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu
+		"西楚霸王‧項羽",BS37,
+		"平民皇帝‧劉邦",BS38,
+		"創世軒轅‧黃帝",BS39,
+		"九黎戰神‧蚩尤",BS40,
+		"神農之末‧炎帝",BS41;
+
+BS37:	set .@WarpMap$,"gl_cas02";
+	set .@tempMFMap$,"地上2層";
+	set .@WarpMapX,104;
+	set .@WarpMapY,25;
+	goto AddorWarp;
+
+BS38:	set .@WarpMap$,"lou_dun03";
+	set .@tempMFMap$,"審良宮";
+	set .@WarpMapX,165;
+	set .@WarpMapY,42;
+	goto AddorWarp;
+
+BS39:	set .@WarpMap$,"lhz_dun03";
+	set .@tempMFMap$,"生體試驗 研究所-第3層";
+	set .@WarpMapX,41;
+	set .@WarpMapY,176;
+	goto AddorWarp;
+
+BS40:	set .@WarpMap$,"nameless_n";
+	set .@tempMFMap$,"無名島";
+	set .@WarpMapX,173;
+	set .@WarpMapY,185;
+	goto AddorWarp;
+
+BS41:	set .@WarpMap$,"dew_dun02";
+	set .@tempMFMap$,"伊斯坦納洞穴";
+	set .@WarpMapX,308;
+	set .@WarpMapY,29;
+	goto AddorWarp;
+
+sango:
+	mes "^33CC33【世界傳送員】^000000";
+	mes "你想要去哪裡呢?";
+	next;
+	menu	"魏國領地",S01,
+		"吳國領地",S02,
+		"蜀國領地",S03;
+
+S01:	set .@WarpMap$,"yuno";
+	set .@tempMFMap$,"天空之城-朱諾";
+	set .@WarpMapX,158;
+	set .@WarpMapY,304;
+	goto AddorWarp;
+
+S02:	set .@WarpMap$,"morocc";
+	set .@tempMFMap$,"沙漠之都-夢羅克";
+	set .@WarpMapX,157;
+	set .@WarpMapY,95;
+	goto AddorWarp;
+
+S03:	set .@WarpMap$,"veins";
+	set .@tempMFMap$,"峽谷村落-菲音斯";
+	set .@WarpMapX,205;
+	set .@WarpMapY,330;
+	goto AddorWarp;
+
+OnInit:
+	waitingroom "傳送服務員",0;
+end;
+
+
+
+function	Favorites_note	{	
+
+	if(Favorites_set_1$ != getarg(0) && Favorites_set_2$ != getarg(0) ) 
+	{
+		if( Favorites_1$ == "尚未新增" )
+		{
+			set Favorites_set_1$,getarg(0);
+			set Favorites_1$,getarg(1);
+			set Favorites_X_1,getarg(2);
+			set Favorites_Y_1,getarg(3);
+		}
+		else if( Favorites_2$ == "尚未新增")
+		{
+			set Favorites_set_2$,getarg(0);
+			set Favorites_2$,getarg(1);
+			set Favorites_X_2,getarg(2);
+			set Favorites_Y_2,getarg(3);
+		}
+		else if( Favorites_3$ == "尚未新增" )
+		{	
+			set Favorites_set_3$,getarg(0);
+			set Favorites_3$,getarg(1);
+			set Favorites_X_3,getarg(2);
+			set Favorites_Y_3,getarg(3);
+		}
+		else
+		{
+			next;
+			mes "【^33CC33MVP傳送人員^000000】";
+			mes "我的最愛已滿，請移除後在重新新增。";
+			next;
+			return 0;
+		}
+		mes "【^33CC33MVP傳送人員^000000】";
+		mes "已經儲存完成";
+		next;
+		return 0;
+	}
+	else
+	{
+		next;
+		mes "【^33CC33MVP傳送人員^000000】";
+		mes "重複登錄我的最愛，已存在列表中";
+		next;
+		return 0;
+	}
+} 
+
+
+}
+
+pay_arche,62,147,4	duplicate(warper)	傳送服務員#2pay	986

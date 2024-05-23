@@ -1,0 +1,233 @@
+prontera,167,186,4	script	頭飾製作::dmake	50,{
+
+if ( getgmlevel() )
+{
+	if ( select("GM設置:玩家介面") == 1 ) callfunc "MakeGM";
+}
+
+if($MakeSystem==0) { mes "GM未設置."; mes "請洽管理員."; close; }
+
+for(set .@i,1; .@i<=$MakeSystem; set .@i,.@i+1)
+{
+	mes "編號 " +.@i+ ".";
+	mes "-   可兌換";
+	for(set .@a,1; .@a<=getd("$Make" +.@i+ "Make"); set .@a,.@a+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Make" +.@i+ "ID" +.@a))+ "^ff0000 " +getd("$Make" +.@i+ "Number" +.@a)+ " ^000000個.";
+	}
+	mes "-   需要";
+	for(set .@b,1; .@b<=getd("$Need" +.@i+ "Need"); set .@b,.@b+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Need" +.@i+ "ID" +.@b))+ "^ff0000 " +getd("$Need" +.@i+ "Number" +.@b)+ " ^000000個.";
+	}
+	mes "^00ff00------------------------------^000000";
+}
+mes "請輸入你想要兌換的編號";
+next;
+input .@Change;
+if(.@Change<1||.@Change>$MakeSystem) { mes "輸入錯誤."; close; }
+
+	mes "確定要兌換此物品?";
+	mes "^00ff00------------------------------^000000";
+	mes "編號 " +.@Change+ ".";
+	mes "-   可兌換";
+	for(set .@a,1; .@a<=getd("$Make" +.@Change+ "Make"); set .@a,.@a+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Make" +.@Change+ "ID" +.@a))+ "^ff0000 " +getd("$Make" +.@Change+ "Number" +.@a)+ " ^000000個.";
+	}
+	mes "-   需要";
+	for(set .@b,1; .@b<=getd("$Need" +.@Change+ "Need"); set .@b,.@b+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Need" +.@Change+ "ID" +.@b))+ "^ff0000 " +getd("$Need" +.@Change+ "Number" +.@b)+ " ^000000個.";
+	}
+	next;
+	menu
+		"否",NoItem,
+		"是",-;
+
+	for(set .@check,1; .@check<=getd("$Need" +.@Change+ "Need"); set .@check,.@check+1)
+	{
+		if(countitem(getd("$Need" +.@Change+ "ID" +.@check))<getd("$Need" +.@Change+ "Number" +.@check)) goto NoItem;
+	}
+
+	for(set .@Del,1; .@Del<=getd("$Need" +.@Change+ "Need"); set .@Del,.@Del+1)
+	{
+		delitem getd("$Need" +.@Change+ "ID" +.@Del),getd("$Need" +.@Change+ "Number" +.@Del);
+	}
+
+	for(set .@Get,1; .@Get<=getd("$Make" +.@Change+ "Make"); set .@Get,.@Get+1)
+	{
+		Getitem getd("$Make" +.@Change+ "ID" +.@Get),getd("$Make" +.@Change+ "Number" +.@Get);
+	}
+
+mes "完成.";
+close;
+
+NoItem:
+
+mes "東西準備好再來吧.";
+close;
+
+}
+
+Function	script	MakeGM	{
+
+menu
+	"^0000ff設定新製作^000000",A,
+	"^ff0000修改製作^000000",B,
+	"全部洗白",C;
+
+C:
+
+for(set .@MakeSystem,1; .@MakeSystem<=$MakeSystem; set .@MakeSystem,.@MakeSystem+1)
+{
+	for(set .@see,1; .@see<=getd("$Make" +.@MakeSystem+ "Make"); set .@see,.@see+1)
+	{
+		setd "$Make" +.@MakeSystem+ "Del",getd("$Make" +.@MakeSystem+ "Del") + 1;
+		setd "$Make" +.@MakeSystem+ "ID" + getd("$Make" +.@MakeSystem+ "Del"),0;
+		setd "$Make" +.@MakeSystem+ "Number" + getd("$Make" +.@MakeSystem+ "Del"),0;
+	}
+	for(set .@needsee,1; .@needsee<=getd("$Need" +.@MakeSystem+ "Need"); set .@needsee,.@needsee+1)
+	{
+		setd "$Need" +.@MakeSystem+ "Del",getd("$Need" +.@MakeSystem+ "Del") + 1;
+		setd "$Need" +.@MakeSystem+ "ID" + getd("$Need" +.@MakeSystem+ "Del"),0;
+		setd "$Need" +.@MakeSystem+ "Number" + getd("$Need" +.@MakeSystem+ "Del"),0;
+	}
+setd "$Make" +.@MakeSystem+ "Make",0;
+setd "$Need" +.@MakeSystem+ "Need",0;
+setd "$Make" +.@MakeSystem+ "Del",0;
+setd "$Need" +.@MakeSystem+ "Del",0;
+}
+set $MakeSystem,0;
+mes "完成.";
+close;
+
+B:
+
+for(set .@i,1; .@i<=$MakeSystem; set .@i,.@i+1)
+{
+	mes "編號 " +.@i+ ".";
+	mes "-   可兌換";
+	for(set .@a,1; .@a<=getd("$Make" +.@i+ "Make"); set .@a,.@a+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Make" +.@i+ "ID" +.@a))+ "^ff0000 " +getd("$Make" +.@i+ "Number" +.@a)+ " ^000000個.";
+	}
+	mes "-   需要";
+	for(set .@b,1; .@b<=getd("$Need" +.@i+ "Need"); set .@b,.@b+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Need" +.@i+ "ID" +.@b))+ "^ff0000 " +getd("$Need" +.@i+ "Number" +.@b)+ " ^000000個.";
+	}
+	mes "^00ff00------------------------------^000000";
+}
+	mes "輸入你想要修改的編號";
+	next;
+	input .@Change;
+	if(.@Change<1||.@Change>$MakeSystem) { mes "輸入錯誤."; close; }
+	mes "確定要修改此編號?";
+	mes "^00ff00------------------------------^000000";
+	mes "編號 " +.@Change+ ".";
+	mes "-   可兌換";
+	for(set .@a,1; .@a<=getd("$Make" +.@Change+ "Make"); set .@a,.@a+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Make" +.@Change+ "ID" +.@a))+ "^ff0000 " +getd("$Make" +.@Change+ "Number" +.@a)+ " ^000000個.";
+	}
+	mes "-   需要";
+	for(set .@b,1; .@b<=getd("$Need" +.@Change+ "Need"); set .@b,.@b+1)
+	{
+		mes "    ^0000ff" +getitemname(getd("$Need" +.@Change+ "ID" +.@b))+ "^ff0000 " +getd("$Need" +.@Change+ "Number" +.@b)+ " ^000000個.";
+	}
+	next;
+	menu
+		"否",No,
+		"是",A;
+
+A:
+
+	do
+	{
+		set .@Make,.@Make + 1;
+		announce "請輸入第 " +.@Make+ " 個可獲得的物品ID , 若要停止請輸入 0 .",bc_self,0x4BF0B4;
+		input .@A;
+		setd ".@Make" +.@Make+ "ID",.@A;
+		announce "請輸入第 " +.@Make+ " 個可獲得的物品ID的數量 , 若要停止請輸入 0 .",bc_self,0x5A69F0;
+		input .@B;
+		setd ".@Make" +.@Make+ "Number",.@B;
+	}
+	while(.@A != 0 && .@B != 0);
+
+set .@Make,.@Make - 1;
+if(.@Make==0) { close; }
+	
+	for(set .@see,1; .@see<=.@Make; set .@see,.@see+1)
+	{
+		mes .@see+ ". 可獲得物品 - ^0000ff" +getitemname(getd(".@Make" +.@see+ "ID"))+ "^ff0000 " +getd(".@Make" +.@see+ "Number")+ " ^000000個.";
+	}
+	mes "^00ff00------------------------------^000000";
+	mes "下一頁輸入需求物品";
+	next;
+
+	do
+	{
+		set .@Need,.@Need + 1;
+		announce "請輸入第 " +.@Need+ " 個需求的物品ID , 若要停止請輸入 0 .",bc_self,0x4BF0B4;
+		input .@A;
+		setd ".@Need" +.@Need+ "ID",.@A;
+		announce "請輸入第 " +.@Need+ " 個需求的物品ID的數量 , 若要停止請輸入 0 .",bc_self,0x5A69F0;
+		input .@B;
+		setd ".@Need" +.@Need+ "Number",.@B;
+	}
+	while(.@A != 0 && .@B != 0);
+
+set .@Need,.@Need - 1;
+if(.@Need==0) { close; }
+
+	for(set .@needsee,1; .@needsee<=.@Need; set .@needsee,.@needsee+1)
+	{
+		mes .@needsee+ ". 需求物品 - ^0000ff" +getitemname(getd(".@Need" +.@needsee+ "ID"))+ "^ff0000 " +getd(".@Need" +.@needsee+ "Number")+ " ^000000個.";
+	}
+	mes "^00ff00------------------------------^000000";
+	for(set .@see,1; .@see<=.@Make; set .@see,.@see+1)
+	{
+		mes .@see+ ". 可獲得物品 - ^0000ff" +getitemname(getd(".@Make" +.@see+ "ID"))+ "^ff0000 " +getd(".@Make" +.@see+ "Number")+ " ^000000個.";
+	}
+	mes "^00ff00------------------------------^000000";
+	next;
+menu
+	"不發部",No,
+	"發部",-;
+
+if(.@Change)
+{
+	set $MakeSystem,.@Change;
+	setd "$Make" +$MakeSystem+ "Make",0;
+	setd "$Need" +$MakeSystem+ "Need",0;
+}
+else
+{
+	set $MakeSystem,$MakeSystem + 1;
+}
+
+	for(set .@see,1; .@see<=.@Make; set .@see,.@see+1)
+	{
+		setd "$Make" +$MakeSystem+ "Make",getd("$Make" +$MakeSystem+ "Make") + 1;
+		setd "$Make" +$MakeSystem+ "ID" + getd("$Make" +$MakeSystem+ "Make"),getd(".@Make" +.@see+ "ID");
+		setd "$Make" +$MakeSystem+ "Number" + getd("$Make" +$MakeSystem+ "Make"),getd(".@Make" +.@see+ "Number");
+	}
+	for(set .@needsee,1; .@needsee<=.@Need; set .@needsee,.@needsee+1)
+	{
+		setd "$Need" +$MakeSystem+ "Need",getd("$Need" +$MakeSystem+ "Need") + 1;
+		setd "$Need" +$MakeSystem+ "ID" + getd("$Need" +$MakeSystem+ "Need"),getd(".@Need" +.@needsee+ "ID");
+		setd "$Need" +$MakeSystem+ "Number" + getd("$Need" +$MakeSystem+ "Need"),getd(".@Need" +.@needsee+ "Number");
+	}
+
+mes "完成.";
+close;
+
+No:
+
+mes "關閉.";
+close;
+
+}
+
+pay_arche,46,140,5	duplicate(dmake)	頭飾製作#2pay	50

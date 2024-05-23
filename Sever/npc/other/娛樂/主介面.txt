@@ -1,0 +1,52 @@
+payon,170,216,4	script	泡點兌換員#h	510,{
+	set .@Change_Min,(Time - gettimetick(2)) / 60;
+	set .@Change_Sec,(Time - gettimetick(2)) % 60;
+	set .@of$,":";
+	setarray $@chitemnumber[0],668,608,607;//物品id
+	setarray $@itemneedp[0],5,10,20;//兌換點數
+	set $cr1$,"^0000ff^888888";
+mes "[泡點兌換員]";
+mes "每 "+($SetWaitingTime / 60)+" 分鐘可累計 ^FF000010^000000 點";
+if(.@Change_Min<0||.@Change_Sec<0){mes "您目前是停止累積階段，請嘗試重新登入";
+}else{mes "距離下一個泡點還有 ^0000ff"+.@Change_Min+"^000000 分 ^0000ff"+.@Change_Sec+"^000000 秒";}
+mes " ";
+mes "您目前有 ^FF0000"+ChangePoint+"^000000 點";
+mes "需要兌換什麼嗎？";
+next;
+	for( set .@i, 0; .@i <getarraysize($@chitemnumber) ; set .@i, .@i +1 ){
+		setd $@needpoint+.@i,$@itemneedp[.@i];
+		set .@chpot,ChangePoint-getd($@needpoint+.@i);
+		set $cr$,"[^0000ff"+getd($@needpoint+.@i)+"^888888]";
+		Set .@imenu$,.@imenu$+.@of$+$cr1$+(getitemname($@chitemnumber[.@i])+$cr$);
+		}
+	set .@aumzz,prompt("取消:"+.@imenu$+"");
+	If(.@aumzz<2){GoTo ThxNO;
+		}else{
+		set .@o,.@aumzz-3;
+		if(.@aumzz==255)close;
+		mes "[泡點兌換員]";
+		mes "確定要兌換這個嗎？";
+		set @aumzz,prompt("確定:取消");
+		if(@aumzz==255)close;
+		if(@aumzz==2) goto ThxNO;
+		next;
+		mes "[泡點兌換員]";
+		mes "請輸入兌換的數量";
+			input .@PT_count;
+			if (.@PT_count<=0){next; mes "[泡點兌換員]"; mes "感謝你的使用"; close; }
+			if(ChangePoint<getd($@needpoint+.@o)*.@PT_count){next;	mes "[泡點兌換員]"; mes "您的點數不夠喔，存到再來吧";close;}
+			set ChangePoint,ChangePoint-getd($@needpoint+.@o)*.@PT_count;
+			getitem $@chitemnumber[.@aumzz-3],.@PT_count;
+			dispbottom "[ 泡點系統 ] : 已扣除 " +getd($@needpoint+.@o)*.@PT_count+" 點，目前泡點為 "+ChangePoint+" 點";
+			mes "歡迎你再利用喔~";
+			close;
+		}
+ThxNO:
+	mes "[泡點兌換員]";
+	mes "感謝你的使用";
+	close;
+
+		OnInit:
+	waitingroom "【泡點兌換】", 0;
+	end;
+}

@@ -1,0 +1,1427 @@
+//===== eAthena Script =======================================
+//= Orc's Memory
+//===== By: ==================================================
+//= L0ne_W0lf
+//===== Current Version: =====================================
+//= 1.3
+//===== Compatible With: =====================================
+//= eAthena SVN
+//===== Description: =========================================
+//= [Aegis Conversion]
+//= Relive the memory of an orc.
+//===== Additional Comments: =================================
+//= 1.0 First version. [L0ne_W0lf]
+//= 1.1 First round of bugfixes. (bugreport:3928) [L0ne_W0lf]
+//=     Fixed some npcs calling wrong events.
+//=     Fixed Depraved Orc Spirit spawn point
+//=     Fixed an NPC that was never being enabled.
+//= 1.1a Second round from bugreport. (bugreport:3928) [L0ne_W0lf]
+//=     Fixed first warp never enabling, issue not seen
+//=     because of a local source mod.
+//=     Corrected the IDs for the Vengeful Orc Spirit and
+//=     Shaman Cargalache, copy/paste fail.
+//=     Changed spawn point for dungeon according to spawn
+//=     point on iRO.
+//= 1.2 More bugfixes, mostly typos. :O (bugreport:3944) [L0ne_W0lf]
+//=     Fixed some varaibles (types/values) as well.
+//= 1.3 Disabled an exploit related to the orc hero spawn. [L0ne_W0lf]
+//=     Corrected the variable type for party leader name.
+//= 翻譯: Blue獅子 QQ:88369337
+//============================================================
+
+// 入口
+aldebaran,133,119,5	script	獸人的回憶	971,{
+	if (BaseLevel < 99) {
+		mes "只有 ^ff000099^000000 等級的玩家可以進入此密穴.";
+		close;
+	}
+
+	set .@party_id,getcharid(1);
+	set .@ins_mas,getpartyleader(.@party_id,2);
+	set .@p_name$,getpartyname(.@party_id);
+	set .@p_reader$,strcharinfo(0);
+	set .@md_name$,"獸人的回憶";
+
+	getpartymember(.@party_id);
+	set .@partymembercount,$@partymembercount;
+	copyarray .@partymembername$[0],$@partymembername$[0],.@partymembercount;
+
+	set .@orctime,checkquest(12059,PLAYTIME);
+	if ((.@party_id > 0) && ((.@partymembercount > 2))) {
+		if (.@orctime == -1) {
+			if (.@ins_mas == getcharid(0)) {
+				mes "已確認組隊. 您要預約進入" + .@md_name$ + "地牢嗎?";
+				next;
+				switch(select("創建" + .@md_name$ + "地牢:進入地牢:取消")) {
+				case 1:
+					set .@instance, instance_create(.@md_name$, .@party_id);
+					if (.@instance < 0) {
+						mes "隊伍名字: "+.@p_name$+"";
+						mes "隊長是: "+.@p_leader$+"";
+						mes "^0000ff"+.@md_name$+" ^000000 - 創建失敗.";
+						close;
+					}
+					else {
+						mes "嘗試創建 - ^0000ff"+.@md_name$+"^000000";
+						mes "創建之後, 您要選擇菜單'進入地牢'選擇進入" + .@md_name$ + ".";
+
+						for( set .@i, 1; .@i <= 2; set .@i, .@i + 1 ) {
+							if( instance_attachmap(.@i + "@orcs", .@instance) == "" )
+								break;
+						}
+						if( .@i < 2 ) {
+							instance_destroy(.@instance);
+							close;
+						}
+						instance_attach(.@instance);
+						instance_set_timeout 14400,300,.@instance;
+						instance_init(.@instance);
+
+						// First Floor
+						donpcevent instance_npcname("#Resurrect Monsters1", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Resurrect Monsters2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Resurrect Monsters3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Resurrect Monsters4", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("B1 Area 1", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("B1 Area 2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("B1 Area 3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("B1 Area 4", instance_id())+"::OnInstanceInit";
+						hideonnpc instance_npcname("庫魯格#1-2", instance_id());
+
+						// Second Floor
+						donpcevent instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#1-1", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#1-2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#1-3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#1-4", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#2-2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#2-3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#2-4", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#3-2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#3-3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("火把#3-4", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Warp2-1", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Warp2-2", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Warp2-3", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Boss Control", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("#Warp Outside Orc Dun", instance_id())+"::OnInstanceInit";
+						donpcevent instance_npcname("庫魯格#", instance_id())+"::OnInstanceInit";
+
+						close;
+					}
+				case 2:
+					//if (move_md == 3) {
+					//	mes "An unidentified error has occured.";
+					//	close;
+					//}
+					//else if (move_md == 2) {
+					if (has_instance("1@orcs") == "") {
+						mes "迷宮密穴 " + .@md_name$ + " 並不存在.";
+						mes "隊長並沒有創建密穴.";
+						next;
+						mes "完成創建後才可以進入密穴.";
+						mes "如果密穴被破壞要等7天后才可以重新進入.";
+						close;
+					}
+					//else if (move_md == 0) {
+					else if ((has_instance("1@orcs") != "") && (.@partymembercount < 3)) {
+						mes "只有隊伍的成員才可以進入密穴.";
+						close;
+					}
+					//else if (move_md == 0) {
+					else {
+					mapannounce "aldebaran","隊伍" + .@p_name$ + " 的成員 " + .@p_reader$ + " 正在進入 " + .@md_name$ + "密穴.",bc_map,"0x00ff99";
+						warpparty "1@orcs",179,15,.@party_id;
+						//setquest 12059;
+						close;
+					}
+				case 3:
+					close;
+				}
+			}
+			else {
+				switch(select(.@md_name$ + " 進入迷宮密穴:取消")) {
+				case 1:
+					//if (move_md == 3) {
+					//	mes "An unidentified error has occured.";
+					//	close;
+					//}
+					//else if (move_md == 2) {
+					if (has_instance("1@orcs") == "") {
+						mes "迷宮密穴 " + .@md_name$ + " 並不存在.";
+						mes "因為隊長取消了迷宮密穴, 或者任務時間超時. 將於2小時後重置.";
+						close;
+					}
+					//else if (move_md == 1) {
+					else if ((has_instance("1@orcs") != "") && (.@partymembercount < 3)) {
+						mes "只有隊伍的成員才可以進入密穴.";
+						close;
+					}
+					//else if (move_md == 0) {
+					else {
+						mapannounce "aldebaran","隊伍" + .@p_name$ + " 的成員 " + .@p_reader$ + " 進入了 " + .@md_name$ + "密穴.",bc_map,"0x00ff99";
+						//setquest 12059;
+						warpparty "1@orcs",179,15,.@party_id;
+						close;
+					}
+				case 2:
+					close;
+				}
+			}
+		}
+		else if ((.@orctime == 0) || (.@orctime == 1)) {
+			mes "如果你創建了密穴現在可以進入.";
+			next;
+			switch(select("進入密穴 " + .@md_name$ + ":取消")) {
+			case 1:
+				//if (move_md == 3) {
+				//	mes "An unidentified error has occured.";
+				//	close;
+				//}
+				//else if (move_md == 2) {
+				if (has_instance("1@orcs") == "") {
+					mes "迷宮密穴 " + .@md_name$ + " 並不存在.";
+					mes "因為隊長取消了迷宮密穴, 或者任務時間超時. 將於2小時後重置.";
+					close;
+				}
+				//else if (move_md == 1) {
+				else if ((has_instance("1@orcs") != "") && (.@partymembercount < 3)) {
+					mes "只有隊伍的成員才可以進入密穴.";
+					close;
+				}
+				//else if (move_md == 0) {
+				else {
+					mapannounce "aldebaran","隊伍" + .@p_name$ + " 的成員 " + .@p_reader$ + " 進入了 " + .@md_name$ + "密穴.",bc_map,"0x00ff99";
+					//setquest 12059;
+					warpparty "1@orcs",179,15,.@party_id;
+					close;
+				}
+			case 2:
+				close;
+			}
+		}
+		else if (.@orctime == 2) {
+			mes "^0000ff所有獸人的回憶密穴及相關任務已刪除, 現在你可以重新創建密穴、或進入獸人的回憶密穴.^000000";
+			//erasequest 12059;
+			close;
+		}
+	}
+	else {
+		mes "只有隊長才能創建密穴, 隊伍中至少要有3名成員.";
+		close;
+	}
+}
+
+gef_fild10,238,202,6	script	瘋狂的科學家#orc	865,{
+	if (BaseLevel < 50) {
+		mes "獸人女巫似乎沒有注意到你?, 仍然在喃喃自語...";
+		close;
+	}
+	if (mad > 1) {
+		set mad,1;
+	}
+	else if (mad < 1) {
+		mes "[瘋狂科學家]";
+		mes "哈哈, 沒有一?人歐克人能超過我!";
+		mes "迪曼神奈兒*高治 是不可戰勝的!!";
+		next;
+		switch(select("歐克人不攻擊你?:你就想!")) {
+		case 1:
+			mes "[瘋狂科學家]";
+			mes "是的, 是的.. 我知道這很難相信. 因此我不會怪你的.";
+			mes "我曾經在蒙洛克附近研究過迪曼神奈兒*高治的發現.";
+			mes "根據我的研究發現, 在那裡發現的原料擁有非常巨大的能量!";
+			next;
+			break;
+		case 2:
+			mes "[瘋狂科學家]";
+			mes "你真是一個多疑的人啊, 嗯?";
+			next;
+			break;
+		}
+		switch(select("噢? 比如什麼, 在次元空間旅行?")) {
+		case 1:
+			mes "[瘋狂科學家]";
+			mes "太聰明了你! 我恰恰那麼做過! 看到那裡的雕塑了嗎? 可不是你那種普通的塑製品!";
+			next;
+			mes "[瘋狂科學家]";
+			mes "我用我的技術和空間裂縫裡無限的能量製作的! 想看看嗎?";
+			next;
+			break;
+		}
+		switch(select("嘸, 聽起來不合法?")) {
+		case 1:
+			mes "[瘋狂科學家]";
+			mes "咳, 什麼時候開始所有事情都合法了!? 要不這樣! 你可以跟獸人! 來吧!";
+			next;
+			mes "[瘋狂科學家]";
+			mes "可能?他?看到你後會給你很多指示, 忽略就是了! 他們總是重覆著我告訴過他的事情!";
+			next;
+			break;
+		}
+		switch(select("好吧...我要做什麼?:唔,還是不要了.")) {
+		case 1:
+			mes "[瘋狂科學家]";
+			mes "太好了! 坐到這?雕像的手裡去! 到了那裡後盡量表現的自然些!";
+			set mad,1;
+			break;
+		case 2:
+			mes "[瘋狂科學家]";
+			mes "哦這樣啊, 隨便你好了!";
+			break;
+		}
+	}
+	else {
+		mes "[瘋狂科學家]";
+		mes "嗯? 如果你想經歷次元空間旅行就把手放在雕像上!";
+	}
+	close;
+}
+
+// Orc's Memory Floor 1
+1@orcs,180,30,0	script	#Resurrect Monsters1	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#Resurrect Monsters1", instance_id());
+	end;
+
+OnDisable:
+	killmonster "1@orcs",instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#Resurrect Monsters1", instance_id());
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"巴風特",1039,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,30;
+	set .@c_mob_num,mobcount("1@orcs",instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	if (.@mob_dead_num > 0) {
+		set .@mob_ran,rand(1,30);
+		if (.@mob_ran > 29) {
+			monster "1@orcs",0,0,"巴風特",1039,.@mob_dead_num,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+		}
+		else if ((.@mob_ran > 28) && (.@mob_ran < 30)) {
+			monster "1@orcs",0,0,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			if (rand(1,10) == 9) {
+				instance_announce 0, "巴風特: 我們需要增加防禦! 多叫些兄弟來!",bc_map,"0xff4444";
+			}
+		}
+		else if ((.@mob_ran > 26) && (.@mob_ran < 29)) {
+			areamonster "1@orcs",41,91,51,81,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			if (rand(1,10) == 9) {
+				instance_announce 0, "蘭特克力斯在哪裡!? 快叫他們來阻止敵人!",bc_map,"0xff4444";
+			}
+		}
+		else {
+			areamonster "1@orcs",17,187,27,177,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			if (rand(1,5) == 3) {
+				instance_announce 0, "警告: 警衛開始向開發區域集結.",bc_map,"0x77ff77";
+			}
+			if (rand(1,100) == 50) {
+				initnpctimer;
+			}
+		}
+	}
+	end;
+
+OnTimer10:
+	instance_announce 0, "歐克警衛頭目: 這比預期的時間要長, 召喚人中龍鳳‧呂奉先!",bc_map,"0xff4444";
+	end;
+
+OnTimer4010:
+	instance_announce 0, "人中龍鳳‧呂奉手持方天戟出現了。",bc_map,"0x77ff77";
+	areamonster "1@orcs",17,187,27,177,"人中龍鳳‧呂奉先",2626,1,instance_npcname("#Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	stopnpctimer;
+	end;
+}
+
+1@orcs,180,30,0	script	#Resurrect Monsters2	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#Resurrect Monsters2", instance_id());
+	end;
+
+OnDisable:
+	killmonster "1@orcs",instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#Resurrect Monsters2", instance_id());
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"法老王",1157,1,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,15;
+	set .@c_mob_num,mobcount("1@orcs",instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	if (rand(1,30) > 15) {
+		if (.@mob_dead_num > 0) {
+			monster "1@orcs",0,0,"法老王",1157,.@mob_dead_num,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+		}
+	}
+	else {
+		if (.@mob_dead_num > 0) {
+			areamonster "1@orcs",17,187,27,177,"法老王",1157,.@mob_dead_num,instance_npcname("#Resurrect Monsters2", instance_id())+"::OnMyMobDead";
+		}
+	}
+	end;
+}
+
+1@orcs,180,30,0	script	#Resurrect Monsters3	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#Resurrect Monsters3", instance_id());
+	end;
+
+OnDisable:
+	killmonster "1@orcs",instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#Resurrect Monsters3", instance_id());
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "1@orcs",0,0,"水晶龍",1779,1,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,15;
+	set .@c_mob_num,mobcount("1@orcs",instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	set .@mob_ran,rand(1,30);
+	if (.@mob_ran > 29) {
+		if (.@mob_dead_num > 0) {
+			monster "1@orcs",0,0,"水晶龍",1779,.@mob_dead_num,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+		}
+	}
+	else if ((.@mob_ran > 26) && (.@mob_ran < 30)) {
+		if (.@mob_dead_num > 0) {
+			areamonster "1@orcs",43,155,47,159,"水晶龍",1779,.@mob_dead_num,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+			if (rand(1,3) == 3) {
+				instance_announce 0, "水晶龍: 從後面攻擊他們! 截斷他們的後援!",bc_map,"0xff4444";
+			}
+		}
+	}
+	else {
+		if (.@mob_dead_num > 0) {
+			areamonster "1@orcs",17,187,27,177,"水晶龍",1650,.@mob_dead_num,instance_npcname("#Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+		}
+	}
+	end;
+}
+
+1@orcs,180,30,0	script	#Resurrect Monsters4	844,{
+	end;
+
+OnInstanceInit:
+	hideoffnpc instance_npcname("#Resurrect Monsters4", instance_id());
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	areamonster "1@orcs",98,35,178,115,"瘧蚊",1627,1,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,10;
+	set .@c_mob_num,mobcount("1@orcs",instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	if (.@mob_dead_num > 0) {
+		monster "1@orcs",0,0,"瘧蚊",1627,.@mob_dead_num,instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	}
+	end;
+
+OnDisable:
+	killmonster "1@orcs",instance_npcname("#Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	end;
+}
+
+1@orcs,180,29,4	script	庫魯格#1-1	433,{
+	donpcevent instance_npcname("庫魯格#1-2", instance_id())+"::OnEnable";
+	end;
+}
+
+1@orcs,180,29,4	script	庫魯格#1-2	433,{
+	end;
+
+OnEnable:
+	hideonnpc instance_npcname("庫魯格#1-1", instance_id());
+	hideoffnpc instance_npcname("庫魯格#1-2", instance_id());
+	initnpctimer;
+	end;
+
+OnTimer10:
+	instance_announce 0, "庫魯格: 真是的...你怎麼那麼慢!! 我可沒有一整天時間陪你!!",bc_map,"0xffff00";
+	end;
+
+OnTimer5710:
+	instance_announce 0, "庫魯格: 我的願望是幫我的夥伴打開大門, 但是現在全都毀了因為墮天使-米迦勒破壞一切了.",bc_map,"0xffff00";
+	end;
+
+OnTimer14610:
+	instance_announce 0, "歐克警衛隊長: 我聞到了老鼠的氣味..派些巡邏去入口!!",bc_map,"0xff4444";
+	end;
+
+OnTimer20210:
+	instance_announce 0, "庫魯格: 他們馬上就來了! 補救還來得及...現在聽我說",bc_map,"0xffff00";
+	end;
+
+OnTimer24910:
+	instance_announce 0, "庫魯格: 墮天使-米迦勒封閉了地下一層, 並且分成了4塊區域. 每一塊區域只有一名輪迴冰地的闇天使能打開通往下一塊區域的入口.",bc_map,"0xffff00";
+	end;
+
+OnTimer34310:
+	instance_announce 0, "庫魯格: 找到他們並且消滅他們, 打開通往下一塊區域的入口.",bc_map,"0xffff00";
+	end;
+
+OnTimer39710:
+	instance_announce 0, "庫魯格: 盡量避開其他怪物, 殺死“闇●十字刺客 艾勒梅斯”. 殺死的普通怪物越多，在通往2層的路上遇到的怪物數量也越多。.",bc_map,"0xffff00";
+	end;
+
+OnTimer49210:
+	instance_announce 0, "庫魯格: 最糟糕的情況是: 通往2樓的路可能完全被阻塞. 為你自己著想, 你應該盡量偷偷摸摸的.",bc_map,"0xffff00";
+	end;
+
+OnTimer56310:
+	instance_announce 0, "任務提示: 偷偷摸摸的殺掉 '輪迴冰地的闇天使',盡量避開其他怪物是進入2樓的戰術方法.",bc_map,"0x44ffff";
+	donpcevent instance_npcname("#Resurrect Monsters1", instance_id())+"::OnEnable";
+	donpcevent instance_npcname("#Resurrect Monsters2", instance_id())+"::OnEnable";
+	donpcevent instance_npcname("#Resurrect Monsters3", instance_id())+"::OnEnable";
+	hideonnpc instance_npcname("庫魯格#1-2", instance_id());
+	end;
+
+OnTimer60000:
+	areamonster "1@orcs",137,83,143,89,"闇●十字刺客 艾勒梅斯",1647,1,instance_npcname("B1 Area Mobs", instance_id())+"::OnMyMobDead";
+	stopnpctimer;
+	end;
+
+}
+
+1@orcs,168,125,0	script	B1 Area 1	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("B1 Area 1", instance_id());
+	hideonnpc instance_npcname("B1 Area 1", instance_id());
+	end;
+
+OnEnable:
+	enablenpc instance_npcname("B1 Area 1", instance_id());
+	hideoffnpc instance_npcname("B1 Area 1", instance_id());
+	areamonster "1@orcs",103,105,109,111,"闇●十字刺客 艾勒梅斯",1647,1,instance_npcname("B1 Area Mobs", instance_id())+"::OnMyMobDead1";
+	end;
+
+OnTouch:
+	warp "1@orcs",168,130;
+	end;
+
+OnContinue:
+	donpcevent instance_npcname("B1 Area 2", instance_id())+"::OnEnable";
+	initnpctimer;
+	end;
+
+OnTimer10300:
+	instance_announce 0, "庫魯格的耳語: 這裡的獸人以前是我的夥伴.他們只是被米迦勒用魔力控制了心神,失去了意志.",bc_map,"0xff4499";
+	end;
+
+OnTimer18700:
+	instance_announce 0, "庫魯格的耳語: 如果想保住部落, 除了打敗米迦勒外沒有其它辦法.",bc_map,"0xff4499";
+	stopnpctimer;
+	end;
+}
+
+1@orcs,89,94,0	script	B1 Area 2	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("B1 Area 2", instance_id());
+	hideonnpc instance_npcname("B1 Area 2", instance_id());
+	end;
+
+OnEnable:
+	enablenpc instance_npcname("B1 Area 2", instance_id());
+	hideoffnpc instance_npcname("B1 Area 2", instance_id());
+	areamonster "1@orcs",32,40,38,46,"闇●十字刺客 艾勒梅斯",1647,1,instance_npcname("B1 Area Mobs", instance_id())+"::OnMyMobDead2";
+	end;
+
+OnTouch:
+	warp "1@orcs",85,85;
+	end;
+
+OnContinue:
+	donpcevent instance_npcname("B1 Area 3", instance_id())+"::OnEnable";
+	initnpctimer;
+	end;
+
+OnTimer30300:
+	instance_announce 0, "庫魯格的耳語: 我看到過部族夥伴的屍體, 看起來米迦勒曾對他們使用酷刑.",bc_map,"0xff4499";
+	end;
+
+OnTimer37600:
+	instance_announce 0, "庫魯格的耳語: ...這是我全部能做的了, 我對這種邪惡事情帶有責任.",bc_map,"0xff4499";
+	stopnpctimer;
+	end;
+}
+
+1@orcs,38,105,0	script	B1 Area 3	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("B1 Area 3", instance_id());
+	hideonnpc instance_npcname("B1 Area 3", instance_id());
+	end;
+
+OnEnable:
+	enablenpc instance_npcname("B1 Area 3", instance_id());
+	hideoffnpc instance_npcname("B1 Area 3", instance_id());
+	areamonster "1@orcs",19,177,25,183,"闇●十字刺客 艾勒梅斯",1647,1,instance_npcname("B1 Area Mobs", instance_id())+"::OnMyMobDead3";
+	end;
+
+OnTouch:
+	warp "1@orcs",38,110;
+	end;
+
+OnContinue:
+	donpcevent instance_npcname("B1 Area 4", instance_id())+"::OnEnable";
+	initnpctimer;
+	end;
+
+OnTimer30300:
+	instance_announce 0, "要堅持下去!",bc_map,"0xff4499";
+	end;
+
+OnTimer32700:
+	instance_announce 0, "通過這裡之後, 進入2層前可以得到些許休息.",bc_map,"0xff4499";
+	stopnpctimer;
+	end;
+}
+
+1@orcs,21,189,0	script	B1 Area 4	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("B1 Area 4", instance_id());
+	hideonnpc instance_npcname("B1 Area 4", instance_id());
+	end;
+
+OnEnable:
+	enablenpc instance_npcname("B1 Area 4", instance_id());
+	hideoffnpc instance_npcname("B1 Area 4", instance_id());
+	donpcevent instance_npcname("#Resurrect Monsters1", instance_id())+"::OnDisable";
+	donpcevent instance_npcname("#Resurrect Monsters2", instance_id())+"::OnDisable";
+	donpcevent instance_npcname("#Resurrect Monsters3", instance_id())+"::OnDisable";
+	donpcevent instance_npcname("#Resurrect Monsters4", instance_id())+"::OnDisable";
+	end;
+
+OnTouch:
+	warp "2@orcs",32,171;
+	end;
+}
+
+1@orcs,1,1,0	script	B1 Area Mobs	-1,{
+	end;
+
+OnMyMobDead:
+	donpcevent instance_npcname("B1 Area 1", instance_id())+"::OnEnable";
+	end;
+
+OnMyMobDead1:
+	donpcevent instance_npcname("B1 Area 1", instance_id())+"::OnContinue";
+	end;
+
+OnMyMobDead2:
+	donpcevent instance_npcname("B1 Area 2", instance_id())+"::OnContinue";
+	end;
+
+OnMyMobDead3:
+	donpcevent instance_npcname("B1 Area 3", instance_id())+"::OnContinue";
+	end;
+}
+
+// Orc's Memory Floor 2
+2@orcs,36,171,0	script	#2Resurrect Monsters1	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#2Resurrect Monsters1", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#2Resurrect Monsters1", instance_id());
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"死靈",1046,1,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	end;
+
+OnDisable:
+	killmonster "2@orcs",instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,30;
+	set .@c_mob_num,mobcount("2@orcs",instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	if (.@mob_dead_num > 0) {
+		set .@mob_ran,rand(1,30);
+		if (.@mob_ran > 29) {
+			monster "2@orcs",0,0,"死靈",1046,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+		}
+		else if ((.@mob_ran > 28) && (.@mob_ran < 30)) {
+			monster "2@orcs",0,0,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			set mob_ran2,rand(1,10);
+		}
+		else if ((.@mob_ran > 26) && (.@mob_ran < 29)) {
+			areamonster "2@orcs",157,112,167,122,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			if (rand(1,10) == 9) {
+				instance_announce 0, "警告: 蘭特克力斯正在向區域3集結.",bc_map,"0xff4444";
+			}
+		}
+		else {
+			areamonster "2@orcs",173,13,183,23,"蘭特克力斯",1751,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+			if (rand(1,5) == 3) {
+				instance_announce 0, "警告: 部隊正在向米迦勒的祭壇集結.",bc_map,"0x77ff77";
+			}
+			if (rand(1,70) == 50) {
+				initnpctimer;
+			}
+		}
+	}
+	end;
+
+OnTimer10:
+	instance_announce 0, "神秘的聲音: 傻瓜... 你真的以為祭壇那麼容易被摧毀嗎?",bc_map,"0xff4444";
+	end;
+
+OnTimer4010:
+	instance_announce 0, "[ 未知的神秘力量召喚出了死靈騎士 ]",bc_map,"0x77ff77";
+	areamonster "2@orcs",167,25,177,35,"死靈騎士",1373,20,instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnMyMobDead";
+	stopnpctimer;
+	end;
+}
+
+2@orcs,36,171,0	script	#2Resurrect Monsters3	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#2Resurrect Monsters3", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#2Resurrect Monsters3", instance_id());
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"黑暗之王",1272,1,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,15;
+	set .@c_mob_num,mobcount("2@orcs",instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	set .@mob_ran,rand(1,30);
+	if (.@mob_ran > 29) {
+		if (.@mob_dead_num > 0) {
+			monster "2@orcs",0,0,"黑暗之王",1272,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+		}
+	}
+	else if ((.@mob_ran > 6) && (.@mob_ran < 30)) {
+		if (.@mob_dead_num > 0) {
+			areamonster "2@orcs",168,10,184,26,"黑暗之王",1272,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+			if (rand(1,15) == 3) {
+				instance_announce 0, "警告: 黑暗之王正在祭壇附近集結.",bc_map,"0xff4444";
+			}
+		}
+	}
+	else {
+		if (.@mob_dead_num > 0) {
+			areamonster "2@orcs",168,21,184,21,"黑暗之王",1272,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+		}
+	}
+	end;
+
+OnDisable:
+	killmonster "2@orcs",instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnMyMobDead";
+	end;
+}
+
+2@orcs,180,30,0	script	#2Resurrect Monsters4	844,{
+	end;
+
+OnInstanceInit:
+	hideoffnpc instance_npcname("#2Resurrect Monsters4", instance_id());
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	end;
+
+OnMyMobDead:
+	set .@callnum,10;
+	set .@c_mob_num,mobcount("2@orcs",instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead");
+	set .@mob_dead_num,.@callnum - .@c_mob_num;
+	if (.@mob_dead_num > 0) {
+		monster "2@orcs",0,0,"瘧蚊",1627,1,instance_npcname("#2Resurrect Monsters4", instance_id())+"::OnMyMobDead";
+	}
+	end;
+}
+
+2@orcs,35,169,4	script	庫魯格#2-1	433,{
+	donpcevent instance_npcname("庫魯格#2-2", instance_id())+"::OnEnable";
+	end;
+}
+
+2@orcs,35,169,4	script	庫魯格#2-2	433,{
+	end;
+
+OnEnable:
+	hideonnpc instance_npcname("庫魯格#2-1", instance_id());
+	hideoffnpc instance_npcname("庫魯格#2-2", instance_id());
+	initnpctimer;
+	end;
+
+OnTimer10:
+	instance_announce 0, "庫魯格的耳語: 我來告訴你如何到達米迦勒的祭壇.",bc_map,"0xffff00";
+	end;
+
+OnTimer3510:
+	instance_announce 0, "庫魯格的耳語: 你看到照亮路徑用的火把了嗎? 增強火把的火焰以解封下一塊區域.",bc_map,"0xffff00";
+	end;
+
+OnTimer10710:
+	instance_announce 0, "庫魯格的耳語: 魔獸們當然不會讓你那麼輕易的碰到火把.",bc_map,"0xffff00";
+	end;
+
+OnTimer16310:
+	instance_announce 0, "庫魯格的耳語: 但是嘗試在戰鬥中不要使你的意圖太明顯, 那麼米迦勒的衛兵就不會注意到了.",bc_map,"0xffff00";
+	end;
+
+OnTimer21910:
+	instance_announce 0, "庫魯格的耳語: 只有隊長能增強火把的火焰, 保護好隊長.",bc_map,"0xffff00";
+	end;
+
+OnTimer23910:
+	instance_announce 0, "任務提示: 點亮火把的火焰解封下一塊區域. 火把只能通過特定方式點亮.",bc_map,"0x4444ff";
+	donpcevent instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnEnable";
+	donpcevent instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnEnable";
+	donpcevent instance_npcname("火把#1-1", instance_id())+"::OnEnable";
+	hideonnpc instance_npcname("庫魯格#2-2", instance_id());
+	end;
+}
+
+2@orcs,26,164,0	script	火把#1-1	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#1-2", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#1-1", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#1-1", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#1-1", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,55,155,0	script	火把#1-2	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#1-3", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#1-2", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#1-2", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#1-2", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,108,146,0	script	火把#1-3	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#1-4", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#1-3", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#1-3", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#1-3", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,98,171,0	script	火把#1-4	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("#Warp2-1", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#1-4", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#1-4", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#1-4", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,48,100,0	script	#Warp2-1	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("#Warp2-1", instance_id());
+	hideonnpc instance_npcname("#Warp2-1", instance_id());
+	end;
+
+OnEnable:
+	monster "2@orcs",109,156,"闇●騎士領主 賽依連",1646,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead1";
+	instance_announce 0, "闇●騎士領主 賽依連: 別想到達米迦勒大人身邊",bc_map,"0xff8888";
+	end;
+
+OnContinue:
+	enablenpc instance_npcname("#Warp2-1", instance_id());
+	hideoffnpc instance_npcname("#Warp2-1", instance_id());
+	initnpctimer;
+	end;
+
+OnTimer10000:
+	areamonster "2@orcs",28,158,40,170,"闇●騎士領主 賽依連",1646,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead1";
+	stopnpctimer;
+	end;
+
+OnTouch:
+	warp "2@orcs",47,93;
+	end;
+}
+
+2@orcs,35,92,0	script	火把#2-1	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#2-2", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#2-1", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,32,70,0	script	火把#2-2	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#2-3", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#2-2", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#2-2", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#2-2", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,70,31,0	script	火把#2-3	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#2-4", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#2-3", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#2-3", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#2-3", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,84,51,0	script	火把#2-4	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("#Warp2-2", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#2-4", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#2-4", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#2-4", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,101,55,0	script	#Warp2-2	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("#Warp2-2", instance_id());
+	hideonnpc instance_npcname("#Warp2-2", instance_id());
+	end;
+
+OnEnable:
+	monster "2@orcs",67,64,"闇●神工匠 哈沃得",1648,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead2";
+	instance_announce 0, "闇●神工匠 哈沃得: 帥就一個字，我要說很多次",bc_map,"0xff8888";
+	end;
+
+OnContinue:
+	enablenpc instance_npcname("#Warp2-2", instance_id());
+	hideoffnpc instance_npcname("#Warp2-2", instance_id());
+	initnpctimer;
+	end;
+
+OnTimer10000:
+	areamonster "2@orcs",40,91,52,103,"闇●神工匠 哈沃得",1648,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead2";
+	stopnpctimer;
+	end;
+
+OnTouch:
+	warp "2@orcs",107,55;
+	end;
+}
+
+2@orcs,142,145,0	script	火把#3-1	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#3-2", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#3-1", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,162,134,0	script	火把#3-2	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#3-3", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#3-2", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#3-2", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#3-2", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,144,117,0	script	火把#3-3	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("火把#3-4", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#3-3", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#3-3", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#3-3", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,136,98,0	script	火把#3-4	844,{
+	progressbar "ffff00",5;
+	donpcevent instance_npcname("#Warp2-3", instance_id())+"::OnEnable";
+	initnpctimer;
+	hideonnpc instance_npcname("火把#3-4", instance_id());
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("火把#3-4", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("火把#3-4", instance_id());
+	end;
+
+OnTimer100:
+	specialeffect EF_FIREPILLAR;
+	end;
+
+OnTimer2000:
+	specialeffect EF_FIREPILLARBOMB;
+	stopnpctimer;
+	end;
+}
+
+2@orcs,167,104,0	script	#Warp2-3	45,3,3,{
+OnInstanceInit:
+	disablenpc instance_npcname("#Warp2-3", instance_id());
+	hideonnpc instance_npcname("#Warp2-3", instance_id());
+	end;
+
+OnEnable:
+	monster "2@orcs",152,147,"闇●超魔導師 凱特莉娜",1651,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead3";
+	instance_announce 0, "闇●超魔導師 凱特莉娜: 高貴的氣息，不允許你們玷汙",bc_map,"0xff8888";
+	end;
+
+OnContinue:
+	//areamonster "2@orcs",117,61,129,73,"Depraved Orc Spirit",1916,1,instance_npcname("#Mobs Control", instance_id())+"::OnMyMobDead3";
+	donpcevent instance_npcname("#Boss Control", instance_id())+"::OnEnable";
+	enablenpc instance_npcname("#Warp2-3", instance_id());
+	hideoffnpc instance_npcname("#Warp2-3", instance_id());
+	initnpctimer;
+	end;
+
+OnTimer10:
+	instance_announce 0, "墮天使-米迦勒: 哈哈哈!! 你終於到了這裡. 你派來的刺客太糟糕了. 那個愚蠢的獸人正在我的腳下發冷.",bc_map,"0xffff00";
+	end;
+
+OnTimer6810:
+	instance_announce 0, "墮天使-米迦勒: 我忠誠的奴隸啊, 抓住入侵者!!!",bc_map,"0xffff00";
+	end;
+
+OnTimer10310:
+	instance_announce 0, "闇●神官 瑪嘉雷特: 干我屁事.",bc_map,"0xff7777";
+	end;
+
+OnTimer13110:
+	instance_announce 0, "警告: 你被墮天使-米迦勒發現了. 庫魯格暗殺墮天使-米迦勒的任務失敗了. 你必需擊敗墮天使-米迦勒發現庫魯格的蹤跡.",bc_map,"0x8888ff";
+	stopnpctimer;
+	end;
+
+OnTouch:
+	warp "2@orcs",167,95;
+	end;
+}
+
+2@orcs,36,171,0	script	#Boss Control	844,{
+	end;
+
+OnInstanceInit:
+	hideonnpc instance_npcname("#Boss Control", instance_id());
+	end;
+
+OnEnable:
+	monster "2@orcs",185,8,"墮天使-米迦勒",2341,1,instance_npcname("#Boss Control", instance_id())+"::OnMyMobDead";
+	monster "2@orcs",179,15,"闇●神官 瑪嘉雷特",1649,1;
+	hideoffnpc instance_npcname("#Boss Control", instance_id());
+	end;
+
+OnMyMobDead:
+	donpcevent instance_npcname("庫魯格#", instance_id())+"::OnEnable";
+	set .@mob_ran,rand(1,5);
+	if (.@mob_ran == 1) {
+		instance_announce 0, "墮天使-米迦勒: 怎麼...這怎麼可能...怎麼會有你這樣的人...!!",bc_map,"0xffff00";
+	}
+	else if (.@mob_ran == 2) {
+		instance_announce 0, "墮天使-米迦勒: 我怎麼會被區區的人類制服!",bc_map,"0xffff00";
+	}
+	else if (.@mob_ran == 3) {
+		instance_announce 0, "墮天使-米迦勒: 這...這件事沒完...",bc_map,"0xffff00";
+	}
+	else if (.@mob_ran == 4) {
+		instance_announce 0, "墮天使-米迦勒: 我...我是不死的...!",bc_map,"0xffff00";
+	}
+	else {
+		instance_announce 0, "墮天使-米迦勒: 被這些愚蠢的東西打敗了...不應該發生的!!!",bc_map,"0xffff00";
+	}
+	donpcevent instance_npcname("#2Resurrect Monsters1", instance_id())+"::OnDisable";
+	donpcevent instance_npcname("#2Resurrect Monsters3", instance_id())+"::OnDisable";
+	donpcevent instance_npcname("#Warp Outside Orc Dun", instance_id())+"::OnEnable";
+	end;
+}
+
+gef_fild10,238,202,0	script	#Warp Outside Orc Dun	45,3,3,{
+OnInstanceInit:
+	hideonnpc instance_npcname("#Warp Outside Orc Dun", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("#Warp Outside Orc Dun", instance_id());
+	end;
+
+OnTouch:
+	warp "gef_fild10",238,202;
+	end;
+}
+
+2@orcs,172,13,0	script	庫魯格#	434,{
+	if (yong_odun < 2) {
+		mes "[庫魯格]";
+		mes "*咳嗽*";
+		mes ""+strcharinfo(0)+", 是你...";
+		next;
+		mes "["+strcharinfo(0)+"] ";
+		mes "別動! 你受傷了!";
+		next;
+		mes "[庫魯格]";
+		mes "沒事的..我快死了...";
+		mes "....";
+		mes "武則天呢? 武則天怎麼樣了?";
+		next;
+		mes "["+strcharinfo(0)+"] ";
+		mes "米迦勒已經死了.那個米迦勒到底是誰?";
+		next;
+		mes "聽到米迦勒死亡的消息, 庫魯格似乎得到了解答, 但是你注意到他的臉上卻是有一些痛苦的表情.";
+		next;
+		mes "[庫魯格]";
+		mes "我..我沒法親手殺了自己的兒子.";
+		mes "謝謝你, 我相信他終於從靈魂的夢魘中解脫了出來.";
+		next;
+		mes "庫魯格還想再說些什麼, 但在說出前他就咽下了最後一口氣.";
+		set yong_odun,2;
+		close;
+	}
+	else {
+		mes "你注視著庫魯格的身體, 安靜的平躺在地上.";
+		instance_warpall "goodjob06",33,142;
+		instance_destroy(instance_id());
+		close;
+	}
+
+OnInstanceInit:
+	hideonnpc instance_npcname("庫魯格#", instance_id());
+	end;
+
+OnEnable:
+	hideoffnpc instance_npcname("庫魯格#", instance_id());
+	end;
+}
+
+2@orcs,36,171,0	script	#Mobs Control	844,{
+	end;
+
+OnMyMobDead1:
+	donpcevent instance_npcname("#Warp2-1", instance_id())+"::OnContinue";
+	end;
+
+OnMyMobDead2:
+	donpcevent instance_npcname("#Warp2-2", instance_id())+"::OnContinue";
+	end;
+
+OnMyMobDead3:
+	donpcevent instance_npcname("#Warp2-3", instance_id())+"::OnContinue";
+	end;
+}
+
+//============== 地圖屬性 ==================
+1@orcs	mapflag	noteleport
+1@orcs	mapflag	nosave	SavePoint
+1@orcs	mapflag	nomemo
+1@orcs	mapflag	nobranch
+1@orcs	mapflag	noicewall
+1@orcs	mapflag	monster_noteleport
+1@orcs	mapflag	noloot
+
+2@orcs	mapflag	noteleport
+2@orcs	mapflag	nosave	SavePoint
+2@orcs	mapflag	nomemo
+2@orcs	mapflag	nobranch
+2@orcs	mapflag	noicewall
+2@orcs	mapflag	monster_noteleport
+2@orcs	mapflag	noloot
+
+	
+		
+	
+
+
+
+

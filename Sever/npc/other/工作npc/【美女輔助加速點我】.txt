@@ -1,0 +1,60 @@
+prontera,148,178,5	script	【美女輔助加速點我】#1	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+sc_start SC_CP_WEAPON,900000,10; //化學武器保護 72
+sc_start SC_CP_SHIELD,900000,10; //化學盾牌保護 73
+sc_start SC_CP_ARMOR,900000,10; //化學鎧甲保護 74
+sc_start SC_CP_HELM,900000,10; //化學頭盔保護 75
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+lighthalzen,207,139,5	script	【美女輔助加速點我】#2	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+sc_start SC_CP_WEAPON,900000,10; //化學武器保護 72
+sc_start SC_CP_SHIELD,900000,10; //化學盾牌保護 73
+sc_start SC_CP_ARMOR,900000,10; //化學鎧甲保護 74
+sc_start SC_CP_HELM,900000,10; //化學頭盔保護 75
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+pay_arche,71,136,4	script	【美女輔助加速點我】#3	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+sc_start SC_CP_WEAPON,900000,10; //化學武器保護 72
+sc_start SC_CP_SHIELD,900000,10; //化學盾牌保護 73
+sc_start SC_CP_ARMOR,900000,10; //化學鎧甲保護 74
+sc_start SC_CP_HELM,900000,10; //化學頭盔保護 75
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}
+
+
+aldebaran,143,126,4	script	【美女輔助加速點我】#4	864,{
+SC_START SC_BLESSING,999999999,20;
+SC_START SC_INCREASEAGI,999999999,20;
+sc_start SC_CP_WEAPON,900000,10; //化學武器保護 72
+sc_start SC_CP_SHIELD,900000,10; //化學盾牌保護 73
+sc_start SC_CP_ARMOR,900000,10; //化學鎧甲保護 74
+sc_start SC_CP_HELM,900000,10; //化學頭盔保護 75
+percentheal 100,100;
+end;
+
+OnInit:
+	waitingroom "【美女輔助加速點我】",0;
+	end;
+}

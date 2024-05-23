@@ -1,0 +1,38 @@
+new_3-2,104,113,3	script	商城點數	849,{
+//商城點數(P)最小購買量設定
+	//請勿設定數值為0或負數
+	set $@mCash,1;
+
+	//商城點數(P)每點價格設定
+	set $@CashZeny,200000;
+
+	mes "[點數販賣商]";
+	mes "目前點數價格『1P：^FF0000"+$@CashZeny+"Zeny^000000』";
+	mes "您目前商城點數：^FF0000" + #CASHPOINTS + "P^000000";
+	mes "請輸入要購買的點數數量";
+	mes "如要取消請輸入小於^FF0000"+$@mCash+"^000000的數字";
+	mes "最少購買^FF0000"+$@mCash+"P^000000，最多無限制";
+	mes "請問您要購買多少的點數呢?";
+	input $@cash;
+	if($@cash<$@mCash) goto G_end;
+	if (Zeny < $@cash*$@CashZeny) goto NoZeny;
+	next;
+	mes "您購買的點數數量『^FF0000"+$@cash+"P^000000』";
+	mes "所需要金錢『^FF0000"+$@cash*$@CashZeny+"Zeny^000000』";
+	mes "您確定您要購買嗎?";
+	switch(select("確定購買:不要購買"))
+	{	case 1:
+		set Zeny,zeny-$@cash*$@CashZeny;
+		set #CASHPOINTS,#CASHPOINTS+$@cash;
+		set #CASHPOINTS2,#CASHPOINTS2+$@cash;
+		mes "您購買完畢，點數已經進入您的帳號!";
+		mes "購買點數：^FF0000"+$@cash+"P^000000";
+		mes "點數總結：^FF0000" + #CASHPOINTS + "P^000000";
+		case 2:	close;	}
+	NoZeny:
+		mes "抱歉，你沒有足夠的金錢";
+		close;
+	G_end:
+	close;
+	
+}

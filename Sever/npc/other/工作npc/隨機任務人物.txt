@@ -1,0 +1,190 @@
+//----------------1------------------
+comodo,174,231,5	script	頻死之人	849,{
+	if(gid ==1){
+	if(countitem(607) < 10) goto NOitem;
+	mes "我快要死了…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個天地樹果實給我";
+	mes "這是給你的報答。";
+	delitem 607,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------2------------------
+prontera,276,357,4	script	血少之人	870,{
+	if(gid ==2){
+	if(countitem(522) < 10) goto NOitem;
+	mes "我的血很少…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個瑪絲黛拉果實給我";
+	mes "這是給你的報答。";
+	delitem 522,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------3------------------
+gon_dun03,19,199,5	script	中毒之人	792,{
+	if(gid ==3){
+	if(countitem(525) < 10) goto NOitem;
+	mes "我中毒了…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個萬能藥給我";
+	mes "這是給你的報答。";
+	delitem 525,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------4------------------
+gl_prison,187,18,5	script	半死之人	796,{
+	if(gid ==4){
+	if(countitem(608) < 10) goto NOitem;
+	mes "我受了重傷…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個天地樹芽給我";
+	mes "這是給你的報答。";
+	delitem 608,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------5------------------
+payon,66,66,5	script	醫治之人	897,{
+	if(gid ==5){
+	if(countitem(610) < 10) goto NOitem;
+	mes "我無法拯救死者…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個天地樹葉子給我";
+	mes "這是給你的報答。";
+	delitem 610,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------8------------------
+yuno,151,189,5	script	眼盲之人	923,{
+	if(gid ==6){
+	if(countitem(611) < 10) goto NOitem;
+	mes "我看不到東西…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個放大鏡給我";
+	mes "這是給你的報答。";
+	delitem 611,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------7------------------
+aldebaran,239,231,4	script	哭泣之人	781,{
+	if(gid ==7){
+	if(countitem(602) < 10) goto NOitem;
+	mes "我回不了家…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個蝴蝶翅膀給我";
+	mes "這是給你的報答。";
+	delitem 602,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------8------------------
+tur_dun04,99,114,5	script	僵硬之人	919,{
+	if(gid ==8){
+	if(countitem(605) < 10) goto NOitem;
+	mes "我動不了了…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個曼特療傷藥給我";
+	mes "這是給你的報答。";
+	delitem 605,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------9------------------
+alde_dun04,275,53,4	script	無能之人	947,{
+	if(gid ==9){
+	if(countitem(606) < 10) goto NOitem;
+	mes "我攻擊力不高…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個蘆薈汁液給我";
+	mes "這是給你的報答。";
+	delitem 606,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}
+//----------------10-----------------
+lou_in02,65,185,5	script	被詛咒之人	999,{
+	if(gid ==10){
+	if(countitem(523) < 10) goto NOitem;
+	mes "我受到詛咒…";
+	mes "沒想到你這麼好心";
+	mes "帶了10個聖水給我";
+	mes "這是給你的報答。";
+	delitem 523,10;
+	getitem 668,10;
+	set gid,0;
+	close;
+NOitem:
+	mes "你沒把物品帶齊";
+	close;
+}
+	mes "救救我…";
+	close;
+}

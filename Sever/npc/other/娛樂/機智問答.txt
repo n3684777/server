@@ -1,0 +1,1579 @@
+quiz_01.gat	mapflag	nomemo
+quiz_01.gat	mapflag	noteleport
+quiz_01.gat	mapflag	nosave	SavePoint
+quiz_01.gat	mapflag	nopenalty
+quiz_01.gat	mapflag	noskill
+quiz_01.gat	mapflag	nobranch
+
+quiz_00.gat	mapflag	nomemo
+quiz_00.gat	mapflag	noteleport
+quiz_00.gat	mapflag	nosave	SavePoint
+quiz_00.gat	mapflag	nopenalty
+quiz_00.gat	mapflag	noskill
+quiz_00.gat	mapflag	nobranch
+
+
+amatsu,108,148,5	script	益智問答	769,{
+	if ($@QuizeStart != 0) goto L_poat;
+	mes "[益智問答工作人員]";
+	mes "啊~~";
+	mes "難得有休息時間";
+	mes "如果你是想參加益智問答的人";
+	mes "那你錯過時間囉";
+	next;
+	mes "[益智問答工作人員]";
+  	mes "每天有11個場次";
+  	mes "每隔2小時一次";
+  	mes "過時不候";
+	close;
+L_poat:
+	if ($@QuizeStart != 1) goto L_GameStarting;
+	mes "[益智問答工作人員]";
+	mes "請問你要參加機智問答嗎";
+	next;
+	menu "是",L_QuiseStart,"否",-;
+	mes "[益智問答工作人員]";
+	mes "再見";
+	close;
+L_QuiseStart:
+	if ($@QuizeStart != 1) goto L_GameStarting;
+	warp "quiz_01.gat",140,285;
+	end;
+L_GameStarting:
+	mes "[益智問答工作人員]";
+	mes "遊戲進行中";
+	mes "等下一次吧！";
+	close;
+
+OnClock0100:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock0230:
+  	goto NUM_cleen;
+OnClock0300:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock0430:
+  	goto NUM_cleen;
+OnClock0500:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock0630:
+  	goto NUM_cleen;
+OnClock0700:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock0830:
+  	goto NUM_cleen;
+OnClock0900:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock1030:
+  	goto NUM_cleen;
+OnClock1100:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock1230:
+  	goto NUM_cleen;
+OnClock1300:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock1430:
+  	goto NUM_cleen;
+OnClock1500:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock1630:
+  	goto NUM_cleen;
+OnClock1700:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock1830:
+  	goto NUM_cleen;
+OnClock1900:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock2030:
+  	goto NUM_cleen;
+OnClock2300:
+  	if ($@BRSTART != 0) end;
+  	callfunc "SYSOXquizeStarter";
+  	end;
+OnClock0030:
+  	goto NUM_cleen;
+	//機智問答場地座標
+	//起始座標
+NUM_cleen:
+	setarray $@QzStOXMp$[1],"","","","","","","","","","","","","";
+	setarray $@QzStOXPoX[1],0,0,0,0,0,0,0,0,0,0,0,0,0;
+	setarray $@QzStOXPoY[1],0,0,0,0,0,0,0,0,0,0,0,0,0;
+	//OX
+	setarray $@QuizoxOm$[1],"","","","","","","";
+	setarray $@QuizoxMm$[1],"","","","","","","";
+	setarray $@QuizoxXm$[1],"","","","","","","";
+	setarray $@QuizoxOXs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxMXs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxXXs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxOYs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxMYs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxXYs[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxOXe[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxMXe[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxXXe[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxOYe[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxMYe[1],0,0,0,0,0,0,0;
+	setarray $@QuizoxXYe[1],0,0,0,0,0,0,0;
+	//1234
+	setarray $@QzizNmMpm$[8],"","","","","";
+	setarray $@QzizNmMn$[8],"","","","","";
+	setarray $@QzizNm1xs[8],0,0,0,0,0;
+	setarray $@QzizNm2xs[8],0,0,0,0,0;
+	setarray $@QzizNm3xs[8],0,0,0,0,0;
+	setarray $@QzizNm4xs[8],0,0,0,0,0;
+	setarray $@QzizNmM1xs[8],0,0,0,0,0;
+	setarray $@QzizNmM2xs[8],0,0,0,0,0;
+	setarray $@QzizNmM3xs[8],0,0,0,0,0;
+	setarray $@QzizNmM4xs[8],0,0,0,0,0;
+	setarray $@QzizNmM5xs[8],0,0,0,0,0;
+	setarray $@QzizNm1ys[8],0,0,0,0,0;
+	setarray $@QzizNm2ys[8],0,0,0,0,0;
+	setarray $@QzizNm3ys[8],0,0,0,0,0;
+	setarray $@QzizNm4ys[8],0,0,0,0,0;
+	setarray $@QzizNmM1ys[8],0,0,0,0,0;
+	setarray $@QzizNmM2ys[8],0,0,0,0,0;
+	setarray $@QzizNmM3ys[8],0,0,0,0,0;
+	setarray $@QzizNmM4ys[8],0,0,0,0,0;
+	setarray $@QzizNmM5ys[8],0,0,0,0,0;
+	setarray $@QzizNm1xe[8],0,0,0,0,0;
+	setarray $@QzizNm2xe[8],0,0,0,0,0;
+	setarray $@QzizNm3xe[8],0,0,0,0,0;
+	setarray $@QzizNm4xe[8],0,0,0,0,0;
+	setarray $@QzizNmM1xe[8],0,0,0,0,0;
+	setarray $@QzizNmM2xe[8],0,0,0,0,0;
+	setarray $@QzizNmM3xe[8],0,0,0,0,0;
+	setarray $@QzizNmM4xe[8],0,0,0,0,0;
+	setarray $@QzizNmM5xe[8],0,0,0,0,0;
+	setarray $@QzizNm1ye[8],0,0,0,0,0;
+	setarray $@QzizNm2ye[8],0,0,0,0,0;
+	setarray $@QzizNm3ye[8],0,0,0,0,0;
+	setarray $@QzizNm4ye[8],0,0,0,0,0;
+	setarray $@QzizNmM1ye[8],0,0,0,0,0;
+	setarray $@QzizNmM2ye[8],0,0,0,0,0;
+	setarray $@QzizNmM3ye[8],0,0,0,0,0;
+	setarray $@QzizNmM4ye[8],0,0,0,0,0;
+	setarray $@QzizNmM5ye[8],0,0,0,0,0;
+	end;
+}
+
+quiz_01.gat,240,285,1	script	SYSquizeTimmerCher	-1,{
+OnTimer1000:
+	set $@QuizeStart,1;
+	announce "機智問答主持人：機智問答開始倒數5分鐘，請於這段時間去報名",15;
+	end;
+OnTimer300000:
+	if (getmapusers("quiz_01.gat") == 0) goto No_people;
+	announce "機智問答主持人：機智問答活動參加人數" + getmapusers("quiz_01.gat") + "人，現在開始",15;
+
+	//機智問答場地座標
+	//起始座標
+	setarray $@QzStOXMp$[1],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_00.gat";
+	setarray $@QzStOXPoX[1],140,64,230,322,42,42,138,335,56,334,204,236,66;
+	setarray $@QzStOXPoY[1],285,183,368,368,369,285,369,89,90,234,92,283,7;
+	//OX
+	setarray $@QuizoxOm$[1],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat";
+	setarray $@QuizoxMm$[1],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat";
+	setarray $@QuizoxXm$[1],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat";
+	setarray $@QuizoxOXs[1],125,45,217,309,23,23,123;
+	setarray $@QuizoxMXs[1],138,62,228,320,40,40,136;
+	setarray $@QuizoxXXs[1],143,67,233,325,45,45,141;
+	setarray $@QuizoxOYs[1],279,175,363,363,361,277,363;
+	setarray $@QuizoxMYs[1],283,181,366,366,367,283,367;
+	setarray $@QuizoxXYs[1],279,175,363,363,361,277,363;
+	setarray $@QuizoxOXe[1],137,61,227,319,39,39,135;
+	setarray $@QuizoxMXe[1],142,66,232,324,44,44,140;
+	setarray $@QuizoxXXe[1],155,83,243,335,61,61,153;
+	setarray $@QuizoxOYe[1],291,191,373,373,378,293,375;
+	setarray $@QuizoxMYe[1],287,185,370,370,371,287,371;
+	setarray $@QuizoxXYe[1],291,191,373,373,377,293,375;
+	//1234
+	setarray $@QzizNmMpm$[8],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat";
+	setarray $@QzizNmMn$[8],"quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat","quiz_01.gat";
+	setarray $@QzizNm1xs[8],313,33,313,183,221;
+	setarray $@QzizNm2xs[8],325,45,325,195,240;
+	setarray $@QzizNm3xs[8],337,57,337,207,221;
+	setarray $@QzizNm4xs[8],345,69,349,219,240;
+	setarray $@QzizNmM1xs[8],309,33,313,182,234;
+	setarray $@QzizNmM2xs[8],316,36,316,185,242;
+	setarray $@QzizNmM3xs[8],328,48,328,197,234;
+	setarray $@QzizNmM4xs[8],340,60,340,209,229;
+	setarray $@QzizNmM5xs[8],352,72,352,221,1;
+	setarray $@QzizNm1ys[8],59,59,207,59,280;
+	setarray $@QzizNm2ys[8],59,59,207,59,280;
+	setarray $@QzizNm3ys[8],59,59,207,59,261;
+	setarray $@QzizNm4ys[8],59,59,207,59,261;
+	setarray $@QzizNmM1ys[8],86,86,230,88,282;
+	setarray $@QzizNmM2ys[8],82,82,224,82,274;
+	setarray $@QzizNmM3ys[8],82,82,224,82,269;
+	setarray $@QzizNmM4ys[8],82,82,224,82,274;
+	setarray $@QzizNmM5ys[8],82,82,224,82,1;
+	setarray $@QzizNm1xe[8],321,41,321,191,233;
+	setarray $@QzizNm2xe[8],333,53,333,203,252;
+	setarray $@QzizNm3xe[8],345,65,345,215,233;
+	setarray $@QzizNm4xe[8],357,77,357,227,252;
+	setarray $@QzizNmM1xe[8],361,77,357,228,239;
+	setarray $@QzizNmM2xe[8],318,38,318,188,244;
+	setarray $@QzizNmM3xe[8],330,50,330,200,239;
+	setarray $@QzizNmM4xe[8],342,62,342,212,231;
+	setarray $@QzizNmM5xe[8],354,74,354,224,1;
+	setarray $@QzizNm1ye[8],81,81,223,81,292;
+	setarray $@QzizNm2ye[8],81,81,223,81,292;
+	setarray $@QzizNm3ye[8],81,81,223,81,273;
+	setarray $@QzizNm4ye[8],81,81,223,81,273;
+	setarray $@QzizNmM1ye[8],92,94,236,94,284;
+	setarray $@QzizNmM2ye[8],85,85,229,87,279;
+	setarray $@QzizNmM3ye[8],85,85,229,87,271;
+	setarray $@QzizNmM4ye[8],85,85,229,87,279;
+	setarray $@QzizNmM5ye[8],85,85,229,87,1;
+	end;
+OnTimer301000:
+	announce "機智問答主持人：這段時間之內請不要使用公共頻道發言，以避免影響遊戲進行。",15;
+	set $@OXActionQuiz,0;
+	set $@QuizeStart,2;
+	initnpctimer "SYSquizeOXAction";
+	goto SYS_EndTime;
+No_people:
+	announce "機智問答主持人：無人參加機智問答，活動取消",15;
+SYS_EndTimer:
+	set $@QuizeStart,0;
+SYS_EndTime:
+	stopnpctimer;
+	setnpctimer 0,"SYSquizeTimmerCher";
+	end;
+}
+quiz_01.gat,240,285,1	script	SYSquizeOXAction	-1,{
+OnTimer1000:
+	set $@OXActionQuiz,$@OXActionQuiz + 1;
+	MapAnnounce "quiz_01.gat","20秒後將進行第 " + $@OXActionQuiz + " 題，準備好了嗎?",17;
+	end;
+OnTimer11000:
+	MapAnnounce "quiz_01.gat","還有10秒，請做好準備。",17;
+	end;
+OnTimer21000:
+	callfunc "SYSoxquizeData";
+	MapAnnounce "quiz_01.gat","機智問答主持人：第" + $@OXActionQuiz + "題：" + $@GameQz$ + "",15;
+	end;
+OnTimer27000:
+	set $@NUM,rand(1000)+1000;
+	set $@Quizrand,$@Quizrand+$@NUM;
+	MapAnnounce "quiz_01.gat","你有10秒的思考時間。",17;
+	MapAnnounce "quiz_01.gat","[SYSquizeOXAction]：題庫ID：" + $@NUM + "" + $@Quizrand + "若出現問題請向gm報告此ID",17;
+	end;
+OnTimer32000:
+	MapAnnounce "quiz_01.gat","還有5秒的思考時間，決定好你的答案了嗎?",17;
+	end;
+OnTimer37000:
+	MapAnnounce "quiz_01.gat","機智問答主持人：現在公佈答案。",15;
+	end;
+OnTimer38000:
+	MapAnnounce "quiz_01.gat","機智問答主持人：答案是......。",15;
+	end;
+OnTimer38700:
+	if ($@GameAns == 0) MapAnnounce "quiz_01.gat","機智問答主持人：O",15;
+	if ($@GameAns == 1) MapAnnounce "quiz_01.gat","機智問答主持人：X",15;
+	end;
+OnTimer39000:
+	set $@OXM,$@OXActionQuiz + 1;
+	areawarp $@QuizoxMm$[$@OXActionQuiz],$@QuizoxMXs[$@OXActionQuiz],$@QuizoxMYs[$@OXActionQuiz],$@QuizoxMXe[$@OXActionQuiz],$@QuizoxMYe[$@OXActionQuiz],"prontera",149,92;
+	if ($@GameAns != 0) goto AnsIsX;
+	areawarp $@QuizoxOm$[$@OXActionQuiz],$@QuizoxOXs[$@OXActionQuiz],$@QuizoxOYs[$@OXActionQuiz],$@QuizoxOXe[$@OXActionQuiz],$@QuizoxOYe[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	areawarp $@QuizoxXm$[$@OXActionQuiz],$@QuizoxXXs[$@OXActionQuiz],$@QuizoxXYs[$@OXActionQuiz],$@QuizoxXXe[$@OXActionQuiz],$@QuizoxXYe[$@OXActionQuiz],"prontera",149,92;
+	end;
+AnsIsX:
+	areawarp $@QuizoxOm$[$@OXActionQuiz],$@QuizoxOXs[$@OXActionQuiz],$@QuizoxOYs[$@OXActionQuiz],$@QuizoxOXe[$@OXActionQuiz],$@QuizoxOYe[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QuizoxXm$[$@OXActionQuiz],$@QuizoxXXs[$@OXActionQuiz],$@QuizoxXYs[$@OXActionQuiz],$@QuizoxXXe[$@OXActionQuiz],$@QuizoxXYe[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	end;
+OnTimer42000:
+	if (getmapusers("quiz_01.gat") == 0) goto AllOut;
+	MapAnnounce "quiz_01.gat","機智問答主持人：機智問答進行至第" + $@OXActionQuiz + "題，目前場內剩下" + getmapusers("quiz_01.gat") + "人",15;
+	end;
+OnTimer46000:
+	if ($@OXActionQuiz == 7) end;
+	setnpctimer 0,"SYSquizeTimmerCher";
+	initnpctimer;
+	end;
+AllOut:
+	set $@GameQz$,"";
+	set $@QZnum,0;
+	set $@GameAns,0;
+	set $@QUNUM2,0;
+	announce "機智問答主持人：這次的機智問答最後的參加者在第 " + $@OXActionQuiz + " 題出局，無人獲勝。",15;
+	set $@QuizeStart,0;
+	setnpctimer 0,"SYSquizeTimmerCher";
+	stopnpctimer;
+	end;
+OnTimer50000:
+	MapAnnounce "quiz_01.gat","能進行到這裡，真是不簡單！",17;
+	end;
+OnTimer53000:
+	MapAnnounce "quiz_01.gat","接下來的題目都是選擇題，大家要加油喔！",17;
+	setnpctimer 0,"SYSquizeTimmerCher";
+	initnpctimer "SYSquize1234Action";
+	end;
+}
+
+quiz_01.gat,241,285,1	script	SYSquize1234Action	-1,{
+OnTimer1000:
+	set $@OXActionQuiz,$@OXActionQuiz + 1;
+	MapAnnounce "quiz_01.gat","20秒後將進行第 " + $@OXActionQuiz + " 題，準備好了嗎?",17;
+	end;
+OnTimer11000:
+	MapAnnounce "quiz_01.gat","還有10秒，請做好準備。",17;
+	end;
+OnTimer21000:
+	callfunc "SYS1234quizeData";
+	MapAnnounce "quiz_01.gat","第" + $@OXActionQuiz + "題：" + $@GameQz$ + "",15;
+	end;
+OnTimer22000:
+	MapAnnounce "quiz_01.gat","選項一：" + $@NumAns$[1] + "",15;
+	end;
+OnTimer23000:
+	MapAnnounce "quiz_01.gat","選項二：" + $@NumAns$[2] + "",15;
+	end;
+OnTimer24000:
+	MapAnnounce "quiz_01.gat","選項三：" + $@NumAns$[3] + "",15;
+	end;
+OnTimer25000:
+	MapAnnounce "quiz_01.gat","選項四：" + $@NumAns$[4] + "",15;
+	end;
+OnTimer29000:
+	MapAnnounce "quiz_01.gat","思考時間25秒，請仔細的思考你的答案。",17;
+	end;
+OnTimer34000:
+	MapAnnounce "quiz_01.gat","還有20秒，盡快做決定。",17;
+	end;
+OnTimer44000:
+	MapAnnounce "quiz_01.gat","10秒後公布答案。",17;
+	end;
+OnTimer54000:
+	MapAnnounce "quiz_01.gat","機智問答主持人：現在公佈答案。",15;
+	end;
+OnTimer55000:
+	MapAnnounce "quiz_01.gat","機智問答主持人：答案是......。",15;
+	end;
+OnTimer56700:
+	MapAnnounce "quiz_01.gat","選項" + $@GameAns + "：" + $@NumAns$[$@GameAns] + "",15;
+	end;
+OnTimer57000:
+	//傳走M區
+	set $@OXM,$@OXActionQuiz + 1;
+	areawarp $@QzizNmMpm$[$@OXActionQuiz],$@QzizNmM1xs[$@OXActionQuiz],$@QzizNmM1ys[$@OXActionQuiz],$@QzizNmM1xe[$@OXActionQuiz],$@QzizNmM1ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMpm$[$@OXActionQuiz],$@QzizNmM2xs[$@OXActionQuiz],$@QzizNmM2ys[$@OXActionQuiz],$@QzizNmM2xe[$@OXActionQuiz],$@QzizNmM2ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMpm$[$@OXActionQuiz],$@QzizNmM3xs[$@OXActionQuiz],$@QzizNmM3ys[$@OXActionQuiz],$@QzizNmM3xe[$@OXActionQuiz],$@QzizNmM3ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMpm$[$@OXActionQuiz],$@QzizNmM4xs[$@OXActionQuiz],$@QzizNmM4ys[$@OXActionQuiz],$@QzizNmM4xe[$@OXActionQuiz],$@QzizNmM4ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMpm$[$@OXActionQuiz],$@QzizNmM5xs[$@OXActionQuiz],$@QzizNmM5ys[$@OXActionQuiz],$@QzizNmM5xe[$@OXActionQuiz],$@QzizNmM5ye[$@OXActionQuiz],"prontera",149,92;
+	if ($@GameAns != 1) goto Rura_2;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm1xs[$@OXActionQuiz],$@QzizNm1ys[$@OXActionQuiz],$@QzizNm1xe[$@OXActionQuiz],$@QzizNm1ye[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm2xs[$@OXActionQuiz],$@QzizNm2ys[$@OXActionQuiz],$@QzizNm2xe[$@OXActionQuiz],$@QzizNm2ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm3xs[$@OXActionQuiz],$@QzizNm3ys[$@OXActionQuiz],$@QzizNm3xe[$@OXActionQuiz],$@QzizNm3ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm4xs[$@OXActionQuiz],$@QzizNm4ys[$@OXActionQuiz],$@QzizNm4xe[$@OXActionQuiz],$@QzizNm4ye[$@OXActionQuiz],"prontera",149,92;
+Rura_2:	if ($@GameAns != 2) goto Rura_3;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm1xs[$@OXActionQuiz],$@QzizNm1ys[$@OXActionQuiz],$@QzizNm1xe[$@OXActionQuiz],$@QzizNm1ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm2xs[$@OXActionQuiz],$@QzizNm2ys[$@OXActionQuiz],$@QzizNm2xe[$@OXActionQuiz],$@QzizNm2ye[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm3xs[$@OXActionQuiz],$@QzizNm3ys[$@OXActionQuiz],$@QzizNm3xe[$@OXActionQuiz],$@QzizNm3ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm4xs[$@OXActionQuiz],$@QzizNm4ys[$@OXActionQuiz],$@QzizNm4xe[$@OXActionQuiz],$@QzizNm4ye[$@OXActionQuiz],"prontera",149,92;
+Rura_3:	if ($@GameAns != 3) goto Rura_4;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm1xs[$@OXActionQuiz],$@QzizNm1ys[$@OXActionQuiz],$@QzizNm1xe[$@OXActionQuiz],$@QzizNm1ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm2xs[$@OXActionQuiz],$@QzizNm2ys[$@OXActionQuiz],$@QzizNm2xe[$@OXActionQuiz],$@QzizNm2ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm3xs[$@OXActionQuiz],$@QzizNm3ys[$@OXActionQuiz],$@QzizNm3xe[$@OXActionQuiz],$@QzizNm3ye[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm4xs[$@OXActionQuiz],$@QzizNm4ys[$@OXActionQuiz],$@QzizNm4xe[$@OXActionQuiz],$@QzizNm4ye[$@OXActionQuiz],"prontera",149,92;
+Rura_4:	if ($@GameAns != 4) end;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm1xs[$@OXActionQuiz],$@QzizNm1ys[$@OXActionQuiz],$@QzizNm1xe[$@OXActionQuiz],$@QzizNm1ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm2xs[$@OXActionQuiz],$@QzizNm2ys[$@OXActionQuiz],$@QzizNm2xe[$@OXActionQuiz],$@QzizNm2ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm3xs[$@OXActionQuiz],$@QzizNm3ys[$@OXActionQuiz],$@QzizNm3xe[$@OXActionQuiz],$@QzizNm3ye[$@OXActionQuiz],"prontera",149,92;
+	areawarp $@QzizNmMn$[$@OXActionQuiz],$@QzizNm4xs[$@OXActionQuiz],$@QzizNm4ys[$@OXActionQuiz],$@QzizNm4xe[$@OXActionQuiz],$@QzizNm4ye[$@OXActionQuiz],$@QzStOXMp$[$@OXM],$@QzStOXPoX[$@OXM],$@QzStOXPoY[$@OXM];
+	end;
+OnTimer60000:
+	if ($@OXActionQuiz == 12) goto GameEnd;
+	if (getmapusers("quiz_01.gat") == 0) goto AllOut;
+	MapAnnounce "quiz_01.gat","機智問答主持人：機智問答進行至第" + $@OXActionQuiz + "題，目前場內剩下" + getmapusers("quiz_01.gat") + "人",15;
+	end;
+OnTimer64000:
+	setnpctimer 0,"SYSquizeTimmerCher";
+	initnpctimer;
+	end;
+AllOut:
+	set $@NumAns1$,"";
+	set $@NumAns2$,"";
+	set $@NumAns3$,"";
+	set $@NumAns4$,"";
+	set $@GameQz$,"";
+	set $@QZnum,0;
+	set $@GameAns,0;
+	set $@QUNUM2,0;
+	set $@QuizeStart,0;
+	announce "機智問答主持人：這次的機制問答最後的參加者在第 " + $@OXActionQuiz + " 題出局，無人獲勝。",15;
+	setnpctimer 0,"SYSquizeTimmerCher";
+	stopnpctimer;
+	end;
+GameEnd:
+	if (getmapusers("quiz_00.gat") == 0) goto AllOut;
+	if (getmapusers("quiz_01.gat") != 0) announce "ERROR!!，玩家仍留在場內",15;
+	announce "機智問答主持人：這次的機制問答已經結束，成功闖關人數有" + getmapusers("quiz_00.gat") + "人",15;
+	set $@QuizeStart,0;	//測試用
+	setnpctimer 0,"SYSquizeTimmerCher";
+	stopnpctimer;
+	end;
+}
+
+function	script	SYSOXquizeStarter	{
+	initnpctimer "SYSquizeTimmerCher";
+	return;
+}
+
+quiz_00.gat,67,31,4	script	益智問答工作人員	769,{
+	mes "[益智問答工作人員]";
+	mes "恭喜你成功闖關";
+	mes "你可以從以下東西中選擇你要什麼獎品";
+	next;
+	menu	"隨機獎品",L_01,
+		"我想一下",L_THINK;
+
+L_01:	set @gi,rand(0,8);
+		if(@gi ==0)getitem 28566,20;
+	        if(@gi ==1)getitem 28569,20;
+	        if(@gi ==2)getitem 28570,20;
+		if(@gi ==3)getitem 28567,20;
+		if(@gi ==4)getitem 28568,20;
+	        if(@gi ==5)getitem 13643,3;
+	        if(@gi ==6)getitem 28587,50;
+	        if(@gi ==7)getitem 28533,100;
+	        if(@gi ==8)getitem 27418,1;
+		goto L_OUT;
+
+
+
+L_OUT:
+	warp "amatsu",116,152;
+	end;
+L_THINK:
+	mes "[益智問答工作人員]";
+	mes "等你想好了再來找我";
+	close;
+
+}
+
+new_4-1.gat	mapflag	nomemo
+new_4-1.gat	mapflag	noteleport
+new_4-1.gat	mapflag	nopenalty
+new_4-1.gat	mapflag	noskill
+
+function	script	SYSoxquizeData	{
+	set $@QZnum,rand(2);
+	set $@Quizrand,rand(120);
+	if ($@Quizrand > 99) goto L_QZ100;
+	if ($@Quizrand > 49) goto L_QZ50;
+
+	if ($@Quizrand == 0) goto Qz0000;
+	if ($@Quizrand == 1) goto Qz0001;
+	if ($@Quizrand == 2) goto Qz0002;
+	if ($@Quizrand == 3) goto Qz0003;
+	if ($@Quizrand == 4) goto Qz0004;
+	if ($@Quizrand == 5) goto Qz0005;
+	if ($@Quizrand == 6) goto Qz0006;
+	if ($@Quizrand == 7) goto Qz0007;
+	if ($@Quizrand == 8) goto Qz0008;
+	if ($@Quizrand == 9) goto Qz0009;
+	if ($@Quizrand == 10) goto Qz0010;
+	if ($@Quizrand == 11) goto Qz0011;
+	if ($@Quizrand == 12) goto Qz0012;
+	if ($@Quizrand == 13) goto Qz0013;
+	if ($@Quizrand == 14) goto Qz0014;
+	if ($@Quizrand == 15) goto Qz0015;
+	if ($@Quizrand == 16) goto Qz0016;
+	if ($@Quizrand == 17) goto Qz0017;
+	if ($@Quizrand == 18) goto Qz0018;
+	if ($@Quizrand == 19) goto Qz0019;
+	if ($@Quizrand == 20) goto Qz0020;
+	if ($@Quizrand == 21) goto Qz0021;
+	if ($@Quizrand == 22) goto Qz0022;
+	if ($@Quizrand == 23) goto Qz0023;
+	if ($@Quizrand == 24) goto Qz0024;
+	if ($@Quizrand == 25) goto Qz0025;
+	if ($@Quizrand == 26) goto Qz0026;
+	if ($@Quizrand == 27) goto Qz0027;
+	if ($@Quizrand == 28) goto Qz0028;
+	if ($@Quizrand == 29) goto Qz0029;
+	if ($@Quizrand == 30) goto Qz0030;
+	if ($@Quizrand == 31) goto Qz0031;
+	if ($@Quizrand == 32) goto Qz0032;
+	if ($@Quizrand == 33) goto Qz0033;
+	if ($@Quizrand == 34) goto Qz0034;
+	if ($@Quizrand == 35) goto Qz0035;
+	if ($@Quizrand == 36) goto Qz0036;
+	if ($@Quizrand == 37) goto Qz0037;
+	if ($@Quizrand == 38) goto Qz0038;
+	if ($@Quizrand == 39) goto Qz0039;
+	if ($@Quizrand == 40) goto Qz0040;
+	if ($@Quizrand == 41) goto Qz0041;
+	if ($@Quizrand == 42) goto Qz0042;
+	if ($@Quizrand == 43) goto Qz0043;
+	if ($@Quizrand == 44) goto Qz0044;
+	if ($@Quizrand == 45) goto Qz0045;
+	if ($@Quizrand == 46) goto Qz0046;
+	if ($@Quizrand == 47) goto Qz0047;
+	if ($@Quizrand == 48) goto Qz0048;
+	if ($@Quizrand == 49) goto Qz0049;
+L_QZ50:
+	if ($@Quizrand == 50) goto Qz0050;
+	if ($@Quizrand == 51) goto Qz0051;
+	if ($@Quizrand == 52) goto Qz0052;
+	if ($@Quizrand == 53) goto Qz0053;
+	if ($@Quizrand == 54) goto Qz0054;
+	if ($@Quizrand == 55) goto Qz0055;
+	if ($@Quizrand == 56) goto Qz0056;
+	if ($@Quizrand == 57) goto Qz0057;
+	if ($@Quizrand == 58) goto Qz0058;
+	if ($@Quizrand == 59) goto Qz0059;
+	if ($@Quizrand == 60) goto Qz0060;
+	if ($@Quizrand == 61) goto Qz0061;
+	if ($@Quizrand == 62) goto Qz0062;
+	if ($@Quizrand == 63) goto Qz0063;
+	if ($@Quizrand == 64) goto Qz0064;
+	if ($@Quizrand == 65) goto Qz0065;
+	if ($@Quizrand == 66) goto Qz0066;
+	if ($@Quizrand == 67) goto Qz0067;
+	if ($@Quizrand == 68) goto Qz0068;
+	if ($@Quizrand == 69) goto Qz0069;
+	if ($@Quizrand == 70) goto Qz0070;
+	if ($@Quizrand == 71) goto Qz0071;
+	if ($@Quizrand == 72) goto Qz0072;
+	if ($@Quizrand == 73) goto Qz0073;
+	if ($@Quizrand == 74) goto Qz0074;
+	if ($@Quizrand == 75) goto Qz0075;
+	if ($@Quizrand == 76) goto Qz0076;
+	if ($@Quizrand == 77) goto Qz0077;
+	if ($@Quizrand == 78) goto Qz0078;
+	if ($@Quizrand == 79) goto Qz0079;
+	if ($@Quizrand == 80) goto Qz0080;
+	if ($@Quizrand == 81) goto Qz0081;
+	if ($@Quizrand == 82) goto Qz0082;
+	if ($@Quizrand == 83) goto Qz0083;
+	if ($@Quizrand == 84) goto Qz0084;
+	if ($@Quizrand == 85) goto Qz0085;
+	if ($@Quizrand == 86) goto Qz0086;
+	if ($@Quizrand == 87) goto Qz0087;
+	if ($@Quizrand == 88) goto Qz0088;
+	if ($@Quizrand == 89) goto Qz0089;
+	if ($@Quizrand == 90) goto Qz0090;
+	if ($@Quizrand == 91) goto Qz0091;
+	if ($@Quizrand == 92) goto Qz0092;
+	if ($@Quizrand == 93) goto Qz0093;
+	if ($@Quizrand == 94) goto Qz0094;
+	if ($@Quizrand == 95) goto Qz0095;
+	if ($@Quizrand == 96) goto Qz0096;
+	if ($@Quizrand == 97) goto Qz0097;
+	if ($@Quizrand == 98) goto Qz0098;
+	if ($@Quizrand == 99) goto Qz0099;
+L_QZ100:
+	if ($@Quizrand == 100) goto Qz0100;
+	if ($@Quizrand == 101) goto Qz0101;
+	if ($@Quizrand == 102) goto Qz0102;
+	if ($@Quizrand == 103) goto Qz0103;
+	if ($@Quizrand == 104) goto Qz0104;
+	if ($@Quizrand == 105) goto Qz0105;
+	if ($@Quizrand == 106) goto Qz0106;
+	if ($@Quizrand == 107) goto Qz0107;
+	if ($@Quizrand == 108) goto Qz0108;
+	if ($@Quizrand == 109) goto Qz0109;
+	if ($@Quizrand == 110) goto Qz0110;
+	if ($@Quizrand == 111) goto Qz0111;
+	if ($@Quizrand == 112) goto Qz0112;
+	if ($@Quizrand == 113) goto Qz0113;
+	if ($@Quizrand == 114) goto Qz0114;
+	if ($@Quizrand == 115) goto Qz0115;
+	if ($@Quizrand == 116) goto Qz0116;
+	if ($@Quizrand == 117) goto Qz0117;
+	if ($@Quizrand == 118) goto Qz0118;
+	if ($@Quizrand == 119) goto Qz0119;
+
+L_ERROR:
+	set $@GameAns,$@QZnum;
+	set $@GameQz$,"ERROR!!! 題號出錯 編號：" + $@Quizrand + "" + $@QZnum + "";
+	goto ChQend;
+
+
+
+Qz0000:
+	if ($@QZnum == 0)set $@GameQz$,"青龍偃月刀，別名冷艷鋸，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"青龍鐮鉤刀，別名冷艷鋸，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0001:
+	if ($@QZnum == 0)set $@GameQz$,"傳說張飛睜著眼睛睡覺，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"傳說張遼睜著眼睛睡覺，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0002:
+	if ($@QZnum == 0) set $@GameQz$,"桃園三結義是劉、關、張，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"桃園三結義是劉、開、張，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0003:
+	if ($@QZnum == 0) set $@GameQz$,"在長阪橋一聲喝退百萬曹軍的是張飛，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"在長阪橋一聲喝退百萬曹軍的是趙雲，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0004:
+	if ($@QZnum == 0) set $@GameQz$,"魯肅的字是子敬，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"魯肅的字是子明，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0005:
+	if ($@QZnum == 0) set $@GameQz$,"合淝之戰造成太史慈死亡，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"合淝之戰造成甘寧死亡，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0006:
+	if ($@QZnum == 0) set $@GameQz$,"小喬嫁給了周公瑾，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"大喬嫁給了周公瑾，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0007:
+	if ($@QZnum == 0) set $@GameQz$,"「轅門射戟」的典故來自呂布，對或錯?";
+	if ($@QZnum == 1) set $@GameQz$,"「轅門射戟」的典故來自呂翔，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0008:
+	if ($@QZnum == 0)set $@GameQz$,"關羽「千里走單騎」是史實，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"關羽「過五關斬六將」是史實，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0009:
+	if ($@QZnum == 0)set $@GameQz$,"曹操刺殺董卓時，用的是七星刀，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"曹操刺殺董卓時，用的是七星刃，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0010:
+	if ($@QZnum == 0)set $@GameQz$,"曹操的配劍有兩把，一口「倚天」，一口「青釭」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"曹操的配劍有兩把，一口「倚天」，一口「屠龍」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0011:
+	if ($@QZnum == 0)set $@GameQz$,"三分天下之計是諸葛孔明的計策，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"二分天下之計是諸葛孔明的計策，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0012:
+	if ($@QZnum == 0)set $@GameQz$,"鄧茂是被張飛所刺死，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"鄧茂是被關羽所砍死，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0013:
+	if ($@QZnum == 0)set $@GameQz$,"定軍山之戰發生在公元219年，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"定軍山之戰發生在公元220年，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0014:
+	if ($@QZnum == 0)set $@GameQz$,"劉備的第一任夫人名為甘倩，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"劉備的第一任夫人名為麋貞，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0015:
+	if ($@QZnum == 0)set $@GameQz$,"甘寧的字叫作興霸，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"甘寧的字叫作興霆，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0016:
+	if ($@QZnum == 0)set $@GameQz$,"關羽手中之書是春秋，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"關羽手中之書是論語，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0017:
+	if ($@QZnum == 0)set $@GameQz$,"孫尚香本名為孫仁，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"孫尚香本名為孫姬，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0018:
+	if ($@QZnum == 0)set $@GameQz$,"虎牢關鬼神指的是呂奉先，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"虎牢關鬼神指的是張文遠，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0019:
+	if ($@QZnum == 0)set $@GameQz$,"杯酒論英雄指的是曹操跟劉備，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"杯酒釋兵權指的是曹操跟劉備，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0020:
+	if ($@QZnum == 0)set $@GameQz$,"聽說徐庶年輕時喜歡擊劍，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"聽說徐庶年輕時喜歡火砲，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0021:
+	if ($@QZnum == 0)set $@GameQz$,"趙雲原先在公孫瓚的麾下，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"趙雲原先在公孫鑽的麾下，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0022:
+	if ($@QZnum == 0)set $@GameQz$,"傳說張角遇到南華老仙傳授《太平要術》，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"傳說張角遇到北華老仙傳授《太平要術》，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0023:
+	if ($@QZnum == 0)set $@GameQz$,"張梁自稱「人公將軍」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"張梁自稱「地公將軍」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0024:
+	if ($@QZnum == 0)set $@GameQz$,"張寶自稱「地公將軍」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"張寶自稱「人公將軍」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0025:
+	if ($@QZnum == 0)set $@GameQz$,"魏國五大將是指張遼、徐晃、于禁、樂進、張郃，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"魏國五大將是指張遼、徐晃、于禁、李典、張郃，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0026:
+	if ($@QZnum == 0)set $@GameQz$,"《真三國無雙7》遊戲裡，法正的武器是布，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《真三國無雙7》遊戲裡，法正的武器是杖，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0027:
+	if ($@QZnum == 0)set $@GameQz$,"陳公台的名字是陳宮，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"陳公台的名字是陳官，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0028:
+	if ($@QZnum == 0)set $@GameQz$,"「壓切長谷部」是織田信長的愛刀，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「三日月宗近」是織田信長的愛刀，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0029:
+	if ($@QZnum == 0)set $@GameQz$,"稻姬是本多平八郎的女兒，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"稻姬是本多正信的女兒，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0030:
+	if ($@QZnum == 0)set $@GameQz$,"在普隆德拉中央的水池的神祇雕像是子息之神，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"在普隆德拉中央的水池的神祇雕像是雷神，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0031:
+	if ($@QZnum == 0)set $@GameQz$,"稻姬是真田信之的妻子，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"稻姬是真田幸村的妻子，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0032:
+	if ($@QZnum == 0)set $@GameQz$,"本多忠勝的幼名為鍋之助，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本多忠勝的幼名為幼之助，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0033:
+	if ($@QZnum == 0)set $@GameQz$,"《戰國無雙2》中，宮本武藏背後寫著「天下無雙」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《戰國無雙2》中，宮本武藏背後寫著「天下無敵」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0034:
+	if ($@QZnum == 0)set $@GameQz$,"傳說宮本武藏與佐佐木小次郎在巖流島決鬥，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"傳說宮本武藏與佐佐木小次郎在嚴流島決鬥，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0035:
+	if ($@QZnum == 0)set $@GameQz$,"豐臣秀吉的原名是木下藤吉郎，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"豐臣秀吉的原名是羽柴秀吉，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0036:
+	if ($@QZnum == 0)set $@GameQz$,"傳說明智光秀跟濃姬是表兄妹，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"傳說明智光秀跟濃姬是堂兄妹，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0037:
+	if ($@QZnum == 0)set $@GameQz$,"濃姬的父親是齋藤道三，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"濃姬的父親是齋藤義龍，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0038:
+	if ($@QZnum == 0)set $@GameQz$,"今川義元有「東海的巨人」之稱，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"今川義元有「東京的巨人」之稱，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0039:
+	if ($@QZnum == 0)set $@GameQz$,"本私服魏國領地在朱諾，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服蜀國領地在朱諾，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0040:
+	if ($@QZnum == 0)set $@GameQz$,"本私服撒旦惡魔翅膀共有9種顏色，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服撒旦惡魔翅膀共有10種顏色，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0041:
+	if ($@QZnum == 0)set $@GameQz$,"本私服三階頭中共有19種，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服三階頭中共有20種，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0042:
+	if ($@QZnum == 0)set $@GameQz$,"本私服每天登入都會送紅包，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服每天登入都會送金塊，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0043:
+	if ($@QZnum == 0)set $@GameQz$,"本私服可以拜師的武將共21個，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服可以拜師的武將共20個，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0044:
+	if ($@QZnum == 0)set $@GameQz$,"本私服的武器「倚天劍」是三階武器，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服的武器「倚天劍」是五階武器，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0045:
+	if ($@QZnum == 0)set $@GameQz$,"本私服的防具「韋馱天靴」是四階裝備，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服的防具「韋馱天靴」是四階武器，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0046:
+	if ($@QZnum == 0)set $@GameQz$,"本私服二階頭下共15種，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服一階頭下共15種，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0047:
+	if ($@QZnum == 0)set $@GameQz$,"本私服雙手刃（拳刃）攻擊力跟單手武器相同，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服雙手刃（拳刃）攻擊力是單手武器的2倍，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0048:
+	if ($@QZnum == 0)set $@GameQz$,"本私服製作區所做的祭司系列專武，攻擊外型是鐮刀，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服製作區所做的祭司系列專武，攻擊外型是拐杖，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0049:
+	if ($@QZnum == 0)set $@GameQz$,"本私服最高轉生次數為無限次，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服最高轉生次數為十次，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0050:
+	if ($@QZnum == 0)set $@GameQz$,"本私服的精靈王有14隻，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服的精靈王有15隻，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0051:
+	if ($@QZnum == 0)set $@GameQz$,"「冰比冰水冰」為目前號稱無人對的出來的絕聯，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「冰比冰冰冰」為目前號稱無人對的出來的絕聯，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0052:
+	if ($@QZnum == 0)set $@GameQz$,"本私服拜曹操為師，能力加成是INT+10、LUK+20，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服拜曹操為師，能力加成是INT+20、LUK+10，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0053:
+	if ($@QZnum == 0)set $@GameQz$,"本私服拜呂蒙為師，能力加成是AGI+20、INT+10，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服拜呂蒙為師，能力加成是AGI+20、INT+20，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0054:
+	if ($@QZnum == 0)set $@GameQz$,"本私服拜黃忠為師，能力加成是STR+10、DEX+20，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服拜黃忠為師，能力加成是AGI+20、INT+20，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0055:
+	if ($@QZnum == 0)set $@GameQz$,"本私服造型師不管換衣色、髮色、髮型都要花1萬，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服造型師不管換衣色、髮色、髮型都要花10萬，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0056:
+	if ($@QZnum == 0)set $@GameQz$,"本私服一定要十轉才能拜師，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服不一定要十轉才能拜師，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0057:
+	if ($@QZnum == 0)set $@GameQz$,"本私服進行「波利賽跑」賭金為500萬，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服進行「波利賽跑」賭金為50萬，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0058:
+	if ($@QZnum == 0)set $@GameQz$,"本私服紅包可以到商店街1個換取100萬，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服紅包可以到商店街1個換取500萬，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0059:
+	if ($@QZnum == 0)set $@GameQz$,"本私服製作區的弓，攻擊是單手武器的2倍，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服製作區的弓，攻擊是單手武器的3倍，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0060:
+	if ($@QZnum == 0)set $@GameQz$,"本私服娛樂區共有13個NPC，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服娛樂區共有12個NPC，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0061:
+	if ($@QZnum == 0)set $@GameQz$,"本私服的頭飾製作大部分都是一星期出7種頭飾，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服的頭飾製作一定都是一星期出7種頭飾，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0062:
+	if ($@QZnum == 0)set $@GameQz$,"本私服「馬桶吸把背飾」由流氓系列裝備時，可習得「三角射擊」LV5，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服「馬桶吸把背飾」由流氓系列裝備時，攻擊時自動詠唱「猛龍誇強」LV5，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0063:
+	if ($@QZnum == 0)set $@GameQz$,"本私服「奶瓶背飾」由初心者系列裝備時，可以習得「致命塗毒」LV2，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服「奶瓶背飾」由忍者系列裝備時，可以習得「致命塗毒」LV1，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0064:
+	if ($@QZnum == 0)set $@GameQz$,"包青天是北宋時代的人，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"包青天是南宋時代的人，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0065:
+	if ($@QZnum == 0)set $@GameQz$,"包青天的故鄉在今天的安徽省，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"包青天的故鄉在今天的台灣省，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0066:
+	if ($@QZnum == 0)set $@GameQz$,"娛樂區遊戲「魔王再臨」開啟後，有3分鐘的進場時間，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"娛樂區遊戲「魔王再臨」開啟後，有5分鐘的進場時間，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0067:
+	if ($@QZnum == 0)set $@GameQz$,"本私服「RO大盜」為30分鐘出現一次，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服「RO大盜」為60分鐘出現一次，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0068:
+	if ($@QZnum == 0)set $@GameQz$,"副本區的所有副本NPC共10個，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"副本區的所有副本NPC共12個，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0069:
+	if ($@QZnum == 0)set $@GameQz$,"進入本私服，領取新手獎勵時會拿到的頭上是狂暴野貓頭飾，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"進入本私服，領取新手獎勵時會拿到的頭下是狂暴野貓頭飾，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0070:
+	if ($@QZnum == 0)set $@GameQz$,"丹麥作家-安徒生有童話之父之稱，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"丹麥作家-安徙生有童話之父之稱，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0071:
+	if ($@QZnum == 0)set $@GameQz$,"啄木鳥戰法是山本勘助所想出的，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"車懸陣法是山本勘助所想出的，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0072:
+	if ($@QZnum == 0)set $@GameQz$,"車懸陣法是上杉謙信所想出的，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"啄木鳥戰法是上杉謙信所想出的，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0073:
+	if ($@QZnum == 0)set $@GameQz$,"上杉政虎就是上杉謙信，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"上杉政虎不是上杉謙信，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0074:
+	if ($@QZnum == 0)set $@GameQz$,"禮讓與寬容是駕駛人最好的美德，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"遵守交通法令與秩序只算優良駕駛與駕駛道德無關，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0075:
+	if ($@QZnum == 0)set $@GameQz$,"行車安全，就是不肇事，不犯規，不違警，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"駕駛人只求技術優良，對交通規則屬次要不必太重視，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0076:
+	if ($@QZnum == 0)set $@GameQz$,"機車加汽油，引擎必先熄火，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"機車加汽油，引擎不必熄火，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0077:
+	if ($@QZnum == 0)set $@GameQz$,"雨天駕駛機車，要減速慢行，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"雨天駕駛機車，要快速騎，最好潑水潑的路人都是，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0078:
+	if ($@QZnum == 0)set $@GameQz$,"埃及神話中，「拉」所代表的是太陽神，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"埃及神話中，「賽特」所代表的是太陽神，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0079:
+	if ($@QZnum == 0)set $@GameQz$,"MP魔幻力量的歌曲「不按牌理出牌」，是三立偶像劇「醉後決定愛上你」的片頭曲，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"MP魔幻力量的歌曲「不按牌理出牌」，是三立偶像劇「愛情女僕」的片頭曲，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0080:
+	if ($@QZnum == 0)set $@GameQz$,"日本團體「WORLD ORDER」是由須藤元氣所創立的，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"日本團體「WORLD RODER」是由須藤元氣所創立的，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0081:
+	if ($@QZnum == 0)set $@GameQz$,"迪士尼電影「失落的帝國」和動畫片「海底兩萬里」曾因為內容相似度過高而引發爭議，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"迪士尼電影「失落的帝國」和動畫片「海底四萬里」曾因為內容相似度過高而引發爭議，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0082:
+	if ($@QZnum == 0)set $@GameQz$,"心絲蟲有可能致使貓犬死亡，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"心絲蟲不可能致使貓犬死亡，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0083:
+	if ($@QZnum == 0)set $@GameQz$,"「九柱神」代表埃及神話中的九位主要神祇，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「九柱神」代表北歐神話中的九位主要神祇，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0084:
+	if ($@QZnum == 0)set $@GameQz$,"「消極的快樂、電鋸的邊緣」原為小說，在2008年推出真人電影版，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「消極的快樂、電鋸的邊緣」原為小說，在2010年推出真人電影版，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0085:
+	if ($@QZnum == 0)set $@GameQz$,"「俱俐伽儸」在印度文化中，象徵著不動明王的化身，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「濕婆神」在印度文化中，象徵著不動明王的化身，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0086:
+	if ($@QZnum == 0)set $@GameQz$,"「里斯本」為葡萄牙的首都，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「里斯本」為西班牙的首都，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0087:
+	if ($@QZnum == 0)set $@GameQz$,"在北歐神話中，象徵淘氣和惡作劇之神的是「洛基」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"在北歐神話中，象徵淘氣和惡作劇之神的是「霍德爾」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0088:
+	if ($@QZnum == 0)set $@GameQz$,"黑白無常中，白無常叫做「謝必安」，黑無常叫做「范無救」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"黑白無常中，白無常叫做「范無救」，黑無常叫做「謝必死」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0089:
+	if ($@QZnum == 0)set $@GameQz$,"德國電影「香水」中，男主角最後被吃掉，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"德國電影「香水」中，男主角最後死於斷頭台，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0090:
+	if ($@QZnum == 0)set $@GameQz$,"阿部美幸的作品「八犬傳－東方八犬異聞」，是以「南總里見八犬傳」為原型所創作，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"阿部不幸的作品「八犬傳－東方八犬異聞」，是以「南總里見八犬傳」為原型所創作，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0091:
+	if ($@QZnum == 0)set $@GameQz$,"「要聽神明的話」是由金城宗幸擔任原作、藤村緋二作畫的漫畫作品，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「要聽爸爸的話」是由金城宗幸擔任原作、藤村緋二作畫的漫畫作品，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0092:
+	if ($@QZnum == 0)set $@GameQz$,"「LMFAO-Party Rock Anthem」一曲的MV中大家跳的是鬼步舞，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「LMFAO-Party Rock Anthem」一曲的MV中大家跳的是國標舞，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0093:
+	if ($@QZnum == 0)set $@GameQz$,"「Cytus」是台灣雷亞遊戲（Rayark）開發的一款音樂遊戲，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「Cytus」是台灣雷亞遊戲（Rayark）開發的一款卡牌遊戲，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0094:
+	if ($@QZnum == 0)set $@GameQz$,"「三日月宗近」屬於天下五劍之一，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「三日月宗近」不屬於天下五劍之一，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0095:
+	if ($@QZnum == 0)set $@GameQz$,"「斯德哥爾摩症候群」（Stockholm syndrome）又稱為人質情結、人質症候群，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"「斯德哥爾摩症候群」（Starbucks Syndrome）又稱為人質情結、人質症候群，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0096:
+	if ($@QZnum == 0)set $@GameQz$,"娛樂區遊戲「炸彈波利」少於5人無法遊戲，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"娛樂區遊戲「炸彈波利」少於3人無法遊戲，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0097:
+	if ($@QZnum == 0)set $@GameQz$,"動畫《中華一番》第一個出現的神器是永靈刀，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"動畫《中華一番》第一個出現的神器是迦樓羅刀，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0098:
+	if ($@QZnum == 0)set $@GameQz$,"雪崩時有人被埋住，黃金搶救時間是15分，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"雪崩時有人被埋住，黃金搶救時間是20分，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0099:
+	if ($@QZnum == 0)set $@GameQz$,"《刀劍神域》希茲克利夫的獨有技能是神聖劍，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《刀劍神域》希茲克利夫的獨有技能是辟邪劍，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0100:
+	if ($@QZnum == 0)set $@GameQz$,"2018世界杯足球賽主辦國是俄羅斯，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"2018世界杯足球賽主辦國是西班牙，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0101:
+	if ($@QZnum == 0)set $@GameQz$,"霹靂布袋戲中，魔化一頁書的代表詩是六道同墜，魔劫萬千，引渡如來，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"唐三彩主要是以黃藍白為主，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0102:
+	if ($@QZnum == 0)set $@GameQz$,"醫書《傷寒雜病論》是張仲景寫的，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"醫書《傷寒雜病論》是張仲謀寫的，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0103:
+	set $@QUNUM2,rand(9)+1;
+	if ($@QZnum == 0)set $@GameQz$,"湯圓最早被稱為浮元子，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"湯圓最早被稱為浮圓子，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0104:
+	if ($@QZnum == 0)set $@GameQz$,"漫畫《中華一番》中，最終決戰的對手－凱由，他的奧義是破魔八陣，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"漫畫《中華一番》中，最終決戰的對手－凱由，他的奧義是破摩八陣，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0105:
+	if ($@QZnum == 0)set $@GameQz$,"《東方不敗之風雲再起》，深愛東方不敗的是雪千尋，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《東方不敗之風雲再起》，深愛東方不敗的是雪干尋，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0106:
+	if ($@QZnum == 0)set $@GameQz$,"令狐沖在「思過崖」遇到風清揚，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"令狐沖在「絕情崖」遇到風清揚，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0107:
+	if ($@QZnum == 0)set $@GameQz$,"祖千秋懷中酒杯被桃枝仙撞碎，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"祖千秋懷中酒杯被姚枝仙撞碎，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0108:
+	if ($@QZnum == 0)set $@GameQz$,"岳不群的徒弟有8個，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"岳不群的徒弟有9個，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0109:
+	if ($@QZnum == 0)set $@GameQz$,"莫大殺的嵩山高手是費彬，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"莫大殺的嵩山高手是費杉，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0110:
+	if ($@QZnum == 0)set $@GameQz$,"《兵器譜》是百曉生寫的，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《兵器譜》是百小生寫的，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0111:
+	if ($@QZnum == 0)set $@GameQz$,"《蕭十一郎》中逍遙侯的本名叫哥舒天，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《蕭十一郎》中逍遙侯的本名叫舒天哥，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0112:
+	if ($@QZnum == 0)set $@GameQz$,"《絕代雙驕》中10大惡人有11個人，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《絕代雙驕》中10大惡人有10個人，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0113:
+	if ($@QZnum == 0)set $@GameQz$,"鴛鴦刀的大秘密是「仁者無敵」，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"鴛鴦刀的大秘密是「天下無敵」，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0114:
+	if ($@QZnum == 0)set $@GameQz$,"娛樂區遊戲「最終考驗」共有4個關卡，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"娛樂區遊戲「最終考驗」共有5個關卡，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0115:
+	if ($@QZnum == 0)set $@GameQz$,"《碧血劍》中，袁承志的妻子是夏青青，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《碧血劍》中，袁承志的妻子是阿九，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0116:
+	if ($@QZnum == 0)set $@GameQz$,"本私服三階頭下要對應職業才有額外效果，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"本私服三階頭下不用對應職業就有額外效果，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0117:
+	if ($@QZnum == 0)set $@GameQz$,"《書劍恩仇錄》的故事劇情發生在乾隆年間，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"《書劍恩仇錄》的故事劇情發生在雍正年間，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0118:
+	if ($@QZnum == 0)set $@GameQz$,"展昭的字是熊飛，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"展昭的字是鷹飛，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0119:
+	if ($@QZnum == 0)set $@GameQz$,"展昭有「南俠」的稱號，對或錯?";
+	if ($@QZnum == 1)set $@GameQz$,"展昭有「北俠」的稱號，對或錯?";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+
+ChQend:
+	return;
+}
+
+function	script	SYS1234quizeData	{
+	set $@Quizrand,rand(37);
+	set $@QZnum,rand(4) + 1;
+
+	if ($@Quizrand == 0) goto Qz0000;
+	if ($@Quizrand == 1) goto Qz0001;
+	if ($@Quizrand == 2) goto Qz0002;
+	if ($@Quizrand == 3) goto Qz0003;
+	if ($@Quizrand == 4) goto Qz0004;
+	if ($@Quizrand == 5) goto Qz0005;
+	if ($@Quizrand == 6) goto Qz0006;
+	if ($@Quizrand == 7) goto Qz0007;
+	if ($@Quizrand == 8) goto Qz0008;
+	if ($@Quizrand == 9) goto Qz0009;
+	if ($@Quizrand == 10) goto Qz0010;
+	if ($@Quizrand == 11) goto Qz0011;
+	if ($@Quizrand == 12) goto Qz0012;
+	if ($@Quizrand == 13) goto Qz0013;
+	if ($@Quizrand == 14) goto Qz0014;
+	if ($@Quizrand == 15) goto Qz0015;
+	if ($@Quizrand == 16) goto Qz0016;
+	if ($@Quizrand == 17) goto Qz0017;
+	if ($@Quizrand == 18) goto Qz0018;
+	if ($@Quizrand == 19) goto Qz0019;
+	if ($@Quizrand == 20) goto Qz0020;
+	if ($@Quizrand == 21) goto Qz0021;
+	if ($@Quizrand == 22) goto Qz0022;
+	if ($@Quizrand == 23) goto Qz0023;
+	if ($@Quizrand == 24) goto Qz0024;
+	if ($@Quizrand == 25) goto Qz0025;
+	if ($@Quizrand == 26) goto Qz0026;
+	if ($@Quizrand == 27) goto Qz0027;
+	if ($@Quizrand == 28) goto Qz0028;
+	if ($@Quizrand == 29) goto Qz0029;
+	if ($@Quizrand == 30) goto Qz0030;
+	if ($@Quizrand == 31) goto Qz0031;
+	if ($@Quizrand == 32) goto Qz0032;
+	if ($@Quizrand == 33) goto Qz0033;
+	if ($@Quizrand == 34) goto Qz0034;
+	if ($@Quizrand == 35) goto Qz0035;
+	if ($@Quizrand == 36) goto Qz0036;
+
+
+
+Qz0000:
+	set $@GameQz$,"曹操挾天子以令諸侯，該天子是?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"漢獻帝","漢靈帝","漢武帝","漢文帝";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"漢武帝","漢獻帝","漢靈帝","漢文帝";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"漢文帝","漢靈帝","漢獻帝","漢武帝";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"漢靈帝","漢武帝","漢文帝","漢獻帝";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0001:
+	set $@GameQz$,"傳說貂蟬為誰所斬?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"關羽","張飛","呂布","曹操";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"劉備","關羽","曹操","董卓";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"曹操","孫權","關羽","周瑜";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"曹丕","典韋","張遼","關羽";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0002:
+	set $@GameQz$,"髀肉復生出自何人之言?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"劉備","曹操","孫權","董卓";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"孫權","劉備","董卓","曹操";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"曹操","董卓","劉備","孫權";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"董卓","孫權","曹操","劉備";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0003:
+	set $@GameQz$,"以下何人未曾當過皇帝?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"曹操","劉備","孫權","曹丕";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"孫權","曹操","曹丕","劉備";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"劉備","曹丕","曹操","孫權";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"曹丕","孫權","劉備","曹操";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0004:
+	set $@GameQz$,"請問袁紹的字是什麼?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"本初","公路","奉先","公台";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"公瑾","本初","伯約","公路";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"子明","公路","本初","奉先";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"元讓","士元","公台","本初";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+
+Qz0005:
+	set $@GameQz$,"「周公吐哺，天下歸心。」此詩句出自哪部作品?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"短歌行","詩經","論語","戰國策";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"詩經","短歌行","戰國策","史記";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"資治通鑑","易經","短歌行","漢書";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"本草綱目","論語","戰國策","短歌行";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0006:
+	set $@GameQz$,"以下何人不是魏國五虎將之一?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"許褚","張遼","李典","樂進";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"于禁","夏侯惇","徐晃","張遼";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"徐晃","張遼","夏侯淵","李典";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"于禁","李典","樂進","曹仁";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0007:
+	set $@GameQz$,"中國四大美女中，哪個人的存在可能是虛構的?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"貂蟬","楊貴妃","西施","王昭君";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"王昭君","貂蟬","楊貴妃","西施";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"西施","王昭君","貂蟬","楊貴妃";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"楊貴妃","西施","王昭君","貂蟬";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0008:
+	set $@GameQz$,"以下何人並非關羽子女?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"關統","關平","關興","關索";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"關索","關統","關平","關銀屏";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"關平","關興","關統","關索";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"關銀屏","關索","關興","關統";
+	set $@GameAns,$@QZnum;
+Qz0009:
+	set $@GameQz$,"據說二分天下之計是誰所提出?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"周公瑾","諸葛亮","魯子敬","呂子明";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"呂子明","周公瑾","諸葛亮","魯子敬";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"魯子敬","呂子明","周公瑾","諸葛亮";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"諸葛亮","魯子敬","呂子明","周公瑾";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0010:
+	set $@GameQz$,"關雲長敗走麥城，為誰所擒?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"呂蒙","徐晃","張遼","曹仁";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"張遼","呂蒙","曹仁","夏侯惇";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"徐晃","張遼","呂蒙","陸遜";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"于禁","曹操","曹丕","呂蒙";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0011:
+	set $@GameQz$,"據說華雄是董卓麾下第幾員猛將?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"4","2","3","5";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"2","4","5","3";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"3","5","4","2";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"5","3","2","4";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0012:
+	set $@GameQz$,"何人有水鏡先生之稱?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"司馬徽","司馬光","司馬遷","司馬懿";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"司馬光","司馬徽","司馬懿","司馬遷";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"司馬遷","司馬懿","司馬徽","司馬光";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"司馬懿","司馬遷","司馬光","司馬徽";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0013:
+	set $@GameQz$,"據說徐庶破了曹仁哪一種陣法?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"八門金鎖陣","一字長蛇陣","北斗七星陣","石兵八陣";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"二龍出水陣","八門金鎖陣","石兵八陣","十面埋伏陣";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"石兵八陣","天地三才陣","八門金鎖陣","四門兜底陣";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"九字連環陣","石兵八陣","五虎群羊陣","八門金鎖陣";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0014:
+	set $@GameQz$,"喬國公跟吳國太是什麼關係?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"親家","夫婦","姐弟","父女";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"父女","親家","夫婦","兄妹";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"兄妹","姐弟","親家","母子";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"夫婦","母子","姐弟","親家";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0015:
+	set $@GameQz$,"「連環計」的典故是出自何人?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"王允","曹操","龐統","周瑜";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"曹操","王允","周瑜","龐統";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"周瑜","龐統","王允","曹操";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"龐統","周瑜","曹操","王允";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0016:
+	set $@GameQz$,"諸葛亮在天水城招降了哪位魏將?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"姜伯約","馬遵","黃權","廖化";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"馬遵","姜伯約","馬超","夏侯霸";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"劉繇","韓遂","姜伯約","郭淮";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"夏侯霸","馬超","郭淮","姜伯約";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0017:
+	set $@GameQz$,"劉備的愛馬名字叫?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"的盧","赤兔馬","絕影","白龍馬";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"絕影","的盧","白龍馬","赤兔馬";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"赤兔馬","白龍馬","的盧","絕影";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"白龍馬","絕影","赤兔馬","的盧";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0018:
+	set $@GameQz$," 黃巾之亂從公元幾年開始?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"184年","194年","198年","202年";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"198年","184年","206年","175年";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"195年","200年","184年","188年";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"177年","198年","174年","184年";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0019:
+	set $@GameQz$,"「望梅止渴」成語典故出自何人?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"曹孟德","劉備","趙雲","關羽";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"孫伯符","曹阿瞞","張益德","關雲長";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"孫仲謀","趙子龍","曹操","馬超";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"劉玄德","魏延","馬岱","曹孟德";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0020:
+	set $@GameQz$,"請問夏侯淵的字是什麼?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"妙才","好才","元讓","仲權";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"元讓","妙才","仲權","好才";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"好才","仲權","妙才","元讓";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"仲權","元讓","仲謀","妙才";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0021:
+	set $@GameQz$,"官渡之戰是誰投靠曹操並告知袁紹軍糧都在烏巢?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"許攸","審配","袁尚","楊脩";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"審配","許攸","楊脩","袁譚";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"楊脩","袁譚","許攸","審配";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"袁尚","楊脩","審配","許攸";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0022:
+	set $@GameQz$,"「絕妙好辭」的典故出自以下哪個組合?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"曹操、楊脩","劉備、諸葛亮","董卓、李儒","孫權、魯肅";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"孫權、魯肅","曹操、楊脩","劉備、諸葛亮","董卓、李儒";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"董卓、李儒","孫權、魯肅","曹操、楊脩","劉備、諸葛亮";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"劉備、諸葛亮","董卓、李儒","孫權、魯肅","曹操、楊脩";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0023:
+	set $@GameQz$,"「洛神賦」作者為何人?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"曹植","曹丕","曹彰","曹沖";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"曹沖","曹植","曹丕","曹彰";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"曹彰","曹沖","曹植","曹丕";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"曹丕","曹彰","曹沖","曹植";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0024:
+	set $@GameQz$,"下列對劉備的敘述何者正確?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"手長過膝","赤面長鬚","眼如銅鈴","足智多謀";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"羽扇綸巾","手長過膝","聲如洪鐘","一身是膽";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"其貌不揚","羽扇綸巾","手長過膝","赤面長鬚";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"其貌不揚","聲如洪鐘","足智多謀","手長過膝";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0025:
+	set $@GameQz$,"請問張遼在哪場戰役成名?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"逍遙津之戰","長阪坡之戰","赤壁之戰","白門樓之變";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"長阪坡之戰","逍遙津之戰","白門樓之變","赤壁之戰";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"赤壁之戰","白門樓之變","逍遙津之戰","長阪坡之戰";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"白門樓之變","赤壁之戰","長阪坡之戰","逍遙津之戰";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0026:
+	set $@GameQz$,"《三國演義》中，青釭劍是曹操給以下哪位將領的?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"夏侯恩","夏侯淵","夏侯惇","趙雲";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"趙雲","夏侯恩","夏侯淵","夏侯惇";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"夏侯淵","夏侯惇","夏侯恩","趙雲";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"夏侯惇","趙雲","夏侯淵","夏侯恩";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0027:
+	set $@GameQz$,"樊城之戰時，哪位將領抬棺出戰?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"龐德","曹仁","于禁","徐晃";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"曹仁","龐德","徐晃","樂進";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"于禁","樂進","龐德","張遼";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"李典","樂進","于禁","龐德";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0028:
+	set $@GameQz$,"諸葛亮北伐前，寫給劉禪一篇文章叫做?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"出師表","陳情表","祭十二郎文","古今人表";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"古今人表","出師表","陳情表","祭十二郎文";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"祭十二郎文","古今人表","出師表","陳情表";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"陳情表","祭十二郎文","古今人表","出師表";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0029:
+	set $@GameQz$,"《三國演義》的作者是何人?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"羅貫中","吳承恩","曹雪芹","施耐庵";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"吳承恩","羅貫中","施耐庵","曹雪芹";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"施耐庵","潘金蓮","羅貫中","西門慶";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"吳承恩","林黛玉","賈寶玉","羅貫中";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0030:
+	set $@GameQz$,"《三國志》的作者是何人?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"陳壽","羅貫中","班固","司馬遷";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"班超","陳壽","羅貫中","曹植";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"司馬懿","班固","陳壽","羅貫中";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"荀彧","班超","羅貫中","陳壽";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0031:
+	set $@GameQz$,"《三國演義》故事中是以哪國為主體進行故事?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"蜀國","吳國","魏國","以上皆非";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"魏國","蜀國","吳國","以上皆是";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"吳國","魏國","蜀國","以上皆非";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"吳國","魏國","漢朝","蜀國";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0032:
+	set $@GameQz$,"《三國志》中是以哪國為主體進行記錄?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"魏國","蜀國","吳國","漢朝";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"蜀國","魏國","晉朝","吳國";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"吳國","晉朝","魏國","蜀國";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"晉朝","蜀國","吳國","魏國";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0033:
+	set $@GameQz$,"傳說華陀幫關羽刮骨療毒時，關羽正在做何事?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"下棋","閱春秋","作戰","睡覺";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"睡覺","下棋","閱春秋","作戰";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"作戰","睡覺","下棋","閱春秋";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"閱春秋","作戰","睡覺","下棋";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0034:
+	set $@GameQz$,"相傳「青龍偃月刀」共重幾斤?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"82","120","80","49.2";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"49.2","82","120","88";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"80","88","82","108";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"122","90","49.2","82";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0035:
+	set $@GameQz$,"張文遠原本的姓氏是?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"聶","張","姜","江";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"張","聶","關","龐";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"林","許","聶","夏侯";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"魏","楊","張","聶";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+Qz0036:
+	set $@GameQz$,"龐士元殞命在何地?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"落鳳坡","臥龍崗","長阪坡","許昌城";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"臥龍崗","落鳳坡","江夏城","麥城";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"長阪坡","襄陽城","落鳳坡","臥龍崗";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"許昌城","長阪坡","臥龍崗","落鳳坡";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+
+
+
+//------------------------------------原始格式-----------------------------------------------
+Qz9000:
+	set $@GameQz$,"?";
+	if ($@QZnum == 1) setarray $@NumAns$[1],"","","","";
+	if ($@QZnum == 2) setarray $@NumAns$[1],"","","","";
+	if ($@QZnum == 3) setarray $@NumAns$[1],"","","","";
+	if ($@QZnum == 4) setarray $@NumAns$[1],"","","","";
+	set $@GameAns,$@QZnum;
+	goto ChQend;
+
+
+
+ChQend:
+	return;
+}

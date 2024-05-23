@@ -1,0 +1,723 @@
+//====================１====================\\
+xmas,141,113,5	script	雅典娜	510,{
+	if(WCCA_2 == 1) goto XY;
+	mes "^0000FF【雅典娜】^000000";
+	mes "掌管星辰的十二星座，";
+	mes "現在都各自鬧脾氣。";
+	mes "不過都聚集在死亡之塔，";
+	mes "你可以幫我找回他們的星冠嗎？";
+	next;
+	menu "好",GO_1,"不好",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【雅典娜】^000000";
+	mes "那你要先經過我的考驗，";
+	mes "讓我看看你是不是真有本事擔此重任。";
+	mes "收集10張海盜之王卡片";
+	mes "收集10張死靈卡片";
+	mes "收集10張黑暗之王卡片";
+	mes "共要收集30張卡片";
+	next;
+	menu 	"不給",cancel,
+		"在這裡",Shi_1;
+Shi_1:
+	mes "^0000FF【雅典娜】^000000";
+	mes "讓我來見識你的能耐。";
+	next;
+	if(countitem(4137)< 10) goto NoMake;
+	if(countitem(4142)< 10) goto NoMake;
+	if(countitem(4168)< 10) goto NoMake;
+	mes "^0000FF【雅典娜】^000000";
+	mes "嗯…讓我來看看…";
+	next;
+	delitem 4137,10;
+	delitem 4142,10;
+	delitem 4168,10;
+	getitem 668,2000;
+	set WCCA_2,WCCA_2+1;
+	goto XY;
+XY:
+	mes "^0000FF【雅典娜】^000000";
+	mes "很好…你果然不會辜負我的期待！";
+	mes "收集星冠的任務就交給你了！";
+	mes "魔羯宮在死亡之塔一層^000000";
+	close;
+NoMake:
+	mes "^0000FF【雅典娜】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "那還不快去！";
+	close;
+}
+
+//====================２====================\\
+tha_t01,209,156,5	script	魔羯宮	510,{
+	if(WCCA_3 == 1) goto XY;
+	if(WCCA_2 == 1){
+	mes "^0000FF【魔羯宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "你有什麼要求？",GO_1,"我不想鳥你！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【魔羯宮】^000000";
+	mes "收集^FF0000500個變形水壺^000000";
+	mes "收集^FF0000500個紅色流蘇^000000";
+	mes "收集^FF0000500個紅包^000000";
+	next;
+	menu 	"你獅子大開口阿…",cancel,
+		"東西在這！",Shi_1;
+Shi_1:
+	mes "^0000FF【魔羯宮】^000000";
+	mes "如此之快，你才去不到15分鐘的時間！";
+	next;
+	if(countitem(7323)< 500) goto NoMake;
+	if(countitem(7301)< 500) goto NoMake;
+	if(countitem(668)< 500) goto NoMake;
+	mes "^0000FF【魔羯宮】^000000";
+	mes "果然是真漢子，魔羯宮敬你一杯！";
+	next;
+	delitem 7323,500;
+	delitem 7301,500;
+	delitem 668,500;
+	getitem 27072,1;
+	set WCCA_3,WCCA_3+1;
+	next;
+	mes "《魔羯座星冠》已交到你手中！";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【魔羯宮】^000000";
+	mes "你也是魔羯座嗎？";
+	close;
+XY:
+	mes "^0000FF【魔羯宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【魔羯宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "辦不到非大丈夫所言之語！";
+	close;
+}
+
+//====================３====================\\
+tha_t02,181,62,5	script	水瓶宮	510,{
+	if(WCCA_4 == 1) goto XY;
+	if(WCCA_3 == 1){
+	mes "^0000FF【水瓶宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "要完成什麼呢？",GO_1,"干我屁事！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【水瓶宮】^000000";
+	mes "收集^FF0000500個生鏽廚刀^000000";
+	mes "收集^FF0000500個彈弓^000000";
+	mes "收集^FF0000500個樹木心臟^000000";
+	next;
+	menu 	"馬上去",cancel,
+		"我回來了！",Shi_1;
+Shi_1:
+	mes "^0000FF【水瓶宮】^000000";
+	mes "讓我來看看…";
+	next;
+	if(countitem(7208)< 500) goto NoMake;
+	if(countitem(7195)< 500) goto NoMake;
+	if(countitem(7189)< 500) goto NoMake;
+	mes "^0000FF【水瓶宮】^000000";
+	mes "黏合需要一點時間。";
+	next;
+	delitem 7208,500;
+	delitem 7195,500;
+	delitem 7189,500;
+	getitem 27073,1;
+	set WCCA_4,WCCA_4+1;
+	next;
+	mes "《水瓶座星冠》就交給你了！";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【水瓶宮】^000000";
+	mes "你也是水瓶座嗎？";
+	close;
+XY:
+	mes "^0000FF【水瓶宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【水瓶宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "干你屁事！";
+	close;
+}
+
+//====================４====================\\
+tha_t03,211,211,5	script	雙魚宮	512,{
+	if(WCCA_5 == 1) goto XY;
+	if(WCCA_4 == 1){
+	mes "^0000FF【雙魚宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "你想要我做什麼？",GO_1,"看起來你不是什麼好人…",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【雙魚宮】^000000";
+	mes "收集^FF0000500個拉鍊熊毛皮^000000";
+	mes "收集^FF0000500個害羞之服^000000";
+	mes "收集^FF000050個太極盤^000000";
+	next;
+	menu 	"你的罪孽還真深呀…",cancel,
+		"我會洗清你的罪孽。",Shi_1;
+Shi_1:
+	mes "^0000FF【雙魚宮】^000000";
+	mes "我只是個有罪之人…";
+	next;
+	if(countitem(7161)< 500) goto NoMake;
+	if(countitem(7165)< 500) goto NoMake;
+	if(countitem(7169)< 50) goto NoMake;
+	mes "^0000FF【雙魚宮】^000000";
+	mes "沒想到江湖中還有你這種正義人士。";
+	next;
+	delitem 7161,500;
+	delitem 7165,500;
+	delitem 7169,50;
+	getitem 27074,1;
+	set WCCA_5,WCCA_5+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【雙魚宮】^000000";
+	mes "你也是雙魚座嗎？";
+	close;
+XY:
+	mes "^0000FF【雙魚宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【雙魚宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "希望能看到明天的太陽…";
+	close;
+}
+
+//====================５====================\\
+tha_t04,185,44,5	script	牡羊宮	510,{
+	if(WCCA_6 == 1) goto XY;
+	if(WCCA_5 == 1){
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "還是請你給點輕鬆任務。",GO_1,"不想勒！",NO;
+NO:
+	mes "喝呀！！！！！躺下吧你～～～～";
+	close;
+GO_1:
+	mes "^0000FF【牡羊宮】^000000";
+	mes "收集^FF00001000個竹筒^000000";
+	mes "收集^FF00001000個牛蛙之皮^000000";
+	mes "收集^FF00001000個銳利的觸角^000000";
+	next;
+	menu 	"你欺負人阿…",cancel,
+		"你快來領東西！",Shi_1;
+Shi_1:
+	mes "^0000FF【牡羊宮】^000000";
+	mes "我來清點清點…";
+	next;
+	if(countitem(7150)< 1000) goto NoMake;
+	if(countitem(7155)< 1000) goto NoMake;
+	if(countitem(7163)< 1000) goto NoMake;
+	mes "^0000FF【牡羊宮】^000000";
+	mes "謝謝你！";
+	mes "感激不盡！";
+	next;
+	delitem 7150,1000;
+	delitem 7155,1000;
+	delitem 7163,1000;
+	getitem 27075,1;
+	set WCCA_6,WCCA_6+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【牡羊宮】^000000";
+	mes "你也是牡羊座嗎？";
+	close;
+XY:
+	mes "^0000FF【牡羊宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【牡羊宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "靜候佳音。";
+	close;
+}
+
+//====================６====================\\
+tha_t05,155,41,5	script	金牛宮	512,{
+	if(WCCA_7 == 1) goto XY;
+	if(WCCA_6 == 1){
+	mes "^0000FF【金牛宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "快點吧",GO_1,"少廢話了！",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【金牛宮】^000000";
+	mes "收集^FF00001000個魔羌之毛皮^000000";
+	mes "收集^FF00001000個恐怖的紙刃^000000";
+	mes "收集^FF00001000個巨大結勒比結晶^000000";
+	next;
+	menu 	"好難",cancel,
+		"區區任務，何足掛齒",Shi_1;
+Shi_1:
+	mes "^0000FF【金牛宮】^000000";
+	mes "俠義之人必有俠義之心。";
+	next;
+	if(countitem(7107)< 1000) goto NoMake;
+	if(countitem(7112)< 1000) goto NoMake;
+	if(countitem(7126)< 1000) goto NoMake;
+	mes "^0000FF【金牛宮】^000000";
+	mes "我果然沒看錯人。";
+	mes "依照約定，《金牛座星冠》拿去吧！";
+	next;
+	delitem 7107,1000;
+	delitem 7112,1000;
+	delitem 7126,1000;
+	getitem 27076,1;
+	set WCCA_7,WCCA_7+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【金牛宮】^000000";
+	mes "你也是金牛座嗎？";
+	close;
+XY:
+	mes "^0000FF【金牛宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【金牛宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "看來你還不夠格。";
+	close;
+}
+
+//====================７====================\\
+tha_t06,74,22,5	script	巨蟹宮	512,{
+	if(WCCA_8 == 1) goto XY;
+	if(WCCA_7 == 1){
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "好！你說",GO_1,"不會是叫我殺人吧？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "收集^FF00001500個鏽的飛鏢^000000";
+	mes "收集^FF00001500個愛麗絲的圍裙^000000";
+	mes "收集^FF00001500個破舊平底鍋^000000";
+	next;
+	menu 	"我不想幫你",cancel,
+		"我想研究看看那些碎片",Shi_1;
+Shi_1:
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "讓我來看看…";
+	next;
+	if(countitem(7072)< 1500) goto NoMake;
+	if(countitem(7047)< 1500) goto NoMake;
+	if(countitem(7031)< 1500) goto NoMake;
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "做的好！";
+	mes "《巨蟹座星冠》拿去吧！";
+	next;
+	delitem 7072,1500;
+	delitem 7047,1500;
+	delitem 7031,1500;
+	getitem 27078,1;
+	set WCCA_8,WCCA_8+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "你也是巨蟹座嗎？";
+	close;
+XY:
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【巨蟹宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "原來你這麼壞心眼。";
+	close;
+}
+
+//====================８====================\\
+tha_t07,111,93,5	script	獅子宮	512,{
+	if(WCCA_9 == 1) goto XY;
+	if(WCCA_8 == 1){
+	mes "^0000FF【獅子宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "給我給我",GO_1,"你不會虛脫嗎？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【獅子宮】^000000";
+	mes "收集^FF0000100個小樹枝^000000";
+	mes "收集^FF00001500個堅韌的藤蔓^000000";
+	mes "收集^FF00001500個小紅高帽^000000";
+	next;
+	menu 	"王不見王",cancel,
+		"你好帥阿！",Shi_1;
+Shi_1:
+	mes "^0000FF【獅子宮】^000000";
+	mes "給我的好朋友";
+	next;
+	if(countitem(7018)< 100) goto NoMake;
+	if(countitem(6041)< 1500) goto NoMake;
+	if(countitem(6021)< 1500) goto NoMake;
+	mes "^0000FF【獅子宮】^000000";
+	mes "吼！";
+	mes "《獅子座星冠》給你吧！";
+	next;
+	delitem 7018,100;
+	delitem 6041,1500;
+	delitem 6021,1500;
+	getitem 27079,1;
+	set WCCA_9,WCCA_9+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【獅子宮】^000000";
+	mes "你也是獅子座嗎？";
+	close;
+XY:
+	mes "^0000FF【獅子宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【獅子宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "我爽，你咬我？";
+	close;
+}
+
+//====================９====================\\
+tha_t08,74,103,5	script	處女宮	510,{
+	if(WCCA_10 == 1) goto XY;
+	if(WCCA_9 == 1){
+	mes "^0000FF【處女宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "沒問題",GO_1,"瘋了",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【處女宮】^000000";
+	mes "收集^FF00002000個哀唱草^000000";
+	mes "收集^FF00002000個水晶鏡子^000000";
+	mes "收集^FF00002000個辮子^000000";
+	next;
+	menu 	"聽說處女座的都很呆？",cancel,
+		"等我一下吧！",Shi_1;
+Shi_1:
+	mes "^0000FF【處女宮】^000000";
+	mes "哈哈哈哈哈哈哈哈…";
+	next;
+	if(countitem(707)< 2000) goto NoMake;
+	if(countitem(747)< 2000) goto NoMake;
+	if(countitem(901)< 2000) goto NoMake;
+	mes "^0000FF【處女宮】^000000";
+	mes "你果然不同凡響。";
+	mes "《處女座星冠》就送給你了！";
+	next;
+	delitem 707,2000;
+	delitem 747,2000;
+	delitem 901,2000;
+	getitem 27080,1;
+	set WCCA_10,WCCA_10+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【處女宮】^000000";
+	mes "你也是處女座嗎？";
+	close;
+XY:
+	mes "^0000FF【處女宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【處女宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "葡萄美酒夜光杯，欲飲琵琶馬上催。";
+	close;
+}
+
+//====================１０====================\\
+tha_t09,12,162,5	script	天秤宮	512,{
+	if(WCCA_11 == 1) goto XY;
+	if(WCCA_10 == 1){
+	mes "^0000FF【天秤宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "你想要什麼？",GO_1,"了不起嗎？",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【天秤宮】^000000";
+	mes "收集^FF00002000個黏稠的蹼^000000";
+	mes "收集^FF00002000個鳥嘴^000000";
+	mes "收集^FF00002000個枯木汁^000000";
+	next;
+	menu 	"不想幫你勒",cancel,
+		"我幫你！！",Shi_1;
+Shi_1:
+	mes "^0000FF【天秤宮】^000000";
+	mes "公平公正公開。";
+	next;
+	if(countitem(907)< 2000) goto NoMake;
+	if(countitem(925)< 2000) goto NoMake;
+	if(countitem(918)< 2000) goto NoMake;
+	mes "^0000FF【天秤宮】^000000";
+	mes "公平公正公開！";
+	mes "《天秤座星冠》，接住！";
+	next;
+	delitem 907,2000;
+	delitem 925,2000;
+	delitem 918,2000;
+	getitem 27081,1;
+	getitem 668,1000;
+	set WCCA_11,WCCA_11+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【天秤宮】^000000";
+	mes "你也是天秤座嗎？";
+	close;
+XY:
+	mes "^0000FF【天秤宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【天秤宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "不想要公平嗎？";
+	close;
+}
+
+//====================１１====================\\
+tha_t10,128,158,5	script	天蠍宮	510,{
+	if(WCCA_12 == 1) goto XY;
+	if(WCCA_11 == 1){
+	mes "^0000FF【天蠍宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "你的任務是？",GO_1,"蛇蠍美人",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【天蠍宮】^000000";
+	mes "收集^FF00003000個毒牙^000000";
+	mes "收集^FF00003000個蜂針^000000";
+	mes "收集^FF00003000個牛鼻環^000000";
+	next;
+	menu 	"我不跟蛇蠍心腸打交道",cancel,
+		"我會幫你的",Shi_1;
+Shi_1:
+	mes "^0000FF【天蠍宮】^000000";
+	mes "你心腸真好！";
+	next;
+	if(countitem(937)< 3000) goto NoMake;
+	if(countitem(939)< 3000) goto NoMake;
+	if(countitem(941)< 3000) goto NoMake;
+	mes "^0000FF【天蠍宮】^000000";
+	mes "物品都帶來了嗎？";
+	mes "那拿走吧…（把《天蠍座星冠》交到你手中）";
+	next;
+	delitem 937,3000;
+	delitem 939,3000;
+	delitem 941,3000;
+	getitem 27082,1;
+	set WCCA_12,WCCA_12+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【天蠍宮】^000000";
+	mes "你也是天蠍座嗎？";
+	close;
+XY:
+	mes "^0000FF【天蠍宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【天蠍宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "沒錯我就是。";
+	close;
+}
+
+//====================１２====================\\
+tha_t11,85,64,5	script	射手宮	510,{
+	if(WCCA_13 == 1) goto XY;
+	if(WCCA_12 == 1){
+	mes "^0000FF【射手宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "一言為定",GO_1,"不想",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【射手宮】^000000";
+	mes "收集^FF00003000個石心^000000";
+	mes "收集^FF00003000個鰓刺^000000";
+	mes "收集^FF00003000個腐爛鱗片^000000";
+	next;
+	menu 	"我是浪子！",cancel,
+		"我馬上回來",Shi_1;
+Shi_1:
+	mes "^0000FF【射手宮】^000000";
+	mes "你…帶回來了嗎？";
+	next;
+	if(countitem(953)< 3000) goto NoMake;
+	if(countitem(956)< 3000) goto NoMake;
+	if(countitem(959)< 3000) goto NoMake;
+	mes "^0000FF【射手宮】^000000";
+	mes "謝謝你";
+	mes "這是《射手座星冠》，請笑納。";
+	next;
+	delitem 953,3000;
+	delitem 956,3000;
+	delitem 959,3000;
+	getitem 27083,1;
+	set WCCA_13,WCCA_13+1;
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+}
+	mes "^0000FF【射手宮】^000000";
+	mes "你也是射手座嗎？";
+	close;
+XY:
+	mes "^0000FF【射手宮】^000000";
+	mes "東西都給你了,繼續下個任務吧";
+	mes "下個星座在樓上";
+	close;
+NoMake:
+	mes "^0000FF【射手宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "拜託你了";
+	close;
+}
+
+//====================１３====================\\
+tha_t12,95,79,5	script	雙子宮	512,{
+	if(WCCA_14 == 1) goto XY;
+	if(WCCA_13 == 1){
+	mes "^0000FF【雙子宮】^000000";
+	mes "是雅典娜女神叫你來的嗎？";
+	mes "要拿回星冠可以，先完成我的任務在說。";
+	next;
+	menu "我要怎麼幫你？",GO_1,"不幫你",NO;
+NO:
+	close;
+GO_1:
+	mes "^0000FF【雙子宮】^000000";
+	mes "收集^FF00003000個黃金^000000";
+	mes "收集^FF00003000個墨汁^000000";
+	mes "收集^FF0000300個獸人英雄之證^000000";
+	next;
+	menu 	"不想幫",cancel,
+		"ＧＯ。",Shi_1;
+Shi_1:
+	mes "^0000FF【雙子宮】^000000";
+	mes "你真的帶回來了？";
+	next;
+	if(countitem(969)< 3000) goto NoMake;
+	if(countitem(1024)< 3000) goto NoMake;
+	if(countitem(968)< 300) goto NoMake;
+	mes "^0000FF【雙子宮】^000000";
+	mes "萬般感謝，我定當湧泉以報。";
+	mes "《雙子座星冠》已經交給你了。";
+	next;
+	delitem 969,3000;
+	delitem 1024,3000;
+	delitem 968,300;
+	getitem 27077,1;
+	set WCCA_14,WCCA_14+1;
+	mes "東西都給你了,恭喜你完成星座任務";
+	close;
+}
+	mes "^0000FF【雙子宮】^000000";
+	mes "你也是雙子座嗎？";
+	close;
+XY:
+	mes "^0000FF【雙子宮】^000000";
+	mes "東西都給你了,恭喜你完成星座任務";
+	close;
+NoMake:
+	mes "^0000FF【雙子宮】^000000";
+	mes "你並沒有按照要求將所需的材料帶齊，下次再來吧！";
+	close;
+cancel:
+	mes "我等你回來。";
+	close;
+}

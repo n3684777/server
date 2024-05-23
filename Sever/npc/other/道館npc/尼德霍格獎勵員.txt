@@ -1,0 +1,21 @@
+goodjob07,33,165,4	script	尼德霍格獎勵員	856,{
+	mes "[尼德霍格獎勵員]";
+	mes "你可以走到這裡，實在是不簡單！";
+	mes "請您接受我的獎品吧！";
+        percentheal 100,100;
+	next;
+	set @gx,rand(8);
+	if (@gx ==0) getitem 13637,2;
+	if (@gx ==1) getitem 28569,40;
+	if (@gx ==2) getitem 28000,50;
+	if (@gx ==3) getitem 28570,50;
+	if (@gx ==4) getitem 28566,50;
+	if (@gx ==5) getitem 28567,50;
+	if (@gx ==6) getitem 28568,50;
+	if (@gx ==7) getitem 13635,4;
+	set @gu,rand(5);	
+        if (@gu ==4)getitem 13637,1;
+        if (@gu ==1)getitem 28572,2;
+	warp "aldebaran",140,119;
+		close;
+}

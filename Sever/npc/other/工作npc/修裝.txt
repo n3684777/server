@@ -1,0 +1,26 @@
+prontera,148,170,5	script	點我即可修裝#1	766,{
+atcommand "@repairall";
+end;
+
+OnInit:
+	waitingroom "修理裝備",0;
+}
+
+
+
+lighthalzen,207,130,5	script	點我即可修裝#2	766,{
+atcommand "@repairall";
+end;
+
+OnInit:
+	waitingroom "修理裝備",0;
+	end;
+}
+
+pay_arche,51,128,5	script	點我即可修裝#3	766,{
+atcommand "@repairall";
+end;
+
+OnInit:
+	waitingroom "修理裝備",0;
+}

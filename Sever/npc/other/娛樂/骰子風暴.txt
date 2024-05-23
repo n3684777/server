@@ -1,0 +1,128 @@
+amatsu,123,152,4	script	骰子風暴報名	997,{
+
+	if( $@DiceStart != 1 ){
+	mes"很抱歉，現在不是報名時間。";
+	mes"15:30 19:30 23:30這三個時段";
+	close;
+	end;
+	}
+
+	if( $@DiceStart == 1 ){
+	mes "現在是報名時間！！";
+	mes "你要報名嗎？";
+	next;
+	menu	"報名",sign,
+		"遊戲說明",rule,
+		"不用了",nosign;
+sign:
+	delitem 28189,countitem(28189);
+	delitem 28190,countitem(28190);
+	delitem 28191,countitem(28191);
+	delitem 28192,countitem(28192);
+	delitem 28193,countitem(28193);
+	delitem 28194,countitem(28194);
+	warp "ordeal_1-1",150,150;
+	end;
+rule:
+	mes "遊戲開始時會有許多骰子波利";
+	mes "擊殺他們將有機會掉落骰子卡片";
+	mes "卡片上的數字就是那個點數";
+	mes "等到時間到之後會傳送到換物品的地方";
+	close;
+nosign:
+	close;
+	}
+OnClock1530:
+OnClock1930:
+OnClock2330:
+	callfunc "DiceStorm";
+	end;
+OnInit:
+	waitingroom "骰子風暴",0;
+}
+
+function	script	DiceStorm	{
+	killmonsterall "ordeal_1-1";
+	initnpctimer "DiceStormWei";
+	return;
+}
+
+ordeal_1-1,150,150,1	script	DiceStormWei	-1,{
+OnTimer1000:
+	set $@DiceStart,1;
+	announce "骰子風暴報名員：骰子風暴開始倒數5分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer120000:
+	announce "骰子風暴報名員：骰子風暴開始倒數3分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer240000:
+	announce "骰子風暴報名員：骰子風暴開始倒數1分鐘，地點在娛樂區，請於這段時間去報名",15;
+	end;
+OnTimer300000:
+	set $@DiceStormJoin,1;
+	if (getmapusers("ordeal_1-1") < $@DiceStormJoin) goto No_body;
+	announce "骰子風暴報名員：骰子風暴活動參加人數" + getmapusers("ordeal_1-1") + "人，現在開始",15;
+	end;
+OnTimer301000:
+	MapAnnounce "ordeal_1-1","開始前先說明規則。",17;
+	end;
+OnTimer303000:
+	MapAnnounce "ordeal_1-1","擊殺越多的骰子波利奪取他們的點數卡片。",17;
+	end;
+OnTimer305000:
+	MapAnnounce "ordeal_1-1","最後點數卡片的點數越多的人越有利。",17;
+	end;
+OnTimer307000:
+	MapAnnounce "ordeal_1-1","請記得先打好自動撿物指令，限制時間為5分鐘，時間到會自行傳送。",17;
+	end;
+OnTimer309000:
+	MapAnnounce "ordeal_1-1","現在宣布，遊戲開始",17;
+	set $@DiceStart,0;
+	initnpctimer "DiceStormStartWei";
+	goto DiceStormEndWei;
+No_body:
+	announce "骰子風暴報名員：人數少於"+$@DiceStormJoin+"人參加骰子風暴，活動取消",15;
+	areawarp "ordeal_1-1",0,0,300,300,"gonryun",160,171;
+	set $@DiceStart,0;
+DiceStormEndWei:
+	stopnpctimer;
+	setnpctimer 0,"DiceStormWei";
+	end;
+}
+
+ordeal_1-1,150,150,0	script	DiceStormStartWei	-1,{
+OnTimer1000:
+	monster "ordeal_1-1",0,0,"--ja--",2418,500,"DiceStormStartWei::OnKillMob";
+	end;
+OnKillMob:
+	monster "ordeal_1-1",0,0,"--ja--",2418,1,"DiceStormStartWei::OnKillMob";
+	end;
+OnTimer121000:
+	MapAnnounce "ordeal_1-1","還剩下3分鐘。",17;
+	end;
+OnTimer181000:
+	MapAnnounce "ordeal_1-1","還剩下2分鐘。",17;
+	end;
+OnTimer241000:
+	MapAnnounce "ordeal_1-1","還剩下1分鐘。",17;
+	end;
+OnTimer301000:
+	MapAnnounce "ordeal_1-1","時間終了！",17;
+	killmonsterall "ordeal_1-1";
+	areawarp "ordeal_1-1",0,0,300,300,"prt_are_in",22,132;
+	end;
+	}
+
+//--------------------------------------------------------------
+
+ordeal_1-1	mapflag	nomemo
+ordeal_1-1	mapflag	noteleport
+ordeal_1-1	mapflag	noreturn
+ordeal_1-1	mapflag	nosave	SavePoint
+ordeal_1-1	mapflag	nobranch
+ordeal_1-1	mapflag	nowarp
+ordeal_1-1	mapflag	nowarpto
+ordeal_1-1	mapflag	noicewall
+ordeal_1-1	mapflag	noskill
+ordeal_1-1	mapflag	nochat
+ordeal_1-1	mapflag	novending
