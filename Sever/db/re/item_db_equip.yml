@@ -1472,7 +1472,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 1161
     AegisName: Balmung
-    Name: 神器 三十二朔月
+    Name: 神器 三十二朔月
     Type: Weapon
     SubType: 2hSword
     Buy: 20
@@ -1511,7 +1511,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 1163
     AegisName: Claymore
-    Name: 十字巨劍
+    Name: 十字巨劍
     Type: Weapon
     SubType: 2hSword
     Buy: 74000
@@ -1550,7 +1550,7 @@ Body:
       bonus2 bAddEff2,Eff_Curse,10;
   - Id: 1165
     AegisName: Masamune
-    Name: 秘刀 十六夜月
+    Name: 秘刀 十六夜月
     Type: Weapon
     SubType: 2hSword
     Buy: 20
@@ -1705,7 +1705,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 1172
     AegisName: Claymore_
-    Name: 十字巨劍
+    Name: 十字巨劍
     Type: Weapon
     SubType: 2hSword
     Buy: 74000
@@ -2067,7 +2067,7 @@ Body:
       bonus3 bAutoSpell,"NPC_VAMPIRE_GIFT",(getrefine()>8?2:1),20;
   - Id: 1187
     AegisName: Krieger_Twohand_Sword1
-    Name: 勇士十字巨劍
+    Name: 勇士十字巨劍
     Type: Weapon
     SubType: 2hSword
     Buy: 20
@@ -10167,7 +10167,7 @@ Body:
       bonus2 bAddEle,Ele_Earth,10;
   - Id: 1528
     AegisName: Grand_Cross
-    Name: 聖錘 十字星
+    Name: 聖錘 十字星
     Type: Weapon
     SubType: Mace
     Buy: 20
@@ -10441,7 +10441,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 1540
     AegisName: Grand_Cross_
-    Name: 聖錘 十字星
+    Name: 聖錘 十字星
     Type: Weapon
     SubType: Mace
     Buy: 20
@@ -11899,7 +11899,7 @@ Body:
       bonus bMatk,.@r*3;
   - Id: 1599
     AegisName: Angra_Manyu
-    Name: 聖錘 十字星
+    Name: 聖錘 十字星
     Type: Weapon
     SubType: Mace
     Buy: 1
@@ -14832,7 +14832,7 @@ Body:
     Refineable: true
   - Id: 1710
     AegisName: CrossBow
-    Name: 十字弓
+    Name: 十字弓
     Type: Weapon
     SubType: Bow
     Buy: 17000
@@ -14853,7 +14853,7 @@ Body:
     Refineable: true
   - Id: 1711
     AegisName: CrossBow_
-    Name: 十字弓
+    Name: 十字弓
     Type: Weapon
     SubType: Bow
     Buy: 17000
@@ -14874,7 +14874,7 @@ Body:
     Refineable: true
   - Id: 1712
     AegisName: CrossBow__
-    Name: 十字弓
+    Name: 十字弓
     Type: Weapon
     SubType: Bow
     Buy: 17000
@@ -15044,7 +15044,7 @@ Body:
       bonus2 bResEff,Eff_Blind,5000;
   - Id: 1721
     AegisName: Repeting_CrossBow
-    Name: 十字機弩
+    Name: 十字機弩
     Type: Weapon
     SubType: Bow
     Buy: 89000
@@ -15399,7 +15399,7 @@ Body:
       autobonus "{ bonus bAspdRate,7; }",10+(getrefine()*2),7000,BF_WEAPON,"{ specialeffect2 EF_HASTEUP; }";
   - Id: 1738
     AegisName: BF_Bow1
-    Name: 戰鬥十字弓
+    Name: 戰鬥十字弓
     Type: Weapon
     SubType: Bow
     Buy: 20
@@ -15427,7 +15427,7 @@ Body:
       bonus bUnbreakableWeapon;
   - Id: 1739
     AegisName: BF_Bow2
-    Name: 戰鬥十字弓
+    Name: 戰鬥十字弓
     Type: Weapon
     SubType: Bow
     Buy: 20
@@ -19236,7 +19236,7 @@ Body:
       bonus2 bFixedCastrate,"HW_MAGICPOWER",-50;
   - Id: 2001
     AegisName: Divine_Cross
-    Name: 神聖十字之杖
+    Name: 神聖十字之杖
     Type: Weapon
     SubType: 2hStaff
     Buy: 20
@@ -19686,7 +19686,7 @@ Body:
       }
   - Id: 2017
     AegisName: Divine_Cross_
-    Name: (JRO)神聖十字之杖
+    Name: (JRO)神聖十字之杖
     Type: Weapon
     SubType: 2hStaff
     Buy: 20
@@ -20490,7 +20490,7 @@ Body:
       }
   - Id: 2045
     AegisName: Neev_Divine_Cross
-    Name: (JRO)尼芙十字之杖
+    Name: (JRO)尼芙十字之杖
     Type: Weapon
     SubType: 2hStaff
     Buy: 100000
@@ -21649,7 +21649,7 @@ Body:
       bonus bInt,1;
   - Id: 2130
     AegisName: Cross_Shield
-    Name: 十字鋼盾
+    Name: 十字鋼盾
     Type: Armor
     Buy: 20
     Weight: 2000
@@ -37258,7 +37258,7 @@ Body:
     View: 120
   - Id: 5036
     AegisName: Cross_Band
-    Name: 十字架髮圈
+    Name: 十字架髮圈
     Type: Armor
     Buy: 20
     Weight: 250
@@ -63575,7 +63575,7 @@ Body:
       bonus2 bAddEff,Eff_Poison,.@c;
   - Id: 15097
     AegisName: Hero_Hidden_Cloth
-    Name: 勇士十字彩衣
+    Name: 勇士十字彩衣
     Type: Armor
     Buy: 10
     Weight: 200
@@ -64672,7 +64672,7 @@ Body:
       autobonus "{ bonus bAtkEle,Ele_Ghost; }",max(1,.@r*2),60000,BF_WEAPON,"{ specialeffect2 EF_ASPERSIO; }";
   - Id: 15166
     AegisName: Necklace_Rosary
-    Name: 念珠十字架項鍊
+    Name: 念珠十字架項鍊
     Type: Armor
     Buy: 20
     Weight: 300
@@ -67644,7 +67644,7 @@ Body:
          bonus bBaseAtk,20;
   - Id: 16017
     AegisName: Bloody_Cross
-    Name: 嗜血十字錘
+    Name: 嗜血十字錘
     Type: Weapon
     SubType: Mace
     Buy: 20
@@ -68017,7 +68017,7 @@ Body:
       heal -1000,0;
   - Id: 16029
     AegisName: Noble_Cross
-    Name: 榮耀十架
+    Name: 榮耀十架
     Type: Weapon
     SubType: Mace
     Buy: 10
@@ -69332,7 +69332,7 @@ Body:
       bonus2 bSkillUseSP,"SC_TRIANGLESHOT",-(.@r*2);
   - Id: 18110
     AegisName: Big_CrossBow
-    Name: 超異能十字弓
+    Name: 超異能十字弓
     Type: Weapon
     SubType: Bow
     Buy: 56000
@@ -69435,7 +69435,7 @@ Body:
       bonus bAspd,-5;
   - Id: 18114
     AegisName: Velum_CrossBow
-    Name: 戰神十字弓
+    Name: 戰神十字弓
     Type: Weapon
     SubType: Bow
     Buy: 20
@@ -70133,7 +70133,7 @@ Body:
       bonus bLongAtkRate,getrefine();
   - Id: 18150
     AegisName: Probation_CrossBow
-    Name: 見習遊俠十字弓
+    Name: 見習遊俠十字弓
     Type: Weapon
     SubType: Bow
     Buy: 20
@@ -70238,7 +70238,7 @@ Body:
       }
   - Id: 18155
     AegisName: Neev_CrossBow
-    Name: (JRO)尼芙十字弓
+    Name: (JRO)尼芙十字弓
     Type: Weapon
     SubType: Bow
     Buy: 100000
@@ -70771,7 +70771,7 @@ Body:
          bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-2000;
   - Id: 18190
     AegisName: Ein_BHBOW
-    Name: 霹靂十字弓
+    Name: 霹靂十字弓
     Type: Weapon
     SubType: Bow
     Weight: 1700
@@ -70805,7 +70805,7 @@ Body:
       }
   - Id: 18191
     AegisName: G_Knight_Bow
-    Name: 守護騎士十字弓
+    Name: 守護騎士十字弓
     Type: Weapon
     SubType: Bow
     Weight: 1500
@@ -84167,7 +84167,7 @@ Body:
       }
   - Id: 19478
     AegisName: S_Circlet_Of_Time_GC
-    Name: 超時空頭冠(十字斬首者)
+    Name: 超時空頭冠(十字斬首者)
     Type: Armor
     View: 1892
     Defense: 10
@@ -93136,7 +93136,7 @@ Body:
       hateffect(HAT_EF_BLESSING_OF_ANGELS,false);
   - Id: 20405
     AegisName: C_Eremes_Scarf
-    Name: (服飾)闇●十字刺客圍巾(紅)
+    Name: (服飾)闇●十字刺客圍巾(紅)
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -94607,7 +94607,7 @@ Body:
     ArmorLevel: 1
   - Id: 20590
     AegisName: C_Evil_Druid_Cross
-    Name: (服飾)闇神官十字架
+    Name: (服飾)闇神官十字架
     Type: Armor
     View: 67
     Locations:
@@ -94752,7 +94752,7 @@ Body:
     View: 91
   - Id: 20612
     AegisName: C_Ten_G_Shield_TW
-    Name: (服飾)雙十守護者之盾
+    Name: (服飾)雙十守護者之盾
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -98542,7 +98542,7 @@ Body:
          bonus bBaseAtk,(((BaseLevel-70)/10)*10);
   - Id: 21001
     AegisName: Velum_Claymore
-    Name: 戰神十字巨劍
+    Name: 戰神十字巨劍
     Type: Weapon
     SubType: 2hSword
     Buy: 20
@@ -99131,7 +99131,7 @@ Body:
       }
   - Id: 21031
     AegisName: Neev_Claymore
-    Name: (JRO)尼芙十字巨劍
+    Name: (JRO)尼芙十字巨劍
     Type: Weapon
     SubType: 2hSword
     Buy: 100000
@@ -99491,7 +99491,7 @@ Body:
       }
   - Id: 21055
     AegisName: G_Knight_Sword
-    Name: 守護騎士十字巨劍
+    Name: 守護騎士十字巨劍
     Type: Weapon
     SubType: 2hSword
     Weight: 4000
@@ -99603,7 +99603,7 @@ Body:
       }
   - Id: 21063
     AegisName: Solid_Claymore
-    Name: 堅硬十字巨劍
+    Name: 堅硬十字巨劍
     Type: Weapon
     SubType: 2hSword
     Weight: 2500
@@ -106579,7 +106579,7 @@ Body:
       bonus2 bSkillAtk,"KN_PIERCE",20+.@r*5;
   - Id: 24257
     AegisName: S_Crusader_Shoes
-    Name: 影子十字軍戰靴
+    Name: 影子十字軍戰靴
     Type: Shadowgear
     Locations:
       Shadow_Shoes: true
@@ -106750,7 +106750,7 @@ Body:
       bonus2 bSkillUseSPrate,"KN_BOWLINGBASH",(20+(.@r*3));
   - Id: 24270
     AegisName: S_Crusader_Armor
-    Name: 影子十字軍鎧甲
+    Name: 影子十字軍鎧甲
     Type: Shadowgear
     Buy: 10
     Locations:
@@ -107190,7 +107190,7 @@ Body:
       bonus2 bSkillCooldown,"SR_RAMPAGEBLASTER",-1*(2000+500*.@r);
   - Id: 24294
     AegisName: S_Guillotine_Weapon
-    Name: 影子十字斬首者手套
+    Name: 影子十字斬首者手套
     Type: Shadowgear
     Buy: 10
     Jobs:
@@ -107435,7 +107435,7 @@ Body:
       bonus2 bSkillAtk,"SR_SKYNETBLOW",20+.@r*5;
   - Id: 24307
     AegisName: S_Guillotine_Shield
-    Name: 影子十字斬首者神盾
+    Name: 影子十字斬首者神盾
     Type: Shadowgear
     Buy: 10
     Jobs:
@@ -110535,7 +110535,7 @@ Body:
       bonus2 bMagicAddSize,Size_All,3+2*(getrefine()/3);
   - Id: 24497
     AegisName: S_Magnus_Weapon
-    Name: 影子十字驅魔手套
+    Name: 影子十字驅魔手套
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -110559,7 +110559,7 @@ Body:
       }
   - Id: 24498
     AegisName: S_Magnus_Pendant
-    Name: 影子十字驅魔墜子
+    Name: 影子十字驅魔墜子
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -110574,7 +110574,7 @@ Body:
       bonus2 bSkillAtk,"PR_MAGNUS",5+2*(getrefine()/2);
   - Id: 24499
     AegisName: S_Magnus_Earing
-    Name: 影子十字驅魔耳環
+    Name: 影子十字驅魔耳環
     Type: ShadowGear
     Jobs:
       Priest: true
@@ -111393,7 +111393,7 @@ Body:
       bonus2 bSkillUseSPrate,"GC_COUNTERSLASH",2+(getrefine()/2);
   - Id: 24545
     AegisName: S_Ripper_Weapon
-    Name: 影子迴旋十字斬手套
+    Name: 影子迴旋十字斬手套
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -111417,7 +111417,7 @@ Body:
       }
   - Id: 24546
     AegisName: S_Ripper_Pendant
-    Name: 影子迴旋十字斬墜子
+    Name: 影子迴旋十字斬墜子
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -111432,7 +111432,7 @@ Body:
       bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",5+2*(getrefine()/2);
   - Id: 24547
     AegisName: S_Ripper_Earing
-    Name: 影子迴旋十字斬耳環
+    Name: 影子迴旋十字斬耳環
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -112225,7 +112225,7 @@ Body:
       bonus bBaseAtk,10;
   - Id: 24593
     AegisName: S_GC_B_Weapon
-    Name: 影子仙境十字斬首者手套
+    Name: 影子仙境十字斬首者手套
     Type: ShadowGear
     Jobs:
       Assassin: true
@@ -113939,7 +113939,7 @@ Body:
       bonus bMatk,10;
   - Id: 24702
     AegisName: S_2Para_GC_Weapon
-    Name: 影子十字斬首者伊甸園高級手套
+    Name: 影子十字斬首者伊甸園高級手套
     Type: Shadowgear
     Jobs:
       Assassin: true
@@ -117058,7 +117058,7 @@ Body:
       autobonus "{ bonus bDefEle,Ele_Undead; sc_start SC_ENDURE,6000,1; }",40,6000,BF_WEAPON|BF_SHORT,"{ active_transform 1036,6000; specialeffect2 EF_POTION_BERSERK; /* todo replace by 3753 when implemented */ }";
   - Id: 28024
     AegisName: Probation_Katar
-    Name: 見習十字斬首者拳刃
+    Name: 見習十字斬首者拳刃
     Type: Weapon
     SubType: Katar
     Buy: 20
@@ -117267,7 +117267,7 @@ Body:
       }
   - Id: 28042
     AegisName: Reaper_Cross
-    Name: 死神十字拳刃
+    Name: 死神十字拳刃
     Type: Weapon
     SubType: Katar
     Buy: 20
@@ -117728,7 +117728,7 @@ Body:
       bonus4 bAutoSpellOnSkill,"BS_HAMMERFALL","SM_MAGNUM",3,50;
   - Id: 28116
     AegisName: Mine_Worker_Pickax
-    Name: 礦工十字鎬
+    Name: 礦工十字鎬
     Type: Weapon
     SubType: 2hAxe
     Buy: 10
@@ -117903,7 +117903,7 @@ Body:
       }
   - Id: 28127
     AegisName: Mine_Worker_Pickax_J
-    Name: (JRO)礦工十字鎬
+    Name: (JRO)礦工十字鎬
     Type: Weapon
     SubType: 2hAxe
     Weight: 400
@@ -118234,7 +118234,7 @@ Body:
       bonus3 bAddEff,Eff_Blind,500,ATF_LONG;
   - Id: 28201
     AegisName: Southern_Cross_R
-    Name: 南方十字星榴彈器
+    Name: 南方十字星榴彈器
     Type: Weapon
     SubType: Grenade
     Buy: 2800000
@@ -118253,7 +118253,7 @@ Body:
       bonus4 bAutoSpell,"KO_JYUMONJIKIRI",1,100,1;
   - Id: 28202
     AegisName: Southern_Cross_R_
-    Name: 南方十字星榴彈器
+    Name: 南方十字星榴彈器
     Type: Weapon
     SubType: Grenade
     Buy: 2800000
@@ -125058,7 +125058,7 @@ Body:
       hateffect(HAT_EF_DOUBLEGUMGANG,false);
   - Id: 31057
     AegisName: C_Eremes_Scarf_Black
-    Name: (服飾)闇●十字刺客圍巾(黑)
+    Name: (服飾)闇●十字刺客圍巾(黑)
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -126200,7 +126200,7 @@ Body:
     View: 1581
   - Id: 31181
     AegisName: C_Necklace_Rosary
-    Name: (服飾)念珠十字架項鍊
+    Name: (服飾)念珠十字架項鍊
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -129513,7 +129513,7 @@ Body:
     View: 1775
   - Id: 31545
     AegisName: C_Eremes_Scarf_BU
-    Name: (服飾)闇●十字刺客圍巾(藍)
+    Name: (服飾)闇●十字刺客圍巾(藍)
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -129898,7 +129898,7 @@ Body:
     View: 1797
   - Id: 31587
     AegisName: C_NationalDay_helmet_TW
-    Name: (服飾)雙十國慶帽
+    Name: (服飾)雙十國慶帽
     Type: Armor
     Locations:
       Costume_Head_Top: true
@@ -132090,7 +132090,7 @@ Body:
     View: 1940
   - Id: 31835
     AegisName: C_2019_D10_Muffler_TW
-    Name: (服飾)雙十國慶紀念圍巾
+    Name: (服飾)雙十國慶紀念圍巾
     Type: Armor
     Locations:
       Costume_Head_Low: true
@@ -133483,7 +133483,7 @@ Body:
       }
   - Id: 32023
     AegisName: Argen_Blanco
-    Name: 複合金十字槍
+    Name: 複合金十字槍
     Type: Weapon
     SubType: 1hSpear
     Buy: 20
@@ -134888,7 +134888,7 @@ Body:
       }
   - Id: 32354
     AegisName: Farthezan_J
-    Name: (JRO)十字軍長劍
+    Name: (JRO)十字軍長劍
     Type: Weapon
     SubType: 1hSword
     Weight: 1200
@@ -135370,7 +135370,7 @@ Body:
       .@r = getrefine(); bonus bBaseAtk,10*(.@r/2); bonus bAspdRate,2*(.@r/3); if (.@r>=8) bonus2 bSkillAtk,"GN_CART_TORNADO",5*getskilllv("AM_AXEMASTERY"); if (.@r>=11) bonus3 bAutoSpell,"GN_CART_TORNADO",max(2,getskilllv("GN_CART_TORNADO")),50; /* Unknow Rates */
   - Id: 400026
     AegisName: 400026
-    Name: 戰魂頭盔(十字斬首者)
+    Name: 戰魂頭盔(十字斬首者)
     Type: Armor
     Buy: 20
     Defense: 10
@@ -138368,7 +138368,7 @@ Body:
     View: 2198
   - Id: 400216
     AegisName: Viva_Adul_Hat_GC1
-    Name: 信仰之盔(十字斬首者)
+    Name: 信仰之盔(十字斬首者)
     Type: Armor
     Weight: 100
     Defense: 10
@@ -138410,7 +138410,7 @@ Body:
       bonus bShortAtkRate,7*(.@r/4);
   - Id: 400217
     AegisName: Viva_Adul_Hat_GC2
-    Name: 信仰之盔 II(十字斬首者)
+    Name: 信仰之盔 II(十字斬首者)
     Type: Armor
     Weight: 100
     Defense: 10
@@ -140374,7 +140374,7 @@ Body:
       }
   - Id: 400382
     AegisName: GoodnEvil_Circlet_SHC
-    Name: 善惡之冠(十字影武)
+    Name: 善惡之冠(十字影武)
     Type: Armor
     Weight: 100
     Defense: 10
@@ -157179,7 +157179,7 @@ Body:
       bonus bAllStats,2;
   - Id: 490164
     AegisName: Hero_Token_SHC
-    Name: 英雄之証(十字影武)
+    Name: 英雄之証(十字影武)
     Type: Armor
     Weight: 200
     Defense: 10
@@ -166369,7 +166369,7 @@ Body:
       }
   - Id: 550011
     AegisName: AN_B_Wand
-    Name: 大主教十字驅魔謳歌權杖
+    Name: 大主教十字驅魔謳歌權杖
     Type: Weapon
     SubType: Staff
     Attack: 150
@@ -173127,7 +173127,7 @@ Body:
       }
   - Id: 590015
     AegisName: Fourth_1h_Mace
-    Name: 覺醒光乙太十字錘
+    Name: 覺醒光乙太十字錘
     Type: Weapon
     SubType: Mace
     Weight: 1300
@@ -175369,7 +175369,7 @@ Body:
       }
   - Id: 610013
     AegisName: RC_B_Katar
-    Name: 十字斬首者迴旋十字刀刃拳刃
+    Name: 十字斬首者迴旋十字刀刃拳刃
     Type: Weapon
     SubType: Katar
     Attack: 200
@@ -175810,7 +175810,7 @@ Body:
       }
   - Id: 610028
     AegisName: CA_B_Katar
-    Name: 十字斬首者反擊斬黑暗瞬間拳刃
+    Name: 十字斬首者反擊斬黑暗瞬間拳刃
     Type: Weapon
     SubType: Katar
     Attack: 240
@@ -178980,7 +178980,7 @@ Body:
       }
   - Id: 650009
     AegisName: Adulter_F_C_Humma
-    Name: 虛假信徒十字風魔飛鏢
+    Name: 虛假信徒十字風魔飛鏢
     Type: Weapon
     SubType: Huuma
     Weight: 2200
@@ -179307,7 +179307,7 @@ Body:
       bonus bLongAtkRate,3*(.@r/4);
   - Id: 650021
     AegisName: Vivatus_F_C_Humma
-    Name: 活力信念十字風魔飛鏢
+    Name: 活力信念十字風魔飛鏢
     Type: Weapon
     SubType: Huuma
     Weight: 2200
@@ -180413,7 +180413,7 @@ Body:
       }
   - Id: 700030
     AegisName: Adulter_F_C_Bow
-    Name: 虛假信徒十字弓
+    Name: 虛假信徒十字弓
     Type: Weapon
     SubType: Bow
     Weight: 1500
@@ -180519,7 +180519,7 @@ Body:
       }
   - Id: 700033
     AegisName: Vivatus_F_C_Bow
-    Name: 活力信念十字弓
+    Name: 活力信念十字弓
     Type: Weapon
     SubType: Bow
     Weight: 1500
@@ -185852,7 +185852,7 @@ Body:
       hateffect(HAT_EF_LEVEL99_WHITE,true);
   - Id: 400368
     AegisName: 20th_Anniversary_Hat_TW
-    Name: RO二十週年限定帽
+    Name: RO二十週年限定帽
     Type: Armor
     Weight: 100
     Slots: 1
@@ -188263,3 +188263,2634 @@ Body:
       .@r = getrefine();
       bonus bAllTraitStats,5;
       bonus bAllStats,.@r*2;
+  - Id: 55001 # UU裝備起點
+    AegisName: Headset_OSTLV1
+    Name: 音符耳機LV1
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 4
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 220
+    Script: |
+      bonus bMatkRate,5;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,20;
+  - Id: 55002
+    AegisName: Headset_OSTLV2
+    Name: 音符耳機LV2
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 4
+    Slots: 2
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 220
+    Script: |
+      bonus bMatkRate,10;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,40;
+      bonus bNoGemStone;
+      bonus bUseSPrate,80;
+  - Id: 55003
+    AegisName: Headset_OSTLV3
+    Name: 音符耳機LV3
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 4
+    Slots: 3
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 220
+    Script: |
+      bonus bMatkRate,15;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,60;
+      bonus bNoGemStone;
+      bonus bUseSPrate,40;
+  - Id: 55004
+    AegisName: Headset_OSTLV4
+    Name: 音符耳機LV4
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 220
+    Script: |
+      bonus bMatkRate,20;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,80;
+      bonus bNoGemStone;
+      bonus2 bMagicAddEle,Ele_All,10;
+  - Id: 55005
+    AegisName: Headset_OSTLV5
+    Name: 音符耳機LV5
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 220
+    Script: |
+      bonus bMatkRate,25;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus bNoGemStone;
+      bonus2 bMagicAddEle,Ele_All,20;
+  - Id: 56001
+    AegisName: Flying_AngelLV1
+    Name: 天使羽翼LV1
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    View: 264
+    Script: |
+      bonus bAtkRate,5;
+      bonus bCritAtkRate,5;
+  - Id: 56002
+    AegisName: Flying_AngelLV2
+    Name: 天使羽翼LV2
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    View: 264
+    Script: |
+      bonus bAtkRate,10;
+      bonus bCritAtkRate,10;
+  - Id: 56003
+    AegisName: Flying_AngelLV3
+    Name: 天使羽翼LV3
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 3
+    View: 264
+    Script: |
+      bonus bAtkRate,15;
+      bonus bCritAtkRate,15;
+  - Id: 56004
+    AegisName: Flying_AngelLV4
+    Name: 天使羽翼LV4
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    View: 264
+    Script: |
+      bonus bAtkRate,20;
+      bonus bAllStats,15;
+      bonus bCritAtkRate,20;
+  - Id: 56005
+    AegisName: Flying_AngelLV5
+    Name: 天使羽翼LV5
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    View: 264
+    Script: |
+      bonus bAtkRate,25;
+      bonus bAllStats,30;
+      bonus bCritAtkRate,30;
+  - Id: 56006
+    AegisName: Rabrplug
+    Name: 地仙之冠
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    View: 1327
+    Script: |
+      bonus bMatkRate,45;
+      bonus bAtkRate,45;
+      bonus bAllStats,30;
+      bonus bCritAtkRate,50;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus bNoGemStone;
+      bonus2 bMagicAddEle,Ele_All,40;
+  - Id: 56007
+    AegisName: Flyin13
+    Name: 天仙之冠
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    View: 1682
+    Script: |
+      bonus bMatkRate,90;
+      bonus bAtkRate,90;
+      bonus bAllStats,30;
+      bonus bCritAtkRate,100;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus bNoGemStone;
+      bonus2 bMagicAddEle,Ele_All,100;
+      bonus2 bSubSize,Size_All,10;
+  - Id: 56008
+    AegisName: Flyin14
+    Name: 天神之冠
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    View: 1151
+    Script: |
+      bonus bMatkRate,150;
+      bonus bAtkRate,150;
+      bonus bAllStats,50;
+      bonus bCritAtkRate,200;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus bNoGemStone;
+      bonus2 bMagicAddEle,Ele_All,200;
+      bonus2 bSubSize,Size_All,15;
+      bonus bBreakWeaponRate,30;
+  - Id: 58001
+    AegisName: Adventurere's_Suit_LV1
+    Name: 冒險衣LV1
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus bMaxHP,10000;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+  - Id: 58002
+    AegisName: Adventurere's_Suit_LV2
+    Name: 冒險衣LV2
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 2
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus bMaxHP,20000;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+  - Id: 58003
+    AegisName: Adventurere's_Suit_LV3
+    Name: 冒險衣LV3
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 3
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus bMaxHP,30000;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+  - Id: 58004
+    AegisName: Adventurere's_Suit_LV4
+    Name: 冒險衣LV4
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 4
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus bMaxHP,40000;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+  - Id: 58005
+    AegisName: Adventurere's_Suit_LV5
+    Name: 冒險衣LV5
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 4
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus bMaxHP,50000;
+      bonus bUnbreakableArmor;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+      .@r = getrefine();
+      bonus2 bAddEle,Ele_All,(.@r/3)*3;
+      bonus2 bMagicAddEle,Ele_All,(.@r/3)*3;
+  - Id: 58006
+    AegisName: Adrere's_Suit_LV5
+    Name: 妖神輕衣
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 4
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bMaxHPrate,10;
+      }
+      if (.@r>=16) {
+         bonus bAtkRate,10;
+         bonus bMatkRate,10;
+      }
+      bonus bAllStats,50;
+      bonus bMaxHP,80000;
+      bonus bUnbreakableArmor;
+      bonus bVit,-50;
+      bonus bLuk,-50;
+      bonus2 bSubSize,Size_All,9;
+      .@r = getrefine();
+      bonus2 bAddEle,Ele_All,(.@r/3)*5;
+      bonus2 bMagicAddEle,Ele_All,(.@r/3)*5;
+  - Id: 58007
+    AegisName: Adventurers_Suit_LV5
+    Name: 魔王重甲
+    Type: Armor
+    Buy: 1000
+    Weight: 300
+    Defense: 20
+    Slots: 4
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bMaxHPrate,15;
+      }
+      if (.@r>=16) {
+         bonus bAtkRate,20;
+         bonus bMatkRate,20;
+      }
+      bonus bAllStats,70;
+      bonus bMaxHP,200000;
+      bonus bUnbreakableArmor;
+      bonus bVit,-70;
+      bonus bLuk,-70;
+      bonus2 bSubSize,Size_All,20;
+      bonus bMagicAtkDef,20;
+      .@r = getrefine();
+      bonus2 bAddEle,Ele_All,(.@r/3)*10;
+      bonus2 bMagicAddEle,Ele_All,(.@r/3)*10;
+  - Id: 54001
+    AegisName: Hallow_g
+    Name: GM神˙戒
+    Type: Armor
+    Slots: 4
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true 
+      NoAuction: true
+    Script: |
+      bonus bAllStats,1500;
+      bonus bCritAtkRate,300;
+      bonus bLongAtkDef,100;
+      bonus bNearAtkDef,100;
+      bonus bSpeedRate,500;
+      bonus bFixedCastrate,-100;
+      bonus bDelayrate,-100; 
+      bonus bAtkRate,500;
+      bonus bMatkRate,500;
+      bonus2 bIgnoreMdefClassRate,Class_Boss,100;
+      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+      bonus2 bAddClass,Class_All,500;
+      bonus2 bMagicAtkEle,Ele_All,500;
+      bonus2 bSubEle,Ele_All,100;
+      bonus bMaxHPrate,1500;
+      bonus3 bAutoSpell,"AB_ADORAMUS",10,350;
+      bonus3 bAutoSpell,"SO_DIAMONDDUST",10,350;
+      bonus3 bAutoSpell,"SO_PSYCHIC_WAVE",10,350;
+      bonus bFlee2,100;
+  - Id: 57001
+    AegisName: BlushLV1
+    Name: 紅暈LV1
+    Type: Armor
+    Slots: 1
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 125
+    Script: |
+      bonus bAllStats,20;
+      bonus bVit,-20;              
+      bonus bLuk,-20;
+      bonus bAgi,-20;
+      bonus bAddMaxWeight,10000;
+  - Id: 57002
+    AegisName: BlushLV2
+    Name: 紅暈LV2
+    Type: Armor
+    Slots: 2
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 125
+    Script: |
+      bonus bAllStats,40;
+      bonus bVit,-40;              
+      bonus bLuk,-40;
+      bonus bAgi,-40;
+      bonus bAddMaxWeight,10000;
+  - Id: 57003
+    AegisName: BlushLV3
+    Name: 紅暈LV3
+    Type: Armor
+    Slots: 3
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 125
+    Script: |
+      bonus bAllStats,60;
+      bonus bVit,-60;              
+      bonus bLuk,-60;
+      bonus bAgi,-60;
+      bonus bAddMaxWeight,10000;
+  - Id: 57004
+    AegisName: BlushLV4
+    Name: 紅暈LV4
+    Type: Armor
+    Slots: 4
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 125
+    Script: |
+      bonus bAllStats,80;
+      bonus bVit,-80;              
+      bonus bLuk,-80;
+      bonus bAgi,-80;
+      bonus bAddMaxWeight,10000;
+  - Id: 57005
+    AegisName: BlushLV5
+    Name: 紅暈LV5
+    Type: Armor
+    Slots: 4
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 125
+    Script: |
+      bonus bAllStats,100;
+      bonus bVit,-100;              
+      bonus bLuk,-100;
+      bonus bAgi,-100;
+      bonus bAddMaxWeight,10000;
+  - Id: 58101
+    AegisName: Sandals_LV1
+    Name: 輕便鞋LV1
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 1
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bSpeedRate,120;
+      bonus bAddMaxWeight,250000;
+      bonus bFixedCast,-100;
+      skill "MC_OVERCHARGE",10;
+  - Id: 58102
+    AegisName: Sandals_LV2
+    Name: 輕便鞋LV2
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 2
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bSpeedRate,150;
+      bonus bAddMaxWeight,250000;
+      bonus bFixedCast,-200;
+      skill "MC_OVERCHARGE",10;
+  - Id: 58103
+    AegisName: Sandals_LV3
+    Name: 輕便鞋LV3
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 3
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bSpeedRate,180;
+      bonus bAddMaxWeight,250000;
+      bonus bFixedCast,-300;
+      skill "MC_OVERCHARGE",10;
+  - Id: 58104
+    AegisName: Sandals_LV4
+    Name: 輕便鞋LV4
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 4
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bSpeedRate,210;
+      bonus bAddMaxWeight,250000;
+      bonus bFixedCast,-400;
+      skill "MC_OVERCHARGE",10;
+  - Id: 58105
+    AegisName: Sandals_LV5
+    Name: 輕便鞋LV5
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 4
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      skill "MC_OVERCHARGE",10;
+      bonus bSpeedRate,250;
+      bonus bUnbreakableShoes;
+      bonus bAddMaxWeight,250000;
+      bonus bFixedCast,-500;
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bFixedCast,-500;
+      }
+  - Id: 58106
+    AegisName: Sadalswd
+    Name: 恨天高
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 5
+    Slots: 4
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      skill "MC_OVERCHARGE",10;
+      bonus bSpeedRate,300;
+      bonus bUnbreakableShoes;
+      bonus bAddMaxWeight,350000;
+      bonus2 bSubSize,Size_All,10;
+      bonus bFixedCastrate,-100;
+      .@r = getrefine();
+      bonus2 bAddClass,Class_All,(.@r/4)*4;
+      bonus2 bMagicAddClass,Class_All,(.@r/4)*4;
+  - Id: 58107
+    AegisName: Sadalswd_
+    Name: 黑武士
+    Type: Armor
+    Buy: 400
+    Weight: 200
+    Defense: 30
+    Slots: 4
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      skill "MC_OVERCHARGE",10;
+      bonus bSpeedRate,400;
+      bonus bUnbreakableShoes;
+      bonus bAddMaxWeight,350000;
+      bonus2 bSubSize,Size_All,25;
+      bonus bFixedCastrate,-100;
+      bonus bDef,30;
+      bonus bMdef,30;
+      .@r = getrefine();
+      bonus2 bAddClass,Class_All,(.@r/3)*5;
+      bonus2 bMagicAddClass,Class_All,(.@r/3)*5;
+      if (.@r>=13) {
+         bonus bCritDefRate,25;
+      }
+      .@r = getrefine();
+      if (.@r>=16) {
+         bonus bNoWeaponDamage,15;
+      }
+  - Id: 58201
+    AegisName: HoodLV1
+    Name: 連帽披肩LV1
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 1
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,20;
+      bonus2 bSubEle,Ele_Neutral,10;
+      bonus bVit,-20;
+      bonus bLuk,-20;
+      bonus bAddMaxWeight,50000;
+  - Id: 58202
+    AegisName: HoodLV2
+    Name: 連帽披肩LV2
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 2
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,20;
+      bonus2 bSubEle,Ele_Neutral,20;
+      bonus bVit,-20;
+      bonus bLuk,-20;
+      bonus bAddMaxWeight,50000;
+  - Id: 58203
+    AegisName: HoodLV3
+    Name: 連帽披肩LV3
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 3
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,20;
+      bonus2 bSubEle,Ele_Neutral,30;
+      bonus bVit,-20;
+      bonus bLuk,-20;
+      bonus bAddMaxWeight,50000;
+  - Id: 58204
+    AegisName: HoodLV4
+    Name: 連帽披肩LV4
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,20;
+      bonus2 bSubEle,Ele_Neutral,40;
+      bonus bVit,-20;
+      bonus bLuk,-20;
+      bonus bAddMaxWeight,50000;
+  - Id: 58205
+    AegisName: HoodLV5
+    Name: 連帽披肩LV5
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,20;
+      bonus2 bSubEle,Ele_Neutral,50;
+      bonus bUnbreakableGarment;
+      bonus bVit,-20;
+      bonus bLuk,-20;
+      bonus bAddMaxWeight,50000;
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bMaxHPrate,3;
+         bonus bBaseAtk,50;
+         bonus bMatk,50;
+      }
+  - Id: 58206
+    AegisName: Hooaw
+    Name: 很玄斗
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,30;
+      bonus2 bSubEle,Ele_Neutral,40;
+      bonus bUnbreakableGarment;
+      bonus bVit,-30;
+      bonus bLuk,-30;
+      bonus bNearAtkDef,10;
+      bonus bLongAtkDef,10;
+      bonus bAddMaxWeight,50000;
+      .@r = getrefine();
+      if (.@r>=16) {
+         bonus bMaxHPrate,8;
+         skill "TK_SEVENWIND",5;
+      }
+  - Id: 58207
+    AegisName: Hooaw_
+    Name: 妹斗
+    Type: Armor
+    Buy: 1000
+    Weight: 200
+    Defense: 4
+    Slots: 4
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bAllStats,50;
+      bonus2 bSubEle,Ele_Neutral,70;
+      bonus bUnbreakableGarment;
+      bonus bVit,-50;
+      bonus bLuk,-50;
+      bonus bNearAtkDef,15;
+      bonus bLongAtkDef,15;
+      bonus bAddMaxWeight,50000;
+      bonus2 bResEff,Eff_Sleep,10000;
+      bonus2 bResEff,Eff_Stone,10000;
+      bonus2 bResEff,Eff_Freeze,10000;
+      .@r = getrefine();
+      bonus2 bSubDefEle,Ele_All,@r*2;
+      bonus2 bMagicSubDefEle,Ele_All,@r*2;
+      bonus2 bAddSize,Size_All,@r*4;
+      bonus2 bMagicAddSize,Size_All,@r*4;
+      if (.@r>=14) {
+         bonus bMaxHPrate,10;
+         skill "TK_SEVENWIND",5;
+      }
+  - Id: 54101
+    AegisName: Donut_In_MouthLV1
+    Name: 嘴咬甜甜圈LV1
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 1
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 569
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAllStats,25;
+      bonus bVit,-25;
+      bonus bLuk,-25;
+      bonus bAgi,-25;
+  - Id: 54102
+    AegisName: Donut_In_MouthLV2
+    Name: 嘴咬甜甜圈LV2
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 2
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 569
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAllStats,45;
+      bonus bVit,-45;
+      bonus bLuk,-45;
+      bonus bAgi,-45;
+  - Id: 54103
+    AegisName: Donut_In_MouthLV3
+    Name: 嘴咬甜甜圈LV3
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 3
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 569
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAllStats,65;
+      bonus bVit,-65;
+      bonus bLuk,-65;
+      bonus bAgi,-65;
+  - Id: 54104
+    AegisName: Donut_In_MouthLV4
+    Name: 嘴咬甜甜圈LV4
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 4
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 569
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAllStats,85;
+      bonus bVit,-85;
+      bonus bLuk,-85;
+      bonus bAgi,-85;
+  - Id: 54105
+    AegisName: Donut_In_MouthLV5
+    Name: 嘴咬甜甜圈LV5
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 4
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 569
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAllStats,85;
+      bonus3 bAutoSpell,"PR_LEXAETERNA",1,200;
+      bonus bVit,-85;
+      bonus bLuk,-85;
+      bonus bAgi,-85;
+  - Id: 54106
+    AegisName: Donut_In_Mo
+    Name: 喵
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 4
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 1689
+    Refineable: true
+    Script: |
+      bonus bAllStats,110;
+      bonus3 bAutoSpell,"PR_LEXAETERNA",1,1500;
+      bonus bVit,-110;
+      bonus bLuk,-110;
+      bonus bAgi,-110;
+      bonus2 bSubRace,RC_DemiHuman,15;
+      .@r = getrefine();
+      bonus bMaxHP,(.@r/3)*3000;
+  - Id: 54107
+    AegisName: Donut_In_Mo_
+    Name: 喵喵
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 1
+    Slots: 4
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 1
+    View: 1689
+    Refineable: true
+    Script: |
+      bonus bAllStats,150;
+      bonus3 bAutoSpell,"PR_LEXAETERNA",1,2500;
+      bonus bVit,-150;
+      bonus bLuk,-150;
+      bonus bAgi,-150;
+      bonus2 bSubRace,RC_DemiHuman,20;
+      bonus bCritDefRate,15;
+      .@r = getrefine();
+      bonus bMaxHP,(.@r/3)*6000;
+  - Id: 58301
+    AegisName: Lunatic_BroochLV1
+    Name: 瘋兔別針LV1
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,25;
+      bonus bBaseAtk,50;
+      bonus bMatk,50;
+      bonus bVit,-25;              
+      bonus bLuk,-25;
+      bonus bAgi,-25;
+      bonus bAddMaxWeight,50000;
+  - Id: 58302
+    AegisName: Lunatic_BroochLV2
+    Name: 瘋兔別針LV2
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Slots: 2
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,35;
+      bonus bBaseAtk,100;
+      bonus bMatk,100;
+      bonus bVit,-35;              
+      bonus bLuk,-35;
+      bonus bAgi,-35;
+      bonus bAddMaxWeight,50000;
+  - Id: 58303
+    AegisName: Lunatic_BroochLV3
+    Name: 瘋兔別針LV3
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Slots: 3
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,45;
+      bonus bBaseAtk,150;
+      bonus bMatk,150;
+      bonus bVit,-45;              
+      bonus bLuk,-45;
+      bonus bAgi,-45;
+      bonus bAddMaxWeight,50000;
+  - Id: 58304
+    AegisName: Lunatic_BroochLV4
+    Name: 瘋兔別針LV4
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Slots: 4
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,55;
+      bonus bBaseAtk,200;
+      bonus bMatk,200;
+      bonus bVit,-55;              
+      bonus bLuk,-55;
+      bonus bAgi,-55;
+      bonus bAddMaxWeight,50000;
+  - Id: 58305
+    AegisName: Lunatic_BroochLV5
+    Name: 瘋兔別針LV5
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Slots: 4
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,65;
+      bonus bBaseAtk,250;
+      bonus bMatk,250;
+      bonus bVit,-65;              
+      bonus bLuk,-65;
+      bonus bAgi,-65;
+      bonus bAddMaxWeight,50000;
+  - Id: 58306
+    AegisName: S_Power_PenLV1
+    Name: 悠悠影子墜子LV1
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllStats,10;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+      bonus bVit,-10;               
+      bonus bLuk,-10;
+  - Id: 58307
+    AegisName: S_Power_PenLV2
+    Name: 悠悠影子墜子LV2
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllStats,20;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+      bonus bVit,-20;               
+      bonus bLuk,-20;
+  - Id: 58308
+    AegisName: S_Power_PenLV3
+    Name: 悠悠影子墜子LV3
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllStats,30;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+      bonus bVit,-30;               
+      bonus bLuk,-30;
+  - Id: 58309
+    AegisName: S_Power_PenLV4
+    Name: 悠悠影子墜子LV4
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bAllStats,40;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+      bonus bVit,-40;               
+      bonus bLuk,-40;
+  - Id: 58310
+    AegisName: S_Power_PenLV5
+    Name: 悠悠影子墜子LV5
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bAllStats,50;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+      bonus bVit,-50;               
+      bonus bLuk,-50;
+  - Id: 58311
+    AegisName: S_PowerLV1
+    Name: 悠悠影子耳環LV1
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllTraitStats,3;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+  - Id: 58312
+    AegisName: S_PowerLV2
+    Name: 悠悠影子耳環LV2
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllTraitStats,6;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+  - Id: 58313
+    AegisName: S_PowerLV3
+    Name: 悠悠影子耳環LV3
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllTraitStats,9;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+  - Id: 58314
+    AegisName: S_PowerLV4
+    Name: 悠悠影子耳環LV4
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bAllTraitStats,12;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+  - Id: 58315
+    AegisName: S_PowerLV5
+    Name: 悠悠影子耳環LV5
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bAllTraitStats,15;
+      .@r = getrefine();
+      bonus bMaxHP,.@r*10;
+      bonus bAllStats,.@r;
+  - Id: 58330
+    AegisName: S_Crusader_ArmorLV1
+    Name: 悠悠影子鎧甲LV1
+    Type: Shadowgear
+    Buy: 10
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bMaxHP,-45000;
+      bonus2 bAddSize,Size_All,50;
+      bonus2 bMagicAddSize,Size_Small,50;
+      bonus2 bMagicAddSize,Size_Medium,50;
+      bonus2 bMagicAddSize,Size_Large,50;
+      .@r = getrefine();
+      bonus bShortAtkRate,.@r*2;
+      bonus bLongAtkRate,.@r*2;
+      bonus2 bMagicAddSize,Size_Small,.@r*2;
+      bonus2 bMagicAddSize,Size_Medium,.@r*2;
+      bonus2 bMagicAddSize,Size_Large,.@r*2;
+  - Id: 58331
+    AegisName: S_Crusader_ArmorLV2
+    Name: 悠悠影子鎧甲LV2
+    Type: Shadowgear
+    Buy: 10
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bMaxHP,-40000;
+      bonus2 bAddSize,Size_All,80;
+      bonus2 bMagicAddSize,Size_Small,80;
+      bonus2 bMagicAddSize,Size_Medium,80;
+      bonus2 bMagicAddSize,Size_Large,80;
+      .@r = getrefine();
+      bonus bShortAtkRate,.@r*2;
+      bonus bLongAtkRate,.@r*2;
+      bonus2 bMagicAddSize,Size_Small,.@r*2;
+      bonus2 bMagicAddSize,Size_Medium,.@r*2;
+      bonus2 bMagicAddSize,Size_Large,.@r*2;
+  - Id: 58332
+    AegisName: S_Crusader_ArmorLV3
+    Name: 悠悠影子鎧甲LV3
+    Type: Shadowgear
+    Buy: 10
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bMaxHP,-35000;
+      bonus2 bAddSize,Size_All,120;
+      bonus2 bMagicAddSize,Size_Small,120;
+      bonus2 bMagicAddSize,Size_Medium,120;
+      bonus2 bMagicAddSize,Size_Large,120;
+      .@r = getrefine();
+      bonus bShortAtkRate,.@r*2;
+      bonus bLongAtkRate,.@r*2;
+      bonus2 bMagicAddSize,Size_Small,.@r*2;
+      bonus2 bMagicAddSize,Size_Medium,.@r*2;
+      bonus2 bMagicAddSize,Size_Large,.@r*2;
+  - Id: 58333
+    AegisName: S_Crusader_ArmorLV4
+    Name: 悠悠影子鎧甲LV4
+    Type: Shadowgear
+    Buy: 10
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bMaxHP,-30000;
+      bonus2 bAddSize,Size_All,180;
+      bonus2 bMagicAddSize,Size_Small,180;
+      bonus2 bMagicAddSize,Size_Medium,180;
+      bonus2 bMagicAddSize,Size_Large,180;
+      .@r = getrefine();
+      bonus bShortAtkRate,.@r*2;
+      bonus bLongAtkRate,.@r*2;
+      bonus2 bMagicAddSize,Size_Small,.@r*2;
+      bonus2 bMagicAddSize,Size_Medium,.@r*2;
+      bonus2 bMagicAddSize,Size_Large,.@r*2;
+  - Id: 58334
+    AegisName: S_Crusader_ArmorLV5
+    Name: 悠悠影子鎧甲LV5
+    Type: Shadowgear
+    Buy: 10
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 3
+    Script: |
+      bonus bMaxHP,-25000;
+      bonus2 bAddSize,Size_All,240;
+      bonus2 bMagicAddSize,Size_Small,240;
+      bonus2 bMagicAddSize,Size_Medium,240;
+      bonus2 bMagicAddSize,Size_Large,240;
+      .@r = getrefine();
+      bonus bShortAtkRate,.@r*2;
+      bonus bLongAtkRate,.@r*2;
+      bonus2 bMagicAddSize,Size_Small,.@r*2;
+      bonus2 bMagicAddSize,Size_Medium,.@r*2;
+      bonus2 bMagicAddSize,Size_Large,.@r*2;
+  - Id: 58401
+    AegisName: S_E12ed_apon
+    Name: 影子手套LV1
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bAllStats,10;
+      bonus2 bIgnoreDefRaceRate,C_All,25;
+      bonus2 bIgnoreMdefRaceRate,C_All,25;
+      .@r = getrefine();
+      bonus bMaxHP,(.@r/5)*1000;
+  - Id: 58335
+    AegisName: S_UU_ShoesLV1
+    Name: 悠悠影子戰靴LV1
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 1
+    Script: |
+      bonus bPAtkRate,15;
+      bonus bSMatkRate,15;
+      bonus bDef,-450;
+      bonus bMdef,-450;
+  - Id: 58336
+    AegisName: S_UU_ShoesLV2
+    Name: 悠悠影子戰靴LV2
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 2
+    Script: |
+      bonus bPAtkRate,20;
+      bonus bSMatkRate,20;
+      bonus bDef,-300;
+      bonus bMdef,-300;
+  - Id: 58337
+    AegisName: S_UU_ShoesLV3
+    Name: 悠悠影子戰靴LV3
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 3
+    Script: |
+      bonus bPAtkRate,25;
+      bonus bSMatkRate,25;
+      bonus bDef,-200;
+      bonus bMdef,-200;
+  - Id: 58338
+    AegisName: S_UU_ShoesLV4
+    Name: 悠悠影子戰靴LV4
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    Script: |
+      bonus bPAtkRate,30;
+      bonus bSMatkRate,30;
+      bonus bDef,-100;
+      bonus bMdef,-100;
+  - Id: 58339
+    AegisName: S_UU_ShoesLV5
+    Name: 悠悠影子戰靴LV5
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Slots: 4
+    Script: |
+      bonus bPAtkRate,60;
+      bonus bSMatkRate,60;
+      bonus bDef,-100;
+      bonus bMdef,-100;
+  - Id: 59201
+    AegisName: Illuon_nter_BowLV1
+    Name: 老弓 lv1
+    Type: Weapon
+    SubType: Bow
+    Weight: 1
+    Attack: 250
+    Range: 5
+    Slots: 4
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus bDex,35;
+      bonus bAgi,35;
+      bonus3 bAutoSpell,"AC_DOUBLE",10,50;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus bCritAtkRate,15;
+      }
+  - Id: 59202
+    AegisName: Illusiunter_BowLV2
+    Name: 老弓 lv2
+    Type: Weapon
+    SubType: Bow
+    Weight: 1
+    Attack: 350
+    Range: 5
+    Slots: 4
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bAddClass,Class_Boss,25;
+      bonus bDex,50;
+      bonus bAgi,50;
+      bonus3 bAutoSpell,"AC_DOUBLE",10,50;
+      bonus2 bSkillAtk,"NPC_ARROWSTORM",50;
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus bCritAtkRate,25;
+      }
+  - Id: 59203
+    AegisName: Illuon_Huter_BowLV3
+    Name: 老弓 lv3
+    Type: Weapon
+    SubType: Bow
+    Weight: 1
+    Attack: 450
+    Range: 5
+    Slots: 4
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      bonus3 bAutoSpell,"RA_AIMEDBOLT",10,400;
+      bonus2 bAddClass,Class_Boss,35;
+      bonus bDex,110;
+      bonus bAgi,90;
+      bonus2 bSkillAtk,"NPC_ARROWSTORM",80;
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",70;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus bCritAtkRate,45;
+      }
+      .@r = getrefine();
+      if (.@r>=16) {
+         bonus bCritAtkRate,20;
+         bonus bVit,35;
+         bonus2 bAddClass,Class_Boss,20;
+      }
+  - Id: 59301
+    AegisName: Illuon_Hut_BowLV4
+    Name: 老弓 lv4
+    Type: Weapon
+    SubType: Bow
+    Weight: 1
+    Attack: 650
+    Range: 5
+    Slots: 4
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",5;
+      bonus3 bAutoSpell,"RA_AIMEDBOLT",10,600;
+      bonus2 bSkillAtk,"RA_AIMEDBOLT",100;
+      bonus3 bAutoSpell,"SA_DISPELL",5,200;
+      bonus bDex,180;
+      bonus bAgi,120;
+      bonus2 bSkillAtk,"NPC_ARROWSTORM",130;
+      bonus2 bAddClass,Class_Boss,55;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus bCritAtkRate,45;
+      }
+      .@r = getrefine();
+      if (.@r>=16) {
+         bonus bCritAtkRate,40;
+         bonus2 bAddClass,Class_Boss,30;
+         bonus bVit,65;
+      }
+  - Id: 59204
+    AegisName: Wand_LV1
+    Name: 智杖 LV1
+    Type: Weapon
+    SubType: Staff
+    Buy: 2500
+    Weight: 10
+    Attack: 25
+    MagicAttack: 250
+    Range: 3
+    Slots: 4
+    Jobs:
+      Mage: true
+      Wizard: true
+      Sage: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bInt,30;
+      bonus bDex,30;
+      bonus bVit,25;
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"WL_COMET",-4000;
+      }
+  - Id: 59205
+    AegisName: Wand_LV2
+    Name: 智杖 LV2
+    Type: Weapon
+    SubType: Staff
+    Buy: 2500
+    Weight: 10
+    Attack: 25
+    MagicAttack: 350
+    Range: 3
+    Slots: 4
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bInt,50;
+      bonus bDex,50;
+      bonus bVit,25;
+      bonus2 bSkillAtk,"MG_FIREBOLT",40;
+      bonus2 bSkillAtk,"MG_COLDBOLT",40;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"WL_COMET",-6000;
+      }
+  - Id: 59206
+    AegisName: Wand_LV3
+    Name: 智杖 LV3
+    Type: Weapon
+    SubType: Staff
+    Buy: 2500
+    Weight: 10
+    Attack: 25
+    MagicAttack: 550
+    Range: 3
+    Slots: 4
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      bonus bInt,80;
+      bonus bDex,80;
+      bonus bVit,25;
+      bonus2 bSkillAtk,"MG_FIREBOLT",80;
+      bonus2 bSkillAtk,"MG_COLDBOLT",80;
+      bonus2 bMagicAddRace,RC_All,5;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"WL_COMET",-4000;
+      }
+      .@r = getrefine();
+      if (.@r>=16) {
+         bonus2 bSkillCooldown,"WL_COMET",-4000;
+         bonus2 bMagicAddRace,RC_All,30;
+      }
+  - Id: 59207
+    AegisName: Rod__LV1
+    Name: 超級棒棒 LV1
+    Type: Weapon
+    SubType: Staff
+    Buy: 50
+    Weight: 50
+    Attack: 15
+    MagicAttack: 250
+    Range: 1
+    Slots: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillAtk,"AB_ADORAMUS",20;
+      }
+      bonus2 bSkillAtk,"AB_ADORAMUS",15;
+      bonus bInt,10;
+      bonus bDex,10;
+  - Id: 59208
+    AegisName: Rod__LV2
+    Name: 超級棒棒 LV2
+    Type: Weapon
+    SubType: Staff
+    Buy: 50
+    Weight: 50
+    Attack: 15
+    MagicAttack: 300
+    Range: 1
+    Slots: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillAtk,"AB_ADORAMUS",35;
+      }
+      bonus2 bSkillAtk,"AB_ADORAMUS",25;
+      bonus2 bMagicAtkEle,Ele_Holy,15;
+      bonus bInt,20;
+      bonus bDex,20;
+  - Id: 59209
+    AegisName: Rod__LV3
+    Name: 超級棒棒 LV3
+    Type: Weapon
+    SubType: Staff
+    Buy: 50
+    Weight: 50
+    Attack: 15
+    MagicAttack: 550
+    Range: 1
+    Slots: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"AB_ADORAMUS",-1000;
+         bonus2 bSkillAtk,"AB_ADORAMUS",50;
+      }
+      if (.@r>=16) {
+         bonus bWis,10;
+         bonus bSpl,10;
+         bonus2 bMagicAtkEle,Ele_Holy,60;
+      }
+      bonus2 bSkillAtk,"AB_ADORAMUS",50;
+      bonus2 bMagicAtkEle,Ele_Holy,30;
+      bonus bInt,90;
+      bonus bDex,50;
+  - Id: 59300
+    AegisName: Rod__LV4
+    Name: 超級棒棒 LV4
+    Type: Weapon
+    SubType: Staff
+    Buy: 50
+    Weight: 50
+    Attack: 15
+    MagicAttack: 650
+    Range: 1
+    Slots: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      bonus bSMatkRate,(.@r/3)*2;
+      if (.@r>=9) {
+         bonus2 bSkillAtk,"AB_ADORAMUS",65;
+      }
+      if (.@r>=13) {
+         bonus bWis,15;
+         bonus bSpl,15;
+         bonus2 bMagicAtkEle,Ele_Holy,70;
+      }
+      skill "TK_SEVENWIND",7;
+      bonus2 bSkillAtk,"AL_HOLYLIGHT",250;
+      bonus2 bSkillAtk,"AB_ADORAMUS",85;
+      bonus2 bMagicAtkEle,Ele_Holy,45;
+      bonus bInt,135;
+      bonus bDex,50;
+      bonus bVit,35;
+  - Id: 59210
+    AegisName: Bde_LV1
+    Name: YAYA小劍劍 LV1
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 2900
+    Weight: 0
+    Attack: 250
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus bStr,30;
+      bonus bDex,30;
+      bonus2 bSkillAtk,"GN_CART_TORNADO",20;
+      bonus2 bSkillAtk,"GN_CARTCANNON",20;
+  - Id: 59211
+    AegisName: Bde_LV2
+    Name: YAYA小劍劍 LV2
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 2900
+    Weight: 0
+    Attack: 350
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillCooldown,"GN_CART_TORNADO",-500;
+         bonus2 bSkillCooldown,"GN_CARTCANNON",-500;
+         bonus2 bSkillAtk,"GN_CARTCANNON",25;
+         bonus2 bSkillAtk,"GN_CART_TORNADO",25;
+      }
+      bonus bStr,45;
+      bonus bDex,45;
+      bonus2 bSkillAtk,"GN_CART_TORNADO",35;
+      bonus2 bSkillAtk,"GN_CARTCANNON",35;
+  - Id: 59212
+    AegisName: Bde_LV3
+    Name: YAYA小劍劍 LV3
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 2900
+    Weight: 0
+    Attack: 550
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"GN_CART_TORNADO",-2000;
+         bonus2 bSkillCooldown,"GN_CARTCANNON",-2000;
+         bonus2 bSkillAtk,"GN_CART_TORNADO",40;
+         bonus2 bSkillAtk,"GN_CARTCANNON",40;
+      }
+      bonus bStr,65;
+      bonus bDex,50;
+      bonus2 bSkillAtk,"GN_CART_TORNADO",60;
+      bonus2 bSkillAtk,"GN_CARTCANNON",60;
+      bonus2 bAddRace,RC_All,10;
+  - Id: 59213
+    AegisName: Vous_JurLV1
+    Name: 前任拳刃LV1
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 100
+    Attack: 300
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"SHC_SAVAGE_IMPACT",-300;
+         bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",15;
+      }
+      bonus bStr,45;
+      bonus bDex,20;
+      bonus bAgi,20;
+      bonus bCritical,20;
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",20;
+  - Id: 59214
+    AegisName: Vous_JurLV2
+    Name: 前任拳刃LV2
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 100
+    Attack: 350
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillCooldown,"SHC_SAVAGE_IMPACT",-500;
+         bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",25;
+      }
+      bonus bStr,65;
+      bonus bDex,40;
+      bonus bAgi,40;
+      bonus bCritical,30;
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",40;
+      bonus bMaxHPrate,5;
+  - Id: 59215
+    AegisName: Vous_JurLV3
+    Name: 前任拳刃LV3
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 100
+    Attack: 500
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"SHC_SAVAGE_IMPACT",-1000;
+         bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",35;
+      }
+      if (.@r>=16) {
+         bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",40;
+         bonus bCRateRate,10;
+      }
+      bonus bStr,90;
+      bonus bDex,60;
+      bonus bAgi,50;
+      bonus bCritical,40;
+      bonus bCRateRate,10;
+      bonus bMaxHPrate,10;
+      bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",50;
+  - Id: 59216
+    AegisName: Dedated_Bandage1
+    Name: 超派鐵拳 LV1
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 100
+    Attack: 350
+    Range: 1
+    Slots: 4
+    Jobs:
+      Monk: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"IQ_EXPOSION_BLASTER",-400;
+         bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",20;
+      }
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",30;
+      bonus bStr,40;
+      bonus bDex,20;
+  - Id: 59217
+    AegisName: Dedated_Bandage2
+    Name: 超派鐵拳 LV2
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 100
+    Attack: 450
+    Range: 1
+    Slots: 4
+    Jobs:
+      Monk: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillCooldown,"IQ_EXPOSION_BLASTER",-800;
+         bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",40;
+      }
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",50;
+      bonus bStr,65;
+      bonus bDex,30;
+      bonus bCritical,10;
+  - Id: 59218
+    AegisName: Dedated_Bandage3
+    Name: 超派鐵拳 LV3
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 100
+    Attack: 650
+    Range: 1
+    Slots: 4
+    Jobs:
+      Monk: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",25;
+      }
+      if (.@r>=16) {
+         bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",45;
+         bonus bCritAtkRate,10;
+      }
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",65;
+      bonus bStr,75;
+      bonus bDex,40;
+      bonus bCritical,5;
+      bonus bMaxHPrate,4;
+      bonus bAllTraitStats,2;
+  - Id: 59219
+    AegisName: Katana_1
+    Name: 清水劍LV1
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 2000
+    Weight: 1000
+    Attack: 250
+    Range: 1
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 4
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH",-500;
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH_WATER",-500;
+         bonus2 bSkillCooldown,"RK_IGNITIONBREAK",-500;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH",20;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",20;
+         bonus2 bSkillAtk,"RK_IGNITIONBREAK",20;
+      }
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",20;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",20;
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",20;
+      bonus bStr,25;
+      bonus bDex,10;
+      bonus bVit,15;
+  - Id: 59220
+    AegisName: Katana_2
+    Name: 清水劍LV2
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 2000
+    Weight: 1000
+    Attack: 350
+    Range: 1
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 4
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH",-800;
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH_WATER",-800;
+         bonus2 bSkillCooldown,"RK_IGNITIONBREAK",-800;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH",35;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",35;
+         bonus2 bSkillAtk,"RK_IGNITIONBREAK",35;
+      }
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",40;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",40;
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",40;
+      bonus bStr,40;
+      bonus bDex,20;
+      bonus bVit,20;
+  - Id: 59221
+    AegisName: Katana_3
+    Name: 清水劍LV3
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 2000
+    Weight: 1000
+    Attack: 450
+    Range: 1
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 4
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH",-1200;
+         bonus2 bSkillCooldown,"RK_DRAGONBREATH_WATER",-1200;
+         bonus2 bSkillCooldown,"RK_IGNITIONBREAK",-1200;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH",40;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",40;
+         bonus2 bSkillAtk,"RK_IGNITIONBREAK",40;
+      }
+      if (.@r>=16) {
+         bonus2 bSkillAtk,"RK_DRAGONBREATH",30;
+         bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",30;
+         bonus2 bSkillAtk,"RK_IGNITIONBREAK",30;
+      }
+      bonus2 bSkillAtk,"RK_DRAGONBREATH",50;
+      bonus2 bSkillAtk,"RK_DRAGONBREATH_WATER",50;
+      bonus2 bSkillAtk,"RK_IGNITIONBREAK",50;
+      bonus bStr,70;
+      bonus bDex,40;
+      bonus bVit,30;
+  - Id: 59222
+    AegisName: G_Kght_Spear1
+    Name: 積巴矛LV1
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 1000
+    Attack: 250
+    Range: 3
+    Slots: 4
+    Jobs:
+      Crusader: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"LG_OVERBRAND",-500;
+         bonus2 bSkillCooldown,"IG_CROSS_RAIN",-500;
+         bonus2 bSkillAtk,"LG_OVERBRAND",15;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",15;
+      }
+         bonus2 bSkillAtk,"LG_OVERBRAND",15;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",15;
+      bonus bStr,15;
+      bonus bDex,10;
+  - Id: 59223
+    AegisName: G_Kght_Spear2
+    Name: 積巴矛LV2
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 1000
+    Attack: 300
+    Range: 3
+    Slots: 4
+    Jobs:
+      Crusader: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillCooldown,"LG_OVERBRAND",-800;
+         bonus2 bSkillCooldown,"IG_CROSS_RAIN",-800;
+         bonus2 bSkillAtk,"LG_OVERBRAND",25;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",25;
+      }
+         bonus2 bSkillAtk,"LG_OVERBRAND",30;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",30;
+      bonus bStr,40;
+      bonus bDex,20;
+      bonus bMatk,200;
+  - Id: 59224
+    AegisName: G_Kght_Spear3
+    Name: 積巴矛LV3
+    Type: Weapon
+    SubType: 1hSpear
+    Weight: 1000
+    Attack: 450
+    Range: 3
+    Slots: 4
+    Jobs:
+      Crusader: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"LG_OVERBRAND",-1500;
+         bonus2 bSkillCooldown,"IG_CROSS_RAIN",-1500;
+         bonus2 bSkillAtk,"LG_OVERBRAND",50;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",50;
+      }
+      if (.@r>=16) {
+         bonus2 bSkillAtk,"LG_OVERBRAND",30;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",30;
+         bonus bCRateRate,10;
+      }
+         bonus2 bSkillAtk,"LG_OVERBRAND",45;
+         bonus2 bSkillAtk,"IG_CROSS_RAIN",45;
+      bonus bStr,70;
+      bonus bDex,40;
+      bonus bCRateRate,12;
+      bonus bMatk,450;
+  - Id: 59225
+    AegisName: Booppk1
+    Name: 阿克西斯教典 LV1
+    Type: Weapon
+    SubType: Book
+    Buy: 30000
+    Weight: 100
+    Attack: 85
+    Range: 1
+    Slots: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillCooldown,"SO_PSYCHIC_WAVE",-800;
+         bonus2 bSkillCooldown,"EM_DIAMOND_STORM",-800;
+         bonus2 bSkillCooldown,"EM_CONFLAGRATION",-800;
+         bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",30;
+         bonus2 bSkillAtk,"EM_DIAMOND_STORM",20;
+         bonus2 bSkillAtk,"EM_CONFLAGRATION",20;
+      }
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",20;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",20;
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",20;
+      bonus bInt,25;
+      bonus bDex,10;
+      bonus bMatk,250;
+  - Id: 59226
+    AegisName: Booppk2
+    Name: 阿克西斯教典 LV2
+    Type: Weapon
+    SubType: Book
+    Buy: 30000
+    Weight: 100
+    Attack: 85
+    Range: 1
+    Slots: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillCooldown,"SO_PSYCHIC_WAVE",-1200;
+         bonus2 bSkillCooldown,"EM_DIAMOND_STORM",-1200;
+         bonus2 bSkillCooldown,"EM_CONFLAGRATION",-1200;
+         bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",50;
+         bonus2 bSkillAtk,"EM_DIAMOND_STORM",35;
+         bonus2 bSkillAtk,"EM_CONFLAGRATION",35;
+      }
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",40;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",35;
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",35;
+      bonus bInt,45;
+      bonus bDex,20;
+      bonus bMatk,350;
+  - Id: 59227
+    AegisName: Booppk3
+    Name: 阿克西斯教典 LV3
+    Type: Weapon
+    SubType: Book
+    Buy: 30000
+    Weight: 100
+    Attack: 85
+    Range: 1
+    Slots: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillCooldown,"SO_PSYCHIC_WAVE",-2000;
+         bonus2 bSkillCooldown,"EM_DIAMOND_STORM",-2000;
+         bonus2 bSkillCooldown,"EM_CONFLAGRATION",-2000;
+         bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",45;
+         bonus2 bSkillAtk,"EM_DIAMOND_STORM",45;
+         bonus2 bSkillAtk,"EM_CONFLAGRATION",45;
+      }
+      if (.@r>=16) {
+         bonus2 bSkillCooldown,"SO_PSYCHIC_WAVE",-1000;
+         bonus2 bSkillCooldown,"EM_DIAMOND_STORM",-1000;
+         bonus2 bSkillCooldown,"EM_CONFLAGRATION",-1000;
+         bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",50;
+         bonus2 bSkillAtk,"EM_DIAMOND_STORM",70;
+         bonus2 bSkillAtk,"EM_CONFLAGRATION",70;
+      }
+      bonus2 bSkillAtk,"SO_PSYCHIC_WAVE",55;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",55;
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",55;
+      bonus2 bMagicAddRace,RC_All,7;
+      bonus bInt,55;
+      bonus bDex,40;
+      bonus bSpl,3;
+      bonus bMatk,550;
+  - Id: 59228
+    AegisName: Ep1Bow1
+    Name: 客兄LV1
+    Type: Weapon
+    SubType: Bow
+    Weight: 1400
+    Attack: 250
+    Range: 5
+    Slots: 4
+    Jobs:
+      Rogue: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",25;
+      bonus2 bSkillAtk,"ABC_FRENZY_SHOT",35;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",15;
+         bonus2 bSkillAtk,"ABC_FRENZY_SHOT",15;
+      }
+      bonus bDex,20;
+      bonus bAgi,20;
+  - Id: 59229
+    AegisName: Ep1Bow2
+    Name: 客兄LV2
+    Type: Weapon
+    SubType: Bow
+    Weight: 1400
+    Attack: 350
+    Range: 5
+    Slots: 4
+    Jobs:
+      Rogue: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",35;
+      bonus2 bSkillAtk,"ABC_FRENZY_SHOT",50;
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",25;
+         bonus2 bSkillAtk,"ABC_FRENZY_SHOT",25;
+      }
+      bonus bDex,40;
+      bonus bAgi,40;
+  - Id: 59230
+    AegisName: Ep1Bow3
+    Name: 客兄LV3
+    Type: Weapon
+    SubType: Bow
+    Weight: 1400
+    Attack: 350
+    Range: 5
+    Slots: 4
+    Jobs:
+      Rogue: true
+    Classes:
+      All_Third: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",75;
+      bonus2 bSkillAtk,"ABC_FRENZY_SHOT",80;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillAtk,"ABC_CHAIN_REACTION_SHOT",40;
+         bonus2 bSkillAtk,"ABC_FRENZY_SHOT",40;
+         bonus2 bSkillCooldown,"ABC_CHAIN_REACTION_SHOT",-2000;
+         bonus2 bSkillCooldown,"ABC_FRENZY_SHOT",-2000;
+      }
+      bonus bDex,90;
+      bonus bAgi,50;
+      bonus bCrt,10;
+  - Id: 59231
+    AegisName: Guar1
+    Name: 金色狂風LV1
+    Type: Weapon
+    SubType: Musical
+    Buy: 47000
+    Weight: 900
+    Attack: 350
+    Range: 1
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",20;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20;
+         bonus2 bSkillAtk,"TR_ROSEBLOSSOM",20;
+         bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-500;
+         bonus2 bSkillCooldown,"TR_ROSEBLOSSOM",-500;
+      }
+      bonus bDex,30;
+      bonus bAgi,10;
+  - Id: 59232
+    AegisName: Guar2
+    Name: 金色狂風LV2
+    Type: Weapon
+    SubType: Musical
+    Buy: 47000
+    Weight: 900
+    Attack: 450
+    Range: 1
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",40;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",40;
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",40;
+         bonus2 bSkillAtk,"TR_ROSEBLOSSOM",40;
+         bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-800;
+         bonus2 bSkillCooldown,"TR_ROSEBLOSSOM",-800;
+      }
+      bonus bDex,50;
+      bonus bAgi,30;
+  - Id: 59233
+    AegisName: Guar3
+    Name: 金色狂風LV3
+    Type: Weapon
+    SubType: Musical
+    Buy: 47000
+    Weight: 900
+    Attack: 550
+    Range: 1
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",55;
+      bonus2 bSkillAtk,"TR_ROSEBLOSSOM",55;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",65;
+         bonus2 bSkillAtk,"TR_ROSEBLOSSOM",65;
+         bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-1400;
+         bonus2 bSkillCooldown,"TR_ROSEBLOSSOM",-1400;
+      }
+      bonus bDex,80;
+      bonus bAgi,30;
+      bonus2 bAddRace,RC_All,15;
+  - Id: 59234
+    AegisName: Quenip_1
+    Name: 專打老王LV1
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 10
+    Attack: 150
+    Range: 2
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"WM_REVERBERATION",20;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",20;
+      .@r = getrefine();
+      if (.@r>=11) {
+         bonus2 bSkillAtk,"WM_REVERBERATION",25;
+         bonus2 bSkillAtk,"TR_METALIC_FURY",25;
+         bonus2 bSkillCooldown,"WM_REVERBERATION",-400;
+         bonus2 bSkillCooldown,"TR_METALIC_FURY",-400;
+      }
+      bonus bInt,50;
+      bonus bMatk,250;
+  - Id: 59235
+    AegisName: Quenip_2
+    Name: 專打老王LV2
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 10
+    Attack: 150
+    Range: 2
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"WM_REVERBERATION",40;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",40;
+      .@r = getrefine();
+      if (.@r>=10) {
+         bonus2 bSkillAtk,"WM_REVERBERATION",45;
+         bonus2 bSkillAtk,"TR_METALIC_FURY",45;
+         bonus2 bSkillCooldown,"WM_REVERBERATION",-800;
+         bonus2 bSkillCooldown,"TR_METALIC_FURY",-800;
+      }
+      bonus bInt,80;
+      bonus bMatk,350;
+  - Id: 59236
+    AegisName: Quenip_3
+    Name: 專打老王LV3
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 10
+    Attack: 150
+    Range: 2
+    Slots: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 10
+    Refineable: true
+    Script: |
+      skill "SA_DISPELL",1;
+      bonus2 bSkillAtk,"WM_REVERBERATION",60;
+      bonus2 bSkillAtk,"TR_METALIC_FURY",60;
+      .@r = getrefine();
+      if (.@r>=9) {
+         bonus2 bSkillAtk,"WM_REVERBERATION",65;
+         bonus2 bSkillAtk,"TR_METALIC_FURY",65;
+         bonus2 bSkillCooldown,"WM_REVERBERATION",-800;
+         bonus2 bSkillCooldown,"TR_METALIC_FURY",-800;
+      }
+      bonus bInt,140;
+      bonus bMatk,550;
+      bonus2 bMagicAddEle,Ele_All,10;
+  - Id: 59290
+    AegisName: Guard_LV1
+    Name: 阿斯拉盾牌 LV1
+    Type: Armor
+    Buy: 500
+    Weight: 30
+    Defense: 20
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      bonus bVit,25;
+      bonus bNearAtkDef,5;
+      bonus bLongAtkDef,5;
+      bonus2 bSubClass,Class_Boss,15;
+  - Id: 59291
+    AegisName: Guard_LV2
+    Name: 阿斯拉盾牌 LV2
+    Type: Armor
+    Buy: 500
+    Weight: 30
+    Defense: 20
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bVit,20;
+      }
+      if (.@r>=16) {
+         bonus bNearAtkDef,5;
+         bonus bLongAtkDef,5;
+      }
+      bonus bVit,20;
+      bonus bNearAtkDef,8;
+      bonus bLongAtkDef,8;
+      bonus2 bSubClass,Class_Boss,20;
+      bonus2 bSubRace,RC_DemiHuman,10;
+  - Id: 59292
+    AegisName: Guard_LV3
+    Name: 阿斯拉盾牌 LV3
+    Type: Armor
+    Buy: 500
+    Weight: 30
+    Defense: 20
+    Slots: 1
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 1
+    Script: |
+      .@r = getrefine();
+      if (.@r>=13) {
+         bonus bVit,30;
+         bonus2 bSubClass,Class_Boss,5;
+      }
+      if (.@r>=16) {
+         bonus bResRate,10;
+         bonus bMResRate,10;
+      }
+      bonus bVit,20;
+      bonus bNearAtkDef,12;
+      bonus bLongAtkDef,12;
+      bonus2 bSubClass,Class_Boss,25;
+      bonus2 bSubRace,RC_DemiHuman,15;

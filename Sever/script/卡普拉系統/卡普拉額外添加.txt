@@ -43,7 +43,7 @@ OnInit:
 	waitingroom "★ 卡普拉職員 ★ ",0;
 }
 
-amatsu,122,167,5	script	卡普拉職員::utty_02	112,{
+amatsu,122,167,5	script	卡普拉職員::utty_03	112,{
 	cutin "bio_sorin01",2;
 	mes "[卡普拉職員]";
 	mes "歡迎來到";
@@ -60,7 +60,7 @@ OnInit:
 	waitingroom "★ 卡普拉職員 ★ ",0;
 }
 
-cmd_in02,207,101,5	script	卡普拉職員::utty_02	112,{
+cmd_in02,207,101,5	script	卡普拉職員::utty_04	112,{
 	mes "[卡普拉職員]";
 	mes "歡迎來到";
 	mes "卡普拉公司~";

@@ -1,3 +1,100 @@
+uttycty,128,136,4	script	稀有裝備武器	112,{
+	disable_items;
+	end;
+OnInit:
+	setnpcicon getnpcid(0),1026,"稀有裝備武器";
+	waitingroom "★ 稀有武器 ★",0;
+	.@p = 1000000;
+	.@c = 1000000; // 便宜貨
+	.@meow = 150;
+	tradertype(NST_EXPANDED_BARTER);
+	
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59204,.@p,-1);	//智杖 LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59207,.@p,-1);	//超級棒棒 LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59210,.@p,-1);	//YAYA小劍劍 LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59213,.@p,-1);	//前任拳刃LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59216,.@p,-1);	//超派鐵拳 LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59219,.@p,-1);	//清水劍LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59222,.@p,-1);	//積巴矛LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59225,.@p,-1);	//阿克西斯教典 LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59228,.@p,-1);	//客兄LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59231,.@p,-1);	//金色狂風LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59234,.@p,-1);	//專打老王LV1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+	sellitem(59201,.@p,-1);	//老弓 lv1
+	sellitemcurrency(7606,.@meow);
+    endsellitem(); 
+
+
+OnBuyItem:
+end;
+}
+
+
 uttycty,118,150,4	script	稀有裝備鎧甲	112,{
 	disable_items;
 	end;
@@ -7,6 +104,10 @@ OnInit:
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
+
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(480136,.@p,-1);	//席琳衣
@@ -45,6 +146,18 @@ OnInit:
     endsellitem(); 
 	sellitem(15346,.@c,-1);	//時光幸運甲
     endsellitem(); 
+
+
+
+
+	sellitem(58001,.@uu_price,-1);	//冒險衣LV1
+	sellitemcurrency(.@uu_coin,2000);
+    endsellitem(); 
+
+
+
+
+
 OnBuyItem:
 end;
 }
@@ -58,6 +171,9 @@ OnInit:
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	tradertype(NST_EXPANDED_BARTER);
 	
 	sellitem(22202,.@p,-1);	//超越靴
@@ -114,6 +230,11 @@ OnInit:
 	sellitem(470122,.@p,-1);	//野獸皮靴
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
+
+
+	sellitem(58101,.@uu_price,-1);	//輕便鞋LV1
+	sellitemcurrency(.@uu_coin,200);
+    endsellitem(); 
 OnBuyItem:
 end;
 }
@@ -126,6 +247,9 @@ OnInit:
 	waitingroom "★ 稀有頭飾 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
@@ -364,10 +488,10 @@ OnInit:
 	sellitem(400201,.@p,-1);	//信仰之盔 II(皇家禁衛隊)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400216,.@p,-1);	//信仰之盔(十字斬首者)
+	sellitem(400216,.@p,-1);	//信仰之盔(十字斬首者)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
-	sellitem(400217,.@p,-1);	//信仰之盔 II(十字斬首者)
+	sellitem(400217,.@p,-1);	//信仰之盔 II(十字斬首者)
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 	sellitem(400218,.@p,-1);	//信仰之盔(妖術師)
@@ -467,7 +591,7 @@ OnInit:
     endsellitem(); 
 	sellitem(420064,.@c,-1);	//貴族手帕
     endsellitem(); 
-	sellitem(400368,.@c,-1);	//RO二十周年限定帽
+	sellitem(400368,.@c,-1);	//RO二十周年限定帽
     endsellitem(); 
 	sellitem(18652,.@c,-1);	//武神之盔
     endsellitem(); 
@@ -481,7 +605,29 @@ OnInit:
     endsellitem(); 
 
 
-	
+
+
+
+	sellitem(55001,.@uu_price,-1);	//音符耳機LV1
+	sellitemcurrency(.@uu_coin,250);
+    endsellitem(); 
+
+	sellitem(56001,.@uu_price,-1);	//天使羽翼LV1
+	sellitemcurrency(.@uu_coin,250);
+    endsellitem(); 
+
+	sellitem(54101,.@uu_price,-1);	//嘴咬甜甜圈LV1
+	sellitemcurrency(.@uu_coin,200);
+    endsellitem(); 
+
+	sellitem(57001,.@uu_price,-1);	//紅暈LV1
+	sellitemcurrency(.@uu_coin,5000);
+	sellitemcurrency(.@uu_stone,40);
+	sellitemcurrency(4302,2);
+    endsellitem(); 
+
+
+
 OnBuyItem:
 end;
 }
@@ -494,6 +640,9 @@ OnInit:
 	waitingroom "★ 稀有斗篷 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	sellitem(480372,.@p,-1);	//瘋狂兔寶寶後背包
@@ -589,6 +738,12 @@ OnInit:
     endsellitem(); 
 	sellitem(480328,.@c,-1);	//2023ROS決戰spark斗篷
     endsellitem(); 
+
+
+
+	sellitem(58201,.@uu_price,-1);	//連帽斗篷LV1
+	sellitemcurrency(.@uu_coin,200);
+    endsellitem(); 
 	
 end;
 }
@@ -601,6 +756,9 @@ OnInit:
 	waitingroom "★ 稀有飾品 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	.@meow = 15;
 	tradertype(NST_EXPANDED_BARTER);
 	
@@ -717,6 +875,15 @@ OnInit:
 	sellitemcurrency(6909,.@meow);
     endsellitem(); 
 
+
+
+
+	sellitem(58330,.@uu_price,-1);	//瘋兔別針LV1
+	sellitemcurrency(.@uu_coin,200);
+    endsellitem(); 
+
+
+
 end;
 }
 
@@ -729,6 +896,9 @@ OnInit:
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
 	.@meow = 15;
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	tradertype(NST_EXPANDED_BARTER);
 
 	sellitem(28946,.@p,-1);	//神聖騎士盾牌
@@ -761,6 +931,16 @@ OnInit:
     endsellitem(); 
 	
 	sellitem(28901,.@c,-1);	//被詛咒兔寶寶
+    endsellitem(); 
+
+
+
+
+
+
+	sellitem(59290,.@uu_price,-1);	//阿斯拉盾牌 LV1
+	sellitemcurrency(.@uu_coin,150);
+	sellitemcurrency(.@uu_stone,30);
     endsellitem(); 
 
 end;
@@ -838,7 +1018,7 @@ OnInit:
 	sellitem(900004,.@p,-1);	//闇●基因學者 普拉梅姆卡片-改
 	sellitemcurrency(4681,.@h);
     endsellitem(); 
-	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
+	sellitem(900005,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片-改
 	sellitemcurrency(4674,.@h);
     endsellitem(); 
 	sellitem(900006,.@p,-1);	//闇●魅影追蹤者 科迪卡片-改
@@ -868,10 +1048,10 @@ OnInit:
 	sellitem(900014,.@p,-1);	//闇●騎士領主 賽依連卡片-改
 	sellitemcurrency(4357,.@h);
     endsellitem(); 
-	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
+	sellitem(900015,.@p,-1);	//闇●十字軍 蘭達卡片-改
 	sellitemcurrency(4565,.@h*5);
     endsellitem(); 
-	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
+	sellitem(900016,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片-改
 	sellitemcurrency(4359,.@h);
     endsellitem(); 
 	sellitem(900017,.@p,-1);	//闇●神行太保 科迪卡片-改
@@ -1415,7 +1595,7 @@ OnInit:
 	 sellitem(4564,.@c,-1);	// 神行太保 科迪
 	sellitemcurrency(27217,.@a);
     endsellitem();
-	 sellitem(4565,.@c,-1);	// 聖殿十字軍 蘭達
+	 sellitem(4565,.@c,-1);	// 聖殿十字軍 蘭達
 	sellitemcurrency(27218,.@a);
     endsellitem();
 	 sellitem(4566,.@c,-1);	// 冷豔舞姬 特蘭提尼
@@ -1455,9 +1635,11 @@ OnInit:
 	waitingroom "★ 稀有影裝 ★",0;
 	.@p = 300000000;
 	.@c = 10000000; // 便宜貨
+	.@uu_price = 1000000;
+	.@uu_coin = 7606; // 破滅硬幣
+	.@uu_stone = 7582; // 破滅之寶石
 	.@meow = 30;
 	tradertype(NST_EXPANDED_BARTER);
-	
 //	sellitem(24683,.@p,-1);	//影子經驗值倍增神盾
 //	sellitemcurrency(6909,100);
 //    endsellitem(); 
@@ -1518,6 +1700,42 @@ OnInit:
 
 	sellitem(24341,.@c*2,-1);	//影子種族戰靴
 	sellitem(24342,.@c*2,-1);	//影子種族神盾
+
+
+
+
+	sellitem(58330,.@uu_price,-1);	//悠悠影子鎧甲LV1
+	sellitemcurrency(.@uu_coin,5000);
+	sellitemcurrency(.@uu_stone,40);
+	sellitemcurrency(4302,2);
+    endsellitem(); 
+
+	sellitem(58335,.@uu_price,-1);	//悠悠影子戰靴LV1
+	sellitemcurrency(.@uu_coin,3500);
+	sellitemcurrency(.@uu_stone,20);
+	sellitemcurrency(4123,2);
+    endsellitem(); 
+
+//	sellitem(58339,.@uu_price,-1);	//悠悠影子手套LV1 
+//	sellitemcurrency(.@uu_coin,5000);
+//	sellitemcurrency(.@uu_stone,20);
+//	sellitemcurrency(xxcard,2);
+//   endsellitem(); 
+
+	sellitem(58306,.@uu_price,-1);	//悠悠影子墜子LV1
+	sellitemcurrency(.@uu_coin,3000);
+	sellitemcurrency(.@uu_stone,100);
+	sellitemcurrency(4132,1);
+    endsellitem(); 
+
+	sellitem(58311,.@uu_price,-1);	//悠悠影子耳環LV1
+	sellitemcurrency(.@uu_coin,3000);
+	sellitemcurrency(.@uu_stone,100);
+	sellitemcurrency(4403,1);
+    endsellitem(); 
+
+
+
 
 
 OnBuyItem:
