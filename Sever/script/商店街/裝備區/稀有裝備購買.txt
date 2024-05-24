@@ -1716,7 +1716,7 @@ OnInit:
 	sellitemcurrency(4123,2);
     endsellitem(); 
 
-//	sellitem(58339,.@uu_price,-1);	//悠悠影子手套LV1 
+//	sellitem(58401,.@uu_price,-1);	//悠悠影子手套LV1 
 //	sellitemcurrency(.@uu_coin,5000);
 //	sellitemcurrency(.@uu_stone,20);
 //	sellitemcurrency(xxcard,2);
