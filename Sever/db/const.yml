@@ -63,6 +63,8 @@ Body:
     Value: 20006
   - Name: IG_ITEM_2200014 # 影子神力鋼鐵精靈轉換
     Value: 20007
+  - Name: IG_item_61050 # 破幣5000
+    Value: 20008
 Footer:
   Imports:
   - Path: db/import/const.yml

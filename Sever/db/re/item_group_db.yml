@@ -51786,3 +51786,9 @@ Body:
             Rate: 1
           - Item: EP19_D_P_Stone
             Rate: 1
+  - Group: item_61050 # ¯}·Àªºµw¹ô5000
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Coin
+            Amount: 5000

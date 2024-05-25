@@ -49795,6 +49795,17 @@ Body:
     Weight: 100
     Script: |
       callfunc "F_Gashapon", 61010;
+  - Id: 61050
+    AegisName: item_61050
+    Name: ¯}·Àµw¹ô½c¤l
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getgroupitem(IG_item_61050,1);
   - Id: 36201
     AegisName: PCASH_1000
     Name: PÂIµw¹ô1000
