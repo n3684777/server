@@ -25266,7 +25266,7 @@ Body:
     Name: ¯}·À¤§Ä_¥Û
     Type: Etc
     Buy: 10
-    Weight: 10
+    Weight: 0
   - Id: 7583
     AegisName: Evil_Mind
     Name: ¨¸´c¤§¤ß
@@ -25415,7 +25415,7 @@ Body:
     AegisName: Coin
     Name: ¯}·Àªºµw¹ô
     Type: Etc
-    Weight: 10
+    Weight: 0
   - Id: 7607
     AegisName: Evil_Dragon_Head
     Name: Å]Às¤§ÀY
