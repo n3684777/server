@@ -189625,8 +189625,6 @@ Body:
     Slots: 4
     Jobs:
       Hunter: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -189651,8 +189649,6 @@ Body:
     Slots: 4
     Jobs:
       Hunter: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -189679,8 +189675,6 @@ Body:
     Slots: 4
     Jobs:
       Hunter: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -189715,8 +189709,6 @@ Body:
     Slots: 4
     Jobs:
       Hunter: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -190153,8 +190145,6 @@ Body:
     Slots: 4
     Jobs:
       Monk: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190181,8 +190171,6 @@ Body:
     Slots: 4
     Jobs:
       Monk: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190210,8 +190198,6 @@ Body:
     Slots: 4
     Jobs:
       Monk: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190355,8 +190341,6 @@ Body:
     Slots: 4
     Jobs:
       Crusader: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190385,8 +190369,6 @@ Body:
     Slots: 4
     Jobs:
       Crusader: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190416,8 +190398,6 @@ Body:
     Slots: 4
     Jobs:
       Crusader: true
-    Classes:
-      All_Third: true
     Locations:
       Right_Hand: true
     WeaponLevel: 4
@@ -190563,8 +190543,6 @@ Body:
     Slots: 4
     Jobs:
       Rogue: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -190591,8 +190569,6 @@ Body:
     Slots: 4
     Jobs:
       Rogue: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
@@ -190619,8 +190595,6 @@ Body:
     Slots: 4
     Jobs:
       Rogue: true
-    Classes:
-      All_Third: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
