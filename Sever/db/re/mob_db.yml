@@ -151,7 +151,7 @@ Body:
     Size: Medium
     Race: Plant
     Element: Water
-    ElementLevel: 1
+    ElementLevel: 4
     WalkSpeed: 400
     AttackDelay: 1872
     AttackMotion: 672
@@ -1444,8 +1444,8 @@ Body:
     ChaseRange: 12
     Size: Medium
     Race: Plant
-    Element: Poison
-    ElementLevel: 1
+    Element: Water
+    ElementLevel: 4
     WalkSpeed: 300
     AttackDelay: 1672
     AttackMotion: 672
@@ -4255,7 +4255,7 @@ Body:
     Size: Medium
     Race: Plant
     Element: Water
-    ElementLevel: 1
+    ElementLevel: 4
     WalkSpeed: 300
     AttackDelay: 1072
     AttackMotion: 672
@@ -4537,7 +4537,7 @@ Body:
     ChaseRange: 12
     Size: Medium
     Race: Angel
-    Element: Holy
+    Element: Water
     ElementLevel: 4
     WalkSpeed: 200
     AttackDelay: 1072
@@ -5358,8 +5358,8 @@ Body:
     ChaseRange: 12
     Size: Medium
     Race: Plant
-    Element: Fire
-    ElementLevel: 1
+    Element: Water
+    ElementLevel: 4
     WalkSpeed: 400
     AttackDelay: 1372
     AttackMotion: 672
@@ -5698,7 +5698,7 @@ Body:
     ChaseRange: 12
     Size: Medium
     Race: Demon
-    Element: Ghost
+    Element: Water
     ElementLevel: 4
     WalkSpeed: 300
     AttackDelay: 1220
@@ -11361,7 +11361,7 @@ Body:
     Size: Medium
     Race: Plant
     Element: Water
-    ElementLevel: 2
+    ElementLevel: 4
     WalkSpeed: 400
     AttackDelay: 1872
     AttackMotion: 672
@@ -24091,7 +24091,7 @@ Body:
     ChaseRange: 12
     Size: Medium
     Race: Demon
-    Element: Dark
+    Element: Water
     ElementLevel: 4
     WalkSpeed: 200
     AttackDelay: 1072

@@ -63,6 +63,33 @@ OnInit:
 	sellitemcurrency(940049,200);
     endsellitem();
 
+
+// 破滅之寶石
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4001,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4004,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4033,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4047,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4056,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4174,1);
+    endsellitem();
+	sellitem(7582,0,-1);      
+	sellitemcurrency(4196,1);
+    endsellitem();
+
+
+
+
 	sellitem(950003,0,-1);      //忽克連超高級影子精煉鎚12
 	sellitemcurrency(950002,5);
     endsellitem();
