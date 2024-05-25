@@ -878,7 +878,7 @@ OnInit:
 
 
 
-	sellitem(58330,.@uu_price,-1);	//ºÆ¨ß§O°wLV1
+	sellitem(58301,.@uu_price,-1);	//ºÆ¨ß§O°wLV1
 	sellitemcurrency(.@uu_coin,200);
     endsellitem(); 
 

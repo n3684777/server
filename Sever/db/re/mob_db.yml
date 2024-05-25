@@ -135,7 +135,7 @@ Body:
     Name: 波利
     JapaneseName: 波利
     Level: 1
-    Hp: 20000000000000
+    Hp: 50
     BaseExp: 150
     JobExp: 40
     Attack: 8
@@ -175,6 +175,8 @@ Body:
       - Item: Poring_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
 #  - Id: 1003
 #    AegisName: THIEF_BUG_AGG
 #    Name:
@@ -1481,6 +1483,8 @@ Body:
       - Item: Poporing_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1032
     AegisName: VERIT
     Name: 木乃伊犬
@@ -2999,6 +3003,8 @@ Body:
       - Item: Poring__Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1063
     AegisName: LUNATIC
     Name: 瘋兔
@@ -4316,6 +4322,8 @@ Body:
       - Item: Mastering_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1091
     AegisName: DRAGON_FLY
     Name: 龍蠅
@@ -4609,6 +4617,8 @@ Body:
       - Item: Angeling_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1097
     AegisName: ANT_EGG
     Name: 白蟻幼蟲
@@ -5441,6 +5451,8 @@ Body:
       - Item: Drops_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1114
     AegisName: DUSTINESS
     Name: 獵蠅
@@ -5794,6 +5806,8 @@ Body:
       - Item: Ghostring_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1121
     AegisName: GIEARTH
     Name: 基爾瑟
@@ -11467,6 +11481,8 @@ Body:
       - Item: Marin_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1243
     AegisName: SASQUATCH
     Name: 雪熊
@@ -17752,6 +17768,8 @@ Body:
       - Item: Archangeling_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1389
     AegisName: DRACULA
     Name: 德古拉男爵
@@ -24221,6 +24239,8 @@ Body:
       - Item: Deviling_Card
         Rate: 1
         StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1583
     AegisName: TAO_GUNKA
     Name: 塔奧群卡

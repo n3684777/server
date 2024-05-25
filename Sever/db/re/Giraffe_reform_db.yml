@@ -7569,3 +7569,99 @@ Body:
            Amount: 150
         ResultItem: item_2200016
         ChangeRefine: 0
+      - BaseItem: Headset_OSTLV1 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 300
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 30
+         - Material: Orc_Hero_Card # 4143
+           Amount: 3
+        ResultItem: Headset_OSTLV2
+        ChangeRefine: 0
+      - BaseItem: Headset_OSTLV2 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 3000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 100
+         - Material: Orc_Hero_Card # 4143
+           Amount: 5
+        ResultItem: Headset_OSTLV3
+        ChangeRefine: 0
+      - BaseItem: Headset_OSTLV3 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 5000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 200
+         - Material: Orc_Hero_Card # 4143
+           Amount: 15
+        ResultItem: Headset_OSTLV4
+        ChangeRefine: 0
+      - BaseItem: Headset_OSTLV4 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 15000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 500
+         - Material: Orc_Hero_Card # 4143
+           Amount: 35
+        ResultItem: Headset_OSTLV5
+        ChangeRefine: 0
+      - BaseItem: Flying_AngelLV1 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 1500
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 30
+         - Material: Apocalips_H_Card # 4374
+           Amount: 3
+        ResultItem: Flying_AngelLV2
+        ChangeRefine: 0
+      - BaseItem: Flying_AngelLV2 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 3000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 100
+         - Material: Apocalips_H_Card # 4374
+           Amount: 5
+        ResultItem: Flying_AngelLV3
+        ChangeRefine: 0
+      - BaseItem: Flying_AngelLV3 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 5000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 200
+         - Material: Apocalips_H_Card # 4374
+           Amount: 15
+        ResultItem: Flying_AngelLV4
+        ChangeRefine: 0
+      - BaseItem: Flying_AngelLV4 # UU裝備
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Coin
+           Amount: 15000
+         - Material: Gem_Of_Ruin # 7582
+           Amount: 500
+         - Material: Apocalips_H_Card # 4374
+           Amount: 35
+        ResultItem: Flying_AngelLV2
+        ChangeRefine: 0
