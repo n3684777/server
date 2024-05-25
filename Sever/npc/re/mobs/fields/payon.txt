@@ -45,10 +45,10 @@ pay_fild03,372,64,15,15	monster	Green Plant	1080,4,180000,90000
 //==================================================
 // pay_fild04 - Sograt Desert
 //==================================================
-pay_fild04,0,0	monster	Poporing	1031,20,5000
-pay_fild04,0,0	monster	Marin	1242,20,5000
-pay_fild04,0,0	monster	Drops	1113,20,5000
-pay_fild04,0,0	monster	Poring	1002,20,5000
+pay_fild04,0,0	monster	Poporing	1031,30,5000
+pay_fild04,0,0	monster	Marin	1242,30,5000
+pay_fild04,0,0	monster	Drops	1113,30,5000
+pay_fild04,0,0	monster	Poring	1002,30,5000
 pay_fild04,0,0	monster	Angeling	1096,5,1,1
 pay_fild04,0,0	monster	Ghostring	1120,1,3600000,1800000
 pay_fild04,0,0	monster	Mastering	1090,1,3600000,1800000
