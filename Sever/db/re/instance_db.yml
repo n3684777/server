@@ -515,3 +515,38 @@ Body:
       Map: guild_vs5
       X: 50
       Y: 50
+  - Id: 1000
+    Name: µw¹ô¹DÀ]¬D¾Ô[ªì¶¥]
+    TimeLimit: 7200
+    Enter:
+      Map: 06guild_01
+      X: 50
+      Y: 50
+  - Id: 1001
+    Name: µw¹ô¹DÀ]¬D¾Ô[¤¤¶¥]
+    TimeLimit: 7200
+    Enter:
+      Map: 06guild_02
+      X: 50
+      Y: 50
+  - Id: 1002
+    Name: µw¹ô¹DÀ]¬D¾Ô[°ª¶¥]
+    TimeLimit: 7200
+    Enter:
+      Map: 06guild_03
+      X: 50
+      Y: 50
+  - Id: 1003
+    Name: µw¹ô¹DÀ]¬D¾Ô[¹ÚÆL]
+    TimeLimit: 7200
+    Enter:
+      Map: 06guild_04
+      X: 50
+      Y: 50
+  - Id: 1004
+    Name: µw¹ô¹DÀ]¬D¾Ô[²×·¥¹ÚÆL]
+    TimeLimit: 7200
+    Enter:
+      Map: 06guild_05
+      X: 50
+      Y: 50

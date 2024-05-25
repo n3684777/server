@@ -1,7 +1,7 @@
 guild_vs5	mapflag	skill_damage	all,BL_MOB,100
 
-uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
-	set .@md_name$,"道館挑戰[終極夢魘]";
+uttycty,149,161,3	script	硬幣道館挑戰[終極夢魘]	10295,{
+	set .@md_name$,"硬幣道館挑戰[終極夢魘]";
 	set .@Zeny, 8000000; //挑戰金額
 	set $rewardamount,3; // 箱子獎勵數量
 	set $rewardamount_first,6; // 箱子首次獎勵數量
@@ -19,7 +19,7 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 	mes "- ^984AAC並於午夜12點重置^000000";
 	mes "=========================";
 	next;
-	switch(select("申請道館挑戰[終極夢魘]:查看獎勵")){
+	switch(select("申請硬幣道館挑戰[終極夢魘]:查看獎勵")){
 	case 1:
 		deletearray $@partymembercid;
 		deletearray $@partymembercount;
@@ -33,7 +33,7 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 				}
 				if (instance_check_party(getcharid(1),1,150,260)) {
 					if (getpartyleader(getcharid(1),2) == getcharid(0)) {
-						if (instance_create("道館挑戰[終極夢魘]") < 0) {	
+						if (instance_create("硬幣道館挑戰[終極夢魘]") < 0) {	
 							mes "=========道館挑戰========";
 							mes "- ^C63131挑戰中無法進入!^000000";
 							mes "=========================";	
@@ -68,7 +68,7 @@ uttycty,149,161,3	script	道館挑戰[終極夢魘]	10295,{
 							}
 							if (instance_check_party(getcharid(1),1,150,260)) {
 								if (getpartyleader(getcharid(1),2) == getcharid(0)) {
-									if (instance_create("道館挑戰[終極夢魘]") < 0)  {	
+									if (instance_create("硬幣道館挑戰[終極夢魘]") < 0)  {	
 										mes "=========道館挑戰========";
 										mes "- ^C63131挑戰中無法進入!^000000";
 										mes "=========================";	
