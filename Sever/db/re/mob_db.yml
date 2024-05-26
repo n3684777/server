@@ -157,12 +157,10 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
-    Drops:
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
-      - Item: Coin
-        Rate: 100
+  #  Drops:
+  #    - Item: Poring_Card
+  #      Rate: 1
+  #     StealProtected: true
 #  - Id: 1003
 #    AegisName: THIEF_BUG_AGG
 #    Name:
@@ -1451,12 +1449,10 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
-    Drops:
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
-      - Item: Coin
-        Rate: 100
+  #  Drops:
+  #    - Item: Poporing_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 1032
     AegisName: VERIT
     Name: 木乃伊犬
@@ -2961,8 +2957,6 @@ Body:
       - Item: Poring__Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1063
     AegisName: LUNATIC
     Name: 瘋兔
@@ -4266,8 +4260,6 @@ Body:
       - Item: Mastering_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1091
     AegisName: DRAGON_FLY
     Name: 龍蠅
@@ -4549,8 +4541,6 @@ Body:
       - Item: Angeling_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1097
     AegisName: ANT_EGG
     Name: 白蟻幼蟲
@@ -5365,12 +5355,10 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
-    Drops:
-      - Item: Drops_Card
-        Rate: 1
-        StealProtected: true
-      - Item: Coin
-        Rate: 100
+  #  Drops:
+  #    - Item: Drops_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 1114
     AegisName: DUSTINESS
     Name: 獵蠅
@@ -5710,8 +5698,6 @@ Body:
       - Item: Ghostring_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1121
     AegisName: GIEARTH
     Name: 基爾瑟
@@ -11367,12 +11353,10 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 01
-    Drops:
-      - Item: Marin_Card
-        Rate: 1
-        StealProtected: true
-      - Item: Coin
-        Rate: 100
+   # Drops:
+   #   - Item: Marin_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 1243
     AegisName: SASQUATCH
     Name: 雪熊
@@ -17646,8 +17630,6 @@ Body:
       - Item: Archangeling_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1389
     AegisName: DRACULA
     Name: 德古拉男爵
@@ -23706,8 +23688,11 @@ Body:
     AttackDelay: 1072
     AttackMotion: 672
     DamageMotion: 672
-    Ai: 21
+    Ai: 02
     Class: Boss
+    Drops:
+      - Item: Coin
+        Rate: 100
   - Id: 1569
     AegisName: G_BLOODY_KNIGHT
     Name: 血腥騎士
@@ -23816,6 +23801,12 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
+    Drops:
+      - Item: Drops_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Coin
+        Rate: 100
   - Id: 1573
     AegisName: G_ELDER
     Name: 邪靈魔導士
@@ -23924,7 +23915,7 @@ Body:
     AttackDelay: 1220
     AttackMotion: 1080
     DamageMotion: 648
-    Ai: 21
+    Ai: 02
     Class: Boss
   - Id: 1577
     AegisName: G_GOBLIN_ARCHER
@@ -24103,8 +24094,6 @@ Body:
       - Item: Deviling_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
-        Rate: 100
   - Id: 1583
     AegisName: TAO_GUNKA
     Name: 塔奧群卡
@@ -24599,6 +24588,12 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 01
+    Drops:
+      - Item: Coin
+        Rate: 100
+      - Item: Marin_Card
+        Rate: 1
+        StealProtected: true
   - Id: 1596
     AegisName: G_TAMRUAN
     Name: 塔嚕安
@@ -35246,9 +35241,9 @@ Body:
         Rate: 175
       - Item: Poring_Hat
         Rate: 1
-      - Item: Marin_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Marin_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 1858
     AegisName: E_PLANKTON
     Name: 漂浮蟲
@@ -54971,6 +54966,12 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
+    Drops:
+      - Item: Coin
+        Rate: 100
+      - Item: Poring_Card
+        Rate: 1
+        StealProtected: true
   - Id: 2402
     AegisName: POPORING_IMMUNE_M
     Name: 波波利
@@ -55002,6 +55003,12 @@ Body:
     DamageMotion: 480
     Modes:
       IgnoreMagic: true
+    Drops:
+      - Item: Coin
+        Rate: 100
+      - Item: Poporing_Card
+        Rate: 1
+        StealProtected: true
   - Id: 2403
     AegisName: POPORING_IMMUNE_A
     Name: 波波利
@@ -65234,9 +65241,9 @@ Body:
         Rate: 750
       - Item: Unripe_Apple
         Rate: 100
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+#      - Item: Poring_Card
+#        Rate: 1
+#        StealProtected: true
   - Id: 2697
     AegisName: C4_PORING
     Name: 憤怒波利
@@ -65279,9 +65286,9 @@ Body:
         Rate: 750
       - Item: Unripe_Apple
         Rate: 100
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poring_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2698
     AegisName: C5_PORING
     Name: 狡猾波利
@@ -65324,9 +65331,9 @@ Body:
         Rate: 750
       - Item: Unripe_Apple
         Rate: 100
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poring_Card
+  #     Rate: 1
+  #      StealProtected: true
   - Id: 2699
     AegisName: C1_PORING
     Name: 迅捷波利
@@ -65369,9 +65376,9 @@ Body:
         Rate: 750
       - Item: Unripe_Apple
         Rate: 100
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poring_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2700
     AegisName: C2_PORCELLIO
     Name: 雄壯三葉鐵甲蟲
@@ -65466,9 +65473,9 @@ Body:
         Rate: 100
       - Item: Apple
         Rate: 625
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poporing_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2702
     AegisName: C4_POPORING
     Name: 憤怒波波利
@@ -65514,9 +65521,9 @@ Body:
         Rate: 100
       - Item: Apple
         Rate: 625
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poporing_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2703
     AegisName: C5_POPORING
     Name: 狡猾波波利
@@ -65562,9 +65569,9 @@ Body:
         Rate: 100
       - Item: Apple
         Rate: 625
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Poporing_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2704
     AegisName: C1_POISON_TOAD
     Name: 迅捷牛蛙
@@ -68324,9 +68331,9 @@ Body:
         Rate: 875
       - Item: Poring_Hat
         Rate: 5
-      - Item: Marin_Card
-        Rate: 1
-        StealProtected: true
+    #  - Item: Marin_Card
+    #    Rate: 1
+    #    StealProtected: true
   - Id: 2763
     AegisName: C5_MARDUK
     Name: 狡猾馬爾杜克
@@ -72242,9 +72249,9 @@ Body:
         Rate: 2000
       - Item: Orange_Juice
         Rate: 100
-      - Item: Drops_Card
-        Rate: 1
-        StealProtected: true
+  #    - Item: Drops_Card
+  #      Rate: 1
+  #      StealProtected: true
   - Id: 2846
     AegisName: C4_DRILLER
     Name: 憤怒爆鑽傘蜥
@@ -85480,9 +85487,9 @@ Body:
         Rate: 150
       - Item: Unripe_Apple
         Rate: 20
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Poring_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3385
     AegisName: MIN_LUNATIC
     Name: 瘋兔
@@ -85828,9 +85835,9 @@ Body:
         Rate: 20
       - Item: Apple
         Rate: 125
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Poporing_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3392
     AegisName: MIN_SMOKIE
     Name: 狸貓
@@ -86225,9 +86232,9 @@ Body:
         Rate: 175
       - Item: Poring_Hat
         Rate: 1
-      - Item: Marin_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Marin_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3400
     AegisName: MIN_MUKA
     Name: 摩卡
@@ -95600,9 +95607,9 @@ Body:
         Rate: 400
       - Item: Orange_Juice
         Rate: 20
-      - Item: Drops_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Drops_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3814
     AegisName: MD_POPORING
     Name: 強化波波利
@@ -95648,9 +95655,9 @@ Body:
         Rate: 20
       - Item: Green_Potion
         Rate: 500
-      - Item: Poporing_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Poporing_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3815
     AegisName: MD_PORING
     Name: 強化波利
@@ -95696,9 +95703,9 @@ Body:
         Rate: 150
       - Item: Unripe_Apple
         Rate: 40
-      - Item: Poring_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Poring_Card
+   #     Rate: 1
+   #     StealProtected: true
   - Id: 3816
     AegisName: MD_MARIN
     Name: 強化冰波利
@@ -95744,9 +95751,9 @@ Body:
         Rate: 175
       - Item: Poring_Hat
         Rate: 1
-      - Item: Marin_Card
-        Rate: 1
-        StealProtected: true
+   #   - Item: Marin_Card
+   #     Rate: 1
+   #     StealProtected: true
 #  - Id: 3817
 #    AegisName: DALCOM
 #  - Id: 3818

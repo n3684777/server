@@ -115,7 +115,7 @@ gef_fild07,0,0	monster	Swift Poring	2699,2,300000
 ein_fild09,0,0	monster	Solid Porcellio	2700,2,300000
 prt_maze03,0,0	monster	Poporing Ringleader	2701,2,300000
 prt_maze02,0,0	monster	Furious Poporing	2702,2,300000
-pay_fild04,0,0	monster	Elusive Poporing	2703,2,300000
+//pay_fild04,0,0	monster	Elusive Poporing	2703,2,300000
 ama_dun02,0,0	monster	Swift Poison Toad	2704,1,300000
 mjolnir_06,0,0	monster	Solid Poison Spore	2705,3,300000
 odin_tem03,0,0	monster	Plasma Ringleader	2706,2,300000

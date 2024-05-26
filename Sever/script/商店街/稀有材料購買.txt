@@ -92,7 +92,7 @@ OnInit:
     endsellitem();
 
 
-
+	sellitem(2210002,10000000,-1);      // 波利島電鑽
 
 	sellitem(950003,0,-1);      //忽克連超高級影子精煉鎚12
 	sellitemcurrency(950002,5);
@@ -125,3 +125,5 @@ OnInit:
 OnBuyItem:
 end;
 }
+
+

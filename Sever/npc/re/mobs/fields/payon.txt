@@ -45,17 +45,22 @@ pay_fild03,372,64,15,15	monster	Green Plant	1080,4,180000,90000
 //==================================================
 // pay_fild04 - Sograt Desert
 //==================================================
-pay_fild04,0,0	monster	Poporing	1031,30,5000
-pay_fild04,0,0	monster	Marin	1242,30,5000
-pay_fild04,0,0	monster	Drops	1113,30,5000
-pay_fild04,0,0	monster	Poring	1002,30,5000
-pay_fild04,0,0	monster	Angeling	1096,5,1,1
-pay_fild04,0,0	monster	Ghostring	1120,1,3600000,1800000
-pay_fild04,0,0	monster	Mastering	1090,1,3600000,1800000
-pay_fild04,0,0	monster	Deviling	1582,1,7200000,3600000
-pay_fild04,346,335,5,5	monster	Shining Plant	1083,1,1800000,900000
-pay_fild04,254,193,10,10	monster	Green Plant	1080,5,360000,180000
-
+//pay_fild04,0,0	monster	Poporing	1031,2,5000
+//pay_fild04,0,0	monster	Marin	1242,2,5000
+//pay_fild04,0,0	monster	Drops	1113,2,5000
+//pay_fild04,0,0	monster	Poring	1002,2,5000
+//pay_fild04,0,0	monster	Angeling	1096,2,1,1
+//pay_fild04,0,0	monster	Ghostring	1120,1,3600000,1800000
+//pay_fild04,0,0	monster	Mastering	1090,1,3600000,1800000
+//pay_fild04,0,0	monster	Deviling	1582,1,7200000,3600000
+//pay_fild04,346,335,5,5	monster	Shining Plant	1083,1,1800000,900000
+//pay_fild04,254,193,10,10	monster	Green Plant	1080,5,360000,180000
+pay_fild04,0,0	monster	Poring	2401,2,5000
+pay_fild04,0,0	monster	Drops	1572,2,5000
+pay_fild04,0,0	monster	Poporing	2402,2,5000
+pay_fild04,0,0	monster	Marin	1595,2,5000
+//pay_fild04,0,0	monster	Angeling	1568,2,1,1
+//pay_fild04,0,0	monster	Ghostring	1576,2,3600000,1800000
 //==================================================
 // pay_fild05 - Disabled on Renewal
 //==================================================

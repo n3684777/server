@@ -50263,4 +50263,20 @@ Body:
     Type: Usable
     Weight: 100
     Script: |
-      callfunc "DigSystem",1,100,0,0,1,0;
+        callfunc "DigSystem_",1,100,0,0,1,0;
+  - Id: 2210001
+    AegisName: item_2210001
+    Name: 一次性電鑽
+    Type: Usable
+    Weight: 100
+    Script: |
+        callfunc "DigSystem",1,100,0,0,1,0;
+  - Id: 2210002
+    AegisName: item_2210002
+    Name: 波利島電鑽
+    Type: Usable
+    Weight: 100
+    Script: |
+      if(strcharinfo(3) == "pay_fild04"){
+        callfunc "DigSystem_",1,100,0,0,1,0;
+      }
