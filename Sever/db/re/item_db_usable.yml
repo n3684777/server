@@ -50257,3 +50257,10 @@ Body:
     Weight: 10
     Script: |
       laphine_synthesis();
+  - Id: 2210000
+    AegisName: item_2210000
+    Name: πq∆p
+    Type: Usable
+    Weight: 100
+    Script: |
+      callfunc "DigSystem",1,100,0,0,1,0;

@@ -7799,7 +7799,7 @@ Body:
       .@r = getrefine();
       bonus bVariableCastrate,.@r*-1;
       if (.@r>=9) {
-         bonus bMatkRate,2;
+         bonus bSMatkRate,2;
       }
   - Id: 4367
     AegisName: B_Shecil_Card
@@ -8429,7 +8429,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bDef,-10;
       if (BaseClass == Job_Mage)
          bonus bMaxSP,100;
@@ -8676,7 +8676,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (BaseJob == Job_Rogue) {
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
          bonus2 bAddClass,Class_All,10;
       }
   - Id: 4427
@@ -8928,7 +8928,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus bMaxSPrate,-50;
       bonus2 bMagicAddRace,RC_Angel,50;
       bonus2 bMagicAddRace,RC_DemiHuman,50;
@@ -10228,7 +10228,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,2+(.@r/2);
+      bonus bSMatkRate,2+(.@r/2);
       bonus bMaxHPrate,-.@r/2;
   - Id: 4529
     AegisName: Cruel_Coelacanth_Card
@@ -10391,7 +10391,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,((.@r>14)?8:5);
+      bonus bSMatkRate,((.@r>14)?8:5);
       bonus bMaxSPrate,-50;
       .@rate = ((.@r>14)?33:25);
       bonus2 bMagicAddRace,RC_Angel,.@rate;
@@ -10521,7 +10521,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (BaseJob == Job_Rogue) {
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
          bonus2 bAddClass,Class_All,10;
       }
       bonus bMaxHPrate,getrefine()/2;
@@ -10732,7 +10732,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,(readparam(bDex)>=110)?14:7;
+      bonus bSMatkRate,(readparam(bDex)>=110)?14:7;
       bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,100,BF_MAGIC,0;
   - Id: 4562
     AegisName: Champion_Card
@@ -11329,7 +11329,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddClass,Class_All,15;
-      bonus bMatkRate,15;
+      bonus bSMatkRate,15;
       bonus2 bHPLossRate,666,4000;
       bonus2 bSPLossRate,66,4000;
     UnEquipScript: |
@@ -11347,7 +11347,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddClass,Class_All,20;
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
       bonus2 bHPLossRate,666,6000;
       bonus2 bSPLossRate,66,6000;
     UnEquipScript: |
@@ -11494,7 +11494,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
       bonus bUseSPrate,10;
   - Id: 4626
     AegisName: Big_Ben_Card
@@ -11654,7 +11654,7 @@ Body:
     Script: |
       bonus2 bResEff,Eff_Freeze,10000;
       bonus2 bAddClass,Class_All,10;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 4637
     AegisName: Immotal_Corps_Card
     Name: 不死軍團卡片
@@ -11712,7 +11712,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 4641
     AegisName: Zombie_Guard_Card
     Name: 殭屍警衛卡片
@@ -12168,7 +12168,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
          bonus bMaxHPrate,10;
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
       }
       if (BaseLevel>174)
          bonus bAllStats,10;
@@ -12308,7 +12308,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
          bonus bMdef,80;
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
       }
       if (BaseLevel>174)
          bonus bAllStats,10;
@@ -12387,7 +12387,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue) {
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
          bonus2 bAddRace,RC_All,5;
       }
       if (BaseLevel>174)
@@ -13160,7 +13160,7 @@ Body:
     SubType: Enchant
     Buy: 20
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
       bonus bFixedCastrate,-1;
   - Id: 4761
     AegisName: Matk2
@@ -13169,7 +13169,7 @@ Body:
     SubType: Enchant
     Buy: 20
     Script: |
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       bonus bFixedCastrate,-1;
   - Id: 4762
     AegisName: Evasion6
@@ -13512,7 +13512,7 @@ Body:
     SubType: Enchant
     Buy: 20
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus bFixedCastrate,-1;
   - Id: 4807
     AegisName: Atk_Speed1
@@ -13982,7 +13982,7 @@ Body:
       if (.@r>=8) {
          bonus bInt,3;
          if (.@r>=9) {
-            bonus bMatkRate,1;
+            bonus bSMatkRate,1;
             if (.@r>=12) {
                bonus bFixedCastrate,-7;
                bonus bAspd,1;
@@ -14001,7 +14001,7 @@ Body:
       if (.@r>=8) {
          bonus bDex,3;
          if (.@r>=9) {
-            bonus bMatkRate,1;
+            bonus bSMatkRate,1;
             if (.@r>=12) {
                bonus bFixedCastrate,-7;
                bonus bAspd,1;
@@ -14234,7 +14234,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 4884
     AegisName: HIT1
     Name: HIT+1。
@@ -14343,7 +14343,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
   - Id: 4897
     AegisName: Matk3p
     Name: MATK+3%。
@@ -14351,7 +14351,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
   - Id: 4898
     AegisName: Matk4p
     Name: MATK+4%。
@@ -14359,7 +14359,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,4;
+      bonus bSMatkRate,4;
   - Id: 4899
     AegisName: Matk5p
     Name: MATK+5%。
@@ -14367,7 +14367,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
   - Id: 4900
     AegisName: MHP5
     Name: MHP+5%。
@@ -14415,7 +14415,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,6;
+      bonus bSMatkRate,6;
   - Id: 4907
     AegisName: Matk7p
     Name: MATK+7%。
@@ -14423,7 +14423,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus bMatkRate,7;
+      bonus bSMatkRate,7;
   - Id: 4908
     AegisName: Force1
     Name: 魔神的武力精髓1
@@ -31923,7 +31923,7 @@ Body:
     Weight: 10
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (.@r >= 9) {
          bonus bMatk,50;
       } else if (.@r >= 7) {
@@ -32080,7 +32080,7 @@ Body:
     SubType: Enchant
     Weight: 10
     Script: |
-      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus bAtkRate,-15; }",20,10000,BF_MAGIC;
+      autobonus "{ bonus bInt,50; bonus bSMatkRate,15; bonus bAtkRate,-15; }",20,10000,BF_MAGIC;
       /* unknown rate */
   - Id: 25702
     AegisName: EP17_1_EVT35
@@ -32098,7 +32098,7 @@ Body:
     SubType: Enchant
     Weight: 10
     Script: |
-      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bMatkRate,-15; }",20,10000,BF_WEAPON;
+      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bSMatkRate,-15; }",20,10000,BF_WEAPON;
       /* unknown rate */
   - Id: 25704
     AegisName: EP17_1_EVT37
@@ -32834,7 +32834,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus5 bAutoSpell,"NPC_CRITICALWOUND",1,10,BF_MAGIC,1;
   - Id: 27008
     AegisName: AmdaraisH_Card_J
@@ -32850,7 +32850,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bAtkRate,6+.@r;
-      bonus bMatkRate,6+.@r;
+      bonus bSMatkRate,6+.@r;
       bonus2 bHPLossRate,666,6000;
       bonus2 bSPLossRate,66,6000;
       if (.@r>=9)
@@ -33133,7 +33133,7 @@ Body:
     Script: |
       bonus2 bSubEle,Ele_Water,100;
       bonus2 bAddEffWhenHit,Eff_Freeze,5000;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 27055
     AegisName: Sorcerer_Card_J
     Name: (JRO)闇●妖術師 西里亞卡片
@@ -33147,7 +33147,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
          bonus bMaxHPrate,10;
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
       }
       if (BaseLevel>164)
          bonus bAllStats,10;
@@ -33280,7 +33280,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
          bonus bMdef,80;
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
       }
       if (BaseLevel>164)
          bonus bAllStats,10;
@@ -33355,7 +33355,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue) {
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
          bonus bAtkRate,5;
       }
       if (BaseLevel>164)
@@ -33592,7 +33592,7 @@ Body:
     Script: |
       bonus bMatk,10;
       if (getrefine() >= 10) {
-         bonus bMatkRate,2;
+         bonus bSMatkRate,2;
       }
   - Id: 27085
     AegisName: BitterMunak_Card
@@ -34406,7 +34406,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       autobonus "{ bonus bAspdRate,100; }",5,30000,BF_MAGIC;
   - Id: 27147
     AegisName: Human_Kimera_Card
@@ -35093,11 +35093,11 @@ Body:
     Script: |
       if (getrefine()<15) {
          bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",1,1,BF_MAGIC,0;
-         bonus bMatkRate,(readparam(bDex)>=110) ? 6 : 3;
+         bonus bSMatkRate,(readparam(bDex)>=110) ? 6 : 3;
       }
       else {
          bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",3,1,BF_MAGIC,0;
-         bonus bMatkRate,(readparam(bDex)>=110) ? 10 : 5;
+         bonus bSMatkRate,(readparam(bDex)>=110) ? 10 : 5;
       }
   - Id: 27215
     AegisName: SLD_Champion_Card
@@ -35289,11 +35289,11 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (getrefine()<15) {
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
          bonus bUseSPrate,20;
       }
       else {
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
          bonus bUseSPrate,15;
       }
   - Id: 27237
@@ -35371,7 +35371,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus2 bMagicAtkEle,Ele_Neutral,5;
       bonus2 bMagicAtkEle,Ele_Earth,5;
   - Id: 27251
@@ -35411,7 +35411,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus2 bMagicAtkEle,Ele_Fire,5;
       bonus2 bMagicAtkEle,Ele_Holy,5;
   - Id: 27254
@@ -35438,7 +35438,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus2 bMagicAtkEle,Ele_Wind,5;
       bonus2 bMagicAtkEle,Ele_Water,5;
   - Id: 27256
@@ -35494,7 +35494,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus2 bMagicAtkEle,Ele_Holy,5;
       bonus bHealPower,5;
   - Id: 27260
@@ -36163,7 +36163,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus3 bAutoSpellWhenHit,"NPC_WIDECURSE",3,(1+.@r);
-      autobonus2 "{ bonus bAtkRate,25; bonus bMatkRate,25; }",(1+.@r),10000,BF_WEAPON|BF_MAGIC;
+      autobonus2 "{ bonus bAtkRate,25; bonus bSMatkRate,25; }",(1+.@r),10000,BF_WEAPON|BF_MAGIC;
       autobonus3 "{ }",1000,5000,"NV_FIRSTAID","{ active_transform 3029,5000; }";
       /* unknown rates */
   - Id: 27328
@@ -36960,7 +36960,7 @@ Body:
       if (.@r>=7) {
          bonus bInt,5;
          if (.@r>=10) {
-            bonus bMatkRate,5;
+            bonus bSMatkRate,5;
          }
       }
   - Id: 29001
@@ -36974,7 +36974,7 @@ Body:
       if (.@r>=7) {
          bonus bInt,6;
          if (.@r>=11) {
-            bonus bMatkRate,7;
+            bonus bSMatkRate,7;
             bonus bInt,1;
          }
       }
@@ -36989,10 +36989,10 @@ Body:
       if (.@r>=7) {
          bonus bInt,7;
          if (.@r>=12) {
-            bonus bMatkRate,8;
+            bonus bSMatkRate,8;
             bonus bInt,1;
             if (.@r>=13) {
-               bonus bMatkRate,2;
+               bonus bSMatkRate,2;
                bonus bInt,1;
             }
          }
@@ -37279,14 +37279,14 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 29031
     AegisName: Matk1p_Bottom
     Name: MATK+1%(頭下)
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 29032
     AegisName: SPdrain1_Top
     Name: SP吸收1
@@ -37507,7 +37507,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-100;
-      bonus bMatkRate,4;
+      bonus bSMatkRate,4;
   - Id: 29072
     AegisName: MagicEessence2
     Name: 魔精2Lv
@@ -37516,7 +37516,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-200;
-      bonus bMatkRate,8;
+      bonus bSMatkRate,8;
   - Id: 29073
     AegisName: MagicEessence3
     Name: 魔精3Lv
@@ -37525,7 +37525,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-300;
-      bonus bMatkRate,12;
+      bonus bSMatkRate,12;
   - Id: 29074
     AegisName: MagicEessence4
     Name: 魔精4Lv
@@ -37534,7 +37534,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-400;
-      bonus bMatkRate,16;
+      bonus bSMatkRate,16;
   - Id: 29075
     AegisName: MagicEessence5
     Name: 魔精5Lv
@@ -37543,7 +37543,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-500;
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
   - Id: 29076
     AegisName: MagicEessence6
     Name: 魔精6Lv
@@ -37552,7 +37552,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-600;
-      bonus bMatkRate,24;
+      bonus bSMatkRate,24;
   - Id: 29077
     AegisName: MagicEessence7
     Name: 魔精7Lv
@@ -37561,7 +37561,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-700;
-      bonus bMatkRate,28;
+      bonus bSMatkRate,28;
   - Id: 29078
     AegisName: MagicEessence8
     Name: 魔精8Lv
@@ -37570,7 +37570,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-800;
-      bonus bMatkRate,32;
+      bonus bSMatkRate,32;
   - Id: 29079
     AegisName: MagicEessence9
     Name: 魔精9Lv
@@ -37579,7 +37579,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-900;
-      bonus bMatkRate,36;
+      bonus bSMatkRate,36;
   - Id: 29080
     AegisName: MagicEessence10
     Name: 魔精10Lv
@@ -37588,7 +37588,7 @@ Body:
     Buy: 10
     Script: |
       bonus bFixedCast,-1000;
-      bonus bMatkRate,44;
+      bonus bSMatkRate,44;
   - Id: 29081
     AegisName: Acute1
     Name: 銳氣1Lv
@@ -39086,35 +39086,35 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,getrefine();
+      bonus bSMatkRate,getrefine();
   - Id: 29446
     AegisName: Amplification2
     Name: (JRO)增幅Lv.2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,2*getrefine();
+      bonus bSMatkRate,2*getrefine();
   - Id: 29447
     AegisName: Amplification3
     Name: (JRO)增幅Lv.3
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,3*getrefine();
+      bonus bSMatkRate,3*getrefine();
   - Id: 29448
     AegisName: Amplification4
     Name: (JRO)增幅Lv.4
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,4*getrefine();
+      bonus bSMatkRate,4*getrefine();
   - Id: 29449
     AegisName: Amplification5
     Name: (JRO)增幅Lv.5
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,5*getrefine();
+      bonus bSMatkRate,5*getrefine();
   - Id: 29460
     AegisName: Runeknight_Top
     Name: 騎士領主石(頭上)
@@ -39487,7 +39487,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (.@r>8) {
          bonus bMatk,25;
       }
@@ -39636,7 +39636,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus bAtkRate,-15; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
+      autobonus "{ bonus bInt,50; bonus bSMatkRate,15; bonus bAtkRate,-15; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
   - Id: 29549
     AegisName: Improve_Orb_L_DEX
     Name: 特殊改造晶體(L_DEX)
@@ -39650,7 +39650,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bMatkRate,-15; }",30,10000,BF_NORMAL,"{ specialeffect2 EF_POTION_BERSERK; }";
+      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bSMatkRate,-15; }",30,10000,BF_NORMAL,"{ specialeffect2 EF_POTION_BERSERK; }";
   - Id: 29551
     AegisName: Improve_Orb_L_AGI
     Name: 特殊改造晶體(L_AGI)
@@ -40161,7 +40161,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bHealPower,(.@r/2);
       bonus bMatk,2*(.@r/2);
-      bonus bMatkRate,(.@r/5);
+      bonus bSMatkRate,(.@r/5);
   - Id: 29682
     AegisName: Time_Jewely_Int_2
     Name: 超時空附魔寶石(INT) 2Lv
@@ -40171,7 +40171,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bHealPower,3*(.@r/2);
       bonus bMatk,4*(.@r/2);
-      bonus bMatkRate,2*(.@r/5);
+      bonus bSMatkRate,2*(.@r/5);
   - Id: 29683
     AegisName: Time_Jewely_Int_3
     Name: 超時空附魔寶石(INT) 3Lv
@@ -40181,7 +40181,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bHealPower,5*(.@r/2);
       bonus bMatk,7*(.@r/2);
-      bonus bMatkRate,3*(.@r/5);
+      bonus bSMatkRate,3*(.@r/5);
   - Id: 29684
     AegisName: Time_Jewely_Dex_1
     Name: 超時空附魔寶石(DEX) 1Lv
@@ -40592,7 +40592,7 @@ Body:
     Script: |
       .@r = getrefine()/2;
       bonus bAtkRate,1+.@r;
-      bonus bMatkRate,1+.@r;
+      bonus bSMatkRate,1+.@r;
       bonus bMaxHPrate,-2*(1+.@r);
   - Id: 31018
     AegisName: XM_Mystcase_Card
@@ -40670,7 +40670,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus5 bAutoSpell,"NPC_CRITICALWOUND",3,5+(10*(getrefine()/3)),BF_MAGIC,1;
   - Id: 31024
     AegisName: As_Bdy_Knight_Card
@@ -40698,7 +40698,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus5 bAutoSpell,"SO_CLOUD_KILL",5,10,BF_MAGIC,1;
   - Id: 31026
     AegisName: As_Ragged_Golem_Card
@@ -42180,7 +42180,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
   - Id: 300121
     AegisName: EP17_2_Marc_Card
     Name: 熱池馬克卡片
@@ -43490,7 +43490,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (BaseJob == JOB_NOVICE) {
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
          bonus bMaxSP,500;
       }
   - Id: 300244
@@ -43585,7 +43585,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUseSPrate,50;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus2 bMagicAddRace,RC_Demon,50;
       bonus2 bMagicAddRace,RC_Formless,50;
   - Id: 300249
@@ -43789,7 +43789,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUseSPrate,50;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus2 bMagicAddRace,RC_Undead,50;
       bonus2 bMagicAddRace,RC_Dragon,50;
   - Id: 300263
@@ -43839,7 +43839,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (getiteminfo(getequipid(EQI_HAND_R),11) == W_2HSTAFF) {
          bonus2 bMagicAtkEle,Ele_All,10+2*(.@r/3);
          if (BaseLevel>=200 && eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
@@ -43882,7 +43882,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (BaseLevel>=200) {
          bonus2 bMagicAtkEle,Ele_Earth,15;
          bonus2 bMagicAtkEle,Ele_Water,15;
@@ -43973,9 +43973,9 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,-10+3*(.@r/3);
+      bonus bSMatkRate,-10+3*(.@r/3);
       if (.@r>=11) {
-         bonus bMatkRate,5;
+         bonus bSMatkRate,5;
       }
   - Id: 300276
     AegisName: Tha_Regret_Card
@@ -44049,7 +44049,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUseSPrate,50;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus2 bMagicAddRace,RC_Fish,50;
       bonus2 bMagicAddRace,RC_Insect,50;
   - Id: 300282
@@ -44242,7 +44242,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (.@r>=7)
          bonus2 bMagicAddRace,RC_Demon,10;
       if (.@r>=9)
@@ -44282,7 +44282,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (.@r>=7) {
          bonus2 bMagicAddRace,RC_Brute,10;
          bonus2 bMagicAddRace,RC_Player_Doram,10;
@@ -44302,7 +44302,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       if (.@r>=7)
          bonus2 bMagicAddRace,RC_Insect,10;
       if (.@r>=9)
@@ -44576,7 +44576,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus bMaxSPrate,-50;
   - Id: 300335
     AegisName: SLD_Q_Scaraba_Card_J
@@ -44678,7 +44678,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus bUseSPrate,10;
   - Id: 300344
     AegisName: SLD_Bomi_Card_J
@@ -44704,7 +44704,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus bMaxSPrate,-50;
   - Id: 300346
     AegisName: SLD_Ill_Dracula_Card_J
@@ -44800,7 +44800,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus2 bSubRace,RC_Demon,-5;
       bonus bMaxSPrate,-50;
   - Id: 300354
@@ -45120,12 +45120,12 @@ Body:
       if (getrefine() < 12) {
         bonus bMaxHPrate,-30;
         bonus bAtkRate,-10;
-        bonus bMatkRate,-10;
+        bonus bSMatkRate,-10;
       }
       else {
         bonus bMaxHPrate,30;
         bonus bAtkRate,10;
-        bonus bMatkRate,10;
+        bonus bSMatkRate,10;
       }
       if (getequiparmorlv() == 2) {
         bonus bRes,50;
@@ -45144,7 +45144,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bAtkRate,5;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       .@r = getrefine();
       bonus bPAtk,2*(.@r/3);
       bonus bSMatk,2*(.@r/3);
@@ -45260,7 +45260,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,7*.@r;
+      bonus bSMatkRate,7*.@r;
   - Id: 300392
     AegisName: aegis_300392
     Name: Sealed Stormy Knight Card
@@ -45765,7 +45765,7 @@ Body:
       bonus bInt,10;
       bonus bMdef,3;
       bonus bDef,25;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 310081
     AegisName: Cassock_Luk
     Name: LUK胸針
@@ -45842,7 +45842,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       bonus bInt,3;
   - Id: 310089
     AegisName: Automatic_Orb8
@@ -45964,12 +45964,12 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,75;
       if (.@r>=9) {
-         bonus bMatkRate,2;
+         bonus bSMatkRate,2;
          if (.@r>=11) {
-            bonus bMatkRate,3;
+            bonus bSMatkRate,3;
          }
       }
   - Id: 310101
@@ -46188,13 +46188,13 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus bAtkRate,3;
       if (.@r>=9) {
-         bonus bMatkRate,3;
+         bonus bSMatkRate,3;
          bonus bAtkRate,3;
          if (.@r>=11) {
-            bonus bMatkRate,4;
+            bonus bSMatkRate,4;
             bonus bAtkRate,4;
          }
       }
@@ -46259,7 +46259,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
+      autobonus "{ bonus bSMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
   - Id: 310123
     AegisName: Automatic_Orb42
     Name: 全自動強化結晶體(L_DEX)
@@ -47308,35 +47308,35 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 310203
     AegisName: Tha_Horror_2
     Name: 恐懼 Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
   - Id: 310204
     AegisName: Tha_Horror_3
     Name: 恐懼 Lv3
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
   - Id: 310205
     AegisName: Tha_Horror_4
     Name: 恐懼 Lv4
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,7;
+      bonus bSMatkRate,7;
   - Id: 310206
     AegisName: Tha_Horror_5
     Name: 恐懼 Lv5
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 310207
     AegisName: Tha_Resent_1
     Name: 怨懟 Lv1
@@ -47453,35 +47453,35 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
   - Id: 310223
     AegisName: Tha_Happy_2
     Name: 幸福 Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
   - Id: 310224
     AegisName: Tha_Happy_3
     Name: 幸福 Lv3
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
   - Id: 310225
     AegisName: Tha_Happy_4
     Name: 幸福 Lv4
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,7;
+      bonus bSMatkRate,7;
   - Id: 310226
     AegisName: Tha_Happy_5
     Name: 幸福 Lv5
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 310227
     AegisName: Tha_Comfort_1
     Name: 安息 Lv1
@@ -48322,7 +48322,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       bonus bMatk,25;
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,3;
@@ -48375,7 +48375,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,4;
+      bonus bSMatkRate,4;
       bonus bMatk,50;
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,3;
@@ -48428,7 +48428,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,6;
+      bonus bSMatkRate,6;
       bonus bMatk,100;
       if (.@r>=7) {
          bonus2 bMagicAtkEle,Ele_All,5;
@@ -48497,16 +48497,16 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       bonus bAtkRate,2;
       if (.@r>=7) {
-         bonus bMatkRate,2;
+         bonus bSMatkRate,2;
          bonus bAtkRate,2;
          if (.@r>=9) {
-            bonus bMatkRate,2;
+            bonus bSMatkRate,2;
             bonus bAtkRate,2;
             if (.@r>=11) {
-               bonus bMatkRate,4;
+               bonus bSMatkRate,4;
                bonus bAtkRate,4;
             }
          }
@@ -50362,7 +50362,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
+      autobonus "{ bonus bSMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
   - Id: 310611
     AegisName: Wolf_Orb_Fi_Dex
     Name: 狼之寶珠（精準射擊）
@@ -52200,7 +52200,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
   - Id: 310918
     AegisName: HeroInsignia_VIT
     Name: 堅定
@@ -52704,14 +52704,14 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
   - Id: 310989
     AegisName: MATK_2Lv
     Name: MATK Lv.2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
   - Id: 310990
     AegisName: MHP_1Lv
     Name: MHP Lv.1
@@ -52908,7 +52908,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,15+5*getenchantgrade();
+      bonus bSMatkRate,15+5*getenchantgrade();
   - Id: 311018
     AegisName: Gear_ASPD
     Name: 發條(ASPD)
@@ -54099,7 +54099,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,6;
+      bonus bSMatkRate,6;
       bonus bMatk,100;
       .@r = getrefine();
       if (.@r >= 7) {
@@ -54135,17 +54135,17 @@ Body:
     SubType: Enchant
     Script: |
       bonus bAtkRate,2;
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       .@r = getrefine();
       if (.@r >= 7) {
         bonus bAtkRate,2;
-        bonus bMatkRate,2;
+        bonus bSMatkRate,2;
         if (.@r >= 9) {
           bonus bAtkRate,2;
-          bonus bMatkRate,2;
+          bonus bSMatkRate,2;
           if (.@r >= 11) {
             bonus bAtkRate,4;
-            bonus bMatkRate,4;
+            bonus bSMatkRate,4;
           }
         }
       }
@@ -54427,7 +54427,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
+      autobonus "{ bonus bSMatkRate,25; bonus bInt,50; }",30,10000,BF_MAGIC;
   - Id: 311122
     AegisName: Ice_F_Orb_Fi_Dex
     Name: 冰花魔力(Fi Dex)
@@ -57756,7 +57756,7 @@ Body:
       bonus bMatk,20*(.@r/3);
       bonus2 bMagicAtkEle,Ele_All,5*(.@r/3);
       if (.@r>=9) {
-        bonus bMatkRate,10;
+        bonus bSMatkRate,10;
         if (.@r>=11 ) {
           bonus bSMatk,5;
           .@i = getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW);
@@ -58010,7 +58010,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bAtkRate,15;
-      bonus bMatkRate,15;
+      bonus bSMatkRate,15;
       autobonus "{}",30,100,BF_WEAPON|BF_MAGIC,"{ sc_start SC_REFRESH,20000,1; }";
   - Id: 311367
     AegisName: Gray_Melee1
@@ -58783,7 +58783,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bMatkRate,1;
+         bonus bSMatkRate,1;
          bonus bMatk,15;
          if (.@g>=ENCHANTGRADE_C) {
             if (.@r>=9) {
@@ -58820,7 +58820,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bMatkRate,2;
+         bonus bSMatkRate,2;
          bonus bMatk,30;
          if (.@g>=ENCHANTGRADE_C) {
             if (.@r>=7) {
@@ -58857,7 +58857,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bMatkRate,3;
+         bonus bSMatkRate,3;
          bonus bMatk,45;
          if (.@g>=ENCHANTGRADE_C) {
             bonus bSMatk,3*(.@r/5);
@@ -58890,7 +58890,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bMatkRate,4;
+         bonus bSMatkRate,4;
          bonus bMatk,60;
          if (.@g>=ENCHANTGRADE_C) {
             bonus bSMatk,3*(.@r/4);
@@ -58923,7 +58923,7 @@ Body:
          }
       }
       if (.@g>=ENCHANTGRADE_D) {
-         bonus bMatkRate,5;
+         bonus bSMatkRate,5;
          bonus bMatk,75;
          if (.@g>=ENCHANTGRADE_C) {
             bonus bSMatk,4*(.@r/3);
@@ -59239,7 +59239,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,1;
+      bonus bSMatkRate,1;
       bonus bMatk,12;
   - Id: 311803
     AegisName: Spl_Orb_7
@@ -59247,7 +59247,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,2;
+      bonus bSMatkRate,2;
       bonus bMatk,14;
   - Id: 311804
     AegisName: Spl_Orb_8
@@ -59255,7 +59255,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,3;
+      bonus bSMatkRate,3;
       bonus bMatk,16;
   - Id: 311805
     AegisName: Spl_Orb_9
@@ -59263,7 +59263,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,4;
+      bonus bSMatkRate,4;
       bonus bMatk,18;
   - Id: 311806
     AegisName: Spl_Orb_10
@@ -59271,7 +59271,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,20;
   - Id: 311807
     AegisName: Spl_Orb_11
@@ -59280,7 +59280,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,1;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,22;
   - Id: 311808
     AegisName: Spl_Orb_12
@@ -59289,7 +59289,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,2;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,24;
   - Id: 311809
     AegisName: Spl_Orb_13
@@ -59298,7 +59298,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,3;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,26;
   - Id: 311810
     AegisName: Spl_Orb_14
@@ -59307,7 +59307,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,4;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,28;
   - Id: 311811
     AegisName: Spl_Orb_15
@@ -59316,7 +59316,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,5;
-      bonus bMatkRate,5;
+      bonus bSMatkRate,5;
       bonus bMatk,30;
   - Id: 311812
     AegisName: Spl_Orb_16
@@ -59325,7 +59325,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,5;
-      bonus bMatkRate,6;
+      bonus bSMatkRate,6;
       bonus bMatk,32+3*(getrefine()/4);
   - Id: 311813
     AegisName: Spl_Orb_17
@@ -59334,7 +59334,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bSMatk,5;
-      bonus bMatkRate,7;
+      bonus bSMatkRate,7;
       bonus bMatk,34+3*(getrefine()/3);
   - Id: 311814
     AegisName: Spl_Orb_18
@@ -59344,7 +59344,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bSMatk,5+(.@r/4);
-      bonus bMatkRate,8;
+      bonus bSMatkRate,8;
       bonus bMatk,36+3*(.@r/2);
   - Id: 311815
     AegisName: Spl_Orb_19
@@ -59354,7 +59354,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bSMatk,5+(.@r/3);
-      bonus bMatkRate,9;
+      bonus bSMatkRate,9;
       bonus bMatk,38+3*(.@r/2);
   - Id: 311816
     AegisName: Spl_Orb_20
@@ -59364,7 +59364,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bSMatk,5+(.@r/2);
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus bMatk,40+3*(.@r/2);
   - Id: 311817
     AegisName: Warrior_Orb_1
@@ -65321,7 +65321,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Rogue) {
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
          bonus2 bAddRace,RC_All,5;
          bonus2 bRegenPercentSP,30,1000;
       }
@@ -65386,7 +65386,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Wizard) {
          bonus bMdef,80;
-         bonus bMatkRate,15;
+         bonus bSMatkRate,15;
          bonus2 bMagicAtkEle,Ele_All,50;
       }
       if (BaseLevel>174)
@@ -65407,7 +65407,7 @@ Body:
     Script: |
       if (eaclass()&EAJL_THIRD && BaseJob == Job_Sage) {
          bonus bMaxHPrate,10;
-         bonus bMatkRate,10;
+         bonus bSMatkRate,10;
          bonus2 bSkillAtk,"SO_SPELLFIST",500;
       }
       if (BaseLevel>174)
@@ -65631,7 +65631,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bMagicAtkEle,Ele_All,10;
-      bonus bMatkRate,(readparam(bDex)>=110)?14:7;
+      bonus bSMatkRate,(readparam(bDex)>=110)?14:7;
       bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",5,500,BF_MAGIC,0;
   - Id: 900024
     AegisName: B_Shecil_Card_
@@ -66029,7 +66029,7 @@ Body:
       bonus2 bMagicAddRace,RC_Undead,50;
       bonus2 bMagicAddEle,Ele_Dark,50;
       bonus2 bMagicAddEle,Ele_Undead,50;
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
   - Id: 900050
     AegisName: Gioia_Card_
     Name: 喬伊亞卡片-改
@@ -66120,7 +66120,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
       bonus2 bMagicAddRace,RC_Angel,50;
       bonus2 bMagicAddRace,RC_DemiHuman,50;
       bonus2 bMagicAddRace,RC_Player_Human,50;
@@ -66282,7 +66282,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
       bonus5 bAutoSpell,"NPC_CRITICALWOUND",3,(50*(getrefine())),BF_MAGIC,1;
   - Id: 900066
     AegisName: Silva_Papilia_Card_
@@ -66376,7 +66376,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@v = 10;
-      bonus bMatkRate,40;
+      bonus bSMatkRate,40;
       bonus3 bAutoSpell,"MG_FIREBOLT",10,.@v;
       bonus3 bAutoSpell,"MG_COLDBOLT",10,.@v;
       bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",10,.@v;
@@ -66607,7 +66607,7 @@ Body:
     Script: |
       bonus2 bResEff,Eff_Freeze,10000;
       bonus2 bAddClass,Class_All,20;
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
   - Id: 900087
     AegisName: Bacsojin_Card_
     Name: 白素貞卡片-改
@@ -66694,7 +66694,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddClass,Class_All,30;
-      bonus bMatkRate,30;
+      bonus bSMatkRate,30;
   - Id: 900093
     AegisName: Schmidt_Card_
     Name: 詛咒施密特國王卡片-改
@@ -66736,7 +66736,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus bMatkRate,10+(.@r*5);
+      bonus bSMatkRate,10+(.@r*5);
   - Id: 900096
     AegisName: Leak_Card_
     Name: 讓特卡片-改
@@ -66985,7 +66985,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUseSPrate,50;
-      bonus bMatkRate,10;
+      bonus bSMatkRate,10;
       bonus2 bMagicAddRace,RC_Fish,50;
       bonus2 bMagicAddRace,RC_Insect,50;
   - Id: 900112
@@ -67105,7 +67105,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus bMatkRate,30;
+      bonus bSMatkRate,30;
       bonus2 bMagicAddRace,RC_Demon,75;
       bonus2 bMagicAddRace,RC_Formless,75;
   - Id: 900120
@@ -67232,7 +67232,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (BaseJob == Job_Rogue) {
-         bonus bMatkRate,40;
+         bonus bSMatkRate,40;
          bonus2 bAddClass,Class_All,40;
       }
   - Id: 900129
@@ -67366,7 +67366,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bAddClass,Class_All,20;
-      bonus bMatkRate,20;
+      bonus bSMatkRate,20;
   - Id: 900138
     AegisName: Ant_Buyanne_Card_
     Name: 骷髏觸角魔卡片-改
@@ -67395,7 +67395,7 @@ Body:
       .@r = getrefine();
       bonus bAbsorbDmgMaxHP2,20;
       bonus2 bMagicAddRace,RC_All,.@r*15;
-      bonus bMatkRate,.@r*20;
+      bonus bSMatkRate,.@r*20;
   - Id: 900140
     AegisName: Gold_Q_Scaraba_Card_
     Name: 黃金女王甲蟲卡片-改
