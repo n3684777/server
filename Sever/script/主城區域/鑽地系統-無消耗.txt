@@ -16,14 +16,14 @@
 	getArg(3) = 是否挖到防具
 	getArg(4) = 是否挖到普通卡片 
 	getArg(5) = 是否挖到MVP卡片
-	
+	getArg(6) = 電鑽ID
 	假設普通卡片的機率是1% 如果設定要挖到普卡 機率必須設定大於100 代表能挖到1%以上的物品
 	callfunc "DigSystem",3,100,0,0,1,0;
 
 */
 
 function	script	DigSystem_	{
-	
+	set itemid$,getArg(6);
 	function NewDig_;
 	
 	// MVP卡片
@@ -36,7 +36,7 @@ function	script	DigSystem_	{
 						  4159,4283,4098,4103,4094,4290;
 	  
 Again_:
-	if(countitem(7606) >= 5000){getitem 61050,countitem(7606)/5000;delitem 7606,countitem(7606) - countitem(7606)%5000;}
+	if(countitem(7606) >= 5000){getitem 61050,countitem(7606)/5000;delitem 7606,countitem(7606) - countitem(7606)%5000;} // 破滅硬幣轉換
 	if ( @MiningMap$ != strcharinfo(3) ) NewDig_();
 	getinventorylist;
 	// 該地圖無魔物
@@ -111,6 +111,8 @@ Again_:
 		}
 		freeloop(0);
 		dispbottom "[ 鑽地 ] - 系統偵測到數據變更,請在使用一次電鑽",0x888888;
+		set item,itemid$;
+		getitem item,1;
 		end;
 	}
 }
