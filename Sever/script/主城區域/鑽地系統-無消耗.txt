@@ -23,7 +23,7 @@
 */
 
 function	script	DigSystem_	{
-
+	
 	function NewDig_;
 	
 	// MVP卡片
@@ -36,7 +36,7 @@ function	script	DigSystem_	{
 						  4159,4283,4098,4103,4094,4290;
 	  
 Again_:
-
+	if(countitem(7606) >= 5000){getitem 61050,countitem(7606)/5000;delitem 7606,countitem(7606) - countitem(7606)%5000;}
 	if ( @MiningMap$ != strcharinfo(3) ) NewDig_();
 	getinventorylist;
 	// 該地圖無魔物
