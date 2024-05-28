@@ -11,7 +11,7 @@ OnInit:
 	.HP_Option = true;	//Allow HP option
 	.SP_Option = true;	//Allow SP option
 	.MinDelay = 100;	//Minimum Delay Allowed in milliseconds (Default and Recommended: 100) [lower values will increase server strain]
-	.MaxDelay = 1000;	//Maximum Delay Allowed in milliseconds (Default and Recommended: 1000)
+	.MaxDelay = 10000;	//Maximum Delay Allowed in milliseconds (Default and Recommended: 1000)
 	setarray .blackList[0],0;	//Array of black listed item ID
 
 	if(!.HP_Option && !.SP_Option){
@@ -62,10 +62,10 @@ L_Start:
 	if (getd("@autopot_" + .@type$ + "_Min")   < 1  || getd("@autopot_" + .@type$ + "_Min") > 100)  setd "@autopot_" + .@type$ + "_Min",90;
 	if (@autopot_delay < .MinDelay) @autopot_delay = .MinDelay;
 	if (@autopot_delay > .MaxDelay) @autopot_delay = .MaxDelay;
-	if (getiteminfo(.@potion, ITEMINFO_TYPE) != IT_HEALING) {
-		dispbottom getitemname(.@potion) + " is not a healing item.";
-		end;
-	}
+	//if (getiteminfo(.@potion, ITEMINFO_TYPE) != IT_HEALING) {
+	//	dispbottom getitemname(.@potion) + " is not a healing item.";
+	//	end;
+	//}
 	if(inarray(.blackList[0],.@potion) != -1){
 		message strcharinfo(0), "'" + getitemname(.@potion) + "' is black listed and cannot be used.";
 		end;

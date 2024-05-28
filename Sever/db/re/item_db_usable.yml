@@ -49806,6 +49806,17 @@ Body:
       Container: true
     Script: |
       getgroupitem(IG_item_61050,1);
+  - Id: 61051
+    AegisName: item_61051
+    Name: ¯}·ÀÄ_¥Û½c¤l
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getgroupitem(IG_item_61051,1);
   - Id: 36201
     AegisName: PCASH_1000
     Name: PÂIµw¹ô1000
@@ -50274,7 +50285,7 @@ Body:
   - Id: 2210002
     AegisName: item_2210002
     Name: ªi§Q®q¹qÆp
-    Type: Usable
+    Type: Healing
     Weight: 100
     Script: |
       if(strcharinfo(3) == "pay_fild04"){

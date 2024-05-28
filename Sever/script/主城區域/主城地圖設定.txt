@@ -1,9 +1,9 @@
 //===== rAthena Script =======================================
-//===== Giraffe æ¨¡æ“¬å™¨ - æ–‡æª” ====================
+//===== Giraffe ¼ÒÀÀ¾¹ - ¤åÀÉ ====================
 
 
 //
-//æ›´é«˜éšç‰ˆæœ¬------æ­¡è¿æ´½è©¢
+//§ó°ª¶¥ª©¥»------Åwªï¬¢¸ß
 //*************************************************
 ////==============================================
 
@@ -30,12 +30,15 @@ amatsu	mapflag	privateairship_source
 amatsu	mapflag	privateairship_destination
 
 
+
+////==============================================
 -	script	City_Speed_Script	-1,{
 	end;
 	
 OnPCLoginEvent:
+
 .@map$ = strcharinfo(3);
-//ä¸Šç·šè‡ªå‹•æ’¿å–å¡ç‰‡
+//¤W½u¦Û°Ê¾ß¨ú¥d¤ù
 atcommand "@autoloottype +"+6;
 end;
 OnPCEnterMapExpress:
@@ -47,7 +50,7 @@ OnPCEnterMapExpress:
 		sc_start SC_BLESSING,600000,10;
 		sc_start SC_INCREASEAGI,600000,10;
 	}
-	//å‰›ç™»å…¥ä¸¦ä¸”åœ¨ä¸»åŸ
+	//­èµn¤J¨Ã¥B¦b¥D«°
 	if (@frommap_id == 0 && @tomap_name$ == "uttycty" || @tomap_name$ == "amatsu")
 	{
 		sc_start SC_CITY_SPEED,360000000,1;
@@ -57,7 +60,7 @@ OnPCEnterMapExpress:
 		end;
 	}
 
-	//å›åˆ°ä¸»åŸ&&å‰¯æœ¬å€
+	//¦^¨ì¥D«°&&°Æ¥»°Ï
 	if (@tomap_name$ == "uttycty" || @tomap_name$ == "amatsu")
 	{
 		sc_start SC_CITY_SPEED,360000000,1;
@@ -68,7 +71,7 @@ OnPCEnterMapExpress:
 		end;
 	}
 	
-	//å¦‚æœä¸æ˜¯é è¨­åŠ é€Ÿåœ°åœ– - å¼·åˆ¶åˆªé™¤ç‹€æ…‹
+	//¦pªG¤£¬O¹w³]¥[³t¦a¹Ï - ±j¨î§R°£ª¬ºA
 //	if (@tomap_name$ != "uttycty" || @tomap_name$ != "amatsu")
 //	{
 //		sc_end SC_CITY_SPEED;

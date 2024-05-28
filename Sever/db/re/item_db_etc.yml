@@ -66405,7 +66405,7 @@ Body:
       bonus3 bAutoSpell,"EM_CONFLAGRATION",10,.@v;
       bonus3 bAutoSpell,"EM_TERRA_DRIVE",10,.@v;
       bonus3 bAutoSpell,"EM_VENOM_SWAMP",10,.@v;
-      bonus3 bAutoSpell,"AB_VITUPERATUMP",10,.@v;
+      bonus3 bAutoSpell,"AB_VITUPERATUM",10,.@v;
       bonus3 bAutoSpell,"NPC_WIDEWEB",10,.@v;
   - Id: 900073
     AegisName: Cruel_Coelacanth_Card_

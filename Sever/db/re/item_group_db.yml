@@ -51792,3 +51792,9 @@ Body:
         List:
           - Item: Coin
             Amount: 5000
+  - Group: item_61051 # ¯}·À¤§Ä_¥Û1000
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Gem_Of_Ruin
+            Amount: 1000

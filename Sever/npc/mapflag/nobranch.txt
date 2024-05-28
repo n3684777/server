@@ -16,7 +16,7 @@
 //============================================================
 //Municipality(Cities/Towns/Villages)
 //============================================================
-alb_ship1	mapflag	nobranch
+//alb_ship1	mapflag	nobranch
 alb2trea	mapflag	nobranch
 alberta	mapflag	nobranch
 alberta_in	mapflag	nobranch

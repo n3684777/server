@@ -328,7 +328,7 @@ function	script	checkOKOK	{
 }
 
 -	shop	Card_Shop_Storage	-1,501:-1
-egg1,175,179,5	script	卡片典藏倉庫	10126,{
+uttycty,135,171,5	script	卡片典藏倉庫	10126,{
 	disable_items;
 	if (checkweight(4001,1) == 0) {
 		mes "身上的道具已達最大數量. 請減少道具數量之後再來吧.";
@@ -461,11 +461,12 @@ OnPCStatCalcEvent:
 	bonus bAddMaxWeight,getarraysize(Card_Storage)*100;
 	end;
 OnInit:
-
+	setnpcicon getnpcid(0),1026,"卡片典藏倉庫";
+	waitingroom "★ 卡片典藏倉庫 ★",0;
 }
 
 
--	shop	quest_shop4	-1,512:100	//生成商店，請無視這行
+/*-	shop	quest_shop4	-1,512:100	//生成商店，請無視這行
 egg1,174,175,6	script	MVP卡片兌換	566,{ //自行設定位子,外觀
 	set @i,0;
 	mes "[MVP卡片兌換]";
@@ -608,6 +609,7 @@ Quest_Setup:
 
 	}
 }
+*/
 
 
 uttycty,125,167,4	script	卡片硬幣兌換	112,{
@@ -640,7 +642,7 @@ OnInit:
 	sellitem(4681,.@p,-1);	//闇●基因學者 普拉梅姆卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
-	sellitem(4674,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片
+	sellitem(4674,.@p,-1);	//闇●十字斬首者 艾勒梅斯卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
 	sellitem(4682,.@p,-1);	//闇●魅影追蹤者 科迪卡片
@@ -670,10 +672,10 @@ OnInit:
 	sellitem(4357,.@p,-1);	//闇●騎士領主 賽依連卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
-	sellitem(4565,.@p,-1);	//闇●十字軍 蘭達卡片
+	sellitem(4565,.@p,-1);	//闇●十字軍 蘭達卡片
 	sellitemcurrency(.@coin,.@h*5);
     endsellitem(); 
-	sellitem(4359,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片
+	sellitem(4359,.@p,-1);	//闇●十字刺客 艾勒梅斯卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
 	sellitem(4564,.@p,-1);	//闇●神行太保 科迪卡片

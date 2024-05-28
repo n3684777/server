@@ -22,6 +22,8 @@
 
 */
 
+
+
 function	script	DigSystem	{
 	set itemid$,getArg(6);
 	function NewDig;
@@ -36,7 +38,8 @@ function	script	DigSystem	{
 						  4159,4283,4098,4103,4094,4290;
 	  
 Again:
-	if(countitem(7606) >= 5000){getitem 61050,countitem(7606)/5000;delitem 7606,countitem(7606) - countitem(7606)%5000;} // 破滅硬幣轉換
+	ChangeMaterial();
+	
 	if ( @MiningMap$ != strcharinfo(3) ) NewDig();
 	getinventorylist;
 	// 該地圖無魔物

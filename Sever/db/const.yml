@@ -65,6 +65,8 @@ Body:
     Value: 20007
   - Name: IG_item_61050 # ¯}¹ô5000
     Value: 20008
+  - Name: IG_item_61051 # ¯}Ä_1000
+    Value: 20008
 Footer:
   Imports:
   - Path: db/import/const.yml

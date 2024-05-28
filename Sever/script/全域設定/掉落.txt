@@ -1,10 +1,10 @@
 -	script	RandomItem	-1,{
-        // ï¿½ï¿½ï¿½æ’–å—…ï¿½ï¿½ï¿½ï¿½ï¿½éˆ­ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½æ?–å??ï¿½ï¿½ï¿½ï¿½ï¿½é?­ï¿½ï¿½ï¿½ï¿?
 OnNPCKillEvent:
     .@m = killedrid;
     addmonsterdrop .@m,950017,20;
     addmonsterdrop .@m,300069,1;
-    // ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ 
+    // ï¿½ï¿½ï¿?2ï¿½ï¿½ï¿? 
     addmonsterdrop 2732,950017,2;
     addmonsterdrop 1382,950017,2;
     addmonsterdrop 1387,950017,2;
