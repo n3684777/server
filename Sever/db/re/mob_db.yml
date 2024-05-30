@@ -35067,7 +35067,7 @@ Body:
     AttackDelay: 1288
     AttackMotion: 288
     DamageMotion: 384
-    Ai: 21
+    Ai: 02
     Class: Boss
     Drops:
       - Item: Coin
