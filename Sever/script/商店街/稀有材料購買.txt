@@ -90,7 +90,9 @@ OnInit:
 	sellitem(61050,0,-1);     // ¯}·Àµw¹ô5000 
 	sellitemcurrency(7606,5000);
     endsellitem();
-
+	sellitem(61080,0,-1);     // ¹k¥Û¯B¹Ð1000½c
+	sellitemcurrency(940048,20);
+    endsellitem();
 
 	sellitem(2210002,500,-1);      // ªi§Q®q¹qÆp
 

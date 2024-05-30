@@ -33,7 +33,7 @@
 #     Price                    Price for resetting enchants. (Default: 0)
 #     Materials:               Items required for resetting enchants. (Default: null)
 #       - Material             Item name of the required item.
-#         Amount               Amount of the required item. (Default: 1)
+#         Amount               Amount of the require2d item. (Default: 1)
 #   Order:                     Order in which the slots can be enchanted.
 #                              Overwriting via import will clear the currently defined order.
 #     - Slot                   Number of the slot (0-3).

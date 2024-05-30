@@ -681,10 +681,10 @@ OnInit:
 	sellitem(4564,.@p,-1);	//闇●神行太保 科迪卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
-	sellitem(4563,.@p,-1);	//闇●神工匠 哈沃得卡片
+	sellitem(4361,.@p,-1);	//闇●神工匠 哈沃得卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
-	sellitem(4679,.@p,-1);	//闇闇●創造者 普拉梅姆卡片
+	sellitem(4563,.@p,-1);	//闇●創造者 普拉梅姆卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
 	sellitem(4363,.@p,-1);	//闇●神官 瑪嘉雷特卡片
@@ -699,7 +699,7 @@ OnInit:
 	sellitem(4367,.@p,-1);	//闇●智者 西里亞卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
-	sellitem(4679,.@p,-1);	//闇●神射手 迪文卡片
+	sellitem(4367,.@p,-1);	//闇●神射手 迪文卡片
 	sellitemcurrency(.@coin,.@h);
     endsellitem(); 
 	sellitem(4560,.@p,-1);	//闇●搞笑藝人 雅歐帕奇爾卡片

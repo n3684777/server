@@ -51798,3 +51798,9 @@ Body:
         List:
           - Item: Gem_Of_Ruin
             Amount: 1000
+  - Group: item_61080 # ¹k¥Û¯B¹Ð1000
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Meteorite_Dust
+            Amount: 1000
