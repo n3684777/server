@@ -62,7 +62,9 @@ OnInit:
 	sellitem(27106,0,-1);      //覺醒貝爾卡片
 	sellitemcurrency(940049,200);
     endsellitem();
-
+	sellitem(300378,0,-1);      //模擬朱希婭卡片
+	sellitemcurrency(940052,200);
+    endsellitem();
 
 // 破滅之寶石
 	sellitem(7582,0,-1);      
