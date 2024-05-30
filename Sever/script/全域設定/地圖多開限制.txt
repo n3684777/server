@@ -24,6 +24,12 @@ end;
 OnInit:
 	// 設定地圖多開 add_map("<地圖>",<同IP限制數量>);
 	add_map("mag_dun02",1);
+	add_map("06guild_01",1);
+	add_map("06guild_02",1);
+	add_map("06guild_03",1);
+	add_map("06guild_04",1);
+	add_map("06guild_05",1);
+
 end;
 OnPCLoadMapEvent:
 	set .@map$,strcharinfo(3);

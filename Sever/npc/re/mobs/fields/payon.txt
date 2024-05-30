@@ -59,6 +59,8 @@ pay_fild04,0,0	monster	Poring	2401,2,5000
 pay_fild04,0,0	monster	Drops	1572,2,5000
 pay_fild04,0,0	monster	Poporing	2402,2,5000
 pay_fild04,0,0	monster	Marin	1595,2,5000
+pay_fild04,0,0	monster	Angeling	1568,2,1,1
+pay_fild04,0,0	monster	Deviling	1853,2,1,1
 //pay_fild04,0,0	monster	Angeling	1568,2,1,1
 //pay_fild04,0,0	monster	Ghostring	1576,2,3600000,1800000
 //==================================================

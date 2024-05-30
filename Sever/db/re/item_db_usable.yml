@@ -49828,6 +49828,28 @@ Body:
       Container: true
     Script: |
       getgroupitem(IG_item_61080,1);
+  - Id: 61081
+    AegisName: item_61081
+    Name: Øp·¨®ç½c¤l
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getgroupitem(IG_item_61081,1);
+  - Id: 61082
+    AegisName: item_61082
+    Name: ¯}·À¤§Æp¥Û½c¤l
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getgroupitem(IG_item_61082,1);
   - Id: 36201
     AegisName: PCASH_1000
     Name: PÂIµw¹ô1000

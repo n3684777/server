@@ -23695,6 +23695,12 @@ Body:
     Drops:
       - Item: Coin
         Rate: 100
+      - Item: Angeling_Card
+        Rate: 1
+        StealProtected: true
+      - Item: item_2110002
+        Rate: 1
+        StealProtected: true
   - Id: 1569
     AegisName: G_BLOODY_KNIGHT
     Name: 血腥騎士
@@ -35063,6 +35069,15 @@ Body:
     DamageMotion: 384
     Ai: 21
     Class: Boss
+    Drops:
+      - Item: Coin
+        Rate: 100
+      - Item: Deviling_Card
+        Rate: 1
+        StealProtected: true
+      - Item: item_2110002
+        Rate: 1
+        StealProtected: true
   - Id: 1854
     AegisName: E_MUKA
     Name: 摩卡

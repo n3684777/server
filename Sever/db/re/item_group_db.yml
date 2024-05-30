@@ -51804,3 +51804,15 @@ Body:
         List:
           - Item: Meteorite_Dust
             Amount: 1000
+  - Group: item_61081 # Øp·¨®ç1000
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Nyangvine_Fruit
+            Amount: 1000
+  - Group: item_61082 # ¯}·À¤§Æp¥Û1000
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Diamond_Of_Ruin
+            Amount: 1000

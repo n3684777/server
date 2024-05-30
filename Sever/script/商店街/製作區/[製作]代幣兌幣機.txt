@@ -153,7 +153,7 @@ lroom00,149,38,3	script	黑暗的換錢商	554,{
 	}
 }
 
-uttycty,68,150,3	script	破寶換破鑽	554,{
+/*uttycty,68,150,3	script	破寶換破鑽	554,{
 	if (checkweight(1201,1) == 0) {
 		mes "你身上有太多的物品了，減少了一些再來找我吧!!";
 		close;
@@ -990,3 +990,5 @@ Quest_Setup:
              
 		}
 	}
+
+*/

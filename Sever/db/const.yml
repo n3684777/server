@@ -69,6 +69,29 @@ Body:
     Value: 20009
   - Name: IG_item_61080 # ¹k¥Û¯»¹Ð1000½c
     Value: 20010
+  - Name: IG_item_61081 # Øp·¨®ç1000½c
+    Value: 20011
+  - Name: IG_item_61082 # ¯}Æp1000
+    Value: 20012
+  - Name: IG_item_61083 #
+    Value: 20013
+  - Name: IG_item_61084 #
+    Value: 20014
+  - Name: IG_item_61085 #
+    Value: 20015
+  - Name: IG_item_61086 #
+    Value: 20016
+  - Name: IG_item_61087 #
+    Value: 20017
+  - Name: IG_item_61088 #
+    Value: 20018
+  - Name: IG_item_61089 #
+    Value: 20019
+  - Name: IG_item_61090 #
+    Value: 20020
+
+
+
 Footer:
   Imports:
   - Path: db/import/const.yml

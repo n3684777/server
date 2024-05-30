@@ -1,6 +1,14 @@
 function	script	ChangeMaterial	{
+
+	
 	if(countitem(7606) >= 5000){getitem 61050,countitem(7606)/5000;delitem 7606,countitem(7606) - countitem(7606)%5000;} // 瘆防祑刽锣传5000絚
 	if(countitem(61050) >= 3){getitem 6011,countitem(61050)/3;delitem 61050,countitem(61050) - countitem(61050)%3;} // 瘆刽絚传眎B
+
+	if(countitem(7582) >= 1000){getitem 61051,countitem(7582)/1000;delitem 7582,countitem(7582) - countitem(7582)%1000;} // 瘆腳1000传絚1000瘆腳
+	if(countitem(7723) >= 1000){getitem 61082,countitem(7723)/1000;delitem 7723,countitem(7723) - countitem(7723)%1000;} // 瘆苝1000传絚1000瘆苝
+
+	if(countitem(2110002) >= 5000){getitem 6909,countitem(2110002)/5000;delitem 2110002,countitem(2110002) - countitem(2110002)%5000;} // 豴法窰5000传聋豴法
+
 	if(countitem(4001) >= 1000){getitem 61051,countitem(4001)/1000;delitem 4001,countitem(4001) - countitem(4001)%1000;} // 猧╰传瘆腳1000絚
 	if(countitem(4004) >= 1000){getitem 61051,countitem(4004)/1000;delitem 4004,countitem(4004) - countitem(4004)%1000;} // 猧╰传瘆腳1000絚
 	if(countitem(4033) >= 1000){getitem 61051,countitem(4033)/1000;delitem 4033,countitem(4033) - countitem(4033)%1000;} // 猧╰传瘆腳1000絚
