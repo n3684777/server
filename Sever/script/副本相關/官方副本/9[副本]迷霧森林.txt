@@ -99,20 +99,20 @@ wr_city,79,60,5	script	守護精靈士兵#mist2	447,{
 	callfunc ("CheckQuestIP");
 
 	set .@qid ,7211;
-	set .@md_name$,"霧林迷宮";
+	set .@md_name$,"迷霧森林";
 	.@nb = query_sql("SELECT `time` from quest where char_id = '" + getcharid(0) + "' and quest_id = '"+.@qid+"'",.@qtime1);
 	.@nb = query_sql("select UNIX_TIMESTAMP() from dual",.@current_timestamp);
 	set .@cooldowntime1, .@qtime1 - .@current_timestamp;
 	callfunc ("QuestInfoNPC",.@md_name$,.@qid,.@cooldowntime1,0,100,0);
 OnInit:
-	waitingroom "  霧林迷宮",0;
+	waitingroom "迷霧森林",0;
 	end;
 }
 
 bif_fild01,158,340,5	script	守護精靈士兵#mist	447,{
 
 	set .@party_id,getcharid(1);
-	set .@md_name$,"霧林迷宮";
+	set .@md_name$,"迷霧森林";
 
 	mes "[守護精靈士兵]";
 	mes "你打算要進去森林裡嗎？";
@@ -204,7 +204,7 @@ bif_fild01,158,340,5	script	守護精靈士兵#mist	447,{
 			mes "我們並不能反抗森林，";
 			mes "但或許你們人類可以。";
 			mes "祝你好運！";
-			announce "★ 副本公告 ★ 隊伍 [ "+getpartyname(getcharid(1)) +" ] 準備挑戰【 霧林迷宮 】副本！",15,0x33ea91;
+			announce "★ 副本公告 ★ 隊伍 [ "+getpartyname(getcharid(1)) +" ] 準備挑戰【 迷霧森林 】副本！",15,0x33ea91;
 
 			close;
 		case 2:
@@ -252,7 +252,7 @@ bif_fild01,161,355,0	script	原木隧道	844,{
 		close;
 	}else{
 		//callfunc "PartyIPCheck";		
-		switch(instance_enter("霧林迷宮")) {
+		switch(instance_enter("迷霧森林")) {
 		case 3:
 			mes "[守護精靈士兵]";
 			mes "事情不太對勁... 看起來有些可怕的事情要發生了，所以你今天最好回去。";
@@ -275,8 +275,8 @@ bif_fild01,161,355,0	script	原木隧道	844,{
 			warp "1@mist",89,29;
 			close;
 		default:
-			mes "在原木隧道之後的世界看起來十分黑暗且讓人感到窒息...";
-			mes "你的直覺告訴你這個森林是十分危險的。";
+			mes "在原木隧道之後的世界看起來十分黑暗且讓人感到窒息...";
+			mes "你的直覺告訴你這個森林是十分危險的。";
 			close;
 		}
 	}
@@ -679,7 +679,7 @@ OnEnable:
 		if (ep13_3_secret > 23) {
 			mes "[神秘的年輕人]";
 			mes "你...我記得我在營地看過你。";
-			mes "你給我關於 Ahat 的資訊十分有用。";
+			mes "你給我關於 Ahat 的資訊十分有用。";
 			mes "謝了！";
 			next;
 			mes "[神秘的年輕人]";
@@ -964,12 +964,12 @@ mora,48,152,3	script	有著銳利眼神的人	512,{
 		mes "儀式並沒有成功。夢羅克的僕人並沒有成功解開封印。";
 		next;
 		mes "[洛基]";
-		mes "但封印變得十分脆弱，隨時都可能被打破。";
+		mes "但封印變得十分脆弱，隨時都可能被打破。";
 		mes "是因為那個世界之樹才能防止封印被解除。";
 		next;
 		mes "[守護者尼德霍格]";
 		mes "這就對了，世界樹的力量串連了整個世界。";
-		mes "當守護者與世界之樹的連結斷開，世界之樹變得十分不穩定。";
+		mes "當守護者與世界之樹的連結斷開，世界之樹變得十分不穩定。";
 		next;
 		mes "[守護者尼德霍格]";
 		mes "這就是為什麼世界之樹發生了那麼多的災難。";
@@ -995,11 +995,11 @@ mora,48,152,3	script	有著銳利眼神的人	512,{
 		next;
 		mes "[守護者尼德霍格]";
 		mes "面對這世界，我了解到...";
-		mes "我感到十分的失意... 這比我千年來的孤獨還要痛苦許多。";
+		mes "我感到十分的失意... 這比我千年來的孤獨還要痛苦許多。";
 		next;
 		mes "[守護者尼德霍格]";
 		mes "這就是為什麼我獨自離開";
-		mes "我感到十分的失意... 這比我千年來的孤獨還要痛苦許多。";
+		mes "我感到十分的失意... 這比我千年來的孤獨還要痛苦許多。";
 		next;
 		mes "[守護者尼德霍格]";
 		mes "因此我成為了罪人，被這世界遺忘...";
@@ -1014,7 +1014,7 @@ mora,48,152,3	script	有著銳利眼神的人	512,{
 		mes "現在我知道我會親自摧毀夢羅克。";
 		mes "我會完成我身為守護者的責任。";
 		next;
-		switch(select("你並不孤單。 : 這可是些十分重要的責任。")) {
+		switch(select("你並不孤單。 : 這可是些十分重要的責任。")) {
 		case 1:
 			mes "[守護者尼德霍格]";
 			mes "你說的對。";

@@ -1,17 +1,42 @@
 -	script	Ro_LuckyStar	-1,{
 	end;
+Onclock0000:
+Onclock0100:
+Onclock0200:
+Onclock0300:
+Onclock0400:
+Onclock0500:
+Onclock0600:
+Onclock0700:
+Onclock0800:
+Onclock0900:
+Onclock1000:
+Onclock1100:
+Onclock1200:
+Onclock1300:
+Onclock1400:
 Onclock1500:
+Onclock1600:
+Onclock1700:
+Onclock1800:
+Onclock1900:
+Onclock2000:
+Onclock2100:
+Onclock2200:
+Onclock2300:
+
 	.@User = getusers(1);
 	if ( .@User > 0 ) 
+		.@Size = 1;
+	if ( .@User > 10 ) 
+		.@Size = 2;
+	if ( .@User > 20 ) 
 		.@Size = 3;
-	if ( .@User > 29 )
-		.@Size = 3;
-	if ( .@User > 49 )
-		.@Size = 3;
-	if ( .@User > 79 )
+	if ( .@User > 30 ) 
 		.@Size = 4;
-	if ( .@User > 99 )
+	if ( .@User > 40 ) 
 		.@Size = 5;
+
 	if ( .@User )
 	{
 		while( .@User && .@round < .@Size )
@@ -32,6 +57,6 @@ Onclock1500:
 	end;
 
 OnInit:
-	setarray .Prize_Id[0],36203;
+	setarray .Prize_Id[0],910138;
 	end;
 }

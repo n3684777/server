@@ -7665,3 +7665,17 @@ Body:
            Amount: 35
         ResultItem: Flying_AngelLV2
         ChangeRefine: 0
+      - BaseItem: S_G_Manteau_TW # Æv¶§¨FÄt¤æÁO-LT
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_1
+           Amount: 150
+         - Material: Bone_Detale_Card_ # 900105
+           Amount: 9
+         - Material: Money_1E
+           Amount: 20
+         - Material: item_940048
+           Amount: 200
+        ResultItem: S_G_Manteau_LT_TW
+        ChangeRefine: 0
