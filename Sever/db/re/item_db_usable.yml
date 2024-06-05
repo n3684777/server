@@ -50318,7 +50318,7 @@ Body:
   - Id: 2210002
     AegisName: item_2210002
     Name: 波利島電鑽
-    Type: Healing
+    Type: Usable
     Weight: 100
     Script: |
       if(strcharinfo(3) == "pay_fild04"){
@@ -50328,3 +50328,9 @@ Body:
        dispbottom "[ 鑽地 ] - 只能在波利島使用此電鑽。",0x888888;
        getitem 2210002,1;
       }
+  - Id: 2210003
+    AegisName: item_2210003
+    Name: 外掛驗證裝置
+    Type: Usable
+    Script: |
+      callfunc "BT_INFO";

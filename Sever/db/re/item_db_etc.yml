@@ -43154,7 +43154,7 @@ Body:
       bonus2 bCriticalAddRace,RC_Demon,15;
   - Id: 300214
     AegisName: EP18_Hot_Molar_Card
-    Name: ¤õµK¯T¥d¤ù
+    Name: ¤õµK¯T¤ú¥d¤ù
     Type: Card
     Weight: 10
     Locations:
@@ -69548,7 +69548,7 @@ Body:
       NoDrop: true
   - Id: 2000000
     AegisName: item_2000000
-    Name: ­P©RÃzµõ¥Û
+    Name: ­P©RÃzµõ
     Type: Card
     SubType: Enchant
     Script: |
@@ -69584,7 +69584,7 @@ Body:
       }
   - Id: 2000002
     AegisName: item_2000002
-    Name: ¦Ê¥Ù¬ï¨ë¥Û
+    Name: ¦Ê¥Ù¬ï¨ë
     Type: Card
     SubType: Enchant
     Script: |
@@ -69602,7 +69602,7 @@ Body:
       }
   - Id: 2000003
     AegisName: item_2000003
-    Name: ­µ³t½ÄÀ»ªi¥Û
+    Name: ­µ³t½ÄÀ»ªi
     Type: Card
     SubType: Enchant
     Script: |
@@ -69640,7 +69640,7 @@ Body:
       }
   - Id: 2000005
     AegisName: item_2000005
-    Name: º¥¶iª®À»¥Û
+    Name: º¥¶iª®À»
     Type: Card
     SubType: Enchant
     Script: |
@@ -69713,7 +69713,7 @@ Body:
       }
   - Id: 2000009
     AegisName: item_2000009
-    Name: ¤Q¦r±Ù¥Û
+    Name: ¤Q¦r±Ù
     Type: Card
     SubType: Enchant
     Script: |
@@ -69731,7 +69731,7 @@ Body:
       }
   - Id: 2000010
     AegisName: item_2000010
-    Name: °j±Û¤M¤b¥Û
+    Name: °j±Û¤M¤b
     Type: Card
     SubType: Enchant
     Script: |
@@ -69748,7 +69748,7 @@ Body:
       }
   - Id: 2000011
     AegisName: item_2000011
-    Name: °j±Û¤Q¦r±Ù¥Û
+    Name: °j±Û¤Q¦r±Ù
     Type: Card
     SubType: Enchant
     Script: |
@@ -69784,7 +69784,7 @@ Body:
       }
   - Id: 2000013
     AegisName: item_2000013
-    Name: ³¥ÆZ½ÄÀ»¥Û
+    Name: ³¥ÆZ½ÄÀ»
     Type: Card
     SubType: Enchant
     Script: |
@@ -69820,7 +69820,7 @@ Body:
       }
   - Id: 2000015
     AegisName: item_2000015
-    Name: ¯«¤O¼²À»¥Û
+    Name: ¯«¤O¼²À»
     Type: Card
     SubType: Enchant
     Script: |
@@ -69838,7 +69838,7 @@ Body:
       }
   - Id: 2000016
     AegisName: item_2000016
-    Name: ·t¼v¨ëÀ»¥Û
+    Name: ·t¼v¨ëÀ»
     Type: Card
     SubType: Enchant
     Script: |
@@ -69856,7 +69856,7 @@ Body:
       }
   - Id: 2000017
     AegisName: item_2000017
-    Name: ­P©R¼v¤ö¥Û
+    Name: ­P©R¼v¤ö
     Type: Card
     SubType: Enchant
     Script: |
@@ -70123,8 +70123,7 @@ Body:
       bonus bMatk,300;
       }
   - Id: 2000032
-    AegisName: item_2000032
-    Name: ¦aº»¤õµK
+    AegisName: item_2000032f
     Type: Card
     SubType: Enchant
     Script: |
@@ -70573,7 +70572,7 @@ Body:
       }
   - Id: 2000057
     AegisName: item_2000057
-    Name: ¤T³s¹p®g
+    Name: ¤T­«¹p®g
     Type: Card
     SubType: Enchant
     Script: |
@@ -71633,7 +71632,7 @@ Body:
       }
   - Id: 2000116
     AegisName: item_2000116
-    Name: ²V¶Ãªº¯ð´Æ
+    Name: ²V¶Ã¯ð´Æ
     Type: Card
     SubType: Enchant
     Script: |

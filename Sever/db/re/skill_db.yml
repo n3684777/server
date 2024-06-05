@@ -2816,7 +2816,7 @@ Body:
     Status: Aeterna
   - Id: 79
     Name: PR_MAGNUS
-    Description: ¢Ì¦rÅXÅ]§ðÀ»
+    Description: ¤Q¦rÅXÅ]§ðÀ»
     MaxLevel: 10
     Type: Magic
     TargetType: Ground
@@ -7252,7 +7252,7 @@ Body:
     Status: ReflectShield
   - Id: 253
     Name: CR_HOLYCROSS
-    Description: ¸t¢Ì¦r§ðÀ»
+    Description: ¸t¤Q¦r§ðÀ»
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
@@ -7292,7 +7292,7 @@ Body:
     Status: Blind
   - Id: 254
     Name: CR_GRANDCROSS
-    Description: ¸t¢Ì¦r¼f§P
+    Description: ¸t¤Q¦r¼f§P
     MaxLevel: 10
     Type: Magic
     TargetType: Self
@@ -9496,7 +9496,7 @@ Body:
       SpCost: 1
   - Id: 338
     Name: NPC_DARKCROSS
-    Description: ·t¢Ì¦r§ðÀ»
+    Description: ·t¤Q¦r§ðÀ»
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
@@ -9510,7 +9510,7 @@ Body:
     Status: Blind
   - Id: 339
     Name: NPC_GRANDDARKNESS
-    Description: ·t¢Ì¦r¼f§P
+    Description: ·t¤Q¦r¼f§P
     MaxLevel: 10
     Type: Magic
     TargetType: Self
@@ -12371,7 +12371,7 @@ Body:
     Status: Spirit
   - Id: 450
     Name: SL_CRUSADER
-    Description: ¢Ì¦r­xªºÆF»î
+    Description: ¤Q¦r­xªºÆF»î
     MaxLevel: 5
     Type: Magic
     TargetType: Support
@@ -17063,7 +17063,7 @@ Body:
         RemovedByFireRain: true
   - Id: 711
     Name: NPC_FLAMECROSS
-    Description: ¤õµK¢Ì¦r¬[
+    Description: ¤õµK¤Q¦r¬[
     MaxLevel: 5
     Type: Magic
     TargetType: Self
@@ -20057,7 +20057,7 @@ Body:
     Status: VenomImpress
   - Id: 2022
     Name: GC_CROSSIMPACT
-    Description: ¢Ì¦r±Ù
+    Description: ¤Q¦r±Ù
     MaxLevel: 5
     Type: Weapon
     TargetType: Attack
@@ -20457,7 +20457,7 @@ Body:
     Status: RollingCutter
   - Id: 2037
     Name: GC_CROSSRIPPERSLASHER
-    Description: °j±Û¢Ì¦r±Ù
+    Description: °j±Û¤Q¦r±Ù
     MaxLevel: 5
     Type: Weapon
     TargetType: Attack
@@ -20969,7 +20969,7 @@ Body:
     Status: LaudaAgnus
   - Id: 2048
     Name: AB_LAUDARAMUS
-    Description: §éªKÃÙ¹|
+    Description: §éªKÆg¹|
     MaxLevel: 4
     Type: Magic
     TargetType: Self
@@ -23357,7 +23357,7 @@ Body:
     Status: _DeadlyInfect
   - Id: 2292
     Name: SC_ENERVATION
-    Description: °²­±:µL¤O
+    Description: ­±¨ã:µL¤O
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -23392,7 +23392,7 @@ Body:
     Status: _Enervation
   - Id: 2293
     Name: SC_GROOMY
-    Description: °²­±:¼~Æ{
+    Description: ­±¨ã:¼~Æ{
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -23427,7 +23427,7 @@ Body:
     Status: _Groomy
   - Id: 2294
     Name: SC_IGNORANCE
-    Description: °²­±:µLª¾
+    Description: ­±¨ã:µLª¾
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -23462,7 +23462,7 @@ Body:
     Status: _Ignorance
   - Id: 2295
     Name: SC_LAZINESS
-    Description: °²­±:Ãi´k
+    Description: ­±¨ã:Ãi´²
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -23497,7 +23497,7 @@ Body:
     Status: _Laziness
   - Id: 2296
     Name: SC_UNLUCKY
-    Description: °²­±:¤£©¯
+    Description: ­±¨ã:¤£©¯
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -23532,7 +23532,7 @@ Body:
     Status: _Unlucky
   - Id: 2297
     Name: SC_WEAKNESS
-    Description: °²­±:°I®z
+    Description: ­±¨ã:°I®z
     MaxLevel: 3
     TargetType: Attack
     DamageFlags:
@@ -24053,7 +24053,7 @@ Body:
       State: Shield
   - Id: 2311
     Name: LG_REFLECTDAMAGE
-    Description: ¤Ï®g¶Ë®`
+    Description: ¸t°Ã¥[Å@
     MaxLevel: 5
     TargetType: Self
     DamageFlags:
@@ -24603,7 +24603,7 @@ Body:
     Status: Inspiration
   - Id: 2519
     Name: LG_OVERBRAND_BRANDISH # Removed on kRO
-    Description: ºj°} ¦å¢Ì¦r ÃM­¼
+    Description: ºj°} ¦å¤Q¦r ÃM­¼
     MaxLevel: 5
     Type: Weapon
     TargetType: Attack
@@ -24619,7 +24619,7 @@ Body:
     CastCancel: true
   - Id: 2520
     Name: LG_OVERBRAND_PLUSATK # Removed on kRO
-    Description: ºj°} ¦å¢Ì¦r °l¥[§ðÀ»
+    Description: ºj°} ¦å¤Q¦r °l¥[§ðÀ»
     MaxLevel: 5
     Type: Weapon
     TargetType: Attack
@@ -26193,7 +26193,7 @@ Body:
     Status: VoiceOfSiren
   - Id: 2421
     Name: WM_DEADHILLHERE
-    Description: ¦º¤`®l½\
+    Description: ¦º¤`®l¨¦
     MaxLevel: 5
     TargetType: Support
     DamageFlags:
@@ -31354,7 +31354,7 @@ Body:
     Type: Weapon
   - Id: 3004
     Name: KO_JYUMONJIKIRI
-    Description: «Õ­ß¢Ì¦r±Ù
+    Description: «Õ­ß¤Q¦r±Ù
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
@@ -32078,7 +32078,7 @@ Body:
           Amount: 56
   - Id: 3022
     Name: KO_IZAYOI
-    Description: ¢Ì¤»©]
+    Description: ¤Q¤»©]
     MaxLevel: 5
     TargetType: Self
     DamageFlags:
@@ -36568,7 +36568,7 @@ Body:
         Attack_Stance: true
   - Id: 5267
     Name: IG_CROSS_RAIN
-    Description: ¸t¢Ì¦r«B
+    Description: ¸t¤Q¦r«B
     MaxLevel: 10
     Type: Magic
     TargetType: Ground
@@ -40805,7 +40805,7 @@ Body:
 #20220602·s§Þ¯à
   - Id: 6001
     Name: DK_DRAGONIC_BREATH
-    Description: Dragonic Breath
+    Description: ¤ÑÀs®ð®§
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
@@ -40884,7 +40884,7 @@ Body:
       State: Ridingdragon
   - Id: 6002
     Name: MT_SPARK_BLASTER
-    Description: °{¥ú½ÄÀ»ªi
+    Description: ¤õªá½ÄÀ»ªi
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
@@ -40950,7 +40950,7 @@ Body:
       State: Mado
   - Id: 6003
     Name: MT_TRIPLE_LASER
-    Description: Triple Laser
+    Description: ¤T­«³s®g
     MaxLevel: 5
     Type: Weapon
     TargetType: Attack
