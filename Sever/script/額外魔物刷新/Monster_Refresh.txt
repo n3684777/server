@@ -370,3 +370,29 @@ gl_cas01_,202,210,0,0	boss_monster	汙染黑暗之王	20422,1,3600000,600000,1
 iz_d04_i,129,153,0,0	boss_monster	深海魔鬼大烏賊	20811,1,3600000,600000,1
 iz_d05_i,141,189,0,0	boss_monster	深海魔女	20843,1,3600000,600000,1
 ice_dun03,150,136,0,0	boss_monster	水晶龍	1779,1,900000,600000,0
+
+
+// 火2
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+mag_dun02,0,0,0,0	boss_monster	"顏良"	20892,1,7200000,600000,0
+
+// 主城
+uttycty,0,0,0,0	monster	"敲可愛的粉紅兔兔"	23233,1,1,1,0
+uttycty,0,0,0,0	monster	"敲可愛的P助"	23234,1,1,1,0
+uttycty,0,0,0,0	monster	"敲可愛的好想兔"	23216,1,1,1,0
+uttycty,0,0,0,0	monster	"天使波利"	1568,1,1,1,0
+uttycty,0,0,0,0	monster	"惡魔波利"	1853,1,1,1,0
+
+uttycty,0,0	monster	Poring	2401,1,5000
+uttycty,0,0	monster	Drops	1572,1,5000
+uttycty,0,0	monster	Poporing	2402,1,5000
+uttycty,0,0	monster	Marin	1595,1,5000
+uttycty,0,0	monster	Mastering	1090,1,5000

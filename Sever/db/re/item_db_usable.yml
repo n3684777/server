@@ -50317,15 +50317,15 @@ Body:
         callfunc "DigSystem",1,100,0,0,1,0,2210001;
   - Id: 2210002
     AegisName: item_2210002
-    Name: 波利島電鑽
+    Name: 主城的電鑽
     Type: Usable
     Weight: 100
     Script: |
-      if(strcharinfo(3) == "pay_fild04"){
-        callfunc "DigSystem_",1,100,0,0,1,0,2210002;
+      if(strcharinfo(3) == "uttycty"){
+        callfunc "DigSystem_",1,100,0,0,1,1,2210002,0;
       }else
       {
-       dispbottom "[ 鑽地 ] - 只能在波利島使用此電鑽。",0x888888;
+       dispbottom "[ 鑽地 ] - 只能在主城使用此電鑽。",0x888888;
        getitem 2210002,1;
       }
   - Id: 2210003
