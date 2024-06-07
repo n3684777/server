@@ -70123,7 +70123,8 @@ Body:
       bonus bMatk,300;
       }
   - Id: 2000032
-    AegisName: item_2000032f
+    AegisName: item_2000032
+    Name: ¦aº»¤õµK
     Type: Card
     SubType: Enchant
     Script: |

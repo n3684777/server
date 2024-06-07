@@ -187425,7 +187425,7 @@ Body:
       .@r= getrefine();
       bonus2 bSubEle,Ele_Neutral,10;
       bonus bBaseAtk,(.@r/2)*10;
-      bouns bMatk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
       bonus bPow,(.@r/3)*2;
       bonus bCon,(.@r/3)*2;
       bonus bSpl,(.@r/3)*2; 
