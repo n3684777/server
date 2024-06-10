@@ -22866,16 +22866,6 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 100
-          - Item: item_3003012
-            Price: 50000000
-            Materials:
-              - Material: Nyangvine_Fruit
-                Amount: 100
-          - Item: item_3003013
-            Price: 50000000
-            Materials:
-              - Material: Nyangvine_Fruit
-                Amount: 100
           - Item: item_3003100
             Price: 50000000
             Materials:
