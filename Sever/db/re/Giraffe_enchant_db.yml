@@ -34427,3 +34427,1956 @@ Body:
             Materials:
               - Material: Nyangvine_Fruit
                 Amount: 300
+  - Id: 10018 # B¤j¹¢«~(¯²¸î)
+    TargetItems:
+      Boyboy_Accessory_Left_L: true # 920006
+      Boyboy_Accessory_Right_R: true # 920007
+    Reset:
+      Chance: 100000
+      Materials:
+        - Material: Nyangvine_Fruit
+          Amount: 20
+    Order:
+      - Slot: 3
+      - Slot: 2
+      - Slot: 1
+    Slots:
+      - Slot: 3
+        PerfectEnchants:
+          - Item: item_3000000
+            Price: 50000000
+          - Item: item_3000001
+            Price: 50000000
+          - Item: item_3000002
+            Price: 50000000
+          - Item: item_3000003
+            Price: 50000000
+          - Item: item_3000004
+            Price: 50000000
+          - Item: item_3000005
+            Price: 50000000
+          - Item: item_3000006
+            Price: 50000000
+          - Item: item_3000007
+            Price: 50000000
+          - Item: item_3000008
+            Price: 50000000
+          - Item: item_3000100
+            Price: 50000000
+          - Item: item_3000101
+            Price: 50000000
+          - Item: item_3000102
+            Price: 50000000
+          - Item: item_3000103
+            Price: 50000000
+          - Item: item_3000104
+            Price: 50000000
+          - Item: item_3000105
+            Price: 50000000
+          - Item: item_3000106
+            Price: 50000000
+          - Item: item_3000107
+            Price: 50000000
+          - Item: item_3000108
+            Price: 50000000
+          - Item: item_3000109
+            Price: 50000000
+          - Item: item_3000110
+            Price: 50000000
+          - Item: item_3001000
+            Price: 50000000
+          - Item: item_3001001
+            Price: 50000000
+          - Item: item_3001002
+            Price: 50000000
+          - Item: item_3001003
+            Price: 50000000
+          - Item: item_3001004
+            Price: 50000000
+          - Item: item_3001005
+            Price: 50000000
+          - Item: item_3001006
+            Price: 50000000
+          - Item: item_3001007
+            Price: 50000000
+          - Item: item_3001008
+            Price: 50000000
+          - Item: item_3001009
+            Price: 50000000
+          - Item: item_3001010
+            Price: 50000000
+          - Item: item_3001011
+            Price: 50000000
+          - Item: item_3001012
+            Price: 50000000
+          - Item: item_3001013
+            Price: 50000000
+          - Item: item_3001014
+            Price: 50000000
+          - Item: item_3001015
+            Price: 50000000
+          - Item: item_3001016
+            Price: 50000000
+          - Item: item_3001017
+            Price: 50000000
+          - Item: item_3001100
+            Price: 50000000
+          - Item: item_3001101
+            Price: 50000000
+          - Item: item_3001102
+            Price: 50000000
+          - Item: item_3001103
+            Price: 50000000
+          - Item: item_3001104
+            Price: 50000000
+          - Item: item_3001105
+            Price: 50000000
+          - Item: item_3001106
+            Price: 50000000
+          - Item: item_3001107
+            Price: 50000000
+          - Item: item_3001108
+            Price: 50000000
+          - Item: item_3002000
+            Price: 50000000
+          - Item: item_3002001
+            Price: 50000000
+          - Item: item_3002002
+            Price: 50000000
+          - Item: item_3002003
+            Price: 50000000
+          - Item: item_3002004
+            Price: 50000000
+          - Item: item_3002005
+            Price: 50000000
+          - Item: item_3002006
+            Price: 50000000
+          - Item: item_3002007
+            Price: 50000000
+          - Item: item_3002100
+            Price: 50000000
+          - Item: item_3002101
+            Price: 50000000
+          - Item: item_3002102
+            Price: 50000000
+          - Item: item_3002103
+            Price: 50000000
+          - Item: item_3002104
+            Price: 50000000
+          - Item: item_3002105
+            Price: 50000000
+          - Item: item_3002106
+            Price: 50000000
+          - Item: item_3002107
+            Price: 50000000
+          - Item: item_3002108
+            Price: 50000000
+          - Item: item_3003000
+            Price: 50000000
+          - Item: item_3003001
+            Price: 50000000
+          - Item: item_3003002
+            Price: 50000000
+          - Item: item_3003003
+            Price: 50000000
+          - Item: item_3003004
+            Price: 50000000
+          - Item: item_3003005
+            Price: 50000000
+          - Item: item_3003006
+            Price: 50000000
+          - Item: item_3003007
+            Price: 50000000
+          - Item: item_3003008
+            Price: 50000000
+          - Item: item_3003009
+            Price: 50000000
+          - Item: item_3003010
+            Price: 50000000
+          - Item: item_3003011
+            Price: 50000000
+          - Item: item_3003100
+            Price: 50000000
+          - Item: item_3003101
+            Price: 50000000
+          - Item: item_3003102
+            Price: 50000000
+          - Item: item_3003103
+            Price: 50000000
+          - Item: item_3003104
+            Price: 50000000
+          - Item: item_3003105
+            Price: 50000000
+          - Item: item_3003106
+            Price: 50000000
+          - Item: item_3003107
+            Price: 50000000
+          - Item: item_3003108
+            Price: 50000000
+          - Item: item_3003109
+            Price: 50000000
+          - Item: item_3003110
+            Price: 50000000
+          - Item: item_3003111
+            Price: 50000000
+          - Item: item_3003112
+            Price: 50000000
+          - Item: item_3003113
+            Price: 50000000
+          - Item: item_3003114
+            Price: 50000000
+          - Item: item_3003115
+            Price: 50000000
+          - Item: item_3003116
+            Price: 50000000
+          - Item: item_3004000
+            Price: 50000000
+          - Item: item_3004001
+            Price: 50000000
+          - Item: item_3004002
+            Price: 50000000
+          - Item: item_3004003
+            Price: 50000000
+          - Item: item_3004004
+            Price: 50000000
+          - Item: item_3004005
+            Price: 50000000
+          - Item: item_3004006
+            Price: 50000000
+          - Item: item_3004007
+            Price: 50000000
+          - Item: item_3004008
+            Price: 50000000
+          - Item: item_3004009
+            Price: 50000000
+          - Item: item_3004010
+            Price: 50000000
+          - Item: item_3004011
+            Price: 50000000
+          - Item: item_3004012
+            Price: 50000000
+          - Item: item_3004013
+            Price: 50000000
+          - Item: item_3004100
+            Price: 50000000
+          - Item: item_3004101
+            Price: 50000000
+          - Item: item_3004102
+            Price: 50000000
+          - Item: item_3004103
+            Price: 50000000
+          - Item: item_3004104
+            Price: 50000000
+          - Item: item_3004105
+            Price: 50000000
+          - Item: item_3004106
+            Price: 50000000
+          - Item: item_3004107
+            Price: 50000000
+          - Item: item_3004108
+            Price: 50000000
+          - Item: item_3004109
+            Price: 50000000
+          - Item: item_3004110
+            Price: 50000000
+          - Item: item_3005000
+            Price: 50000000
+          - Item: item_3005001
+            Price: 50000000
+          - Item: item_3005002
+            Price: 50000000
+          - Item: item_3005003
+            Price: 50000000
+          - Item: item_3005004
+            Price: 50000000
+          - Item: item_3005005
+            Price: 50000000
+          - Item: item_3005006
+            Price: 50000000
+          - Item: item_3005100
+            Price: 50000000
+          - Item: item_3005101
+            Price: 50000000
+          - Item: item_3005102
+            Price: 50000000
+          - Item: item_3005103
+            Price: 50000000
+          - Item: item_3005104
+            Price: 50000000
+          - Item: item_3005105
+            Price: 50000000
+          - Item: item_3005106
+            Price: 50000000
+          - Item: item_3005107
+            Price: 50000000
+          - Item: item_3005108
+            Price: 50000000
+          - Item: item_3005109
+            Price: 50000000
+          - Item: item_3006000
+            Price: 50000000
+          - Item: item_3006001
+            Price: 50000000
+          - Item: item_3006002
+            Price: 50000000
+          - Item: item_3006003
+            Price: 50000000
+          - Item: item_3006004
+            Price: 50000000
+          - Item: item_3006005
+            Price: 50000000
+          - Item: item_3006006
+            Price: 50000000
+          - Item: item_3006007
+            Price: 50000000
+          - Item: item_3006008
+            Price: 50000000
+          - Item: item_3006009
+            Price: 50000000
+          - Item: item_3006010
+            Price: 50000000
+          - Item: item_3006011
+            Price: 50000000
+          - Item: item_3006012
+            Price: 50000000
+          - Item: item_3006100
+            Price: 50000000
+          - Item: item_3006101
+            Price: 50000000
+          - Item: item_3006102
+            Price: 50000000
+          - Item: item_3006103
+            Price: 50000000
+          - Item: item_3006104
+            Price: 50000000
+          - Item: item_3006105
+            Price: 50000000
+          - Item: item_3006106
+            Price: 50000000
+          - Item: item_3006107
+            Price: 50000000
+          - Item: item_3007000
+            Price: 50000000
+          - Item: item_3007001
+            Price: 50000000
+          - Item: item_3007002
+            Price: 50000000
+          - Item: item_3007003
+            Price: 50000000
+          - Item: item_3007004
+            Price: 50000000
+          - Item: item_3007005
+            Price: 50000000
+          - Item: item_3007006
+            Price: 50000000
+          - Item: item_3007007
+            Price: 50000000
+          - Item: item_3007008
+            Price: 50000000
+          - Item: item_3007100
+            Price: 50000000
+          - Item: item_3007101
+            Price: 50000000
+          - Item: item_3007102
+            Price: 50000000
+          - Item: item_3007103
+            Price: 50000000
+          - Item: item_3007104
+            Price: 50000000
+          - Item: item_3007105
+            Price: 50000000
+          - Item: item_3007106
+            Price: 50000000
+          - Item: item_3007107
+            Price: 50000000
+          - Item: item_3007108
+            Price: 50000000
+          - Item: item_3008000
+            Price: 50000000
+          - Item: item_3008001
+            Price: 50000000
+          - Item: item_3008002
+            Price: 50000000
+          - Item: item_3008003
+            Price: 50000000
+          - Item: item_3008004
+            Price: 50000000
+          - Item: item_3008005
+            Price: 50000000
+          - Item: item_3008006
+            Price: 50000000
+          - Item: item_3008007
+            Price: 50000000
+          - Item: item_3008008
+            Price: 50000000
+          - Item: item_3008009
+            Price: 50000000
+          - Item: item_3008010
+            Price: 50000000
+          - Item: item_3008011
+            Price: 50000000
+          - Item: item_3008012
+            Price: 50000000
+          - Item: item_3008013
+            Price: 50000000
+          - Item: item_3008100
+            Price: 50000000
+          - Item: item_3008101
+            Price: 50000000
+          - Item: item_3008102
+            Price: 50000000
+          - Item: item_3008103
+            Price: 50000000
+          - Item: item_3008104
+            Price: 50000000
+          - Item: item_3008105
+            Price: 50000000
+          - Item: item_3008106
+            Price: 50000000
+          - Item: item_3008107
+            Price: 50000000
+          - Item: item_3008108
+            Price: 50000000
+          - Item: item_3008109
+            Price: 50000000
+          - Item: item_3009000
+            Price: 50000000
+          - Item: item_3009001
+            Price: 50000000
+          - Item: item_3009002
+            Price: 50000000
+          - Item: item_3009003
+            Price: 50000000
+          - Item: item_3009004
+            Price: 50000000
+          - Item: item_3009005
+            Price: 50000000
+          - Item: item_3009006
+            Price: 50000000
+          - Item: item_3009007
+            Price: 50000000
+          - Item: item_3009008
+            Price: 50000000
+          - Item: item_3009009
+            Price: 50000000
+          - Item: item_3009010
+            Price: 50000000
+          - Item: item_3009011
+            Price: 50000000
+          - Item: item_3009012
+            Price: 50000000
+          - Item: item_3009013
+            Price: 50000000
+          - Item: item_3009014
+            Price: 50000000
+          - Item: item_3009015
+            Price: 50000000
+          - Item: item_3009016
+            Price: 50000000
+          - Item: item_3009017
+            Price: 50000000
+          - Item: item_3009018
+            Price: 50000000
+          - Item: item_3009019
+            Price: 50000000
+          - Item: item_3009100
+            Price: 50000000
+          - Item: item_3009101
+            Price: 50000000
+          - Item: item_3009102
+            Price: 50000000
+          - Item: item_3009103
+            Price: 50000000
+          - Item: item_3009104
+            Price: 50000000
+          - Item: item_3009105
+            Price: 50000000
+          - Item: item_3009106
+            Price: 50000000
+          - Item: item_3009107
+            Price: 50000000
+          - Item: item_3009108
+            Price: 50000000
+          - Item: item_3009109
+            Price: 50000000
+          - Item: item_3009110
+            Price: 50000000
+          - Item: item_3009111
+            Price: 50000000
+          - Item: item_3009112
+            Price: 50000000
+          - Item: item_3009113
+            Price: 50000000
+          - Item: item_3010000
+            Price: 50000000
+          - Item: item_3010001
+            Price: 50000000
+          - Item: item_3010002
+            Price: 50000000
+          - Item: item_3010003
+            Price: 50000000
+          - Item: item_3010004
+            Price: 50000000
+          - Item: item_3010005
+            Price: 50000000
+          - Item: item_3010006
+            Price: 50000000
+          - Item: item_3010007
+            Price: 50000000
+          - Item: item_3010008
+            Price: 50000000
+          - Item: item_3010009
+            Price: 50000000
+          - Item: item_3010010
+            Price: 50000000
+          - Item: item_3010011
+            Price: 50000000
+          - Item: item_3010012
+            Price: 50000000
+          - Item: item_3010013
+            Price: 50000000
+          - Item: item_3010014
+            Price: 50000000
+          - Item: item_3010015
+            Price: 50000000
+          - Item: item_3010100
+            Price: 50000000
+          - Item: item_3010101
+            Price: 50000000
+          - Item: item_3010102
+            Price: 50000000
+          - Item: item_3010103
+            Price: 50000000
+          - Item: item_3010104
+            Price: 50000000
+          - Item: item_3010105
+            Price: 50000000
+          - Item: item_3010106
+            Price: 50000000
+          - Item: item_3010107
+            Price: 50000000
+          - Item: item_3010108
+            Price: 50000000
+          - Item: item_3010109
+            Price: 50000000
+          - Item: item_3010110
+            Price: 50000000
+          - Item: item_3010111
+            Price: 50000000
+          - Item: item_3010112
+            Price: 50000000
+          - Item: item_3010113
+            Price: 50000000
+          - Item: item_3011000
+            Price: 50000000
+          - Item: item_3011001
+            Price: 50000000
+          - Item: item_3011002
+            Price: 50000000
+          - Item: item_3011003
+            Price: 50000000
+          - Item: item_3011004
+            Price: 50000000
+          - Item: item_3011005
+            Price: 50000000
+          - Item: item_3011006
+            Price: 50000000
+          - Item: item_3011007
+            Price: 50000000
+          - Item: item_3011008
+            Price: 50000000
+          - Item: item_3011009
+            Price: 50000000
+          - Item: item_3011010
+            Price: 50000000
+          - Item: item_3011011
+            Price: 50000000
+          - Item: item_3011012
+            Price: 50000000
+          - Item: item_3011013
+            Price: 50000000
+          - Item: item_3011014
+            Price: 50000000
+          - Item: item_3011015
+            Price: 50000000
+          - Item: item_3011016
+            Price: 50000000
+          - Item: item_3011017
+            Price: 50000000
+          - Item: item_3011018
+            Price: 50000000
+          - Item: item_3011019
+            Price: 50000000
+          - Item: item_3011020
+            Price: 50000000
+          - Item: item_3011021
+            Price: 50000000
+          - Item: item_3011100
+            Price: 50000000
+          - Item: item_3011101
+            Price: 50000000
+          - Item: item_3011102
+            Price: 50000000
+          - Item: item_3011103
+            Price: 50000000
+          - Item: item_3011104
+            Price: 50000000
+          - Item: item_3011105
+            Price: 50000000
+          - Item: item_3011106
+            Price: 50000000
+          - Item: item_3011107
+            Price: 50000000
+          - Item: item_3011108
+            Price: 50000000
+          - Item: item_3011109
+            Price: 50000000
+          - Item: item_3011110
+            Price: 50000000
+          - Item: item_3011111
+            Price: 50000000
+          - Item: item_3011112
+            Price: 50000000
+          - Item: item_3011113
+            Price: 50000000
+          - Item: item_3011114
+            Price: 50000000
+          - Item: item_3012000
+            Price: 50000000
+          - Item: item_3012001
+            Price: 50000000
+          - Item: item_3012002
+            Price: 50000000
+          - Item: item_3012003
+            Price: 50000000
+          - Item: item_3012004
+            Price: 50000000
+          - Item: item_3012005
+            Price: 50000000
+          - Item: item_3012006
+            Price: 50000000
+          - Item: item_3012007
+            Price: 50000000
+          - Item: item_3012008
+            Price: 50000000
+          - Item: item_3012009
+            Price: 50000000
+          - Item: item_3012010
+            Price: 50000000
+          - Item: item_3012100
+            Price: 50000000
+          - Item: item_3012101
+            Price: 50000000
+          - Item: item_3012102
+            Price: 50000000
+          - Item: item_3012103
+            Price: 50000000
+          - Item: item_3012104
+            Price: 50000000
+          - Item: item_3012105
+            Price: 50000000
+          - Item: item_3012106
+            Price: 50000000
+          - Item: item_3012107
+            Price: 50000000
+          - Item: item_3012108
+            Price: 50000000
+          - Item: item_3012109
+            Price: 50000000
+          - Item: item_3012110
+            Price: 50000000
+          - Item: item_3012200
+            Price: 50000000
+          - Item: item_3012201
+            Price: 50000000
+          - Item: item_3012202
+            Price: 50000000
+          - Item: item_3013000
+            Price: 50000000
+          - Item: item_3013001
+            Price: 50000000
+          - Item: item_3013002
+            Price: 50000000
+          - Item: item_3013003
+            Price: 50000000
+          - Item: item_3013004
+            Price: 50000000
+          - Item: item_3013005
+            Price: 50000000
+          - Item: item_3013006
+            Price: 50000000
+          - Item: item_3013007
+            Price: 50000000
+          - Item: item_3013008
+            Price: 50000000
+          - Item: item_3013009
+            Price: 50000000
+          - Item: item_3013010
+            Price: 50000000
+          - Item: item_3013100
+            Price: 50000000
+          - Item: item_3013101
+            Price: 50000000
+          - Item: item_3013102
+            Price: 50000000
+          - Item: item_3013103
+            Price: 50000000
+          - Item: item_3013104
+            Price: 50000000
+          - Item: item_3013105
+            Price: 50000000
+          - Item: item_3013106
+            Price: 50000000
+          - Item: item_3013107
+            Price: 50000000
+          - Item: item_3013108
+            Price: 50000000
+          - Item: item_3013109
+            Price: 50000000
+          - Item: item_3013110
+            Price: 50000000
+          - Item: item_3014000
+            Price: 50000000
+          - Item: item_3014001
+            Price: 50000000
+          - Item: item_3014002
+            Price: 50000000
+          - Item: item_3014003
+            Price: 50000000
+          - Item: item_3014004
+            Price: 50000000
+          - Item: item_3014005
+            Price: 50000000
+          - Item: item_3014006
+            Price: 50000000
+          - Item: item_3014007
+            Price: 50000000
+          - Item: item_3014008
+            Price: 50000000
+          - Item: item_3014009
+            Price: 50000000
+          - Item: item_3014010
+            Price: 50000000
+          - Item: item_3014011
+            Price: 50000000
+          - Item: item_3014012
+            Price: 50000000
+          - Item: item_3014013
+            Price: 50000000
+          - Item: item_3014014
+            Price: 50000000
+          - Item: item_3014015
+            Price: 50000000
+          - Item: item_3014016
+            Price: 50000000
+          - Item: item_3014017
+            Price: 50000000
+          - Item: item_3014100
+            Price: 50000000
+          - Item: item_3014101
+            Price: 50000000
+          - Item: item_3014102
+            Price: 50000000
+          - Item: item_3014103
+            Price: 50000000
+          - Item: item_3014104
+            Price: 50000000
+          - Item: item_3014105
+            Price: 50000000
+          - Item: item_3014106
+            Price: 50000000
+          - Item: item_3014107
+            Price: 50000000
+          - Item: item_3014108
+            Price: 50000000
+          - Item: item_3014109
+            Price: 50000000
+          - Item: item_3014110
+            Price: 50000000
+          - Item: item_3014111
+            Price: 50000000
+          - Item: item_3014112
+            Price: 50000000
+          - Item: item_3014113
+            Price: 50000000
+          - Item: item_3014114
+            Price: 50000000
+          - Item: item_3014115
+            Price: 50000000
+          - Item: item_3014116
+            Price: 50000000
+          - Item: item_3014117
+            Price: 50000000
+          - Item: item_3014118
+            Price: 50000000
+          - Item: item_3014119
+            Price: 50000000
+          - Item: item_3015000
+            Price: 50000000
+          - Item: item_3015001
+            Price: 50000000
+          - Item: item_3015002
+            Price: 50000000
+          - Item: item_3015003
+            Price: 50000000
+          - Item: item_3015004
+            Price: 50000000
+          - Item: item_3015005
+            Price: 50000000
+          - Item: item_3015006
+            Price: 50000000
+          - Item: item_3015007
+            Price: 50000000
+          - Item: item_3015008
+            Price: 50000000
+          - Item: item_3015009
+            Price: 50000000
+          - Item: item_3015010
+            Price: 50000000
+          - Item: item_3015011
+            Price: 50000000
+          - Item: item_3015012
+            Price: 50000000
+          - Item: item_3015013
+            Price: 50000000
+          - Item: item_3015014
+            Price: 50000000
+          - Item: item_3015015
+            Price: 50000000
+          - Item: item_3015100
+            Price: 50000000
+          - Item: item_3015101
+            Price: 50000000
+          - Item: item_3015102
+            Price: 50000000
+          - Item: item_3015103
+            Price: 50000000
+          - Item: item_3015104
+            Price: 50000000
+          - Item: item_3015105
+            Price: 50000000
+          - Item: item_3015106
+            Price: 50000000
+          - Item: item_3015107
+            Price: 50000000
+          - Item: item_3015108
+            Price: 50000000
+          - Item: item_3015109
+            Price: 50000000
+          - Item: item_3015110
+            Price: 50000000
+          - Item: item_3015111
+            Price: 50000000
+          - Item: item_3016000
+            Price: 50000000
+          - Item: item_3016100
+            Price: 50000000
+          - Item: item_3016101
+            Price: 50000000
+          - Item: item_3016102
+            Price: 50000000
+          - Item: item_3016103
+            Price: 50000000
+          - Item: item_3016104
+            Price: 50000000
+          - Item: item_3016105
+            Price: 50000000
+          - Item: item_3016106
+            Price: 50000000
+          - Item: item_3016107
+            Price: 50000000
+          - Item: item_3016108
+            Price: 50000000
+          - Item: item_3016109
+            Price: 50000000
+          - Item: item_3016110
+            Price: 50000000
+          - Item: item_3016111
+            Price: 50000000
+          - Item: item_3017000
+            Price: 50000000
+          - Item: item_3017001
+            Price: 50000000
+          - Item: item_3017002
+            Price: 50000000
+          - Item: item_3017003
+            Price: 50000000
+          - Item: item_3017004
+            Price: 50000000
+          - Item: item_3017005
+            Price: 50000000
+          - Item: item_3017006
+            Price: 50000000
+          - Item: item_3017007
+            Price: 50000000
+          - Item: item_3017008
+            Price: 50000000
+          - Item: item_3017009
+            Price: 50000000
+          - Item: item_3017010
+            Price: 50000000
+          - Item: item_3017011
+            Price: 50000000
+          - Item: item_3017012
+            Price: 50000000
+          - Item: item_3017013
+            Price: 50000000
+          - Item: item_3017014
+            Price: 50000000
+          - Item: item_3017015
+            Price: 50000000
+          - Item: item_3017016
+            Price: 50000000
+          - Item: item_3017017
+            Price: 50000000
+          - Item: item_3017018
+            Price: 50000000
+          - Item: item_3017019
+            Price: 50000000
+          - Item: item_3017020
+            Price: 50000000
+          - Item: item_3017021
+            Price: 50000000
+          - Item: item_3017022
+            Price: 50000000
+          - Item: item_3017023
+            Price: 50000000
+          - Item: item_3017024
+            Price: 50000000
+          - Item: item_3017025
+            Price: 50000000
+          - Item: item_3017026
+            Price: 50000000
+          - Item: item_3017100
+            Price: 50000000
+          - Item: item_3017101
+            Price: 50000000
+          - Item: item_3017102
+            Price: 50000000
+          - Item: item_3017103
+            Price: 50000000
+          - Item: item_3017104
+            Price: 50000000
+          - Item: item_3017105
+            Price: 50000000
+          - Item: item_3017106
+            Price: 50000000
+          - Item: item_3017107
+            Price: 50000000
+          - Item: item_3017108
+            Price: 50000000
+          - Item: item_3017109
+            Price: 50000000
+          - Item: item_3017110
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+      - Slot: 2
+        PerfectEnchants:
+          - Item: item_3000000
+            Price: 50000000
+          - Item: item_3000001
+            Price: 50000000
+          - Item: item_3000002
+            Price: 50000000
+          - Item: item_3000003
+            Price: 50000000
+          - Item: item_3000004
+            Price: 50000000
+          - Item: item_3000005
+            Price: 50000000
+          - Item: item_3000006
+            Price: 50000000
+          - Item: item_3000007
+            Price: 50000000
+          - Item: item_3000008
+            Price: 50000000
+          - Item: item_3000100
+            Price: 50000000
+          - Item: item_3000101
+            Price: 50000000
+          - Item: item_3000102
+            Price: 50000000
+          - Item: item_3000103
+            Price: 50000000
+          - Item: item_3000104
+            Price: 50000000
+          - Item: item_3000105
+            Price: 50000000
+          - Item: item_3000106
+            Price: 50000000
+          - Item: item_3000107
+            Price: 50000000
+          - Item: item_3000108
+            Price: 50000000
+          - Item: item_3000109
+            Price: 50000000
+          - Item: item_3000110
+            Price: 50000000
+          - Item: item_3001000
+            Price: 50000000
+          - Item: item_3001001
+            Price: 50000000
+          - Item: item_3001002
+            Price: 50000000
+          - Item: item_3001003
+            Price: 50000000
+          - Item: item_3001004
+            Price: 50000000
+          - Item: item_3001005
+            Price: 50000000
+          - Item: item_3001006
+            Price: 50000000
+          - Item: item_3001007
+            Price: 50000000
+          - Item: item_3001008
+            Price: 50000000
+          - Item: item_3001009
+            Price: 50000000
+          - Item: item_3001010
+            Price: 50000000
+          - Item: item_3001011
+            Price: 50000000
+          - Item: item_3001012
+            Price: 50000000
+          - Item: item_3001013
+            Price: 50000000
+          - Item: item_3001014
+            Price: 50000000
+          - Item: item_3001015
+            Price: 50000000
+          - Item: item_3001016
+            Price: 50000000
+          - Item: item_3001017
+            Price: 50000000
+          - Item: item_3001100
+            Price: 50000000
+          - Item: item_3001101
+            Price: 50000000
+          - Item: item_3001102
+            Price: 50000000
+          - Item: item_3001103
+            Price: 50000000
+          - Item: item_3001104
+            Price: 50000000
+          - Item: item_3001105
+            Price: 50000000
+          - Item: item_3001106
+            Price: 50000000
+          - Item: item_3001107
+            Price: 50000000
+          - Item: item_3001108
+            Price: 50000000
+          - Item: item_3002000
+            Price: 50000000
+          - Item: item_3002001
+            Price: 50000000
+          - Item: item_3002002
+            Price: 50000000
+          - Item: item_3002003
+            Price: 50000000
+          - Item: item_3002004
+            Price: 50000000
+          - Item: item_3002005
+            Price: 50000000
+          - Item: item_3002006
+            Price: 50000000
+          - Item: item_3002007
+            Price: 50000000
+          - Item: item_3002100
+            Price: 50000000
+          - Item: item_3002101
+            Price: 50000000
+          - Item: item_3002102
+            Price: 50000000
+          - Item: item_3002103
+            Price: 50000000
+          - Item: item_3002104
+            Price: 50000000
+          - Item: item_3002105
+            Price: 50000000
+          - Item: item_3002106
+            Price: 50000000
+          - Item: item_3002107
+            Price: 50000000
+          - Item: item_3002108
+            Price: 50000000
+          - Item: item_3003000
+            Price: 50000000
+          - Item: item_3003001
+            Price: 50000000
+          - Item: item_3003002
+            Price: 50000000
+          - Item: item_3003003
+            Price: 50000000
+          - Item: item_3003004
+            Price: 50000000
+          - Item: item_3003005
+            Price: 50000000
+          - Item: item_3003006
+            Price: 50000000
+          - Item: item_3003007
+            Price: 50000000
+          - Item: item_3003008
+            Price: 50000000
+          - Item: item_3003009
+            Price: 50000000
+          - Item: item_3003010
+            Price: 50000000
+          - Item: item_3003011
+            Price: 50000000
+          - Item: item_3003100
+            Price: 50000000
+          - Item: item_3003101
+            Price: 50000000
+          - Item: item_3003102
+            Price: 50000000
+          - Item: item_3003103
+            Price: 50000000
+          - Item: item_3003104
+            Price: 50000000
+          - Item: item_3003105
+            Price: 50000000
+          - Item: item_3003106
+            Price: 50000000
+          - Item: item_3003107
+            Price: 50000000
+          - Item: item_3003108
+            Price: 50000000
+          - Item: item_3003109
+            Price: 50000000
+          - Item: item_3003110
+            Price: 50000000
+          - Item: item_3003111
+            Price: 50000000
+          - Item: item_3003112
+            Price: 50000000
+          - Item: item_3003113
+            Price: 50000000
+          - Item: item_3003114
+            Price: 50000000
+          - Item: item_3003115
+            Price: 50000000
+          - Item: item_3003116
+            Price: 50000000
+          - Item: item_3004000
+            Price: 50000000
+          - Item: item_3004001
+            Price: 50000000
+          - Item: item_3004002
+            Price: 50000000
+          - Item: item_3004003
+            Price: 50000000
+          - Item: item_3004004
+            Price: 50000000
+          - Item: item_3004005
+            Price: 50000000
+          - Item: item_3004006
+            Price: 50000000
+          - Item: item_3004007
+            Price: 50000000
+          - Item: item_3004008
+            Price: 50000000
+          - Item: item_3004009
+            Price: 50000000
+          - Item: item_3004010
+            Price: 50000000
+          - Item: item_3004011
+            Price: 50000000
+          - Item: item_3004012
+            Price: 50000000
+          - Item: item_3004013
+            Price: 50000000
+          - Item: item_3004100
+            Price: 50000000
+          - Item: item_3004101
+            Price: 50000000
+          - Item: item_3004102
+            Price: 50000000
+          - Item: item_3004103
+            Price: 50000000
+          - Item: item_3004104
+            Price: 50000000
+          - Item: item_3004105
+            Price: 50000000
+          - Item: item_3004106
+            Price: 50000000
+          - Item: item_3004107
+            Price: 50000000
+          - Item: item_3004108
+            Price: 50000000
+          - Item: item_3004109
+            Price: 50000000
+          - Item: item_3004110
+            Price: 50000000
+          - Item: item_3005000
+            Price: 50000000
+          - Item: item_3005001
+            Price: 50000000
+          - Item: item_3005002
+            Price: 50000000
+          - Item: item_3005003
+            Price: 50000000
+          - Item: item_3005004
+            Price: 50000000
+          - Item: item_3005005
+            Price: 50000000
+          - Item: item_3005006
+            Price: 50000000
+          - Item: item_3005100
+            Price: 50000000
+          - Item: item_3005101
+            Price: 50000000
+          - Item: item_3005102
+            Price: 50000000
+          - Item: item_3005103
+            Price: 50000000
+          - Item: item_3005104
+            Price: 50000000
+          - Item: item_3005105
+            Price: 50000000
+          - Item: item_3005106
+            Price: 50000000
+          - Item: item_3005107
+            Price: 50000000
+          - Item: item_3005108
+            Price: 50000000
+          - Item: item_3005109
+            Price: 50000000
+          - Item: item_3006000
+            Price: 50000000
+          - Item: item_3006001
+            Price: 50000000
+          - Item: item_3006002
+            Price: 50000000
+          - Item: item_3006003
+            Price: 50000000
+          - Item: item_3006004
+            Price: 50000000
+          - Item: item_3006005
+            Price: 50000000
+          - Item: item_3006006
+            Price: 50000000
+          - Item: item_3006007
+            Price: 50000000
+          - Item: item_3006008
+            Price: 50000000
+          - Item: item_3006009
+            Price: 50000000
+          - Item: item_3006010
+            Price: 50000000
+          - Item: item_3006011
+            Price: 50000000
+          - Item: item_3006012
+            Price: 50000000
+          - Item: item_3006100
+            Price: 50000000
+          - Item: item_3006101
+            Price: 50000000
+          - Item: item_3006102
+            Price: 50000000
+          - Item: item_3006103
+            Price: 50000000
+          - Item: item_3006104
+            Price: 50000000
+          - Item: item_3006105
+            Price: 50000000
+          - Item: item_3006106
+            Price: 50000000
+          - Item: item_3006107
+            Price: 50000000
+          - Item: item_3007000
+            Price: 50000000
+          - Item: item_3007001
+            Price: 50000000
+          - Item: item_3007002
+            Price: 50000000
+          - Item: item_3007003
+            Price: 50000000
+          - Item: item_3007004
+            Price: 50000000
+          - Item: item_3007005
+            Price: 50000000
+          - Item: item_3007006
+            Price: 50000000
+          - Item: item_3007007
+            Price: 50000000
+          - Item: item_3007008
+            Price: 50000000
+          - Item: item_3007100
+            Price: 50000000
+          - Item: item_3007101
+            Price: 50000000
+          - Item: item_3007102
+            Price: 50000000
+          - Item: item_3007103
+            Price: 50000000
+          - Item: item_3007104
+            Price: 50000000
+          - Item: item_3007105
+            Price: 50000000
+          - Item: item_3007106
+            Price: 50000000
+          - Item: item_3007107
+            Price: 50000000
+          - Item: item_3007108
+            Price: 50000000
+          - Item: item_3008000
+            Price: 50000000
+          - Item: item_3008001
+            Price: 50000000
+          - Item: item_3008002
+            Price: 50000000
+          - Item: item_3008003
+            Price: 50000000
+          - Item: item_3008004
+            Price: 50000000
+          - Item: item_3008005
+            Price: 50000000
+          - Item: item_3008006
+            Price: 50000000
+          - Item: item_3008007
+            Price: 50000000
+          - Item: item_3008008
+            Price: 50000000
+          - Item: item_3008009
+            Price: 50000000
+          - Item: item_3008010
+            Price: 50000000
+          - Item: item_3008011
+            Price: 50000000
+          - Item: item_3008012
+            Price: 50000000
+          - Item: item_3008013
+            Price: 50000000
+          - Item: item_3008100
+            Price: 50000000
+          - Item: item_3008101
+            Price: 50000000
+          - Item: item_3008102
+            Price: 50000000
+          - Item: item_3008103
+            Price: 50000000
+          - Item: item_3008104
+            Price: 50000000
+          - Item: item_3008105
+            Price: 50000000
+          - Item: item_3008106
+            Price: 50000000
+          - Item: item_3008107
+            Price: 50000000
+          - Item: item_3008108
+            Price: 50000000
+          - Item: item_3008109
+            Price: 50000000
+          - Item: item_3009000
+            Price: 50000000
+          - Item: item_3009001
+            Price: 50000000
+          - Item: item_3009002
+            Price: 50000000
+          - Item: item_3009003
+            Price: 50000000
+          - Item: item_3009004
+            Price: 50000000
+          - Item: item_3009005
+            Price: 50000000
+          - Item: item_3009006
+            Price: 50000000
+          - Item: item_3009007
+            Price: 50000000
+          - Item: item_3009008
+            Price: 50000000
+          - Item: item_3009009
+            Price: 50000000
+          - Item: item_3009010
+            Price: 50000000
+          - Item: item_3009011
+            Price: 50000000
+          - Item: item_3009012
+            Price: 50000000
+          - Item: item_3009013
+            Price: 50000000
+          - Item: item_3009014
+            Price: 50000000
+          - Item: item_3009015
+            Price: 50000000
+          - Item: item_3009016
+            Price: 50000000
+          - Item: item_3009017
+            Price: 50000000
+          - Item: item_3009018
+            Price: 50000000
+          - Item: item_3009019
+            Price: 50000000
+          - Item: item_3009100
+            Price: 50000000
+          - Item: item_3009101
+            Price: 50000000
+          - Item: item_3009102
+            Price: 50000000
+          - Item: item_3009103
+            Price: 50000000
+          - Item: item_3009104
+            Price: 50000000
+          - Item: item_3009105
+            Price: 50000000
+          - Item: item_3009106
+            Price: 50000000
+          - Item: item_3009107
+            Price: 50000000
+          - Item: item_3009108
+            Price: 50000000
+          - Item: item_3009109
+            Price: 50000000
+          - Item: item_3009110
+            Price: 50000000
+          - Item: item_3009111
+            Price: 50000000
+          - Item: item_3009112
+            Price: 50000000
+          - Item: item_3009113
+            Price: 50000000
+          - Item: item_3010000
+            Price: 50000000
+          - Item: item_3010001
+            Price: 50000000
+          - Item: item_3010002
+            Price: 50000000
+          - Item: item_3010003
+            Price: 50000000
+          - Item: item_3010004
+            Price: 50000000
+          - Item: item_3010005
+            Price: 50000000
+          - Item: item_3010006
+            Price: 50000000
+          - Item: item_3010007
+            Price: 50000000
+          - Item: item_3010008
+            Price: 50000000
+          - Item: item_3010009
+            Price: 50000000
+          - Item: item_3010010
+            Price: 50000000
+          - Item: item_3010011
+            Price: 50000000
+          - Item: item_3010012
+            Price: 50000000
+          - Item: item_3010013
+            Price: 50000000
+          - Item: item_3010014
+            Price: 50000000
+          - Item: item_3010015
+            Price: 50000000
+          - Item: item_3010100
+            Price: 50000000
+          - Item: item_3010101
+            Price: 50000000
+          - Item: item_3010102
+            Price: 50000000
+          - Item: item_3010103
+            Price: 50000000
+          - Item: item_3010104
+            Price: 50000000
+          - Item: item_3010105
+            Price: 50000000
+          - Item: item_3010106
+            Price: 50000000
+          - Item: item_3010107
+            Price: 50000000
+          - Item: item_3010108
+            Price: 50000000
+          - Item: item_3010109
+            Price: 50000000
+          - Item: item_3010110
+            Price: 50000000
+          - Item: item_3010111
+            Price: 50000000
+          - Item: item_3010112
+            Price: 50000000
+          - Item: item_3010113
+            Price: 50000000
+          - Item: item_3011000
+            Price: 50000000
+          - Item: item_3011001
+            Price: 50000000
+          - Item: item_3011002
+            Price: 50000000
+          - Item: item_3011003
+            Price: 50000000
+          - Item: item_3011004
+            Price: 50000000
+          - Item: item_3011005
+            Price: 50000000
+          - Item: item_3011006
+            Price: 50000000
+          - Item: item_3011007
+            Price: 50000000
+          - Item: item_3011008
+            Price: 50000000
+          - Item: item_3011009
+            Price: 50000000
+          - Item: item_3011010
+            Price: 50000000
+          - Item: item_3011011
+            Price: 50000000
+          - Item: item_3011012
+            Price: 50000000
+          - Item: item_3011013
+            Price: 50000000
+          - Item: item_3011014
+            Price: 50000000
+          - Item: item_3011015
+            Price: 50000000
+          - Item: item_3011016
+            Price: 50000000
+          - Item: item_3011017
+            Price: 50000000
+          - Item: item_3011018
+            Price: 50000000
+          - Item: item_3011019
+            Price: 50000000
+          - Item: item_3011020
+            Price: 50000000
+          - Item: item_3011021
+            Price: 50000000
+          - Item: item_3011100
+            Price: 50000000
+          - Item: item_3011101
+            Price: 50000000
+          - Item: item_3011102
+            Price: 50000000
+          - Item: item_3011103
+            Price: 50000000
+          - Item: item_3011104
+            Price: 50000000
+          - Item: item_3011105
+            Price: 50000000
+          - Item: item_3011106
+            Price: 50000000
+          - Item: item_3011107
+            Price: 50000000
+          - Item: item_3011108
+            Price: 50000000
+          - Item: item_3011109
+            Price: 50000000
+          - Item: item_3011110
+            Price: 50000000
+          - Item: item_3011111
+            Price: 50000000
+          - Item: item_3011112
+            Price: 50000000
+          - Item: item_3011113
+            Price: 50000000
+          - Item: item_3011114
+            Price: 50000000
+          - Item: item_3012000
+            Price: 50000000
+          - Item: item_3012001
+            Price: 50000000
+          - Item: item_3012002
+            Price: 50000000
+          - Item: item_3012003
+            Price: 50000000
+          - Item: item_3012004
+            Price: 50000000
+          - Item: item_3012005
+            Price: 50000000
+          - Item: item_3012006
+            Price: 50000000
+          - Item: item_3012007
+            Price: 50000000
+          - Item: item_3012008
+            Price: 50000000
+          - Item: item_3012009
+            Price: 50000000
+          - Item: item_3012010
+            Price: 50000000
+          - Item: item_3012100
+            Price: 50000000
+          - Item: item_3012101
+            Price: 50000000
+          - Item: item_3012102
+            Price: 50000000
+          - Item: item_3012103
+            Price: 50000000
+          - Item: item_3012104
+            Price: 50000000
+          - Item: item_3012105
+            Price: 50000000
+          - Item: item_3012106
+            Price: 50000000
+          - Item: item_3012107
+            Price: 50000000
+          - Item: item_3012108
+            Price: 50000000
+          - Item: item_3012109
+            Price: 50000000
+          - Item: item_3012110
+            Price: 50000000
+          - Item: item_3012200
+            Price: 50000000
+          - Item: item_3012201
+            Price: 50000000
+          - Item: item_3012202
+            Price: 50000000
+          - Item: item_3013000
+            Price: 50000000
+          - Item: item_3013001
+            Price: 50000000
+          - Item: item_3013002
+            Price: 50000000
+          - Item: item_3013003
+            Price: 50000000
+          - Item: item_3013004
+            Price: 50000000
+          - Item: item_3013005
+            Price: 50000000
+          - Item: item_3013006
+            Price: 50000000
+          - Item: item_3013007
+            Price: 50000000
+          - Item: item_3013008
+            Price: 50000000
+          - Item: item_3013009
+            Price: 50000000
+          - Item: item_3013010
+            Price: 50000000
+          - Item: item_3013100
+            Price: 50000000
+          - Item: item_3013101
+            Price: 50000000
+          - Item: item_3013102
+            Price: 50000000
+          - Item: item_3013103
+            Price: 50000000
+          - Item: item_3013104
+            Price: 50000000
+          - Item: item_3013105
+            Price: 50000000
+          - Item: item_3013106
+            Price: 50000000
+          - Item: item_3013107
+            Price: 50000000
+          - Item: item_3013108
+            Price: 50000000
+          - Item: item_3013109
+            Price: 50000000
+          - Item: item_3013110
+            Price: 50000000
+          - Item: item_3014000
+            Price: 50000000
+          - Item: item_3014001
+            Price: 50000000
+          - Item: item_3014002
+            Price: 50000000
+          - Item: item_3014003
+            Price: 50000000
+          - Item: item_3014004
+            Price: 50000000
+          - Item: item_3014005
+            Price: 50000000
+          - Item: item_3014006
+            Price: 50000000
+          - Item: item_3014007
+            Price: 50000000
+          - Item: item_3014008
+            Price: 50000000
+          - Item: item_3014009
+            Price: 50000000
+          - Item: item_3014010
+            Price: 50000000
+          - Item: item_3014011
+            Price: 50000000
+          - Item: item_3014012
+            Price: 50000000
+          - Item: item_3014013
+            Price: 50000000
+          - Item: item_3014014
+            Price: 50000000
+          - Item: item_3014015
+            Price: 50000000
+          - Item: item_3014016
+            Price: 50000000
+          - Item: item_3014017
+            Price: 50000000
+          - Item: item_3014100
+            Price: 50000000
+          - Item: item_3014101
+            Price: 50000000
+          - Item: item_3014102
+            Price: 50000000
+          - Item: item_3014103
+            Price: 50000000
+          - Item: item_3014104
+            Price: 50000000
+          - Item: item_3014105
+            Price: 50000000
+          - Item: item_3014106
+            Price: 50000000
+          - Item: item_3014107
+            Price: 50000000
+          - Item: item_3014108
+            Price: 50000000
+          - Item: item_3014109
+            Price: 50000000
+          - Item: item_3014110
+            Price: 50000000
+          - Item: item_3014111
+            Price: 50000000
+          - Item: item_3014112
+            Price: 50000000
+          - Item: item_3014113
+            Price: 50000000
+          - Item: item_3014114
+            Price: 50000000
+          - Item: item_3014115
+            Price: 50000000
+          - Item: item_3014116
+            Price: 50000000
+          - Item: item_3014117
+            Price: 50000000
+          - Item: item_3014118
+            Price: 50000000
+          - Item: item_3014119
+            Price: 50000000
+          - Item: item_3015000
+            Price: 50000000
+          - Item: item_3015001
+            Price: 50000000
+          - Item: item_3015002
+            Price: 50000000
+          - Item: item_3015003
+            Price: 50000000
+          - Item: item_3015004
+            Price: 50000000
+          - Item: item_3015005
+            Price: 50000000
+          - Item: item_3015006
+            Price: 50000000
+          - Item: item_3015007
+            Price: 50000000
+          - Item: item_3015008
+            Price: 50000000
+          - Item: item_3015009
+            Price: 50000000
+          - Item: item_3015010
+            Price: 50000000
+          - Item: item_3015011
+            Price: 50000000
+          - Item: item_3015012
+            Price: 50000000
+          - Item: item_3015013
+            Price: 50000000
+          - Item: item_3015014
+            Price: 50000000
+          - Item: item_3015015
+            Price: 50000000
+          - Item: item_3015100
+            Price: 50000000
+          - Item: item_3015101
+            Price: 50000000
+          - Item: item_3015102
+            Price: 50000000
+          - Item: item_3015103
+            Price: 50000000
+          - Item: item_3015104
+            Price: 50000000
+          - Item: item_3015105
+            Price: 50000000
+          - Item: item_3015106
+            Price: 50000000
+          - Item: item_3015107
+            Price: 50000000
+          - Item: item_3015108
+            Price: 50000000
+          - Item: item_3015109
+            Price: 50000000
+          - Item: item_3015110
+            Price: 50000000
+          - Item: item_3015111
+            Price: 50000000
+          - Item: item_3016000
+            Price: 50000000
+          - Item: item_3016100
+            Price: 50000000
+          - Item: item_3016101
+            Price: 50000000
+          - Item: item_3016102
+            Price: 50000000
+          - Item: item_3016103
+            Price: 50000000
+          - Item: item_3016104
+            Price: 50000000
+          - Item: item_3016105
+            Price: 50000000
+          - Item: item_3016106
+            Price: 50000000
+          - Item: item_3016107
+            Price: 50000000
+          - Item: item_3016108
+            Price: 50000000
+          - Item: item_3016109
+            Price: 50000000
+          - Item: item_3016110
+            Price: 50000000
+          - Item: item_3016111
+            Price: 50000000
+          - Item: item_3017000
+            Price: 50000000
+          - Item: item_3017001
+            Price: 50000000
+          - Item: item_3017002
+            Price: 50000000
+          - Item: item_3017003
+            Price: 50000000
+          - Item: item_3017004
+            Price: 50000000
+          - Item: item_3017005
+            Price: 50000000
+          - Item: item_3017006
+            Price: 50000000
+          - Item: item_3017007
+            Price: 50000000
+          - Item: item_3017008
+            Price: 50000000
+          - Item: item_3017009
+            Price: 50000000
+          - Item: item_3017010
+            Price: 50000000
+          - Item: item_3017011
+            Price: 50000000
+          - Item: item_3017012
+            Price: 50000000
+          - Item: item_3017013
+            Price: 50000000
+          - Item: item_3017014
+            Price: 50000000
+          - Item: item_3017015
+            Price: 50000000
+          - Item: item_3017016
+            Price: 50000000
+          - Item: item_3017017
+            Price: 50000000
+          - Item: item_3017018
+            Price: 50000000
+          - Item: item_3017019
+            Price: 50000000
+          - Item: item_3017020
+            Price: 50000000
+          - Item: item_3017021
+            Price: 50000000
+          - Item: item_3017022
+            Price: 50000000
+          - Item: item_3017023
+            Price: 50000000
+          - Item: item_3017024
+            Price: 50000000
+          - Item: item_3017025
+            Price: 50000000
+          - Item: item_3017026
+            Price: 50000000
+          - Item: item_3017100
+            Price: 50000000
+          - Item: item_3017101
+            Price: 50000000
+          - Item: item_3017102
+            Price: 50000000
+          - Item: item_3017103
+            Price: 50000000
+          - Item: item_3017104
+            Price: 50000000
+          - Item: item_3017105
+            Price: 50000000
+          - Item: item_3017106
+            Price: 50000000
+          - Item: item_3017107
+            Price: 50000000
+          - Item: item_3017108
+            Price: 50000000
+          - Item: item_3017109
+            Price: 50000000
+          - Item: item_3017110
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 100
+      - Slot: 1
+        Materials:
+          - Material: Nyangvine_Fruit
+            Amount: 30
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 1
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 2
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 3
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+          - Enchantgrade: 4
+            Items:
+              - Item: Release_Of_Magic
+                Chance: 25000
+              - Item: Hero
+                Chance: 25000
+              - Item: Unknown_Item_300386
+                Chance: 25000
+              - Item: Unknown_Item_300387
+                Chance: 25000
+        PerfectEnchants:
+          - Item: Release_Of_Magic
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Hero
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300386
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
+          - Item: Unknown_Item_300387
+            Price: 50000000
+            Materials:
+              - Material: Nyangvine_Fruit
+                Amount: 300
