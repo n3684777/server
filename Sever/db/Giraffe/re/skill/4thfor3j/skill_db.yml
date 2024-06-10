@@ -3666,7 +3666,6 @@ Body:
     HitCount: 1
     Element: Earth
     SplashArea: 4
-
     CastCancel: true
     CastTime: 3000
     Cooldown: 300
