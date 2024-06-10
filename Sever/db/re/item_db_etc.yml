@@ -76635,21 +76635,8 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }  
-  - Id: 3010008
-    AegisName: item_3010008
-    Name: 戰嚎的彼端
-    Type: Card
-    SubType: Enchant
-    Script: |
-      .@r = getequiprefinerycnt(EQI_HAND_R);
-      if(.@r >= 15){
-      bonus2 bSkillCooldown,"WM_BEYOND_OF_WARCRY",-10000;
-      }
-      if(.@r >= 20){
-      bonus bMatk,300;
-      }
-  - Id: 3010009
-    AegisName: item_3010009
+  - Id: 3010010
+    AegisName: item_3010010
     Name: 大暴雨
     Type: Card
     SubType: Enchant
@@ -76666,8 +76653,8 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-  - Id: 3010010
-    AegisName: item_3010010
+  - Id: 3010011
+    AegisName: item_3010011
     Name: 殘響
     Type: Card
     SubType: Enchant
@@ -76684,8 +76671,8 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
-  - Id: 3010011
-    AegisName: item_3010011
+  - Id: 3010012
+    AegisName: item_3010012
     Name: 重金屬音樂
     Type: Card
     SubType: Enchant
@@ -76702,8 +76689,8 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
-  - Id: 3010012
-    AegisName: item_3010012
+  - Id: 3010013
+    AegisName: item_3010013
     Name: 巨大共鳴
     Type: Card
     SubType: Enchant
@@ -76720,8 +76707,8 @@ Body:
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
-  - Id: 3010013
-    AegisName: item_3010013
+  - Id: 3010014
+    AegisName: item_3010014
     Name: 不確定要素的語言
     Type: Card
     SubType: Enchant
@@ -76733,8 +76720,8 @@ Body:
       if(.@r >= 20){
       bonus bMatk,300;
       }
-  - Id: 3010014
-    AegisName: item_3010014
+  - Id: 3010015
+    AegisName: item_3010015
     Name: 羞怯一天的憂鬱
     Type: Card
     SubType: Enchant
