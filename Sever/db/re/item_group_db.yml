@@ -51816,3 +51816,13 @@ Body:
         List:
           - Item: Diamond_Of_Ruin
             Amount: 1000
+  - Group: item_61083 # UU∏À≥∆∏…¿v
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Card_Coin_
+            Amount: 30
+          - Item: Money_1E
+            Amount: 5
+          - Item: Nyangvine_Fruit
+            Amount: 100

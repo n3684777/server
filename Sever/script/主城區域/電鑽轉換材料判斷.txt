@@ -1,13 +1,13 @@
 function	script	ChangeMaterial	{
 
-setarray main_id[0],7606,61050,7582,7723,2110002,4001,4004,4033,4196,4197,4054,4174;
-setarray reward_id[0],61050,6011,61051,61082,6909,61051,61051,61051,61051,61051,61051,61051;
-setarray reward_per_amount,5000,3,1000,1000,2000,1000,1000,1000,1000,1000,1000,1000;
+setarray main_id[0],2110002,7606,7582,7723;
+setarray reward_id[0],6909,6909,6909,6909;
+setarray reward_per_amount,2000,1000,500,100;
 
-setarray reward_id2[0],61050,6011,61051,61082,6909,61051,61051,61051,61051,61051,61051,61051; // 額外獎勵
-setarray reward_per_amount2,5000,3,1000,1000,2000,1000,1000,1000,1000,1000,1000,1000; // 額外獎勵對除數量
+setarray reward_id2[0],6909,6909,6909,6909; // 額外獎勵
+setarray reward_per_amount2,2000,0,0,0; // 額外獎勵對除數量
 
-setarray multi[0],0,0,0,0,0,0,0,0,0,0,0,0;
+setarray multi[0],0,0,0,0;
 
 	for(.@i = 0; .@i < getarraysize(main_id); .@i++)
 	{

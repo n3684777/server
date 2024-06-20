@@ -77985,7 +77985,7 @@ Body:
       }
       if(.@r >= 15){
       bonus2 bSkillCooldown,"SP_SHA",-1500;
-      bonus2 bSkillAtk,"SP_SHA",15;
+      bonus2 bSkillAtk,"SP_SHA",30;
       }
       if(.@r >= 20){
       bonus bMatk,300;
@@ -78501,7 +78501,7 @@ Body:
       bonus2 bSkillAtk,"KO_KAIHOU",10;
       }
       if(.@r >= 15){
-      bonus2 bSkillAtk,"KO_KAIHOU",15;      }
+      bonus2 bSkillAtk,"KO_KAIHOU",30;      }
       if(.@r >= 20){
       bonus bBaseAtk,300;
       }
@@ -79874,7 +79874,7 @@ Body:
       bonus2 bSkillAtk,"SU_SCRATCH",15;      
       }
       if(.@r >= 20){
-      bonus bMatk,300;
+      bonus bBaseAtk,300;
       }
   - Id: 3017019
     AegisName: item_3017019

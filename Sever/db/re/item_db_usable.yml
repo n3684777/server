@@ -49850,6 +49850,17 @@ Body:
       Container: true
     Script: |
       getgroupitem(IG_item_61082,1);
+  - Id: 61083
+    AegisName: item_61083
+    Name: ±y±y¸Ë³Æ¸ÉÀv½c
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getgroupitem(IG_item_61083,1);
   - Id: 36201
     AegisName: PCASH_1000
     Name: PÂIµw¹ô1000

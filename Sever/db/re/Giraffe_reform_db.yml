@@ -7152,6 +7152,20 @@ Body:
            Amount: 20
         ResultItem: item_2100011
         ChangeRefine: 0
+      - BaseItem: aegis_490184 # 英雄之証(蜃氣樓/不知火)
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+         - Material: Armor_Stone_3
+           Amount: 200
+         - Material: Gopinich_Card_ # 900103
+           Amount: 9
+         - Material: item_940048
+           Amount: 200
+         - Material: Money_1E
+           Amount: 20
+        ResultItem: item_2100012
+        ChangeRefine: 0
       - BaseItem: maypay_01 # 生存者頭箍-LT
         MinimumRefine: 9
         CardsAllowed: true

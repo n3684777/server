@@ -4260,7 +4260,7 @@ Body:
       - Item: Mastering_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
+      - Item: item_2110002
         Rate: 1
   - Id: 1091
     AegisName: DRAGON_FLY
@@ -23693,7 +23693,7 @@ Body:
     Ai: 02
     Class: Boss
     Drops:
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
       - Item: Angeling_Card
         Rate: 1
@@ -23813,7 +23813,7 @@ Body:
       - Item: Drops_Card
         Rate: 1
         StealProtected: true
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
   - Id: 1573
     AegisName: G_ELDER
@@ -24597,7 +24597,7 @@ Body:
     DamageMotion: 480
     Ai: 01
     Drops:
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
       - Item: Marin_Card
         Rate: 1
@@ -35070,7 +35070,7 @@ Body:
     Ai: 02
     Class: Boss
     Drops:
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
       - Item: Deviling_Card
         Rate: 1
@@ -54984,7 +54984,7 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
       - Item: Poring_Card
         Rate: 1
@@ -55021,7 +55021,7 @@ Body:
     Modes:
       IgnoreMagic: true
     Drops:
-      - Item: Coin
+      - Item: item_2110002
         Rate: 100
       - Item: Poporing_Card
         Rate: 1

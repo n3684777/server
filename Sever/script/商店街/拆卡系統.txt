@@ -11,6 +11,13 @@
 uttycty,59,177,5	script	拆卡系統	4_f_07,{
 	disable_items;
 	set .@zeny,1000000;		//拆卡費用
+	.@weight = 100 * Weight / MaxWeight;
+	if(.@weight > 70){
+	mes "[拆卡系統]";
+	mes "拆卡前請先確認自身負重為70%以下～";
+	close;
+
+	}
 	mes "[拆卡系統]";
 	mes "成功機率: ^0000FF100%^000000";
 	mes "拆卡費用: ^0000FF"+(.@zeny/10000)+" 萬^000000";
@@ -64,7 +71,7 @@ setarray .@OptParam[0],
 	mes .@z4?"第三洞: ^0000FF"+getitemname(.@z4)+"^000000":"第三洞: ^666666無^000000";
 	mes .@z5?"第四洞: ^0000FF"+getitemname(.@z5)+"^000000":"第四洞: ^666666無^000000";
 	next;
-	switch(select("第一洞","第二洞","第三洞","第四洞"))
+	switch(select("第一洞","第二洞","第三洞","第四洞","全部拆除"))
 	{
 	
 		if ( Zeny < .@zeny ) 
@@ -134,6 +141,9 @@ setarray .@OptParam[0],
 			}
 			set .@qu4,1;
 			break;
+		case 5:
+			set .@qu5,1;
+			break;
 	}
 	
 	if (select("繼續拆除","取消")==2) 
@@ -164,7 +174,14 @@ setarray .@OptParam[0],
 		getgradeitem .@z0,1,1,.@z1,0,.@z2,.@z3,.@z4,0,.@grade,.@OptID,.@OptVal,.@OptParam;
 		getitem .@z5,1;
 	}
-
+	if(.@qu5==1)
+	{
+		getgradeitem .@z0,1,1,.@z1,0,0,0,0,0,.@grade,.@OptID,.@OptVal,.@OptParam;
+		getitem .@z2,1;
+		getitem .@z3,1;
+		getitem .@z4,1;
+		getitem .@z5,1;
+	}
 	specialeffect2 101;
 	mes "[拆卡系統]";
 	mes "終於大功告成。";
