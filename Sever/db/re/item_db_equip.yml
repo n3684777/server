@@ -157511,6 +157511,7 @@ Body:
     Type: Armor
     Weight: 200
     Defense: 10
+    Refineable: true
     Slots: 1
     Jobs:
       KagerouOboro: true
@@ -157548,6 +157549,7 @@ Body:
     Name: 英雄之証(靈導士)
     Type: Armor
     Weight: 200
+    Refineable: true
     Defense: 10
     Slots: 1
     Jobs:
@@ -157586,6 +157588,7 @@ Body:
     Name: 英雄之証(魂靈師)
     Type: Armor
     Weight: 200
+    Refineable: true
     Defense: 10
     Slots: 1
     Jobs:
@@ -157852,6 +157855,7 @@ Body:
     Name: 英雄之証 (頂級初學者)
     Type: Armor
     Weight: 200
+    Refineable: true
     Defense: 10
     Slots: 1
     Jobs:
@@ -187418,6 +187422,7 @@ Body:
     Type: Armor
     View: 172
     Weight: 200
+    Slots: 1
     Locations:
       Garment: true
     Refineable: true

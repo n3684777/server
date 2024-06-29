@@ -66044,6 +66044,7 @@ Body:
     Script: |
       bonus2 bMagicAtkEle,Ele_Wind,100;
       bonus2 bMagicAtkEle,Ele_Ghost,100;
+      bonus2 bMagicAddRace,RC_All,35;
   - Id: 900051
     AegisName: Lady_Tanee_Card_
     Name: 嗒妮小姐卡片-改
