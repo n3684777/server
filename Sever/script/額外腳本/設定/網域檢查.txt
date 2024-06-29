@@ -40,9 +40,9 @@ set $@BigGM_Right,99;                                      //GMÅv§Q¦h¤Ö¥H¤W¥i½u¤
 
 //=======================IP­­¨î³]©w=======================//
 
-setarray $@Morewindows$[0],"180.218.92.53";
+setarray $@Morewindows$[0],"180.218.92.53","111.248.252.225";
 
-setarray $@Windiwsnum[0],4;                                //¶}©ñµ¹¯S©w«È¤á´X¶}¡A­n¹ïÀ³¤W­±¯S©w¥Î¤á¡C
+setarray $@Windiwsnum[0],4,4;                                //¶}©ñµ¹¯S©w«È¤á´X¶}¡A­n¹ïÀ³¤W­±¯S©w¥Î¤á¡C
                                                    
 set $@OtherWimdows,2;                                     //«D¯S©w«È¤á ³£¥u¯à´X¶}¡C
 
